@@ -1,0 +1,1 @@
+(fn SetSkyTime (Hour) (Variables|01TimeandSun|SetTimeOfDay (- Hour (* 24.0 (Math|Float|Floor (/ Hour 24.0))))) (CallFunction|UpdateSky))

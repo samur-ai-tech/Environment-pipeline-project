@@ -1,0 +1,26 @@
+{
+  "engine": "Unreal Engine 5.8.2",
+  "required_plugin": "SunPosition (already enabled by Stage 1)",
+  "native_dependencies": {
+    "/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky": [
+      "/Engine/EditorBlueprintResources/StandardMacros",
+      "/Script/SunPosition",
+      "/SunPosition/Editor/SM_Compass",
+      "/Engine/EditorResources/LightIcons/S_LightError",
+      "/Engine/EngineSky/SM_SkySphere",
+      "/Game/Project/Shared/Atmosphere/ReusableSky/MI_EnvironmentCloudDefaults",
+      "/Game/Project/Shared/Atmosphere/ReusableSky/M_EnvironmentCelestial"
+    ],
+    "/Game/Project/Shared/Atmosphere/ReusableSky/M_EnvironmentCelestial": [],
+    "/Game/Project/Shared/Atmosphere/ReusableSky/MI_EnvironmentCloudDefaults": [
+      "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud",
+      "/Engine/EngineSky/VolumetricClouds/T_CloudMask",
+      "/Engine/EngineSky/VolumetricClouds/T_CloudPattern",
+      "/Engine/EngineSky/VolumetricClouds/T_Profile_08",
+      "/Engine/EngineSky/VolumetricClouds/VT_PerlinWorley_Balanced"
+    ]
+  },
+  "area_asset_dependencies": [],
+  "third_party_cloud_material_dependencies": [],
+  "portability_migration_test": "NOT_PERFORMED_STAGE4"
+}

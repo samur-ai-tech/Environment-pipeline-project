@@ -1,0 +1,1 @@
+(fn SetTimeProgression (Enabled Paused DayMinutes) (Variables|11TimeProgression|SetAnimateTime Enabled) (Variables|11TimeProgression|SetTimePaused Paused) (Variables|11TimeProgression|SetDayLengthMinutes (Math|Float|Clamp(Float) DayMinutes 0.1 1440.0)) (CallFunction|UpdateSky))

@@ -1,0 +1,28 @@
+// Artistic stars and phased moon. No astronomical lunar claims.
+float3 d=normalize(ViewDirection);
+float3 m=normalize(MoonDirection+float3(0,0,0.00000001));
+float3 right=normalize(cross(abs(m.z)>0.99 ? float3(0,1,0) : float3(0,0,1),m));
+float3 up=cross(m,right);
+float radius=max(0.001,radians(MoonDiameter)*0.5);
+float2 p=float2(dot(d,right),dot(d,up))/sin(radius);
+float r2=dot(p,p);
+float edge=max(0.003,fwidth(sqrt(max(r2,0.000001))));
+float disk=(1-smoothstep(1-edge,1+edge,sqrt(max(r2,0.000001))))*step(0,dot(d,m))*step(0.000001,MoonLuminance);
+float z=sqrt(saturate(1-r2));
+float phaseAngle=6.2831853*saturate(MoonPhase);
+float illumination=saturate(p.x*sin(phaseAngle)-z*cos(phaseAngle));
+float maria=0.78+0.12*sin(p.x*17+p.y*9)*sin(p.y*13-p.x*7)+0.07*sin(p.x*41+p.y*29);
+float3 moon=float3(0.91,0.94,1.0)*disk*illumination*maria*MoonLuminance;
+float longitude=atan2(d.y,d.x)+NorthRadians;
+float2 uv=float2(longitude/6.2831853+0.5,asin(clamp(d.z,-1,1))/3.14159265+0.5)*float2(560,280);
+float2 cell=floor(uv);float2 f=frac(uv);
+float h=frac(sin(dot(cell,float2(127.1,311.7)))*43758.5453);
+float hx=frac(sin(dot(cell,float2(269.5,183.3)))*43758.5453);
+float hy=frac(sin(dot(cell,float2(419.2,371.9)))*32719.125);
+float2 center=0.15+float2(hx,hy)*0.7;
+float dist=length(f-center);float aa=max(0.04,length(fwidth(uv))*0.5);
+float starPoint=1-smoothstep(0.08,0.08+aa,dist);
+float flux=pow(saturate((h-0.975)/0.025),2)*step(0.975,h);
+float3 tint=lerp(float3(0.7,0.82,1),float3(1,0.88,0.7),hx);
+float horizon=smoothstep(0.0,0.12,d.z);
+return moon+starPoint*flux*tint*StarLuminance*horizon*(1-disk);

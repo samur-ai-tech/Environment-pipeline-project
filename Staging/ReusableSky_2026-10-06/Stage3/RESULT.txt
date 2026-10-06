@@ -1,0 +1,38 @@
+REUSABLE SKY STAGE 3 — IMPLEMENTED, SAVED, FRESH-PROCESS REOPEN VERIFIED
+2026-10-06. Operator 01a1118e-256a-7d83-8a2b-ad3293e53281.
+
+RETAINED DELIVERY
+/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+/Game/Project/Shared/Atmosphere/ReusableSky/M_EnvironmentCelestial (new)
+/Game/Project/Shared/Atmosphere/ReusableSky/MI_EnvironmentCloudDefaults (Stage 2 unchanged)
+The shared Blueprint and celestial material are saved native assets, verified after a clean exit and fresh editor launch. Stage 4 portability and final integration are NOT complete.
+
+IMPLEMENTED
+One integrated actor reuses the existing sun, atmosphere, sky light, clouds and UpdateSky path. Added one aligned movable moon directional light and one opaque IsSky celestial dome. Moon enable, light/disk brightness, artistic phase and angular diameter; stars enable and brightness; continuous elevation-based twilight/night fades; optional runtime time progression, pause and adjustable day length, OFF by default. Grouped controls and callable setters are documented in CONTROL_INTERFACE.json. No custom control window.
+UpdateSky -> ApplyWeather -> UpdateNight -> ApplyNightMaterial coordinates lighting. Native index1 moon disk is suppressed so the material supplies one visible moon. Moon illumination aligns with its disk. Per-instance transient cloud/celestial material instances are reconstructed on load and reused. Native volumetric clouds obscure the moon and stars. Existing exposure remains authoritative, with OverrideExposure=false.
+Final defaults: MoonBrightness0.006 lux; MoonDiskBrightness0.04; MoonPhase0.5; MoonAngularDiameter1.2 degrees; StarBrightness0.02; NightSkyFill0.12; AnimateTime=false; DayLengthMinutes20. These are calibrated to this scene's existing exposure and Stage 1 sun level.
+
+MEASURED VERIFICATION
+Stage 1/2 saved receipts, hashes and native public controls were checked before authoring. Manager cc37d4d2 assigned this bounded turn in RESUME_MANAGER_RESPONSE.json. Commandlet34880 compiled/saved exactly M_EnvironmentCelestial with zero compile errors. Interactive authoring PID38224 saved the Blueprint and original Rimal map by exact names, with no dirty packages remaining. It exited cleanly. Fresh PID39400 read the saved controls, material and hashes before any mutation: Resume/REOPEN_VERIFIED.json.
+Regression: Clear, PartlyCloudy, Overcast and Hazy preserve time/manual/moon/star/progression choices; independent time/manual buffers preserved; enabling stars at noon leaves noon and zero star visibility; moon toggle/phase and star toggle verified; 50 UpdateSky calls retain 13 editor components and reuse material instances. Runtime has 10 components because editor-only billboards are absent. Actual Simulate on the assigned original map exercised a one-minute day, midnight wrapping and pause; paused Tick is disabled and editor time does not inherit simulation changes. Final clock solver passes seconds to SunPosition; HH:MM remains readable.
+Matching-camera native screenshots cover sunrise05:00, noon12:00, sunset18:30, twilight19:12, clear/partly/overcast night, half moon, moon off, stars off, and23:59/00:00 wrap. Fresh-process noon/night screenshots verify visible persistence. Smooth fade formulas and sampled transitions passed; no exhaustive frame-by-frame cinematographic sweep is claimed.
+All121 unrelated scene actors' measured transforms, component visibility and recorded lighting/fog settings match the before snapshot (122 actors total). No bank, terrain, building, road, Houdini, profile or vendor authoring occurred. Scene exposure was not changed. No Save All, disposable map, self-issued lease or manager identity change.
+
+SAVED VS REOPENED
+The first named Stage 3 Rimal map save (sha2566332f42f0a260163ac4b4c51882d5e6114be0ab0d11a41a42ffb521e6741d923) and the final Blueprint/material were reopened in PID39400 and verified. After that process's night verification, the original noon/PartlyCloudy/wind1 state was restored and the map alone saved again. That final map restoration was read back clean and hash-verified after exit, but was NOT reopened a third time. Blueprint/material hashes were unchanged by the restoration. Exact final hashes follow below and in Resume/FINAL_SAVE_RECEIPT.json.
+Both interactive editors exited cleanly; final PID39400 LogExit was2026-10-06T17:40:19.191Z. No shutdown saves. Resume/EXIT_PID39400.json records zero live editors and post-exit hashes.
+
+DEPENDENCIES AND REMAINING LIMITATIONS
+Engine native sky/cloud assets and installed SunPosition only; no PWL/MW dependency, no area/Rimal dependency. DEPENDENCIES.json records actual post-reload package references. Migration to another project, packaged-build/cook validation, broad platform testing and integration into retained GazaShujaiya are deferred to Stage 4. Manager reports Rimal will be retired by consolidation after release; its verification instance is not the retained shared deliverable. Shujaiya was NOT edited.
+Moon position/phase are artistic, not astronomical: moon is opposite the actual sun. Phase is user-selected; clock wrap retains the selected date. Automatic progression is Play/Simulate/runtime only; static editor changes update immediately. Manual Sun keeps its direction while the time buffer advances.
+Material compiler reports156 vertex/337 pixel instructions,2 samplers and3 pixel texture fetches. Static/paused actor Tick is disabled. These are measured implementation costs, not a GPU-frame-time benchmark; a controlled Balanced/High comparative performance sweep for the new dome remains unverified. Realtime viewport rendering and temporal settling are required for stable clouds/exposure. Existing scene ray-tracing memory-budget warnings were observed during some captures and were not repaired by this sky task. Other scenes may need appearance calibration to their exposure.
+
+EVIDENCE AND USE
+Open EVIDENCE.html for unretouched native viewport comparisons. QUICK_START.txt explains dragging one actor, conflict review before Rig Enabled, time/manual controls, moon/stars and runtime progression. Existing conflicting lighting actors are never automatically removed or disabled.
+Prior material-compile hangs and blocked status are preserved under Resume/PRIOR_BLOCKED_RESULT.txt and original incident receipts. The approved commandlet route resolved that implementation blocker; the old blocked receipt does not describe the current saved delivery.
+
+FINAL SHA256
+45cfc889687c833f43057c7c59f17e9b4ef35f3abb3b0ce671c1b8688870fd95  Content\Project\Shared\Atmosphere\ReusableSky\BP_EnvironmentSky.uasset
+58dccecab8af077559a308ec88d2196b297464c8bab952ab11fb9764c0c85270  Content\Project\Shared\Atmosphere\ReusableSky\M_EnvironmentCelestial.uasset
+aad6376e03aaae2e601ae1c98d4f09f97c348be16fca02fcadc5bafcfb6000af  Content\Project\Shared\Atmosphere\ReusableSky\MI_EnvironmentCloudDefaults.uasset
+b9697514fd9be56e446a7d238db24d7e7d2eabea7808f5150ddcf908fef7d7eb  Content\Project\Areas\GazaRimal\BankIntegration_v015\L_GazaRimal_BankIntegration.umap

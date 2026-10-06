@@ -1776,3 +1776,7 @@ Assessment (INFERRED from the measured facts in 10.1):
 - The `.uproject` EngineAssociation change to `5.8` applies in every variant.
 
 **Decision (Aviv, 2026-10-06 ~16:10Z, DOCUMENTED):** the Git repository holds the Unreal project with the bank only, as a viewer of the saved GazaShujaiya environment. The GIS acquisition and Houdini trees stay out of Git for now. The small "can still regenerate" add-on in 10.4 (SourceData packages + Houdini install + relative profile paths) is not decided. This closes open question 25 as "Unreal-only for now".
+
+## 11. Execution record (added 17:25Z)
+
+The owner's decisions in sections 9 and 10 were executed by the review session on 2026-10-06 from 16:30Z on Aviv's direct instruction. The step-by-step record, receipts and the deletion plan are in `EXECUTION_LOG.md`, `Deleted/*.tsv` and `DeletePlan/` next to this file. First local commit 18473fb9 (24,102 files, 12,574 LFS objects). GazaRimal and the Sky Stage 3 folder follow in the second commit after the Sky operator releases. Classifications in section 3 describe the tree BEFORE these deletions.

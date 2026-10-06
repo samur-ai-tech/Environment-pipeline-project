@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "entry_asset": "/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky",
+  "status": "SAVED_FRESH_REOPEN_VERIFIED",
+  "single_update": "UpdateSky",
+  "setters": {
+    "SetSkyTime": {
+      "Hour": "float, modulo24; leaves ManualSun unchanged"
+    },
+    "SetMoonAppearance": {
+      "Enabled": "bool",
+      "LightBrightness": "float lux",
+      "DiskBrightness": "float relative luminance",
+      "Phase": "float0..1 artistic:0=new,.25=half,.5=full,.75=half,1=new"
+    },
+    "SetStarAppearance": {
+      "Enabled": "bool",
+      "Brightness": "float relative luminance"
+    },
+    "SetTimeProgression": {
+      "Enabled": "bool",
+      "Paused": "bool",
+      "DayMinutes": "float full24h duration"
+    },
+    "AdvanceSkyTime": {
+      "DeltaSeconds": "float; runtime progression path, only when enabled and unpaused"
+    }
+  },
+  "rules": [
+    "No custom window in Stage3.",
+    "All setters call the same UpdateSky; future panels use these setters.",
+    "Weather presets preserve clock/manual/moon/star/progression choices.",
+    "Star toggle never changes TimeOfDay.",
+    "Static/pause states disable actor Tick.",
+    "Runtime progression only; editor slider changes remain immediate.",
+    "Artistic moon follows opposite actual solar direction; phase appearance does not imply ephemeris.",
+    "Existing scene exposure stays authoritative unless existing OverrideExposure is enabled.",
+    "Native night sky owns exactly one moon disk; index1 default atmospheric disk is suppressed.",
+    "The night dome composes native sky view and sun disk with moon/stars behind native volumetric clouds."
+  ],
+  "verification_receipts": [
+    "Resume/REGRESSION_VERIFICATION.json",
+    "Resume/REOPEN_VERIFIED.json",
+    "Resume/RUNTIME_paused.json"
+  ]
+}

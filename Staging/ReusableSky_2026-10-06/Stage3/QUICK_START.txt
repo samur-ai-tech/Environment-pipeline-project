@@ -1,0 +1,21 @@
+Reusable Sky — Stage 3 controls
+
+Asset: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+
+Place one actor. The asset defaults to Rig Enabled=false so it can report existing sun/sky/cloud conflicts before activation. Resolve the named conflicting systems deliberately; this package does not modify other actors automatically. On the assigned Rimal verification map, the existing EnvironmentSky actor already owns the active sky.
+
+01 Time and Sun: drag Time Of Day from 0 to 24; Clock Display shows HH:MM. Date, latitude/longitude, time zone, daylight saving and north remain in their existing groups. Manual Sun uses its separate direction/elevation values; changing time does not overwrite them.
+
+09 Moon: Moon Enabled toggles both the visible disk and moonlight. Moon Brightness controls the light (default0.006 lux), Moon Disk Brightness the visible disk (default0.04). Moon Phase:0/1=new,0.25/0.75=half,0.5=full. Moon Angular Diameter defaults1.2 degrees. Position is opposite the actual sun direction; phase is artistic and does not claim lunar astronomical accuracy.
+
+10 Stars: Stars Enabled and Star Brightness (default0.02). Stars fade from sun elevation-4 to-12 degrees. Enabling stars at noon leaves noon unchanged and the stars faded out.
+
+11 Time Progression: Animate Time is OFF by default. Enable it for Play/Simulate/runtime, use Time Paused to stop, and Day Length Minutes to set a complete24-hour cycle (default20minutes). It wraps the clock at midnight while retaining the chosen calendar date. Manual Sun continues to hold its manual direction even when the time buffer advances. Static/paused settings disable actor Tick. Editor property edits update without Play; automatic editor-clock progression is deliberately not provided.
+
+12 Night Advanced: Night Sky Fill scales the existing Sky Intensity at night (default0.12). Moon and star appearance depend on scene exposure. Existing scene exposure stays authoritative while Override Exposure=false. The package does not change global exposure CVars, existing volumes or the original fog actor. Use the existing explicit exposure override only when you choose to replace scene exposure.
+
+Cloud controls and Clear/Partly Cloudy/Overcast/Hazy presets stay in the Stage2 groups. Weather preserves time/date/location/north/manual and moon/star/progression choices. Native volumetric clouds obscure the celestial dome. For visible cloud motion and stable cloud reconstruction in the editor, keep viewport Realtime on; a stopped/throttled viewport can show incomplete cloud reconstruction.
+
+Future side-panel interface: call SetSkyTime, SetMoonAppearance, SetStarAppearance, or SetTimeProgression. Direct runtime property changes must be followed by UpdateSky. All these functions feed the same coordinated light/weather/night path; do not set component light intensities independently.
+
+Status and limitations: see RESULT.txt and native receipts. No custom window was built. Stage4 portability and final integration into the retained GazaShujaiya scene are not part of this delivery. The manager assigned original Rimal for verification and reports that consolidation will retire it after the sky editor releases it; the shared sky assets are the retained deliverable.

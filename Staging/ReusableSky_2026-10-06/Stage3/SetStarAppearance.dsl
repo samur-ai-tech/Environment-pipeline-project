@@ -1,0 +1,1 @@
+(fn SetStarAppearance (Enabled Brightness) (Variables|10Stars|SetStarsEnabled Enabled) (Variables|10Stars|SetStarBrightness (Math|Float|Clamp(Float) Brightness 0.0 100.0)) (CallFunction|UpdateSky))

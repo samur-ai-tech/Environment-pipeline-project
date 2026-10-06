@@ -1,0 +1,35 @@
+REUSABLE SKY STAGE 3 — BLOCKED, NOT DELIVERED
+2026-10-06. Operator chat 01a1118e-256a-7d83-8a2b-ad3293e53281.
+
+RETAINED SAVED ASSET (STAGE 2 BASELINE)
+/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+The saved Blueprint and original Rimal map still contain the prior Stage 1/2 delivery. Stage 3 native changes have NOT been saved or reopened. Do not describe this package as Stage 3 complete, or as fully portable/integrated before Stage 4.
+
+COORDINATION
+Stage 1/2 receipts and saved package hashes were read, then native public controls were inspected after designated manager cc37d4d2 assigned the editor. MANAGER_RESPONSE.json, STAGE2_HANDOFF.json, ASSIGNMENT.json and PREFLIGHT_PID9828.json record authority and preflight. Initial Stage3 PID29940 hung during MaterialEditingLibrary.recompile_material; RECOVERY_RESPONSE.json permitted exactly one replacement, with a mandatory stop on repetition. No legacy editor-owner lease or manager identity was self-issued.
+
+MEASURED IMPLEMENTATION IN UNSAVED EDITOR MEMORY
+The existing Blueprint compiled with warnings-as-errors after adding one MoonLight, one CelestialDome, grouped moon/star/progression controls, and the coordinated UpdateSky -> ApplyWeather -> UpdateNight -> ApplyNightMaterial path. Existing sun, sky, atmosphere and clouds were reused. New setters are documented in CONTROL_INTERFACE.json. An opaque unlit IsSky material graph and artistic procedural moon/stars shader were constructed. Moon disk and illumination direction readbacks aligned; built-in index1 atmosphere disk was suppressed. Midnight readback gave sun elevation -34.90005 degrees, sun intensity 0, moon intensity 0.05, sky fill 0.08 and NightBlend 1. Static actor Tick was disabled. Component counts were 13 and scene actor count remained 122. These observations are NOT proof of visual correctness or persistence.
+
+FAILED VISUAL/SHADER ACCEPTANCE
+Evidence/night_initial.png, night_warm.png and night_moon_direction.png are diagnostic failure captures, not accepted night delivery. The sky appeared blue and neither the intended moon nor stars was demonstrated. Material statistics returned zero compiled shader instructions. Initial property toggles had not established a working shader. A narrower explicit property-change notification then blocked replacement PID9828 as well. Native authoring stopped under the manager's recovery instruction; no third editor was launched.
+
+SAVED / REOPENED
+Stage3 native saves: NONE.
+Stage3 fresh reopen verification: NOT PERFORMED.
+Named Stage1/2 BP, cloud MI and Rimal packages remained byte-identical to their baselines at the repeat-hang check (REPEAT_HANG_HASHES.json). Vendor SunSky also matched. The .uproject differed from the initial baseline, with mtime16:37:22Z before replacement startup; this task did not intentionally change it and its change provenance is unverified. See REPEAT_HANG_MANAGER_CORRECTION.txt. No restore or overwrite was performed. No bank, catalog, ground, building, road, Houdini or geographic asset was intentionally edited by Stage3; no generation or Save All was invoked.
+
+PREPARED AND RETAINED IN STAGING ONLY
+Celestial.hlsl, generated .dsl graphs, build_night.py, create_foundation_recovery.py, refine_dome.py, controls.py and native readbacks preserve the implementation work for diagnosis. Do not rerun creation scripts over a partially modified Blueprint: they add components and function pins and are not idempotent. Use the unchanged Stage2 asset as the baseline after a fresh manager assignment. This source preparation does not substitute for requested saved native assets.
+
+NOT VERIFIED
+Visible moon/stars; phase appearance; cloud occlusion; matching-camera accepted day/night comparison; sunrise/sunset/night visual transitions; midnight-wrap continuity; runtime automatic progression and pause; all public setter calls; Stage1/2 regression under final Stage3; repeated-update component stability; performance; fresh reopen persistence; portability/integration. Existing scene exposure was not overridden. Lunar direction/phase design is artistic, not astronomical. Runtime progression design wraps a fixed calendar day; it does not yet advance the date.
+
+USAGE NOW
+Continue using the saved Stage1/2 BP_EnvironmentSky and its existing time/manual-sun/weather controls. New Stage3 moon/star/progression controls are not available in the retained asset. Stage2/EVIDENCE.html remains the prior weather delivery, not Stage3 evidence.
+
+EDITOR DISPOSITION
+Manager explicitly approved termination of PID9828 in REPEAT_HANG_MANAGER_RESPONSE.json. Only that process was terminated; this was a forced close, not a clean shutdown. CLOSE_RECEIPT.json at17:00:06Z confirms no UnrealEditor processes, PackageRestoreData.Packages=[], only the original two saved sky assets present, and unchanged BP/cloud MI/Rimal/vendor hashes. Unsaved Stage3 native changes were lost; their source reconstruction and measured readbacks remain in staging. ASSIGNMENT.json is BLOCKED_RELEASED with editor_live=false. No restart or third attempt occurred. The temporary in-process background-throttle preference could not be restored through the hung editor; startup used NoSaveConfig.
+
+PROJECT DESCRIPTOR CLARIFICATION
+The manager compared the prior descriptor and found EngineAssociation changed from a GUID to "5.8"; SunPosition remains enabled. Provenance is for the manager to reconcile. This task did not overwrite or restore that descriptor.

@@ -1,0 +1,12 @@
+import json,os,collections
+from pathlib import Path
+r=Path(unreal.Paths.project_dir()).resolve()/'Staging/ReusableSky_2026-10-06/Stage3';req=json.loads((r/'REQUEST.json').read_text(encoding='utf-8-sig'))
+sub=unreal.get_editor_subsystem(unreal.EditorActorSubsystem);a=next(a for a in sub.get_all_level_actors() if a.get_name()=='BP_EnvironmentSky_C_0')
+if req.get('preset'):a.call_method(req['preset'])
+for k,v in req.get('values',{}).items():a.set_editor_property(k,v)
+if req.get('call'):a.call_method(req['call'],tuple(req.get('args',[])))
+keys=['TimeOfDay','ClockDisplay','Year','Month','Day','Latitude','Longitude','TimeZone','UseDaylightSavingTime','NorthOffset','ManualSun','ManualDirection','ManualElevation','SunIntensity','SkyIntensity','CloudAmount','CloudSpeed','CloudDirection','Haze','HighQuality','WeatherPreset','MoonEnabled','MoonBrightness','MoonDiskBrightness','MoonPhase','MoonAngularDiameter','StarsEnabled','StarBrightness','AnimateTime','TimePaused','DayLengthMinutes','NightSkyFill','SunElevation','NightBlend','OverrideExposure','Status','ConflictActors']
+cs=a.get_components_by_class(unreal.ActorComponent);lights={c.get_name():{'intensity':c.intensity,'visible':c.is_visible(),'direction':[c.get_forward_vector().x,c.get_forward_vector().y,c.get_forward_vector().z],'index':c.get_editor_property('atmosphere_sun_light_index')} for c in cs if isinstance(c,unreal.DirectionalLightComponent)}
+mid=a.get_editor_property('CelestialMID');cloud=a.get_editor_property('CloudMID')
+RESULT={'pid':os.getpid(),'case':req['name'],'controls':{k:a.get_editor_property(k) for k in keys},'lights':lights,'tick_enabled':a.is_actor_tick_enabled(),'tick_interval':a.get_actor_tick_interval(),'component_classes':dict(collections.Counter(c.get_class().get_name() for c in cs)),'celestial_mid':str(mid),'celestial_parameters':{n:mid.get_scalar_parameter_value(n) for n in ['MoonLuminance','MoonPhase','MoonDiameter','StarLuminance','NorthRadians']},'moon_direction_parameter':str(mid.get_vector_parameter_value('MoonDirection')),'cloud_mid':str(cloud),'cloud_visible':a.get_component_by_class(unreal.VolumetricCloudComponent).is_visible(),'sky_fill':a.get_component_by_class(unreal.SkyLightComponent).intensity,'dome_visible':a.get_editor_property('CelestialDome').is_visible(),'actor_count':len(sub.get_all_level_actors())}
+(r/('CHECK_'+req['name']+'.json')).write_text(json.dumps(RESULT,indent=2))

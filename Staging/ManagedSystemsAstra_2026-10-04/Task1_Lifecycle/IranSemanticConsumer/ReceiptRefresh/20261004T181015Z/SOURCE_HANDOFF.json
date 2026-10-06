@@ -1,0 +1,87 @@
+{
+  "schema": "environmentpipeline.task1_semantic_lifecycle_patch.v1",
+  "utc": "2026-10-04T16:25:45.242482+00:00",
+  "status": "STAGED_FROZEN_READY_FOR_COMBINED_REVIEW_NATIVE_NOT_RUN",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "owner_thread_id": "01a106e8-ef65-78e0-aa96-f419393ebd6c",
+  "target": "Content/Python/geocity_bank_workflow.py",
+  "before_sha256": "f349d1289b8344e72339babddf80d538405a65a2ad31243ddc167d70b87022ce",
+  "candidate_sha256": "bf0ddff109964fe5c93a629bbcc149fb7887d317648f18dec8d2342c3c6d9c6f",
+  "patch_sha256": "0c132d16751b45e66430a0b3fdde2bb786311e9800611b2fc5a3925a292df633",
+  "active_runtime_manifest_sha256_preserved": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+  "active_runtime_modules_preserved": {
+    "Content/Python/geocity_bank_workflow.py": "f349d1289b8344e72339babddf80d538405a65a2ad31243ddc167d70b87022ce",
+    "Content/Python/geocity_editor_action.py": "1b13b051a053d74dba7d55e7be6c365aab500ad44dd12be096d9eb267f5ab16a",
+    "Content/Python/geocity_landscape_workflow.py": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+    "Content/Python/geocity_roadbld_clip.py": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+    "Content/Python/geocity_roadbld_grounding.py": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+    "Content/Python/geocity_roadbld_junctions.py": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+    "Content/Python/geocity_roadbld_landscape.py": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+    "Content/Python/geocity_roadbld_props.py": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+    "Content/Python/geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "Content/Python/geocity_roadbld_topology.py": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+    "Content/Python/geocity_roadbld_workflow.py": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+    "Content/Python/geocity_runtime_guard.py": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0"
+  },
+  "source_module_count_unchanged": 12,
+  "changes": [
+    "Existing prepare remains before configure. Validate its measured semantic_runtime_binding/native receipt against exact source, consumer, classified grid, material, provider and catalog hashes before complete Cook.",
+    "Official parameter inventory requires one string for new semantic_runtime_binding_json and configured building_rules_json; existing setter and exact getter readback run before sole recook. Missing definition interface or changed/malformed evidence fails closed.",
+    "Profile building_rules_json forwards full owner policy/content_input exact hashref; direct inline objects retain canonical wire digest, naked mutable filenames are rejected. Evidence remains qualified only by producer-owned qualification parser.",
+    "Legacy definition lacking both optional parameters remains compatible. If new parameters exist without profile contracts, clear stale semantic token and only stale building content_input; retain existing building defaults.",
+    "Producer owns detail semantic_surface_contract_json to ordinary catalog receipt transport. Lifecycle stores raw semantic receipt fields unchanged and verifies canonical digest/completion/source/auxiliary/provider/exclusivity/token acknowledgment; no guessed SOP read API or reconstructed contract.",
+    "Require producer building_content_input_sha256 echo and building_dependencies_complete=true when profile supplies rules. Preserve incomplete output evidence and refuse complete-area save.",
+    "Semantic verifier runs at cooked/pre-Bake readiness, completed Bake and final saved-area checks whenever landscape_semantics exists. Native-only provider contract rejects disabled/alternative setup; all existing120s waits, native counts, RoadBLD authority, scoped retirement and named saves stay intact."
+  ],
+  "installed_api_evidence": {
+    "file": "Plugins/HoudiniEngine/Source/HoudiniEngineEditor/Public/HoudiniPublicAPIAssetWrapper.h",
+    "sha256": "7e7782ea5a1dcad4c87cdfc97c4a9b781129d0b66a4c711bdda4173d6350569e",
+    "GetParameterTuples": "outputs FName -> FHoudiniParameterTuple with UPROPERTY StringValues array; read only",
+    "SetStringParameterValue": "returns true if set OR already equal; marks changed for next cook, existing auto-cook disabled before complete recook",
+    "python_native_call_verified": false
+  },
+  "interfaces": {
+    "Staging/PipelineSemanticRepair_2026-10-04/Completion/INTERFACE_CONTRACT.json": "f63dc0e2b3add986215595e66e02e95448156318e3cb5e0f4c310bca1a103c07",
+    "Staging/ManagedSystemsAstra_2026-10-04/Task3_GroundGrass/IranSemanticConsumer/INTERFACE_FROZEN_DECISION.json": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+    "Staging/IranBuildingAdaptation_2026-10-04/ConsumerIntegration/INTEGRATION_MANIFEST.json": "4edfc0cebe9b0a6582d7e34aaad40ca606e73557164945f5c66c901bc2e7579d"
+  },
+  "cross_owner_dependencies": {
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\geocity_landscape_workflow.py": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\semantic_consumer_extension.py": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\INTERFACE_FROZEN_DECISION.json": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json": "6dccbcb0d2e6d7341be93614eeab7dea7aa29c7df60c62efcd99fbc47fc35176",
+    "Staging\\PipelineSemanticRepair_2026-10-04\\Completion\\semantic_consumer_extension.py": "d81e2c3a5b980913f7dedcd701cceab42cc0006e9a78cdc6e64327a461369a4c",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\evidence_contract.py": "515f52068e40b1aec145766dc811bd88cca8271650ee67cd04343179049521ee",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\INPUT_CONTRACT.json": "0c13e23d38e8b1e963fe8b015f7aacc7a8b95c1a292ed61d141d507be27ca012",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\INPUT_CONTRACT_COMBINED.json": "358f5dae4916f6669bc022b034c5fb51367aca03a8fd58da53c195cc6e7afc96",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\SOURCE_BINDING.json": "4ba6ffe2acebe77566c47f56019d263797f39aad486f8cfeb1e75fa7820e013d"
+  },
+  "offline_checks": 54,
+  "focused_checks": 36,
+  "retained_regressions": 18,
+  "test_evidence": "Actual source hashes and actual owner production functions; classified sample has synthetic geometric masks, native preparation readback is fake and labeled. No native ready token produced for operational use.",
+  "profile_patch": "PROFILE_INTERFACE_PROPOSAL.json (not applied); Task3 semantic profile proposal must be merged jointly by root",
+  "runtime_written": false,
+  "manifest_resealed": false,
+  "profiles_written": false,
+  "hda_written": false,
+  "editor_actions": false,
+  "remaining": [
+    "Root independent review and one combined-definition integration in producer/building-defined order; exact parameter interface must exist in promoted same-type HDA.",
+    "Root reviews/merges exact current-source building and semantic profile proposals; no unqualified building, unknown survey or hold is waived.",
+    "Root sole-writer source integration/seal/fresh startup and actual-PID activation. Test installed Python parameter-map/readback on that exact HDA before full native Cook.",
+    "Native prepare/material/Grass/source probes, complete output, named save/fresh reopen/regenerate, Lit pixels and user acceptance remain NOT RUN by this patch."
+  ],
+  "files": {
+    "geocity_bank_workflow.py": "bf0ddff109964fe5c93a629bbcc149fb7887d317648f18dec8d2342c3c6d9c6f",
+    "lifecycle_helpers.py": "4eb27b19f238cd758c7e947580d3c68c96b7ff3a1aa1362e3786d644cb90018b",
+    "lifecycle_methods.py": "72d6c61e69908b4563ea06864e0e7b965512075d8c004e57bfc7225e0e7125d0",
+    "build_candidate.py": "db3e8f0f47e44223a3f840e205350be9fe843dc201df9b2fac212aa0837f94d5",
+    "SOURCE_PATCH.diff": "0c132d16751b45e66430a0b3fdde2bb786311e9800611b2fc5a3925a292df633",
+    "verify_candidate.py": "9102a3f71374d839ea0012a36712b773f89178ada6e6765d711161fc33baba8c",
+    "verify_baseline.py": "1e015faa71c320d382e1b6c4650dc805aa9c9fefc705ccdfc84034c3c0233805",
+    "SOURCE_CHECKS.json": "e30a98d6a0659b9f4cdd8291f6ae1e896f2f26787c61fa094886201d6aef7f4b",
+    "BaselineRegression/SOURCE_CHECKS.json": "af8c8fe599c68451bf3da418e673cff44cabbead07a4716ffdfb4a11986c7f03",
+    "PROFILE_INTERFACE_PROPOSAL.json": "1d0098099f95a4f8cade56018727804117ca1cd5341e220305d31688b36bee2c"
+  }
+}

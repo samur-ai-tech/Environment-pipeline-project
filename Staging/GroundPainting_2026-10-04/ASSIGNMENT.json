@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "title": "Ground painting and material appearance in the original areas",
+  "created_utc": "2026-10-04",
+  "project": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline",
+  "coordinating_thread_id": "01a10864-8261-76a1-a118-0cb0c1894739",
+  "consultation_thread": {
+    "id": "01a10867-8f39-7833-b52a-3035aa804ce8",
+    "title": "Find Houdini to Unreal resources"
+  },
+  "execution_thread_id": "01a10883-481f-7723-bdaa-fed004f15ef1",
+  "authority": {
+    "direct_user_request": "אני רוצה שתבין מה יכול לפתור כל דבר אבל אני רוצה ממש להבין איך כל דבר הולך להפתר ואני רוצה להתחיל בציביה של הקרקה אני רוצה שתעזר בציט השני ותחשבו ביחד על תוכנית רק לזה ואז תפחה שחיה אם ההרות הכי ברורת ושהיא תעשה את זה עד הסוף אם היא צירך צביאם שהיא תביא לעצמה צבעים אני רוצה לראות את זה עובד",
+    "interpreted_scope": "Consult the second research chat, then create one execution chat that completes ground painting/material appearance and obtains or authors the necessary colors. Show the working result.",
+    "narrow_native_authorization": "The new execution chat is the sole designated writer for this ground-only task after fresh preflight and an exact actual-PID lease. Fresh paused original-map startup, scoped ground material/binding edits, named saves and fresh-process reopen are authorized. Routine steps need no renewed permission.",
+    "old_stop_boundary": "Old bank/system workers and full generation remain stopped. Historical activations do not authorize any broader work.",
+    "ordinary_generation_authorized": false
+  },
+  "desired_result": [
+    "Visibly natural textured ground in original GazaShujaiya and then GazaRimal: appropriate near texture scale, restrained sand/soil tones, credible layer transitions and deterministic broad variation without obvious grid repetition.",
+    "A retained material route in the existing pipeline, with per-area appearance overrides, original vendor textures/materials preserved and explicit material/map persistence.",
+    "Matched Lit before/after close, middle and wide views, plus fresh-process reopened views, exposed to the user with absolute local image paths.",
+    "Explain what each change solved; compilation and parameter numbers alone are not completion. User visual acceptance remains distinct."
+  ],
+  "original_maps": {
+    "GazaShujaiya": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "GazaRimal": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration"
+  },
+  "material_contract": {
+    "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural",
+    "base_instance": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "area_instances": {
+      "GazaShujaiya": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+      "GazaRimal": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround"
+    },
+    "target_layers": {
+      "Ground": "Sand_01",
+      "Steep": "Sand_02",
+      "RoadBed": "Dirt_Path",
+      "BuildingPad": "Sand_Path"
+    },
+    "preparation_coupling": "Content/Python/geocity_landscape_workflow.py enforces Natural master/base and area-child parent. It resets area parent and GeoCity_GrassCoverage but does not clear unrelated appearance overrides. Keep these exact routes and existing Grass graph/parameters. Do not call prepare() for a color-only change; it authors Grass.",
+    "known_current_disk_observation": "Shujaiya area MI package exists. Rimal intended area MI package was not present in a read-only disk check; inspect the actual bound material before creating its intended child and preserve resolved appearance, normals and Grass settings.",
+    "retained_controls": [
+      "*_TileCm",
+      "*_Tint",
+      "*_Roughness",
+      "Ground_MacroTileCm",
+      "Ground_MacroTile2Cm",
+      "Ground_MacroOffsetCm",
+      "Ground_MacroContrast",
+      "Ground_SoilBlendStrength",
+      "Ground_MacroMask",
+      "Ground_MacroSoilAlbedo",
+      "Ground_MacroSoilNormal"
+    ],
+    "historical_reference_values": {
+      "Ground_MacroTileCm": [
+        3600,
+        3600,
+        3600,
+        1
+      ],
+      "Ground_MacroTile2Cm": [
+        5700,
+        5700,
+        5700,
+        1
+      ],
+      "Ground_MacroOffsetCm": [
+        1700,
+        2900,
+        0,
+        0
+      ],
+      "Ground_MacroContrast": 3,
+      "Ground_SoilBlendStrength": 0.6
+    },
+    "warning": "Historical values are reference evidence, not required final colors or confirmed live values. The existing macro system must be inspected and refined, not assumed absent."
+  },
+  "execution_sequence": [
+    "Read current AGENTS, CURRENT_STATE, WORK_PLAN, latest USER_STOP reports and EDITOR_OWNER last line. The narrow direct user authorization above supersedes STOP only for this new task. Do not reactivate old workers or broad work.",
+    "Check current processes and ownership. Root measured zero UnrealEditor/Houdini/HARS processes at 2026-10-04T19:55:00.4061534Z; verify again. PID30328 is historical. Prepare/reuse the safe paused original-map launch only after validating the exact resolved path and SHA256 of every runtime-loaded module against a reviewed manifest. Obtain independent read-only review using a subagent when needed. No hot reload. Record the new exact sole-PID ground-only lease before native mutations; authorized routine lease/startup/reopen transitions do not await old-manager reactivation.",
+    "Use supported installed MCP/native APIs and standard Unreal material operations. Capture actual world, all Landscape identities/ownership/material assignments, dirty packages, paused HDA/automatic settings and callbacks. Preserve multiple saved Landscapes where present; identify the authoritative target, do not delete others. No implicit HDA cook.",
+    "Capture comparable Lit close/middle/wide baseline images, camera transforms and existing lighting/exposure. Read actual resolved parent chain, four layer weights, selected texture/normal bindings and appearance parameters. Distinguish wrong binding, texture scale, tint, weak/harsh macro variation and layer transitions before editing.",
+    "Back up exact project-owned package files and selected appearance parameters before edits. Begin with appearance overrides on the intended area MI. Repair a wrong ground material binding and create Rimal's intended child only if required, preserving current resolved appearance/normal/Grass values. Prefer area-instance overrides; keep shared base MI values unchanged unless a demonstrated ground defect requires a shared change, because base edits affect both areas.",
+    "Choose restrained dry sand/soil tones appropriate to the existing environment; tune physical texture scale, layer tint and validated roughness/normal response. Add broad restrained deterministic variation using the existing 36/57 metre macro controls as a starting point. Avoid bright blanket yellow/green, crushed dark patches, muddy normals and obvious repeated grids. Inspect close transitions as well as the distant result.",
+    "Use current owned native textures first. Colors can be authored directly as parameters. Author bounded project-owned procedural/derived masks or textures if needed. A measured remaining need may use a suitable clearly licensed free source; record exact URL/license and use only within that license, without purchases, login/license actions or bank-wide registration. Do not wait for the user to supply colors. Do not use Pegasus' unrelated island image or blindly import its incomplete sample material.",
+    "Only if the retained controls demonstrably cannot achieve the required ground result, make the smallest bounded change to the project-owned Natural graph, with exact backup and independent review. Preserve master/base/area paths, all existing layer names and corrected normal copies, Grass output/nodes/settings and non-ground branches. Verify packed-channel semantics before changing Roughness/AO/height. Contrast cannot spatially soften a binary geographic weight edge; diagnose this honestly. Preserve heights and geographic weight data; report any upstream mask defect precisely instead of hiding it with color.",
+    "Finish Shujaiya, then apply and judge suitable area overrides in Rimal. Save only enumerated reviewed ground material/dependency packages and the original named map/external packages actually needed for that assignment; verify diffs stay within ground scope. Never Save All, save_assets([]), or unrelated dirty packages. Enumerate external packages first and restrict them to identified Landscape material-assignment packages. Unexpected dirty HDA/building/road/Grass actor packages must be investigated and preserved, not swept into the ground save list.",
+    "Close cleanly and reopen each original map in a fresh editor process under renewed exact-PID narrow lease. Do not Cook/Bake or regenerate. Verify bound material, resolved overrides and saved appearance; capture matched reopened Lit views. Retain the ordinary preparation-compatible bindings. Static source compatibility is evidence; combined ordinary generation remains NOT_RUN.",
+    "Leave a documented clean paused original-map handoff and release authoring ownership. Deliver an English RESULT.txt/RESULT.json, named save/readback/reopen receipts and user-visible image links, with short Hebrew explanations of the changes and any actual unresolved issue. Persist through routine failures; do not stop at a plan/inventory/compile or offer to implement later."
+  ],
+  "forbidden_scope": [
+    "Houdini source/HDA edits, exports or promotion; official Engine Cook/Bake; Tools Generate/Regenerate Current Area or any full workflow invocation.",
+    "Building/road/RoadBLD/sidewalk geometry, props, vegetation/Grass authoring, lighting redesign, global catalogue eligibility/holds/rights or source/profile migrations.",
+    "New projects, alternate/test maps, disposable pilots, blanket inventories, duplicate execution chats or restarting old workers.",
+    "Vendor/native original mutation, unknown-actor cleanup, approval of the 87 held/unvalidated road candidates, bulk deletion, Save All, Linear, purchases or authentication/license bypass."
+  ],
+  "completion_evidence": [
+    "Both original areas have visibly improved ground under existing Lit lighting in close/middle/wide views.",
+    "Ground layer roles and exact material parent routes are preserved; selected textures/normals and overrides read back correctly.",
+    "Named packages and original maps are saved and the result survives fresh-process reopen in both areas.",
+    "No out-of-scope building/road/Grass/source/catalog changes; scoped backup/diffs and clean final ownership are recorded.",
+    "User receives actual images and a causal explanation. User acceptance and full pipeline regeneration are explicitly separate."
+  ],
+  "evidence_to_read": [
+    "Staging/AppearanceRepair_2026-10-03/GROUND_PAINTING_RESULT.md",
+    "Staging/AppearanceRepair_2026-10-03/GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+    "Content/Python/geocity_landscape_workflow.py",
+    "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+    "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+    "Staging/ManagedSystemsAstra_2026-10-04/USER_STOP_STATUS_REPORT_2026-10-04.txt",
+    "Staging/BankIntegration_2026-10-04/STOP_REPORT_20261004T182506Z.md"
+  ],
+  "destructive_historical_script_warning": "Do not rerun prepare_appearance_materials.py: it deletes all material expressions. Historical repair scripts are evidence only and must not be blindly executed.",
+  "mechanism_references": [
+    "https://www.sidefx.com/tutorials/project-pegasus-create-a-landscape-color-map/",
+    "https://www.youtube.com/watch?v=5ju7wyvZGBI&t=720s",
+    "https://www.youtube.com/watch?v=5ju7wyvZGBI&t=1000s",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/landscape-materials-in-unreal-engine"
+  ],
+  "communication": "Simple Hebrew progress and user-facing explanation/images; English saved project documents. Continue to completion within this finite ground-only scope."
+}

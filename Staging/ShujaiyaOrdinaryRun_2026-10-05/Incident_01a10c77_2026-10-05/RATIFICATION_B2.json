@@ -1,0 +1,44 @@
+{
+  "schema": "environmentpipeline.manager_ratification.v1",
+  "utc": "2026-10-05T19:58:36Z",
+  "manager": "Claude Code session cc37d4d2-3d62-4f53-b689-28432b5527ae",
+  "decided_by": "Aviv (question window, 2026-10-05 evening)",
+  "ratified_baseline_B2": {
+    "runtime_manifest": {
+      "path": "Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json",
+      "sha256": "258469e14df2ca2e5e2b0c6543bf42e29c1fcde3d1628f7d258a607ee6d03024"
+    },
+    "geocity_roadbld_props.py": {
+      "sha256": "2bf41ec3732b8128c3769c757e8c62194d3b422bb06766b2a826bb48c083eeb9",
+      "change": "PropSpawnerSettings compatibility (settings struct stored directly in PropSpawners array); resealed 15:47Z by chat 01a10c77 without record; ratified now"
+    },
+    "native_hda": {
+      "path": "Content/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank.uasset",
+      "sha256": "2358c514baeba04e79d26a27d47ca933c1e8678dd3b9733d3879da410e22fe09",
+      "note": "v002 modular source families derivative"
+    },
+    "shujaiya_profile": {
+      "path": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+      "sha256": "1328d5bbdf0005bbb5b4b7ede85269c0d203beca361e193e0c9fd0edb0478b39"
+    },
+    "rimal_profile": {
+      "path": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+      "sha256": "e136df324df3c13fc655a119e4844bd508eba6bcb11ec90b99755a1a648f9acc"
+    },
+    "shujaiya_map": {
+      "sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+      "note": "Aviv menu regeneration 18:43Z + Astra inspection cameras saved 18:54Z"
+    },
+    "master": {
+      "sha256": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104"
+    },
+    "shujaiya_mi": {
+      "sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228"
+    },
+    "rimal_mi": {
+      "sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+    }
+  },
+  "proof": "18:43Z ordinary menu regeneration: 398/398 buildings, 267 new-kit buildings / 3,589 module instances / 9 v002 families, 468 obsolete baked actors removed, 1 Landscape, map clean, reopened.",
+  "rule_from_now": "Every further change to HDA, profiles, Content/Python or seal goes through the manager with a record; no self-issued leases."
+}

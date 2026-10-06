@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_components",
+    "arguments": {
+     "actor": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.007,
+ "isError": null,
+ "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable.HoudiniAssetCookableComponent\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_1\"}]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable.HoudiniAssetCookableComponent\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_1\"}]}"
+    }
+   ]
+  }
+ }
+}

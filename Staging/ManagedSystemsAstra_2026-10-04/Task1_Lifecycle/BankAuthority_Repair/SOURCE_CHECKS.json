@@ -1,0 +1,140 @@
+{
+  "checks": [
+    {
+      "check": "bank generation requires and accepts exact activated identities and scope",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation ordinary_generation_authorized=False",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation ordinary_generation_authorized=true",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation native_authorized_now=False",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation assigned_editor_PID=35085",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation map=/Game/Project/Areas/Test/MapWrong",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation manager_thread_id=other",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation bank_thread_id=other",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation scope_receipt=wrong",
+      "passed": true
+    },
+    {
+      "check": "bank rejects activation native_save_scope=['/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4', '/Game/Project/Shared/ModelBank/Prepared', '/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004', 'Named original dependencies/maps', '/Game/Other']",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease CODEX_MANAGED_SYSTEMS_STARTUP",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease AWAITING_MANAGER_ACTUAL_PID",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease operator_thread_id=other",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease manager_thread_id=other",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease PID=35085",
+      "passed": true
+    },
+    {
+      "check": "bank rejects altered lease map=/Game/Other",
+      "passed": true
+    },
+    {
+      "check": "task4 activated path remains valid",
+      "passed": true
+    },
+    {
+      "check": "parent guard accepts exact bank generation activation",
+      "passed": true
+    },
+    {
+      "check": "direct parent call rejects import-only bank activation",
+      "passed": true
+    },
+    {
+      "check": "direct parent call rejects paused startup identity",
+      "passed": true
+    },
+    {
+      "check": "public run rejects content-only bank before construction/history, Engine cleanup or registration",
+      "passed": true
+    },
+    {
+      "check": "public run rejects startup before construction/history, Engine cleanup or registration",
+      "passed": true
+    },
+    {
+      "check": "public run proceeds only after valid bank generation guard",
+      "passed": true
+    },
+    {
+      "check": "fresh official output works without paint-wait field and with landscape_0 suffix",
+      "passed": true
+    },
+    {
+      "check": "unknown loaded Landscape rejects road authoring",
+      "passed": true
+    },
+    {
+      "check": "missing or multiple current official Landscapes reject",
+      "passed": true
+    },
+    {
+      "check": "missing or multiple current official Landscapes reject",
+      "passed": true
+    },
+    {
+      "check": "source digest must match prior accounting and completed export",
+      "passed": true
+    },
+    {
+      "check": "prior paths must be owned by retained lifecycle ledger",
+      "passed": true
+    },
+    {
+      "check": "begin roads resolves freshly before build and passes bound callback",
+      "passed": true
+    },
+    {
+      "check": "unknown Landscape prevents provider build",
+      "passed": true
+    },
+    {
+      "check": "task2 consumer accepts real parent callback evidence and revalidation",
+      "passed": true
+    },
+    {
+      "check": "changed Python sources compile under Unreal bundled Python",
+      "passed": true
+    }
+  ],
+  "passed": 33,
+  "unreal_imported": false,
+  "native_execution": false,
+  "resealed": false
+}

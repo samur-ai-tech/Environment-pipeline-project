@@ -1,0 +1,66 @@
+{
+  "schema": "environmentpipeline.epic_resident_recovery_review.v1",
+  "status": "APPROVED_EPIC_RESIDENT_RECOVERY_CREATE",
+  "utc": "2026-10-05T08:57:54.914768+00:00",
+  "reviewer": "/root/visual_review",
+  "pid": 26820,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "helper_sha256": "e97858becfa1df6a405297779e32d224c49d1c32034d0d5dcb66f7d7b690d4bf",
+  "inspect_receipt_sha256": "1a9660146a90a0a241d306d6fbc0fcc9c45fa2b944ef59c5e2604e940b23e327",
+  "baseline_receipt_sha256": "ebb448e1ec38625b25f1e0f61ba2f040bf5350f384e2446c52dcf95382b0d772",
+  "plan_sha256": "ca022f90c571f9e77ebde9546545c998e85bd26e47494a41f7608f5618191d34",
+  "reference_receipt_sha256": "89a02abd7c180bdf6b37b0c2e4eaf43636c195f21d0b36afae1f853f22198024",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "source_manifest_sha256": "f73181be9b8ffc1ee499448dd986266ca5ebe76aab2b1a7e3bea52f06b7d202e",
+  "mutation_backup_sha256": "ef0bb74f6083a0c0aab36af33ee6c541c684fbaba960d3345cd3406ca7105465",
+  "held_copy_package_sha256": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+  "failure_receipt_sha256": "c1c36213025db1c11e67694f82a3f7b7c0be3747e9e3d97b2340b16037e177c1",
+  "origin_helper_sha256": "fa1721fdbd5cd8d36599bfd587adbf092dc2f2a2f018fd1522c5b662c4d953d7",
+  "approved_scope": {
+    "mode": "apply",
+    "reused_exactly_one": {
+      "source": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+      "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+      "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+      "disk_immediately_after_duplicate": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Ground_Gravel_D_GeoCityResident2K.uasset",
+        "exists": false
+      }
+    },
+    "create_missing_copies": 3,
+    "copy_property_changes_only": {
+      "never_stream": true,
+      "max_texture_size": 2048
+    },
+    "graph_changes": 0,
+    "material_binding_changes": 0,
+    "source_asset_changes": 0,
+    "explicit_compile_or_save": false,
+    "update_material_instance": false,
+    "global_force": false,
+    "pending_resource_sizes_are_not_readiness": true,
+    "separate_strict2048_inspection_and_bind_review_required": true
+  },
+  "review_evidence": {
+    "whole431line_helper_read": true,
+    "offline_ast_compile_no_execution": true,
+    "all_exact_input_and_inspection_hashes_checked": true,
+    "actual_inspect_before_after_equal": true,
+    "partial_failure_origin_explicitly_pinned": true,
+    "one_existing_and_three_absent_destinations_proven": true,
+    "no_copy_disk_files_exist": true,
+    "all1015nodes_instances_Grass_scene_CVars_original_files_preserved": true,
+    "native_calls_by_reviewer": false
+  },
+  "limitations": [
+    "Creation only: exact proven first copy is reused without mutation and only remaining three source copies are created.",
+    "All readable copy PBR fields retain original Epic values exceptNeverStream/Max2048. No original source, recipe, geometry, lighting, Grass or global settings change.",
+    "Creation may observe pending0/power-of-two resource sizes. They are not readiness approval; binding remains gated by new strict2048 inspection and exact SHA-bound bind review.",
+    "Prior failed helper and receipt remain immutable history. This recovery does not mark the prior failure successful.",
+    "Saving, actual Lit sharpness recovery, fresh-process persistence, reference quality and user acceptance remain pending."
+  ],
+  "save_approved_within_scope": false,
+  "visual_persistence_approved": false,
+  "user_acceptance": "PENDING"
+}

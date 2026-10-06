@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.01,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-12.837084770202637,\"y\":-17.898235321044922,\"z\":3.5086711136500526e-07},\"max\":{\"x\":16.559925079345703,\"y\":16.536567687988281,\"z\":74.401847839355469},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-12.837084770202637,\"y\":-17.898235321044922,\"z\":3.5086711136500526e-07},\"max\":{\"x\":16.559925079345703,\"y\":16.536567687988281,\"z\":74.401847839355469},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,3279 @@
+{
+  "expressions": [
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_10",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_10",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_17",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_72"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_10",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_16",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_15"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_3",
+      "class": "MaterialExpressionSaturate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_43"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_11",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_0",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_87",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_79"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_10",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Cloud_AlbedoColor",
+      "desc": "This is the apparent color of the clouds when they are not storm clouds.  The alpha channel of the parameter determines the strength of light occlusion for the material (and consequently how dense the shadows appear). ",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640A9578) {r: 0.980000, g: 0.980000, b: 0.980000, a: 0.500000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_17",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_47",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_4"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_9",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_24",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_20",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_6",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_3",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_9",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_2"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_18",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_26",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_5"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVolumetricAdvancedMaterialOutput_0",
+      "class": "MaterialExpressionVolumetricAdvancedMaterialOutput",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_10"
+      ],
+      "input_names": [
+        "PhaseG",
+        "PhaseG2",
+        "PhaseBlend",
+        "MultiScatteringContribution",
+        "MultiScatteringOcclusion",
+        "MultiScatteringEccentricity",
+        "ConservativeDensity"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_12",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_13",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_22",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_3",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_4",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_12",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_3"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_19",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_16"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_2",
+      "class": "MaterialExpressionCloudSampleAttribute",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionIf_1",
+      "class": "MaterialExpressionIf",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_5"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "A > B",
+        "A == B",
+        "A < B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_1",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_4",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_5",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTime_1",
+      "class": "MaterialExpressionTime",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_11",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Layout_WindControls",
+      "desc": "This vector controls the strength of the wind along each world axis (x, y, or z), the value for which may be positive or negative.  The alpha channel can be used to uniformly increase or decrease the strength of the wind.",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640A8678) {r: 1.000000, g: 1.000000, b: 0.500000, a: 0.333333}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_20",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_8",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_9"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_21",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_12",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_20"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_22",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_14",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_11"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_13",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_31",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_21"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_17",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_30",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_22"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_14",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_18",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_21",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_2",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_5",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_14",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_4"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_23",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_7",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_27"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_18",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_36",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_25"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_4",
+      "class": "MaterialExpressionSaturate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_24"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_24",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLength_1",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_7",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_1"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_6",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_28"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_1",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_6",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_1"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_2",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_8",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_2"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_9",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_2"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_25",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_13",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_12"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_0",
+      "class": "MaterialExpressionDivide",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionWorldPosition_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_1"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionWorldPosition_3",
+      "class": "MaterialExpressionWorldPosition",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_57",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "Layout_CloudGlobalScale",
+      "desc": "This parameter controls the distance over which the layout region textures ( GlobalCloudMask, and CloudGlobalPattern ) repeat (in km).",
+      "default_value": "256.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_1",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "scaled for clouds at a max height of 8km  maxVisDist = sqrt(h^2+2(6371*h))",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions01/Units/Km-to-Cm.Km-to-Cm' (0x000001A77AFFC1C0) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_57"
+      ],
+      "input_names": [
+        "Km"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_8",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_11"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_1",
+      "class": "MaterialExpressionDivide",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTime_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_26"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_12",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise2_Coordinates",
+      "desc": "This parameter set controls both the scale of the red channel of the Noise Texture as well as how strong an effect WindVelocity has on the this noise sample.  Noise2 controls the amount and scale of distortion for Noise1.",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AEAF8) {r: 60.000000, g: 60.000000, b: 75.000000, a: -6.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_13",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise3_Coordinates",
+      "desc": "This parameter set controls both the scale of the blue channel of the Noise Texture as well as how strong an effect WindVelocity has on the this noise sample.  Noise3 is added to Noise1 as an additional level of detail.  Noise3 also has an additional control (the MultChannel) which is used to modulate the existing noise by any combination of NoiseTexture channels.",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AF278) {r: 30.000000, g: 40.000000, b: 25.000000, a: 8.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_14",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise1_Coordinates",
+      "desc": "This parameter set controls both the scale of the green channel of the Noise Texture as well as how strong an effect WindVelocity has on the this noise sample.  Noise1 controls the primary breakup noise for the clouds.",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AF6F8) {r: 4.167000, g: 4.444000, b: 9.091000, a: 7.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureProperty_1",
+      "class": "MaterialExpressionTextureProperty",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_4"
+      ],
+      "input_names": [
+        "Tex"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_2",
+      "class": "MaterialExpressionDivide",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_10",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_57"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_10",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureProperty_1"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_26",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_2",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_19",
+      "class": "MaterialExpressionAdd",
+      "desc": "Add Noise3",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_27",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_23"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_24",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_17",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_29"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_27",
+      "class": "MaterialExpressionMultiply",
+      "desc": "Combine Noise3 MultChannel",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_18",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_37"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_3",
+      "class": "MaterialExpressionCloudSampleAttribute",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_3",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_29",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_19"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_2",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.MakeFloat3' (0x000001A6D5FF3700) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_25",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_25",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_35"
+      ],
+      "input_names": [
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_5",
+      "class": "MaterialExpressionCloudSampleAttribute",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_7",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_7",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_30",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_14",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_7"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_8",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_31",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_12",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_8"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_32",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionOneMinus_1"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionOneMinus_1",
+      "class": "MaterialExpressionOneMinus",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_25",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_32",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_27"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_59",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "Cloud_GlobalCoverage",
+      "desc": "This parameter determines the overall amount of cloud cover where positive values increase the amount of cloud cover, and negative values decrease the amount of cloud cover.",
+      "default_value": "-0.20000000298023224",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_26",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_59"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_27",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_59",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_5"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_17",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_19",
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_34",
+      "class": "MaterialExpressionMultiply",
+      "desc": "Weight By 2d Cloud Texture",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_11",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_30"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_12",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_6"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_6",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_10",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_10",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_4",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_26"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_7",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_12",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_30",
+      "class": "MaterialExpressionAdd",
+      "desc": "Blend Profiles + Volume Noise",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_11",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_11"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_18",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_7",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_19",
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_7",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_20"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_35",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_42",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_42"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_8",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_25"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_19",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_8",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_19",
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_36",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_13",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_3"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_37",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_18",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_6"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_1",
+      "class": "MaterialExpressionMax",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_4"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_2",
+      "class": "MaterialExpressionMax",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_4"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_3",
+      "class": "MaterialExpressionMax",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_5"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_4",
+      "class": "MaterialExpressionMax",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_19"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_15",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Layout_CloudType",
+      "desc": "This set of parameters control the visibility for each of the different cloud types individually ( r = stratocumulus, g = altostratus, and b = cirrostratus, a = nimbostratus ) ",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AF578) {r: 1.000000, g: 1.000000, b: 1.000000, a: 2.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_39",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_15",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_15"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_40",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_15",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_3"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_4",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.BreakOutFloat3Components' (0x000001A6D1300DC0) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_40"
+      ],
+      "input_names": [
+        "Float3"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_5",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.BreakOutFloat3Components' (0x000001A6D1300DC0) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_39"
+      ],
+      "input_names": [
+        "Float3"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_4",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "parameter_name": "Layout_CloudGlobalPattern",
+      "desc": "This texture defines the world location for each type of cloud where each channel describes a different cloud type  ( r = stratocumulus, g = altostratus, and b = cirrostratus, a = nimbostratus ).",
+      "inputs": [
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_20",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_101",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_25",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_5",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "parameter_name": "Noise_Texture3D",
+      "desc": "This texture is used to break up the shapes of the clouds for authoring their general form.  Each channel of the texture describes a different noise pattern the influence of which is determined by the Noise controls (r = Noise1, g = Noise2, and b = Noise3).  The texture has an alpha channel which is unused in the material. ",
+      "inputs": [
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_9",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_5"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_6",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "parameter_name": "Layout_CloudHeightProfile",
+      "desc": "This texture describes the shape of the clouds as the altitue changes.  Each channel of this texture describes the profile shape and relative altitude of a different cloud type ( r = stratocumulus, g = altostratus, and b = cirrostratus, a = nimbostratus )",
+      "inputs": [
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_10",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_6"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_19",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_20",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_21",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_22",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_8",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_25",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAbs_0",
+      "class": "MaterialExpressionAbs",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_8"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_42",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAbs_0",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_43",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionIf_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_17"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_47",
+      "class": "MaterialExpressionMultiply",
+      "desc": "Global Density",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_32",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_17"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_64",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "Cloud_GlobalDensity",
+      "desc": "This parameter controls the overall density of the cloud material, rendering them more opaque at higher values or hazier at lower values.",
+      "default_value": "0.00800000037997961",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_14",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_45"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_23",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_21",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_14",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_24",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_48",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_21",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_15"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_11",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_24",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_49",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDotProduct_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_50"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_32",
+      "class": "MaterialExpressionAdd",
+      "desc": "Add additive mask",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_49",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_34"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_50",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_8",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_7",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "parameter_name": "Layout_GlobalCloudMask",
+      "desc": "This texture can be used to add clouds to or remove clouds from the global pattern texture in the masked region.  Each channel of this texture applies to a different cloud type ( r = stratocumulus, g = altostratus, and b = cirrostratus ).  The alpha channel is unused.",
+      "inputs": [
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_11",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_20"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_12",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_20"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_22",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_11",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_19",
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_11",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionCloudSampleAttribute_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_27"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_12",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_98",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_66"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_66",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_12",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureObjectParameter_4"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_25",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_13",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_18",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_17",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_66"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_15",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_13"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_13",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_6"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_16",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_13"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_23",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_12",
+        null,
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_24",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_10",
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_26",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_21",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_38"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_12",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_21",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_33"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_51",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTime_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_9"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_33",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_51",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_9"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionPower_2",
+      "class": "MaterialExpressionPower",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_23",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20"
+      ],
+      "input_names": [
+        "Base",
+        "Exp"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_34",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_28",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_53"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_53",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_54",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_54",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_23",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_23"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_35",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_34",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_55"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_55",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_24"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVolumetricAdvancedMaterialInput_0",
+      "class": "MaterialExpressionVolumetricAdvancedMaterialInput",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_14",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_29",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_23"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_14",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_47"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_57",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_14"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_58",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_5",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_57"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_74",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_15",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant3Vector_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_63",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_74"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant3Vector_1",
+      "class": "MaterialExpressionConstant3Vector",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_16",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Storm_LightningColor",
+      "desc": "This parameter controls the color and (using the alpha channel) the brightness of the lightning flashes. ",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AF9F8) {r: 2.000000, g: 1.800000, b: 2.000000, a: 10.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_15",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_27"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_10",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_15",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_21"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_61",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_10",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_21"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_5",
+      "class": "MaterialExpressionSaturate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_61"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_62",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_16",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_16"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_63",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_62",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_96"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_16",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_58"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_78",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_16",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_6",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_77",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_78"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_17",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Storm_AlbedoColor",
+      "desc": "This is the apparent color of the clouds when they are storm clouds.  The alpha channel of the parameter determines the multiplicative factor for the shadow density (lower values result in darker shadows).",
+      "default_value": "<Struct 'LinearColor' (0x000001A7640AF878) {r: 0.300000, g: 0.337500, b: 0.375000, a: 0.333333}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionOneMinus_2",
+      "class": "MaterialExpressionOneMinus",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_64"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_64",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_67",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_21"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_67",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_21",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_21"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_72",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionOneMinus_2",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_79"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_79",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_17",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_30",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_24"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_80",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_77",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_6",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_8"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_18",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDotProduct_0",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_14",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_81"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_81",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "StormClouds",
+      "desc": "This parameter controls the strength of the blend from normal clouds to storm clouds, which have additional controls for albedo, occlusion,  distortion, and (optional) lightning effects.  ",
+      "default_value": "0.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_87",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_17",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_0"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_36",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_37",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_36",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_5",
+      "class": "MaterialExpressionDivide",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_35",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_37"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_88",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_107",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_83"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionPower_6",
+      "class": "MaterialExpressionPower",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_8",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_95"
+      ],
+      "input_names": [
+        "Base",
+        "Exp"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_95",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_22",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_8",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_96",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionPower_6",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_22"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_97",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_88",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_108"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_38",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_88",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_97"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_98",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_15",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_22"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_7",
+      "class": "MaterialExpressionMax",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_17"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_17",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_16"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_18",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_4"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_11",
+      "class": "MaterialExpressionSubtract",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_13",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_9"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_18",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Layout_GlobalTexturePlacement",
+      "desc": "This vector controls the offset and rotation (about the world z axis) of the layout region textures (the GlobalCloudMask, and the GlobalCloudPattern).",
+      "default_value": "<Struct 'LinearColor' (0x000001A76415CFF8) {r: 0.000000, g: 0.000000, b: 0.000000, a: 0.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionRotator_1",
+      "class": "MaterialExpressionRotator",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_22",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_18"
+      ],
+      "input_names": [
+        "Coordinate",
+        "Time"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_22",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_39"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_23",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_39"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_13",
+      "class": "MaterialExpressionAppendVector",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionRotator_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_23"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_19",
+      "class": "MaterialExpressionLinearInterpolate",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMax_7",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_66"
+      ],
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_19",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_5"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_39",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTruncateLWC_0",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant3Vector_2"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant3Vector_2",
+      "class": "MaterialExpressionConstant3Vector",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Layout_CloudPerTypeScale",
+      "desc": "This set of parameters control the scale of the CloudGlobalPattern texture for each of the cloud types  ( r = stratocumulus, g = altostratus, and b = cirrostratus, a = nimbostratus )",
+      "default_value": "<Struct 'LinearColor' (0x000001A76415CE78) {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_25",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_99",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_25",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_26",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_104",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_25",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_27",
+      "class": "MaterialExpressionTextureSample",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_106",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_25",
+        null
+      ],
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_99",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_12",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_101",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_12"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_104",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_12"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_106",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_12"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_107",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_20",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_26"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSine_1",
+      "class": "MaterialExpressionSine",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTime_2"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_108",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_38",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_9"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_20",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_19"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_83",
+      "class": "MaterialExpressionScalarParameter",
+      "parameter_name": "Storm_LightningTexScale",
+      "desc": "This parameter controls the relative scale of the lighting texture (which is used to determine the location of lighting flashes in the material).",
+      "default_value": "6.0",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_25",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_3"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_13",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_9"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_45",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_23",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_27"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_27",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_3",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Layout_CloudTypeMask",
+      "desc": "This set of parameters specifies how strongly the GlobalCloudMask texture affects each of the cloud types ( r = stratocumulus, g = altostratus, and b = cirrostratus ).  The alpha channel of this set determines the overall strength of the effect.",
+      "default_value": "<Struct 'LinearColor' (0x000001A76415C9F8) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_2",
+      "class": "MaterialExpressionComponentMask",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVolumetricAdvancedMaterialInput_0"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_0",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_19"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_1",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_13"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_0",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_1",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_2",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSubtract_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_4",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteDeclaration_3",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionStaticSwitchParameter_0"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_10",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.MakeFloat4' (0x000001A6D5FFCA80) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_0",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_1",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_4",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_5"
+      ],
+      "input_names": [
+        "X",
+        "Y",
+        "Z",
+        "A"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionNamedRerouteUsage_5",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVolumetricAdvancedMaterialInput_3",
+      "class": "MaterialExpressionVolumetricAdvancedMaterialInput",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_11",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.BreakOutFloat4Components' (0x000001A6F6EAF3C0) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVolumetricAdvancedMaterialInput_3"
+      ],
+      "input_names": [
+        "Float4"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionStaticSwitchParameter_0",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "parameter_name": "UseNoise3",
+      "desc": "Enable the use of a third sample of the NoiseTexture3D for breaking up the cloud shapes with an additional level of detail (and/or different method of breakup).",
+      "default_value": "False",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_19",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_18"
+      ],
+      "input_names": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTruncateLWC_0",
+      "class": "MaterialExpressionTruncateLWC",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDivide_0"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_3",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.MakeFloat3' (0x000001A6D5FF3700) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_19",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_18",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_17"
+      ],
+      "input_names": [
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_4",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Multiscatter_Controls",
+      "desc": "This set of parameters controls the multiscattering approximations in the cloud material.  Intensity controls the overall stregth of the effect, occlusion determines how strongly light is attenuated, and eccentricity determines how uniform the scttering is.  Each of these parameters are valid in the [0, 1] range. ",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419CE78) {r: 0.666667, g: 0.250000, b: 0.180000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_5",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Phase_Controls",
+      "desc": "The cloud scattering uses a combination of two phase functions to determine how light bounces in the material.  Phase A and B determine the directionality of the light scattering, where negative values scatter backward toward the source and positive values scatter forward, away from the source. These values are defined in the range [-1, 1].  The phase blend determines how strong the contribution of each phase is, where 0 is entirely Phase A, and 1 is entirely Phase B. ",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419D778) {r: 0.800000, g: 0.166667, b: 0.575000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMaterialFunctionCall_6",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "desc": "",
+      "material_function": "<Object '/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4.MakeFloat4' (0x000001A6D5FFCA80) Class 'MaterialFunction'>",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_25",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_20",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_26",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_27"
+      ],
+      "input_names": [
+        "X",
+        "Y",
+        "Z",
+        "A"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_0",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_1"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_1",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_10"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionWorldPosition_2",
+      "class": "MaterialExpressionWorldPosition",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLength_1",
+      "class": "MaterialExpressionLength",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionWorldPosition_2"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_28",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_11",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_11"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDotProduct_0",
+      "class": "MaterialExpressionDotProduct",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_6",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTextureSample_14"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_6",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise3_MultChannel",
+      "desc": "This parameter controls the multiplicative contribution to the overall cloud noise of each of the channels, as well as the total magnitude of the multiplicative effect (via the alpha channel).   In other words the cloud noise is multiplied by a factor determined by this formula:  MultChannel.a * (Noise.r * MultChannel.r + Noise.g * MultChannel.g + Noise.b * MultChannel.b).",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419D5F8) {r: 0.000000, g: 0.000000, b: 1.000000, a: 0.400000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_2",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_3",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_6",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_7",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise_Bias",
+      "desc": "Each parameter in this set is subtracted the respective NoiseTexture sample (and may be positive or negative).  This determines how the noise texture dilates or erodes the Cloud Layout without increasing the overall contrast of the noise. ",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419D478) {r: 0.500000, g: 0.800000, b: 0.500000, a: 0.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_8",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Noise_Strength",
+      "desc": "Each parameter in this set is multiplied against the respective result of the biased NoiseTexture sample (and may be positive or negative).  This increase or decreases the contrast of the noise and thus increases or decreases the apparent strength of the noise effect on the Cloud Layout.",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419D2F8) {r: 0.800000, g: 0.080000, b: 0.030000, a: 2.500000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_2",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_3",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_4",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_5",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_8"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_6",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_8"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_7",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_8"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionTime_2",
+      "class": "MaterialExpressionTime",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_8",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_3"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_9",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Storm_LightningAnim",
+      "desc": "This set of parameters is used to control the animation of lightning in the material.  The lighting flicker adds a secondary animation to the flashes.  Dynamic lightning animation is used to determine the frequency of lightning flashes (i.e. the higher this value the more frequently the flashes occur).  Manual Lightning is intended to be used when Dynamic Lighting is set to 0, and will let the user specify the state of the flashes independent of time (mostly useful when rendering stills or when manually updating time in a sequence).",
+      "default_value": "<Struct 'LinearColor' (0x000001A76419D178) {r: 0.000000, g: 0.100000, b: 0.000000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_20",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Storm_LightningClouds",
+      "desc": "This set of parameters controls the effect of lightning on the clouds.  Source Power controls the intensity of the core of the lighting strike.  Fill Scatter controls the distance the lightning scatters in the clouds.  Fill Scatter intensity controls the brightness of the scattered light.  Lastly the SecondMipLevel controls the sharpness of the details contributed by the second lighting texture sample (where higher values are sharper).",
+      "default_value": "<Struct 'LinearColor' (0x000001A76415CCF8) {r: 6.000000, g: 0.050000, b: 0.175000, a: 2.500000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_10",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAppendVector_12"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_21",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_3"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_22",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_3"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_21",
+      "class": "MaterialExpressionVectorParameter",
+      "parameter_name": "Storm_LightningMasks",
+      "desc": "This set of parameters is used to control how the lighting texture is masked in the material.  The lightning mask bias determines at what positions in the CloudLayout texture alpha channel lightning can appear.  The lightning mask strength is multiplied against the biased resut to compensate for lightning masks which are either too opaque or transparent.  The low altitude texture weight determines the influence of the noise texture result on the lighting mask, where higher values increase influence of the texture.",
+      "default_value": "<Struct 'LinearColor' (0x000001A76415CB78) {r: 10.000000, g: 5.000000, b: 0.500000, a: 1.000000}>",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_23",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_21"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_3",
+      "class": "MaterialExpressionAdd",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_30",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_33"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_33",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_80"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_24",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_80"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_38",
+      "class": "MaterialExpressionMultiply",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSine_1",
+        null
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_9",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_18"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionDotProduct_1",
+      "class": "MaterialExpressionDotProduct",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionComponentMask_25",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_48"
+      ],
+      "input_names": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_25",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_26"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_26",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionAdd_25"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_27",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_7"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_28",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionPower_2"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_29",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_14"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_30",
+      "class": "MaterialExpressionReroute",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionScalarParameter_64"
+      ],
+      "input_names": [
+        "None"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionShadingPathSwitch_0",
+      "class": "MaterialExpressionShadingPathSwitch",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_10",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_10",
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionVectorParameter_10"
+      ],
+      "input_names": [
+        "Default",
+        "Deferred",
+        "Forward",
+        "Mobile"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionShadingPathSwitch_1",
+      "class": "MaterialExpressionShadingPathSwitch",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_10",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionMultiply_10",
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_0"
+      ],
+      "input_names": [
+        "Default",
+        "Deferred",
+        "Forward",
+        "Mobile"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_0",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionShadingPathSwitch_2",
+      "class": "MaterialExpressionShadingPathSwitch",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_11",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionLinearInterpolate_11",
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionReroute_0"
+      ],
+      "input_names": [
+        "Default",
+        "Deferred",
+        "Forward",
+        "Mobile"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionShadingPathSwitch_3",
+      "class": "MaterialExpressionShadingPathSwitch",
+      "desc": "",
+      "inputs": [
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_3",
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionSaturate_3",
+        null,
+        "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_9"
+      ],
+      "input_names": [
+        "Default",
+        "Deferred",
+        "Forward",
+        "Mobile"
+      ]
+    },
+    {
+      "path": "/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud.m_SimpleVolumetricCloud:MaterialExpressionConstant_9",
+      "class": "MaterialExpressionConstant",
+      "desc": "",
+      "inputs": [],
+      "input_names": []
+    }
+  ],
+  "dirty": []
+}

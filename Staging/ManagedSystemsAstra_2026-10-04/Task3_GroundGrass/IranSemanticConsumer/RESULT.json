@@ -1,0 +1,130 @@
+{
+  "status": "STAGING_ONLY_READY_FOR_COMBINED_MANAGER_REVIEW_NATIVE_NOT_RUN",
+  "utc": "2026-10-04T16:15:20.983622+00:00",
+  "active_source": "Content\\Python\\geocity_landscape_workflow.py",
+  "active_source_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+  "active_source_unchanged": true,
+  "candidate_sha256": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+  "interface_sha256": "837bc3a43421a2a67c54e48dcfa292cbe3bc02843731e92127d80022aec45308",
+  "source_package_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+  "consumer_policy_sha256": "e7957ed95cf84170c5f77e23f177bee9db940f1381e21521918656a0a2e0b761",
+  "unit_tests": [
+    {
+      "suite": "semantic",
+      "tests": 43,
+      "status": "PASS",
+      "test_sha256": "bf1c89d93df63f792e377da5d17c1fe2c360b061deb9f87fff45061140c75842"
+    },
+    {
+      "suite": "legacy",
+      "tests": 31,
+      "status": "PASS",
+      "test_sha256": "2145c39ced5ac87c3d04f957633acafc45a445fee8655a1d9cba02014f0f18d4"
+    }
+  ],
+  "producer_integration": {
+    "status": "PASS",
+    "producer_candidate_sha256": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+    "consumer_candidate_sha256": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+    "token_shape_actual_consumer_to_actual_producer": "PASS",
+    "checks": [
+      {
+        "scenario": "zero_geometric_roles",
+        "status": "PASS",
+        "source_probe_count": 16,
+        "explicit_zero_layers": [],
+        "explicit_absent_layers": [
+          "Dirt_Path",
+          "PB_solid_snow_white",
+          "PB_starter_SC_Ground_Moss",
+          "Sand_02",
+          "Sand_Path",
+          "Soil1",
+          "Wet_Sand_01"
+        ]
+      },
+      {
+        "scenario": "positive_geometric_roles",
+        "status": "PASS",
+        "source_probe_count": 19,
+        "explicit_zero_layers": [],
+        "explicit_absent_layers": [
+          "PB_solid_snow_white",
+          "PB_starter_SC_Ground_Moss",
+          "Soil1",
+          "Wet_Sand_01"
+        ]
+      },
+      {
+        "scenario": "zero_grass_mask",
+        "status": "PASS",
+        "source_probe_count": 16,
+        "explicit_zero_layers": [
+          "GC_GrassEligible"
+        ],
+        "explicit_absent_layers": [
+          "BaseGrass1",
+          "Dirt_Path",
+          "Farmland1",
+          "PB_Custom_Ground",
+          "PB_solid_neutral_gray",
+          "PB_solid_snow_white",
+          "PB_starter_SC_Ground_Moss",
+          "SC_Ground_Gravel",
+          "Sand_02",
+          "Soil1",
+          "Soil2",
+          "TreeGround",
+          "Wet_Sand_01"
+        ]
+      }
+    ],
+    "class_grid": [
+      4033,
+      4033
+    ],
+    "source_data": "Real registered 404x404 source sampled on actual retained 4033x4033 1m lattice; nine original class80 cells",
+    "geometry_and_native_readback": "Synthetic test masks and readback values, NOT native measurement or generated terrain",
+    "no_unreal_or_houdini_import": true,
+    "native_actions": false,
+    "active_source_changed": false
+  },
+  "profile_unchanged_since_proposal": true,
+  "profile_current_sha256": "004ec07d97a3ef76dfb60835fb133fee1e2f5df1d98f1fae121d46dbc2953a1a",
+  "native_actions": false,
+  "promoted": false,
+  "Gaza": "Exact frozen active baseline preserved as candidate prefix; legacy entrypoints delegate unchanged;4-target/probe requirement retained.",
+  "permanent_dependency_plan": [
+    "M_GeoCitySemanticGround area-owned copy of retained Natural master",
+    "MI_GeoCityGround area-owned copy of retained Natural MI with semantic parent",
+    "LG_GeoCitySemanticGrass area-owned permitted native GrassType"
+  ],
+  "water": "Historical class80 opaque classification display via existing PB_Custom_Ground; no water body geometry/level/surveyed shoreline claim",
+  "provider": "Only exact pinned native_landscape_grass policy is supported; duplicate HDA understory rejected. Other providers fail before native prepare and require separate review.",
+  "remaining": [
+    "Manager review and integration of bounded source patch, exact source module seals and proposed profile fields",
+    "Producer same-type HDA interface promotion plus task1 official setter/readback lifecycle patch",
+    "Actual area-table eligibility, shader/type/material and output paint/readback checks",
+    "Lit visual Grass/water/material review, named saves, fresh-process reopen and ordinary regeneration"
+  ],
+  "writes": "Only Task3_GroundGrass/IranSemanticConsumer staging directory.",
+  "final_producer_recheck": {
+    "status": "PASS_NATIVE_NOT_RUN",
+    "producer_candidate_sha256": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+    "append_sha256": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+    "candidate_sha256": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+    "source_example_sha256": "9cbebdd3cca4cbe9a955d9c0ad45bd1d768d2a982b62cb3439648d57ac9872ca",
+    "source_example_canonical_sha256": "6015eabbcfe06256bdd128fccbe2f5f0ad5f6de18b91d44d4ce81ae5de6714a1",
+    "source_example_probe_count": 16,
+    "producer_owner_interop_receipt_sha256": "edb0708b9e9a6be2cb3813410c3d8809944d74592ea892d8354b6885aa8282f6",
+    "checks": [
+      "Owner source example canonical identity verified",
+      "Actual staged strict source/output validators and pure sample evaluator passed",
+      "4033x4033 class count and900water transport cells preserved"
+    ],
+    "qualification": "Example geometry masks and sample/native receipt values are fixtures, not measured native output. No native preparation/token permission, editor actions or Cook.",
+    "rechecked_utc": "2026-10-04T18:06:32.849285+00:00"
+  },
+  "bookkeeping_refresh": "BOOKKEEPING_REFRESH.json",
+  "task1_test_fixture_pin_refresh_required": true
+}

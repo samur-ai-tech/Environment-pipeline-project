@@ -1,0 +1,258 @@
+{
+ "schema": "environmentpipeline.s1v2a_noise_stats.v1",
+ "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\noise_stats_v2a.py",
+ "script_sha256": "48698891126a9685d89ce59051258c6b7ed5db0a2055d25128a7000f2e4fc507",
+ "labels": {
+  "MEASURED": "source PNG pixels in the package",
+  "INFERRED": "runtime BC-compressed/filtered sampling is close to these values; sRGB decode uses legacy gamma 2.2 (use_legacy_gamma=True, M r027 readback for T_MacroVariation)"
+ },
+ "octaves": [
+  {
+   "channel": "R",
+   "tile_cm": 6100.0,
+   "rotation_deg": 17.0,
+   "offset": [
+    0.13,
+    0.71
+   ]
+  },
+  {
+   "channel": "G",
+   "tile_cm": 21100.0,
+   "rotation_deg": 53.0,
+   "offset": [
+    0.37,
+    0.61
+   ]
+  },
+  {
+   "channel": "B",
+   "tile_cm": 73300.0,
+   "rotation_deg": 89.0,
+   "offset": [
+    0.83,
+    0.29
+   ]
+  }
+ ],
+ "weights": [
+  0.45,
+  0.35,
+  0.2
+ ],
+ "textures": {
+  "T_MacroVariation": {
+   "package": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation",
+   "file": "Content/StarterContent/Textures/T_MacroVariation.uasset",
+   "file_sha256": "459b10ccd1742f24a8f18d9f20801a1fc7ee4cf73925a5d1d4453f1c5077953d",
+   "png_location": "chunked_zlib@155211",
+   "png_offset": [
+    0.83,
+    0.29
+   ],
+   "png_size": [
+    2048,
+    2048
+   ],
+   "png_sha256": "1b214a204625930854df698aeb063edbb12b97f2f6a2536b99547f9dcdd4ec98",
+   "decode": "srgb_legacy_gamma_2.2",
+   "sampler": "COLOR",
+   "mean_rgb": [
+    0.482544,
+    0.48528,
+    0.495238
+   ],
+   "std_rgb": [
+    0.21327,
+    0.215357,
+    0.217982
+   ],
+   "inv_std_rgb": [
+    4.688882,
+    4.643443,
+    4.587544
+   ],
+   "block_mean_std": {
+    "mip2_block4_std": [
+     0.175039,
+     0.178397,
+     0.180845
+    ],
+    "mip4_block16_std": [
+     0.120114,
+     0.122497,
+     0.123865
+    ],
+    "mip5_block32_std": [
+     0.088483,
+     0.090249,
+     0.09079
+    ],
+    "mip6_block64_std": [
+     0.05947,
+     0.060562,
+     0.060588
+    ],
+    "mip8_block256_std": [
+     0.026748,
+     0.02709,
+     0.026995
+    ]
+   },
+   "channel_corr": {
+    "RG": 0.9909,
+    "RB": 0.9806,
+    "GB": 0.9914
+   },
+   "field_simulation_mip0_nearest": {
+    "points": 400000,
+    "sigma_nominal_independent": 0.604152,
+    "sigma_measured": 0.605154,
+    "mean_measured": 0.000804,
+    "clamped_fraction_at_2sigma_nominal": 0.041115
+   }
+  },
+  "TEX_MW_Noise_msk": {
+   "package": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+   "file": "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset",
+   "file_sha256": "3a1cd5d3a8962709975e8ada22066bdeae40816639dc4dba57fbc4384562c89b",
+   "png_location": "raw",
+   "png_offset": [
+    0.83,
+    0.29
+   ],
+   "png_size": [
+    2048,
+    2048
+   ],
+   "png_sha256": "48043931f48011df4ac84881476c7927ca5530fb7b973b561a59fcc3b8cc9bcd",
+   "decode": "linear",
+   "sampler": "MASKS",
+   "mean_rgb": [
+    0.346356,
+    0.356087,
+    0.360833
+   ],
+   "std_rgb": [
+    0.251116,
+    0.255203,
+    0.258405
+   ],
+   "inv_std_rgb": [
+    3.982223,
+    3.918452,
+    3.869893
+   ],
+   "block_mean_std": {
+    "mip2_block4_std": [
+     0.250943,
+     0.255045,
+     0.258248
+    ],
+    "mip4_block16_std": [
+     0.249215,
+     0.253462,
+     0.256653
+    ],
+    "mip5_block32_std": [
+     0.24569,
+     0.250252,
+     0.253366
+    ],
+    "mip6_block64_std": [
+     0.237029,
+     0.242337,
+     0.245347
+    ],
+    "mip8_block256_std": [
+     0.180811,
+     0.189274,
+     0.191162
+    ]
+   },
+   "channel_corr": {
+    "RG": -0.0386,
+    "RB": -0.0962,
+    "GB": 0.1326
+   },
+   "field_simulation_mip0_nearest": {
+    "points": 400000,
+    "sigma_nominal_independent": 0.604152,
+    "sigma_measured": 0.60546,
+    "mean_measured": 0.00351,
+    "clamped_fraction_at_2sigma_nominal": 0.038247
+   }
+  },
+  "T_Perlin_Noise_M": {
+   "package": "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M",
+   "file": "Content/StarterContent/Textures/T_Perlin_Noise_M.uasset",
+   "file_sha256": "bece883ac102ebc3ede6c670769f94140b7ec0e2d9995f6250c55062e710b762",
+   "png_location": "chunked_zlib@56449",
+   "png_offset": [
+    0.83,
+    0.29
+   ],
+   "png_size": [
+    2048,
+    2048
+   ],
+   "png_sha256": "9fd3ae491400b7085e21daf996ad2aced2b47c70b567b6bda16ed0cbbd9c836c",
+   "decode": "linear",
+   "sampler": "MASKS",
+   "mean_rgb": [
+    0.507218,
+    0.507218,
+    0.507219
+   ],
+   "std_rgb": [
+    0.155184,
+    0.155182,
+    0.15518
+   ],
+   "inv_std_rgb": [
+    6.443973,
+    6.444043,
+    6.44413
+   ],
+   "block_mean_std": {
+    "mip2_block4_std": [
+     0.149048,
+     0.149047,
+     0.149044
+    ],
+    "mip4_block16_std": [
+     0.137744,
+     0.137742,
+     0.13774
+    ],
+    "mip5_block32_std": [
+     0.126958,
+     0.126956,
+     0.126954
+    ],
+    "mip6_block64_std": [
+     0.109837,
+     0.109837,
+     0.109834
+    ],
+    "mip8_block256_std": [
+     0.051479,
+     0.051479,
+     0.051478
+    ]
+   },
+   "channel_corr": {
+    "RG": 0.9999,
+    "RB": 0.9999,
+    "GB": 0.9999
+   },
+   "field_simulation_mip0_nearest": {
+    "points": 400000,
+    "sigma_nominal_independent": 0.604152,
+    "sigma_measured": 0.604927,
+    "mean_measured": -0.002005,
+    "clamped_fraction_at_2sigma_nominal": 0.04534
+   }
+  }
+ }
+}

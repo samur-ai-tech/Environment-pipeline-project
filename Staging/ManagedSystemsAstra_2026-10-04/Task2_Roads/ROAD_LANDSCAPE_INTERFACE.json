@@ -1,0 +1,38 @@
+{
+  "schema": "environmentpipeline.task2.road_landscape_interface.v1",
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "keyword": "landscape_authority",
+  "signature": "Append landscape_authority=None to build(...) and RoadBLDRun.__init__(...). Pass a bound method of the active GeoCityRun; no new positional arguments required.",
+  "callback": "No arguments. Parent guard must pass; native_road_phase must be authoring. Resolve the exact current Landscape with the parent's official_landscapes(self.wrapper) helper, requiring exactly one. Return {'actor': current_native_actor, 'evidence': fields below}. Never infer from actor name/suffix/order.",
+  "evidence": {
+    "schema": "environmentpipeline.current_road_landscape.v1",
+    "pid": "os.getpid()",
+    "named_map": "self.p['map']",
+    "area_id": "completed roadbld_centerlines['area_id']",
+    "source_sha256": "completed roadbld_centerlines['source_sha256']",
+    "centreline_sha256": "completed roadbld_centerlines['centreline_sha256']",
+    "lease_sha256": "sha256(self.lease_line.encode('utf-8'))",
+    "operation_started_epoch": "self.started_epoch",
+    "hda_actor_path": "exact self.wrapper.get_houdini_asset_actor().get_path_name()",
+    "current_actor_path": "current_native_actor.get_path_name()",
+    "accounted_previous_landscape_paths": "sorted self.state['previous_landscape_accounting']['live_actor_paths']; this is the pre-operation exact accounted list, not a new inventory-based approval",
+    "official_output_verified": true
+  },
+  "consumer_checks": "Require callback bound to the active lifecycle parent; verify parent guard, lease, source profile and current operation/phase. Compare supplied fields with run.plan and parent. Require exact loaded Landscape object identity, same named package/world and exact loaded HDA owner. Reject every other loaded Landscape not in the parent-accounted prior list. Freeze actor/operation/owner/evidence on first resolution before native authoring, revalidate it in subsequent samplers.",
+  "uses": "RoadBLDRun.start resolves before presets/network spawn; LandscapeSampler(run) in clip_final_geometry and grounding.correction consumes the same authority. No call-site change to grounding.correction. LandscapeSampler(run,saved=True) keeps final singleton safety after parent scoped prior-output retirement.",
+  "state_receipt": "current_landscape_authority contains JSON evidence only; UObject/callback handles remain on the live run, never JSON.",
+  "profile_patch": null,
+  "native_calls_by_task2": 0,
+  "implemented": true,
+  "checks_receipt": "LANDSCAPE_AUTHORITY_CHECKS.json",
+  "source_hashes": {
+    "Content/Python/geocity_roadbld_landscape.py": {
+      "sha256": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+      "changed_in_landscape_fix": true
+    },
+    "Content/Python/geocity_roadbld_workflow.py": {
+      "sha256": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+      "changed_in_landscape_fix": true
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "status": "OFFLINE_CROSS_OWNER_SHAPE_PASS_NATIVE_NOT_RUN",
+  "checks": [
+    {
+      "check": "actual Task3 token builder -> lifecycle binding -> producer transport -> Task3 receipt verifier",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation schema",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation source_package_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation consumer_contract_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation catalog_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation native_binding_receipt_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation landscape_material",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation provider",
+      "passed": true
+    },
+    {
+      "check": "reject mismatched preparation mask_layer",
+      "passed": true
+    },
+    {
+      "check": "reject unverified preparation material_graph_prepared",
+      "passed": true
+    },
+    {
+      "check": "reject unverified preparation canonical_area_eligibility_verified",
+      "passed": true
+    },
+    {
+      "check": "reject unverified preparation grass_bindings_verified",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_surface_contract_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_surface_complete",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_grass_provider",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_runtime_binding_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_nonweight_layers",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_hda_understory_suppressed",
+      "passed": true
+    },
+    {
+      "check": "reject and preserve malformed producer semantic_native_postcook_verified",
+      "passed": true
+    },
+    {
+      "check": "native Grass rejects duplicated HDA understory",
+      "passed": true
+    },
+    {
+      "check": "exact source package identity required before cook",
+      "passed": true
+    },
+    {
+      "check": "exact classified grid identity required before cook",
+      "passed": true
+    },
+    {
+      "check": "exact scalar-string canonical semantic token reaches official parameter plan",
+      "passed": true
+    },
+    {
+      "check": "missing promoted semantic parameter refuses bind",
+      "passed": true
+    },
+    {
+      "check": "legacy definition unchanged; promoted definition clears stale tokens only, retaining defaults",
+      "passed": true
+    },
+    {
+      "check": "full configure_and_bind official setter/readback precedes sole recook and records token",
+      "passed": true
+    },
+    {
+      "check": "semantic parameter readback mismatch prevents recook",
+      "passed": true
+    },
+    {
+      "check": "actual current building input is rejected against different promoted semantic source hash",
+      "passed": true
+    },
+    {
+      "check": "building wire digest matches actual evidence parser, does not qualify candidates or bypass completeness",
+      "passed": true
+    },
+    {
+      "check": "mutable building evidence filename cannot be an ordinary activation",
+      "passed": true
+    },
+    {
+      "check": "complete configure sets and reads back both exact tokens before sole full cook",
+      "passed": true
+    },
+    {
+      "check": "missing required building parameter fails before setters or cook",
+      "passed": true
+    },
+    {
+      "check": "building readback mismatch prevents cook",
+      "passed": true
+    },
+    {
+      "check": "changed top-level building contract bytes prevent cook",
+      "passed": true
+    },
+    {
+      "check": "disabled native Grass cannot silently bypass semantic provider contract",
+      "passed": true
+    },
+    {
+      "check": "native lifecycle guards, 120s waits, named save functions and runtime/seal remain unchanged",
+      "passed": true
+    }
+  ],
+  "passed": 36,
+  "candidate_sha256": "bf0ddff109964fe5c93a629bbcc149fb7887d317648f18dec8d2342c3c6d9c6f",
+  "dependencies": {
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\geocity_landscape_workflow.py": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\semantic_consumer_extension.py": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\INTERFACE_FROZEN_DECISION.json": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json": "dfabb100f7ad2e2c77712b6a442a89e7ea44feb9c7356efe43baaad70030bfab",
+    "Staging\\PipelineSemanticRepair_2026-10-04\\Completion\\semantic_consumer_extension.py": "d81e2c3a5b980913f7dedcd701cceab42cc0006e9a78cdc6e64327a461369a4c",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\evidence_contract.py": "515f52068e40b1aec145766dc811bd88cca8271650ee67cd04343179049521ee",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\INPUT_CONTRACT.json": "0c13e23d38e8b1e963fe8b015f7aacc7a8b95c1a292ed61d141d507be27ca012",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\INPUT_CONTRACT_COMBINED.json": "358f5dae4916f6669bc022b034c5fb51367aca03a8fd58da53c195cc6e7afc96",
+    "Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\SOURCE_BINDING.json": "4ba6ffe2acebe77566c47f56019d263797f39aad486f8cfeb1e75fa7820e013d"
+  },
+  "fixtures": "Actual source bytes and actual producer sample with synthetic geometric masks; native readback is explicitly fake. No generated terrain/material/native readiness claimed.",
+  "unreal_imported": false,
+  "houdini_imported": false,
+  "runtime_mutated": false,
+  "native_actions": false,
+  "building_source_binding": {
+    "original_input_source_sha256": "c54a814bf31e867522a540f5aec85bc47ad302d3c6ab285cb23f7bd640b958e0",
+    "semantic_source_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+    "resolution": "Original input rejected; new owner INPUT_CONTRACT_COMBINED plus SOURCE_BINDING pass exact evidence parser. No candidates qualified by this lifecycle patch."
+  }
+}

@@ -1,0 +1,37 @@
+EPIC GROUND SOURCE CHECKPOINT — 2026-10-05
+
+Both original areas now use installed Unreal/Epic StarterContent ground sources. Named saves and fresh-process native and actual-Lit persistence passed for Shujaiya and Rimal. This fulfills the bounded Epic-source ground change. Overall scene/reference quality and user acceptance remain open.
+
+WHAT CHANGED
+Gravel D/N supplies Ground, RoadBed and BuildingPad; sandstone D/N supplies Steep and both active macro-soil consumers. Original Epic T_MacroVariation supplies the macro mask. All four target tints are neutral1. The former active custom-bank macro-soil fallback has been replaced. Other65 layer contracts and their inactive native assets remain preserved.
+
+Four owned2K copies under /Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K keep source detail ready in fresh close captures. They use NeverStream=True and MaxTextureSize=2048. The sources were already2K; no upscale, global mip force, pool/CVar or original-asset changes occurred. Original streamed textures previously read Current/Wanted128 while the close programmatic viewport capture retained a wide registered streaming view. This proves the measured capture-demand mismatch, not a general Unreal streaming defect.
+
+Epic textures are adapted to the retained Natural material. Earlier r027 rewired8existing Roughness/AO root edges and3macro default/sampler properties; no new nodes were added. The copy/consumer phases made zero master edits. Constant roughness.8 and AO1 are the retained shader adaptation, not an exact clone of Epic's texture/macro-driven PBR graph. The complete1015-node graph,69names, other65contracts and Grass are preserved.
+
+The normal copies carry use_legacy_gamma=False while originals carryTrue. Both use sRGB=False/TC_NORMALMAP. Installed Texture.h/TextureCompressorModule.h return Linear when sRGB is disabled; the final helper never sets this flag. This is an explicit inactive normal-only difference.30captured property records comprise28readable/two unavailable fields; unknown SDK fields and GPU bitwise equality are not claimed. Official API context: https://dev.epicgames.com/documentation/unreal-engine/API/Runtime/Engine/UTexture?lang=en-US
+
+MEASURED SAVES AND PERSISTENCE
+Shujaiya PID26820 saved exactly its childMI plus four resident copies. Fresh PID18844 verified saved hashes,10consumer bindings, strict2048 readiness, graph/source/scene/Grass/CVar preservation and all-clean state. All three matched actual1600x1000 Lit views retain close pebble/grain detail.
+
+Rimal PID25008 saved exactly its existing childMI after full27-control readback:11texture bindings,8scalars and8neutral-tint/tile vectors. Fresh PID35000 verified the same values, saved childSHA99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b, strict2K copies and all-clean state. All three matched actual1600x1000 Lit views preserve the improved ground without fresh blur or return of brown cloudy pit chains. Independent disk review found only Rimal child changed among117trackedfiles; other116were unchanged.
+
+Original map files, source/vendor originals, native scene/geographic heights/weights, sealed sources/profiles, catalog/holds and Grass graph/settings/coverage0 remain preserved. Scenes retain316actors/twoLandscapes in Shujaiya and121actors/oneLandscape in Rimal. No HDA, Cook/Bake, generation, terrain geometry, lighting, road/building or catalogue edits were performed in this material phase.
+
+VISIBLE LIMITS
+The close ground is clearer, especially Shujaiya. Middle/wide ground remains pale and uniform, with faint repetition and angular shading whose cause is unproven. Rimal smooth raised strips, sharp joins, road patches and building contact remain. The selected references use additional height blending/RVT/contact/geometric detail; palette replacement alone does not achieve their quality. Overall appearance/user acceptance is PENDING; ordinary regeneration and cooked/runtime-platform validation are NOT_RUN.
+
+CLEAN RELEASE
+Fresh PID35000 exited normally with clean packages, cooking paused, callbacks0 and shutdown saves0. No Unreal/Houdini/HARS process remains. OWNER=NONE; ordinary_generation_authorized=false. Earlier RESULT documents, backups and failed native creation receipts remain intact.
+
+READING SET
+Structured final evidence: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\RESULT.json
+Shujaiya named save: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\EPIC_RESIDENT_CONSUMER_NAMED_SAVE_GazaShujaiya_r030_epic_complete_PID26820.json
+Shujaiya fresh native: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json
+Shujaiya fresh visual: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\VISUAL_REVIEW_GazaShujaiya_epic_r030_fresh_PID18844.json
+Rimal named save: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\SAVE_GazaRimal_epic_r031_PID25008.json
+Rimal fresh native: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\EPIC_RESIDENT_RIMAL_verify_r031_epic_fresh_reopen_PID35000.json
+Rimal fresh visual: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\VISUAL_REVIEW_GazaRimal_epic_r031_fresh_PID35000.json
+Rimal independent file audit: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\EPIC_RIMAL_NAMED_SAVE_FILE_REVIEW_R031.json
+Native Epic source study: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Revision_2026-10-05\EPIC_STARTER_GROUND_NATIVE_READONLY_PID32464.json
+Actual images: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images

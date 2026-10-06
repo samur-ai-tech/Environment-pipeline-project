@@ -1,0 +1,24 @@
+{
+  "installed_headers": {
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Developer\\AssetTools\\Public\\IAssetTools.h": "3e7e77387860f3d4ad8b090a9434ed237dffacfc988cef32b7443e465acdaba9",
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Editor\\UnrealEd\\Public\\FileHelpers.h": "e94e824796d608def25021b339a3796438379f80d0885ac96607b549b38c964b",
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Developer\\AssetTools\\Public\\PackageMigrationContext.h": "741d07af9719b4ead46c23597f8114c1662f519b490f86998bce400ba6cfdac8"
+  },
+  "supported_calls": [
+    "AssetTools.migrate_packages",
+    "AssetTools.rename_assets(Array[AssetRenameData])",
+    "AssetTools.rename_referencing_soft_object_paths",
+    "EditorLoadingAndSavingUtils.save_packages(exact_named_packages, only_dirty=False)"
+  ],
+  "why_not_advanced_copy": "Python begin_advanced_copy_packages exposes an interactive target operation; exact flattened mapping overload is C++ only. Migrate+exact native RenameAssets gives explicit target mapping while source project originals remain read-only.",
+  "selected_procedure": "Only new migrated target copies, never existing target/source originals, enter native RenameAssets. Native soft references are rewritten, only exact packages and created redirectors are saved, and final closure may reference only prepared targets and Engine.",
+  "unperformed_native_validation": true,
+  "temporary_namespace_and_redirectors_require_exact_manager_activation": true,
+  "source_map_generator_imports": false,
+  "raw_uasset_rename": false,
+  "new_plugin_or_engine_rebuild": false,
+  "official_sources": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/AssetTools?application_version=5.7",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/migrating-assets-in-unreal-engine"
+  ]
+}

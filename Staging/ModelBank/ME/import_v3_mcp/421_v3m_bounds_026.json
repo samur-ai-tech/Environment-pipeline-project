@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 167,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0043_Foodcart_001.SM_H0043_Foodcart_001"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-82.906929016113281,\"y\":-109.58670043945312,\"z\":14.494669914245605},\"max\":{\"x\":160.68733215332031,\"y\":110.16575622558594,\"z\":223.74906921386719},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 167,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-82.906929016113281,\"y\":-109.58670043945312,\"z\":14.494669914245605},\"max\":{\"x\":160.68733215332031,\"y\":110.16575622558594,\"z\":223.74906921386719},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

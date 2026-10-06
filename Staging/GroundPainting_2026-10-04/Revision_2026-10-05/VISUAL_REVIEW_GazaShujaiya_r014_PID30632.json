@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-10-05",
+  "reviewer": "Read-only visual review agent",
+  "pid": 30632,
+  "area": "GazaShujaiya",
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "stage": "revision_r014_actual_lit_restored",
+  "images": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_close.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_middle.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_wide.png"
+  ],
+  "images_opened_and_visually_inspected": true,
+  "measured_viewmode": 3,
+  "measured_viewmode_name": "VMI_LIT",
+  "viewmode_evidence": "All three saved capture receipts record the actual getter as <ViewModeIndex.VMI_LIT: 3>; reviewer read those receipts and opened the corresponding pixels, without native API calls.",
+  "current_recipe": {
+    "revision": "r014_actual_lit_restored",
+    "baseline_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\GazaShujaiya_revision_r001_pre_PID30632.json",
+    "scalars": {
+      "Sand_01_NormalStrength": 0.6,
+      "Sand_02_NormalStrength": 0.9,
+      "Dirt_Path_NormalStrength": 0.85,
+      "Sand_Path_NormalStrength": 1.6,
+      "Sand_01_FarScale": 1,
+      "Sand_02_FarScale": 5,
+      "Dirt_Path_FarScale": 1,
+      "Sand_Path_FarScale": 5,
+      "GeoCity_DistanceStartCm": 1200,
+      "GeoCity_DistanceRangeCm": 6000,
+      "GeoCity_RoughnessDetail": 0.75,
+      "GeoCity_AOStrength": 0.2,
+      "GeoCity_MacroAmount": 0.08,
+      "GeoCity_CellScale": 0.1,
+      "GeoCity_PatternScale": 1,
+      "Ground_SoilBlendStrength": 0.35
+    },
+    "vectors": {
+      "Sand_01_TileCm": [
+        100,
+        100,
+        100,
+        1
+      ],
+      "Sand_02_TileCm": [
+        380,
+        380,
+        380,
+        1
+      ],
+      "Dirt_Path_TileCm": [
+        320,
+        320,
+        320,
+        1
+      ],
+      "Sand_Path_TileCm": [
+        280,
+        280,
+        280,
+        1
+      ],
+      "Sand_01_Tint": [
+        1.02,
+        1.02,
+        1.0,
+        1
+      ],
+      "Sand_02_Tint": [
+        1.0,
+        1.0,
+        0.98,
+        1
+      ],
+      "Dirt_Path_Tint": [
+        1.2,
+        1.27,
+        1.32,
+        1
+      ],
+      "Sand_Path_Tint": [
+        1.12,
+        1.16,
+        1.16,
+        1
+      ],
+      "Ground_MacroTileCm": [
+        3000,
+        3000,
+        3000,
+        1
+      ]
+    }
+  },
+  "save_approved_within_scope": true,
+  "approval_scope": "Retain the reviewed ground material correction with the authorized named ground material and original-map saves only. This is not full environment visual acceptance, an upstream or height/weight authorization, or a bank eligibility release.",
+  "preferred_recipe": "r014, restored exactly from r012; preferred over r011 for reducing exaggerated distant Dirt texture relief while retaining the close surface.",
+  "visible_findings": [
+    "Close actual Lit ground resolves dry fine gritty soil and small aggregate, with restrained relief rather than the rejected cloudy blanket or enlarged raked swirls.",
+    "Middle remains coherent dry bare ground at the existing lighting; smaller detail averages with distance and does not carry the earlier exaggerated 16 m Dirt relief.",
+    "Wide no longer carries the earlier fine repeated Far8 rows. It remains pale dry ground, with low-contrast angular regions still visible in the outer bare terrain.",
+    "Actual Lit captures show cast shadows from buildings and the pole. Earlier Unlit captures cannot support normal, roughness, or missing-shadow conclusions."
+  ],
+  "diagnostic": {
+    "stage": "revision_r013_actual_lit_flat_isolation",
+    "image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r013_actual_lit_flat_isolation_wide.png",
+    "controlled_parameters_reported_by_root": "Four layer normal strengths 0, AO 0, macro amount 0, soil blend 0; the exact r012 recipe was then restored.",
+    "observed_result": "The large angular light/dark regions remain visible in the flat-isolation actual Lit wide image and the restored image.",
+    "inference_limit": "Those regions were not eliminated by the tested material controls. Their origin remains unproved; this review does not establish DEM resolution, terrain topology, a renderer defect, or a specific lighting cause."
+  },
+  "remaining_limitations": [
+    "Large angular light/dark regions remain in the outer terrain. This material correction does not claim to repair them or prove their cause.",
+    "Broad bare plots still have limited surface-role variety under the preserved geometry and weights; no new landscape painting or urban dressing is implied.",
+    "Some darker pits and aggregate are still visible near the camera; r014 is a restrained dry-ground material, not a photorealistic full-scene art pass.",
+    "Existing building appearance, road edges/joins, held objects, sparse Grass, and geographic layout are separate from this review.",
+    "Fresh-process persistence/reopen is not established by this pre-save visual review and must be recorded separately by the sole native writer."
+  ],
+  "user_acceptance": "PENDING",
+  "whole_environment_acceptance": "NOT_ESTABLISHED",
+  "native_operations_performed_by_reviewer": false
+}

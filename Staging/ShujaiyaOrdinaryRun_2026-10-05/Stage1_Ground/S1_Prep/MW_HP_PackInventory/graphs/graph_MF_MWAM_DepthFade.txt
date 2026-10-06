@@ -1,0 +1,8 @@
+ComponentMask_0 [ComponentMask] {"R": true} Input<-MaterialFunctionCall_1:0
+FunctionOutput_0 [FunctionOutput] {"OutputName": "DepthFadeMask"} A<-ComponentMask_0:0
+MaterialFunctionCall_1 [MaterialFunctionCall] {"MaterialFunction": "CameraDepthFade"} FunctionInputs[0].Input<-ScalarParameter_0:0 FunctionInputs[1].Input<-ScalarParameter_1:0 FunctionInputs[2].Input<-StaticBool_0:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_DistanceBlendFadeLength", "DefaultValue": 4096.0, "Group": "UVs"} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_DistanceBlendFadeOffset", "DefaultValue": 512.0, "Group": "UVs"} 
+StaticBool_0 [StaticBool] {"Value": true} 
+MF_MWAM_DepthFade [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_DepthFadeEditorOnlyData", "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_DepthFadeEditorOnlyData [MaterialFunctionEditorOnlyData]  

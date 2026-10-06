@@ -1,0 +1,102 @@
+Environmentpipeline bank asset preparation contract — 2026-10-04
+
+Current phase: existing props, vegetation, whole buildings and dependencies first.
+Modular building authoring is deferred by Aviv's latest instruction. This file does
+not replace the retained assembly contract or introduce a new generator.
+
+Canonical identity and delivery
+DT_EnvironmentBank_v4 remains the sole runtime catalog, 1,223 existing identities.
+Prepared records join by AssetId and catalog_row_name. Family records are groups,
+not individual selectable meshes. External sources retain their original IDs.
+Prepared .blend sources live under:
+C:/Users/USER/Documents/Pipeline Environment/ModelBank/Prepared_2026-10-04
+Native proposed destinations are under /Game/Project/Shared/ModelBank/Prepared/.
+A proposed package path is not an imported asset. No original package is moved.
+
+Units, axes and anchors
+Native measurements are Unreal centimetres with Z up. Blender source measurements
+are evaluated object-world coordinates multiplied by scene.unit_settings.scale_length,
+reported in metres. Existing archive .blend files and FBX exports are retained;
+no arbitrary axis rotation, 100x scaling or origin relocation is performed.
+The external.H0633 material-only derivative reuses the exact geometry/UV/slot-face
+assignment of external.T1157 and exports with axes read from its original FBX.
+Blender source bounds must NOT be copied to native XYZ runtime columns until native
+import readback establishes the export/import axis conversion for that asset.
+Houdini uses metres and Y up; official Engine converts to Unreal centimetres and
+Z up. The retained consumer compensates native horizontal AABB centre and AnchorZCm
+through its yaw quaternion. Native +X/+Y/-X/-Y ForwardAxis controls yaw correction.
+A longest horizontal dimension supplies geographic alignment, not a proven facade
+or seat-facing direction. Ground minimum vertex is a measured anchor candidate,
+not proof of a contact surface, wheel contact, foliage root or material appearance.
+Whole buildings retain 1:1 scale, measured footprint envelope, source height fit
+and final terrain support. Do not stretch a complete building to fill a pad.
+
+Geometry, collision, materials and dependencies
+Preserve original vertices, UV layers, custom normals and object transforms.
+Preserve exact material slot order per object. Do not merge unrelated subobjects
+or count a compound source scene as one verified whole building.
+UCX/UBX/USP/UCP collision meshes and LOD1+ meshes are retained but excluded from
+LOD0 render measurements and thumbnails. Collision helpers do not require UVs.
+Native measurements distinguish render bounds from exact source-vertex bounds.
+Use the actual native LOD and collision records; do not infer performance from
+triangle count alone. No LOD/Nanite regeneration is performed in this phase.
+Source material maps retain their exact channel, texture path, UV scale and UV
+offset. Reported ORM maps use R=AO, G=roughness, B=metallic. These are source report
+semantics, not a new native shader validation. Missing files are never replaced
+by similarly named guessed textures. Native original material closure and project
+instancing overrides must be reviewed separately; a repaired override can differ
+from an original material's historical unresolved paths.
+
+Placement contexts
+Ground props require bottom/contact, forward alignment where relevant, clearance,
+spacing, area/style context and an exact native path. Vegetation uses its actual
+tree/shrub/understory role. Roof utilities, wall signs, road drains, fences and
+linear barriers require explicit host or linear placement consumers; do not
+scatter them as arbitrary ground props. Context classification by name is triage,
+not measured suitability. Source pack style and area style are separate records.
+
+Selection and activation
+Use one fixed family budget per role/style/context partition. Distribute that
+budget over actually eligible variants. Recompute after eligibility filtering;
+never let additional near-duplicate rows inflate total family probability.
+Keep current weights until the real eligible membership is decided.
+New normal use is restricted to GazaRimal and GazaShujaiya through the existing
+release/DecisionId structure. Preserve named holds H0013/H0907/H0051/H0958/H0094,
+declined palms, canonical qualification and rights records. Existing 18 runtime
+rows are not an authorization to enable all measured candidates.
+
+Existing modular contract, for later phase
+Native local +X is wall thickness inward, -Y is wall tangent, Z up. The retained
+Houdini representation uses +X thickness, -Z tangent, Y up. The consumer compensates
+measured min-X/max-Y/min-Z anchors, owns geographic footprints, floor/roof solids
+and corner closures. Existing wall bay scale limits are along-wall 0.5..1.5 and
+vertical 0.65..1.1; door and whole buildings stay 1:1. These are existing consumer
+limits, not universal FBX presets. New modules must map explicitly to this consumer.
+
+Export/import in this installation
+Installed Blender: 5.2.2 LTS. Prepared native .blend copies reuse the 158 existing
+archive .blend sources, plus their existing FBX and material-map reports. No native
+import is claimed. One material-resolved FBX derivative was exported for H0633;
+original FBX axes were matched, and Blender reimport recovered its bounds with
+maximum error 0.0000123 m. This does not validate Unreal import or native material
+appearance. If FBX import into Blender is needed, the
+installed operator supports metadata orientation (use_manual_orientation=False),
+global_scale=1.0 and use_custom_normals=True; these are source-inspection settings,
+not proof of Unreal import equivalence. Native import must read back dimensions,
+object composition/LODs/collision, slot order and texture/material bindings before
+scoped activation. Native material and import settings are therefore left explicit
+in EXTERNAL_IMPORT_MANIFEST.json rather than assumed from a generic preset.
+
+Authoritative project consumers examined
+Content/Python/geocity_bank_workflow.py
+C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank/geocity_city_module.py
+Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json
+Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json
+Staging/RepairExecution_2026-10-03/ASSEMBLY_CONTRACT.json
+Staging/AppearanceRepair_2026-10-03/STYLE_CONTRACT.json
+
+Official documentation consulted for coordinate and instance semantics
+https://www.sidefx.com/docs/houdini/unreal/coordinates.html
+https://www.sidefx.com/docs/houdini/unreal/instancing.html
+https://docs.blender.org/manual/en/4.4/addons/import_export/scene_fbx.html
+Installed API introspection takes precedence over older Blender documentation.

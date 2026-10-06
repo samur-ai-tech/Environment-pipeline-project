@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 57,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_parkingSpotTruck_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"400x1600x12\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parkingSpotTruck_01.fbx\\\", \\\"Timestamp\\\" : \\\"1521367549\\\", \\\"FileMD5\\\" : \\\"e61d6dddc805023b66136d31c8b27f1b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"14\",\"UVChannels\":\"2\",\"Vertices\":\"28\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 57,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"400x1600x12\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parkingSpotTruck_01.fbx\\\", \\\"Timestamp\\\" : \\\"1521367549\\\", \\\"FileMD5\\\" : \\\"e61d6dddc805023b66136d31c8b27f1b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"14\",\"UVChannels\":\"2\",\"Vertices\":\"28\"}}"
+    }
+   ]
+  }
+ }
+}

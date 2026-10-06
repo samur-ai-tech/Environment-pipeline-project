@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 888,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/Iceland_Environment/Static_Meshes/SM_Mountain_09"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"1024x1024x290\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/Users/cioba/Downloads/SM_Mountain_09.fbx\\\", \\\"Timestamp\\\" : \\\"1763315982\\\", \\\"FileMD5\\\" : \\\"47044a2ffa60d421a43ea9488d6be3f2\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"DistanceFieldSize\":\"877856\",\"EstNaniteCompressedSize\":\"5889026\",\"EstTotalCompressedSize\":\"6345862\",\"HasHiResMesh\":\"False\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NaniteEnabled\":\"True\",\"NaniteFallbackPercent\":\"100.0\",\"NaniteTriangles\":\"524288\",\"NaniteVertices\":\"263169\",\"NeverStream\":\"False\",\"QualityLevelMinLOD\":\"0\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"16659\",\"UVChannels\":\"2\",\"Vertices\":\"9634\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 888,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"1024x1024x290\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/Users/cioba/Downloads/SM_Mountain_09.fbx\\\", \\\"Timestamp\\\" : \\\"1763315982\\\", \\\"FileMD5\\\" : \\\"47044a2ffa60d421a43ea9488d6be3f2\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"DistanceFieldSize\":\"877856\",\"EstNaniteCompressedSize\":\"5889026\",\"EstTotalCompressedSize\":\"6345862\",\"HasHiResMesh\":\"False\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NaniteEnabled\":\"True\",\"NaniteFallbackPercent\":\"100.0\",\"NaniteTriangles\":\"524288\",\"NaniteVertices\":\"263169\",\"NeverStream\":\"False\",\"QualityLevelMinLOD\":\"0\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"16659\",\"UVChannels\":\"2\",\"Vertices\":\"9634\"}}"
+    }
+   ]
+  }
+ }
+}

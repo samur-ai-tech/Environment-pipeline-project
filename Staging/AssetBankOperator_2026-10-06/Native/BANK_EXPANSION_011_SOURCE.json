@@ -1,0 +1,811 @@
+{
+  "batch_id": "BANK_EXPANSION_011",
+  "pid": 29900,
+  "closure": {
+    "packages": [
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/SM_Acanthogilia_gloriosa_2",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_2_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B_2"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B_2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/RealisticDesertPack/Materials/Foliages/Billboard/Master_Billboards",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_Billboard_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_Billboard_N"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_Billboard_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_Billboard_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Materials/Foliages/Billboard/Master_Billboards",
+        "classes": [
+          "Material"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+          "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind",
+          "/Game/RealisticDesertPack/Materials/Foliages/Functions/MF_BillboardOpacity",
+          "/Game/RealisticDesertPack/Materials/Foliages/Functions/MF_ColorVariation",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_SSS"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Materials/Foliages/Functions/MF_ColorVariation",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Materials/Foliages/Functions/MF_BillboardOpacity",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_2_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_2_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+        "classes": [
+          "Material"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+          "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind",
+          "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+          "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+          "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+          "/Game/RealisticDesertPack/Materials/Foliages/Functions/MF_ColorVariation",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_SSS"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+          "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+          "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/SM_Creosote_Bush_1",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_1_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_1_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/SM_Acanthogilia_gloriosa_3",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_3_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B_3"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B_3",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/RealisticDesertPack/Materials/Foliages/Billboard/Master_Billboards",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_Billboard_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_Billboard_N"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_Billboard_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_Billboard_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_3_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_3_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/SM_Creosote_Bush_3",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_3_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_3_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_3_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_3_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_3_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_3_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/SM_Creosote_Bush_2",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_2_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_2_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_2_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_2_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_2_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_2_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/SM_Acanthogilia_gloriosa_1",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_1",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_B",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/RealisticDesertPack/Materials/Foliages/Billboard/Master_Billboards",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_Billboard_N"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_1",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_1_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Materials/MI_Acanthogilia_Gloriosa_1_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Acanthogilia_gloriosa/Textures/T_Acanthogilia_gloriosa_1_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/SM_Ambrosia_Dumosa_1",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Materials/MI_Ambrosia_Dumosa_1_B",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Materials/MI_Ambrosia_dumosa_1_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Materials/MI_Ambrosia_dumosa_1_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Materials/MI_Ambrosia_Dumosa_1_B",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/RealisticDesertPack/Materials/Foliages/Billboard/Master_Billboards",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_SSS"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_SSS",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_N",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Ambrosia_dumosa/Textures/T_Ambrosia_Dumosa_1_Billboard_BaseColor",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/SM_Creosote_Bush_4",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_4_PIV"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Materials/MI_Creosote_Bush_4_PIV",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+          "/Game/RealisticDesertPack/Materials/Foliages/Bushes/Master_Foliages",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_BaseColor",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_N",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_1_SSS",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_4_PIV",
+          "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_4_XVector"
+        ]
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_4_XVector",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/RealisticDesertPack/Meshes/Plants/Bushes/Creosote/Textures/T_Creosote_Bush_4_PIV",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      }
+    ],
+    "missing": []
+  },
+  "dirty_before": {
+    "content": [
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_374_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_375_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_376_0_main_geo"
+    ],
+    "maps": []
+  },
+  "dirty_after": {
+    "content": [
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_374_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_375_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_376_0_main_geo"
+    ],
+    "maps": []
+  },
+  "state": "source_registry_inspected"
+}

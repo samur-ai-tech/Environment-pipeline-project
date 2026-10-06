@@ -1,0 +1,11 @@
+Add_7 [Add]  A<-FunctionInput_1:0 B<-Multiply_37:0
+Fresnel_1 [Fresnel]  
+FunctionInput_0 [FunctionInput] {"InputName": "BaseColor"} 
+FunctionInput_1 [FunctionInput] {"InputName": "SnowBaseColor", "SortPriority": 1} 
+FunctionInput_2 [FunctionInput] {"InputName": "SnowPixelMask", "InputType": "FunctionInput_Scalar", "SortPriority": 2} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "BaseColor"} A<-StaticSwitchParameter_0:0
+LinearInterpolate_10 [LinearInterpolate] {"Desc": "Add Snow"} A<-FunctionInput_0:0 B<-Add_7:0 Alpha<-FunctionInput_2:0
+Multiply_37 [Multiply]  A<-FunctionInput_1:0 B<-Fresnel_1:0
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_UseSnow", "DefaultValue": true, "Group": "0_Snow"} A<-LinearInterpolate_10:0 B<-FunctionInput_0:0
+MF_MWAM_Snow [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_SnowEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_SnowEditorOnlyData [MaterialFunctionEditorOnlyData]  

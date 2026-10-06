@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_triangle_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo.B1_probebox_161_165_0_main_geo"
+     },
+     "lod_index": 0
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.029,
+ "isError": null,
+ "text": "{\"returnValue\":12}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":12}"
+    }
+   ]
+  }
+ }
+}

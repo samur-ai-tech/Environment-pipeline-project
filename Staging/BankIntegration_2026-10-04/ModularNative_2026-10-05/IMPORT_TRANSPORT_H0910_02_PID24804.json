@@ -1,0 +1,18 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":false,\"stdout\":\"\",\"error\":\"Traceback (most recent call last):\\n  File \\\"C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Plugins\\\\UnrealCopilot\\\\Content\\\\Python\\\\unreal_copilot\\\\skills\\\\runner.py\\\", line 228, in _exec_inline\\n    exec(python_code, globals_dict)\\n  File \\\"<string>\\\", line 3, in <module>\\n  File \\\"C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\BankIntegration_2026-10-04\\\\ModularNative_2026-10-05\\\\run_modular_command.py\\\", line 34, in run\\n    result=module.run(request_path,request_sha,activation_path,family_id,int(max_parts))\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\BankIntegration_2026-10-04\\\\ModularNative_2026-10-05\\\\modular_native_adapter.py\\\", line 314, in run\\n    request,state=preflight(request_path,request_sha,activation_path)\\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\BankIntegration_2026-10-04\\\\ModularNative_2026-10-05\\\\modular_native_adapter.py\\\", line 61, in preflight\\n    assert N.dirty()=={'content':[],'maps':[]},('requires_clean_boundary',N.dirty())\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: ('requires_clean_boundary', {'content': [], 'maps': ['/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration']})\\n\"}"
+      }
+    ],
+    "structuredContent": {
+      "ok": false,
+      "stdout": "",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\UnrealCopilot\\Content\\Python\\unreal_copilot\\skills\\runner.py\", line 228, in _exec_inline\n    exec(python_code, globals_dict)\n  File \"<string>\", line 3, in <module>\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\run_modular_command.py\", line 34, in run\n    result=module.run(request_path,request_sha,activation_path,family_id,int(max_parts))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\modular_native_adapter.py\", line 314, in run\n    request,state=preflight(request_path,request_sha,activation_path)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\modular_native_adapter.py\", line 61, in preflight\n    assert N.dirty()=={'content':[],'maps':[]},('requires_clean_boundary',N.dirty())\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('requires_clean_boundary', {'content': [], 'maps': ['/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration']})\n"
+    },
+    "isError": false
+  }
+}

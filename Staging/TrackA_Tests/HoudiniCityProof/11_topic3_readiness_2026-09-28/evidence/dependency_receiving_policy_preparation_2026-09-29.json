@@ -1,0 +1,30 @@
+{
+  "kind": "OFFLINE_DEPENDENCY_RECEIVING_POLICY_PREPARATION",
+  "prepared_at": "2026-09-29T10:27:17.908Z",
+  "policy": "DEPENDENCY_CLOSURE_RECEIVING_POLICY_2026-09-29.md",
+  "template": "dependency_closure_receipt.template.json",
+  "bank_brief": "Staging/ModelBank/BANK_ASTRA_005_BRIEF_2026-09-29.md",
+  "bank_brief_sha256": "686d0d6ad99222d4aeb1217df25c045e3b10a724156280ea1a4fadc0fc4256df",
+  "supported_tool_argument_check": "get_dependencies exposes only asset_path; no options argument",
+  "scope": "21 known content packages; 18 planned new package calls; unexpected frontier unvisited/incomplete; native modules external.",
+  "sources": [
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/Toolsets/EditorToolset/Content/Python/editor_toolset/toolsets/asset.py",
+      "sha256": "f69c28f1ca3a8bfd2fb8c27e4cb7607df0264ca278a8166bead6ddd0d4f17d20"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/AssetRegistry/Public/AssetRegistry/IAssetRegistry.h",
+      "sha256": "3ea171eaf6a071caf8e1a93393fbab4b3a643224cff70ce87628cb3841885e08"
+    }
+  ],
+  "template_verification": {
+    "json_parse": true,
+    "verdict": "NOT_RUN",
+    "actual_limits_authorized_in_assignment": null,
+    "only_argument": "asset_path",
+    "no_new_HDA_columns": true,
+    "no_helper_or_walker_created": true
+  },
+  "native_module_receipt": "evidence/navigation_system_module_binding_2026-09-29.json",
+  "runtime_verification": "NOT_RUN"
+}

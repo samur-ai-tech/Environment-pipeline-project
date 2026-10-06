@@ -1,0 +1,1431 @@
+{
+  "log_sha256": "b3dd99cb7dd9b4455c052d43727d5d3c352b021f2c290bd8ea696044dd6f5ebb",
+  "log_counts": {
+    "SavePackage": 0,
+    "HAPI Asynchronous": 0,
+    "FinishedCooking": 0,
+    "LoadErrors": 0,
+    "cooking paused.": 1,
+    "cooking resumed.": 0
+  },
+  "log_key_lines": [
+    {
+      "line": 1,
+      "text": "\ufeffLog file open, 09/28/26 12:53:50"
+    },
+    {
+      "line": 1676,
+      "text": "[2026.09.28-09.54.12:223][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path C:/Program Files/Side Effects Software/Houdini 22.0.429/bin"
+    },
+    {
+      "line": 2007,
+      "text": "[2026.09.28-09.54.20:643][  0]Cmd: MAP LOAD FILE=\"../../../Engine/Content/Maps/Templates/OpenWorld.umap\" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=4"
+    },
+    {
+      "line": 2402,
+      "text": "[2026.09.28-10.04.44:032][748]Cmd: Houdini.Pause"
+    },
+    {
+      "line": 2403,
+      "text": "[2026.09.28-10.04.44:037][748]LogHoudiniEngineEditor: Houdini Engine cooking paused."
+    },
+    {
+      "line": 2418,
+      "text": "[2026.09.28-10.09.59:417][525]Cmd: MAP LOAD FILE=\"../../../../../../Users/USER/Documents/Unreal Projects/Environmentpipeline/Content/Developers/USER/HoudiniCityProof/HoudiniCityProof.umap\" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4"
+    },
+    {
+      "line": 2963,
+      "text": "[2026.09.28-10.35.41:951][151]LogHoudiniEngine: Successfully intialized the Houdini Engine module."
+    },
+    {
+      "line": 3043,
+      "text": "[2026.09.28-10.39.31:134][303]LogExit: Exiting."
+    },
+    {
+      "line": 3044,
+      "text": "[2026.09.28-10.39.31:144][303]Log file closed, 09/28/26 13:39:31"
+    }
+  ],
+  "raw_record_count": 179,
+  "call_tool_count": 172,
+  "raw_readings": [
+    {
+      "file": "009_M02_find_actors_all.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "find_actors",
+            "arguments": {
+              "name": "",
+              "tag": "",
+              "collision_channels": []
+            },
+            "toolset_name": "editor_toolset.toolsets.scene.SceneTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.WorldSettings_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Brush_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DirectionalLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyAtmosphere_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ExponentialHeightFog_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.VolumetricCloud_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.PlayerStart_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.StaticMeshActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Floor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.BuoyancyManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DefaultPhysicsVolume_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.GameplayDebuggerPlayerManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ChaosDebugDrawActor\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.AbstractNavData-Default\"}]}"
+    },
+    {
+      "file": "031_M11_props_ProxyData_B1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.ProxyData"
+              },
+              "properties": [
+                "bOverrideGlobalProxyStaticMeshSettings",
+                "bEnableProxyStaticMeshOverride",
+                "bEnableProxyStaticMeshRefinementByTimerOverride",
+                "bEnableProxyStaticMeshRefinementOnPreSaveWorldOverride"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"bOverrideGlobalProxyStaticMeshSettings\\\":false,\\\"bEnableProxyStaticMeshOverride\\\":true,\\\"bEnableProxyStaticMeshRefinementByTimerOverride\\\":false,\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorldOverride\\\":true}\"}"
+    },
+    {
+      "file": "034_M07_components_B1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_components",
+            "arguments": {
+              "actor": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_3\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_4\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_5\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_2\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniAssetCookableComponent\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.BillboardComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.BillboardComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.BillboardComponent_2\"}]}"
+    },
+    {
+      "file": "035_M07_components_B2.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_components",
+            "arguments": {
+              "actor": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable.HoudiniAssetCookableComponent\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_1\"}]}"
+    },
+    {
+      "file": "036_M04_transform_B1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_actor_transform",
+            "arguments": {
+              "actor": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"location\":{\"x\":0,\"y\":0,\"z\":0},\"rotation\":{\"pitch\":0,\"yaw\":0,\"roll\":-0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}}}"
+    },
+    {
+      "file": "037_M04_transform_B2.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_actor_transform",
+            "arguments": {
+              "actor": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"location\":{\"x\":0,\"y\":0,\"z\":0},\"rotation\":{\"pitch\":0,\"yaw\":0,\"roll\":-0},\"scale\":{\"x\":1,\"y\":1,\"z\":1}}}"
+    },
+    {
+      "file": "040_M08_props_B1_SMC_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_0"
+              },
+              "properties": [
+                "StaticMesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"StaticMesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo.B1_probebox_161_165_0_main_geo\\\"},\\\"bVisible\\\":true,\\\"bHiddenInGame\\\":false,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "041_M08_props_B1_SMC_1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_1"
+              },
+              "properties": [
+                "StaticMesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"StaticMesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo.B1_probebox_161_168_0_main_geo\\\"},\\\"bVisible\\\":true,\\\"bHiddenInGame\\\":false,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "042_M08_props_B1_SMC_2.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_2"
+              },
+              "properties": [
+                "StaticMesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"StaticMesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo.B1_probebox_161_171_0_main_geo\\\"},\\\"bVisible\\\":true,\\\"bHiddenInGame\\\":false,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "043_M08_props_B1_HSM_3.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_3"
+              },
+              "properties": [
+                "Mesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"Mesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo_HSM.B1_probebox_161_165_0_main_geo_HSM\\\"},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "044_M08_props_B1_HSM_4.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_4"
+              },
+              "properties": [
+                "Mesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"Mesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo_HSM.B1_probebox_161_168_0_main_geo_HSM\\\"},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "045_M08_props_B1_HSM_5.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniStaticMeshComponent_5"
+              },
+              "properties": [
+                "Mesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"Mesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo_HSM.B1_probebox_161_171_0_main_geo_HSM\\\"},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "046_M08_props_B2_SMC_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_0"
+              },
+              "properties": [
+                "StaticMesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"StaticMesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo.B2_labs_osm_97_102_0_main_geo\\\"},\\\"bVisible\\\":true,\\\"bHiddenInGame\\\":false,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "047_M08_props_B2_SMC_1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_1"
+              },
+              "properties": [
+                "StaticMesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"StaticMesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo.B2_labs_osm_97_105_0_main_geo\\\"},\\\"bVisible\\\":true,\\\"bHiddenInGame\\\":false,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "048_M08_props_B2_HSM_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_0"
+              },
+              "properties": [
+                "Mesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"Mesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo_HSM.B2_labs_osm_97_102_0_main_geo_HSM\\\"},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "049_M08_props_B2_HSM_1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniStaticMeshComponent_1"
+              },
+              "properties": [
+                "Mesh",
+                "bVisible",
+                "bHiddenInGame",
+                "RelativeLocation",
+                "RelativeRotation",
+                "RelativeScale3D"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"Mesh\\\":{\\\"refPath\\\":\\\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo_HSM.B2_labs_osm_97_105_0_main_geo_HSM\\\"},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":0,\\\"z\\\":0},\\\"RelativeRotation\\\":{\\\"pitch\\\":0,\\\"yaw\\\":0,\\\"roll\\\":0},\\\"RelativeScale3D\\\":{\\\"x\\\":1,\\\"y\\\":1,\\\"z\\\":1}}\"}"
+    },
+    {
+      "file": "068_M06x_props_B2_Billboard_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_0"
+              },
+              "properties": [
+                "RelativeLocation",
+                "bVisible",
+                "bHiddenInGame",
+                "bIsScreenSizeScaled",
+                "ScreenSize",
+                "Sprite"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"RelativeLocation\\\":{\\\"x\\\":29076.58984375,\\\"y\\\":29114.3896484375,\\\"z\\\":17.321071912663903},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"bIsScreenSizeScaled\\\":true,\\\"ScreenSize\\\":0.0024999999441206455,\\\"Sprite\\\":{\\\"refPath\\\":\\\"/HoudiniEngine/Textures/icon_houdini_logo_128.icon_houdini_logo_128\\\"}}\"}"
+    },
+    {
+      "file": "069_M06x_props_B2_Billboard_1.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.BillboardComponent_1"
+              },
+              "properties": [
+                "RelativeLocation",
+                "bVisible",
+                "bHiddenInGame",
+                "bIsScreenSizeScaled",
+                "ScreenSize",
+                "Sprite"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"RelativeLocation\\\":{\\\"x\\\":27265.21337890625,\\\"y\\\":28389.94287109375,\\\"z\\\":45969.096694877582},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"bIsScreenSizeScaled\\\":true,\\\"ScreenSize\\\":0.0024999999441206455,\\\"Sprite\\\":{\\\"refPath\\\":\\\"/HoudiniEngine/Textures/icon_houdini_logo_128.icon_houdini_logo_128\\\"}}\"}"
+    },
+    {
+      "file": "070_M09_runtime_settings_CDO.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_properties",
+            "arguments": {
+              "instance": {
+                "refPath": "/Script/HoudiniEngineRuntime.Default__HoudiniRuntimeSettings"
+              },
+              "properties": [
+                "SessionType",
+                "bStartAutomaticServer",
+                "ServerPipeName",
+                "bPauseCookingOnStart",
+                "DefaultTemporaryCookFolder",
+                "DefaultBakeFolder",
+                "OtlSearchPath",
+                "HoudiniEnvironmentFiles",
+                "bEnableProxyStaticMesh",
+                "bEnableProxyStaticMeshRefinementByTimer",
+                "bEnableProxyStaticMeshRefinementOnPreSaveWorld"
+              ]
+            },
+            "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":\"{\\\"SessionType\\\":\\\"HRSST_NamedPipe\\\",\\\"bStartAutomaticServer\\\":true,\\\"ServerPipeName\\\":\\\"hapi\\\",\\\"bPauseCookingOnStart\\\":false,\\\"DefaultTemporaryCookFolder\\\":\\\"/Game/HoudiniEngine/Temp\\\",\\\"DefaultBakeFolder\\\":\\\"/Game/HoudiniEngine/Bake\\\",\\\"OtlSearchPath\\\":\\\"\\\",\\\"HoudiniEnvironmentFiles\\\":\\\"\\\",\\\"bEnableProxyStaticMesh\\\":true,\\\"bEnableProxyStaticMeshRefinementByTimer\\\":false,\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorld\\\":true}\"}"
+    },
+    {
+      "file": "071_M14_bounds_B1_161_165.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_bounds",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo.B1_probebox_161_165_0_main_geo"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"min\":{\"x\":-100,\"y\":-200,\"z\":0},\"max\":{\"x\":100,\"y\":200,\"z\":600},\"isValid\":true}}"
+    },
+    {
+      "file": "072_M14_bounds_B1_161_168.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_bounds",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo.B1_probebox_161_168_0_main_geo"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"min\":{\"x\":989.99993896484375,\"y\":-10,\"z\":-10},\"max\":{\"x\":1010.0000610351562,\"y\":10,\"z\":10},\"isValid\":true}}"
+    },
+    {
+      "file": "073_M14_bounds_B1_161_171.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_bounds",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo.B1_probebox_161_171_0_main_geo"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"min\":{\"x\":-10,\"y\":989.99993896484375,\"z\":-10},\"max\":{\"x\":10,\"y\":1010.0000610351562,\"z\":10},\"isValid\":true}}"
+    },
+    {
+      "file": "074_M14_bounds_B2_97_102.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_bounds",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo.B2_labs_osm_97_102_0_main_geo"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"min\":{\"x\":29066.58984375,\"y\":29104.388671875,\"z\":-10},\"max\":{\"x\":29086.58984375,\"y\":29124.390625,\"z\":10},\"isValid\":true}}"
+    },
+    {
+      "file": "075_M14_bounds_B2_97_105.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_bounds",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo.B2_labs_osm_97_105_0_main_geo"
+              }
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":{\"min\":{\"x\":-4257.8779296875,\"y\":-5068.2783203125,\"z\":0},\"max\":{\"x\":58788.3046875,\"y\":61848.1640625,\"z\":0},\"isValid\":true}}"
+    },
+    {
+      "file": "076_M15_tris_B1_161_165.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_triangle_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo.B1_probebox_161_165_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":12}"
+    },
+    {
+      "file": "077_M15_tris_B1_161_168.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_triangle_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo.B1_probebox_161_168_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":12}"
+    },
+    {
+      "file": "078_M15_tris_B1_161_171.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_triangle_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo.B1_probebox_161_171_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":12}"
+    },
+    {
+      "file": "079_M15_tris_B2_97_102.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_triangle_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo.B2_labs_osm_97_102_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":12}"
+    },
+    {
+      "file": "080_M15_tris_B2_97_105.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_triangle_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo.B2_labs_osm_97_105_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":637}"
+    },
+    {
+      "file": "081_M15_verts_B1_161_165.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_vertex_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo.B1_probebox_161_165_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":8}"
+    },
+    {
+      "file": "082_M15_verts_B1_161_168.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_vertex_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo.B1_probebox_161_168_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":8}"
+    },
+    {
+      "file": "083_M15_verts_B1_161_171.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_vertex_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo.B1_probebox_161_171_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":8}"
+    },
+    {
+      "file": "084_M15_verts_B2_97_102.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_vertex_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo.B2_labs_osm_97_102_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":8}"
+    },
+    {
+      "file": "085_M15_verts_B2_97_105.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_vertex_count",
+            "arguments": {
+              "mesh": {
+                "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo.B2_labs_osm_97_105_0_main_geo"
+              },
+              "lod_index": 0
+            },
+            "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":1205}"
+    },
+    {
+      "file": "086_M16_list_folders.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "list_folders",
+            "arguments": {
+              "root_path": "/Game/Developers/USER/HoudiniCityProof",
+              "recursive": true
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/Cook/\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/\"]}"
+    },
+    {
+      "file": "087_M17_find_assets_HCP.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "find_assets",
+            "arguments": {
+              "folder_path": "/Game/Developers/USER/HoudiniCityProof",
+              "name": "",
+              "recursive": true
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/B2_labs_osm\",\"/Game/Developers/USER/HoudiniCityProof/B1_probebox\"]}"
+    },
+    {
+      "file": "088_M17_exists_HoudiniBakeProof.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "exists",
+            "arguments": {
+              "path": "/Game/Developers/USER/HoudiniCityProof/HoudiniBakeProof"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":false}"
+    },
+    {
+      "file": "089_M18_find_assets_Temp.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "find_assets",
+            "arguments": {
+              "folder_path": "/Game/HoudiniEngine/Temp",
+              "name": "",
+              "recursive": true
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_7_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_13_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_10_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_156_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_153_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_150_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_90_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_87_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_26_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_23_0_main_geo\"]}"
+    },
+    {
+      "file": "090_M20_dependencies_map.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_dependencies",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Engine/EngineMaterials/WorldGridMaterial\",\"/Script/HoudiniEngineRuntime\",\"/Engine/EngineSky/SM_SkySphere\",\"/Engine/EngineSky/M_SimpleSkyDome\",\"/Engine/MapTemplates/SM_Template_Map_Floor\",\"/Engine/EditorResources/LightIcons/S_LightError\",\"/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud_Inst\",\"/Engine/OpenWorldTemplate/LandscapeMaterial/MI_ProcGrid\",\"/Game/Developers/USER/HoudiniCityProof/B1_probebox\",\"/Game/Developers/USER/HoudiniCityProof/B2_labs_osm\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo_HSM\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo\",\"/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo_HSM\"]}"
+    },
+    {
+      "file": "091_M19_refs_temp_B1_3_7_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_7_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "092_M19_refs_temp_B1_3_10_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_10_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "093_M19_refs_temp_B1_3_13_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_13_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "094_M19_refs_temp_B1_146_150_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_150_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "095_M19_refs_temp_B1_146_153_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_153_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "096_M19_refs_temp_B1_146_156_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_156_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "097_M19_refs_temp_B2_18_23_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_23_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "098_M19_refs_temp_B2_18_26_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_26_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "099_M19_refs_temp_B2_82_87_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_87_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "100_M19_refs_temp_B2_82_90_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_90_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[]}"
+    },
+    {
+      "file": "101_M21_refs_cook_B1_161_165_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "102_M21_refs_cook_B1_161_168_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "103_M21_refs_cook_B1_161_171_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "104_M21_refs_cook_B2_97_102_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "105_M21_refs_cook_B2_97_105_0.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "106_M21_refs_cook_B1_161_165_0_HSM.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo_HSM"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "107_M21_refs_cook_B1_161_168_0_HSM.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo_HSM"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "108_M21_refs_cook_B1_161_171_0_HSM.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_171_0_main_geo_HSM"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "109_M21_refs_cook_B2_97_102_0_HSM.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo_HSM"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    },
+    {
+      "file": "110_M21_refs_cook_B2_97_105_0_HSM.json",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "tools/call",
+        "params": {
+          "name": "call_tool",
+          "arguments": {
+            "tool_name": "get_referencers",
+            "arguments": {
+              "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_105_0_main_geo_HSM"
+            },
+            "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+          }
+        }
+      },
+      "isError": null,
+      "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    }
+  ]
+}

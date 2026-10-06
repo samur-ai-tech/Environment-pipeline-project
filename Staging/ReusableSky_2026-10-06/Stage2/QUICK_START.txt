@@ -1,0 +1,34 @@
+REUSABLE SKY — STAGE 2 QUICK START
+2026-10-06, Unreal Engine 5.8.2
+
+Entry asset: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+Supporting asset: /Game/Project/Shared/Atmosphere/ReusableSky/MI_EnvironmentCloudDefaults
+Retained scene: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Existing actor: EnvironmentSky (BP_EnvironmentSky_C_0). Do not add another rig to this scene.
+
+IN THE RETAINED RIMAL SCENE
+1. Select EnvironmentSky in the Outliner.
+2. In Details, use Time Of Day (0–24) and read Clock Display (HH:MM). Date, latitude/longitude, UTC offset, daylight-saving choice and North Offset remain under their Stage 1 categories. Manual Sun uses its separate direction/elevation values.
+3. Click Preset Clear, Preset Partly Cloudy, Preset Overcast or Preset Hazy. These are editor buttons. Weather Preset is a last-applied label; typing into that string does not apply a preset.
+4. Adjust Cloud Amount from 0 to 1 and Haze from 0 to 1. Amount 0 hides the owned cloud component. Amount 1 gives the tuned overcast endpoint. Intermediate amounts are nonlinear. These controls are numeric drag fields; the Stage 1 time slider is retained.
+5. Cloud Speed is a relative wind multiplier: 0 stops base wind translation, 1 is normal, 20 is the maximum used for the motion comparison. Cloud Direction is degrees relative to North Offset (0 follows north, 90 is perpendicular). Engine cloud detail animation is not a meteorological wind simulation.
+6. High Quality unchecked = Balanced (default); checked = High. No project-wide scalability setting changes.
+7. Keep viewport Realtime enabled for cloud motion. If the editor is unfocused and CPU throttling is enabled, clouds can appear coarse or update slowly until the active realtime viewport accumulates frames. Allow temporal rendering to settle after changing a preset.
+
+IN ANOTHER SCENE
+Enable Sun Position Calculator and restart if needed (already enabled in this project). Drag one BP_EnvironmentSky into the scene. Rig Enabled defaults OFF for safety. Read Status and Conflict Actors. Deliberately resolve existing sun/sky/cloud systems before enabling this rig; it never deletes or switches off external actors by itself. Existing fog and camera/post-process exposure remain authoritative. North Offset controls the north arrow; rotating the actor is not a substitute for this control.
+
+The original Rimal light, sky, sky dome and cloud actors were retained and deliberately deactivated component-by-component; restoration receipts identify exact paths. The original ExponentialHeightFog remains active and unchanged. Do not blindly re-enable retained originals while the rig is active.
+
+Presets preserve time, date, geographic settings, manual-sun values, north, wind, quality, base light intensities and exposure. Cloud Amount coordinates sun attenuation, sun source angle and sky fill through UpdateSky. It does not overwrite the base Sun Intensity or Sky Intensity inputs.
+
+Each Construction Script creates a fresh transient dynamic cloud material; ordinary UpdateSky calls reuse it. The shared material instance asset is a defaults resource and is not edited by actor controls. Fresh-process reopening reconstructs the transient instance successfully.
+
+At runtime, after changing controls call UpdateSky; presets call it internally. BeginPlay also updates. PIE/packaged runtime was not verified in Stage 2. Automatic clock animation, moon and stars are not implemented here.
+
+LIMITATIONS
+Changing wind speed/direction/north can jump the cloud pattern because the Engine material derives wind offset from absolute shader time. Cloud phases restart with a new editor process. Smooth animated wind transitions are not claimed.
+Haze adjusts the owned SkyAtmosphere's Mie scattering, not the scene's existing fog. Its appearance depends on viewing distance, sun direction and existing scene atmosphere. The Hazy preset is restrained in the current near-city view.
+Balanced/High were measured at the retained camera with another editor open; these are local observations, not guaranteed frame rates. A second original scene, packaged builds, and other hardware/renderer combinations remain unverified.
+
+Full receipts, native screenshots and measurements are in this Stage2 folder. Early tuning screenshots containing 'initial' or 'tuned' are historical diagnostics, not delivery images; use EVIDENCE.html and REOPEN_VERIFIED.json.

@@ -1,0 +1,67 @@
+[
+ {
+  "label": "SENT_find_actors_all",
+  "toolset": "editor_toolset.toolsets.scene.SceneTools",
+  "tool": "find_actors",
+  "args": {
+   "name": "",
+   "tag": "",
+   "collision_channels": []
+  }
+ },
+ {
+  "label": "SENT_find_actors_HoudiniAssetActor",
+  "toolset": "editor_toolset.toolsets.scene.SceneTools",
+  "tool": "find_actors",
+  "args": {
+   "name": "",
+   "tag": "",
+   "collision_channels": [],
+   "actor_type": {
+    "refPath": "/Script/HoudiniEngineRuntime.HoudiniAssetActor"
+   }
+  }
+ },
+ {
+  "label": "SENT_dirty_map_end",
+  "toolset": "editor_toolset.toolsets.asset.AssetTools",
+  "tool": "is_dirty",
+  "args": {
+   "asset_path": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof"
+  }
+ },
+ {
+  "label": "SENT_current_level",
+  "toolset": "editor_toolset.toolsets.scene.SceneTools",
+  "tool": "get_current_level",
+  "args": {}
+ },
+ {
+  "label": "SENT_props_B1_SMC_0",
+  "toolset": "editor_toolset.toolsets.object.ObjectTools",
+  "tool": "get_properties",
+  "args": {
+   "instance": {
+    "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.StaticMeshComponent_0"
+   },
+   "properties": [
+    "StaticMesh",
+    "bVisible"
+   ]
+  }
+ },
+ {
+  "label": "SENT_props_B2_SMC_1",
+  "toolset": "editor_toolset.toolsets.object.ObjectTools",
+  "tool": "get_properties",
+  "args": {
+   "instance": {
+    "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.StaticMeshComponent_1"
+   },
+   "properties": [
+    "StaticMesh",
+    "bVisible"
+   ]
+  }
+ }
+]

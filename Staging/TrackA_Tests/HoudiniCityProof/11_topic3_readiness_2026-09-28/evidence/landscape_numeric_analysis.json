@@ -1,0 +1,176 @@
+{
+  "kind": "OFFLINE_SOURCE_ARITHMETIC_NOT_PLUGIN_EXECUTION",
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "pillow": "12.3.0",
+  "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Handoff\\GazaRimal\\GazaRimal_v001_height_qa.tif",
+  "source_sha256": "c6c5941b8e2b976b2254083b9ea6727694f107dfa47bea1de328e6a44a0415c5",
+  "source_status": "Frozen WorldBLD v001 reference distribution only; NOT a full-city HDA output or acceptance target",
+  "input_vertices": 1018081,
+  "input_shape": [
+    1009,
+    1009
+  ],
+  "height_min_m": 26.18757438659668,
+  "height_max_m": 57.96408462524414,
+  "assumptions": [
+    "No resampling, identity HDA/part transform, heightfield Z-origin zero",
+    "Exact operation order modelled with float32 intermediate arrays, no fused multiply-add; native compiler/runtime still needs live check",
+    "UE local decode=(q-32768)/128; world Z=originZ+local*scaleZ",
+    "No collision triangulation/interpolation or Landscape edit-layer blending modelled"
+  ],
+  "formulas": [
+    "range_cm=scale_z*256",
+    "aligned=float32(height_m*float32((100/range_cm)*0.5)+0.5)",
+    "q=truncate(float32(clamp(aligned,0,1)*65535))",
+    "world_z_cm=(q-32768)/128*scale_z+origin_z_cm"
+  ],
+  "cases": [
+    {
+      "case": "defaults_full_resolution",
+      "landscape_scale_z": 100.0,
+      "landscape_origin_z_cm": 0.0,
+      "encoded_step_cm": 0.78125,
+      "clamped_vertices": 0,
+      "error_cm_min": -1.2569427490234375,
+      "error_cm_max": -0.429534912109375,
+      "max_abs_error_cm": 1.2569427490234375,
+      "rms_error_cm": 0.8690174654205457,
+      "over_2cm": 0,
+      "encoded_min": 36119,
+      "encoded_max": 40186,
+      "q_array_sha256": "4dde301ec39c332ae1e441a7e00dc6ef9245c7d70114e4698a600061f7469d51"
+    },
+    {
+      "case": "defaults_three_quarters",
+      "landscape_scale_z": 100.0,
+      "landscape_origin_z_cm": 0.0,
+      "encoded_step_cm": 0.78125,
+      "clamped_vertices": 0,
+      "error_cm_min": -1.2569427490234375,
+      "error_cm_max": -0.429534912109375,
+      "max_abs_error_cm": 1.2569427490234375,
+      "rms_error_cm": 0.8690174654205457,
+      "over_2cm": 0,
+      "encoded_min": 36119,
+      "encoded_max": 40186,
+      "q_array_sha256": "4dde301ec39c332ae1e441a7e00dc6ef9245c7d70114e4698a600061f7469d51"
+    },
+    {
+      "case": "default_scaling_true_contract_metre_attributes",
+      "landscape_scale_z": 1.999969482421875,
+      "landscape_origin_z_cm": -0.00390625,
+      "encoded_step_cm": 0.015624761581420898,
+      "clamped_vertices": 1018081,
+      "error_cm_min": -5284.4358060359955,
+      "error_cm_max": -2106.7847821712494,
+      "max_abs_error_cm": 5284.4358060359955,
+      "rms_error_cm": 3437.226219525527,
+      "over_2cm": 1018081,
+      "encoded_min": 65535,
+      "encoded_max": 65535,
+      "q_array_sha256": "83dd6d21d376ed1661c3ae5452592361d9d08f65cabb0841784afa2efb53bc41"
+    },
+    {
+      "case": "default_scaling_true_no_range",
+      "landscape_scale_z": 100.0,
+      "landscape_origin_z_cm": 0.0,
+      "encoded_step_cm": 0.78125,
+      "clamped_vertices": 0,
+      "error_cm_min": -1.2569427490234375,
+      "error_cm_max": -0.429534912109375,
+      "max_abs_error_cm": 1.2569427490234375,
+      "rms_error_cm": 0.8690174654205457,
+      "over_2cm": 0,
+      "encoded_min": 36119,
+      "encoded_max": 40186,
+      "q_array_sha256": "4dde301ec39c332ae1e441a7e00dc6ef9245c7d70114e4698a600061f7469d51"
+    }
+  ],
+  "synthetic_samples": [
+    {
+      "height_m": -256.0,
+      "q": 0,
+      "decoded_cm": -25600.0,
+      "error_cm": 0.0
+    },
+    {
+      "height_m": -200.0,
+      "q": 7167,
+      "decoded_cm": -20000.78125,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": -1.0,
+      "q": 32639,
+      "decoded_cm": -100.78125,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": -0.00390625,
+      "q": 32767,
+      "decoded_cm": -0.78125,
+      "error_cm": -0.390625
+    },
+    {
+      "height_m": 0.0,
+      "q": 32767,
+      "decoded_cm": -0.78125,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": 0.00390625,
+      "q": 32768,
+      "decoded_cm": 0.0,
+      "error_cm": -0.390625
+    },
+    {
+      "height_m": 1.0,
+      "q": 32895,
+      "decoded_cm": 99.21875,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": 39.766998291015625,
+      "q": 37857,
+      "decoded_cm": 3975.78125,
+      "error_cm": -0.9185791015625
+    },
+    {
+      "height_m": 50.0,
+      "q": 39167,
+      "decoded_cm": 4999.21875,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": 200.0,
+      "q": 58367,
+      "decoded_cm": 19999.21875,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": 255.9921875,
+      "q": 65534,
+      "decoded_cm": 25598.4375,
+      "error_cm": -0.78125
+    },
+    {
+      "height_m": 256.0,
+      "q": 65535,
+      "decoded_cm": 25599.21875,
+      "error_cm": -0.78125
+    }
+  ],
+  "frozen_png_reference": {
+    "shape": [
+      1009,
+      1009
+    ],
+    "encoded_min": 36120,
+    "encoded_max": 40187,
+    "decoded_min_m": 26.1875,
+    "decoded_max_m": 57.9609375,
+    "orientation_comparison": "not performed; frozen export not substituted as city input"
+  },
+  "recommendation": "Retain source defaults pending authorised LS1; do not turn DefaultUnrealScaling on to enforce metre-valued attributes. Current default arithmetic fits 2cm vertex tolerance on the frozen distribution, but no live terrain trace is proved."
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "environmentpipeline.epic_ground_plan.v1",
+  "pid": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "textures": {
+    "Sand_01_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "Sand_01_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "Sand_02_Albedo": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+    "Sand_02_Normal": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+    "Dirt_Path_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "Dirt_Path_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "Sand_Path_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "Sand_Path_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "Ground_MacroMask": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+  },
+  "scalars": {
+    "Sand_01_Roughness": 0.8,
+    "Sand_02_Roughness": 0.8,
+    "Dirt_Path_Roughness": 0.8,
+    "Sand_Path_Roughness": 0.8
+  },
+  "vectors": {
+    "Sand_01_Tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Sand_02_Tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Dirt_Path_Tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Sand_Path_Tint": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "Sand_01_TileCm": [
+      200,
+      200,
+      200,
+      1
+    ],
+    "Sand_02_TileCm": [
+      200,
+      200,
+      200,
+      1
+    ],
+    "Dirt_Path_TileCm": [
+      100,
+      100,
+      100,
+      1
+    ],
+    "Sand_Path_TileCm": [
+      150,
+      150,
+      150,
+      1
+    ]
+  },
+  "graph_receipt_sha256": "bbdfb7fbda9abf75b3291829dfda675d69041ae85844faf2ac5498899a0333fe",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "source_choice": "Latest direct human correction: original Unreal/Epic StarterContent rather than bank/MOUT",
+  "adaptation": "Epic native color/normal pairs and MacroVariation; roughness constant at native dry maximum .8, AO1 since original masters have no AO output. Existing geographic/stochastic sampling retained; this is not a clone of Epic original masters.",
+  "building_pad_semantics": "Graded ground, not assumed concrete slab",
+  "held_checkpoint": "Prior unused unbound MOUT copied texture is held and excluded from surface source choice."
+}

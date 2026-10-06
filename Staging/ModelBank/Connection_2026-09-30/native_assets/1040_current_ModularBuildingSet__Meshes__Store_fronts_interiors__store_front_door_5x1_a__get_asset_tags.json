@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1050,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Store_fronts_interiors/store_front_door_5x1_a"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"117x740x395\",\"CollisionPrims\":\"7\",\"Materials\":\"6\",\"ResourceSize\":\"205.58\",\"Triangles\":\"1164\",\"UVChannels\":\"3\",\"Vertices\":\"2438\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1050,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"117x740x395\",\"CollisionPrims\":\"7\",\"Materials\":\"6\",\"ResourceSize\":\"205.58\",\"Triangles\":\"1164\",\"UVChannels\":\"3\",\"Vertices\":\"2438\"}}"
+    }
+   ]
+  }
+ }
+}

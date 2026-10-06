@@ -1,0 +1,153 @@
+{
+ "schema": "environmentpipeline.s1_material_edit.args.v2",
+ "_note": "Phase-a tune after Aviv judged A1 as \"right direction, softer\": lower patch/hue/value/far/height amounts; nothing else changes.",
+ "mode": "tune",
+ "label": "s1_shuj_t001",
+ "root_activation": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/Activation/S1_ROOT_ACTIVATION_GazaShujaiya_PID23156.json",
+ "root_activation_sha256": "7c9ae2b8b2939236b6a00f5508525c9dd225ed79854257ac920d9f0495a7e200",
+ "expected_pid": 23156,
+ "script_sha256": "5c48daaffd81e46a81bacfbac22a2353f32cb3b188b95c550190fc98497c0705",
+ "executed_script_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/s1_material_edit.py",
+ "operator_preconditions": {
+  "no_asset_editors_open_on_s1_assets": true,
+  "measured_by": "unreal-mcp EditorToolset.EditorAppToolset.GetOpenAssets returned [] at 2026-10-05T20:58:13Z (PID 23156)",
+  "attested_by": "Claude manager cc37d4d2"
+ },
+ "backup_manifest": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/Before/S1B_20261005T202836Z/BACKUP_MANIFEST.json",
+ "backup_manifest_sha256": "c32afcdb5c2b848d912b5888761dc7ee5c6fc3d8f7220b1a45ef136d77532864",
+ "inspect_receipt": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/receipts/S1_INSPECT_s1_shuj_r001_inspect_PID23156.json",
+ "inspect_receipt_sha256": "7493c8859e017944c5d4cf8294a4a7e62a23f15514bd5a1f6e49a4fd51deac5b",
+ "apply_receipt": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/receipts/S1_APPLY_s1_shuj_r001_apply_PID23156.json",
+ "apply_receipt_sha256": "7c91d8552a11c0a30f63f4ff48d391e101efd4bff8142581739ab4839c384c61",
+ "state_receipt": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/receipts/S1_APPLY_s1_shuj_r001_apply_PID23156.json",
+ "state_receipt_sha256": "7c91d8552a11c0a30f63f4ff48d391e101efd4bff8142581739ab4839c384c61",
+ "save_receipt": null,
+ "save_receipt_sha256": null,
+ "child_save_receipts": [],
+ "visual_review_receipt": null,
+ "visual_review_receipt_sha256": null,
+ "visual_review_waiver": null,
+ "unattributed_log_ack": null,
+ "contact_band_acknowledged": false,
+ "variation_reviewed": false,
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "grass_coverage": {
+  "GazaShujaiya": 0.0
+ },
+ "child_values": {
+  "GazaShujaiya": {
+   "textures": {
+    "GeoCity_S1_MacroNoise": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk",
+    "GeoCity_S1_GroundB_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col",
+    "GeoCity_S1_GroundB_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm",
+    "GeoCity_S1_GroundC_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col",
+    "GeoCity_S1_GroundC_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm",
+    "GeoCity_S1_Soil_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+    "GeoCity_S1_VariationMask": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk",
+    "GeoCity_S1_VariationNormal": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm",
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm"
+   },
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.05,
+     1.0,
+     0.92,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.97,
+     0.96,
+     0.98,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.1,
+     1.06,
+     1.02,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.3,
+     1.27,
+     1.24,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     2.0,
+     1.9,
+     1.8,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     2.2,
+     2.1,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.95,
+     1.9,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 31100.0,
+    "GeoCity_S1_HueAmount": 0.6,
+    "GeoCity_S1_ValueAmount": 0.11,
+    "GeoCity_S1_FarSaturation": 1.1,
+    "GeoCity_S1_FarValue": 0.9,
+    "GeoCity_S1_FarAmount": 0.6,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.4,
+    "GeoCity_S1_GroundB_NormalStrength": 0.6,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.25,
+    "GeoCity_S1_GroundC_NormalStrength": 0.6,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.3,
+    "GeoCity_S1_PatchLo": 0.4,
+    "GeoCity_S1_PatchHi": 0.7,
+    "GeoCity_S1_SteepLo": 0.25,
+    "GeoCity_S1_SteepHi": 0.45,
+    "GeoCity_S1_SteepJitter": 0.15,
+    "GeoCity_S1_SteepSlopeMix": 0.5,
+    "GeoCity_S1_SteepStones": 0.35,
+    "GeoCity_S1_HeightBias": 0.85,
+    "GeoCity_S1_HeightContrast": 2.0,
+    "GeoCity_S1_HeightAmount": 0.6,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.7,
+    "GeoCity_S1_RoughVar": 0.05,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0
+   }
+  }
+ }
+}

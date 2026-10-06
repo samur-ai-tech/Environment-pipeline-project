@@ -1,0 +1,134 @@
+{
+  "schema": "environmentpipeline.task2.road_source_handoff.v2",
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "worker_thread_id": "01a106e8-f1fa-7741-bbcd-6c772df0ae03",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "source_hashes": {
+    "Content/Python/geocity_roadbld_clip.py": {
+      "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_grounding.py": {
+      "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_junctions.py": {
+      "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_landscape.py": {
+      "sha256": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+      "changed_in_landscape_fix": true
+    },
+    "Content/Python/geocity_roadbld_props.py": {
+      "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_seams.py": {
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_topology.py": {
+      "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_workflow.py": {
+      "sha256": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+      "changed_in_landscape_fix": true
+    },
+    "Config/DefaultEngine.ini": {
+      "sha256": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+      "changed_in_landscape_fix": false
+    },
+    "Config/DefaultRoadBLD.ini": {
+      "sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+      "changed_in_landscape_fix": false
+    }
+  },
+  "configuration_applied": true,
+  "native_policy_verified": false,
+  "interfaces": {
+    "unchanged": "require_geographic_landscape_authority() returns the existing flat five-false dict or raises; no mutation.",
+    "new_readonly": "inspect_geographic_landscape_authority() returns passed/errors, project config SHA, CDO/native Get paths and flags. It never sets defaults, reloads config, builds or saves.",
+    "run": "check_landscape_policy(stage) records structured evidence; verify_owned_landscape_patches() detects enabled patches without disabling them.",
+    "receipt_fields": [
+      "native_landscape_authority",
+      "native_landscape_edit_policy",
+      "native_owned_landscape_patches",
+      "retired_failed_generations",
+      "retired_successful_generations",
+      "unvalidated_previous_mesh_packages_preserved"
+    ],
+    "profile_field_patches": [],
+    "profile_reason": "Existing enabled road workflow/material setting suffices; terrain authority is project-wide and must not be profile-toggleable.",
+    "task1_required": [
+      "Keep pre-HDA require_geographic_landscape_authority call.",
+      "Include both project config files in final startup seal/hash verification; task2 did not edit task1 sealer/manifest/guard.",
+      "Keep existing build/staged_contract/commit and correction rollback ordering; reconcile prior saved Landscapes by exact official-output ownership."
+    ],
+    "landscape_authority": {
+      "schema": "environmentpipeline.task2.road_landscape_interface.v1",
+      "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+      "keyword": "landscape_authority",
+      "signature": "Append landscape_authority=None to build(...) and RoadBLDRun.__init__(...). Pass a bound method of the active GeoCityRun; no new positional arguments required.",
+      "callback": "No arguments. Parent guard must pass; native_road_phase must be authoring. Resolve the exact current Landscape with the parent's official_landscapes(self.wrapper) helper, requiring exactly one. Return {'actor': current_native_actor, 'evidence': fields below}. Never infer from actor name/suffix/order.",
+      "evidence": {
+        "schema": "environmentpipeline.current_road_landscape.v1",
+        "pid": "os.getpid()",
+        "named_map": "self.p['map']",
+        "area_id": "completed roadbld_centerlines['area_id']",
+        "source_sha256": "completed roadbld_centerlines['source_sha256']",
+        "centreline_sha256": "completed roadbld_centerlines['centreline_sha256']",
+        "lease_sha256": "sha256(self.lease_line.encode('utf-8'))",
+        "operation_started_epoch": "self.started_epoch",
+        "hda_actor_path": "exact self.wrapper.get_houdini_asset_actor().get_path_name()",
+        "current_actor_path": "current_native_actor.get_path_name()",
+        "accounted_previous_landscape_paths": "sorted self.state['previous_landscape_accounting']['live_actor_paths']; this is the pre-operation exact accounted list, not a new inventory-based approval",
+        "official_output_verified": true
+      },
+      "consumer_checks": "Require callback bound to the active lifecycle parent; verify parent guard, lease, source profile and current operation/phase. Compare supplied fields with run.plan and parent. Require exact loaded Landscape object identity, same named package/world and exact loaded HDA owner. Reject every other loaded Landscape not in the parent-accounted prior list. Freeze actor/operation/owner/evidence on first resolution before native authoring, revalidate it in subsequent samplers.",
+      "uses": "RoadBLDRun.start resolves before presets/network spawn; LandscapeSampler(run) in clip_final_geometry and grounding.correction consumes the same authority. No call-site change to grounding.correction. LandscapeSampler(run,saved=True) keeps final singleton safety after parent scoped prior-output retirement.",
+      "state_receipt": "current_landscape_authority contains JSON evidence only; UObject/callback handles remain on the live run, never JSON.",
+      "profile_patch": null,
+      "native_calls_by_task2": 0,
+      "implemented": true,
+      "checks_receipt": "LANDSCAPE_AUTHORITY_CHECKS.json",
+      "source_hashes": {
+        "Content/Python/geocity_roadbld_landscape.py": {
+          "sha256": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+          "changed_in_landscape_fix": true
+        },
+        "Content/Python/geocity_roadbld_workflow.py": {
+          "sha256": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+          "changed_in_landscape_fix": true
+        }
+      }
+    }
+  },
+  "native_preflight": [
+    "Current Landscape selector now requires task1 bound landscape_authority callback. Verify current_landscape_authority receipt matches current official helper actor, source/centreline hashes, parent operation/lease/HDA owner and exact prior accounting; no unknown Landscapes. Selector source native execution remains pending.",
+    "Manager/task4 only: actual sole UnrealEditor PID, exact current lease, original target map, paused Houdini, autoCook/autoBake off, zero callbacks and exact dirty packages. A released PID is not activation.",
+    "After all source owners freeze, task1 reseals final code and both Config/DefaultRoadBLD.ini and Config/DefaultEngine.ini. Start a fresh process; no hot reload into PID27188 or another old process.",
+    "Before any HDA mutation/native authoring save inspect_geographic_landscape_authority() report: passed=true; project_flags, native_views.class_default.flags and native_views.native_get.flags must each contain five literal false values. Record both settings object paths and project config SHA.",
+    "If either native view is enabled/unavailable, stop. Inspect the RoadBLD hierarchy/accessor. No CDO setter, runtime config reload, vendor edit or output suppression to force a pass.",
+    "Reconcile the two known saved Shujaiya Landscapes and exact successful/failed road actors. LandscapeSampler still demands one current cooked Landscape and one final saved Landscape; do not select arbitrarily or broadly remove actors.",
+    "Use the registered ordinary current-map action with licensed RoadBLD. Policy gates occur before network spawn, road creation, junction edits, every rebuild dispatch, after rebuild and during native validation.",
+    "Capture native logs and patch readback for each rebuild. No enabled owned LandscapePatchComponent is accepted or disabled afterward. Also inspect tile-patch logs and authoritative height/paint for changes outside owned components; zero owned components alone is not no-write proof."
+  ],
+  "required_validation": [
+    "Both originals: exact source XY, class/full width, protected-building exclusions, complete exterior intervals/sidewalks/junction seams and support/height gates. No fixed-road exceptions or lowered limits.",
+    "Validate actual UVs, split normals, material slots, collision and one visible road provider; preserve native originals and project-owned preset copies.",
+    "Inspect class-aware markings/crossings/native modules/PropSpawners in generated components and Lit views. Enabled settings are not visible detail proof. Empty native kit features remain explicit content gaps.",
+    "Check prop provenance, exact retained transforms/contact and omitted-conflict receipts; no bank expansion, held releases or candidate approvals.",
+    "Pending correction handles survive link checks, two validations and staged contract; rollback restores prior UV/normal/material/collision/state until explicit commit immediately before suppression. Real UObject lifetime and rollback fidelity remain unproven. Do not revive historical in-memory snapshots.",
+    "build callback true means validated unsaved output. staged_contract must feed the same PID/token/source official suppression Cook/Bake. commit rechecks the sole Landscape/provider before exact prior-road retirement and named saves.",
+    "Independently compare SAVED_ROAD_PRESERVATION.json: 132 failed actor paths, 87 saved package hashes and 136 successful actor paths/dependencies. Preserve packages; retire only verified current actor ledgers after replacement passes.",
+    "Task4 proves Shujaiya then Rimal Lit appearance, named saves, fresh-process reopen and repeated ordinary generation without duplicate providers/actors/Landscapes. User acceptance remains separate."
+  ],
+  "source_editing_stopped": true,
+  "next": "Review combined sources/seal, then fresh manager-authorized startup; bank is NEXT native writer after safe task4 release. No hot reload or generation authorization inferred.",
+  "native_policy_verified_in_task4_prior_run": true,
+  "current_selector_native_verified": false,
+  "latest_fix": "LANDSCAPE_SELECTOR_RESULT.json",
+  "landscape_interface": "ROAD_LANDSCAPE_INTERFACE.json"
+}

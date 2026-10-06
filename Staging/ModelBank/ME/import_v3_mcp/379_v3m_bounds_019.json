@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 125,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0091_Watertank_001.SM_H0091_Watertank_001"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-17.218124389648438,\"y\":-23.16221809387207,\"z\":-3.7807139960932545e-06},\"max\":{\"x\":17.548561096191406,\"y\":11.604520797729492,\"z\":131.47396850585938},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 125,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-17.218124389648438,\"y\":-23.16221809387207,\"z\":-3.7807139960932545e-06},\"max\":{\"x\":17.548561096191406,\"y\":11.604520797729492,\"z\":131.47396850585938},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 462,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_metal_box"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"57x86x99\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/metal_box.fbx\\\", \\\"Timestamp\\\" : \\\"1543298101\\\", \\\"FileMD5\\\" : \\\"06f53f7b14c5dddf0f96e5440d8e0aec\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"168\",\"UVChannels\":\"2\",\"Vertices\":\"338\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 462,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"57x86x99\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/metal_box.fbx\\\", \\\"Timestamp\\\" : \\\"1543298101\\\", \\\"FileMD5\\\" : \\\"06f53f7b14c5dddf0f96e5440d8e0aec\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"168\",\"UVChannels\":\"2\",\"Vertices\":\"338\"}}"
+    }
+   ]
+  }
+ }
+}

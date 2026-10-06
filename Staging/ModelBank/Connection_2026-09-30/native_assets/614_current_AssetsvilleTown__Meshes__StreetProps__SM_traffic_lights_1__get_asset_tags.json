@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 624,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_traffic_lights_1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"70x555x518\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/traffic_lights_1.fbx\\\", \\\"Timestamp\\\" : \\\"1540876179\\\", \\\"FileMD5\\\" : \\\"6dd1805fcd6f578d088db5dd40f19777\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"4\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"708\",\"UVChannels\":\"2\",\"Vertices\":\"1633\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 624,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"70x555x518\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/traffic_lights_1.fbx\\\", \\\"Timestamp\\\" : \\\"1540876179\\\", \\\"FileMD5\\\" : \\\"6dd1805fcd6f578d088db5dd40f19777\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"4\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"708\",\"UVChannels\":\"2\",\"Vertices\":\"1633\"}}"
+    }
+   ]
+  }
+ }
+}

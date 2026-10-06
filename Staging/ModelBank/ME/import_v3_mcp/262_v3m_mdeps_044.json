@@ -1,0 +1,34 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 55,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__28"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.338,
+ "isError": true,
+ "text": "'NoneType' object is not iterable",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 55,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "'NoneType' object is not iterable"
+    }
+   ],
+   "isError": true
+  }
+ }
+}

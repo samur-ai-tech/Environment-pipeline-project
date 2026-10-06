@@ -1,0 +1,91 @@
+{
+  "schema": "environmentpipeline.independent_ground_refinement_review.v1",
+  "reviewer": "/root/startup_review",
+  "reviewed_utc": "2026-10-05T01:09:29Z",
+  "status": "APPROVED_WITHIN_EXACT_GROUND_SCOPE",
+  "review_method": "Independent inspection of the complete frozen source, AST parsing, retained graph JSON traversal, current pin and input-receipt SHA256 checks, and original/backup/source file hashes. No native calls were performed by this reviewer.",
+  "script_sha256": {
+    "native_graph_refinement.py": "bf431e6ce3addeaa66dabfde758669e6b5f3fc9d61ecd14e0be55b349060d293",
+    "native_graph_revision.py": "7890eebfa06c73d6fff840a272992ec2e7dc0e10f4e9612601e7e311a2b8a338",
+    "native_revision_apply.py": "5872edb2f362cb45aed21fb1998467a858c7826f64e3f98fb2667a0aaec60cde",
+    "native_revision_save.py": "92bb6eb0f3f6bea3c180bbe5fff0b2d8a93175c5d3c7b57751b9abc2c45df95c",
+    "native_revision_verify.py": "7b52d81e03ec86377309da5c7afc3c617faa48948906cb02447485cc58204118"
+  },
+  "current_script_pins_sha256": "5b17ff84b76d3978fd5e9d07664b790d5deb25c4186584463c3f7947e067da8e",
+  "refinement_pin_matches": true,
+  "arguments": {
+    "file": "Staging/GroundPainting_2026-10-04/ARGS_graph_refine_r003.json",
+    "sha256": "1f3399a12480af84a0ceca78c1d0bb7f58536c8be60e8b0f710f0417a34bd9b3"
+  },
+  "input_receipts": {
+    "baseline_receipt": {
+      "file": "Staging/GroundPainting_2026-10-04/GazaShujaiya_revision_r002_state_PID30632.json",
+      "sha256": "079f10c042bebcb8cf7b20ed51ae2e1c0afaecc15f65de271361eab48fd3d031"
+    },
+    "graph_receipt": {
+      "file": "Staging/GroundPainting_2026-10-04/Revision_2026-10-05/GRAPH_REVISION_PID30632.json",
+      "sha256": "85c2852fda9a43833ae9234b46b33bf0705f4560cbc24082813b39cdd0e89fec"
+    },
+    "backup_manifest": {
+      "file": "Staging/GroundPainting_2026-10-04/Revision_2026-10-05/BACKUP_MANIFEST.json",
+      "sha256": "4e01a9926ae0e2479879a52fadeb13fdc1d3a927025e0db098f42b677e2bdd83"
+    }
+  },
+  "baseline_evidence": {
+    "qualification": "Read from exact current native receipt; every actual mutation still requires the helper's live guards.",
+    "pid": 30632,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "actor_count": 316,
+    "graph_count": 820,
+    "dirty_maps": [],
+    "dirty_content_count": 6,
+    "dirty_content_scope": "Only Natural master, four project-owned packed mask copies, and current area's MI_GeoCityGround.",
+    "cooking_paused": true,
+    "autosave": false,
+    "hda_count": 1,
+    "hda_auto_cook": false,
+    "hda_auto_bake": false,
+    "managed_geocity_callbacks": 0,
+    "all_thirteen_original_and_backup_files_match": true,
+    "all_sixty_five_preserved_and_seventeen_sealed_files_match": true
+  },
+  "concrete_mutation_scope": {
+    "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+    "retained_expression_count": 820,
+    "expected_added_expression_count": 95,
+    "expected_total_expression_count": 915,
+    "expected_new_texture_samples": 37,
+    "permitted_old_edge_count": 16,
+    "flat_target_layers": ["Sand_01", "Dirt_Path", "Sand_Path"],
+    "permitted_old_edges": {
+      "each_flat_target_old_revision_tag": ["TintedColor.A", "NormalIntensity.NormalMap", "PackedRoughnessR.None", "PackedAOG.None"],
+      "Sand_01_layer_root_inputs": ["color.Layer Sand_01", "normal.Layer Sand_01", "roughness.Layer Sand_01", "ao.Layer Sand_01"]
+    },
+    "sampling": "Explicit typed shared-wrap TextureSamples reuse current color, corrected normal and linear packed-mask texture objects. Two fixed translations [0,0] and [0.371,0.619] use matching near/far UVs for all three channels and the existing common distance alpha. No UV rotation, spatial rotation warp or normal-basis transform is introduced; normals are normalized before existing intensity and after soil mixing.",
+    "common_mask": "World XY / clamped 2000..3500cm canonical macro tile, existing Ground_MacroMask, smoothstep(0.2,0.8,macroR). The same mask controls all phase transitions and the soil contribution.",
+    "soil": "Existing coherent final Dirt_Path color, normal, roughness and AO contribute to Sand_01 using one alpha clamped to 0..0.35: canonical Ground_SoilBlendStrength * (0.25 + 0.75 * mask). Canonical old Sand branch independently resolves MaterialExpressionScalarParameter_104, avoiding arbitrary duplicate-name selection.",
+    "unchanged": "All 820 old node identities and observed properties; every old edge outside the exact sixteen; 69 layer names and weights; Sand_02 branch; material-property root identities; Grass graph/settings/effective coverage; actors, transforms, Landscape bindings, geometry and geographic height.",
+    "new_assets": [],
+    "new_parameters": [],
+    "explicit_compile_calls": false,
+    "explicit_save_calls": false,
+    "cook_or_bake_calls": false
+  },
+  "safeguards": [
+    "Exact actual-PID/thread/map GROUND_AUTHORING lease, sealed runtime guard, paused Engine, autoCook/autoBake/autosave off and zero managed callbacks before and after.",
+    "Current graph exactly equals retained 820-node receipt; same current baseline actor transforms and Landscape paths/materials; exact six dirty Content packages and no dirty maps.",
+    "Original thirteen package files, their backups, preserved/vendor/config/source files and existing new-mask disk states checked before and after; no duplicate_asset, new asset or vendor writes.",
+    "Exclusive once marker and unique operation receipt before mutation; actual sixteen changed old edges checked exactly; failure captures partial graph/disk/dirty state and stops without recovery, cleanup or automatic replay."
+  ],
+  "texture_input_runtime_check": "The exact helper requires UVs and Tex pins on newly created plain TextureSamples. This reviewer has not executed that native API check. If Tex is absent, the first macro sample fails before any old-edge rewiring and the helper preserves the partial new-node receipt for root review; it does not write protected native flags or guess an API workaround.",
+  "expanded_verifier_review": {
+    "sha256": "7b52d81e03ec86377309da5c7afc3c617faa48948906cb02447485cc58204118",
+    "pin_matches": true,
+    "syntax_parses": true,
+    "added_signature_properties": ["sampler_source", "const_min", "const_max", "min_default", "max_default", "const_alpha"],
+    "required_reference_policy": "Final post-refinement reference must use this expanded signature. Earlier 820-node signatures remain historical; fresh original-map reopens must match the new reviewed final signature."
+  },
+  "remaining_native_validation": "Root alone may execute the exact bounded refinement. Successful graph receipt, actual compilation and close/middle/wide Lit imagery remain required; this is not appearance or user acceptance. Named save helpers still require exact current graph/visual evidence, and persistence requires fresh original-map reopen with the expanded verifier. No refinement native call occurred during this review.",
+  "ordinary_generation_authorized": false,
+  "native_execution_performed_by_reviewer": false
+}

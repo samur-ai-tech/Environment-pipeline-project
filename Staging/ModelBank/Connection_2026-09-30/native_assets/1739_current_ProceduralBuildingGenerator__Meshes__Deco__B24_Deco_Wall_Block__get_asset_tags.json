@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1749,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/B24_Deco_Wall_Block"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.033,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"70x70x45\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/B24_Deco_Wall_Block.fbx\\\", \\\"Timestamp\\\" : \\\"1563137788\\\", \\\"FileMD5\\\" : \\\"065c2d0e4f9707857372de6f94700a33\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"38\",\"UVChannels\":\"2\",\"Vertices\":\"62\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1749,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"70x70x45\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/B24_Deco_Wall_Block.fbx\\\", \\\"Timestamp\\\" : \\\"1563137788\\\", \\\"FileMD5\\\" : \\\"065c2d0e4f9707857372de6f94700a33\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"38\",\"UVChannels\":\"2\",\"Vertices\":\"62\"}}"
+    }
+   ]
+  }
+ }
+}

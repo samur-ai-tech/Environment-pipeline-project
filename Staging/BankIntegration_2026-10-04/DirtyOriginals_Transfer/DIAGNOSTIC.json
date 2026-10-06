@@ -1,0 +1,738 @@
+{
+  "schema": "environmentpipeline.exact_dirty_original_diagnostic.v1",
+  "utc": "20261004T153538903587Z",
+  "lease": "2026-10-04T15:32:41.803320+00:00 OWNER=CODEX_BANK_INTEGRATION manager_thread_id=01a10789-2e6a-7321-ad85-0a2964f8a937 operator_thread_id=01a1067c-5012-7550-b449-015b53c9d726 task=bank assigned_editor_PID=32508 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=INSPECTION_ONLY scope=read_only_exact_dirty_original_preservation_recovery native_authorized_now=false ordinary_generation_authorized=false dirty_original_packages=3 native_handoff_clean=false management_transfer=true",
+  "before": {
+    "pid": 32508,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "dirty_content": [
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+    ],
+    "dirty_maps": [],
+    "cooking_paused": true,
+    "official_session_valid": false,
+    "autosave": false,
+    "hda_flags": [
+      {
+        "actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+        "auto_cook": false,
+        "auto_bake": false
+      }
+    ],
+    "callbacks": {
+      "geocity_bank_workflow": 0,
+      "geocity_roadbld_workflow": 0
+    }
+  },
+  "source_seal": {
+    "geocity_bank_workflow": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_bank_workflow.py",
+      "sha256": "f349d1289b8344e72339babddf80d538405a65a2ad31243ddc167d70b87022ce",
+      "verified_functions": 34
+    },
+    "geocity_editor_action": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_editor_action.py",
+      "sha256": "1b13b051a053d74dba7d55e7be6c365aab500ad44dd12be096d9eb267f5ab16a",
+      "verified_functions": 8
+    },
+    "geocity_landscape_workflow": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_landscape_workflow.py",
+      "sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+      "verified_functions": 12
+    },
+    "geocity_roadbld_clip": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+      "verified_functions": 18
+    },
+    "geocity_roadbld_grounding": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+      "verified_functions": 42
+    },
+    "geocity_roadbld_junctions": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+      "verified_functions": 28
+    },
+    "geocity_roadbld_landscape": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_landscape.py",
+      "sha256": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+      "verified_functions": 3
+    },
+    "geocity_roadbld_props": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_props.py",
+      "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+      "verified_functions": 8
+    },
+    "geocity_roadbld_seams": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "verified_functions": 19
+    },
+    "geocity_roadbld_topology": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_topology.py",
+      "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+      "verified_functions": 8
+    },
+    "geocity_roadbld_workflow": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+      "verified_functions": 59
+    },
+    "geocity_runtime_guard": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_runtime_guard.py",
+      "sha256": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0",
+      "verified_functions": 11
+    }
+  },
+  "rows": [
+    {
+      "path": "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G.MI_Plant_07_6_Leaves_G",
+      "class": "MaterialInstanceConstant",
+      "disk_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Palms_Pack_01\\Add_Props\\Plants\\Materials\\MI_Plant_07_6_Leaves_G.uasset",
+      "disk_sha256": "14d3365521a3c388cdefb51d67574ff1f0e37560b197f812cb2729a286b16464",
+      "disk_bytes": 108096,
+      "disk_mtime_utc": "2026-09-27T10:15:40.523792+00:00",
+      "registry_referencers": [
+        "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+      ],
+      "registry_dependencies": [
+        "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_Master",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_06_Leaves_SColor",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Leaves_Color",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Leaves_Normal"
+      ],
+      "properties": {
+        "parent": "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_Master.MI_Plant_Master",
+        "base_property_overrides": "(bOverride_OpacityMaskClipValue=False,bOverride_BlendMode=True,bOverride_ShadingModel=True,bOverride_DitheredLODTransition=False,bOverride_CastDynamicShadowAsMasked=False,bOverride_TwoSided=True,bOverride_bIsThinSurface=False,bOverride_OutputTranslucentVelocity=False,bOverride_bHasPixelAnimation=False,bOverride_bEnableTessellation=False,bOverride_DisplacementScaling=False,bOverride_bEnableDisplacementFade=False,bOverride_DisplacementFadeRange=False,bOverride_MaxWorldPositionOffsetDisplacement=False,bOverride_CompatibleWithLumenCardSharing=False,bOverride_UsageFlags=262144,TwoSided=True,bIsThinSurface=False,DitheredLODTransition=False,bCastDynamicShadowAsMasked=False,bOutputTranslucentVelocity=False,bHasPixelAnimation=False,bEnableTessellation=False,bEnableDisplacementFade=False,bCompatibleWithLumenCardSharing=False,BlendMode=BLEND_Masked,ShadingModel=MSM_TwoSidedFoliage,OpacityMaskClipValue=0.333300,DisplacementScaling=(Magnitude=4.000000,Center=0.500000),DisplacementFadeRange=(StartSizePixels=4.000000,EndSizePixels=1.000000),MaxWorldPositionOffsetDisplacement=0.000000,UsageFlags=4456592)",
+        "scalar_parameter_values": [
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Wave1_Scale\",Association=GlobalParameter,Index=-1),ParameterValue=64.000000,ExpressionGUID=19EDE6A146F23297DE14D7B9CFF0EC03)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Wave2_Scale\",Association=GlobalParameter,Index=-1),ParameterValue=64.000000,ExpressionGUID=9E92FD84406F78E9715951B04D66EC20)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Normal_Flatness\",Association=GlobalParameter,Index=-1),ParameterValue=1.000000,ExpressionGUID=7B10A5F64B0EAF429F6721B096D62661)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Roughness\",Association=GlobalParameter,Index=-1),ParameterValue=0.950000,ExpressionGUID=BEEF71084D23003B421CE1A69C4CD769)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Specular\",Association=GlobalParameter,Index=-1),ParameterValue=0.100000,ExpressionGUID=E5D4DB834937230F5D1305A75033BBF7)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"RefractionDepthBias\",Association=GlobalParameter,Index=-1),ParameterValue=0.000000,ExpressionGUID=00000000000000000000000000000000)"
+        ],
+        "vector_parameter_values": [],
+        "texture_parameter_values": [
+          "(ParameterInfo=(Name=\"Position and Index Texture\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3.T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3'\",ExpressionGUID=2485FCEC40C19441831E53B0F4563CE8)",
+          "(ParameterInfo=(Name=\"X-Vector And X-Extent Texture\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3.T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3'\",ExpressionGUID=FF80B65548E0E4978EFD8BA152D49900)",
+          "(ParameterInfo=(Name=\"Color_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Leaves_Color.T_Plant_07_Leaves_Color'\",ExpressionGUID=0B12987A4570A867E59B26B95FC102ED)",
+          "(ParameterInfo=(Name=\"Normal_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Leaves_Normal.T_Plant_07_Leaves_Normal'\",ExpressionGUID=FED5AD5047DFC2C5CFFF5486FFFF2FB8)",
+          "(ParameterInfo=(Name=\"Subsurface_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_06_Leaves_SColor.T_Plant_06_Leaves_SColor'\",ExpressionGUID=8B32947A45A1B56AF7B7C78174D32A87)"
+        ]
+      },
+      "unavailable_properties": {
+        "static_parameters": "MaterialInstanceConstant: Failed to find property 'static_parameters' for attribute 'static_parameters' on 'MaterialInstanceConstant'",
+        "used_with_nanite": "MaterialInstanceConstant: Failed to find property 'used_with_nanite' for attribute 'used_with_nanite' on 'MaterialInstanceConstant'",
+        "automatically_set_usage_in_editor": "MaterialInstanceConstant: Failed to find property 'automatically_set_usage_in_editor' for attribute 'automatically_set_usage_in_editor' on 'MaterialInstanceConstant'"
+      },
+      "text_export_success": true,
+      "text_export_errors": [],
+      "text_export": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\DirtyOriginals_Transfer\\20261004T153538903587Z_MI_Plant_07_6_Leaves_G.t3d",
+        "sha256": "25da5f55abea0b49e5c240f3473d2042d5f307db78e004a7b3b370ecd0e9991b",
+        "bytes": 5497
+      },
+      "disk_unchanged_after_export": true
+    },
+    {
+      "path": "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G.MI_Plant_07_6_Stem_G",
+      "class": "MaterialInstanceConstant",
+      "disk_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Palms_Pack_01\\Add_Props\\Plants\\Materials\\MI_Plant_07_6_Stem_G.uasset",
+      "disk_sha256": "4cffd8070aebe43763e432039b319bbce934cd626c94425b21043ffde008e906",
+      "disk_bytes": 113423,
+      "disk_mtime_utc": "2026-09-27T10:15:40.524292+00:00",
+      "registry_referencers": [
+        "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+      ],
+      "registry_dependencies": [
+        "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_Master",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_02_Leaves_SColor",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Stem_Color",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Stem_Normal"
+      ],
+      "properties": {
+        "parent": "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_Master.MI_Plant_Master",
+        "base_property_overrides": "(bOverride_OpacityMaskClipValue=False,bOverride_BlendMode=True,bOverride_ShadingModel=True,bOverride_DitheredLODTransition=False,bOverride_CastDynamicShadowAsMasked=False,bOverride_TwoSided=True,bOverride_bIsThinSurface=False,bOverride_OutputTranslucentVelocity=False,bOverride_bHasPixelAnimation=False,bOverride_bEnableTessellation=False,bOverride_DisplacementScaling=False,bOverride_bEnableDisplacementFade=False,bOverride_DisplacementFadeRange=False,bOverride_MaxWorldPositionOffsetDisplacement=False,bOverride_CompatibleWithLumenCardSharing=False,bOverride_UsageFlags=262144,TwoSided=True,bIsThinSurface=False,DitheredLODTransition=False,bCastDynamicShadowAsMasked=False,bOutputTranslucentVelocity=False,bHasPixelAnimation=False,bEnableTessellation=False,bEnableDisplacementFade=False,bCompatibleWithLumenCardSharing=False,BlendMode=BLEND_Masked,ShadingModel=MSM_TwoSidedFoliage,OpacityMaskClipValue=0.333300,DisplacementScaling=(Magnitude=4.000000,Center=0.500000),DisplacementFadeRange=(StartSizePixels=4.000000,EndSizePixels=1.000000),MaxWorldPositionOffsetDisplacement=0.000000,UsageFlags=4456592)",
+        "scalar_parameter_values": [
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Normal_Flatness\",Association=GlobalParameter,Index=-1),ParameterValue=3.000000,ExpressionGUID=7B10A5F64B0EAF429F6721B096D62661)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"Subsurface_Multiplier\",Association=GlobalParameter,Index=-1),ParameterValue=0.300000,ExpressionGUID=723CE16947B66687A1FC28A9C3CC7304)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"WindIntensity\",Association=GlobalParameter,Index=-1),ParameterValue=0.000000,ExpressionGUID=24D2BFAF4FC24E696244F3A1E08D7569)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"WindSpeed\",Association=GlobalParameter,Index=-1),ParameterValue=0.000000,ExpressionGUID=38CD49E2446246CB2F225593D7866C4C)",
+          "(AtlasData=(bIsUsedAsAtlasPosition=False,Curve=None,Atlas=None),ParameterInfo=(Name=\"RefractionDepthBias\",Association=GlobalParameter,Index=-1),ParameterValue=0.000000,ExpressionGUID=00000000000000000000000000000000)"
+        ],
+        "vector_parameter_values": [],
+        "texture_parameter_values": [
+          "(ParameterInfo=(Name=\"Position and Index Texture\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3.T_Plant_07_6_rgb_PivotPos_a_ParentIndexInt_UV_3'\",ExpressionGUID=2485FCEC40C19441831E53B0F4563CE8)",
+          "(ParameterInfo=(Name=\"X-Vector And X-Extent Texture\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/PivotPainter2_Textures/T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3.T_Plant_07_6_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3'\",ExpressionGUID=FF80B65548E0E4978EFD8BA152D49900)",
+          "(ParameterInfo=(Name=\"Color_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Stem_Color.T_Plant_07_Stem_Color'\",ExpressionGUID=0B12987A4570A867E59B26B95FC102ED)",
+          "(ParameterInfo=(Name=\"Normal_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_07_Stem_Normal.T_Plant_07_Stem_Normal'\",ExpressionGUID=FED5AD5047DFC2C5CFFF5486FFFF2FB8)",
+          "(ParameterInfo=(Name=\"Subsurface_Tex\",Association=GlobalParameter,Index=-1),ParameterValue=\"/Script/Engine.Texture2D'/Game/Palms_Pack_01/Add_Props/Plants/Textures/T_Plant_02_Leaves_SColor.T_Plant_02_Leaves_SColor'\",ExpressionGUID=8B32947A45A1B56AF7B7C78174D32A87)"
+        ]
+      },
+      "unavailable_properties": {
+        "static_parameters": "MaterialInstanceConstant: Failed to find property 'static_parameters' for attribute 'static_parameters' on 'MaterialInstanceConstant'",
+        "used_with_nanite": "MaterialInstanceConstant: Failed to find property 'used_with_nanite' for attribute 'used_with_nanite' on 'MaterialInstanceConstant'",
+        "automatically_set_usage_in_editor": "MaterialInstanceConstant: Failed to find property 'automatically_set_usage_in_editor' for attribute 'automatically_set_usage_in_editor' on 'MaterialInstanceConstant'"
+      },
+      "text_export_success": true,
+      "text_export_errors": [],
+      "text_export": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\DirtyOriginals_Transfer\\20261004T153538903587Z_MI_Plant_07_6_Stem_G.t3d",
+        "sha256": "31fde22793887e358ad49201ec32447f36d8caa47f3d56a87ee541948afdf1af",
+        "bytes": 5272
+      },
+      "disk_unchanged_after_export": true
+    },
+    {
+      "path": "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G.SM_Plant_07_6_G",
+      "class": "StaticMesh",
+      "disk_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Palms_Pack_01\\Add_Props\\Plants\\Meshes\\SM_Plant_07_6_G.uasset",
+      "disk_sha256": "da5dc10ab33aaa98dab18fba17a45bf6bd3c6db8d3d7b4daa1fdb40e05b1eacd",
+      "disk_bytes": 165238,
+      "disk_mtime_utc": "2026-09-27T10:15:40.544812+00:00",
+      "registry_referencers": [
+        "/Game/Developers/USER/HoudiniCityProof/V13ConnectedPreview/L_GazaRimal_V13_ColorsModels_20261002",
+        "/Game/Palms_Pack_01/Maps/Scene"
+      ],
+      "registry_dependencies": [
+        "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G",
+        "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G",
+        "/Script/NavigationSystem"
+      ],
+      "properties": {
+        "nanite_settings": "(bEnabled=True,bExplicitTangents=True,bLerpUVs=True,bSeparable=False,bVoxelNDF=True,bVoxelOpacity=False,ShapePreservation=None,PositionPrecision=-2147483648,NormalPrecision=-1,TangentPrecision=-1,BoneWeightPrecision=-1,TargetMinimumResidencyInKB=0,KeepPercentTriangles=1.000000,TrimRelativeError=0.000000,GenerateFallback=PlatformDefault,FallbackTarget=Auto,FallbackPercentTriangles=1.000000,FallbackRelativeError=1.000000,MaxEdgeLengthFactor=0.000000,NumRays=64,VoxelLevel=0,RayBackUp=0.000000,DisplacementUVChannel=0,DisplacementMaps=,NaniteAssemblyData=(Parts=,Nodes=))",
+        "static_materials": [
+          "(MaterialInterface=\"/Script/Engine.MaterialInstanceConstant'/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G.MI_Plant_07_6_Stem_G'\",MaterialSlotName=\"Stem\",ImportedMaterialSlotName=\"Stem\",UVChannelData=(bInitialized=True,bOverrideDensities=False,LocalUVDensities[0]=4.417003,LocalUVDensities[1]=132.210495,LocalUVDensities[2]=0.000000,LocalUVDensities[3]=0.000000),OverlayMaterialInterface=None)",
+          "(MaterialInterface=\"/Script/Engine.MaterialInstanceConstant'/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G.MI_Plant_07_6_Leaves_G'\",MaterialSlotName=\"Leaves\",ImportedMaterialSlotName=\"Leaves\",UVChannelData=(bInitialized=True,bOverrideDensities=False,LocalUVDensities[0]=5.898111,LocalUVDensities[1]=188.551041,LocalUVDensities[2]=0.000000,LocalUVDensities[3]=0.000000),OverlayMaterialInterface=None)"
+        ],
+        "lod_group": "None",
+        "light_map_resolution": 64,
+        "light_map_coordinate_index": 1,
+        "body_setup": "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G.SM_Plant_07_6_G:BodySetup_0",
+        "asset_import_data": "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G.SM_Plant_07_6_G:FbxStaticMeshImportData_0"
+      },
+      "unavailable_properties": {
+        "min_lod": "StaticMesh: Failed to find property 'min_lod' for attribute 'min_lod' on 'StaticMesh'"
+      },
+      "previous_measured_source_sha256": "da5dc10ab33aaa98dab18fba17a45bf6bd3c6db8d3d7b4daa1fdb40e05b1eacd",
+      "disk_matches_previous_measurement": true,
+      "loaded_geometry_counts": {
+        "vertices": 1122,
+        "triangles": 408
+      },
+      "prior_geometry_counts": {
+        "vertices": 1122,
+        "triangles": 408
+      },
+      "text_export_success": true,
+      "text_export_errors": [],
+      "text_export": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\DirtyOriginals_Transfer\\20261004T153538903587Z_SM_Plant_07_6_G.t3d",
+        "sha256": "a8efcba494cbb3acbea964a0f474aa138c9b9de596634b0e587840e2f279b694",
+        "bytes": 10712
+      },
+      "disk_unchanged_after_export": true
+    }
+  ],
+  "native_saved": false,
+  "native_reverted": false,
+  "editors_closed": false,
+  "user_edits_status": "Unknown. Dirty flags and log timing do not establish who changed the mesh or whether any user edit is intentional.",
+  "protected_files": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_source.json",
+      "expected_sha256": "6746f76d046a251ae5aa5333c86757e0b7c0cce0ad08a9f9b23e9cc49fc8eba8",
+      "actual_sha256": "6746f76d046a251ae5aa5333c86757e0b7c0cce0ad08a9f9b23e9cc49fc8eba8",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\SystemCompletion_2026-10-04\\geocity_runtime_manifest.json",
+      "expected_sha256": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+      "actual_sha256": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "expected_sha256": "1f128cbf31e952f9d2d9ff2748bf622ea222e87ab9d06d5e98c964210f67e6be",
+      "actual_sha256": "1f128cbf31e952f9d2d9ff2748bf622ea222e87ab9d06d5e98c964210f67e6be",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "expected_sha256": "c5dac846015f2b644e0a3d23ef80e7368bc2a6c52e45e45064452a1cdca6d077",
+      "actual_sha256": "c5dac846015f2b644e0a3d23ef80e7368bc2a6c52e45e45064452a1cdca6d077",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap",
+      "expected_sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+      "actual_sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap",
+      "expected_sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+      "actual_sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+      "matches": true
+    }
+  ],
+  "saved_import_preservation": [
+    {
+      "asset_id": "external.H0023",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0023/SM_Barrel.SM_Barrel",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0024",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0024/SM_Barrelburner.SM_Barrelburner",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0029",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0029/SM_Biggarbagebin.SM_Biggarbagebin",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0030",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0030/SM_Bottle.SM_Bottle",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0031",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0031/SM_Box_Close.SM_Box_Close",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0035",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0035/SM_Chair_1.SM_Chair_1",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0036",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0036/SM_Chair_2.SM_Chair_2",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0040",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0040/SM_Firehydrant.SM_Firehydrant",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0042",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0042/SM_Foodcart.SM_Foodcart",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0045",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0045/SM_Foodcart_003.SM_Foodcart_003",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0047",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0047/SM_Foodcrate_001.SM_Foodcrate_001",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0048",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0048/SM_Foodcrate_002.SM_Foodcrate_002",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0049",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0049/SM_Garbage.SM_Garbage",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0050",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0050/SM_Garbage_001.SM_Garbage_001",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0052",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0052/SM_Garbagebin_001.SM_Garbagebin_001",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0053",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0053/SM_Garbagebin_002.SM_Garbagebin_002",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0054",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0054/SM_Garbagebin_003.SM_Garbagebin_003",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0055",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0055/SM_Garbagebin_004.SM_Garbagebin_004",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0056",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0056/SM_Garbagebin_005.SM_Garbagebin_005",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0057",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0057/SM_Garbagebin_006.SM_Garbagebin_006",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0067",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0067/SM_Metalbarwoodenbar.SM_Metalbarwoodenbar",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0068",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0068/SM_Palette.SM_Palette",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0073",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0073/SM_Pot.SM_Pot",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0074",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0074/SM_Pot_001.SM_Pot_001",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0076",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0076/SM_Safetycone.SM_Safetycone",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0078",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0078/SM_Streetchair.SM_Streetchair",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0080",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0080/SM_Streetlight_001.SM_Streetlight_001",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0087",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0087/SM_Table.SM_Table",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0088",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0088/SM_Tea_Set.SM_Tea_Set",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0092",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0092/SM_Woodbin.SM_Woodbin",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0093",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0093/SM_Woodenladder.SM_Woodenladder",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0100",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0100/SM_SM_Shop1_Closed_Merged_00000416E1D1A100.SM_SM_Shop1_Closed_Merged_00000416E1D1A100",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0101",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0101/SM_SM_Shop1_Merged.SM_SM_Shop1_Merged",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0133",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0133/SM_SM_MetalBarrel.SM_SM_MetalBarrel",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0134",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0134/SM_SM_MetalFooter.SM_SM_MetalFooter",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0151",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0151/SM_SM_Storelight.SM_SM_Storelight",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0152",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0152/SM_SM_WallStreetLamp.SM_SM_WallStreetLamp",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0623",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0623/SM_BusStop.SM_BusStop",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0633",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0633/SM_Street_Light_01.SM_Street_Light_01",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0908",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0908/SM_Arab_x4_fbx.SM_Arab_x4_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0909",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0909/SM_Arab_x7_fbx.SM_Arab_x7_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0910",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0910/SM_Arab_x8_fbx.SM_Arab_x8_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0911",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0911/SM_Arab_x9_fbx.SM_Arab_x9_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0912",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0912/SM_Arab_x10_fbx.SM_Arab_x10_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0913",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0913/SM_Arab_x11_fbx.SM_Arab_x11_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0914",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0914/SM_Arab_x12_fbx.SM_Arab_x12_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0915",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0915/SM_Arab_x13_fbx.SM_Arab_x13_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0916",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0916/SM_Arab_x14_fbx.SM_Arab_x14_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0917",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0917/SM_Arab_x15_fbx.SM_Arab_x15_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0918",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0918/SM_Arab_x16_fbx.SM_Arab_x16_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0919",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0919/SM_Arab_x17_fbx.SM_Arab_x17_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0920",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0920/SM_Arab_x18_fbx.SM_Arab_x18_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0921",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0921/SM_Arab_x20_fbx.SM_Arab_x20_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0922",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0922/SM_Arab_x21_fbx.SM_Arab_x21_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0923",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0923/SM_Arab_x23_fbx.SM_Arab_x23_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0924",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0924/SM_Arab_x24_fbx.SM_Arab_x24_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0925",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0925/SM_Arab_x25_fbx.SM_Arab_x25_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0926",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0926/SM_Arab_x26_fbx.SM_Arab_x26_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0927",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0927/SM_Arab_x27_fbx.SM_Arab_x27_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0928",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0928/SM_Arab_x28_fbx.SM_Arab_x28_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0929",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0929/SM_Arab_x29_fbx.SM_Arab_x29_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0930",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0930/SM_Arab_x30_fbx.SM_Arab_x30_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.H0931",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_H0931/SM_Arab_x31_fbx.SM_Arab_x31_fbx",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T0987",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0987/SM_SM_Shrub_01.SM_SM_Shrub_01",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T0988",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0988/SM_SM_Shrub_02.SM_SM_Shrub_02",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T0989",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0989/SM_SM_Shrub_03.SM_SM_Shrub_03",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T0990",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0990/SM_SM_Shrub_04.SM_SM_Shrub_04",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T0991",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0991/SM_SM_Shrub_05.SM_SM_Shrub_05",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1026",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1026/SM_Rock_Overgrown_A.SM_Rock_Overgrown_A",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1027",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1027/SM_Rock_Overgrown_B.SM_Rock_Overgrown_B",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1028",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1028/SM_Rock_Overgrown_C.SM_Rock_Overgrown_C",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1036",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1036/SM_Rock_Overgrown_D.SM_Rock_Overgrown_D",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1090",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1090/SM_SM_Hornbeam_Tree_07.SM_SM_Hornbeam_Tree_07",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1113",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1113/SM_Bench_01.SM_Bench_01",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1147",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1147/SM_BusStop.SM_BusStop",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1157",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1157/SM_Street_Light_01.SM_Street_Light_01",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1158",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1158/SM_litterbin.SM_litterbin",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1160",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1160/SM_BushDry_A.SM_BushDry_A",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1161",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1161/SM_BushDry_B.SM_BushDry_B",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1172",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1172/SM_GrassDry_A.SM_GrassDry_A",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1173",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1173/SM_GrassDry_B.SM_GrassDry_B",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1174",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1174/SM_GrassDry_C.SM_GrassDry_C",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1175",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1175/SM_GrassDry_D.SM_GrassDry_D",
+      "matches_receipt": true
+    },
+    {
+      "asset_id": "external.T1183",
+      "path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T1183/SM_Oak.SM_Oak",
+      "matches_receipt": true
+    }
+  ],
+  "after": {
+    "pid": 32508,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "dirty_content": [
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+    ],
+    "dirty_maps": [],
+    "cooking_paused": true,
+    "official_session_valid": false,
+    "autosave": false,
+    "hda_flags": [
+      {
+        "actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+        "auto_cook": false,
+        "auto_bake": false
+      }
+    ],
+    "callbacks": {
+      "geocity_bank_workflow": 0,
+      "geocity_roadbld_workflow": 0
+    }
+  },
+  "state_unchanged": true,
+  "all_disk_originals_unchanged": true,
+  "all_protected_files_unchanged": true,
+  "all_saved_imports_unchanged": true
+}

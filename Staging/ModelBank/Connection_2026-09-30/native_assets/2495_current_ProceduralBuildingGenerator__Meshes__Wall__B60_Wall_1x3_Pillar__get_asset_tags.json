@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2505,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Wall/B60_Wall_1x3_Pillar"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"30x100x300\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Walls/B60_Wall_1x3.fbx\\\", \\\"Timestamp\\\" : \\\"1563206935\\\", \\\"FileMD5\\\" : \\\"a7327721ea55aad0bdaee7f10c0129de\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"3\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"12\",\"UVChannels\":\"2\",\"Vertices\":\"24\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2505,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"30x100x300\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Walls/B60_Wall_1x3.fbx\\\", \\\"Timestamp\\\" : \\\"1563206935\\\", \\\"FileMD5\\\" : \\\"a7327721ea55aad0bdaee7f10c0129de\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"3\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"12\",\"UVChannels\":\"2\",\"Vertices\":\"24\"}}"
+    }
+   ]
+  }
+ }
+}

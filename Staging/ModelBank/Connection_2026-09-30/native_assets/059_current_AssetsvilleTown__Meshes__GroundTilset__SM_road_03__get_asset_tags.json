@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 69,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_road_03"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"1600x1600x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/road_03.fbx\\\", \\\"Timestamp\\\" : \\\"1548517475\\\", \\\"FileMD5\\\" : \\\"7c394e47128f9c04ace0778cc07541c8\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"48\",\"UVChannels\":\"2\",\"Vertices\":\"68\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 69,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"1600x1600x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/road_03.fbx\\\", \\\"Timestamp\\\" : \\\"1548517475\\\", \\\"FileMD5\\\" : \\\"7c394e47128f9c04ace0778cc07541c8\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"48\",\"UVChannels\":\"2\",\"Vertices\":\"68\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "time": "2026-09-29T11:30:54.041Z",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": 4,
+    "method": "tools/call",
+    "params": {
+      "name": "call_tool",
+      "arguments": {
+        "toolset_name": "editor_toolset.toolsets.object.ObjectTools",
+        "tool_name": "get_properties",
+        "arguments": {
+          "instance": {
+            "refPath": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin"
+          },
+          "properties": [
+            "PositiveBoundsExtension",
+            "NegativeBoundsExtension"
+          ]
+        }
+      }
+    }
+  },
+  "status": 200,
+  "body": "{\r\n\t\"jsonrpc\": \"2.0\",\r\n\t\"id\": 4,\r\n\t\"result\":\r\n\t{\r\n\t\t\"content\": [\r\n\t\t\t{\r\n\t\t\t\t\"type\": \"text\",\r\n\t\t\t\t\"text\": \"{\\\"returnValue\\\":\\\"{\\\\\\\"PositiveBoundsExtension\\\\\\\":{\\\\\\\"x\\\\\\\":0,\\\\\\\"y\\\\\\\":0,\\\\\\\"z\\\\\\\":0},\\\\\\\"NegativeBoundsExtension\\\\\\\":{\\\\\\\"x\\\\\\\":0,\\\\\\\"y\\\\\\\":0,\\\\\\\"z\\\\\\\":0}}\\\"}\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
+}

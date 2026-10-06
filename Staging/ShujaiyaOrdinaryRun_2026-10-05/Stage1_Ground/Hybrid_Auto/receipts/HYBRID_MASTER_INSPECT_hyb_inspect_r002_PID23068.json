@@ -1,0 +1,587 @@
+{
+  "schema": "environmentpipeline.ground_hybrid_master.v1",
+  "mode": "inspect",
+  "label": "hyb_inspect_r002",
+  "pid": 23068,
+  "utc_start": "2026-10-06T13:13:36.131090+00:00",
+  "executed_script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\hybrid_build_master.py",
+  "script_sha256": "673b259a34ca0d0d0439b1bed71380ea94d3e17eb855d514ed34350a98a36e40",
+  "args": {
+    "mode": "inspect",
+    "label": "hyb_inspect_r002",
+    "expected_pid": 23068,
+    "lease_owner": "GEOCITY_GROUND_HYBRID",
+    "manager_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+    "operator_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\hybrid_build_master.py",
+    "script_sha256": "673b259a34ca0d0d0439b1bed71380ea94d3e17eb855d514ed34350a98a36e40",
+    "profile_sha256": "4174a62787da9b203a647ce89438e5ddd0066e5bd9e10b816cd88204be0c9142",
+    "expected_map_sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+    "vendor_sha256": {
+      "desert": "0fc96edddfdcafa85394c60d0b649256b1503f3d50b9d187c8c54ad0927ac985",
+      "master": "981e207c879195b3d870ff6bbba96d693e7e7f458486f02e7568781f1f6a1d66"
+    }
+  },
+  "engine": "5.8.2-56702186+++UE5+Release-5.8",
+  "status": "FAILED_INSPECT",
+  "helper_sha256": "e535a74bca2ca6b9ca7856db8152d5b938ef79597b3a17f35c48e14a0dd69f6e",
+  "guard": {
+    "pid": 23068,
+    "lease": "2026-10-06T13:11:09+00:00 OWNER=GEOCITY_GROUND_HYBRID manager_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae operator_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae assigned_editor_PID=23068 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=GROUND_HYBRID_AUTHORING scope=GeoCity_GroundHybrid_20261006_auto_material",
+    "lease_kind": "authoring",
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "hda_actors": 1,
+    "cooking_paused": true,
+    "autosave": false,
+    "editor_pids": [
+      23068
+    ],
+    "landscape": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape"
+  },
+  "dirty_before": [
+    [],
+    []
+  ],
+  "profile": {
+    "sha256": "4174a62787da9b203a647ce89438e5ddd0066e5bd9e10b816cd88204be0c9142",
+    "landscape_material": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround_Auto.MI_GeoCityGround_Auto",
+    "landscape_grass_enabled": false,
+    "parent_chain": [
+      "/Game/Project/Shared/SurfacePainting/Auto_20261006/M_GeoCityAuto.M_GeoCityAuto"
+    ],
+    "painted_layer_names": [
+      "Sand_01",
+      "Sand_02",
+      "Dirt_Path",
+      "Sand_Path"
+    ]
+  },
+  "disk": {
+    "map": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+    "copy": null,
+    "mi": null,
+    "pathb_mi": null,
+    "protected": {
+      "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104",
+      "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+      "Content/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass.uasset": "ff09a0a110b49f9268d55078676d14ecf791b1e1ebe457c523e1cc8ceea7b5c1",
+      "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.uasset": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228",
+      "Content/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.uasset": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b",
+      "Content/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_AO.uasset": "978355f608551e04cba7f999641b27a99e1ae24792fce60135a0f490d74ceddf",
+      "Content/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_basecolor.uasset": "2c7180a92679128ac2ae6289b01c2ccda54b5228ec607614d4cd3504872a5975",
+      "Content/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_normal.uasset": "e7e491a0b9dc20868e83c6b27c770c913316ab98c0f85af13d267599a0ccbd59",
+      "Content/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_roughness.uasset": "32108f2d083a54a00c328d2b5490d97e3b098581ab4fb796c56aa83a232b02f6",
+      "Content/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_BaseColor.uasset": "7f1d43441a7c529fc6c95ed42c1488703f94f85255240270cc881ed5a42bdaa2",
+      "Content/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_Normal.uasset": "c9a5fce2132f74453193b63784cdf64a059e6fb85d9cc7043a81d8ea64155ffd",
+      "Content/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_ORM.uasset": "adbff5acc5b72e6bbf71010dc62cce70aba39233c0ab408e1d9af261ab6f7616"
+    },
+    "vendor_pins": {
+      "desert": "0fc96edddfdcafa85394c60d0b649256b1503f3d50b9d187c8c54ad0927ac985",
+      "master": "981e207c879195b3d870ff6bbba96d693e7e7f458486f02e7568781f1f6a1d66"
+    }
+  },
+  "vendor_snapshot": {
+    "Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset": [
+      48271,
+      1791209504886853000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap": [
+      42487822,
+      1791209504901857800,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap": [
+      33297365,
+      1791209504911367500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap": [
+      56816010,
+      1791209504929884900,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset": [
+      1797,
+      1791209505150593700,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset": [
+      14453,
+      1791209504931886200,
+      "49a7da803995b0fbc76118e54d0f55435335a32eac754e38292a8d9ec6dbca62"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset": [
+      20705,
+      1791209504932890000,
+      "7450e97cc4a3c75a8e89f064ffad74c473ca83cc81760b3814e33a0da64966dc"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset": [
+      88895,
+      1791209504934899100,
+      "e64a9adf630fe04a3dcfca82e0d23c4151fbfd009610bd3ec0f4bcb10ca473d7"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset": [
+      88823,
+      1791209504935398000,
+      "4e9a709d6116b5a13f8732d0d717095807a99b01fcc46a3327c9a455751c6f53"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset": [
+      30058,
+      1791209504933394700,
+      "0fc96edddfdcafa85394c60d0b649256b1503f3d50b9d187c8c54ad0927ac985"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset": [
+      34742,
+      1791209504933894300,
+      "b2057a785a49057a52dcc534aef4847b7acc573832ad1c82d840208f55369873"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset": [
+      30488,
+      1791209504934397900,
+      "ffb447dbf4674a28fa1d7bb9e7776a6291f9730f8ed474a0b393d955a565ea7e"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset": [
+      97803,
+      1791209505147593900,
+      "578e1f41c882c97cf4e76c09a68f6d7b5e407519cf4e96496be844303134d96e"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset": [
+      117271,
+      1791209505148094100,
+      "9a6dcbddf5d34823603fa72120bab33d8a6e828e3bcfe947ee179d8c853a9810"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset": [
+      119687,
+      1791209505148593700,
+      "dbbc3405b1d976a245a1063954df9fbfe24d3668ad6e12bb437e1643e87ebc4f"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset": [
+      82260,
+      1791209505149094500,
+      "acecb2f15b3d9e893288f705997ed393d0d5b3a0428ba661709fb92e75283526"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset": [
+      11588,
+      1791209505149594000,
+      "e58f76aac0a797b6174e4cf0e8c75ae1627e47c6876e9f6b5c30a6e21aaa2c1e"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset": [
+      78554,
+      1791209505150093000,
+      "318e00697d88ecb30c836eda085d706d38332e54cccf92ff5051d5292f59c767"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset": [
+      113678,
+      1791232063824426200,
+      "e554fe8a32cacac36a754bc910d3bade2b1e157e4543d3bfd8a8c93e7b164017"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset": [
+      52807,
+      1791232063830925800,
+      "b6663db46fa1955f49edaaebcc9611fc78f0a3fdddd0e59a46eec604b39330f1"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset": [
+      31015,
+      1791232063835425800,
+      "1bb4f45de057d06624f8d6d26172f9d01ca15c63ce5960b58aa530226dc656fc"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset": [
+      48464,
+      1791232063840426800,
+      "2a87766f05a5e093d4c07da8c6683aa1519865f237e9c4ad901c951fc90c53bb"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset": [
+      80240,
+      1791232063845425800,
+      "86fee63f49ca2edd9a22f07e64d646fab9b0a1335fd131ecb97a0d8a13d65041"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset": [
+      63606,
+      1791232063849928400,
+      "ea35f3332b679acb225d1393cd79b89b5bbd5bb65aa169ac5feac42f092b8756"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset": [
+      16078,
+      1791232063855425200,
+      "31dd0c3d950f888e6cd7ded5a9da70cf0e7f0485e85f9c38d84acc7bd8359692"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset": [
+      11837,
+      1791232063860928400,
+      "a55c54dcd0f572bc4d270bec28137877b4b0fa051acb097a62e7b6b4b55522a1"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset": [
+      79370,
+      1791232063865425800,
+      "938ad3db36e5cdce39baedd1ad0a13fd472491379563f8e473654234aa976f1f"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset": [
+      19195,
+      1791232063870926000,
+      "d462a480cc375ec1cf789290022cd16c281ac26880dd9c19deab6af9cd591668"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset": [
+      47740,
+      1791232063874925800,
+      "5ac338e1594c12088ed639dd1d689595a898d2bb318396ca75a7e3ef9d65fe0c"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset": [
+      26469,
+      1791232063879428500,
+      "fe2426330c5988d402cfa9f07c03beafd33e5d36ef2e85549a1662432ba41bc9"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset": [
+      81914,
+      1791232063885426200,
+      "dc08ff0ccfd8b8eef193bb8c3f55987c03c4bc29f1c13cf70dd51c5845e45db4"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset": [
+      18556,
+      1791232063889425800,
+      "df263d7c97747f391ac9ff93dc3cb4cdbae7b0a3ceae6b20c6198e5510a27769"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset": [
+      32436,
+      1791232063894428400,
+      "ce148a1c6e93834eac55a4aa43068b2dee68c68eadf04a115b100dfd6c916a90"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset": [
+      124279,
+      1791209504936897900,
+      "7764b6964efc9d4cc320cee778a3167fc9ac06ddc2c3122a4ba55cfb187f4a60"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset": [
+      171219,
+      1791209504935897600,
+      "981e207c879195b3d870ff6bbba96d693e7e7f458486f02e7568781f1f6a1d66"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset": [
+      39449,
+      1791209504936398900,
+      "07fcdcfd2b865772780f6ed3e90bf22dcf801499a1632a06519ed1ca5593a995"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset": [
+      1445,
+      1791209505151094600,
+      "602cd54eba0d54ae79039fb368bbe1e82e6867347bceec121a4aa20cac1595e8"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset": [
+      1450,
+      1791209505151593200,
+      "469eb6e4c45ef51361574872ad4b7eb1fa20635c0d8a6777e25d1057e0e047a0"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset": [
+      1450,
+      1791209505152597200,
+      "0e79d3bdc56c40c12ebc4bd11520d595ea68850638e5cf6790a97178bdf7ab4c"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset": [
+      1445,
+      1791209505153101600,
+      "c51ef38a48b21574b17c0629d1ce54162b84417464020ba887c50f2e5b2f0493"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset": [
+      1455,
+      1791209505153101600,
+      "24f7278f991236b30cf20d605b58b45b96d9ea6b2d3edfedfd51c40b6e5065ab"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset": [
+      1450,
+      1791209505153601600,
+      "24f47db3ddec0f522b3424bb269847b8bdaf94a92221fe88d1fe449ee0e8c341"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset": [
+      125014,
+      1791209504937397400,
+      "7570fc1b4c8a3e6e3ae31ee2cd867bd5dcf8a7e659eea49774d5ae2ad6d6d2ee"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset": [
+      14533,
+      1791209504937397400,
+      "e014cb1457b482efbe07368808adbfca7772e2a261a3a7274835c3ddfdb6cd67"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset": [
+      33387,
+      1791209504937897200,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset": [
+      484545,
+      1791209504938397300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset": [
+      520473,
+      1791209504938897900,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset": [
+      109155,
+      1791209504939398400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset": [
+      60819,
+      1791209504939898100,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset": [
+      58846,
+      1791209504940398000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset": [
+      58859,
+      1791209504940897500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset": [
+      62131,
+      1791209504940897500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset": [
+      62327,
+      1791209504941397600,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset": [
+      61224,
+      1791209504941898300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset": [
+      60114,
+      1791209504941898300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset": [
+      63324,
+      1791209504941898300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset": [
+      49694,
+      1791209504942902400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset": [
+      42540,
+      1791209504943407000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset": [
+      26802,
+      1791209504943407000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset": [
+      31276,
+      1791209504943907100,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset": [
+      1310,
+      1791209504887352400,
+      "1ff30a0f6023cf61c1f0af754feefd3dd87a72bb8c4fb7e38ebaf7f51d5ddf91"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset": [
+      9651,
+      1791209504887850900,
+      "cb0344cf765bf5d67cacc0310c2665d782ff6e1d93e6cacd519caeb5fa4facd5"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset": [
+      1310,
+      1791209504888351000,
+      "ddf8c13e1c1c58ba6a8c827788af3c4fd70f3870526e3633c78fd0256252f7fb"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset": [
+      8349,
+      1791209504888850700,
+      "d07031d9c41821bfd4f617f107fe99cd9d7ac108dd4c18cc2004a9948870f3bf"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset": [
+      13498,
+      1791209504889350800,
+      "bc310a9f9d9881ebf0c14c2b9ab308da6f26e80a7832a3a0d22bb69bd75c6731"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset": [
+      4584,
+      1791209504944411500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset": [
+      93032,
+      1791209504944910400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset": [
+      91294,
+      1791209504944910400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset": [
+      10134197,
+      1791209505144593700,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset": [
+      7130170,
+      1791209505147093300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset": [
+      12399125,
+      1791209504950911200,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset": [
+      37027663,
+      1791209504962930300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset": [
+      5487,
+      1791209505025979200,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset": [
+      6535,
+      1791209505040988400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset": [
+      5983,
+      1791209505057008700,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset": [
+      400001,
+      1791209505062010900,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset": [
+      253372,
+      1791209505073521000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset": [
+      254692,
+      1791209505089537800,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset": [
+      5599276,
+      1791209505099047200,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset": [
+      2575300,
+      1791209505107554400,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset": [
+      35245750,
+      1791209504973939300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset": [
+      44545218,
+      1791209504988447000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset": [
+      34519110,
+      1791209504999955800,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset": [
+      39077840,
+      1791209505011969300,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset": [
+      39714591,
+      1791209505025479500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset": [
+      44803176,
+      1791209505040487000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset": [
+      47476714,
+      1791209505056509000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset": [
+      15306657,
+      1791209505062010900,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset": [
+      29852821,
+      1791209505073021100,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset": [
+      47159956,
+      1791209505089038000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset": [
+      21463853,
+      1791209505097047500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset": [
+      22273990,
+      1791209505106553600,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset": [
+      42658494,
+      1791209505121561000,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset": [
+      42371536,
+      1791209505135581200,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset": [
+      7440958,
+      1791209505138582500,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset": [
+      8561080,
+      1791209505141582600,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset": [
+      17312,
+      1791209504930384800,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset": [
+      398893,
+      1791209504931386100,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset": [
+      18940,
+      1791209504931386100,
+      null
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset": [
+      31858,
+      1791209504931886200,
+      null
+    ]
+  },
+  "error": "RuntimeError(\"MMA_0.Roughness output 'Metallic' != 'Roughness' (STOP: wiring differs from the plan)\")",
+  "utc_end": "2026-10-06T13:13:36.442402+00:00"
+}

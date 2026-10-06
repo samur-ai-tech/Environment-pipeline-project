@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 88,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "is_nanite_enabled",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0083_Streetsign_001"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": true,
+ "text": "Parameter error: /Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0083_Streetsign_001 is not a valid object path for property 'mesh'.",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 88,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "Parameter error: /Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0083_Streetsign_001 is not a valid object path for property 'mesh'."
+    }
+   ],
+   "isError": true
+  }
+ }
+}

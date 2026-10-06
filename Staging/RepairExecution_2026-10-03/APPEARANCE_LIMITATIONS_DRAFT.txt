@@ -1,0 +1,57 @@
+ENVIRONMENTPIPELINE — RETAINED APPEARANCE AND COVERAGE LIMITATIONS
+Read-only draft, 2026-10-03, Asia/Jerusalem. Root owns final reconciliation.
+
+Snapshot boundary
+The latest saved WORKFLOW_STATE.json in BOTH area lanes reads r017_retained_native_environment, phase baked_saved_verified. Rimal has 16,009 native instances and 269 covered building pads (60 whole native + 209 assembly); Shujaiya has 18,016 native instances and 398 covered pads (41 whole native + 357 assembly). Both record one Landscape, zero cooked mesh copies, verified baked native slots and no dirty maps. Root reports actual r017 visual captures, visibly closed light-concrete roofs, and textured surfaces. This reviewer did not operate the editor or independently inspect the captures. Root owns the final persistence/reopen evidence and user handoff.
+
+What the current Shujaiya receipts establish
+All 398 geographic building pads are represented: 41 whole native buildings and 357 buildings assembled from native Courtyard facade modules plus generated closure geometry. Unsupported building count is zero. The 18,016 count is individual native instances, including 17,634 facade/door module instances, rather than 18,016 buildings. The recipe has 19 distinct native mesh paths. Actual component/material readback verifies native source references and material slots; native anchors matched the recipe within 1 mm in the r016 inspection. Current r017 workflow records one Landscape, no cooked mesh copies, verified baked native slots, and no dirty maps.
+
+The appearance is not source-authentic architecture
+Most building coverage now uses the same window bay, plain filler and steel door family. Whole-building selection has only four active building models. Assembly storeys are derived near a 3.2 m pitch; unmeasured geographic heights remain deterministic generated estimates. Entrance placement chooses the longest usable footprint edge, rather than a surveyed entrance or a road-facing entrance contract. Native whole models remain 1:1; assembled facade bays explicitly allow width scaling 0.5..1.5 and vertical scaling 0.65..1.1, while doors remain unscaled. Generated roof/floor/corner closures use native material dependencies, but are new geometric construction, not imported native building models. Full footprint coverage therefore establishes a functioning environment, not reconstruction of real facades, floor counts, entrances or a final visual style.
+
+Native vegetation and roadside coverage remain partial
+Shujaiya has 79 native trees from 114 generated tree requests and 53 native poles from 57 generated pole requests. Rimal has 45 native trees from 60 requests and 27 native poles from 36 requests. In total, 50 generated trees and 13 generated poles were explicitly omitted after safe native fitting failed. They were not converted into native models. Their IDs, original anchors and failure records remain in the omission ledger; native substitution counts remain separate, with source = native removed + omitted generated + remaining. The omission policy preserves surveyed/external or otherwise unconfirmed requests. Zero visible proxies is not a claim of 100 percent native request coverage.
+
+Other Shujaiya placement counts are 41/41 street props, 3/113 shrubs, 64/92 small props and 101/110 understory requests. Rimal has 23/23 street props, 2/60 shrubs, 54/70 small props and 55/58 understory. Failed requests remain diagnostic entries. Candidate rejection totals include repeated candidate evaluations and must not be interpreted as unique missing objects. Ground/slope masks, height spread and spacing continue to reject unsafe placements rather than being weakened for higher counts.
+
+The native selection is intentionally narrow
+The current tree role uses SM_Thicket_03_G, the pole role uses SM_utility_pole_5, and the street_prop role uses SM_dumpster. Those categories now deliver actual native meshes, but do not provide broad tree species or street furniture variation. A utility pole StaticMesh instance does not establish a complete streetlight or utility-network system. Signs, rooftop utilities and vehicles have zero normal eligible rows in the current catalog receipt; signs/roof attachments remain deferred until their attachment contract exists. Explicit holds and declined palms remain preserved. The current scope does not release or qualify the whole 1,223-row bank, establish new asset rights, or imply style acceptance.
+
+Current Landscape textures: the old flat-material diagnosis does not apply
+Both current profiles select /Game/Project/Shared/SurfacePainting/MI_SurfaceBank_AllLayers.MI_SurfaceBank_AllLayers. Their four indices resolve in the current generator to Ground 17 = mout.Sand_01, Steep 18 = mout.Sand_02, RoadBed 16 = mout.Dirt_Path, and BuildingPad 20 = mout.Sand_Path. All four are texture options, not solid or custom-color presets.
+
+The retained authoring source connects native albedo and normal TextureObjectParameter branches through WorldAlignedTexture and WorldAlignedNormal into Landscape BaseColor/Normal layer blends. The current saved M_SurfaceBank_AllLayers.uasset contains the corresponding native MOUT texture/function references; the instance references that parent. Both actual saved map packages reference this instance and LayerMask_Sand_01, LayerMask_Sand_02, LayerMask_Dirt_Path and LayerMask_Sand_Path. Root also confirmed the live r017 Shujaiya Landscape uses this material. Constant3Vector nodes in this graph serve texture size and deliberately flat solid/custom branches; their presence does not demonstrate that the selected texture layers are flat.
+
+The selected Landscape palette remains a generic sand/dirt treatment, with 2 m default tiling, white tint and scalar roughness 0.9 for these four options. The authoring implementation does not wire their available MOUT mask maps into spatial roughness/AO. This can limit surface variation, but there is no current evidence establishing a missing native texture connection requiring a replacement material. A graph or texture-reference list alone is not aesthetic acceptance.
+
+Live readback limitation, reported by the sole editor writer: get_material_used_textures(actualLandscapeMI) returned an empty array. That result is retained as inconclusive, not a new diagnosed defect. The installed C++ declaration confirms the API accepts MaterialInterface, but its implementation source is not shipped locally. The C++ header contains LandscapeComponent.MaterialInstances; Python nevertheless failed to expose material_instances in the actual installed editor, and component.get_material(0) returned the shared base MI. Root independently resolved all eight selected-layer albedo/normal defaults to the exact native MOUT texture paths, found the parent's texture parameter names, verified the four assigned native target layers/area-local LayerInfos, saw textured surfaces in the actual viewport, and found no material compile errors. These observations support the current textured route without pretending the empty API response proved shader texture enumeration.
+
+Terrain support is generated local grading
+The saved Shujaiya terrain support receipt preserves geographic XY footprints/masks and generated building heights, but deliberately grades support and nearby terrain. It records 307 adjusted generated base datums, maximum base shift about 5.054 m, maximum local terrain correction about 6.840 m, 4..26 m collars and a maximum final slope about 44.798 degrees. These are measured implementation outputs, not surveyed floor elevations or a claim that the unmodified elevation source is exact. Root's actual scene review remains the evidence for whether the transitions look suitable.
+
+Material/appearance acceptance remains separate
+Native slots and retained texture lineage are verified technically. The assembly receipt still has appearance_accepted=false, and both profiles retain final_visual_acceptance=pending_Aviv. r017 corrects the closed generated solids' face winding and aligned normals; it is not an additional facade variety or landscape art pass. Do not describe material assignment, all building pads covered, named saves or a clean reopen as Aviv's final visual acceptance.
+
+Active documentation is a pre-repair baseline
+At the start of this review CURRENT_STATE.md, WORK_PLAN.md and ManagedExecution_2026-10-02/MANAGER_STATUS.txt contained r014 counts, zero native pole/street_prop statements, 17 configured rows and the old digest 890a4979.... Current profiles instead have digest 135fda14b5173ca919b1568b3faff20e1763cfb3dc90c0635983d1ce32b3ded1, supported pole configuration and a scoped assembly contract. Root's final summaries should use the actual r017 receipts and preserve historical receipts rather than presenting the old limits as current failures. Both actual r017 environments together have 34,025 native instances and all 667 geographic building pads represented; native facade module instances must remain distinct from building count.
+
+Primary current evidence
+- Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/WORKFLOW_STATE.json
+- Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json
+- Staging/RepairExecution_2026-10-03/ACTUAL_GazaShujaiya.json
+- Staging/RepairExecution_2026-10-03/ASSEMBLY_CONTRACT.json
+- Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json
+- Staging/RepairExecution_2026-10-03/FINAL_PROXY_POLICY_PATCH.py
+- Both normal AREA_PROFILE.json files under PermanentIntegration_2026-10-02 and GazaShujaiyaIntegration_2026-10-02
+- Staging/PaintBank_2026-10-02/author_all_layers_surface_material.py
+- Staging/ModelBank/SurfacePainting/surface_bank_v2.json
+- Current geocity_city_module.py: texture choices/role projection near lines 3770..3905; building assembly contract/layout near 4411..4620
+- Content/Project/Shared/SurfacePainting/{M_SurfaceBank_AllLayers,MI_SurfaceBank_AllLayers}.uasset
+- Both named BankIntegration_v015 saved .umap packages
+
+Read API guidance verified from the installed UE5.8 headers
+ALandscape.get_target_layer_names() returns valid editor paint names; it does not prove nonzero weights. For assigned LayerInfo evidence, read landscape.target_layers and each settings.layer_info_obj, then record its path/layer_name/blend_method; root verified these actual bindings. editor_layer_settings is deprecated. MaterialEditingLibrary.get_material_used_textures(material_interface) accepts an MI, but the current base-MI empty array must retain the limitation above. get_used_textures accepts only a base Material and is deprecated. The declared C++ MaterialInstances property did not provide an accessible Python readback in the actual installed editor; do not repeat that property probe as a confirmed supported Python route.
+
+Work not performed by this reviewer
+No editor operations, source/HDA/material changes, cook/bake/save, active-document edits, new inventory, or acceptance decision. Only this draft was written.

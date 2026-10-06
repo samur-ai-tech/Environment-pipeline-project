@@ -1,0 +1,28 @@
+{
+  "status": "PROPOSED_NOT_APPLIED",
+  "profile": "Staging/ModelBank/Iran_38196167_46086167_4km/AREA_PROFILE.json",
+  "before_sha256": "004ec07d97a3ef76dfb60835fb133fee1e2f5df1d98f1fae121d46dbc2953a1a",
+  "merge_fields": {
+    "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\Iran_38196167_46086167_4km\\semantic_acquisitions\\20261004T155016073136Z_consumer_v2\\city_source_v1.json",
+    "landscape_material": "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+    "landscape_semantics": {
+      "schema": "environmentpipeline.semantic_landscape_profile.v2",
+      "source_package_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+      "consumer_contract_sha256": "e7957ed95cf84170c5f77e23f177bee9db940f1381e21521918656a0a2e0b761",
+      "class_grid_sha256": "ee4024abf7e233cde32c69c63722d123578faca3be4cd51c6e919c0f7046c3da"
+    },
+    "landscape_grass": {
+      "enabled": true,
+      "base_material_instance": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+      "ground_layer": "GC_GrassEligible",
+      "mesh_paths": [
+        "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+        "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2"
+      ],
+      "coverage": 0.15,
+      "density_per_10m2": 12.0
+    }
+  },
+  "preserve": "All bank/table/catalog/instance_materials/normal overrides/map/bake/lifecycle fields remain manager owned and unchanged by this patch. No table eligibility extension. Native owner rechecks actual area table before Grass binding. HDA promotion/parameter addition and lifecycle patches separately required.",
+  "painted_layer_names": "The v2 semantic mode validates actual emitted target sets from the source-bound HDA contract, including absent/zero roles. It does not replace the legacy Gaza list or infer output counts before Cook."
+}

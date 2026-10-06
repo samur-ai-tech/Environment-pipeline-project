@@ -1,0 +1,191 @@
+{
+  "request_ref": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\NATIVE_IMPORT_REQUEST_v003.json",
+    "sha256": "1fa6654d606f8b5ee9901d7f86e50e3007328751b56498b64fbfbbefa2b73984"
+  },
+  "allowed_packages": [
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier03_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier04_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0019/Modules/SM_H0019_Roof_EastFacade"
+  ],
+  "allowance": "Only these six named meshes; source minus exactly one triangle; every source material slot must map uniquely. Per-slot native counts may equal source except one occupied slot may lose exactly one triangle; no gained faces, no removed slot, no other difference. Record exact native slot counts before material assignment. Keep bounds and UV checks unchanged.",
+  "execution": "Reimport at the existing native package path, bind existing modular materials, named-save only, record measured allowance in separate pinned receipt without modifying immutable v003 request or source manifests.",
+  "failures": [
+    {
+      "id": "source_derived_modular.H0017.v001/SM_H0017_Tier01_WestFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+      "source_triangles": 65856,
+      "expected_native_triangles_from_failure": 65855,
+      "source_slot_triangle_counts": {
+        "0": 15473,
+        "1": 4112,
+        "2": 184,
+        "4": 3584,
+        "3": 42363,
+        "5": 42,
+        "6": 90,
+        "7": 8
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "_Building_05_cloths",
+        "_building_5_M3",
+        "_Building_5_M4",
+        "_Building_05_props",
+        "_lambert2",
+        "Airconditioner_inverter_textured:Airconditioner_front1",
+        "Airconditioner_inverter_textured:acbody1",
+        "Airconditioner_inverter_textured:standard1",
+        "_wood_Mtl"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    },
+    {
+      "id": "source_derived_modular.H0017.v001/SM_H0017_Tier05_WestFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+      "source_triangles": 16681,
+      "expected_native_triangles_from_failure": 16680,
+      "source_slot_triangle_counts": {
+        "1": 5136,
+        "2": 183,
+        "3": 5500,
+        "4": 1234,
+        "8": 4628
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "_Building_05_cloths",
+        "_building_5_M3",
+        "_Building_5_M4",
+        "_Building_05_props",
+        "_lambert2",
+        "Airconditioner_inverter_textured:Airconditioner_front1",
+        "Airconditioner_inverter_textured:acbody1",
+        "Airconditioner_inverter_textured:standard1",
+        "_wood_Mtl"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    },
+    {
+      "id": "source_derived_modular.H0017.v001/SM_H0017_Tier03_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier03_EastFacade",
+      "source_triangles": 97418,
+      "expected_native_triangles_from_failure": 97417,
+      "source_slot_triangle_counts": {
+        "0": 11471,
+        "1": 7448,
+        "2": 828,
+        "3": 74439,
+        "4": 168,
+        "8": 3064
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "_Building_05_cloths",
+        "_building_5_M3",
+        "_Building_5_M4",
+        "_Building_05_props",
+        "_lambert2",
+        "Airconditioner_inverter_textured:Airconditioner_front1",
+        "Airconditioner_inverter_textured:acbody1",
+        "Airconditioner_inverter_textured:standard1",
+        "_wood_Mtl"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    },
+    {
+      "id": "source_derived_modular.H0017.v001/SM_H0017_Tier04_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier04_EastFacade",
+      "source_triangles": 69337,
+      "expected_native_triangles_from_failure": 69336,
+      "source_slot_triangle_counts": {
+        "0": 3258,
+        "1": 7536,
+        "2": 1470,
+        "3": 47741,
+        "5": 42,
+        "6": 90,
+        "7": 8,
+        "8": 9192
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "_Building_05_cloths",
+        "_building_5_M3",
+        "_Building_5_M4",
+        "_Building_05_props",
+        "_lambert2",
+        "Airconditioner_inverter_textured:Airconditioner_front1",
+        "Airconditioner_inverter_textured:acbody1",
+        "Airconditioner_inverter_textured:standard1",
+        "_wood_Mtl"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    },
+    {
+      "id": "source_derived_modular.H0017.v001/SM_H0017_Tier05_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_EastFacade",
+      "source_triangles": 21198,
+      "expected_native_triangles_from_failure": 21197,
+      "source_slot_triangle_counts": {
+        "1": 5136,
+        "2": 184,
+        "3": 5452,
+        "4": 1234,
+        "8": 9192
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "_Building_05_cloths",
+        "_building_5_M3",
+        "_Building_5_M4",
+        "_Building_05_props",
+        "_lambert2",
+        "Airconditioner_inverter_textured:Airconditioner_front1",
+        "Airconditioner_inverter_textured:acbody1",
+        "Airconditioner_inverter_textured:standard1",
+        "_wood_Mtl"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    },
+    {
+      "id": "source_derived_modular.H0019.v001/SM_H0019_Roof_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0019/Modules/SM_H0019_Roof_EastFacade",
+      "source_triangles": 2701,
+      "expected_native_triangles_from_failure": 2700,
+      "source_slot_triangle_counts": {
+        "0": 2236,
+        "2": 465
+      },
+      "roundtrip_slot_triangle_counts": null,
+      "source_material_slots": [
+        "Mat_004",
+        "Mat_003",
+        "Mat_002",
+        "Mat_001"
+      ],
+      "native_file_exists_now": false,
+      "native_file_sha256_now": null,
+      "repair_executed": false,
+      "live_per_slot_face_check": "PENDING_NEW_EDITOR_LEASE"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 345,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_fence_101gate"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.007,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"8x176x135\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/fence_101gate.fbx\\\", \\\"Timestamp\\\" : \\\"1520285408\\\", \\\"FileMD5\\\" : \\\"1756488c96327ab16e3140c56c100f18\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"134\",\"UVChannels\":\"2\",\"Vertices\":\"268\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 345,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"8x176x135\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/fence_101gate.fbx\\\", \\\"Timestamp\\\" : \\\"1520285408\\\", \\\"FileMD5\\\" : \\\"1756488c96327ab16e3140c56c100f18\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"134\",\"UVChannels\":\"2\",\"Vertices\":\"268\"}}"
+    }
+   ]
+  }
+ }
+}

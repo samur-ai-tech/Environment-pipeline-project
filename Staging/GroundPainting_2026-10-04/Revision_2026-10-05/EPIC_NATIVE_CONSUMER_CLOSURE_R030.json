@@ -1,0 +1,21 @@
+{
+  "schema": "environmentpipeline.epic_native_consumer_closure.v1",
+  "original_plan_sha256": "ca022f90c571f9e77ebde9546545c998e85bd26e47494a41f7608f5618191d34",
+  "bindings": {
+    "Sand_01_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Sand_02_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Dirt_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Dirt_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Sand_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Ground_MacroSoilAlbedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Ground_MacroSoilNormal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+  },
+  "original_epic_assets_immutable": true,
+  "additional_copies": 0,
+  "graph_edits": 0,
+  "scope": "Original four ground roles and active Ground_MacroSoilAlbedo/Normal use Epic-owned four copied 2K sources; macro variation remains original Epic. Current child overrides only.",
+  "why": "The existing active macro-soil fallback still referenced MOUT Dirt_Path at nonzero soil blend; direct user requests Unreal/Epic sources instead of personal-bank colors."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "EDITOR_PROCESS_CRASHED_DURING_POSTBINDING_GUARDS_NO_RETRY",
+  "utc": "20261003T200538728869Z",
+  "former_pid": 32752,
+  "unreal_editor_processes_after": [],
+  "tool_error": "Transport closed after14.7seconds",
+  "crash_log_time_utc": "2026-10-03T20:04:21.630Z",
+  "fatal_error": "EXCEPTION_ACCESS_VIOLATION reading address0x000000005f5f7318",
+  "callstack_modules": [
+    "python311.dll",
+    "UnrealEditor-PythonScriptPlugin.dll",
+    "UnrealEditor-Slate.dll"
+  ],
+  "root_cause": "Not established. Log lacksPythonline/guard progress. No pre-resume receipt exists; the frozen script creates that receipt before grounding module reload or scheduling final verifier/lifecycle.",
+  "pre_resume_receipts_found": [],
+  "pre_resume_receipt_created": false,
+  "new_grounding_reload_or_final_verifier_execution": "Not reached by script control flow if receipt absence reflects completed writes; no successful execution evidence.",
+  "suppression_cook_bake_named_save": "No evidence of initiation; diskworkflow states unchanged at prior failures.",
+  "saved_map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+  "saved_map_matches_prior_baseline": true,
+  "parent_disk_phase": "failed_native_road_transaction",
+  "native_disk_phase": "failed_validating",
+  "native_disk_saved": false,
+  "prior_saved_delivery_revision": "20261003T133607905511",
+  "crash_directory": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000",
+  "crash_files": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\CrashContext.runtime-xml",
+      "bytes": 215262,
+      "sha256": "69304889ae27b07e5e2061684c29342ce72f5deb6ce2d6dcae6b6f8bf6e6ddf3"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\CrashReportClient.ini",
+      "bytes": 239,
+      "sha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+      "preserved_copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\CrashReportClient.ini"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\Environmentpipeline.log",
+      "bytes": 7007373,
+      "sha256": "0a6f477467530ab653a2029f300fbb6c4a297a3e8fddc39e38d215573fab8d18",
+      "preserved_copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\Crash_Environmentpipeline.log"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\UEMinidump.dmp",
+      "bytes": 2112316,
+      "sha256": "c7c9d5668be9f87faa6a31c500cf5f4b2d800694a440a9576414d6bf8ba52d86"
+    }
+  ],
+  "preserved_log": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\Environmentpipeline.log",
+  "preserved_log_sha256": "cfc67986074fa6a1827188fe9be12951f862fe2814c599b2532a52b7bb29c590",
+  "in_memory_bound_candidate": "Editor process terminated;87unsavedbound candidates andlivep/r objects are no longer available. Existing geometry/provenance snapshots andPNG evidence remain on disk.",
+  "autosave": "WasFalse/originalTrue before call; process terminated before explicit restoration. Config was not saved by our autosave management. No claim of live setting restoration.",
+  "lease": "Retained unchanged for manager; PID32752 is stale after crash.",
+  "no_editor_restart_retry_rebuild_recovery_save_or_lease_change": true
+}

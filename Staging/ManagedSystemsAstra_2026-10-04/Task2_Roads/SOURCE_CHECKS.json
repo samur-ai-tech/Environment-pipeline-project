@@ -1,0 +1,171 @@
+{
+  "status": "PASSED_OFFLINE_SOURCE_CHECKS",
+  "cases": [
+    {
+      "case": "Actual project config plus false native CDO/accessor views",
+      "expected_pass": true,
+      "passed": true
+    },
+    {
+      "case": "class_default: reject enabled bEnableIntersectionLandscapePatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "class_default: reject enabled bEnableIntersectionLandscapeVisibilityHole",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "class_default: reject enabled bEnableRoadLandscapePaint",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "class_default: reject enabled bUseRoadLandscapeHeightPatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "class_default: reject enabled bAutoCreatePaintLayerInfo",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "native_get: reject enabled bEnableIntersectionLandscapePatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "native_get: reject enabled bEnableIntersectionLandscapeVisibilityHole",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "native_get: reject enabled bEnableRoadLandscapePaint",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "native_get: reject enabled bUseRoadLandscapeHeightPatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "native_get: reject enabled bAutoCreatePaintLayerInfo",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject non-boolean readback None",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject non-boolean readback 0",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject non-boolean readback 'False'",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject absent native accessor object",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject wrong native settings class",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Reject unavailable reflected property",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Missing correct category file",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Wrong section",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Missing mandatory scalar",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Enabled disk flag bEnableIntersectionLandscapePatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Enabled disk flag bEnableIntersectionLandscapeVisibilityHole",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Enabled disk flag bEnableRoadLandscapePaint",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Enabled disk flag bUseRoadLandscapeHeightPatch",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Enabled disk flag bAutoCreatePaintLayerInfo",
+      "expected_pass": false,
+      "passed": true
+    },
+    {
+      "case": "Failed package/actor and successful dependency history survives clearing and repeat generation",
+      "passed": true
+    },
+    {
+      "case": "Unsafe policy stops before native road spawn",
+      "passed": true
+    },
+    {
+      "case": "Owned patch enabled=True",
+      "passed": true
+    },
+    {
+      "case": "Owned patch enabled=False",
+      "passed": true
+    }
+  ],
+  "syntax_valid": [
+    "geocity_roadbld_clip.py",
+    "geocity_roadbld_grounding.py",
+    "geocity_roadbld_junctions.py",
+    "geocity_roadbld_landscape.py",
+    "geocity_roadbld_props.py",
+    "geocity_roadbld_seams.py",
+    "geocity_roadbld_topology.py",
+    "geocity_roadbld_workflow.py"
+  ],
+  "unchanged_geometry_appearance_transaction_methods": [
+    "build_presets",
+    "validate_preset",
+    "check_road",
+    "validate_mesh_footprints",
+    "clip_final_geometry",
+    "validate",
+    "staged_contract",
+    "fail"
+  ],
+  "rebuild_dispatch_gate_before_native_call": true,
+  "posthoc_patch_disable_removed": true,
+  "native_editor_calls": 0,
+  "unreal_imports": 0,
+  "limits": "Native Get/config binding, terrain-write prevention, geometry, UObject lifetime, rollback fidelity, Lit appearance and persistence remain unverified."
+}

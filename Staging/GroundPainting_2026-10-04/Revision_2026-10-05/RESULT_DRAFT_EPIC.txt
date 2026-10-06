@@ -1,0 +1,46 @@
+EPIC GROUND CHECKPOINT — DRAFT, 2026-10-05
+
+Both original areas are named-saved and technically verified in fresh processes. Shujaiya also has independent fresh matched-Lit visual approval. Rimal's three fresh actual-Lit images are captured; independent final visual review remains pending. Root reports the final editor exited cleanly with zero shutdown saves and no native editor remaining. This draft records a bounded ground checkpoint, not final environment, tutorial/reference quality, regeneration, or user acceptance.
+
+Retained sources and material changes
+
+The four ground roles use the installed original Unreal/Epic StarterContent T_Ground_Gravel_D/N and T_Rock_Sandstone_D/N. Gravel supplies Ground/Sand_01, RoadBed/Dirt_Path and BuildingPad/Sand_Path; sandstone supplies Steep/Sand_02 and both active Ground_MacroSoilAlbedo/Normal consumers. T_MacroVariation remains the original Epic macro texture. The two soil bindings close the previously active custom-bank fallback. This adapts Epic textures to the retained Natural material; it does not clone the complete original Epic material graphs or establish pristine release-byte provenance.
+
+Four shared copies reside under /Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/: T_Ground_Gravel_D_GeoCityResident2K, T_Ground_Gravel_N_GeoCityResident2K, T_Rock_Sandstone_D_GeoCityResident2K and T_Rock_Sandstone_N_GeoCityResident2K. NeverStream=True and MaxTextureSize=2048 address the measured fresh-close blur with original streamed textures at Current/Wanted128. Sources were already 2K; no upscale, global residency force or global CVar change was used. Creation and strict readiness were separate actions; all four copies read 2048x2048 before binding and after Shujaiya reopen.
+
+The earlier bounded Epic master patch changed eight existing root edges: four target roughness inputs now use their existing scalar controls, set to the dry source-range maximum .8, and four AO inputs use the existing constant1. Three macro properties changed: the macro texture-object default is Epic T_MacroVariation, and its object/sample sampler types are COLOR. Original Epic roughness uses texture/macro-driven ranges; constant .8/AO1 is this retained shader's adaptation, not a source-faithful PBR graph clone. The current copy/consumer phase adds no master nodes or graph edits. The complete1015-node graph, 69 layer names, retained coherent distance/stochastic sampling and other65 layer contracts remain preserved.
+
+Shujaiya's residency/consumer transition changes ten texture overrides only. Rimal's reviewed transition changes27 controls: eleven textures (ten resident consumers plus original Epic macro), eight scalars and eight neutral-tint/tile vectors. It reuses the same four saved copies. Its tested scalar recipe includes CellScale1, SoilBlendStrength.1, Sand_01_FarScale2 and Dirt_Path_NormalStrength.2. Geographic layer names remain unchanged.
+
+Normal-copy exception and preservation
+
+The two normal copies have use_legacy_gamma=False while their originals have True. Both originals/copies are sRGB=False with TC_NORMALMAP. Installed Texture.h GetGammaSpace and TextureCompressorModule.h GetGammaSpace return Linear when sRGB is disabled, irrespective of this flag. A native attempt to restore True read back False; that failed attempt is preserved, and the final helper never repeats the setter. This is an explicit inactive linear-normal flag difference, not exact all-property identity. The comparison covers30 captured property records (28 readable, two unavailable), preserving other captured compression, channel, flip, mip/LOD, filter and wrap settings except the two residency policy fields. Unexposed fields remain unknown.
+
+Original Epic/source packages, sealed modules/profiles, Grass graph/settings/coverage and original area map files remain guarded by hashes. Native readback preserves numeric actor/component/Landscape scene state against the current area baseline. This material-only phase performs no geometry, height, paint-weight, lighting, road/building, HDA, Cook or Bake edits. The unused earlier owned custom-bank copy remains separately saved, unbound and uncatalogued; it was not deleted or promoted. Earlier result documents and all failed creation receipts/once markers remain preserved.
+
+Measured outcome and limits
+
+Shujaiya's fresh native proof18eac confirms clean packages, saved copy hashes, ten resolved bindings, strict2K readiness, source/Grass/scene/CVar preservation and complete graph/code/input/output/mip identity. Independent visual proof2f267 finds the prior fresh-close blur absent: fine pebbles/grain persist across the save and fresh-process comparison. Middle/wide pale uniformity, angular patches and faint directional repetition remain visible. Their cause is not established by pixels.
+
+Rimal proofa561 confirms its complete27-control readback, unchanged shared graph/copies/other instances and preserved current-area scene. Visual reviewc6a7 approves retaining the bounded child-material checkpoint: cloudy pits/mottling are reduced, but close grain is modest and middle/wide ground remains pale and uniform. Fresh-process native proofc6b74 on PID35000 confirms all27 saved controls, clean packages, the same four saved strict2K copies and full shared graph/source/Grass/current-area preservation. The Rimal child package SHA is99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b. FINAL INDEPENDENT RIMAL FRESH VISUAL REVIEW: PENDING ROOT ADDITION.
+
+User acceptance, selected-reference quality, convincing contact/local variety and remaining non-ground environment defects remain open. No ordinary regeneration or cooked/runtime-platform validation is claimed.
+
+Evidence reading set (absolute paths; receipts retain full input/hash/provenance chains)
+
+1. Original Epic source graphs/settings, SHA9b7785af...:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_STARTER_GROUND_NATIVE_READONLY_PID32464.json
+2. Four-copy policy and ten-consumer closure, SHAs ca022f90... /95e7a8bf...:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_PLAN_R028.json
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_NATIVE_CONSUMER_CLOSURE_R030.json
+3. Shujaiya five-package named save, SHA0939c4a2f543367c775ca780c4f40b10ddd602d1261094a06b2986bec8edce8e:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_CONSUMER_NAMED_SAVE_GazaShujaiya_r030_epic_complete_PID26820.json
+4. Shujaiya fresh native verification, SHA18eacb5f538be6bfb53bd3749bfc0d39a268947896ecc8d42cb8a51339e6017b:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json
+5. Shujaiya fresh matched-Lit visual review/images, SHA2f26742079d35669980494156e4fc7d81b9421baef1f4aa1d5db824dbd69a962:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/VISUAL_REVIEW_GazaShujaiya_epic_r030_fresh_PID18844.json
+6. Rimal native verification and visual child-save approval, SHAs a561335794054f30a7ba3ce64025bf80078bded2666062d3d6fe727f27739ed1 /c6a7a81ee7036c6b1e4ce60047ab376bbd2e34217e834479da010b7a6342c833:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_RIMAL_verify_r031_epic_verify_PID25008.json
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/VISUAL_REVIEW_GazaRimal_epic_r031_PID25008.json
+7. Rimal fresh native verification, SHAc6b74f0f9fe5dd64d9027ac9fca253c99d878925c167e077394912158f302d4b:
+C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_RIMAL_verify_r031_epic_fresh_reopen_PID35000.json

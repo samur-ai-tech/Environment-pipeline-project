@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2659,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_FloorSquareThick"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/UtopianCity/Materials/M_ConcreteBare\",\"/Game/UtopianCity/Materials/M_CrackedConcrete_01\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2659,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/UtopianCity/Materials/M_ConcreteBare\",\"/Game/UtopianCity/Materials/M_CrackedConcrete_01\"]}"
+    }
+   ]
+  }
+ }
+}

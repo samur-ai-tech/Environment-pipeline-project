@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 636,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_trash_bin_1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"94x87x123\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/trash_bin_1.fbx\\\", \\\"Timestamp\\\" : \\\"1544159383\\\", \\\"FileMD5\\\" : \\\"28eba5b80d4d3111406260764a87fb31\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"788\",\"UVChannels\":\"2\",\"Vertices\":\"1648\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 636,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"94x87x123\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/trash_bin_1.fbx\\\", \\\"Timestamp\\\" : \\\"1544159383\\\", \\\"FileMD5\\\" : \\\"28eba5b80d4d3111406260764a87fb31\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"788\",\"UVChannels\":\"2\",\"Vertices\":\"1648\"}}"
+    }
+   ]
+  }
+ }
+}

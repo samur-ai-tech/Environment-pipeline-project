@@ -1,0 +1,78 @@
+TASK 5 — SECOND AREA AND SHARED ROAD/SIDEWALK REPAIR
+2026-10-02, Asia/Jerusalem
+Status: retained shared r014 implementation and both named real areas replaced/baked/saved. Final visual/style acceptance and unavailable native pole/fallback coverage remain separate.
+
+RETAINED IMPLEMENTATION [measured]
+Shared source: C:\Users\USER\Documents\Pipeline Environment\Houdini\GeoCity_city_v015_PermanentBank
+Saved native HDA: /Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank
+External HDA SHA256: 2acabf3b6144d5b1bacecb6f7ea369e8683f090a7862233db81933d1e12fd447
+r010_task5_before, r011, r012, r012_road_repair_before, r013_before_width_adapter and r014 preserve prior/source revisions.
+Sidewalk edge crossings/collinear overlaps are split before exposed-side classification. Full ribbons subtract the complete nearby road union, retain disjoint fragments and lineage, and sample terrain.
+Road correction divides Labs polygons before area clipping, retains a nonoverlapping road union, and adds only missing corridors, joins and endcaps from existing eligible geographic centerlines/full widths.
+Labs 1.2 source inspection showed P offset by width on each side (attribvop1 cross->multiply(width)->add(P)); sweep width and line length also use width*2. New labs_road_half_width adapter supplies half the full source width only to Labs; source widths used for placement/completion remain full metres.
+Actual HDA wires confirmed: clipped_grounded_road_surfaces input0, corrected_dsm_and_generated_masks input1 and grounded_sidewalk_ribbons input0 all consume complete_geographic_road_coverage. RoadBed, asphalt and sidewalk exclusion therefore share the completed footprint.
+Exact fragment bbox rejection improves subtraction without changing geometry.
+Normal editor action uniquely selects the current world profile; only exact recorded unreferenced Cook leftovers from successful area deliveries are acknowledged, with saved-dependency and external-referencer checks.
+
+NORMAL ASSET SCOPE [measured]
+Only the same 15 selected native mesh rows + 2 material rows extended to AllowedAreas=GazaRimal|GazaShujaiya. Same 1223 identities, ReleaseId/DecisionId, rights, holds and canonical qualification retained.
+Saved table: /Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4
+Synchronized catalog/native/profile digest: 890a497927a479b5011e9639f165c2640342a6b4bb1d013b099e97bcbd6d57eb
+Configuration decision: Staging/ManagedExecution_2026-10-02/Task5/NORMAL_SCOPE_CONFIGURATION.json
+
+ACTUAL NAMED DELIVERIES [measured]
+Area: GazaRimal
+Map: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Map SHA256: 82635b46615ddbba24174d768c3091ae1cb8efc1c3f10fd963cd634661ace234
+Source: C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaRimal/city_source_v1.json
+Profile: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\ModelBank\PermanentIntegration_2026-10-02\AREA_PROFILE.json
+Official lifecycle: baked_saved_verified, r014; 170 native placements; roles {"shrub": 5, "small_prop": 55, "tree": 36, "understory": 51, "whole_building": 23}
+One Landscape; 18 baked actors; zero cooked mesh copies; native material slots verified before/after Bake.
+Coverage receipt: {"caps": 274, "corridors": 263, "labs_area_m2": 45108.765771120496, "labs_triangles": 10844, "labs_union_fragments": 8523, "policy": "preserved_Labs_union_plus_missing_eligible_width_corridors_joins_caps", "shared_consumers": ["RoadBed", "road_surfaces", "sidewalks"], "source_area_id": "GazaRimal", "supplement_area_m2": 12574.012993854578, "supplement_fragments": 4489}
+Fallback remaining counts: {"street_pole": 36, "tree": 25}
+Named saved/clean generated dependencies:
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_buildings
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_road_surfaces
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_sidewalks
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_street_details
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_vegetation
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_2860_3236_0_GazaRimal_landscape_Dirt_Path
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_2860_3236_0_GazaRimal_landscape_Sand_01
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_2860_3236_0_GazaRimal_landscape_Sand_02
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_2860_3236_0_GazaRimal_landscape_Sand_Path
+Successful receipt: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\ModelBank\PermanentIntegration_2026-10-02\WORKFLOW_STATE.json
+
+Area: GazaShujaiya
+Map: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration
+Map SHA256: aeb7f747b533c59d9fcb4bda826e7360a2430ad13ae61cae97c9af6b6d6e0d5d
+Source: C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json
+Profile: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\ModelBank\GazaShujaiyaIntegration_2026-10-02\AREA_PROFILE.json
+Official lifecycle: baked_saved_verified, r014; 277 native placements; roles {"shrub": 9, "small_prop": 74, "tree": 72, "understory": 104, "whole_building": 18}
+One Landscape; 20 baked actors; zero cooked mesh copies; native material slots verified before/after Bake.
+Coverage receipt: {"caps": 263, "corridors": 256, "labs_area_m2": 40251.81653346511, "labs_triangles": 9371, "labs_union_fragments": 10403, "policy": "preserved_Labs_union_plus_missing_eligible_width_corridors_joins_caps", "shared_consumers": ["RoadBed", "road_surfaces", "sidewalks"], "source_area_id": "GazaShujaiya", "supplement_area_m2": 5428.0623142577015, "supplement_fragments": 5400}
+Fallback remaining counts: {"street_pole": 57, "tree": 44}
+Named saved/clean generated dependencies:
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_buildings
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_road_surfaces
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_sidewalks
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_street_details
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_vegetation
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_4288_4664_0_GazaShujaiya_landscape_Dirt_Path
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_4288_4664_0_GazaShujaiya_landscape_Sand_01
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_4288_4664_0_GazaShujaiya_landscape_Sand_02
+  /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_4288_4664_0_GazaShujaiya_landscape_Sand_Path
+Successful receipt: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\ModelBank\GazaShujaiyaIntegration_2026-10-02\WORKFLOW_STATE.json
+
+VISUAL FINDINGS AND BOUNDARIES
+[measured] Inspected actual saved Rimal junction/central footprint and Shujaiya area/street. The partial-overlap crossing sidewalk was removed; width-correct roads and source-aligned footway loops are continuous at the inspected locations.
+[measured] The central Rimal circular/grid paths are present in the original OSM as footways (980945677–980945689). Open regions between those paths are geographic non-road space; blanket asphalt filling would change the source geography. The earlier broad description of every central open region as a missing road patch was too broad.
+[measured] Actual r012 native source geometry had a hole near way41257711; r013 width-derived completion covered the observed location (-113.5,-121.5)m, and retained r014 adds the Labs full/per-side width correction.
+[measured] Original geographic source packages were preserved. H0013, H0907, H0051, H0958, declined palms, rights and final-style boundaries remain unchanged. White unmatched building shells and unmatched procedural vegetation/poles remain explicit fallback, not native-category acceptance.
+[measured] Existing ray-tracing resident-memory viewport warning remains.
+[not run] No separate proof/test/demo/reopen campaign, extra editor, alternate generator bridge, Save All, broad asset inventory, asset deletion, held release, rights approval or Linear action. Ordinary permanent area replacements are the delivered engineering work.
+
+EDITOR HANDOFF [measured]
+Tools > GeoCity: Generate / Regenerate Current Area remains the ordinary current-profile action: official input/rebuild/cook -> scoped previous Bake replacement -> cooked-output removal -> named dependency/map saves.
+{"acknowledged_unreferenced_cook_count": 65, "cooked_mesh_component_count": 0, "cooking_paused": true, "dirty_maps": [], "editor_pid": 15568, "generator_revision": "r014", "landscape_count": 1, "lifecycle_callback_active": false, "named_dependency_count": 9, "phase": "baked_saved_verified", "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration"}
+No dirty maps or referenced generated dependencies. Exact acknowledged unreferenced obsolete Cook paths remain in each successful WORKFLOW_STATE.json; their union matches current dirty Content. These are not delivery dependencies.
+Editor lease released to OWNER=NONE after final retained delivery; manager owns subsequent assignments.

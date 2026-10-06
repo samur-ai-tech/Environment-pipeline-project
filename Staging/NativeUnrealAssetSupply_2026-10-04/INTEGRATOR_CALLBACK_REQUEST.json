@@ -1,0 +1,32 @@
+{
+  "schema": "supplier_integrator_callback_request.v2",
+  "status": "IMPLEMENTED_READY_FOR_BANK_OWNED_CONSUMPTION",
+  "callback_contract_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\INTEGRATOR_CALLBACK_CONTRACT.json",
+  "callback_contract_sha256": "90a98f9dad945560903e568d5a5db5236b9e9778438c28433903ce62e8664ba0",
+  "prepared_intake": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\792c454348a158f1fb7cea58d65c8aca0e0257db280b4bb47a0cc34743ea3a19\\TRANSACTION.json",
+    "sha256": "1c776f67a145b5fae02e7d9ef65606e853e982634d642ebdd3ea9546171616cc",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\792c454348a158f1fb7cea58d65c8aca0e0257db280b4bb47a0cc34743ea3a19\\PREPARED_INTAKE.json",
+    "intake_sha256": "c3547cbd8caa2998d9760ce86c7b75e929b5aed1350cfc4d6f7dd56df63f0974",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "source_review_request": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\GENERIC_INTAKE_REVIEW_REQUEST.json",
+  "action_for_bank": "Integrate sealed apply_prepared CAS callback in retained bank-owned consumption; bank alone commits prepared registry and projects compatible configurations. Do not apply stale source/prepared snapshots.",
+  "action_for_root": "Independent source review, seal into actual native startup manifest and activate bank only after clean recovery; review exact targeted job IDs.",
+  "current_baseline_digest": "f6fff4f9759af2db7f72efde779e5082415a8dfb961ebece67b1bb3c28438665",
+  "bank_measurement_delivery": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\BankDeliveries\\4961a96444b61986a7d26b07779f024dc150ab777931ba5bb21d6b80c9b76ebb\\DELIVERY.json",
+  "review_status": "persisted full after-table validation implemented; new source manifest awaits independent review/activation",
+  "final_rebase_handoff": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\FinalRebases\\efc5193a88888c3d5e14dfebc0b049aa68c026eae6bbb9d2d417a2ed00e097d7\\HANDOFF.json",
+  "bank_handler_followup": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\commit_supplier_prepared.py",
+    "sha256": "8e7be3332def369ee7b6060dfa2a2b15306e2149eb1dc88179e95d21746bb975",
+    "callback_name_matches": true,
+    "preserves_prior_fields": true,
+    "writes_owned_prepared_registry_only": true,
+    "owner_followup": "Handler currently rechecks source/CSV/prepared immediately before os.replace. Supplier callback now also returns expected_native_table_package_sha256 and verified_saved_native_after; bank should add current DT package hash to final CAS and copy verified receipt reference into its APPLIED receipt. Bank owns this edit/reseal; supplier did not alter it."
+  }
+}

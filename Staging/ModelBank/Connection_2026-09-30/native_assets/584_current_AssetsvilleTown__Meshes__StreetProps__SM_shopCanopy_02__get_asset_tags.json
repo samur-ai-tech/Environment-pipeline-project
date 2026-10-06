@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 594,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_shopCanopy_02"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"95x700x100\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/shopCanopy_02.fbx\\\", \\\"Timestamp\\\" : \\\"1543384383\\\", \\\"FileMD5\\\" : \\\"ba3a9205f11e11e499ea085cf90bc11b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"182\",\"UVChannels\":\"2\",\"Vertices\":\"302\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 594,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"95x700x100\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/shopCanopy_02.fbx\\\", \\\"Timestamp\\\" : \\\"1543384383\\\", \\\"FileMD5\\\" : \\\"ba3a9205f11e11e499ea085cf90bc11b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"182\",\"UVChannels\":\"2\",\"Vertices\":\"302\"}}"
+    }
+   ]
+  }
+ }
+}

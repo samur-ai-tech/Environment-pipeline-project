@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2202,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Support_01a"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"199x200x88\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"../../../../ArtSource/Soul/Developers/Paul.Svoboda/Environments/LO/export/SM_Slums_Support_01a.fbx\\\", \\\"Timestamp\\\" : \\\"1376438090\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"4\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1024\",\"UVChannels\":\"2\",\"Vertices\":\"812\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2202,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"199x200x88\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"../../../../ArtSource/Soul/Developers/Paul.Svoboda/Environments/LO/export/SM_Slums_Support_01a.fbx\\\", \\\"Timestamp\\\" : \\\"1376438090\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"4\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1024\",\"UVChannels\":\"2\",\"Vertices\":\"812\"}}"
+    }
+   ]
+  }
+ }
+}

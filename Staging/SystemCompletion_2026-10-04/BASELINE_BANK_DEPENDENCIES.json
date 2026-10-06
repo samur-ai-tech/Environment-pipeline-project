@@ -1,0 +1,2045 @@
+{
+  "bank_modified": false,
+  "new_runtime_verified": false,
+  "areas": [
+    {
+      "area_receipt_folder": "GazaShujaiyaIntegration_2026-10-02",
+      "status": "existing_saved_receipt_not_new_runtime",
+      "diagnostics": {
+        "shrub": {
+          "requests": 113,
+          "placed": 3,
+          "no_available_requests": 110,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 123,
+            "ground_mask_or_slope": 28,
+            "no_available_candidate": 110,
+            "terrain_height_spread": 72
+          }
+        },
+        "small_prop": {
+          "requests": 92,
+          "placed": 64,
+          "no_available_requests": 28,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 39,
+            "ground_mask_or_slope": 66,
+            "no_available_candidate": 28,
+            "terrain_height_spread": 81
+          }
+        },
+        "street_pole": {
+          "requests": 57,
+          "placed": 53,
+          "no_available_requests": 4,
+          "rejection_reasons": {
+            "ground_mask_or_slope": 4,
+            "no_available_candidate": 4
+          }
+        },
+        "street_prop": {
+          "requests": 41,
+          "placed": 41,
+          "no_available_requests": 0,
+          "rejection_reasons": {}
+        },
+        "tree": {
+          "requests": 114,
+          "placed": 79,
+          "no_available_requests": 35,
+          "rejection_reasons": {
+            "ground_mask_or_slope": 5,
+            "no_available_candidate": 35,
+            "terrain_height_spread": 30
+          }
+        },
+        "understory": {
+          "requests": 110,
+          "placed": 101,
+          "no_available_requests": 9,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 5,
+            "ground_mask_or_slope": 5,
+            "no_available_candidate": 9,
+            "terrain_height_spread": 12
+          }
+        },
+        "whole_building": {
+          "requests": 397,
+          "placed": 41,
+          "no_available_requests": 356,
+          "rejection_reasons": {
+            "building_coverage": 756,
+            "building_footprint": 771,
+            "footprint_clearance_or_same_role_spacing": 10,
+            "no_available_candidate": 356
+          }
+        }
+      },
+      "omitted_generated": {
+        "street_pole": {
+          "source_count": 57,
+          "native_removed_count": 53,
+          "omitted_generated_count": 4,
+          "omitted_generated_ids": [
+            "pole_296365952_1_0",
+            "pole_296365952_1_1",
+            "pole_41254867_4_0",
+            "pole_41255662_1_1"
+          ],
+          "omitted_generated_requests": [
+            {
+              "detail_id": "pole_296365952_1_0",
+              "native_fit_failure": {
+                "placement_id": "GazaShujaiya:pole_296365952_1_0",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                132.9320831298828,
+                66.21613311767578,
+                276.1734924316406
+              ],
+              "placement_id": "GazaShujaiya:pole_296365952_1_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": "296365952"
+            },
+            {
+              "detail_id": "pole_296365952_1_1",
+              "native_fit_failure": {
+                "placement_id": "GazaShujaiya:pole_296365952_1_1",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                101.97343444824219,
+                64.77511596679688,
+                259.8467712402344
+              ],
+              "placement_id": "GazaShujaiya:pole_296365952_1_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": "296365952"
+            },
+            {
+              "detail_id": "pole_41254867_4_0",
+              "native_fit_failure": {
+                "placement_id": "GazaShujaiya:pole_41254867_4_0",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                128.05796813964844,
+                63.0238151550293,
+                200.2969970703125
+              ],
+              "placement_id": "GazaShujaiya:pole_41254867_4_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": "41254867"
+            },
+            {
+              "detail_id": "pole_41255662_1_1",
+              "native_fit_failure": {
+                "placement_id": "GazaShujaiya:pole_41255662_1_1",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -227.0570068359375,
+                42.520931243896484,
+                -17.71768569946289
+              ],
+              "placement_id": "GazaShujaiya:pole_41255662_1_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": "41255662"
+            }
+          ]
+        },
+        "tree": {
+          "source_count": 114,
+          "native_removed_count": 79,
+          "omitted_generated_count": 35,
+          "omitted_generated_ids": [
+            "tree_-11_-15",
+            "tree_-11_3",
+            "tree_-12_1",
+            "tree_-12_2",
+            "tree_-13_-10",
+            "tree_-13_-7",
+            "tree_-13_-9",
+            "tree_-13_1",
+            "tree_-14_-10",
+            "tree_-14_3",
+            "tree_-1_9",
+            "tree_-2_9",
+            "tree_-3_-7",
+            "tree_-4_6",
+            "tree_-5_-7",
+            "tree_-6_-5",
+            "tree_-8_3",
+            "tree_0_-7",
+            "tree_0_4",
+            "tree_13_-14",
+            "tree_13_-2",
+            "tree_14_0",
+            "tree_15_-1",
+            "tree_15_-2",
+            "tree_15_-4",
+            "tree_15_-9",
+            "tree_1_-8",
+            "tree_1_-9",
+            "tree_1_11",
+            "tree_1_12",
+            "tree_2_11",
+            "tree_3_1",
+            "tree_3_9",
+            "tree_4_-2",
+            "tree_7_-6"
+          ],
+          "omitted_generated_requests": [
+            {
+              "detail_id": "tree_-11_-15",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-11_-15",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -189.26792907714844,
+                  38.94333267211914,
+                  -260.44580078125
+                ],
+                "source_seed_cell_xz_m": [
+                  -198.0,
+                  -180.0,
+                  -270.0,
+                  -252.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -189.26792907714844,
+                38.94333267211914,
+                -260.44580078125
+              ],
+              "placement_id": "GazaShujaiya:tree_-11_-15",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-11_3",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-11_3",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -188.70994567871094,
+                  45.32489013671875,
+                  59.64445495605469
+                ],
+                "source_seed_cell_xz_m": [
+                  -198.0,
+                  -180.0,
+                  54.0,
+                  72.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -188.70994567871094,
+                45.32489013671875,
+                59.64445495605469
+              ],
+              "placement_id": "GazaShujaiya:tree_-11_3",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-12_1",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-12_1",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -206.05520629882812,
+                  44.54050827026367,
+                  22.885700225830078
+                ],
+                "source_seed_cell_xz_m": [
+                  -216.0,
+                  -198.0,
+                  18.0,
+                  36.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -206.05520629882812,
+                44.54050827026367,
+                22.885700225830078
+              ],
+              "placement_id": "GazaShujaiya:tree_-12_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-12_2",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-12_2",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -207.74366760253906,
+                  44.03836441040039,
+                  44.82261657714844
+                ],
+                "source_seed_cell_xz_m": [
+                  -216.0,
+                  -198.0,
+                  36.0,
+                  54.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -207.74366760253906,
+                44.03836441040039,
+                44.82261657714844
+              ],
+              "placement_id": "GazaShujaiya:tree_-12_2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-13_-10",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-13_-10",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -227.73846435546875,
+                  39.600345611572266,
+                  -168.72494506835938
+                ],
+                "source_seed_cell_xz_m": [
+                  -234.0,
+                  -216.0,
+                  -180.0,
+                  -162.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -227.73846435546875,
+                39.600345611572266,
+                -168.72494506835938
+              ],
+              "placement_id": "GazaShujaiya:tree_-13_-10",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-13_-7",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-13_-7",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -220.36312866210938,
+                  39.76698684692383,
+                  -118.23641967773438
+                ],
+                "source_seed_cell_xz_m": [
+                  -234.0,
+                  -216.0,
+                  -126.0,
+                  -108.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -220.36312866210938,
+                39.76698684692383,
+                -118.23641967773438
+              ],
+              "placement_id": "GazaShujaiya:tree_-13_-7",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-13_-9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-13_-9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -225.82440185546875,
+                  39.21404266357422,
+                  -157.96652221679688
+                ],
+                "source_seed_cell_xz_m": [
+                  -234.0,
+                  -216.0,
+                  -162.0,
+                  -144.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -225.82440185546875,
+                39.21404266357422,
+                -157.96652221679688
+              ],
+              "placement_id": "GazaShujaiya:tree_-13_-9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-13_1",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-13_1",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -228.0884552001953,
+                  42.9760627746582,
+                  27.380393981933594
+                ],
+                "source_seed_cell_xz_m": [
+                  -234.0,
+                  -216.0,
+                  18.0,
+                  36.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -228.0884552001953,
+                42.9760627746582,
+                27.380393981933594
+              ],
+              "placement_id": "GazaShujaiya:tree_-13_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-14_-10",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-14_-10",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -239.59962463378906,
+                  38.617942810058594,
+                  -170.78384399414062
+                ],
+                "source_seed_cell_xz_m": [
+                  -252.0,
+                  -234.0,
+                  -180.0,
+                  -162.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -239.59962463378906,
+                38.617942810058594,
+                -170.78384399414062
+              ],
+              "placement_id": "GazaShujaiya:tree_-14_-10",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-14_3",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-14_3",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -241.66966247558594,
+                  42.416988372802734,
+                  66.3438720703125
+                ],
+                "source_seed_cell_xz_m": [
+                  -252.0,
+                  -234.0,
+                  54.0,
+                  72.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -241.66966247558594,
+                42.416988372802734,
+                66.3438720703125
+              ],
+              "placement_id": "GazaShujaiya:tree_-14_3",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-1_9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-1_9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -9.883771896362305,
+                  53.138092041015625,
+                  167.88186645507812
+                ],
+                "source_seed_cell_xz_m": [
+                  -18.0,
+                  0.0,
+                  162.0,
+                  180.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -9.883771896362305,
+                53.138092041015625,
+                167.88186645507812
+              ],
+              "placement_id": "GazaShujaiya:tree_-1_9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-2_9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-2_9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -22.820905685424805,
+                  51.584800720214844,
+                  171.73707580566406
+                ],
+                "source_seed_cell_xz_m": [
+                  -36.0,
+                  -18.0,
+                  162.0,
+                  180.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -22.820905685424805,
+                51.584800720214844,
+                171.73707580566406
+              ],
+              "placement_id": "GazaShujaiya:tree_-2_9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-3_-7",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-3_-7",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -44.38998031616211,
+                  45.22439193725586,
+                  -117.34390258789062
+                ],
+                "source_seed_cell_xz_m": [
+                  -54.0,
+                  -36.0,
+                  -126.0,
+                  -108.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -44.38998031616211,
+                45.22439193725586,
+                -117.34390258789062
+              ],
+              "placement_id": "GazaShujaiya:tree_-3_-7",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-4_6",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-4_6",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -63.199424743652344,
+                  50.271690368652344,
+                  121.47816467285156
+                ],
+                "source_seed_cell_xz_m": [
+                  -72.0,
+                  -54.0,
+                  108.0,
+                  126.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -63.199424743652344,
+                50.271690368652344,
+                121.47816467285156
+              ],
+              "placement_id": "GazaShujaiya:tree_-4_6",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-5_-7",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-5_-7",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -82.27735900878906,
+                  45.22135543823242,
+                  -120.01111602783203
+                ],
+                "source_seed_cell_xz_m": [
+                  -90.0,
+                  -72.0,
+                  -126.0,
+                  -108.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -82.27735900878906,
+                45.22135543823242,
+                -120.01111602783203
+              ],
+              "placement_id": "GazaShujaiya:tree_-5_-7",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-6_-5",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-6_-5",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -94.9796142578125,
+                  44.94498062133789,
+                  -79.69148254394531
+                ],
+                "source_seed_cell_xz_m": [
+                  -108.0,
+                  -90.0,
+                  -90.0,
+                  -72.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -94.9796142578125,
+                44.94498062133789,
+                -79.69148254394531
+              ],
+              "placement_id": "GazaShujaiya:tree_-6_-5",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-8_3",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_-8_3",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -136.92027282714844,
+                  48.171234130859375,
+                  58.52716827392578
+                ],
+                "source_seed_cell_xz_m": [
+                  -144.0,
+                  -126.0,
+                  54.0,
+                  72.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -136.92027282714844,
+                48.171234130859375,
+                58.52716827392578
+              ],
+              "placement_id": "GazaShujaiya:tree_-8_3",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_0_-7",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_0_-7",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  8.526777267456055,
+                  45.92697525024414,
+                  -121.51913452148438
+                ],
+                "source_seed_cell_xz_m": [
+                  0.0,
+                  18.0,
+                  -126.0,
+                  -108.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                8.526777267456055,
+                45.92697525024414,
+                -121.51913452148438
+              ],
+              "placement_id": "GazaShujaiya:tree_0_-7",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_0_4",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_0_4",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  4.266219139099121,
+                  51.08644485473633,
+                  84.43868255615234
+                ],
+                "source_seed_cell_xz_m": [
+                  0.0,
+                  18.0,
+                  72.0,
+                  90.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                4.266219139099121,
+                51.08644485473633,
+                84.43868255615234
+              ],
+              "placement_id": "GazaShujaiya:tree_0_4",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_13_-14",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_13_-14",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  240.8081512451172,
+                  50.13814926147461,
+                  -238.904052734375
+                ],
+                "source_seed_cell_xz_m": [
+                  234.0,
+                  252.0,
+                  -252.0,
+                  -234.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                240.8081512451172,
+                50.13814926147461,
+                -238.904052734375
+              ],
+              "placement_id": "GazaShujaiya:tree_13_-14",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_13_-2",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_13_-2",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  247.7013702392578,
+                  58.51194381713867,
+                  -22.018943786621094
+                ],
+                "source_seed_cell_xz_m": [
+                  234.0,
+                  252.0,
+                  -36.0,
+                  -18.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                247.7013702392578,
+                58.51194381713867,
+                -22.018943786621094
+              ],
+              "placement_id": "GazaShujaiya:tree_13_-2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_14_0",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_14_0",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  265.61065673828125,
+                  60.481746673583984,
+                  4.6940717697143555
+                ],
+                "source_seed_cell_xz_m": [
+                  252.0,
+                  270.0,
+                  0.0,
+                  18.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                265.61065673828125,
+                60.481746673583984,
+                4.6940717697143555
+              ],
+              "placement_id": "GazaShujaiya:tree_14_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_15_-1",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_15_-1",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  280.48126220703125,
+                  60.58003616333008,
+                  -13.845413208007812
+                ],
+                "source_seed_cell_xz_m": [
+                  270.0,
+                  288.0,
+                  -18.0,
+                  0.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                280.48126220703125,
+                60.58003616333008,
+                -13.845413208007812
+              ],
+              "placement_id": "GazaShujaiya:tree_15_-1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_15_-2",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_15_-2",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  276.1038818359375,
+                  59.839385986328125,
+                  -23.87493324279785
+                ],
+                "source_seed_cell_xz_m": [
+                  270.0,
+                  288.0,
+                  -36.0,
+                  -18.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                276.1038818359375,
+                59.839385986328125,
+                -23.87493324279785
+              ],
+              "placement_id": "GazaShujaiya:tree_15_-2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_15_-4",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_15_-4",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  282.491943359375,
+                  58.37456512451172,
+                  -60.278465270996094
+                ],
+                "source_seed_cell_xz_m": [
+                  270.0,
+                  288.0,
+                  -72.0,
+                  -54.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                282.491943359375,
+                58.37456512451172,
+                -60.278465270996094
+              ],
+              "placement_id": "GazaShujaiya:tree_15_-4",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_15_-9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_15_-9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  280.8405456542969,
+                  54.0322380065918,
+                  -155.21633911132812
+                ],
+                "source_seed_cell_xz_m": [
+                  270.0,
+                  288.0,
+                  -162.0,
+                  -144.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                280.8405456542969,
+                54.0322380065918,
+                -155.21633911132812
+              ],
+              "placement_id": "GazaShujaiya:tree_15_-9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_1_-8",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_1_-8",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  26.078933715820312,
+                  48.70473098754883,
+                  -130.58865356445312
+                ],
+                "source_seed_cell_xz_m": [
+                  18.0,
+                  36.0,
+                  -144.0,
+                  -126.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                26.078933715820312,
+                48.70473098754883,
+                -130.58865356445312
+              ],
+              "placement_id": "GazaShujaiya:tree_1_-8",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_1_-9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_1_-9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  23.264850616455078,
+                  46.04044723510742,
+                  -151.38150024414062
+                ],
+                "source_seed_cell_xz_m": [
+                  18.0,
+                  36.0,
+                  -162.0,
+                  -144.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                23.264850616455078,
+                46.04044723510742,
+                -151.38150024414062
+              ],
+              "placement_id": "GazaShujaiya:tree_1_-9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_1_11",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_1_11",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  29.052825927734375,
+                  55.080177307128906,
+                  205.9415283203125
+                ],
+                "source_seed_cell_xz_m": [
+                  18.0,
+                  36.0,
+                  198.0,
+                  216.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                29.052825927734375,
+                55.080177307128906,
+                205.9415283203125
+              ],
+              "placement_id": "GazaShujaiya:tree_1_11",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_1_12",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_1_12",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  25.61899185180664,
+                  55.3549690246582,
+                  224.03558349609375
+                ],
+                "source_seed_cell_xz_m": [
+                  18.0,
+                  36.0,
+                  216.0,
+                  234.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                25.61899185180664,
+                55.3549690246582,
+                224.03558349609375
+              ],
+              "placement_id": "GazaShujaiya:tree_1_12",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_2_11",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_2_11",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  42.964630126953125,
+                  56.59485626220703,
+                  212.19361877441406
+                ],
+                "source_seed_cell_xz_m": [
+                  36.0,
+                  54.0,
+                  198.0,
+                  216.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                42.964630126953125,
+                56.59485626220703,
+                212.19361877441406
+              ],
+              "placement_id": "GazaShujaiya:tree_2_11",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_3_1",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_3_1",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  57.64580535888672,
+                  52.05702209472656,
+                  24.504249572753906
+                ],
+                "source_seed_cell_xz_m": [
+                  54.0,
+                  72.0,
+                  18.0,
+                  36.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                57.64580535888672,
+                52.05702209472656,
+                24.504249572753906
+              ],
+              "placement_id": "GazaShujaiya:tree_3_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_3_9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_3_9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  68.13258361816406,
+                  55.93091583251953,
+                  171.3001708984375
+                ],
+                "source_seed_cell_xz_m": [
+                  54.0,
+                  72.0,
+                  162.0,
+                  180.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                68.13258361816406,
+                55.93091583251953,
+                171.3001708984375
+              ],
+              "placement_id": "GazaShujaiya:tree_3_9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_4_-2",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_4_-2",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  77.05900573730469,
+                  51.40464401245117,
+                  -23.42560386657715
+                ],
+                "source_seed_cell_xz_m": [
+                  72.0,
+                  90.0,
+                  -36.0,
+                  -18.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                77.05900573730469,
+                51.40464401245117,
+                -23.42560386657715
+              ],
+              "placement_id": "GazaShujaiya:tree_4_-2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_7_-6",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaShujaiya:tree_7_-6",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  133.33517456054688,
+                  49.687381744384766,
+                  -103.18745422363281
+                ],
+                "source_seed_cell_xz_m": [
+                  126.0,
+                  144.0,
+                  -108.0,
+                  -90.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                133.33517456054688,
+                49.687381744384766,
+                -103.18745422363281
+              ],
+              "placement_id": "GazaShujaiya:tree_7_-6",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaShujaiya",
+              "source_osm_id": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "area_receipt_folder": "PermanentIntegration_2026-10-02",
+      "status": "existing_saved_receipt_not_new_runtime",
+      "diagnostics": {
+        "shrub": {
+          "requests": 60,
+          "placed": 2,
+          "no_available_requests": 58,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 68,
+            "ground_mask_or_slope": 5,
+            "no_available_candidate": 58,
+            "terrain_height_spread": 43
+          }
+        },
+        "small_prop": {
+          "requests": 70,
+          "placed": 54,
+          "no_available_requests": 16,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 31,
+            "ground_mask_or_slope": 45,
+            "no_available_candidate": 16,
+            "terrain_height_spread": 54
+          }
+        },
+        "street_pole": {
+          "requests": 36,
+          "placed": 27,
+          "no_available_requests": 9,
+          "rejection_reasons": {
+            "ground_mask_or_slope": 9,
+            "no_available_candidate": 9
+          }
+        },
+        "street_prop": {
+          "requests": 23,
+          "placed": 23,
+          "no_available_requests": 0,
+          "rejection_reasons": {}
+        },
+        "tree": {
+          "requests": 60,
+          "placed": 45,
+          "no_available_requests": 15,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 2,
+            "ground_mask_or_slope": 2,
+            "no_available_candidate": 15,
+            "terrain_height_spread": 11
+          }
+        },
+        "understory": {
+          "requests": 58,
+          "placed": 55,
+          "no_available_requests": 3,
+          "rejection_reasons": {
+            "footprint_clearance_or_same_role_spacing": 4,
+            "no_available_candidate": 3,
+            "terrain_height_spread": 2
+          }
+        },
+        "whole_building": {
+          "requests": 269,
+          "placed": 60,
+          "no_available_requests": 209,
+          "rejection_reasons": {
+            "building_coverage": 593,
+            "building_footprint": 368,
+            "building_height": 7,
+            "footprint_clearance_or_same_role_spacing": 26,
+            "no_available_candidate": 209,
+            "release_zone": 12
+          }
+        }
+      },
+      "omitted_generated": {
+        "street_pole": {
+          "source_count": 36,
+          "native_removed_count": 27,
+          "omitted_generated_count": 9,
+          "omitted_generated_ids": [
+            "pole_134572590_0_0",
+            "pole_144276113_3_1",
+            "pole_41254127_0_0",
+            "pole_41254215_1_2",
+            "pole_41255144_5_1",
+            "pole_41255348_0_1",
+            "pole_41255512_16_0",
+            "pole_41256016_4_2",
+            "pole_41257711_0_2"
+          ],
+          "omitted_generated_requests": [
+            {
+              "detail_id": "pole_134572590_0_0",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_134572590_0_0",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -258.09100341796875,
+                34.585777282714844,
+                -158.14715576171875
+              ],
+              "placement_id": "GazaRimal:pole_134572590_0_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "134572590"
+            },
+            {
+              "detail_id": "pole_144276113_3_1",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_144276113_3_1",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -9.954978942871094,
+                36.729591369628906,
+                35.374061584472656
+              ],
+              "placement_id": "GazaRimal:pole_144276113_3_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "144276113"
+            },
+            {
+              "detail_id": "pole_41254127_0_0",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41254127_0_0",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -256.78985595703125,
+                36.564029693603516,
+                -188.81594848632812
+              ],
+              "placement_id": "GazaRimal:pole_41254127_0_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41254127"
+            },
+            {
+              "detail_id": "pole_41254215_1_2",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41254215_1_2",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -277.351318359375,
+                34.059173583984375,
+                89.10646057128906
+              ],
+              "placement_id": "GazaRimal:pole_41254215_1_2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41254215"
+            },
+            {
+              "detail_id": "pole_41255144_5_1",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41255144_5_1",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                135.0454864501953,
+                35.42951202392578,
+                -273.97216796875
+              ],
+              "placement_id": "GazaRimal:pole_41255144_5_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41255144"
+            },
+            {
+              "detail_id": "pole_41255348_0_1",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41255348_0_1",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                0.7727825045585632,
+                39.496612548828125,
+                91.15740203857422
+              ],
+              "placement_id": "GazaRimal:pole_41255348_0_1",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41255348"
+            },
+            {
+              "detail_id": "pole_41255512_16_0",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41255512_16_0",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                168.37583923339844,
+                38.41680908203125,
+                -39.52020263671875
+              ],
+              "placement_id": "GazaRimal:pole_41255512_16_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41255512"
+            },
+            {
+              "detail_id": "pole_41256016_4_2",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41256016_4_2",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                34.546836853027344,
+                42.60528564453125,
+                202.95169067382812
+              ],
+              "placement_id": "GazaRimal:pole_41256016_4_2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41256016"
+            },
+            {
+              "detail_id": "pole_41257711_0_2",
+              "native_fit_failure": {
+                "placement_id": "GazaRimal:pole_41257711_0_2",
+                "reason": "no_available_candidate"
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                151.93954467773438,
+                44.13766860961914,
+                157.6653594970703
+              ],
+              "placement_id": "GazaRimal:pole_41257711_0_2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_street_pole",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": "41257711"
+            }
+          ]
+        },
+        "tree": {
+          "source_count": 60,
+          "native_removed_count": 45,
+          "omitted_generated_count": 15,
+          "omitted_generated_ids": [
+            "tree_-10_-9",
+            "tree_-13_4",
+            "tree_-14_-16",
+            "tree_-1_-8",
+            "tree_-5_-10",
+            "tree_-5_14",
+            "tree_-5_7",
+            "tree_-8_8",
+            "tree_0_-15",
+            "tree_15_-13",
+            "tree_1_-15",
+            "tree_6_-15",
+            "tree_6_0",
+            "tree_6_2",
+            "tree_7_14"
+          ],
+          "omitted_generated_requests": [
+            {
+              "detail_id": "tree_-10_-9",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-10_-9",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -175.75729370117188,
+                  35.254478454589844,
+                  -153.20037841796875
+                ],
+                "source_seed_cell_xz_m": [
+                  -180.0,
+                  -162.0,
+                  -162.0,
+                  -144.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -175.75729370117188,
+                35.254478454589844,
+                -153.20037841796875
+              ],
+              "placement_id": "GazaRimal:tree_-10_-9",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-13_4",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-13_4",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -219.81088256835938,
+                  32.415061950683594,
+                  79.31183624267578
+                ],
+                "source_seed_cell_xz_m": [
+                  -234.0,
+                  -216.0,
+                  72.0,
+                  90.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -219.81088256835938,
+                32.415061950683594,
+                79.31183624267578
+              ],
+              "placement_id": "GazaRimal:tree_-13_4",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-14_-16",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-14_-16",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -245.22695922851562,
+                  39.277523040771484,
+                  -274.03594970703125
+                ],
+                "source_seed_cell_xz_m": [
+                  -252.0,
+                  -234.0,
+                  -288.0,
+                  -270.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -245.22695922851562,
+                39.277523040771484,
+                -274.03594970703125
+              ],
+              "placement_id": "GazaRimal:tree_-14_-16",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-1_-8",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-1_-8",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -9.149810791015625,
+                  35.78483963012695,
+                  -131.0806884765625
+                ],
+                "source_seed_cell_xz_m": [
+                  -18.0,
+                  0.0,
+                  -144.0,
+                  -126.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -9.149810791015625,
+                35.78483963012695,
+                -131.0806884765625
+              ],
+              "placement_id": "GazaRimal:tree_-1_-8",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-5_-10",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-5_-10",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -82.07199096679688,
+                  35.20524597167969,
+                  -167.25308227539062
+                ],
+                "source_seed_cell_xz_m": [
+                  -90.0,
+                  -72.0,
+                  -180.0,
+                  -162.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -82.07199096679688,
+                35.20524597167969,
+                -167.25308227539062
+              ],
+              "placement_id": "GazaRimal:tree_-5_-10",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-5_14",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-5_14",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -80.69100952148438,
+                  37.03794860839844,
+                  260.9165344238281
+                ],
+                "source_seed_cell_xz_m": [
+                  -90.0,
+                  -72.0,
+                  252.0,
+                  270.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -80.69100952148438,
+                37.03794860839844,
+                260.9165344238281
+              ],
+              "placement_id": "GazaRimal:tree_-5_14",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-5_7",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-5_7",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -78.41917419433594,
+                  35.0042610168457,
+                  137.31768798828125
+                ],
+                "source_seed_cell_xz_m": [
+                  -90.0,
+                  -72.0,
+                  126.0,
+                  144.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -78.41917419433594,
+                35.0042610168457,
+                137.31768798828125
+              ],
+              "placement_id": "GazaRimal:tree_-5_7",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_-8_8",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_-8_8",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  -135.05343627929688,
+                  34.74930191040039,
+                  148.8264617919922
+                ],
+                "source_seed_cell_xz_m": [
+                  -144.0,
+                  -126.0,
+                  144.0,
+                  162.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                -135.05343627929688,
+                34.74930191040039,
+                148.8264617919922
+              ],
+              "placement_id": "GazaRimal:tree_-8_8",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_0_-15",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_0_-15",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  8.318924903869629,
+                  39.15989685058594,
+                  -262.58697509765625
+                ],
+                "source_seed_cell_xz_m": [
+                  0.0,
+                  18.0,
+                  -270.0,
+                  -252.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                8.318924903869629,
+                39.15989685058594,
+                -262.58697509765625
+              ],
+              "placement_id": "GazaRimal:tree_0_-15",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_15_-13",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_15_-13",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  282.02471923828125,
+                  38.15224838256836,
+                  -223.59112548828125
+                ],
+                "source_seed_cell_xz_m": [
+                  270.0,
+                  288.0,
+                  -234.0,
+                  -216.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                282.02471923828125,
+                38.15224838256836,
+                -223.59112548828125
+              ],
+              "placement_id": "GazaRimal:tree_15_-13",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_1_-15",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_1_-15",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  26.383800506591797,
+                  39.66150665283203,
+                  -265.77703857421875
+                ],
+                "source_seed_cell_xz_m": [
+                  18.0,
+                  36.0,
+                  -270.0,
+                  -252.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                26.383800506591797,
+                39.66150665283203,
+                -265.77703857421875
+              ],
+              "placement_id": "GazaRimal:tree_1_-15",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_6_-15",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_6_-15",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  119.52684020996094,
+                  36.60207748413086,
+                  -259.8719482421875
+                ],
+                "source_seed_cell_xz_m": [
+                  108.0,
+                  126.0,
+                  -270.0,
+                  -252.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                119.52684020996094,
+                36.60207748413086,
+                -259.8719482421875
+              ],
+              "placement_id": "GazaRimal:tree_6_-15",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_6_0",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_6_0",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  119.58975982666016,
+                  37.202693939208984,
+                  6.264055252075195
+                ],
+                "source_seed_cell_xz_m": [
+                  108.0,
+                  126.0,
+                  0.0,
+                  18.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                119.58975982666016,
+                37.202693939208984,
+                6.264055252075195
+              ],
+              "placement_id": "GazaRimal:tree_6_0",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_6_2",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_6_2",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  118.94882202148438,
+                  40.813602447509766,
+                  48.95307159423828
+                ],
+                "source_seed_cell_xz_m": [
+                  108.0,
+                  126.0,
+                  36.0,
+                  54.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                118.94882202148438,
+                40.813602447509766,
+                48.95307159423828
+              ],
+              "placement_id": "GazaRimal:tree_6_2",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            },
+            {
+              "detail_id": "tree_7_14",
+              "native_fit_failure": {
+                "anchor_search_policy": "generated_tree_same_seed_cell_max_2m",
+                "candidate_anchor_count": 49,
+                "placement_id": "GazaRimal:tree_7_14",
+                "reason": "no_available_candidate",
+                "source_anchor_m": [
+                  131.36886596679688,
+                  45.232574462890625,
+                  256.4781494140625
+                ],
+                "source_seed_cell_xz_m": [
+                  126.0,
+                  144.0,
+                  252.0,
+                  270.0
+                ]
+              },
+              "native_substitution": false,
+              "original_anchor_m": [
+                131.36886596679688,
+                45.232574462890625,
+                256.4781494140625
+              ],
+              "placement_id": "GazaRimal:tree_7_14",
+              "reason": "generated_decoration_request_failed_safe_native_fit",
+              "request_origin": "geographic_tree",
+              "source_area_id": "GazaRimal",
+              "source_osm_id": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

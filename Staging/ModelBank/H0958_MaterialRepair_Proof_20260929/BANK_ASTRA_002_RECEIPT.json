@@ -1,0 +1,115 @@
+{
+  "task": "BANK-ASTRA-002",
+  "operator_thread": "01a0e820-c6d4-7702-8e7b-55fd20f9b020",
+  "manager_thread": "01a0e7e2-2aac-7a63-a913-e58b1f3714a2",
+  "result": "P1_MASKED_PROOF_AND_FRESH_PROCESS_PERSISTENCE_PASSED",
+  "state": "experimental isolated derivatives",
+  "source_candidate_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+  "canonical_candidate_id_changed": false,
+  "canonical_catalog_changed": false,
+  "source_mesh": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm",
+  "proof_mesh": "/Game/Developers/USER/ModelBankProof/H0958_MaterialRepair_20260929/SM_H0958_CoconutPalm_Proof.SM_H0958_CoconutPalm_Proof",
+  "proof_material": "/Game/Developers/USER/ModelBankProof/H0958_MaterialRepair_20260929/M_H0958_Leaf_Proof.M_H0958_Leaf_Proof",
+  "native_copy_command": "Asset editor File > Save As, exact destination; source package retained and hashes rechecked after each copy",
+  "slot_mapping": [
+    {
+      "changed": false,
+      "material": "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_0.Original_Submesh_0",
+      "element": 0,
+      "slot": "Original_Submesh_0"
+    },
+    {
+      "changed": "reference only",
+      "material": "/Game/Developers/USER/ModelBankProof/H0958_MaterialRepair_20260929/M_H0958_Leaf_Proof.M_H0958_Leaf_Proof",
+      "element": 1,
+      "slot": "Original_Submesh_1"
+    }
+  ],
+  "p0": {
+    "blend_mode": "Opaque",
+    "two_sided": false,
+    "shading_model": "Default Lit",
+    "alpha_to_opacity_mask": false,
+    "domain": "Surface"
+  },
+  "p1": {
+    "shading_model": "Default Lit",
+    "blend_mode": "Masked",
+    "alpha_to_opacity_mask": true,
+    "normal_binding_changed": false,
+    "two_sided": false,
+    "domain": "Surface",
+    "opacity_mask_clip_value_edited": false,
+    "opacity_mask_clip_value_displayed": "0.3333"
+  },
+  "p2": {
+    "run": false,
+    "reason": "No disappearing back-side symptom observed in paired P1 Back view; conditional trigger absent. Not an exhaustive normal/backface assessment."
+  },
+  "mesh_observations": {
+    "scale_contact_orientation_pivot_measurements": "not run",
+    "nanite_enabled": false,
+    "lod_selector": "Auto",
+    "material_slots": 2,
+    "triangles": 4160,
+    "uv_channels": 2,
+    "vertices": 3326,
+    "approximate_dimensions_cm_displayed": "605 x 612 x 870",
+    "collision_primitives": 1,
+    "rendered_lod": 0
+  },
+  "comparison_views": {
+    "recipe": "viewport width782px; focus preview; Alt+H; F; scroll -240 then -1200 at(397,427); B via Alt+Shift+H",
+    "B": "Back orthographic, same zoom",
+    "numeric_camera_zoom_exposure": "not measured",
+    "A": "Front orthographic, Lit, Auto LOD0",
+    "shared_preview_profile_changed": false
+  },
+  "evidence": {
+    "source_backups": "SOURCE_PACKAGE_BACKUPS.json",
+    "screenshot_count": 73,
+    "validation": "FINAL_VALIDATION.json",
+    "comparison_labels": [
+      "01_P0_A_FRONT",
+      "02_P0_B_BACK",
+      "11_P1_A_FRONT",
+      "12_P1_B_BACK",
+      "22_REOPEN_A_FRONT",
+      "23_REOPEN_B_BACK"
+    ],
+    "observation_count": 28,
+    "missing_screenshots": []
+  },
+  "available": true,
+  "imported_original": true,
+  "technical_check": "bounded material wiring, two views and proof-package persistence only",
+  "rights_confirmed": "No new rights confirmation; prior owner technical-qualification scope documented separately",
+  "qualified_for_role": false,
+  "connected_to_houdini": false,
+  "generated": false,
+  "visually_verified_in_project": "experimental proof in native Static Mesh Editor only",
+  "accepted": false,
+  "processes_closed": [
+    7132,
+    27736
+  ],
+  "manager_release_required": false,
+  "remaining": [
+    "Full UV/normal/backface and original shader fidelity",
+    "NoMipmaps/distance filtering and masked overdraw performance",
+    "LOD, wind, shadows, collision/contact/scale/pivot",
+    "Species and pre-war GazaRimal role/style decision",
+    "Rights mapping for export/redistribution/attribution",
+    "Explicit later generator placement and area persistence gates"
+  ],
+  "prohibited_actions_performed": [],
+  "audit_notes": [
+    "One compaction derailment produced an irrelevant old prompt; task resumed using existing PID7132 without second launch.",
+    "Native Save As replaced the source editor tab with the derivative tab but retained source package and original mesh references; hashes confirmed.",
+    "The original-material Reference Viewer screenshot was captured after P1; P0 includes mesh graph and original material graph/binding, and unchanged source hashes support comparison.",
+    "LAUNCH_2.json discloses a nonterminating DateTime-vs-DateTimeOffset comparison error in the deadline guard; valid recorded lease independently rechecked with corrected types.",
+    "Saved/Autosaves and Saved/Config changes are disclosed separately and preserved."
+  ],
+  "release_confirmed": true,
+  "release_evidence": "RELEASE_ACK.json"
+}

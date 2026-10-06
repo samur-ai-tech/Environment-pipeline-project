@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1800,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Jonction/B52_Roof_Jction_3x1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"26x300x131\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Jonction/B52_Roof_Jction_3x1.fbx\\\", \\\"Timestamp\\\" : \\\"1563298877\\\", \\\"FileMD5\\\" : \\\"08242f93fc91ee5a5bf40dd7706843c2\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"68\",\"UVChannels\":\"2\",\"Vertices\":\"108\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1800,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"26x300x131\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Jonction/B52_Roof_Jction_3x1.fbx\\\", \\\"Timestamp\\\" : \\\"1563298877\\\", \\\"FileMD5\\\" : \\\"08242f93fc91ee5a5bf40dd7706843c2\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"68\",\"UVChannels\":\"2\",\"Vertices\":\"108\"}}"
+    }
+   ]
+  }
+ }
+}

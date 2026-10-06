@@ -1,0 +1,57 @@
+{
+  "schema": "environmentpipeline.epic_recipe_completion_review.v1",
+  "status": "APPROVED_EPIC_RECIPE_COMPLETION",
+  "pid": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "reviewer": "/root/visual_review",
+  "helper_sha256": "7908aff3fea9f76579c02036986fcbb280f0d613378f6e00c2c23951cd18bfc8",
+  "partial_receipt_sha256": "85fd33b23842031f3f8ef4e80ce0f012cc56c1272ceecdc8857e1577564ca44f",
+  "failed_apply_receipt_sha256": "fdc4d1583634030925400aba8d54754c194f66035ba7363ec644301b9c8c0272",
+  "original_integration_helper_sha256": "19d99d44b31ca2027a3d814c76dd5ab1ff6d17dd44578cd2a55ad880a9d3a5c0",
+  "plan_sha256": "ccc7eaa90391d2d5f148c68d205d2b90fb57163c1e7060761dc1de7ce26f7e7f",
+  "approved_scope": {
+    "target_child": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+    "graph_mutation": false,
+    "remaining_texture_overrides": 8,
+    "remaining_scalar_overrides": 4,
+    "remaining_vector_overrides": 8,
+    "remaining_controls": 20,
+    "first_albedo_parameter": "Sand_01_Albedo",
+    "first_albedo_already_measured": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "skip_already_applied_first_albedo": true,
+    "update_current_material_instance": true,
+    "explicit_save_or_compile": false,
+    "expected_dirty_maps": [],
+    "expected_dirty_content": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ]
+  },
+  "review_evidence": {
+    "entire_helper_source_read": true,
+    "offline_ast_and_compile_without_execution": true,
+    "exact_helper_partial_and_failed_receipt_hashes_checked": true,
+    "partial_graph_nodes": 1015,
+    "partial_source_modules": 12,
+    "partial_scene_actor_transforms": 316,
+    "partial_changed_root_pins": 8,
+    "partial_changed_macro_properties": 3,
+    "immediate_effective_value_readback_required_after_each_setter": true,
+    "setter_boolean_retained_as_evidence": true,
+    "full_final_21_controls_and_stored_override_arrays_required": true,
+    "no_additional_dirty_packages_allowed": true,
+    "before_state_must_equal_hash_bound_partial_receipt": true,
+    "nodes_sources_scene_disk_cvars_unchanged_after_completion_required": true,
+    "original_helper_reserved_attempt_not_reused": true,
+    "no_native_or_content_write_by_reviewer": true
+  },
+  "limitations": [
+    "The first setter returned false while measured resolved state changed to the requested Epic albedo. This approval permits only the remaining enumerated controls, with actual readback required after every setter and full stored-array comparison afterward.",
+    "This is completion of the already approved Epic adaptation. It does not expand graph, source-texture, geometry, weight, Grass, lighting or save scope.",
+    "Visual quality, completed shader output, named save, persistence and user acceptance remain pending."
+  ],
+  "save_approved_within_scope": false,
+  "visual_approval": false,
+  "user_acceptance": "PENDING"
+}

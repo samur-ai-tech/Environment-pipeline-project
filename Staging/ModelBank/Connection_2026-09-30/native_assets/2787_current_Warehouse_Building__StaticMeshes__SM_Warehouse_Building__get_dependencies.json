@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2797,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Warehouse_Building/StaticMeshes/SM_Warehouse_Building"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Script/InterchangeEngine\",\"/Game/Warehouse_Building/Materials/M_Pipe_Plastic\",\"/Game/Warehouse_Building/Materials/M_Pipe_Rust\",\"/Game/Warehouse_Building/Materials/M_Plastic_Props\",\"/Game/Warehouse_Building/Materials/M_Signs\",\"/Game/Warehouse_Building/Materials/M_Windos_Vents\",\"/Game/Warehouse_Building/Materials/M_Windows_Vents_Var\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2797,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Script/InterchangeEngine\",\"/Game/Warehouse_Building/Materials/M_Pipe_Plastic\",\"/Game/Warehouse_Building/Materials/M_Pipe_Rust\",\"/Game/Warehouse_Building/Materials/M_Plastic_Props\",\"/Game/Warehouse_Building/Materials/M_Signs\",\"/Game/Warehouse_Building/Materials/M_Windos_Vents\",\"/Game/Warehouse_Building/Materials/M_Windows_Vents_Var\"]}"
+    }
+   ]
+  }
+ }
+}

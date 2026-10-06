@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_lod_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":1}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":1}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 149,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Props/Food_Kart_02_Mat_Food_Kart_002_Normal_1001_29bd824972ed"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":\"Texture2D\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 149,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"Texture2D\"}"
+    }
+   ]
+  }
+ }
+}

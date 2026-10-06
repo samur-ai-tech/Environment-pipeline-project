@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 54,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0015_Building_02.SM_H0015_Building_02"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.326,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Building_02_1003\",\"Building_02_1004\",\"Building_02_1001\",\"Building_02_1002\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 54,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Building_02_1003\",\"Building_02_1004\",\"Building_02_1001\",\"Building_02_1002\"]}"
+    }
+   ]
+  }
+ }
+}

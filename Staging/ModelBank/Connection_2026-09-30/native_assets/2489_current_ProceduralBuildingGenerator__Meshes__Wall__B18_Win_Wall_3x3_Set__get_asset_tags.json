@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2499,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Wall/B18_Win_Wall_3x3_Set"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.032,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"27x300x300\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Walls/B18_Win_Wall_3x3_Set.fbx\\\", \\\"Timestamp\\\" : \\\"1563199456\\\", \\\"FileMD5\\\" : \\\"6375788afdde41b52f70464b6f47cab7\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"6\",\"SectionsWithCollision\":\"6\",\"Triangles\":\"280\",\"UVChannels\":\"2\",\"Vertices\":\"446\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2499,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"27x300x300\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Walls/B18_Win_Wall_3x3_Set.fbx\\\", \\\"Timestamp\\\" : \\\"1563199456\\\", \\\"FileMD5\\\" : \\\"6375788afdde41b52f70464b6f47cab7\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"6\",\"SectionsWithCollision\":\"6\",\"Triangles\":\"280\",\"UVChannels\":\"2\",\"Vertices\":\"446\"}}"
+    }
+   ]
+  }
+ }
+}

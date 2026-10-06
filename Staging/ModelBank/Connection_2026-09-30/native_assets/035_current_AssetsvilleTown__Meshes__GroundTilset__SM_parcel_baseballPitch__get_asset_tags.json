@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 45,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_parcel_baseballPitch"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"4800x4800x2\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parcel_baseballPitch.fbx\\\", \\\"Timestamp\\\" : \\\"1548517011\\\", \\\"FileMD5\\\" : \\\"fc21a003b87f00b7869d7ac8576efa97\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"460\",\"UVChannels\":\"2\",\"Vertices\":\"572\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 45,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"4800x4800x2\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parcel_baseballPitch.fbx\\\", \\\"Timestamp\\\" : \\\"1548517011\\\", \\\"FileMD5\\\" : \\\"fc21a003b87f00b7869d7ac8576efa97\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"460\",\"UVChannels\":\"2\",\"Vertices\":\"572\"}}"
+    }
+   ]
+  }
+ }
+}

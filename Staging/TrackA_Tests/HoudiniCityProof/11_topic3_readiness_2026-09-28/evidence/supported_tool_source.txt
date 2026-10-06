@@ -1,0 +1,209 @@
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngineEditor\Private\HoudiniEngineEditor.cpp SHA256 CF418791DD83087EEE82034B13862C45B01CD06D9D13DD3B7427298E050305B7
+720: 		FCanExecuteAction::CreateLambda([]() { return true; }));
+721: 
+722: 	HEngineCommands->MapAction(
+723: 		Commands._PauseAssetCooking,
+724: 		FExecuteAction::CreateLambda([](){ return FHoudiniEngineCommands::PauseAssetCooking(); }),
+725: 		FCanExecuteAction::CreateLambda([](){ return FHoudiniEngineCommands::IsSessionValid(); }),
+726: 		FIsActionChecked::CreateLambda([](){ return FHoudiniEngineCommands::IsAssetCookingPaused(); }));
+727: 
+
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngineEditor\Private\HoudiniEngineEditor.cpp SHA256 CF418791DD83087EEE82034B13862C45B01CD06D9D13DD3B7427298E050305B7
+1625: 
+1626: 	static FAutoConsoleCommand CCmdPause = FAutoConsoleCommand(
+1627: 		TEXT("Houdini.Pause"),
+1628: 		TEXT("Pauses Houdini Engine Asset cooking."),
+1629: 		FConsoleCommandDelegate::CreateStatic(&FHoudiniEngineCommands::PauseAssetCooking));
+
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngineEditor\Private\HoudiniEngineCommands.cpp SHA256 26257E0DD490632FB95067B85AB3457B48987D7F240A1DD584DB4ACC905E65E4
+655: void
+656: FHoudiniEngineCommands::PauseAssetCooking()
+657: {
+658: 	// Revert the global flag
+659: 	bool bCurrentCookingEnabled = !FHoudiniEngine::Get().IsCookingEnabled();
+660: 	FHoudiniEngine::Get().SetCookingEnabled(bCurrentCookingEnabled);
+661: 
+662: 	// We need to refresh UI when pause cooking. Set refresh UI counter to be the number of current registered HCs.
+663: 	if (!bCurrentCookingEnabled)
+664: 		FHoudiniEngine::Get().SetUIRefreshCountWhenPauseCooking( FHoudiniEngineRuntime::Get().GetRegisteredHoudiniCookableCount() );
+665: 
+666: 	// Add a slate notification
+667: 	FString Notification = TEXT("Houdini Engine cooking paused");
+668: 	if (bCurrentCookingEnabled)
+669: 		Notification = TEXT("Houdini Engine cooking resumed");
+670: 	FHoudiniEngineUtils::CreateSlateNotification(Notification);
+671: 
+672: 	// ... and a log message
+673: 	if (bCurrentCookingEnabled)
+674: 		HOUDINI_LOG_MESSAGE(TEXT("Houdini Engine cooking resumed."));
+675: 	else
+676: 		HOUDINI_LOG_MESSAGE(TEXT("Houdini Engine cooking paused."));
+677: }
+
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngineRuntime\Private\HoudiniRuntimeSettings.cpp SHA256 FA391BA38D7F2A0E0B49F280EA5DD0E234E1F1ED0009B6E747686808CAF68DD6
+58: {
+59: 	// Session options.
+60: 	SessionType = HRSST_NamedPipe;
+61: 	NumSessions = 1;
+62: 	ServerHost = HAPI_UNREAL_SESSION_SERVER_HOST;
+63: 	ServerPort = HAPI_UNREAL_SESSION_SERVER_PORT;
+64: 	ServerPipeName = HAPI_UNREAL_SESSION_SERVER_PIPENAME;
+65: 	bStartAutomaticServer = HAPI_UNREAL_SESSION_SERVER_AUTOSTART;
+66: 	AutomaticServerTimeout = HAPI_UNREAL_SESSION_SERVER_TIMEOUT;
+67: 	bUseSessionSyncForAutomaticServer = false;
+68: 
+69: 	SharedMemoryBufferSize = 500;
+70: 	bSharedMemoryBufferCyclic = true;
+71: 	bEnableSharedMemoryDataTransfer = false;
+72: 
+73: 	bSyncWithHoudiniCook = true;
+74: 	bCookUsingHoudiniTime = true;
+75: 	bSyncViewport = false;
+76: 	bSendCommandletOutputToConsole = true;
+77: 	bSyncHoudiniViewport = false;
+78: 	bSyncUnrealViewport = false;
+79: 
+80: 	// Instantiating options.
+81: 	bShowMultiAssetDialog = true;
+82: 	bPreferHdaMemoryCopyOverHdaSourceFile = false;
+83: 
+84: 	// Cooking options.
+85: 	bPauseCookingOnStart = false;
+86: 	bDisplaySlateCookingNotifications = false;
+87: 	DefaultTemporaryCookFolder = HAPI_UNREAL_DEFAULT_TEMP_COOK_FOLDER;
+88: 	DefaultBakeFolder = HAPI_UNREAL_DEFAULT_BAKE_FOLDER;
+89: 	bUsePresetsForParameters = true;
+90: 
+91: 	// Parameter options
+92: 	//bTreatRampParametersAsMultiparms = false;
+93: 
+94: 	// Custom Houdini location.
+95: 	bUseCustomHoudiniLocation = false;
+96: 	CustomHoudiniLocation.Path = TEXT("");
+97: 	HoudiniExecutable = HRSHE_Houdini;
+98: 	CustomHoudiniHomeLocation.Path = TEXT("");
+99: 
+100: 	// Arguments for HAPI_Initialize
+101: 	CookingThreadStackSize = -1;
+102: 
+103: 	// Landscape marshalling default values.
+104: 	MarshallingLandscapesUseDefaultUnrealScaling = false;
+105: 	MarshallingLandscapesUseFullResolution = true;
+106: 	MarshallingLandscapesForceMinMaxValues = false;
+107: 	MarshallingLandscapesForcedMinValue = -2000.0f;
+108: 	MarshallingLandscapesForcedMaxValue = 4553.0f;
+109: 
+110: 	// Spline marshalling
+111: 	MarshallingSplineResolution = 50.0f;
+112: 
+113: 	// Static mesh proxy refinement settings
+114: 	bEnableProxyStaticMesh = true;
+115: 	bShowDefaultMesh = true;
+116: 	bPreferNaniteFallbackMesh = false;
+117: 
+118: 	bEnableProxyStaticMeshRefinementByTimer = false;
+119: 	ProxyMeshAutoRefineTimeoutSeconds = 10.0f;
+120: 	bEnableProxyStaticMeshRefinementOnPreSaveWorld = true;
+121: 	bEnableProxyStaticMeshRefinementOnPreBeginPIE = true;
+
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngine\Private\HoudiniEnginePrivatePCH.h SHA256 F4E1432AED448489C75680B1736C73D78D95FD97A4BBD6DF0943E0C15BC1E141
+298: #define HAPI_UNREAL_ATTRIB_GENERIC_UPROP_PREFIX				"unreal_uproperty_"
+299: #define HAPI_UNREAL_ATTRIB_GENERIC_MAT_PARAM_PREFIX			"unreal_material_parameter_"
+300: 
+301: #define HAPI_UNREAL_ATTRIB_BAKE_FOLDER						"unreal_bake_folder"
+302: #define HAPI_UNREAL_ATTRIB_TEMP_FOLDER						"unreal_temp_folder"
+303: #define HAPI_UNREAL_ATTRIB_CUSTOM_OUTPUT_NAME_V1			"unreal_generated_mesh_name"
+304: #define HAPI_UNREAL_ATTRIB_CUSTOM_OUTPUT_NAME_V2			"unreal_output_name"
+305: #define HAPI_UNREAL_ATTRIB_BAKE_NAME						"unreal_bake_name"
+306: #define HAPI_UNREAL_ATTRIB_BAKE_ACTOR                       "unreal_bake_actor"
+307: #define HAPI_UNREAL_ATTRIB_BAKE_ACTOR_CLASS                 "unreal_bake_actor_class"
+
+SOURCE C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Plugins\HoudiniEngine\Source\HoudiniEngineEditor\Public\HoudiniPublicAPIAssetWrapper.h SHA256 7E7782EA5A1DCAD4C87CDFC97C4A9B781129D0B66A4C711BDDA4173D6350569E
+579: 	/**
+580: 	 * Bake all outputs of the instantiated asset using the specified settings.
+581: 	 * @param InBakeOption The bake method/target, (to actor vs blueprint, for example).
+582: 	 * @param bInReplacePreviousBake If true, replace the previous bake output (assets + actor) with the
+583: 	 * new results.
+584: 	 * @param bInRemoveTempOutputsOnSuccess If true, the temporary outputs of the wrapper asset are removed
+585: 	 * after a successful bake.
+586: 	 * @param bInRecenterBakedActors If true, recenter the baked actors to their bounding box center after the bake.
+587: 	 * @return true if the wrapper is valid and the baking process was started.
+588: 	 */
+589: 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category="Houdini|Public API")
+590: 	bool BakeAllOutputsWithSettings(
+591: 		EHoudiniEngineBakeOption InBakeOption,
+592: 		bool bInReplacePreviousBake=false,
+593: 		bool bInRemoveTempOutputsOnSuccess=false,
+594: 		bool bInRecenterBakedActors=false);
+
+SOURCE C:\Program Files\Epic Games\UE_5.8\Engine\Plugins\Experimental\Toolsets\EditorToolset\Content\Python\editor_toolset\toolsets\scene.py SHA256 FA6EE2280CAF92B36F3AFD54912FD339203514E2BA2E71E410B7CACAFC301038
+292: 
+293:     @toolset_registry.tool_call
+294:     @staticmethod
+295:     def trace_world(start: unreal.Vector, end: unreal.Vector) -> float | None:
+296:         """Traces a line through the world and returns the distance to the first hit.
+297: 
+298:         Args:
+299:             start: The start point of the trace in world space.
+300:             end: The end point of the trace in world space.
+301: 
+302:         Returns:
+303:             The distance from start to the hit point, or None if nothing was hit.
+304:         """
+305:         hit_location = SceneTools._trace_world(SceneTools._get_world(), start, end)
+306:         if hit_location is None:
+307:             return None
+308:         return start.distance(hit_location)
+
+SOURCE C:\Program Files\Epic Games\UE_5.8\Engine\Plugins\Experimental\Toolsets\EditorToolset\Content\Python\editor_toolset\toolsets\scene.py SHA256 FA6EE2280CAF92B36F3AFD54912FD339203514E2BA2E71E410B7CACAFC301038
+541: 
+542:     @staticmethod
+543:     def _trace_world(
+544:         world: unreal.World, start: unreal.Vector, end: unreal.Vector,
+545:         actors_to_ignore: list[unreal.Actor] | None = None) -> unreal.Vector | None:
+546:         ue_to_ignore = unreal.Array(unreal.Actor)
+547:         ue_to_ignore.extend(actors_to_ignore or [])
+548:         hit_result = unreal.SystemLibrary.line_trace_single(
+549:             world,
+550:             start, end,
+551:             unreal.TraceTypeQuery.ECC_VISIBILITY,
+552:             True,
+553:             ue_to_ignore,
+554:             unreal.DrawDebugTrace.NONE,
+555:             True
+556:         )
+557:         return hit_result.to_dict()['location'] if hit_result else None
+558: 
+
+SOURCE C:\Program Files\Epic Games\UE_5.8\Engine\Source\Runtime\Engine\Classes\Components\InstancedStaticMeshComponent.h SHA256 1CB4301E0373AC7CFD407652A4F3E404AF514A8B3AC6C1DDAC84A93AD1B57568
+165: 	
+166: 	/** Array of instances, bulk serialized. */
+167: 	UPROPERTY(EditAnywhere, SkipSerialization, DisplayName="Instances", Category=Instances, meta=(MakeEditWidget=true, EditFixedOrder))
+168: 	TArray<FInstancedStaticMeshInstanceData> PerInstanceSMData;
+169: 	
+170: 	// TODO: KevinO cleanup
+171: 	/** Array of prev instance transforms. Must match the length of PerInstanceSMData or have 0 elements */
+172: 	UPROPERTY(Transient)
+173: 	TArray<FMatrix> PerInstancePrevTransform;
+174: 
+175: 	/** Main transform stored to be able to send updates when component's transform changed. */
+176: 	UPROPERTY(Transient)
+177: 	FTransform PreviousComponentTransform;
+178: 
+179: 	/** Defines the number of floats that will be available per instance for custom data */
+180: 	UPROPERTY(EditAnywhere, Category=Instances, AdvancedDisplay)
+181: 	int32 NumCustomDataFloats;
+182: 
+183: 	/** Value used to seed the random number stream that generates random numbers for each of this mesh's instances.
+184: 	The random number is stored in a buffer accessible to materials through the PerInstanceRandom expression. If
+185: 	this is set to zero (default), it will be populated automatically by the editor. */
+186: 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=InstancedStaticMeshComponent)
+187: 	int32 InstancingRandomSeed=0;
+188: 
+189: 	/** Array of custom data for instances. This will contains NumCustomDataFloats*InstanceCount entries. The entries are represented sequantially, in instance order. Can be read in a material and manipulated through Blueprints.
+190: 	 *	Example: If NumCustomDataFloats is 1, then each entry will belong to an instance. Custom data 0 will belong to Instance 0. Custom data 1 will belong to Instance 1 etc.
+191: 	 *	Example: If NumCustomDataFloats is 2, then each pair of sequential entries belong to an instance. Custom data 0 and 1 will belong to Instance 0. Custom data 2 and 3 will belong to Instance 2 etc.
+192: 	 */
+193: 	UPROPERTY(EditAnywhere, EditFixedSize, SkipSerialization, DisplayName="Custom data", Category=Instances, AdvancedDisplay, meta=(EditFixedOrder))
+194: 	TArray<float> PerInstanceSMCustomData;
+

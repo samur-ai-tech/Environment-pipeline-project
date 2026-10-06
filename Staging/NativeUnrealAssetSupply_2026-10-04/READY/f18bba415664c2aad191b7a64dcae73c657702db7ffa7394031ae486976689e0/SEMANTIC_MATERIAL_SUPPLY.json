@@ -1,0 +1,2121 @@
+{
+  "schema": "environmentpipeline.semantic_material_supply.v1",
+  "recipient_thread": "01a1067b-a64c-7cb1-b244-111b118e4940",
+  "scope": "Exact requested installed water/soil/grass material and texture candidates; no new broad intake inventory.",
+  "materials_and_textures": [
+    {
+      "object_path": "/Game/StarterContent/Materials/M_Water_Lake.M_Water_Lake",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\StarterContent\\Materials\\M_Water_Lake.uasset",
+      "source_sha256": "2f26e9ddce96ea5369cde02eb006201f3a87ba3f6ab27bafb5cef523935ba6d7",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Game/StarterContent/Materials/M_Water_Lake",
+        "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+        "/Game/StarterContent/Textures/T_Water_N",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/StarterContent/Materials/M_Water_Ocean.M_Water_Ocean",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\StarterContent\\Materials\\M_Water_Ocean.uasset",
+      "source_sha256": "d070ede9b44ad4e268b37689f3320906b992d11949fa1f84db55a0f0cc5ce8cc",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/StarterContent/Materials/M_Water_Ocean",
+        "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+        "/Game/StarterContent/Textures/T_Water_M",
+        "/Game/StarterContent/Textures/T_Water_N",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/StarterContent/Materials/M_Ground_Grass.M_Ground_Grass",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\StarterContent\\Materials\\M_Ground_Grass.uasset",
+      "source_sha256": "93f8378f49433e80abf49838fc6223a02616336b49d6a4f55f4e43af0ca56d41",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Game/StarterContent/Materials/M_Ground_Grass",
+        "/Game/StarterContent/Textures/T_Ground_Grass_D",
+        "/Game/StarterContent/Textures/T_Ground_Grass_N",
+        "/Game/StarterContent/Textures/T_MacroVariation",
+        "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/StarterContent/Materials/M_Ground_Gravel.M_Ground_Gravel",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\StarterContent\\Materials\\M_Ground_Gravel.uasset",
+      "source_sha256": "662e037da3d7ad9c4e5063598534ed844c5e138a238d7e3cb5b6539121775b6f",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Game/StarterContent/Materials/M_Ground_Gravel",
+        "/Game/StarterContent/Textures/T_Ground_Gravel_D",
+        "/Game/StarterContent/Textures/T_Ground_Gravel_N",
+        "/Game/StarterContent/Textures/T_MacroVariation",
+        "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/StarterContent/Materials/M_Rock_Sandstone.M_Rock_Sandstone",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\StarterContent\\Materials\\M_Rock_Sandstone.uasset",
+      "source_sha256": "b321b204b23879d455dce2e8361e06d5ad17956838171f2788d5cd1a8e944450",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Game/StarterContent/Materials/M_Rock_Sandstone",
+        "/Game/StarterContent/Textures/T_MacroVariation",
+        "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+        "/Game/StarterContent/Textures/T_Rock_Sandstone_D",
+        "/Game/StarterContent/Textures/T_Rock_Sandstone_N",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Ocean/Materials/MI_Ocean.MI_Ocean",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Ocean\\Materials\\MI_Ocean.uasset",
+      "source_sha256": "932a9aa14b0b2f9bd732c3a8aeb36a310cca68ee6b52a05e958a8592e0996652",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise",
+        "/Game/FC_Coastal_Landscape/Ocean/Materials/MI_Ocean",
+        "/Game/FC_Coastal_Landscape/Ocean/Materials/M_Master_Ocean",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_FlowMap_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Foam_BC",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_OceanWave_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Ocean_H",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Water_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_Mask",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveHeight",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Ocean/Materials/MI_Ocean1.MI_Ocean1",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Ocean\\Materials\\MI_Ocean1.uasset",
+      "source_sha256": "769d6536a136135a5109d12173d725a47624f51660a83750615c9c373ed9bed5",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise",
+        "/Game/FC_Coastal_Landscape/Ocean/Materials/MI_Ocean1",
+        "/Game/FC_Coastal_Landscape/Ocean/Materials/M_Master_Ocean",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_FlowMap_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Foam_BC",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_OceanWave_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Ocean_H",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Water_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_Mask",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveHeight",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Ocean/Materials/M_Master_Ocean.M_Master_Ocean",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Ocean\\Materials\\M_Master_Ocean.uasset",
+      "source_sha256": "21c24a3f1a8af26f0160725de46948540f2f00e65c9b2a619a5a01d53220072a",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/EngineMaterials/DefaultDiffuse",
+        "/Engine/EngineMaterials/DefaultNormal",
+        "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+        "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix",
+        "/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator",
+        "/Engine/Functions/Engine_MaterialFunctions02/Texturing/FlowMaps_Simple",
+        "/Engine/Functions/Engine_MaterialFunctions02/Texturing/HeightLerp",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/LinearSine",
+        "/Game/FC_Coastal_Landscape/Ocean/Materials/M_Master_Ocean",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_FlowMap_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Foam_BC",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_OceanWave_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Ocean_H",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_Water_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_Mask",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveFoam_N",
+        "/Game/FC_Coastal_Landscape/Ocean/Textures/T_WaveHeight",
+        "/Script/CoreUObject",
+        "/Script/Engine"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_BaseGrass.MF_BaseGrass",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_BaseGrass.uasset",
+      "source_sha256": "25277fc207c2d796ee5454415b0516ba2dcf3f40d6c17987ff1319e23b5be4cd",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_BaseGrass",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Grass.MF_Grass",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_Grass.uasset",
+      "source_sha256": "ecf116e66d8d03e0f0af199f786e92ccb8aa67cfedc7324e301340fb6e974444",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_Grass",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Sand1.MF_Sand1",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_Sand1.uasset",
+      "source_sha256": "887c32e33e62f5077fa80a9c25175d15958d05d94a6882f677c8e03ec24c9d5a",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_DryGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_Sand1",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Sand2.MF_Sand2",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_Sand2.uasset",
+      "source_sha256": "64e2286fc59063513707c6513af317c4b94eaa3c7802c347a0dff1ae50cc9e14",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_DryGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_Sand2",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Soil1.MF_Soil1",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_Soil1.uasset",
+      "source_sha256": "81e83c2a8893e5aa5b3226ff4a6ea26d51ccec9e4ab068f6c47bd7bc035403d2",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_Soil1",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Soil2.MF_Soil2",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\MF_Soil2.uasset",
+      "source_sha256": "1fa510730dc72adf65f771e971bf70dacfabdd4f6a57a3b86c85f36b8f73f483",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_NAOR",
+        "/Game/FC_Coastal_Landscape/Landscape/MF_Soil2",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength",
+        "/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/Landscape",
+        "/Script/UnrealEd"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.T_Grass_03_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Grass_03_BC.uasset",
+      "source_sha256": "f654d63ef505fa24b64c34df358112fa429368f0beddd22214afea5374c6b852",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC1.T_Grass_03_BC1",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Grass_03_BC1.uasset",
+      "source_sha256": "6f63133842c94b4643ab5c41ef68bd339e178afc85a61dc6278c6a71ea77e549",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC1",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_NAOR.T_Grass_03_NAOR",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Grass_03_NAOR.uasset",
+      "source_sha256": "fd6fe08d5d08705ff936331e85cfb39342cf8e7584020c0cca8d9ad08b20a8d7",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_NAOR",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Grass_05_BC.uasset",
+      "source_sha256": "681844fd0f58315d475f1983f598bcac230d69edc5688a08850b4f8cfb5de2b2",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR.T_Grass_05_NAOR",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Grass_05_NAOR.uasset",
+      "source_sha256": "e5382ad8e338bf2cf9ea7e75a54315c15bcdcbe2d2fbc91cab56ffa02f32bde3",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Sand_1_BC.uasset",
+      "source_sha256": "01f2d3661c05629ae80325c4d30433593df87f854a0fd4a7ab17d66e3bcf085e",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR.T_Sand_1_NAOR",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Sand_1_NAOR.uasset",
+      "source_sha256": "d8db0bee0637c9da60320d0385ea55e882c67dc2205cd34d557f5727b1ebb185",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.T_Sand_2_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Sand_2_BC.uasset",
+      "source_sha256": "472f9b9b2d829d256fb1beebd0b8ac606bb228ab882cd5238a8cbd0483ee7dc7",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC.T_SoilGround_02_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_SoilGround_02_BC.uasset",
+      "source_sha256": "602196ba7bc670603b1dd0c4030861249ff5408b5ff5e2c4fb04c7e31a56e75e",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.T_Soil_1_BC",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Soil_1_BC.uasset",
+      "source_sha256": "ca3ccdc04e118e05d921de2ff6c0a4beb1a7bcff9bffdad909b7160e56c4caef",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC1.T_Soil_1_BC1",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Soil_1_BC1.uasset",
+      "source_sha256": "b0dd3f165852974d18497a4eef92c7a113a4548d76049600479017f8254aeb00",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC1",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC2.T_Soil_1_BC2",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Soil_1_BC2.uasset",
+      "source_sha256": "23e5a63de95e67c70ff874d4dd8887b396df9736c7fc255c2fa5fcf64d33c70f",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC2",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    },
+    {
+      "object_path": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_NAOR.T_Soil_1_NAOR",
+      "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\FC_Coastal_Landscape\\Landscape\\LandscapeTextures\\T_Soil_1_NAOR.uasset",
+      "source_sha256": "650cca8ba36de453a63a4c329fd6d6ad4e369bc1a0d7de4fff36c9eaa9293d22",
+      "native_present_on_disk": true,
+      "native_load_verified_this_supplier": false,
+      "native_class": "unverified_material_function_or_texture_candidate",
+      "serialized_dependency_hints_not_closure": [
+        "/Engine/Transient",
+        "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_NAOR",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "/Script/InterchangeCore",
+        "/Script/InterchangeEngine",
+        "/Script/InterchangeFactoryNodes",
+        "/Script/InterchangePipelines"
+      ],
+      "uv_space": null,
+      "world_scale_cm": null,
+      "normal_encoding": null,
+      "rvt_requirements": null,
+      "channel_packing": "Unverified: BC/NAOR filename suffix is not channel-layout evidence.",
+      "wetness_or_farmland_use_qualified": false,
+      "selection_release": false,
+      "required_native_fields": [
+        "native class",
+        "material parent and full dependency closure",
+        "texture sampler/normal compression and sRGB",
+        "UV/world coordinate graph and parameter values",
+        "RVT nodes and textures",
+        "actual shader/appearance"
+      ],
+      "consumer": "Water-class display only uses measured source grid cells with classification provenance; no surveyed polygon/shoreline or water-body simulation inferred."
+    }
+  ],
+  "existing_ground_receipt": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+    "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+    "measurement_date": "2026-10-03; current Grass graph was changed later; recheck native current graph before binding",
+    "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural",
+    "instance": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "parameters_recorded": {
+      "scalars": {
+        "BaseGrass1_Roughness": 0.8399999737739563,
+        "Farmland1_Roughness": 0.8399999737739563,
+        "Grass_Roughness": 0.8399999737739563,
+        "Sand1_Roughness": 0.8399999737739563,
+        "Sand2_Roughness": 0.8399999737739563,
+        "Soil1_Roughness": 0.8399999737739563,
+        "Soil2_Roughness": 0.8399999737739563,
+        "TreeGround_Roughness": 0.8399999737739563,
+        "SC_CobbleStone_Pebble_Roughness": 0.8199999928474426,
+        "SC_CobbleStone_Rough_Roughness": 0.8199999928474426,
+        "SC_CobbleStone_Smooth_Roughness": 0.8199999928474426,
+        "SC_Concrete_Grime_Roughness": 0.8199999928474426,
+        "SC_Concrete_Poured_Roughness": 0.8199999928474426,
+        "SC_Concrete_Tiles_Roughness": 0.8199999928474426,
+        "SC_Ground_Gravel_Roughness": 0.8199999928474426,
+        "SC_Rock_Sandstone_Roughness": 0.8199999928474426,
+        "Dirt_Path_Roughness": 0.8999999761581421,
+        "Ground_SoilBlendStrength": 0.6000000238418579,
+        "PB_solid_neutral_black_Roughness": 0.8799999952316284,
+        "PB_solid_sand_pale_Roughness": 0.8999999761581421,
+        "PB_solid_sand_warm_Roughness": 0.8999999761581421,
+        "PB_solid_dirt_tan_Roughness": 0.9100000262260437,
+        "PB_solid_clay_red_Roughness": 0.8799999952316284,
+        "PB_solid_rock_limestone_Roughness": 0.8399999737739563,
+        "PB_solid_rock_basalt_Roughness": 0.8700000047683716,
+        "PB_solid_gravel_dark_Roughness": 0.8700000047683716,
+        "PB_solid_road_worn_Roughness": 0.8899999856948853,
+        "PB_solid_concrete_mid_Roughness": 0.8399999737739563,
+        "PB_solid_dry_grass_Roughness": 0.9200000166893005,
+        "PB_solid_moss_green_Roughness": 0.9399999976158142,
+        "PB_solid_wet_sand_Roughness": 0.75,
+        "PB_Custom_Ground_Roughness": 0.8500000238418579,
+        "PB_Custom_RoadBed_Roughness": 0.8500000238418579,
+        "Sand_01_Roughness": 0.8999999761581421,
+        "Sand_02_Roughness": 0.8999999761581421,
+        "Sand_03_Roughness": 0.8999999761581421,
+        "Sand_Path_Roughness": 0.8999999761581421,
+        "Wet_Sand_01_Roughness": 0.8999999761581421,
+        "Wet_Sand_02_Roughness": 0.8999999761581421,
+        "Wet_Sand_03_Roughness": 0.8999999761581421,
+        "PB_starter_SC_Ground_Grass_Roughness": 0.9100000262260437,
+        "PB_starter_SC_Ground_Moss_Roughness": 0.9300000071525574,
+        "PB_starter_SC_Rock_Basalt_Roughness": 0.8199999928474426,
+        "PB_starter_SC_Rock_Slate_Roughness": 0.8399999737739563,
+        "PB_starter_SC_Concrete_Panels_Roughness": 0.800000011920929,
+        "PB_starter_SC_Brick_Clay_Beveled_Roughness": 0.8600000143051147,
+        "PB_starter_SC_Brick_Clay_New_Roughness": 0.8299999833106995,
+        "PB_starter_SC_Brick_Clay_Old_Roughness": 0.8799999952316284,
+        "PB_starter_SC_Brick_Cut_Stone_Roughness": 0.8399999737739563,
+        "PB_starter_SC_Brick_Hewn_Stone_Roughness": 0.8600000143051147,
+        "PB_coastal_CL_Cliff_1_Roughness": 0.8600000143051147,
+        "PB_coastal_CL_Rock_04_Roughness": 0.8700000047683716,
+        "PB_coastal_CL_Rock_05_Roughness": 0.8600000143051147,
+        "PB_coastal_CL_Sand_1_Direct_Roughness": 0.8999999761581421,
+        "PB_coastal_CL_Stone_01_Roughness": 0.8399999737739563,
+        "PB_solid_neutral_white_Roughness": 0.8500000238418579,
+        "PB_solid_neutral_gray_Roughness": 0.8500000238418579,
+        "PB_solid_sand_light_Roughness": 0.8999999761581421,
+        "PB_solid_sand_ochre_Roughness": 0.8999999761581421,
+        "PB_solid_dirt_brown_Roughness": 0.9300000071525574,
+        "PB_solid_rock_sandstone_Roughness": 0.8600000143051147,
+        "PB_solid_rock_slate_Roughness": 0.8500000238418579,
+        "PB_solid_gravel_light_Roughness": 0.8600000143051147,
+        "PB_solid_road_asphalt_Roughness": 0.8700000047683716,
+        "PB_solid_concrete_light_Roughness": 0.8199999928474426,
+        "PB_solid_concrete_dark_Roughness": 0.8600000143051147,
+        "PB_solid_grass_green_Roughness": 0.8999999761581421,
+        "PB_solid_snow_white_Roughness": 0.800000011920929,
+        "PB_Custom_Steep_Roughness": 0.8500000238418579,
+        "PB_Custom_BuildingPad_Roughness": 0.8500000238418579,
+        "Ground_MacroContrast": 3.0
+      },
+      "vectors": {
+        "BaseGrass1_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Farmland1_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Grass_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Sand1_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Sand2_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Soil1_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Soil2_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "TreeGround_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "SC_CobbleStone_Pebble_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_CobbleStone_Rough_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_CobbleStone_Smooth_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_Concrete_Grime_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_Concrete_Poured_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_Concrete_Tiles_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_Ground_Gravel_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "SC_Rock_Sandstone_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "Dirt_Path_TileCm": [
+          260.0,
+          260.0,
+          260.0,
+          1.0
+        ],
+        "Sand_01_TileCm": [
+          220.0,
+          220.0,
+          220.0,
+          1.0
+        ],
+        "BaseGrass1_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Farmland1_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Grass_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Sand1_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Sand2_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Soil1_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Soil2_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "TreeGround_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_CobbleStone_Pebble_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_CobbleStone_Rough_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_CobbleStone_Smooth_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_Concrete_Grime_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_Concrete_Poured_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_Concrete_Tiles_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_Ground_Gravel_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "SC_Rock_Sandstone_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Dirt_Path_Tint": [
+          0.5,
+          0.44999998807907104,
+          0.36000001430511475,
+          1.0
+        ],
+        "Ground_MacroTileCm": [
+          3600.0,
+          3600.0,
+          3600.0,
+          1.0
+        ],
+        "Sand_02_TileCm": [
+          350.0,
+          350.0,
+          350.0,
+          1.0
+        ],
+        "Sand_03_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "Sand_Path_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "Wet_Sand_01_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "Wet_Sand_02_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "Wet_Sand_03_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_starter_SC_Ground_Grass_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_starter_SC_Ground_Moss_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_starter_SC_Rock_Basalt_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "PB_starter_SC_Rock_Slate_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "PB_starter_SC_Concrete_Panels_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_Beveled_TileCm": [
+          150.0,
+          150.0,
+          150.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_New_TileCm": [
+          150.0,
+          150.0,
+          150.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_Old_TileCm": [
+          150.0,
+          150.0,
+          150.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Cut_Stone_TileCm": [
+          150.0,
+          150.0,
+          150.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Hewn_Stone_TileCm": [
+          150.0,
+          150.0,
+          150.0,
+          1.0
+        ],
+        "PB_coastal_CL_Cliff_1_TileCm": [
+          400.0,
+          400.0,
+          400.0,
+          1.0
+        ],
+        "PB_coastal_CL_Rock_04_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "PB_coastal_CL_Rock_05_TileCm": [
+          300.0,
+          300.0,
+          300.0,
+          1.0
+        ],
+        "PB_coastal_CL_Sand_1_Direct_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_coastal_CL_Stone_01_TileCm": [
+          200.0,
+          200.0,
+          200.0,
+          1.0
+        ],
+        "PB_solid_neutral_white_Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_solid_neutral_gray_Color": [
+          0.2158605009317398,
+          0.2158605009317398,
+          0.2158605009317398,
+          1.0
+        ],
+        "PB_solid_sand_light_Color": [
+          0.6795424818992615,
+          0.5394794940948486,
+          0.3277781009674072,
+          1.0
+        ],
+        "PB_solid_sand_ochre_Color": [
+          0.3915724754333496,
+          0.23074005544185638,
+          0.08437620848417282,
+          1.0
+        ],
+        "PB_solid_dirt_brown_Color": [
+          0.15592646598815918,
+          0.09305896610021591,
+          0.05780543014407158,
+          1.0
+        ],
+        "PB_solid_rock_sandstone_Color": [
+          0.3967552185058594,
+          0.2581828534603119,
+          0.1441284716129303,
+          1.0
+        ],
+        "PB_solid_rock_slate_Color": [
+          0.10702310502529144,
+          0.13286831974983215,
+          0.14995978772640228,
+          1.0
+        ],
+        "PB_solid_gravel_light_Color": [
+          0.35153260827064514,
+          0.35153260827064514,
+          0.32314321398735046,
+          1.0
+        ],
+        "PB_solid_road_asphalt_Color": [
+          0.02955683507025242,
+          0.03433980792760849,
+          0.0382043719291687,
+          1.0
+        ],
+        "PB_solid_concrete_light_Color": [
+          0.48514994978904724,
+          0.4677838087081909,
+          0.41788506507873535,
+          1.0
+        ],
+        "PB_solid_concrete_dark_Color": [
+          0.13013647496700287,
+          0.13013647496700287,
+          0.11443537473678589,
+          1.0
+        ],
+        "PB_solid_grass_green_Color": [
+          0.11953842639923096,
+          0.1946178376674652,
+          0.07036009430885315,
+          1.0
+        ],
+        "PB_solid_snow_white_Color": [
+          0.7835378050804138,
+          0.7991027235984802,
+          0.7758222222328186,
+          1.0
+        ],
+        "Sand_01_Tint": [
+          0.699999988079071,
+          0.6600000262260437,
+          0.5600000023841858,
+          1.0
+        ],
+        "Sand_02_Tint": [
+          0.6399999856948853,
+          0.6200000047683716,
+          0.5699999928474426,
+          1.0
+        ],
+        "Sand_03_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Sand_Path_Tint": [
+          0.6100000143051147,
+          0.5299999713897705,
+          0.4000000059604645,
+          1.0
+        ],
+        "Wet_Sand_01_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Wet_Sand_02_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Wet_Sand_03_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Ground_Grass_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Ground_Moss_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Rock_Basalt_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Rock_Slate_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Concrete_Panels_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_Beveled_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_New_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Clay_Old_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Cut_Stone_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_starter_SC_Brick_Hewn_Stone_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_coastal_CL_Cliff_1_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_coastal_CL_Rock_04_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_coastal_CL_Rock_05_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_coastal_CL_Sand_1_Direct_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_coastal_CL_Stone_01_Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "PB_solid_neutral_black_Color": [
+          0.005605391692370176,
+          0.006512090563774109,
+          0.007499032188206911,
+          1.0
+        ],
+        "PB_solid_sand_pale_Color": [
+          0.8148465752601624,
+          0.715693473815918,
+          0.533276379108429,
+          1.0
+        ],
+        "PB_solid_sand_warm_Color": [
+          0.5394794940948486,
+          0.3613067865371704,
+          0.16513219475746155,
+          1.0
+        ],
+        "PB_solid_dirt_tan_Color": [
+          0.32314321398735046,
+          0.19120168685913086,
+          0.09530746936798096,
+          1.0
+        ],
+        "PB_solid_clay_red_Color": [
+          0.34191441535949707,
+          0.109461709856987,
+          0.061246052384376526,
+          1.0
+        ],
+        "PB_solid_rock_limestone_Color": [
+          0.48514994978904724,
+          0.46207699179649353,
+          0.3762621283531189,
+          1.0
+        ],
+        "PB_solid_rock_basalt_Color": [
+          0.05951123684644699,
+          0.0666259378194809,
+          0.07036009430885315,
+          1.0
+        ],
+        "PB_solid_gravel_dark_Color": [
+          0.13563333451747894,
+          0.14126329123973846,
+          0.12743768095970154,
+          1.0
+        ],
+        "PB_solid_road_worn_Color": [
+          0.07036009430885315,
+          0.07227185368537903,
+          0.07227185368537903,
+          1.0
+        ],
+        "PB_solid_concrete_mid_Color": [
+          0.28744083642959595,
+          0.28314873576164246,
+          0.2581828534603119,
+          1.0
+        ],
+        "PB_solid_dry_grass_Color": [
+          0.31854677200317383,
+          0.30054378509521484,
+          0.13286831974983215,
+          1.0
+        ],
+        "PB_solid_moss_green_Color": [
+          0.08650045841932297,
+          0.1384316086769104,
+          0.08437620848417282,
+          1.0
+        ],
+        "PB_solid_wet_sand_Color": [
+          0.22696587443351746,
+          0.18782077729701996,
+          0.13286831974983215,
+          1.0
+        ],
+        "Ground_MacroTile2Cm": [
+          5700.0,
+          5700.0,
+          5700.0,
+          1.0
+        ],
+        "Ground_MacroOffsetCm": [
+          1700.0,
+          2900.0,
+          0.0,
+          0.0
+        ]
+      },
+      "textures": {
+        "BaseGrass1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.T_Grass_03_BC",
+        "BaseGrass1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Farmland1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+        "Farmland1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Grass_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+        "Grass_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Sand1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.T_Sand_2_BC",
+        "Sand1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Sand2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+        "Sand2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Soil1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.T_Soil_1_BC",
+        "Soil1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "Soil2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.T_StoneGround_BC",
+        "Soil2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "TreeGround_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC",
+        "TreeGround_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "SC_CobbleStone_Pebble_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D.T_CobbleStone_Pebble_D",
+        "SC_CobbleStone_Pebble_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_N.T_CobbleStone_Pebble_N",
+        "SC_CobbleStone_Rough_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Rough_D.T_CobbleStone_Rough_D",
+        "SC_CobbleStone_Rough_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Rough_N.T_CobbleStone_Rough_N",
+        "SC_CobbleStone_Smooth_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_D.T_CobbleStone_Smooth_D",
+        "SC_CobbleStone_Smooth_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_N.T_CobbleStone_Smooth_N",
+        "SC_Concrete_Grime_Albedo": "/Game/StarterContent/Textures/T_Concrete_Grime_D.T_Concrete_Grime_D",
+        "SC_Concrete_Grime_Normal": "/Game/StarterContent/Textures/T_Metal_Rust_N.T_Metal_Rust_N",
+        "SC_Concrete_Poured_Albedo": "/Game/StarterContent/Textures/T_Concrete_Poured_D.T_Concrete_Poured_D",
+        "SC_Concrete_Poured_Normal": "/Game/StarterContent/Textures/T_Concrete_Poured_N.T_Concrete_Poured_N",
+        "SC_Concrete_Tiles_Albedo": "/Game/StarterContent/Textures/T_Concrete_Tiles_D.T_Concrete_Tiles_D",
+        "SC_Concrete_Tiles_Normal": "/Game/StarterContent/Textures/T_Concrete_Tiles_N.T_Concrete_Tiles_N",
+        "SC_Ground_Gravel_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+        "SC_Ground_Gravel_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+        "SC_Rock_Sandstone_Albedo": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+        "SC_Rock_Sandstone_Normal": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+        "Dirt_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+        "Dirt_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+        "Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+        "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+        "Ground_MacroSoilAlbedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+        "Ground_MacroSoilNormal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+        "Ground_MacroMask": "/Game/ModularCourtyard/Textures/T_dirt3_M.T_dirt3_M",
+        "Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo",
+        "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+        "Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.T_Sand_03_Albedo",
+        "Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.T_Sand_03_Normal",
+        "Sand_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo",
+        "Sand_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal",
+        "Wet_Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.T_Wet_Sand_01_Albedo",
+        "Wet_Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.T_Wet_Sand_01_Normal",
+        "Wet_Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.T_Wet_Sand_02_Albedo",
+        "Wet_Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.T_Wet_Sand_02_Normal",
+        "Wet_Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.T_Wet_Sand_03_Albedo",
+        "Wet_Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.T_Wet_Sand_03_Normal",
+        "PB_starter_SC_Ground_Grass_Albedo": "/Game/StarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D",
+        "PB_starter_SC_Ground_Grass_Normal": "/Game/StarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N",
+        "PB_starter_SC_Ground_Moss_Albedo": "/Game/StarterContent/Textures/T_ground_Moss_D.T_ground_Moss_D",
+        "PB_starter_SC_Ground_Moss_Normal": "/Game/StarterContent/Textures/T_Ground_Moss_N.T_Ground_Moss_N",
+        "PB_starter_SC_Rock_Basalt_Albedo": "/Game/StarterContent/Textures/T_Rock_Basalt_D.T_Rock_Basalt_D",
+        "PB_starter_SC_Rock_Basalt_Normal": "/Game/StarterContent/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N",
+        "PB_starter_SC_Rock_Slate_Albedo": "/Game/StarterContent/Textures/T_Rock_Slate_D.T_Rock_Slate_D",
+        "PB_starter_SC_Rock_Slate_Normal": "/Game/StarterContent/Textures/T_Rock_Slate_N.T_Rock_Slate_N",
+        "PB_starter_SC_Concrete_Panels_Albedo": "/Game/StarterContent/Textures/T_Concrete_Panels_D.T_Concrete_Panels_D",
+        "PB_starter_SC_Concrete_Panels_Normal": "/Game/StarterContent/Textures/T_Concrete_Panels_N.T_Concrete_Panels_N",
+        "PB_starter_SC_Brick_Clay_Beveled_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D",
+        "PB_starter_SC_Brick_Clay_Beveled_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N",
+        "PB_starter_SC_Brick_Clay_New_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_New_D.T_Brick_Clay_New_D",
+        "PB_starter_SC_Brick_Clay_New_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_New_N.T_Brick_Clay_New_N",
+        "PB_starter_SC_Brick_Clay_Old_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Old_D.T_Brick_Clay_Old_D",
+        "PB_starter_SC_Brick_Clay_Old_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Old_N.T_Brick_Clay_Old_N",
+        "PB_starter_SC_Brick_Cut_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D",
+        "PB_starter_SC_Brick_Cut_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_N.T_Brick_Cut_Stone_N",
+        "PB_starter_SC_Brick_Hewn_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_D.T_Brick_Hewn_Stone_D",
+        "PB_starter_SC_Brick_Hewn_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_N.T_Brick_Hewn_Stone_N",
+        "PB_coastal_CL_Cliff_1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.T_Cliff_1_4K_BCD",
+        "PB_coastal_CL_Cliff_1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "PB_coastal_CL_Rock_04_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.T_Rock_04_BC",
+        "PB_coastal_CL_Rock_04_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "PB_coastal_CL_Rock_05_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.T_Rock_05_BC",
+        "PB_coastal_CL_Rock_05_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "PB_coastal_CL_Sand_1_Direct_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+        "PB_coastal_CL_Sand_1_Direct_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+        "PB_coastal_CL_Stone_01_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.T_Stone_01_BCD",
+        "PB_coastal_CL_Stone_01_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal"
+      }
+    },
+    "macro_parameters_recorded": {
+      "Ground_MacroContrast": 3.0,
+      "Ground_SoilBlendStrength": 0.6000000238418579,
+      "Ground_MacroTile2Cm": [
+        5700.0,
+        5700.0,
+        5700.0,
+        1.0
+      ],
+      "Ground_MacroOffsetCm": [
+        1700.0,
+        2900.0,
+        0.0,
+        0.0
+      ]
+    },
+    "soil_tile_parameter_recorded": "Dirt_Path_TileCm",
+    "normal_settings_recorded": {
+      "Sand_01_Normal": {
+        "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+        "srgb": false,
+        "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+      },
+      "Sand_02_Normal": {
+        "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+        "srgb": false,
+        "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+      }
+    },
+    "normal_copies_recorded": {
+      "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+      "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity"
+    },
+    "rvt_requirements": null,
+    "geographic_mask_layers_retained": [
+      "Sand_01",
+      "Sand_02",
+      "Dirt_Path",
+      "Sand_Path"
+    ],
+    "farmland_use_qualified": false,
+    "wet_ground_use_qualified": false
+  },
+  "permitted_grass_candidates": [
+    {
+      "asset_id": "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_02_3",
+      "object_path": "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+      "source_sha256": "bed310d076b0261dad98d8ff8b2ec0bca13a40e8c460f06e73331387ed845e8a",
+      "catalog_native_revision": "bed310d076b0261dad98d8ff8b2ec0bca13a40e8c460f06e73331387ed845e8a",
+      "runtime_fields": {
+        "RunEligible": "true",
+        "ExplicitHold": "false",
+        "AllowedAreas": "GazaRimal|GazaShujaiya",
+        "AllowedZones": "open_ground",
+        "RequestRole": "understory",
+        "PlacementRule": "terrain_understory",
+        "StyleSet": "mediterranean_urban",
+        "DecisionId": "Aviv_ManagedExecution_2026-10-02_Task2",
+        "HoldReasons": ""
+      },
+      "native_measurement": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_02_3",
+        "path": "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+        "package_sha256_at_queue": "bed310d076b0261dad98d8ff8b2ec0bca13a40e8c460f06e73331387ed845e8a",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -25.644941329956055,
+            -22.338960647583008,
+            -6.345558166503906
+          ],
+          "max": [
+            23.939592361450195,
+            23.598676681518555,
+            31.575096130371094
+          ]
+        },
+        "dimensions_cm": [
+          49.58453369140625,
+          45.93763732910156,
+          37.920654296875
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Grass_02_3",
+            "path": "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_02_3.MI_Grass_02_3"
+          }
+        ],
+        "lod_count": 3,
+        "lod0_render_vertices": 84,
+        "uv_channels": 3,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 84,
+        "triangles_LOD0": 60,
+        "vertex_bounds_cm": {
+          "min": [
+            -25.644941329956055,
+            -22.338960647583008,
+            -6.3455586433410645
+          ],
+          "max": [
+            23.939592361450195,
+            23.598678588867188,
+            31.575096130371094
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -6.3455586433410645,
+        "dependencies": {
+          "packages": [
+            "/Engine/EngineMaterials/BaseFlattenNormalMap",
+            "/Engine/EngineMaterials/BlendFunc_DefBase",
+            "/Engine/EngineMaterials/BlendFunc_DefBlend",
+            "/Engine/EngineResources/DefaultTexture",
+            "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+            "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+            "/Engine/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation",
+            "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+            "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+            "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+            "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+            "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+            "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+            "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+            "/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_02_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_Master",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/Pivot_Painter_Textures/T_Grass_02_3_rgb_PivotPos_a_ParentIndexInt_UV_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/Pivot_Painter_Textures/T_Grass_02_3_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/T_Grass_02_04_Color",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/T_Grass_02_04_Normal",
+            "/Game/Palms_Pack_01/Add_Props/Plants/Materials/M_Foliage_PP2",
+            "/Game/Palms_Pack_01/Material_Functions/MF_SimpleGrassWind_MOD"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "rights_state": "exact_listing_identified_terms_unverified",
+      "iran_permission_inferred": false,
+      "rule": "Current area must pass the exact existing canonical eligibility gate; Gaza eligibility is not an Iran release."
+    },
+    {
+      "asset_id": "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_05_2",
+      "object_path": "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2",
+      "source_sha256": "e9ddac03b86a6ab51f377ae60bad907642b9deeb4a172f272fefa18b5ca06916",
+      "catalog_native_revision": "e9ddac03b86a6ab51f377ae60bad907642b9deeb4a172f272fefa18b5ca06916",
+      "runtime_fields": {
+        "RunEligible": "true",
+        "ExplicitHold": "false",
+        "AllowedAreas": "GazaRimal|GazaShujaiya",
+        "AllowedZones": "open_ground",
+        "RequestRole": "understory",
+        "PlacementRule": "terrain_understory",
+        "StyleSet": "mediterranean_urban",
+        "DecisionId": "Aviv_ManagedExecution_2026-10-02_Task2",
+        "HoldReasons": ""
+      },
+      "native_measurement": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_05_2",
+        "path": "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2",
+        "package_sha256_at_queue": "e9ddac03b86a6ab51f377ae60bad907642b9deeb4a172f272fefa18b5ca06916",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -15.926939010620117,
+            -16.609512329101562,
+            -3.9168319702148438
+          ],
+          "max": [
+            18.248857498168945,
+            17.51028060913086,
+            38.07796859741211
+          ]
+        },
+        "dimensions_cm": [
+          34.17579650878906,
+          34.11979293823242,
+          41.99480056762695
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Grass_05_2",
+            "path": "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_05_2.MI_Grass_05_2"
+          }
+        ],
+        "lod_count": 2,
+        "lod0_render_vertices": 31,
+        "uv_channels": 3,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 31,
+        "triangles_LOD0": 11,
+        "vertex_bounds_cm": {
+          "min": [
+            -15.926939010620117,
+            -16.609512329101562,
+            -3.916832447052002
+          ],
+          "max": [
+            18.248857498168945,
+            17.51028060913086,
+            38.07796859741211
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -3.916832447052002,
+        "dependencies": {
+          "packages": [
+            "/Engine/EngineMaterials/BaseFlattenNormalMap",
+            "/Engine/EngineMaterials/BlendFunc_DefBase",
+            "/Engine/EngineMaterials/BlendFunc_DefBlend",
+            "/Engine/EngineResources/DefaultTexture",
+            "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+            "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+            "/Engine/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation",
+            "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+            "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+            "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+            "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+            "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+            "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+            "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+            "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+            "/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_05_2",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Materials/MI_Grass_Master",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/Pivot_Painter_Textures/T_Grass_05_2_rgb_PivotPos_a_ParentIndexInt_UV_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/Pivot_Painter_Textures/T_Grass_05_2_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/T_Grass_05_10_Color",
+            "/Game/Palms_Pack_01/Add_Props/Grass/Textures/T_Grass_05_10_Normal",
+            "/Game/Palms_Pack_01/Add_Props/Plants/Materials/M_Foliage_PP2",
+            "/Game/Palms_Pack_01/Material_Functions/MF_SimpleGrassWind_MOD"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "rights_state": "exact_listing_identified_terms_unverified",
+      "iran_permission_inferred": false,
+      "rule": "Current area must pass the exact existing canonical eligibility gate; Gaza eligibility is not an Iran release."
+    }
+  ],
+  "grass_consumer_contract": {
+    "asset": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+    "meshes": [
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2"
+    ],
+    "bank_rule": "Both exact paths must still be enabled understory rows for current area; no table writes.",
+    "total_density_per_10m2": 12.0,
+    "per_variety_density_per_10m2": 6.0,
+    "coverage": 0.15,
+    "start_cull_cm": 10000,
+    "end_cull_cm": 20000,
+    "quality_and_platform": "Same defaults, empty overrides. Read actual structs even when metadata matches.",
+    "use_grid": true,
+    "placement_jitter": 1.0,
+    "random_rotation": true,
+    "align_to_surface": true,
+    "scaling": "UNIFORM",
+    "scale_xyz": [
+      1,
+      1,
+      1
+    ],
+    "weight_attenuates_max_scale": false,
+    "allowed_density_range": [
+      0,
+      1
+    ],
+    "min_lod": -1,
+    "override_materials": "Use existing profile.instance_materials for each exact mesh; load/read valid MaterialInterface dependencies, preserve native originals.",
+    "density_scalability": "Retain native enable_density_scaling and report it; viewer/foliage quality may suppress cache. Do not call zero cache visible or silently change quality."
+  },
+  "grass_contract_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\NATIVE_HANDOFF.json",
+  "grass_contract_sha256": "06c77fa3c55a6a6d4f26c9e228f0ce0ef0f2fd6e3a6f226aeccaf2b604625d93",
+  "catalog_sha256": "6746f76d046a251ae5aa5333c86757e0b7c0cce0ad08a9f9b23e9cc49fc8eba8",
+  "native_operations": 0,
+  "new_holds_or_rights_releases": 0,
+  "unresolved_input": "Bank operator must read the unknown material graph fields after dirty-original recovery; do not invent UV, normal or RVT semantics from names."
+}

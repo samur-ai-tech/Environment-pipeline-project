@@ -1,0 +1,71 @@
+Prepared contract only; no clean release or Landscape inspection is asserted.
+
+STARTUP_ACTIVATION.json must be supplied by the successor after reviewing the
+actual release. bank_clean_handoff_receipt is the exact absolute receipt path;
+bank_clean_handoff_sha256 binds its bytes. No receipt-name search or fallback.
+Initial release_operator_thread_id must be the bank thread. Later fresh reopen
+transitions use the actual Task4 release and Task4 operator in those same fields;
+never reuse the bank release as the immediate release of a later Task4 process.
+
+The actual release receipt must use environmentpipeline.clean_editor_release.v1
+and contain these measured fields (no template supplies their values):
+manager_thread_id, operator_thread_id, released_editor_pid, map;
+process_exited=true, clean_handoff=true, cooking_paused_before_exit=true,
+auto_cook_before_exit=false, auto_bake_before_exit=false,
+callbacks_before_exit=0, dirty_maps_before_exit=[], dirty_content_before_exit=[],
+no_shutdown_saves=true;
+catalog_digest matching the reviewed typed source/CSV/native catalog;
+preserved_original_maps: exact map-path -> saved-map-SHA256 for both original areas;
+preserved_candidates: all87 exact Content-relative file -> original-SHA256 entries;
+preserved_vendor_originals: Content-relative file -> preserved-SHA256, including
+both Plant07_6_G materials and the Plant07_6_G mesh;
+named_saved_packages: exact Content/Project/-relative file -> final-SHA256 closure
+saved by the completed operator turn. Empty is allowed only for no named saves.
+Vendor files cannot appear in the saved closure.
+
+If the eventual actual bank receipt has a different schema, stop and have the
+manager review a bounded reader adaptation against that real receipt. Do not
+invent evidence, convert dirty state into clean, or create a synthetic release.
+
+Final nonblank OWNER=NONE lease transition must contain these exact fields:
+manager_thread_id, operator_thread_id, released_editor_PID, map,
+clean_handoff=true process_exited=true,
+release_receipt=<project-relative-forward-slash-path-without-spaces>,
+release_receipt_sha256=<exact-receipt-SHA256>.
+Launcher verifies receipt contents, preservation/saved file hashes, matching
+released PID/map/operator, exact last release transition and no live UnrealEditor.
+It repeats this immediately before calling the retained launcher. Inspection
+verifies that release immediately precedes its actual-PID startup lease, queries
+OS before and after inspection and requires [os.getpid()] exactly. Each snapshot
+re-reads the current live world instead of copying the startup map string.
+
+Landscape ownership is a separate manager-reviewed immutable receipt selected by
+landscape_ownership_receipt and landscape_ownership_sha256. Required fields: map,
+map_sha256, source_sha256, hda_actor_path, actor_paths, official_actor_paths,
+baked_actor_paths. All actor entries are exact full map-local paths. actor_paths
+must equal union(official_actor_paths,baked_actor_paths); official_actor_paths must
+be nonempty. Native helper result must equal that official set, live Landscape
+membership must equal actor_paths, and last-success baked paths intersected with
+actor_paths must equal baked_actor_paths. Missing/extra actors, empty helper output,
+changed map/source/HDA or ownership reject. This never grants cleanup permission.
+Initial Shujaiya expectation contains both known saved Landscapes. After ordinary
+successful replacement select a NEW receipt bound to the saved map hash and exact
+singleton. Rimal has its own expectation. Do not weaken unreadable-identity gates.
+
+Native table receipt selection is explicit and immutable. Capture takes
+--native-table-selection <exact-Task4-staging-selection-file>. Selection fields:
+manager_thread_id, source_sha256, csv_sha256, receipt, receipt_sha256,
+native_readback, native_readback_sha256. Receipt must record saved=true, rows,
+digest, table; readback must be actual exported native rows matching source/CSV.
+Receipt may be a bank apply or supplier REGISTRATION_APPLIED/APPLIED result; no
+filename is hardcoded. Preserve immutable transaction receipt and actual native
+readback; never use an old bank receipt after supplier appends. A supplier receipt
+without corresponding actual native readback cannot pass this contract.
+STARTUP_ACTIVATION.native_table_selection_sha256 explicitly designates the exact
+selection accepted by the manager. Preparation's current archived bank evidence
+is only a candidate selection, not approval or a live table inspection.
+
+Assignment/transfer are dynamic documents. Snapshot stores observed hashes for
+audit but verifies current manager, exact Task4 operator, TRANSFERRED_TO_SUCCESSOR,
+successor ID, and exact original-map set. Unrelated status changes do not authorize
+different identities, replace transfer checks, or reset the source seal.

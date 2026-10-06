@@ -1,0 +1,448 @@
+{
+  "schema": "environmentpipeline.task3_fresh_delivery_review.v1",
+  "status": "FRESH_SHUJ_POSTCLIP_EXTERIOR_INTERVAL_VALIDATION_FAILED",
+  "utc": "2026-10-03T21:30:48.358700+00:00",
+  "scope": "Read-only independent file/source/receipt/originalPNG review of task2 fresh PID21780 ordinary Shujaiya then Rimal delivery. Only TASK3_FRESH_DELIVERY_REVIEW files editable. Frozen sourceReview and crashReview unchanged.",
+  "editor_calls": 0,
+  "source_asset_profile_changes": false,
+  "startup_review": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_RESTART_REVIEW.json",
+    "sha256": "8a840c74a6a7feff57b1670dd149083adb27ac84a6e8ab3c8d0bbe78723d9d80",
+    "actual_bootstrap_passed": true,
+    "official_session_valid_at_bootstrap": false
+  },
+  "source_freeze": {
+    "geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "geocity_roadbld_workflow.py": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+    "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+    "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211"
+  },
+  "material_child": {
+    "planned_path": "/Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity",
+    "planned_native_parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn",
+    "only_planned_override": {
+      "MV_PatchMult": 1.0
+    },
+    "authored_or_saved_verified": true,
+    "existing_road_worn_guard_satisfied_by_name": true,
+    "vendor_original_file_hashes_at_review": {
+      "Plugins\\RoadBLD\\Content\\RoadBLD\\DefaultRoadKit\\Materials\\MI_RoadBLD_Asphalt_Road_Worn.uasset": "8d14fda278327685cc2c2d9c0035da3eed3f3773a612e93ebb8a3c480def578a",
+      "Plugins\\RoadBLD\\Content\\RoadBLD\\DefaultRoadKit\\Materials\\M_RoadBLD_Asphalt_Master.uasset": "5376e16c1081c771ebcbb72de0cf1db675cb4e8db9b238222fb5b74b66daef50"
+    },
+    "first_attempt": {
+      "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_material_20261003T203359715729Z.json",
+      "sha256": "9610f3a4d565d769b6cf8a96db7dd8416710cc8f43d95e843acad0276c9de187",
+      "status": "stopped",
+      "reason": "set_material_instance_scalar_parameter_value returnedFalse; no successful namedchildsave yet. Existing unsavedchild requires readback; neithercause norcompletedoverrideassumed."
+    },
+    "authoring_receipt": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_material_finish_20261003T203444712261Z.json",
+      "sha256": "dd215e09264257155a69278fbcb4e0c8ec3672be4452e6a1992f2e6ab6b37fd1"
+    },
+    "parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn",
+    "effective_parameters": {
+      "scalar": {
+        "AsphaltGlobalScale": 0.05000000074505806,
+        "Asphalt Variation": 1.0,
+        "Ruler": 0.0005000000237487257,
+        "BaseRoughnessMult": 0.6499999761581421,
+        "MipBias": 0.0,
+        "Base Spec Mult": 0.5,
+        "Grime Scale": 0.019999999552965164,
+        "Rough Mult 4G": 0.7729210257530212,
+        "Col Mult Cracks": 1.1601999998092651,
+        "MV_LargeScale": 1.4999999621068127e-05,
+        "Cracks Scale": 1.0,
+        "MV_NoisePower": 4.0,
+        "MV_TintAmount": 1.0,
+        "MV_DetailScale": 0.2586669921875,
+        "MV_DetailIntensity": 7.942996978759766,
+        "MV_PatchScale": 0.08799999952316284,
+        "MV_PatchMult": 1.0,
+        "Flat Color Amt Cracks": 0.0,
+        "MVAmount": 0.2160000056028366,
+        "UVRotation": 0.0
+      },
+      "vector": {
+        "BaseColor Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "UV Only - WP Override": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "GrimeTint": [
+          0.6684030294418335,
+          0.6684030294418335,
+          0.6684030294418335,
+          0.0
+        ],
+        "MV_Tint_Hi": [
+          0.604328989982605,
+          0.7418609857559204,
+          0.8229169845581055,
+          0.0
+        ],
+        "MV_Tint_Lo": [
+          0.03442399948835373,
+          0.04225799813866615,
+          0.046875,
+          0.0
+        ],
+        "Flat Color 7C": [
+          0.030712999403476715,
+          0.0295570008456707,
+          0.02217400074005127,
+          1.0
+        ],
+        "UV Scale": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "texture": {
+        "Base_Albedo": "/WorldBLD/MiniTools/LandBLD/Materials/Textures/Landscape/8_Asphalt_EpicSampleContent/Asphalt_tiggcjdo_8K_Albedo.Asphalt_tiggcjdo_8K_Albedo",
+        "Base_Roughness": "/WorldBLD/MiniTools/LandBLD/Materials/Textures/Landscape/8_Asphalt_EpicSampleContent/tiggcjdo_8K_Roughness.tiggcjdo_8K_Roughness",
+        "Base_Normal": "/WorldBLD/MiniTools/LandBLD/Materials/Textures/Landscape/8_Asphalt_EpicSampleContent/Asphalt_tiggcjdo_8K_Normal.Asphalt_tiggcjdo_8K_Normal",
+        "NoiseTextureB": "/RoadBLD/RoadBLD/DefaultRoadKit/Textures/SurfaceFeature/T_AsphaltNoise_packedB.T_AsphaltNoise_packedB",
+        "NoiseTextureA": "/RoadBLD/RoadBLD/DefaultRoadKit/Textures/SurfaceFeature/T_AsphaltNoise_packedA.T_AsphaltNoise_packedA",
+        "Tex Color 7C": "/RoadBLD/RoadBLD/DefaultRoadKit/Textures/SurfaceFeature/T_CrackTileLarge_C.T_CrackTileLarge_C",
+        "Tex Normal 7C": "/RoadBLD/RoadBLD/DefaultRoadKit/Textures/SurfaceFeature/T_CrackTileLarge_N.T_CrackTileLarge_N",
+        "MV_Tex": "/WorldBLD/AssetLibrary/EpicContent/MSPresets/MSTextures/sl3badpc_4K_Mask.sl3badpc_4K_Mask"
+      },
+      "static_switch": {
+        "DebugCellNoise": false,
+        "DebugCellBorders": false,
+        "DebugRandomPosition": false,
+        "DebugOrigPatterm": false,
+        "Use UV Only": false,
+        "Enable Grime": true,
+        "Enable MacroVary": true,
+        "Enable Cracks": true
+      }
+    },
+    "local_scalar_overrides": [
+      {
+        "name": "MV_PatchMult",
+        "value": 1.0
+      }
+    ],
+    "other_effective_parameters_match_original": true,
+    "vendor_files_hash_unchanged": true,
+    "scoped_saved_asset": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\RoadBLD\\Materials\\MI_RoadBLD_Asphalt_Road_Worn_GeoCity.uasset",
+      "sha256": "2c8d7278df7b56ff50d7e2aaa58276c04b2bfe168dd910101cf2d6f17d2ac800",
+      "bytes": 9698
+    },
+    "API_false_result_resolved": "Actual readback showed first API call did apply correct override despiteFalse result; task2 verified all inherited parameters and exactlocaloverride before named save. No repeat asset creation orvendor patch.",
+    "normal_profile_configuration": {
+      "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_ASPHALT_PROFILES_20261003T203505211461Z.json",
+      "sha256": "70d1c24e3d38102f03ade5a405ac8d2ce7fd0cc736f7dc45a0485ef3a4697efa",
+      "independent_exact_before_after_profile_diff": [
+        {
+          "area": "GazaShujaiya",
+          "after_sha256": "7b4e201468b90540e91fe0714993665e6857a877f2cf2dd55574d8b5048785ba",
+          "only_changed_field": "roadbld_workflow.settings.road_material"
+        },
+        {
+          "area": "GazaRimal",
+          "after_sha256": "00764103afa7e880b6dcf3e7bcb76e153f585d67d1034bca1a5295c676d81534",
+          "only_changed_field": "roadbld_workflow.settings.road_material"
+        }
+      ]
+    },
+    "visual_acceptance": false
+  },
+  "areas": {
+    "GazaShujaiya": {
+      "fresh_run_observed": true,
+      "saved_reopened_verified": false,
+      "fresh_Lit_reviewed": false,
+      "start_receipt": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_generate_shuj_20261003T203505716317Z.json",
+        "sha256": "2cdbb35c52dc3519701f5aeb7f5731f7b1010c4721774ccf0c7b0454de79f83a",
+        "phase": "waiting_for_instantiation",
+        "ordinary_operation_started": true
+      },
+      "native_revision": "20261003T203730573110",
+      "phase": "failed_validating"
+    },
+    "GazaRimal": {
+      "fresh_run_observed": false,
+      "saved_reopened_verified": false,
+      "fresh_Lit_reviewed": false
+    }
+  },
+  "appearance_accepted": false,
+  "source_pad_conflict": "Original Shujaiya source traverses2occupiedprotectedfootprints over18.873381m; complementary partition must continue reporting physical_surface_continuous=False. Fresh generation is not evidence this source conflict was repaired.",
+  "findings": [
+    {
+      "status": "actual_runtime_blocker",
+      "description": "AssertionError('Unaccounted exterior interval: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49 segment=4 intervals=[[0.0, 0.4612367876575603], [0.4614122522707323, 1.0]]')",
+      "scope": "Final postclip original-source coverage"
+    }
+  ],
+  "service_readiness": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_readiness_20261003T203232858143Z.json",
+    "sha256": "84befbd73069bd16b12c5eea83b55faf8e077c27983619fc93ae948f76a08a62",
+    "readback": {
+      "status": "passed",
+      "step": "readiness",
+      "pid": 21780,
+      "dirty_before": {
+        "maps": [],
+        "content": []
+      },
+      "official_session_valid": true,
+      "Engine_paused": true,
+      "RoadBLD_license": true,
+      "dirty_after": {
+        "maps": [],
+        "content": []
+      }
+    },
+    "reviewer_editor_calls": 0
+  },
+  "fresh_step_script_review": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\fresh_delivery_21780.py",
+    "sha256": "33172be1387d7001f147c9dabe3b256b875a34be1dd4d36a2f0b04d270ce117a",
+    "method": "AST/source only; no import or execution",
+    "guards": "PID21780, assignedworker lease, root activation file, exact4sourcefreeze, one scheduled callback, idleworkflowcallbacks, Enginepaused andautosaveoff. Every supportedcalljournaled frompersistentone-shotGameThreadcallback.",
+    "material_logic": "New uniquelynamed sharedMI, direct existingWornparent, MV_PatchMult1 only; exactone local scalar andzero texture/vector overrides; effective1.0; scoped singleasset save. Existingfamilyguard passes newpath. No edittooriginalvendorparent.",
+    "limits": "Actualchild effective/staticparameters and saved/reopen usage still need receipts; script source alone is notauthoringproof."
+  },
+  "saved_baseline_readback": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_baseline_20261003T203340389995Z.json",
+    "sha256": "891efc9edad0f60e8570f11227519b1990643c3f930922697dfbd4603888964e",
+    "status": "passed",
+    "independently_compared_89_bindings_to_saved_contract": true,
+    "exact_fields": [
+      "mesh",
+      "material_slots",
+      "component_world_transform",
+      "collision"
+    ],
+    "owned_actors": 136,
+    "HDA_baked_actors": 42,
+    "named_native_dependencies": 80,
+    "clean_after": true,
+    "geometry_recomputed": false,
+    "historical_baseline_not_fresh_delivery": true
+  },
+  "license_handling_review": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_LICENSE_REVIEW.json",
+  "prior_source_freeze": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "before_sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "changed_in_postclip_partition": false,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "1909fb60f22be17a18012a5b2a8f990d6fdc7c5c73b8ae164f8fbef5e74ad453",
+      "before_sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+      "changed_in_postclip_partition": true,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+      "before_sha256": "b77be9186f1b43d969eaca9a272753b71586b83ef43fde834557d92345d56221",
+      "changed_in_postclip_partition": true,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+      "before_sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+      "changed_in_postclip_partition": false,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    }
+  },
+  "license_continuation_actual": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_LICENSE_CONTINUATION_20261003T205502525516Z.json",
+    "sha256": "4c259b3883db4aa50a82543ac6980a10e1850fb4a5d42072da0d027b1a4d12cd",
+    "journal_sha256": "18682dbf5f2134a08317853dc1e9769f0506096d61f269ae0c98c39987bfd818",
+    "phase": "failed_conditioning",
+    "error": "HoudiniPublicAPIAssetWrapper_OnHoudiniAssetPostCook: Callable has the incorrect number of arguments (expected 2, got 0)",
+    "failed_at": "restore_parent_post_cook_delegate",
+    "same_revision": "20261003T203730573110",
+    "workflow_class_refreshed": true,
+    "new_operation_attempts": 0,
+    "expired_deadline_preserved": 167732.562,
+    "new_operation_deadline": 168707.234,
+    "observation_hooks_restored": true,
+    "cleanup_completed": true,
+    "native_SDK_dispatch_in_journal": false,
+    "diagnosis": "Wrapper install_observation replaces reflected callback p.after_cook with observed(*args, **kwargs); Unreal reflection reports zero explicit arguments and rejects expected arity2. Source static review missed this runtime callback requirement. License patch was not exercised by any native edit. Root owns wrapper correction."
+  },
+  "explicit_callback_fix_review": {
+    "status": "NO_BLOCKING_SOURCE_FINDINGS_FOR_EXACT_WRAPPER",
+    "wrapper": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\continue_explicit_callbacks_21780.py",
+    "wrapper_sha256": "ef063beaca5a466c4d7fbd2dd8328a20d83337ebb30c84c8e8fc9997a08bafc6",
+    "actual_stop_readback_sha256": "abb098e40d3ee76948c028d7a881ded46cab891f297e0c6e4dc5a7269b90dfcc",
+    "zero_attempt_archive_sha256": "cb5fffaa0b9c2246f7ae842fafa67ee2f785168729392b5c9315ecf1854d3f2b",
+    "independent_checks": [
+      "AST confirms real closures with 0,1,2 positional arguments and no variadics; callback mapping matches existing methods. Native SDK tool journaling may remain variadic because it is not a reflected callback.",
+      "Fresh readback actual road/network participants exactly equal original stopped-call checkpoint; same14 dirty content paths; operation attempts0/calls empty; same41 road actors/network/token/revision; callbacks absent; Engine valid/paused and autosave disabled.",
+      "Archived zero-attempt operation exactly equals stopped native-state operation. Wrapper requires it expired and unchanged; registers reflected delegates first, then creates separately recorded new60-second intent at same connector_controls step. No deadline extension, source reload, object reconstruction, spawn or first rebuild replay.",
+      "Explicit activation/assignment/PID/lease guards, frozen source/review/archive hashes, unchanged actual participants/defaults and exact expected-after remain required. Existing failure cleanup retains callback identities until removal, then restores hooks."
+    ],
+    "runtime_status": "NOT EXECUTED BY REVIEWER; registration and native license capture still require actual run.",
+    "scope": "Bounded wrapper/readback review only. Frozen TASK3_LICENSE_REVIEW and source untouched.",
+    "previous_wrapper_sha256": "0f817792e7577b5abf958e949993233ee0defede34fb0a6be259edf1cced25fd",
+    "commit_keyword_correction": {
+      "verified": "Exact only byte changes remove commit from generic arity1 mapping and add commit_observed(hda_receipt), forwarding original_commit(hda_receipt=hda_receipt), registered in the same cleanup hook list. Original before-edit bytes independently reconstruct to SHA0f817792...ced25fd. Syntax parsed without import/execution.",
+      "reason": "Root identified bank finish_save calls commit with named hda_receipt. Prior review missed keyword compatibility. Corrected wrapper accepts both that keyword and positional receipt.",
+      "scope": "No other wrapper edits; no source edits or frozen license review edits.",
+      "blocking_findings": []
+    }
+  },
+  "actual_native_progress": {
+    "state_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\ROADBLD_WORKFLOW_STATE.json",
+    "observed_state_sha256": "03be7bad660f019473fe4f0b74b6e06ae09bf9a5afb89bcddb929dde1d863946",
+    "revision": "20261003T203730573110",
+    "phase": "clipping",
+    "saved": false,
+    "completed_corner_count": 4,
+    "derived_road_count": 4,
+    "rebuild_pass": 3,
+    "global_defaults_restored": true,
+    "recorded_operations": 24,
+    "recorded_edit_calls": 20,
+    "all_recorded_edit_calls_have_two_boundary_flushes": true,
+    "pending_license_rejections_recorded": 0,
+    "ordinary_rebuild_dispatches": [
+      {
+        "attempts": 1,
+        "job_ids": [
+          "2b65f213-4f8c-9391-010a-f094b4e4d3aa"
+        ]
+      },
+      {
+        "attempts": 1,
+        "job_ids": [
+          "37e80271-4cde-fe2b-d189-079999c25b2b"
+        ]
+      }
+    ],
+    "qualification": "Successful native calls demonstrate log_flush callable in actual editor. No pending denial recorded in this continuation, so actual pending-retry branch not exercised. Full physical and saved delivery proof pending."
+  },
+  "grounding_timeout_actual": {
+    "state_sha256": "9c3b5b16851eae39b41ee71ac71ec29a82ad4479fab45e4e6577a83506676c3f",
+    "phase": "failed_clipping",
+    "error": "AssertionError('Native grounding exceeded bounded time; no asset bindings changed')",
+    "saved": false,
+    "previous_delivery_preserved": true,
+    "continuation_receipt_sha256": "76874ba5ecf47adc78830f5aa695b368c6ca4943988013ce7797d8e0dee1628f",
+    "terminal_parent_phase": "failed_native_road_transaction",
+    "terminal_native_phase": "failed_clipping",
+    "observation_hooks_restored": true,
+    "journal_bytes": 45894960,
+    "observer_file_sha256_at_stop": "dc2bab424cf5e2b43933a3e9173375e4d1b33352b1d3a70e3d82328febc02246",
+    "observer_coalescing_not_applied_before_stop": true,
+    "qualification": "Error states no asset bindings changed; actual binding readback not yet available to reviewer. Fsynced per-guard observer overhead is a plausible contributor, not independently isolated cause. No timeout/source change or retry by reviewer.",
+    "actual_binding_readback": {
+      "receipt": "GROUNDING_TIMEOUT_STOP_20261003T211925662803Z.json",
+      "sha256": "96bed34749da573c64be90bc638c5b78c68b02f04cd725029e5b9b415442768c",
+      "native_components": 87,
+      "all_bound_meshes_are_owned_level_RoadGeoSurfaceMesh_subobjects": true,
+      "all_87_components_use_shared_asphalt_child": true,
+      "grounding_report_exists": false,
+      "clipping_report_exists": false,
+      "source_control_flow": "clip_final_geometry calls grounding with600 seconds before invoking clip_native_outputs; grounding raises before tuple assignment and clip call. This agrees with all87 actual components still referencing original generated level meshes. No full before/after vertex-geometry fingerprint is claimed.",
+      "callbacks_absent": true,
+      "official_Engine_valid_and_paused": true,
+      "autosave_disabled": true
+    }
+  },
+  "observer_coalescing_review": {
+    "status": "NO_BLOCKING_FINDINGS",
+    "old_sha256": "dc2bab424cf5e2b43933a3e9173375e4d1b33352b1d3a70e3d82328febc02246",
+    "new_sha256": "d28d94887169c4190c106b3df5ee8d2e648c22c53b97636b8df86877c85074b5",
+    "independent_AST_changed_functions": [
+      "call"
+    ],
+    "changes": "Only call function, time import and guard counter dictionary. Both native.guard and parent.guard log pairs coalesced at most once per second per journal/label; fn() unconditionally executes outside emission branch. Exceptions log immediately and rethrow. SDK/phase labels retain each before/after.",
+    "runtime_readback": "Task2 reports8 original calls with2journal rows after applying pure observer definition at idle. Readback journal independently contains1before/1after pair. Full geometry-pass call counts/performance not yet measured under new observer.",
+    "source_timeout_and_tolerances": "Unchanged; no production source edit or timeout extension reviewed."
+  },
+  "post_rebuild_restart_actual": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\GROUNDING_ONLY_RESUME_20261003T212400186387Z.json",
+    "sha256": "a9e814a8271829208e29132a5f60be9407b9a7afbcc6770872d752b021c0bd3e",
+    "same_participants_bindings_and_dirty_set_as_timeout_readback": true,
+    "rebuild_pass": 3,
+    "original_timeout_seconds": 600,
+    "no_deadline_extension": true,
+    "last_observed_guard_calls": 198176,
+    "guard_log_pair_count": 201,
+    "journal_bytes": 124863,
+    "guard_counter_deltas_equal_omitted_pairs_plus_one": true,
+    "qualification": "Counts cover wrapper invocations before calling the original guard; corresponding emitted AFTER rows and no exceptions support successful checks so far. Processing remains active; full grounding/clipping result pending."
+  },
+  "postclip_actual_result": {
+    "state_sha256": "7d39f05a9e01130414626c132483a8d260af810f1add2b6eff2012167ce7039c",
+    "revision": "20261003T203730573110",
+    "phase": "failed_validating",
+    "error": "AssertionError('Unaccounted exterior interval: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49 segment=4 intervals=[[0.0, 0.4612367876575603], [0.4614122522707323, 1.0]]')",
+    "saved": false,
+    "grounding": {
+      "phase": "transient_grounded_physically_verified",
+      "passed": true,
+      "elapsed_seconds": 212.78099999998813,
+      "native_component_count": 87,
+      "original_source_piece_count": 40,
+      "max_surface_height_error_cm": 9.846339636366793
+    },
+    "clipping": {
+      "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\ROADBLD_CLIP_GazaShujaiya_20261003T212734465632Z.json",
+      "sha256": "8b324a1a93f2d21a1983199eeeb4c113206393955a16c55ca86e6f9cbd3237f2",
+      "status": "native_conflicts_clipped_pending_independent_fit_saves_and_reopen",
+      "elapsed_seconds": 77.4210000000021,
+      "created_assets": 87,
+      "bindings": 87,
+      "all_bindings_applied": true,
+      "all_rebound_triangles_verified": true,
+      "unsupported_conflicts": 0,
+      "material_transform_policy_verified": true,
+      "collision_policy_verified": true,
+      "map_save_performed": false,
+      "reopen_verified": false
+    },
+    "final_partition_check": {
+      "passed": false,
+      "actor": "DynamicRoad_49",
+      "original_segment_index": 4,
+      "covered_t_intervals": [
+        [
+          0.0,
+          0.4612367876575603
+        ],
+        [
+          0.4614122522707323,
+          1.0
+        ]
+      ],
+      "uncovered_t_interval": [
+        0.4612367876575603,
+        0.4614122522707323
+      ],
+      "gap_length_cm": "Not measured; segment endpoints/actual candidate geometry must establish physical length. No inference of harmless tolerance issue."
+    },
+    "cleanup_hooks_restored": true,
+    "resume_receipt_sha256": "fe11c2c82fa1620703dcc76a4135e80c25d22fe1737c61d15a5ab74871c5ac93",
+    "qualification": "Full40-source preclip grounding receipt passes; final postclip full-source partition does not.87 candidate bindings now applied but unsaved. No final native delivery/HDA suppression Cook/Bake/named map save/reopen/visual acceptance verified. No core/source change or new retry performed by reviewer."
+  }
+}

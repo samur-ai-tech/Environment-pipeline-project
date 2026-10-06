@@ -1,0 +1,586 @@
+{
+  "pid": 30328,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "finalized": [
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0034_Cart",
+      "native_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0034_Cart.SM_H0034_Cart",
+      "source_sha256": "284383e117c3d0c16825f292c79c5ff402318bed53488700138bb05dd4d58df6",
+      "review": {
+        "image": "H0034_Cart.jpg",
+        "anchor_z_cm": -2.0,
+        "forward_axis": "+X",
+        "observation": "Complete wooden cart with two wheels, front support and sacks; wood and sack texture visible in the retained Unreal Lit image.",
+        "contact": "Paired wheel minima at approximately -2 cm; front support minimum -3.129608 cm. Preserve up to 1.13 cm support penetration rather than lifting both wheels.",
+        "facing": "Local X is the cart longitudinal axis. Static open-ground clutter has unconstrained yaw; no functional travel/traffic orientation is claimed.",
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0034_Cart",
+        "image_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0034_Cart.jpg",
+          "exists": true,
+          "sha256": "5e74ca21a9b4f7c207790423b66af2f0c908adca7e08e49768afd334f9b780fa",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        "native_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0034_Cart.uasset",
+          "exists": true,
+          "sha256": "284383e117c3d0c16825f292c79c5ff402318bed53488700138bb05dd4d58df6",
+          "expected_sha256": "284383e117c3d0c16825f292c79c5ff402318bed53488700138bb05dd4d58df6",
+          "matches_expected": true
+        },
+        "material_identities": [
+          {
+            "slot": 0,
+            "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_b88fce516839.uasset",
+            "exists": true,
+            "sha256": "bd71f238bf10476043568aca7fdaf3c7ff686d320f5ebc35a9a55255fd12fcd2",
+            "expected_sha256": null,
+            "matches_expected": true
+          }
+        ],
+        "current_native_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_CONTACT_READBACK.json",
+        "source_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\SOURCE_CONTACT_READBACK.json",
+        "source_contact_sha256": "5e1bbb96f6e423574667f69d558e9a862f01387e31839b4ec47af3496af524ca",
+        "source_native_axis_matches": [
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 2.706676013985998e-06
+          }
+        ],
+        "review_basis": "Retained actual Unreal Lit pixels reviewed in this category chat; current measured geometry/source hashes reused.",
+        "material_review": "Source texture appearance observed; saved instancing override paths/provenance reused. Integrator must verify native usage and exact texture closure before ready=true.",
+        "ready": false,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": false,
+        "runtime_finalization_function": "integrate_reviewed",
+        "actual_area_output": false,
+        "fresh_reopen": false,
+        "final_art_acceptance": false
+      },
+      "native_material_proof": [
+        {
+          "slot": 0,
+          "source_material": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__009.Street_Props_Pack__009",
+          "override": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+          "instancing_usage": true,
+          "original_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "override_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "dependencies": {
+            "packages": [
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a",
+              "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839"
+            ],
+            "missing": []
+          },
+          "passed": true
+        }
+      ],
+      "validation_after": {
+        "source_sha256": "284383e117c3d0c16825f292c79c5ff402318bed53488700138bb05dd4d58df6",
+        "anchor_z_cm": -2.0,
+        "forward_axis": "+X",
+        "ready": true,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": true,
+        "pending": null,
+        "review_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json",
+        "readiness_scope": "Individual retained ordinary-prop contract; actual ordinary output/save/reopen/art acceptance remain pending"
+      }
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0046_Foodcrate",
+      "native_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0046_Foodcrate.SM_H0046_Foodcrate",
+      "source_sha256": "e432143f4392b1b1690fb65e9484ee9db864bb811c42b043dedafed3e32b1810",
+      "review": {
+        "image": "H0046_Foodcrate.jpg",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+Y",
+        "observation": "Complete rectangular open lattice crate; textured olive surface; bottom edges visibly support the crate.",
+        "contact": "Native lower 1 cm has 2633 vertices spanning the full 32.58 x 48.02 cm footprint. Authored source bottom Z=0 agrees within 0.00001 cm.",
+        "facing": "Unconstrained ground-clutter yaw; +Y retained as its existing orientation convention, without assigning a functional front.",
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0046_Foodcrate",
+        "image_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0046_Foodcrate.jpg",
+          "exists": true,
+          "sha256": "a6f6b9451cc01a726bc8b85a5d375f606e22dc6828f80704c5dc59ed2f7f0364",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        "native_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0046_Foodcrate.uasset",
+          "exists": true,
+          "sha256": "e432143f4392b1b1690fb65e9484ee9db864bb811c42b043dedafed3e32b1810",
+          "expected_sha256": "e432143f4392b1b1690fb65e9484ee9db864bb811c42b043dedafed3e32b1810",
+          "matches_expected": true
+        },
+        "material_identities": [
+          {
+            "slot": 0,
+            "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_0ecedb11d2b9c6db.M_0ecedb11d2b9c6db",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\M_0ecedb11d2b9c6db.uasset",
+            "exists": true,
+            "sha256": "a1b0f0c66a286e11c23605dfa30791081fadf3a9e1009672e67e18629611ddd0",
+            "expected_sha256": null,
+            "matches_expected": true
+          }
+        ],
+        "current_native_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_CONTACT_READBACK.json",
+        "source_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\SOURCE_CONTACT_READBACK.json",
+        "source_contact_sha256": "8f92201172ae9a2dee141dd5d1bd23859a5c410e79cfba76c21f9e744beaf679",
+        "source_native_axis_matches": [
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              -1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 0.0001453226335712543
+          },
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              -1,
+              1,
+              1
+            ],
+            "bounds_error_cm": 0.0001453226335712543
+          },
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 1.2506580517879229e-06
+          },
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              1,
+              1
+            ],
+            "bounds_error_cm": 6.037846566897542e-05
+          }
+        ],
+        "review_basis": "Retained actual Unreal Lit pixels reviewed in this category chat; current measured geometry/source hashes reused.",
+        "material_review": "Source texture appearance observed; saved instancing override paths/provenance reused. Integrator must verify native usage and exact texture closure before ready=true.",
+        "ready": false,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": false,
+        "runtime_finalization_function": "integrate_reviewed",
+        "actual_area_output": false,
+        "fresh_reopen": false,
+        "final_art_acceptance": false
+      },
+      "native_material_proof": [
+        {
+          "slot": 0,
+          "source_material": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__003.Street_Props_Pack__003",
+          "override": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_0ecedb11d2b9c6db.M_0ecedb11d2b9c6db",
+          "instancing_usage": true,
+          "original_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Normal_1011_99d47d234c4e.Arabic_Assets_01_Normal_1011_99d47d234c4e"
+          ],
+          "override_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Normal_1011_99d47d234c4e.Arabic_Assets_01_Normal_1011_99d47d234c4e"
+          ],
+          "dependencies": {
+            "packages": [
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_01_Normal_1011_99d47d234c4e",
+              "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_0ecedb11d2b9c6db"
+            ],
+            "missing": []
+          },
+          "passed": true
+        }
+      ],
+      "validation_after": {
+        "source_sha256": "e432143f4392b1b1690fb65e9484ee9db864bb811c42b043dedafed3e32b1810",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+Y",
+        "ready": true,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": true,
+        "pending": null,
+        "review_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json",
+        "readiness_scope": "Individual retained ordinary-prop contract; actual ordinary output/save/reopen/art acceptance remain pending"
+      }
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0058_Gaz",
+      "native_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0058_Gaz.SM_H0058_Gaz",
+      "source_sha256": "764b3ddfed9526e579f31d37e10a898bc123301db19e6964f514caa5cb1a439e",
+      "review": {
+        "image": "H0058_Gaz.jpg",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+X",
+        "observation": "Complete upright blue gas cylinder with base ring and top collar; source texture patches retained. No utility hookup or final art approval inferred.",
+        "contact": "206 vertices in the native lower 1 cm span the base ring. Source base plane Z=0; measured minimum -0.005653 cm is negligible retained extent.",
+        "facing": "Standalone static cylinder has no required horizontal facing; unrestricted yaw preserves its base support.",
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0058_Gaz",
+        "image_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0058_Gaz.jpg",
+          "exists": true,
+          "sha256": "3abb0b70a5f88f4d4fb27396094dfa66c54ca0c58b2b0ce749fc6dd6e6d4b0f4",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        "native_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0058_Gaz.uasset",
+          "exists": true,
+          "sha256": "764b3ddfed9526e579f31d37e10a898bc123301db19e6964f514caa5cb1a439e",
+          "expected_sha256": "764b3ddfed9526e579f31d37e10a898bc123301db19e6964f514caa5cb1a439e",
+          "matches_expected": true
+        },
+        "material_identities": [
+          {
+            "slot": 0,
+            "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_466fc1ea5e5d.M_Bank_466fc1ea5e5d",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_466fc1ea5e5d.uasset",
+            "exists": true,
+            "sha256": "5137319211fdf0fa4172163901e602ee064072a23866c2453905544385a3032c",
+            "expected_sha256": null,
+            "matches_expected": true
+          }
+        ],
+        "current_native_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_CONTACT_READBACK.json",
+        "source_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\SOURCE_CONTACT_READBACK.json",
+        "source_contact_sha256": "487a429204571473029f9d250db9616cb082107d7f4e198b3c7f84bb6bbfe4a7",
+        "source_native_axis_matches": [
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 9.791712400897268e-07
+          }
+        ],
+        "review_basis": "Retained actual Unreal Lit pixels reviewed in this category chat; current measured geometry/source hashes reused.",
+        "material_review": "Source texture appearance observed; saved instancing override paths/provenance reused. Integrator must verify native usage and exact texture closure before ready=true.",
+        "ready": false,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": false,
+        "runtime_finalization_function": "integrate_reviewed",
+        "actual_area_output": false,
+        "fresh_reopen": false,
+        "final_art_acceptance": false
+      },
+      "native_material_proof": [
+        {
+          "slot": 0,
+          "source_material": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__010.Street_Props_Pack__010",
+          "override": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_466fc1ea5e5d.M_Bank_466fc1ea5e5d",
+          "instancing_usage": true,
+          "original_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0.Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1.Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1021_2c16efe4e182.Arabic_Assets_02_Normal_1021_2c16efe4e182"
+          ],
+          "override_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0.Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1.Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1021_2c16efe4e182.Arabic_Assets_02_Normal_1021_2c16efe4e182"
+          ],
+          "dependencies": {
+            "packages": [
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1021_2c16efe4e182",
+              "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_466fc1ea5e5d"
+            ],
+            "missing": []
+          },
+          "passed": true
+        }
+      ],
+      "validation_after": {
+        "source_sha256": "764b3ddfed9526e579f31d37e10a898bc123301db19e6964f514caa5cb1a439e",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+X",
+        "ready": true,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": true,
+        "pending": null,
+        "review_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json",
+        "readiness_scope": "Individual retained ordinary-prop contract; actual ordinary output/save/reopen/art acceptance remain pending"
+      }
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0059_Grill_",
+      "native_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0059_Grill_.SM_H0059_Grill_",
+      "source_sha256": "9cb62294909cfc9ae6b39d435f1af5d33a94ea63717f01418817a509dfc55e10",
+      "review": {
+        "image": "H0059_Grill.jpg",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+X",
+        "observation": "Complete small metal grill with four legs and textured weathered frame; this job uses it as open-ground clutter.",
+        "contact": "48 lower-support vertices span X -14.285..14.769 cm and Y -8.416..12.174 cm. Source/native base at Z=0 agrees within 0.000002 cm.",
+        "facing": "Unconstrained static-clutter yaw only. No cooking/service-facing placement context is claimed.",
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0059_Grill_",
+        "image_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0059_Grill.jpg",
+          "exists": true,
+          "sha256": "4b7e723aace28a7d1f09b86cdeb34bdb1a3300d8f9bc881210b01c6173ddc1bf",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        "native_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0059_Grill_.uasset",
+          "exists": true,
+          "sha256": "9cb62294909cfc9ae6b39d435f1af5d33a94ea63717f01418817a509dfc55e10",
+          "expected_sha256": "9cb62294909cfc9ae6b39d435f1af5d33a94ea63717f01418817a509dfc55e10",
+          "matches_expected": true
+        },
+        "material_identities": [
+          {
+            "slot": 0,
+            "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_b88fce516839.uasset",
+            "exists": true,
+            "sha256": "bd71f238bf10476043568aca7fdaf3c7ff686d320f5ebc35a9a55255fd12fcd2",
+            "expected_sha256": null,
+            "matches_expected": true
+          }
+        ],
+        "current_native_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_CONTACT_READBACK.json",
+        "source_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\SOURCE_CONTACT_READBACK.json",
+        "source_contact_sha256": "77dcc51ab864ae81ebfa83539e3e84ffe29a929034e20cedbe34a0cc68552300",
+        "source_native_axis_matches": [
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 2.319747892443047e-06
+          }
+        ],
+        "review_basis": "Retained actual Unreal Lit pixels reviewed in this category chat; current measured geometry/source hashes reused.",
+        "material_review": "Source texture appearance observed; saved instancing override paths/provenance reused. Integrator must verify native usage and exact texture closure before ready=true.",
+        "ready": false,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": false,
+        "runtime_finalization_function": "integrate_reviewed",
+        "actual_area_output": false,
+        "fresh_reopen": false,
+        "final_art_acceptance": false
+      },
+      "native_material_proof": [
+        {
+          "slot": 0,
+          "source_material": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__009.Street_Props_Pack__009",
+          "override": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+          "instancing_usage": true,
+          "original_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "override_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "dependencies": {
+            "packages": [
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a",
+              "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839"
+            ],
+            "missing": []
+          },
+          "passed": true
+        }
+      ],
+      "validation_after": {
+        "source_sha256": "9cb62294909cfc9ae6b39d435f1af5d33a94ea63717f01418817a509dfc55e10",
+        "anchor_z_cm": 0.0,
+        "forward_axis": "+X",
+        "ready": true,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": true,
+        "pending": null,
+        "review_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json",
+        "readiness_scope": "Individual retained ordinary-prop contract; actual ordinary output/save/reopen/art acceptance remain pending"
+      }
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0089_Tires",
+      "native_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0089_Tires.SM_H0089_Tires",
+      "source_sha256": "8ed278488d3de50ee3092174f027d8c53c65f0e8f6bfc5ff0bd23df45ec0ba34",
+      "review": {
+        "image": "H0089_Tires.jpg",
+        "anchor_z_cm": -0.6557816863059998,
+        "forward_axis": "+X",
+        "observation": "Complete three-tyre pile; textured worn rubber, with visible source atlas patches. Preserve this appearance; actual-area art review remains open.",
+        "contact": "Lower 1 cm has 210 vertices spanning X -26.413..15.319 cm and Y -20.752..20.752 cm. Preserve measured bottom anchor; do not reorient individual tyres.",
+        "facing": "Static tyre pile has no required front; arbitrary yaw with the existing +X convention.",
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0089_Tires",
+        "image_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0089_Tires.jpg",
+          "exists": true,
+          "sha256": "a09e3a16c64c1232430ad00f860631e754330c9d7895e461abd73344424054bd",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        "native_identity": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0089_Tires.uasset",
+          "exists": true,
+          "sha256": "8ed278488d3de50ee3092174f027d8c53c65f0e8f6bfc5ff0bd23df45ec0ba34",
+          "expected_sha256": "8ed278488d3de50ee3092174f027d8c53c65f0e8f6bfc5ff0bd23df45ec0ba34",
+          "matches_expected": true
+        },
+        "material_identities": [
+          {
+            "slot": 0,
+            "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_b88fce516839.uasset",
+            "exists": true,
+            "sha256": "bd71f238bf10476043568aca7fdaf3c7ff686d320f5ebc35a9a55255fd12fcd2",
+            "expected_sha256": null,
+            "matches_expected": true
+          }
+        ],
+        "current_native_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_CONTACT_READBACK.json",
+        "source_contact_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\SOURCE_CONTACT_READBACK.json",
+        "source_contact_sha256": "3a6644f6622b95bfb7b006501607819c6bedcb9f37221ab07105395118dcf407",
+        "source_native_axis_matches": [
+          {
+            "native_axis_from_source": [
+              0,
+              1,
+              2
+            ],
+            "sign": [
+              1,
+              -1,
+              1
+            ],
+            "bounds_error_cm": 1.0930258724783926e-06
+          }
+        ],
+        "review_basis": "Retained actual Unreal Lit pixels reviewed in this category chat; current measured geometry/source hashes reused.",
+        "material_review": "Source texture appearance observed; saved instancing override paths/provenance reused. Integrator must verify native usage and exact texture closure before ready=true.",
+        "ready": false,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": false,
+        "runtime_finalization_function": "integrate_reviewed",
+        "actual_area_output": false,
+        "fresh_reopen": false,
+        "final_art_acceptance": false
+      },
+      "native_material_proof": [
+        {
+          "slot": 0,
+          "source_material": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__009.Street_Props_Pack__009",
+          "override": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839",
+          "instancing_usage": true,
+          "original_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "override_textures": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.Arabic_Assets_02_Normal_1011_2f3a4fe8b88a"
+          ],
+          "dependencies": {
+            "packages": [
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+              "/Game/Project/Shared/Bank_ME_v3/Props/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a",
+              "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839"
+            ],
+            "missing": []
+          },
+          "passed": true
+        }
+      ],
+      "validation_after": {
+        "source_sha256": "8ed278488d3de50ee3092174f027d8c53c65f0e8f6bfc5ff0bd23df45ec0ba34",
+        "anchor_z_cm": -0.6557816863059998,
+        "forward_axis": "+X",
+        "ready": true,
+        "contact_reviewed": true,
+        "facing_reviewed": true,
+        "material_reviewed": true,
+        "pending": null,
+        "review_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json",
+        "readiness_scope": "Individual retained ordinary-prop contract; actual ordinary output/save/reopen/art acceptance remain pending"
+      }
+    }
+  ],
+  "pending": [],
+  "native_dirty_unchanged": true,
+  "shared_catalog_table_apply_pending": true,
+  "ordinary_generation_completed": false,
+  "fresh_reopen_completed": false,
+  "immutable_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Props\\NATIVE_CONSUMPTION_28993c31c4d26e3c.json"
+}

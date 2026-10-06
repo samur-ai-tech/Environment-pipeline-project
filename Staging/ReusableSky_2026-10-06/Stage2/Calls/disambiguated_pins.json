@@ -1,0 +1,100 @@
+{
+  "ok": true,
+  "stdout": "",
+  "result": {
+    "Rendering|Material|CreateDynamicMaterialInstance": {
+      "in": [
+        [
+          "execute",
+          "Exec",
+          ""
+        ],
+        [
+          "Parent",
+          "Material Interface Object Reference",
+          ""
+        ],
+        [
+          "OptionalName",
+          "Name",
+          "None"
+        ],
+        [
+          "CreationFlags",
+          "EMIDCreationFlags Enum",
+          "None"
+        ]
+      ],
+      "out": [
+        [
+          "then",
+          "Exec"
+        ],
+        [
+          "ReturnValue",
+          "Material Instance Dynamic Object Reference"
+        ]
+      ]
+    },
+    "Rendering|Material|SetScalarParameterValue": {
+      "in": [
+        [
+          "execute",
+          "Exec",
+          ""
+        ],
+        [
+          "self",
+          "Material Instance Dynamic Object Reference",
+          ""
+        ],
+        [
+          "ParameterName",
+          "Name",
+          "None"
+        ],
+        [
+          "Value",
+          "Float (single-precision)",
+          "0.0"
+        ]
+      ],
+      "out": [
+        [
+          "then",
+          "Exec"
+        ]
+      ]
+    },
+    "Rendering|Material|SetVectorParameterValue": {
+      "in": [
+        [
+          "execute",
+          "Exec",
+          ""
+        ],
+        [
+          "self",
+          "Material Instance Dynamic Object Reference",
+          ""
+        ],
+        [
+          "ParameterName",
+          "Name",
+          "None"
+        ],
+        [
+          "Value",
+          "Linear Color Structure",
+          ""
+        ]
+      ],
+      "out": [
+        [
+          "then",
+          "Exec"
+        ]
+      ]
+    }
+  }
+}

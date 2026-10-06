@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 149,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0059_Grill_.SM_H0059_Grill_"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.339,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-17.748214721679688,\"y\":-18.855026245117188,\"z\":-1.2707319001492579e-06},\"max\":{\"x\":18.14825439453125,\"y\":12.45026683807373,\"z\":47.959522247314453},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 149,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-17.748214721679688,\"y\":-18.855026245117188,\"z\":-1.2707319001492579e-06},\"max\":{\"x\":18.14825439453125,\"y\":12.45026683807373,\"z\":47.959522247314453},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

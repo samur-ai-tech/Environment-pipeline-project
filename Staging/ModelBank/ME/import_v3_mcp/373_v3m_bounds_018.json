@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 119,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0650_SM_AirConditioner.SM_H0650_SM_AirConditioner"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-50.061550140380859,\"y\":-5.4646607168251649e-06,\"z\":-5.9678018260456156e-06},\"max\":{\"x\":1.1920928955078125e-05,\"y\":99.999992370605469,\"z\":72.38165283203125},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 119,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-50.061550140380859,\"y\":-5.4646607168251649e-06,\"z\":-5.9678018260456156e-06},\"max\":{\"x\":1.1920928955078125e-05,\"y\":99.999992370605469,\"z\":72.38165283203125},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

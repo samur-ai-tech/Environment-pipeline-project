@@ -1,0 +1,43 @@
+{
+  "schema": "environmentpipeline.bank_successor_source_patch.v1",
+  "utc": "2026-10-04T15:47:10.938736+00:00",
+  "patches": {
+    "native_bank_ops.py": {
+      "before_sha256": "8d4f04dcc6f84a937f024ab55d8a4249f7893452ea6e5de40fb5c13d339cf592",
+      "after_sha256": "ea3e7b8af5c57104f3b9110d994e701e96758e8a5333db906e0776360a4aa1a7"
+    },
+    "apply_bank_configuration.py": {
+      "before_sha256": "13248bc89f92ca57ee45eced7aa014e4910c25b4929b7e8597bdf3030abe6eb1",
+      "after_sha256": "6f48248c72f7f958906d077d6b7d5f2473749bf498dba2ec8f950458cbe53244"
+    },
+    "acquire_bank_checkpoint.py": {
+      "before_sha256": "817eaf2be7bced9c10e45c087337968d5cede1eaf2d1eba7dc33b50cf917e0ac",
+      "after_sha256": "3aa42830138dabf90e831ab60f38f44801f9cd75e178c70b4e748af9a01bbce1"
+    },
+    "inspect_bank_startup.py": {
+      "before_sha256": "df35f31c9e144317c08442715b972c7b80b553cf29dbee7ea5870dd57a1d14a4",
+      "after_sha256": "05916fbc5cb3e3381eadd107efe754674d02fadea2775cf79922efda58cd0db2"
+    }
+  },
+  "checks": [
+    "current_source_csv_identity_and_typed_agreement_pass",
+    "dynamic_catalog_size_pass_in_memory_only",
+    "missing_csv_row_rejected",
+    "duplicate_csv_row_rejected",
+    "duplicate_asset_identity_rejected",
+    "typed_field_mismatch_rejected"
+  ],
+  "source_catalog_sha256": "6746f76d046a251ae5aa5333c86757e0b7c0cce0ad08a9f9b23e9cc49fc8eba8",
+  "csv_sha256": "f659f09f79d9baf92e01f5c219fd0fa163bb7980095a77e3f9c31d2fac962a41",
+  "native_execution": false,
+  "system_sources_profiles_untouched": true,
+  "cached_helpers_reloaded": false,
+  "current_process_note": "PID32508 has old native_bank_ops cached; strict command loader must reject it after the disk patch. Reviewed fresh paused startup is required for later normal bank content operations; preservation script uses no cached bank helpers.",
+  "changes": [
+    "Successor IDs resolved from assignments/activation, not old hard-coded manager.",
+    "Write preflight rejects inspection-only/paused activation and stale manager checkpoint.",
+    "Dynamic row count retains nonempty unique canonical IDs, exact row identity sets, typed source/CSV/native and before-hash agreement.",
+    "Bundle identity/digest and manager-profile before-hash checks happen before DataTable mutation."
+  ],
+  "old_unapplied_bundles": "Old NORMAL_CONFIGURATION receipts without catalog_identities are not silently accepted; build a new bundle after next actual changes."
+}

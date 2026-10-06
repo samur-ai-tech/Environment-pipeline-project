@@ -1,0 +1,175 @@
+{
+  "status": "RESTART_READY_PREPARATION_AWAITING_ROOT_FINAL_REVIEW_NO_LAUNCH",
+  "created_utc": "20261003T201942432179Z",
+  "startup_files": {
+    "init_unreal.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\init_unreal.py",
+      "sha256": "934ea9468084fb0bd9416fccf34ce74b17d64419da8a60e91d243f73e058a777",
+      "executed": false
+    },
+    "recovery_startup.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\recovery_startup.py",
+      "sha256": "566bedc5b42975a67c1371b3676308f7c829c041b3f33f1648bd380e4d37a4e6",
+      "executed": false
+    },
+    "launch_replacement_editor_PREPARED.ps1": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\launch_replacement_editor_PREPARED.ps1",
+      "sha256": "17dce6eaa11a4e35898a5a78bc2d51ba8e65e2c54883c858ae416d47c67e62e8",
+      "executed": false
+    }
+  },
+  "launch_count": 0,
+  "editor_restarted": false,
+  "launch_executable": "C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+  "engine_version_from_crash": "5.8.2",
+  "project": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Environmentpipeline.uproject",
+  "original_map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "launch_flags": [
+    "-NoAutoSave",
+    "-ini:EditorPerProjectUserSettings:[/Script/UnrealEd.EditorLoadingSavingSettings]:bAutoSaveEnable=False,[/Script/UnrealEd.EditorLoadingSavingSettings]:RestoreOpenAssetTabsOnRestart=NeverRestore"
+  ],
+  "startup_mechanism": "Child-process-only UE_PYTHONPATH includes owned RecoveryBootstrap folder; init_unreal imports persistent recovery_startup module only when explicit activation token matches. Existing project init/menu remains intact. No projectconfig/startupscripts/globalenv edits.",
+  "startup_reference": "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python",
+  "startup_reference_findings": "ExecutePythonScript closes editor after script; ExecCmd py may run before world ready. Process-path init_unreal hook pauses officialEngine early then bounded180s named-world readiness callback; actual local startup detection remains to be observed after root launch approval.",
+  "bootstrap_actions": [
+    "fsynced journal BEFORE/AFTER each Unreal call",
+    "pause officialEngine immediately",
+    "wait only for original namedworld; no map load",
+    "verify exactlyone HDA and matching named HoudiniAsset using supported wrapper info; disableautoCooking onlyifcurrentlyenabled",
+    "minimal world/HDA/Landscape/nativeNetwork path and dirtypackage readback",
+    "report officialAPI/session readiness and loadedCopilot module presence without license/auth/session creation",
+    "remove bootstrap callback; leave root to acquire newPIDlease"
+  ],
+  "not_performed": [
+    "launch",
+    "Cook",
+    "nativeRebuild",
+    "generation",
+    "recovery/autosave package restore",
+    "map/asset copy or save",
+    "material/profile edit",
+    "lease change",
+    "module reload",
+    "geometry serialization/deep hashing ineditor"
+  ],
+  "preserved_current_state": [
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\AREA_PROFILE.json",
+      "bytes": 2324310,
+      "sha256": "419a1e8a1195356dccf3e010957a77b02ea02a51f8dcd4956fba7acc5abd10b4"
+    },
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\ROADBLD_DELIVERY.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\ROADBLD_DELIVERY.json",
+      "bytes": 2124678,
+      "sha256": "0cf135372a34c80993ecd148c260494260d0fbfeb8e6e690cf636e859052137d"
+    },
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\ROADBLD_WORKFLOW_STATE.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\ROADBLD_WORKFLOW_STATE.json",
+      "bytes": 4398238,
+      "sha256": "90b149283ec3394c19ce6ee6b18d27c099e92babe4941b99046efcba4abaebbf"
+    },
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\WORKFLOW_STATE.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\WORKFLOW_STATE.json",
+      "bytes": 270978,
+      "sha256": "8cf7a688f81d9ab178f89d0e1c29f01dedab39f81c4873a94fc34c2c99ad473b"
+    },
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "bytes": 22284595,
+      "sha256": "912312043e915c52d86ecbb402b2370dc16b8f18622cc6b376443bc81fcec9a9"
+    },
+    {
+      "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z\\RIMAL_AREA_PROFILE.json",
+      "bytes": 3366110,
+      "sha256": "f5b46440bf8f9e6523429c76fb38e57a379ff57e8288da4e78024b0169d51112"
+    }
+  ],
+  "baseline_manifest_verified": [
+    {
+      "name": "AREA_PROFILE.json",
+      "bytes": 2246242,
+      "sha256": "ce04f4d6b34daaf36a30a484d74574a440127aee36f1cacbeebedd98b734a880"
+    },
+    {
+      "name": "HDA_CATALOG_RECEIPT.json",
+      "bytes": 202370780,
+      "sha256": "730fc012db81cde199e067d34c33eda11076d189a0261ca7748106d01fbe9a2c"
+    },
+    {
+      "name": "L_GazaShujaiya_BankIntegration.umap",
+      "bytes": 39195123,
+      "sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7"
+    },
+    {
+      "name": "LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "bytes": 22284572,
+      "sha256": "729124235f3659efbe5b70cf76442a6a73559e5c770c90b0569fb4aff82dfd36"
+    },
+    {
+      "name": "ROADBLD_DELIVERY.json",
+      "bytes": 2124678,
+      "sha256": "0cf135372a34c80993ecd148c260494260d0fbfeb8e6e690cf636e859052137d"
+    },
+    {
+      "name": "ROADBLD_WORKFLOW_STATE.json",
+      "bytes": 3255586,
+      "sha256": "fabee57192a0bcebc436664bf79bab08d7c224113dbdb97bff1d8ee15d789a9e"
+    },
+    {
+      "name": "WORKFLOW_STATE.json",
+      "bytes": 22284595,
+      "sha256": "912312043e915c52d86ecbb402b2370dc16b8f18622cc6b376443bc81fcec9a9"
+    }
+  ],
+  "saved_map_unchanged_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+  "minimal_restore_policy": {
+    "completed": "OnlyHDA_CATALOG_RECEIPT restored byteexact fromverifiedbaseline afterfailedcopy/hash",
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_HDA_RECEIPT_RECONCILIATION.json",
+    "retained_unchanged": [
+      "AREA_PROFILE.json",
+      "ROADBLD_DELIVERY.json",
+      "LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "WORKFLOW_STATE.json",
+      "ROADBLD_WORKFLOW_STATE.json"
+    ],
+    "package_files": "No umap/assets/recoverypacks copiedoveroriginals. Originalmapbaseline unchanged.",
+    "next_run": "Newordinaryoperation afterrootnewPIDlease; newerlastsuccess supplies42priorHDAactorpaths,unchangednativedeliverypreviousownership136actors/89bindings/80deps perrootverifieddiagnosis; nocandidate87reconstruction."
+  },
+  "asphalt_style_plan_only": {
+    "asset": "/Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity",
+    "parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.MI_RoadBLD_Asphalt_Road_Worn",
+    "only_override": {
+      "MV_PatchMult": 1.0
+    },
+    "profile_targets": [
+      "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+      "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json"
+    ],
+    "profile_field": "roadbld_workflow.settings.road_material",
+    "implementation": "One sharedchildMI; confirm parent,onlyone local scalar override andeffective1.0, namedchild save. Change only selectedprofile setting afterpreserving originals. Let nextordinarygeneratedpresets/clippedbindings recordchild naturally; neverrewire failedorpriorclipledger orvendormaterial.",
+    "native_setting_hook": "geocity_bank_workflow.after_native_roads predecessor author_native_roads passes profile roadbld_workflow.settings to native.build; native defaults/ownedpresets set road/intersection material.",
+    "validation_after_authorization": "Read parent/override andprofilevalues; normalgeneration,named save,reopen andsame explicitcamera Litstreet review. Root decides when to regenerate eachnamedarea. No claim1.0 is visually accepted beforepixels.",
+    "assets_or_profiles_changed": false,
+    "material_family_guard": "Proposed child name contains road_worn case-insensitive; no exemption or guardchange."
+  },
+  "frozen_source_v5_preserved": true,
+  "new_authentication_or_bridge": false,
+  "safe_startup_configuration_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_SAFE_STARTUP_CONFIG_RECEIPT.json",
+  "early_plugin_pause": "Config/DefaultEngine.ini [/Script/HoudiniEngineRuntime.HoudiniRuntimeSettings] bPauseCookingOnStart=True; exactonlyonekey addition, bUseSessionSyncForAutomaticServer untouched; readbyHoudiniEngine.cpp257 beforePython.",
+  "autosave_protection": "Supported configUCLASS EditorPerProjectUserSettings,config bAutoSaveEnable; process scalaroverride premap, runtimeexplicitsetFalse ifTrue, priorruntime recorded; original userpolicyTrue restoreonlyaftermanagercleancompletion. NoSaveduserini edited.",
+  "recovery_protection": "Saved/Autosaves/PackageRestoreData.json RestoreEnabled true->false preserving encoding/allotherbytes/Packages; originalmanifest+4referencedautosaves copiedandhashed; originalautosavefilesuntouched. No recoveryimport/delete. NoautomaticTrueflagrestoration.",
+  "autobake": "Runtime read IsAutoBakeEnabled; iftrue stopwithEnginepaused,noBake orflagmutation.",
+  "configuration_reference": "https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine#overrideconfigurationfromthecommand-line",
+  "syntax_verification": {
+    "python": "compile-onlypassed",
+    "powershell": "ASTparsepassed",
+    "executed": false
+  },
+  "future_execution_requirement": "HeavyUObject/geometryreadbackandauthoring must usefreshobjects in persistentone-shotSlateGameThreadcallbacks withflushedBEFORE/AFTERbreadcrumbs. Existingordinarynativequeue stayscallbackbased. CrashwasGameThread; stagedjournalingisnotaprovencrashcure. Neverinvoke oldPID-specificresume/wrapper oroldp/r."
+}

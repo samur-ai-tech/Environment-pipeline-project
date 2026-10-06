@@ -1,0 +1,48 @@
+Recovery phase 2 - prepared only, not authorized or executed
+
+Prerequisite: the exact three retained recovery copies have passed PRESERVE_ONLY,
+including unchanged original buffers and disk packages. Text/FBX exports are
+evidence, not sufficient substitutes for native package preservation.
+
+First prove recovery disk deserialization while all original buffers remain:
+1. Verify current PID, original world, paused/auto-off state, exact dirty originals,
+   recovery file hashes and the preservation receipt.
+2. Use installed EditorLoadingAndSavingUtils.reload_packages on only the three
+   newly saved CLEAN recovery packages, with ASSUME_NEGATIVE. Do not include any
+   original package or map. The installed FileHelpers.h contract says the result
+   indicates whether loaded packages changed; also inspect the error text.
+3. Find the reloaded recovery objects by exact paths. Compare all retained state,
+   complete normalized exported properties, raw LOD geometry/UVs, exported corner
+   attributes and copied material references against the preservation receipt.
+4. Verify all original buffers/protected disk files remain exact and no new dirty
+   packages/maps or callbacks appear. Only then claim native recovery readback.
+
+Next choose one separately authorized original-buffer recovery:
+A. Scoped original package reload. Close only asset editors that reference these
+   exact three originals, then reload only these packages using ASSUME_POSITIVE.
+   This explicitly discards their unsaved buffers and must not be hidden inside
+   a read-only step. Recovery packages must already have proven disk readback.
+   Check exact disk/source state and dirty set after the operation.
+B. Orderly no-save process restart. With all unsaved work preserved and no unknown
+   dirty package/map, close this exact editor without saving originals. Confirm
+   process exit and original file hashes. Start the original named map with the
+   reviewed paused launcher and updated manager/source identities, verify fresh
+   startup, and acquire a new actual-PID bank content checkpoint.
+
+Installed evidence:
+C:/Program Files/Epic Games/UE_5.8/Engine/Source/Editor/UnrealEd/Public/FileHelpers.h
+lines 167-176: reload specified top-level packages and return change/error result.
+C:/Program Files/Epic Games/UE_5.8/Engine/Source/Editor/UnrealEd/Public/PackageTools.h
+lines 19-28: Interactive asks; AssumePositive/AssumeNegative are non-interactive
+positive/negative answers. Neither enum is a claim that a dirty reload is safe.
+The native Python runtime exposes all three enum values and reload_packages.
+
+Recommendation: prove recovery-copy disk readback first, then use a reviewed
+no-save fresh restart. Existing PID32508 has old native_bank_ops cached, while the
+manager-requested bank-local successor/activation guard patch changed its file.
+The new strict category loader must reject stale cached code; a package reload
+alone cannot repair that Python code identity. No hot reload is proposed.
+
+No shutdown, close, reload, original save, original revert, or content activation
+has been performed by this document. The manager chooses and activates exact
+phase-2 operations after reviewing PRESERVE_RESULT.json.

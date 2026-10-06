@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 757,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0046_Foodcrate"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.033,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__003\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 757,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__003\"]}"
+    }
+   ]
+  }
+ }
+}

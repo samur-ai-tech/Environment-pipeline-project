@@ -1,0 +1,120 @@
+{
+  "schema": "environmentpipeline.task3_fresh_license_handling_review.v1",
+  "status": "FROZEN_SOURCE_AND_EXPLICIT_NEW_OPERATION_REVIEWED_NO_BLOCKERS",
+  "utc": "2026-10-03T20:42:28.750359+00:00",
+  "scope": "Independent filesystem/source/AST/receipt review only; only TASK3_LICENSE_REVIEW outputs editable. No editor/source/moduleexecution/SDKretry. Frozen v5review andcrashreview preserved.",
+  "fresh_revision": "20261003T203730573110",
+  "pid": 21780,
+  "first_dispatch_stop": {
+    "phase": "failed_authoring",
+    "exact_error": "Native rebuild dispatch failed: RoadBLDToolset: The RoadBLD license check is still running. Retry in a few seconds.",
+    "installed_API": "RoadBLDBuildToolset.cpp64-95 checks authorization andreturnsResult immediately before Networks/jobStart when denied. Thus exactpending accesserror is prior tobuildjob start; sessionvalid/licenseTrue earlier is not proofthatSDKasyncaccesscheckhascompleted.",
+    "guarded_once_retry_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_fresh_dispatch_retry_20261003T203838955104Z.json",
+    "sha256": "d386fcf97cd3df2ff70162a8cd2610cd59919c439aab6a2d3a3554a3c2c6af2c",
+    "measured": "SamePID/revision/token/network,40existinguniqueroads,cursor40,pass0,jobNone,noDerived/noClipping,allcontrolsverifiedandnoownedgeometry. Retriedsameofficialrequestonce; actualjob19d5d010-47eb-c755-b729-9c81554ef290/pass1 thenexistingqueue. No newCook/network/roads.",
+    "source_review": "fresh_dispatch_retry_21780.py read; no sourcereload/SDKbypass/thresholdchange. This was guardedmanualcontinuation, notproofordinarysource already handlespendingdispatch automatically."
+  },
+  "connector_edit_stop": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_fresh_junction_stop_20261003T203938737856Z.json",
+    "sha256": "9185a64b0768f47b7ec208c8d37536b91fad003224f41f237a0a1ae474954427",
+    "phase": "failed_rebuilding",
+    "operation": {
+      "step": "connector_controls",
+      "task_index": 0,
+      "attempts": 1,
+      "calls": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Logs\\Environmentpipeline.log",
+          "start_byte": 476884,
+          "end_byte": 476884,
+          "suffix": "",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_pending_license": false,
+          "result_network": ""
+        }
+      ],
+      "deadline_monotonic": 167732.562,
+      "retry_at_monotonic": null
+    },
+    "actual_owned_state_sha256": "8243ff4385644613279a4a2a49870f6d07f6355883a9842106efc42b26a78fe0",
+    "before_sha256": "8243ff4385644613279a4a2a49870f6d07f6355883a9842106efc42b26a78fe0",
+    "expected_after_sha256": "f3acae16bcddd92f72f1ada85fae1e64d5a6e0eae5ea512d476152f88abe995a",
+    "independent_exact_actual_equals_before": true,
+    "independent_actual_differs_expected_after": true,
+    "derived_actor": "DynamicRoad_86",
+    "connector_control_count": 0,
+    "connector_links": {
+      "Start": [],
+      "End": []
+    },
+    "source_roads": 40,
+    "native_geos": 83,
+    "rebuild_pass": 1,
+    "global_defaults_restored": true,
+    "callbacks_stopped": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native_tick": false
+    },
+    "official_valid": true,
+    "official_paused": true,
+    "autosave": false,
+    "map_saved": false,
+    "immediate_call_capture": "start=end476884,emptysuffix,exact_pending_license=False,result_networkempty. Frozenhelpercorrectlyfailedclosed.",
+    "later_log_evidence": "Currentlogbytesstarting476884 contain20:38:49.167 exactLogScriptpendinglicensewarning andSetControlPoints functioncontext,followed20:38:49.385 helperfailure. Laterlogisdiagnostic only; it cannotretroactivelysatisfyfreshsynchronouscallwindow orauthorizeSDKretry.",
+    "cause_status": "Delayedlogavailability/flush timing consistentwithmeasurement; preciseinternal loggercause notestablished.",
+    "deadline": "Existingoperation60-second monotonicdeadline retainedinreceipt. A sourcerepairmustnot silentlyreset it or reuse laterwarning as freshcallauthorization."
+  },
+  "source_review_focus": [
+    "New capturemustbound exact synchronousSDKcall withreliable pre/postlogdrain orsupportedtypedresult; cannotreuseoldlogwarning, broadenerrors, or guesspendingfromelapsedtime.",
+    "Everyretry mustprovably preservecompleteownedparticipant/network/defaultstate and requiredsourcegeometry; finalexpectedafterstate reconciles completedcall withoutduplicateedit.",
+    "Retain1sretry/60sdeadline and no tightSDKloop; source mustworkgenerically forordinaryfirstandlaterdispatchphases, nothardcodedcurrentroads.",
+    "Anyadoptionofstoppedcurrentoperationmustretainoriginalfailure/checkpoint evidence andexplicitlyshowstate/deadline treatment; noambiguouspartialeditreplay.",
+    "Grounding andclipping hashfreezeunchanged; finalpostclip/interior/exterior/height gatesretainallpriorrequirements."
+  ],
+  "not_yet_reviewed": "Task1 newsource/finalhashes andtask2newcontinuationshavenotarrived. Noapprovalofunseenpatch.",
+  "source_blocking_findings": [],
+  "editor_calls": 0,
+  "previous_review_hashes": {
+    "TASK3_REVIEW_RESULT.json": "ebbc7799accefb6081149c34f1430871596b6c25dda3fb5e157abde5156051b5",
+    "TASK3_CRASH_REVIEW.json": "a5830d543d78854ac389a52a6b62658a01178130046e517f0ec25166b9c26f33"
+  },
+  "reviewed_utc": "2026-10-03T20:53:17.054181+00:00",
+  "blocking_findings": [],
+  "source_handoff_sha256": "046bc0a77116dd997e3859a31a5f81e2b15feb26e514b543ff3a6ef2616e7219",
+  "source_hashes": {
+    "geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "geocity_roadbld_workflow.py": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+    "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+    "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211"
+  },
+  "independent_AST_changes": {
+    "geocity_roadbld_junctions.py": [
+      "_call_with_log",
+      "_edit_step"
+    ],
+    "geocity_roadbld_workflow.py": [
+      "RoadBLDRun.request_rebuild",
+      "RoadBLDRun.tick"
+    ]
+  },
+  "continuation_wrapper_sha256": "883f47b936967b17d773a9c86b48c9fcfe65db9b4833fdf1d61af65eb7925947",
+  "independent_source_review": [
+    "Junction log capture flushes installed unreal.log_flush before cursor and immediately after the single SDK call; preserves byte cap and prefix anchor. Requires exact single complete pending warning, no other warning/error/fatal/native diagnostic, default native denial result, unchanged participant state and restored defaults.",
+    "Installed UE 5.8 unreal_core.py lines 3,21,44-45,58-59 independently read: native log_flush export and stdout/stderr flush adapter exist. Actual capture effectiveness remains unverified in the editor.",
+    "Installed RoadBLDBuildToolset.cpp lines 40-49 and 72-95 independently read: exact current-result authorization error returns before job Start. New dispatch handles only that complete exact error, snapshots before/after, verifies unchanged token/revision/arguments/state on retries, preserves initial 60-second deadline and one-second delay. A valid returned job advances pass once. Other failure/incomplete result fails closed.",
+    "All request_rebuild call sites and waiting_rebuild_license tick branch reviewed: no caller overwrites the pending phase; later retries do not re-author roads, replay junction steps or rerun alignment changes.",
+    "Only four functions changed by independent AST comparison. Grounding and clipping match the frozen v5 hashes. No source gate relaxation or authentication bypass found."
+  ],
+  "independent_continuation_review": {
+    "result": "No blocking source finding for this exact wrapper and root-authorized new intent; reviewer did not activate or execute it.",
+    "archive_sha256": "5ef0a305f6825f5c726b760c20e406484052f539b4049075ea20fbd078578e0e",
+    "latest_stop_sha256": "dcc00c4b19f7706fbf1f0e327ce64ff122d9211348d66f98f28b3355c2dbc74f",
+    "preservation": "Requires sole PID21780/worker lease and explicit assignments activation, source/review/archive hashes; exact current parent/native identities, revision/token/network, pass1/job, 40 sources plus existing empty connector, stopped phases, zero callbacks, dirty package set and complete road/network checkpoint. Saves full prior states and immutable expired operation before replacing only the current intent.",
+    "new_intent": "Old deadline167732.562 is required expired and retained unchanged in the archived operation. New zero-attempt intent derives the same exact expected-after from the unchanged checkpoint at connector_controls/task0/step1, separately records a new 60-second deadline and links the prior evidence. This is explicit root-authorized continuation, not automatic deadline extension or use of the delayed warning.",
+    "class_refresh": "Isolated module evaluation, identical existing method signatures, same ACTIVE list and native object, unchanged per-attribute identities/state hash; changes class without constructor/reset, then reloads junction helper. Post-refresh participant equality is checked before new-intent transition.",
+    "lifecycle": "Heavy work runs in one-shot Slate callback. Existing parent delegates/watch and native tick resume after intent persistence; no new initial Cook/network/source roads or completed first rebuild. Normal bank bake_and_save installs the post-bake delegate later. Observation hooks journal calls and restore after existing termination cleanup.",
+    "qualification": "Participant snapshot covers authored roads/network, controls, reciprocal links, widths, presets/material policy, radius limits and defaults. It is not a complete native mesh/component geometry or collision fingerprint, despite broader wording in TASK2 preparation. Existing unchanged downstream grounding/clipping/geometry checks remain required."
+  },
+  "verification_limits": "Filesystem/source/AST and receipt review only. Task1 fake-object replay results are reported by task1, not independently executed. No production import/evaluation, editor call, live retry, Cook/Bake, asset save or final visual acceptance performed by reviewer."
+}

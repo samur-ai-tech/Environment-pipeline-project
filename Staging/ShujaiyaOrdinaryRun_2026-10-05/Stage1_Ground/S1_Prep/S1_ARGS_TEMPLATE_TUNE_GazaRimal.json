@@ -1,0 +1,151 @@
+{
+ "schema": "environmentpipeline.s1_material_edit.args.v2",
+ "_note": "TEMPLATE, not runnable. Second-area session (Rimal map open, its own root activation/PID) AFTER the Shujaiya master save: mode=tune (phase b; apply_receipt + save_receipt + state_receipt = the latest S1 state receipt: the save receipt or a later child_save/tune receipt), capture/review, then mode=child_save with state_receipt = that tune receipt. Values moved unchanged from the r1 two-area template (INFERRED). grass_coverage: r031 MEASURED Rimal 0.0; only 0.0 is accepted.",
+ "mode": "tune",
+ "label": "s1_rimal_t001",
+ "root_activation": "<abs path of the root-written Stage1_Ground/S1_ROOT_ACTIVATION_<...>.json (not under S1_Prep)>",
+ "root_activation_sha256": "<sha256>",
+ "expected_pid": 0,
+ "script_sha256": "<sha256 of the reviewed s1_material_edit.py (must equal the activation script_sha256)>",
+ "executed_script_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/s1_material_edit.py",
+ "operator_preconditions": {
+  "no_asset_editors_open_on_s1_assets": false
+ },
+ "backup_manifest": "<abs path, e.g. .../Stage1_Ground/S1_Prep/Before/S1B_<UTC>/BACKUP_MANIFEST.json>",
+ "backup_manifest_sha256": "<sha256>",
+ "inspect_receipt": null,
+ "inspect_receipt_sha256": null,
+ "apply_receipt": null,
+ "apply_receipt_sha256": null,
+ "state_receipt": null,
+ "state_receipt_sha256": null,
+ "save_receipt": null,
+ "save_receipt_sha256": null,
+ "child_save_receipts": [],
+ "visual_review_receipt": null,
+ "visual_review_receipt_sha256": null,
+ "visual_review_waiver": null,
+ "unattributed_log_ack": null,
+ "contact_band_acknowledged": false,
+ "variation_reviewed": false,
+ "areas": [
+  "GazaRimal"
+ ],
+ "grass_coverage": {
+  "GazaRimal": 0.0
+ },
+ "child_values": {
+  "GazaRimal": {
+   "textures": {
+    "GeoCity_S1_MacroNoise": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk",
+    "GeoCity_S1_GroundB_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col",
+    "GeoCity_S1_GroundB_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm",
+    "GeoCity_S1_GroundC_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col",
+    "GeoCity_S1_GroundC_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm",
+    "GeoCity_S1_Soil_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+    "GeoCity_S1_VariationMask": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk",
+    "GeoCity_S1_VariationNormal": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm",
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm"
+   },
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.06,
+     1.01,
+     0.94,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.98,
+     0.97,
+     0.98,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.12,
+     1.08,
+     1.04,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.4,
+     1.36,
+     1.32,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     2.3,
+     2.15,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     2.2,
+     2.1,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.95,
+     1.9,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 23300.0,
+    "GeoCity_S1_HueAmount": 0.8,
+    "GeoCity_S1_ValueAmount": 0.14,
+    "GeoCity_S1_FarSaturation": 1.15,
+    "GeoCity_S1_FarValue": 0.92,
+    "GeoCity_S1_FarAmount": 0.75,
+    "GeoCity_S1_GroundB_TileCm": 450.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.45,
+    "GeoCity_S1_GroundB_NormalStrength": 0.6,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.6,
+    "GeoCity_S1_GroundC_NormalStrength": 0.6,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.3,
+    "GeoCity_S1_PatchLo": 0.45,
+    "GeoCity_S1_PatchHi": 0.65,
+    "GeoCity_S1_SteepLo": 0.25,
+    "GeoCity_S1_SteepHi": 0.45,
+    "GeoCity_S1_SteepJitter": 0.15,
+    "GeoCity_S1_SteepSlopeMix": 0.5,
+    "GeoCity_S1_SteepStones": 0.35,
+    "GeoCity_S1_HeightBias": 0.85,
+    "GeoCity_S1_HeightContrast": 3.0,
+    "GeoCity_S1_HeightAmount": 0.8,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.7,
+    "GeoCity_S1_RoughVar": 0.08,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0
+   }
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1804,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/PGB_Meshes/B87_Win_Wall_2_5x3_Corner_Set"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Material/Bricks_Sloppy_INST_2\",\"/Game/ProceduralBuildingGenerator/Material/Tiles02_INST\",\"/Game/ProceduralBuildingGenerator/Material/Win_Aluminium2\",\"/Game/ProceduralBuildingGenerator/Material/Win_Aluminium4\",\"/Game/ProceduralBuildingGenerator/Material/Glass_inst\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1804,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Material/Bricks_Sloppy_INST_2\",\"/Game/ProceduralBuildingGenerator/Material/Tiles02_INST\",\"/Game/ProceduralBuildingGenerator/Material/Win_Aluminium2\",\"/Game/ProceduralBuildingGenerator/Material/Win_Aluminium4\",\"/Game/ProceduralBuildingGenerator/Material/Glass_inst\"]}"
+    }
+   ]
+  }
+ }
+}

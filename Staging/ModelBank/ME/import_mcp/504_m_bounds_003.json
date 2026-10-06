@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 29,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0904_Slum_v_fbx.SM_H0904_Slum_v_fbx"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.33,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-372.3182373046875,\"y\":-220.40586853027344,\"z\":-3.2835440635681152},\"max\":{\"x\":253.31060791015625,\"y\":298.55117797851562,\"z\":513.70306396484375},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 29,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-372.3182373046875,\"y\":-220.40586853027344,\"z\":-3.2835440635681152},\"max\":{\"x\":253.31060791015625,\"y\":298.55117797851562,\"z\":513.70306396484375},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "environmentpipeline.capture_viewmode_correction.v1",
+  "measured_utc": "2026-10-05T01:34:46.502216+00:00",
+  "pid": 30632,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "active_key": "FourPanes2x2.Viewport 1.Viewport1",
+  "actual_view_mode": "VMI_UNLIT",
+  "actual_enum_value": 2,
+  "matching_wide_camera": [-31348.597100, -31348.597100, 50452.645326],
+  "native_readback": "VIEWMODE_BEFORE_PID30632.json",
+  "error": "The earlier native_capture.py requested 'viewmode lit' through SystemLibrary console execution, but never read back the active editor view mode. Its recorded viewmode='Lit' was a request label, not measured state.",
+  "prior_capture_qualification": "All captures produced by the previous helper lack measured Lit proof. The current matching r009 wide capture is measured Unlit. Earlier capture mode must not be presented as verified Lit or used as final lighting, normal, roughness, shadow, or visual acceptance evidence.",
+  "evidence_preservation": "Original capture files and receipts are retained unchanged. Earlier parameter/graph/native transform readbacks remain separate valid observations. The no-change roughness and reduced-normal image comparisons do not establish those channels' behavior under actual Lit rendering.",
+  "correction": "Use the installed AutomationLibrary SetEditorActiveViewportViewMode(VMI_LIT) and GetEditorActiveViewportViewMode. Require actual VMI_LIT readback and the unchanged active camera key before each new screenshot, followed by matching native camera metadata.",
+  "replacement_capture_helper_sha256": "6c3ed43847aed4da0dad36b76efb5935f97eebbf52a6b93a9373e99330e0c7d4",
+  "lighting_actor_or_scene_edits": false,
+  "user_informed": true,
+  "final_appearance_or_persistence_claim": false
+}

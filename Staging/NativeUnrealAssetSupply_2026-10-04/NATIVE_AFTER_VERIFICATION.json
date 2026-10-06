@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "checks": [
+    "first_apply_reexports_all_rows_after_named_save_and_hash_binds_full_receipt",
+    "idempotent_apply_verifies_persisted_snapshot_without_save_or_shared_write",
+    "reject_native_after_transaction_sha256",
+    "reject_native_after_decision_sha256",
+    "reject_native_after_pid",
+    "reject_native_after_table",
+    "reject_native_after_saved",
+    "reject_native_after_readback_after_named_save",
+    "reject_native_after_rows",
+    "reject_native_after_digest",
+    "reject_native_after_source_sha256",
+    "reject_native_after_csv_sha256",
+    "reject_native_after_native_table_package_sha256",
+    "reject_full_row_change_even_with_rebound_receipt_hash",
+    "reject_current_binary_change_catalog_v4_source.json",
+    "reject_current_binary_change_catalog_v4_full.csv",
+    "reject_current_binary_change_DT_EnvironmentBank_v4.uasset",
+    "reject_current_native_export_row_change",
+    "idempotent_retry_rejects_stale_receipt_hash",
+    "reject_legacy_metadata_only_APPLIED",
+    "prepared_callback_consumes_verified_saved_native_snapshot",
+    "prepared_callback_rejects_changed_DT_binary",
+    "post_save_row_mismatch_stops_before_source_csv_commit_and_APPLIED"
+  ],
+  "count": 23,
+  "native_execution_performed": false,
+  "shared_writes_performed": false,
+  "native_apply_and_prepared_callback_exercised_with_mocks_only": true,
+  "protected_files_unchanged": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_source.json": "440eba2ad088423d4fa6fd22b13d26d4b3e06b1c1be08dde3b9968fe2afd86b1",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_full.csv": "7f232e5e10efedb318646e427ba7c3272c1a9aa9fc2cdedb8f5cba3a2828a6ef",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankPreparation_2026-10-04\\PREPARED_BANK.json": "d39349a197dc4d74840f42808919c5f5bb6c12f1a20f47a066acd7fc24473ad0"
+  },
+  "command_manifest_sha256": "07fba21d0416c7dd14625ec75ccabe8ae3fd9a076bf3e6425d230819f54952d0",
+  "verification_source_sha256": "19e263d0ebaf2a50b836ea36cd6c4c42e1351bfce6d3bcf89a993fb1075304ad"
+}

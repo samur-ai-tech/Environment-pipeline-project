@@ -1,0 +1,311 @@
+{
+  "schema": "environmentpipeline.task4.landscape_export_diagnostic.v1",
+  "status": "READONLY_EXPORT_CONFIRMED_NATIVE_INACTIVE",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "scope": "Explicit bounded ObjectExporterT3D diagnostic only",
+  "lease": "2026-10-04T13:01:40.3846131Z OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a106e8-f85a-7a72-a010-e1cb28356e2b task=task4 assigned_editor_PID=5368 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only",
+  "pid": 5368,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+  "hda_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+  "wrapper_source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+  "loaded_module_hashes": {
+    "geocity_bank_workflow": "bcf1335e014cb8c89d9fef47d961009bcf4c6fde2fd34c42f7051fa4a1b490db",
+    "geocity_editor_action": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1",
+    "geocity_landscape_workflow": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+    "geocity_roadbld_clip": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+    "geocity_roadbld_grounding": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+    "geocity_roadbld_junctions": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+    "geocity_roadbld_landscape": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+    "geocity_roadbld_props": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+    "geocity_roadbld_seams": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "geocity_roadbld_topology": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+    "geocity_roadbld_workflow": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d",
+    "geocity_runtime_guard": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0"
+  },
+  "before_first_export": {
+    "utc": "2026-10-04T16:12:00.057603+03:00",
+    "pid": 5368,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+    "dirty_maps": [],
+    "dirty_content": [],
+    "cooking_paused": true,
+    "auto_cook": false,
+    "auto_bake": false,
+    "official_session_valid": false,
+    "active_runs": {
+      "geocity_bank_workflow": [],
+      "geocity_roadbld_workflow": []
+    }
+  },
+  "before_remaining_exports": {
+    "utc": "2026-10-04T16:13:21.057746+03:00",
+    "pid": 5368,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+    "dirty_maps": [],
+    "dirty_content": [],
+    "cooking_paused": true,
+    "auto_cook": false,
+    "auto_bake": false,
+    "official_session_valid": false,
+    "active_runs": {
+      "geocity_bank_workflow": [],
+      "geocity_roadbld_workflow": []
+    }
+  },
+  "exports": [
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACD1B0) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "split_identifier": "EditableLayer",
+      "part_name": "",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_0",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "exporter_class": "/Script/UnrealEd.ObjectExporterT3D",
+      "exception": null,
+      "filename": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\LandscapeOwnershipDiagnostic\\HoudiniLandscapeTargetLayerOutput_0.t3d",
+      "export_return": true,
+      "export_errors": [],
+      "used_first_validated_export": true,
+      "file_bytes": 2290,
+      "sha256": "7e788ec8d790c9d34a08edbf70051129fa9ec7b44bbf41129720f50d04343096",
+      "references": {
+        "Landscape": {
+          "exact_reference_line": "   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        },
+        "LandscapeProxy": {
+          "exact_reference_line": "   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        }
+      },
+      "exact_export_text": "Begin Object Class=/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput Name=\"HoudiniLandscapeTargetLayerOutput_0\" ExportPath=\"/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_0'\"\r\n   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   BakedEditLayer=\"Layer\"\r\n   CookedEditLayer=\"Layer\"\r\n   TargetLayer=\"height\"\r\n   Extents=(Max=(X=1008,Y=1008))\r\n   bCreatedLandscape=True\r\n   BakedLandscapeName=\"GazaShujaiya_landscape\"\r\n   LayerInfoObjects(0)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path'\"\r\n   LayerInfoObjects(1)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01'\"\r\n   LayerInfoObjects(2)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02'\"\r\n   LayerInfoObjects(3)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path'\"\r\n   BakeFolder=\"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos\"\r\nEnd Object\r\n"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AAC5320) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "split_identifier": "EditableLayer",
+      "part_name": "",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_1",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "exporter_class": "/Script/UnrealEd.ObjectExporterT3D",
+      "exception": null,
+      "filename": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\LandscapeOwnershipDiagnostic\\HoudiniLandscapeTargetLayerOutput_1.t3d",
+      "export_return": true,
+      "export_errors": [],
+      "file_bytes": 2291,
+      "sha256": "a7690a9d3eb9a26344ed8bc6befcd7fcbe2f579d23ff74943237e43127250273",
+      "references": {
+        "Landscape": {
+          "exact_reference_line": "   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        },
+        "LandscapeProxy": {
+          "exact_reference_line": "   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        }
+      },
+      "exact_export_text": "Begin Object Class=/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput Name=\"HoudiniLandscapeTargetLayerOutput_1\" ExportPath=\"/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_1'\"\r\n   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   BakedEditLayer=\"Layer\"\r\n   CookedEditLayer=\"Layer\"\r\n   TargetLayer=\"Sand_01\"\r\n   Extents=(Max=(X=1008,Y=1008))\r\n   bCreatedLandscape=True\r\n   BakedLandscapeName=\"GazaShujaiya_landscape\"\r\n   LayerInfoObjects(0)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path'\"\r\n   LayerInfoObjects(1)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01'\"\r\n   LayerInfoObjects(2)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02'\"\r\n   LayerInfoObjects(3)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path'\"\r\n   BakeFolder=\"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos\"\r\nEnd Object\r\n"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACA9B0) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "split_identifier": "EditableLayer",
+      "part_name": "",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_2",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "exporter_class": "/Script/UnrealEd.ObjectExporterT3D",
+      "exception": null,
+      "filename": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\LandscapeOwnershipDiagnostic\\HoudiniLandscapeTargetLayerOutput_2.t3d",
+      "export_return": true,
+      "export_errors": [],
+      "file_bytes": 2291,
+      "sha256": "fd2114c9d612bf1eea197733cae9d9b13194cf29f195ca3995f927f0b8086f54",
+      "references": {
+        "Landscape": {
+          "exact_reference_line": "   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        },
+        "LandscapeProxy": {
+          "exact_reference_line": "   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        }
+      },
+      "exact_export_text": "Begin Object Class=/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput Name=\"HoudiniLandscapeTargetLayerOutput_2\" ExportPath=\"/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_2'\"\r\n   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   BakedEditLayer=\"Layer\"\r\n   CookedEditLayer=\"Layer\"\r\n   TargetLayer=\"Sand_02\"\r\n   Extents=(Max=(X=1008,Y=1008))\r\n   bCreatedLandscape=True\r\n   BakedLandscapeName=\"GazaShujaiya_landscape\"\r\n   LayerInfoObjects(0)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path'\"\r\n   LayerInfoObjects(1)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01'\"\r\n   LayerInfoObjects(2)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02'\"\r\n   LayerInfoObjects(3)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path'\"\r\n   BakeFolder=\"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos\"\r\nEnd Object\r\n"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACE560) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "split_identifier": "EditableLayer",
+      "part_name": "",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_3",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "exporter_class": "/Script/UnrealEd.ObjectExporterT3D",
+      "exception": null,
+      "filename": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\LandscapeOwnershipDiagnostic\\HoudiniLandscapeTargetLayerOutput_3.t3d",
+      "export_return": true,
+      "export_errors": [],
+      "file_bytes": 2293,
+      "sha256": "ff6619283c1f454ee36af9675a839f1552aaa0a52863249f24d6042eec29c566",
+      "references": {
+        "Landscape": {
+          "exact_reference_line": "   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        },
+        "LandscapeProxy": {
+          "exact_reference_line": "   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        }
+      },
+      "exact_export_text": "Begin Object Class=/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput Name=\"HoudiniLandscapeTargetLayerOutput_3\" ExportPath=\"/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_3'\"\r\n   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   BakedEditLayer=\"Layer\"\r\n   CookedEditLayer=\"Layer\"\r\n   TargetLayer=\"Dirt_Path\"\r\n   Extents=(Max=(X=1008,Y=1008))\r\n   bCreatedLandscape=True\r\n   BakedLandscapeName=\"GazaShujaiya_landscape\"\r\n   LayerInfoObjects(0)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path'\"\r\n   LayerInfoObjects(1)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01'\"\r\n   LayerInfoObjects(2)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02'\"\r\n   LayerInfoObjects(3)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path'\"\r\n   BakeFolder=\"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos\"\r\nEnd Object\r\n"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACAE60) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "split_identifier": "EditableLayer",
+      "part_name": "",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_4",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "exporter_class": "/Script/UnrealEd.ObjectExporterT3D",
+      "exception": null,
+      "filename": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\LandscapeOwnershipDiagnostic\\HoudiniLandscapeTargetLayerOutput_4.t3d",
+      "export_return": true,
+      "export_errors": [],
+      "file_bytes": 2293,
+      "sha256": "9dfb468c534514999f69b815f7a4e1a4481d4200cc2fff202c88702525ffabe9",
+      "references": {
+        "Landscape": {
+          "exact_reference_line": "   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        },
+        "LandscapeProxy": {
+          "exact_reference_line": "   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"",
+          "native_class_reference": "/Script/Landscape.Landscape",
+          "exported_reference": "L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_loaded_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+          "resolved_class": "/Script/Landscape.Landscape",
+          "resolved_package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "resolution": "Exact full object path match against already loaded current-world actor enumeration; map-local export reference qualified by verified current map package"
+        }
+      },
+      "exact_export_text": "Begin Object Class=/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput Name=\"HoudiniLandscapeTargetLayerOutput_4\" ExportPath=\"/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_4'\"\r\n   Landscape=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   LandscapeProxy=\"/Script/Landscape.Landscape'L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape'\"\r\n   BakedEditLayer=\"Layer\"\r\n   CookedEditLayer=\"Layer\"\r\n   TargetLayer=\"Sand_Path\"\r\n   Extents=(Max=(X=1008,Y=1008))\r\n   bCreatedLandscape=True\r\n   BakedLandscapeName=\"GazaShujaiya_landscape\"\r\n   LayerInfoObjects(0)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Dirt_Path'\"\r\n   LayerInfoObjects(1)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_01'\"\r\n   LayerInfoObjects(2)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_02'\"\r\n   LayerInfoObjects(3)=\"/Script/Landscape.LandscapeLayerInfoObject'/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_Sand_Path'\"\r\n   BakeFolder=\"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos\"\r\nEnd Object\r\n"
+    }
+  ],
+  "errors": [],
+  "generation_authorized": false,
+  "generation_started": false,
+  "content_save_performed": false,
+  "protected_property_read_performed": false,
+  "source_edit_or_reload": false,
+  "after": {
+    "utc": "2026-10-04T16:13:21.093909+03:00",
+    "pid": 5368,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+    "dirty_maps": [],
+    "dirty_content": [],
+    "cooking_paused": true,
+    "auto_cook": false,
+    "auto_bake": false,
+    "official_session_valid": false,
+    "active_runs": {
+      "geocity_bank_workflow": [],
+      "geocity_roadbld_workflow": []
+    }
+  },
+  "state_clean_unchanged": true,
+  "resolved_official_landscape_paths": [
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape"
+  ],
+  "ownership_accounting": {
+    "live_landscapes": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape"
+    ],
+    "successful_baked_ledger_landscapes": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape"
+    ],
+    "official_export_bound_landscapes": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape"
+    ],
+    "unaccounted": [],
+    "diagnostic_only_no_retirement_authorization": true
+  },
+  "next": "Inactive for manager/task1 source-contract review; current protected-property lifecycle code was not changed or retried. Correction still requires review/reseal/fresh startup and separate native activation.",
+  "export_task_settings": {
+    "object": "Exact wrapper-returned object for each record",
+    "exporter": "unreal.ObjectExporterT3D()",
+    "automated": true,
+    "prompt": false,
+    "selected": false,
+    "replace_identical": false,
+    "options": "Not set",
+    "custom_exporter": false,
+    "content_destination": false
+  },
+  "disk_preservation_after": {
+    "utc": "2026-10-04T13:14:10.0233479Z",
+    "maps": [
+      {
+        "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+        "unchanged": true
+      },
+      {
+        "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+        "sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+        "unchanged": true
+      }
+    ],
+    "candidate_count": 87,
+    "candidate_sha256_mismatches": 0,
+    "hash_baseline": "DISK_RECONCILIATION.json",
+    "os_editor_pids": [
+      5368
+    ],
+    "lease": "2026-10-04T13:01:40.3846131Z OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a106e8-f85a-7a72-a010-e1cb28356e2b task=task4 assigned_editor_PID=5368 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only"
+  }
+}

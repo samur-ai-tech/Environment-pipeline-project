@@ -1,0 +1,16 @@
+Constant_0 [Constant] {"R": 1.0} 
+FunctionInput_0 [FunctionInput] {"InputName": "Opacity", "InputType": "FunctionInput_Scalar"} 
+FunctionOutput_1 [FunctionOutput] {"OutputName": "Opacity"} A<-StaticSwitchParameter_0:0
+LinearInterpolate_0 [LinearInterpolate]  A<-Multiply_28:0 B<-MaterialFunctionCall_5:0 Alpha<-MaterialFunctionCall_0:0
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "CameraDepthFade"} FunctionInputs[0].Input<-ScalarParameter_0:0 FunctionInputs[1].Input<-ScalarParameter_1:0
+MaterialFunctionCall_5 [MaterialFunctionCall] {"MaterialFunction": "DitherTemporalAA"} FunctionInputs[0].Input<-Multiply_5:0
+Multiply_28 [Multiply]  A<-StaticSwitchParameter_1:0 B<-PerInstanceFadeAmount_1:0
+Multiply_5 [Multiply]  A<-Multiply_28:0 B<-OneMinus_0:0
+OneMinus_0 [OneMinus]  Input<-MaterialFunctionCall_0:0
+PerInstanceFadeAmount_1 [PerInstanceFadeAmount]  
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_CameraFadeRange", "DefaultValue": 5000.0, "Group": "DistanceCulling"} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_CameraFadeOffset", "Group": "DistanceCulling"} 
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_UseDepthFade", "Group": "DistanceCulling"} A<-LinearInterpolate_0:0 B<-Multiply_28:0
+StaticSwitchParameter_1 [StaticSwitchParameter] {"ParameterName": "MW_UseSolidOpacity", "Group": "DistanceCulling"} A<-Constant_0:0 B<-FunctionInput_0:0
+MF_MWAM_Opacity [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_OpacityEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_OpacityEditorOnlyData [MaterialFunctionEditorOnlyData]  

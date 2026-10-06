@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 120,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_AlbedoTransparency_1001_e15ff2bc3f44"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.334,
+ "isError": null,
+ "text": "{\"returnValue\":\"Texture2D\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 120,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"Texture2D\"}"
+    }
+   ]
+  }
+ }
+}

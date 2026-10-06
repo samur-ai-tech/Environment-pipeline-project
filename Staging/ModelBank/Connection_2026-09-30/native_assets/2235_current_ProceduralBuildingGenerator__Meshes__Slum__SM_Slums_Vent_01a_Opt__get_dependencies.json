@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2245,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01a_Opt"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_2P\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood_Inst\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_PipeA\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2245,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_2P\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood_Inst\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_PipeA\"]}"
+    }
+   ]
+  }
+ }
+}

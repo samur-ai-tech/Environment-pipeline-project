@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-04T18:10:15.293568+00:00",
+  "scope": "Bookkeeping and cross-owner references only; all task1 implementation/test/patch/profile-proposal bytes unchanged",
+  "preserved_previous_receipts": "ReceiptRefresh/20261004T181015Z",
+  "changed_interfaces": [
+    {
+      "file": "Staging/IranBuildingAdaptation_2026-10-04/ConsumerIntegration/INTEGRATION_MANIFEST.json",
+      "before_sha256": "4edfc0cebe9b0a6582d7e34aaad40ca606e73557164945f5c66c901bc2e7579d",
+      "sha256": "942a20d5552895b176db4e74ba1f60bd038196f7d723b11c11ab1258767f43d3"
+    }
+  ],
+  "refreshed_test_samples": [
+    {
+      "file": "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json",
+      "before_sha256": "6dccbcb0d2e6d7341be93614eeab7dea7aa29c7df60c62efcd99fbc47fc35176",
+      "sha256": "dfabb100f7ad2e2c77712b6a442a89e7ea44feb9c7356efe43baaad70030bfab",
+      "kind": "Owner regenerated classified test sample; synthetic geometry, no native evidence"
+    }
+  ],
+  "focused_offline_checks_rerun": 36,
+  "retained_prior_regression_checks": 18,
+  "joint_owner_report": "Combined staging context/source-loader checks reported PASS; this refresh verifies exact referenced bytes. It does not rerun Houdini or native checks.",
+  "qualification_status": {
+    "owner_reported_accepted": 0,
+    "owner_reported_rejected": 10
+  },
+  "runtime_changed": false,
+  "native_actions": false,
+  "hda_actions": false,
+  "activation": false,
+  "joint_staging_references": {
+    "Staging/PipelineSemanticRepair_2026-10-04/Completion/COMBINED_STAGING_VERIFICATION.json": "1cae6ea8cfa39f64991163f5e6cfd5ebc2fea5e1a7a21f63339fc5f049c97bc2",
+    "Staging/PipelineSemanticRepair_2026-10-04/Completion/COMBINED_PAYLOAD.json": "bc6a721a3ec670c41ee7050eb35443029530ce43cc82d3d91add4f800ccda2ba",
+    "Staging/PipelineSemanticRepair_2026-10-04/Completion/geocity_city_module_combined_candidate.py": "02b770b47e7a4bc79f852f55e2f1ac1ab9001dbc13a8a97eeab1cdbe2a1bac15",
+    "Staging/PipelineSemanticRepair_2026-10-04/Completion/geocity_city_module_semantic_consumer_candidate.py": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+    "Staging/IranBuildingAdaptation_2026-10-04/ConsumerIntegration/BUILDING_CONSUMER_APPEND.py": "2ade857877d5a3f453dd009b596192993c068b6780700dff1c770328eb5e05b2",
+    "Staging/IranBuildingAdaptation_2026-10-04/ConsumerIntegration/INTEGRATION_MANIFEST.json": "942a20d5552895b176db4e74ba1f60bd038196f7d723b11c11ab1258767f43d3"
+  },
+  "candidate_sha256_unchanged": "bf0ddff109964fe5c93a629bbcc149fb7887d317648f18dec8d2342c3c6d9c6f",
+  "patch_sha256_unchanged": "0c132d16751b45e66430a0b3fdde2bb786311e9800611b2fc5a3925a292df633",
+  "updated_handoff_sha256": "54871774c95300b8de3c0c8b25c3b00314bfacc3e6fadc6731ae33fb12517a7a"
+}

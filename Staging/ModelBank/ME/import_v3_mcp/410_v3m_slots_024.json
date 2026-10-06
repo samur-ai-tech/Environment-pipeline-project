@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 156,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0058_Gaz.SM_H0058_Gaz"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Street Props Pack _010\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 156,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Street Props Pack _010\"]}"
+    }
+   ]
+  }
+ }
+}

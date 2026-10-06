@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 180,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vehicles/SM_H0039_Destryoedcar.SM_H0039_Destryoedcar"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Street Props Pack _009\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 180,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Street Props Pack _009\"]}"
+    }
+   ]
+  }
+ }
+}

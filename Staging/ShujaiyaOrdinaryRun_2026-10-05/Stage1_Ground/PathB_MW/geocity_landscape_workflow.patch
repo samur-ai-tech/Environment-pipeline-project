@@ -1,0 +1,53 @@
+--- a/Content/Python/geocity_landscape_workflow.py
++++ b/Content/Python/geocity_landscape_workflow.py
+@@ -208,11 +208,41 @@
+     return paths
+ 
+ 
++def _external_material(profile):
++    """Grass-free area ground MI on a non-Natural parent chain (Path B).
++
++    Fails before Cook if the profile-bound MI is missing, outside this area,
++    re-parented, or has a pinned Grass/scatter switch turned back on. The
++    Natural master, base MI, Grass Type and normal copies are not touched.
++    """
++    spec = profile['external_landscape_material']
++    path = profile['landscape_material']
++    material = unreal.load_asset(path)
++    if (not isinstance(material, unreal.MaterialInstanceConstant) or _path(material) != path
++            or not path.startswith(profile['root'] + '/Materials/')):
++        raise RuntimeError('External ground material must be an existing area material instance: ' + str(path))
++    chain, parent = [], material.get_editor_property('parent')
++    while parent is not None and len(chain) < 8:
++        chain.append(_path(parent))
++        parent = parent.get_editor_property('parent') if isinstance(parent, unreal.MaterialInstance) else None
++    if chain != list(spec['parent_chain']) or BASE in chain or MASTER in chain:
++        raise RuntimeError('External ground material parent chain differs from the profile: ' + str(chain))
++    switches = list(spec['static_switches_false'])
++    known = {str(name) for name in LIB.get_static_switch_parameter_names(material)}
++    bad = [n for n in switches if n not in known or LIB.get_material_instance_static_switch_parameter_value(material, n)]
++    if bad:
++        raise RuntimeError('External ground material Grass/scatter switches must exist and stay off: ' + str(bad))
++    return {'enabled': False, 'provider': 'external_landscape_material', 'material': path,
++            'parent_chain': chain, 'static_switches_false': switches}
++
++
+ def prepare(run):
+     """Idempotently bind grass before official generation; save exact shared assets."""
+     run.guard()
+     config = run.p.get('landscape_grass')
+     if not config or not config.get('enabled'):
++        if run.p.get('external_landscape_material'):
++            return _external_material(run.p)
+         return {'enabled': False, 'provider': 'retained_HDA_native_instances'}
+     config = _config(run.p)
+     paths = _permitted(run.p, config)
+@@ -409,6 +439,8 @@
+     appearance are deliberately separate. This never moves a camera or cooks.
+     """
+     run.guard()
++    if not run.p.get('landscape_grass', {}).get('enabled'):
++        raise RuntimeError('verify_landscape applies only to the Natural/Grass ground contract; this profile disables it.')
+     config = _config(run.p)
+     if _path(landscape.get_editor_property('landscape_material')) != run.p['landscape_material']:
+         raise RuntimeError('Geographic Landscape material binding is missing.')

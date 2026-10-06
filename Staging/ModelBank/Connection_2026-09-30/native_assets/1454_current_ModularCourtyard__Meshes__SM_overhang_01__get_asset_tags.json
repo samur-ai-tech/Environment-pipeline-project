@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1464,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularCourtyard/Meshes/SM_overhang_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"105x195x95\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/1_Project/!Modular_biulding/Export/SM_overhang_01.fbx\\\", \\\"Timestamp\\\" : \\\"1682186463\\\", \\\"FileMD5\\\" : \\\"9e76f486dd429ac98401718769728a6b\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"3\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NeverStream\":\"False\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"384\",\"UVChannels\":\"2\",\"Vertices\":\"461\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1464,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"105x195x95\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/1_Project/!Modular_biulding/Export/SM_overhang_01.fbx\\\", \\\"Timestamp\\\" : \\\"1682186463\\\", \\\"FileMD5\\\" : \\\"9e76f486dd429ac98401718769728a6b\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"3\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NeverStream\":\"False\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"384\",\"UVChannels\":\"2\",\"Vertices\":\"461\"}}"
+    }
+   ]
+  }
+ }
+}

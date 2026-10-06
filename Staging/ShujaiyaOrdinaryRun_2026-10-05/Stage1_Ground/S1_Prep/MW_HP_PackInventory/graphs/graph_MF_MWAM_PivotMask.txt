@@ -1,0 +1,8 @@
+Constant_3 [Constant] {"R": 64.0} 
+Distance_0 [Distance]  A<-WorldPosition_0:0 B<-MaterialFunctionCall_6:1
+Divide_0 [Divide]  A<-Distance_0:0 B<-Constant_3:0
+FunctionOutput_0 [FunctionOutput] {"OutputName": "PivotMask"} A<-Divide_0:0
+MaterialFunctionCall_6 [MaterialFunctionCall] {"MaterialFunction": "ObjectPivotPoint"} 
+WorldPosition_0 [WorldPosition]  
+MF_MWAM_PivotMask [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_PivotMaskEditorOnlyData", "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_PivotMaskEditorOnlyData [MaterialFunctionEditorOnlyData]  

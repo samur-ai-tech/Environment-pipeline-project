@@ -1,0 +1,506 @@
+{
+ "schema": "environmentpipeline.readonly_visual_capture.v1",
+ "status": "COMPLETE_current_view_captures_only",
+ "agent": "Claude Code visual-check subagent (session cc37d4d2-3d62-4f53-b689-28432b5527ae)",
+ "editor_pid": 10460,
+ "only_unreal_editor_process": true,
+ "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+ "state_note": "[measured from files] Brief said cooked/unbaked/unsaved; actual state at 16:17Z: chat 01a10c77 saved Bake + map (16:15:15Z), reopened map (16:16:02Z), RESULT status BUILDINGS_GENERATED_SAVED_REOPENED, EDITOR_OWNER last line OWNER=NONE released_by=01a10c77 at 16:17:11Z.",
+ "counts_measured_live": {
+  "actors_total": 779,
+  "landscape_count": 1,
+  "landscape": "GazaShujaiya_landscape, LandscapeMaterial=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+  "houdini_asset_actor_count": 1,
+  "baked_container_actors": {
+   "Engine.Actor_with_ISM": 387,
+   "StaticMeshActor": 112
+  },
+  "ism_components_total": 386,
+  "ism_component_classes": {
+   "InstancedStaticMeshComponent": 381,
+   "HierarchicalInstancedStaticMeshComponent": 5
+  },
+  "hism_components_meshes": [
+   "SM_Thicket_03_G",
+   "SM_utility_pole_5",
+   "SM_Thicket_02_G",
+   "SM_Grass_05_2",
+   "SM_Grass_02_3"
+  ],
+  "modular_ism_components": 337,
+  "modular_hism_components": 0,
+  "modular_ism_instances": 6567,
+  "modular_single_staticmeshactor_parts": 110,
+  "modular_instances_total": 6677,
+  "modular_families_placed": 17,
+  "instances_by_family": {
+   "H0917": 1972,
+   "H0923": 1775,
+   "H0927": 736,
+   "H0929": 456,
+   "H0930": 400,
+   "H0911": 306,
+   "H0920": 300,
+   "H0924": 100,
+   "H0910": 84,
+   "H0931": 84,
+   "H0909": 84,
+   "H0925": 75,
+   "H0919": 75,
+   "H0921": 72,
+   "H0018": 60,
+   "H0021": 50,
+   "H0926": 48
+  },
+  "top5_families_by_instances": [
+   [
+    "H0917",
+    1972
+   ],
+   [
+    "H0923",
+    1775
+   ],
+   [
+    "H0927",
+    736
+   ],
+   [
+    "H0929",
+    456
+   ],
+   [
+    "H0930",
+    400
+   ]
+  ],
+  "enabled_family_with_zero_placements": [
+   "H0918"
+  ],
+  "nonmodular_instances": 4831,
+  "total_native_instances": 11508,
+  "reconciliation": "11,397 ISM instances + 111 single-part StaticMeshActors = 11,508 (the 112th StaticMeshActor holds the baked merged mesh Bake/GazaShujaiya_buildings and is not counted as a native instance)",
+  "modular_instance_origin_bounds_cm": {
+   "min": [
+    -28477.1,
+    -28061.1,
+    3843.5
+   ],
+   "max": [
+    29075.8,
+    28332.8,
+    8039.7
+   ]
+  },
+  "baked_merged_building_mesh": {
+   "actor": "GazaShujaiya_buildings_1",
+   "mesh": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_buildings",
+   "triangles_lod0": 55440,
+   "bounds_cm": {
+    "min": [
+     -29055.4,
+     -28245.1,
+     4009.9
+    ],
+    "max": [
+     28243.2,
+     28556.7,
+     8549.7
+    ]
+   }
+  },
+  "road_networks": {
+   "DynamicRoadNetwork_count": 2,
+   "DynamicRoad_count": 90,
+   "RoadGeo_count": 176,
+   "network_actor_bounds": "both report zero-size bounds at origin (not informative)"
+  }
+ },
+ "captures": [
+  {
+   "file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/Capture/Shujaiya_v015_shot1_currentview_20261005T1627Z.png",
+   "sha256": "2f101ee81f44eabbdf9095308da5bf6e10361d0758990ee6b6a61dc945c645e3",
+   "pixels": [
+    879,
+    575
+   ],
+   "camera": {
+    "location": [
+     7612.374,
+     8560.943,
+     9175.181
+    ],
+    "rotation_pitch_yaw_roll": [
+     -29.0,
+     -131.8,
+     0.0
+    ],
+    "fov_deg": 90,
+    "pose_source": "GetCameraTransform in same tick as CaptureViewport; capture echoed identical pose"
+   },
+   "what_it_shows": "Elevated oblique view looking SW over central-east area (~50-120 m). Foreground H0920+H0911 kit buildings; mid two H0917 blocks; background older ModularCourtyard repeated-window blocks and RoadBLD roads.",
+   "modular_clusters_projected": {
+    "method": "local pinhole projection of modular part-cluster centroids (500 cm linkage), hfov 90, no occlusion test; px/py approximate",
+    "n_in_frustum": 113,
+    "nearest": [
+     {
+      "px": 424,
+      "py": 392,
+      "dist_m": 49.1,
+      "n_parts": 13,
+      "fams": {
+       "H0920": 6,
+       "H0911": 7
+      },
+      "centroid_xy": [
+       5067,
+       5973
+      ],
+      "origin_z": [
+       5385.2,
+       6060.7
+      ]
+     },
+     {
+      "px": 327,
+      "py": 422,
+      "dist_m": 49.5,
+      "n_parts": 4,
+      "fams": {
+       "H0911": 4
+      },
+      "centroid_xy": [
+       4506,
+       6860
+      ],
+      "origin_z": [
+       5385.2,
+       5741.4
+      ]
+     },
+     {
+      "px": 530,
+      "py": 363,
+      "dist_m": 53.8,
+      "n_parts": 3,
+      "fams": {
+       "H0920": 3
+      },
+      "centroid_xy": [
+       5667,
+       4784
+      ],
+      "origin_z": [
+       5385.2,
+       6060.7
+      ]
+     },
+     {
+      "px": 325,
+      "py": 379,
+      "dist_m": 54.7,
+      "n_parts": 2,
+      "fams": {
+       "H0911": 2
+      },
+      "centroid_xy": [
+       3931,
+       6472
+      ],
+      "origin_z": [
+       5385.2,
+       5741.4
+      ]
+     },
+     {
+      "px": 417,
+      "py": 348,
+      "dist_m": 55.1,
+      "n_parts": 14,
+      "fams": {
+       "H0920": 10,
+       "H0911": 4
+      },
+      "centroid_xy": [
+       4470,
+       5462
+      ],
+      "origin_z": [
+       5385.2,
+       6060.7
+      ]
+     },
+     {
+      "px": 499,
+      "py": 329,
+      "dist_m": 58.9,
+      "n_parts": 6,
+      "fams": {
+       "H0920": 6
+      },
+      "centroid_xy": [
+       4994,
+       4442
+      ],
+      "origin_z": [
+       5385.2,
+       6060.7
+      ]
+     },
+     {
+      "px": 475,
+      "py": 267,
+      "dist_m": 79.7,
+      "n_parts": 29,
+      "fams": {
+       "H0917": 29
+      },
+      "centroid_xy": [
+       3340,
+       2830
+      ],
+      "origin_z": [
+       5054.6,
+       5961.6
+      ]
+     },
+     {
+      "px": 405,
+      "py": 266,
+      "dist_m": 80.0,
+      "n_parts": 29,
+      "fams": {
+       "H0917": 29
+      },
+      "centroid_xy": [
+       2376,
+       3637
+      ],
+      "origin_z": [
+       5054.6,
+       5961.6
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/Capture/Shujaiya_v015_shot2_currentview_20261005T1628Z.png",
+   "sha256": "00fbb5dd5d7d7bdd31e6b1d1f3a8cd39785f1f1e80471ab89dd48b6de15a04fb",
+   "pixels": [
+    879,
+    575
+   ],
+   "camera": {
+    "recorded": false,
+    "reason": "script errored after the capture (WorldPosToScreenCoords raised), returned pose lost; viewport was being flown by someone else"
+   },
+   "what_it_shows": "Street-level: H0920 kit building (arched door, exterior stair) at left, RoadBLD asphalt road + curb at right, long stone-walled building far right."
+  },
+  {
+   "file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/Capture/Shujaiya_v015_shot3_currentview_20261005T1629Z.png",
+   "sha256": "1791d26b39ce4ebc6c8b0961937013da972230ffef8dff03077643d34f9b7163",
+   "pixels": [
+    879,
+    575
+   ],
+   "camera": {
+    "location": [
+     5651.249,
+     11782.031,
+     5401.184
+    ],
+    "rotation_pitch_yaw_roll": [
+     5.0,
+     3.8,
+     0.0
+    ],
+    "fov_deg": 90,
+    "pose_source": "GetCameraTransform in same tick as CaptureViewport; capture echoed identical pose"
+   },
+   "what_it_shows": "Street-level looking east: same H0920 kit building at right (18-29 m, 25 parts), utility pole + wire, trash can; H0909/H0927/H0923 kit buildings in background 41-61 m.",
+   "modular_clusters_projected": {
+    "method": "local pinhole projection of modular part-cluster centroids (500 cm linkage), hfov 90, no occlusion test; px/py approximate",
+    "n_in_frustum": 107,
+    "nearest": [
+     {
+      "px": 776,
+      "py": 165,
+      "dist_m": 18.5,
+      "n_parts": 6,
+      "fams": {
+       "H0920": 6
+      },
+      "centroid_xy": [
+       6969,
+       12971
+      ],
+      "origin_z": [
+       5437.5,
+       6113.0
+      ]
+     },
+     {
+      "px": 560,
+      "py": 210,
+      "dist_m": 20.9,
+      "n_parts": 10,
+      "fams": {
+       "H0920": 10
+      },
+      "centroid_xy": [
+       7559,
+       12453
+      ],
+      "origin_z": [
+       5437.5,
+       6113.0
+      ]
+     },
+     {
+      "px": 819,
+      "py": 214,
+      "dist_m": 27.5,
+      "n_parts": 3,
+      "fams": {
+       "H0920": 3
+      },
+      "centroid_xy": [
+       7551,
+       13693
+      ],
+      "origin_z": [
+       5437.5,
+       6113.0
+      ]
+     },
+     {
+      "px": 653,
+      "py": 237,
+      "dist_m": 29.2,
+      "n_parts": 6,
+      "fams": {
+       "H0920": 6
+      },
+      "centroid_xy": [
+       8139,
+       13220
+      ],
+      "origin_z": [
+       5437.5,
+       6113.0
+      ]
+     },
+     {
+      "px": 265,
+      "py": 223,
+      "dist_m": 41.2,
+      "n_parts": 6,
+      "fams": {
+       "H0909": 6
+      },
+      "centroid_xy": [
+       9478,
+       10522
+      ],
+      "origin_z": [
+       5799.3,
+       6473.3
+      ]
+     },
+     {
+      "px": 317,
+      "py": 238,
+      "dist_m": 46.5,
+      "n_parts": 3,
+      "fams": {
+       "H0909": 3
+      },
+      "centroid_xy": [
+       10112,
+       10834
+      ],
+      "origin_z": [
+       5799.3,
+       6473.3
+      ]
+     },
+     {
+      "px": 182,
+      "py": 233,
+      "dist_m": 48.8,
+      "n_parts": 8,
+      "fams": {
+       "H0909": 8
+      },
+      "centroid_xy": [
+       9927,
+       9609
+      ],
+      "origin_z": [
+       5799.3,
+       6473.3
+      ]
+     },
+     {
+      "px": 456,
+      "py": 257,
+      "dist_m": 52.6,
+      "n_parts": 20,
+      "fams": {
+       "H0923": 16,
+       "H0911": 4
+      },
+      "centroid_xy": [
+       10821,
+       12323
+      ],
+      "origin_z": [
+       5799.3,
+       6332.4
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "capture_constraints": {
+  "resolution": "879x575 = live viewport size; CaptureViewport has no resolution parameter; no HighResShot/console",
+  "camera_control": "One SetCameraTransform (wide preset: loc -31348.6,-31348.6,50452.6 pitch -45.8 yaw 45) at ~16:24Z. Readbacks then showed the camera flown continuously by someone else (not bank-editor-inspect; coordinator: most likely Aviv). Per coordinator option (b) no further camera moves; planned wide/middle/close preset shots NOT taken; 3 images are the live view captured with captureTransform = pose read in the same tick. Camera not restored (start pose loc -10808.0,11452.6,6647.6 pitch -21.04 yaw 168.38) per coordinator.",
+  "view_mode": "not read back and not set (no view-mode getter/setter in this toolset; no console exec). Images show black sky and no cast shadows despite DirectionalLight+SkyLight+SkyAtmosphere actors: consistent with Unlit view mode or non-rendering sky/sun; Lit appearance NOT verified."
+ },
+ "dirty_packages": {
+  "method": "AssetTools.is_dirty over a fixed checked set of 493 loaded packages (map, 5 Bake meshes, MI_GeoCityGround, M_SurfaceBank_Natural, HDA, 4 current LayerInfos, all 480 static meshes referenced by level components); no global dirty listing exists on this server",
+  "checked_set_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/Capture/DIRTY_CHECKED_SET.json",
+  "before": [],
+  "before_utc": "2026-10-05T16:23Z (before any camera action)",
+  "after": [],
+  "after_utc": "2026-10-05T16:30Z",
+  "identical": true
+ },
+ "editor_state": {
+  "tasklist": "only UnrealEditor PID 10460 (16:13Z, 16:24Z, 16:30:45Z)",
+  "owner_lease_last_line": "2026-10-05T16:17:11Z OWNER=NONE released_by=01a10c77 editor_PID=10460 phase=BUILDINGS_GENERATED_SAVED_REOPENED cooking=paused (unchanged to 16:30:45Z)",
+  "pie_running": false,
+  "current_level_after": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "map_file_sha256": "911cc7ef7f4cdaed20691da73ddb5161fad5f4c3718bd3ed6e56d18d34d7ce49 (= RESULT.json; mtime 16:15:15Z)"
+ },
+ "anomalies_observed": [
+  "Lighting: black sky, no cast shadows in all 3 images (see view_mode).",
+  "Baked merged mesh Bake/GazaShujaiya_buildings (55,440 tris, whole-area bounds z 4010-8550) as StaticMeshActor GazaShujaiya_buildings_1 alongside native kit instances; content not identified; no doubled facades seen in 3 views, absence of overlap not proven.",
+  "Two DynamicRoadNetwork actors with near-identical stores in log (Corner 210, IntersectionMask 178, PerimeterLoop 923; PerimeterCut 300 vs 296); actor bounds zero-size so overlap not measured; RESULT road_regeneration_completed=false.",
+  "Log: 14 LogLandscapePatch warnings Mismatch between landscape and layer Guid in patch (6 at 16:16:04Z reopen).",
+  "H0918 enabled but 0 placed instances; H0017/H0019 excluded as incomplete.",
+  "No floating parts, gaps or checker/default materials visible on kit buildings in frame (H0920, H0911, H0917, H0909, H0923, H0927); 3-view spot check at 879x575, not a sweep."
+ ],
+ "scratch_files_outside_Capture": [
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/clusters.json",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/dirty_checked_set.json",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/modular_points.json",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/projections.json",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/shot1.b64.txt",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/shot2.b64.txt",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/shot3.b64.txt",
+  "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Saved/Screenshots/Incident_01a10c77_capture/sma_modular_points.json"
+ ]
+}

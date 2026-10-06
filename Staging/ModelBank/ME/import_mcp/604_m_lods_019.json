@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 129,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_lod_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Props/SM_H0091_Watertank_001.SM_H0091_Watertank_001"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":1}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 129,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":1}"
+    }
+   ]
+  }
+ }
+}

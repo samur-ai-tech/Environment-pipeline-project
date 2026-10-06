@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/HoudiniEngine/Temp",
+     "name": "",
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.029,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_7_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_13_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_10_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_156_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_153_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_150_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_90_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_87_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_26_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_23_0_main_geo\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_7_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_13_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_3_10_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_156_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_153_0_main_geo\",\"/Game/HoudiniEngine/Temp/B1_probebox/450A5C0A/B1_probebox_146_150_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_90_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_82_87_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_26_0_main_geo\",\"/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_23_0_main_geo\"]}"
+    }
+   ]
+  }
+ }
+}

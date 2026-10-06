@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 310,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_crate_1_set001"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/AssetsvilleTown/Materials/MI_ColorPalette\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 310,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/AssetsvilleTown/Materials/MI_ColorPalette\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_vertex_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx"
+     },
+     "lod_index": 0
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":4835}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":4835}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,305 @@
+{
+  "schema": "environmentpipeline.epic_ground_result.v1",
+  "utc": "2026-10-05T10:00:20.991444+00:00",
+  "execution_thread_id": "01a10883-481f-7723-bdaa-fed004f15ef1",
+  "task_status": "EPIC_GROUND_SOURCE_CHECKPOINT_SAVED_FRESH_REOPENED_WITH_VISUAL_LIMITS",
+  "source_policy": "Installed original Unreal/Epic StarterContent gravel/sandstone D/N and original Epic macro; neutral tint. Retained Natural material adapts these sources, not a clone of the complete Epic master graphs.",
+  "source_native_evidence": {
+    "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_STARTER_GROUND_NATIVE_READONLY_PID32464.json",
+    "sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6"
+  },
+  "ground_roles": {
+    "Ground/Sand_01": "Epic gravel",
+    "Steep/Sand_02": "Epic sandstone",
+    "RoadBed/Dirt_Path": "Epic gravel",
+    "BuildingPad/Sand_Path": "Epic gravel",
+    "Ground_MacroSoilAlbedo/Normal": "Epic sandstone",
+    "Ground_MacroMask": "Original Epic T_MacroVariation"
+  },
+  "copy_policy": {
+    "shared_copies": 4,
+    "size": 2048,
+    "never_stream": true,
+    "max_texture_size": 2048,
+    "source_upscale": false,
+    "global_residency_force": false,
+    "global_cvar_changes": false,
+    "original_assets_modified": false
+  },
+  "material_adaptation": {
+    "master_revision": "Earlier r027:8existing Roughness/AO root edges and3macro default/sampler properties; no nodes added. Subsequent resident phases:zero master edits.",
+    "graph_nodes": 1015,
+    "layer_names": 69,
+    "other_layer_contracts_preserved": 65,
+    "roughness": 0.8,
+    "ao": 1,
+    "target_tints": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "normal_exception": "Captured normal-copy use_legacy_gamma=False versus source=True. Both are sRGB=False/TC_NORMALMAP; installed gamma-space implementation is Linear. Final helper has no gamma setter. Property comparison covers30records/28readable/2unavailable, not every SDK field."
+  },
+  "areas": {
+    "GazaShujaiya": {
+      "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "save_pid": 26820,
+      "fresh_pid": 18844,
+      "named_save": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_RESIDENT_CONSUMER_NAMED_SAVE_GazaShujaiya_r030_epic_complete_PID26820.json",
+        "sha256": "0939c4a2f543367c775ca780c4f40b10ddd602d1261094a06b2986bec8edce8e"
+      },
+      "fresh_native": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json",
+        "sha256": "18eacb5f538be6bfb53bd3749bfc0d39a268947896ecc8d42cb8a51339e6017b"
+      },
+      "fresh_visual": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\VISUAL_REVIEW_GazaShujaiya_epic_r030_fresh_PID18844.json",
+        "sha256": "2f26742079d35669980494156e4fc7d81b9421baef1f4aa1d5db824dbd69a962"
+      },
+      "consumer_binding_count": 10,
+      "actors": 316,
+      "landscapes": 2,
+      "images": {
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_fresh_close.png": {
+          "sha256": "d721c39b288a31dec4bb079e892d0bb624682a5e2f6f4137c72d27811d996530",
+          "shot": "close",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_epic_r030_fresh_close.json",
+          "capture_receipt_sha256": "93a683131d934418ed6fb70d032ea74ed7e5b699f9c33ba6e0a8037a744c5b1b",
+          "capture_pid": 18844,
+          "capture_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_close.png",
+          "comparison_sha256": "af4b1fb53523cbee5d37c1cb17a4ff5047a3b3486cae535bf712f186a72f7445"
+        },
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_fresh_middle.png": {
+          "sha256": "1b37c521a9172c0043464588c2f55efd652f2c42593c6d636056ff77c2342a41",
+          "shot": "middle",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_epic_r030_fresh_middle.json",
+          "capture_receipt_sha256": "ec6ab33d57482e37b692fa13d98e6c1a97383f70f3753ad4b2d6af06e9fe10ca",
+          "capture_pid": 18844,
+          "capture_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_middle.png",
+          "comparison_sha256": "74a593aa048efa92657d1ca7ba3e21763659e33208dc50c0423ed17effe84532"
+        },
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_fresh_wide.png": {
+          "sha256": "88057cb1dbecff7ccb82ff45ab1cfdc6a6095cdd37841d63955692954ca2c967",
+          "shot": "wide",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_epic_r030_fresh_wide.json",
+          "capture_receipt_sha256": "5d0c30e63035b15511e53faa114dce8d5a718fdb270ac769fe5decb264d1cbc4",
+          "capture_pid": 18844,
+          "capture_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r030_wide.png",
+          "comparison_sha256": "45825b0d12f06f2e4eeeb8a6010da27f049104b98c365f71abc91da9508ae09f"
+        }
+      }
+    },
+    "GazaRimal": {
+      "world": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "save_pid": 25008,
+      "fresh_pid": 35000,
+      "named_save": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\SAVE_GazaRimal_epic_r031_PID25008.json",
+        "sha256": "ebd73bd476bee8550a64a973a717be04eb98ade2c8dab5a28b78916aa8d43ae3"
+      },
+      "fresh_native": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_RESIDENT_RIMAL_verify_r031_epic_fresh_reopen_PID35000.json",
+        "sha256": "c6b74f0f9fe5dd64d9027ac9fca253c99d878925c167e077394912158f302d4b"
+      },
+      "fresh_visual": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\VISUAL_REVIEW_GazaRimal_epic_r031_fresh_PID35000.json",
+        "sha256": "d197aa756051da71c36e5c28e8eb4bb3ce2a8b41b0a914a931f2f209302e5504"
+      },
+      "independent_saved_file_review": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_RIMAL_NAMED_SAVE_FILE_REVIEW_R031.json",
+        "sha256": "6c8d0bddb6193647a5265ced5eace9c3278d3a9ac3b71a06ef03791a4f94a41a"
+      },
+      "texture_bindings": 11,
+      "changed_controls": 27,
+      "actors": 121,
+      "landscapes": 1,
+      "images": {
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_fresh_close.png": {
+          "sha256": "777c1fa0d1ed9c43a10c5e5348a4dde23876ddec0cf7cec72a92620a1f8aa4cf",
+          "shot": "close",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "viewmode_readback": "<ViewModeIndex.VMI_LIT: 3>",
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaRimal_epic_r031_fresh_close.json",
+          "capture_receipt_sha256": "dc75bbffd837fb59939a1c0d53470f84bb3c6e280cb07131cd3ac0fa124afe33",
+          "pid": 35000,
+          "world": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "png_complete_iend": true,
+          "comparison_image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_close.png",
+          "comparison_image_sha256": "507786cef960ccc0eb13ba256ef9d49ea8fe8a66e27d35f2715fe0fb488c0989",
+          "comparison_capture_pid": 25008,
+          "same_measured_camera_as_presave": true
+        },
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_fresh_middle.png": {
+          "sha256": "084bf0c49af2a8769831af3a921fd7b9fed3b1d06b8d7813e87898abd786134a",
+          "shot": "middle",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "viewmode_readback": "<ViewModeIndex.VMI_LIT: 3>",
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaRimal_epic_r031_fresh_middle.json",
+          "capture_receipt_sha256": "40071cae87a98060c8fd97a65c448f6acf2ffcd465082ec39a8cea60fd6105a7",
+          "pid": 35000,
+          "world": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "png_complete_iend": true,
+          "comparison_image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_middle.png",
+          "comparison_image_sha256": "078ab9f1eef9565384ac7eef0ca5d1d665b115f0aa7098dc2efbcbc0bc49ff5b",
+          "comparison_capture_pid": 25008,
+          "same_measured_camera_as_presave": true
+        },
+        "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_fresh_wide.png": {
+          "sha256": "9f185c341101da4a2729cdd7448e0704e8249ed5550d897158591010d3c69eef",
+          "shot": "wide",
+          "dimensions": [
+            1600,
+            1000
+          ],
+          "viewmode": 3,
+          "viewmode_readback": "<ViewModeIndex.VMI_LIT: 3>",
+          "capture_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaRimal_epic_r031_fresh_wide.json",
+          "capture_receipt_sha256": "ac7fc3a96d9ea66378621a684a265be406db9c977532e519b27e2c3b8367dabe",
+          "pid": 35000,
+          "world": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+          "camera_matches": true,
+          "actual_lit_measured": true,
+          "visually_inspected": true,
+          "png_complete_iend": true,
+          "comparison_image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaRimal_epic_r031_wide.png",
+          "comparison_image_sha256": "2081684ff4c6aa36b2895b0791a94113be8ec04c61b16a501e194ee870c2030c",
+          "comparison_capture_pid": 25008,
+          "same_measured_camera_as_presave": true
+        }
+      }
+    }
+  },
+  "preserved": {
+    "original_maps_this_epic_phase": true,
+    "geographic_heights_weights_scene": true,
+    "grass_graph_settings_coverage_zero": true,
+    "sealed_sources_profiles_catalogue_holds_native_originals": true,
+    "cooked_mesh_or_actor_edits": false
+  },
+  "saved_files": {
+    "Shujaiya_child": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset",
+      "sha256": "0f1f68f1d0b7246fae38a8d76a834bd8e67bda511ee31e056b50eabd0896b3a3"
+    },
+    "Rimal_child": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset",
+      "sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+    },
+    "Natural_master": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset",
+      "sha256": "bea25944f8aab25584cd01cfd7ec7556a301b8188f4ef2ac9bc91f7a569dc347"
+    },
+    "Shujaiya_original_map": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap",
+      "sha256": "17d5929a02b03d9e022c0043ec95bcd99ad030574959ecd6b6812a0b5d49fba3"
+    },
+    "Rimal_original_map": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap",
+      "sha256": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd"
+    },
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Ground_Gravel_D_GeoCityResident2K.uasset",
+      "exists": true,
+      "sha256": "1b5914d2d32b528990381cc73eed614686d23b4329c8e03f58c0a2cca845b39b"
+    },
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Ground_Gravel_N_GeoCityResident2K.uasset",
+      "exists": true,
+      "sha256": "15a0515f8ed992b22a6743b7e8294ce8710e457a02a0688705c0079e404f92d3"
+    },
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Rock_Sandstone_D_GeoCityResident2K.uasset",
+      "exists": true,
+      "sha256": "cc0ec914ed74d8dfd9f04df3b993cf6036bb1ed6ca30d6b4711bce0aa747cdd9"
+    },
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Rock_Sandstone_N_GeoCityResident2K.uasset",
+      "exists": true,
+      "sha256": "c411d8e6af1e1d6100ece8791fbaa964eaf6e8a2a3fa2cc8a798d35ee0a12df7"
+    }
+  },
+  "acceptance": {
+    "technical_saved_reopened": true,
+    "matched_lit_visual_persistence": true,
+    "ordinary_regeneration": "NOT_RUN",
+    "cooked_runtime_platform_validation": "NOT_RUN",
+    "reference_quality": false,
+    "whole_environment_accepted": false,
+    "user_visual_acceptance": "PENDING"
+  },
+  "remaining_visual_work": [
+    "Ground remains pale and uniform at middle/wide distances.",
+    "Faint directional repetition and broad angular shading remain; their cause is not established.",
+    "Rimal smooth raised strips, sharp surface edges, road joins/patches and building contact remain.",
+    "Reference demonstrations also involve height blending, RVT/contact and geometric detail; Epic palette substitution alone does not establish that result."
+  ],
+  "handoff": {
+    "owner": "NONE",
+    "live_native_processes": 0,
+    "last_lease": "2026-10-05T09:55:17.7434799Z OWNER=NONE released_by=01a10883-481f-7723-bdaa-fed004f15ef1 previous_editor_PID=35000 reason=epic_ground_both_areas_saved_fresh_reopened_clean_exit ordinary_generation_authorized=false",
+    "clean_exits": [
+      {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\EXIT_PID18844.json",
+        "sha256": "824217a509dd896d8579f1eb1c0747f39647b6b0228b06bc6339ecbb8fd11ca8",
+        "pid": 18844,
+        "shutdown_saves": 0
+      },
+      {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\EXIT_PID25008.json",
+        "sha256": "66219921009617c5482471030c9f9195c28d4191aec80b71c020663076bed143",
+        "pid": 25008,
+        "shutdown_saves": 0
+      },
+      {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\EXIT_PID35000.json",
+        "sha256": "65383dfcd8adaa4fec904d16e62778425f6292bd879faac7bd88eda3cba30a60",
+        "pid": 35000,
+        "shutdown_saves": 0
+      }
+    ],
+    "ordinary_generation_authorized": false
+  }
+}

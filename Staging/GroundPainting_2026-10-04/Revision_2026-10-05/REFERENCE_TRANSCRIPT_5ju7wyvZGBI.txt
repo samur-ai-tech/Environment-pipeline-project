@@ -1,0 +1,1493 @@
+YouTube transcript
+Video ID: 5ju7wyvZGBI
+Language: en
+Captions: auto-generated
+
+[0:00] hi everyone in this tutorial I will
+[0:01] teach you how to create realistic
+[0:03] Landscapes with my landscape material
+[0:05] Landscapes are important because they
+[0:07] are everywhere you are always looking at
+[0:09] a landscape which is why I'm making my
+[0:11] landscape material completely free you
+[0:14] can download it right now Link in the
+[0:15] description below the features of this
+[0:17] landscape material include nanite
+[0:19] displacement so you can Leverage The
+[0:20] Power of nanite to add near infinite
+[0:22] detail I stamps to quickly create
+[0:25] realistic Landscapes directly and unreal
+[0:27] without sculpting or using another
+[0:29] program Auto texturing which applies
+[0:31] different textures depending on the
+[0:33] landscape slope cell bombing which can
+[0:35] hide repetition in any texture with one
+[0:38] click virtual texture blending which
+[0:40] will blend any object automatically to
+[0:41] the landscape giving it that extra boost
+[0:43] of realism procedural folish placement
+[0:46] so we don't have to manually paint
+[0:47] foliage we can have the material do most
+[0:50] of the heavy lifting and tripler
+[0:52] projection to high texture stretching
+[0:54] and all this is easily customizable so
+[0:57] you can make your own version of this
+[0:58] material this this is the ultimate
+[1:00] landscape creater for Unreal Engine 5
+[1:02] for the rest of this tutorial I will
+[1:04] cover all the features in depth so you
+[1:06] know exactly how to use this material
+[1:07] for your own projects you'll be up and
+[1:09] running in no time creating amazing
+[1:11] Landscapes so let's jump into it this is
+[1:14] what you're going to see when you open
+[1:16] up the project for the first time now it
+[1:18] is important that after you download the
+[1:19] project make sure you unzip it because
+[1:21] if you don't unzip it you won't see this
+[1:23] level and your content folder will be
+[1:25] completely empty so after you unzip it
+[1:27] and you open up the project this is the
+[1:29] first level you're going to see which is
+[1:31] this massive Mountain this mountain is a
+[1:34] simple example of how to use the
+[1:35] landscape material and if we go into the
+[1:38] outliner double click on the mannequin
+[1:41] here we have a human as reference for
+[1:43] the landscape so generally whenever I'm
+[1:46] creating a landscape I like to add in a
+[1:48] human just to know what the scale is so
+[1:51] that's why we're able to tell that this
+[1:52] mountain is pretty large now let's jump
+[1:54] into the landscape material and go over
+[1:57] some of the basic settings now if you
+[1:59] are new Unreal I recommend you first
+[2:01] watch the u5 starter course before
+[2:03] continuing this video because otherwise
+[2:05] you will be lost I do assume that you
+[2:07] know the basics of unreal so to jump
+[2:10] into the landscape material select the
+[2:11] landscape and then within the details
+[2:13] panel double click on landscape material
+[2:16] right here and this is what it is going
+[2:18] to open up right here in the details
+[2:20] panel is all the different parameters we
+[2:23] have access to to change the landscape
+[2:26] material to our liking now this preview
+[2:29] is pretty useless so what I like to do
+[2:31] is I like to undock the details panel by
+[2:33] holding down the left Mouse button and
+[2:35] dragging it out like this and then I
+[2:38] will drag out the rest of the windows
+[2:40] off to the side so that's how I get the
+[2:42] details panel right here ready for me to
+[2:46] edit in real time and now if I make any
+[2:48] changes for example The Tint let's make
+[2:51] this super red we're able to see those
+[2:53] changes within the viewports so press
+[2:55] control Z cuz obviously I don't want
+[2:57] that another tip that's how I'm just f
+[2:59] focusing on the landscape and the
+[3:01] parameters of the landscape is to press
+[3:03] F10 so F10 will dock all these windows
+[3:06] to the side and if I ever need those
+[3:08] windows again I can just select them
+[3:10] right here or press F10 key to get them
+[3:12] back so first off just like every
+[3:14] landscape in unreal the different
+[3:16] materials like the cliffs and the grass
+[3:19] are divided up into layers so the first
+[3:22] layer is the a layer and we can already
+[3:24] see that it is the grass layer the
+[3:27] second layer down here is the B layer
+[3:29] and this has Cliffs the third one is C
+[3:32] which is another grass layer we're not
+[3:33] using currently the next one is a d
+[3:35] layer which is snow and then we have an
+[3:38] e layer which is empty and we can see
+[3:42] all these layers if we go into the
+[3:44] landscape editing mode by clicking up
+[3:46] here and Selec the Landscapes or the
+[3:48] shortcut is shift and two to get it so
+[3:51] within landscape if I go to paint we now
+[3:53] see all these different layers so the C
+[3:57] material right here is the C layer layer
+[4:00] within the landscape editing mode and if
+[4:02] I want to use this layer I am unable to
+[4:05] paint it unreal will give me a warnings
+[4:07] saying I need to assign it a landscape
+[4:08] layer info so I can paint b so let's
+[4:12] paint right here I'm able to paint b
+[4:15] which is the cliff and I'm able to paint
+[4:17] a which is the default grass because
+[4:20] they already have a layer info assigned
+[4:22] to them so to create a layer info for
+[4:23] the C layer just press on the plus
+[4:25] button and then you want to select
+[4:27] weight Blended layer normal so this will
+[4:30] create a c layer within this location
+[4:32] that's okay and press save so now that
+[4:34] we have this layer if I select C again
+[4:38] and paint it down we see that we get
+[4:41] brand new grass if I zoom in that grass
+[4:44] is different from the default grass I
+[4:47] use the same process for d& whenever I'm
+[4:50] creating layers but you notice that
+[4:52] there is a special layer all the way up
+[4:54] here and that is the auto material layer
+[4:57] and this layer is great right now now
+[5:00] the vast majority of this landscape is
+[5:02] just using the auto material this means
+[5:04] that it will automatically assign
+[5:06] different layers depending on the slope
+[5:09] so when we have a really sharp slope
+[5:11] like right here which is this Cliff then
+[5:12] it's going to use the cliff material and
+[5:15] when the slope isn't sharp like right
+[5:16] here it will use grass and this is all
+[5:19] Dynamic so if I go into sculpt select
+[5:23] the sculpt brush and I start sculpting
+[5:25] right here let me increase the brush
+[5:27] size by using the bracket keys so right
+[5:29] bracket key increases it left bracket
+[5:32] key decreases it I am able to paint and
+[5:36] you'll see that it automatically assigns
+[5:39] these layers and then if I ever let's
+[5:42] say I don't want Cliff right here I want
+[5:44] grass then I could just go back into
+[5:46] paint go into the grass layer and then
+[5:48] paint the a layer on top of the auto
+[5:51] material so that will override the auto
+[5:53] material in case it's not giving you
+[5:55] what you want let's briefly go over how
+[5:57] to create a landscape material instance
+[6:00] so in order to find the master material
+[6:03] for this landscape you want to go into
+[6:06] content Landscapes materials and then we
+[6:09] have two materials we have M Landscape
+[6:12] which is what this mountain is currently
+[6:14] using and then we have landscape height
+[6:17] this adds Nite displacement which we're
+[6:19] going to go over in just a bit so let's
+[6:21] double click on mcore landscape to see
+[6:23] it so our entire landscape is being
+[6:26] driven by this graph do not worry you
+[6:28] don't have to know exactly what is
+[6:30] happening in this graph in order to use
+[6:33] this landscape material because we're
+[6:35] using an instance all we need to know is
+[6:38] how to change the parameters of the
+[6:40] landscape material not exactly how the
+[6:43] landscape material is created now if you
+[6:45] do want to know how to create this
+[6:47] material from scratch you could check
+[6:48] out the unreal master class which
+[6:50] explains all these different parts in
+[6:53] detail to create an easy to use instance
+[6:56] of this material is like create an
+[6:58] instance of any other materal material
+[7:00] it's just to right click on mcore
+[7:02] landscape and create a material instance
+[7:05] we can call this my landscape and then
+[7:08] if I double click on my landscape I get
+[7:11] all the parameters I can quickly edit
+[7:13] just like in the landscape Mountain
+[7:15] material and then to apply that material
+[7:18] to a landscape just select the landscape
+[7:20] and then within the details panel you
+[7:23] can drag your new landscape onto it like
+[7:26] this but I want my original landscape so
+[7:28] I'll press control and Z to undo that
+[7:31] change now the entire reason why we have
+[7:33] a landscape material is to bring it into
+[7:36] our own projects and use them there so
+[7:39] the way we migrate this landscape
+[7:41] material out of the landscape project is
+[7:44] to migrate this landscape folder so the
+[7:48] only folder and assets you need to bring
+[7:50] into other projects is the landscape
+[7:52] folder right here we don't need the
+[7:55] example folder because that's just
+[7:56] examples and we also don't need the mega
+[7:58] scan folder because those are assets
+[8:00] that are being used by the examples so
+[8:02] in order to copy this landscape into
+[8:04] another project of course you just have
+[8:06] to rightclick and select migrate this
+[8:09] will only select the landscape folder
+[8:12] which is what we want and press okay and
+[8:14] then navigate to the content folder of
+[8:15] your project and select it now if we go
+[8:19] into your own project you'll see that we
+[8:21] have the landscape folder right here and
+[8:24] the materials ready to be used by Crea a
+[8:27] material instance of now we know how to
+[8:29] get this material into our projects it's
+[8:31] time to go over exactly what these
+[8:33] parameters do and how we can customize
+[8:36] it to create the landscape that you want
+[8:38] and for this part to better see the
+[8:39] landscape I'm going to press f11 to make
+[8:42] my viewport full screen so that's how
+[8:44] we're just focusing on the level now the
+[8:46] first parameters are the a material and
+[8:49] you'll notice that the parameters for
+[8:51] one layer for example normal roughness
+[8:53] specular are the exact same for another
+[8:57] layer so all these parameters just
+[8:59] repeat for each layer so what are the
+[9:02] parameters for the layers first up we
+[9:04] have the texture settings so this is
+[9:06] where we're going to put our color
+[9:07] texture our roughness or our normal
+[9:10] texture and we will go over how to get
+[9:11] those in just a second these are the
+[9:14] three most important settings because
+[9:15] they will Define exactly what material
+[9:17] your layer is and below that we have
+[9:19] albo controls so you want to make sure
+[9:21] you select this triangle in order to get
+[9:24] the controls and the default for all of
+[9:26] them is one I've already changed some
+[9:28] things so of course with saturation if I
+[9:30] bring this up we get a more saturated
+[9:33] layer and then if I bring this down we
+[9:36] get less saturation and then if I just
+[9:38] do zero then it is black and white so
+[9:42] I'm going to leave that back at 1.3
+[9:44] there you have brightness obviously this
+[9:46] controls how bright our layer is leave
+[9:49] that at 1.3 and contrast controls as you
+[9:53] can guess the contrast so if I bring
+[9:56] this up to two then our landscape is
+[9:59] looking pretty interesting so we'll just
+[10:01] leave that at one for now and below that
+[10:04] is tint if you want to change the
+[10:06] overall color of the layer then this is
+[10:09] where I'm going to do that so if I want
+[10:11] to make this let's say maybe more like
+[10:13] fall so less green a little bit more
+[10:16] brownish then I'll change the color to
+[10:19] like right here and press okay so now we
+[10:21] have brown grass and press contrl Z to
+[10:24] undo that and then we have normal
+[10:27] strength this one is
+[10:29] self-explanatory it controls the
+[10:31] strength of our normal map which is the
+[10:33] shadows of my texture so instead of one
+[10:36] we read it up to two actually 10 so that
+[10:39] we can better see it and now we get more
+[10:42] noticeable
+[10:44] Shadows that interact with the lighting
+[10:47] so bring that back to one right there
+[10:50] and whenever you want to use a setting
+[10:51] you want to make sure that you activate
+[10:53] it first before changing it because
+[10:55] otherwise it' be grayed out and there
+[10:56] will be no change roughness is how how
+[10:59] rough you want the material to be and
+[11:01] roughness is tied with specular strength
+[11:05] so in unreal the specular strength by
+[11:07] default is 0.5 for all materials and
+[11:11] obviously now you're going to see that
+[11:12] we get a weird reflection on the
+[11:14] landscape it's almost like this grass is
+[11:17] plastic and not actually grass so little
+[11:20] tip we do for all our landscape layers
+[11:22] is that we bring down this specular
+[11:24] strength to something really small like
+[11:26] 0.02 and that gives something much more
+[11:29] natural the landscape doesn't feel like
+[11:31] plastic anymore but because we bring
+[11:33] down to 0.02 that means this roughness
+[11:36] doesn't really have much of an effect
+[11:38] but if I did leave it at 0.5 then
+[11:41] roughness would control how rough the
+[11:44] landscape is so if I bre down to zero
+[11:46] then we get an extra shiny landscape so
+[11:48] let's set those back to their default
+[11:50] values and if I ever want to set
+[11:52] something back to this default value I
+[11:53] can just click on the reset button right
+[11:56] here so turn that off and normal
+[11:58] strength off
+[11:59] and now we have the different blending
+[12:02] options so right now we're not using the
+[12:04] blending option for the grass so let's
+[12:06] hop into the cliff to check out the
+[12:09] blending options right now the cliff
+[12:12] material is using distance blend
+[12:14] distance blend is a way to hide
+[12:16] repetition and repetition is when our
+[12:18] texture is noticeably tiling which can
+[12:21] immediately break immersion you probably
+[12:23] no this in a lot of video games where
+[12:25] you're looking at texture and then you
+[12:26] realize wait that texture is the same
+[12:28] it's just repeating itself so if I
+[12:30] uncheck this to see what I mean now
+[12:33] you'll notice that uh-oh this Cliff is
+[12:36] very noticeably tiling look we have one
+[12:39] texture continually repeating itself and
+[12:41] what distance blend will do is that it
+[12:43] will blend in between two different
+[12:45] sizes of the texture so we have a really
+[12:48] large size of the texture and then if I
+[12:50] zoom in you'll see it transitions to a
+[12:52] smaller size so we have the really big
+[12:55] one and then when we get closer and
+[12:56] closer it transitions until the texture
+[12:59] is smaller and to change the size of a
+[13:01] texture so we have our normal size and
+[13:03] then we have our far size if I decrease
+[13:06] the sizes for example make this
+[13:08] 0.005 then the texture is a lot bigger
+[13:11] or if I increase it to 0.1 then the
+[13:15] texture is a lot smaller so you're going
+[13:17] to want to experiment with these values
+[13:19] to see which one is better so at least
+[13:21] for this one a value of 0.01 was good
+[13:23] for the far size and then the size
+[13:26] that's up close I land it on a value of
+[13:28] 0. 08 if I want this to tile a little
+[13:31] bit more when the player is up close to
+[13:33] the texture then I can do
+[13:36] 0.1 or even 0.5 but now that transition
+[13:40] between the far texture and the near
+[13:41] texture is very noticeable and the start
+[13:45] offset and the blend falloff control
+[13:48] where the textures transition between
+[13:50] each other so that is one way to hide
+[13:52] repetition another way to hide
+[13:54] repetition is what I'm using on the
+[13:56] grass down here so if I scroll back back
+[13:58] up to the grass layer we have cell
+[14:01] bombing so if I turn off cell bombing
+[14:04] now you notice that uhoh this is very
+[14:07] noticeably texturing if the player is
+[14:09] walking around the landscape they know
+[14:11] that's just a texture repeating on
+[14:12] itself but then as soon as I turn on
+[14:15] Cell bombing down here boom that texture
+[14:18] is immediately removed what it's doing
+[14:21] is that instead of tiling the texture is
+[14:23] going to randomly scatter that texture
+[14:25] around and blend the textures together
+[14:28] realistic Bally so that is another way
+[14:30] to hide repetition the only downside
+[14:32] with cell bombing is that when we turn
+[14:34] it on the landscape materials
+[14:36] performance decreases so it might slow
+[14:38] down our game so just keep that in mind
+[14:40] when you use cell bombing you might not
+[14:43] want to use it on all your material
+[14:44] layers because that can add up and masks
+[14:48] are primarily used with mega scan assets
+[14:51] which we will go over in just a second
+[14:53] so I'm going to skip that and then we
+[14:54] have spec from color which will vary the
+[14:56] specular highlights based on the color
+[14:59] texture this can add a little bit of
+[15:01] realistic roughness variation so
+[15:04] generally I like to leave that on and
+[15:06] then we have size unlike the cliff
+[15:08] material where we have two sizes we only
+[15:10] have one because we're not using
+[15:12] distance blend again if I bring this
+[15:14] down to something small like 0.1 then
+[15:16] our texture increases in size or if I
+[15:19] bring it up to something like 0.3 then
+[15:22] our texture decreases in size now those
+[15:26] were all the main parameters for each of
+[15:28] the material layers so the parameters
+[15:30] for a material are the same as B and C
+[15:34] essentially you're able to customize
+[15:36] your landscape exactly how you want with
+[15:39] just these simple settings and there's
+[15:42] one more parameter that only applies to
+[15:44] the B material and that's because
+[15:46] generally at least for this landscape
+[15:48] material we will use the B layer as the
+[15:50] cliff layer for the auto landscape and
+[15:53] the additional setting for the B layer
+[15:55] is tripler projection so if I turn this
+[15:58] off you'll you'll see what I mean and
+[16:01] that is we get really bad texture
+[16:04] stretching so whenever we have textures
+[16:06] on really sharp angles those textures
+[16:09] are going to stretch it's even
+[16:11] noticeable right here where the rocks
+[16:14] are stretch going up and then as soon as
+[16:16] I turn on tripl projection that will fix
+[16:19] the texture stretching to make the
+[16:21] landscape a little bit more realistic so
+[16:23] that's an additional setting for the B
+[16:25] material those are all the settings for
+[16:27] the layers now let's go over settings
+[16:29] that apply to the entire landscape as a
+[16:31] whole so if you make a change there it
+[16:33] won't just apply to one layer it will be
+[16:35] applied to the entire landscape and you
+[16:38] can find those settings all the way down
+[16:39] here under the layer settings and we're
+[16:42] going to start off with zv variation at
+[16:44] the very bottom so zv variation is three
+[16:47] different textures that we're overlaying
+[16:49] on top of the landscape to just make it
+[16:51] look a little bit more realistic and
+[16:53] maybe hide some texture repetition so we
+[16:56] have color variation right here which is
+[16:58] a texture of color splotches overlaid on
+[17:00] the landscape this adds just a little
+[17:03] bit of color variation so right now it's
+[17:05] at 0.3 if I bring this up at 2 one you
+[17:08] will now see those color splotches so
+[17:10] this is 2 a t0 then I bring it down to
+[17:14] something like 0.3 so that's how it's
+[17:16] making a little bit of an effect and
+[17:18] below that is macro variation macro
+[17:21] variation is like the color splotches
+[17:23] except it is black and white so if I
+[17:25] bring this up to one you can see that
+[17:27] they're just black watches that is
+[17:29] darkening the landscape also bring down
+[17:31] to something like 0.3 just to add a
+[17:34] little bit of an effect and then we have
+[17:36] a normal variation strength so this will
+[17:38] artificially add Shadows to the
+[17:41] landscape so you can see without it and
+[17:45] with it and if the camera gets closer to
+[17:47] the landscape then the variation
+[17:50] disappears so just like beforehand it
+[17:53] doesn't have to be this intense I find
+[17:55] it's just a little bit of normal
+[17:56] variation at 0.3 to be pretty good for
+[17:59] most Landscapes and of course you can
+[18:01] switch out these Textures in case you
+[18:03] don't want them and above that we now
+[18:06] have the slope blend so this controls
+[18:09] the auto material if I want to increase
+[18:11] the angle at which the cliff material is
+[18:13] being spawned then I can increase the
+[18:17] fallof amount to something like three or
+[18:20] even four to get a lot more Cliffs or I
+[18:23] can bring it down to one that's how only
+[18:25] the sharpest of angles has the Cliff
+[18:28] texture or if I think the transition is
+[18:31] a little bit too much then I could
+[18:32] increase the angle contrast to something
+[18:35] like even 10 so now we have a pretty
+[18:39] sharp transition between the two layers
+[18:42] so I'll reset both of them and if I want
+[18:45] to make the transition more realistic so
+[18:47] it's not a smooth transition like this I
+[18:51] can increase the normal blend right here
+[18:53] to let's go something like 0.2 and now
+[18:56] it is using the normals of the cliff do
+[18:58] transition between the two layers so if
+[19:00] you add a little bit of a normal blend
+[19:02] this can make that transition just a tad
+[19:05] bit more realistic so I'll keep it at
+[19:07] zero for now and let's say if you want a
+[19:10] transition material between the grass
+[19:12] and the cliff maybe before the grass
+[19:14] transition to Cliff you want it to be
+[19:16] dirt in between the two layers then we
+[19:19] can check extra material blend and it
+[19:22] will use the C
+[19:23] material right here between the a layer
+[19:27] and the B layer now right now the C
+[19:30] material is another grass so it's hard
+[19:32] to tell what is happening if you are
+[19:34] going to transition between grass and
+[19:35] cliffs then I recommend using a dirt
+[19:38] material for the sea layer so that is a
+[19:40] nice option to have just in case above
+[19:43] that is foliage this is for procedural
+[19:45] foliage placement we will go over that
+[19:47] later and then we have ground breakup
+[19:49] ground breakup is a great way to layer
+[19:52] on top of the landscape a material
+[19:54] without having to go into the landscape
+[19:56] layers and paint it so if I turn turn
+[19:58] this on you'll see that it is currently
+[20:00] taking the D material layer which is
+[20:03] snow and then overlaying it on top of
+[20:06] the landscape according to this texture
+[20:08] which we can change so if you want quick
+[20:10] variation between the different material
+[20:12] layers without having to paint it then
+[20:14] ground breakup is a good option and
+[20:16] above that we have height blending so
+[20:19] let's say you have material and you only
+[20:20] want it to spawn at the very top of your
+[20:22] landscape or at the very bottom then we
+[20:25] can either activate top material or
+[20:27] bottom material
+[20:28] so they're the same let me activate top
+[20:30] material and this will overlay layer D
+[20:34] all my landscape at a certain height so
+[20:37] right now this snow will spawn at a
+[20:40] height of if we go to top material start
+[20:43] 2,000 now I can increase this to 10,000
+[20:46] that's how it spawns only at the very
+[20:49] top but you'll notice that the
+[20:50] transition between our normal grass
+[20:53] landscape and the snow is a little bit
+[20:55] too sharp if we want to increase that
+[20:57] transition or the falloff then we will
+[21:00] activate top material fallof and change
+[21:02] this from, 1500 to
+[21:05] 10,000 which will give it a smoother
+[21:08] transition now our landscape has snow at
+[21:11] the very top of the mountain and let's
+[21:14] say if we do have a location at the top
+[21:15] of the mountain where I don't want snow
+[21:17] to spawn then I can jump back into
+[21:20] landscape editing mode and down here we
+[21:22] have the material layer no height map so
+[21:25] let's create a layer info for this and
+[21:27] make sure when you're create this
+[21:28] instead of selecting weight Blended
+[21:30] layer which is what we would normally
+[21:31] select for materials we select non
+[21:34] weight Blended layer create that and now
+[21:38] if I select this bring up the tool
+[21:40] strength go into paint right
+[21:44] here I can paint away the snow if I
+[21:47] don't want it at an area so even though
+[21:50] we are assigning layers within the
+[21:53] material parameter I still have control
+[21:55] over where I want that to be now let's
+[21:58] let's go leave landscape editing mode go
+[22:00] back into the material parameter and
+[22:02] deactivate top material so that is all
+[22:06] the major parameters for this landscape
+[22:09] material so with all that knowledge you
+[22:11] can go ahead and start creating your own
+[22:14] Landscapes very quickly with these
+[22:16] simple settings now that we know how to
+[22:18] use the landscape material let's go over
+[22:20] how to get material textures to fill up
+[22:22] Landscape layers luckily for us we have
+[22:24] mega scans which is a Free Library of
+[22:27] thousands of text
+[22:28] we can use immediately in our landscape
+[22:30] to get mega materials is pretty easy you
+[22:32] just want to click on the plus button
+[22:34] and then select quickel bridge now in
+[22:35] the future quickel bridge will be called
+[22:37] Fab so you want to select Fab instead of
+[22:39] quickel bridge and then we can go to
+[22:42] surfaces and we have all these different
+[22:44] surfaces we can use for the landscape
+[22:47] now my case I think I want a sand
+[22:51] texture so I'll type in sand and then I
+[22:54] can find a nice texture that I want to
+[22:56] use for example this one right right
+[22:58] here dry sand and then download it so
+[23:01] right now it's downloading with medium
+[23:03] quality which is 2K low quality is 1K
+[23:06] high quality is 4K and highest quality
+[23:08] is 8k so do keep that in mind when
+[23:10] you're selecting the different qualities
+[23:12] now this says downloaded I'll press add
+[23:15] and here we get our 2K textures now you
+[23:18] notice that there's this VT on this
+[23:19] texture that tells us it's a virtual
+[23:21] texture we don't want that we want
+[23:23] normal textures which is what the
+[23:25] landscape uses so to switch this back we
+[23:28] could hold down shift and select all
+[23:30] three textures right click and go to
+[23:33] convert to regular texture just like
+[23:35] that and then we can save everything the
+[23:38] first two textures are self-explanatory
+[23:40] we have our color and then we have our
+[23:42] normal but this texture right here looks
+[23:44] pretty strange and if I double click to
+[23:47] go inside of it we will see that it is a
+[23:49] weird color and that's because this
+[23:51] texture is actually three different
+[23:53] masks so if I uncheck G and B we have
+[23:57] the red Channel which is ambient
+[23:59] occlusion uncheck red check green the
+[24:02] green channel is roughness this is the
+[24:04] mask that we want to use for roughness
+[24:06] and then the blue channel is
+[24:08] displacement which we're going to use
+[24:09] later for nanites now I don't want the
+[24:12] blue Channel or the red Channel all I
+[24:14] want is green so we can exit out of that
+[24:18] and now we're going to add my textures
+[24:20] to the E layer and that's because the e-
+[24:22] layer doesn't have any textures
+[24:24] currently assigned to it so let's go
+[24:26] into content drawer
+[24:28] Mega scans surfaces dry sand which are
+[24:31] the textures we just downloaded and make
+[24:34] sure that these three are turned on so
+[24:37] of course the color texture goes into
+[24:39] color the normal texture goes into
+[24:41] normal but you'll see that our roughness
+[24:44] is asking for a single mask this is why
+[24:47] down here on all our material layers we
+[24:49] have this mask parameter so if I turn
+[24:51] this on it'll switch the roughness to a
+[24:54] mask so that's what we want to do
+[24:56] whenever we have a mask mask texture
+[24:58] like the ones from Mega scans make sure
+[25:00] you have mask turned on right there and
+[25:03] then we could drag in The Mask which
+[25:06] will be used for our roughness now if we
+[25:09] jump back into the landscape mode we
+[25:10] have the E layer down here I can create
+[25:13] a brand new e
+[25:16] layer and start painting it anywhere on
+[25:20] my landscape and we'll see that the
+[25:23] texture looks pretty bad right now I
+[25:26] think this is more noticeable
+[25:28] if we fly to where the mannequin is
+[25:30] right here so whenever I'm adjusting the
+[25:33] sizes of my texture I like to do that
+[25:35] next to a human reference which makes it
+[25:38] easier to know exactly what I have to
+[25:39] change okay so I think that the texture
+[25:42] could be a little bit bigger so go to
+[25:44] size and bring that down to
+[25:46] 0.5 okay that is better and there's also
+[25:49] very noticeable tiling so one thing I
+[25:52] can do is activate either cell bomb or
+[25:55] distance blending I'm going to activate
+[25:57] cell bombing and now that tiling has
+[25:59] been removed and this texture is way too
+[26:03] bright So within our beo controls we
+[26:06] could bring down that
+[26:08] brightness to let's go
+[26:11] 0.7 okay that is great now I want this
+[26:15] layer to basically be a sand layer at
+[26:19] the very bottom of my landscape and I
+[26:21] could go through within the landscape
+[26:23] mode and paint it or within the material
+[26:25] instance scroll down here to bottom
+[26:28] material and turn this on okay so now
+[26:31] that will automatically spawn that and
+[26:34] it's spawning it in the middle of the
+[26:36] mountain we don't want that so go into
+[26:38] the bottom material starts and instead
+[26:40] of 2,000 change this to
+[26:44] 177,000 okay so now we have a sand
+[26:48] material at the very bottom of my
+[26:51] landscape so if I add in water then we
+[26:54] turn this mountain into an island which
+[26:57] goes to show the flexibility of this
+[27:00] material now it's time to cover the best
+[27:03] feature of this material and that is
+[27:05] Nite displacement which is brand new in
+[27:07] ui5 it gives us the ability to add extra
+[27:10] geometry that deforms to the layers
+[27:12] basically we get near infinite detail
+[27:15] and because it is nanite there is very
+[27:17] little performance cost to using it I
+[27:19] made set up nanite super easy on the
+[27:21] landscape so let's go over how to use it
+[27:23] in the downloadable project I added an
+[27:26] example of how to use n Landscapes so we
+[27:29] go to example maps and we've been on the
+[27:31] mountain map this entire time instead
+[27:34] we're going to open up the nanite
+[27:35] examples map and this is what you will
+[27:38] see when you go into the Nite examples
+[27:40] map and that is if I come up to these
+[27:42] rocks they are real geometry they're not
+[27:46] being faked with normal Maps or Parallax
+[27:48] occlusions this is geometry that exists
+[27:51] in the world and this is incredible that
+[27:53] we get this amount of detail on
+[27:54] landscapes cuz normally Landscapes are
+[27:56] not this detailed detailed we even get
+[27:58] Geometry on cliffs so you see that
+[28:01] they're real three-dimensional Cliffs or
+[28:04] if I come over here this is a good
+[28:07] Showcase of nanite displacement if I
+[28:10] move the light around you can see the
+[28:13] landscape casting Shadows onto
+[28:15] itself which looks insanely
+[28:19] cool so nanite Landscapes opens up a
+[28:22] whole bunch of options that weren't
+[28:23] possible beforehand this basically means
+[28:25] we have near infinite detail for our
+[28:27] landscape and we don't have to rely that
+[28:29] much on foliage or static meshes to
+[28:31] detail our Landscapes we can have the
+[28:33] displacement maps of the textures do
+[28:35] most of the heavy lifting now how do we
+[28:37] get nanite Landscapes with displacement
+[28:40] so number one if I open up this material
+[28:44] instance scroll all the way down we'll
+[28:46] see that this parent is it mcore
+[28:49] landscape instead it's mcore landscape
+[28:52] height so landscape height is the exact
+[28:55] same as our basic landscape except this
+[28:57] one adds height blending and
+[29:00] displacement and if you ever want to
+[29:02] convert a basic landscape to landscape
+[29:04] height then within your basic landscape
+[29:06] select height right here to convert it
+[29:09] and all the parameters will be carried
+[29:10] over because as you can see it is the
+[29:14] same the only new parameters are right
+[29:16] here we have height blending parameters
+[29:19] and then we also have displacement
+[29:21] mapping which is being handled right
+[29:23] there now the other thing you have to do
+[29:25] besides using the correct material is to
+[29:27] make sure your landscape is using
+[29:30] nanites so all the way down here you
+[29:33] want to select enable nanites and then
+[29:35] press build data and we can double check
+[29:38] that this environment is using nanites
+[29:41] by now going to nanite visualization and
+[29:43] triangles as you can see it's updating
+[29:46] in real time now as of Unreal Engine 5.3
+[29:50] nanite Landscapes only work for spa
+[29:52] Landscapes like this one if you try to
+[29:55] use it on the mountain it won't work of
+[29:56] course that change change in the future
+[29:58] and nanite displacement is disabled by
+[30:01] default because displacement is still
+[30:03] experimental you will not have this
+[30:05] issue if you're on Unreal Engine 5.4 or
+[30:08] future versions of unreal for everyone
+[30:10] on Unreal Engine 5.3 to enable Nan
+[30:13] displacement go into mcore landscape
+[30:15] height and down here you'll see for U
+[30:19] 5.3 add to default engine.in renderer
+[30:23] settings these two console commands so
+[30:27] highlight r. nanite allow testation
+[30:29] equal 1 and r. nanite tessellation equal
+[30:33] 1 so make sure you have those copied and
+[30:36] then within the project folder we'll
+[30:38] have this folder called config double
+[30:40] click to go inside of it and then we
+[30:42] need to go into default engine you can
+[30:45] use any text editor I'm just going to
+[30:47] use
+[30:48] notepad and within here under script
+[30:52] engine renderer settings you want to
+[30:55] make sure you paste in these two values
+[30:58] so I already have the values pasted in
+[31:00] if you don't have those values then you
+[31:03] can copy them anywhere within this list
+[31:06] but make sure that it is under renderer
+[31:09] settings and then after you do that make
+[31:11] sure you save the default engine and
+[31:13] restart Unreal Engine and then you're
+[31:15] going to get Nite displacement so again
+[31:17] that's only for Unreal Engine 5.3
+[31:19] because this is experimental in the
+[31:21] future you won't have that issue now
+[31:23] let's go over what the new parameter
+[31:25] settings are so first off off for our
+[31:28] mask parameter if we uncheck this so
+[31:30] we're no longer using mask we now have
+[31:32] two different textures so we still have
+[31:34] our original roughness texture but we
+[31:36] can ask for an individual height texture
+[31:39] so if I double click on this this is
+[31:41] what the height texture will look like
+[31:42] when it's not biged into a mask so all
+[31:45] the white parts of the texture will be
+[31:47] elevated and the black parts will be
+[31:48] lowered this is very important with high
+[31:50] textures and that is for compression
+[31:52] settings make sure you select HDR
+[31:55] compressed this will give unreal a a lot
+[31:57] more data to use when creating the
+[31:59] displacements if you use something
+[32:01] different like default then you're going
+[32:03] to see weird Jagged geometry when you
+[32:06] zoom into the landscape so to get rid of
+[32:08] that select HDR compressed which will be
+[32:12] a more accurate height map now in our
+[32:14] case I'm going to turn on mask because
+[32:17] the height texture is stored in The Mask
+[32:19] since this is a mega scan texture height
+[32:21] is always stored in the B channel the
+[32:23] other new parameters are height blend
+[32:25] offset power and strength we will go
+[32:27] over those in just a second because I
+[32:29] want to cover displacement first down
+[32:32] here underneath cell bombing so all our
+[32:34] layers get displacement and of course
+[32:36] the first is a toggle on and off so if I
+[32:39] toggle this off then we don't have any
+[32:41] displacement and then if I turn it on of
+[32:43] course we get displacement and all the
+[32:45] options that it comes with so let me go
+[32:47] ahead and let's reset them to their
+[32:48] default values and we will start off
+[32:51] with strength so strength is how strong
+[32:54] you want the displacement to be of
+[32:55] course so if we want this to be two
+[32:57] times what it is right there then we
+[32:59] just type in two and now our
+[33:01] displacement is looking a little bit
+[33:03] interesting and it's actually flat at
+[33:05] the top right here and that's because
+[33:07] there's a limit to how far we can add
+[33:09] displacements so if I do two you'll see
+[33:12] that it is hitting the limits so if I
+[33:15] bring this to 1.5 actually Let's Go
+[33:18] 1.2 then it is a little bit stronger
+[33:21] than beforehand and you notice that I
+[33:22] had to move the camera back and forward
+[33:25] in order to update the shadow Maps that
+[33:27] has a glitch with unre 5.3 you will not
+[33:29] have that issue in the future so keep
+[33:31] that in mind when I move the camera back
+[33:33] and forward that's just to update the
+[33:35] shadows and then we have contrast which
+[33:38] controls the displacements contrast so
+[33:40] if I bring this up to
+[33:42] 1.5 then we get much sharper
+[33:46] displacement so now the rocks are really
+[33:50] coming out of the ground and they're a
+[33:51] lot more noticeable so if I bring this
+[33:53] down to something like
+[33:55] 0.7 then it will smooth out the
+[33:58] displacement so that's not as harsh so
+[34:00] you can think of contrast right here as
+[34:02] displacement smoothness and then we have
+[34:04] displacement offset so displacement
+[34:07] offset is how far up or how far down
+[34:10] this entire layer as a whole will be
+[34:13] compared to other materials so right
+[34:16] here we have the grass material and then
+[34:18] if I bring down the displacement offset
+[34:21] to negative 1 and then if I move back
+[34:23] and forward you'll see that now The Rock
+[34:27] layer is below the height of the grass
+[34:30] and is below the height of other layers
+[34:34] like right here and then if I bring this
+[34:36] up to positive one now this Rocky layer
+[34:40] is way above the height of the other
+[34:42] layers the reason why this is an option
+[34:45] is because whenever we're playing with
+[34:46] the strength or contrast it can adjust
+[34:49] the entire height of the layer so by
+[34:51] adding in the offset we could bring the
+[34:53] height back down or back up to the same
+[34:56] level as the other layers and finally
+[34:58] let's say you really like the values of
+[35:00] your strength and contrast but you want
+[35:02] to bring down the displacement as a
+[35:04] whole without messing up these values
+[35:07] then that's what the displacement amount
+[35:08] slider is for so right now it's at one
+[35:11] so it's full displacement but then if I
+[35:13] want a little bit less I can bring this
+[35:14] down to
+[35:15] 0.5 so this is half of what the
+[35:17] displacement was or just bring it down
+[35:20] all the way to zero so now there is no
+[35:22] displacement so let me go leave it at
+[35:25] 0.8 for now
+[35:27] and those are all the parameters for
+[35:29] displacement and those parameters are
+[35:31] exactly the same of course for each
+[35:33] layer for example with the D material
+[35:36] layer I notice that compared to other
+[35:40] layers like the grass layer this is
+[35:42] lowered way too much so to fix this we
+[35:45] go to the D material then all the way
+[35:47] down here to
+[35:48] displacement and for the displacement
+[35:50] offset I can try to bring this up to
+[35:52] let's do 0.5 and immediately that fixed
+[35:56] it or if I want to add a little bit more
+[35:58] displacement I can increase this to one
+[36:01] to make the geometry pop more I'm back
+[36:04] in the original example project because
+[36:06] it's easier to show exactly what the Hy
+[36:08] blend parameters do because if you
+[36:10] remember we skipped over them to talk
+[36:12] about displacement and for the most part
+[36:14] the highight blend parameters are pretty
+[36:15] similar to displacement except they
+[36:18] don't affect displacement instead they
+[36:20] affect how the different landscape
+[36:22] layers are Blended in with each other
+[36:25] because now that we're using a High
+[36:27] texture we want to use this High texture
+[36:29] to affect the different blends so when
+[36:31] we are transitioning between two
+[36:33] materials for example the rocky material
+[36:35] and the grass material it is more
+[36:37] realistic to make the Rocks appear first
+[36:41] before it transitions all the way over
+[36:43] to the rocky ground so you notice that
+[36:45] right here we have grass and then we see
+[36:49] the Rocks first they're coming out of
+[36:50] the ground and then we transition to the
+[36:52] full layer it makes the landscape just a
+[36:54] little bit more realistic and that is
+[36:56] controlled right here so for example
+[36:59] let's say if I don't want that
+[37:00] transition to be that noticeable instead
+[37:03] of 1.3 we can set that to one and now
+[37:07] those rocks are a little bit less or I
+[37:09] could just set this to zero and we don't
+[37:11] get any of that transition between the
+[37:13] rocks and the grass this is the kind of
+[37:15] transition we would get on the basic
+[37:17] landscape material with no height map so
+[37:20] if I bring this up to one then we get a
+[37:23] little bit more rocks or I can increase
+[37:25] the blend power
+[37:28] and also increase the strength at the
+[37:29] same time to make that transition more
+[37:33] noticeable so if I go into the landscape
+[37:37] layer and let me go decrease my brush go
+[37:40] to paint and select the rock layer which
+[37:43] is D decrease that tool stength size if
+[37:48] I just make light
+[37:49] touches we start to get the Rocks first
+[37:52] so just very light touches we get a
+[37:55] little bit of rocks until we start to
+[37:58] get the actual material so this is a
+[38:01] nice way to get a realistic blend
+[38:05] between the different material layers so
+[38:08] you can adjust the height blend for all
+[38:10] the layers until you get something that
+[38:11] you like and then you could go through
+[38:13] the world and add rocks without it
+[38:16] completely transitioning to the main
+[38:19] layer so that is what the Hy blend
+[38:21] parameters are for that is how we can
+[38:23] use nanites with the landscape another
+[38:25] new feature added in u5 is landscape
+[38:28] patches which will let us use highight
+[38:30] textures to deform the entire landscape
+[38:33] with patches we could quickly add a lot
+[38:34] of height detail to the landscape
+[38:36] without having to sculpt it to see the
+[38:39] highight patches you can jump into the
+[38:41] patch example map so go to example maps
+[38:44] and double click to go inside of it so
+[38:46] these are the height patches that this
+[38:48] pack comes with and height patches are
+[38:51] great because they allow us to quickly
+[38:52] get in height detail from textures and
+[38:55] the ability to move around around that
+[38:56] height detail like it's a 3D object so
+[39:00] it's really fun to manipulate your
+[39:02] landscape this fast and we could even
+[39:06] scale it down or scale it up make it
+[39:09] really big to Encompass the entire
+[39:11] landscape or make it super small so it's
+[39:15] only in a portion of that landscape and
+[39:18] all the detail within this map is
+[39:20] handled exclusively by patches so there
+[39:23] is no sculpting whatsoever let's go over
+[39:26] how to add patches to a brand new
+[39:27] project specifically this environment
+[39:30] that we created in the starter course so
+[39:32] first things first you need to make sure
+[39:34] that the proper plugins are enabled so
+[39:37] go to settings plugins and type in
+[39:40] landmass make sure landmass is turned on
+[39:43] and also make sure landscape patch is
+[39:46] turned on now it is beta so you are
+[39:48] probably going to counter some glitches
+[39:50] of course in future versions this will
+[39:52] not be in beta now we have two
+[39:54] Landscapes we have this main one right
+[39:57] here but then we also have this
+[39:59] landscape so we will add patches to this
+[40:01] one and you will have to migrate the
+[40:04] landscape folder into this project I've
+[40:06] already migrated that folder and the
+[40:09] patches will be under landscape patches
+[40:12] the patch will be bbor landscape patch
+[40:15] and drag it out to let go it will ask us
+[40:17] if you want to insert a new landscape
+[40:19] edit layer press accept and that will
+[40:22] create if I go into landscape mode a new
+[40:25] layer right here called landscape
+[40:26] patches so if I select layer I'm still
+[40:29] able to sculpt like normal the landscape
+[40:31] patches are going to be added on top of
+[40:33] our sculpts which means it is
+[40:35] non-destructive don't worry the patches
+[40:37] are not going to erase any of the hard
+[40:39] work you have already done on the
+[40:40] landscape another thing that was created
+[40:42] if we go into the outliner and type in
+[40:45] patch is this landscape patch manager
+[40:47] which will handle all the patches make
+[40:49] sure you do not delete this actor
+[40:51] because if you do your patches will
+[40:52] break you also want to make sure that
+[40:54] the correct landscape you want to put
+[40:55] the patches on on is selected so in my
+[40:59] case it's selecting landscape 2 which is
+[41:01] this landscape which is where the
+[41:02] patches should go now for some reason it
+[41:05] did not create the patch when I dragged
+[41:07] it in so I'm going to have to drag it in
+[41:08] again and then let go and also press the
+[41:12] G key to turn off game View mode so I
+[41:15] can see my widget so here's our patch
+[41:17] right now it's not doing anything and
+[41:19] that's because I have to assign it a
+[41:20] texture now I can't just go over to the
+[41:23] details panel and start messing with the
+[41:25] patch settings I have to select
+[41:28] landscape texture patch component right
+[41:30] here within the components tab so make
+[41:33] sure this is selected and then we get
+[41:36] access to all the settings we need so
+[41:39] specifically I'm going to go down to
+[41:41] Source mode select texture asset and
+[41:44] we're going to place one of these
+[41:45] textures right here so I'll select land
+[41:48] Mountain 2 and then let go and
+[41:51] immediately this is making effect now
+[41:54] before I move this patch around or or
+[41:56] before I scale it or rotate it I need to
+[41:59] make sure that I have bpor landscape
+[42:01] patch selected because otherwise if I
+[42:04] have this component selected and then if
+[42:06] I move it around then you'll see that
+[42:09] the patch is in a different location
+[42:12] from the blueprint so don't worry if you
+[42:15] do do that nothing will break that is
+[42:17] perfectly fine but it'll just make it
+[42:19] harder for us the developers so before I
+[42:22] move my patch I make sure I have this
+[42:24] component selected now I can move this
+[42:27] patch around then I can scale it up so
+[42:30] we can actually see this mountain move
+[42:33] it off to the side and then scale it
+[42:36] down that's how it just makes a slight
+[42:38] effect on the landscape and just like
+[42:43] any other object in unreal I can
+[42:45] duplicate this patch by holding down alt
+[42:47] and dragging and we get another patch so
+[42:51] I'm going to change the texture on this
+[42:52] patch so let's go back to landscape
+[42:54] texture patch to get the settings
+[42:57] and instead of the mountain I will use
+[42:59] this erosion High texture and place it
+[43:02] right there so I like this one because I
+[43:05] can basically make a
+[43:08] valley right here so just scale this up
+[43:11] scale that down and then make it so it
+[43:14] encompasses this entire landscape now
+[43:18] you will notice that the patch is now
+[43:20] cutting into the other patch so in case
+[43:22] you don't want that then within the
+[43:25] settings right here scroll up to blend
+[43:28] mode and select Max so this will make it
+[43:32] so that the patches are better blending
+[43:34] in with each other another change that I
+[43:36] can make is that you notice when I lift
+[43:38] up this patch it lifts up the entire
+[43:41] landscape so in case we don't want that
+[43:43] to happen come down here under zero
+[43:46] height meaning and change this from
+[43:47] patch Z to landscape Z so that will
+[43:50] prevent the patch from elevating the
+[43:52] entire landscape and if I select away
+[43:55] from the patches if I ever want to
+[43:57] select them back it can be really hard
+[43:59] to find the origin point of the
+[44:01] blueprint then I can come up to the
+[44:03] outliner type in patch and then select
+[44:06] the patches right here that is an easier
+[44:09] way to select the patch I have this
+[44:11] patch I'm going to make it really large
+[44:13] but before I do let's go back into the
+[44:15] texture patch settings and change this
+[44:18] to Max and we're going to select the
+[44:20] blueprint rout of the patch and then
+[44:24] just scale it up to to make it pretty
+[44:26] large and something cool about landscape
+[44:29] patches is that if I go in with the
+[44:32] foliage mode and I start painting a
+[44:35] bunch of
+[44:36] trees then if I jump back into the patch
+[44:40] and I scale this
+[44:42] up the trees will remain on top of it so
+[44:47] it is a very non-destructive way to edit
+[44:49] your Landscapes and of course you're not
+[44:51] just limited to the high textures that
+[44:53] are included in this pack feel free to
+[44:54] download any High texture online or use
+[44:57] high textures from other unreal
+[44:58] Marketplace assets to add to the patch
+[45:01] my favorite feature besides nanite is
+[45:03] virtual texture blending virtual texture
+[45:05] blending has been around for a while and
+[45:07] I pretty much use it on all of my
+[45:08] environments it allows us to seamlessly
+[45:10] blend objects with the landscape it is
+[45:13] best to show why it is great with an
+[45:15] example so let's jump into the texture
+[45:17] blending map and this is what we will
+[45:19] see it's just a basic small landscape
+[45:22] and in the middle we have some rocks but
+[45:24] what's unique about these rocks is that
+[45:26] they are blending with the landscape to
+[45:29] see what the Rocks would look like
+[45:31] without texture blending we can open up
+[45:33] the material and then within the details
+[45:36] panel scroll all the way down here and
+[45:38] we have virtual textures if I turn that
+[45:41] off then this is what the Rocks would
+[45:43] look like if they're just placed on the
+[45:44] landscape and obviously this doesn't
+[45:46] look realistic we have a grass texture
+[45:48] and then all of a sudden it just
+[45:49] transitions to rock normally you would
+[45:52] expect grass to grow on top of the rock
+[45:54] where there' be a slight transition
+[45:56] and this is where virtual textures come
+[45:58] in handy they allow us to get that
+[46:00] transition so before I jump into how we
+[46:02] set up virtual textures because it is a
+[46:04] process let me go over the different
+[46:07] settings we have right here so first
+[46:10] setting is the falloff if I want the
+[46:12] transition to be longer then we can
+[46:14] increase that to 200 so now more of the
+[46:17] grass is on top of the rock or if I want
+[46:19] there to be a sharp transition we can
+[46:20] lower that to something like 10 so it's
+[46:23] only a slight transition and of course
+[46:25] we have virtual blend height which will
+[46:27] increase the height at which that
+[46:30] transition starts so we can play with
+[46:32] the height and then we can play with the
+[46:34] fall off we also have remove sides the
+[46:38] reason why this is an option is because
+[46:39] if I uncheck it then the grass would
+[46:42] grow on this side like right here but it
+[46:45] gives a really nasty texture stretching
+[46:47] so by turning this on it will just
+[46:49] remove it from sharp angles so we don't
+[46:52] have that stretching and then we also
+[46:54] have a noise texture which will add a
+[46:57] little bit of noise to the fallof that's
+[47:00] how the transition between the mesh's
+[47:02] texture and the ground texture isn't
+[47:04] that obvious because in reality the
+[47:06] transition wouldn't be a smooth fallof
+[47:09] you would expect to see little splotches
+[47:11] at the landscape on top of the rocks and
+[47:14] that is exactly what the noise texture
+[47:15] will give us now I remove the virtual
+[47:18] texture to show how we would set it up
+[47:20] and do keep in mind that this is a
+[47:23] process so first off you want to make
+[47:25] sure that your project supports virtual
+[47:27] textures so go into project settings
+[47:30] scroll down here until we get to
+[47:32] rendering right there and then make sure
+[47:35] enable virtual texture support is turned
+[47:38] on once it's turned on you want to
+[47:40] create two virtual textures so I'm just
+[47:43] going to create it here within this
+[47:44] folder right click go down textures and
+[47:47] select runtime virtual texture call this
+[47:50] rvt height and then copy this crl c
+[47:54] contrl v and call this one
+[47:57] rptor material so the height of my
+[48:00] landscape will be stored in the Heights
+[48:02] and then the material of the landscape
+[48:04] will be stored in the material and we
+[48:06] need to jump into the height texture and
+[48:09] change it to height so change it to
+[48:11] World height and then for rvt mat we can
+[48:16] leave it as base color normal roughness
+[48:18] specular so all four these channels will
+[48:20] be stored within this runtime virtual
+[48:22] texture which is exactly what we need
+[48:25] for a landscape now that we have our two
+[48:27] virtual textures we need to tell unreal
+[48:29] the area that those virtual textures
+[48:32] will cover and to do that we need to
+[48:35] come up to the add button go to volumes
+[48:37] and then add in a runtime virtual
+[48:40] texture volume at the very last one
+[48:42] right there and drop it into the World
+[48:45] Press G that's how we're actually able
+[48:47] to see it okay here it
+[48:50] is and we're going to scale this up
+[48:52] that's how it encompasses the entire
+[48:54] area that I want want
+[48:56] captured now instead of scaling up I
+[48:58] will have unreal do it automatically but
+[49:01] before we can have unreal do it
+[49:02] automatically we need to First assign it
+[49:05] a virtual texture so let's first do the
+[49:09] height so drag height right there and
+[49:12] now that I've assigned it I can select a
+[49:14] landscape so select the Picker icon and
+[49:17] select the landscape and then press set
+[49:20] bounds this will automatically scale the
+[49:23] bounds that's how it encompasses the
+[49:25] entire higher landscape now in my
+[49:27] opinion I want to make this height
+[49:29] taller just in case if I go in with a
+[49:31] sculpt brush and I sculpt above the
+[49:33] bounds then that means our virtual
+[49:36] texture is no longer capturing that part
+[49:38] of the landscape so to make it taller
+[49:40] within
+[49:41] scale instead of 1300 let's make this
+[49:46] 10,000 okay that's better now what I
+[49:49] will do is contrl C and control V this
+[49:52] so we're duplicating it that's why we
+[49:54] have another bounds on top of the
+[49:56] previous one and this one instead of
+[49:59] capturing the height we will capture the
+[50:02] material and notice how both these
+[50:04] virtual textures are black that means
+[50:06] it's not capturing the landscape just
+[50:08] yet because I have to tell the landscape
+[50:10] hey these two virtual textures are
+[50:13] trying to capture you I know there is a
+[50:15] lot we have to do to set this up but
+[50:17] trust me it is worth it so select the
+[50:20] landscape scroll all the way down till
+[50:22] we get the virtual textures we need to
+[50:24] add in two so press the button twice and
+[50:27] it will be the two virtual textures we
+[50:29] already have so height and material and
+[50:33] now if I save it we can see in the
+[50:36] previews that it is capturing the
+[50:38] landscape so now that our runtime
+[50:40] virtual textures contain our landscape
+[50:42] data we need to put this landscape data
+[50:45] on top of any meshes we want to blend
+[50:48] with a landscape and by default most
+[50:51] materials aren't blending with virtual
+[50:53] textures so let's go ahead and let's
+[50:55] open open up this rock material which is
+[50:58] the default Mega scans material instance
+[51:01] we need to open up its Master material
+[51:03] all the way down here and this is what
+[51:05] Mega scans will give you for your basic
+[51:08] Assets Now I want to add on at the very
+[51:11] end of this material graph a function
+[51:13] that will overlay the virtual textures
+[51:15] on top of this material and luckily for
+[51:18] you I've already created that if we go
+[51:20] into landscape material functions it is
+[51:23] MF VT blend so just go ahead and drag
+[51:28] that in and it is asking for a material
+[51:31] attribute which is good because that's
+[51:33] exactly what this line is so all I have
+[51:35] to do is plug it up like this and that
+[51:39] is it now in case your material looks
+[51:41] like this which is the material we
+[51:43] created from the starter course what you
+[51:45] want to do is right click and go make
+[51:48] material attributes and then you're
+[51:51] going to hold down control and then drag
+[51:54] those lines into the make material
+[51:56] attribute so go metallic to
+[51:59] metallic roughness to roughness and
+[52:02] normal to normal right there and now the
+[52:06] output will be a material attribute so
+[52:09] Within These settings for this material
+[52:11] select use material attributes and then
+[52:13] we can hook it up right there and this
+[52:16] just gives us the ability to add in the
+[52:18] MF uncore VT
+[52:20] blend right here like this to allow this
+[52:23] material to blend with the landscape
+[52:25] once we add in that blend it will give
+[52:27] us a new Option within the material
+[52:31] parameters down here called virtual
+[52:33] textures we can just enable them right
+[52:36] here by pressing that button now the
+[52:38] mesh will turn black don't worry that's
+[52:39] just because we need to put the virtual
+[52:41] textures we created right there so let's
+[52:43] go to where the virtual textures are
+[52:45] drag height into height and the
+[52:48] landscape into landscape and there we go
+[52:50] now we have a working blending object so
+[52:55] that is the process to enable virtual
+[52:58] textures I know it is a lot but it is
+[53:01] worth it I used it heavily in this Creek
+[53:04] build so if I hide the foliage we can
+[53:07] see that all the static meshes
+[53:09] especially the natural static meshes are
+[53:12] blending in with the
+[53:14] environment it looks very natural for
+[53:16] these meshes to be here and then as soon
+[53:19] as I turn off virtual textures all of a
+[53:21] sudden these assets look really out of
+[53:24] place
+[53:25] it is noticeable that I'm just plopping
+[53:28] down at different objects that aren't
+[53:30] related to each other so virtual
+[53:32] textures really allows realistic asset
+[53:35] placement that blends with the
+[53:37] environment which you can turn an
+[53:39] environment from looking like this to
+[53:41] this and finally the last feature is
+[53:44] procedural foliage it gives us the
+[53:46] ability to dynamically add objects on
+[53:48] each of our layers so we don't have to
+[53:50] use the foliage tool or manually place
+[53:53] them so our grass layer can spawn grass
+[53:55] and our Cliff layers will spawn rocks
+[53:58] automatically to show off the landscape
+[54:00] procedural foliage tool I am back in the
+[54:03] creek world and I got rid of the law the
+[54:05] small objects so there's no grass
+[54:07] flowers ferns or Pebbles instead all
+[54:10] that will be handled by the landscape
+[54:12] and you might be wondering why I also
+[54:14] didn't get rid of the trees and that's
+[54:16] because trees should still be handled by
+[54:18] your traditional foliage placement since
+[54:20] the assets placed by landscape do not
+[54:22] have collision and also the way it works
+[54:25] is that it spawns in assets that are
+[54:27] close to the player so if we have grass
+[54:30] that is all the way over here it won't
+[54:32] be spawned in and we want to see trees
+[54:35] everywhere and if trees are being
+[54:37] handled by the landscape then it's going
+[54:38] to be noticeable when they're spawned
+[54:40] this procedural foliage tool should only
+[54:42] be used for really small assets like
+[54:45] grass Ferns and Pebbles to start adding
+[54:47] the foliage assets if we go into the
+[54:51] landscape folder which is the folder
+[54:53] that we migrate into all of our projects
+[54:55] and then go into materials we have this
+[54:58] folder called landscape grass and it is
+[55:00] here where we Define what objects should
+[55:02] spawn based on the layer so our grass
+[55:05] right now is layer a so I could double
+[55:08] click on this to get the layer a
+[55:11] procedural Foliage for example if I want
+[55:14] to spawn ferns on my grass then I can
+[55:16] press on the plus button and within the
+[55:19] drop down let's select burn and we also
+[55:23] get a bunch of other settings feel free
+[55:25] to play with them and see which settings
+[55:26] you like really the most important
+[55:28] setting is the grass density which
+[55:30] controls how many assets are spawned so
+[55:32] now that we have this selected if I move
+[55:34] this off to the side you notice that
+[55:36] there are no Ferns and that's because
+[55:40] within the auto material under foliage
+[55:43] you need to make sure material a is
+[55:44] turned on and then press the on button
+[55:47] right there and now we get a bunch of
+[55:51] fern everywhere and honestly this is too
+[55:53] many ferns so we can bring that down
+[55:56] right here to let's try 10 okay that
+[56:00] looks like a better amount and if we
+[56:03] want to vary the size of these ferns
+[56:05] that's how some ferns are small and
+[56:06] others are larger then down here we can
+[56:09] make small ferns let's go 0.7 for
+[56:12] smaller and then the largest ones can be
+[56:14] something like two so we get really
+[56:17] small ones and we get really large ones
+[56:20] also the reason why I have this
+[56:21] mannequin in here is to make sure that
+[56:23] the sizes of the foliage makes sense so
+[56:26] in this case it doesn't really so let's
+[56:28] bring that down to 1.25 okay that looks
+[56:31] a little bit better and of course we
+[56:33] need grass on this landscape so let's go
+[56:36] ahead and add in another one by clicking
+[56:38] the plus button again and then down here
+[56:41] we will select grass
+[56:44] Clump and now we have a bunch of grass
+[56:47] everywhere and this is all spawned
+[56:49] automatically and you'll notice that
+[56:52] this is only being spawned on the ground
+[56:54] grass layer it's not be spawned on this
+[56:56] layer or it's not spawning in the middle
+[56:59] of a pond which is using this Pebble
+[57:01] layer and this is all Dynamic so I
+[57:05] notice that the grass is going into the
+[57:07] water that's not supposed to happen so
+[57:09] by jumping into paint mode I'm able to
+[57:12] paint away that grass by painting in the
+[57:15] pebble layer just like this and it is
+[57:18] all highly Dynamic and each of these
+[57:21] layers can have their own set of
+[57:23] spawnable meshes
+[57:25] I went on to fill out some of the other
+[57:27] layers and I also added more meshes to
+[57:29] grass so now we have a little bit of
+[57:31] rock spawning with grass also dead brush
+[57:34] and different variations of the grass
+[57:37] that are spawning and if we come over
+[57:40] here you'll see that for the C layer we
+[57:44] have rocks and twigs spawning so each
+[57:48] layer has their own set of meshes being
+[57:51] spawned and let's say we don't want
+[57:53] foliage being spawn at a specific place
+[57:56] like this road which is currently being
+[57:58] covered then we can go into landscape
+[58:01] mode paint and down here we have foliage
+[58:04] remover so let's create this layer by
+[58:06] clicking on the plus button and make
+[58:07] sure you select non-weight Blended layer
+[58:10] instead of weight Blended layer normal
+[58:12] which is what we would use for the other
+[58:13] layers so select non-weight Blended
+[58:16] layer save that there and now in order
+[58:20] to get back my path that's how there
+[58:22] isn't grass and rocks in the way of
+[58:25] where people would normally walk I could
+[58:28] paint it down and now get rid of that
+[58:31] actually let me go increase my tool
+[58:33] strength and also increase the size so
+[58:37] now I'm painting away that foliage to
+[58:40] make room for where people walk and if I
+[58:43] ever paint away too much foliage to get
+[58:45] it back hold down shift and then start
+[58:47] painting to bring back that procedural
+[58:51] foliage so this is a really cool way to
+[58:54] get a a bunch of meshes onto your
+[58:56] landscape without having to use the
+[58:58] foliage tool or manually placing it
+[59:01] often times when creating a landscape
+[59:03] you want the foliage to be the same
+[59:05] across the world and also different for
+[59:08] each layer this is an easy and quick way
+[59:10] to do it
+[59:12] automatically this tutorial only covers
+[59:14] how to use the landscape material not
+[59:16] how to create it from scratch if you
+[59:17] want to unlock the full potential of
+[59:19] unreal then you could check out the
+[59:20] unreal masterclass which is a collection
+[59:23] of exclusive courses I made made for u5
+[59:25] there's an advanced material course in
+[59:27] it where we build the landscape material
+[59:29] from the ground up if you want to take
+[59:31] your own real skills to the next level
+[59:32] check out the masterclass link in the
+[59:34] description that is how you use this
+[59:36] landscape material it makes the process
+[59:38] of creating environments a lot easier
+[59:40] and it is a lot faster than creating
+[59:42] your landscape material completely from
+[59:44] scratch have fun with it and I will see
+[59:46] you in the next video

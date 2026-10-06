@@ -1,0 +1,72 @@
+{
+  "schema": "environmentpipeline.ground_visual_review.v1",
+  "status": "FRESH_VISUAL_PERSISTENCE_NOT_APPROVED_DETAIL_REGRESSION",
+  "utc": "2026-10-05T08:26:45.456843+00:00",
+  "reviewer": "/root/visual_review",
+  "pid": 26820,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "stage": "epic_r027_fresh",
+  "images": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_fresh_close.png": {
+      "sha256": "a1b970872207361798e3e1c62454d40527b39099bd3c6d08818f85b63d1dc2fe",
+      "shot": "close",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "capture_receipt_sha256": "e5c83a097d5b5adb1b1acc56d0926687b26a6a4cf61a4eb1e82e8d77b0c8800e",
+      "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_close.png",
+      "comparison_sha256": "cc6016800fd8e164f6f770e73a802a691227e48b520e536d06792dcaa8ade6ba",
+      "actual_lit": 3,
+      "camera_matches": true,
+      "visually_inspected": true
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_fresh_middle.png": {
+      "sha256": "d8cd76ad4c9fcbc101419251450c1825cbc3fabc18cd0590a0659fab2502aaf1",
+      "shot": "middle",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "capture_receipt_sha256": "36f062a74e95ae528025217c7c38ecbbcc7566feee214addfe7a27a880e23b84",
+      "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_middle.png",
+      "comparison_sha256": "d8f984fe55faf6bac1301f371e19e933abf890befd235a2eaf79f512c74125fb",
+      "actual_lit": 3,
+      "camera_matches": true,
+      "visually_inspected": true
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_fresh_wide.png": {
+      "sha256": "6a16a6d5adb24903a4027cebb59c2bab6b2574a0fafb038c5ca646a6f2f8bb79",
+      "shot": "wide",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "capture_receipt_sha256": "c58d3839c8e9479e0453b238df48ee3f05a9907294bca0593c923e0b9fff2916",
+      "comparison": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_epic_r027_wide.png",
+      "comparison_sha256": "de3da76c3ede8fadc86b4d2edec028b14a009642bb24f72d72299715c3c9a894",
+      "actual_lit": 3,
+      "camera_matches": true,
+      "visually_inspected": true
+    }
+  },
+  "save_approved_within_scope": false,
+  "fresh_process_visual_persistence_approved": false,
+  "source_checkpoint_retention_rejected": false,
+  "observations": {
+    "close": "Clear loss of ground clarity versus same-camera presave r027: individually bounded foreground pebbles and fine fractured soil detail become broad soft patches. Sidewalk and bin silhouettes remain sharp; the texture-detail regression is visible on ground.",
+    "middle": "Broad palette and distribution remain similar, but small ground detail looks less crisp. This view cannot substitute for the failed close sharpness check.",
+    "wide": "Appearance is materially similar to presave r027, including broad pale ground, angular patches and faint directional repetition."
+  },
+  "quality_gate": "Recover close granular/pebble detail in actual measured-Lit fresh-process output without changing the approved recipe or masking the regression with tint/normal changes.",
+  "limitations": [
+    "Images show loss of ground detail; mip residency, camera registration and material causes require separate native evidence.",
+    "Saved parameter/graph identity and source choice are separate from visible persistence.",
+    "No new native or Content action was performed by reviewer.",
+    "Reference, whole-scene and user acceptance remain pending."
+  ],
+  "reference_quality_accepted": false,
+  "whole_environment_accepted": false,
+  "user_acceptance": "PENDING"
+}

@@ -1,0 +1,2243 @@
+{
+  "implementation_status": "not_implemented_by_bank_chat",
+  "required_interface": {
+    "roof_or_wall_host_attachment": [
+      "source_area_id",
+      "source_osm_id",
+      "host actor/component identity",
+      "host local surface frame and normal",
+      "support polygon",
+      "contact offset",
+      "clearance",
+      "owned replacement identity"
+    ],
+    "sign_host_attachment_or_measured_standalone_pole": [
+      "sign type and host identity",
+      "readable outward facing",
+      "mount height",
+      "road orientation/context",
+      "owned replacement identity"
+    ],
+    "linear_boundary_alignment": [
+      "source polyline",
+      "segment length",
+      "corner/end roles",
+      "terrain support",
+      "spacing and overlap policy",
+      "owned replacement identity"
+    ],
+    "road_or_surface_host": [
+      "owning road/surface provider",
+      "lane/sidewalk/curb context",
+      "surface normal/contact",
+      "material consumer",
+      "owned replacement identity"
+    ]
+  },
+  "retained_hda_behavior": "mount_sign/roof_anchor candidates fail unsupported_attachment_contract; no fence or road-drain host substitute is added.",
+  "assets": [
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01.SM_sidewalk_01",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_base",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_base.SM_sidewalk_01_base",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_corner",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_corner.SM_sidewalk_01_corner",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_cornerIn",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_cornerIn.SM_sidewalk_01_cornerIn",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_double",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_double.SM_sidewalk_01_double",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_driveIn",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_driveIn.SM_sidewalk_01_driveIn",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_driveInDirt",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_driveInDirt.SM_sidewalk_01_driveInDirt",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_rainDrain",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_rainDrain.SM_sidewalk_01_rainDrain",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__GroundTilset__SM_sidewalk_01_trim",
+      "object_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_sidewalk_01_trim.SM_sidewalk_01_trim",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "separate_road_or_surface_geometry_lane",
+        "no_supported_prop_request_role"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_AntennaBig_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_AntennaBig_01.SM_AntennaBig_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_Water_Tank_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_Water_Tank_01.SM_Water_Tank_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_airCondition_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_airCondition_01.SM_airCondition_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_airCondition_02",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_airCondition_02.SM_airCondition_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboardLight_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboardLight_01.SM_billboardLight_01",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboardStand_02_small",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboardStand_02_small.SM_billboardStand_02_small",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_86Gasoline",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_86Gasoline.SM_billboard_86Gasoline",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_AmericanBank",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_AmericanBank.SM_billboard_AmericanBank",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_AmericanBank_02",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_AmericanBank_02.SM_billboard_AmericanBank_02",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Arrow",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Arrow.SM_billboard_Arrow",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_AutoService",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_AutoService.SM_billboard_AutoService",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Donuts_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Donuts_01.SM_billboard_Donuts_01",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_FruitMarket",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_FruitMarket.SM_billboard_FruitMarket",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_GasStationOld",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_GasStationOld.SM_billboard_GasStationOld",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_GunsAmmo",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_GunsAmmo.SM_billboard_GunsAmmo",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_GunsAmmo2",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_GunsAmmo2.SM_billboard_GunsAmmo2",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Licenses",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Licenses.SM_billboard_Licenses",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Liquor",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Liquor.SM_billboard_Liquor",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Market24",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Market24.SM_billboard_Market24",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_PawnShop",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_PawnShop.SM_billboard_PawnShop",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_Warehouse_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_Warehouse_01.SM_billboard_Warehouse_01",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_carDealership",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_carDealership.SM_billboard_carDealership",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_countySheriff",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_countySheriff.SM_billboard_countySheriff",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_forRent",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_forRent.SM_billboard_forRent",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_forRent_standing",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_forRent_standing.SM_billboard_forRent_standing",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_forSale",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_forSale.SM_billboard_forSale",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_forSale_standing",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_forSale_standing.SM_billboard_forSale_standing",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_billboard_jobOffers",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_jobOffers.SM_billboard_jobOffers",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_blibbloardStand_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_blibbloardStand_01.SM_blibbloardStand_01",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_blibbloardStand_01a",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_blibbloardStand_01a.SM_blibbloardStand_01a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_camera",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_camera.SM_camera",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_chimney_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_chimney_01.SM_chimney_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_chimney_01a",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_chimney_01a.SM_chimney_01a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_chimney_02",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_chimney_02.SM_chimney_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_construction_sign",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_construction_sign.SM_construction_sign",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_motel_sign",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_motel_sign.SM_motel_sign",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_pipesStock_01",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_pipesStock_01.SM_pipesStock_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_pipesStock_02",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_pipesStock_02.SM_pipesStock_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_powerCables_1",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_powerCables_1.SM_powerCables_1",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_powerCables_2",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_powerCables_2.SM_powerCables_2",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_powerCables_3",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_powerCables_3.SM_powerCables_3",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_1",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_1.SM_road_sign_1",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_2",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_2.SM_road_sign_2",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_3",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_3.SM_road_sign_3",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_4",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_4.SM_road_sign_4",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_5",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_5.SM_road_sign_5",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_6",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_6.SM_road_sign_6",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_7",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_7.SM_road_sign_7",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_8",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_8.SM_road_sign_8",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_road_sign_9",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_road_sign_9.SM_road_sign_9",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_sewerCover",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_sewerCover.SM_sewerCover",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_speed_limit_25",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_speed_limit_25.SM_speed_limit_25",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_speed_limit_50",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_speed_limit_50.SM_speed_limit_50",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_speed_limit_75",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_speed_limit_75.SM_speed_limit_75",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_tank",
+      "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_tank.SM_tank",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_building_electrical_beam_a",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_building_electrical_beam_a.deco_building_electrical_beam_a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_building_electrical_beam_b",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_building_electrical_beam_b.deco_building_electrical_beam_b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_building_electrical_wire_a",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_building_electrical_wire_a.deco_building_electrical_wire_a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_building_electrical_wire_b",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_building_electrical_wire_b.deco_building_electrical_wire_b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_building_exhaust_vent",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_building_exhaust_vent.deco_building_exhaust_vent",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Building_Deco__deco_windows_airconditioning",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Building_Deco/deco_windows_airconditioning.deco_windows_airconditioning",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_poster_lost_chicken",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_poster_lost_chicken.decal_poster_lost_chicken",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sign_store_health_code",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sign_store_health_code.decal_sign_store_health_code",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sign_store_hours",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sign_store_hours.decal_sign_store_hours",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sign_store_sorry_open",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sign_store_sorry_open.decal_sign_store_sorry_open",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sticker_alarm_warning",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sticker_alarm_warning.decal_sticker_alarm_warning",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sticker_store_address_a",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sticker_store_address_a.decal_sticker_store_address_a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sticker_store_address_b",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sticker_store_address_b.decal_sticker_store_address_b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sticker_store_pull",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sticker_store_pull.decal_sticker_store_pull",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Decals_Stickers_Posters__decal_sticker_store_push",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Decals_Stickers_Posters/decal_sticker_store_push.decal_sticker_store_push",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "native_bounds_require_review"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_a",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_a.sign_store_a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_a1",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_a1.sign_store_a1",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_b",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_b.sign_store_b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_b1",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_b1.sign_store_b1",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_broken_d",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_broken_d.sign_store_broken_d",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_c",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_c.sign_store_c",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_c1",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_c1.sign_store_c1",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularBuildingSet__Meshes__Store_Signs__sign_store_intact_d",
+      "object_path": "/Game/ModularBuildingSet/Meshes/Store_Signs/sign_store_intact_d.sign_store_intact_d",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_AC",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_AC.SM_AC",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe1_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe1_01.SM_Downpipe1_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe1_02",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe1_02.SM_Downpipe1_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe1_03",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe1_03.SM_Downpipe1_03",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe2_02",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe2_02.SM_Downpipe2_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe3_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe3_01.SM_Downpipe3_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe3_02",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe3_02.SM_Downpipe3_02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe3_03",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe3_03.SM_Downpipe3_03",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Downpipe4_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Downpipe4_01.SM_Downpipe4_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT1a_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT1a_01.SM_Gaze_pipeT1a_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2_01.SM_Gaze_pipeT2_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2a_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2a_01.SM_Gaze_pipeT2a_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2b_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2b_01.SM_Gaze_pipeT2b_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2c_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2c_01.SM_Gaze_pipeT2c_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2d_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2d_01.SM_Gaze_pipeT2d_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2e_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2e_01.SM_Gaze_pipeT2e_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT2f_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT2f_01.SM_Gaze_pipeT2f_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT3_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT3_01.SM_Gaze_pipeT3_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT3a_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT3a_01.SM_Gaze_pipeT3a_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT4_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT4_01.SM_Gaze_pipeT4_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT5_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT5_01.SM_Gaze_pipeT5_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT5a_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT5a_01.SM_Gaze_pipeT5a_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT6_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT6_01.SM_Gaze_pipeT6_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipeT6a_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipeT6a_01.SM_Gaze_pipeT6a_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Gaze_pipe_T1_01",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Gaze_pipe_T1_01.SM_Gaze_pipe_T1_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Waire",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Waire.SM_Waire",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_electrical_box",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_electrical_box.SM_electrical_box",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_wire_support",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_wire_support.SM_wire_support",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "material_slot_path_gap"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Deco__B12_Old_Air_Conditioner_Set",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/B12_Old_Air_Conditioner_Set.B12_Old_Air_Conditioner_Set",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_01a.SM_Slums_Decal_01a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_01b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_01b.SM_Slums_Decal_01b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02a.SM_Slums_Decal_02a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02b.SM_Slums_Decal_02b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02c.SM_Slums_Decal_02c",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02d.SM_Slums_Decal_02d",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02e",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02e.SM_Slums_Decal_02e",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Decal_02f",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Decal_02f.SM_Slums_Decal_02f",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_01a.SM_Slums_Pipe_01a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_01b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_01b.SM_Slums_Pipe_01b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_01c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_01c.SM_Slums_Pipe_01c",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_01d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_01d.SM_Slums_Pipe_01d",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_01e",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_01e.SM_Slums_Pipe_01e",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_02a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02a.SM_Slums_Pipe_02a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_02b_OP",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02b_OP.SM_Slums_Pipe_02b_OP",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_02c_OP",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02c_OP.SM_Slums_Pipe_02c_OP",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_02d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02d.SM_Slums_Pipe_02d",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_02e",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02e.SM_Slums_Pipe_02e",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_03a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_03a.SM_Slums_Pipe_03a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_03b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_03b.SM_Slums_Pipe_03b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_04a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_04a.SM_Slums_Pipe_04a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_04b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_04b.SM_Slums_Pipe_04b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05a.SM_Slums_Pipe_05a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05a_LOD01",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05a_LOD01.SM_Slums_Pipe_05a_LOD01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05b.SM_Slums_Pipe_05b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05b_LOD01",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05b_LOD01.SM_Slums_Pipe_05b_LOD01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05c.SM_Slums_Pipe_05c",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05c_LOD01",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05c_LOD01.SM_Slums_Pipe_05c_LOD01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05d.SM_Slums_Pipe_05d",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05d_LOD02",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05d_LOD02.SM_Slums_Pipe_05d_LOD02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05e",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05e.SM_Slums_Pipe_05e",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05e_LOD02",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05e_LOD02.SM_Slums_Pipe_05e_LOD02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05f",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05f.SM_Slums_Pipe_05f",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05f_LOD01",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05f_LOD01.SM_Slums_Pipe_05f_LOD01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05g",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05g.SM_Slums_Pipe_05g",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05h",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05h.SM_Slums_Pipe_05h",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipe_05h_LOD02",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_05h_LOD02.SM_Slums_Pipe_05h_LOD02",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Pipes_04c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipes_04c.SM_Slums_Pipes_04c",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign01a.SM_Slums_Sign01a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign01b_Bent",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign01b_Bent.SM_Slums_Sign01b_Bent",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign01b_Bent_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign01b_Bent_opt.SM_Slums_Sign01b_Bent_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign01b_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign01b_opt.SM_Slums_Sign01b_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign01d_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign01d_opt.SM_Slums_Sign01d_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign02a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign02a.SM_Slums_Sign02a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign02a_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign02a_opt.SM_Slums_Sign02a_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign02b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign02b.SM_Slums_Sign02b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign02b_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign02b_opt.SM_Slums_Sign02b_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign02d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign02d.SM_Slums_Sign02d",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign03a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign03a.SM_Slums_Sign03a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign03a_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign03a_opt.SM_Slums_Sign03a_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign03b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign03b.SM_Slums_Sign03b",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign04a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign04a.SM_Slums_Sign04a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign04a_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign04a_opt.SM_Slums_Sign04a_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign05a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign05a.SM_Slums_Sign05a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign05a_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign05a_opt.SM_Slums_Sign05a_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign06a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign06a.SM_Slums_Sign06a",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Sign06a_opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Sign06a_opt.SM_Slums_Sign06a_opt",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01a.SM_Slums_Vent_01a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_01a_Opt",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01a_Opt.SM_Slums_Vent_01a_Opt",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_01b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01b.SM_Slums_Vent_01b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_01b_2",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01b_2.SM_Slums_Vent_01b_2",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_01b_OP",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_01b_OP.SM_Slums_Vent_01b_OP",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_02b",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02b.SM_Slums_Vent_02b",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_02c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02c.SM_Slums_Vent_02c",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_02d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02d.SM_Slums_Vent_02d",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_02e",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02e.SM_Slums_Vent_02e",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Vent_02e_OP",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02e_OP.SM_Slums_Vent_02e_OP",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "dependency_closure_unresolved_or_unmeasured"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wall_Pipe_01",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wall_Pipe_01.SM_Slums_Wall_Pipe_01",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_01a.SM_Slums_Wires_01a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_01a_OP0",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_01a_OP0.SM_Slums_Wires_01a_OP0",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_02a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_02a.SM_Slums_Wires_02a",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_02c",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_02c.SM_Slums_Wires_02c",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_02c_OP",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_02c_OP.SM_Slums_Wires_02c_OP",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Wires_02d",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wires_02d.SM_Slums_Wires_02d",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0090_Watertank",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0090_Watertank.SM_H0090_Watertank",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "roof_role_or_contact_unverified"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0091_Watertank_001",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0091_Watertank_001.SM_H0091_Watertank_001",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "roof_role_or_contact_unverified"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0650_SM_AirConditioner",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0650_SM_AirConditioner.SM_H0650_SM_AirConditioner",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0025_Barrier",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0025_Barrier.SM_H0025_Barrier",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": []
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0060_Metal_Barrier",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0060_Metal_Barrier.SM_H0060_Metal_Barrier",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": []
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0081_Streetpowerbox",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0081_Streetpowerbox.SM_H0081_Streetpowerbox",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0082_Streetsign",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0082_Streetsign.SM_H0082_Streetsign",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified",
+        "local_symbol_meaning_unreviewed"
+      ]
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0083_Streetsign_001",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0083_Streetsign_001.SM_H0083_Streetsign_001",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "attachment_anchor_orientation_not_verified"
+      ]
+    },
+    {
+      "asset_id": "external.H0026",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0028",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0069",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0070",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0071",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0072",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0075",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0084",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0085",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0086",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0095",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0096",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0097",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0124",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0125",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0126",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0127",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0128",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0129",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0130",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0131",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0132",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0137",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0138",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0139",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0140",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0141",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0142",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0143",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0144",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0145",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0146",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0147",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0148",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0149",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0154",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0190",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0202",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0203",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0208",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0214",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0215",
+      "object_path": "",
+      "consumer": "sign_host_attachment_or_measured_standalone_pole",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0229",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0230",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0231",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0232",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0660",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0661",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0662",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.H0697",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.MOUT_FAMILY_ElectricityPole",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.MOUT_FAMILY_MountedTank",
+      "object_path": "",
+      "consumer": "roof_or_wall_host_attachment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T0037",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T0038",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T0039",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1127",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1128",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1129",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1130",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1144",
+      "object_path": "",
+      "consumer": "linear_boundary_alignment",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1153",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1154",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1155",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "external.T1156",
+      "object_path": "",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "environment_style_unclassified",
+        "outside_current_native_nonbuilding_prop_route"
+      ]
+    },
+    {
+      "asset_id": "native_material_293d4dcd623e8fd488e6",
+      "object_path": "/Game/ModularBuildingSet/materials/Ground_Rubble/Road.Road",
+      "consumer": "road_or_surface_host",
+      "existing_holds": [
+        "alternate_material_not_selected_for_default_profile"
+      ]
+    },
+    {
+      "asset_id": "native_material_a001b58f16be03581ad0",
+      "object_path": "/Game/ModularBuildingSet/materials/Ground_Rubble/Road_Inst.Road_Inst",
+      "consumer": "road_or_surface_host",
+      "existing_holds": []
+    }
+  ]
+}

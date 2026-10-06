@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 318,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_crate_3_set"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"82x114x154\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/crate_3_set.fbx\\\", \\\"Timestamp\\\" : \\\"1543384898\\\", \\\"FileMD5\\\" : \\\"adb6301ac9e96b9ae34fd56ed7f2de3c\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"840\",\"UVChannels\":\"2\",\"Vertices\":\"1766\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 318,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"82x114x154\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/crate_3_set.fbx\\\", \\\"Timestamp\\\" : \\\"1543384898\\\", \\\"FileMD5\\\" : \\\"adb6301ac9e96b9ae34fd56ed7f2de3c\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"840\",\"UVChannels\":\"2\",\"Vertices\":\"1766\"}}"
+    }
+   ]
+  }
+ }
+}

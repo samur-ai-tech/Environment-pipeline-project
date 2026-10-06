@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1551,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularCourtyard/Meshes/SM_Steeldoor"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"11x144x253\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/1_Project/!Modular_biulding/Export/Steeldoor_Low.fbx\\\", \\\"Timestamp\\\" : \\\"1682183400\\\", \\\"FileMD5\\\" : \\\"0fa351952914c81af3cbdf5d9319baa9\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NeverStream\":\"False\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1056\",\"UVChannels\":\"2\",\"Vertices\":\"1166\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1551,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"11x144x253\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/1_Project/!Modular_biulding/Export/Steeldoor_Low.fbx\\\", \\\"Timestamp\\\" : \\\"1682183400\\\", \\\"FileMD5\\\" : \\\"0fa351952914c81af3cbdf5d9319baa9\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NeverStream\":\"False\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1056\",\"UVChannels\":\"2\",\"Vertices\":\"1166\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,167 @@
+{
+  "schema": "environmentpipeline.managed_astra.task1_source_result.v3",
+  "status": "READY_FOR_MANAGER_REVIEW",
+  "utc": "2026-10-03T23:23:58.477764+00:00",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "source_worker_thread_id": "01a103ef-7db0-7ad3-ba6c-78416d4684a5",
+  "editor_ready": false,
+  "native_rollback_proven": false,
+  "editor_calls_performed": 0,
+  "saved": false,
+  "frozen_files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "d9124420d27c7e32e240c1e6700f7b151a4e238eacd0fee378a2a0c118eb853e",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "c33118eaf50529dfb0fe9e67561a0516b704fa7f615ccf4ca07eddc4bfda55a9",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "ba19eb39184f9a03a04b06cff630beb73f919a1190629bf30de54a1cf281349c",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_seams.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "syntax_valid": true
+    },
+    "geocity_bank_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_bank_workflow.py",
+      "sha256": "8e1cc47148c150168c72c255dfea9b4ef264a0635860a3c5240b7a3d00fc11b2",
+      "syntax_valid": true
+    }
+  },
+  "scope": "Bounded pending-transaction lifetime, exact rollback metadata/state readback, native validation/parent pre-suppression integration and owner contract. No physical gate/geometry-planner changes in v3.",
+  "resolved_source_blocker": "The owner-held nonserialized _pending_correction retains native snapshots across correction return, verify_links, all ordinary validation gates and staged-contract/parent ownership checks. Commit occurs only at the parent point of no return before suppression Cook. All source precommit exception paths and the specified wrapper catch invoke rollback.",
+  "changed_functions": {
+    "grounding": [
+      "new _PendingCorrection",
+      "new rollback_correction and commit_correction",
+      "correction owns pending lifetime and internal tick guard",
+      "verify_links rollback wrapper; original body retained in _verify_links"
+    ],
+    "clip": [
+      "_candidate_metadata",
+      "_restore_candidate_asset"
+    ],
+    "workflow": [
+      "validate",
+      "_validate_native (original validate body renamed)",
+      "staged_contract",
+      "_staged_contract_native (original staged_contract body renamed)",
+      "fail"
+    ],
+    "bank": [
+      "after_native_roads only: commit hook before suppression, rollback hook before parent.fail"
+    ]
+  },
+  "verification": {
+    "syntax": "six modules AST parsed",
+    "offline_transaction_replay": "PASSED_OFFLINE_TRANSACTION_CONTROL_FLOW",
+    "injected_failure_gate_count": 131,
+    "named_checks": [
+      "verify_links_failure_restored",
+      "commit_before_suppression_success",
+      "post_links_owner_failure_restored",
+      "premature_commit_restored",
+      "ordinary_fail_after_rollback_preserves_prior_native_state",
+      "commit_receipt_failure_restores_before_suppression",
+      "rollback_failure_retains_handles_then_retry_restores"
+    ],
+    "native_IO_model": "Explicit in-memory surrogates for native mesh/asset/component calls. No Unreal imported or called.",
+    "exact_state_reference_and_file_byte_restoration_in_model": true,
+    "complete_metadata_presence_empty_value_and_added_tag_restoration_in_model": true,
+    "all_gate_functions_unchanged": [
+      "AsphaltField",
+      "_source_eligibility",
+      "_parent_trim_cross_section_support",
+      "verify_source_coverage",
+      "analyze_protected_source_intervals",
+      "_physical_segment_intervals",
+      "verify_clipped_source_partition",
+      "ground_native_geos",
+      "verify_native_delivery"
+    ],
+    "native_validate_and_staged_contract_bodies_unchanged": true,
+    "generation_topology_rebuild_Bake_save_unmodified": true,
+    "v2_seams_and_captured_XY_result_preserved": true,
+    "command": "python Staging/ManagedAstra_2026-10-03/replay_replacement_source_20261004.py --transaction",
+    "fresh_v3_XY_planner_replay": {
+      "status": "XY_PLANNER_REPLAY_PASSED_NATIVE_OPERATIONS_NOT_RUN",
+      "affected_rows": 16,
+      "components": 58,
+      "segments": 1907,
+      "initial_gaps": 22,
+      "remaining_intervals": 0,
+      "strips": 6,
+      "fans": 23,
+      "elapsed_seconds": 70.45300000000861,
+      "command": "python Staging/ManagedAstra_2026-10-03/replay_replacement_source_20261004.py --v3-xy",
+      "native_Boolean_physical_Landscape_proven": false
+    }
+  },
+  "receipts": {
+    "TASK1_REPLACEMENT_V3_TRANSACTION_REPLAY.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_TRANSACTION_REPLAY.json",
+      "sha256": "b976d8a95631e308921fa4b3dad5714c093a3ae44f262e40fab3f1e7f3833cdd"
+    },
+    "TASK1_REPLACEMENT_V3_SOURCE_CHECKS.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_SOURCE_CHECKS.json",
+      "sha256": "203962d1ae4254f8b58c611b88a2439c51c07d7d9ddd8264bb1764d060068dec"
+    },
+    "TASK1_REPLACEMENT_V3_OWNER_CONTRACT.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_OWNER_CONTRACT.json",
+      "sha256": "a55adffe901ca53f17928901c9d05987abc38ddbaa51a05a6e782fcbd6758f40"
+    },
+    "replay_replacement_source_20261004.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\replay_replacement_source_20261004.py",
+      "sha256": "d3bfd0f4218ce5fc0dc05b5958e034f5977e60dbdf1c4ac64eeb5642a33d8c28"
+    },
+    "TASK3_FROZEN_REPLACEMENT_V2_REVIEW.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_FROZEN_REPLACEMENT_V2_REVIEW.json",
+      "sha256": "a8a6d366f03c0cb0f176f903d7e26eb40c61a58609d0042e371eacd68c6159a9"
+    },
+    "TASK3_FROZEN_REPLACEMENT_V2_BLOCKER_ADDENDUM.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_FROZEN_REPLACEMENT_V2_BLOCKER_ADDENDUM.json",
+      "sha256": "69c0b87d0d6e66ebeb153526dfb1c6fab6c4c812a47766a68ff7aaed2e6f7076"
+    },
+    "BeforeReplacementV3_20261004/TASK1_SOURCE_RESULT.v2.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\BeforeReplacementV3_20261004\\TASK1_SOURCE_RESULT.v2.json",
+      "sha256": "01aaf3310b20c97788decc3aa3d8a3267935f1b1ad5d25b0d2585bc87df3dcc2"
+    },
+    "BeforeReplacementV3_20261004/replay_replacement_source_20261004.v2.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\BeforeReplacementV3_20261004\\replay_replacement_source_20261004.v2.py",
+      "sha256": "ee1004e7d397277a715c0ffb1340fdff0f5191f073ded53998d96e6de70f2dc3"
+    },
+    "TASK1_REPLACEMENT_CAPTURED_REPLAY.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_CAPTURED_REPLAY.json",
+      "sha256": "a13909879d5e22fedcc011151c76fc1a3084a376757d95c4419e7535071a7fbe"
+    },
+    "TASK1_REPLACEMENT_V3_CAPTURED_REPLAY.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_CAPTURED_REPLAY.json",
+      "sha256": "b58788a5370c5241afd94ae9cda6e55bb67949b5bb736a589c6db20ba187851f"
+    },
+    "TASK1_REPLACEMENT_V3_REPLAY_DIAGNOSTIC.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_REPLAY_DIAGNOSTIC.json",
+      "sha256": "6cfdc04ab4358be8298da57f166b014094214e5377bbb25805f527df7162a9bf"
+    }
+  },
+  "residuals": [
+    "Real UObject/DynamicMesh handle lifetime under GC and actual GeometryScript rollback fidelity cannot be established by these offline native-IO surrogates. Native UV/split-normal/material/collision restoration needs actual owner readback.",
+    "No real correction(), same-path asset write, Boolean, Landscape, native collision, save or reopen executed. Tests execute production transaction/validation/callback control flow with native IO and physical checks substituted.",
+    "Historical Task2 installer/wrapper remains preparation-only; its phase, tick flag, report-key and return-type mismatches require a concrete root/task2 revision before activation. Required contract is linked.",
+    "The explicit commit before suppression is the point of no return. Failures after suppression begins use the existing parent lifecycle; correction rollback is intentionally no longer available.",
+    "Historical87 candidates/PID21780 remain unverified; root alone determines current editor state and any lease."
+  ],
+  "appearance_accepted": false,
+  "next": "Root source/hash/owner-contract review, then task3 independent v3 review. No editor authorization inferred."
+}

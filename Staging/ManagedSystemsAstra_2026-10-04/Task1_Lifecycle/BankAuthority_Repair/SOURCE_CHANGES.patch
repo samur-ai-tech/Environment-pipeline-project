@@ -1,0 +1,200 @@
+--- before/Content/Python/geocity_bank_workflow.py
++++ Content/Python/geocity_bank_workflow.py
+@@ -112,6 +112,17 @@
+     if 'LandscapeProxy' in values and values['LandscapeProxy']!=values['Landscape']:
+         raise RuntimeError('Native parent/proxy bindings differ; partitioned Landscape ownership requires review')
+     return values['Landscape']
++
++def _generation_lease(project,named_map):
++    """Read-only authorization before construction, history writes or cleanup."""
++    from geocity_editor_action import lease_fields, managed_operation_lease
++    lease=(project/'Staging/ModelBank/EDITOR_OWNER.txt').read_text(encoding='utf-8-sig').splitlines()[-1]
++    fields=lease_fields(lease)
++    assert fields.get('OWNER') not in (None,'NONE','CODEX_MANAGED_SYSTEMS_STARTUP') and fields.get('assigned_editor_PID')==str(os.getpid()),lease
++    if fields.get('OWNER') in ('CODEX_MANAGED_SYSTEMS_TASK4','CODEX_BANK_INTEGRATION'):
++        assert managed_operation_lease(project,lease,named_map),'Missing actual-PID manager generation activation'
++    return lease
++
+ 
+ def _hda_json(value):
+     """Houdini string evaluation consumes backslash escapes in Windows paths."""
+@@ -179,12 +190,7 @@
+ 
+     def guard(self):
+         assert not self.state['phase'].startswith('failed'),'Operation has failed; preserve its recovery state'
+-        from geocity_editor_action import lease_fields, managed_operation_lease
+-        lease=(self.project/'Staging/ModelBank/EDITOR_OWNER.txt').read_text(encoding='utf-8-sig').splitlines()[-1]
+-        fields=lease_fields(lease)
+-        assert fields.get('OWNER') not in (None,'NONE','CODEX_MANAGED_SYSTEMS_STARTUP') and fields.get('assigned_editor_PID')==str(os.getpid()),lease
+-        if fields.get('OWNER')=='CODEX_MANAGED_SYSTEMS_TASK4':
+-            assert managed_operation_lease(self.project,lease,self.p['map']),'Missing actual-PID manager activation'
++        lease=_generation_lease(self.project,self.p['map'])
+         assert lease==self.lease_line,'Editor ownership changed during this operation'
+         assert hashlib.sha256(self.profile_path.read_bytes()).hexdigest()==self.profile_sha256,'Area profile changed during operation'
+         world=unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+@@ -698,6 +704,39 @@
+                 self.bake_and_save()
+         else:self.finish_operation()
+ 
++    def current_road_landscape_authority(self):
++        """Resolve current source-bound official output without name heuristics."""
++        self.guard()
++        assert self.native_road_phase=='authoring' and self.state['phase']=='native_road_authoring'
++        export=self.native_road_export
++        prior=self.state['previous_landscape_accounting']
++        source_sha=hashlib.sha256(Path(self.p['source']).read_bytes()).hexdigest()
++        assert not prior['unaccounted_actor_paths'],'Prior Landscape accounting was incomplete'
++        assert Path(prior['source']).resolve()==Path(self.p['source']).resolve()
++        assert prior['source_sha256']==source_sha==export['source_sha256'],'Road source changed after Landscape accounting'
++        bound=self.official_landscapes(self.wrapper)
++        assert len(bound)==1,'Road authoring requires exactly one current official Landscape'
++        current_path,current=next(iter(bound.items()))
++        owner_path=_path(self.wrapper.get_houdini_asset_actor())
++        assert owner_path==prior['hda_actor_path'],'Official HDA owner changed after Landscape accounting'
++        prefix=self.p['map']+'.'+self.p['map'].rsplit('/',1)[-1]+':PersistentLevel.'
++        previous=sorted(prior['live_actor_paths'])
++        assert len(previous)==len(set(previous)) and all(p.startswith(prefix) for p in previous)
++        assert set(previous).issubset(self.previous_baked_paths),'Previous Landscape lacks retained lifecycle ownership'
++        live={_path(a):a for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors() if isinstance(a,unreal.Landscape)}
++        assert current_path.startswith(prefix) and live.get(current_path)==current,'Current official Landscape is not loaded in the named map'
++        assert not set(live)-set(previous)-{current_path},'Unaccounted Landscape during native road authoring'
++        evidence={'schema':'environmentpipeline.current_road_landscape.v1','pid':os.getpid(),
++                  'named_map':self.p['map'],'area_id':export['area_id'],'source_sha256':source_sha,
++                  'centreline_sha256':export['centreline_sha256'],
++                  'lease_sha256':hashlib.sha256(self.lease_line.encode('utf-8')).hexdigest(),
++                  'operation_started_epoch':self.started_epoch,'hda_actor_path':owner_path,
++                  'current_actor_path':current_path,'accounted_previous_landscape_paths':previous,
++                  'official_output_verified':True}
++        self.state['current_road_landscape_authority']=evidence
++        self.write()
++        return {'actor':current,'evidence':evidence}
++
+     def begin_native_roads(self,receipt):
+         """Stage native roads from this completed cook before saving either provider."""
+         self.guard()
+@@ -706,10 +745,13 @@
+         if not self.api.is_asset_cooking_paused():self.api.pause_asset_cooking()
+         self.native_road_phase='authoring'
+         self.state['phase']='native_road_authoring';self.write()
++        self.native_road_export=dict(receipt['roadbld_centerlines'])
++        self.current_road_landscape_authority()
+         dirty=[_path(p) for p in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()]+[_path(p) for p in unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+         import geocity_roadbld_workflow
+         self.native_road_run=geocity_roadbld_workflow.build(self.profile_path,export=receipt['roadbld_centerlines'],
+-            settings=self.p.get('roadbld_workflow',{}).get('settings'),reviewed_dirty_packages=dirty,on_complete=self.after_native_roads)
++            settings=self.p.get('roadbld_workflow',{}).get('settings'),reviewed_dirty_packages=dirty,on_complete=self.after_native_roads,
++            landscape_authority=self.current_road_landscape_authority)
+ 
+     def after_native_roads(self,native,success):
+         self.native_road_run=native
+@@ -997,7 +1039,13 @@
+ def run(profile_path,action='regenerate',reviewed_dirty_packages=(),release_menu_lease=False):
+     import geocity_runtime_guard
+     geocity_runtime_guard.verify()
++    project=Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir()))
++    profile=json.loads(Path(profile_path).read_text(encoding='utf-8'))
++    _generation_lease(project,profile['map'])
+     run=GeoCityRun(profile_path,reviewed_dirty_packages,release_menu_lease)
++    # Reject inspection/content-only leases before registration or failure
++    # cleanup, which can itself change official Engine cooking state.
++    run.guard()
+     ACTIVE.append(run)
+     try:
+         return run.start(action)
+--- before/Content/Python/geocity_editor_action.py
++++ Content/Python/geocity_editor_action.py
+@@ -19,15 +19,37 @@
+ 
+ 
+ def managed_operation_lease(project, line, world_path):
+-    """Accept only task4's manager-issued actual-PID activation, not startup."""
++    """Require actual-PID activation; bank content work alone cannot generate."""
+     fields = lease_fields(line)
+-    if fields.get('OWNER') != 'CODEX_MANAGED_SYSTEMS_TASK4':
++    if fields.get('OWNER') not in ('CODEX_MANAGED_SYSTEMS_TASK4','CODEX_BANK_INTEGRATION'):
+         return False
+     assignment = json.loads((project/'Staging/ManagedSystemsAstra_2026-10-04/ASSIGNMENTS.json').read_text(encoding='utf-8'))
+-    task = next(row for row in assignment['tasks'] if row['id'] == 'task4')
+-    return (bool(task['thread_id'])
++    if fields['OWNER']=='CODEX_BANK_INTEGRATION':
++        bank_path='Staging/BankIntegration_2026-10-04/ASSIGNMENT.json'
++        bank=json.loads((project/bank_path).read_text(encoding='utf-8-sig'))
++        activation=json.loads((project/'Staging/ManagedSystemsAstra_2026-10-04/BANK_ACTIVATION.json').read_text(encoding='utf-8-sig'))
++        operator=bank.get('thread')
++        bank_paths={'/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4',
++                    '/Game/Project/Shared/ModelBank/Prepared',
++                    '/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004'}
++        if any({p for p in scope.get('native_save_scope',[]) if p.startswith('/Game/')}!=bank_paths
++               for scope in (bank,activation)):
++            return False
++        if not (bank.get('schema')=='environmentpipeline.bank_integration.v1'
++                and activation.get('schema')=='environmentpipeline.manager_bank_activation.v1'
++                and bank.get('system_owner')==assignment['manager_thread_id']==activation.get('manager_thread_id')
++                and activation.get('bank_thread_id')==operator
++                and activation.get('scope_receipt')==bank_path
++                and activation.get('native_authorized_now') is True
++                and activation.get('ordinary_generation_authorized') is True
++                and str(activation.get('assigned_editor_PID'))==str(os.getpid())
++                and activation.get('map')==world_path):
++            return False
++    else:
++        operator=next(row for row in assignment['tasks'] if row['id']=='task4')['thread_id']
++    return (bool(operator)
+             and fields.get('manager_thread_id') == assignment['manager_thread_id']
+-            and fields.get('operator_thread_id') == task['thread_id']
++            and fields.get('operator_thread_id') == operator
+             and fields.get('assigned_editor_PID') == str(os.getpid())
+             and fields.get('activation') == 'MANAGER_ACTIVATED'
+             and fields.get('map') == world_path
+--- before/Staging/SystemCompletion_2026-10-04/launch_editor.ps1
++++ Staging/SystemCompletion_2026-10-04/launch_editor.ps1
+@@ -12,7 +12,25 @@
+ $taskRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+ $taskAssignments = Get-Content -LiteralPath (Join-Path $taskRoot 'Staging\ManagedSystemsAstra_2026-10-04\ASSIGNMENTS.json') -Raw | ConvertFrom-Json
+ $taskWriter = @($taskAssignments.tasks | Where-Object { $_.id -eq 'task4' })
+-if ($ManagerThreadId -ne $taskAssignments.manager_thread_id -or $taskWriter.Count -ne 1 -or -not $taskWriter[0].thread_id -or $OperatorThreadId -ne $taskWriter[0].thread_id) { throw 'Startup identities must match the current manager and sole task4 operator.' }
++if ($ManagerThreadId -ne $taskAssignments.manager_thread_id -or $taskWriter.Count -ne 1 -or -not $taskWriter[0].thread_id) { throw 'Startup requires the current manager and an unambiguous managed assignment.' }
++$taskOperatorRole = 'task4'
++$taskScopeHashes = @{}
++if ($OperatorThreadId -ne $taskWriter[0].thread_id) {
++    $taskBankScope = 'Staging/BankIntegration_2026-10-04/ASSIGNMENT.json'
++    $taskBankActivation = 'Staging/ManagedSystemsAstra_2026-10-04/BANK_ACTIVATION.json'
++    foreach ($taskScopePath in @($taskBankScope,$taskBankActivation)) {
++        $taskScopeHashes[$taskScopePath] = (Get-FileHash -LiteralPath (Join-Path $taskRoot $taskScopePath) -Algorithm SHA256).Hash.ToLowerInvariant()
++    }
++    $taskBank = Get-Content -LiteralPath (Join-Path $taskRoot $taskBankScope) -Raw | ConvertFrom-Json
++    $taskActivation = Get-Content -LiteralPath (Join-Path $taskRoot $taskBankActivation) -Raw | ConvertFrom-Json
++    if ($taskBank.schema -ne 'environmentpipeline.bank_integration.v1' -or $taskActivation.schema -ne 'environmentpipeline.manager_bank_activation.v1' -or $taskBank.system_owner -ne $ManagerThreadId -or $taskActivation.manager_thread_id -ne $ManagerThreadId -or $taskBank.thread -ne $OperatorThreadId -or $taskActivation.bank_thread_id -ne $OperatorThreadId -or $taskActivation.scope_receipt -ne $taskBankScope) { throw 'Bank startup identities or scope receipts differ from the current manager assignment.' }
++    $taskBankPaths = @('/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4','/Game/Project/Shared/ModelBank/Prepared','/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004')
++    foreach ($taskScope in @($taskBank,$taskActivation)) {
++        $taskExactBankPaths = @($taskScope.native_save_scope | Where-Object { $_ -like '/Game/*' })
++        if (@(Compare-Object $taskExactBankPaths $taskBankPaths).Count) { throw 'Bank startup requires the exact retained catalog/import/material scope.' }
++    }
++    $taskOperatorRole = 'bank'
++}
+ if ($AreaMap -notin $taskAssignments.native_area_maps) { throw 'Map is outside the managed original areas.' }
+ $taskLeasePath = Join-Path $taskRoot 'Staging\ModelBank\EDITOR_OWNER.txt'
+ $taskLease = (Get-Content -LiteralPath $taskLeasePath)[-1]
+@@ -55,6 +73,9 @@
+     }
+ }
+ if ((Get-Content -LiteralPath $taskLeasePath)[-1] -ne $taskLease -or @(Get-Process UnrealEditor -ErrorAction SilentlyContinue).Count -ne 0) { throw 'Editor ownership changed during startup preparation.' }
++foreach ($taskScopePath in $taskScopeHashes.Keys) {
++    if ((Get-FileHash -LiteralPath (Join-Path $taskRoot $taskScopePath) -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskScopeHashes[$taskScopePath]) { throw 'Bank startup authority changed during preparation.' }
++}
+ $taskExecutable = 'C:\Program Files\Epic Games\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe'
+ $taskProject = Join-Path $taskRoot 'Environmentpipeline.uproject'
+ $taskStart = [System.Diagnostics.ProcessStartInfo]::new()
+@@ -68,9 +89,11 @@
+ # RecoveryBootstrap, replacement installer, generator or startup recovery.
+ $taskStart.EnvironmentVariables['UE_PYTHONPATH'] = $taskPython
+ $taskProcess = [System.Diagnostics.Process]::Start($taskStart)
+-$taskNewLease = [DateTime]::UtcNow.ToString('o')+' OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id='+$ManagerThreadId+' operator_thread_id='+$OperatorThreadId+' task=task4 assigned_editor_PID='+$taskProcess.Id+' map='+$AreaMap+' activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only'
++$taskNewLease = [DateTime]::UtcNow.ToString('o')+' OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id='+$ManagerThreadId+' operator_thread_id='+$OperatorThreadId+' task='+$taskOperatorRole+' assigned_editor_PID='+$taskProcess.Id+' map='+$AreaMap+' activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only'
+ [System.IO.File]::AppendAllText($taskLeasePath,[Environment]::NewLine+$taskNewLease+[Environment]::NewLine)
+ $taskReceipt = @{pid=$taskProcess.Id; map=$AreaMap; map_sha256=$ExpectedMapSha256.ToLowerInvariant(); profile=$taskProfiles[0].FullName; profile_sha256=$ExpectedProfileSha256.ToLowerInvariant(); manifest_sha256=$ExpectedManifestSha256.ToLowerInvariant(); manager_thread_id=$ManagerThreadId; operator_thread_id=$OperatorThreadId; actual_pid_lease=$taskNewLease; sources_checked=$true; generation_started=$false; generation_authorized=$false; activation='AWAITING_MANAGER_ACTUAL_PID'; pause_before_python=$true; autosave=$false; original_map=$true}
++$taskReceipt.operator_role = $taskOperatorRole
++$taskReceipt.bank_scope_sha256 = $taskScopeHashes
+ $taskReceipt | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $PSScriptRoot 'LAUNCH_STATE.json') -Encoding utf8
+ $taskReceipt | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $PSScriptRoot ('LAUNCH_STATE_PID'+$taskProcess.Id+'.json')) -Encoding utf8
+ $taskReceipt | ConvertTo-Json -Depth 5

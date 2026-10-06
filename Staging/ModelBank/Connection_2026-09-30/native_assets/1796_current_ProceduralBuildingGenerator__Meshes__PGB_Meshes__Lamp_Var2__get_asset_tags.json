@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1806,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/PGB_Meshes/Lamp_Var2"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"168x57x99\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/Lamp_Var2.fbx\\\", \\\"Timestamp\\\" : \\\"1568152202\\\", \\\"FileMD5\\\" : \\\"e1d7682e816cdcb4c0d258da04fb8dcd\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"1164\",\"UVChannels\":\"2\",\"Vertices\":\"1532\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1806,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"168x57x99\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/Lamp_Var2.fbx\\\", \\\"Timestamp\\\" : \\\"1568152202\\\", \\\"FileMD5\\\" : \\\"e1d7682e816cdcb4c0d258da04fb8dcd\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"1164\",\"UVChannels\":\"2\",\"Vertices\":\"1532\"}}"
+    }
+   ]
+  }
+ }
+}

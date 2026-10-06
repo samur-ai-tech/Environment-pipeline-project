@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 23,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Building_02_1002"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_lbedoTransparency_16abd7adb28e\",\"/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_Normal_533467f593ec\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 23,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_lbedoTransparency_16abd7adb28e\",\"/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_Normal_533467f593ec\"]}"
+    }
+   ]
+  }
+ }
+}

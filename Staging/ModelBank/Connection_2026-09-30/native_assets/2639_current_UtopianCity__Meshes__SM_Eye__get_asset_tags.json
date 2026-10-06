@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2649,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Eye"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"200x200x200\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Eye.fbx\\\", \\\"Timestamp\\\" : \\\"1518448930\\\", \\\"FileMD5\\\" : \\\"56d6d875e07f310c189fd648cbbb56cc\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"74\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"528\",\"UVChannels\":\"2\",\"Vertices\":\"323\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2649,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"200x200x200\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Eye.fbx\\\", \\\"Timestamp\\\" : \\\"1518448930\\\", \\\"FileMD5\\\" : \\\"56d6d875e07f310c189fd648cbbb56cc\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"74\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"528\",\"UVChannels\":\"2\",\"Vertices\":\"323\"}}"
+    }
+   ]
+  }
+ }
+}

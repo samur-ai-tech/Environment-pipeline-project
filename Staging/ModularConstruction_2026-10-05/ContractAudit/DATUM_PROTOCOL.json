@@ -1,0 +1,32 @@
+{
+  "schema": "environmentpipeline.source_family_datum_protocol.v1",
+  "source_units": "metres",
+  "native_asset_units": "centimetres",
+  "houdini_point_units": "metres",
+  "source_to_native_matrix": "Measured signed horizontal axis permutation, source+Z to native+Z; never guessed from FBX export labels.",
+  "numeric_units": "Native readback min_cm/max_cm divide by100 once. Source assembly translations are already metres, apply measured basis with no additional100 conversion.",
+  "native_to_houdini": "[nativeX_m,nativeZ_m,nativeY_m]",
+  "family_origin": "Native assembled bbox horizontal center and minimumZ mapped rigidly to pad horizontal center and corrected base.",
+  "part_origin": "Preserved FBX local source pivot; one common measured family basis. No perpart recentering.",
+  "rotation": "Native yaw about+Z maps to Houdini quaternion [0,-sin(yaw/2),0,cos(yaw/2)]. All part origins and envelope corners rotate together.",
+  "scale": "[1,1,1] always; no source floor count, story scaling, bay substitution or generated corner/roof solids.",
+  "reflection": "Ordinary selection requires measured native vertex/bounds basis and actual normals/materialculling verification for reflections. Exact-ID manager-authorized qualification may produce first retained-route output with reflection appearance explicitly pending; never record an unmeasured reflection gate as passed.",
+  "architectural_roles": "Source region labels are preserved; tiers and native floor=0 support-probe bookkeeping do not certify architectural floors.",
+  "support": "Every source part horizontal envelope contributes retained final-heightfield terrain probes; retained cook rejects>4cm contact error.",
+  "height": "Preserve native height for seeded_rule_not_measured with difference reported; measured source heights must match4cm. No fabricated class/floor/use facts.",
+  "pad_coverage": "Complete-family native bbox area/pad area must be>=0.45 as retained whole-building fit; containment required first.",
+  "yaw_selection": "Deterministic longest geographic pad edge angle plus approved rigid rotation offsets; source facing unverified until actual evidence.",
+  "basis_evidence_required_fields": [
+    "family_id",
+    "source_family_sha256",
+    "passed",
+    "source_to_native_matrix",
+    "source_units",
+    "native_units",
+    "pivot_translation_preserved",
+    "sample_vertices_checked",
+    "verified_part_names",
+    "maximum_probe_error_cm",
+    "reflection_normals_material_culling_verified"
+  ]
+}

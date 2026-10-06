@@ -1,0 +1,41 @@
+{
+  "schema": "environmentpipeline.task3_ground_grass_source_handoff.v1",
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "source": {
+    "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_landscape_workflow.py",
+    "sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+    "before_sha256": "5caa6e469207bb694c7f1974ca724c8eea92f0e9cc96bba13e6a8018f25faeec"
+  },
+  "receipts": {
+    "PROFILE_PATCHES.json": "9b2e8dd5a73662218b4fee9d7c55249a9839bac66d4c30e6cac2f9ae5632c57c",
+    "PROFILE_CURRENT_READBACK.json": "79982e3c8bbb4f3ce0054306ce526f27ddefb279c9c2eb39b2a6dcfe1791747a",
+    "INTEGRATION_REQUEST.json": "2144b445fecc5d3f51a2c739469175f8814f8f9fa08caf93829f0acbc4d21956",
+    "NATIVE_HANDOFF.json": "06c77fa3c55a6a6d4f26c9e228f0ce0ef0f2fd6e3a6f226aeccaf2b604625d93",
+    "API_CONTRACT.json": "d3f94863da11b9df30deff8db85b6ccd5d034ad3c69b82f09580bfc93e31845b",
+    "SAVED_ASSET_RECONCILIATION.json": "ca8bb9491160f4e37134fd786f5f797683f1354b210d4f33654450716f07fd83",
+    "MANAGER_REVIEW_RESPONSE.json": "0c888232e086146a902d1945cb068033ccc28c1f7ab3612eb8b6fa79d33c9bb5",
+    "TEST_RESULT.json": "46d1c5f3304deebc3fb90c987659ca4a9c9914a6dd42ce75ac7f5bae2f78267e",
+    "TEST_OUTPUT.txt": "24cf8b4f06fbbcce750bc3ec815aa46212b1a87f3d8c87d119df703e309a852f",
+    "test_ground_grass.py": "2145c39ced5ac87c3d04f957633acafc45a445fee8655a1d9cba02014f0f18d4",
+    "SOURCE_DIFF.patch": "9d2366c5203a907836031c9f385b1711509c09f52f960a5bfae8bf7e781d31c6",
+    "RESULT.json": "a4abf8c6fbe2a7c17c5bd07f44d89944acd8297654762cac128cbcbda989fc49",
+    "RESULT.txt": "768f0398d52eb89c6202ed737444aeefda7567c6ede2dbcf2a8ca155f8fbe789"
+  },
+  "tests": 31,
+  "manager_review_gap": "Closed in both profile validation and paint_ready; grid-only four-target samples fail readiness.",
+  "native_dependency_operations": "NATIVE_HANDOFF.json",
+  "profile_patches": "PROFILE_PATCHES.json; applied by manager and declaration-verified in PROFILE_CURRENT_READBACK.json",
+  "required_lifecycle_integration": "INTEGRATION_REQUEST.json",
+  "native_activation": "NONE; task4 only after manager explicit actual-PID lease and fresh sealed startup",
+  "source_editing_stopped": true,
+  "stages": {
+    "source_implementation": "COMPLETE_SOURCE_READY",
+    "native_operation_of_this_revision": "NOT RUN",
+    "nearby_grass_cache": "NOT VERIFIED",
+    "visible_Lit_grass": "NOT VERIFIED",
+    "new_named_map_persistence": "NOT RUN",
+    "fresh_reopen_of_this_revision": "NOT RUN",
+    "ordinary_regeneration_of_this_revision": "NOT RUN",
+    "user_acceptance": "OPEN"
+  }
+}

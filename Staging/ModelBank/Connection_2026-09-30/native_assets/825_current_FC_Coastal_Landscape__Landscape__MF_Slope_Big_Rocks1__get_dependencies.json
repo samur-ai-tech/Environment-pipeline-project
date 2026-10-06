@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 835,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Slope_Big_Rocks1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_CliffMask_SMRA\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 835,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_CliffMask_SMRA\"]}"
+    }
+   ]
+  }
+ }
+}

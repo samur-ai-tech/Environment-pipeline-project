@@ -1,0 +1,386 @@
+{
+  "source": "ME/IMPORT_RESULTS_v3.json dependencies are historical provenance, not a fresh full dependency query",
+  "targets": [
+    {
+      "id": "AC-EMISSION",
+      "codes": [
+        "H0650"
+      ],
+      "materials": [
+        "/Game/Project/Shared/Bank_ME_v3/Props/MI_baseMaterial_AC"
+      ],
+      "confirmed": "Solid-white texture feeds Emissive Color in native graph.",
+      "next": "Confirm source intent; authorized variant disables or masks unintended emission, then verifies atlas and UV fidelity.",
+      "gate": "Fan/grille detail and intended surface shading in matched views; current causal fix not run.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0650_SM_AirConditioner",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0650_SM_AirConditioner.SM_H0650_SM_AirConditioner",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0650_AirConditioner.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0650_material_graph.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0650_white_emissive.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {
+        "/Game/Project/Shared/Bank_ME_v3/Props/MI_baseMaterial_AC": [
+          "/Game/Project/Shared/Bank_ME_v3/Props/T_ac_BaseColor_c269320793a1",
+          "/Game/Project/Shared/Bank_ME_v3/Props/T_white_cd3693fd6329_albedo_db4a9624048c10",
+          "/Game/Project/Shared/Bank_ME_v3/Props/T_ac_Normal_276e5b18dd8a"
+        ]
+      },
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "ACACIA-CARDS",
+      "codes": [
+        "H0636"
+      ],
+      "materials": [
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__28",
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__41",
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__40"
+      ],
+      "confirmed": "White crossed cards; Material__28 only color parameter, no texture/mask; Material__41 opaque/no mask. Expected source billboard path absent at postflight.",
+      "next": "Recover correct authorized source billboard; inspect texture alpha and intended shader before choosing masked/two-sided foliage treatment.",
+      "gate": "No opaque card rectangles; correct front/back leaf appearance; preserve bark; LOD separate.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0636_Acacia",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0636_Acacia.SM_H0636_Acacia",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0636_Acacia_recheck.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0636_Material_28_graph.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0636_Material_41_graph.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0636_Material_40_graph.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__28": [],
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__41": [
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/AcaciaLeafs_58d09573c5d1_albedo_9705e7b1e21f43",
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/AcaciaLeafs_Normal_f2ea8e494140"
+        ],
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Material__40": [
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/AcaciaBark_Albedo_44677b97aa82",
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/AcaciaBark_Normal_ac37ac262edc"
+        ]
+      },
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "COCONUT-CARDS",
+      "codes": [
+        "H0958"
+      ],
+      "materials": [
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1"
+      ],
+      "confirmed": "Opaque/Default Lit, Two Sided unchecked, Base Color and Normal connected, no mask.",
+      "next": "Inspect actual leaf alpha and source shader; authorized foliage variant only after a usable mask is established.",
+      "gate": "Fronds resolve from two views, no disappearing backfaces or opaque rectangles.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0958_CoconutPalm_cards.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0958_CoconutPalm.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0958_leaf_material_graph.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1": [
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29",
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_n_d2a3401423b4"
+        ]
+      },
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "BUILDING-CRACKS",
+      "codes": [
+        "H0902",
+        "H0903"
+      ],
+      "materials": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/Slum_k",
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/slum_s"
+      ],
+      "confirmed": "Both meshes show cross-surface crack pattern. slum_s graph directly feeds crack-pattern texture RGB to Normal at default UV0; Slum_k graph not independently opened.",
+      "next": "Verify correct normal source and UV mapping. Controlled authorized variant comparison; do not destroy the diffuse atlas.",
+      "gate": "Incorrect relief absent on doors/awnings while intended surface detail remains.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0902_Slum_k_fbx",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0902_Slum_k_fbx.SM_H0902_Slum_k_fbx",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/17_H0902_whole__1.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0903_Slum_s_fbx",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0903_Slum_s_fbx.SM_H0903_Slum_s_fbx",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0903_Slum_s_surface.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0903_Slum_s.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0903_slum_s_material_graph.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0903_slum_s_normal_assignment.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/Slum_k": [
+          "/Game/Project/Shared/Bank_ME_v3/Buildings/Slum_k__Diffuse_Map_176ddbcf6ec9",
+          "/Game/Project/Shared/Bank_ME_v3/Buildings/T_CracksStreet_normal_076f5fec4437"
+        ],
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/slum_s": [
+          "/Game/Project/Shared/Bank_ME_v3/Buildings/T_CracksStreet_normal_076f5fec4437",
+          "/Game/Project/Shared/Bank_ME_v3/Buildings/Slum_s_Diffuse_Map_a764ce2d0400"
+        ]
+      },
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "NOPAL-SURFACE",
+      "codes": [
+        "H0647"
+      ],
+      "materials": [
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Nopal"
+      ],
+      "confirmed": "White/gray rectangular pieces and dark spikes around cactus pads; current root cause unproven.",
+      "next": "Read opacity/alpha/UV/source and assess tangent warnings before authorizing a specific repair.",
+      "gate": "Correct cactus silhouette and intended spines from two views.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0647_Nopal",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0647_Nopal.SM_H0647_Nopal",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0647_Nopal.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {
+        "/Game/Project/Shared/Bank_ME_v3/Vegetation/Nopal": [
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/Nopal_Albedo_37ea2458f30a_albedo_563c50f27df12d",
+          "/Game/Project/Shared/Bank_ME_v3/Vegetation/Nopal_NormalMap_4307c4801264"
+        ]
+      },
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "PROP-ATLAS",
+      "codes": [
+        "H0058",
+        "H0089"
+      ],
+      "materials": [],
+      "confirmed": "Gas cylinder striped patches and tire rectangular mechanical imagery visible; material/UV fault suspected, not proven.",
+      "next": "Read exact current material references and UV channels; compare source atlas. Historical slot labels are Street Props Pack _010 and _009.",
+      "gate": "Coherent finish at whole and close views.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0058_Gaz",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0058_Gaz.SM_H0058_Gaz",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0058_Gaz.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0089_Tires",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0089_Tires.SM_H0089_Tires",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0089_Tires.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {},
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "SIGN-LOCALIZATION",
+      "codes": [
+        "H0079",
+        "H0081",
+        "H0082",
+        "H0083",
+        "H0091"
+      ],
+      "materials": [],
+      "confirmed": "Visible signs/posters and combined signal assembly require semantic/local review; no text beyond the observed Rue du Liban line authenticated.",
+      "next": "Document local period reference and approve exact source/destination variant and graphic changes before editing.",
+      "gate": "Approved role/meaning/appearance; preserve original.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0091_Watertank_001",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0091_Watertank_001.SM_H0091_Watertank_001",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0091_WaterDispenser.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0079_Streetlight",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0079_Streetlight.SM_H0079_Streetlight",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0079_sign_close.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0079_Streetlight_assembly.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0081_Streetpowerbox",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0081_Streetpowerbox.SM_H0081_Streetpowerbox",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0081_Streetpowerbox.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0082_Streetsign",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0082_Streetsign.SM_H0082_Streetsign",
+          "evidence_run": "Run01_prior",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Astra/Native_Visual_Run_01/34_Streetsign_loaded__1.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0083_Streetsign_001",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0083_Streetsign_001.SM_H0083_Streetsign_001",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0083_Streetsign_001.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {},
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    },
+    {
+      "id": "DENSITY-PERFORMANCE",
+      "codes": [
+        "H0014",
+        "H0016",
+        "H0046",
+        "H0647"
+      ],
+      "materials": [],
+      "confirmed": "Large LOD0 counts recorded; no scene performance measurement.",
+      "next": "Prepare density/distance baseline and supported scene test under separate authority, preserving silhouette and detail.",
+      "gate": "Measured target-view cost and LOD behavior, not a triangle-count-only threshold.",
+      "assets": [
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0014_Building_01",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0014_Building_01.SM_H0014_Building_01",
+          "evidence_run": "Run01_prior",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Astra/Native_Visual_Run_01/14_H0014_perspective__1.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0016_Building_03",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0016_Building_03.SM_H0016_Building_03",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/12_H0016_whole__1.jpg",
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/13_H0016_back__1.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0046_Foodcrate",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0046_Foodcrate.SM_H0046_Foodcrate",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0046_Foodcrate.jpg"
+          ]
+        },
+        {
+          "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0647_Nopal",
+          "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0647_Nopal.SM_H0647_Nopal",
+          "evidence_run": "Run02_direct",
+          "evidence_files": [
+            "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-28_Continuation/Native_Visual_Run_02/H0647_Nopal.jpg"
+          ]
+        }
+      ],
+      "historical_import_dependencies": {},
+      "authority": "PROPOSED ONLY; no imports, repair, generation or saves authorized by this record",
+      "repair_variant_destination": null,
+      "required_before_edit": [
+        "Separate execution authorization",
+        "Exact approved source/variant destinations",
+        "Relevant source and asset hashes",
+        "Expected changes and comparison views",
+        "Preserve originals; no overwrite or cleanup implied"
+      ]
+    }
+  ]
+}

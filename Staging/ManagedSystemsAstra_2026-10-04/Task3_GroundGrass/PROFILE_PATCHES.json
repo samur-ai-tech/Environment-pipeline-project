@@ -1,0 +1,178 @@
+[
+  {
+    "profile": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+    "profile_sha256_at_read": "e6b8c095f6353f5727c3779eb45c48f2a69fa08aa274dea97a2891b7c45ba708",
+    "merge_fields": {
+      "landscape_material": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+      "landscape_grass": {
+        "paint_probe_locations": [
+          {
+            "id": "pad:GazaShujaiya:299323280",
+            "world_location_cm": [
+              -2208.1764221191406,
+              -1232.9643249511719,
+              4817.329788208008
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 12.540021752557234
+          },
+          {
+            "id": "pad:GazaShujaiya:298471279",
+            "world_location_cm": [
+              -21532.550484793526,
+              -25966.883632114957,
+              4066.1808013916016
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 6.080855214002401
+          },
+          {
+            "id": "pad:GazaShujaiya:298979131",
+            "world_location_cm": [
+              -21583.508682250977,
+              20417.945098876953,
+              4976.163864135742
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 7.08860052008779
+          },
+          {
+            "id": "road:980861403:0",
+            "world_location_cm": [
+              153.5573622759651,
+              -15948.199552648208,
+              4370.260990522529
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 48.211466519553134
+          },
+          {
+            "id": "road:1014615106:0",
+            "world_location_cm": [
+              -27149.72844803538,
+              -25693.253731657536,
+              3793.465898474479
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 14.559701899918695
+          },
+          {
+            "id": "road:1096660488:0",
+            "world_location_cm": [
+              -10182.897429770612,
+              -19323.83052744764,
+              4044.2730033038815
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 6.96596033354669
+          }
+        ],
+        "rules": "Ground is a geometric slope/open-space mask, not land-cover semantics. All four palette weights are normalized. Native Grass uses Ground times coverage; roads, pads and steep weights exclude/reduce it. Existing HDA placements remain retained."
+      }
+    },
+    "preserve_other_fields": true,
+    "source_receipt": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json",
+    "source_receipt_sha256": "c7604bf1d7e67919898012458652771b2b6a8dddd383aac7b587f20a4fb4d42b",
+    "probe_status": "Source-derived expectations, NOT native weight measurements. World cm uses recorded identity-frame Houdini X,Yup,Z -> Unreal X,Z,Y * 100. Task4 must confirm actual output frame before accepting."
+  },
+  {
+    "profile": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+    "profile_sha256_at_read": "8341112c3ae1fa9d1b9dc1fcdb6924254525877210a14bb7d8060ddc6af863e6",
+    "merge_fields": {
+      "landscape_material": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+      "landscape_grass": {
+        "paint_probe_locations": [
+          {
+            "id": "pad:GazaRimal:295759628",
+            "world_location_cm": [
+              -15378.797149658203,
+              -544.0439860026042,
+              3254.193115234375
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 11.87194871534403
+          },
+          {
+            "id": "pad:GazaRimal:295761953",
+            "world_location_cm": [
+              -16642.5537109375,
+              11444.315719604492,
+              3523.2532501220703
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 12.756103180073168
+          },
+          {
+            "id": "pad:GazaRimal:295759169",
+            "world_location_cm": [
+              27645.213317871094,
+              22125.510787963867,
+              4805.495834350586
+            ],
+            "expected_role": "BuildingPad",
+            "minimum_weight": 0.8,
+            "source": "native_building_assembly_records footprint interior",
+            "interior_clearance_m": 19.59079719964461
+          },
+          {
+            "id": "road:980818241:0",
+            "world_location_cm": [
+              25068.28109623758,
+              25341.06695816609,
+              4911.856058279947
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 17.007650690977783
+          },
+          {
+            "id": "road:41254127:0",
+            "world_location_cm": [
+              -23298.41504651853,
+              -22767.59572945009,
+              3890.468699006677
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 9.726957892795173
+          },
+          {
+            "id": "road:41255144:0",
+            "world_location_cm": [
+              21843.76717371577,
+              -20838.07451507958,
+              3515.9680975285382
+            ],
+            "expected_role": "RoadBed",
+            "minimum_weight": 0.8,
+            "source": "roadbld_centerlines piece midpoint",
+            "building_clearance_m": 5.5706370510402134
+          }
+        ],
+        "rules": "Ground is a geometric slope/open-space mask, not land-cover semantics. All four palette weights are normalized. Native Grass uses Ground times coverage; roads, pads and steep weights exclude/reduce it. Existing HDA placements remain retained."
+      }
+    },
+    "preserve_other_fields": true,
+    "source_receipt": "Staging/ModelBank/PermanentIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json",
+    "source_receipt_sha256": "8d0e796cc2f235075dcf4c640e96ca0b50f68a9911bdf9ba54087c69e178952c",
+    "probe_status": "Source-derived expectations, NOT native weight measurements. World cm uses recorded identity-frame Houdini X,Yup,Z -> Unreal X,Z,Y * 100. Task4 must confirm actual output frame before accepting."
+  }
+]

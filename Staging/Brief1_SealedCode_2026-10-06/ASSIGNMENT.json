@@ -1,0 +1,49 @@
+{
+  "schema": "environmentpipeline.operator_assignment.v1",
+  "brief": "Staging/Briefs_2026-10-06/BRIEF_1_SEALED_CODE.md",
+  "operator": "Claude Code operator session (brief 1), reporting to manager cc37d4d2-3d62-4f53-b689-28432b5527ae through Aviv",
+  "linear": {"part_a": "ENG-1147", "part_b": "ENG-1146"},
+  "status": "PREPARATION_STOPPED_USAGE_LIMIT_NO_CHANGES_MADE",
+  "created_utc": "2026-10-06T16:02:00Z",
+  "assigned_editor_PID": null,
+  "editor_live": false,
+  "original_map": null,
+  "write_scope_planned": {
+    "files": [
+      "Staging/Brief1_SealedCode_2026-10-06/",
+      "Staging/ParallelEditors/ (new: EDITOR_<pid>.json records, probe, Probes/, Refusals/)",
+      "Content/Python/geocity_runtime_guard.py, geocity_editor_action.py, geocity_bank_workflow.py, geocity_roadbld_workflow.py, geocity_roadbld_seams.py (only at reseal time)",
+      "Staging/SystemCompletion_2026-10-04/launch_editor.ps1 and geocity_runtime_manifest.json (only at reseal time)",
+      "Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/RATIFICATION_B3_PARALLEL_EDITORS.json (proposal)",
+      "Staging/ModularConstruction_2026-10-05/Run_20261005/ROAD_REPAIR_QUEUE.json (Part B step 3 only)"
+    ],
+    "game_packages": ["/Game/Project/Areas/GazaRimal/ (Part B run only, after the sky task and the reseal; not yet)"]
+  },
+  "control_endpoint": null,
+  "measured_2026_10_06": {
+    "editor_owner_last_line": "2026-10-06T14:48:43.106695+00:00 OWNER=NONE released_by=ASSET_BANK_OPERATOR editor_PID=29900 ... (unchanged at 16:00Z; 501 lines)",
+    "live_editors_15_51Z": [{"pid": 29900, "start_utc": "2026-10-06T13:18:19.7595451Z", "map": "Iran", "owner": "asset-bank chat 01a11162, idle, 3 transient Cook packages dirty"}, {"pid": 14236, "start_utc": "2026-10-06T15:48:00.5411959Z", "map": "GazaRimal", "owner": "sky Stage 2 chat 01a1118e (ports 8001/19841/18081)"}],
+    "live_editors_16_00Z": [{"pid": 29900, "ports": [8000, 18080, 19840]}],
+    "sky_stage2": "Staging/ReusableSky_2026-10-06/Stage2/ASSIGNMENT.json status RELEASED, released_utc 15:52:08Z, closed PIDs 5288/9416/14236; wrote BP_EnvironmentSky and MI_EnvironmentCloudDefaults; no EDITOR_OWNER.txt lines",
+    "bank_chat_resume": "Staging/AssetBankOperator_2026-10-06/Resume_20261006/BLOCKED_NEW_EDITOR_14236.json: stopped at 15:51:34Z before its lease because PID 14236 appeared; no generation started; no saves; 29900 still open",
+    "runtime_startup_pid14236": "exists: the sky editor ran the sealed GeoCity bootstrap (every editor does); reseal would invalidate every live GeoCity editor at its next verify()",
+    "seal": "manifest sha256 258469e14df2ca2e5e2b0c6543bf42e29c1fcde3d1628f7d258a607ee6d03024, 12 modules, 4 support files; verify() hashes the on-disk module files, so any edit to Content/Python breaks the next verify() of a live editor even before resealing",
+    "rimal_replacement_scope_vs_sky": "Rimal LAST_SUCCESSFUL_WORKFLOW_STATE.json (2026-10-03, PID 32752): 43 baked_actor_paths, 44 previous_baked_actor_paths; none named DirectionalLight, SkyLight, SkyAtmosphere, SM_SkySphere, BP_EnvironmentSky, ExponentialHeightFog or VolumetricCloud. ROADBLD_DELIVERY.json: 68 owned actors, 24 roads, revision 20261003T143631839378",
+    "failed_road_ledger": "Run_20261005/Attempt2/ROADBLD_WORKFLOW_STATE.json: phase failed_clipping, PID 31508, revision 20261005T155444836873, no grounding_report, junction_repair None, 132 staged actor paths; the AssertionError is raised inside ground_native_geos -> repair_continuous -> _append_connector_apron (seams.py:504)",
+    "profiles": {"GazaShujaiya": "f722381f, roads off, grass off, landscape_material MI_GeoCityGround_Auto (missing)", "GazaRimal": "e6dead27, roads on, grass on", "Iran": "cb0f3cab, roads off, no grass block, landscape_material MI_SurfaceBank_Natural"}
+  },
+  "design_decisions_taken_before_stop": [
+    "Guard home: geocity_runtime_guard.py gets lease_fields, editor_lease_line(text, pid, start_utc), _live_editors (one PowerShell call, pid + start time), generation_scope(profile), parallel_editor_report / require_parallel_editors; no 13th module",
+    "Write set = /Game/Project/Areas/<area> (whole area folder, covers root, Cook, Bake, LayerInfos, MI_GeoCityGround, RoadBLD) plus LG_GeoCity_PermittedGroundGrass and M_SurfaceBank_Natural when grass is enabled; read set = every /Game string in the profile (package part) plus /Game/Project/Shared/ModelBank, the three SurfacePainting constants (so Rimal-vs-Iran refuses through the master material), /Game/Project/Shared/RoadBLD when roads are enabled; overlap = equal or prefix on a '/' boundary, case-insensitive",
+    "Bank native_save_scope is NOT folded into generation_scope (the bank's imports are its own record's write scope, not the generation's writes) - deviation from design note A, to be ratified",
+    "Lease: each reader uses the last line naming its own PID (assigned_editor_PID / editor_PID / previous_editor_PID exact match) at or after process start minus 1 s; no line = OWNER=NONE for the menu; STARTUP line still refused",
+    "Seams diagnostic: _outside_faces(surface, ring, bounded, index=None) stores number, material and ordered corners per hash; failure sidecar ROADBLD_OPENING_FAILURE_<revision>_<HHMMSSffffff>.json next to the run ledger (opened 'x'), classifies each missing face as attribute-only (same positions, different normals/UVs) or geometry change, with min distance to the ring; then the same AssertionError",
+    "Launcher: second sealed editor would collide on default ports 8000/18080/19840 (held by 29900 today); record control_endpoints as defaults and flag as a limitation"
+  ],
+  "blockers": [
+    "Reseal precondition not met: PID 29900 (bank chat) is live and still expected to generate (Iran verification); editing Content/Python or resealing now would make its next verify() fail. Needs: bank chat finishes and releases 29900, or Aviv decides the bank chat restarts 29900 after the reseal",
+    "Part B reproduction needs a Rimal editor started through the sealed launcher with the new manifest; the launcher requires OperatorThreadId = task4 = the manager session id (identity checks must not change)",
+    "Usage limit of this operator session reached before any code was written"
+  ],
+  "not_done": ["Part A code", "Part B diagnostic code", "backups", "reseal", "probe", "RATIFICATION_B3 proposal", "Rimal run", "ROAD_REPAIR_QUEUE update", "captures"]
+}

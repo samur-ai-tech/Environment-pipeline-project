@@ -1,0 +1,20 @@
+Add_0 [Add]  A<-MaterialFunctionCall_6:1 B<-MaterialFunctionCall_7:1
+Add_1 [Add]  A<-MaterialFunctionCall_6:2 B<-MaterialFunctionCall_7:2
+AppendVector_0 [AppendVector]  A<-Add_0:0 B<-Add_1:0
+AppendVector_1 [AppendVector]  A<-AppendVector_0:0 B<-Multiply_0:0
+Constant_4 [Constant] {"R": 1.0} 
+Constant_6 [Constant] {"R": 1.0} 
+Constant3Vector_0 [Constant3Vector] {"Constant": [0.0, 0.0, 1.0, 0.0]} 
+FunctionInput_0 [FunctionInput] {"InputName": "BaseNormalIntensity", "InputType": "FunctionInput_Scalar", "Description": "Default is 1", "SortPriority": 2} Preview<-Constant_4:0
+FunctionInput_1 [FunctionInput] {"InputName": "AddNormalIntensity", "InputType": "FunctionInput_Scalar", "Description": "Default is 1", "SortPriority": 3} Preview<-Constant_6:0
+FunctionInput_5 [FunctionInput] {"InputName": "BaseNormal"} 
+FunctionInput_6 [FunctionInput] {"InputName": "AddNormal", "SortPriority": 1} 
+FunctionOutput_4 [FunctionOutput] {"OutputName": "Normal"} A<-AppendVector_1:0
+LinearInterpolate_0 [LinearInterpolate]  A<-Constant3Vector_0:0 B<-FunctionInput_6:0 Alpha<-FunctionInput_1:0
+LinearInterpolate_1 [LinearInterpolate]  A<-Constant3Vector_0:0 B<-FunctionInput_5:0 Alpha<-FunctionInput_0:0
+MaterialFunctionCall_6 [MaterialFunctionCall] {"MaterialFunction": "SplitComponents"} FunctionInputs[0].Input<-LinearInterpolate_1:0
+MaterialFunctionCall_7 [MaterialFunctionCall] {"MaterialFunction": "SplitComponents"} FunctionInputs[0].Input<-LinearInterpolate_0:0
+Multiply_0 [Multiply]  A<-MaterialFunctionCall_6:3 B<-MaterialFunctionCall_7:3
+Normalize_0 [Normalize]  VectorInput<-AppendVector_1:0
+MF_MWAM_CombineNormal [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_CombineNormalEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_CombineNormalEditorOnlyData [MaterialFunctionEditorOnlyData]  

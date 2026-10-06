@@ -1,0 +1,47 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_properties",
+    "arguments": {
+     "instance": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable"
+     },
+     "properties": [
+      "CurrentState",
+      "CookCount",
+      "bHasBeenLoaded",
+      "bLastCookSuccess",
+      "OutputData",
+      "BakingData",
+      "ProxyData",
+      "ComponentData",
+      "ParameterData"
+     ]
+    },
+    "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.007,
+ "isError": true,
+ "text": "GetObjectProperties on '/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable' (HoudiniCookable): the following properties could not be read: CurrentState, CookCount, bHasBeenLoaded, bLastCookSuccess, OutputData, BakingData, ComponentData, ParameterData",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "GetObjectProperties on '/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable' (HoudiniCookable): the following properties could not be read: CurrentState, CookCount, bHasBeenLoaded, bLastCookSuccess, OutputData, BakingData, ComponentData, ParameterData"
+    }
+   ],
+   "isError": true
+  }
+ }
+}

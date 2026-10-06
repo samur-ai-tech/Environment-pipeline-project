@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2256,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02b"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"34x100x101\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/SoulWork/City/Meshes/NEW/SM_Slums_Vent_02b.FBX\\\", \\\"Timestamp\\\" : \\\"1515170197\\\", \\\"FileMD5\\\" : \\\"030529ca28b4147cc3f9ea0150ebd7ea\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1250\",\"UVChannels\":\"3\",\"Vertices\":\"3012\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2256,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"34x100x101\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"F:/SoulWork/City/Meshes/NEW/SM_Slums_Vent_02b.FBX\\\", \\\"Timestamp\\\" : \\\"1515170197\\\", \\\"FileMD5\\\" : \\\"030529ca28b4147cc3f9ea0150ebd7ea\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1250\",\"UVChannels\":\"3\",\"Vertices\":\"3012\"}}"
+    }
+   ]
+  }
+ }
+}

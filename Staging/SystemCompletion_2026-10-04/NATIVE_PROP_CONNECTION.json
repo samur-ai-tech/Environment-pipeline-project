@@ -1,0 +1,29 @@
+{
+  "status": "INTEGRATED_ORDINARY_SOURCE_FRESH_ORIGINAL_MAP_EXECUTION_PENDING",
+  "installed_contract": "Plugins/RoadBLD/Intermediate/Build/Win64/UnrealEditor/Inc/RoadBLDRuntime/UHT/PropSpawner.gen.cpp",
+  "native_fact": "Installed UPropSpawner spawns InstancedStaticMeshComponents onto RoadGeo; its runtime handle arrays are transient and not serialized",
+  "confirmed_source_gap": "Current road grounding and persistence binding capture require exact StaticMeshComponent. Restored native PropSpawners require separate ISM support",
+  "prepared_helper": "Staging/SystemCompletion_2026-10-04/Prepared/geocity_roadbld_props.py",
+  "planned_ordinary_hooks": [
+    "Check ISM mesh provenance from permitted installed preset Settings.MeshesToUse; do not access transient/protected spawner handles",
+    "Exclude verified prop ISMs from asphalt-only grounding; retain complete source-road surface proof",
+    "Clip/ground surface components, then fit original native prop contact against exact retained asphalt/sidewalk and authoritative Landscape",
+    "Omit only generated instance conflicts with exact area/protected building footprints, record each omission; preserve all vendor meshes/materials",
+    "Validate final native props and snapshot exact instance counts/transforms in persisted binding ledger",
+    "Revalidate after official suppression/Bake and saved-map reopen"
+  ],
+  "native_execution": "NOT_RUN",
+  "active_source_changed_for_this_preparation": true,
+  "editor_writer": "Other coordinated Iran operation retains its sole lease; this chat remains editor-inactive",
+  "bank_eligibility_changed": false,
+  "modules": {
+    "geocity_roadbld_clip.py": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+    "geocity_roadbld_grounding.py": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+    "geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "geocity_roadbld_landscape.py": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+    "geocity_roadbld_props.py": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+    "geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "geocity_roadbld_topology.py": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+    "geocity_roadbld_workflow.py": "4e85299cc6d8f96368e3f14c5ad216dbc6af94f4bcef3e720a41b16321bad2a8"
+  }
+}

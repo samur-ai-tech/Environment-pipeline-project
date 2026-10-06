@@ -1,0 +1,32 @@
+{
+  "manager_instruction": "Known source RoadBed/BuildingPad probes required in config and explicitly passed in paint_ready; no grid-only acceptance.",
+  "implemented": {
+    "config": "Nonempty RoadBed and BuildingPad roles, unique nonempty string IDs, finite three-coordinate world locations and finite thresholds within .8..1; before native prepare.",
+    "readiness": "Valid distinct known probes explicitly passing their required target weights for both RoadBed and BuildingPad; plus full normalized grid contract. Grid-only and single-known-role sets fail readiness.",
+    "diagnostics": [
+      "known_exclusion_probe_ids_passed",
+      "known_exclusion_probes_passed",
+      "missing_known_exclusion_roles"
+    ],
+    "api_compatibility": "Existing paint_ready and prior keys retained; task1 uses same requested gate.",
+    "profile_readback": [
+      {
+        "path": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+        "sha256_now": "ddadfcea5e72673f6b30557f1f861eb9cb3b7bde49cb591652ce2f157f4f07fc",
+        "required_fields_match_proposal": true,
+        "enabled_contract_validation": "PASS",
+        "edited_by_task3": false
+      },
+      {
+        "path": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+        "sha256_now": "3460c49ba0e80df691669bc30e39dcedd08b7e751fb03e6d74169ab130571ddc",
+        "required_fields_match_proposal": true,
+        "enabled_contract_validation": "PASS",
+        "edited_by_task3": false
+      }
+    ]
+  },
+  "source_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+  "tests_passed": 31,
+  "native_action": false
+}

@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "stdout": "",
+  "result": {
+    "pointer": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.BP_EnvironmentSky_C_0.NorthArrow",
+    "actual": [
+      [
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.BP_EnvironmentSky_C_0.NorthArrow",
+        false,
+        "True",
+        "True"
+      ]
+    ],
+    "graph_tail": "ion (Variables|Default|GetCompassMesh) (Math|Rotator|MakeRotator 0.0 0.0 (+ (Variables|02DateLocationandNorth|GetNorthOffset) 90.0)))\n  (Rendering|SetVisibility (Variables|Default|GetDirectionalLight) (Variables|Default|GetCanRender))\n  (Rendering|SetVisibility (Variables|Default|GetSkyLight) (Variables|Default|GetCanRender))\n  (Rendering|SetVisibility (Variables|Default|GetSkyAtmosphere) (Variables|Default|GetCanRender))\n  (Rendering|Components|Light|SetIntensity (Variables|Default|GetDirectionalLight) (select (> (Variables|Location|GetCorrectedElevation) 180.0) (Math|Float|Clamp(Float) (Variables|04Lighting|GetSunIntensity) 0.0 200000.0) 0.0))\n  (Rendering|Components|SkyLight|SetIntensity (Variables|Default|GetSkyLight) (Math|Float|Clamp(Float) (Variables|04Lighting|GetSkyIntensity) 0.0 20.0))\n  (|SetbEnabled (and (Variables|Default|GetCanRender) (Variables|05Exposure|GetOverrideExposure)) (Variables|Default|GetExposureOverride))\n  (Class|PostProcessComponent|SetBlendWeight (select (and (Variables|Default|GetCanRender) (Variables|05Exposure|GetOverrideExposure)) 1.0 0.0) (Variables|Default|GetExposureOverride))\n  (if (not (Utilities|String|IsEmpty (Variables|00Activation|GetConflictActors)))\n    (Variables|00Activation|SetStatus \"Lighting conflict: existing actors preserved; rig inactive. See Conflict Actors.\")\n    (elif (Variables|Default|GetCanRender)\n      (Variables|00Activation|SetStatus (select (Variables|01TimeandSun|GetManualSun) \"Active - Manual Sun\" \"Active - Time and Location\"))\n      (else\n        (Variables|00Activation|SetStatus \"Inactive - enable Rig Enabled after resolving lighting conflicts.\"))))\n  (Variables|00Activation|SetRuntimeNotes \"Runtime: call UpdateSky after changing controls. Automatic time animation is off. Invalid date inputs are clamped for the solar solver.\")\n  (Settings|SetSettings (Variables|05Exposure|GetExposureSettings) (Variables|Default|GetExposureOverride))\n  (Rendering|SetVisibility (Variables|Default|GetNorthArrow) true))\n"
+  }
+}

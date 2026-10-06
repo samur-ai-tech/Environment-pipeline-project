@@ -1,0 +1,77 @@
+{
+  "kind": "SOURCE_VERIFIED_MATERIAL_CHANNEL_RECEIVING_POLICY_NOT_LIVE_AUDIT",
+  "prepared_at": "2026-09-29T10:42:42.475Z",
+  "policy": "MATERIAL_CHANNEL_AUDIT_RECEIVING_2026-09-29.md",
+  "bank_brief": "Staging/ModelBank/BANK_ASTRA_006_BRIEF_2026-09-29.md",
+  "bank_brief_sha256": "59bcb617e4c0e7b6763c6592760d497c53b45ed706053a371b53ce8d7616b78f",
+  "sources": [
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/Toolsets/EditorToolset/Content/Python/editor_toolset/toolsets/material.py",
+      "sha256": "cd6801e55ca4025414b67a258142856046078450478aeef48c887b808c6c0f6b"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/Toolsets/EditorToolset/Content/Python/editor_toolset/toolsets/object.py",
+      "sha256": "91b7085a5d029d83a020ab8c170acce0b1c7f938976a266daa7c23f36da8126a"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionPerInstanceCustomData.h",
+      "sha256": "858ab3d96843b4472896fae8068d8cd38bf8a484961bffbc3fe3084eada7a459"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionExternalCodeBase.h",
+      "sha256": "3eee67f36d471d37be129c4990f453d5280ad6a66b32a1f84248078926673fd5"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionMaterialFunctionCall.h",
+      "sha256": "9a969efedb946f0e7464fe2013f7bbc47ca0ce64f482c12025f77514927e91b8"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionMaterialAttributeLayers.h",
+      "sha256": "fcf64a487949cc5e81ef9a9bbfbfd8dc06f43ce46e5358a1984fa0eb3f259b37"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionCustom.h",
+      "sha256": "31db809a8bb1a9090eb509dbc80f229ae15bd716692592d564ec3d42dde45069"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionScalarParameter.h",
+      "sha256": "079302bb4ec70c6b5406f3748ec1b7ef0a9b3442ee25e1d77274378623f5c94a"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Public/Materials/MaterialExpressionVectorParameter.h",
+      "sha256": "7dba351a65a44bab4b09d1cb69f25ca8eb28b749f8a67bb1786ad6718687b125"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Editor/MaterialEditor/Public/MaterialEditingLibrary.h",
+      "sha256": "5201a2be4ed754246bca79d115626dd3b59471989366f87cd7110a206047375f"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Shaders/Private/MaterialTemplate.ush",
+      "sha256": "8c7b52a86a98c9b923f4fd8fc4186432e2398df0d89ee372e2972ab4b6a57e04"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Config/BaseMaterialExpressions.ini",
+      "sha256": "4dac956e1be579a73a27df44f63c1d2c7082651e1d9b95ecd4735ecff0df9883"
+    }
+  ],
+  "findings": {
+    "actual_class_read": "ObjectTools.get_class(instance), not object name parsing",
+    "property_read": "ObjectTools.get_properties(instance, properties:[DataIndex]); actual serialization remains unproved",
+    "scalar_index_type": "uint32",
+    "vector_index_type": "uint32",
+    "scalar_conservative_range": "N",
+    "vector_conservative_range": "N,N+1,N+2",
+    "material_function_property": "MaterialFunction",
+    "graph_dispatch_supported_types": [
+      "Material",
+      "MaterialFunction"
+    ],
+    "opaque_or_unreadable_path": "UNKNOWN; no verified-unused gate",
+    "primitive_data_separate": true,
+    "global_Tier1_channel_reservation": false,
+    "H0958_material_set_not_covered": true
+  },
+  "brief_review": "No concrete receiving mismatch in reviewed brief. Preserve cap 64 node class calls, no extra packages, no CSV changes/channel reservation, and snapshot-specific graph verdict.",
+  "live_status": "NOT_RUN",
+  "writes": "Topic3 packet only; no new automation or editor script"
+}

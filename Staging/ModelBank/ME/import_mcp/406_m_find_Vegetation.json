@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME/Vegetation",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Vegetation/Nopal\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0647_Nopal\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__41\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__40\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__28\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0636_Acacia\",\"/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_1\",\"/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_0\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Vegetation/Nopal\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0647_Nopal\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__41\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__40\",\"/Game/Project/Shared/Bank_ME/Vegetation/Material__28\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0636_Acacia\",\"/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_1\",\"/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_0\",\"/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm\"]}"
+    }
+   ]
+  }
+ }
+}

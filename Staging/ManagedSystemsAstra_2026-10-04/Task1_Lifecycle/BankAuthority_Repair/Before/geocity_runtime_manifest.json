@@ -1,0 +1,64 @@
+{
+  "schema": "environmentpipeline.geocity_runtime_sources.v2",
+  "startup": {
+    "file": "init_unreal.py",
+    "sha256": "bd3ff65c7b97730f0d02d36c2ba7c55e8caf500713a2dbc50c5c6e56a1b50fd4"
+  },
+  "modules": {
+    "geocity_bank_workflow": {
+      "file": "geocity_bank_workflow.py",
+      "sha256": "94c0588a113fc514e5d21cf720abbaf36f386ff2ae01fdcdf2ddcdab5934cb89"
+    },
+    "geocity_editor_action": {
+      "file": "geocity_editor_action.py",
+      "sha256": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1"
+    },
+    "geocity_landscape_workflow": {
+      "file": "geocity_landscape_workflow.py",
+      "sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d"
+    },
+    "geocity_roadbld_clip": {
+      "file": "geocity_roadbld_clip.py",
+      "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565"
+    },
+    "geocity_roadbld_grounding": {
+      "file": "geocity_roadbld_grounding.py",
+      "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89"
+    },
+    "geocity_roadbld_junctions": {
+      "file": "geocity_roadbld_junctions.py",
+      "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e"
+    },
+    "geocity_roadbld_landscape": {
+      "file": "geocity_roadbld_landscape.py",
+      "sha256": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4"
+    },
+    "geocity_roadbld_props": {
+      "file": "geocity_roadbld_props.py",
+      "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449"
+    },
+    "geocity_roadbld_seams": {
+      "file": "geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289"
+    },
+    "geocity_roadbld_topology": {
+      "file": "geocity_roadbld_topology.py",
+      "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3"
+    },
+    "geocity_roadbld_workflow": {
+      "file": "geocity_roadbld_workflow.py",
+      "sha256": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d"
+    },
+    "geocity_runtime_guard": {
+      "file": "geocity_runtime_guard.py",
+      "sha256": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0"
+    }
+  },
+  "support_files": {
+    "Config/DefaultEngine.ini": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+    "Config/DefaultRoadBLD.ini": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+    "Staging/SystemCompletion_2026-10-04/launch_editor.ps1": "dfec58634021770698da978e7d73543de97e6dcb3f253d544bbc7b6ad3c931b4",
+    "Staging/SystemCompletion_2026-10-04/seal_runtime.py": "e3b3c26f247aa6550b60ec9c0da85fd242654687c7e477f1f2fe0cbb2820d632"
+  },
+  "loading": "exact project source; no stale-module reload; no startup generation"
+}

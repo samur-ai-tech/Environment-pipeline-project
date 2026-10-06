@@ -1,0 +1,45 @@
+{
+  "installed_header": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Developer\\AssetTools\\Public\\IAssetTools.h",
+  "header_sha256": "3e7e77387860f3d4ad8b090a9434ed237dffacfc988cef32b7443e465acdaba9",
+  "migration_options_lines": [
+    241,
+    267
+  ],
+  "native_api": "MigratePackages(PackageNamesToMigrate, DestinationPath, FMigrationOptions); dependencies not ignored; conflict SKIP",
+  "engine_build": {
+    "MajorVersion": 5,
+    "MinorVersion": 8,
+    "PatchVersion": 2,
+    "Changelist": 56702186,
+    "CompatibleChangelist": 55116800,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.8"
+  },
+  "citysample_prior_session_log": "C:\\Users\\USER\\Documents\\Unreal Projects\\CitySample\\Saved\\Logs\\CitySample.log",
+  "citysample_prior_session_version_lines": [
+    {
+      "line": 581,
+      "text": "LogInit: Engine Version: 5.8.2-56702186+++UE5+Release-5.8"
+    },
+    {
+      "line": 582,
+      "text": "LogInit: Compatible Engine Version: 5.8.0-55116800+++UE5+Release-5.8"
+    }
+  ],
+  "interpretation": "CitySample previously opened in same 5.8.2 build; current exact mesh/dependency load compatibility remains unverified. Source GUID alone was not interpreted as engine version.",
+  "official_sources": [
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/migrating-assets-in-unreal-engine",
+      "finding": "Migrate includes referenced dependencies; normal destination is target project Content; missing dependencies can break assets."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/API/Developer/AssetTools/FMigrationOptions",
+      "finding": "Dependency and conflict behavior are explicit options."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/city-sample-project-unreal-engine-demonstration",
+      "finding": "CitySample is a complete sample with procedural systems; this supplier selects content only."
+    }
+  ]
+}

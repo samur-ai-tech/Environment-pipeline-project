@@ -1,0 +1,12 @@
+ComponentMask_0 [ComponentMask] {"R": true, "G": true} Input<-WorldPosition_0:0
+Divide_0 [Divide]  A<-ComponentMask_0:0 B<-ScalarParameter_0:0
+FunctionOutput_0 [FunctionOutput] {"OutputName": "LandscapeCoords", "SortPriority": 1} A<-LandscapeLayerCoords_0:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "WorldCoords", "SortPriority": 2} A<-Divide_0:0
+FunctionOutput_2 [FunctionOutput] {"OutputName": "LandscapeUvs", "SortPriority": 1} A<-StaticSwitchParameter_0:0
+FunctionOutput_3 [FunctionOutput] {"OutputName": "WorldCoordsRAW", "SortPriority": 3} A<-ComponentMask_0:0
+LandscapeLayerCoords_0 [LandscapeLayerCoords]  
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_LandscapeWorldUVSize", "DefaultValue": 384.0, "Group": "UVs"} 
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_UseWorldPositionUVs", "DefaultValue": true, "Group": "UVs"} A<-Divide_0:0 B<-LandscapeLayerCoords_0:0
+WorldPosition_0 [WorldPosition]  
+MF_MWAM_LandscapeUVs [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_LandscapeUVsEditorOnlyData", "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_LandscapeUVsEditorOnlyData [MaterialFunctionEditorOnlyData]  

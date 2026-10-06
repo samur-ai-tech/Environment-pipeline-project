@@ -1,0 +1,91 @@
+{
+  "kind": "BANK_OWNED_R3_INTERFACE_CLARIFICATION_OFFLINE_REVIEW",
+  "reviewed_at": "2026-09-29T13:18:05.266Z",
+  "authority": "Technical proposal only. Placement ruling is documented in bank decision sheet; CONTRACT remains draft. No permission for a live run inferred.",
+  "canonical_catalog": {
+    "path": "Staging/ModelBank/BANK_CANDIDATE_INDEX_2026-09-29.csv",
+    "sha256": "1553b0afe81f816c1ad6f2f44ce4b1cec6c3943e68251e4e73c7b61acb3dc1b1"
+  },
+  "qualification_queue": {
+    "path": "Staging/ModelBank/BANK_FIRST_QUALIFICATION_QUEUE_2026-09-29.csv",
+    "sha256": "29c010fcc8754fb143c9c6b1e4e3caef98f1b7548b1e83f36f12e712bfab812e",
+    "route_counts": {
+      "whole_instance": 4,
+      "props": 10,
+      "vegetation_instance": 5,
+      "bg_module_candidate": 6,
+      "material": 3
+    }
+  },
+  "sources": [
+    {
+      "path": "C:/Users/USER/Documents/Pipeline Environment/CONTRACT.md",
+      "sha256": "0a8a49b54fa28a5a33539f6aca651fe3b25710057c7aa98b0b7e145f4817f710"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/BANK_DECISION_SHEET_2026-09-29.md",
+      "sha256": "7161951d5d03e63954ce3902431902975cc17479418dcdbc7dbac31f6fe56c66"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/BANK_FIRST_QUALIFICATION_GAP_PACKET_2026-09-29.md",
+      "sha256": "c17fe717b8c4bf810d2b35897ea723dda2fe7346bb2a3ceeb0ad41d6ab77b89b"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniInputTranslator.cpp",
+      "sha256": "9bfc0675643e28c03ec3f9c3a23586e093daef3c0b5f4b7412e4387bdfb6e985"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Plugins/HoudiniEngine/Source/HoudiniEngine/Private/UnrealDataTableTranslator.cpp",
+      "sha256": "5619ccf65130b80b8662843cb1f9886ae6d9086bf0a93270b6b0a4706a854173"
+    }
+  ],
+  "checks": {
+    "wire_columns": 54,
+    "ordinals_complete": true,
+    "wire_names_unique": true,
+    "all_actual_wire_bindings_null": true,
+    "alias_columns": 54,
+    "aliases_match_wire": true,
+    "all_actual_alias_bindings_null": true,
+    "approved_numeric_policy_values": 0,
+    "all_policy_fields_unassigned": true,
+    "actual_policy_binding_null": true,
+    "queue_rows": 28,
+    "queue_ids_unique": true,
+    "queue_matches_v7": true,
+    "queue_all_reserve_disabled": true,
+    "canonical_v7_unchanged": true,
+    "route_profiles_distinguish_instance_module_material": true
+  },
+  "artifacts": [
+    {
+      "file": "CATALOG_INTERFACE_R3_PROPOSAL_2026-09-29.md",
+      "sha256": "b57a40af888759f8c415c6e6510d5a675ab1b8798552430b10903fb1c2a65ebe"
+    },
+    {
+      "file": "catalog_wire_contract.r3.proposed.json",
+      "sha256": "dcba94cef48cfcddb0119a6c7216dd3ee3fef72911ac51da2fca195cef7a5fad"
+    },
+    {
+      "file": "bank_field_alias_map.r3.proposed.json",
+      "sha256": "fd8059f92267cf1d3f3afddb23886e71274612411b64ae1f6d7575d34e655559"
+    },
+    {
+      "file": "role_placement_policy.r3.proposed.json",
+      "sha256": "34fa176bf27aacb6ab7f4b39dd678ceb742143a03a236727a5a5187414097b81"
+    },
+    {
+      "file": "bank_handoff_receipt.r3.template.json",
+      "sha256": "4d04ee07a0d7992a78381de8b424a02e039e6d3cdcc5cf398d9deabd5a1e95b9"
+    }
+  ],
+  "findings": [
+    "Mesh-reference checkbox does not supply bank row metadata; native DataTable translator supplies a separate metadata path.",
+    "Earlier exact support-point requirement superseded for first release by bank-recorded bottom-anchor/conservative-envelope ruling.",
+    "R3 keeps54 columns but proposes renamed31–34 and explicit SchemaVersion3; no schema is approved or bound.",
+    "Margins/setbacks/slope/plinth require native runtime parameter transport; rules proposed with no numeric values assigned.",
+    "Minimum-ground placement may intersect uphill terrain; fail or use explicitly approved pad behavior, no silent alternate elevation rule.",
+    "Surface-material metadata rows do not use unreal_instance; modules require real geometry and BG1."
+  ],
+  "execution": "No editor/Houdini contact, no bank/source/contract edits, no tests run. Broader integration hold respected."
+}

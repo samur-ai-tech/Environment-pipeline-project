@@ -1,0 +1,21 @@
+{
+  "status": "SUPERSEDED_BY_OWNER_RICH_CONTRACT_ADOPTION",
+  "accept_producer_schema": "environmentpipeline.semantic_surface.v2",
+  "preserve_producer_fields": [
+    "paint_layers",
+    "auxiliary_layers",
+    "roles",
+    "probes",
+    "HDA_local_P_m",
+    "grass"
+  ],
+  "required_additive_fields": {
+    "class_counts": "All 12 class IDs as string keys, integer count_nonzero(classes == code) on actual emitted lattice including border. Needed to distinguish absent classes from omitted evidence and retain covered class probes.",
+    "layer_stats": "All actual paint_layers and auxiliary_layers: {nonzero_voxels: int(count_nonzero(array)), maximum_weight: float(max(array))}. Zero auxiliary masks must stay explicit. Missing paint layers must be explained by explicit role counts; all 12 LC roles must be declared (zero for absent classes), including maximum_weight=0 and emitted=false.",
+    "probes": "Retain existing probes and add one representative raw source-class cell for each nonzero class, even when geometric precedence consumes its entire surface. Existing argmax-per-positive-role and auxiliary probes stay."
+  },
+  "reason": "Current source roles omit absent classes; auxiliary names have no zero/nonzero counts. Consumer cannot honestly synthesize these counts or pass an unobserved positive layer. These are metadata-only additions from already computed arrays, not source or generation changes.",
+  "runtime_token_alignment": "Task3 will emit producer-required native_ready, canonical_selection_verified, material_bindings_verified and grass_bindings_verified only after actual prepare readbacks. These flags concern prepared dependencies, not output paint/Lit/final acceptance.",
+  "scope": "Request/contract only. Producer owner scope remains unchanged by Task3. No active source/profile/native changes.",
+  "resolution": "Owner incoming instruction adopts semantic_landscape_contract.v1, existing Task3 fields class_counts/layers/tags/hda_location_m and compact canonical digest. Consumer retains this richer schema; no lossy semantic_surface.v2 adapter. Token retains material_graph_prepared and canonical_area_eligibility_verified; adds grass_bindings_verified following actual readbacks."
+}

@@ -1,0 +1,218 @@
+*pegasus::Sop/heightfield_texture_mask::1.0
+-----
+\oplib:/pegasus::Sop/heightfield_texture_mask::1.0?pegasus::Sop/heightfield_texture_mask::1.0
+-----
+;opdef:/pegasus::Sop/heightfield_texture_mask::1.0?IconImage
+-----
+einputcolors='1 "RGB 0.145142 0.666504 0.556641" ' outputcolors='1 "RGB 0.700195 0.700195 0.700195" ' 
+-----
+# Dialog script for pegasus::heightfield_texture_mask::1.0 automatically generated
+
+{
+    name	pegasus::heightfield_texture_mask::1.0
+    script	iansmithartist::hf_texture_mask::1.0
+    label	"HeightField Texture Mask"
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+    inputlabel	2	"Sub-Network Input #2"
+    inputlabel	3	"Sub-Network Input #3"
+    inputlabel	4	"Sub-Network Input #4"
+
+    groupsimple {
+        name    "fld_layers"
+        label   "Blend"
+
+        parm {
+            name    "slope"
+            label   "Slope"
+            type    float
+            default { "0.5" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "curvature"
+            label   "Curvature"
+            type    float
+            default { "0.5" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "soil"
+            label   "Soil"
+            type    float
+            default { "0.5" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+    }
+
+    groupsimple {
+        name    "fld_effects"
+        label   "Effects"
+
+        parm {
+            name    "slope_angle"
+            label   "Slope Angle"
+            type    float
+            default { "24.5" }
+            range   { 0 90 }
+            parmtag { "autoscope" "0000000000000000" }
+        }
+        parm {
+            name    "max_curvature"
+            label   "Max Curvature"
+            type    float
+            default { "1" }
+            range   { 0 3 }
+            parmtag { "autoscope" "0000000000000000" }
+        }
+        parm {
+            name    "soil_size"
+            label   "Soil Size"
+            type    float
+            default { "5" }
+            range   { 0 100 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "parmvop" "1" }
+            parmtag { "shaderparmcontexts" "cvex" }
+            parmtag { "units" "m1" }
+        }
+    }
+
+    groupsimple {
+        name    "fld_distort"
+        label   "Distort"
+
+        parm {
+            name    "distbynoise"
+            label   "Heading"
+            type    label
+            default { "Distort by Noise" }
+            parmtag { "sidefx::look" "heading" }
+        }
+        parm {
+            name    "switch_distortbynoise"
+            label   "Select Input"
+            type    toggle
+            nolabel
+            joinnext
+            default { "0" }
+            range   { 0! 10 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "distortion_noise_amount"
+            label   "Amount"
+            type    float
+            default { "1" }
+            disablewhen "{ switch_distortbynoise == 0 }"
+            range   { 0 50 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "parmvop" "1" }
+            parmtag { "shaderparmcontexts" "cvex" }
+        }
+        parm {
+            name    "labelparm"
+            label   "Heading"
+            type    label
+            default { "Distory by Layer" }
+            parmtag { "sidefx::look" "heading" }
+        }
+        parm {
+            name    "switch_distortbylayer"
+            label   "Select Input"
+            type    toggle
+            nolabel
+            default { "0" }
+            range   { 0! 10 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "distort_layer_amount"
+            label   "Amount"
+            type    float
+            default { "1" }
+            disablewhen "{ switch_distortbylayer == 0 }"
+            range   { -10 10 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "controllayer"
+            label   "Control Layer"
+            type    string
+            default { "height" }
+            disablewhen "{ switch_distortbylayer == 0 }"
+            menureplace {
+                [ "opmenu -l -a heightfield_distortbylayer1 controllayer" ]
+            }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+    }
+
+}
+# Automatically generated script
+\set noalias = 1
+#
+#  Creation script for pegasus::heightfield_texture_mask::1.0 operator
+#
+
+if ( "$arg1" == "" ) then
+    echo This script is intended as a creation script
+    exit
+endif
+
+# Node $arg1 (pegasus::Sop/heightfield_texture_mask::1.0)
+opexprlanguage -s hscript $arg1
+opuserdata -n '___Version___' -v '' $arg1
+
+-----
+CheckExternal := 1;
+ContentsCompressionType := 1;
+ForbidOutsideParms := 1;
+GzipContents := 1;
+LockContents := 1;
+MakeDefault := 1;
+ParmsFromVfl := 0;
+PrefixDroppedParmLabel := 0;
+PrefixDroppedParmName := 0;
+SaveCachedCode := 0;
+SaveIcon := 1;
+SaveSpareParms := 0;
+UnlockOnCreate := 0;
+UseDSParms := 1;
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="$HDA_DEFAULT_TOOL" label="$HDA_LABEL" icon="$HDA_ICON">
+    <toolMenuContext name="viewer">
+      <contextNetType>SOP</contextNetType>
+    </toolMenuContext>
+    <toolMenuContext name="network">
+      <contextOpType>$HDA_TABLE_AND_NAME</contextOpType>
+    </toolMenuContext>
+    <toolSubmenu>Pegasus/Terrain</toolSubmenu>
+    <script scriptType="python"><![CDATA[import soptoolutils
+
+soptoolutils.genericTool(kwargs, '$HDA_NAME')]]></script>
+  </tool>
+</shelfDocument>
+PIC2
+-----
+Created by Houdini20.0.653 [05/03/24 12:47:42]

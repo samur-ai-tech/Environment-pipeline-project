@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "is_dirty",
+    "arguments": {
+     "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B2_labs_osm/99E93569/B2_labs_osm_97_102_0_main_geo"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.024,
+ "isError": null,
+ "text": "{\"returnValue\":false}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 15,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":false}"
+    }
+   ]
+  }
+ }
+}

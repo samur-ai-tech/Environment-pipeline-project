@@ -1,0 +1,49 @@
+{
+ "schema": "environmentpipeline.s1_material_edit.args.v2a",
+ "_note": "S1v2a phase-a tune t001 after the I0 capture/gate (same PID as apply). macro_noise_source=macro_variation is fixed at inspect/apply (it sets the master sampler type) and MUST be repeated unchanged in every later args file (tune/save/child_save/verify assert it). grass_coverage is deliberately absent (child keeps its current value, as in B0). Values: ValueAmount 0.07 (brightness cap +-8.46 % at the +-2 sigma_V clamp), HueGain 0.30 with symmetric HueA/HueB (1.034,1,0.966)/(0.966,1,1.034): R/B 0.952..1.051 at the clamp. state_receipt = the apply receipt for t001; for t002 the t001 tune receipt.",
+ "mode": "tune",
+ "label": "s1v2a_shuj_t001",
+ "root_activation": "<FILL: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/Activation/S1V2A_ROOT_ACTIVATION_GazaShujaiya_PID<pid>.json>",
+ "root_activation_sha256": "<FILL: its sha256>",
+ "expected_pid": "<FILL: editor PID (integer)>",
+ "script_sha256": "bf1bee4f94fbc83b43901913a9b7e48c1592723cf44a6069b83b2ba3eab2aace",
+ "executed_script_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1v2/s1v2a_material_edit.py",
+ "operator_preconditions": {
+  "no_asset_editors_open_on_s1_assets": false
+ },
+ "backup_manifest": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/Before/S1B_20261005T202836Z/BACKUP_MANIFEST.json",
+ "backup_manifest_sha256": "c32afcdb5c2b848d912b5888761dc7ee5c6fc3d8f7220b1a45ef136d77532864",
+ "macro_noise_source": "macro_variation",
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "apply_receipt": "<FILL: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1v2/receipts_v2a/S1V2A_APPLY_s1v2a_shuj_r001_apply_PID<pid>.json>",
+ "apply_receipt_sha256": "<FILL: its sha256>",
+ "state_receipt": "<FILL: the apply receipt (t001) or the previous tune receipt>",
+ "state_receipt_sha256": "<FILL: its sha256>",
+ "save_receipt": null,
+ "save_receipt_sha256": null,
+ "child_values": {
+  "GazaShujaiya": {
+   "textures": {},
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.034,
+     1.0,
+     0.966,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.966,
+     1.0,
+     1.034,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_ValueAmount": 0.07,
+    "GeoCity_S1_HueGain": 0.3
+   }
+  }
+ }
+}

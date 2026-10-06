@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 186,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboard_GunsAmmo"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"10x540x70\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/billboard_GunsAmmo.fbx\\\", \\\"Timestamp\\\" : \\\"1524397037\\\", \\\"FileMD5\\\" : \\\"749de21ae6bc779a4fb7d159d3f0ee53\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"606\",\"UVChannels\":\"2\",\"Vertices\":\"1034\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 186,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"10x540x70\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/billboard_GunsAmmo.fbx\\\", \\\"Timestamp\\\" : \\\"1524397037\\\", \\\"FileMD5\\\" : \\\"749de21ae6bc779a4fb7d159d3f0ee53\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"606\",\"UVChannels\":\"2\",\"Vertices\":\"1034\"}}"
+    }
+   ]
+  }
+ }
+}

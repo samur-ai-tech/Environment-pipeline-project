@@ -1,0 +1,99 @@
+TASK 3 — MATERIALS AND GEOGRAPHIC PLACEMENT
+2026-10-02, Asia/Jerusalem
+Status: permanent source/material configuration integrated; seven complete normal
+outputs retained live. Visual striping remains unclosed before Task4 replacement.
+
+RETAINED CHANGES [measured]
+External v015 root: C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank
+geocity_city_module.py, permanent_bank_module.py, update_r007.py and .hdalc: r007.
+HDA SHA256: 2289565d663dce67fceec2ca8dc9c12fe21267e5497d610d7b519f0694677423
+Saved named /Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank.
+r006 before-image and final r007 source/definition are retained in revisions.
+
+- Generated-surface material rows use a distinct normal evaluator: release,
+  decision, identity, style, weight, scope, revision and holds are required;
+  physical mesh bounds/contact/orientation are not fabricated for materials.
+- Existing MI_Asphalt and MI_ConcreteGrain are the two enabled material lanes.
+  Native MaterialInstanceConstant classes were read before enabling them.
+  The 15 selected mesh rows and all other holds/identities remain preserved.
+  Saved only /Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4.
+  Typed native table/profile/decision digest:
+  1c27e488a4c5f2c97c4adb3a3ba1ad7fea5257669a4caa6c20f360915baae1e7
+  AREA_PROFILE.json points to Task3/NORMAL_MATERIAL_CONFIGURATION.json, which
+  retains Task2's mesh decision receipt and records this narrow material use.
+- Native surface main BaseColor/Normal/Roughness UV branches multiply by .25;
+  .05 applies to macro noise. HDA metre UVs now yield a 4 m main / 20 m macro
+  repeat instead of the previous 16 m / 80 m effective repeat. Vendor graphs unchanged.
+- Road/sidewalk geographic polygons are clipped into metre cells and grounded
+  at every resulting vertex; existing 8/16 cm lifts and lineage are retained.
+  A first Divide-verb implementation produced empty surface outputs; the wrapper
+  rejected the partial output. Direct polygon clipping replaced it; final cook
+  restored all seven native outputs. No partial result was baked or map-saved.
+- Native building footprint coverage uses the whole concave polygon/rotated
+  rectangle intersection area, replacing nine-point containment. Selection orders
+  whole buildings, trees, poles, street props, shrubs, small props, understory.
+  Every fitting candidate is checked for clearance before weighted choice.
+  Oriented footprints enforce 1 m clearance across roles; same-role minimum
+  spacing considers both assets. Whole ground footprints plus margin are sampled
+  on the metre masks; existing slope/height-spread constraints remain.
+  Nonbuilding bottom contact uses the actual generated terrain height at center.
+  Native scale remains 1:1; Task2's measured axis convention is preserved.
+- Existing compatible slot overrides are retained. Newly selected dirt pile and
+  dumpster required two additional copies, saved only at:
+  /Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_8d87362f45c2
+  /Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_0cdee0b61f9d
+  Dumpster uses the already prepared compatible M_Master_props copy.
+  AREA_PROFILE.json retains their mesh/slot mappings. Vendor originals briefly
+  became dirty through Unreal automatic usage changes; their exact packages were
+  reloaded without saving after replacing current component references with copies.
+  Final dirty packages contain only the current area map and scoped Cook packages.
+
+ACTUAL FINAL OUTPUT [measured]
+Same retained GazaRimal actor/map; official wrapper phase=cooked_verified.
+Seven outputs: Landscape, road_surfaces, sidewalks, buildings, vegetation,
+street_details and bank_instances; native identities and configured slots matched.
+Normal catalog: 17 enabled rows, 1,223 total; 160 placements / 13 used meshes.
+Roles: 23 whole buildings, 31 trees, 51 small props, 6 street props,
+7 shrubs, 42 understory; zero native poles. Tree rejection now records 19 terrain
+height-spread evaluations and 2 clearance/spacing evaluations rather than blanket
+suppression by earlier props. Pole remains an explicit unavailable required role.
+
+VISIBLE STATE / LIMITS [measured unless labelled]
+Lit area and native-building street views were inspected in the existing editor.
+The native building displays textured facade/windows/balconies and ground contact;
+white fallback geographic building shells are separate retained output. Facing is
+geographic longest-axis alignment, not final facade/entrance acceptance.
+Striped road/ground regions remained visible in area inspection; their final
+resolution is NOT claimed. Fifty-five prior baked actors, including the old
+Landscape, were temporarily hidden for inspection, then their exact prior editor
+visibility was restored. No Landscape shader change compensated for overlap.
+Template Floor top is approximately -0.5 cm and its 80 m extent is below the
+Landscape minimum approximately 2,618 cm; it was not removed or changed.
+Procedural fallback vegetation/buildings remain visible. No final aesthetic
+acceptance, complete pole coverage or complete native-building coverage is claimed.
+
+TASK4 HANDOFF
+Latest manager steering explicitly assigns this remaining normal-output defect
+to Task4 without another Task3 visual/cook cycle: legacy cook_vegetation still
+emits procedural tree blockouts at the original requests alongside the 31 native
+trees. Primitive detail_id must be matched to native point source_detail_id to
+suppress only corresponding proxy geometry. Keep the original proxy/request
+source feeding the selector; put suppression downstream on the output route to
+avoid a selector/request dependency cycle. cook_street_details has the same
+primitive detail_id contract; suppress matching native details where identities
+actually agree. Derived offset street-prop identities are not automatically the
+same as their source pole identity; zero native poles does not justify deleting
+unmatched pole requests. Preserve unmatched geographic building fallback.
+One editor PID15568; auto-cooking=false; official cooking paused=true; callbacks
+finished. Two Landscapes and old baked/current cooked output remain live and
+UNSAVED by design. Restore/replace only the scoped preceding Bake and remove the
+cooked duplicate before named map/dependency saves. Current cooked Landscape
+name: GeoCity_city_v015_PermanentBank_1451_373_0_GazaRimal_landscape.
+Current dirty packages are the named map plus Cook-root proxy packages from
+earlier and current cooks. Inspect current references; do not save obsolete proxies
+or Save All. Shared HDA/table/two new material copies are saved.
+Primary current receipts: PermanentIntegration_2026-10-02/WORKFLOW_STATE.json,
+HDA_CATALOG_RECEIPT.json, AREA_PROFILE.json and external definition_receipt.json.
+No Bake, map save, source/native-original deletion, held asset release, alternate
+generator, Linear action or second-area work was performed. Lease released;
+manager controls the next turn. Visual striping and final appearance remain explicit.

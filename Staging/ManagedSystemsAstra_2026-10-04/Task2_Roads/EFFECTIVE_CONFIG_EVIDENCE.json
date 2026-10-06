@@ -1,0 +1,60 @@
+{
+  "schema": "environmentpipeline.task2.effective_config_evidence.v1",
+  "installed_category": "RoadBLD",
+  "settings_class": "/Script/RoadBLDRuntime.RoadBLDRuntimeSettings",
+  "project_file": "Config/DefaultRoadBLD.ini",
+  "required_values": {
+    "bEnableIntersectionLandscapePatch": false,
+    "bEnableIntersectionLandscapeVisibilityHole": false,
+    "bEnableRoadLandscapePaint": false,
+    "bUseRoadLandscapeHeightPatch": false,
+    "bAutoCreatePaintLayerInfo": false
+  },
+  "installed_uht": {
+    "path": "Plugins/RoadBLD/Intermediate/Build/Win64/UnrealEditor/Inc/RoadBLDRuntime/UHT/RoadBLDRuntimeSettings.gen.cpp",
+    "category_lines": [
+      1022,
+      1026
+    ],
+    "Get_accessor_lines": [
+      27,
+      82
+    ],
+    "config_properties_lines": [
+      902,
+      912
+    ],
+    "terrain_semantics_lines": [
+      317,
+      449
+    ],
+    "property_flags": "0x0010000000004005 includes CPF_Config"
+  },
+  "vendor_ini": {
+    "path": "Plugins/RoadBLD/Config/DefaultRoadBLD.ini",
+    "all_five_vendor_values": true,
+    "vendor_unchanged": true
+  },
+  "stop_native_readback": {
+    "pid": 27188,
+    "all_five_flags": true,
+    "historical_only": true
+  },
+  "measured_config_defect": "Prior false values lived in DefaultEngine.ini, while installed class uses RoadBLD and vendor DefaultRoadBLD.ini enables all five. No project DefaultRoadBLD.ini existed before task2 created it under manager-expanded ownership.",
+  "measured_crash": "PID30548 Landscape/RenderCore access violation in first rebuild after 40 roads; log reported 32 tile patches, zero height/weight texels and old Landscape missing weightmap mips. Failed new roads/map were not saved.",
+  "inference": "Patch contribution to the crash remains inferred. Config binding repair is not proof the native access violation is resolved.",
+  "official_source": {
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine",
+    "retrieved": "2026-10-04",
+    "support": "UCLASS config category chooses its INI hierarchy. Project Config/Default<CATEGORY>.ini supplies defaults; later layers can override them. Effective native readback is therefore mandatory."
+  },
+  "evidence_sha256": {
+    "Plugins/RoadBLD/Intermediate/Build/Win64/UnrealEditor/Inc/RoadBLDRuntime/UHT/RoadBLDRuntimeSettings.gen.cpp": "7fa6d584d61377b8fd2cc7a54801234f0e13f39a456b5e2e0a10b0961adfa4ae",
+    "Plugins/RoadBLD/Config/DefaultRoadBLD.ini": "f50a6b1cd2a5c3a672bd915ebd2cd167e67c76dbca11fb0d372ef698a6ac0a0a",
+    "Staging/SystemCompletion_2026-10-04/ROADBLD_LANDSCAPE_CRASH.json": "50fc3d2ad708dc206f3543b3ecc7894cf086a1e8da7f4692ccc52b0a30150616",
+    "Staging/SystemCompletion_2026-10-04/SHUJAIYA_CRASHED_ROAD_STATE.json": "f4e0018de92a50067ad0b42d643c3d7ec104eabb01bade200b799ea854f19586",
+    "Staging/SystemCompletion_2026-10-04/STOP_HANDOFF.json": "6185014b20aab059d6ebe5a4f1d761917d96bc531ac1bc887a254ecb41fbeead",
+    "Staging/ManagedAstra_2026-10-03/TASK1_REPLACEMENT_V3_SOURCE_RESULT.json": "5dc8d9afb8bf7413d0fbf3c1f6e4699bd0abdf20ed9875c60a9432eaee927777",
+    "Staging/ManagedAstra_2026-10-03/TASK3_FROZEN_REPLACEMENT_V3_REVIEW.json": "08c73ec03eec485a134ab1147c7e7e38674c0dea2d870016281c323b5e396b16"
+  }
+}

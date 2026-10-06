@@ -1,0 +1,448 @@
+{
+  "SunPosition|GetSunPosition": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "Latitude",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "Longitude",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "TimeZone",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "bIsDaylightSavingTime",
+        "Boolean",
+        "false"
+      ],
+      [
+        "Year",
+        "Integer",
+        "0"
+      ],
+      [
+        "Month",
+        "Integer",
+        "0"
+      ],
+      [
+        "Day",
+        "Integer",
+        "0"
+      ],
+      [
+        "Hours",
+        "Integer",
+        "0"
+      ],
+      [
+        "Minutes",
+        "Integer",
+        "0"
+      ],
+      [
+        "Seconds",
+        "Integer",
+        "0"
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ],
+      [
+        "SunPositionData",
+        "Sun Position Data Structure"
+      ]
+    ]
+  },
+  "Utilities|Struct|BreakSunPositionData": {
+    "inputs": [
+      [
+        "SunPositionData",
+        "Sun Position Data Structure (by ref)",
+        ""
+      ]
+    ],
+    "outputs": [
+      [
+        "Elevation",
+        "Float (single-precision)"
+      ],
+      [
+        "CorrectedElevation",
+        "Float (single-precision)"
+      ],
+      [
+        "Azimuth",
+        "Float (single-precision)"
+      ],
+      [
+        "SunriseTime",
+        "Timespan Structure"
+      ],
+      [
+        "SunsetTime",
+        "Timespan Structure"
+      ],
+      [
+        "SolarNoon",
+        "Timespan Structure"
+      ]
+    ]
+  },
+  "Transformation|SetWorldRotation": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "self",
+        "Scene Component Object Reference",
+        ""
+      ],
+      [
+        "NewRotation",
+        "Rotator",
+        "0, 0, 0"
+      ],
+      [
+        "bSweep",
+        "Boolean",
+        "false"
+      ],
+      [
+        "bTeleport",
+        "Boolean",
+        "false"
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ],
+      [
+        "SweepHitResult",
+        "Hit Result Structure"
+      ]
+    ]
+  },
+  "Rendering|SetVisibility": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "self",
+        "Scene Component Object Reference",
+        ""
+      ],
+      [
+        "bNewVisibility",
+        "Boolean",
+        "false"
+      ],
+      [
+        "bPropagateToChildren",
+        "Boolean",
+        "false"
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ]
+    ]
+  },
+  "Rendering|Components|Light|SetIntensity": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "self",
+        "Light Component Object Reference",
+        ""
+      ],
+      [
+        "NewIntensity",
+        "Float (single-precision)",
+        "0.0"
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ]
+    ]
+  },
+  "Rendering|Components|SkyLight|SetIntensity": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "self",
+        "Sky Light Component Object Reference",
+        ""
+      ],
+      [
+        "NewIntensity",
+        "Float (single-precision)",
+        "0.0"
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ]
+    ]
+  },
+  "Utilities|Text|ToText(Integer)": {
+    "inputs": [
+      [
+        "Value",
+        "Integer",
+        "0"
+      ],
+      [
+        "bAlwaysSign",
+        "Boolean",
+        "false"
+      ],
+      [
+        "bUseGrouping",
+        "Boolean",
+        "true"
+      ],
+      [
+        "MinimumIntegralDigits",
+        "Integer",
+        "1"
+      ],
+      [
+        "MaximumIntegralDigits",
+        "Integer",
+        "324"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Text"
+      ]
+    ]
+  },
+  "Utilities|String|Append": {
+    "inputs": [
+      [
+        "A",
+        "String",
+        ""
+      ],
+      [
+        "B",
+        "String",
+        ""
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "String"
+      ]
+    ]
+  },
+  "Class|PostProcessComponent|SetSettings": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "Settings",
+        "Post Process Settings Structure",
+        ""
+      ],
+      [
+        "self",
+        "Post Process Component Object Reference",
+        ""
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ],
+      [
+        "Output_Get",
+        "Post Process Settings Structure"
+      ]
+    ]
+  },
+  "Class|PostProcessComponent|SetBlendWeight": {
+    "inputs": [
+      [
+        "execute",
+        "Exec",
+        ""
+      ],
+      [
+        "BlendWeight",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "self",
+        "Post Process Component Object Reference",
+        ""
+      ]
+    ],
+    "outputs": [
+      [
+        "then",
+        "Exec"
+      ],
+      [
+        "Output_Get",
+        "Float (single-precision)"
+      ]
+    ]
+  },
+  "Math|DateTime|DaysInMonth": {
+    "inputs": [
+      [
+        "Year",
+        "Integer",
+        "0"
+      ],
+      [
+        "Month",
+        "Integer",
+        "0"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Integer"
+      ]
+    ]
+  },
+  "Math|Integer|Clamp(Integer)": {
+    "inputs": [
+      [
+        "Value",
+        "Integer",
+        "0"
+      ],
+      [
+        "Min",
+        "Integer",
+        "0"
+      ],
+      [
+        "Max",
+        "Integer",
+        "0"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Integer"
+      ]
+    ]
+  },
+  "Math|Float|Clamp(Float)": {
+    "inputs": [
+      [
+        "Value",
+        "Float (double-precision)",
+        "0.0"
+      ],
+      [
+        "Min",
+        "Float (double-precision)",
+        "0.0"
+      ],
+      [
+        "Max",
+        "Float (double-precision)",
+        "1.0"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Float (double-precision)"
+      ]
+    ]
+  },
+  "Math|Rotator|MakeRotator": {
+    "inputs": [
+      [
+        "Roll",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "Pitch",
+        "Float (single-precision)",
+        "0.0"
+      ],
+      [
+        "Yaw",
+        "Float (single-precision)",
+        "0.0"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Rotator"
+      ]
+    ]
+  },
+  "Math|Float|Truncate": {
+    "inputs": [
+      [
+        "A",
+        "Float (double-precision)",
+        "0.0"
+      ]
+    ],
+    "outputs": [
+      [
+        "ReturnValue",
+        "Integer"
+      ]
+    ]
+  }
+}

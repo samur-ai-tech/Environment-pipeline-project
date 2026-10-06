@@ -1,0 +1,79 @@
+{
+  "schema": "environmentpipeline.bank_supplier_callback.v2",
+  "status": "READY_FOR_BANK_INTEGRATION_REVIEW",
+  "authority": {
+    "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+    "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+    "supplier_thread_id": "01a1075c-313d-7133-9bc5-580cb2681f9b",
+    "assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\ASSIGNMENT.json",
+    "assignment_sha256": "ca21eece0c4abad9dd4bf2b10b7c4affed026f3196844c4d4febce9549d5bde7",
+    "succession_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\ManagementTransfer\\STATE.json",
+    "succession_sha256": "ab8ba7509118c66a8eb84b4bd72eaef5b80ed87bc0661184b53328c12c392e30",
+    "bank_assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ASSIGNMENT.json",
+    "bank_assignment_sha256": "b846f1192d47d8ac7da1742c0901ff96fe0f3b8aa99e516976b9e10740116799"
+  },
+  "command_manifest_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\CommandManifests\\5927783bc16d1d0c0817686ab4f58fe9d6bdccab8d395efda43d0d2781c7bf92.json",
+  "command_manifest_sha256": "5b3bf63b4b66c3ce4aac71a13a72e37c526bb7479cbccc88aa649318e3c8b457",
+  "prepared_transaction": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\119834527dbe14107a8d5edbd0a7467a08bec387ac165d62e2a30e39ba936646\\TRANSACTION.json",
+    "sha256": "138191dd4f9fbec3dab9e679980cf4bd94529d316ce4672e10d6e74a9a1c370b",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\119834527dbe14107a8d5edbd0a7467a08bec387ac165d62e2a30e39ba936646\\PREPARED_INTAKE.json",
+    "intake_sha256": "c29b7068b479d1c539d87d906d1ae1746f48aa3e739fbe64cbb941c7ade8b3ad",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "targeted_native_jobs": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\TargetedJobs\\76123a0fc7b15c6e6a6df02dbd019d31cf9085f2e38fd20c671a8ac466d28ac5\\REQUEST.json",
+    "sha256": "45f31c3ee091d928247457bb8ffe1f4869d6f7c649327661d16286127449250f",
+    "job_ids": [
+      "NU_bec0553f5648e25ec0e6",
+      "NU_a083b80710f2f1964814",
+      "NU_2a042d4f85289d403ec7",
+      "NU_0de70e66afd34c0b6301",
+      "NU_0578953dbe96b3a1eebb",
+      "NU_39235413a24a9b050a5b",
+      "NU_d62b1ba0a2e59d93a97c",
+      "NU_8c80be71172f994d4600",
+      "NU_c247d726647fbd09e57e",
+      "NU_1518ec1a321c3a7b6c76",
+      "NU_dde2c58b9c163d6170b4",
+      "NU_d0a1054a5956fbda1c70",
+      "NU_eb7ab02a131aaa339199",
+      "NU_3634d948d49c75552804"
+    ]
+  },
+  "entrypoint": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\sealed_run.py",
+  "immutable_payload_schema": "environmentpipeline.generic_prepared_intake.v2",
+  "callbacks": {
+    "post_remap": "prepare_target_jobs(plan_path,remap_receipt_path)",
+    "native_inspection": "inspect(job_ids,activation_path,queue_path=None,measurement_request_path=None)",
+    "registration": "build_registration(job_ids,queue_path=None)",
+    "qualification": "prepare_intake(job_ids,queue_path=None,registration_transaction_path=None)",
+    "validate": "validate_intake(transaction_path)",
+    "bank_commit_projection": "apply_prepared(transaction_path,native_rows,prepared_document)"
+  },
+  "bank_commit_contract": [
+    "Bank owns actual writes under its current exact lease and clean boundary.",
+    "Call sealed apply_prepared with fresh native DataTable rows and current PREPARED_BANK document.",
+    "Callback verifies source/CSV/prepared CAS, immutable measurements and source/native/dependency hashes; returns additive document and staged after file.",
+    "Bank must recheck all three expected hashes immediately before its own atomic write; commit only after_file bytes matching after_file_sha256.",
+    "Bank publishes own source-bound before/after/application receipt and consumes exact native_supply_intakes evidence in its configuration projection.",
+    "No source/catalog/configuration eligibility edits are performed by this callback; held, missing-functional and revision-unbound assets stay unselected.",
+    "If canonical binding or prepared registry changes, rebuild a fresh packet; no reset, force apply or hot reload."
+  ],
+  "exact_fields": [
+    "canonical ID/name/path/current package SHA",
+    "original source file/SHA",
+    "native measurement receipt/path/SHA and dependencies",
+    "role/context/rule/family/spacing separately from readiness",
+    "bounds/axes/authored pivot/contact candidate",
+    "explicit unknown functional contact/anchor/facing/aperture",
+    "material slots/texture/native graph evidence",
+    "unchanged rights/style/holds"
+  ],
+  "native_shared_application_performed": false,
+  "supplier_writes_shared_registry": false
+}

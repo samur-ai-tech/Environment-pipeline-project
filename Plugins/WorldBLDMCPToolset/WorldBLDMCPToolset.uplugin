@@ -1,0 +1,89 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.4",
+	"FriendlyName": "WorldBLD MCP Toolset",
+	"Description": "Editor AI toolsets that expose WorldBLD, CityBLD, RoadBLD and TwinBLD to agents through the Toolset Registry and Unreal MCP server: session context and packaging troubleshooting, city inspection and editing, road network authoring, and real-world replica import.",
+	"Category": "WorldBLD",
+	"CreatedBy": "WorldBLD LLC",
+	"CreatedByURL": "https://worldbld.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "https://worldbld.com",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BLDToolsetCommon",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "WorldBLDToolset",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "CityBLDToolset",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "RoadBLDToolset",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "TwinBLDToolset",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorToolset",
+			"Enabled": true
+		},
+		{
+			"Name": "ToolsetRegistry",
+			"Enabled": true
+		},
+		{
+			"Name": "WorldBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "CityBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "RoadBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "TwinBLD",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1762,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Derived/SM_Slums_Scaffolding_01a_OP_2"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1762,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2691 @@
+{
+  "schema": "environmentpipeline.s1_offline_backup.v2",
+  "rev_schema_keys": "ready, created_utc, files[{file,sha256,backup}], preserved_files, sealed_files, new_asset_paths, pid, world, execution_thread_id, file_bindings (STAGE1_GROUND_PLAN.md:181-184)",
+  "ready": true,
+  "ready_for_s1": false,
+  "created_utc": "2026-10-05T20:28:39.946621+00:00",
+  "set_id": "S1B_20261005T202836Z",
+  "offline": true,
+  "pid": null,
+  "editor_pid": null,
+  "world": null,
+  "pid_note": "Offline backup: no editor process was running (editor_check); no world loaded.",
+  "in_session_requirement": "Offline set: files can change between this backup and editor startup. The S1 editor step must call s1_backup.verify(<this set>) inside its session immediately before its first change and require status INTACT.",
+  "execution_thread_id": null,
+  "execution_thread_id_note": "CODEX_THREAD_ID when set by the runner; null otherwise.",
+  "ordinary_generation_authorized": false,
+  "project_root": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline",
+  "script": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\s1_backup.py",
+    "sha256": "9112608a33cb53cdc1b59d3889aa28c1a612a40bb15f5e664f1f8ee6aef110f6"
+  },
+  "editor_check": {
+    "before": {
+      "method": "tasklist /FO CSV /NH",
+      "utc": "2026-10-05T20:28:33.414596+00:00",
+      "process_rows": 424,
+      "unreal_editor_processes": []
+    },
+    "after": {
+      "method": "tasklist /FO CSV /NH",
+      "utc": "2026-10-05T20:28:39.946621+00:00",
+      "process_rows": 424,
+      "unreal_editor_processes": []
+    }
+  },
+  "copy_set_basis": "REV files[] minus the 4 MOUT masks (master, base MI, both children, both maps, Grass type, T_Sand_01/02_Normal_GeoCity) + 11 D2 MW textures; hash-only pins derived (explicit floor, REV preserved_files keys, /Game imports of master/base MI/children, Appearance Textures tree, all MW + HighPoly vendor files vs VaultCache)",
+  "files": [
+    {
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset",
+      "sha256": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104",
+      "bytes": 1151295,
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "role": "master_edit_target",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T18:43:25.752666+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset"
+    },
+    {
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset",
+      "sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+      "bytes": 12026,
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+      "role": "base_mi_preserved_iran",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-03T16:08:51.741273+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\MI_SurfaceBank_Natural.uasset"
+    },
+    {
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+      "sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228",
+      "bytes": 26214,
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "role": "child_GazaShujaiya_edit_target",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T18:43:25.944862+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset"
+    },
+    {
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+      "sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b",
+      "bytes": 20831,
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "role": "child_GazaRimal_edit_target",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T09:51:44.155955+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset"
+    },
+    {
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.umap",
+      "sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+      "bytes": 68164347,
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "role": "map_GazaShujaiya_preserved",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T18:54:00.567524+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap"
+    },
+    {
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.umap",
+      "sha256": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd",
+      "bytes": 33208729,
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "role": "map_GazaRimal_preserved",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-04T20:38:35.378183+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap"
+    },
+    {
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass.uasset",
+      "sha256": "ff09a0a110b49f9268d55078676d14ecf791b1e1ebe457c523e1cc8ceea7b5c1",
+      "bytes": 6461,
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+      "role": "grass_type_preserved",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-04T11:40:50.882733+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\LG_GeoCity_PermittedGroundGrass.uasset"
+    },
+    {
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.uasset",
+      "sha256": "2fbc15e85582550f9a4db133b9e3ab86d9c5b8d0597581809e053b3b7ffc0953",
+      "bytes": 35032168,
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity",
+      "role": "pinned_normal_preserved",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-03T16:08:50.980137+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_01_Normal_GeoCity.uasset"
+    },
+    {
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.uasset",
+      "sha256": "7212bbc8c0da6cee290207fceab8c5f8967ded56fdd7fcae6bc6cd0d963bed47",
+      "bytes": 36135077,
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity",
+      "role": "pinned_normal_preserved",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-03T16:08:51.495139+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_02_Normal_GeoCity.uasset"
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset",
+      "sha256": "a8b2d030b679b70088fc807f04ffe0549c1435c4008ff167054f2e8e8110586d",
+      "bytes": 47476714,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.056509+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_col.uasset",
+      "sha1": "f7985e3c5eab0bc9a1d61e22064ea77beab88607",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset",
+      "sha256": "d4016cbe5d9a031afabd45176e0432284098365cb08cf9e09c93fc9df379f7ee",
+      "bytes": 15306657,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.062011+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_nrm.uasset",
+      "sha1": "8de14192047537dbecc431272ee4fa660e7b31e3",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset",
+      "sha256": "60c8b3db6ff74f121490e6e03c932e23e9eb5f31a334dbceb48461aa5bba35bc",
+      "bytes": 29852821,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.073021+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_col.uasset",
+      "sha1": "dcab3c2fc85c6d32cf76c12b0f30718242f80bf0",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset",
+      "sha256": "df39c940ec6e6ccc79a318bbdc9959d2bdf33743eba4cd2eb456e853eee21854",
+      "bytes": 47159956,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.089038+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_nrm.uasset",
+      "sha1": "97909e5dba4a555f237ae2a6779c6236818d9c90",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset",
+      "sha256": "2f92efe27b2e52a50d64e7132ff4ec37668ec575e4dfe6177a7c639777890189",
+      "bytes": 35245750,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:44.973939+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_col.uasset",
+      "sha1": "d660ccd82db59bcd57a6b0f706c195172a20c577",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset",
+      "sha256": "95a68732263208253d29dfa690463fdde1e15b9b103297adbc9ff6795a73ab9d",
+      "bytes": 44545218,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:44.988447+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_nrm.uasset",
+      "sha1": "2746b553bf79a47cc8b0271805fce9393dfbe16b",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset",
+      "sha256": "ed58b0060e65e1165a22f4a0f2ad2aafeb2bf5256471a171b9bbe26441507ebb",
+      "bytes": 42658494,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.121561+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_col.uasset",
+      "sha1": "662d5dd53a79c9b7a0f40e5cd3ca969b61ee9e5a",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset",
+      "sha256": "abbc89f7ab1d20ab291cb9aa0e9c72d66387f137835ef02138fbbf0e557e87eb",
+      "bytes": 42371536,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.135581+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_nrm.uasset",
+      "sha1": "703a6ee2c148dc1c5dda9be2500db25e830b7635",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset",
+      "sha256": "3a1cd5d3a8962709975e8ada22066bdeae40816639dc4dba57fbc4384562c89b",
+      "bytes": 5599276,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:45.099047+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\FX\\TEX_MW_Noise_msk.uasset",
+      "sha1": "7fae98b3e162eda71932a80cc063a1bf53113d4f",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset",
+      "sha256": "00dc5ca3ee4a8dc78d0bb960b93da33576f4eb731c6920f5b3a3ddb79333d42c",
+      "bytes": 12399125,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:44.950911+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_msk.uasset",
+      "sha1": "9c045ee42606431d56aef5cbdee6b7c1c04a3e43",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset",
+      "vault_sha1_match": true
+    },
+    {
+      "file": "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset",
+      "sha256": "654aa4761ebcbaca226ea94fe27f9ec9c235787139949fb929491676386c9cd3",
+      "bytes": 37027663,
+      "package": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm",
+      "role": "mw_vendor_reference_readonly",
+      "sidecar_of": null,
+      "mtime_utc": "2026-10-05T14:11:44.962930+00:00",
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_nrm.uasset",
+      "sha1": "6ace562c25b56fd8c1f4d326362a214cd60434cc",
+      "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset",
+      "vault_sha1_match": true
+    }
+  ],
+  "file_bindings": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset",
+      "sha256": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\MI_SurfaceBank_Natural.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\MI_SurfaceBank_Natural.uasset",
+      "sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset",
+      "sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset",
+      "sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap",
+      "sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap",
+      "sha256": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\LG_GeoCity_PermittedGroundGrass.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\LG_GeoCity_PermittedGroundGrass.uasset",
+      "sha256": "ff09a0a110b49f9268d55078676d14ecf791b1e1ebe457c523e1cc8ceea7b5c1"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_01_Normal_GeoCity.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_01_Normal_GeoCity.uasset",
+      "sha256": "2fbc15e85582550f9a4db133b9e3ab86d9c5b8d0597581809e053b3b7ffc0953"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_02_Normal_GeoCity.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_02_Normal_GeoCity.uasset",
+      "sha256": "7212bbc8c0da6cee290207fceab8c5f8967ded56fdd7fcae6bc6cd0d963bed47"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_col.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_col.uasset",
+      "sha256": "a8b2d030b679b70088fc807f04ffe0549c1435c4008ff167054f2e8e8110586d"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_nrm.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_nrm.uasset",
+      "sha256": "d4016cbe5d9a031afabd45176e0432284098365cb08cf9e09c93fc9df379f7ee"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_col.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_col.uasset",
+      "sha256": "60c8b3db6ff74f121490e6e03c932e23e9eb5f31a334dbceb48461aa5bba35bc"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_nrm.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_nrm.uasset",
+      "sha256": "df39c940ec6e6ccc79a318bbdc9959d2bdf33743eba4cd2eb456e853eee21854"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_col.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_col.uasset",
+      "sha256": "2f92efe27b2e52a50d64e7132ff4ec37668ec575e4dfe6177a7c639777890189"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_nrm.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_nrm.uasset",
+      "sha256": "95a68732263208253d29dfa690463fdde1e15b9b103297adbc9ff6795a73ab9d"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_col.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_col.uasset",
+      "sha256": "ed58b0060e65e1165a22f4a0f2ad2aafeb2bf5256471a171b9bbe26441507ebb"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_nrm.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_nrm.uasset",
+      "sha256": "abbc89f7ab1d20ab291cb9aa0e9c72d66387f137835ef02138fbbf0e557e87eb"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\FX\\TEX_MW_Noise_msk.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\FX\\TEX_MW_Noise_msk.uasset",
+      "sha256": "3a1cd5d3a8962709975e8ada22066bdeae40816639dc4dba57fbc4384562c89b"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_msk.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_msk.uasset",
+      "sha256": "00dc5ca3ee4a8dc78d0bb960b93da33576f4eb731c6920f5b3a3ddb79333d42c"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_nrm.uasset": {
+      "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\Before\\S1B_20261005T202836Z\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_nrm.uasset",
+      "sha256": "654aa4761ebcbaca226ea94fe27f9ec9c235787139949fb929491676386c9cd3"
+    }
+  },
+  "preserved_files": {
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+    "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.umap": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+    "Content/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.umap": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass.uasset": "ff09a0a110b49f9268d55078676d14ecf791b1e1ebe457c523e1cc8ceea7b5c1",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.uasset": "2fbc15e85582550f9a4db133b9e3ab86d9c5b8d0597581809e053b3b7ffc0953",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.uasset": "7212bbc8c0da6cee290207fceab8c5f8967ded56fdd7fcae6bc6cd0d963bed47",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset": "a8b2d030b679b70088fc807f04ffe0549c1435c4008ff167054f2e8e8110586d",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset": "d4016cbe5d9a031afabd45176e0432284098365cb08cf9e09c93fc9df379f7ee",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset": "60c8b3db6ff74f121490e6e03c932e23e9eb5f31a334dbceb48461aa5bba35bc",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset": "df39c940ec6e6ccc79a318bbdc9959d2bdf33743eba4cd2eb456e853eee21854",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset": "2f92efe27b2e52a50d64e7132ff4ec37668ec575e4dfe6177a7c639777890189",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset": "95a68732263208253d29dfa690463fdde1e15b9b103297adbc9ff6795a73ab9d",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset": "ed58b0060e65e1165a22f4a0f2ad2aafeb2bf5256471a171b9bbe26441507ebb",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset": "abbc89f7ab1d20ab291cb9aa0e9c72d66387f137835ef02138fbbf0e557e87eb",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset": "3a1cd5d3a8962709975e8ada22066bdeae40816639dc4dba57fbc4384562c89b",
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset": "00dc5ca3ee4a8dc78d0bb960b93da33576f4eb731c6920f5b3a3ddb79333d42c",
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset": "654aa4761ebcbaca226ea94fe27f9ec9c235787139949fb929491676386c9cd3",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.uasset": "bc5baea9367a45798d019c8660d2a6d97cc46a197ae302714b8d9f191c1af1dd",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.uasset": "74a5da29281c6fc1f2138c34a8c48b762e883c1bd98429e86f8800b95112db58",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.uasset": "f654d63ef505fa24b64c34df358112fa429368f0beddd22214afea5374c6b852",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.uasset": "681844fd0f58315d475f1983f598bcac230d69edc5688a08850b4f8cfb5de2b2",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.uasset": "f7f6427978dadf135b9876e7a2c34afa4a70f8f2fd3f3ed8ff55ee9b404d5939",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.uasset": "ba5aa1b2541b3e15d531c87b25ed340f27538c99013c82b4ff36f3949770b7d3",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.uasset": "01f2d3661c05629ae80325c4d30433593df87f854a0fd4a7ab17d66e3bcf085e",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.uasset": "472f9b9b2d829d256fb1beebd0b8ac606bb228ab882cd5238a8cbd0483ee7dc7",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.uasset": "ca3ccdc04e118e05d921de2ff6c0a4beb1a7bcff9bffdad909b7160e56c4caef",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.uasset": "2e310204970946c97b1cf207c0638d37e7bd7019da66a972b6be439113b91b4b",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.uasset": "de59655488b1cfb102187a4a1bb35a31255f13df20e855f2b50ed6656b7f9b75",
+    "Content/HighPoly_Tree_Model/Demo/M_Floor.uasset": "7dc12d041787843a5c824f5efacdc39e92468a6d33cb9ef49c4bfb094248e78d",
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcace.umap": "b8d2ead8ef1e911096df1ceb33a5e59d2488488848662e1ad0a3c5cfe7c2b2bb",
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcase_BuiltData.uasset": "0270c7c7f911952096fc1b2945e53879e97693601e44fb0b43721a273c208edc",
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Leaf.uasset": "357fbef0fe8596771c5d600874f920596e670bb442f6b61364fd940958cee33d",
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Trunk.uasset": "7411ca07b8fa4733647c4f4e6989df0fb05f49da8fa62379ecf8456e56021fcd",
+    "Content/HighPoly_Tree_Model/Meshes/SM_HP_Tree.uasset": "9a3c1c4d204ea182f98c4a38cd7610d2f9fa8694a2937941d0eb6a70d9f02e72",
+    "Content/HighPoly_Tree_Model/Textures/Leaf/T_HP_Tree_Leaf.uasset": "5bb30f4e5a8ee97692ac4c42a67354cbdcc0a90c24ab9dd1db859b237a7f61c2",
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk.uasset": "0372553fc32e61823a20ddc8bdcc56140c839196c3ccb126d094c75c624d11ec",
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk_normal.uasset": "dfc80e8a80aef1f3cfdf4a8e68528e20cacf3d20c95ee1d68ee87465df5b0b68",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_A.uasset": "d30667e89c3637e93029d440211def54f132b3d7c859d6fa135d05e74bc721db",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_B.uasset": "6aee9076e89647e81b9d3e0af8343a373293e86a8454e380a62d27dcb7bf742b",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_C.uasset": "a73d7723137785479656fa624ac5644a9b5804389fd26b3e4acfc9fb175957a8",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_D.uasset": "4709a96011e647ca97bbf41d693f3ca566835e4363215d1e38057b03e363cf8f",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_E.uasset": "63fdc04327417c4640c436e87af9f09b92c4b711a471fc0f9127c0a52cee8e2f",
+    "Content/Iceland_Environment/Materials/MI_Elevation_Material.uasset": "6be2ccbd3ea3a396a1b2cba094274eccaf897f179a80c6632f96edfbdd833564",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_01.uasset": "6ab7281112e9708d41ed629128eadc82e089ff8d12d84dd3a4e18c4c3a5b51ca",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_02.uasset": "040faebc0fb6423af2abd2c1ad691bd8596b7878d416a3c2e21c0e816e9d5f27",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_03.uasset": "ecff599b4a0b1e42623b31ddca936a557d2cdc1e307ca1dd3e8c3233a8ba0cdc",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_04.uasset": "b69c3d0559254a243b54ff9f71ce88d091360208692093413b401a4f84fb797e",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_05.uasset": "4cb12ad5c4c4c57850e78c8b4139e6b2113623ffecac964e3b322aacaff57354",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_06.uasset": "7063bc2f0144c54a17cc758c70f2fe4ed6a6d73c5194280577bb14a0e2f8ba72",
+    "Content/Iceland_Environment/Materials/MI_Landscape_Arctic.uasset": "693d4b65fd79d5b429dcaf4929f35277fdce20c903dfb7178a0fb6c360a5e8db",
+    "Content/Iceland_Environment/Materials/MI_Landscape_Mountain.uasset": "c23724128699daf838eb0e838c91d5741d9c82e0da6b75955a084dd6a8ba0ab9",
+    "Content/Iceland_Environment/Materials/MPC_Terrain.uasset": "223e13c94546d543c57a0815df085ed727620b057df9a1f225ccdf1172eea182",
+    "Content/Iceland_Environment/Materials/M_AutoLandscape.uasset": "5bd673edff0b2bf3a7ecc5e9a6dd23df2d8b31df6b7b3385cf525ae7e800b9a8",
+    "Content/Iceland_Environment/Materials/M_Elevation_Material.uasset": "4cdb58b86cf851ea569250d6bfaf91e31fbbf32987f2a29abfb259192404269f",
+    "Content/Iceland_Environment/Materials/M_Iceland_Mountains.uasset": "fd29dfdcbf93d7eb2fc1cbdaa0f03c5122023ad5163bffb03ac10a7ef10a2dbe",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceCellBlend.uasset": "b3316f5ab826b78de02b242d028dc9552c985ef11bba7f94156ddb630d520665",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceTextureBlend.uasset": "74339367278deeea32a14b76be372c1bce054a4ee376507847acc28eb588cf41",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_MatLayerBlend_Standard_Normal.uasset": "875804b30869ff0d1b4dc6317365b62b5364c5ff50f8c6a0d827a06600ea0621",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_NormalIntensity.uasset": "f3fad797dfa3bfba39c175ed00511561eaac5293eb6dd6417425a6fec070b667",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TextureCellBomb.uasset": "ecdaee63533dc2c5ce6bc5bc9321e93da2fc6c5973785d0c5d7d508916c1f4ff",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection.uasset": "16e5e3b364ba8082a55c8d2ec670379c7ce257071e2224b1ac5d63303d0fb262",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection_Normal.uasset": "0e6969846e5dfa9b81c8d4150350af91acb73f41ee92178c5996e7964b5eb4c3",
+    "Content/Iceland_Environment/Materials/Material_Blend_LayerInfo.uasset": "df1ad3691e51f2ee678f5df774292b475c328e320031efad494c444cd4912bce",
+    "Content/Iceland_Environment/Materials/RVT_Blend.uasset": "a00377b4cca860a6727c5c7c355e66fd2f363e09f353f34b4016ad1f66c9f77f",
+    "Content/Iceland_Environment/Materials/RVT_Height.uasset": "066ba99e0b32ca54a296f99c56b178376aa3aaf966c9974dc065085f74141ec6",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A.uasset": "7b58233fefd4bebe413a3cf1d259c652c4c9bd3e2ec9ab0518c358ab355fe500",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A_TriProjection.uasset": "b25b70f45ccf11f269c14b7ae9caa8e6dcfd06b79c5e7e775a2b948e180dccba",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_B.uasset": "548ed254bdb44feab0105f85ccb536cd9cb52872b3a98ea2074d39000aabb6a2",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_C.uasset": "20fd618f2ea472965194722ca2bb58a2d56c4fcb4f9acf7d69c86d9f94395f94",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_D.uasset": "4ddfb2dd3ee358f79958deaee30aa690a69e5a6cdef43e03a85fd2ae96dcce45",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_E.uasset": "d79561927ba388e6decdc6f50207e1b264d0fb9a74b2995651b72effaae848c1",
+    "Content/Iceland_Environment/Textures/T_Voronoi_Perturbed_4k.uasset": "f8054154cf46d91becb7a38f1a086820a59915522c7b1a0425ba34d89a27440e",
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape.uasset": "57897a23374d048a56ce3d1f4468798da9ee4063129ca083717fce246504d111",
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape_Inst.uasset": "f077c7ac16379a5f6cd1cf48d14dd4de4e84cc6cfabdad915bbe39928be6cc4e",
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Function/MF_Layer_Base.uasset": "49aaee67d04b07a367122af74acd53551b2106de93068d2b810adecbbe0421db",
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Instances/MI_Landscape.uasset": "7fb7eb9f3bc0398941fd65b6f249cd0ec4c148c169accbebcbac7b4c2d839021",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.uasset": "da7e15130e7cb386c3765e6bae5cd93ce0ab6bfd502db8f566d2ff23961fac43",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Mask.uasset": "37b7dd4809870747f7d9bfa81fe35dbb405b94c81e1d9d8c65c0c0fe7112cc4c",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.uasset": "662fc8a05598503f41b20870cf0fe0b272d3d4685914501fde6ffb97fb3858ae",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.uasset": "32cbaf7477a0019a4b80403a511386b5908f348fd15d3f674ec3a61eabdc6e60",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Mask.uasset": "686ce008d4a870f7652d323fb157798905acbba8bd721274113b87ca1d678361",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.uasset": "5f85662de5f20cf230a19373c9b24f95f3f5e13fa2456d1c8b6db710957ddd54",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.uasset": "b574bee4b76cf0a49db957e4c0920f6800e7cd0ca32641dad564ca20bf414d0e",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Mask.uasset": "e489e39935e9ab0bee7a0e61ede1f39aca1f774cf3755a069ba028267451369e",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.uasset": "e305c2d7558b2f5e633b8242566d76b883d90b37e4c6ea40cf94cb0469a205a9",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.uasset": "d4865a1a005bc873a535ce315eee60e6b9c848409d0f05203bce5be55205e340",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Mask.uasset": "c0d8accd986e432d7cc5f4047c49f547482ba314f1294ddaf62afcf5b7d647e5",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.uasset": "0cd96fc9990a29ce3ccbb3887238c8bbb86b5416c96d08c2dfcf5cbb2986e03c",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.uasset": "f00d9c13a616e5f85a09109f9ad125e15b8664bda43872ca47fb7d389af00ae5",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Mask.uasset": "a553c31817fdbc6f342b36232f1c260b531e66efbc432761b236b06083aee482",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.uasset": "d36344338e5ca6f69532d9c4937db4bc33794088d81460494f243fee21b24b40",
+    "Content/MOUT_Arabian/Textures/Landscape/T_RGB_Mask_Default.uasset": "1f1717c826266a479fdefdf68f9a2a7e823927d97351510046cf8382b2df7758",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.uasset": "cb15311ad82fa16df38dfba6a8502cef82a26d8d31a0a19d3cc85afa7205ec57",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Mask.uasset": "8ba283b688500865af6bb8fe0ec07fa3d5dc481445501e034f6a22058a336fdb",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.uasset": "8c9c2ece788fc10dc6907a4d9de6f8aae93f126a6591f7c0916556c8be672bb9",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.uasset": "276c50cee9298e984e76381f5635ecf43c04facd8a241a1d39d476846303478e",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Mask.uasset": "852673528d8f547b05064e6bf613ecaf16c1945069a1c725441cb5b05e8fc9d0",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.uasset": "71c17c4e58c84b4491df1afaca4316849b61634796c4b10fa6811f33a6e8ae29",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.uasset": "61dfe73230d1b08374adf958eab4ef7989519aa77e5894ca872ae1a23aaf24dd",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Mask.uasset": "be74cb83e1f7079e8bd4d0be43fee3295217a4d7b2a044f17858549312822e54",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.uasset": "1d9dcfc669d31b1edfe832a327c896685c47e684e11d3cc7c096b8925421977a",
+    "Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset": "b6a02cb8483ce1c8a7ce2867bc652d15c4ff55d32ccd65f18d38684cfae7a721",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap": "dedd5a6c415a60ad188fe1ea47a5832d4c109b61352164b355c869edd42e260a",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap": "ce6a87a10f57cfd34f305cbe6a496edb76aa226636c6aa57e1b13e4e06aa7132",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap": "cdd6d9edf99256cbbdbe600325aab3092780c72a36338335eb0cf955c503541a",
+    "Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset": "2a74ec100183eca31f232d6d353841c8fc4b628007901d580b23f22586743ce0",
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset": "49a7da803995b0fbc76118e54d0f55435335a32eac754e38292a8d9ec6dbca62",
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset": "7450e97cc4a3c75a8e89f064ffad74c473ca83cc81760b3814e33a0da64966dc",
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset": "e64a9adf630fe04a3dcfca82e0d23c4151fbfd009610bd3ec0f4bcb10ca473d7",
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset": "4e9a709d6116b5a13f8732d0d717095807a99b01fcc46a3327c9a455751c6f53",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset": "0fc96edddfdcafa85394c60d0b649256b1503f3d50b9d187c8c54ad0927ac985",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset": "b2057a785a49057a52dcc534aef4847b7acc573832ad1c82d840208f55369873",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset": "ffb447dbf4674a28fa1d7bb9e7776a6291f9730f8ed474a0b393d955a565ea7e",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset": "578e1f41c882c97cf4e76c09a68f6d7b5e407519cf4e96496be844303134d96e",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset": "9a6dcbddf5d34823603fa72120bab33d8a6e828e3bcfe947ee179d8c853a9810",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset": "dbbc3405b1d976a245a1063954df9fbfe24d3668ad6e12bb437e1643e87ebc4f",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset": "acecb2f15b3d9e893288f705997ed393d0d5b3a0428ba661709fb92e75283526",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset": "e58f76aac0a797b6174e4cf0e8c75ae1627e47c6876e9f6b5c30a6e21aaa2c1e",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset": "318e00697d88ecb30c836eda085d706d38332e54cccf92ff5051d5292f59c767",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset": "e554fe8a32cacac36a754bc910d3bade2b1e157e4543d3bfd8a8c93e7b164017",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset": "b6663db46fa1955f49edaaebcc9611fc78f0a3fdddd0e59a46eec604b39330f1",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset": "1bb4f45de057d06624f8d6d26172f9d01ca15c63ce5960b58aa530226dc656fc",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset": "2a87766f05a5e093d4c07da8c6683aa1519865f237e9c4ad901c951fc90c53bb",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset": "86fee63f49ca2edd9a22f07e64d646fab9b0a1335fd131ecb97a0d8a13d65041",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset": "ea35f3332b679acb225d1393cd79b89b5bbd5bb65aa169ac5feac42f092b8756",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset": "31dd0c3d950f888e6cd7ded5a9da70cf0e7f0485e85f9c38d84acc7bd8359692",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset": "a55c54dcd0f572bc4d270bec28137877b4b0fa051acb097a62e7b6b4b55522a1",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset": "938ad3db36e5cdce39baedd1ad0a13fd472491379563f8e473654234aa976f1f",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset": "d462a480cc375ec1cf789290022cd16c281ac26880dd9c19deab6af9cd591668",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset": "5ac338e1594c12088ed639dd1d689595a898d2bb318396ca75a7e3ef9d65fe0c",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset": "fe2426330c5988d402cfa9f07c03beafd33e5d36ef2e85549a1662432ba41bc9",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset": "dc08ff0ccfd8b8eef193bb8c3f55987c03c4bc29f1c13cf70dd51c5845e45db4",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset": "df263d7c97747f391ac9ff93dc3cb4cdbae7b0a3ceae6b20c6198e5510a27769",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset": "ce148a1c6e93834eac55a4aa43068b2dee68c68eadf04a115b100dfd6c916a90",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset": "981e207c879195b3d870ff6bbba96d693e7e7f458486f02e7568781f1f6a1d66",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset": "07fcdcfd2b865772780f6ed3e90bf22dcf801499a1632a06519ed1ca5593a995",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset": "7764b6964efc9d4cc320cee778a3167fc9ac06ddc2c3122a4ba55cfb187f4a60",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset": "602cd54eba0d54ae79039fb368bbe1e82e6867347bceec121a4aa20cac1595e8",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset": "469eb6e4c45ef51361574872ad4b7eb1fa20635c0d8a6777e25d1057e0e047a0",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset": "0e79d3bdc56c40c12ebc4bd11520d595ea68850638e5cf6790a97178bdf7ab4c",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset": "c51ef38a48b21574b17c0629d1ce54162b84417464020ba887c50f2e5b2f0493",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset": "24f7278f991236b30cf20d605b58b45b96d9ea6b2d3edfedfd51c40b6e5065ab",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset": "24f47db3ddec0f522b3424bb269847b8bdaf94a92221fe88d1fe449ee0e8c341",
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset": "7570fc1b4c8a3e6e3ae31ee2cd867bd5dcf8a7e659eea49774d5ae2ad6d6d2ee",
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset": "e014cb1457b482efbe07368808adbfca7772e2a261a3a7274835c3ddfdb6cd67",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset": "467a48bccc4f89b8728c94d3a2fae20b9e907a296dbb888dcd69eb424f38789e",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset": "24cccae89b1d94b0ce333bdb956b0c7d565a9e585b14a08b997e2fcb11722182",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset": "6c69424a25cc4fb05f4ee68559c72df5e542bc2889ec8ca0e3ed4e23ac942c7a",
+    "Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset": "391fe8ae223d6765439122fbef0e222f47a0ebae49fa1ccde03a47f75414eaff",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset": "75c3d381fbd56579ba1e7141e298a762369d614607f123e0cc1e73354d22ad85",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset": "f1e031686ceacc9e1f88c316bca117df5616459a70ca79b7d0d3539e7583f7b5",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset": "73e7ebf49d13f5ee8bfbe3aae3ae9f65c4710ec4a87a243b60f30b220f9a5f43",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset": "e394945e482885b1988edfa0e489f07b65ac0ba0edd51b75f171f718401b3e32",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset": "4604278cf7d80d51242e09cfa96752d24e23a1798894d76562485f95d9db140a",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset": "1a9bbb5b4ccfd1b555e663173932d80f4cae59690620c0577457d24b487ce68a",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset": "ac6deb03872645666544254b0e3aea11171ab636f6b29e95af5957430674a9cc",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset": "258a451fe5baf46f5f6358b4c3a246e791eb6dc6725f56487904700920db1416",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset": "924ec2bf2bf0aa88e9161c717729b5c8f17db6263cc4187b7c91dabd09e3a191",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset": "07696f4706adb5c959ef0adae0a460e7c11ff089ce59f283d43c16bc601c11c8",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset": "f9254d16242abab99ed701430a4d5c62a2996223e689a17f9cfe59705368d0d2",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset": "8d68f90808cb977c54f6c97cc14044b2e73d5352bbec98514d0afa39a605d4ce",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset": "1ff30a0f6023cf61c1f0af754feefd3dd87a72bb8c4fb7e38ebaf7f51d5ddf91",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset": "cb0344cf765bf5d67cacc0310c2665d782ff6e1d93e6cacd519caeb5fa4facd5",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset": "ddf8c13e1c1c58ba6a8c827788af3c4fd70f3870526e3633c78fd0256252f7fb",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset": "d07031d9c41821bfd4f617f107fe99cd9d7ac108dd4c18cc2004a9948870f3bf",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset": "bc310a9f9d9881ebf0c14c2b9ab308da6f26e80a7832a3a0d22bb69bd75c6731",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset": "a4718ea4ffadba09a6335b3747101993d2bb3f086df15b674889c267c28eeb06",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset": "8228ae842ebdfd6d74cbcfc671875e251e3ee2270b385ade60e5f82624f60788",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset": "b9b271f812038a5e8d5722956e5aaa4bff9a0ba2548d3cd9bc7902e481c78ff2",
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset": "2131c65173f54c4324c744870ccd9d634b85671a33c357766a65826710c9d9c6",
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset": "78905ba67de1ab8f7bd8399dea550e9b2071f0b5dd9cdb4f708fa1e0534d77bd",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset": "61e8ca605ffb1e5594cd49c34a5c4d415d6318faf5f7e16a224fc5b798190ab9",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset": "723665a3579866e26d0cda3c85e1750e7ded378aa933a238ce89f11c6f6b0926",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset": "dc83beeae2da63358352071a322cc5462a18d1d652f436d03ab32b256b68861c",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset": "64e616bc70e1d3b7998fb2b80d8911387bda9d09981b75d593cbba56d7cc754e",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset": "df96e67fd775caac5c62832cb5dba5e8ee2c735f3f6547add7216863cf5851bb",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset": "2d8b901e38dc103f9d641ce260b063a81142661958c4ec4acd51248656c97ae7",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset": "837a9b4f7004612184a5b3aa396217e87fecf510a9d52418e8abc5f42d2e8ebe",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset": "f617c5b01cef4defe7c37531d71e73193bc954dae74c7469f8d8193d450dab52",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset": "7c59336f2993fcc808d84f628ea8852619caf48a2a029aa72d42bb655c284572",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset": "6199932aabd40d26a3fa7735756b684b1d7681b6a9511ef8323d096a4d739340",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset": "7c4e366c053416ec0eb0538831ac9fafd314fecb98b5c4faeb53f395507fa438",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset": "fa53cfe4ee07ea8619542677076fae5b802958fe02b1cf825072fc0b79074984",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset": "b56d3e3967bd9bf49d6fac8b7888908b3a774c4079ebd72710ac1e95aba0ac61",
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset": "65d6d6407fe9980519204757e0db8aa7e7577c327ceeebba476308011cb68f77",
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset": "46a77b475cae999cc03925051c02b67126520df52491f4320086ecd99e7e31d4",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset": "e934d56bed845fa3e3aa19578c42acb912fd89df9d2e7ab34ac418fc8694ed01",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset": "ce3a834ac99f7f136f4383ec3dcb20f5ad8626e53dac0bb7a5de3976c86538fe",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset": "d0030901a204d49e9975919aa528375593d121d0a5c9cb42d6649cca411eb2fa",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset": "2798533c7aa0e38c68708fbf1a393d093cd273033315ae2045ca80c8fc01629a",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.uasset": "1b5914d2d32b528990381cc73eed614686d23b4329c8e03f58c0a2cca845b39b",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.uasset": "15a0515f8ed992b22a6743b7e8294ce8710e457a02a0688705c0079e404f92d3",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.uasset": "cc0ec914ed74d8dfd9f04df3b993cf6036bb1ed6ca30d6b4711bce0aa747cdd9",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.uasset": "c411d8e6af1e1d6100ece8791fbaa964eaf6e8a2a3fa2cc8a798d35ee0a12df7",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K.uasset": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.uasset": "8b6b90668b1312f3286118953a8db03484a09d40116917acfd0edeaf87a4034f",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.uasset": "138c9738cb4a37168583989faadb2c3e20b599c4912917692f1aa82bbe0d4e86",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.uasset": "bd29c425da063ad891855ac44fed379f794fb11c3dbb756c0f69a4ad2d9d052e",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.uasset": "28bb346e48fb5acec11d067c09fdf567ee23f6133b89a7159cb3c736194a6a6a",
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset": "ae1213ed482afcc070afa935777c007a016c7de619fe1f0ac060a08eaec039ab",
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset": "d55e40a3d4b263feadf837fba93530bbce2df1b75340b9e1b503611c1bca1313",
+    "Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset": "3bfaa2e5812f517db4d8815139ad32ec002e47bdfe4c621de783b27929e48c5e",
+    "Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset": "a26a31f56112fc132f2f1a6d1cda40afb916dec5573fc6802616b8b267d91bb0",
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset": "f49e924c5d070b837d8735071ad3f211c535367f6f0b2d29fcf190f29927727d",
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset": "a867e56b65892db775788655490a52f206fa8863ec7c77304cafc74e4d650be5",
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset": "fe0582dfc178ee935e7d46d680c01b9af01d39a84bd6b2ce902592251b88631c",
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset": "634c067049b6ab3652862c7ae71d9c887cb1a3c03683eae415507cefd79e79c5",
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset": "788abca114951b9dfe36728ba7edc61fa99d63013d0fca1cc8c0b2ed73dd8af1",
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset": "71891e186659e1344e8c036bdda0909f62caac306c6f5ba4f62852dbe3f8ed52",
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset": "62cf11c47d265b2f0ffbba90b16697352afdece30c4c27753668fa137f8257a4",
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset": "021c8e61bb4ade6da0654e2f0680e7471acc1a051c6f0775a7922710942f31d7",
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset": "71be78adf2062e526135cbc269b930522ecc695af9c55b5106382adbc214f52f",
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset": "a5d4b6fed8486cefa5414a9b87300ed3fc84d6e458427b60ac4fdd8ee340c3c5",
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset": "6e52253da7eae0fdf06788fabc99116cc80af16e7327fe9e83620ddb578eda2e",
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset": "de1606b700ce3b768e87c3ba87d9e54ecc7d350c0d574cf4e402e9ebeb703ecc",
+    "Content/StarterContent/Textures/T_Concrete_Grime_D.uasset": "772cf0f32482bf09a8f1fb41fafb98c7e6e618ab38720c06a20f4816a94d795c",
+    "Content/StarterContent/Textures/T_Concrete_Panels_D.uasset": "78f1fb6d2275ab0db5ccb9d09c2740fe2844a818936a3bba56a973e3595279a1",
+    "Content/StarterContent/Textures/T_Concrete_Panels_N.uasset": "b4d26912394d2e4fbbe45f877122dd991aa386a3588d298b5ff0d647231e2973",
+    "Content/StarterContent/Textures/T_Concrete_Poured_D.uasset": "801b1c699f3131c700d092791f317faddae04a7c162d702682673b1246e71a65",
+    "Content/StarterContent/Textures/T_Concrete_Poured_N.uasset": "441d509c226c555df9f7485a0ce2231873a36bcb2082ac51249e28baa943f07a",
+    "Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset": "726c21d68b436a88231bd143e2c0eaf1c76f42f17bdcb90ad5a27c28aed43857",
+    "Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset": "04eac07ab8ffc6b649c3a1cc9e7d952022b09461c5d38f116a6f7bdc22aa3369",
+    "Content/StarterContent/Textures/T_Ground_Grass_D.uasset": "68febc3730979e5660f2c9bb142dfce4f2cec0513014c86313c59eff91f9bc36",
+    "Content/StarterContent/Textures/T_Ground_Grass_N.uasset": "188a235f10e6ddb567db2d6e44be8bdfe422ae03d1731eb69a88123635b88b9a",
+    "Content/StarterContent/Textures/T_Ground_Gravel_D.uasset": "265c31534d4d2eeff3fe28588cbaef59bca7f319d058eae37d752d47fa21794a",
+    "Content/StarterContent/Textures/T_Ground_Gravel_N.uasset": "4445cdee2d65a26e8e6e4c7be6acfeb79812fec5cfff7a29825d7542637f923d",
+    "Content/StarterContent/Textures/T_Ground_Moss_N.uasset": "201d4e5c0af974e110b4967fdf0f5c85386f58d1f89b9211ffefbc11e723d54b",
+    "Content/StarterContent/Textures/T_MacroVariation.uasset": "459b10ccd1742f24a8f18d9f20801a1fc7ee4cf73925a5d1d4453f1c5077953d",
+    "Content/StarterContent/Textures/T_Metal_Rust_N.uasset": "23b100433492c5cac7fa75df9c73fa3342619e625d216df04545ea290aff688a",
+    "Content/StarterContent/Textures/T_Rock_Basalt_D.uasset": "98fc893f2f15b2f2fa80cbeb22efbc0401bba9fb8babfd279e50e8695a77b141",
+    "Content/StarterContent/Textures/T_Rock_Basalt_N.uasset": "b07a42c53c3c8d975b66f7af2ca7a63f14728cd84214afddfd181be9a9a521a1",
+    "Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset": "5d8ce6e42a8617cc4021dd4df77eb5af8830a8c8c038acc08ca9fc50d9df6ac2",
+    "Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset": "6115f632ebe01e0fa226bc5b01f713b2d11d57e3d87e8ecbb45a92715695be64",
+    "Content/StarterContent/Textures/T_Rock_Slate_D.uasset": "7e9c1e799c3e7d4e688b14812e44ebe966eaac252e562f933b870867088bd144",
+    "Content/StarterContent/Textures/T_Rock_Slate_N.uasset": "c6927a7f01ca99210ea896a5ed384ad866959c35c6dc41a77fa23e9c32bff0ab",
+    "Content/StarterContent/Textures/T_ground_Moss_D.uasset": "39a0868a54b73531bd214b1249cd6213cf1c9cbabdb4cdfd60e95bcb97623ccf",
+    "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json": "1328d5bbdf0005bbb5b4b7ede85269c0d203beca361e193e0c9fd0edb0478b39",
+    "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json": "8711caceac69324f73a5071dd3fb3cab1957ad7624d37126c14e468e9439c00f"
+  },
+  "preserved_provenance": {
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset": [
+      "copy_set:base_mi_preserved_iran",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.umap": [
+      "copy_set:map_GazaShujaiya_preserved"
+    ],
+    "Content/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.umap": [
+      "copy_set:map_GazaRimal_preserved"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass.uasset": [
+      "copy_set:grass_type_preserved",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "copy_set:pinned_normal_preserved",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "copy_set:pinned_normal_preserved",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset": [
+      "copy_set:mw_vendor_reference_readonly",
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/HighPoly_Tree_Model/Demo/M_Floor.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcace.umap": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcase_BuiltData.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Leaf.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Trunk.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Meshes/SM_HP_Tree.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Textures/Leaf/T_HP_Tree_Leaf.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk_normal.uasset": [
+      "vendor_pack:HighPoly_Tree_Model"
+    ],
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_A.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_B.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_C.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_D.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_E.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Elevation_Material.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_01.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_02.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_03.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_04.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_05.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_06.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Landscape_Arctic.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MI_Landscape_Mountain.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MPC_Terrain.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/M_AutoLandscape.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/M_Elevation_Material.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/M_Iceland_Mountains.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceCellBlend.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceTextureBlend.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_MatLayerBlend_Standard_Normal.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_NormalIntensity.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TextureCellBomb.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection_Normal.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/Material_Blend_LayerInfo.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/RVT_Blend.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/RVT_Height.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A_TriProjection.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_B.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_C.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_D.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_E.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/Iceland_Environment/Textures/T_Voronoi_Perturbed_4k.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape_Inst.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Function/MF_Layer_Base.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Instances/MI_Landscape.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/T_RGB_Mask_Default.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Mask.uasset": [
+      "rev_preserved_files"
+    ],
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "rev_preserved_files"
+    ],
+    "Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset": [
+      "vendor_pack:MWLandscapeAutoMaterial"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.uasset": [
+      "appearance_textures_tree",
+      "explicit",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.uasset": [
+      "appearance_textures_tree",
+      "explicit",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.uasset": [
+      "appearance_textures_tree",
+      "explicit",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.uasset": [
+      "appearance_textures_tree",
+      "explicit",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K.uasset": [
+      "appearance_textures_tree"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "explicit",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.uasset": [
+      "appearance_textures_tree",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Grime_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Panels_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Panels_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Poured_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Poured_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Ground_Grass_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Ground_Grass_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Ground_Gravel_D.uasset": [
+      "explicit",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Ground_Gravel_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Ground_Moss_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_MacroVariation.uasset": [
+      "explicit",
+      "imports:/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Metal_Rust_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Basalt_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Basalt_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Slate_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_Rock_Slate_N.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Content/StarterContent/Textures/T_ground_Moss_D.uasset": [
+      "imports:/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+    ],
+    "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json": [
+      "rev_preserved_files"
+    ],
+    "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json": [
+      "rev_preserved_files"
+    ]
+  },
+  "hash_only_files": [
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.uasset",
+    "Content/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.uasset",
+    "Content/HighPoly_Tree_Model/Demo/M_Floor.uasset",
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcace.umap",
+    "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcase_BuiltData.uasset",
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Leaf.uasset",
+    "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Trunk.uasset",
+    "Content/HighPoly_Tree_Model/Meshes/SM_HP_Tree.uasset",
+    "Content/HighPoly_Tree_Model/Textures/Leaf/T_HP_Tree_Leaf.uasset",
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk.uasset",
+    "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk_normal.uasset",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_A.uasset",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_B.uasset",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_C.uasset",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_D.uasset",
+    "Content/Iceland_Environment/Materials/LandscapeGrass/LG_E.uasset",
+    "Content/Iceland_Environment/Materials/MI_Elevation_Material.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_01.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_02.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_03.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_04.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_05.uasset",
+    "Content/Iceland_Environment/Materials/MI_Iceland_Mountains_06.uasset",
+    "Content/Iceland_Environment/Materials/MI_Landscape_Arctic.uasset",
+    "Content/Iceland_Environment/Materials/MI_Landscape_Mountain.uasset",
+    "Content/Iceland_Environment/Materials/MPC_Terrain.uasset",
+    "Content/Iceland_Environment/Materials/M_AutoLandscape.uasset",
+    "Content/Iceland_Environment/Materials/M_Elevation_Material.uasset",
+    "Content/Iceland_Environment/Materials/M_Iceland_Mountains.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceCellBlend.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceTextureBlend.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_MatLayerBlend_Standard_Normal.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_NormalIntensity.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TextureCellBomb.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection.uasset",
+    "Content/Iceland_Environment/Materials/MaterialFunctions/MF_TriplanarProjection_Normal.uasset",
+    "Content/Iceland_Environment/Materials/Material_Blend_LayerInfo.uasset",
+    "Content/Iceland_Environment/Materials/RVT_Blend.uasset",
+    "Content/Iceland_Environment/Materials/RVT_Height.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_A_TriProjection.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_B.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_C.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_D.uasset",
+    "Content/Iceland_Environment/Materials/SubMaterials/MF_E.uasset",
+    "Content/Iceland_Environment/Textures/T_Voronoi_Perturbed_4k.uasset",
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape.uasset",
+    "Content/MOUT_Arabian/Materials/Landscape/Master_Material/MM_Landscape_Inst.uasset",
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Function/MF_Layer_Base.uasset",
+    "Content/MOUT_Arabian/Materials/Landscape/Material_Instances/MI_Landscape.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/T_RGB_Mask_Default.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Mask.uasset",
+    "Content/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.uasset",
+    "Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap",
+    "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap",
+    "Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset",
+    "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset",
+    "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset",
+    "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset",
+    "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.uasset",
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset",
+    "Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset",
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset",
+    "Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset",
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset",
+    "Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset",
+    "Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Grime_D.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Panels_D.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Panels_N.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Poured_D.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Poured_N.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset",
+    "Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset",
+    "Content/StarterContent/Textures/T_Ground_Grass_D.uasset",
+    "Content/StarterContent/Textures/T_Ground_Grass_N.uasset",
+    "Content/StarterContent/Textures/T_Ground_Gravel_D.uasset",
+    "Content/StarterContent/Textures/T_Ground_Gravel_N.uasset",
+    "Content/StarterContent/Textures/T_Ground_Moss_N.uasset",
+    "Content/StarterContent/Textures/T_MacroVariation.uasset",
+    "Content/StarterContent/Textures/T_Metal_Rust_N.uasset",
+    "Content/StarterContent/Textures/T_Rock_Basalt_D.uasset",
+    "Content/StarterContent/Textures/T_Rock_Basalt_N.uasset",
+    "Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset",
+    "Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset",
+    "Content/StarterContent/Textures/T_Rock_Slate_D.uasset",
+    "Content/StarterContent/Textures/T_Rock_Slate_N.uasset",
+    "Content/StarterContent/Textures/T_ground_Moss_D.uasset",
+    "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+    "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json"
+  ],
+  "excluded_edit_targets": [
+    "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset"
+  ],
+  "sealed_files": {
+    "Content/Python/geocity_bank_workflow.py": "f349d1289b8344e72339babddf80d538405a65a2ad31243ddc167d70b87022ce",
+    "Content/Python/geocity_editor_action.py": "1b13b051a053d74dba7d55e7be6c365aab500ad44dd12be096d9eb267f5ab16a",
+    "Content/Python/geocity_landscape_workflow.py": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+    "Content/Python/geocity_roadbld_clip.py": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+    "Content/Python/geocity_roadbld_grounding.py": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+    "Content/Python/geocity_roadbld_junctions.py": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+    "Content/Python/geocity_roadbld_landscape.py": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+    "Content/Python/geocity_roadbld_props.py": "2bf41ec3732b8128c3769c757e8c62194d3b422bb06766b2a826bb48c083eeb9",
+    "Content/Python/geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "Content/Python/geocity_roadbld_topology.py": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+    "Content/Python/geocity_roadbld_workflow.py": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+    "Content/Python/geocity_runtime_guard.py": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0",
+    "Content/Python/init_unreal.py": "bd3ff65c7b97730f0d02d36c2ba7c55e8caf500713a2dbc50c5c6e56a1b50fd4",
+    "Config/DefaultEngine.ini": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+    "Config/DefaultRoadBLD.ini": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+    "Staging/SystemCompletion_2026-10-04/launch_editor.ps1": "ba70eac43059886bf42de61837c4de7f4b11367e4a02f4c79ae78de8d05732a5",
+    "Staging/SystemCompletion_2026-10-04/seal_runtime.py": "e3b3c26f247aa6550b60ec9c0da85fd242654687c7e477f1f2fe0cbb2820d632"
+  },
+  "seal": {
+    "manifest": "Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json",
+    "manifest_sha256": "258469e14df2ca2e5e2b0c6543bf42e29c1fcde3d1628f7d258a607ee6d03024",
+    "expected_sha256": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+    "override": {
+      "sha256": "258469e14df2ca2e5e2b0c6543bf42e29c1fcde3d1628f7d258a607ee6d03024",
+      "record": "Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/RATIFICATION_B2.json",
+      "record_sha256": "c97079b82123ce3203752da3dbfb099238ac89ce9638bf1084bd9399d575bbe9"
+    },
+    "accepted_by": "ratification_record",
+    "pins_checked": 17,
+    "pin_keys_equal_sealed_rel": true,
+    "drift_vs_manifest": [],
+    "drift_vs_rev": [
+      {
+        "file": "Content/Python/geocity_roadbld_props.py",
+        "rev": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+        "current": "2bf41ec3732b8128c3769c757e8c62194d3b422bb06766b2a826bb48c083eeb9"
+      }
+    ]
+  },
+  "rev_precedent": {
+    "path": "Staging/GroundPainting_2026-10-04/Revision_2026-10-05/BACKUP_MANIFEST.json",
+    "sha256": "4e01a9926ae0e2479879a52fadeb13fdc1d3a927025e0db098f42b677e2bdd83",
+    "expected_sha256": "4e01a9926ae0e2479879a52fadeb13fdc1d3a927025e0db098f42b677e2bdd83",
+    "preserved_keys": 65,
+    "preserved_changed_since_rev": [
+      {
+        "file": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+        "rev": "00877b7cf8cb5ba3afa8d7aa2f4b5b099f8a98baae20668aae4ba7bedbc1910f",
+        "current": "1328d5bbdf0005bbb5b4b7ede85269c0d203beca361e193e0c9fd0edb0478b39"
+      },
+      {
+        "file": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+        "rev": "b1648e342dfedca1191190c9f77607e3b998c44e0f5d64ac9ea1cdc279300667",
+        "current": "8711caceac69324f73a5071dd3fb3cab1957ad7624d37126c14e468e9439c00f"
+      }
+    ],
+    "sealed_drift_vs_rev": [
+      "Content/Python/geocity_roadbld_props.py"
+    ]
+  },
+  "import_scan": [
+    {
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset",
+      "import_count": 227,
+      "game_imports": 74,
+      "non_game_imports": [
+        "/Engine/EditorResources/S_VectorFieldVol",
+        "/Engine/EngineMaterials/BaseFlattenNormalMap",
+        "/Engine/EngineMaterials/DefaultDiffuse",
+        "/Engine/EngineMaterials/DefaultNormal",
+        "/Engine/EngineMaterials/DefaultNormal_Uncompressed",
+        "/Engine/EngineMaterials/WeightMapArrayPlaceholderTexture",
+        "/Engine/EngineMaterials/WeightMapPlaceholderTexture",
+        "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+        "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedNormal",
+        "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector",
+        "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix",
+        "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+        "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+        "/Engine/Functions/Engine_MaterialFunctions02/WorldAlignedNormals_HighQuality",
+        "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectPivotPoint",
+        "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/RotateAboutWorldAxis_cheap"
+      ],
+      "extra_game_names": []
+    },
+    {
+      "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+      "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset",
+      "import_count": 9,
+      "game_imports": 3,
+      "non_game_imports": [],
+      "extra_game_names": []
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+      "import_count": 15,
+      "game_imports": 6,
+      "non_game_imports": [],
+      "extra_game_names": []
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+      "import_count": 15,
+      "game_imports": 6,
+      "non_game_imports": [],
+      "extra_game_names": []
+    }
+  ],
+  "new_asset_paths": [
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend"
+  ],
+  "new_asset_paths_absent_at_backup": true,
+  "new_asset_paths_spec": {
+    "path": "Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/S1_MINIMAL_SAFE_SPEC.json",
+    "sha256": "5b658037b2b68d1d77299f1364baeee9117f4a4d24ec25f5dfacaa7437738b7e",
+    "matches_hardcoded_list": true
+  },
+  "known_baseline_compare": {
+    "source": "Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/MASTER_GRAPH_FACTS_r030.json",
+    "rows": [
+      {
+        "key": "master",
+        "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset",
+        "known_sha256": "78b0f7cd620c7fb760d6e2a633b7f73b4a6f2e664b81f901a3be6bfc5a40b752",
+        "current_sha256": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104",
+        "equal": false
+      },
+      {
+        "key": "base_mi",
+        "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.uasset",
+        "known_sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+        "current_sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+        "equal": true
+      },
+      {
+        "key": "shujaiya_child",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+        "known_sha256": "8c54b7e3562941b9da1574404e16282f1628f0d45bcbde5c918ee68838f8a236",
+        "current_sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228",
+        "equal": false
+      },
+      {
+        "key": "rimal_child",
+        "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+        "known_sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b",
+        "current_sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b",
+        "equal": true
+      }
+    ],
+    "all_equal": false,
+    "master_import_crosscheck": {
+      "facts_refs_minus_self": 74,
+      "parsed_imports": 74,
+      "equal": true,
+      "same_master_file": false
+    }
+  },
+  "vendor_vault": {
+    "pairs": [
+      [
+        "MWLandscapeAutoMaterial",
+        "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content"
+      ],
+      [
+        "HighPoly_Tree_Model",
+        "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content"
+      ]
+    ],
+    "summary": [
+      {
+        "pack": "MWLandscapeAutoMaterial",
+        "project_dir": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Content/MWLandscapeAutoMaterial",
+        "vault_dir": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial",
+        "files": 100,
+        "bytes": 735412278,
+        "identical": 100,
+        "differ": [],
+        "project_only": [],
+        "vault_only": []
+      },
+      {
+        "pack": "HighPoly_Tree_Model",
+        "project_dir": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Content/HighPoly_Tree_Model",
+        "vault_dir": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model",
+        "files": 9,
+        "bytes": 38904705,
+        "identical": 9,
+        "differ": [],
+        "project_only": [],
+        "vault_only": []
+      }
+    ],
+    "all_match": true,
+    "files": {
+      "Content/HighPoly_Tree_Model/Demo/M_Floor.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "c0ec2917512476b40a44eed74ae21b19092922bd",
+        "bytes": 9541,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Demo/M_Floor.uasset",
+        "vault_sha1": "c0ec2917512476b40a44eed74ae21b19092922bd",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcace.umap": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "fea00cf703e9c2483455c416ba2a58a54d75c13a",
+        "bytes": 81944,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcace.umap",
+        "vault_sha1": "fea00cf703e9c2483455c416ba2a58a54d75c13a",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcase_BuiltData.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "bb740147cd3c49fde079ae10671bb7b4a9e6509b",
+        "bytes": 1649323,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Maps/HP_Tree_Showcase_BuiltData.uasset",
+        "vault_sha1": "bb740147cd3c49fde079ae10671bb7b4a9e6509b",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Leaf.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "1411c770b81f04d95253c0e5f95dd9865a05acaf",
+        "bytes": 13195,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Leaf.uasset",
+        "vault_sha1": "1411c770b81f04d95253c0e5f95dd9865a05acaf",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Trunk.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "3b949f4e95c6ef7f5a6870af910ab2d89d3e014f",
+        "bytes": 19955,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Materials/M_HP_Tree_Trunk.uasset",
+        "vault_sha1": "3b949f4e95c6ef7f5a6870af910ab2d89d3e014f",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Meshes/SM_HP_Tree.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "c3380d70047168e255ea08e7e52e53e14e4a3907",
+        "bytes": 19995934,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Meshes/SM_HP_Tree.uasset",
+        "vault_sha1": "c3380d70047168e255ea08e7e52e53e14e4a3907",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Textures/Leaf/T_HP_Tree_Leaf.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "2b984292b6879799c395f78fbe82bad5747e345a",
+        "bytes": 4180671,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Textures/Leaf/T_HP_Tree_Leaf.uasset",
+        "vault_sha1": "2b984292b6879799c395f78fbe82bad5747e345a",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "e35598bb2b16ec679b313ef6dbc39db7ada076b9",
+        "bytes": 7925517,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk.uasset",
+        "vault_sha1": "e35598bb2b16ec679b313ef6dbc39db7ada076b9",
+        "vault_match": true
+      },
+      "Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk_normal.uasset": {
+        "pack": "HighPoly_Tree_Model",
+        "sha1": "018af15e731db8027fe4fefc0c5b20e24eb53d73",
+        "bytes": 5028625,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/HighPoly7a52ca673258V1/data/Content/HighPoly_Tree_Model/Textures/Trunk/T_HP_Tree_Trunk_normal.uasset",
+        "vault_sha1": "018af15e731db8027fe4fefc0c5b20e24eb53d73",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "7757dfa48da7949a4659c32b71f2cf78c7549006",
+        "bytes": 48271,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Blueprints/BP_BakeLandscapeLayers.uasset",
+        "vault_sha1": "7757dfa48da7949a4659c32b71f2cf78c7549006",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "e49292abe6963d790b48061a2f872e9dda5c1174",
+        "bytes": 42487822,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Desert_Example.umap",
+        "vault_sha1": "e49292abe6963d790b48061a2f872e9dda5c1174",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "bcb6767fa0e310dc9f88ca50f91c002548db5dc2",
+        "bytes": 33297365,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_Island_Example.umap",
+        "vault_sha1": "bcb6767fa0e310dc9f88ca50f91c002548db5dc2",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "864e2a53e5a2fa60d8d6aad2c2184d1544ac8928",
+        "bytes": 56816010,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Maps/LandscapeAutoMaterial_MountainRange_Example.umap",
+        "vault_sha1": "864e2a53e5a2fa60d8d6aad2c2184d1544ac8928",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "87d38ff389593724bbca4ba3ed4b28b5bbdf2ad2",
+        "bytes": 1797,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Maps/Source/LandscapeAutoMaterial_Example_sharedassets/RemoveFoliage_LayerInfo.uasset",
+        "vault_sha1": "87d38ff389593724bbca4ba3ed4b28b5bbdf2ad2",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "66bf435439874b379f7a9e62ad27da22e6574bdb",
+        "bytes": 14453,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverRocks.uasset",
+        "vault_sha1": "66bf435439874b379f7a9e62ad27da22e6574bdb",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "9ab6aa07b5b4da778dbac8dc5e1051ca075abae2",
+        "bytes": 20705,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Cover/MTL_MWAM_CoverSnow.uasset",
+        "vault_sha1": "9ab6aa07b5b4da778dbac8dc5e1051ca075abae2",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "a3ebe9ff7a248d8eedacc6bd7905febb766e2ec1",
+        "bytes": 88895,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsA.uasset",
+        "vault_sha1": "a3ebe9ff7a248d8eedacc6bd7905febb766e2ec1",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "063f4d84a7277b77757c354dcc9686ef0032f93a",
+        "bytes": 88823,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/FX/MTL_MWAM_VolumeCloudsB.uasset",
+        "vault_sha1": "063f4d84a7277b77757c354dcc9686ef0032f93a",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ba0a01939527e9793c0b24dfcedc8f565ddfc9cb",
+        "bytes": 30058,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.uasset",
+        "vault_sha1": "ba0a01939527e9793c0b24dfcedc8f565ddfc9cb",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "9b572e09578ea087dc946fde1aa601c5da5985e2",
+        "bytes": 34742,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_IslandExample.uasset",
+        "vault_sha1": "9b572e09578ea087dc946fde1aa601c5da5985e2",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "a249fe7690a0d905fb9b5bdcc1a6a71a7282026b",
+        "bytes": 30488,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_MountainRangeExample.uasset",
+        "vault_sha1": "a249fe7690a0d905fb9b5bdcc1a6a71a7282026b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "02458598fa1d147d25118a58ab7cd45e666ccc4c",
+        "bytes": 97803,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Black.uasset",
+        "vault_sha1": "02458598fa1d147d25118a58ab7cd45e666ccc4c",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8871c7570b9dd0c45918dece24dcb06787c40018",
+        "bytes": 117271,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Chrome.uasset",
+        "vault_sha1": "8871c7570b9dd0c45918dece24dcb06787c40018",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f66dc4727473c3c0eb571be208404911fde2d4e9",
+        "bytes": 119687,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_ColorChecker.uasset",
+        "vault_sha1": "f66dc4727473c3c0eb571be208404911fde2d4e9",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "cead67d9567bc31b00b6756ba356082b34ac9bfb",
+        "bytes": 82260,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_Gray.uasset",
+        "vault_sha1": "cead67d9567bc31b00b6756ba356082b34ac9bfb",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "bea9cbdce0aaf8278ab42255e56058736b78b14b",
+        "bytes": 11588,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_MASTER.uasset",
+        "vault_sha1": "bea9cbdce0aaf8278ab42255e56058736b78b14b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8b0b7deb9c5ff9e5cab457681832a756f1607a9c",
+        "bytes": 78554,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Basic/MTL_MW_Basic_White.uasset",
+        "vault_sha1": "8b0b7deb9c5ff9e5cab457681832a756f1607a9c",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "1521ff1e62bcd6558ef2d1da348f03904eeaf345",
+        "bytes": 113678,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal.uasset",
+        "vault_sha1": "1521ff1e62bcd6558ef2d1da348f03904eeaf345",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "775668a469c1106bc3869af212c44f3a7f8600b1",
+        "bytes": 52807,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormalSimple.uasset",
+        "vault_sha1": "775668a469c1106bc3869af212c44f3a7f8600b1",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "dd2832080bfafa3a5ef81075dfdc96d1a231a663",
+        "bytes": 31015,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer.uasset",
+        "vault_sha1": "dd2832080bfafa3a5ef81075dfdc96d1a231a663",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "d315793f36426ca7da2aa611e9e8ee8f7f62b2ce",
+        "bytes": 48464,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.uasset",
+        "vault_sha1": "d315793f36426ca7da2aa611e9e8ee8f7f62b2ce",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "887c8887fe6f673236b7204a6aa76884e67a8edc",
+        "bytes": 80240,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LandscapeUVs.uasset",
+        "vault_sha1": "887c8887fe6f673236b7204a6aa76884e67a8edc",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c3cd16df7c944d46812e95daf57cfb5b24142577",
+        "bytes": 63606,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_LayerBlend.uasset",
+        "vault_sha1": "c3cd16df7c944d46812e95daf57cfb5b24142577",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ea4adfd1e035cbce79e4c1170d503474646b286c",
+        "bytes": 16078,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Opacity.uasset",
+        "vault_sha1": "ea4adfd1e035cbce79e4c1170d503474646b286c",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "bed9e4f0d15cbeb8c146f8db122d385ebc4efdee",
+        "bytes": 11837,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.uasset",
+        "vault_sha1": "bed9e4f0d15cbeb8c146f8db122d385ebc4efdee",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c0a0e15759c86769acfcbeca27a7ce10d5bdb585",
+        "bytes": 79370,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.uasset",
+        "vault_sha1": "c0a0e15759c86769acfcbeca27a7ce10d5bdb585",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f0fb00c8241232562a81ede74feb929e4e109f82",
+        "bytes": 19195,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SlopeMask.uasset",
+        "vault_sha1": "f0fb00c8241232562a81ede74feb929e4e109f82",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "bb510894dea1a6ff2adc8f96cb1a9614908d3c74",
+        "bytes": 47740,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Snow.uasset",
+        "vault_sha1": "bb510894dea1a6ff2adc8f96cb1a9614908d3c74",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f58e3ab1a72fcbbfbbec8308b341c33c8bb4f7e5",
+        "bytes": 26469,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SnowMask.uasset",
+        "vault_sha1": "f58e3ab1a72fcbbfbbec8308b341c33c8bb4f7e5",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "152172e083d817005b3b549bbb0219619ba8017b",
+        "bytes": 81914,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_SubSurface.uasset",
+        "vault_sha1": "152172e083d817005b3b549bbb0219619ba8017b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "bf39611d05453a8cd0e4c09eaa48ba286fa425db",
+        "bytes": 18556,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_WaterMask.uasset",
+        "vault_sha1": "bf39611d05453a8cd0e4c09eaa48ba286fa425db",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "e589dbccf63176d428c57ed5e0ea541ab701968e",
+        "bytes": 32436,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/Func/MW_MWAM_Water.uasset",
+        "vault_sha1": "e589dbccf63176d428c57ed5e0ea541ab701968e",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "451d15bdbabf8851c1bd632686630acf4fbdb160",
+        "bytes": 171219,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.uasset",
+        "vault_sha1": "451d15bdbabf8851c1bd632686630acf4fbdb160",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "6ec8b9f0e0aadc371cef1c27c3e9e23f6ecd7d49",
+        "bytes": 39449,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_CoverFoliage_MASTER.uasset",
+        "vault_sha1": "6ec8b9f0e0aadc371cef1c27c3e9e23f6ecd7d49",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "291c5beb1026d3d479b0af11621104db48904df3",
+        "bytes": 124279,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MW_VolumeClouds_MASTER.uasset",
+        "vault_sha1": "291c5beb1026d3d479b0af11621104db48904df3",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f3226532534d62e9c7eb55e32b1a5b68bad0e868",
+        "bytes": 1445,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Dirt.uasset",
+        "vault_sha1": "f3226532534d62e9c7eb55e32b1a5b68bad0e868",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "e89c1906dd76d937ef5c867b3d89058fc05f2e7c",
+        "bytes": 1450,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Grass.uasset",
+        "vault_sha1": "e89c1906dd76d937ef5c867b3d89058fc05f2e7c",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "55080c573b995f89531cf566efd9b902075e598d",
+        "bytes": 1450,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Rocks.uasset",
+        "vault_sha1": "55080c573b995f89531cf566efd9b902075e598d",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "4a250467ba2b5b078134c75912555c95da11c35b",
+        "bytes": 1445,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Snow.uasset",
+        "vault_sha1": "4a250467ba2b5b078134c75912555c95da11c35b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ab825342b5404cc32086b1208d9369ad748feef9",
+        "bytes": 1455,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Stones.uasset",
+        "vault_sha1": "ab825342b5404cc32086b1208d9369ad748feef9",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "52d85fcf319d64343f3da56b147d8968155232e5",
+        "bytes": 1450,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/MASTER/PhyMat/PM_MW_Water.uasset",
+        "vault_sha1": "52d85fcf319d64343f3da56b147d8968155232e5",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ca772e1884120c859c71923be6d0273e345809f5",
+        "bytes": 125014,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_Plant_Megascan_MASTER.uasset",
+        "vault_sha1": "ca772e1884120c859c71923be6d0273e345809f5",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "77b94c05a4bb4f0f847a66f88240c4d764243785",
+        "bytes": 14533,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Materials/Plants/MTL_MWAM_PlantsGrass.uasset",
+        "vault_sha1": "77b94c05a4bb4f0f847a66f88240c4d764243785",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "0cd7f21f849385130b190003ac161fada2c0a038",
+        "bytes": 33387,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_Clouds.uasset",
+        "vault_sha1": "0cd7f21f849385130b190003ac161fada2c0a038",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "a896412ee2490bbf13388677977f6fa1a7177bb8",
+        "bytes": 484545,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainA.uasset",
+        "vault_sha1": "a896412ee2490bbf13388677977f6fa1a7177bb8",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "6f3e280a1adad39ee3ad2442c931f6a15ba7b056",
+        "bytes": 520473,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Background/SM_MWAM_MountainB.uasset",
+        "vault_sha1": "6f3e280a1adad39ee3ad2442c931f6a15ba7b056",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f3aa65ceed90f4de54616f94146503eb1d66d72f",
+        "bytes": 109155,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Basic/SM_MW_ColorChecker.uasset",
+        "vault_sha1": "f3aa65ceed90f4de54616f94146503eb1d66d72f",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "96cc0a8d1bbf5bb43b4a7c18aafa9fb802fc0326",
+        "bytes": 60819,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_Snow.uasset",
+        "vault_sha1": "96cc0a8d1bbf5bb43b4a7c18aafa9fb802fc0326",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "e6020e0607319f938bb2fa59de457cafe99ab816",
+        "bytes": 58846,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowB.uasset",
+        "vault_sha1": "e6020e0607319f938bb2fa59de457cafe99ab816",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "1f50d3a9d86d9689f9e5ff7e047b019ea7acf52f",
+        "bytes": 58859,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowC.uasset",
+        "vault_sha1": "1f50d3a9d86d9689f9e5ff7e047b019ea7acf52f",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "0b2d3bb27210051a35dbb74047e3a7f14a9f4a38",
+        "bytes": 62131,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_SnowD.uasset",
+        "vault_sha1": "0b2d3bb27210051a35dbb74047e3a7f14a9f4a38",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "66716c2076e4ca41e6cb3854204f07dcfa27cde3",
+        "bytes": 62327,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneA.uasset",
+        "vault_sha1": "66716c2076e4ca41e6cb3854204f07dcfa27cde3",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "06c2625830189b2d380b762af64f9dd7c5a2cc26",
+        "bytes": 61224,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneB.uasset",
+        "vault_sha1": "06c2625830189b2d380b762af64f9dd7c5a2cc26",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "66e4d774cbbfef6a35d33e74e2a642f24996c5d9",
+        "bytes": 60114,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneC.uasset",
+        "vault_sha1": "66e4d774cbbfef6a35d33e74e2a642f24996c5d9",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "062a6a580b6abb46d7edc5377b228c84016eabe4",
+        "bytes": 63324,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Cover/SM_MWAM_StoneD.uasset",
+        "vault_sha1": "062a6a580b6abb46d7edc5377b228c84016eabe4",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "731c123f330972c6b5cd3a4c974536044112e64d",
+        "bytes": 49694,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassA.uasset",
+        "vault_sha1": "731c123f330972c6b5cd3a4c974536044112e64d",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "e1c9ac8688caba60f5158b172cb12835c6b878e6",
+        "bytes": 42540,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassB.uasset",
+        "vault_sha1": "e1c9ac8688caba60f5158b172cb12835c6b878e6",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ea510e17dd5ccdb31d5003a5c32c7d25987d5eb1",
+        "bytes": 26802,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassC.uasset",
+        "vault_sha1": "ea510e17dd5ccdb31d5003a5c32c7d25987d5eb1",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "b8a00ace2fa625d93bf690ffc3a44949f9d6a5b2",
+        "bytes": 31276,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Meshes/Plants/SM_MWAM_GrassD.uasset",
+        "vault_sha1": "b8a00ace2fa625d93bf690ffc3a44949f9d6a5b2",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "d7c9a669feb76e3fb56fd32a3cd5637e31720a1b",
+        "bytes": 1310,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Dirt.uasset",
+        "vault_sha1": "d7c9a669feb76e3fb56fd32a3cd5637e31720a1b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "d7c7a2614e0a4b34fa3a98105f9c76baa792402f",
+        "bytes": 9651,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Grass.uasset",
+        "vault_sha1": "d7c7a2614e0a4b34fa3a98105f9c76baa792402f",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "cc7dc9f31767d186efc618f09781f5a047401b41",
+        "bytes": 1310,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Rock.uasset",
+        "vault_sha1": "cc7dc9f31767d186efc618f09781f5a047401b41",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ddcee9ebc6ce6633a134fba043f843de321b5597",
+        "bytes": 8349,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Snow.uasset",
+        "vault_sha1": "ddcee9ebc6ce6633a134fba043f843de321b5597",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "04af12b222e057280912e1c76c3d7bfc83324110",
+        "bytes": 13498,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Procedurals/LGT_MWAM_Stones.uasset",
+        "vault_sha1": "04af12b222e057280912e1c76c3d7bfc83324110",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "4f77681871371df63fbe03e8ac80427b33a159d6",
+        "bytes": 4584,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake1k.uasset",
+        "vault_sha1": "4f77681871371df63fbe03e8ac80427b33a159d6",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "7142e5766df854307ff7043cc726a839316c2caa",
+        "bytes": 93032,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake2k.uasset",
+        "vault_sha1": "7142e5766df854307ff7043cc726a839316c2caa",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "a6dc7acd83097614281b8efb9e2f15c44a8a7bf9",
+        "bytes": 91294,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Bake/TRT_LandscapeLayerBake4k.uasset",
+        "vault_sha1": "a6dc7acd83097614281b8efb9e2f15c44a8a7bf9",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "90c9515d98bbfbff009d50d5971ffb0312a0c216",
+        "bytes": 10134197,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_col.uasset",
+        "vault_sha1": "90c9515d98bbfbff009d50d5971ffb0312a0c216",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "9ac10ef4bffa7cbb7a87b76675e1d0fd0af368b8",
+        "bytes": 7130170,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Cover/TEX_MWAM_CoverRocks_nrm.uasset",
+        "vault_sha1": "9ac10ef4bffa7cbb7a87b76675e1d0fd0af368b8",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "9c045ee42606431d56aef5cbdee6b7c1c04a3e43",
+        "bytes": 12399125,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.uasset",
+        "vault_sha1": "9c045ee42606431d56aef5cbdee6b7c1c04a3e43",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "6ace562c25b56fd8c1f4d326362a214cd60434cc",
+        "bytes": 37027663,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.uasset",
+        "vault_sha1": "6ace562c25b56fd8c1f4d326362a214cd60434cc",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "72923ea98de99d0b1c18a09e1f57e3948f0668ea",
+        "bytes": 5487,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientA.uasset",
+        "vault_sha1": "72923ea98de99d0b1c18a09e1f57e3948f0668ea",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8b21962f7d5f0fc3d37e922965cc75423d04abe5",
+        "bytes": 6535,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientB.uasset",
+        "vault_sha1": "8b21962f7d5f0fc3d37e922965cc75423d04abe5",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "d8835191e01e37658632db818efd38bd95c3eda1",
+        "bytes": 5983,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudGradientC.uasset",
+        "vault_sha1": "d8835191e01e37658632db818efd38bd95c3eda1",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "4797d6bf93921f41b71becdcb5ed4d26f339f62e",
+        "bytes": 400001,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherA.uasset",
+        "vault_sha1": "4797d6bf93921f41b71becdcb5ed4d26f339f62e",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "60c84d809a0971c23386a7c05862fa607db88a5b",
+        "bytes": 253372,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherB.uasset",
+        "vault_sha1": "60c84d809a0971c23386a7c05862fa607db88a5b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c8917b3ca4790497cbd37c37e2465c7365261a13",
+        "bytes": 254692,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_CloudWeatherC.uasset",
+        "vault_sha1": "c8917b3ca4790497cbd37c37e2465c7365261a13",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "7fae98b3e162eda71932a80cc063a1bf53113d4f",
+        "bytes": 5599276,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.uasset",
+        "vault_sha1": "7fae98b3e162eda71932a80cc063a1bf53113d4f",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8deeea9c959a12009ec3f1d5b6d7a386152fd399",
+        "bytes": 2575300,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_WaterA_nrm.uasset",
+        "vault_sha1": "8deeea9c959a12009ec3f1d5b6d7a386152fd399",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "d660ccd82db59bcd57a6b0f706c195172a20c577",
+        "bytes": 35245750,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.uasset",
+        "vault_sha1": "d660ccd82db59bcd57a6b0f706c195172a20c577",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "2746b553bf79a47cc8b0271805fce9393dfbe16b",
+        "bytes": 44545218,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.uasset",
+        "vault_sha1": "2746b553bf79a47cc8b0271805fce9393dfbe16b",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8ccf2afad463008d0668f80ce4cef2a71b48efd3",
+        "bytes": 34519110,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_col.uasset",
+        "vault_sha1": "8ccf2afad463008d0668f80ce4cef2a71b48efd3",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "36470b3d4c761ec04dc2045e52a873e8961b54c5",
+        "bytes": 39077840,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Grass_nrm.uasset",
+        "vault_sha1": "36470b3d4c761ec04dc2045e52a873e8961b54c5",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "5d6ec6dde8f7eabb6f27b8c244085b309a7a20a4",
+        "bytes": 39714591,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_col.uasset",
+        "vault_sha1": "5d6ec6dde8f7eabb6f27b8c244085b309a7a20a4",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "4469e338b455755acf9b1e9defa7c8da60923937",
+        "bytes": 44803176,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Rock_nrm.uasset",
+        "vault_sha1": "4469e338b455755acf9b1e9defa7c8da60923937",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "f7985e3c5eab0bc9a1d61e22064ea77beab88607",
+        "bytes": 47476714,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.uasset",
+        "vault_sha1": "f7985e3c5eab0bc9a1d61e22064ea77beab88607",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8de14192047537dbecc431272ee4fa660e7b31e3",
+        "bytes": 15306657,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.uasset",
+        "vault_sha1": "8de14192047537dbecc431272ee4fa660e7b31e3",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "dcab3c2fc85c6d32cf76c12b0f30718242f80bf0",
+        "bytes": 29852821,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.uasset",
+        "vault_sha1": "dcab3c2fc85c6d32cf76c12b0f30718242f80bf0",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "97909e5dba4a555f237ae2a6779c6236818d9c90",
+        "bytes": 47159956,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.uasset",
+        "vault_sha1": "97909e5dba4a555f237ae2a6779c6236818d9c90",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c92eb45fe4e28bebc4181836b48cd7a48dda5293",
+        "bytes": 21463853,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_col.uasset",
+        "vault_sha1": "c92eb45fe4e28bebc4181836b48cd7a48dda5293",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "0c29ed542ed8f2fd64a64bd5b41c344b707685be",
+        "bytes": 22273990,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Snow_nrm.uasset",
+        "vault_sha1": "0c29ed542ed8f2fd64a64bd5b41c344b707685be",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "662d5dd53a79c9b7a0f40e5cd3ca969b61ee9e5a",
+        "bytes": 42658494,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.uasset",
+        "vault_sha1": "662d5dd53a79c9b7a0f40e5cd3ca969b61ee9e5a",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "703a6ee2c148dc1c5dda9be2500db25e830b7635",
+        "bytes": 42371536,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.uasset",
+        "vault_sha1": "703a6ee2c148dc1c5dda9be2500db25e830b7635",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "8e501dc104b2e70fb3a5fe82e2924365fec1aceb",
+        "bytes": 7440958,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_col.uasset",
+        "vault_sha1": "8e501dc104b2e70fb3a5fe82e2924365fec1aceb",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "ec7f635b84c5561a83471f61321c2c5ae9813429",
+        "bytes": 8561080,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/Plants/TEX_MWAM_Grass_nrm.uasset",
+        "vault_sha1": "ec7f635b84c5561a83471f61321c2c5ae9813429",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "7c671546cbb502a6752e72132cb7c236507b064f",
+        "bytes": 398893,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_ColorChecker.uasset",
+        "vault_sha1": "7c671546cbb502a6752e72132cb7c236507b064f",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c03a7148f98ebe03d49e614c71a8ded33e5fcd73",
+        "bytes": 17312,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_col.uasset",
+        "vault_sha1": "c03a7148f98ebe03d49e614c71a8ded33e5fcd73",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "77d4c08d73745fd94d75528b734b2c3243f924e3",
+        "bytes": 18940,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_msk.uasset",
+        "vault_sha1": "77d4c08d73745fd94d75528b734b2c3243f924e3",
+        "vault_match": true
+      },
+      "Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset": {
+        "pack": "MWLandscapeAutoMaterial",
+        "sha1": "c70f6fbb9571034b2e76f71a0cfea669a04db8c1",
+        "bytes": 31858,
+        "vault_file": "C:/ProgramData/Epic/EpicGamesLauncher/VaultCache/MWLandsc0bb389159dceV3/data/Content/MWLandscapeAutoMaterial/Textures/TEX_MW_Temp_nrm.uasset",
+        "vault_sha1": "c70f6fbb9571034b2e76f71a0cfea669a04db8c1",
+        "vault_match": true
+      }
+    }
+  },
+  "totals": {
+    "copied_files": 20,
+    "copied_bytes": 533400358,
+    "preserved_files": 238,
+    "sealed_files": 17,
+    "vendor_files": 109,
+    "vendor_bytes": 774316983
+  },
+  "restore_note": "Not performed by this script. With every editor closed and root approval: for each files[] row root names, copy backup -> <project>/file with shutil.copyfile (NOT copy2: backups are read-only and copy2 would carry the read-only bit into Content), then assert sha256 == row.sha256. Maps are non-World-Partition here (no Content/__ExternalActors__/Project/Areas, MEASURED), so the .umap is the full map state. MW rows are vault originals: restore them from VaultCache, never over a vault-identical file. Hash-only pins (preserved_files without a files[] row) detect change only.",
+  "blockers": [],
+  "warnings": [
+    "INFO: 2 REV preserved_files changed since REV (pinned at current values): ['Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json', 'Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json']",
+    "runtime seal 258469e14df2ca2e5e2b0c6543bf42e29c1fcde3d1628f7d258a607ee6d03024 accepted via ratification record Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/RATIFICATION_B2.json (pinned 3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd)",
+    "sealed files differ from REV sealed_files under the ratified seal: ['Content/Python/geocity_roadbld_props.py']",
+    "known baseline mismatch vs MASTER_GRAPH_FACTS (ready_for_s1=false; refresh facts before S1 relies on them): ['master', 'shujaiya_child']"
+  ]
+}

@@ -1,0 +1,122 @@
+ENVIRONMENTPIPELINE — CONNECTIONS, USAGE AND PROJECT FIT
+Prepared 2026-10-02, Asia/Jerusalem. Project records are English; user-facing explanations may be Hebrew.
+
+1. WHAT THIS SETUP GIVES US
+
+We now have programmatic access to an empty Houdini authoring session, two additional Unreal plugins, and the existing Unreal inspection/editor tooling. These tools can help inspect and author the reusable HDA, understand assets and dependencies, inspect materials, measure modular meshes, and record editor state. They do not by themselves deliver the geographic city, qualify model rights, or prove save/reopen/regeneration.
+
+The intended route remains: validated geographic source package -> reusable Houdini city HDA -> official Houdini Engine in Unreal -> measured native environment. MCP tools assist authoring and inspection around this route. PCG, direct actor spawning and the vendor's procedural wall/tower generators are available capabilities; they are not newly approved replacements for the HDA route.
+
+2. EVERYTHING COMPLETED IN THE CONNECTION TASK
+
+[measured] Reused the installed houdini-mcp server and Houdini 22.0.429 package configuration. Started the vendor RPC listener in a separate empty headless hython process on loopback port 18811. Added a helper to recreate that empty session after shutdown. Verified ping, connection status and the zero-node scene.
+[measured] Downloaded UnrealCopilot, installed its managed Python dependencies, built its native plugin for Unreal 5.8, installed Plugins/UnrealCopilot and enabled it in the project descriptor. Configured automatic HTTP MCP startup on 19840 and native HTTP on 18080, avoiding the previously occupied default port. Registered the server in Codex configuration.
+[measured] Fixed UnrealCopilot startup against the older project typing_extensions dependency by prioritizing the plugin's own managed environment before its imports. Clean restart reported dependencies satisfied and server started. A prior direct project dependency upgrade was overwritten by Unreal's pip startup; the lasting fix is in the installed plugin bootstrap.
+[measured] Downloaded kks3800/Unreal_MCP. Adapted four native vendor C++ files to UE 5.8 JSON key representation, built successfully, installed Plugins/UnrealMCP and enabled it. Upgraded its external Python MCP SDK to 1.30.0 after the older SDK failed a handshake. Added a vendor-server launcher and Codex stdio configuration with DYNAMIC_MODE=1. Native connection uses loopback port 55557.
+[decided: Aviv 2026-10-02] Skipped NodeArchitect because Aviv has no license. No purchase or licensed installation was made.
+[decided/measured] Discarded three previously unsaved Unreal packages using native Don't Save, then reopened the named v015 map. One intermediate hidden startup stalled before loading the map at the dependency dialog; it was terminated. After fixing the plugin bootstrap, the final clean restart completed.
+[measured] The saved map's SHA256 remained BFDCF5E4F825EE398B59F382B62040A03E77C99431B3AE18A41A5B6F512142C6. Final editor readback reported dirty_packages=[], pause_cooking_on_start=true. Native UI displayed All Saved. Editor ownership was released to OWNER=NONE.
+[measured] All three new/reused MCP services passed live tool-list and read-only connection/editor readbacks. Backed up the pre-change Codex configuration, project descriptor and editor user settings in this receipt directory.
+[not run] No HDA cook, Bake, new environment generation, model release, visual acceptance, Content save or Linear update was performed by the connection task. No claim that every registered tool works on UE 5.8 follows from these connection checks.
+
+3. CONNECTION STATUS AND THE IMPORTANT DISTINCTION
+
+houdini-mcp: 43 directly exposed tools; connected to Houdini 22.0.429 on 127.0.0.1:18811. The current scene is empty and unsaved. This is not the city HIP and is not an automatic connection to a separately opened Houdini GUI.
+UnrealCopilot: 11 directly exposed MCP tools; live at http://127.0.0.1:19840/mcp with native API at 127.0.0.1:18080. Read-only script returned the correct v015 world and zero dirty packages.
+kks3800 Unreal_MCP: 22 directly exposed tools = 19 core operations + 3 dynamic discovery/dispatch operations. The installed registry contains 471 executable operations total: 19 core plus 452 discoverable operations, across 14 categories, with zero registration failures. The three dispatch operations are additional to those 471. Read-only get_editor_context returned the correct current level and PIE=false.
+Existing Unreal MCP: port 8000 responded to an actual editor query. All 36 currently advertised toolsets were described and their full schemas exported. This includes general asset/material/scene tools and historical WorldBLD-family tools.
+Official Houdini Engine: installed and loaded in the reopened Unreal editor, but the subsequent public API readback returned is_session_valid=false. Cooking is paused. Thus the two applications are individually accessible while their official Engine session is currently inactive. Historical successful Engine/Indie evidence does not prove a live session after this restart.
+
+4. HOW AVIV USES THESE TOOLS
+
+You normally request the desired outcome in the Codex chat. You do not need to type the underlying tool names. Specify the target HIP/HDA, Unreal map or asset when it matters, and say whether the task is inspection or an edit. Codex chooses a matching tool, reads its schema, verifies the target and reports the measured result.
+
+For inspection, useful requests are:
+- Inspect the v013 city HDA network and explain where buildings, terrain and surface masks are generated. Do not edit or cook.
+- List the schema and rows of DT_NonBuildingBank_v3 and verify RunEligible values without changing them.
+- Inspect MI_SurfaceBank_AllLayers, list its textures/parameters and explain missing connections without modifying it.
+- Measure the bounds, materials, LODs and triangles of a named modular building mesh.
+- Count actors and Landscapes in the current map, report component types and possible duplicates, and list dirty packages.
+- Read Houdini Engine session status and current log errors without starting a session or cooking.
+
+For an authorized implementation task, define a bounded result: create a new versioned HDA with a specific rule change, update a named material instance in a specified proof folder, or modify a named Blueprint. A request for this guide is documentation scope; none of those examples is executed here.
+
+Codex setup: the server definitions are already in C:/Users/USER/.codex/config.toml. If the newly registered tools do not appear in a chat's tool catalog, start a new chat or restart Codex and check the server connection. Direct MCP client handshakes have passed; catalog visibility in every already-open chat has not been proved. A missing catalog entry is different from a failed native plugin connection.
+
+Unreal startup: open this project normally through Windows/PowerShell. The two native plugins load with the project and Copilot is configured to start its HTTP server automatically. External stdio clients launch the kks3800 Python server when needed. Verify the project, editor lease, processes and dirty state before any editor action. The paused startup state measured in this receipt was supplied by the launch command; do not assume all future ordinary launches inherit that command-line override.
+
+Houdini startup: the current headless session exists while hython is alive. After shutdown, run Start-HoudiniConnection.ps1 from this receipt directory to recreate an EMPTY session. Explicitly load a reviewed versioned HIP only under a task that authorizes it. To target a GUI scene instead, use the installed vendor Remote listener in that exact GUI session and verify the scene identity. Reassign the endpoint only after resolving the current listener; GUI and headless sessions cannot both own port 18811. GUI screenshots/pane operations require a UI-enabled Houdini session and were not tested in the current headless session.
+
+Official Engine startup: in Unreal, use the official Houdini Engine session controls or its Public API under a bounded session task, verify actual session/version/license readings, and then separately authorize the intended HDA cook. This guide leaves that session inactive and does not start it. An empty houdini-mcp authoring session does not activate Houdini Engine inside Unreal.
+
+5. HOW EACH TOOL FAMILY HELPS OUR ACTUAL PROJECT
+
+Houdini authoring — direct priority.
+Use node discovery, parameter schemas, network inspection and connection tools to understand and version the city HDA. execute_code can support HOM operations not covered by a dedicated tool, including HDA PythonModule work, but must use the same versioned-authoring scope. Store HDA logic in its PythonModule, not hou.session. Geometry summaries can inspect counts, bounds, groups and attributes such as unreal_instance after an authorized cook. None of these tools validates a geographic package or model rights automatically.
+
+Modular buildings — direct priority.
+Houdini network/parameter tools can support reusable building rules. Existing Unreal StaticMeshTools can read bounds, slots, triangle/vertex counts and LOD information. This helps verify module dimensions and diagnose gaps, scale or material assignments. kks3800's six procedural primitive generators are generic authoring conveniences; they do not demonstrate a closed modular building, geographic footprint fitting, roofs or a believable city. The chosen module/rule system remains the starting point.
+
+Materials and the surface palette — direct priority.
+Existing Unreal MaterialTools and MaterialInstanceTools expose graph wiring, output inputs, material parameters and texture bindings. kks3800 adds graph analysis/build/batch functions and material previews. These can support MI_SurfaceBank_AllLayers and building material diagnosis. A compiled material or assigned texture is not proof that it looks correct on the Landscape/building; combine property readback with actual viewport evidence in a separately authorized task.
+
+Shared model bank and catalog — direct priority.
+Unreal asset discovery, dependencies/referencers and DataTable schema/row tools help reconcile the imported bank, native references and disabled selection data. Copilot's search/get_references/trace_reference_chain are useful for finding where a model or material is used. Catalog tools can inspect DT_NonBuildingBank_v3. They do not confirm persistent HDA input binding, rights, qualification or visible model placement merely because a row exists. Canonical RunEligible values remain false unless Aviv grants the exact release decision.
+
+Unreal output, persistence and evidence — direct priority.
+Actor/scene inspection, logs, screenshots and dirty-package readback support measured actor/component counts, exact map identity, material visibility and duplicate diagnosis. Named-save operations can later support approved persistence tasks. The official Houdini Engine API remains responsible for supported HDA instantiate/parameters/cook/Bake operations. Generic property tools may omit Houdini-specific inputs, bake settings or internal state; use supported official APIs/readbacks and do not infer missing values.
+
+PCG — conditional, not an active substitute.
+The registry offers PCG graph/node inspection and editing, which could assist a future explicitly chosen Unreal vegetation/details stage. Current selection/generation remains in the reusable Houdini route. Listing PCG tools does not authorize a second generator architecture or prove the installed graph operations on UE 5.8.
+
+Blueprints — supporting priority.
+Copilot can inspect hierarchy, references and graph structure; its skill runner includes native asset, editor, world and Blueprint editing primitives. kks3800 contains 111 Blueprint operations. These may support area controls or an explicitly required helper Blueprint. The current pipeline does not need a general gameplay system or a new manager/bridge merely because these APIs are available.
+
+Lower priority for the geographic environment mission.
+UI/widgets (109), Niagara (38), MetaSound/audio (26), behavior trees (51), blackboards (8), EQS (14), input (10) and project input mapping (1) are primarily gameplay, effects, interface or sound work. They may matter later for a playable/presentable environment, but do not resolve the geographic HDA, bank integration, building quality or regeneration gates.
+
+Historical WorldBLD tools.
+The existing connection still advertises WorldBLD, CityBLD, RoadBLD and TwinBLD inspection/generation tools. Their presence is not a renewed work order. Preserve them and their dependencies; the active project instructions retain them as historical evidence. A future deliberate route change would need its own measured reason and authorization.
+
+NodeArchitect.
+Not installed and not assessed as a live tool catalog. It was the paid Houdini node-authoring product in the supplied forum link. The licensed plugin's operations cannot be inventoried or verified from the product page alone. It is excluded from our installed capabilities.
+
+6. RECOMMENDED TOOL SELECTION AND PRACTICAL EXAMPLES
+
+First use the existing Unreal inspection tool for a task it already supports. Use Copilot when the gap is source/Blueprint/reference analysis or a documented native skill. Use kks3800 when its focused graph/material operation resolves a concrete supported-tool gap. Use houdini-mcp for Houdini authoring and inspection. Use official Houdini Engine for the geographic HDA connection/cook/Bake. Avoid multiple tools concurrently modifying the same asset or editor.
+
+Houdini network inspection example: get_node_info(node_path=<reviewed node>, include_errors=true, force_cook=false), get_parameter_schema(node_path=<reviewed node>) and list_children(node_path=<reviewed root>). These inspect the actual target instead of guessing node names.
+Copilot reference example: get_references(path='/Game/Project/Shared/SurfacePainting/MI_SurfaceBank_AllLayers', domain='asset', direction='both'). This is an example call shape, not a measured reference result.
+kks3800 discovery example: search_unreal_tools(query='material', category='material', limit=10); describe_unreal_tools(names=['get_material_info','get_material_instance_parameters']); execute_unreal_tool(name=<chosen read operation>, params=<its returned schema>). describe accepts at most five names per call. Searching or describing does not execute the discovered operation.
+Existing Unreal catalog example: describe DataTableTools, then use get_schema/list_rows/get_rows with the exact reflected DataTable reference. Existing Unreal inspection example: describe StaticMeshTools, then get_bounds/get_material_slots/get_triangle_count for the named mesh. Read schemas before supplying parameters; tool names alone do not guarantee argument formats.
+
+7. OPERATIONS THAT NEED PARTICULAR CARE IN THIS PROJECT
+
+The current documentation pass exports inventories and does not run scene mutations. Registered tools have differing side effects; prefixes like get, inspect or validate are not sufficient guarantees.
+Houdini get_geo_summary explicitly cooks dirty geometry in the installed implementation. get_node_info can force a cook if force_cook=true. Rendering can evaluate/cook a graph. Do not use these during a zero-cook inspection without checking the actual behavior and target state.
+Houdini load_scene/new_scene changes the active session; save_scene without a path saves the current file. Use explicit reviewed/versioned paths and resolve unsaved state.
+Unreal save_assets([]) saves broadly; save_dirty_packages and save_directory are broad saves. Project rules forbid substituting them for a named reviewed save list. Generic delete/move/rename/batch fix operations must not reorganize the canonical bank by implication.
+Material compile/fix, Blueprint compile, graph edit, LOD/Nanite/collision changes, direct actor spawn/delete and PCG edits can change editor/package state. One recorded editor owner controls such work and captures the result. City acceptance remains Aviv's decision.
+
+8. FULL INVENTORY AND WHAT WAS ACTUALLY VERIFIED
+
+ALL_TOOLS_CATALOG.txt lists every directly advertised Houdini and Copilot operation, the 22 kks3800 entry points, every one of its 471 registered executable operations, and every operation in the 36 existing Unreal toolsets. Each entry contains purpose, required argument names and a group relevance assessment. Complete machine-readable schemas are retained in the adjacent *_FULL_MCP_TOOLS.json, KKS3800_FULL_REGISTRY.json and EXISTING_UNREAL_FULL_TOOLSETS.json files.
+Catalog counts are not a sum of distinct user benefits: many Unreal operations overlap across servers. The kks3800 core entries appear both as entry points and in its full registry. An operation registered in Python or described by MCP has not necessarily passed a native execution check.
+Live checks were limited to tool listing, Houdini ping/scene/connection, Copilot's exact editor/dirty/pause readback, kks3800 editor context, existing Unreal content browser path, and the official Engine is_session_valid query. All other capabilities in this guide are documented/registered and not functionally exercised here.
+
+9. INSTALLED PATHS, RECOVERY AND SOURCES
+
+Project plugins: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Plugins/UnrealCopilot and Plugins/UnrealMCP.
+Vendor checkouts: C:/Users/USER/.codex/vendor_imports/houdini-mcp, UnrealCopilot and Unreal_MCP.
+Houdini package: C:/Users/USER/Documents/houdini22.0/packages/houdini_mcp.json; plugin Python directory C:/Users/USER/Documents/houdini22.0/python/houdini_mcp_plugin.
+Codex configuration: C:/Users/USER/.codex/config.toml.
+Editor settings: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Config/DefaultEditorPerProjectUserSettings.ini.
+Backups and live probes: this receipt directory. Restore only under a deliberate rollback task, accounting for later configuration changes; do not overwrite current configuration blindly.
+
+Sources: installed code and exported live schemas are authoritative for the local inventory; repository pages document vendor intent, not local acceptance.
+https://github.com/oculairmedia/houdini-mcp
+https://github.com/syan2018/UnrealCopilot
+https://github.com/kks3800/Unreal_MCP
+https://developers.openai.com/codex/mcp/
+Project boundaries: AGENTS.md, Staging/CURRENT_STATE.md, Staging/WORK_PLAN.md and Staging/ModelBank/EDITOR_OWNER.txt.
+Connection evidence: RESULT.txt, DEPLOYMENT.json, *_probe.json, MAP_HASH_BEFORE.json and MAP_HASH_FINAL.json.

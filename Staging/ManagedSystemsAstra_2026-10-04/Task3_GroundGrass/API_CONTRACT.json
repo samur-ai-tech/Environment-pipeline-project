@@ -1,0 +1,140 @@
+{
+  "installed_contracts": [
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Landscape\\Classes\\Landscape.h",
+      "sha256": "3c6374dabd2349cf063dd17faf321b15747f9b64a22202217486464c89ae5e89",
+      "identifiers": {
+        "GetTargetLayerNames": [
+          389
+        ]
+      },
+      "contract": "BlueprintCallable public target names; no editor_layer_settings access."
+    },
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Landscape\\Classes\\LandscapeComponent.h",
+      "sha256": "00576d236f3bac54a89cd2e38bbaff6865e85b9506caa87bd5df455e7a4559d2",
+      "identifiers": {
+        "EditorGetPaintLayerWeightByNameAtLocation": [
+          1026
+        ]
+      },
+      "contract": "Public world-location weight query; zero is also failure; readiness must retry."
+    },
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Editor\\MaterialEditor\\Public\\MaterialEditingLibrary.h",
+      "sha256": "5201a2be4ed754246bca79d115626dd3b59471989366f87cd7110a206047375f",
+      "identifiers": {
+        "GetMaterialExpressions": [
+          141
+        ],
+        "ConnectMaterialExpressions": [
+          242
+        ],
+        "GetInputsForMaterialExpression": [
+          337
+        ]
+      },
+      "contract": "Asset expression enumeration and connection are public; input graph inspection requires active material editor and is deliberately not called."
+    },
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Landscape\\Classes\\LandscapeGrassType.h",
+      "sha256": "c676fd8adbb1ab381b50d22aff4c4f7f91620347bc87fa3b4b0b068d4d957d9e",
+      "identifiers": {
+        "GrassDensity": [
+          45,
+          48,
+          191
+        ],
+        "GrassDensityQuality": [
+          48
+        ],
+        "AllowedDensityRange": [
+          83
+        ],
+        "bWeightAttenuatesMaxScale": [
+          103,
+          106
+        ],
+        "bEnableDensityScaling": [
+          183
+        ]
+      },
+      "contract": "Instances per 10 square metres; platform/quality and cull settings; weight/scale defaults and density scalability."
+    },
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Public\\PerQualityLevelProperties.h",
+      "sha256": "cc8117ab109fa56ddc18bbea1da7ca54d8a596d3767bbe98e6c5a8955b9b4b5f",
+      "identifiers": {
+        "PerQuality": [
+          4,
+          16,
+          25,
+          37,
+          50,
+          53,
+          58,
+          61,
+          70,
+          80,
+          85,
+          88
+        ]
+      },
+      "contract": "Read full quality map, not default alone."
+    },
+    {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\CoreUObject\\Public\\UObject\\PerPlatformProperties.h",
+      "sha256": "c43d42dc386d4407c8c4675a4183348b67d5bc2998594dd49909aa9c1b9eeb43",
+      "identifiers": {
+        "PerPlatform": [
+          4,
+          21,
+          28,
+          45,
+          51,
+          53,
+          64,
+          65,
+          66,
+          70,
+          75,
+          85
+        ]
+      },
+      "contract": "Read full platform map, not default alone."
+    }
+  ],
+  "upstream_read_only": {
+    "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\geocity_city_module.py",
+    "sha256": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b",
+    "relevant_lines": [
+      3776,
+      3832,
+      3836,
+      3884,
+      3900,
+      5135,
+      5137
+    ],
+    "four_palette_layers_weight_blended": true,
+    "role_mapping": {
+      "Ground": "Sand_01",
+      "Steep": "Sand_02",
+      "RoadBed": "Dirt_Path",
+      "BuildingPad": "Sand_Path"
+    },
+    "normalization": "pad=P; road=R*(1-P); Ground=(1-S)*(1-P)*(1-R); Steep=S*(1-P)*(1-R); sum=1",
+    "steep_ramp_degrees": [
+      15,
+      35
+    ],
+    "semantics": "Geometric slope/open-space masks, not new geographic land-cover or vegetation survey."
+  },
+  "official_web_reference": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/MaterialEditingLibrary",
+  "web_note": "Cross-check supports public expression enumeration/connection; graph-input helpers documented as active-material-editor only. Direct Landscape/Grass web pages were inaccessible; installed headers and predecessor native receipts are authoritative here.",
+  "native_predecessor_evidence": [
+    "Staging/SystemCompletion_2026-10-04/NATIVE_LAYER_API_REPAIR.json",
+    "Staging/SystemCompletion_2026-10-04/GROUND_PARAMETER_RECOVERY_SAVE.json"
+  ],
+  "native_new_api_execution_by_task3": false
+}

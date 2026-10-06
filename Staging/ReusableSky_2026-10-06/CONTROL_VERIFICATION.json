@@ -1,0 +1,91 @@
+{
+  "checks": [
+    {
+      "manual": {
+        "time": 12.5,
+        "clock": "12:30",
+        "manual": true,
+        "direction": 123.0,
+        "elevation": 27.0,
+        "sun_forward": [
+          0.48527693352604606,
+          -0.7472609476841365,
+          -0.45399049973954664
+        ],
+        "azimuth": 123.0,
+        "corrected_elevation": 207.0,
+        "status": "Active - Manual Sun"
+      }
+    },
+    {
+      "time_edit_in_manual_does_not_rotate": true
+    },
+    {
+      "round_trip_keeps_both_modes": true
+    },
+    {
+      "north_offset_rotates_sun": true
+    },
+    {
+      "midnight_wrap": {
+        "time": 0.0,
+        "clock": "00:00",
+        "manual": false,
+        "direction": 123.0,
+        "elevation": 27.0,
+        "sun_forward": [
+          -0.8176358917130413,
+          -0.06418526554166405,
+          0.5721466597560165
+        ],
+        "azimuth": 4.48857307434082,
+        "corrected_elevation": 145.09994506835938,
+        "status": "Active - Time and Location"
+      }
+    },
+    {
+      "leap_date": {
+        "time": 12.0,
+        "clock": "12:00",
+        "manual": false,
+        "direction": 123.0,
+        "elevation": 27.0,
+        "sun_forward": [
+          0.6315879349064438,
+          0.023101238061984677,
+          -0.774960007536271
+        ],
+        "azimuth": 182.09474182128906,
+        "corrected_elevation": 230.80140686035156,
+        "status": "Active - Time and Location"
+      }
+    },
+    {
+      "explicit_DST_changes_solar_position": true
+    },
+    {
+      "repeat_time_deterministic": true
+    },
+    {
+      "exposure_opt_in": true
+    }
+  ],
+  "final": {
+    "time": 12.0,
+    "clock": "12:00",
+    "manual": false,
+    "direction": 180.0,
+    "elevation": 35.0,
+    "sun_forward": [
+      0.13939088195933202,
+      0.06372616244604959,
+      -0.988184779404388
+    ],
+    "azimuth": 204.56874084472656,
+    "corrected_elevation": 261.1836853027344,
+    "status": "Active - Time and Location"
+  },
+  "all_passed": true,
+  "explicit_UpdateSky_calls": 0,
+  "Play_pressed": false
+}

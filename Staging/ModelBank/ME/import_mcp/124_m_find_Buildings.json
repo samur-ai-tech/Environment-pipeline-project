@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME/Buildings",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.349,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Buildings/Arab_X3\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0907_Arab_x3_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Arab_x2\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0906_Arab_x2_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Arab_x1\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0905_Arab_x1_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Slum_v\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0904_Slum_v_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/slum_s\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0903_Slum_s_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Slum_k\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0902_Slum_k_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_006\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_005\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_002\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL_006\",\"/Game/Project/Shared/Bank_ME/Buildings/stara\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_Fabric_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0016_Building_03\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1002\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1001\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1004\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1003\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0015_Building_02\",\"/Game/Project/Shared/Bank_ME/Buildings/Props2_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Props_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_001_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/standard1\",\"/Game/Project/Shared/Bank_ME/Buildings/acbody1\",\"/Game/Project/Shared/Bank_ME/Buildings/Airconditioner_front1\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0014_Building_01\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1021\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1031\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1001\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1011\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0013_Building_04\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Buildings/Arab_X3\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0907_Arab_x3_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Arab_x2\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0906_Arab_x2_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Arab_x1\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0905_Arab_x1_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Slum_v\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0904_Slum_v_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/slum_s\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0903_Slum_s_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Slum_k\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0902_Slum_k_fbx\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_006\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_005\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_002\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL_006\",\"/Game/Project/Shared/Bank_ME/Buildings/stara\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_Fabric_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0016_Building_03\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1002\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1001\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1004\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_02_1003\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0015_Building_02\",\"/Game/Project/Shared/Bank_ME/Buildings/Props2_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Props_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/Building_03_001_MTL\",\"/Game/Project/Shared/Bank_ME/Buildings/standard1\",\"/Game/Project/Shared/Bank_ME/Buildings/acbody1\",\"/Game/Project/Shared/Bank_ME/Buildings/Airconditioner_front1\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0014_Building_01\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1021\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1031\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1001\",\"/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1011\",\"/Game/Project/Shared/Bank_ME/Buildings/SM_H0013_Building_04\"]}"
+    }
+   ]
+  }
+ }
+}

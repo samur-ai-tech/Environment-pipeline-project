@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1031,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Store_fronts_doors/store_front_door_a_left"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":\"StaticMesh\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1031,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"StaticMesh\"}"
+    }
+   ]
+  }
+ }
+}

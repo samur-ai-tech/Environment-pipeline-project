@@ -1,0 +1,16 @@
+{
+  "id": "source_derived_modular.H0017.v001/SM_H0017_Tier05_WestFacade",
+  "family": "H0017",
+  "name": "SM_H0017_Tier05_WestFacade",
+  "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+  "error_type": "AssertionError",
+  "error": "('triangle_count_changed', 'SM_H0017_Tier05_WestFacade', 16680, {16681})",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\modular_native_adapter_v004.py\", line 436, in resume_batch\n    r=import_part(family,part,activation['request_sha256'],state,RESUME_BASES.get(family['id']))\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\modular_native_adapter_v004.py\", line 259, in import_part\n    assert measurement['triangles'] in allowed,('triangle_count_changed',part['name'],measurement['triangles'],allowed)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('triangle_count_changed', 'SM_H0017_Tier05_WestFacade', 16680, {16681})\n",
+  "dirty_after": {
+    "content": [
+      "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+      "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade"
+    ],
+    "maps": []
+  }
+}

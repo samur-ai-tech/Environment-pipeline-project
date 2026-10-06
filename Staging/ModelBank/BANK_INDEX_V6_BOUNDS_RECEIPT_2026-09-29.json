@@ -1,0 +1,85 @@
+{
+  "kind": "BANK_INDEX_V6_CURRENT_NATIVE_AABB_DISABLED_CANDIDATES",
+  "date": "2026-09-29",
+  "old_v5_sha256": "12225013B06810665B5E429299F1CD9E9931588AEAE4B1FFE1A33282B5719098",
+  "new_v6_sha256": "BFEE371865DED0D32C9372F704FF0B333E869B4BFE6C72392A7DE8F98E2CC8E9",
+  "revision": "v6_current_bounds_2026-09-29",
+  "rows": 1215,
+  "columns": 101,
+  "bounds_rows": 3,
+  "measured": {
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx": {
+      "min": [
+        -680.353271484375,
+        -700.4720458984375,
+        0.6762058734893799
+      ],
+      "max": [
+        688.6864013671875,
+        668.2713623046875,
+        1561.33740234375
+      ],
+      "raw_receipt": "Staging/ModelBank/Inspection_2026-09-29_Astra_Bounds/mcp/001_bounds_SM_H0907_Arab_x3_fbx.json"
+    },
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04": {
+      "min": [
+        -1273.8673095703125,
+        -1081.9207763671875,
+        -0.3545195758342743
+      ],
+      "max": [
+        1615.8203125,
+        1049.0091552734375,
+        4868
+      ],
+      "raw_receipt": "Staging/ModelBank/Inspection_2026-09-29_Astra_Bounds/mcp/002_bounds_SM_H0013_Building_04.json"
+    },
+    "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin": {
+      "min": [
+        -12.837084770202637,
+        -17.898235321044922,
+        3.5086711136500526e-07
+      ],
+      "max": [
+        16.559925079345703,
+        16.53656768798828,
+        74.40184783935547
+      ],
+      "raw_receipt": "Staging/ModelBank/Inspection_2026-09-29_Astra_Bounds/mcp/003_bounds_SM_H0051_Garbagebin.json"
+    }
+  },
+  "bounds_kind": "StaticMesh.get_bounding_box native asset-local AABB, including configured bounds extensions; extension values not measured",
+  "unit_basis": [
+    "Installed UE 5.8 Engine/Config/BaseEditor.ini:600-603 DistanceUnits=EUnit::Centimeters",
+    "Installed HoudiniEngine HAPI_UNREAL_SCALE_FACTOR_POSITION=100.0f and HoudiniInputTranslator bbox conversion /100",
+    "Track A MATERIAL/BANK_INTERFACE_REQUIREMENTS local Unreal cm interpretation, 2026-09-29"
+  ],
+  "build_scale_lod0_all_three": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "unit_note": "Raw Unreal X/Y/Z values encoded without axis swap or /100; HDA converts once at boundary. This does not prove source physical scale or contact.",
+  "evidence": "Staging/ModelBank/Inspection_2026-09-29_Astra_Bounds/BANK_ASTRA_004_RESULT.md",
+  "eligibility_unchanged": {
+    "qualified": "no",
+    "technical_eligible": "false",
+    "generation_enabled": "false"
+  },
+  "not_run": [
+    "support_contact",
+    "geometry_only_footprint",
+    "bin_only_height",
+    "semantic_orientation",
+    "role_qualification",
+    "CAT1",
+    "INST1",
+    "Tier1"
+  ],
+  "semantic_reverse_check": {
+    "reversed_fields": "all-row index_revision; six bounds cells and six appended BANK_ASTRA_004 evidence suffixes on the three candidate rows",
+    "serializer": "UTF-8 CRLF Python csv.QUOTE_MINIMAL, matching v5 dialect",
+    "reconstructed_v5_sha256": "12225013B06810665B5E429299F1CD9E9931588AEAE4B1FFE1A33282B5719098",
+    "matches_published_v5": true
+  }
+}

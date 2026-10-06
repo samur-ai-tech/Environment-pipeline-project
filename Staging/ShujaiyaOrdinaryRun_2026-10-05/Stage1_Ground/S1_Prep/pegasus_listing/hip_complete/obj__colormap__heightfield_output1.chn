@@ -1,0 +1,62 @@
+{
+    channel volume_resx {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"specify_res\")==1, ch(\"resolutionx\"), ch(\"actual_resx\"))" }
+    }
+    channel volume_resy {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"specify_res\")==1, ch(\"resolutiony\"), ch(\"actual_resy\"))" }
+    }
+    channel f1 {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel f2 {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FEND }
+    }
+    channel red_final_rangex {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"red_out_range\")==1, ch(\"red_auto_rangex\"),ch(\"red_from_rangex\"))" }
+    }
+    channel red_final_rangey {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"red_out_range\")==1, ch(\"red_auto_rangey\"),ch(\"red_from_rangey\"))" }
+    }
+    channel actual_tile_sizex {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"tile_method\")==0,ch(\"tile_sizex\"), ceil(ch(\"volume_resx\")/ch(\"num_tilesx\")))" }
+    }
+    channel actual_tile_sizey {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"tile_method\")==0, ch(\"tile_sizey\"), ceil(ch(\"volume_resy\")/ch(\"num_tilesy\")))" }
+    }
+    channel actual_num_tilesx {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"tile_method\")==1, ch(\"num_tilesx\"), if(ch(\"volume_resx\")%(ch(\"tile_sizex\") - ch(\"tile_overlapx\"))==1, floor(ch(\"volume_resx\")/(ch(\"tile_sizex\") - ch(\"tile_overlapx\"))), ceil(ch(\"volume_resx\")/(ch(\"tile_sizex\") - ch(\"tile_overlapx\")))))" }
+    }
+    channel actual_num_tilesy {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = "if(ch(\"tile_method\")==1, ch(\"num_tilesy\"), if(ch(\"volume_resy\")%(ch(\"tile_sizey\") - ch(\"tile_overlapy\"))==1, floor(ch(\"volume_resy\")/(ch(\"tile_sizey\") - ch(\"tile_overlapy\"))), ceil(ch(\"volume_resy\")/(ch(\"tile_sizey\") - ch(\"tile_overlapy\")))))" }
+    }
+  }

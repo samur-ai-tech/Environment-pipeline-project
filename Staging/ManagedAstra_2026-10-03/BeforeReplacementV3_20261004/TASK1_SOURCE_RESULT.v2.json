@@ -1,0 +1,145 @@
+{
+  "schema": "environmentpipeline.managed_astra.task1_source_result.v2",
+  "status": "READY_FOR_MANAGER_REVIEW",
+  "utc": "2026-10-03T22:55:30.496590+00:00",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "source_worker_thread_id": "01a103ef-7db0-7ad3-ba6c-78416d4684a5",
+  "editor_ready": false,
+  "editor_calls_performed": 0,
+  "scope": "generic repair/verification for22 measured exposed intervals across16 of40 source pieces; refresh stale native face-normal/upward eligibility; classify four larger connector gaps; preserve saved protected-footprint exclusions and all current <=0.01cm XY, <=10cm height and 300cm fallback gates. No IDs/geometry-specific exceptions or new editor transaction.",
+  "baseline_hashes_verified": {
+    "Content/Python/geocity_roadbld_grounding.py": "FB544450B0EE1ECEC8756CF872CFD719C82473E01593BF91EAEEC0A097348992",
+    "Content/Python/geocity_roadbld_clip.py": "1F2CF12F3FFA4D9110E9625A6304E6B9DAEF08984246963C19FA45E00028A7F5",
+    "Content/Python/geocity_roadbld_seams.py": "C6701CB659E72EA2B2C848A4B568D9F64BB8982AE5DD706B1F4802606201C4D6"
+  },
+  "frozen_files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "8a5a4bf99082548b7b1cf131ebe4b8148e2a3b89dd491c2d9cbbdea995254720",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "1f2cf12f3ffa4d9110e9625a6304e6b9daef08984246963c19fa45e00028a7f5",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_seams.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "syntax_valid": true
+    }
+  },
+  "preserved_prior_handoff": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\BeforeReplacementSource_20261004\\TASK1_SOURCE_RESULT.pre_replacement_v5.json",
+    "sha256": "d4a70b7156145e93a5125e445f7bfb7a8b66633db3682b6bcf407d5684f62eda"
+  },
+  "retained_implementation": [
+    "Refreshed actual corrected native face eligibility",
+    "Continuous original-source interval measurement and correction before station gates",
+    "Generic full-width validated parent-corridor connector openings with bounded ordinary fans",
+    "Transient and converted exterior coverage before ordinary binding",
+    "Same-candidate correction snapshots retained through final validation with geometry/material/metadata rollback and linked immutable receipts"
+  ],
+  "replacement_worker_patches": [
+    "ground_native_geos checks valid face-normal result and runs continuous repair before legacy station seam check",
+    "_append_fan preserves existing split normals by setting only the new triangle normals",
+    "plan_boundary_fan accepts validated derived native edge only when all three fan vertices lie inside one existing exact parent-trim provenance disk; removes no existing eligibility condition and preserves 10cm extension cap",
+    "Module documentation describes connector opening edits and source preservation accurately"
+  ],
+  "verification": {
+    "syntax": "all five adapter modules AST parsed",
+    "installed_API": "reflected UE5.8 C++ declarations checked; Python runtime not executed",
+    "junctions_workflow_v6_unchanged": true,
+    "protected_partition_all40_excluded_length_cm": 1887.338120057525,
+    "unchanged_gate_functions": [
+      "AsphaltField",
+      "_source_eligibility",
+      "_parent_trim_cross_section_support",
+      "verify_source_coverage",
+      "analyze_protected_source_intervals",
+      "_physical_segment_intervals",
+      "verify_clipped_source_partition"
+    ],
+    "normal_eligibility_changes_on_captured58_components": 20,
+    "captured_all40_audit_gap_count": 22,
+    "affected_source_rows_replayed": 16,
+    "captured_components_replayed": 58,
+    "replayed_source_segments": 1907,
+    "initial_refreshed_preclip_gaps": 22,
+    "planner_repairs": 29,
+    "join_strip_count": 6,
+    "consolidated_native_join_count": 2,
+    "boundary_fan_count": 23,
+    "remaining_XY_planner_intervals": 0,
+    "derived_provenance_positive_and_negative_check_passed": true,
+    "replay_elapsed_seconds": 69.56200000000536,
+    "replay_command": "python Staging/ManagedAstra_2026-10-03/replay_replacement_source_20261004.py",
+    "replay_model": "Production planner and coverage kernels on captured grounded arrays with explicit XY apron/fan array sinks. Native Boolean and obstruction removal mocked out; native UV/normal/material/collision writes not executed. Fan height query uses its native plane fixture, not live Landscape. No full physical/native success claim."
+  },
+  "receipts": {
+    "TASK1_REPLACEMENT_CAPTURED_REPLAY.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_CAPTURED_REPLAY.json",
+      "sha256": "a13909879d5e22fedcc011151c76fc1a3084a376757d95c4419e7535071a7fbe"
+    },
+    "TASK1_REPLACEMENT_PROVENANCE_CHECK.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_PROVENANCE_CHECK.json",
+      "sha256": "018736cf0c506aa1e88d117339273127ad97b2acf23f56c3858d2f1dcd4bbffd"
+    },
+    "TASK1_REPLACEMENT_SOURCE_CHECKS.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_SOURCE_CHECKS.json",
+      "sha256": "f552b9c7c8c4e3e72698f6f1149204810d5e16170e4d6ff8261f775a5bac53e0"
+    },
+    "TASK1_REPLACEMENT_CAPTURED_REPLAY_FAILED_DIRECT_ONLY.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_CAPTURED_REPLAY_FAILED_DIRECT_ONLY.json",
+      "sha256": "512f5a49181d8175b0f915b6583c9892109985a32699def68a1ff8b0747d551c"
+    },
+    "TASK1_REPLACEMENT_REPLAY_DIAGNOSTIC.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_REPLAY_DIAGNOSTIC.json",
+      "sha256": "6cfdc04ab4358be8298da57f166b014094214e5377bbb25805f527df7162a9bf"
+    },
+    "replay_replacement_source_20261004.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\replay_replacement_source_20261004.py",
+      "sha256": "ee1004e7d397277a715c0ffb1340fdff0f5191f073ded53998d96e6de70f2dc3"
+    },
+    "TASK1_ALL22_GAP_CLASSIFICATION.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_ALL22_GAP_CLASSIFICATION.json",
+      "sha256": "3776a7f6dd903e9331f67c471abe52decb2f816d994c3c9bb95b9b957761cbe6"
+    },
+    "TASK1_NATIVE_JOIN_OPENING_PLAN.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_NATIVE_JOIN_OPENING_PLAN.json",
+      "sha256": "2db6cccc9912c3259b7d09c68942bec1cb3f41487f110124b182225a8d749d29"
+    },
+    "ALL40_OFFLINE_REVIEW_20261003T213901084762Z.json": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_OFFLINE_REVIEW_20261003T213901084762Z.json",
+      "sha256": "ece32cb4f912c99fd5b98e7872278b46d67bb8a62006d808b18bbb82f6b3f72f"
+    }
+  },
+  "not_run": [
+    "Unreal Boolean trimming",
+    "native UV/normal/material/collision mutation and rollback",
+    "Landscape height validation",
+    "static mesh conversion",
+    "editor binding/save/reopen",
+    "unaffected24 geometry replay"
+  ],
+  "limits": [
+    "The24 unaffected roads use preserved captured all40 evidence; their full mesh arrays were not replayed",
+    "The earlier87 bound unsaved candidates and PID21780 are historical unverified state; editor currently absent per initialization OS check",
+    "Native Boolean/attribute/collision/rollback behavior and performance require root/task3 review and later separately activated editor verification",
+    "Native join strips still need actual terrain-height, boundary, curb-removal and final converted mesh proof",
+    "18.873381m protected-building source exclusion remains; continuous drivable geography and appearance acceptance remain open"
+  ],
+  "next": "Root independently reviews frozen hashes/control flow and dispatches task3. Root alone sequences any later editor-state check and activation.",
+  "saved": false,
+  "appearance_accepted": false
+}

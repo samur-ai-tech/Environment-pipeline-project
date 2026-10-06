@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 173,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Props/SM_H0034_Cart.SM_H0034_Cart"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-121.09463500976562,\"y\":-56.811943054199219,\"z\":-3.1296083927154541},\"max\":{\"x\":120.51340484619141,\"y\":56.523674011230469,\"z\":70.660484313964844},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 173,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-121.09463500976562,\"y\":-56.811943054199219,\"z\":-3.1296083927154541},\"max\":{\"x\":120.51340484619141,\"y\":56.523674011230469,\"z\":70.660484313964844},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

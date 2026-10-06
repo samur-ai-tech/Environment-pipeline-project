@@ -1,0 +1,92 @@
+{
+  "phase": "complete",
+  "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_ALL_SOURCE_LANDSCAPE_PROFILES_20261003T185815153909Z.json",
+  "sha256": "4b0e3c3b49f1bc64bf0e51ff6dd4e3b38f1a8d29b86ef1ca96d4c3138f0ac023",
+  "bytes": 8824131,
+  "elapsed_seconds": 10.09399999998277,
+  "summary": {
+    "road_count": 40,
+    "export_control_count": 3377,
+    "genuine_geographic_control_count": 180,
+    "dense_station_count": 13376,
+    "maxima": {
+      "original_export_controls": {
+        "source_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_73",
+        "source_osm_id": "41255258",
+        "piece_id": "41255258:0",
+        "xy_cm": [
+          9648.735771804559,
+          -2548.744877049181
+        ],
+        "source_ground_z_cm": 5328.913578017702,
+        "actual_Landscape_z_cm": 5323.643927831421,
+        "signed_source_minus_Landscape_cm": 5.269650186281069,
+        "absolute_delta_cm": 5.269650186281069,
+        "segment_index": 47,
+        "fraction": 1.0,
+        "export_control_index": 48,
+        "station_distance_xy_cm": 9583.040114080608,
+        "is_genuine_source_vertex": false,
+        "is_area_boundary_vertex": false,
+        "two_10cm_intervals_overlap": true,
+        "asphalt_interval_intersection_cm": [
+          5323.913578017702,
+          5338.643927831421
+        ]
+      },
+      "dense_stations": {
+        "source_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_53",
+        "source_osm_id": "301713727",
+        "piece_id": "301713727:0",
+        "xy_cm": [
+          -2389.3798510233564,
+          -8304.684829711914
+        ],
+        "source_ground_z_cm": 4656.829436650753,
+        "actual_Landscape_z_cm": 4645.539046546517,
+        "signed_source_minus_Landscape_cm": 11.290390104236394,
+        "absolute_delta_cm": 11.290390104236394,
+        "segment_index": 11,
+        "fraction": 0.5,
+        "export_control_index": null,
+        "station_distance_xy_cm": 2282.716877511603,
+        "is_genuine_source_vertex": false,
+        "is_area_boundary_vertex": false,
+        "two_10cm_intervals_overlap": true,
+        "asphalt_interval_intersection_cm": [
+          4651.829436650753,
+          4660.539046546517
+        ]
+      },
+      "genuine_geographic_controls": {
+        "source_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_70",
+        "source_osm_id": "41255009",
+        "piece_id": "41255009:0",
+        "xy_cm": [
+          -7774.45068359375,
+          19156.42852783203
+        ],
+        "source_ground_z_cm": 5068.601359610643,
+        "actual_Landscape_z_cm": 5066.613742470639,
+        "signed_source_minus_Landscape_cm": 1.9876171400037492,
+        "absolute_delta_cm": 1.9876171400037492,
+        "segment_index": 44,
+        "fraction": 1.0,
+        "export_control_index": 45,
+        "station_distance_xy_cm": 8831.201380572309,
+        "is_genuine_source_vertex": true,
+        "is_area_boundary_vertex": false,
+        "two_10cm_intervals_overlap": true,
+        "asphalt_interval_intersection_cm": [
+          5063.601359610643,
+          5081.613742470639
+        ]
+      }
+    },
+    "delta_over20cm_counts": {
+      "original_export_controls": 0,
+      "dense_stations": 0
+    },
+    "interpretation": "For original exported controls, abs(delta)<=20cm is a necessary pointwise condition for satisfying both10cm gates. Dense interpolated source-grade deltas diagnose the current interpolation; they are not a new requirement that every interpolated source height remain authoritative. Feasibility does not prove geometry fit or final acceptance."
+  }
+}

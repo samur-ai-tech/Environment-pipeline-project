@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 213,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_billboardStand_02_small"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"29x412x90\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/billboardStand_02_small.fbx\\\", \\\"Timestamp\\\" : \\\"1522825266\\\", \\\"FileMD5\\\" : \\\"cc89abd472e3220f1a7aea14f51fe7b3\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"228\",\"UVChannels\":\"2\",\"Vertices\":\"522\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 213,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"29x412x90\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/billboardStand_02_small.fbx\\\", \\\"Timestamp\\\" : \\\"1522825266\\\", \\\"FileMD5\\\" : \\\"cc89abd472e3220f1a7aea14f51fe7b3\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"228\",\"UVChannels\":\"2\",\"Vertices\":\"522\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema": "environmentpipeline.s1_root_activation.v1",
+ "_note": "Prepared by the S1 offline worker for root (manager cc37d4d2); NOT active until root fills the PID. One activation binds one editor PID (EDIT:384): for each Shujaiya session root copies this file to Stage1_Ground/Activation/S1_ROOT_ACTIVATION_GazaShujaiya_PID<pid>.json, replaces assigned_editor_PID with that integer PID, and puts the copy's absolute path and sha256 into the args (root_activation / root_activation_sha256). Session A (launch PID): inspect, apply, tune (phase a), save. Session B (fresh PID): verify. Name prefix S1_ROOT_ACTIVATION is required by EDIT:378. OWNER/operator_thread_id below are proposals; if root changes them, change the lease lines and the s1_verify/s1_capture args (lease_owner/owner, operator_thread_id) the same way. Lease lines root appends to Staging/ModelBank/EDITOR_OWNER.txt: read-only = '<utc> OWNER=GEOCITY_GROUND_S1 manager_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae operator_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae assigned_editor_PID=<pid> map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=STARTUP_INSPECTION_ONLY scope=GeoCity_GroundS1_20261005_readonly'; authoring = same with 'activation=GROUND_S1_AUTHORING scope=GeoCity_GroundS1_20261005_material_edit'. expected_hda_count 1 is INFERRED from GP receipts (len(hdas)==1); the guard fails closed if it differs.",
+ "scope": "GeoCity_GroundS1_20261005_material_edit",
+ "OWNER": "GEOCITY_GROUND_S1",
+ "manager_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+ "operator_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+ "assigned_editor_PID": 23156,
+ "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "modes": [
+  "inspect",
+  "apply",
+  "tune",
+  "save",
+  "verify"
+ ],
+ "script_sha256": "5c48daaffd81e46a81bacfbac22a2353f32cb3b188b95c550190fc98497c0705",
+ "authoring_activations": [
+  "GROUND_S1_AUTHORING"
+ ],
+ "readonly_pairs": [
+  [
+   "STARTUP_INSPECTION_ONLY",
+   "GeoCity_GroundS1_20261005_readonly"
+  ]
+ ],
+ "expected_hda_count": 1,
+ "max_tune_iterations": 3,
+ "expected_consumers": null
+}

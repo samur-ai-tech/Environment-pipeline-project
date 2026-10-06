@@ -1,0 +1,920 @@
+{
+  "schema": "environmentpipeline.semantic_landscape_contract.v1",
+  "area_id": "Iran_38196167_46086167_4km",
+  "source_package_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+  "consumer_contract_sha256": "e7957ed95cf84170c5f77e23f177bee9db940f1381e21521918656a0a2e0b761",
+  "policy_sha256": "e7957ed95cf84170c5f77e23f177bee9db940f1381e21521918656a0a2e0b761",
+  "class_grid_sha256": "ee4024abf7e233cde32c69c63722d123578faca3be4cd51c6e919c0f7046c3da",
+  "coordinate_frame": "houdini_x_east_y_up_z_south_to_unreal_cm_x_z_y",
+  "coverage_scope": "emitted_landscape_including_border",
+  "vegetation_provider": "native_landscape_grass",
+  "grass_layer": "GC_GrassEligible",
+  "grass_allowed_classes": [
+    10,
+    20,
+    30
+  ],
+  "water_mode": "classification_surface",
+  "class_counts": {
+    "0": 265089,
+    "10": 13000,
+    "20": 0,
+    "30": 3548700,
+    "40": 9023600,
+    "50": 581800,
+    "60": 2832000,
+    "70": 0,
+    "80": 900,
+    "90": 0,
+    "95": 0,
+    "100": 0
+  },
+  "class_targets": {
+    "0": "PB_solid_neutral_gray",
+    "10": "TreeGround",
+    "20": "Soil1",
+    "30": "BaseGrass1",
+    "40": "Farmland1",
+    "50": "SC_Ground_Gravel",
+    "60": "Soil2",
+    "70": "PB_solid_snow_white",
+    "80": "PB_Custom_Ground",
+    "90": "Wet_Sand_01",
+    "95": "TreeGround",
+    "100": "PB_starter_SC_Ground_Moss"
+  },
+  "role_layers": {
+    "RoadBed": "Dirt_Path",
+    "BuildingPad": "Sand_Path",
+    "Steep": "Sand_02"
+  },
+  "layers": {
+    "Wet_Sand_01": {
+      "kind": "weight",
+      "state": "absent",
+      "nonzero_sample_count": 0
+    },
+    "Sand_02": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 8062
+    },
+    "SC_Ground_Gravel": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 580920
+    },
+    "Farmland1": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 9009228
+    },
+    "Soil1": {
+      "kind": "weight",
+      "state": "absent",
+      "nonzero_sample_count": 0
+    },
+    "Sand_Path": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 8066
+    },
+    "PB_solid_snow_white": {
+      "kind": "weight",
+      "state": "absent",
+      "nonzero_sample_count": 0
+    },
+    "Dirt_Path": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 8062
+    },
+    "BaseGrass1": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 3545380
+    },
+    "Soil2": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 2826640
+    },
+    "PB_starter_SC_Ground_Moss": {
+      "kind": "weight",
+      "state": "absent",
+      "nonzero_sample_count": 0
+    },
+    "TreeGround": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 13000
+    },
+    "PB_solid_neutral_gray": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 264891
+    },
+    "PB_Custom_Ground": {
+      "kind": "weight",
+      "state": "painted",
+      "nonzero_sample_count": 840
+    },
+    "GC_GrassEligible": {
+      "kind": "mask",
+      "state": "painted",
+      "nonzero_sample_count": 3558380
+    },
+    "GC_WaterCandidate": {
+      "kind": "mask",
+      "state": "painted",
+      "nonzero_sample_count": 900
+    },
+    "PB_Custom_Ground_R": {
+      "kind": "constant",
+      "state": "painted",
+      "nonzero_sample_count": 16265089,
+      "value": 0.023153366521000862
+    },
+    "PB_Custom_Ground_G": {
+      "kind": "constant",
+      "state": "painted",
+      "nonzero_sample_count": 16265089,
+      "value": 0.07036009430885315
+    },
+    "PB_Custom_Ground_B": {
+      "kind": "constant",
+      "state": "painted",
+      "nonzero_sample_count": 16265089,
+      "value": 0.12213877588510513
+    }
+  },
+  "paint_layers": [
+    "BaseGrass1",
+    "Dirt_Path",
+    "Farmland1",
+    "PB_Custom_Ground",
+    "PB_solid_neutral_gray",
+    "SC_Ground_Gravel",
+    "Sand_02",
+    "Sand_Path",
+    "Soil2",
+    "TreeGround"
+  ],
+  "auxiliary_layers": [
+    "GC_GrassEligible",
+    "GC_WaterCandidate",
+    "PB_Custom_Ground_B",
+    "PB_Custom_Ground_G",
+    "PB_Custom_Ground_R"
+  ],
+  "roles": {
+    "RoadBed": {
+      "layer": "Dirt_Path",
+      "nonzero_voxels": 8062,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "BuildingPad": {
+      "layer": "Sand_Path",
+      "nonzero_voxels": 8066,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "Steep": {
+      "layer": "Sand_02",
+      "nonzero_voxels": 8062,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_0": {
+      "layer": "PB_solid_neutral_gray",
+      "nonzero_voxels": 264891,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_10": {
+      "layer": "TreeGround",
+      "nonzero_voxels": 13000,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_30": {
+      "layer": "BaseGrass1",
+      "nonzero_voxels": 3545380,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_40": {
+      "layer": "Farmland1",
+      "nonzero_voxels": 9009228,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_50": {
+      "layer": "SC_Ground_Gravel",
+      "nonzero_voxels": 580920,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_60": {
+      "layer": "Soil2",
+      "nonzero_voxels": 2826640,
+      "maximum_weight": 1.0,
+      "emitted": true
+    },
+    "LC_80": {
+      "layer": "PB_Custom_Ground",
+      "nonzero_voxels": 840,
+      "maximum_weight": 1.0,
+      "emitted": true
+    }
+  },
+  "probes": [
+    {
+      "id": "semantic_000",
+      "hda_location_m": [
+        -2016.0,
+        0.0,
+        -2016.0
+      ],
+      "source_class_id": 0,
+      "tags": [
+        "class:0",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 1.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_001",
+      "hda_location_m": [
+        -1916.0,
+        0.0,
+        -2016.0
+      ],
+      "source_class_id": 0,
+      "tags": [
+        "class:0",
+        "grass:excluded",
+        "role:RoadBed"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 1.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_002",
+      "hda_location_m": [
+        -1866.0,
+        0.0,
+        -2016.0
+      ],
+      "source_class_id": 0,
+      "tags": [
+        "class:0",
+        "grass:excluded",
+        "role:Steep"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 1.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_003",
+      "hda_location_m": [
+        -2000.0,
+        0.0,
+        -1999.0
+      ],
+      "source_class_id": 40,
+      "tags": [
+        "class:40",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 1.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_004",
+      "hda_location_m": [
+        -1610.0,
+        0.0,
+        -1999.0
+      ],
+      "source_class_id": 30,
+      "tags": [
+        "class:30",
+        "grass:positive"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 1.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 1.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_005",
+      "hda_location_m": [
+        -1360.0,
+        0.0,
+        -1999.0
+      ],
+      "source_class_id": 60,
+      "tags": [
+        "class:60",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 1.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_006",
+      "hda_location_m": [
+        -1310.0,
+        0.0,
+        -1999.0
+      ],
+      "source_class_id": 50,
+      "tags": [
+        "class:50",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 1.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_007",
+      "hda_location_m": [
+        -2016.0,
+        0.0,
+        -1916.0
+      ],
+      "source_class_id": 0,
+      "tags": [
+        "class:0",
+        "grass:excluded",
+        "role:BuildingPad"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 1.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_008",
+      "hda_location_m": [
+        -200.0,
+        0.0,
+        -1829.0
+      ],
+      "source_class_id": 10,
+      "tags": [
+        "class:10"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 1.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 1.0,
+        "GC_WaterCandidate": 0.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_009",
+      "hda_location_m": [
+        -1930.0,
+        0.0,
+        701.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_010",
+      "hda_location_m": [
+        -1925.0,
+        0.0,
+        705.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_011",
+      "hda_location_m": [
+        -1915.0,
+        0.0,
+        705.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 1.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_012",
+      "hda_location_m": [
+        -1905.0,
+        0.0,
+        705.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_013",
+      "hda_location_m": [
+        -1925.0,
+        0.0,
+        715.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_014",
+      "hda_location_m": [
+        -1915.0,
+        0.0,
+        715.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 1.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_015",
+      "hda_location_m": [
+        -1905.0,
+        0.0,
+        715.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_016",
+      "hda_location_m": [
+        -1895.0,
+        0.0,
+        715.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_017",
+      "hda_location_m": [
+        -1925.0,
+        0.0,
+        725.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 0.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 1.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    },
+    {
+      "id": "semantic_018",
+      "hda_location_m": [
+        -1915.0,
+        0.0,
+        725.0
+      ],
+      "source_class_id": 80,
+      "tags": [
+        "class:80",
+        "grass:excluded"
+      ],
+      "expected_weights": {
+        "Dirt_Path": 1.0,
+        "Sand_Path": 0.0,
+        "Sand_02": 0.0,
+        "PB_solid_neutral_gray": 0.0,
+        "TreeGround": 0.0,
+        "BaseGrass1": 0.0,
+        "Farmland1": 0.0,
+        "SC_Ground_Gravel": 0.0,
+        "Soil2": 0.0,
+        "PB_Custom_Ground": 0.0,
+        "GC_GrassEligible": 0.0,
+        "GC_WaterCandidate": 1.0,
+        "PB_Custom_Ground_R": 0.023153366521000862,
+        "PB_Custom_Ground_G": 0.07036009430885315,
+        "PB_Custom_Ground_B": 0.12213877588510513
+      }
+    }
+  ],
+  "native_weight_absolute_tolerance": 0.01568627450980392,
+  "probe_coordinate_basis": "HDA-local X=east,Y=elevation,Z=south in metres",
+  "native_coordinate_rule": "Apply measured HDA/output transform, then official metre-to-centimetre X/Z/Y axis mapping; do not assume actor transform",
+  "classified_water_cells_preserved": 9,
+  "water_geometry_emitted": false,
+  "water_level_m": null,
+  "unknown_source_preserved": true,
+  "zero_role_policy": "Only declared source-derived zero may be absent; required nonzero paint is never waived",
+  "grass": {
+    "provider": "native_landscape_grass",
+    "mask_layer": "GC_GrassEligible",
+    "class_ids": [
+      10,
+      20,
+      30
+    ],
+    "hda_understory_policy": "suppress",
+    "tree_shrub_policy": "retain source-class and native-footprint HDA selection; native Grass does not replace these roles",
+    "coverage": 0.15,
+    "density_per_10m2": 12.0,
+    "mesh_paths": [
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2"
+    ],
+    "density_basis": "procedural, not measured plant inventory; actual bank area eligibility and materials rechecked natively",
+    "mask_formula": "class10/20/30 * (1-Pad) * (1-RoadBed_before_pad_priority) * (1-Steep)",
+    "native_bindings_verified": false
+  },
+  "source_basis": {
+    "status": "classified_source_registered",
+    "HDA_source_revision": "r019_semantic_categories_20261004",
+    "source_package_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+    "semantic_schema": "environmentpipeline.semantic_geography.v1",
+    "grid": {
+      "axis": "array[row_north, column_east]; ascending",
+      "first_center_m": -2015.0,
+      "local_frame": {
+        "Mlat_m_per_deg": 111000.19199106,
+        "Mlon_m_per_deg": 87597.97838174,
+        "x_east_m": "(lon - lon0) * Mlon_m_per_deg",
+        "y_north_m": "(lat - lat0) * Mlat_m_per_deg"
+      },
+      "origin": {
+        "lat0": 38.19616666666666,
+        "lon0": 46.08616666666667
+      },
+      "sampling": "nearest categorical source pixel; never linear class interpolation",
+      "side": 404,
+      "spacing_m": 10
+    },
+    "sources": {
+      "worldcover": {
+        "algorithm_version": "v200",
+        "attribution": "ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+        "crs": "EPSG:4326",
+        "data_access_documentation": "https://esa-worldcover.org/en/data-access",
+        "licence": "CC BY 4.0",
+        "native_crop_shape": [
+          438,
+          554
+        ],
+        "native_geotransform": [
+          46.06308333333333,
+          8.333333333333333e-05,
+          0.0,
+          38.214416666666665,
+          0.0,
+          -8.333333333333333e-05
+        ],
+        "nominal_resolution_m": 10,
+        "quality": "InputQuality not retrieved; no local accuracy/confidence claim. WorldCover classification is historical and may be wrong or outdated.",
+        "urls": [
+          "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N36E045_Map.tif"
+        ],
+        "year": 2021
+      },
+      "osm": {
+        "attempts": [
+          {
+            "bytes": 85607,
+            "endpoint": "https://overpass-api.de/api/interpreter",
+            "outcome": "downloaded"
+          }
+        ],
+        "attribution": "OpenStreetMap contributors",
+        "coverage_limit": "BBox query may miss enclosing/crossing features with all nodes outside context; reference closure is not completeness.",
+        "licence": "ODbL 1.0",
+        "scope": "Separate current semantic snapshot; original roads/buildings stay unchanged.",
+        "snapshot": "2026-10-04T10:43:51Z"
+      }
+    },
+    "statistics": {
+      "class_cells": {
+        "bare_sparse_vegetation": 28320,
+        "built_up": 5818,
+        "cropland": 90236,
+        "grassland": 35487,
+        "permanent_water": 9,
+        "tree_cover": 130,
+        "unknown": 0
+      },
+      "osm_class_conflict_cells": 0,
+      "osm_water_exclusion_cells": 0,
+      "raster_coverage_cells": 160000,
+      "requested_cells": 160000,
+      "unknown_cells": 0
+    },
+    "policy_sha256": "d8d80235c48e1fa7eff924b544d636a2f6666194e6ec962728bf2df8e7575aef",
+    "class_basis": "historical_remote_sensing_and_available_OSM_tags",
+    "HDA_coordinate_adapter": "X=east,Y=elevation,Z=south; semantic north=-Z",
+    "density_species_texture_basis": "procedural_choices_not_measured",
+    "appearance_accepted": false
+  },
+  "native_verified": false
+}

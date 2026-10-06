@@ -1,0 +1,129 @@
+*pegasus::Sop/heightfield_color_adjust::1.0
+-----
+\oplib:/pegasus::Sop/heightfield_color_adjust::1.0?pegasus::Sop/heightfield_color_adjust::1.0
+-----
+;opdef:/pegasus::Sop/heightfield_color_adjust::1.0?IconImage
+-----
+inputcolors='2 "RGB 0.700195 0.700195 0.700195" "RGB 0.145142 0.666504 0.556641" ' outputcolors='1 "RGB 0.700195 0.700195 0.700195" ' 
+-----
+# Dialog script for pegasus::heightfield_color_adjust::1.0 automatically generated
+
+{
+    name	pegasus::heightfield_color_adjust::1.0
+    script	pegasus::heightfield_color_adjust::1.0
+    label	HeightField_Color_Adjust
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+    inputlabel	2	"Sub-Network Input #2"
+    inputlabel	3	"Sub-Network Input #3"
+    inputlabel	4	"Sub-Network Input #4"
+
+    parm {
+        name    "hue"
+        label   "Hue"
+        type    float
+        default { "0" }
+        range   { -1 1 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "saturation"
+        label   "Saturation"
+        type    float
+        default { "1" }
+        range   { 0 2 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "brightness"
+        label   "Brightness"
+        type    float
+        default { "1" }
+        range   { 0 2 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "gamma"
+        label   "Gamma"
+        type    float
+        default { "1" }
+        range   { 0 2 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "sepparm"
+        label   "Separator"
+        type    separator
+        default { "" }
+    }
+    parm {
+        name    "maskweight"
+        label   "Strength"
+        type    float
+        default { "1" }
+        range   { 0 1 }
+        parmtag { "autoscope" "0000000000000000" }
+        parmtag { "script_callback_language" "python" }
+    }
+}
+# Automatically generated script
+\set noalias = 1
+#
+#  Creation script for pegasus::heightfield_color_adjust::1.0 operator
+#
+
+if ( "$arg1" == "" ) then
+    echo This script is intended as a creation script
+    exit
+endif
+
+# Node $arg1 (pegasus::Sop/heightfield_color_adjust::1.0)
+opexprlanguage -s hscript $arg1
+opuserdata -n '___Version___' -v '' $arg1
+
+-----
+CheckExternal := 1;
+ContentsCompressionType := 1;
+ForbidOutsideParms := 1;
+GzipContents := 1;
+LockContents := 1;
+MakeDefault := 1;
+ParmsFromVfl := 0;
+PrefixDroppedParmLabel := 0;
+PrefixDroppedParmName := 0;
+SaveCachedCode := 0;
+SaveIcon := 1;
+SaveSpareParms := 0;
+UnlockOnCreate := 0;
+UseDSParms := 1;
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="$HDA_DEFAULT_TOOL" label="$HDA_LABEL" icon="$HDA_ICON">
+    <toolMenuContext name="viewer">
+      <contextNetType>SOP</contextNetType>
+    </toolMenuContext>
+    <toolMenuContext name="network">
+      <contextOpType>$HDA_TABLE_AND_NAME</contextOpType>
+    </toolMenuContext>
+    <toolSubmenu>Pegasus/Terrain</toolSubmenu>
+    <script scriptType="python"><![CDATA[import soptoolutils
+
+soptoolutils.genericTool(kwargs, '$HDA_NAME')]]></script>
+  </tool>
+</shelfDocument>
+PIC2
+-----
+Created by Houdini20.0.653 [05/03/24 12:29:51]

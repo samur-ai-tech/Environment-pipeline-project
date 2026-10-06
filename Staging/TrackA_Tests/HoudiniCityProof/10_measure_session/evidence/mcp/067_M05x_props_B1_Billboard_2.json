@@ -1,0 +1,43 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_properties",
+    "arguments": {
+     "instance": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.BillboardComponent_2"
+     },
+     "properties": [
+      "RelativeLocation",
+      "bVisible",
+      "bHiddenInGame",
+      "bIsScreenSizeScaled",
+      "ScreenSize",
+      "Sprite"
+     ]
+    },
+    "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":\"{\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":1000,\\\"z\\\":17.320543314424356},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"bIsScreenSizeScaled\\\":true,\\\"ScreenSize\\\":0.0024999999441206455,\\\"Sprite\\\":{\\\"refPath\\\":\\\"/HoudiniEngine/Textures/icon_houdini_logo_128.icon_houdini_logo_128\\\"}}\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"{\\\"RelativeLocation\\\":{\\\"x\\\":0,\\\"y\\\":1000,\\\"z\\\":17.320543314424356},\\\"bVisible\\\":false,\\\"bHiddenInGame\\\":true,\\\"bIsScreenSizeScaled\\\":true,\\\"ScreenSize\\\":0.0024999999441206455,\\\"Sprite\\\":{\\\"refPath\\\":\\\"/HoudiniEngine/Textures/icon_houdini_logo_128.icon_houdini_logo_128\\\"}}\"}"
+    }
+   ]
+  }
+ }
+}

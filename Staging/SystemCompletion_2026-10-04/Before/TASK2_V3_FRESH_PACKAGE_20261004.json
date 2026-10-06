@@ -1,0 +1,116 @@
+{
+  "schema": "environmentpipeline.task2.v3_fresh_owner_package.v1",
+  "status": "PREPARED_ONLY_NO_EDITOR_CHANGED_SAVED_MAP_REQUIRES_ROOT_RECONCILIATION",
+  "created_utc": "2026-10-03T23:41:53.309460+00:00",
+  "authoring_authorized": false,
+  "installer": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\v3_fresh_owner_20261004.py",
+  "installer_sha256": "8e72ca981c2da16c6ded6bfab4123aab09943ce7b29db92383025b6c503a668c",
+  "six_source_sha256": {
+    "geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "geocity_roadbld_workflow.py": "d9124420d27c7e32e240c1e6700f7b151a4e238eacd0fee378a2a0c118eb853e",
+    "geocity_roadbld_grounding.py": "c33118eaf50529dfb0fe9e67561a0516b704fa7f615ccf4ca07eddc4bfda55a9",
+    "geocity_roadbld_clip.py": "ba19eb39184f9a03a04b06cff630beb73f919a1190629bf30de54a1cf281349c",
+    "geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "geocity_bank_workflow.py": "8e1cc47148c150168c72c255dfea9b4ef264a0635860a3c5240b7a3d00fc11b2"
+  },
+  "source_review_receipt_sha256": {
+    "Staging\\ManagedAstra_2026-10-03\\TASK1_SOURCE_RESULT.json": "5dc8d9afb8bf7413d0fbf3c1f6e4699bd0abdf20ed9875c60a9432eaee927777",
+    "Staging\\ManagedAstra_2026-10-03\\TASK1_REPLACEMENT_V3_OWNER_CONTRACT.json": "a55adffe901ca53f17928901c9d05987abc38ddbaa51a05a6e782fcbd6758f40",
+    "Staging\\ManagedAstra_2026-10-03\\TASK3_FROZEN_REPLACEMENT_V3_REVIEW.json": "08c73ec03eec485a134ab1147c7e7e38674c0dea2d870016281c323b5e396b16"
+  },
+  "profile": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+  "route": "Fresh ordinary regenerate from existing original saved Shujaiya map after root reconciles changed map baseline. Historical PID21780 and 87 candidates cannot be resumed.",
+  "observed_map": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap",
+    "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "bytes": 69853255,
+    "sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+    "earlier_verified_bytes": 39195123,
+    "earlier_verified_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "blocker": "Different saved bytes; cause and actor/ledger consistency not established. Do not overwrite or claim identical baseline."
+  },
+  "saved_receipts": {
+    "native_saved_revision": "20261003T133607905511",
+    "native_actor_count": 136,
+    "native_binding_count": 89,
+    "native_dependency_files_present": 80,
+    "last_successful_parent": "baked_saved_verified",
+    "latest_parent": "failed_native_road_transaction",
+    "latest_native": "failed_validating",
+    "latest_native_revision": "20261003T203730573110",
+    "interpretation": "Staging failure receipts are historical. Saved ownership ledger must be reconciled with changed map. Existing child asphalt remains selected in profile."
+  },
+  "startup_safeguards": {
+    "DefaultEngine_ini_sha256": "ea7343553bcf4f589aac1d6c256d61948f9dcf00b343db4e0fd979e8e7174868",
+    "bPauseCookingOnStart": true,
+    "bUseSessionSyncForAutomaticServer": true,
+    "recovery_manifest_sha256": "fdc2d5bebf9cdef10fe7088228558cb57ff12b0ea92ea114809e20fd2add5bb6",
+    "RestoreEnabled": false,
+    "recovery_package_count": 0,
+    "recovery_manifest_matches_prior_receipt": false,
+    "future_root_launch_flags": [
+      "-NoAutoSave",
+      "-ini:EditorPerProjectUserSettings:[/Script/UnrealEd.EditorLoadingSavingSettings]:bAutoSaveEnable=False,[/Script/UnrealEd.EditorLoadingSavingSettings]:RestoreOpenAssetTabsOnRestart=NeverRestore"
+    ],
+    "old_launcher": "Incompatible old map/recovery hashes and pre-lease bootstrap. No launcher supplied/executed here. Root separately approves one startup with early safeguards, then obtains actual PID and issues lease before this package can call editor.",
+    "initialization": "Read actual pause/autosave/auto flags after lease; unexpected state stops. No automatic flag repair, session creation, recovery import or map loading by this package."
+  },
+  "recoverability_limits": [
+    "Root reports no UnrealEditor process; OWNER=NONE. No new process check performed by task2.",
+    "Lost p/r, sampler/native originals/transient DynamicMeshes and rollback handles cannot be recreated from diagnostic JSON. Historical87 bindings are unavailable to resume.",
+    "Recovery manifest is disabled and empty; historical autosaves are evidence, not proven recovery of the latest candidates. No restore/import/overwrite authorized.",
+    "Saved map/dependencies can support a fresh run only after actual baseline reconciliation. Files existing does not prove package usability.",
+    "Native UObject/GC/GeometryScript rollback, UV/normal/material/collision restoration, Boolean curb removal, Landscape heights, full40 physical result and save/reopen/appearance remain unproven.",
+    "After commit_correction before suppression, rollback snapshots are released; later Cook/Bake/save failures use ordinary lifecycle."
+  ],
+  "concrete_v3_contract": {
+    "installation": "Fresh normal imports of all six modules. Verify every loaded source function/class method against source compiled inside editor Python, including new _validate_native/_staged_contract_native and parent after_native_roads. Fail on stale code; never hot reload/rebind existing objects.",
+    "callbacks": "Source bound delegates used directly with exact arities 2/1/2/1/1/2; no variadic observers. Source guards unchanged and unconditional, no repeated guard journal overhead. Final native commit remains commit(hda_receipt=...).",
+    "optional_correction_entry": "New session only, separately activated by actual new revision/token. failed_validating, native_rebuild_completed, saved false, _tick_running False, no native tick/pending transaction. Owner never relabels phase or sets tick guard before correction.",
+    "previous_reports": [
+      "grounding_report",
+      "clipping_report"
+    ],
+    "verify_links": "dict return; require source_coverage_accounted, not literal True",
+    "sequence": "correction -> verify_links -> first validate -> finish -> typed parent setup -> parent.after_native_roads -> staged_contract and second validation -> all ownership/path/tag gates and state write -> source commit_correction -> pause query/resume -> suppression.",
+    "failure": "Outer owner try encloses correction and every later setup/callback operation. rollback_correction before parent.fail on precommit failure. If restoration fails, handles retained; finish_operation removes delegates/ticks without parent.fail. No suppression call on any precommit failure.",
+    "geometry_scope": "Fresh ordinary run generates a new operation. Optional later correction uses v3 internal conditioning/clip conversion from preserved current-session native originals into same candidate paths, with no network/road/corner rebuild. Historical candidates never reconstructed."
+  },
+  "exact_future_steps": [
+    "Root reconciles changed original saved map and approves recoverability; no baseline overwrite.",
+    "Task3 reviews concrete package/source hashes. Root separately authorizes at most one safeguarded original-map startup.",
+    "Root obtains new actual PID and writes fresh sole-editor/worker lease. No package editor call permitted beforehand.",
+    "Root activates install_fresh; one-shot GameThread callback normal-imports and verifies code. Record runtime Python/marshal identities, no generation.",
+    "Separately authorized read-only saved-baseline inspection verifies actual ownership/bindings/dependencies, one correct HDA and autoCook/autoBake false, material child, Engine paused and autosave false. Root approves receipt/hash. Official session creation only under separate authorization while paused; native user license required.",
+    "Root activates regenerate_saved_original with clean dirty state, valid official session/license and baseline receipt. Ordinary source handles export/native generation/full validation/suppression/Bake/named saves.",
+    "On failure stop; any correction of a new failed candidate requires separate root activation by new actual revision/token.",
+    "Successful delivery still requires separately authorized reopen and Lit review; Rimal activation remains separate. Root restores original user autosave True only after clean final completion."
+  ],
+  "activation_fields": [
+    "package_sha256",
+    "installer_sha256",
+    "allowed_stages individually authorizing install_fresh/regenerate_saved_original/correct_new_failed_candidate",
+    "actual_pid",
+    "actual_pid_lease_line",
+    "baseline_reconciled_by_root",
+    "approved_map_sha256",
+    "original_map",
+    "fresh_baseline_receipt",
+    "fresh_baseline_receipt_sha256",
+    "new_failed_revision and new_failed_token only for optional correction"
+  ],
+  "static_checks": [
+    "AST compile without import/execution",
+    "all six source and three review hashes matched",
+    "v3 tick/phase/report-key/dict-return/rollback-order source inspection"
+  ],
+  "not_performed": [
+    "launch/attach/process inspection",
+    "live UObject/MCP/SDK/Engine calls",
+    "callback registration",
+    "source/config/profile/lease mutation",
+    "Cook/rebuild/Bake/save",
+    "runtime validation"
+  ],
+  "historical_wrappers": "Both old PID21780 preparation scripts remain unchanged, incompatible and unapproved."
+}

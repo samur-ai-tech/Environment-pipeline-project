@@ -1,0 +1,235 @@
+{
+  "schema": "environmentpipeline.bank_r020_content_request.v1",
+  "handoff": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\IranBuildingAdaptation_2026-10-04\\HANDOFF.json",
+  "handoff_sha256": "2d2a1b03065174c38000538f7a9aabd994ecf00957150cefbd08e953204794fa",
+  "source_revision_preserved": {
+    "revision": "r020_use_aware_buildings_20261004",
+    "source_path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_4km\\revisions\\20261004T121230879087Z_r020_use_aware_buildings\\geocity_city_module.py",
+    "asset_path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_4km\\revisions\\20261004T121230879087Z_r020_use_aware_buildings\\GeoCity_city_v015_4km.hdalc",
+    "source_sha256": "32fb0d1630969e25f91a9cd0852b39faaee061b827f7d586a97acac0723a706c",
+    "asset_sha256": "fa4388c10314f7ad58efe96ecdb21202ac5e1391cc44dc2eae91d61377eb553d",
+    "predecessor_source_sha256": "e854c9d9e4c5f75c08797cc1de0f7ae5c4a5b9698614285d05b0532ceb1bca21",
+    "predecessor_asset_sha256": "a42a9fe8d377e3aa0e13792871c1bd2dcd0d7a205552c4a5634cbce06003dbb2",
+    "unchanged_sections": {
+      "Comment": true,
+      "CreateScript": true,
+      "InternalFileOptions": true
+    },
+    "graph_changes": "mandatory building completeness guards at existing buildings/native output ports only",
+    "status": "HOUDINI_BUILDING_LOGIC_AND_GEOMETRY_VERIFIED_CONTENT_DEPENDENCIES_OPEN_UNREAL_NOT_RUN",
+    "ownership": "new sibling external Iran revision only; predecessor/active target untouched",
+    "verification_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\IranBuildingAdaptation_2026-10-04\\HANDOFF.json"
+  },
+  "jobs": [
+    {
+      "native_path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01.SM_wallGarageDoor_01",
+      "file_sha256": "54260fba1a56ccd0b86079314480dd0d5850c1b4db3685fb8a7fc656da53447d",
+      "requested_role": "warehouse_loading_opening_candidate",
+      "catalog_asset_id": null,
+      "catalog_explicit_hold": null,
+      "catalog_hold_reasons": [],
+      "source_style": null,
+      "rights_state": "not_inferred_from_installed_package",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01_double.SM_wallGarageDoor_01_double",
+      "file_sha256": "12a5def62f5276d55c639263425b7d05f1543a439b7f92fc6e73a709a98693c2",
+      "requested_role": "warehouse_loading_opening_candidate",
+      "catalog_asset_id": null,
+      "catalog_explicit_hold": null,
+      "catalog_hold_reasons": [],
+      "source_style": null,
+      "rights_state": "not_inferred_from_installed_package",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/ProceduralBuildingGenerator/Meshes/Entrance_Door/B08_Entrance_Var1.B08_Entrance_Var1",
+      "file_sha256": "9e0c18488c2badc54ce19bb868a437b706dc111ca44a3d5b732d80b459238424",
+      "requested_role": "station_entrance_candidate",
+      "catalog_asset_id": "current_ProceduralBuildingGenerator__Meshes__Entrance_Door__B08_Entrance_Var1",
+      "catalog_explicit_hold": "true",
+      "catalog_hold_reasons": [
+        "outside_current_native_nonbuilding_prop_route"
+      ],
+      "source_style": "mediterranean_urban",
+      "rights_state": "acquisition_record_terms_unverified",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/ProceduralBuildingGenerator/Meshes/Entrance_Door/B08_Sliding_Door_Var1.B08_Sliding_Door_Var1",
+      "file_sha256": "1e1b6bb7dc8cbd573d56648777e4a6280d987719a13900c7658db636d745a17d",
+      "requested_role": "station_entrance_leaf_candidate",
+      "catalog_asset_id": "current_ProceduralBuildingGenerator__Meshes__Entrance_Door__B08_Sliding_Door_Var1",
+      "catalog_explicit_hold": "true",
+      "catalog_hold_reasons": [
+        "outside_current_native_nonbuilding_prop_route"
+      ],
+      "source_style": "mediterranean_urban",
+      "rights_state": "acquisition_record_terms_unverified",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/ProceduralBuildingGenerator/Meshes/Entrance_Door/B94_Entrance_Var3.B94_Entrance_Var3",
+      "file_sha256": "165df377a322a45ba48e6f038e5fe8693094b0861cf854f9bb019888946c6b18",
+      "requested_role": "station_entrance_candidate",
+      "catalog_asset_id": "current_ProceduralBuildingGenerator__Meshes__Entrance_Door__B94_Entrance_Var3",
+      "catalog_explicit_hold": "true",
+      "catalog_hold_reasons": [
+        "outside_current_native_nonbuilding_prop_route"
+      ],
+      "source_style": "mediterranean_urban",
+      "rights_state": "acquisition_record_terms_unverified",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/ModularBuildingSet/Meshes/Store_fronts/store_front_windows_intact_4x1_a.store_front_windows_intact_4x1_a",
+      "file_sha256": "5397f3c95dad8dd2d05deaa0fe8496ac8ce677ae869e943bc713402b79fc77a1",
+      "requested_role": "station_glazing_candidate",
+      "catalog_asset_id": "current_ModularBuildingSet__Meshes__Store_fronts__store_front_windows_intact_4x1_a",
+      "catalog_explicit_hold": "true",
+      "catalog_hold_reasons": [
+        "outside_current_native_nonbuilding_prop_route"
+      ],
+      "source_style": "mediterranean_urban",
+      "rights_state": "acquisition_record_terms_unverified",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/Warehouse_Building/StaticMeshes/SM_Warehouse_Building.SM_Warehouse_Building",
+      "file_sha256": "c4e2a38f974e715afcab6e4326199316b28da4ef977b78a715f51ce7940bb516",
+      "requested_role": "whole_warehouse_candidate",
+      "catalog_asset_id": "current_Warehouse_Building__StaticMeshes__SM_Warehouse_Building",
+      "catalog_explicit_hold": "false",
+      "catalog_hold_reasons": [],
+      "source_style": "industrial_urban",
+      "rights_state": "unverified",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/AssetsvilleTown/Materials/MI_wallMetal_01_white.MI_wallMetal_01_white",
+      "file_sha256": "31de4d5a2b0c231c1c293ca442546c3bf707a0c55cffa890a70b978f4014858e",
+      "requested_role": "industrial_facade_candidate",
+      "catalog_asset_id": null,
+      "catalog_explicit_hold": null,
+      "catalog_hold_reasons": [],
+      "source_style": null,
+      "rights_state": "not_inferred_from_installed_package",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/AssetsvilleTown/Materials/MI_GlassBasic.MI_GlassBasic",
+      "file_sha256": "03d935739c4e07e07763671edb09dc3f5648f24e2115bab9e9e8ab3cbd618be4",
+      "requested_role": "station_glazing_material_candidate",
+      "catalog_asset_id": null,
+      "catalog_explicit_hold": null,
+      "catalog_hold_reasons": [],
+      "source_style": null,
+      "rights_state": "not_inferred_from_installed_package",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    },
+    {
+      "native_path": "/Game/ModularCourtyard/Mats/MI_Glass_2.MI_Glass_2",
+      "file_sha256": "8b3b794de07a4d5c04e27c31db8246fc9578f9bf32277c42bd94673eb6ed35d8",
+      "requested_role": "station_glazing_material_candidate",
+      "catalog_asset_id": null,
+      "catalog_explicit_hold": null,
+      "catalog_hold_reasons": [],
+      "source_style": null,
+      "rights_state": "not_inferred_from_installed_package",
+      "native_evidence_complete": false,
+      "use_qualified": false,
+      "automatic_selection_eligible": false,
+      "hold_clearance": false
+    }
+  ],
+  "specific_missing_roles": {
+    "warehouse_facade": {
+      "missing": "use-qualified industrial facade material with approved native dependency closure",
+      "current": "retained plaster/brick instancing material is preserved and not qualified as industrial appearance"
+    },
+    "warehouse_loading_opening": {
+      "missing": "measured service/loading door module and surveyed opening positions/size",
+      "current_pedestrian_door": "/Game/ModularCourtyard/Meshes/SM_Steeldoor.SM_Steeldoor",
+      "measured_width_height_m": [
+        1.4444581604003905,
+        2.528366394042969
+      ],
+      "limit": "unit scale pedestrian door is not a loading-bay replacement"
+    },
+    "station_facade_and_entrance": {
+      "missing": "use-qualified station facade/glazing/entrance modules and surveyed source opening locations",
+      "current": "neutral plain wall envelope and inferred pedestrian door; station appearance not qualified"
+    },
+    "unknown_use": {
+      "missing": "building use plus facade/opening/roof survey for five building=yes features",
+      "current": "unknown-use one-storey neutral envelope; flat slab roof and door location are explicitly inferred"
+    }
+  },
+  "whole_use_contract_fields": [
+    "uses",
+    "native_evidence",
+    "storeys",
+    "actual_hold",
+    "floor_layout",
+    "facade",
+    "openings",
+    "roof",
+    "facing"
+  ],
+  "source_blockers_unchanged": {
+    "unknown_use": [
+      "122770773",
+      "122770780",
+      "122770783",
+      "122770790",
+      "905869523"
+    ],
+    "station_source_openings": [
+      "905869511"
+    ],
+    "warehouse_source_openings": [
+      "122770767",
+      "122770768",
+      "122770771",
+      "122770774",
+      "122770778"
+    ],
+    "retained_source_height_and_storeys": "absent; model dimensions do not establish surveyed source heights",
+    "excluded_warehouse": "122770784 remains excluded"
+  },
+  "consumer_interface_limit": {
+    "whole_building_consumer": "building_rules_json.whole_use_contracts[exact ObjectPath]",
+    "assembly_content_consumer": "r020 assembly_layout currently emits the warehouse/station unresolved_dependencies unconditionally by use; no material/module qualification registry is consumed there yet.",
+    "required_owner_work": "The r020 building owner must consume measured bank evidence and source-opening provenance in a later reviewed revision; importing or copying assets cannot clear the current export guards.",
+    "ordinary_export": "blocked; no HDA promotion, guard bypass or partial Bake"
+  },
+  "status": "candidate_paths_saved_native_contracts_pending"
+}

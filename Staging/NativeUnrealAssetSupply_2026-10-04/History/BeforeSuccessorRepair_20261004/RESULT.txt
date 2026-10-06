@@ -1,0 +1,86 @@
+Native Unreal asset supplier — 4 October 2026
+
+Retained work is implemented in this directory. Native integration is incomplete,
+with exact owner dependencies in BLOCKERS.json. No second editor, native call,
+Content/config/profile/source-package edit, cook, generation, or asset save was
+performed by this supplier.
+
+The deterministic intake compares current source paths and package SHA256 against
+the live canonical bank and current Content. It queues 180 targeted candidates:
+81 already in Environmentpipeline, 75 from installed CitySample, and 24 from
+installed GIS_WorldBLD vegetation libraries. 51 match existing bank identities;
+129 are new identity candidates, not 129 qualified assets. File names are only
+role/class triage. The Warehouse_Building alias contains an ObjectRedirector name
+and requires native identity reconciliation; it is not claimed as another building.
+MyProject 5.8 was inspected at source-root level; no distinct new supply was inferred.
+Three common VaultCache locations were checked and absent. No download/purchase.
+
+Seven exact existing bank-writer mesh measurements were adopted with their source
+receipt and current mesh hashes. This avoids repeating the bank's active work.
+Two genuine unregistered Assetsville garage-wall modules now have a concrete
+held-only additive transaction: 1223 -> 1225 rows. All existing rows are byte-for-
+byte equivalent at the parsed record level; native meshes are referenced directly.
+Their full dimensions are about 66.26 x 400.00 x 300.00 cm and 66.26 x 800.00 x
+300.00 cm. These are overall dimensions, not measured clear apertures. They retain
+stylized_town source style and unverified rights; industrial/Gaza/Iran suitability
+is not granted. Registration is not yet applied to the native DataTable.
+
+Immediate coordinator action:
+1. Review REGISTRATION_TRANSACTION.json and its exact ApplyBundle. The existing
+   bank apply_bank_configuration.py:18 hardcodes 1223 rows. Root must sequence its
+   owner-reviewed generalization and profile digest update before any append.
+   The supplier did not edit that owner file.
+2. Root can send WRITER_BATCH.json to the already leased bank writer. Its ten
+   explicit IDs use native_supplier.inspect(job_ids), current bank preflight,
+   full vertex measurement, material/dependency readback and dirty-state equality.
+   Receipts are stored here; no map/asset saves occur during this inspection.
+3. External migration needs a supported namespace remap and native source closure.
+   source_migration.export() prepares native staged export after an exact future
+   sole-writer source-session activation. It never opens that session itself.
+   Its staging-destination API behavior has not run. It does not claim that staged
+   packages are imported or correctly remapped into the final Prepared namespace.
+4. ROLE_CONTRACTS.json supplies exact building, opening, roof/wall/sign, linear,
+   surface and vegetation interfaces for root to assign to existing source owners.
+   r020's unconditional station/warehouse blockers and absent attachment/linear
+   consumers cannot be cleared by asset registration. Geographic surveys are still
+   missing; asset dimensions do not supply those surveys.
+
+Retained entrypoints:
+- python intake.py: refresh source inventory, deduplication and READY_JOBS.json.
+- python adopt_measured.py: adopt exact existing native evidence without editor calls.
+- native_supplier.inspect(job_ids): designated writer, bounded read-only measurement.
+- native_supplier.build_registration(job_ids): offline held registration bundle.
+- native_supplier.apply_registration(): designated bank writer, exact transaction
+  and actual-PID root activation, compare-and-swap source/CSV/table baseline,
+  dependency hash revalidation, named DataTable save and idempotent replay.
+  Requires REGISTRATION_ACTIVATION.json; none was fabricated or supplied here.
+- source_migration.export(source_id, job_ids): future controlled source session,
+  full native hard/soft registry closure, forbidden map/generator dependency checks,
+  dependency-inclusive native Migrate with conflict SKIP, source/target hash checks.
+  Requires SOURCE_MIGRATION_ACTIVATION.json and an exact lease; not executed.
+- python verify_supplier.py: bounded offline deterministic/deduplication/transaction,
+  held-state, source-staleness and syntax checks. No Unreal tests or fixture projects.
+- python finalize.py: refresh HANDOFF.json, contracts, outcomes and owner blockers.
+
+A catalog change by the active bank writer invalidates the prepared transaction.
+Rebuild it against the newest source/CSV before root review; never force the prior
+digest. Native apply writes an in-progress receipt before mutation. If execution
+fails between the named table save and source-file writes, stop and reconcile that
+receipt with actual table/source/CSV rather than retrying against an invented state.
+
+Separate outcomes: sourced yes; native already present 81; newly imported 0;
+native measurements adopted 7; new registrations applied 0; new individual
+selection releases 0; new correct-consumer connections 0; new area output 0;
+new named area save/reopen/regeneration 0. Full task completion is not claimed.
+
+Official API evidence and exact installed header/hash are in
+API_AND_VERSION_EVIDENCE.json. Epic documents dependency-inclusive migration to a
+target project's Content folder. The installed migration signature supplies no
+per-package target-name map. Moving raw files under Prepared would not establish
+rewritten native references. CitySample's prior log records the same UE5.8.2 build
+as installed, but current selected package/plugin loading remains unverified.
+
+Sources:
+https://dev.epicgames.com/documentation/en-us/unreal-engine/migrating-assets-in-unreal-engine
+https://dev.epicgames.com/documentation/unreal-engine/API/Developer/AssetTools/FMigrationOptions
+https://dev.epicgames.com/documentation/en-us/unreal-engine/city-sample-project-unreal-engine-demonstration

@@ -1,0 +1,242 @@
+{
+  "schema": "environmentpipeline.pathb_mw_tints.v1",
+  "method": "Offline, reproducible tint proposals for MI_GeoCityGround_MW (no unreal import).",
+  "texture_mean_srgb": {
+    "SandA": [
+      148.7,
+      113.8,
+      91.9
+    ],
+    "SandC": [
+      132.4,
+      98.5,
+      77.1
+    ],
+    "Stones": [
+      79.5,
+      75.6,
+      71.2
+    ]
+  },
+  "slot_textures": {
+    "MW_SnowColorCorrection": "SandA",
+    "MW_GrassColorCorrection": "SandA",
+    "MW_DirtColorCorrection": "SandA",
+    "MW_StonesColorCorrection": "SandC",
+    "MW_RockColorCorrection": "Stones"
+  },
+  "slot_extra_gain": {
+    "MW_DirtColorCorrection": 1.25,
+    "MW_RockColorCorrection": 1.5
+  },
+  "bounds": [
+    0.25,
+    3.0
+  ],
+  "presets": {
+    "P1_gaza_pale_sand": {
+      "intent": "pale beige sand, clearly less orange, ~20% brighter (recommended first try)",
+      "target_linear": [
+        0.48,
+        0.43,
+        0.32
+      ],
+      "gain": 1.2,
+      "vectors": {
+        "MW_SnowColorCorrection": {
+          "r": 0.851,
+          "g": 1.36,
+          "b": 1.589,
+          "a": 1.0
+        },
+        "MW_GrassColorCorrection": {
+          "r": 0.851,
+          "g": 1.36,
+          "b": 1.589,
+          "a": 1.0
+        },
+        "MW_DirtColorCorrection": {
+          "r": 1.063,
+          "g": 1.7,
+          "b": 1.987,
+          "a": 1.0
+        },
+        "MW_StonesColorCorrection": {
+          "r": 0.82,
+          "g": 1.382,
+          "b": 1.706,
+          "a": 1.0
+        },
+        "MW_RockColorCorrection": {
+          "r": 1.829,
+          "g": 1.815,
+          "b": 1.524,
+          "a": 1.0
+        }
+      },
+      "expected_texture_mean_srgb_after": {
+        "MW_SnowColorCorrection": [
+          138,
+          131,
+          114
+        ],
+        "MW_GrassColorCorrection": [
+          138,
+          131,
+          114
+        ],
+        "MW_DirtColorCorrection": [
+          153,
+          145,
+          127
+        ],
+        "MW_StonesColorCorrection": [
+          121,
+          115,
+          100
+        ],
+        "MW_RockColorCorrection": [
+          106,
+          101,
+          88
+        ]
+      }
+    },
+    "P2_pale_neutral": {
+      "intent": "paler and more neutral/greyish beige (if P1 still reads warm)",
+      "target_linear": [
+        0.46,
+        0.43,
+        0.36
+      ],
+      "gain": 1.3,
+      "vectors": {
+        "MW_SnowColorCorrection": {
+          "r": 0.886,
+          "g": 1.478,
+          "b": 1.943,
+          "a": 1.0
+        },
+        "MW_GrassColorCorrection": {
+          "r": 0.886,
+          "g": 1.478,
+          "b": 1.943,
+          "a": 1.0
+        },
+        "MW_DirtColorCorrection": {
+          "r": 1.108,
+          "g": 1.848,
+          "b": 2.429,
+          "a": 1.0
+        },
+        "MW_StonesColorCorrection": {
+          "r": 0.854,
+          "g": 1.502,
+          "b": 2.086,
+          "a": 1.0
+        },
+        "MW_RockColorCorrection": {
+          "r": 1.905,
+          "g": 1.973,
+          "b": 1.863,
+          "a": 1.0
+        }
+      },
+      "expected_texture_mean_srgb_after": {
+        "MW_SnowColorCorrection": [
+          141,
+          136,
+          126
+        ],
+        "MW_GrassColorCorrection": [
+          141,
+          136,
+          126
+        ],
+        "MW_DirtColorCorrection": [
+          156,
+          151,
+          139
+        ],
+        "MW_StonesColorCorrection": [
+          123,
+          119,
+          110
+        ],
+        "MW_RockColorCorrection": [
+          108,
+          105,
+          96
+        ]
+      }
+    },
+    "P3_mild_warm": {
+      "intent": "closest to the approved MW preview, only de-oranged",
+      "target_linear": [
+        0.5,
+        0.4,
+        0.27
+      ],
+      "gain": 1.1,
+      "vectors": {
+        "MW_SnowColorCorrection": {
+          "r": 0.853,
+          "g": 1.219,
+          "b": 1.291,
+          "a": 1.0
+        },
+        "MW_GrassColorCorrection": {
+          "r": 0.853,
+          "g": 1.219,
+          "b": 1.291,
+          "a": 1.0
+        },
+        "MW_DirtColorCorrection": {
+          "r": 1.067,
+          "g": 1.523,
+          "b": 1.614,
+          "a": 1.0
+        },
+        "MW_StonesColorCorrection": {
+          "r": 0.822,
+          "g": 1.238,
+          "b": 1.386,
+          "a": 1.0
+        },
+        "MW_RockColorCorrection": {
+          "r": 1.835,
+          "g": 1.626,
+          "b": 1.238,
+          "a": 1.0
+        }
+      },
+      "expected_texture_mean_srgb_after": {
+        "MW_SnowColorCorrection": [
+          138,
+          125,
+          104
+        ],
+        "MW_GrassColorCorrection": [
+          138,
+          125,
+          104
+        ],
+        "MW_DirtColorCorrection": [
+          153,
+          138,
+          115
+        ],
+        "MW_StonesColorCorrection": [
+          121,
+          109,
+          90
+        ],
+        "MW_RockColorCorrection": [
+          106,
+          96,
+          79
+        ]
+      }
+    }
+  }
+}

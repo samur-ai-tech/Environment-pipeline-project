@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 202,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "is_nanite_enabled",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":false}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 202,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":false}"
+    }
+   ]
+  }
+ }
+}

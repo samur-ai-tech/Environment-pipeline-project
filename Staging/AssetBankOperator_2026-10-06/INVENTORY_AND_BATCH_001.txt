@@ -1,0 +1,153 @@
+CURRENT EXECUTION UPDATE: See EXECUTION_REPORT.txt and Receipts/. 72 models are now imported, saved, registered and enabled; placement verification remains blocked. The preparation counts below are historical.
+
+SUPERSEDED SUPPLY SCOPE: See EXPANSION_REPORT.txt and OWNER_CONFIRMATION_AND_SCOPE_UPDATE.json for Aviv's licence confirmation and the expanded 834-candidate queue. The original first-deliverable record follows.
+
+ASSET BANK OPERATOR — INVENTORY AND BATCH 001 PROPOSAL
+Date: 2026-10-06 (Asia/Jerusalem); captured UTC: 2026-10-06T13:35:06.812339+00:00
+Manager: Claude Code cc37d4d2-3d62-4f53-b689-28432b5527ae
+Status: file-only preparation complete; native inspection/import and licence-confirmed release NOT complete.
+
+Authority and editor boundary
+2026-10-06T13:27:51.881193+00:00 OWNER=GEOCITY_MENU task=GENERATE_CURRENT_AREA assigned_editor_PID=29900 scope=/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/L_Iran_38196167_46086167_4km_configured_generation_scoped_replace_Bake_named_dependencies_map_save
+The last owner line belongs to the manager. No Unreal/Houdini call, editor launch, import, save or catalogue/profile change was made. Wait for OWNER=NONE, then obtain the manager lease through Aviv before any editor work.
+
+Inventory scope and confidence
+1,223 canonical identities were read from the current on-disk catalog_v4_source.json. Asset file existence and mesh hashes were checked now. Catalogue rows include family placeholders, materials and utilities; they are not all unique usable models.
+Usable now: NOT LIVE-VERIFIED. Eleven prop identities have retained ready receipts with matching current mesh hashes. Those receipts do not revalidate current material dependencies or licence terms. Do not count every file as ready or every unknown as broken.
+Columns: category | identities | packages present | already under Shared/ModelBank | retained ready receipts with matching mesh hash | known repair/registration work | other verification/binding pending | recorded eligible
+Bushes and shrubs | 18 | 17 | 8 | 0 | 1 | 17 | 2
+Deadwood | 1 | 1 | 0 | 0 | 0 | 1 | 0
+Grass and understory | 29 | 29 | 4 | 0 | 0 | 29 | 2
+Mountain backdrops | 12 | 12 | 0 | 0 | 0 | 12 | 0
+Outside requested categories | 560 | 424 | 27 | 0 | 0 | 560 | 6
+Signs | 95 | 86 | 0 | 0 | 0 | 95 | 0
+SmallProps | 168 | 152 | 20 | 7 | 14 | 147 | 12
+Stones and rocks | 6 | 6 | 4 | 0 | 0 | 6 | 0
+StreetProps | 172 | 142 | 21 | 4 | 5 | 163 | 6
+Trees | 28 | 28 | 8 | 0 | 6 | 22 | 1
+Utility/RooftopProps | 130 | 101 | 0 | 0 | 2 | 128 | 0
+Vegetation family placeholders | 4 | 0 | 0 | 0 | 4 | 0 | 0
+
+Known work
+- Six SpeedTree trees: source-faithful material binding remained unresolved in the retained handoff; fresh native inspection is required.
+- external.T1144 hedge: native binding absent; retained prepared import was not executed.
+- Four vegetation MOUT family records: aggregate inventory only. Individual source meshes are available in GIS_WorldBLD and need held per-mesh registration.
+- Other MOUT prop family placeholders also need individual identities; they are not failed mesh files.
+- Grass/Plant07 diagnostic records require native material review; a diagnosis record is not a successful repair.
+
+Installed source survey
+These are mesh filename candidates, not verified class counts, dependency closures, unique model counts or complete vehicles. Vendor originals are retained. No full-bank source reset was made.
+- Current / StarterContent: 20 mesh filename candidates, 267 asset packages.
+- Current / ModularCourtyard: 112 mesh filename candidates, 323 asset packages.
+- Current / MOUT_Arabian: 0 mesh filename candidates, 29 asset packages.
+- Current / FC_Coastal_Landscape: 1 mesh filename candidates, 83 asset packages.
+- Current / UtopianCity: 62 mesh filename candidates, 235 asset packages.
+- Current / WorldBLD: 379 mesh filename candidates, 1594 asset packages.
+- Current / Palms_Pack_01: 33 mesh filename candidates, 351 asset packages.
+- Current / HighPoly_Tree_Model: 1 mesh filename candidates, 8 asset packages.
+- Current / Iceland_Environment: 14 mesh filename candidates, 78 asset packages.
+- Current / FantasyRuins: 2 mesh filename candidates, 31 asset packages.
+- Current / AssetsvilleTown: 723 mesh filename candidates, 1075 asset packages.
+- Current / ProceduralBuildingGenerator: 217 mesh filename candidates, 772 asset packages.
+- Current / ModularBuildingSet: 0 mesh filename candidates, 315 asset packages.
+- Current / Stylized_Egypt: 124 mesh filename candidates, 302 asset packages.
+- Current / Warehouse_Building: 1 mesh filename candidates, 23 asset packages.
+- Current / MWLandscapeAutoMaterial: 16 mesh filename candidates, 97 asset packages.
+- CitySample / Prop: 730 mesh filename candidates, 1880 asset packages.
+- CitySample / Vehicle: 227 mesh filename candidates, 1447 asset packages.
+- GISWorldBLD / MOUT_Arabian: 172 mesh filename candidates, 769 asset packages.
+- GISWorldBLD / Light_Foliage: 24 mesh filename candidates, 109 asset packages.
+ModularBuildingSet uses names outside the mesh filename heuristic; its zero candidate count does NOT mean it contains no meshes. Canonical rows and native measurement records remain in CANONICAL_INVENTORY.json.
+Environmentpipeline/MOUT_Arabian has landscape resources but no discovered foliage meshes. The complete installed MOUT source is in GIS_WorldBLD.
+FC_Coastal_Landscape contributes a sea-plane mesh and landscape assets; no vegetation meshes were found in this survey.
+City Sample vehicle file counts include parts; no complete, ready vehicle is claimed.
+
+First batch: 60 proposed assets
+12 trees + 8 bushes/shrubs + 4 grass = 24 vegetation; 30 props; 4 stones + 2 mountain backdrops supplemental.
+Source split: 16 MOUT Arabian vegetation; 34 City Sample assets (4 trees + 30 props); 10 MW assets (4 grass + 4 stones + 2 backdrops).
+Trees include six desert-tree variants and two palm variants from MOUT, plus alder A/B, red maple and sugar maple. MOUT species and physical size ranges await native measurement. Temperate trees are bank variety, not automatic approval for Gaza or Iran.
+The 30 props include poles, signs, bench, bins, fences, awnings, AC units, water tanks, antennas, utility boxes, barriers and clutter. Walls and licensed complete vehicles remain later supply work.
+All 60 exact source files, SHA-256 values, stable IDs and bank-only target paths are in BATCH_001_PROPOSAL.json. Existing supplier job IDs are reused where present. Source path and canonical hash aliases were reconciled; recheck duplicates immediately before apply.
+
+Licence outcome — outstanding requirement
+All three proposed packs have local acquisition entries in the current 42-entry Fab cache. Ownership is identified by Aviv in the mission; no extra purchase is requested. The database does not contain acquisition-specific licence terms/tier/date, and the fetched City Sample/MW listings do not expose their licence text.
+Therefore 0 of these 60 are marked licence-confirmed. All 60 remain proposed pending exact applicable terms. This is NOT a licence-confirmed executable import batch yet. LICENCE_REVIEW.json records the evidence and missing fields.
+Primary references: https://www.unrealengine.com/eula/content and https://www.fab.com/eula . General permission under those agreements does not by itself map a licence to this local acquisition.
+Additional locally acquired leads: Light Foliage; Megaplants Greasewood; Palms Pack 02 (Phoenix canariensis); mediterranean Vegetation giant Reed; Rock Environment Pack; Realistic Desert Pack; Namaqualand Environment and Asset Pack. Acquisition records are inventory leads; payload availability, exact terms and regional suitability require review.
+
+Catalogue proposal and integration contract
+DT_EnvironmentBank_v4 currently uses native row schema 3. Size is represented by valid measured BoundsMin/Max fields; there is no Size enum. The proposal preserves this schema.
+CATALOG_PATCH_PROPOSAL.json is manager review data only. BoundsValid/AnchorValid/OrientationValid remain false until measured. RunEligible, TechnicalPreviewEligible and weights are zero; no selection row or profile pin is enabled.
+Hosted props and mountain backdrops retain blank runtime roles pending manager consumer mapping. Their metadata describes the desired function; no unsupported generator role is invented.
+Family holds and named holds H0013, H0907, H0051, H0958, H0094 remain unchanged. The 87 road candidates are untouched.
+After the manager releases the editor and supplies a lease: inspect exact current PID/world/dirty packages; resolve source dependencies read-only; duplicate/migrate meshes and required project dependencies into /Game/Project/Shared/ModelBank/Prepared/NativeUnreal/... with reference remapping; never raw-copy UAssets into renamed namespaces.
+Reuse existing shared assets and stable IDs. Do not overwrite vendor originals or use Save All. Keep failures isolated. Record actual triangles/LODs/collision/material bindings/texture resolution, named saves and reopen result per item in one batch receipt. Register held rows only after measurements and manager-reviewed catalogue rebase; keep selection/profile proposals separate.
+Source projects must not be opened concurrently with the manager editor; any required source-editor inspection/migration also needs an explicitly scoped one-writer lease. No startup hooks, sample maps or sample gameplay modules are part of the asset supply.
+
+Batch outcome
+Imported: 0; reused/applied: 0; failed imports: 0; proposed/pending: 60. No actual import receipt exists; BATCH_001_RECEIPT_TEMPLATE.json is explicitly a template.
+
+Short Hebrew summary for Aviv
+נבדקו 1,223 רשומות בקטלוג. הוכנה הצעה ל־24 פריטי צמחייה, 30 אביזרים ועוד 6 סלעים ורקעי הרים. לא בוצע ייבוא ולא שונה הקטלוג. העורך מוחזק כעת בידי המנהל. רישומי רכישה קיימים, אך תנאי הרישיון המדויקים עדיין לא אומתו; נדרשים השלמת האימות והקצאת עורך מהמנהל.
+
+Exact first-batch list
+01. Trees / MOUT_DesertTree | SM_Desert_Tree_01 | native.GISWorldBLD.07e54283387f240b53b4be5b
+02. Trees / MOUT_DesertTree | SM_Desert_Tree_02 | native.GISWorldBLD.c5712187ed842c6e245fd1c4
+03. Trees / MOUT_DesertTree | SM_Desert_Tree_03 | native.GISWorldBLD.4036e51ca187ea2a4e89efa4
+04. Trees / MOUT_DesertTree | SM_Desert_Tree_04 | native.GISWorldBLD.e5ec946cc4dd193572749b0f
+05. Trees / MOUT_DesertTree | SM_Desert_Tree_05 | native.GISWorldBLD.12604b54f9b7ecbe10589fb7
+06. Trees / MOUT_DesertTree | SM_Desert_Tree_06 | native.GISWorldBLD.4c63f413304456fb44e0f178
+07. Trees / MOUT_PalmTrees | SM_PalmTree_01 | native.GISWorldBLD.71d7cc7e55be35159af9f590
+08. Trees / MOUT_PalmTrees | SM_PalmTree_06 | native.GISWorldBLD.ce285d048a8cc4201112e080
+09. Bushes and shrubs / MOUT_DesertBush | SM_Shrub_A | native.GISWorldBLD.64887f161a65f63eebcc4f94
+10. Bushes and shrubs / MOUT_DesertBush | SM_Shrub_B_01 | native.GISWorldBLD.0c8e5d35078573a30800a1b7
+11. Bushes and shrubs / MOUT_DesertBush | SM_Shrub_Bare_A | native.GISWorldBLD.b3ebf5d0fd17d18b6c9cc28d
+12. Bushes and shrubs / MOUT_DesertBush | SM_Shrub_Bare_B | native.GISWorldBLD.fc1d4056edba6c28cdf03502
+13. Bushes and shrubs / MOUT_DesertShrub | SM_Desert_Shrub_01 | native.GISWorldBLD.b8b0bebdf0bc87f41e82cc6d
+14. Bushes and shrubs / MOUT_DesertShrub | SM_Desert_Shrub_01_Bare | native.GISWorldBLD.3d57088e2981a19393a92fe7
+15. Bushes and shrubs / MOUT_DesertShrub | SM_Desert_Shrub_02 | native.GISWorldBLD.93e95f69f21f7d2ff7aff2a5
+16. Bushes and shrubs / MOUT_DesertShrub | SM_Desert_Shrub_03 | native.GISWorldBLD.9d271617d6be27a20f9e5f1c
+17. Grass and understory / MW_Grass | SM_MWAM_GrassA | native.Current.db7c52eb53557f7704c1e605
+18. Grass and understory / MW_Grass | SM_MWAM_GrassB | native.Current.2c4f9e7ae85a4f1c03e3e8a3
+19. Grass and understory / MW_Grass | SM_MWAM_GrassC | native.Current.1150f028782efa7bf8327161
+20. Grass and understory / MW_Grass | SM_MWAM_GrassD | native.Current.0c8a59503084a3191f0d276c
+21. Trees / Kit_Tree_Alder | Tree_Alder_A | native.CitySample.9fafd8942750b2ee7e48bc5a
+22. Trees / Kit_Tree_Alder | Tree_Alder_B | native.CitySample.4d12fbefd0fa07fb3a21f81e
+23. Trees / Kit_Tree_Maple_Red | Tree_Maple_Red_A | native.CitySample.063ae08179056b95d0f89747
+24. Trees / Kit_Tree_Maple_Sugar | Tree_Maple_A | native.CitySample.13fbb0aa53f06dc221d618d7
+25. Props / poles | SM_StreetLamp_A_Pole_Large | native.CitySample.f98171c9ae02d1e7cc123213
+26. Props / poles | SM_StreetLamp_A_Pole_Long | native.CitySample.104b56fca2c06e3608ec1b11
+27. Props / poles | SM_StreetLamp_A_Pole_Small | native.CitySample.84bfb35f9c232516229019b9
+28. Props / signs | SM_CTY_StreetSign_A01_N1 | native.CitySample.af05ef633603da7b78a806e4
+29. Props / signs | SM_CTY_StreetSign_B01_N1 | native.CitySample.9aebe5eb98a96148864a7301
+30. Props / signs | SM_CTY_StreetSign_C01_N1 | native.CitySample.77b4cabc510d330160a0105b
+31. Props / signs | SM_CTY_StreetSign_D01_N1 | native.CitySample.bbc98b87b871d14b941fd754
+32. Props / benches | Border_B_StoneBench_N1 | native.CitySample.b1717dd9f0549b2309dabded
+33. Props / bins | SM_Trashcan_A_01 | native.CitySample.9f65938922dbb4af435b1564
+34. Props / bins | SM_FWYTrash_Container_A01_N1 | native.CitySample.8a95c5b5a4a6eed2a2c6b582
+35. Props / bins | SM_FWYTrash_Container_B01_N1 | native.CitySample.2fd4a465a10cc144375acead
+36. Props / fences | SM_Fence_ChainLink_A01_N1 | native.CitySample.687cafc277e8bd50d73fefa4
+37. Props / fences | SM_Fence_ChainLink_A02_N1 | native.CitySample.d1adb249b36b0498f4c6b928
+38. Props / fences | SM_Fence_ChainLink_B01_N1 | native.CitySample.a40d9c47e94b355a644eac66
+39. Props / fences | SM_Fence_Post_A01_N1 | native.CitySample.7989c87941b801004f52e696
+40. Props / awnings | SM_BLDG_Prop_BA_Awning_A01_N1 | native.CitySample.b8bed751a3bd589ed2eaa723
+41. Props / awnings | SM_BLDG_Prop_BA_Awning_C01_N1 | native.CitySample.2d44d03bf356e7346b2dc012
+42. Props / awnings | SM_BLDG_Prop_BA_Awning_D01_N1 | native.CitySample.308c49b6284d12d8353b5c0f
+43. Props / AC units | SM_BLDG_Prop_AC_Window_A01_N1 | native.CitySample.beccd2faf0639589a0eb51f4
+44. Props / AC units | SM_BLDG_Prop_AC_Window_A02_N1 | native.CitySample.b23ae275bc6c675913a82c4f
+45. Props / water tanks | SM_roof_tank_a_N1 | native.CitySample.74403f01c2a000ee0046f1d6
+46. Props / water tanks | SM_roof_tank_b | native.CitySample.8ce0dd1dec02b8d10869a161
+47. Props / antennas | SM_roof_antenna_a_N1 | native.CitySample.44d80f80cf0354cb05080c38
+48. Props / antennas | SM_roof_antenna_d_N1 | native.CitySample.409eb4f52ffd7131197975d7
+49. Props / utility boxes | SM_roof_breaker_box_a_N1 | native.CitySample.541f2e88b8ff13f9e9afdab2
+50. Props / utility boxes | SM_roof_breaker_box_b_N1 | native.CitySample.7cbe5d26e8b436b5e9b71749
+51. Props / clutter | SM_FWYTrash_Bag_A01_N1 | native.CitySample.4c8e6a6ba9d757bc07b80f9c
+52. Props / clutter | SM_FWYTrash_Bag_B01_N1 | native.CitySample.7d5a883bc4f84968b5c0f04d
+53. Props / barriers | SM_FWYBarrier_Barrel_A01_N1 | native.CitySample.c0f6c817f21697f43d9753fe
+54. Props / barriers | SM_FWYBarrier_Sidewall_A01_N1 | native.CitySample.aa9d39616cce218f916157f3
+55. Stones and rocks / MW_Stone | SM_MWAM_StoneA | native.Current.cefef5dd74fcd65011ea4a48
+56. Stones and rocks / MW_Stone | SM_MWAM_StoneB | native.Current.3f2c6edc609a45cf80cfcf0b
+57. Stones and rocks / MW_Stone | SM_MWAM_StoneC | native.Current.e793a55720843d92ed755386
+58. Stones and rocks / MW_Stone | SM_MWAM_StoneD | native.Current.c451524e345f85e4852306d5
+59. Mountain backdrops / MW_Mountain | SM_MWAM_MountainA | native.Current.6ec572192d0fb3c1f8e03e2d
+60. Mountain backdrops / MW_Mountain | SM_MWAM_MountainB | native.Current.7f2b35192c86066a66e96979

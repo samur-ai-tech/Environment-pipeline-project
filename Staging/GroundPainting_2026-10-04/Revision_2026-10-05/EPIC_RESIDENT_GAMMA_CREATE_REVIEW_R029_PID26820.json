@@ -1,0 +1,81 @@
+{
+  "schema": "environmentpipeline.epic_resident_gamma_review.v1",
+  "status": "APPROVED_EPIC_RESIDENT_GAMMA_CREATE",
+  "utc": "2026-10-05T09:07:12.007230+00:00",
+  "reviewer": "/root/visual_review",
+  "pid": 26820,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "helper_sha256": "a3ad6fbe669373d2a37e8dd7bf5fed4acd844ee6f901d59915a79dee32f34c82",
+  "inspect_receipt_sha256": "bf8b91420b93942e18f28fc6b403240adf524bff021695f483ff253172c853d9",
+  "baseline_receipt_sha256": "48df32cc1ee2febd40f060054c8818f20e5f32546f13169ae4ceccf5d0d7ad9e",
+  "plan_sha256": "ca022f90c571f9e77ebde9546545c998e85bd26e47494a41f7608f5618191d34",
+  "reference_receipt_sha256": "89a02abd7c180bdf6b37b0c2e4eaf43636c195f21d0b36afae1f853f22198024",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "source_manifest_sha256": "f73181be9b8ffc1ee499448dd986266ca5ebe76aab2b1a7e3bea52f06b7d202e",
+  "mutation_backup_sha256": "ef0bb74f6083a0c0aab36af33ee6c541c684fbaba960d3345cd3406ca7105465",
+  "held_copy_package_sha256": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+  "failure_receipt_sha256": "c1c36213025db1c11e67694f82a3f7b7c0be3747e9e3d97b2340b16037e177c1",
+  "origin_helper_sha256": "fa1721fdbd5cd8d36599bfd587adbf092dc2f2a2f018fd1522c5b662c4d953d7",
+  "previous_recovery_failure_sha256": "1c6a3f0d451c15b5af6ff8ceaaf357411454c723977a908faaff7cee3fd23371",
+  "previous_helper_sha256": "e97858becfa1df6a405297779e32d224c49d1c32034d0d5dcb66f7d7b690d4bf",
+  "copy_state_receipt_sha256": "05ade59a3610fcec644842b5ce84ae1b083283e7acec34ec517ba1405ec17b08",
+  "approved_scope": {
+    "mode": "apply",
+    "reuse_exact_two": [
+      {
+        "source": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+        "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+        "disk_immediately_after_duplicate": {
+          "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Ground_Gravel_D_GeoCityResident2K.uasset",
+          "exists": false
+        }
+      },
+      {
+        "source": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+        "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+        "disk_immediately_after_duplicate": {
+          "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\EpicResident2K\\T_Ground_Gravel_N_GeoCityResident2K.uasset",
+          "exists": false
+        }
+      }
+    ],
+    "create_missing_copies": 2,
+    "new_copy_policy": {
+      "never_stream": true,
+      "max_texture_size": 2048
+    },
+    "restore_copy_use_legacy_gamma": "Only sourceTrue/copiedFalse on native linear normal copies; restoreTrue and require immediate readback plus full persistent copy comparison. Existing matching GravelD is not changed.",
+    "graph_changes": 0,
+    "material_bindings_changed": 0,
+    "source_assets_changed": 0,
+    "explicit_compile_or_save": false,
+    "update_material_instance": false,
+    "global_force": false,
+    "separate_strict2048_inspection_and_bind_review_required": true
+  },
+  "review_evidence": {
+    "entire488line_frozen_helper_read": true,
+    "offline_ast_compile_without_execution": true,
+    "all_exact_input_and_native_inspect_hashes_checked": true,
+    "actual_inspect_before_after_equal": true,
+    "exact_two_unsaved_copies_exist_two_absent": true,
+    "copy_profile05ade_independently_checked": true,
+    "gamma_is_only_extra_readable_difference_beyond_residency_policy": true,
+    "failed_origin_and_recovery_receipts_remain_bound_not_promoted": true,
+    "full1015nodes_69layers_Grass_allinstances_scene_CVars_and_originalfiles_preserved": true,
+    "no_native_or_Content_action_by_reviewer": true
+  },
+  "limitations": [
+    "This approves only completion of the four owned source copies, with original gamma parity. It does not approve material binding, save or visible persistence.",
+    "Pending0/power-of-two dimensions through2048 are allowed only during creation; they are not a strictready assertion.",
+    "Every readable persistent copied field must equal its original Epic field except the two explicit residency policy fields. Gamma restoration removes the measured mismatch; it is not a comparison exception after creation.",
+    "Original Epic colors/PBR/source packages, source choice and existing ground recipe remain preserved. Prior failed helper executions retain their actual failed status.",
+    "Actual completed Lit captures, recovered close detail, named save and fresh-process sharpness remain separate requirements; reference and user acceptance are pending."
+  ],
+  "save_approved_within_scope": false,
+  "visual_persistence_approved": false,
+  "user_acceptance": "PENDING"
+}

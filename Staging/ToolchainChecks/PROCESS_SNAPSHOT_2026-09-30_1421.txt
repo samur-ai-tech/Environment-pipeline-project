@@ -1,0 +1,18 @@
+Read-only Get-Process snapshot, 2026-09-30 14:21 (Asia/Jerusalem), filter: houdini|hars|unrealeditor|hython|sesinetd|hserver
+Taken by the manager session while correcting records; no process was started, stopped or operated.
+
+   Id ProcessName       StartTime             MainWindowTitle
+25420 HARS              9/30/2026 11:56:32 AM
+ 3892 houdini_installer 9/30/2026 1:08:46 PM
+ 5668 houdini_launcher  9/30/2026 1:08:06 PM  Houdini Installer
+ 4428 hserver
+ 4412 sesinetd
+12028 UnrealEditor      9/30/2026 11:41:33 AM Environmentpipeline - Unreal Editor
+15476 UnrealEditor      9/30/2026 12:48:27 PM Unreal Engine 5.8
+
+Related read-only file observation (same session): Saved/Autosaves/ contains, dated 2026-09-30 13:25:
+  Temp/Untitled_1_Auto1.umap
+  Game/HoudiniEngine/Temp/B2_labs_osm/01348D10/B2_labs_osm_3_8_0_main_geo_HSM_Auto1.uasset
+  Game/HoudiniEngine/Temp/B2_labs_osm/01348D10/B2_labs_osm_3_11_0_main_geo_HSM_Auto1.uasset
+  PackageRestoreData.json
+(editor autosave; Saved/Logs/Environmentpipeline.log records it at 10:25:25 UTC). No Content/ .uasset/.umap newer than the GUI check was found by the verifying reviewer.

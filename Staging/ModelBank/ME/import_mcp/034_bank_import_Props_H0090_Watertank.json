@@ -1,0 +1,38 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "import_file",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME/Props",
+     "asset_name": "SM_H0090_Watertank",
+     "source_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\ME\\Sources\\H0090_Watertank\\Watertank__0090.fbx",
+     "import_materials": true,
+     "import_textures": true,
+     "combine_meshes": true
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.301,
+ "isError": null,
+ "text": "{\"returnValue\":[{\"refPath\":\"/Game/Project/Shared/Bank_ME/Props/SM_H0090_Watertank.SM_H0090_Watertank\"}]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[{\"refPath\":\"/Game/Project/Shared/Bank_ME/Props/SM_H0090_Watertank.SM_H0090_Watertank\"}]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,95 @@
+Task2 - Native RoadBLD source repair
+Status: SOURCE_READY_FOR_MANAGER_REVIEW
+Date: 4 October 2026
+Manager: 01a106bc-2fde-7f23-9aa7-8ba413dc6245
+Source worker: 01a106e8-f1fa-7741-bbcd-6c772df0ae03
+
+Implemented and stopped source editing
+
+The installed URoadBLDRuntimeSettings class uses configuration category RoadBLD.
+Its generated class registration names RoadBLD at lines 1022-1026; the five
+properties are Config properties and the vendor DefaultRoadBLD.ini enables all
+five. The predecessor's false values in DefaultEngine.ini could not configure
+that category. Its stopped PID27188 read all five TRUE. This is installed-source
+and recorded-native evidence, not a new editor observation.
+
+After the manager explicitly added Config/DefaultRoadBLD.ini to task2 scope, I
+created that project file with the five false values. It did not previously
+exist. I replaced the ineffective Engine section with a category explanation.
+No vendor configuration or asset was changed. MANAGER_CONFIG_PATCH.json now
+records APPLIED_BY_TASK2_AFTER_MANAGER_SCOPE_EXTENSION; its old pending request
+is superseded. No area-profile field patch is required.
+
+The ordinary policy check now reads the correct project file and both native
+settings views: the class default object and the installed reflected Get()
+accessor. Every value must be literal False and the native objects must have
+the expected settings class. It never sets defaults or reloads configuration.
+The existing require_geographic_landscape_authority() five-flag return contract
+is preserved. New inspect_geographic_landscape_authority() returns full paths,
+values, config SHA, errors and passed status for task4's read-only preflight.
+
+Policy is rechecked before network/road/junction authoring and each rebuild
+dispatch, after rebuild and during native validation. Enabled owned Landscape
+patch components are rejected. The former post-rebuild patch disabling is
+removed: turning a patch off after application cannot establish no terrain
+write. Policy and detail evidence is retained in staged/saved road contracts.
+
+Road geometry, source XY/class/width, protected partitions, all-road support,
+height/sidewalk/seam gates, UV/normals/material/collision handling, native
+markings/crossings/modules/props and pending correction lifetime/rollback are
+retained. Six road modules are byte-identical to the predecessor stop hashes;
+the checks also compare the unchanged relevant workflow method bodies.
+
+T4-ROADS-01 reconciliation
+
+The reported immediate empty-list bug was not reproduced: the old code assigns
+an empty list to state['retained_failed_generations'], while its comprehension
+reads the separate run.retained_failed_generations attribute. However, later
+regeneration could drop earlier preservation history. The repair snapshots
+current and historical failed ledgers, carries the preserved mesh paths and
+keeps exact prior successful actor/dependency ledgers across repeated delivery.
+History is evidence only; actor retirement still uses current verified previous
+and failed ownership sets. No mesh-package deletion was added or performed.
+
+SAVED_ROAD_PRESERVATION.json independently records the saved disk evidence:
+132 failed actor paths, all 87 existing failed mesh packages with SHA256 hashes,
+and 136 successful actor paths with their exact dependency ledger. This survives
+later replacement of ROADBLD_WORKFLOW_STATE.json. It does not prove current
+native bindings or approve the 87 candidates.
+
+Verification and remaining native work
+
+SOURCE_CHECKS.json records 29 passing offline policy/history checks and syntax
+compilation of eight road modules. Production policy functions ran against
+explicit in-memory settings fixtures: enabled, missing, wrong-class and
+non-boolean values fail; unsafe road spawn stops before its native call;
+enabled owned patches fail; repeated history preserves exact ledgers.
+No Unreal module import, editor/MCP call, native build/cook, map/Content save,
+pilot, new map, bank/hold change, upstream edit or source hot reload occurred.
+
+The Landscape/RenderCore access violation after the logged 32 native tile
+patches remains measured. Patch contribution is inference; missing old
+Landscape weightmap mips are also observed. This source repair does not prove
+the crash is resolved or that prior terrain remained unchanged.
+
+Task1 must seal the final source and both project config files and keep the
+pre-HDA policy check. Task4 alone, after actual-PID activation and fresh startup,
+must record both settings views as five false values, verify no terrain writes
+including native tile-patch logs/data, reconcile the two saved Landscapes and
+exact old road ledgers, then complete the ordinary operation in Shujaiya and
+Rimal. Full geometry/details/Lit inspection, named saves, fresh reopen and repeat
+generation remain required. Empty kit features must be reported as content
+gaps, not replaced through bank expansion or hidden by suppression.
+
+Source implementation: complete within assigned scope.
+Actual native operation: not performed.
+Visible result: not verified.
+Persistence: not verified.
+Regeneration: not verified.
+User acceptance: not claimed.
+
+SOURCE_HANDOFF.json contains final hashes, exact interfaces, task1 integration
+requirements and ordered native preflight/validation. RESULT.json contains the
+machine-readable outcome. EFFECTIVE_CONFIG_EVIDENCE.json contains installed
+lookup lines, hashed receipts and the official Epic configuration documentation
+reference. SOURCE_DIFF.patch and Before/ preserve this assignment's changes.

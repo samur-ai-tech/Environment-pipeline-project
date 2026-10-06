@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2023,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02c_OP"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.015,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_Vent\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2023,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_Vent\"]}"
+    }
+   ]
+  }
+ }
+}

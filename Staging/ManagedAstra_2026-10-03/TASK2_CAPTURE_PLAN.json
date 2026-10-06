@@ -1,0 +1,204 @@
+{
+  "schema": "environmentpipeline.task2.saved_close_view_plan.v1",
+  "status": "PREPARED_NOT_CAPTURED",
+  "area": "GazaShujaiya",
+  "named_map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "source_package": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaShujaiya\\city_source_v1.json",
+  "source_osm_sha256": "54374986c93e6c5b47e3a1be58ba43ba1233607d1aae5f1c1749042b984e00d6",
+  "road_proof_revision": "20261003T172549017159",
+  "road_proof_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\ROADBLD_WORKFLOW_STATE.json",
+  "camera_api": "EditorLevelLibrary.set_level_viewport_camera_info; RoadBLDFeedbackToolset.CaptureViewport View=Current",
+  "height_policy": "Resolve target/eye heights from the sole saved Landscape after saved/reopen inspection; no height guessed from old revision.",
+  "readiness": "Explicit manager reactivation AND successful saved/reopen receipts for current delivery revision; no active bank/native callbacks.",
+  "no_material_changes": true,
+  "no_rebuild": true,
+  "shots": [
+    {
+      "name": "ground_close",
+      "eye_xy_cm": [
+        -1518.2358806223988,
+        2096.7158944428124
+      ],
+      "target_xy_cm": [
+        -1268.1745794274116,
+        2408.9167042506506
+      ],
+      "eye_above_saved_landscape_cm": 170,
+      "target_above_saved_landscape_cm": 0,
+      "purpose": "Judge texture scale, beige uniformity, normal detail and apparent roughness under current lighting.",
+      "coordinate_basis": {
+        "piece": "41254867:0",
+        "target": [
+          -1268.1745794274116,
+          2408.9167042506506
+        ],
+        "eye": [
+          -1518.2358806223988,
+          2096.7158944428124
+        ],
+        "normal": [
+          0.7805020245195955,
+          -0.6251532529874677
+        ],
+        "tangent": [
+          0.6251532529874677,
+          0.7805020245195955
+        ],
+        "midpoint": [
+          -1892.5761990430879,
+          2909.039306640625
+        ],
+        "halfwidth": 350.0,
+        "road_clearance_cm": 450.0,
+        "pad_clearance_cm": 2097.823077320365
+      }
+    },
+    {
+      "name": "ground_second_location",
+      "eye_xy_cm": [
+        3326.802432444865,
+        -4115.323005675812
+      ],
+      "target_xy_cm": [
+        3584.2702876308795,
+        -3809.2016187295335
+      ],
+      "eye_above_saved_landscape_cm": 170,
+      "target_above_saved_landscape_cm": 0,
+      "purpose": "Judge texture scale, beige uniformity, normal detail and apparent roughness under current lighting.",
+      "coordinate_basis": {
+        "piece": "41254216:0",
+        "target": [
+          3584.2702876308795,
+          -3809.2016187295335
+        ],
+        "eye": [
+          3326.802432444865,
+          -4115.323005675812
+        ],
+        "normal": [
+          -0.7653034673656973,
+          0.6436696379650363
+        ],
+        "tangent": [
+          0.6436696379650363,
+          0.7653034673656973
+        ],
+        "midpoint": [
+          4196.5130615234375,
+          -4324.1373291015625
+        ],
+        "halfwidth": 350.0,
+        "road_clearance_cm": 450.0,
+        "pad_clearance_cm": 2848.3841502296254
+      }
+    },
+    {
+      "name": "ground_grazing",
+      "eye_xy_cm": [
+        -916.9486683935936,
+        2127.59774040629
+      ],
+      "target_xy_cm": [
+        -1268.1745794274116,
+        2408.9167042506506
+      ],
+      "eye_above_saved_landscape_cm": 110,
+      "target_above_saved_landscape_cm": 0,
+      "purpose": "Second angle on the same soil patch; distinguish view/lighting effects from persistent texture appearance.",
+      "coordinate_basis": {
+        "piece": "41254867:0"
+      }
+    },
+    {
+      "name": "curb_street_close",
+      "eye_xy_cm": [
+        -2057.0077675524567,
+        2143.8842509312944
+      ],
+      "target_xy_cm": [
+        -1619.4004904612293,
+        2690.2356680950115
+      ],
+      "eye_above_saved_landscape_cm": 170,
+      "target_above_saved_landscape_cm": 8,
+      "purpose": "Read native curb contact, street material and sidewalk continuity at pedestrian scale.",
+      "coordinate_basis": {
+        "piece": "41254867:0"
+      }
+    },
+    {
+      "name": "junction_close",
+      "eye_xy_cm": [
+        -13935.084025065104,
+        11280.242220560709
+      ],
+      "target_xy_cm": [
+        -13152.16064453125,
+        11880.601501464844
+      ],
+      "eye_above_saved_landscape_cm": 230,
+      "target_above_saved_landscape_cm": 8,
+      "purpose": "Inspect the actual repaired corner and joined sidewalk/curb surfaces.",
+      "coordinate_basis": {
+        "piece": "41254771:0",
+        "trim": {
+          "start": false,
+          "source_endpoint_world_cm": [
+            -13152.16064453125,
+            11880.601501464844,
+            4945.348148201745
+          ],
+          "native_endpoint_world_cm": [
+            -13271.192934014374,
+            11789.325469230715,
+            4933.574438668768
+          ],
+          "pullback_cm": 150.0,
+          "turn_radius_cm": 100.0,
+          "removed_export_indices": [],
+          "partner_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_83"
+        }
+      }
+    },
+    {
+      "name": "pad_margin_close",
+      "eye_xy_cm": [
+        365.9535665141859,
+        2620.9216494548464
+      ],
+      "target_xy_cm": [
+        732.8785248547476,
+        2668.5249576043548
+      ],
+      "eye_above_saved_landscape_cm": 170,
+      "target_above_saved_landscape_cm": 0,
+      "purpose": "Inspect ground-to-building support, pad transition and soil variation.",
+      "coordinate_basis": {
+        "building_osm_id": "299323313",
+        "source_edge_xy_cm": [
+          812.2136509824367,
+          2678.8175647718163
+        ]
+      }
+    },
+    {
+      "name": "area_overview",
+      "eye_xy_cm": [
+        -31348.59705645506,
+        -31348.597056474755
+      ],
+      "target_xy_cm": [
+        0.0,
+        -1.9696017261594534e-08
+      ],
+      "eye_above_saved_landscape_cm": 45597.95935484372,
+      "target_above_saved_landscape_cm": 0,
+      "purpose": "Context only; close images govern local ground and junction assessment.",
+      "coordinate_basis": {
+        "source_road_extent_cm": 56997.44919355465
+      }
+    }
+  ],
+  "limitations": "Source-derived proposed views; framing/occlusion and actual Lit rendering still need pixel review. Current-lighting images do not independently quantify roughness or normal correctness."
+}

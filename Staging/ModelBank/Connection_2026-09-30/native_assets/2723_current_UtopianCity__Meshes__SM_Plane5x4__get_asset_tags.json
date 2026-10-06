@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2733,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Plane5x4"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"600x400x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Plane5x4.fbx\\\", \\\"Timestamp\\\" : \\\"1517938460\\\", \\\"FileMD5\\\" : \\\"20b2dfe1037efa0405cc32ab610b06cd\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"2\",\"Materials\":\"1\",\"ResourceSize\":\"8\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"2\",\"UVChannels\":\"2\",\"Vertices\":\"4\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2733,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"600x400x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Plane5x4.fbx\\\", \\\"Timestamp\\\" : \\\"1517938460\\\", \\\"FileMD5\\\" : \\\"20b2dfe1037efa0405cc32ab610b06cd\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"2\",\"Materials\":\"1\",\"ResourceSize\":\"8\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"2\",\"UVChannels\":\"2\",\"Vertices\":\"4\"}}"
+    }
+   ]
+  }
+ }
+}

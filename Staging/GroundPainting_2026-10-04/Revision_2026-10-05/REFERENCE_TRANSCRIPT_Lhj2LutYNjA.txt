@@ -1,0 +1,1750 @@
+YouTube transcript
+Video ID: Lhj2LutYNjA
+Language: en
+Captions: auto-generated
+
+[0:00] If you want to learn how to use Unreal's
+[0:02] next generation landscape system called
+[0:04] Mesh Terrain, then this tutorial is for
+[0:06] you. Mesh Train is a new mode in Unreal
+[0:08] Engine that gives us more creative
+[0:10] control over our landscapes than ever
+[0:12] before. It lets us sculpt terrain in
+[0:14] true 3D, allowing us to create caves or
+[0:17] cliff overhangs. Using a new layer
+[0:20] system, we can save all of our sculpts
+[0:22] and changes into modifiers, so we can
+[0:25] move and duplicate our sculpts as if
+[0:27] they were objects in our environment.
+[0:29] This is a modular non-destructive
+[0:31] workflow for creating landscapes. After
+[0:33] finishing this video, you will know how
+[0:35] to use every mesh terrain tool and
+[0:37] modifier so you can start sculpting
+[0:40] complex landscapes. Now, I'm also giving
+[0:42] away for free the Sensei terrain master
+[0:44] material. This is the first material for
+[0:47] mesh terrain with all the features you
+[0:49] need to create realistic landscapes.
+[0:51] Included in the material is nanite
+[0:53] displacement, so you can leverage the
+[0:55] power of nanite to add detail. Layer
+[0:57] painting, letting you paint exactly
+[0:59] where you want your materials to be.
+[1:01] Auto texturing, which applies different
+[1:03] material layers depending on the slope
+[1:05] of the terrain. Cell bombing, which can
+[1:08] hide repetition. And trip planer
+[1:10] projection to get rid of texture
+[1:12] stretching and seams. There's a link in
+[1:15] the description below for you to
+[1:16] download it so you can start creating
+[1:18] unique terrain and materials. This is
+[1:20] the future of how we create environments
+[1:22] and landscapes in Unreal. So, it is
+[1:24] essential you learn how to use it. Now,
+[1:26] let's jump into it and start sculpting.
+[1:29] To begin, this tutorial will only work
+[1:31] with Unreal Engine 5.8. That's because
+[1:33] Mesh Terrain was introduced in this
+[1:35] version, so use 5.8 or newer to follow
+[1:38] along. Right now, at the time of
+[1:40] release, I'm using the preview build of
+[1:42] 5.8. To begin, I'm going to use a blank
+[1:45] project. For the first part of this
+[1:47] tutorial, we will focus on the very
+[1:48] basics of mesh terrain like how to
+[1:50] sculpt and then we will move on to using
+[1:52] the terrain material and more advanced
+[1:54] topics. So let's create. We need to
+[1:57] enable two plugins specifically go to
+[1:59] edit plugins mesh partition
+[2:03] and also mesh terrain mode then restart.
+[2:07] Do keep in mind that at the time of this
+[2:09] video's release, we are currently on
+[2:11] Unreal Engine 5.8 and mesh terrain was
+[2:13] just introduced which means it is
+[2:15] experimental. It is a brand new feature
+[2:18] as such it is glitchy and it is not
+[2:20] production ready. While it is powerful,
+[2:23] do keep in mind that you will encounter
+[2:24] a lot of glitches. As of now, I don't
+[2:26] recommend using mesh terrain in any
+[2:29] critical projects. For example, if
+[2:30] you're launching a game in 6 months,
+[2:32] maybe don't use mesh terrain. But if
+[2:34] you're creating animations or small
+[2:35] projects, mesh terrain can still be
+[2:37] super helpful. And also, it's good to
+[2:39] know where the future of landscapes are
+[2:41] going in Unreal. As of UEIE 5.8, mesh
+[2:44] terrain only works on levels that use
+[2:46] world partition. This default level is
+[2:48] currently using world partition. In case
+[2:50] you don't know what it is, it's when
+[2:52] Unreal divides up a level into different
+[2:54] cells that are streamed in and out
+[2:56] depending on where the camera is.
+[2:58] Because you have a player all the way
+[2:59] over here, if there's some objects on
+[3:01] this mountain, it probably doesn't need
+[3:03] to be loaded into memory. So, Unreal
+[3:05] will load them out. And we can see that
+[3:07] this default level is using world
+[3:09] partition because when I click around
+[3:10] you can see the different cells that are
+[3:12] loaded in and out. Now maybe mesh train
+[3:15] will come to non world partition levels.
+[3:18] But for our case all you need to know
+[3:19] for world partition is that sometimes
+[3:21] when you open up a world partition level
+[3:23] for you to edit the landscape or
+[3:25] different cells will not be loaded in
+[3:27] like we won't see this cell right here.
+[3:30] So to make sure that you do load in all
+[3:32] the objects in landscape, then you want
+[3:34] to come up to window, go to world
+[3:36] partition and select the world partition
+[3:38] editor. This will give us a mini map and
+[3:41] if you don't see anything, come to world
+[3:43] partition. Hold down left mouse button
+[3:45] and drag over everything. Right click
+[3:47] and then click load region from
+[3:49] selection. So that will bring everything
+[3:51] back. Keep that in mind when you are
+[3:53] using world partition. So if you enter
+[3:55] level, you don't see anything, make sure
+[3:56] you load it up here. Now let's start
+[3:58] from a blank world partition level. Come
+[4:01] to file, new level. And instead of
+[4:03] selecting basic or empty level, select
+[4:06] open world or empty open world. I want
+[4:09] to show the process of mesh string
+[4:11] completely from scratch where we don't
+[4:12] have a landscape distracting us. So
+[4:14] let's create an empty open world. And
+[4:17] using this template, we already have
+[4:19] world partition ready to go. So let's
+[4:22] come down to the plus button and let's
+[4:24] drag in some lights. So instead of
+[4:26] dragging out my actors manually, here's
+[4:28] a shortcut. You can hold down control
+[4:29] and click, which will automatically
+[4:31] spawn that actor into my world. So spawn
+[4:34] directional light, a skylight, visual
+[4:37] effects, we need a sky and atmosphere,
+[4:39] volutric clouds, and an exponential
+[4:42] height fog. So just hold down control
+[4:44] will bring in all of them automatically.
+[4:47] And just like that, we already have
+[4:48] lighting in our world. There's just one
+[4:49] more change we have to make, and that's
+[4:51] with the skylight. Turn on real-time
+[4:53] capture because we are using the sky and
+[4:55] atmosphere system. Now, don't forget to
+[4:58] press control and S to save this level
+[5:00] so we don't lose anything. Create a new
+[5:01] folder maps and call this first terrain
+[5:05] map. Okay, great. Now, let's create our
+[5:08] first terrain. And to do so, we have the
+[5:10] brand new mesh terrain mode. Selecting
+[5:13] this will give me brand new options. We
+[5:15] have the option to create and then to
+[5:17] edit and organize the mesh terrain.
+[5:19] These are our modifiers which we will
+[5:21] cover in just a second. Here are all of
+[5:23] our sculpt tools. This is the tool that
+[5:26] we will use to paint material layers
+[5:28] which we will use with the Sensei
+[5:30] terrain material. And in the last menu
+[5:32] are tools to create static meshes from
+[5:34] scratch because as you will see later in
+[5:36] this video, static meshes are essential
+[5:38] when using mesh terrain and can be a
+[5:40] powerful combination. These are the same
+[5:42] tools you'll find in the modeling mode.
+[5:44] So let's create our first mesh terrain.
+[5:46] And right off the bat, we have a bunch
+[5:48] of different options. And we can control
+[5:50] exactly how dense our mesh terrain is.
+[5:52] So, how many polygons make up our mesh
+[5:54] terrain. And the more polygons on the
+[5:56] terrain, the more detail we have to
+[5:58] sculpt with. But generally, I would just
+[6:00] leave this at default because, as you
+[6:02] will see, we can dynamically control how
+[6:04] many polygons are on the mesh terrain.
+[6:06] And right now, the options are pretty
+[6:08] good. So, we'll press accept. And boom,
+[6:11] we now have our first mesh terrain. Now,
+[6:14] do keep in mind that I am using a newer
+[6:17] build of the mesh terrain plugin. If
+[6:19] you're using the 5.8 preview, you're
+[6:20] going to have a different material, but
+[6:22] everything is still the same. Now, to
+[6:23] quickly show an example of how we are
+[6:25] using world partition, what I will do is
+[6:28] let me drag in a cube and then reopen
+[6:32] this level. So, go to content maps and
+[6:35] reopen it. And then we'll see. Uh-oh,
+[6:37] that cube is gone. Any stack meshes that
+[6:40] we place are gone in this level. And
+[6:41] that's because they're not loaded in
+[6:43] within our world partition mini map. So
+[6:46] to get back those changes, I'll zoom out
+[6:48] and then draw a big square, right click
+[6:51] and select load region from selection
+[6:53] and then we'll get it back. So do keep
+[6:55] in mind if you are missing something
+[6:57] then make sure that area is loaded
+[6:59] within world partition. Okay, let's
+[7:01] cover the very basics of how we can now
+[7:03] sculpt on this landscape. So going back
+[7:06] into mesh terrain within the outliner,
+[7:09] we will see that we have a new actor
+[7:10] that is the mesh terrain we just created
+[7:13] called a mesh partition. Now right off
+[7:15] the bat, we can already start sculpting.
+[7:17] If I go to sculpt and then select my
+[7:19] mesh partition, I can select a brush and
+[7:22] then start sculpting. And as you can see
+[7:25] the material changed. That is a glitch.
+[7:27] But I recommend you don't sculpt
+[7:28] directly on the mesh terrain. That's
+[7:30] because this is a destructive workflow.
+[7:32] If you make a change and then in the
+[7:34] future you don't like it, there's no way
+[7:36] for you to undo. I'll press X to undo
+[7:39] that because the power of mesh terrain
+[7:41] comes from its modifier stack. So to
+[7:44] show what I mean, we have a new tool.
+[7:46] Coming up to tools and then under
+[7:48] miscellaneous, we have mesh partition
+[7:50] outliner. Go ahead and select that. This
+[7:53] will give us a brand new window. And
+[7:55] here is where we can essentially stack
+[7:57] layers like if we use another creative
+[7:59] program like Photoshop or ZBrush. So we
+[8:03] can divide our sculpts and changes into
+[8:06] individual layers that we can control
+[8:08] right here. And then this is where the
+[8:10] modifier stack comes in handy because
+[8:12] now if we come over to this button for
+[8:14] modifiers, we see we have a bunch of
+[8:16] options. And each of these modifiers are
+[8:19] its own layer. The most important
+[8:21] modifiers are the brush and the remsh
+[8:24] modifier. So, first let's cover the
+[8:27] brush modifier. And to add it, I'll just
+[8:29] drag it onto my mesh terrain. Let go.
+[8:31] And we will see that we now have a new
+[8:33] brush modifier layer within the
+[8:35] outliner. So, any edits that we make to
+[8:38] this brush modifier will be contained
+[8:40] within this one layer. This is a super
+[8:43] powerful and modular workflow that, as
+[8:45] you'll see, allows for a lot of creative
+[8:47] possibilities. Now, we can only sculpt
+[8:49] within the area that's outlined by this
+[8:51] volume. So, what I'll do is let's scale
+[8:54] this up so we get even more options for
+[8:56] me to sculpt. And now go into the sculpt
+[8:59] tool and start to cover these brushes.
+[9:01] Now, we have height sculpt, height
+[9:04] smooth, and height flatten. These are
+[9:05] the exact same brushes that we would get
+[9:07] if we were painting on the old landscape
+[9:09] system because they only move the
+[9:11] landscape up and down. We can't create
+[9:13] any overhangs or 3D geometry. To show
+[9:15] what I mean, let's select height sculpt.
+[9:17] And now I can only sculpt within this
+[9:20] modifier volume. I'll go ahead and let's
+[9:22] increase the brush by using the bracket
+[9:24] keys. Same controls as other parts of
+[9:27] Unreal. And then start to paint. So we
+[9:30] can see that holding down I can sculpt
+[9:34] and let's move this plane out of the way
+[9:36] so I can better look at it. Holding down
+[9:38] control will then sculpt down. And of
+[9:42] course holding down shift will smooth
+[9:44] the landscape. So, exact same controls
+[9:47] as traditional landscape sculpting. And
+[9:50] if I want additional options, we can
+[9:52] select this menu right here, which will
+[9:54] bring up a new menu. Hovering my mouse
+[9:57] over this menu, I can hold down the left
+[9:59] mouse button to then drag and move this
+[10:01] menu around. So, I can move it off to
+[10:02] the side. Same thing down here, I can
+[10:05] move these options also. Maybe I want
+[10:07] them up here, but in my case, I'll just
+[10:09] leave them down there. So, all these
+[10:12] sculpt tools have similar options. that
+[10:15] you can see right here. So, I recommend
+[10:18] experimenting and playing with some of
+[10:20] these options. These options are pretty
+[10:22] similar to options you would see in any
+[10:24] creative program like Blender or ZBrush
+[10:26] or even the old sculpting tool in
+[10:28] Unreal. And once you like your change,
+[10:30] go ahead and select the check mark. So,
+[10:33] now that we have our first sculpt, as
+[10:35] you will see, we have a brush layer.
+[10:37] What's really fun is that now, just like
+[10:39] any other static mesh in Unreal, I can
+[10:42] select this brush layer and then start
+[10:44] to move it around. So now, as I move
+[10:48] this modifier, so too will the changes I
+[10:51] made. Or I can even scale this up
+[10:55] or scale it on the X-axis and rotate it.
+[11:00] So this allows for a very modular way of
+[11:03] creating landscapes in Unreal. If I like
+[11:05] the sculpt that I did, I can move it
+[11:07] around like any object in a real or I
+[11:09] can even press Ctrl and D to then
+[11:11] duplicate it. So now we have another
+[11:13] layer and now we have two of the same
+[11:16] sculpt.
+[11:18] Now you will see that it does take a
+[11:19] while to load especially now if I click
+[11:22] away from the landscape. So currently we
+[11:23] have this warning up here. If I now
+[11:25] click away from the landscape that
+[11:27] warning will go away. But in the bottom
+[11:30] right hand corner, we will start to see
+[11:32] that it's preparing the static mesh. And
+[11:34] that's because it's now building nanite.
+[11:36] So when we are editing on the landscape,
+[11:38] nanite is disabled. But then as soon as
+[11:40] I click away from the landscape, nanite
+[11:42] is reenabled. And we can see that by
+[11:44] going into nanite, visualizations,
+[11:46] triangles, and the landscape is already
+[11:49] fully nanite for us. The way mesh
+[11:52] terrain works is that the modifier
+[11:53] that's at the bottom will be applied to
+[11:55] the landscape first and then the
+[11:56] modifiers above it will be applied
+[11:58] afterwards. So we need to control the
+[12:01] order. Unfortunately, as of right now,
+[12:03] there is no way that I could just grab
+[12:04] it and then place it to change the order
+[12:06] of the layers. Instead, what we have to
+[12:08] do is select it and then we have sub
+[12:10] priority. So with sub priority, I can
+[12:12] then increase this to then move a layer
+[12:15] up or decrease it to move it down. So by
+[12:18] increasing this so the sub priority is
+[12:20] higher than the previous one. This
+[12:22] modifier is now above it. Now we won't
+[12:24] notice a change right now for this
+[12:26] situation but as you will see when it
+[12:29] comes to other modifiers the order is
+[12:31] important. Let's delete the duplicate
+[12:33] modifier because that was just an
+[12:34] example. And with this modifier selected
+[12:37] go into mesh terrain to continue
+[12:39] covering sculpting. So height sculpt,
+[12:43] height smooth, height flatten are the
+[12:44] same controls from landscape. And while
+[12:46] this is good, this defeats one of the
+[12:48] purposes of mesh terrain and that is it
+[12:50] allows us to create 3D geometry. So this
+[12:53] is where the new sculpt tools like
+[12:56] sculpt n, move, smooth, pinch, flatten,
+[12:58] and erase come in very handy. These are
+[13:01] the same tools that you would find in a
+[13:03] professional sculpt program like ZBrush
+[13:06] or Blender. So we can treat our world as
+[13:08] one big sculpting canvas for us to
+[13:10] create. So by going into sculpt N this
+[13:14] works like a normal sculpt brush in 3D.
+[13:16] It won't just raise and lower the
+[13:18] geometry in the world. Instead, let's
+[13:21] say over here I can now start to sculpt.
+[13:23] And then as you can see right now we are
+[13:26] sculpting real 3D geometry almost like
+[13:29] now this is a bridge between these two
+[13:31] hills. Or I could go into the move brush
+[13:34] and then start to move around. So just
+[13:36] grab something. Let's move this there.
+[13:40] and then just keep moving
+[13:44] or using the flatten brush. I'm now
+[13:47] flattening this in 3D.
+[13:51] As you'll see, the geometry is now
+[13:52] pointing in an angle. This was
+[13:54] impossible in the old landscape system.
+[13:57] We're not just flattening it in the Z
+[14:00] direction. We have control to sculpt in
+[14:02] all different directions. So, we're not
+[14:04] just limited to a flat plane. As you'll
+[14:06] see later in the video, we can activate
+[14:08] mesh terrain on any 3D object. Now,
+[14:11] there's two issues that you notice.
+[14:12] Number one, the lighting is incorrect.
+[14:14] That's because we're currently in edit
+[14:16] mode. If I leave mesh train mode and
+[14:18] click away to let Nanite build, then
+[14:20] after Nanite is done building, we'll get
+[14:22] back correct lighting with global
+[14:24] illumination. You'll still notice that
+[14:26] the shadows look wrong. This is because
+[14:28] the virtual shadow map hasn't updated
+[14:30] yet. A quick fix is to just move your
+[14:32] camera away from the landscape and then
+[14:34] move your camera back in to update the
+[14:36] virtual shadows after you make a change
+[14:38] to the landscape. That is a temporary
+[14:40] issue for us the editors. In game play,
+[14:42] that won't be an issue. And the second
+[14:44] big problem is that obviously there is
+[14:46] not enough geometry. Look at this
+[14:49] dressing. This looks really bad.
+[14:51] Pressing Alt and two will bring us into
+[14:52] wireframe view mode. So we can see the
+[14:54] exact polygons that are making up this
+[14:56] shape. And as you can see, it is pretty
+[14:58] stretched. It is noticeable that this
+[15:00] landscape is low poly which makes it
+[15:02] look bad. Now for the default settings
+[15:03] for mesh terrain. If we come over here
+[15:07] to use this cube as a reference, this
+[15:10] cube is 1 m by 1 m. Pressing alt and
+[15:13] two, you'll see that the quads which are
+[15:16] the two triangles are now 1 m by 1 m.
+[15:19] This means we have a vertex every 1 m,
+[15:22] which is good for sculpting large
+[15:23] detail. But as you'll know from other
+[15:25] programs, if you want to sculpt small
+[15:27] detail, we need more polygons. Now, when
+[15:31] we created this landscape, we could have
+[15:34] added more polygons within the settings
+[15:36] here, but I chose not to. That's because
+[15:38] 1 meter pervertex is a good starting
+[15:41] point to sculpt large formations. And
+[15:44] then if I want to add more detail by
+[15:46] creating more polygons within the
+[15:48] modifier, I would use the remsh
+[15:51] modifier. So, this modifier is really
+[15:53] powerful because it allows us to
+[15:55] dynamically add more polygons to the
+[15:57] map. To show what I mean, I can drag out
+[16:00] the remsh modifier, then press Alt N2,
+[16:03] and right off the bat, you'll see that
+[16:05] it is changing the landscape, but in a
+[16:08] weird way. So, within these settings, go
+[16:11] down to remesh.
+[16:13] And I'll cover remsh in just a moment,
+[16:15] but I want to show tessillate. So,
+[16:17] tessellate will subdivide the quads
+[16:19] evenly. Now instead of each quad being
+[16:21] one meter, they are now 50 cm. And
+[16:24] scrolling down, we have options for
+[16:26] tessillation. Right now it's at one. If
+[16:28] we do two, then that will tessillate it
+[16:30] even further. So right here, the
+[16:32] vertices are now 25 cm apart. And I can
+[16:36] move this anywhere in my map to then
+[16:39] give me more geometry. And this is an
+[16:42] insanely powerful workflow. Let's say
+[16:44] you have flat land all the way over here
+[16:48] where you don't need that much sculpting
+[16:49] detail, then you can leave it at one
+[16:51] vertex per meter. But if you have an
+[16:54] area of the world that needs an insane
+[16:57] amount of detail, then you could use the
+[16:59] remesh modifier to add more vertices so
+[17:02] you get more creative control. So how we
+[17:04] would use this and let's go back into
+[17:06] wireframe. We can see that we do have
+[17:08] issues. There's not enough polygons
+[17:10] here.
+[17:12] So, I will leave the tessellation level
+[17:14] back at one to show what's happening.
+[17:16] And then I will scale this up and place
+[17:19] this over my sculpts to give us more
+[17:22] sculpting detail.
+[17:24] As you'll see, even though we have new
+[17:26] geometry from the teslate modifier, this
+[17:29] outcrop is still low poly. And that's
+[17:32] because the remsh modifier in testlate
+[17:34] mode is subdividing the polygons. it's
+[17:37] not taking into account the 3D form of
+[17:40] my landscape.
+[17:42] So, this is where the remesh modifier
+[17:44] will come in handy. So, tessellate is a
+[17:47] very good workflow for when you know
+[17:49] there's an area of your landscape that
+[17:51] needs detail. Then, before you sculpt,
+[17:54] add in a tesslate modifier to give you
+[17:56] some extra polygonal detail. But to get
+[17:59] a dynamic change to our landscape
+[18:02] to fix a low poly issue like here, we
+[18:05] need to change this to remesh.
+[18:07] So change the remsh. We'll see that
+[18:09] there is no change. And that's because
+[18:10] it's taking into account the form that
+[18:13] is below the modifier. So now we need to
+[18:15] raise the remesh modifier. So raise this
+[18:17] up. That's how it's applied after the
+[18:19] sculpt. And then also within the
+[18:22] settings for target edge length is set
+[18:24] to 1,00. Let's bring this down to 100.
+[18:28] And boom. Now you will see that that
+[18:30] issue has been fixed since we set the
+[18:32] remsh modifier to 100 going into polygon
+[18:35] mode. We still have the same density. So
+[18:37] one vertex per meter just like the rest
+[18:40] of the landscape. But now it is actually
+[18:42] following the geometry that we sculpted
+[18:44] dynamically, not just subdividing it
+[18:46] evenly. So whenever I make a very
+[18:49] extreme change with the sculpting brush
+[18:51] by creating an outcrop or a cave, then
+[18:54] I'll go in there and then add in a remsh
+[18:56] modifier set to remesh dynamically add
+[18:58] in more geometry so I can keep sculpting
+[19:01] without having to worry about me
+[19:03] stretching one of the original quads too
+[19:05] much. We can see a before after of the
+[19:07] remsh modifier by temporarily turning
+[19:10] off a modifier by coming over to here
+[19:13] and then just selecting the brush
+[19:15] modifier. So this is what it looked like
+[19:17] before the remsh. And then to see all my
+[19:20] modifiers again, come up to the very top
+[19:22] and select the dot again. So this is
+[19:25] before, very low poly. And then this is
+[19:28] after it added more geometry and then it
+[19:30] smoothed it out. This is basically
+[19:33] dynamic tessillation from Blender or
+[19:34] ZBrush except we are manually defining
+[19:37] where the tessellation should be. And of
+[19:40] course, if I want even more detail, then
+[19:42] instead of target edge length of 100, we
+[19:44] can do 50. That means one vertex per 50
+[19:47] cmters. And now there's a lot more
+[19:49] geometry. Do keep in mind that using
+[19:51] remesh modifier in remesh mode is one of
+[19:54] the most expensive actions you can do.
+[19:56] Teslate is more performant because we're
+[19:58] just subdividing it. Remesh has to do a
+[20:01] bunch of calculations on top of the
+[20:02] surface to take account for its forms.
+[20:05] To continue with the examples of how to
+[20:07] use remsh, let's very quickly sculpt in
+[20:09] a cave. So to do so, I'm going to use a
+[20:12] new sculpt brush and then drag in my
+[20:15] brush right here. I want this to come
+[20:17] after the previous modifiers I added. So
+[20:21] within sub priority, let's increase
+[20:22] this. This brush is just for my cave and
+[20:25] it is after the remsh modifier. So we
+[20:27] get access to all of that extra geometry
+[20:30] we already created.
+[20:33] And then I'll come in with the move
+[20:35] brush. So go to sculpt move. I can also
+[20:38] use sculpt in and then hold down control
+[20:40] to dig in. But in my case, I'm just
+[20:42] going to use move and then start to move
+[20:44] this in like right here. Now in case you
+[20:47] are having trouble seeing exactly what
+[20:50] changes you're making, just like any
+[20:52] other sculpt program, we have access to
+[20:54] Mac caps. So within the settings here,
+[20:56] scroll down and we have material mode.
+[20:59] Like I said, to any of these Mac caps,
+[21:01] we have our classic diffuse, our gray,
+[21:04] and just everything you would expect.
+[21:06] Now, in my case, I'll leave it at
+[21:07] existing material, and then still try to
+[21:10] just dig in, grab that, and create a
+[21:13] cool looking cave.
+[21:17] Press accept.
+[21:19] And now I have a cave. But as you'll
+[21:21] see, just like with the issue
+[21:23] beforehand, when we're making extreme
+[21:24] changes, especially extreme changes in
+[21:27] 3D,
+[21:28] often times there won't be enough
+[21:30] polygonal density because we're
+[21:31] stretching those original quads like
+[21:33] right here. So then we would come in
+[21:36] with another remesh modifier. So come
+[21:39] here, remsh, drag that in,
+[21:43] and then I only want this to encompass
+[21:45] my cave. Of course, within the settings
+[21:47] of this remesh modifier, we want this to
+[21:49] be applied after I made the cave sculpt.
+[21:52] So, move this to the top above the cave
+[21:54] layer. Go to details. Keep the mode on
+[21:57] remsh. And for target edge length,
+[21:59] change this to 50. So, it has the same
+[22:02] density as the other remsh modifier. And
+[22:05] now that fixes the cave. We have even
+[22:07] topology. It's not being stretched. But
+[22:09] if I know that I want to add a lot of
+[22:11] detail to this cave, then instead of a
+[22:13] target edge length of 50, we can do
+[22:15] something very small like 25.
+[22:18] So now we have a vertex every 25 cm,
+[22:21] giving us a lot of detail that we can
+[22:23] sculpt on. We can even see with the
+[22:25] boundaries here is a landscape. Then we
+[22:28] transition to one remsh modifier,
+[22:30] shrinking it down to vertex every 50 cm.
+[22:33] And now it's a vertex every 25 cm,
+[22:36] giving us more polies to play with. So
+[22:38] now I can drag out a brush modifier or
+[22:40] even let's add in a noise modifier
+[22:42] because I have enough polygons to be
+[22:44] able to use it. This modifier works best
+[22:46] when there's a lot of vertices. So I
+[22:49] will move this modifier to the very top
+[22:51] and this will give me very quick detail.
+[22:53] For intensity, bring this up to 200. So
+[22:55] now this is really moving that geometry.
+[22:58] Then for the octaves, let's bring that
+[23:00] up to eight. So that's how we get a lot
+[23:02] of small detail here. Click away. Click
+[23:04] away. And wait for Nanite to build. And
+[23:07] just like that, we have a pretty
+[23:08] detailed cave where the detail is only
+[23:11] contained within this section of the map
+[23:13] and the rest of the map can have as much
+[23:15] or as little detail that I want as
+[23:17] possible. So this is so customizable.
+[23:21] Something like this was impossible
+[23:22] beforehand. And as you can imagine, you
+[23:25] probably have a lot of creative
+[23:26] possibilities running in your head. So
+[23:28] that is the very basics of how we use
+[23:31] mesh terrain. Now it's time to cover how
+[23:33] we can use the sensei terrain master
+[23:36] material. Link in the description below.
+[23:38] You could download the sensei terrain
+[23:40] master material. This is the first
+[23:43] master material for mesh terrains. So go
+[23:45] ahead and open up the project. Here is a
+[23:48] project. And then we have the core
+[23:49] assets contained within the sensei
+[23:51] terrain folder. And then we have
+[23:52] examples within the example folder. The
+[23:55] actual material is in sensei terrain
+[23:57] materials. And here is that material
+[24:01] right here. So, this was created from
+[24:02] the ground up to be used with mesh
+[24:05] terrain and it's very customizable and
+[24:07] also a good learning resource to
+[24:09] actually know how to create mesh terrain
+[24:10] materials because this is the first one
+[24:13] that is outside of Epic Games. Now, the
+[24:15] project just contains these assets. Of
+[24:17] course, we have to migrate them. So,
+[24:19] make sure when you do migrate these
+[24:20] assets that the project you're migrating
+[24:22] into already has the Mesh Terrain plugin
+[24:25] enabled. So, right click and let's
+[24:27] migrate it into the project we've been
+[24:29] working on. Back in my original project,
+[24:31] those assets have been migrated in. So
+[24:34] we have the sensed terrain folder and I
+[24:36] also migrated the example folder. Since
+[24:38] we will use these examples to showcase
+[24:39] the material. Now going into sensei
+[24:42] terrain materials to sign a material is
+[24:44] pretty unique. We have to do this
+[24:45] through a mesh partition definition. So
+[24:48] including the assets is a mesh partition
+[24:51] definition. And it is within here that
+[24:54] we assign the material. The material I
+[24:56] want to use is already assigned here. If
+[24:58] you have a different material, then you
+[24:59] would swap it out. Now, we have to
+[25:01] assign this MPD to our mesh terrain. And
+[25:04] to do that, we need to select the mesh
+[25:06] partition mesh. So, I could do so in the
+[25:07] outliner by selecting it here or a
+[25:09] shortcut to select it is within the mesh
+[25:12] partition outliner. Click on this button
+[25:14] to then automatically select it in the
+[25:16] outliner. Now, in the details panel of
+[25:18] the mesh partition, we can assign its
+[25:21] definition. So I will drag MPD sensei
+[25:25] terrain onto it and then let go.
+[25:28] Instantly boom. Now our mesh terrain is
+[25:31] actually practical. We have a high
+[25:32] quality material on it and it already
+[25:34] looks amazing. That's because by default
+[25:37] it is automatically assigning layers
+[25:39] based off of the slope. So this already
+[25:41] looks realistic. We can see that when
+[25:43] there is an extreme slope like within
+[25:45] this cave or right here it transitions
+[25:48] to a cliff material and then it
+[25:51] transitions to rocky dirt and finally
+[25:53] transition back into grass. So this is a
+[25:57] material ready to go right off the bat.
+[26:00] We also get additional detail coming
+[26:02] from the nanite height textures. So
+[26:05] you'll see that the rocks are actually
+[26:07] popping out of the material. Same thing
+[26:10] with the cliff. The clip has overhangs
+[26:13] at height to it and the layers are
+[26:15] naturally transitioning with each other
+[26:17] according to their height layers which
+[26:19] makes a realistic blend between the
+[26:21] layers. If I sculpt something, so go
+[26:24] back into mesh terrain.
+[26:26] Let's go into the outliner and select
+[26:28] the brush modifier there
+[26:31] and I come over here. Let's sculpt.
+[26:33] You'll see that this material is
+[26:35] automatically updating and then click
+[26:38] away because we have to wait for nanite
+[26:40] to enable to get back that displacement.
+[26:43] And here it is. There is the virtual
+[26:45] shadow issue again. So fly away
+[26:48] and then fly back for all of that
+[26:52] additional nanite detail. Okay. Now,
+[26:54] exactly how do we use this material?
+[26:57] Because it's all fun and games until we
+[26:59] have to edit it. So, first off, you need
+[27:01] to know exactly what material you're
+[27:03] using. To do that, again, go into the
+[27:05] details. Actually, let's go back into
+[27:07] the outliner and then select the mesh
+[27:09] partition.
+[27:10] Then go into that definition. And right
+[27:12] now, it's using this material. So,
+[27:14] double click to open it up. And here are
+[27:17] all the options that make up this
+[27:19] material. Now, what I'll do is I will
+[27:22] undock this
+[27:24] and then move the details panel here. If
+[27:27] you ever want to make your own material
+[27:29] instance, of course, you would come into
+[27:31] content, sensei terrain materials,
+[27:35] rightclick, create a material instance,
+[27:37] and then drag this into your material
+[27:40] definition. But to demonstrate it, I
+[27:42] will use the example material. This
+[27:45] material is not just one material.
+[27:47] Instead, it is several different
+[27:48] materials combined. So, and let me go
+[27:51] collapse the extra layer option. So, we
+[27:53] can see we have the a material layer. So
+[27:56] we have options for the material above
+[27:58] it. Then we have the A material. Then
+[28:01] below that we then have the B material
+[28:02] options and the B material. Then C, D,
+[28:06] and E. All of these options right here
+[28:09] are exactly the same for each one. And
+[28:12] there are a lot of options and settings
+[28:14] that I added so you have complete
+[28:15] customization. Now, in this tutorial,
+[28:18] I'm not going to cover every single
+[28:19] option. That's because this material is
+[28:22] actually a variation of the Sensei
+[28:24] master material which I released a
+[28:26] couple weeks ago. So the Sensei master
+[28:29] material is just a general master
+[28:30] material that you can use for your
+[28:32] static meshes. The sensei terrain
+[28:34] material is built on top of that. So all
+[28:37] of the options in the Sensei master
+[28:39] material are exactly the same in the
+[28:41] terrain material. So, if you want to
+[28:43] know exactly what each of these options
+[28:45] do in depth, then you can go ahead and
+[28:47] watch that video and then come back to
+[28:49] this one because this material is
+[28:51] exactly the same except I added
+[28:52] additional functionality for the mesh
+[28:54] terrain. So, what I will cover now is
+[28:57] the new features that I added for mesh
+[28:59] terrain to begin. That's why I have more
+[29:01] screen real estate. So, we're just
+[29:02] focusing on the material. I'll press F
+[29:04] and 10 to then dock these windows off to
+[29:07] the side. So, I'm just focusing on this
+[29:10] material. Now for extra layer options,
+[29:12] the original Sensei material only had
+[29:14] three layers. Now we have additional
+[29:17] layers. So by default, if we click on
+[29:19] false, false,
+[29:21] and second material, false. Now you'll
+[29:23] see that we only have one grass
+[29:25] material. If you want a second material,
+[29:27] then under layer options, enable layer B
+[29:30] by setting it to true. So now we have
+[29:32] another material. In this case, this
+[29:34] material is the stone. And then to
+[29:37] enable the third material, click true
+[29:39] for layer C. And now we have a C
+[29:41] material. And then if you want another
+[29:43] layer, you can turn on material D. And
+[29:46] then fifth layer, material E. You will
+[29:48] not see any changes because for D and E,
+[29:50] we have to paint those down. We can
+[29:52] still paint layer C and B. I'll cover
+[29:54] painting in just a moment. And the
+[29:57] reason why I have it where you enable
+[29:59] each layer individually instead of them
+[30:01] automatically existing is because if you
+[30:03] don't need a layer then that should be
+[30:05] disabled because the more layers you
+[30:07] have then the less performant your
+[30:09] material is going to be. And then we
+[30:10] have auto blend B and C. So let me turn
+[30:12] off C and B. This is the option to
+[30:15] automatically assign layer B according
+[30:18] to the slope. So by turning this on now
+[30:20] layer B is on top of layer A from the
+[30:22] slope and turning on layer C. Now layer
+[30:25] C is being applied on top of it. And we
+[30:27] can control the blending all the way
+[30:29] down here. So you have to keep going
+[30:30] down and down until we get to auto
+[30:33] blend. This is the B layer. I can
+[30:36] increase the fall-off amount. So let's
+[30:38] look right here. By increasing this, we
+[30:41] see we get more and more. And then by
+[30:43] increasing the contrast, right now
+[30:45] there's a very smooth transition between
+[30:48] layer A and B. Increasing the contrast
+[30:50] something like one will then make it a
+[30:52] much more harsh transition. So now we
+[30:55] don't get that smooth look to it. Now in
+[30:57] my opinion, I like the smooth look. So I
+[30:59] just set it to zero for a smooth
+[31:01] transition between them. The exact same
+[31:04] controls for the auto blend for layer C.
+[31:07] I can increase this or decrease it.
+[31:09] Press Ctrl and Z to get back my default
+[31:12] values. to control the actual blend
+[31:14] between materials. In between each of
+[31:16] the material layer options, there is
+[31:19] blend options. So this is the blend
+[31:21] options between layer A and B. And then
+[31:23] below that is a blend options between B
+[31:26] and C. Do keep in mind that this is more
+[31:28] like a blend option between A, B, and C
+[31:31] because this takes into account the
+[31:33] combination of all the material layers
+[31:35] that are below it. So these options are
+[31:37] exactly the same from the sensei master
+[31:39] material. It is covered in the other
+[31:41] video, but to quickly cover it, we are
+[31:43] blending the materials based off of
+[31:45] their height map. So each of these
+[31:47] layers have a height option. And when
+[31:50] we're transitioning in between layers,
+[31:52] whatever layer has the higher height
+[31:54] will then take priority. So the contrast
+[31:57] right now is 1.4. Let me bring down to
+[32:00] zero. And then we can see that now we
+[32:02] get a kind of smooth transition between
+[32:04] these two layers. But then increasing
+[32:06] this, we can then start to see
+[32:10] Now the areas of material B that are
+[32:12] high specifically the parts where there
+[32:14] is rock will now be the first to
+[32:17] transition and then it goes into a
+[32:19] cliff. You could change the height and
+[32:21] displacement of a layer through the
+[32:24] displacement options right here. So you
+[32:26] can increase the strength and the
+[32:28] contrast to make the displacement more
+[32:30] noticeable and this will affect the
+[32:31] height blend or you can decrease the
+[32:34] displacement amount. So, let's say if I
+[32:36] don't want displacement for some reason,
+[32:37] then I can bring this to zero. And now
+[32:39] it's flat. In my case, I love
+[32:42] displacement. So, we'll bring that to
+[32:43] one. And let's set this back to its
+[32:46] default. If I want the rocks right here
+[32:48] to pop more because they're
+[32:50] transitioning in between the grass layer
+[32:52] and the rock layer, then the options
+[32:54] between their layers for the contrast, I
+[32:56] can bring this up to something like one.
+[32:58] And now the rocks will be more apparent.
+[33:00] So, this is zero. Notice how the grass
+[33:02] layer is slowly going on top of the
+[33:03] rocks. and then increasing this the
+[33:06] rocks will pop out more and maybe you do
+[33:08] like the look of that. So nanite
+[33:10] displacement is enabled by default on
+[33:12] this material. If you do not want nanite
+[33:14] displacement then in the material
+[33:15] properties scroll all the way down until
+[33:18] you get to the general material
+[33:20] properties. And then under material
+[33:22] property override scroll down then we
+[33:24] have enable tessellation. You can go
+[33:26] ahead and turn this off. So now we don't
+[33:28] have any tessellations. This landscape
+[33:30] is completely flat and anti-
+[33:31] tessellation can be expensive. If you
+[33:33] just want a normal landscape, no
+[33:35] displacement, you could turn it off
+[33:37] here. In my case, I will leave it on.
+[33:39] And we have the displacement scaling
+[33:41] magnitude. This controls the
+[33:42] displacement for my entire material for
+[33:45] all my layers as a whole. So, we can do
+[33:47] something crazy like 200. And now we get
+[33:49] a crazy amount of displacement.
+[33:52] Or make it subtle, something like 50.
+[33:54] Now, in my case, I'm just leaving it at
+[33:55] 70. On the topic of displacement, if you
+[33:59] are displacing a layer, you have to use
+[34:01] triplaner projection. So if we go to our
+[34:03] cliff material, you'll see that trip
+[34:05] planer is turned on. That's because
+[34:07] displacement is being used on this
+[34:09] layer. If I turned off trip planner
+[34:11] projection, then where the texture seams
+[34:13] are and we can see it will immediately
+[34:15] break down when displacement is enabled.
+[34:17] Now if I was not using displacement,
+[34:19] then I could turn off tripler
+[34:21] projection. But because we are, the
+[34:23] seams are super noticeable now. So
+[34:26] turning it on will then smooth
+[34:27] everything out and also just look better
+[34:30] and prevent those issues with
+[34:31] displacement. So do keep in mind if
+[34:33] you're using displacement, turn on trip
+[34:34] planer. Unlike the previous master
+[34:36] material which is meant for small
+[34:38] individual meshes, this master material
+[34:40] is meant for a massive large landscape.
+[34:43] As such, it is important for us to hide
+[34:45] the tiling because if we keep repeating
+[34:48] a texture over and over again, it is
+[34:50] going to be noticeable. So I added two
+[34:52] additional options to each of these
+[34:55] layers to help high tiling and that is
+[34:57] cellbombing and distance blend. Now
+[35:00] these features were actually taken from
+[35:02] the Sensei auto landscape material I
+[35:04] published 2 years ago. So if you are
+[35:06] making a landscape using the original
+[35:08] landscape system, you could get a
+[35:09] material from that video. And if you
+[35:12] want an in-depth look at these features,
+[35:14] then you can watch that video. But I am
+[35:16] going to briefly cover these features
+[35:17] here. So, let me scroll up to the grass
+[35:20] so we can better see this. And I'll
+[35:23] disable cell bombing and disable the
+[35:25] distance blend right here. And I do have
+[35:28] some overall variation which I'll cover
+[35:31] later.
+[35:32] To further help the landscape feel
+[35:34] seamless, I'm going to turn off the
+[35:35] variation. So, we're just focusing on
+[35:37] the tiling. We'll cover this later. But
+[35:39] for color and normal, false and false,
+[35:41] and macro variation amount, zero.
+[35:45] Now coming back up to A, we can see
+[35:49] that, yep, this is very noticeably
+[35:52] tiling. So beforehand, we didn't know it
+[35:54] was tiling because I had some options
+[35:56] enabled. Now, obviously, we don't want
+[35:58] to see this tiling. This looks bad. So
+[36:00] the classic way for us to hide this
+[36:01] tiling, especially on a large landscape,
+[36:03] is to enable distance blend. So this
+[36:06] gives us two sizes now. And we can see
+[36:08] this transition right here. So now when
+[36:10] the camera is up close to the landscape,
+[36:12] we have a small size. But then when the
+[36:15] grass is far away, we then transition to
+[36:17] a different size. And we control these
+[36:19] sizes right here. So right now we have
+[36:21] size A. And then by enabling this
+[36:23] setting, we now get size far. So size A
+[36:27] is the actual size, which is what the
+[36:29] camera sees up close. And then the far
+[36:31] size. You want to make this smaller. So
+[36:33] in my case, it's 0.1, but now I can do
+[36:35] something like 0.01 to better show off
+[36:37] how now when the layer is at a distance,
+[36:40] it transitions to the different size.
+[36:42] And using the start offset and blend
+[36:44] fall-off, I can increase where that size
+[36:46] is and also increase the fall-off of the
+[36:49] size. So how smooth the transition is
+[36:51] between the two. In my case, I'll just
+[36:54] leave it back at 0.1. That is the
+[36:56] classic way to hide tiling on landscape.
+[36:58] The other way and which is more
+[37:00] expensive. Coming up here, let's disable
+[37:03] distance blend. And the other new option
+[37:06] is cellbombing. So by turning cell bomb
+[37:09] to true,
+[37:11] boom, instantly you'll see that it's
+[37:13] hidden. What this is doing is that it's
+[37:15] taking that initial texture and then
+[37:17] just like randomly moving it around and
+[37:19] rotating it to vary it up. And then this
+[37:21] is a quick way to hide repetition. And
+[37:24] if you further want to hide it, then you
+[37:26] can still enable distance blend with the
+[37:28] cell bombing. And you'll see that there
+[37:30] is now tiling. So then we can enable
+[37:33] cell bombing on the far texture. So when
+[37:36] I'm far away, we get a large cell bomb
+[37:39] texture and then zooming up, we get the
+[37:41] smaller one that's actually close up to
+[37:43] the camera. So those are two new options
+[37:45] I added to all of the material layers
+[37:47] specifically for landscapes. Another
+[37:49] thing I added for landscape is just
+[37:52] general variation that is on top of all
+[37:54] my layers to help blend it in when the
+[37:56] camera is really far away. And then that
+[37:58] is what the variation layer down all the
+[38:01] way down, which is the last section,
+[38:03] is here for. So, first off, we have
+[38:05] macro variation. If I turn this on, it's
+[38:07] default to 0.5. Increase this to one so
+[38:10] we can better see this. This is
+[38:11] basically like stains that are on top of
+[38:14] the entire landscape.
+[38:16] It should be subtle, like 0.5, but it
+[38:18] does help make it feel more real. The
+[38:20] other one is adding then a color texture
+[38:22] on top of the entire landscape. So, this
+[38:24] is now another stain texture. If I open
+[38:27] up this color texture, we can see what
+[38:28] it looks like.
+[38:30] See, it's just a bunch of random colors.
+[38:32] Multiply on top of it to help break it
+[38:34] up. And then also a normal map, which is
+[38:37] subtle. I can increase its strength
+[38:39] right now. Then hopefully you can see
+[38:41] it. This normal map is adding random
+[38:43] bump to the landscape. And this is a
+[38:45] subtle change. So I'll leave it at 0.1.
+[38:47] So the macro variation is being applied
+[38:50] regardless of where the camera is. For
+[38:52] the color variation and the normal
+[38:53] variation, this disappears when the
+[38:55] camera gets up close.
+[38:58] So, this effect only affects the
+[39:00] landscape when it's far away, which
+[39:02] really helps blend it in with the world
+[39:04] if a character is really far away from
+[39:06] the landscape. We can control when those
+[39:08] textures show up with the variation
+[39:11] fall-off and start. Okay, now those are
+[39:13] all of the new settings for the sensei
+[39:16] mass material. Now, it's time to
+[39:18] actually cover how we can go in and
+[39:20] start painting my materials. Of course,
+[39:23] to paint on our mesh train, we have to
+[39:24] go back into mesh train mode. So, let's
+[39:27] hop back into mesh terrain and then I'll
+[39:29] press Fn10 to get back my windows so I
+[39:32] can see my mesh partition outliner. Now,
+[39:34] just like with sculpting, if I want to
+[39:36] paint layers, we actually have to paint
+[39:38] on a brush modifier. So, I can select
+[39:41] any of these brush modifiers or I could
+[39:43] create a brush modifier that's just
+[39:45] dedicated to painting. So let's come to
+[39:48] modifiers, brush, drag this out. And now
+[39:51] I will increase the size because I can
+[39:53] only paint within the volume of this
+[39:55] modifier.
+[39:57] And I want this modifier to be at the
+[39:59] very top. So let me go increase the
+[40:01] priority to move it at the top. That is
+[40:04] because just like with sculpting, the
+[40:06] more vertices we have, the more detail
+[40:08] we could paint because we're actually
+[40:10] painting on the individual vertices. So
+[40:12] we'll be able to paint more detail here
+[40:14] than over there. So it makes sense that
+[40:16] we would add the brush modifier that
+[40:19] contains our paint layer to the very top
+[40:21] so we get access to all the vertices we
+[40:23] made below it. And now with this brush
+[40:26] modifier selected instead of going to
+[40:28] sculpt we will go to the paint mode. So
+[40:30] now we can start painting by selecting
+[40:32] paint maps. So to select the specific
+[40:34] layer that we want to paint I'll go to
+[40:36] the properties scroll down and under
+[40:39] channels we have access to the different
+[40:41] layers. Now, in order to get these
+[40:43] layers, you have to use the mesh
+[40:45] partition definition that is included in
+[40:47] the assets. So, make sure you're using
+[40:49] Sensei terrain to be used with the
+[40:51] Sensei material to get these channels.
+[40:54] Now, if I want to paint the B layer,
+[40:56] I'll select material B. And depending on
+[40:58] your version, there might be a button
+[41:00] here to then add this attribute to place
+[41:02] it up here. In my case, it did it
+[41:04] automatically. If you are using an older
+[41:05] version, make sure to press that button.
+[41:07] And now I can start to paint material
+[41:09] layers just like beforehand with the old
+[41:11] landscape system. So we still get
+[41:13] painting with mesh terrain. Of course,
+[41:15] the controls and settings are exactly
+[41:17] the same as with most modes in Unreal. I
+[41:20] could then hold down control and then
+[41:22] chip away. Or if I want a very subtle
+[41:25] paint because right now the transition
+[41:26] is pretty harsh. Let me go decrease the
+[41:29] size and then decrease the strength. So
+[41:32] that's how it's very subtle. And then
+[41:35] just placing it here. I can slowly start
+[41:38] to paint.
+[41:41] And then when I like that change, I can
+[41:43] click on the check and then click away
+[41:46] from the mesh terrain so we can rebuild
+[41:48] nanites. Let me zoom away and zoom back
+[41:50] in. And now we see that we do have our
+[41:54] nice nanite displacement here. So let me
+[41:57] select the brush modifier again. Go back
+[41:59] into paint maps. And do keep in mind
+[42:02] that when we are painting the preview
+[42:04] here might look different from the
+[42:06] finished result. So you might make a
+[42:08] change and then when you click on the
+[42:09] plus button it might look a little bit
+[42:11] different. Also if we want to preview
+[42:14] exactly where this layer is being
+[42:15] placed. Then under preview we could go
+[42:18] to color only. So this shows us where it
+[42:22] is being painted exactly how much. In my
+[42:25] case I'll switch it back to existing
+[42:27] material.
+[42:28] Also, when we are painting, keep in mind
+[42:31] that we have a value slider. And that
+[42:33] this value slider can replace what you
+[42:35] already painted down. So, if I bring
+[42:37] this down to zero,
+[42:40] now we're essentially going to be
+[42:41] painting a value of zero and then
+[42:43] overriding the paint that we already
+[42:44] did. So, then this would then just be
+[42:46] another way that we're chipping away.
+[42:48] So, if you do want to decrease the
+[42:49] strength while still actually painting
+[42:51] the layer, keep the value at one and
+[42:53] then play with the strength, not the
+[42:56] value. And if you want chip away, hold
+[42:58] down control to then chip away at the
+[43:00] layer. Another thing that is different
+[43:02] is that the layers are literally on top
+[43:04] of each other. So right now we are
+[43:06] painting the B material.
+[43:09] And let me paint it right here. So we
+[43:12] have the grass material at the bottom,
+[43:14] which is material A, then B material on
+[43:16] top. Now let's paint in material C. Now
+[43:20] bring this one up, which is cliff. And
+[43:23] then we have another material, material
+[43:25] D.
+[43:26] which is then this other ground
+[43:28] material. Now, if I want the grass
+[43:30] material back, I can't just paint
+[43:32] material A, you'll notice that there
+[43:33] isn't a material A option right here.
+[43:36] And that's because material A is the
+[43:37] very bottom. It is the base layer. If I
+[43:40] want my grass layer, I literally have to
+[43:42] go through each of these materials. So,
+[43:43] material D, chip away, material C, chip
+[43:47] away, then material B, chip away, and
+[43:49] then I get back my grass. So, the
+[43:51] materials are literally on top of each
+[43:53] other that way. I can't just paint grass
+[43:55] over everything and have that overwrite
+[43:57] it. If I want grass on top of the cliff,
+[43:59] so the layers that will automatically
+[44:01] place down, then I have the remove auto
+[44:04] material, which will then chip away from
+[44:05] the auto material and then bring back my
+[44:07] grass there. So that is how we paint my
+[44:10] material. And just like everything in
+[44:13] mesh, your paint layer is modular. Since
+[44:16] it's its own modifier, we can select it
+[44:18] and then you can move it around
+[44:21] or duplicate it and place it somewhere
+[44:23] else in the world. Congratulations. At
+[44:26] this point in the tutorial, you now know
+[44:28] the basics of how to use mesh terrain
+[44:30] and how to use the sensei terrain
+[44:32] material. At this point, you can already
+[44:34] start creating amazing looking
+[44:35] landscapes and landscape materials using
+[44:38] the sensei terrain. So you can create a
+[44:40] landscape, then create a material
+[44:42] instance and start to replace these
+[44:44] layers with your own textures or
+[44:46] textures you find on Fab to create
+[44:48] unique looking landscapes. Now, for the
+[44:50] rest of this tutorial, I'm going to
+[44:52] cover more advanced features,
+[44:54] specifically going into mesh terrain,
+[44:56] exactly what these other modifiers do,
+[44:58] and how they can be useful. If you want
+[45:01] to learn how to create a landscape
+[45:02] material like this from scratch, then
+[45:04] you can check out the Unreal Masterass.
+[45:06] The master class is a collection of over
+[45:09] 95 hours of exclusive lessons for Unreal
+[45:12] Engine. These lessons are projectbased
+[45:14] with a goal to give you a fundamental
+[45:16] understanding of the engine so you know
+[45:19] how to approach any project. In it, I
+[45:21] covered the complete process to creating
+[45:23] a full game with blueprint and C++. Or
+[45:26] if you're interested in film making, I
+[45:28] show how to make a complete animated
+[45:30] short film using all the latest
+[45:32] animation tools and metahumans. What is
+[45:36] relevant for this tutorial is that in
+[45:37] the course I cover how to create a
+[45:39] landscape material for mesh terrain and
+[45:41] landscapes like the one included in this
+[45:43] video. So you will know all the tricks
+[45:45] and methods I use to make the material
+[45:48] and how to add your own features to help
+[45:50] create your unique terrains. If you want
+[45:52] to check out the master class, there's a
+[45:54] link in the description below. So far we
+[45:56] have covered the brush and remesh
+[45:58] modifiers. These are the most important
+[46:00] modifiers because we can do the most
+[46:03] with them. With brush, we're able to
+[46:04] sculpt just like any other sculpting
+[46:06] program. And then with remesh modifier,
+[46:08] we were able to add more geometry
+[46:10] dynamically to help with the sculpting
+[46:12] process. We also covered noise, which as
+[46:15] you remember, and let me just drag this
+[46:16] in. Noise will just randomly add noise
+[46:19] to a landscape. And I have to increase
+[46:22] the strength right now. We can control
+[46:24] exactly what this noise looks like with
+[46:26] the settings right here. And noise is
+[46:28] great when you want to add quick
+[46:29] variation. Remember, we used it on the
+[46:31] cave to add random bumps to it to make
+[46:33] it feel more random and cavelike. So,
+[46:36] noise is pretty self-explanatory. And
+[46:38] then we have the texture modifier. So,
+[46:41] the texture modifier acts like how
+[46:42] landscape patches used to work in the
+[46:45] old landscape system. So, with the
+[46:47] texture patch modifier selected,
+[46:49] scrolling down, we're able to select a
+[46:51] texture asset. Now, included within the
+[46:53] Sensei terrain is this patches folder.
+[46:56] And right here are some height maps. So
+[46:58] remember height maps and we've been
+[47:00] using height maps on all of our
+[47:01] materials for the displacement is a
+[47:04] texture where the black areas or pixels
+[47:06] of the texture or the low points and
+[47:09] then the white areas are the high points
+[47:11] and everything in between is a gradient
+[47:14] transitioning between the high and low
+[47:15] points. The most common way we make
+[47:18] landscapes in games animations that look
+[47:20] like they have realistic forms and
+[47:22] erosions that developed over hundreds of
+[47:25] millions of years is with programs like
+[47:27] World Machine, World Creator, and Gaia.
+[47:29] These are dedicated programs to create
+[47:31] height maps for landscapes. And if you
+[47:34] did create a landscape height map
+[47:35] through those programs, then in the
+[47:37] create tab up here, instead of creating
+[47:39] a flat rectangle, you can select import
+[47:41] height map to automatically create a
+[47:43] mesh terrain with that height map. But
+[47:45] in my case, I'm just going to use this
+[47:47] texture modifier and then add the height
+[47:49] map here because then, as you'll see,
+[47:51] because it is modular with modifiers,
+[47:53] this is very controllable. Now, this
+[47:55] looks kind of weird because there isn't
+[47:57] enough geometry to showcase this
+[47:59] texture. So, what you can do is just
+[48:02] increase it. So, increase it further.
+[48:06] And here I have a pretty crazy mountain.
+[48:09] Obviously, we don't want it cutting into
+[48:10] the landscape. So, I'm going to raise
+[48:11] it. And also definitely I need to
+[48:13] decrease it on the Z-axis.
+[48:19] And here is that mountain texture. So
+[48:22] I'm able to move it around to different
+[48:24] parts of the map. And do keep in mind it
+[48:26] does take a while for it to load because
+[48:28] it is displacing raising all the
+[48:30] vertices to match the height texture.
+[48:32] And to showcase another example, I'll go
+[48:35] ahead and duplicate this modifier for
+[48:37] another mountain.
+[48:40] And right now you'll see that the
+[48:41] mountain is cutting into it and also the
+[48:45] sides are being raised up right here.
+[48:47] You can better blend the texture patches
+[48:49] by going into details and for alpha
+[48:52] blend selecting max.
+[48:55] And for the other texture patch, let's
+[48:57] also select max right here. And then to
+[49:00] better blend the texture with the
+[49:01] landscape so we don't see where the
+[49:03] texture ends, we will change the
+[49:05] fall-off distance setting under
+[49:07] fall-off. Set this to 100. Just move
+[49:09] that out. Same thing with the other
+[49:11] texture patch. 100.
+[49:14] So now we have two large mountains
+[49:16] created from a high texture and we can
+[49:18] control the exact placement and size. If
+[49:21] you want to go in and edit this, then
+[49:23] you can always add in sculpt modifiers
+[49:25] and remsh modifiers. Remember unlike the
+[49:28] previous landscape system, this is in
+[49:30] 3D. So what I could do is select this
+[49:33] and then literally rotate this. And now
+[49:37] we are displacing it at an angle to
+[49:40] create very unique terrain formations
+[49:42] and outcrops. Now I'll delete one of
+[49:45] these. So I'll delete the top one
+[49:47] because the way I made the landscape
+[49:50] that you saw at the beginning of this
+[49:51] video was that I used a texture patch
+[49:54] and then I used a texture included
+[49:56] within the electric dreams demo t
+[49:59] landscape 03dp.
+[50:04] I then place this so it encompassed my
+[50:06] entire level.
+[50:09] Of course, the detail created by your
+[50:11] texture modifier depends on the
+[50:13] underlying geometry. Because there
+[50:15] wasn't that much geometry specifically
+[50:16] for an area like here compared to the
+[50:19] original texture, it is simplifying how
+[50:21] much detail we could get from it. So,
+[50:23] just like with sculpting, you would add
+[50:24] in a remsh modifier
+[50:27] and make sure it is below the texture.
+[50:31] set it to tessillate
+[50:34] and then we can bring it up to something
+[50:36] like two which will create more
+[50:38] underlying geometry for the texture
+[50:40] patch to use. And now you'll see that we
+[50:43] do get a lot more detail that was
+[50:46] contained within that texture. So what I
+[50:48] could do is then just encompass this
+[50:50] entire area. And do keep in mind that
+[50:54] now the mesh train will be really slow
+[50:56] since it's adding a lot of extra
+[50:58] geometry.
+[50:59] But now our texture patch is more
+[51:01] detailed. We can see those erosion lines
+[51:03] stand out. The next modifier is the
+[51:06] spline modifier, which will raise and
+[51:08] lower your landscape along a spline. And
+[51:11] the spline is this white line that you
+[51:13] see right here. And what connects the
+[51:15] white line are these points. So you can
+[51:17] select a point, you can move it around.
+[51:19] We'll see that we have two handles on
+[51:21] each side. By scaling the handles down,
+[51:24] we can control the fall-off of this
+[51:26] point for sharper or smoother fall-off.
+[51:29] If you want to create another point,
+[51:30] then hold down alt and duplicate this.
+[51:32] Splines are very common in Unreal
+[51:34] workflows. So, as I raise it, it raises
+[51:37] the landscape. And then lowering it will
+[51:39] cut into the landscape. Go ahead and
+[51:42] delete that because then, as we'll see
+[51:44] that this spline point is only raising
+[51:46] individual points. That's because this
+[51:48] spline point is really small. The way
+[51:50] that we would increase the width of the
+[51:53] raise and lower effect is by scaling it
+[51:55] on the Y-axis. So if I scale this out,
+[51:58] then we start to get a more natural
+[51:59] fall-off. I'll scale this out more.
+[52:04] And also, let me scale this point out. I
+[52:06] can come over to the Yaxis under scale,
+[52:09] set this to 100.
+[52:12] And then same thing right here. Let's
+[52:14] set this to 50.
+[52:18] So now I get more control over these
+[52:20] points.
+[52:22] So very quickly I can maybe create like
+[52:24] a canyon or road to create a unique
+[52:28] looking landscape shape which is an
+[52:30] alternative to sculpting. We also have
+[52:32] the spline remsh modifier which is
+[52:34] exactly the same as the normal remesh
+[52:37] modifier except instead of remeshing
+[52:39] within the area contained within the box
+[52:41] it will remesh the area that is
+[52:43] contained within the spline which can
+[52:44] lead to further customization.
+[52:47] Now, let's cover the mesh modifier and
+[52:49] the boolean modifier. And these
+[52:52] modifiers are pretty amazing. So, let's
+[52:55] first start with the mesh modifier. And
+[52:56] you could think of this as being very
+[52:58] similar to the texture modifier where we
+[53:01] are now displacing the underlying
+[53:03] geometry, but instead of displacing it
+[53:06] based off of a high texture, we're
+[53:08] displacing it based off of a mesh. So,
+[53:10] one of my favorite meshes is this mesh
+[53:12] right here. So, SM Volcanic Terrain. I
+[53:15] really like this mesh, especially for
+[53:17] background detail. You can see that I'm
+[53:19] using this mesh to represent the medium
+[53:21] background, just because it's so
+[53:23] detailed and there's so much stuff going
+[53:25] on with it. This looks really nice on
+[53:27] landscapes. Well, what if I want it to
+[53:29] literally displace the landscape that's
+[53:32] underneath it? Then what I can do is let
+[53:35] me select the mesh modifier again. And
+[53:38] then scrolling down, we have mesh
+[53:40] options and change this from dynamic to
+[53:43] static. So we get access to all stack
+[53:45] meshes within my project. And now I'm
+[53:48] going to use
+[53:49] the volcanic mesh. So select Icelandic
+[53:52] volcano terrain.
+[53:55] And boom. Now we can see we're literally
+[53:57] taking that geometry and then we are
+[54:00] projecting it onto the landscape. So I
+[54:03] can increase this to better show it. So
+[54:06] I can take any static mesh in my project
+[54:10] and basically use it like a height map.
+[54:13] So, it's taking that geometry and then
+[54:15] moving it up, which gives us more option
+[54:17] for displacing my terrain. Just like
+[54:19] with the texture modifier, we have
+[54:21] similar settings to help blend in this
+[54:24] modifier with the landscape. Down here
+[54:26] under height fall-off, we can increase
+[54:27] the distance, which will then smooth
+[54:30] that transition right there.
+[54:33] And this is in 3D. So, don't forget to
+[54:36] project this at an angle. Now, what this
+[54:38] is doing is that it's not using the
+[54:41] original mesh's geometry, as we can see.
+[54:44] Instead, the full name for this modifier
+[54:46] is mesh project. That's because it is
+[54:48] just projecting the underlying geometry
+[54:51] just like how it was with the texture.
+[54:53] If we want more detail right here, then
+[54:55] we would have to add in a remesh
+[54:56] modifier. But what if you want the exact
+[55:00] polygonal density and polygons from the
+[55:03] original mesh? So everything here you
+[55:06] want to add directly onto the mesh
+[55:08] terrain. Well, that's where we would
+[55:10] then use booleans. So let's come over
+[55:13] here and then drag in a boolean
+[55:15] modifier. And this boolean modifier is
+[55:18] going to be pretty crazy. Scroll down
+[55:20] and then under mesh, change mesh source
+[55:24] to static mesh. And then use the volcano
+[55:26] again. So far it is similar but now you
+[55:29] see that if I select this instead of
+[55:31] projecting the original mesh onto the
+[55:33] landscape we are now using the original
+[55:35] mesh's geometry. So this is the exact
+[55:38] same geometry that is on the mesh. If I
+[55:40] click away we can see how the forms of
+[55:42] the original mesh including the unique
+[55:44] formations and divots into the mesh. So
+[55:47] this isn't a 2D projection are now
+[55:50] attached to the landscape. So right now
+[55:52] this is floating and we can see by the
+[55:54] geometry it is not in the landscape yet.
+[55:57] So I'll select this and then I'll move
+[55:58] it down and now clicking away
+[56:03] you can see how the boolean is
+[56:05] connecting the static mesh to the
+[56:07] landscape. Now the static mesh is
+[56:09] literally a part of the landscape. This
+[56:12] is an incredible workflow because very
+[56:14] quickly, even without using a remesh
+[56:17] modifier, we can start to get a lot of
+[56:19] detail and control over that detail
+[56:22] because they're static meshes. We can
+[56:23] edit static meshes onto my landscape.
+[56:26] So, just like this.
+[56:29] And now, fairly quickly, we get unique
+[56:31] landscape geometry without me having to
+[56:33] sculpt or use remesh modifiers. To recap
+[56:36] the differences, to our left we have a
+[56:38] mesh project modifier. And then to our
+[56:40] right, we have a boolean modifier. Both
+[56:42] of them are using the same exact mesh,
+[56:44] but they're going about it in different
+[56:46] ways. The boolean modifier is literally
+[56:49] taking the geometry of the mesh and
+[56:51] adding it to the mesh terrain.
+[56:52] Meanwhile, for the mesh project
+[56:54] modifier, that is projecting the
+[56:56] original mesh onto the terrain using the
+[56:58] original terrain's polygons. The boolean
+[57:01] modifier has a lot more utility and
+[57:03] options. So, by default, the boolean
+[57:05] modifier is set to union. This means
+[57:08] that the mesh will be connected
+[57:11] to the landscape like right here.
+[57:14] We also have the option under boolean
+[57:16] operation to set it to subtract. So
+[57:19] instead of adding to the landscape is
+[57:20] now subtracting from it. Going into
+[57:23] wireframe now the original mesh's
+[57:25] geometry is subtracting from the mesh
+[57:29] terrain. So this is great especially if
+[57:32] you want to create a cave. Maybe you
+[57:34] create another mesh in Blender. You
+[57:36] import it into Unreal and then you use
+[57:38] that mesh as a starting point for the
+[57:40] formation of your cave. And then we have
+[57:43] a trim under boolean operation which
+[57:45] will literally just cut a hole in your
+[57:46] landscape. Maybe for gameplay reasons it
+[57:49] transitions into static meshes.
+[57:52] Here is a really cool example of how to
+[57:54] use booleans in Blender. I created a
+[57:56] very simple mesh and then I imported it
+[57:59] into Unreal. And I want this mesh to
+[58:01] basically be like a bridge mesh. So I
+[58:04] can place it onto my landscape. And then
+[58:06] this acts like a bridge that's going
+[58:08] above this creek river. Well, what I can
+[58:10] do is let's go into mesh modifier. Let's
+[58:13] go to mesh terrain and then drag out the
+[58:16] boolean modifier.
+[58:18] And now let me select this mesh. Press
+[58:20] CtrlMBB to select it. Then in boolean
+[58:23] modifier, scroll down. Use a static
+[58:25] mesh. And then select that mesh that I
+[58:28] made in Blender. I'll go ahead delete
+[58:29] that one because now we have a mesh that
+[58:32] was made in another program that's ready
+[58:34] to be combined with my landscape in
+[58:36] Unreal. So I can now just place this
+[58:39] here to create a cool neat little bridge
+[58:43] that is going over the creek.
+[58:46] So now this creates a unique gameplay
+[58:48] element where instead of using the
+[58:50] bridge they can also use this natural
+[58:52] looking creek. And if I click away, we
+[58:54] can get back that original displacement
+[58:56] from the material, which will then help
+[58:59] blend this natural bridge formation in
+[59:01] more. Or because there is still a sharp
+[59:04] line right here from the mesh connecting
+[59:06] to the terrain,
+[59:09] use a remesh modifier,
+[59:12] set this to remesh. Bring down the
+[59:14] target edge length to something smaller.
+[59:16] Actually, let's go 25.
+[59:20] And there's automatic smoothing applied
+[59:22] to the remesh modifier. So then that
+[59:24] will smooth out the difference and also
+[59:26] make it where everywhere in this area
+[59:28] will have the same amount of polygons.
+[59:30] You can control how much smoothing is
+[59:32] applied with the smoothing rates in the
+[59:34] remesh modifier. So now we have a really
+[59:37] cool bridge that looks super natural.
+[59:39] It's blending in with the environment.
+[59:41] And this bridge was originally made with
+[59:43] Blender. So, it's super cool how we have
+[59:46] complete control even over the exact
+[59:48] geometry of my landscape using static
+[59:51] meshes. And you can see that there is a
+[59:53] glitch right now. Maybe this is fixed in
+[59:55] the future where the mud paint layer is
+[59:58] being applied on top of this bridge. So,
+[1:00:00] what I'll do is add in another brush
+[1:00:02] modifier on top of this paint maps and
+[1:00:06] then go to the mud layer, which is D.
+[1:00:08] Hold control to get rid of this. And
+[1:00:10] because I'm already in the sculpt layer,
+[1:00:14] I can then go into my sculpting move
+[1:00:18] to further refine this bridge
+[1:00:21] in case I don't like the forms of it to
+[1:00:24] then make it feel even more natural.
+[1:00:28] So now it looks like it blends in more
+[1:00:30] with the environment.
+[1:00:34] Something to note when it comes to
+[1:00:35] foliage, most of the trees here were
+[1:00:38] placed using the foliage mode. But the
+[1:00:40] problem with placing trees with foliage
+[1:00:41] mode on a mesh terrain is that they will
+[1:00:43] not automatically update. If we go into
+[1:00:46] sculpting and then I make a change to
+[1:00:48] environment, you'll see that the trees
+[1:00:50] and the foliage won't automatically
+[1:00:52] update with it. Instead, I would have to
+[1:00:54] literally go into the foliage mode,
+[1:00:56] select each tree or foliage mesh, and
+[1:00:58] then move them up. Hopefully this is
+[1:01:00] fixed in the future, but right now Epic
+[1:01:01] Games recommends using procedural
+[1:01:03] generation, so PCGs to place foliage.
+[1:01:06] Something to note with PCGs is that most
+[1:01:09] PCGs right now are meant to be used on
+[1:01:11] the original landscape. So you'll see
+[1:01:13] that they're using the get landscape
+[1:01:14] data node as the original input or
+[1:01:17] dragging from landscape in the input.
+[1:01:19] And because we're not using landscapes
+[1:01:21] anymore, instead of using a node like
+[1:01:23] this, disconnect it and then use world
+[1:01:26] ray hit query for your PCGS if you do
+[1:01:29] plan on using them on mesh terrain. And
+[1:01:31] then now that'll get the PCGS to work.
+[1:01:33] So you have to do a little bit of a
+[1:01:35] conversion or you could go into plugins
+[1:01:37] and then enable procedural content
+[1:01:39] generation framework mesh partition. And
+[1:01:42] then this will give us a new node called
+[1:01:44] mesh partition query. And you can plug
+[1:01:47] this up to there if you only want your
+[1:01:49] PCGs spawning on the mesh terrain. But
+[1:01:52] do keep in mind so far for the early
+[1:01:54] versions of this, I've noticed that this
+[1:01:56] is pretty glitchy. So stick to world ray
+[1:01:59] hit query for now until official
+[1:02:00] release. I also want to note that one of
+[1:02:02] the included features in the landscape
+[1:02:05] material is virtual texture blending. In
+[1:02:07] case you don't know what virtual texture
+[1:02:08] blending is, this lets us take normal
+[1:02:11] static meshes and then start to blend
+[1:02:14] the material of our landscape.
+[1:02:16] essentially projecting that material
+[1:02:18] onto our static mesh when the static
+[1:02:20] mesh is near the landscape. So here I
+[1:02:22] have a normal static mesh. This is what
+[1:02:23] the texture looks like. But then as it
+[1:02:25] gets closer and closer to the landscape,
+[1:02:27] we'll see that the texture of the
+[1:02:29] landscape starts to project onto the
+[1:02:31] static mesh, giving it a realistic blend
+[1:02:33] between the two. So it looks like the
+[1:02:35] static mesh is connected to the
+[1:02:36] landscape when in reality this is just a
+[1:02:39] shader trick. So virtual texture
+[1:02:41] blending is included within the material
+[1:02:43] and the setup is exactly the same as the
+[1:02:46] previous original landscape material. So
+[1:02:49] I will not cover it because that has
+[1:02:50] already been covered in that original
+[1:02:52] landscape video. So go ahead and watch
+[1:02:55] the Unreal Engine 5 landscape material
+[1:02:57] tutorial because I cover how to set up
+[1:02:59] virtual textures there. Just for our
+[1:03:01] purposes when we're using mesh train,
+[1:03:03] the only thing you need to do is go into
+[1:03:05] your definition and included with the
+[1:03:07] downloaded content is TP_verirtual
+[1:03:10] texture. So go ahead and select TP
+[1:03:12] virtual texture. Open this up and then
+[1:03:15] add your virtual textures right here.
+[1:03:17] Mesh terrain is all about complete
+[1:03:19] creative control. And probably one of
+[1:03:22] the most craziest features of mesh
+[1:03:24] terrain is that we can convert any mesh
+[1:03:27] into a mesh terrain landscape. So here I
+[1:03:30] have just a massive mesh that's from the
+[1:03:32] electric dream sample. It was probably
+[1:03:34] made in a program like Maya or Blender
+[1:03:37] and Photoscan and then imported into
+[1:03:40] Unreal as a mesh. Well, if I want to go
+[1:03:42] in and then use this as my landscape and
+[1:03:44] start editing it with all the modifiers
+[1:03:47] that we have covered, then we can
+[1:03:48] convert this into a mesh terrain simply
+[1:03:51] by going to mesh terrain and with this
+[1:03:54] selected come to the edit tab and select
+[1:03:56] convert. Now it will divide it up into
+[1:03:59] partitions and it will ask for a
+[1:04:01] definition. We'll use the sensei terrain
+[1:04:04] and click accept. Now this mesh was
+[1:04:06] converted into a mesh terrain ready for
+[1:04:08] us to start editing with all the
+[1:04:10] original geometry still intact. This is
+[1:04:13] an insane workflow and it opens up the
+[1:04:16] door for endless possibilities. So don't
+[1:04:18] feel like you're limited to creating
+[1:04:20] landscapes and terrains just within a
+[1:04:22] real. You could use any program that you
+[1:04:24] want. import that into Unreal as a
+[1:04:26] static mesh and then use mesh terrain to
+[1:04:28] continue editing it in the engine. Using
+[1:04:30] this method is also how we convert old
+[1:04:32] landscapes into mesh terrain landscapes.
+[1:04:35] So here is a landscape that was made all
+[1:04:37] the way in Unreal Engine 4. So this is
+[1:04:40] using the old system and now if we want
+[1:04:42] to convert this to mesh terrain to
+[1:04:44] update it, there is right now no convert
+[1:04:46] landscape to mesh terrain option.
+[1:04:48] Probably in the future Epic will add it,
+[1:04:50] but for now the way we get around this
+[1:04:52] is that we select the landscape and then
+[1:04:54] we export this as a static mesh. So go
+[1:04:56] to export selected and then I'll save
+[1:04:58] this as a FBX. Just call it mountain. We
+[1:05:01] don't need level detail vertex
+[1:05:02] collision. Now with my FBX, I'll go
+[1:05:05] ahead and import this into my project.
+[1:05:08] Now in a world partition level, drag out
+[1:05:11] that static mesh. And this is a huge
+[1:05:14] static mesh.
+[1:05:16] and go to mesh terrain edit convert and
+[1:05:20] this might take a while because it is a
+[1:05:22] lot of data for Unreal to process. Okay,
+[1:05:26] now we have it converted. It's dividing
+[1:05:28] it up into partitions. Let's select our
+[1:05:31] sensei terrain definition and click
+[1:05:33] accept. Just like magic, that mesh was
+[1:05:37] converted into a mesh terrain. And I
+[1:05:39] will lower the exponential height fog so
+[1:05:41] we can better see it. We took what was a
+[1:05:44] landscape made in the old system and
+[1:05:47] then converted it to mesh terrain. It's
+[1:05:49] already using nanite and ready to be
+[1:05:51] sculpted on and customized. Do keep in
+[1:05:54] mind you might want to add in more
+[1:05:56] partitions when you're converting such a
+[1:05:58] large mesh like this for performance
+[1:06:00] reasons. Congratulations on making it
+[1:06:02] this far. This is now the end of the
+[1:06:05] tutorial. You now know how to sculpt
+[1:06:07] complex landscapes using mesh terrain.
+[1:06:09] Don't forget to like and subscribe
+[1:06:11] because more free Unreal assets and
+[1:06:13] tutorials are planned for the channel. I
+[1:06:15] will see you next time.

@@ -1,0 +1,19 @@
+RESTART REVIEW - CHANGES REQUESTED ON PREPARATION REVISION
+2026-10-03T20:22:36.849848+00:00
+
+Two launch blockers in reviewed launcher7714325.../bootstrapc4a6120...: startup Houdini cook lock still late Python only, no bPauseCookingOnStart configuration override found; recovery metadata stillRestoreEnabled=True and autosave flag onlyread, noassertFalse. Root-requested durable startup guards are still pending. Do not treat journal restoreRecoveryPacks=False or -NoAutoSave as enforcement.
+
+Material followup: proposed MI_RoadBLD_Asphalt_Worn_ControlledPatches fails existing grounding.py898 road_worn substring guard. Use MI_RoadBLD_Asphalt_Road_Worn_ControlledPatches with exact existing Wornparent and onlyMV_PatchMult=1.0. Both profiles use sharedroad_material; normal generation records road/intersection child in new ledgers. No guard weakening or oldledger/vendor edit.
+
+Otherwise scoped singlelaunch, exactoriginalmaphash, persistent module/fsynced breadcrumbs/nooldtransaction reconstruction checks reviewed. No editor/source/config/asset changes made. Prior source/crash reviews remain untouched. Final guard/script revision needs hashreview before activation.
+
+
+FINAL RESTART REVISION REVIEW 2026-10-03T20:28:55.247680+00:00
+PASSED - NO BLOCKING SOURCE/CONFIG FINDINGS. Earlier preparation blockers superseded. Root may activate the single replacementeditor launch; actualbootstrapreadiness is postlaunch evidence, not a new prelaunch prerequisite.
+Entry934ea9468084fb0bd9416fccf34ce74b17d64419da8a60e91d243f73e058a777; bootstrap566bedc5b42975a67c1371b3676308f7c829c041b3f33f1648bd380e4d37a4e6; launcher17dce6eaa11a4e35898a5a78bc2d51ba8e65e2c54883c858ae416d47c67e62e8. All source/receipt hashes matchfinalpreparation; PythonAST/PowerShellparser passed without execution.
+Houdini bPauseCookingOnStart=True is exact soleconfigaddition. Launcherchecksafterhash; bootstrappreservesinitialpauseassert. RestoreEnabled=False is solemetadataedit and4autosavecopies areexact. Autosaveprocessoverride follows official scalarcomma syntax/category; earlyandworldready runtimeFalsechecks included; originaluserpolicy preserved. Autobake getter is installedsupportedAPI, nowreadandassertoff.
+Final child /Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity satisfies unchangedroad_worn guard; exactnativeWornparent andonlyMV_PatchMult=1.0 remain scopedimplementationplan. Bothfreshordinaryareagenerations recordchildnaturally. No oldledger/vendorrewrite. Runtime/effectivevalue/pixelsstillnotperformed.
+Primaryreference foroverridegrammar: https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine#overrideconfigurationfromthecommand-line
+Originalfrozenv5review andcrashreview unchanged.
+
+ACTUAL BOOTSTRAP VERIFIED: PID21780 exactoriginalShujmap; cleanbefore/after;1HDA,1Landscape,1nativeNetwork; startupbPauseTrue andEnginealreadyPausedTrue; autosaveFalseatentry/worldready, HDAautoCookFalse/autobakeFalse, workflowcallbacks0/bootstrap0. All37BEFORE/AFTERnativejournaloperationspairandBOOTSTRAP_COMPLETE. OfficialsessionFalseisreportedhonestly; rootactivatedtask2serviceinitializationbeforeregeneration. No editor callbyreviewer.

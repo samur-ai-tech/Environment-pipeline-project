@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_actors",
+    "arguments": {
+     "name": "",
+     "tag": "",
+     "collision_channels": []
+    },
+    "toolset_name": "editor_toolset.toolsets.scene.SceneTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.013,
+ "isError": null,
+ "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.WorldSettings_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Brush_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DirectionalLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyAtmosphere_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ExponentialHeightFog_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.VolumetricCloud_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.PlayerStart_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.StaticMeshActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Floor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.BuoyancyManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DefaultPhysicsVolume_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.GameplayDebuggerPlayerManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ChaosDebugDrawActor\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.AbstractNavData-Default\"}]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.WorldSettings_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Brush_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DirectionalLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyAtmosphere_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.SkyLight_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ExponentialHeightFog_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.VolumetricCloud_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.PlayerStart_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.StaticMeshActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.Floor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.BuoyancyManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.DefaultPhysicsVolume_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.GameplayDebuggerPlayerManager_0\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.ChaosDebugDrawActor\"},{\"refPath\":\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.AbstractNavData-Default\"}]}"
+    }
+   ]
+  }
+ }
+}

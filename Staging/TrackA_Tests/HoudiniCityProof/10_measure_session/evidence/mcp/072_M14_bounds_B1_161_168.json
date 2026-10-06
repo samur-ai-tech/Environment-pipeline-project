@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_168_0_main_geo.B1_probebox_161_168_0_main_geo"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":989.99993896484375,\"y\":-10,\"z\":-10},\"max\":{\"x\":1010.0000610351562,\"y\":10,\"z\":10},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":989.99993896484375,\"y\":-10,\"z\":-10},\"max\":{\"x\":1010.0000610351562,\"y\":10,\"z\":10},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

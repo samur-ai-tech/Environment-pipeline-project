@@ -1,0 +1,85 @@
+{
+  "status": "PASSED_STATIC_CHECKS",
+  "files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "8a5a4bf99082548b7b1cf131ebe4b8148e2a3b89dd491c2d9cbbdea995254720",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "1f2cf12f3ffa4d9110e9625a6304e6b9daef08984246963c19fa45e00028a7f5",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_seams.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "syntax_valid": true
+    }
+  },
+  "unchanged_grounding_gate_functions": [
+    "AsphaltField",
+    "_source_eligibility",
+    "_parent_trim_cross_section_support",
+    "verify_source_coverage",
+    "analyze_protected_source_intervals",
+    "_physical_segment_intervals",
+    "verify_clipped_source_partition"
+  ],
+  "junctions_workflow_v6_byte_identical": true,
+  "no_road_ids_or_geometry_specific_exemptions": true,
+  "API_basis": "installed UE5.8 C++ reflected declarations; Python/editor execution not performed",
+  "api": {
+    "MeshQueryFunctions.h": {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Runtime\\GeometryScripting\\Source\\GeometryScriptingCore\\Public\\GeometryScript\\MeshQueryFunctions.h",
+      "sha256": "f55f727ebf794d3219409cc0732eae87ff8552055d0064298a0ceb3f2668c244",
+      "declarations": {
+        "GetTriangleUVs": "GetTriangleUVs( UDynamicMesh* TargetMesh, UPARAM(DisplayName = \"UV Channel\") int32 UVSetIndex, int32 TriangleID, FVector2D& UV1, FVector2D& UV2, FVector2D& UV3, bool& bHaveValidUVs );",
+        "GetTriangleNormals": "GetTriangleNormals( \n\t\tUDynamicMesh* TargetMesh, \n\t\tint32 TriangleID, \n\t\tFVector& Normal1, \n\t\tFVector& Normal2, \n\t\tFVector& Normal3, \n\t\tbool& bTriHasValidNormals );",
+        "GetInterpolatedTriangleUV": "GetInterpolatedTriangleUV( \n\t\tUDynamicMesh* TargetMesh, \n\t\tUPARAM(DisplayName = \"UV Channel\") int32 UVSetIndex, \n\t\tint32 TriangleID, \n\t\tFVector BarycentricCoords, \n\t\tbool& bTriHasValidUVs, \n\t\tFVector2D& InterpolatedUV );",
+        "GetTriangleFaceNormal": "GetTriangleFaceNormal( UDynamicMesh* TargetMesh, int32 TriangleID, bool& bIsValidTriangle );"
+      }
+    },
+    "MeshBasicEditFunctions.h": {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Runtime\\GeometryScripting\\Source\\GeometryScriptingCore\\Public\\GeometryScript\\MeshBasicEditFunctions.h",
+      "sha256": "242c07fbee26b3841ecd192cb9c54815e1a588dafe838cd4e1aeaf970e7a1d86",
+      "declarations": {
+        "AppendMesh": "AppendMesh( \n\t\tUDynamicMesh* TargetMesh, \n\t\tUDynamicMesh* AppendMesh, \n\t\tFTransform AppendTransform, \n\t\tbool bDeferChangeNotifications = false,\n\t\tFGeometryScriptAppendMeshOptions AppendOptions = FGeometryScriptAppendMeshOptions(),\n\t\tUGeometryScriptDebug* Debug = nullptr);",
+        "DeleteTrianglesFromMesh": "DeleteTrianglesFromMesh( \n\t\tUDynamicMesh* TargetMesh, \n\t\tUPARAM(DisplayName = \"Triangle ID List\") FGeometryScriptIndexList TriangleList,\n\t\tint& NumDeleted,\n\t\tbool bDeferChangeNotifications = false );",
+        "AddVertexToMesh": "AddVertexToMesh( \n\t\tUDynamicMesh* TargetMesh, \n\t\tFVector NewPosition, \n\t\tint& NewVertexIndex,\n\t\tbool bDeferChangeNotifications = false );",
+        "AddTriangleToMesh": "AddTriangleToMesh( \n\t\tUDynamicMesh* TargetMesh, \n\t\tFIntVector NewTriangle,\n\t\tint& NewTriangleIndex,\n\t\tint NewTriangleGroupID = 0,\n\t\tbool bDeferChangeNotifications = false,\n\t\tUGeometryScriptDebug* Debug = nullptr );"
+      }
+    },
+    "MeshNormalsFunctions.h": {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Runtime\\GeometryScripting\\Source\\GeometryScriptingCore\\Public\\GeometryScript\\MeshNormalsFunctions.h",
+      "sha256": "541f71068f0863cd62e61590797c65b42465711fd3d5e1cfe1ecc7355b73bfaa",
+      "declarations": {
+        "SetMeshTriangleNormals": "SetMeshTriangleNormals( \n\t\tUDynamicMesh* TargetMesh, \n\t\tint TriangleID, \n\t\tFGeometryScriptTriangle Normals,\n\t\tbool& bIsValidTriangle, \n\t\tbool bDeferChangeNotifications = false );"
+      }
+    },
+    "MeshUVFunctions.h": {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Runtime\\GeometryScripting\\Source\\GeometryScriptingCore\\Public\\GeometryScript\\MeshUVFunctions.h",
+      "sha256": "1756d4558a126e7b8c6a52edec935bcbe43c2d59399bc7c6e2a009faf15f3dff",
+      "declarations": {
+        "SetMeshTriangleUVs": "SetMeshTriangleUVs( \n\t\tUDynamicMesh* TargetMesh, \n\t\tUPARAM(DisplayName = \"UV Channel\") int UVSetIndex,\n\t\tint TriangleID, \n\t\tFGeometryScriptUVTriangle UVs,\n\t\tbool& bIsValidTriangle, \n\t\tbool bDeferChangeNotifications = false );"
+      }
+    },
+    "ListUtilityFunctions.h": {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Runtime\\GeometryScripting\\Source\\GeometryScriptingCore\\Public\\GeometryScript\\ListUtilityFunctions.h",
+      "sha256": "8ad60a025f31ca30c5a1957ed4e15d0f90c0785594e8a4b2707be8e1cab853da",
+      "declarations": {
+        "ConvertArrayToIndexList": "ConvertArrayToIndexList(const TArray<int>& IndexArray, FGeometryScriptIndexList& IndexList, EGeometryScriptIndexType IndexType = EGeometryScriptIndexType::Any);"
+      }
+    }
+  }
+}

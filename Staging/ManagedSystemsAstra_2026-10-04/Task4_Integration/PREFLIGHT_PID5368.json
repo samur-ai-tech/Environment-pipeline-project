@@ -1,0 +1,864 @@
+{
+  "schema": "environmentpipeline.task4.native_preflight.v1",
+  "utc": "2026-10-04T13:04:25.0162166Z",
+  "status": "BLOCKED_PUBLIC_LANDSCAPE_OWNERSHIP_READBACK",
+  "scope": "STARTUP_INSPECTION_ONLY",
+  "generation_authorized": false,
+  "generation_started": false,
+  "inspection_activation": "Staging/ManagedSystemsAstra_2026-10-04/INSPECTION_ACTIVATION.json",
+  "old_pid_clean_preflight": "OLD_PID_CLEAN_PREFLIGHT.json",
+  "old_pid_orderly_close": "OLD_PID_CLOSE.json",
+  "fresh_launch": {
+    "autosave": false,
+    "activation": "AWAITING_MANAGER_ACTUAL_PID",
+    "profile_sha256": "ddadfcea5e72673f6b30557f1f861eb9cb3b7bde49cb591652ce2f157f4f07fc",
+    "operator_thread_id": "01a106e8-f85a-7a72-a010-e1cb28356e2b",
+    "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+    "generation_authorized": false,
+    "actual_pid_lease": "2026-10-04T13:01:40.3846131Z OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a106e8-f85a-7a72-a010-e1cb28356e2b task=task4 assigned_editor_PID=5368 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only",
+    "manifest_sha256": "06129276fd3743dfb5754a13454c81d22305adcd2d28bedd0da9810ff89e431a",
+    "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+    "pause_before_python": true,
+    "pid": 5368,
+    "map_sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+    "generation_started": false,
+    "original_map": true,
+    "sources_checked": true
+  },
+  "actual_os_processes": [
+    {
+      "ProcessId": 5368,
+      "CreationDate": "2026-10-04T16:01:40.376535+03:00",
+      "ExecutablePath": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "CommandLine": "\"C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe\" \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Environmentpipeline.uproject\" \"/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration\" -NoAutoSave -NoRestoreOpenAssetTabs -ini:Engine:[/Script/HoudiniEngineRuntime.HoudiniRuntimeSettings]:bPauseCookingOnStart=True -ini:EditorPerProjectUserSettings:[/Script/UnrealEd.EditorLoadingSavingSettings]:bAutoSaveEnable=False,[/Script/UnrealEd.EditorLoadingSavingSettings]:RestoreOpenAssetTabsOnRestart=NeverRestore"
+    }
+  ],
+  "lease_current": "2026-10-04T13:01:40.3846131Z OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a106e8-f85a-7a72-a010-e1cb28356e2b task=task4 assigned_editor_PID=5368 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only",
+  "native_receipt": "PREFLIGHT_NATIVE.json",
+  "native_readback_utc": "2026-10-04T16:03:16.05806+03:00",
+  "actual_pid": 5368,
+  "actual_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+  "dirty_maps": [],
+  "dirty_content": [],
+  "cooking_paused": true,
+  "auto_cook": false,
+  "auto_bake": false,
+  "official_session_valid": false,
+  "active_runs": {
+    "geocity_bank_workflow": [],
+    "geocity_roadbld_workflow": []
+  },
+  "source_verification": {
+    "bound_modules": {
+      "geocity_bank_workflow": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_bank_workflow.py",
+        "sha256": "bcf1335e014cb8c89d9fef47d961009bcf4c6fde2fd34c42f7051fa4a1b490db",
+        "verified_functions": 31
+      },
+      "geocity_editor_action": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_editor_action.py",
+        "sha256": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1",
+        "verified_functions": 8
+      },
+      "geocity_landscape_workflow": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_landscape_workflow.py",
+        "sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+        "verified_functions": 12
+      },
+      "geocity_roadbld_clip": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+        "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+        "verified_functions": 18
+      },
+      "geocity_roadbld_grounding": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+        "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+        "verified_functions": 42
+      },
+      "geocity_roadbld_junctions": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+        "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+        "verified_functions": 28
+      },
+      "geocity_roadbld_landscape": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_landscape.py",
+        "sha256": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+        "verified_functions": 2
+      },
+      "geocity_roadbld_props": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_props.py",
+        "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+        "verified_functions": 8
+      },
+      "geocity_roadbld_seams": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+        "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+        "verified_functions": 19
+      },
+      "geocity_roadbld_topology": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_topology.py",
+        "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+        "verified_functions": 8
+      },
+      "geocity_roadbld_workflow": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+        "sha256": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d",
+        "verified_functions": 59
+      },
+      "geocity_runtime_guard": {
+        "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_runtime_guard.py",
+        "sha256": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0",
+        "verified_functions": 11
+      }
+    },
+    "manifest_sha256": "06129276fd3743dfb5754a13454c81d22305adcd2d28bedd0da9810ff89e431a",
+    "matches_activation": true,
+    "disk_checks": [
+      {
+        "path": "Content/Python/init_unreal.py",
+        "expected_sha256": "bd3ff65c7b97730f0d02d36c2ba7c55e8caf500713a2dbc50c5c6e56a1b50fd4",
+        "actual_sha256": "bd3ff65c7b97730f0d02d36c2ba7c55e8caf500713a2dbc50c5c6e56a1b50fd4",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_runtime_guard.py",
+        "expected_sha256": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0",
+        "actual_sha256": "8f2efd14f0fa8c93ccad658fd65c64027aaa90dfe6d9740df436fc0c10f8abe0",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_editor_action.py",
+        "expected_sha256": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1",
+        "actual_sha256": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_bank_workflow.py",
+        "expected_sha256": "bcf1335e014cb8c89d9fef47d961009bcf4c6fde2fd34c42f7051fa4a1b490db",
+        "actual_sha256": "bcf1335e014cb8c89d9fef47d961009bcf4c6fde2fd34c42f7051fa4a1b490db",
+        "matches": true
+      },
+      {
+        "path": "Staging/SystemCompletion_2026-10-04/seal_runtime.py",
+        "expected_sha256": "e3b3c26f247aa6550b60ec9c0da85fd242654687c7e477f1f2fe0cbb2820d632",
+        "actual_sha256": "e3b3c26f247aa6550b60ec9c0da85fd242654687c7e477f1f2fe0cbb2820d632",
+        "matches": true
+      },
+      {
+        "path": "Staging/SystemCompletion_2026-10-04/launch_editor.ps1",
+        "expected_sha256": "dfec58634021770698da978e7d73543de97e6dcb3f253d544bbc7b6ad3c931b4",
+        "actual_sha256": "dfec58634021770698da978e7d73543de97e6dcb3f253d544bbc7b6ad3c931b4",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_clip.py",
+        "expected_sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+        "actual_sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_grounding.py",
+        "expected_sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+        "actual_sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_junctions.py",
+        "expected_sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+        "actual_sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_landscape.py",
+        "expected_sha256": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+        "actual_sha256": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_props.py",
+        "expected_sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+        "actual_sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_seams.py",
+        "expected_sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+        "actual_sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_topology.py",
+        "expected_sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+        "actual_sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+        "matches": true
+      },
+      {
+        "path": "Content/Python/geocity_roadbld_workflow.py",
+        "expected_sha256": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d",
+        "actual_sha256": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d",
+        "matches": true
+      },
+      {
+        "path": "Config/DefaultEngine.ini",
+        "expected_sha256": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+        "actual_sha256": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+        "matches": true
+      },
+      {
+        "path": "Config/DefaultRoadBLD.ini",
+        "expected_sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+        "actual_sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+        "matches": true
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_landscape_workflow.py",
+        "expected_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+        "actual_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+        "matches": true
+      },
+      {
+        "path": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+        "expected_sha256": "ddadfcea5e72673f6b30557f1f861eb9cb3b7bde49cb591652ce2f157f4f07fc",
+        "actual_sha256": "ddadfcea5e72673f6b30557f1f861eb9cb3b7bde49cb591652ce2f157f4f07fc",
+        "matches": true
+      },
+      {
+        "path": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+        "expected_sha256": "3460c49ba0e80df691669bc30e39dcedd08b7e751fb03e6d74169ab130571ddc",
+        "actual_sha256": "3460c49ba0e80df691669bc30e39dcedd08b7e751fb03e6d74169ab130571ddc",
+        "matches": true
+      }
+    ]
+  },
+  "native_terrain_policy": {
+    "schema": "environmentpipeline.roadbld_landscape_authority.v1",
+    "config_category": "RoadBLD",
+    "project_config_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Config\\DefaultRoadBLD.ini",
+    "settings_class": "/Script/RoadBLDRuntime.RoadBLDRuntimeSettings",
+    "required_value": false,
+    "project_flags": {
+      "bEnableIntersectionLandscapePatch": false,
+      "bEnableIntersectionLandscapeVisibilityHole": false,
+      "bEnableRoadLandscapePaint": false,
+      "bUseRoadLandscapeHeightPatch": false,
+      "bAutoCreatePaintLayerInfo": false
+    },
+    "native_views": {
+      "class_default": {
+        "object_path": "/Script/RoadBLDRuntime.Default__RoadBLDRuntimeSettings",
+        "flags": {
+          "bEnableIntersectionLandscapePatch": false,
+          "bEnableIntersectionLandscapeVisibilityHole": false,
+          "bEnableRoadLandscapePaint": false,
+          "bUseRoadLandscapeHeightPatch": false,
+          "bAutoCreatePaintLayerInfo": false
+        }
+      },
+      "native_get": {
+        "object_path": "/Script/RoadBLDRuntime.Default__RoadBLDRuntimeSettings",
+        "flags": {
+          "bEnableIntersectionLandscapePatch": false,
+          "bEnableIntersectionLandscapeVisibilityHole": false,
+          "bEnableRoadLandscapePaint": false,
+          "bUseRoadLandscapeHeightPatch": false,
+          "bAutoCreatePaintLayerInfo": false
+        }
+      }
+    },
+    "errors": [],
+    "passed": true,
+    "project_config_sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43"
+  },
+  "roadbld_license_authorized": true,
+  "wrapper": {
+    "hda_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+    "class": "/Script/HoudiniEngineEditor.HoudiniPublicAPIAssetWrapper",
+    "source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+    "profile_source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+    "source_matches": true,
+    "output_count": 5,
+    "baked_actor_paths": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_buildings_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_0_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_1_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_2_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_3_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_4_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_5_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_6_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_7_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_8_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_9_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_10_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_11_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_12_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_13_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_14_retained_native_default_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_15_1e385a614f916a34_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_16_e3e7ab5cca4852b0_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_17_25ef5cff9068571f_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_18_e3e7ab5cca4852b0_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_15_93c972c4ed91359c_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_18_e7f1f7c1eddb76ac_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_16_e7f1f7c1eddb76ac_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_19_c259226361b61cac_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_20_838bfd139e6af3df_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_21_4114ddb5ed8fc03c_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_19_0bfb80d5648929c9_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_20_ef52cb1b24b84e2a_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_21_584b7a1f1792aa0a_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_19_2cfd993460dff039_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_18_d7cdbb58b8f66489_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_19_5240acd1cbf3c737_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_18_ce07a3e50d2287f5_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_16_ce07a3e50d2287f5_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_15_195e0b41378c43ef_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_20_e23e97da985a6c2a_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_21_803c02974a02ec86_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_16_d7cdbb58b8f66489_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_15_dc4f531e0d10390e_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_20_9ee94ac3949066e1_1",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.bank_instances_21_a2fa5ca069255e95_1"
+    ]
+  },
+  "landscape_actors": [
+    {
+      "path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape",
+      "class": "/Script/Landscape.Landscape",
+      "tags": [],
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural"
+    },
+    {
+      "path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+      "class": "/Script/Landscape.Landscape",
+      "tags": [],
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural"
+    }
+  ],
+  "official_landscape_output_bindings": [
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002957CE5F540) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_0",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002957CE59A00) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_1",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AAC70D0) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_2",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACC300) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_3",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+    },
+    {
+      "output_index": 0,
+      "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACE510) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+      "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_4",
+      "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+      "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+    }
+  ],
+  "landscape_accounting": {
+    "successful_ledger_actor_paths": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape"
+    ],
+    "official_bound_actor_paths": [],
+    "unaccounted_actor_paths": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape"
+    ],
+    "all_live_accounted": false
+  },
+  "preservation": {
+    "original_maps": [
+      {
+        "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+        "matches_preparation": true
+      },
+      {
+        "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+        "sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+        "matches_preparation": true
+      }
+    ],
+    "prior_successful_road_count": 136,
+    "prior_failed_road_count": 132,
+    "actual_tagged_road_count": 268,
+    "road_path_differences": [],
+    "exact_road_path_union_matches": true,
+    "candidate_count": 87,
+    "candidate_checks": [
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_b141a9a165124575",
+        "sha256": "14d78983a8bfe3c645e165140f89eb35f65f10ca8a175398659f15e902df526c",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_24b37b7e5cd1b785",
+        "sha256": "bbd45809b1107aa362b967590cc1d9e5a4b582b7f689a2cb1cf128d0b896c3be",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_23d2982131cf4472",
+        "sha256": "c7d46f6d449d691b002cc54a3f075cd8bf2ee03e7c1cbf4acfbe1a4b40ec3680",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_daffedadea403692",
+        "sha256": "255abd76440dd5eddb561cdb2c4e5b8cc41634dd932abf24ac5eb30240e7f976",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_9c0b763147acaf36",
+        "sha256": "5afeb0d310b4d470bdd68a67d91a08e7fdc3d1f5b225124f4f9337aa3c5d8fef",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_96dd87f02d6f4cf6",
+        "sha256": "190bf13dcd112d6d3142d4c21fb7f8c9b0581cf027e45472632d8f65b35eac53",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_93b0f5fd3c5ae6fc",
+        "sha256": "c01f48c2a0acc46a1c511110440ea72f245d317b6e5fa7e955734c300d7c098a",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_74c8aa400f8f969e",
+        "sha256": "8f17415f022d1c28410edc696379eb5c80b812c3c1c3c88cf34787b02f9fd234",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_a70cc5431c492c93",
+        "sha256": "20f51bc4ceceeb72a99929291fa79c71f873eee24ed8fce2a457463e792cc8ed",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_0e1b248b9f530c5e",
+        "sha256": "62d61e73211ce625ea031e487e76ed460efec5e7538d7b4cfd278f016595413e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_36ecda9de21da254",
+        "sha256": "78ae43981eb0168bbae6be65b3e513153ba4c9b22d1db160edd70759676860f1",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_17e82573c83886ee",
+        "sha256": "a403b0d66b57923e896edadf11e2d3fdfd1e2f16005adb71fa8c511a7860e014",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_c806ae6c563fc685",
+        "sha256": "6b6e996c3591a6a81a50754dd683750570c0ae0bf742dc6bad4144cebb60769d",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_b3c054fd9b8a4929",
+        "sha256": "644d8234683f30ebe8d3eeb0c3dc08e62ce939bc95f867599b90ea9f99d8c27a",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_ec048c6ac34efd88",
+        "sha256": "395a6d965120da40bf4b715e5082dc534e9fc923a7e26ca7a935324f556fcf7c",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_e2fde951c636a0b5",
+        "sha256": "88bc2f50e9552f0aa1c51d298251b5d4bc8634234ed7e735cc901cc7a1652ca3",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_e36ff3638d332bfd",
+        "sha256": "bbc8cb750605b949b26145acf29b33b1668e1df3508dbff9715edb601fbdff2a",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_d624f72deb53d3a9",
+        "sha256": "68c5e4e112c8a03d3060c1b9564d2d45444deb85b617c9da8d868d8a2c00390e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_25dd0cdc9e402ca5",
+        "sha256": "7fba513d9781bc17a78984fbbc499bf5b7e302acde34ee9962aa734be02516f4",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_efee89a266cceeb3",
+        "sha256": "8140a4b5948b0cf020fa5347a847d2c8ecfc1aac8d030dbcb24dbf8d4befb9d3",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_75678772eb12d305",
+        "sha256": "985aa8ae4050a90ea746ad3c0c57efad76393a69fa752dd19facf03c615e0860",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_0c61e7318be7ab0f",
+        "sha256": "686136cf36a4d8a5ebf5eb971eb000759bd640451b13b45c8ad0e2cc598ef58c",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_fa1438e0ba78b332",
+        "sha256": "12ab05675cfc1fd9c6e70f8972fb9dc4ca61611e3a61b4488c852ab43e93e972",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_729a2f151572954f",
+        "sha256": "0ce8695815313e80f9e42fd1a78f8c90b67bf03d627ad941127b3169cd1338ff",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_ea91cbdf157454a2",
+        "sha256": "c74accf969e875f9b2377007debd48660935d39cae843495a45433e77368e117",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_e5687f65044df6b2",
+        "sha256": "4948061a35ee0ac2ddd4fea925729d7cc7444d140a2ef8c93c02d9de24ee297b",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_6ce959c7dccd1350",
+        "sha256": "1c94261bbe1a25a8fdd39461d15783239380d38bb943ceef035320ea1277ac0a",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_2d8b8e8b9a384970",
+        "sha256": "0aaa0214802c0627de2588a744857151a284d14bb812343fc0a59e28820d8c68",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_6af4b385c1174360",
+        "sha256": "b8254faeec2f4bdcbb0b02841ecad8deda74c6a8a02c930030f06b2867464e8c",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_cbdd4783ee2f5eca",
+        "sha256": "477014e25afcdb15524c1b419877d76830fabc01bc514a03bd6e7aa0f8d47ca7",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_71d5fb034c51c4d6",
+        "sha256": "f79688fdf76937576b9787c95d08319bf0e696a4261514e588097e8dbcfab20a",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_bcef7fe0138c3d5b",
+        "sha256": "33a59c4bf7e4c963dc87f5b92f4b7afc7b62492a2999286a213035ce0ea996eb",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_64c2780a59c83592",
+        "sha256": "48d8cb4fda955bb82d99be1dd3fb3423fcc630d3cb01962e4fc0d666ce150310",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_04c4f9c0e3ccfcfb",
+        "sha256": "65233b707c993d85c6cd30b45c87aef52471fe35cee8a24547527b7cb55a4c91",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_1fc3d75ffc12435c",
+        "sha256": "81e475b7046e06fece5d3bc1ec56a2c174a5766e1b8b4b98b6069cdcab3dfad1",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_9e556a0b15878c31",
+        "sha256": "c95b323067db2bf230d7abe54086e1b63a1a09e44f0cc7e38c48586bb96b6efe",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_cf37587c938d46b1",
+        "sha256": "218230be58a4c14984b199218e12d83fa141626c6ddca07ed0ec52eeb22f641e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_906461fc46ecd823",
+        "sha256": "6ceaea753c13ccb2e581816d50996ea72dfd85fffd9cb12afed7fe5952086caa",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_f4a7ae7c987f7f73",
+        "sha256": "e3acecce2faa10477a209e43ee09f7d1e40e8fa6186e9dbd328ed5e8a3421381",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_951f465a355434a2",
+        "sha256": "c47fdb0eeaa355896ab84bfc1fc655cb05621b7aca845be08c367decef7cd5b0",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_2434d08ddac27ce8",
+        "sha256": "f93f980364091a84e5f1e08bf62d75e24b14a86f854642f08feae03526c671d0",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_8f2fd1eb0965b5a4",
+        "sha256": "d8f81acde295cbbd6367c9c41e9bb41ea9bef6b6255064d842b9bc17c88a2b47",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_164a44dcb8a8f003",
+        "sha256": "b996c98b780d92886d80978f0dea33cbf31ab7d52fe0b705b8c654d7923de17e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_d3a8724ccedf2e7b",
+        "sha256": "3b626a2ed6d9134db7408fee73a3774d682fbc189819f3e3f4eff7fc8c93e8df",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_61bff4925e60ade6",
+        "sha256": "de774841151ee63f00002937772d0e7725d2baa3ec7ad82fdf4384144b0f6ae1",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_fb3fd46b6703405d",
+        "sha256": "ada2d09172a4739cff76ae4792937354a33e47b9c5e446616ff878461c0b1472",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_9425230b03c7703a",
+        "sha256": "d7136b8ca2a334da86921e0e51e98cbc040f56aac529e1fc533ede4927690e33",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_61382a6edddac496",
+        "sha256": "95ec2a4f7c9f37781d9f919ba3805bad3b3104248d0b0985d8e5a6dfeaf22003",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_a03e9f59c01bda80",
+        "sha256": "8e5084c55c9ca3204dc98ed8aa93a6a81fba6b3e349a483d3ccee349c99ed18f",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_fb0533fbd200293a",
+        "sha256": "6b5824c2f060150489e533829211b1c266ada806524171606598fe468492d488",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_55ec941f7de1b46a",
+        "sha256": "e67c4a98e84171f38deaef268ed3fab655704a1af0d2287e4fac2a4ac3858907",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_80a3869f55faf683",
+        "sha256": "000b1bdaf6347cf22ef20b35a7283e695d804e9e3a6624db305127e8732230cf",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_110a47b1558b4490",
+        "sha256": "5324b490567b001e8e33bb3a991fcc1f283fcc969c808bb560b222b2ff2a7b53",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_fe10d2c95bc06a7d",
+        "sha256": "9dbc1432b6e36db05340ea4fd6a0e956f1a02fc4b3ec706356d83f67b796fec8",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_3cee692ccb8ecfbd",
+        "sha256": "1f5bc0d1dd759a192f44dd6322123d028ea7b6e1d8facb7704dbdeb13b9e3902",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_688cc84599d81c97",
+        "sha256": "8f757f7e512d75b4fd73740fd89e4416fd30c62734d1d0360956f9a9dc4b3f47",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_ffd879574b7bdacd",
+        "sha256": "49b171056d4df4aa94a5863399f57bb5f03ef02cc43e80dc7b880d4001322aad",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_f3a89c9d3c230510",
+        "sha256": "05062001d57043bf89ac1a0142cf93616c7c584ca25187188547a7f009e3ae9e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_94032ea704f67435",
+        "sha256": "2519941409cc4fbee455bf78c7c9bb483cf8b4e2dd3d4415140f4ffdc93f747c",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_a720d570b4fe3910",
+        "sha256": "2618cef03e44017eaa6c4a1f4bee2ae1dcc2edb6d06bdb4028ccaff77d6e9f92",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_c50611b56ca1b2b2",
+        "sha256": "c4d904dad3870ee48d46c7dea4d1d0e9ef4e11ae2ab392da18ca1da950f854c0",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_40b49ebd66572ecd",
+        "sha256": "ed483652b41756d0e20c6279a2caa3006eb94d00121bce32a517f330fe6e6118",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_d60378045a0a88c1",
+        "sha256": "6926fe038576e9b8f5334c21acfdc866862d85afc48287854b7bffa7d1320aed",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_8b32417e42897723",
+        "sha256": "161bae593729b4f477ec816f94ef463af11fa1d6a97a8efe2e4a664e16b8fc83",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_b72ea81bd440ddb8",
+        "sha256": "c290acac155b15ca6888c5e7d66b0af2a35b5a2ac9b9d020220ebd22d06ef444",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_41c70ee293f42313",
+        "sha256": "8f322a8c3311baf0943996b71158250783b1423a34141349c8db73c85aebf0dd",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_7816b38d253ed139",
+        "sha256": "36619e9842f38df7b17908c30f6b50d0ee8f89f901ae89583d7c0681748bc603",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_a04e1d58eb1fc7fb",
+        "sha256": "230514fa4aa863a42505e2e6e2bd971cd9058c58b4e23117e0a21da5614d684f",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_38a0d3a09f14a930",
+        "sha256": "5cfedbb7cb5309c59730d744111fce6bb78ffd8c3b061976b3460444e132cf8e",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_8ed601a059ea3371",
+        "sha256": "e762f35d107375d079fb3f4434fec7f8b6210551895f4487fb275de7f130fb77",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_d0ae04c64d5379ce",
+        "sha256": "1f13983442a3f67f4fabaea0e3bbd03d2f6505de2d98c285fa538875d36b6a38",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_06efc2f34818cf7b",
+        "sha256": "1b0d39228434219eaea20bc8a0f88855b14dc8e86213ebd97754e38fa2d9c233",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_69beb5f508cd061f",
+        "sha256": "f832c283cdbf9bcce922482daef371a284b0c94a02c4dcc2a9c2dbc8656b4a49",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_a0ae1eded7b624e5",
+        "sha256": "d2d9602569b12eb706acc9891798872f7a779d63671cf3ad467bc830eb5173d8",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_1f1591a53b09349b",
+        "sha256": "01882fca1fc222ad99320cb8ffc7bb2b70da189e3846a74eaf21e822d67ea21f",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_c488fe76c9a14c46",
+        "sha256": "1c763126fbcb2953ad7fa43f9878bef78d32f0ef2a8b5b4aadfe8344ce791ca1",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_8472ee99369f51ec",
+        "sha256": "723e6ca6a0faec78750f446cb2c6d39aec499baf2a2c35b9987a95252e1fe4a4",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_c9e4f586e33d2fd5",
+        "sha256": "c7bfeca0acd3e2cc449a22a75c8992b67d9cff57261bd6fa67b855502d5b100b",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_43624fb063a00d05",
+        "sha256": "9928314e350ce384af9e5d49605460eb4a7fed0e187b1ae15142c40376703652",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_b7cc95778ca65e82",
+        "sha256": "a0ef6e81661093e5fe4718826d07c6bfe99860f91bf98a6d216abe58e4ac5ee5",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_19fac2311c26f2a6",
+        "sha256": "edb0cde062ee2e0161b5230ce26c669b489c506bb13ffe0a2f071b376677d4cc",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_5bc8eae85fabba1c",
+        "sha256": "8b0ef717be5b3276fe1c5036e9398643d10337acc2a86e6eedf9fce4f5a39cc4",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_25915926eddcd7a3",
+        "sha256": "f3922f782f1e03d6632bec6cc7aba848bb45e1b897d081bd9ec8b7f2acd2b33b",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_0cc9f849f19c1c95",
+        "sha256": "58817b1d278661860574c019d5ab1a49b32dbf3f3348ecd1ed9f8c7231a95331",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_9b2884032122d4d8",
+        "sha256": "8f296138876424d2375d3e9d5847c0bf37a252ba880bca21df54beaf3908f3c5",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_e2d40e2330c9de16",
+        "sha256": "780640b46fda28ad42862f8329a65cac635fa88bfbe4e3f251b9d3a522fcc484",
+        "matches_preparation": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T203730573110_212401627821/SM_Clipped_fcb98c752b141050",
+        "sha256": "ca3bd6edc61300f08803771519f965a2031315b1e03644c8443cf4aefc4403f0",
+        "matches_preparation": true
+      }
+    ],
+    "all_candidate_hashes_unchanged": true,
+    "actor_tags_receipt": "PREFLIGHT_NATIVE.json#tagged_road_actors"
+  },
+  "blocking_findings": [
+    {
+      "owner": "task1 + manager",
+      "file": "Content/Python/geocity_bank_workflow.py",
+      "function": "GeoCityRun.official_landscapes",
+      "line": 294,
+      "native_exception": "Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read",
+      "observed_objects": 5,
+      "impact": "account_previous_landscapes cannot establish extra saved Landscape ownership through its current public API contract; ordinary operation must not begin",
+      "required_resolution": "Source owner must provide a supported exact read-only ownership method and manager review/reseal/fresh-start plan. No protected-property bypass, class/name inference, deletion, gate lowering or task4 source edit."
+    }
+  ],
+  "state_preserved": true,
+  "no_content_or_map_save_requested": true,
+  "no_parameter_change_or_cook_bake_removal": true,
+  "next": "Manager reviews blocker. Fresh PID5368 remains clean/paused under AWAITING_MANAGER_ACTUAL_PID inspection lease; no generation lease issued."
+}

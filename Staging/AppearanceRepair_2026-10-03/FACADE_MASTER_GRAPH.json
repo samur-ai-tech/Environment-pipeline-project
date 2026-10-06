@@ -1,0 +1,939 @@
+{
+  "material": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7",
+  "base_color_root": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_6",
+  "expressions": [
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_6",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_2",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionReroute_2",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_9"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_2",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_1",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionStaticSwitchParameter_12",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_6"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_8",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "A",
+        "B",
+        "Transition Phase",
+        "Height Texture",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_7",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_11",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_21",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSampleParameter2D_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_10"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/HeightLerp.HeightLerp"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_0",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "In",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionChannelMaskParameter_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_8"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_3",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_12",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_21"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_5",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionStaticSwitchParameter_12"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_0",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_8",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionDesaturation_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_21"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSample_1",
+      "class": "MaterialExpressionTextureSample",
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null,
+        null
+      ],
+      "texture": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_normal.T_Wall_Plaster_normal"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_1",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_3",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_3",
+        null,
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_2",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_4",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_0",
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_3",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "In",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionOneMinus_0"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionOneMinus_0",
+      "class": "MaterialExpressionOneMinus",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_4"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_5",
+      "class": "MaterialExpressionTextureObject",
+      "input_names": [],
+      "inputs": [],
+      "texture": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_Normal.T_BrickPlaster_Normal"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_5",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldSpace",
+        "Normal",
+        "ProjectionTransitionContrast",
+        "WorldPosition",
+        "Use High Quality Normals"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_5",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_4",
+        null,
+        null,
+        null,
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_0",
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedNormal.WorldAlignedNormal"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_6",
+      "class": "MaterialExpressionTextureObject",
+      "input_names": [],
+      "inputs": [],
+      "texture": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_Roughness.T_BrickPlaster_Roughness"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_6",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_6",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_4",
+        null,
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_8",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_11",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Normal",
+        "Flatness"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_5",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_2"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.FlattenNormal"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_2",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Normal_brick",
+      "default_value": "-1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_12",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "In",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_6",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_11"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_11",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_13",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_7",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_4",
+        null,
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_7",
+      "class": "MaterialExpressionTextureObject",
+      "input_names": [],
+      "inputs": [],
+      "texture": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_ORM.T_Wall_Plaster_ORM"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_4",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_2",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_14"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_14",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionDesaturation_0",
+      "class": "MaterialExpressionDesaturation",
+      "input_names": [
+        "None",
+        "Fraction"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_4",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_15"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_15",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_4",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_8",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_4",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_3"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.30000001192092896"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_1",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Dirt Color",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D290578) {r: 0.140625, g: 0.125632, b: 0.103444, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionClamp_1",
+      "class": "MaterialExpressionClamp",
+      "input_names": [
+        "None",
+        "Min",
+        "Max"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionReroute_16",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_9",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_11"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_9",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Min Dirt",
+      "default_value": "0.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_11",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Max Dirt",
+      "default_value": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_14",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_3",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_1",
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_0",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ],
+      "parameter_name": "Dirt Texture",
+      "texture": "/Game/ModularCourtyard/Textures/T_Gry_Placeholder.T_Gry_Placeholder"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_16",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "In",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_14",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_14"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_14",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Dirt Mask Contrast ",
+      "default_value": "0.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionStaticSwitchParameter_12",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "input_names": [
+        "True",
+        "False"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionClamp_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionReroute_16"
+      ],
+      "parameter_name": "Clamp Dirt",
+      "default_value": "False"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionReroute_16",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_16"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_3",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "SIze_mask",
+      "default_value": "1000.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_4",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Mask_dansity",
+      "default_value": "1.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_2",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Dirt_ground_color",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D298C78) {r: 0.083333, g: 0.072132, b: 0.055556, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionReroute_2",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_5"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSampleParameter2D_4",
+      "class": "MaterialExpressionTextureSampleParameter2D",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ],
+      "parameter_name": "Albedo_01",
+      "texture": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_basecolor.T_Wall_Plaster_basecolor"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_1",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ],
+      "parameter_name": "Albedo_02",
+      "texture": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_BaseColor.T_BrickPlaster_BaseColor"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_21",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "In",
+        "Contrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionSaturate_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_0"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_5",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Intencity_Tint_Albedo",
+      "default_value": "0.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_0",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Tint_Albedo",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D29DD78) {r: 0.479167, g: 0.479167, b: 0.479167, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_8",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSampleParameter2D_4",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_5"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0",
+      "const_alpha": "0.5"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_7",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Normal",
+        "Flatness"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSample_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_8"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.FlattenNormal"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_8",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Normal_plaster",
+      "default_value": "-1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureSampleParameter2D_1",
+      "class": "MaterialExpressionTextureSampleParameter2D",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ],
+      "parameter_name": "Heightlerp_map",
+      "texture": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_Height.T_BrickPlaster_Height"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_10",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Contrast",
+      "default_value": "2.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_3",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Dirt_UV",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D29C6F8) {r: 500.000000, g: 500.000000, b: 500.000000, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_4",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Brick_UV",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D29B378) {r: 500.000000, g: 500.000000, b: 500.000000, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_5",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Offset_brick",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D290CF8) {r: 0.000000, g: 0.000000, b: 0.000000, a: 0.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_1",
+      "class": "MaterialExpressionWorldPosition",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_0",
+      "class": "MaterialExpressionAdd",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_5",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_1"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_6",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Offset_dirt",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D29A2F8) {r: 0.000000, g: 0.000000, b: 0.000000, a: 0.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_2",
+      "class": "MaterialExpressionWorldPosition",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_1",
+      "class": "MaterialExpressionAdd",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_6",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_2"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_9",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "A",
+        "B",
+        "Transition Phase",
+        "Height Texture",
+        "Contrast"
+      ],
+      "inputs": [
+        null,
+        null,
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_15",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_10",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_3"
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/HeightLerp.HeightLerp"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_3",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_10",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "TextureObject",
+        "TextureSize",
+        "WorldPosition",
+        "Export Float 4",
+        "World Space Normal",
+        "ProjectionTransitionContrast"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_0",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_8",
+        null,
+        null,
+        null,
+        null
+      ],
+      "material_function": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.WorldAlignedTexture"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObject_0",
+      "class": "MaterialExpressionTextureObject",
+      "input_names": [],
+      "inputs": [],
+      "texture": "/Game/ModularCourtyard/Textures/T_dirt3_M.T_dirt3_M"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_8",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Dirt_graund_UV",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D29BF78) {r: 500.000000, g: 500.000000, b: 500.000000, a: 1.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionTextureObjectParameter_3",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ],
+      "parameter_name": "Mask_blend",
+      "texture": "/Game/ModularCourtyard/Textures/T_dirt3_M.T_dirt3_M"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_15",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [],
+      "inputs": [],
+      "material_function": "/Game/ModularCourtyard/Mats/Functions/MF_Dirt_graund.MF_Dirt_graund"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionNoise_1",
+      "class": "MaterialExpressionNoise",
+      "input_names": [
+        "World Position",
+        "FilterWidth"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_3",
+        null
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_1",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionNoise_1",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_1"
+      ],
+      "const_a": "0.0",
+      "const_b": "3.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionSaturate_1",
+      "class": "MaterialExpressionSaturate",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_1"
+      ]
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_1",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Mask_bland_int",
+      "default_value": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionConstant_0",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_9",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Offset_blend",
+      "default_value": "<Struct 'LinearColor' (0x0000024C1D291EF8) {r: 0.000000, g: 0.000000, b: 0.000000, a: 0.000000}>"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_0",
+      "class": "MaterialExpressionWorldPosition",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionAdd_3",
+      "class": "MaterialExpressionAdd",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionVectorParameter_9",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionWorldPosition_0"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMultiply_0",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionLinearInterpolate_3",
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_0"
+      ],
+      "const_a": "0.0",
+      "const_b": "1.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_0",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Roughness",
+      "default_value": "0.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionScalarParameter_6",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": [],
+      "parameter_name": "Blend_roughness",
+      "default_value": "0.0"
+    },
+    {
+      "path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionChannelMaskParameter_1",
+      "class": "MaterialExpressionChannelMaskParameter",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7:MaterialExpressionMaterialFunctionCall_13"
+      ],
+      "parameter_name": "Param",
+      "default_value": "<Struct 'LinearColor' (0x0000024D89E879B8) {r: 1.000000, g: 0.000000, b: 0.000000, a: 0.000000}>"
+    }
+  ]
+}

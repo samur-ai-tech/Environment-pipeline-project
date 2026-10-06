@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1012,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Roof_Trims/beam_roof_trim_corner_4x4_a_interior"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Metal/metal_trim___default\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1012,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Metal/metal_trim___default\"]}"
+    }
+   ]
+  }
+ }
+}

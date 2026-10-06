@@ -1,0 +1,66 @@
+{
+  "schema": "environmentpipeline.roadbld_clip_implementation.v1",
+  "source": "Content/Python/geocity_roadbld_clip.py",
+  "entrypoint": "clip_native_outputs(operation.plan, operation.owned_actors(), operation.guard, generation_id=operation.revision)",
+  "status": "source_ready_for_root_owned_actual_execution",
+  "ownership": "New helper and this report only; root owns the adapter, editor and shared source",
+  "measured_native_route": {
+    "receipt": "Staging/AppearanceRepair_2026-10-03/FIRST_NATIVE_MESH_PROBE.json",
+    "component_class": "StaticMeshComponent",
+    "source_mesh_ownership": "Actual generated RoadGeoSurfaceMesh is an actor-owned named-map object, not a standalone Content Browser asset",
+    "render_lods": 1,
+    "ordered_material_roles": ["native RoadBLD worn asphalt", "native USA sidewalk", "native USA curb"],
+    "collision_enabled": "QUERY_AND_PHYSICS",
+    "collision_profile": "Custom",
+    "collision_object_type": "ECC_WORLD_STATIC",
+    "collision_complexity": "CTF_USE_COMPLEX_AS_SIMPLE",
+    "simple_collision_shapes": 0,
+    "nonzero_component_translation_preserved": true
+  },
+  "implemented": [
+    "Read actual generated native MeshComponent triangles with exact world transforms before changing assets or bindings",
+    "Detect every positive geographic building-pad intersection and complete area escape without weakening the independent native validator",
+    "Fail before mutations on conflicting ISM, SplineMesh, DynamicMesh, skeletal or other unsupported component types",
+    "Use native asset material-slot IDs consistently in copy_mesh_from_static_mesh_v2 and copy_mesh_to_static_mesh; preserve all native defaults, slot names and existing component overrides",
+    "Trim actual native target meshes against the exact area rectangle and authoritative geographic building polygons using supported GeometryScript Boolean trim operations",
+    "Disable hole filling and simplification so closed cutter geometry does not become invented replacement pavement",
+    "Retain target-local output space with the exact original native component transform",
+    "Create fresh named assets only under each assigned area's RoadBLD/ClippedGeometry/generation subtree, preserving all actor-owned and vendor original geometry",
+    "Preserve the measured collision complexity, component responses, profile, object type and overlap settings; reject unhandled simple collision or additional LODs",
+    "Verify new asset geometry and actual rebound component triangles before returning",
+    "Prepare all candidate assets before changing any native component binding, restore original bindings after a failure, delete nothing and save no maps",
+    "Record exact original and clipped mesh paths, materials, world transform, collision policy, protected-source digest and clipped triangle geometry hash",
+    "Require independent full native fit validation followed by named asset/map saves and actual reopen comparison"
+  ],
+  "offline_validation": {
+    "syntax_compilation": "passed",
+    "ordinary_python_import": "passed; import does not run editor code",
+    "outside_area_triangle": "Detected exact 100 cm escape",
+    "inside_pad_triangle": "Detected exact 0.5 m2 intersection",
+    "safe_triangle": "passed",
+    "edge_only_pad_contact": "passed with zero intersection",
+    "editor_operations_performed_by_worker": 0
+  },
+  "installed_primary_api_sources": [
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/SceneUtilityFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/MeshBooleanFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/MeshPrimitiveFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/MeshAssetFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/MeshMaterialFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingCore/Public/GeometryScript/CollisionFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Runtime/GeometryScripting/Source/GeometryScriptingEditor/Public/GeometryScript/CreateNewAssetUtilityFunctions.h",
+    "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Editor/StaticMeshEditor/Public/StaticMeshEditorSubsystem.h"
+  ],
+  "remaining_actual_checks": [
+    "Root runs supported native trimming and confirms the actual full-area triangle validator still passes",
+    "Root performs named saves of all returned created_asset_paths and the current named map",
+    "Native RoadGeo and DynamicRoadNetwork implement PostLoad without a reflected persistent mesh-override contract; reopen must confirm exact component mesh/material/transform/hash persistence",
+    "Every normal regeneration reapplies clipping after the final native rebuild before full validation and named saves",
+    "Root inspects actual visible asphalt, sidewalk, curb boundaries and collision behavior"
+  ],
+  "failure_limits": [
+    "A wholly removed native component fails for explicit source resolution rather than silently deleting source output",
+    "Unverified simple collision shapes, multiple render LODs and conflicting shared/deformed mesh types remain explicit unsupported diagnostics",
+    "No runtime trimming, collision tracing, save/reopen or appearance acceptance is claimed by the offline worker"
+  ]
+}

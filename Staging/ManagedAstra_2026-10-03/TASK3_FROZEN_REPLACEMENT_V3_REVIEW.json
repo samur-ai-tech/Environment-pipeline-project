@@ -1,0 +1,130 @@
+{
+  "schema": "environmentpipeline.task3.frozen_replacement_v3_review.v1",
+  "judgment": "PASS_FOR_ROOT_REVIEW",
+  "utc": "2026-10-03T23:31:18.117376+00:00",
+  "handoff_sha256": "5dc8d9afb8bf7413d0fbf3c1f6e4699bd0abdf20ed9875c60a9432eaee927777",
+  "frozen_source_sha256": {
+    "Content/Python/geocity_roadbld_grounding.py": "c33118eaf50529dfb0fe9e67561a0516b704fa7f615ccf4ca07eddc4bfda55a9",
+    "Content/Python/geocity_roadbld_clip.py": "ba19eb39184f9a03a04b06cff630beb73f919a1190629bf30de54a1cf281349c",
+    "Content/Python/geocity_roadbld_workflow.py": "d9124420d27c7e32e240c1e6700f7b151a4e238eacd0fee378a2a0c118eb853e",
+    "Content/Python/geocity_bank_workflow.py": "8e1cc47148c150168c72c255dfea9b4ef264a0635860a3c5240b7a3d00fc11b2",
+    "Content/Python/geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+    "Content/Python/geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802"
+  },
+  "method": "Independent filesystem/source/diff/AST and recorded replay inspection. Six sources parsed but not imported or executed; replays not rerun. No editor calls, process inspection/start, cook, bake, asset save, source/config/ownership changes. Only this new review receipt written.",
+  "v2_blocker": "CLOSED_AT_SOURCE_CONTROL_FLOW_LEVEL; actual native rollback remains unproven.",
+  "blocking_source_findings": [],
+  "transaction_evidence": [
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "lines": "1152-1172,1288-1317,1354-1365",
+      "finding": "Owner-held nonserialized _PendingCorrection keeps candidate snapshots and previous native run references/state-file bytes alive across correction return. correction sets and clears its internal tick guard."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "lines": "1368-1380",
+      "finding": "verify_links retains the pending transaction, marks lineage success only after verification, and invokes rollback on exception."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_workflow.py",
+      "lines": "939-952,1206-1243",
+      "finding": "All ordinary native validation and staged-contract body gates are enclosed by rollback wrappers. Staged contract invokes the second validation; pending marker requires at least two completed passes and staged success."
+    },
+    {
+      "file": "Content/Python/geocity_bank_workflow.py",
+      "lines": "387-425",
+      "finding": "Parent guard, success, map, PID, lease, actor existence/count/ownership/tag and state-write gates occur while snapshots remain pending. Parent catch invokes rollback before parent.fail. commit at419 precedes cooking-pause query/resume at420 and configure_and_bind at421."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "lines": "1237-1255",
+      "finding": "Commit requires pending status/result, lineage, two validations, staged contract, native_generated_verified phase and no native tick. Commit receipt failure rolls back; handles are cleared only after successful resolution write."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "lines": "1188-1227",
+      "finding": "Rollback restores candidates, prior native run report/state object identities and values, sampler/diagnostic/geos references, and exact state-file bytes. Failed restore retains pending snapshots for explicit recovery; successful rollback releases them."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_clip.py",
+      "lines": "199-249",
+      "finding": "Restore reinstates complete static-material structs and complete metadata map including absent/empty/added keys, restores binding if needed, and checks geometry, UV/normal/material payload, materials, collision summary and transform. Real API fidelity is not proven."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_workflow.py",
+      "lines": "1099-1109",
+      "finding": "fail handles pending or already rolled-back correction without the ordinary failed-validation state rewrite."
+    }
+  ],
+  "owner_contract": {
+    "sha256": "a55adffe901ca53f17928901c9d05987abc38ddbaa51a05a6e782fcbd6758f40",
+    "assessment": "Compatible source-call contract; no concrete wrapper/installer activation approval.",
+    "required_sequence": "Preserve failed_validating and _tick_running=False at entry; no tick handle; exact previous keys grounding_report/clipping_report. correction(run) owns tick guard. verify_links(run,previous,result) returns dict, not literal True. First validate and finish; reviewed parent callback setup then after_native_roads invokes staged contract and second validate. Outer owner try/except must call rollback_correction for every precommit setup/observation/callback exception.",
+    "historical_wrapper_status": "Both prepare_same_postbinding_continuation_21780.py and prepare_reviewed_helper_install_21780.py independently observed PREPARATION_ONLY=True at line20. Existing phase/tick/report-key/return-type mismatches remain in historical wrapper and it is NOT approved.",
+    "installation_residual": "Review a concrete wrapper and installer against all six hashes; include new _validate_native and _staged_contract_native bindings, parent callback hooks and actual delegate arities. Preserve existing run objects/ACTIVE lists. Old hash allowlists are not v3 approval."
+  },
+  "unchanged_gates": {
+    "independent_AST_equal_to_v2": [
+      "AsphaltField",
+      "_source_eligibility",
+      "_parent_trim_cross_section_support",
+      "verify_source_coverage",
+      "analyze_protected_source_intervals",
+      "_physical_segment_intervals",
+      "verify_clipped_source_partition",
+      "ground_native_geos",
+      "verify_native_delivery"
+    ],
+    "native_validate_and_staged_contract_bodies_AST_equal_after_rename": true,
+    "seams_and_junctions_byte_identical_to_reviewed_v2": true,
+    "retained_contract": "0.01cm XY and10cm height gates, provenance/parent-trim eligibility and protected partition unchanged. 10cm small-fan cap and whole-triangle trim-disk guard retained. Protected1887.338120057525cm exclusion is separate from exterior-gap repair."
+  },
+  "transaction_replay": {
+    "sha256": "b976d8a95631e308921fa4b3dad5714c093a3ae44f262e40fab3f1e7f3833cdd",
+    "recorded_status": "PASSED_OFFLINE_TRANSACTION_CONTROL_FLOW",
+    "failure_injections": 131,
+    "injection_distribution": {
+      "_validate_native": 89,
+      "_staged_contract_native": 13,
+      "after_native_roads": 29
+    },
+    "interpretation": "Injected exceptions at executed lines in a bounded fixture, not exhaustive native failure coverage. Production rollback/control-flow and restore routines run against explicit in-memory mesh/asset/component IO surrogates. Fixture manually constructs _PendingCorrection; actual correction execution and underlying _verify_links lineage/physical checks are not exercised.",
+    "modeled_checks": [
+      "native run report/state identities and exact file bytes",
+      "metadata presence, empty values and removal of added tags",
+      "payload and material-slot/binding restoration",
+      "lineage failure guard",
+      "owner failure after links",
+      "premature commit",
+      "commit-receipt failure prevents suppression",
+      "failed rollback retains handles and retry restores"
+    ],
+    "collision_limit": "Collision query is a constant surrogate; no real collision restoration demonstrated."
+  },
+  "XY_planner_replay": {
+    "sha256": "b58788a5370c5241afd94ae9cda6e55bb67949b5bb736a589c6db20ba187851f",
+    "affected_rows": 16,
+    "captured_components": 58,
+    "segments": 1907,
+    "initial_gaps": 22,
+    "join_strips": 6,
+    "fans": 23,
+    "remaining_XY_intervals": 0,
+    "limits": "Append array sinks replace native joins/fans; native Boolean and obstruction removal mocked, refresh no-op, appended upward flags forced, Landscape fixture substitutes a native plane. Only affected16 rows, not full40 physical result."
+  },
+  "mandatory_residuals": [
+    "Actual Unreal UObject lifetime, DynamicMesh/assets under GC and GeometryScript same-path conversion/restoration are unproven. Python-held handles alone are not a demonstrated native lifetime guarantee.",
+    "Real UV/split-normal/material/collision restoration, Boolean topology, curb obstruction removal and real Landscape heights require bounded native execution/readback. Full40 physical closure, save/reopen/regeneration and appearance are unproven.",
+    "131 injections are explicit in-memory native IO surrogates; they must not be described as native rollback validation.",
+    "Commit is the explicit point of no return before the pause query/resume. Failures after commit, including later suppression/Bake/post-Bake validation, use the existing parent lifecycle and cannot use correction snapshots.",
+    "Rollback snapshot scope is the native run; parent callback state is handled by parent.fail, not restored from _PendingCorrection. No parent-state rollback proof is claimed.",
+    "Concrete installer/wrapper remains unapproved until reconciled to the new contract. Current editor/PID/lease/license/dirty state was not inspected; historical PID21780 and87 candidates are not asserted live."
+  ],
+  "previous_receipts_preserved": {
+    "TASK3_FROZEN_REPLACEMENT_V2_REVIEW.json": "a8a6d366f03c0cb0f176f903d7e26eb40c61a58609d0042e371eacd68c6159a9",
+    "TASK3_FROZEN_REPLACEMENT_V2_BLOCKER_ADDENDUM.json": "69c0b87d0d6e66ebeb153526dfb1c6fab6c4c812a47766a68ff7aaed2e6f7076"
+  },
+  "editor_activation_approved": false,
+  "native_rollback_proven": false,
+  "appearance_accepted": false
+}

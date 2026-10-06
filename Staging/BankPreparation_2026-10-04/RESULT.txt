@@ -1,0 +1,95 @@
+Environmentpipeline — first nonmodular bank preparation delivery
+2026-10-04, Asia/Jerusalem
+
+Aviv requested existing props and whole buildings first, using measurement and
+configuration wherever remodeling is unnecessary. Modular work remains deferred.
+
+Completed retained work
+1. Measured 541 existing nonmodular StaticMesh assets in the sole Unreal editor.
+   All 541 loaded and returned measurement records. 527 have complete source-vertex
+   bounds. The remaining 14 are heavy Iceland terrain/mountain assets; their native
+   render bounds are measured, and exhaustive vertex contact scans are deferred.
+   The three large Bank_ME whole buildings were also scanned completely.
+   Records include bounds, material slot order, UV channels, LODs, collision counts,
+   dependency paths and explicit contact/facing limitations.
+2. Reused 158 existing external Blender sources: 25 small props, 46 street props,
+   15 vegetation sources, 27 utilities, 9 signs and 36 whole-building-category
+   sources. Category is historical classification, not final individual suitability.
+   Saved 158 editable Prepared.blend files and 158 fresh geometry previews. Reopened
+   all 158 and verified identity, vertex counts and material slot order. No geometry
+   was remodeled. Collision helpers and lower LODs are retained and excluded from
+   LOD0 measurements/previews. All original FBX/.blend sources remain unchanged.
+3. Repaired external.H0633's missing materials in MaterialResolved.blend using
+   external.T1157. Both records identify the same original Street Light 01 source;
+   geometry, UVs, transforms and face-to-material-slot indices hash identically.
+   Preserved both catalog identities and rights records. Saved MaterialResolved.fbx
+   with orientation derived from original FBX metadata. Blender export readback
+   maximum bounds error is 0.0000123 metres. Linked material images resolve and an
+   actual source-material render was inspected. Native Unreal import is not claimed.
+4. Added descriptive bank_preparation annotations to 778 nonmodular records in
+   catalog_v4_source.json, keyed by the existing AssetId. All other preexisting
+   fields, including all runtime rows, release IDs, holds and rights flags, remain
+   identical to the saved before snapshot. Native DataTable and runtime CSV were
+   not edited. The 445 modular records were not authored or annotated by this phase.
+5. Saved a unified per-ID PREPARED_BANK.json, native measurements, material and
+   texture references, import manifest, actionable asset specification and proposed
+   family budgets. Found two exact geometry groups: H0623/T1147 (bus stop) and
+   H0633/T1157 (street light). Material equivalence is not inferred from geometry.
+6. Updated BANK_GALLERY.html: all 1,223 identities, 233 with images (158 fresh Blender
+   previews and 75 identities with historical native Unreal screenshots). Geometry,
+   source material and historical native images are explicitly distinguished.
+   Opened Blender with the prepared Bench_01 source for inspection.
+
+Measured execution speed
+The successful 158-source preparation/render pass took about 18.8 seconds of summed
+per-asset work. The seven native batch calls totaled 38.7 seconds, plus 9.6 seconds
+for complete scans of the three large whole buildings. These figures exclude task
+setup, source reading, tooling corrections, reconciliation, documentation and the
+material repair. They are NOT an estimate for finishing all native integration.
+
+Remaining issues, without invented approval
+- 36 original native mesh/material dependency closures contain unresolved on-disk
+  package references. Instancing overrides must be reviewed separately; this is not
+  proof that every current rendered instance has a broken material.
+- Four native meshes have empty slots: SM_Sky_sphere_sunday, SM_paving_stones,
+  SM_wire_support and ProcMesh_Baked. Role and existing overrides matter.
+- Four external sidewalk sources T1153/T1154/T1155/T1156 have no render UV layers.
+  They need their intended surface consumer/material contract; no arbitrary unwrap
+  or ground-prop release was applied.
+- H0633's original missing-texture source is preserved. Its repaired derivative has
+  no missing linked texture paths. Source material completeness is not native shader
+  acceptance, and custom source shader behavior is not automatically reproduced.
+- Seven external native-package asset records and six SpeedTree source records need
+  their native import paths. The 27 external family records are inventory groups,
+  not 27 individual meshes. Thirty-one current dependency records have no selectable
+  mesh runtime path by design.
+- Import, native material binding, role-specific contact/facing/context decisions,
+  scoped activation and ordinary named-area generation remain to be completed.
+  The native table still has the previous 16 meshes and two materials enabled.
+  No new native import, runtime activation, Cook, Bake, map change or Content save
+  was performed in this phase. No whole-bank qualification or rights release.
+
+Editor coordination
+The previous Iran owner released PID30812 before this task acquired a fresh lease.
+Bank measurements preserved the three prior dirty Iran Cook packages and clean map.
+At a safe checkpoint, bank released the editor and recorded the requested window
+in Staging/HoudiniEngineOutputRepair_2026-10-04/BANK_OWNER_WINDOW.json. The system
+repair chat now owns its replacement editor PID5036. Bank has no unsaved native work.
+Offline sources and metadata remain available while system repair proceeds.
+geocity_bank_workflow.py changed under the other owner's system work after the
+bank baseline; it was not edited by this bank task. Other source/profile hash
+observations are recorded in RESULT.json rather than silently attributed to bank.
+
+Primary deliverables in this folder
+ASSET_SPECIFICATION.txt — installed consumer contract and authoring rules
+PREPARED_BANK.json — every identity and exact current preparation/use/hold state
+NATIVE_MEASUREMENTS.json — 541 fresh native asset measurements
+BLENDER_REOPEN_READBACK.json — 158 saved-source reopen receipts
+EXTERNAL_IMPORT_MANIFEST.json — 158 source entries, native import still pending
+CATALOG_METADATA_APPLIED.json — exact canonical-source annotation change receipt
+FAMILY_WEIGHT_BUDGETS.json and EXACT_GEOMETRY_FAMILIES.json — prospective weighting
+BANK_GALLERY.html — updated browsable view
+MATERIAL_REPAIR.json — retained street-light material repair and export readback
+
+Prepared sources:
+C:/Users/USER/Documents/Pipeline Environment/ModelBank/Prepared_2026-10-04

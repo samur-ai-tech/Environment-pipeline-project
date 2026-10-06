@@ -1,0 +1,1414 @@
+{
+  "status": "READ_ONLY_ASPHALT_CONNECTIONS_COMPLETE",
+  "material": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/M_RoadBLD_Asphalt_Master.M_RoadBLD_Asphalt_Master",
+  "nodes": [
+    {
+      "name": "MaterialExpressionBreakMaterialAttributes_0",
+      "class": "MaterialExpressionBreakMaterialAttributes",
+      "input_names": [
+        "Attr"
+      ],
+      "inputs": [
+        "MaterialExpressionStaticSwitchParameter_15"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_11",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Position",
+        "Pattern",
+        "ScaleGlobal",
+        "ScalePattern",
+        "MipBias",
+        "ScaleCell",
+        "RandomScaleMax",
+        "RandomOffsetVariation",
+        "RandomScaleMin",
+        "DoRotationVariation",
+        "RandomRotationVariation",
+        "RandomRotationSteps",
+        "DoNormalRotation"
+      ],
+      "inputs": [
+        "MaterialExpressionNamedRerouteUsage_11",
+        "MaterialExpressionTextureObjectParameter_3",
+        "MaterialExpressionScalarParameter_13",
+        null,
+        "MaterialExpressionScalarParameter_17",
+        null,
+        null,
+        "MaterialExpressionScalarParameter_14",
+        null,
+        "MaterialExpressionStaticBool_3",
+        "MaterialExpressionScalarParameter_14",
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_3",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_13",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionStaticBool_3",
+      "class": "MaterialExpressionStaticBool",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_12",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Position",
+        "Pattern",
+        "ScaleGlobal",
+        "ScalePattern",
+        "MipBias",
+        "ScaleCell",
+        "RandomScaleMax",
+        "RandomOffsetVariation",
+        "RandomScaleMin",
+        "DoRotationVariation",
+        "RandomRotationVariation",
+        "RandomRotationSteps",
+        "DoNormalRotation"
+      ],
+      "inputs": [
+        "MaterialExpressionNamedRerouteUsage_12",
+        "MaterialExpressionTextureObjectParameter_6",
+        "MaterialExpressionScalarParameter_13",
+        null,
+        null,
+        null,
+        null,
+        "MaterialExpressionScalarParameter_14",
+        null,
+        "MaterialExpressionStaticBool_3",
+        "MaterialExpressionScalarParameter_14",
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_6",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_13",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Position",
+        "Pattern",
+        "ScaleGlobal",
+        "ScalePattern",
+        "MipBias",
+        "ScaleCell",
+        "RandomScaleMax",
+        "RandomOffsetVariation",
+        "RandomScaleMin",
+        "DoRotationVariation",
+        "RandomRotationVariation",
+        "RandomRotationSteps",
+        "DoNormalRotation"
+      ],
+      "inputs": [
+        "MaterialExpressionNamedRerouteUsage_13",
+        "MaterialExpressionTextureObjectParameter_7",
+        "MaterialExpressionScalarParameter_13",
+        null,
+        null,
+        null,
+        null,
+        "MaterialExpressionScalarParameter_14",
+        null,
+        "MaterialExpressionStaticBool_3",
+        "MaterialExpressionScalarParameter_14",
+        null,
+        "MaterialExpressionStaticBool_5"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_7",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionComponentMask_2",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_13"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_14",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionStaticBool_5",
+      "class": "MaterialExpressionStaticBool",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_15",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionCustom_2",
+      "class": "MaterialExpressionCustom",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionDivide_0",
+      "class": "MaterialExpressionDivide",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_11",
+        "MaterialExpressionCustom_2"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_11",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionScalarParameter_15",
+        "MaterialExpressionMaterialFunctionCall_17"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_17",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "World Position"
+      ],
+      "inputs": [
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionComponentMask_1",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionDivide_0"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_12",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_12",
+        "MaterialExpressionScalarParameter_16"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_16",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMultiply_13",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionDivide_3",
+        "MaterialExpressionScalarParameter_107"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureSample_9",
+      "class": "MaterialExpressionTextureSample",
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Level",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        "MaterialExpressionConstant2Vector_1",
+        "MaterialExpressionTextureObjectParameter_3",
+        "MaterialExpressionConstant_15",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant_15",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionDivide_3",
+      "class": "MaterialExpressionDivide",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_34",
+        "MaterialExpressionTextureSample_9"
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant2Vector_1",
+      "class": "MaterialExpressionConstant2Vector",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_17",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionSmoothStep_1",
+      "class": "MaterialExpressionSmoothStep",
+      "input_names": [
+        "Min",
+        "Max",
+        "Value"
+      ],
+      "inputs": [
+        "MaterialExpressionConstant_21",
+        "MaterialExpressionConstant_22",
+        "MaterialExpressionComponentMask_1"
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant_21",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionConstant_22",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_12",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureSample_9",
+        "MaterialExpressionComponentMask_34",
+        "MaterialExpressionLinearInterpolate_13"
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant_17",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionConstant_18",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_13",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionConstant_17",
+        "MaterialExpressionConstant_18",
+        "MaterialExpressionSmoothStep_1"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_14",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionLinearInterpolate_12",
+        "MaterialExpressionVectorParameter_2"
+      ]
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_2",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_4",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_5",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteDeclaration_5",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureObjectParameter_4"
+      ]
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteDeclaration_6",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureObjectParameter_5"
+      ]
+    },
+    {
+      "name": "MaterialExpressionWorldPosition_4",
+      "class": "MaterialExpressionWorldPosition",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteDeclaration_7",
+      "class": "MaterialExpressionNamedRerouteDeclaration",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionStaticSwitchParameter_37"
+      ]
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_11",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_12",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_13",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionComponentMask_34",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_11"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureCoordinate_7",
+      "class": "MaterialExpressionTextureCoordinate",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionConstant_27",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionAppendVector_4",
+      "class": "MaterialExpressionAppendVector",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_0",
+        "MaterialExpressionConstant_27"
+      ]
+    },
+    {
+      "name": "MaterialExpressionStaticSwitchParameter_37",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "input_names": [
+        "True",
+        "False"
+      ],
+      "inputs": [
+        "MaterialExpressionAppendVector_4",
+        "MaterialExpressionWorldPosition_4"
+      ]
+    },
+    {
+      "name": "MaterialExpressionActorPositionWS_0",
+      "class": "MaterialExpressionActorPositionWS",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionSubtract_5",
+      "class": "MaterialExpressionSubtract",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionVectorParameter_15",
+        "MaterialExpressionActorPositionWS_0"
+      ]
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_15",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionSubtract_6",
+      "class": "MaterialExpressionSubtract",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionAppendVector_4",
+        "MaterialExpressionSubtract_5"
+      ]
+    },
+    {
+      "name": "MaterialExpressionComponentMask_16",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_13"
+      ]
+    },
+    {
+      "name": "MaterialExpressionSetMaterialAttributes_4",
+      "class": "MaterialExpressionSetMaterialAttributes",
+      "input_names": [
+        "MaterialAttributes",
+        "Base Color",
+        "Specular",
+        "Roughness",
+        "Normal"
+      ],
+      "inputs": [
+        null,
+        "MaterialExpressionMultiply_14",
+        "MaterialExpressionComponentMask_16",
+        "MaterialExpressionMultiply_12",
+        "MaterialExpressionComponentMask_2"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_107",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_74",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_32",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Base Material",
+        "RoughnessMultiplier"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_33",
+        "MaterialExpressionLinearInterpolate_20"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_33",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Material",
+        "Tint",
+        "TintMask"
+      ],
+      "inputs": [
+        "MaterialExpressionSetMaterialAttributes_4",
+        "MaterialExpressionVectorParameter_17",
+        "MaterialExpressionOneMinus_4"
+      ]
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_20",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        null,
+        "MaterialExpressionScalarParameter_75",
+        "MaterialExpressionOneMinus_4"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_75",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_17",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionOneMinus_4",
+      "class": "MaterialExpressionOneMinus",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionSaturate_8"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_43",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_34",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_34",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Position",
+        "Pattern",
+        "ScaleGlobal",
+        "ScalePattern",
+        "MipBias",
+        "ScaleCell",
+        "RandomScaleMax",
+        "RandomOffsetVariation",
+        "RandomScaleMin",
+        "DoRotationVariation",
+        "RandomRotationVariation",
+        "RandomRotationSteps",
+        "DoNormalRotation"
+      ],
+      "inputs": [
+        "MaterialExpressionNamedRerouteUsage_33",
+        "MaterialExpressionNamedRerouteUsage_36",
+        "MaterialExpressionScalarParameter_74",
+        null,
+        "MaterialExpressionScalarParameter_76",
+        null,
+        "MaterialExpressionConstant_20",
+        null,
+        "MaterialExpressionConstant_19",
+        "MaterialExpressionStaticBool_6",
+        null,
+        "MaterialExpressionConstant_23",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_76",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionConstant_19",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionConstant_20",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionComponentMask_15",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_43"
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant_23",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionStaticBool_6",
+      "class": "MaterialExpressionStaticBool",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionComponentMask_18",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_51"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_49",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionLinearInterpolate_24",
+        "MaterialExpressionScalarParameter_84"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_84",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_85",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_18",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionTextureCoordinate_10",
+      "class": "MaterialExpressionTextureCoordinate",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMultiply_51",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureCoordinate_10",
+        "MaterialExpressionScalarParameter_86"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D_19",
+      "class": "MaterialExpressionTextureSampleParameter2D",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_18",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureSampleParameter2D_20",
+      "class": "MaterialExpressionTextureSampleParameter2D",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_18",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionStaticSwitchParameter_14",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "input_names": [
+        "True",
+        "False"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_32",
+        "MaterialExpressionSetMaterialAttributes_4"
+      ]
+    },
+    {
+      "name": "MaterialExpressionStaticSwitchParameter_15",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "input_names": [
+        "True",
+        "False"
+      ],
+      "inputs": [
+        "MaterialExpressionSetMaterialAttributes_6",
+        "MaterialExpressionReroute_33"
+      ]
+    },
+    {
+      "name": "MaterialExpressionStaticSwitchParameter_17",
+      "class": "MaterialExpressionStaticSwitchParameter",
+      "input_names": [
+        "True",
+        "False"
+      ],
+      "inputs": [
+        "MaterialExpressionSetMaterialAttributes_2",
+        "MaterialExpressionStaticSwitchParameter_14"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_86",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionGetMaterialAttributes_3",
+      "class": "MaterialExpressionGetMaterialAttributes",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionStaticSwitchParameter_14"
+      ]
+    },
+    {
+      "name": "MaterialExpressionSetMaterialAttributes_2",
+      "class": "MaterialExpressionSetMaterialAttributes",
+      "input_names": [
+        "MaterialAttributes",
+        "Base Color",
+        "Normal"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_3",
+        "MaterialExpressionLinearInterpolate_21",
+        "MaterialExpressionLinearInterpolate_25"
+      ]
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_21",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_3",
+        "MaterialExpressionSaturate_5",
+        "MaterialExpressionReroute_35"
+      ]
+    },
+    {
+      "name": "MaterialExpressionPower_7",
+      "class": "MaterialExpressionPower",
+      "input_names": [
+        "Base",
+        "Exp"
+      ],
+      "inputs": [
+        "MaterialExpressionMaterialFunctionCall_37",
+        "MaterialExpressionScalarParameter_87"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_53",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_4",
+        "MaterialExpressionLinearInterpolate_22"
+      ]
+    },
+    {
+      "name": "MaterialExpressionGetMaterialAttributes_4",
+      "class": "MaterialExpressionGetMaterialAttributes",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionReroute_33"
+      ]
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_19",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_22",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionVectorParameter_18",
+        "MaterialExpressionVectorParameter_19",
+        "MaterialExpressionAdd_7"
+      ]
+    },
+    {
+      "name": "MaterialExpressionSetMaterialAttributes_6",
+      "class": "MaterialExpressionSetMaterialAttributes",
+      "input_names": [
+        "MaterialAttributes",
+        "Base Color"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_4",
+        "MaterialExpressionLinearInterpolate_31"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_87",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_23",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_4",
+        "MaterialExpressionMultiply_53",
+        "MaterialExpressionScalarParameter_88"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_88",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionSaturate_5",
+      "class": "MaterialExpressionSaturate",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_49"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureSample_20",
+      "class": "MaterialExpressionTextureSample",
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_21",
+        "MaterialExpressionTextureObjectParameter_8",
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionMultiply_54",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionNamedRerouteUsage_35",
+        "MaterialExpressionScalarParameter_85"
+      ]
+    },
+    {
+      "name": "MaterialExpressionComponentMask_21",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_54"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureObjectParameter_8",
+      "class": "MaterialExpressionTextureObjectParameter",
+      "input_names": [
+        "UVs",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_37",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "Scale",
+        "Diffuse",
+        "DetailDiffuse",
+        "DiffuseIntensity",
+        "Normal",
+        "DetailNormal",
+        "NormalIntensity"
+      ],
+      "inputs": [
+        "MaterialExpressionScalarParameter_89",
+        "MaterialExpressionTextureSample_20",
+        "MaterialExpressionReroute_36",
+        "MaterialExpressionScalarParameter_90",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_89",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_90",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionTextureSample_21",
+      "class": "MaterialExpressionTextureSample",
+      "input_names": [
+        "UVs",
+        "Tex",
+        "Apply View MipBias"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_22",
+        null,
+        null
+      ]
+    },
+    {
+      "name": "MaterialExpressionAdd_7",
+      "class": "MaterialExpressionAdd",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionPower_7",
+        "MaterialExpressionMultiply_56"
+      ]
+    },
+    {
+      "name": "MaterialExpressionTextureCoordinate_11",
+      "class": "MaterialExpressionTextureCoordinate",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMultiply_55",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureCoordinate_11",
+        "MaterialExpressionScalarParameter_91"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_91",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionComponentMask_22",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_55"
+      ]
+    },
+    {
+      "name": "MaterialExpressionSaturate_6",
+      "class": "MaterialExpressionSaturate",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionDesaturation_3"
+      ]
+    },
+    {
+      "name": "MaterialExpressionDesaturation_3",
+      "class": "MaterialExpressionDesaturation",
+      "input_names": [
+        "None",
+        "Fraction"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureSample_21",
+        "MaterialExpressionConstant_24"
+      ]
+    },
+    {
+      "name": "MaterialExpressionConstant_24",
+      "class": "MaterialExpressionConstant",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMultiply_56",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionSaturate_6",
+        "MaterialExpressionScalarParameter_92"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_92",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_24",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureSampleParameter2D_19",
+        "MaterialExpressionVectorParameter_20",
+        "MaterialExpressionScalarParameter_93"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_93",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_20",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionReroute_32",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionStaticSwitchParameter_17"
+      ]
+    },
+    {
+      "name": "MaterialExpressionReroute_33",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionReroute_32"
+      ]
+    },
+    {
+      "name": "MaterialExpressionReroute_35",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureSampleParameter2D_19"
+      ]
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_25",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_3",
+        "MaterialExpressionTextureSampleParameter2D_20",
+        "MaterialExpressionTextureSampleParameter2D_19"
+      ]
+    },
+    {
+      "name": "MaterialExpressionReroute_36",
+      "class": "MaterialExpressionReroute",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureObjectParameter_8"
+      ]
+    },
+    {
+      "name": "MaterialExpressionSaturate_8",
+      "class": "MaterialExpressionSaturate",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionComponentMask_15"
+      ]
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_33",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_35",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_29",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionGetMaterialAttributes_4",
+        "MaterialExpressionLinearInterpolate_23",
+        "MaterialExpressionScalarParameter_101"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_101",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionLinearInterpolate_31",
+      "class": "MaterialExpressionLinearInterpolate",
+      "input_names": [
+        "A",
+        "B",
+        "Alpha"
+      ],
+      "inputs": [
+        "MaterialExpressionLinearInterpolate_29",
+        "MaterialExpressionGetMaterialAttributes_4",
+        "MaterialExpressionVertexColor_3"
+      ]
+    },
+    {
+      "name": "MaterialExpressionVertexColor_3",
+      "class": "MaterialExpressionVertexColor",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionNamedRerouteUsage_36",
+      "class": "MaterialExpressionNamedRerouteUsage",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionMultiply_0",
+      "class": "MaterialExpressionMultiply",
+      "input_names": [
+        "A",
+        "B"
+      ],
+      "inputs": [
+        "MaterialExpressionTextureCoordinate_7",
+        "MaterialExpressionComponentMask_0"
+      ]
+    },
+    {
+      "name": "MaterialExpressionVectorParameter_0",
+      "class": "MaterialExpressionVectorParameter",
+      "input_names": [],
+      "inputs": []
+    },
+    {
+      "name": "MaterialExpressionComponentMask_0",
+      "class": "MaterialExpressionComponentMask",
+      "input_names": [
+        "None"
+      ],
+      "inputs": [
+        "MaterialExpressionVectorParameter_0"
+      ]
+    },
+    {
+      "name": "MaterialExpressionMaterialFunctionCall_0",
+      "class": "MaterialExpressionMaterialFunctionCall",
+      "input_names": [
+        "UVs",
+        "Rotation Center",
+        "Rotation Angle (0-1)"
+      ],
+      "inputs": [
+        "MaterialExpressionMultiply_0",
+        null,
+        "MaterialExpressionScalarParameter_0"
+      ]
+    },
+    {
+      "name": "MaterialExpressionScalarParameter_0",
+      "class": "MaterialExpressionScalarParameter",
+      "input_names": [],
+      "inputs": []
+    }
+  ],
+  "outputs": {
+    "base_color": "MaterialExpressionBreakMaterialAttributes_0",
+    "roughness": "MaterialExpressionBreakMaterialAttributes_0",
+    "normal": "MaterialExpressionBreakMaterialAttributes_0",
+    "material_attributes": null
+  },
+  "supported_api": "MaterialEditingLibrary get_material_expressions/get_material_expression_input_names/get_inputs_for_material_expression/get_material_property_input_node",
+  "no_material_editor_open_compile_or_mutation": true,
+  "participants_dirty_packages_unchanged": true,
+  "callbacks": 0
+}

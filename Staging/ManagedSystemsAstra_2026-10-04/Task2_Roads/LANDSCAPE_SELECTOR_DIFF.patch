@@ -1,0 +1,161 @@
+--- Staging\ManagedSystemsAstra_2026-10-04\Task2_Roads\BeforeLandscapeAuthority\geocity_roadbld_landscape.py
++++ Content/Python/geocity_roadbld_landscape.py
+@@ -1,6 +1,67 @@
+ """Read the exact retained/official-current-cook Landscape collision surface."""
+ import math
++import hashlib
++import json
++import os
++from pathlib import Path
+ import unreal
++
++
++def _current_landscape(run, world, actors):
++    """Resolve only the current official lifecycle's explicit live authority."""
++    callback = run.landscape_authority
++    parent = getattr(callback, '__self__', None)
++    assert callable(callback) and parent is not None, 'Current Landscape requires a bound official lifecycle authority'
++    assert parent is run._landscape_authority_parent, 'Landscape authority parent changed'
++    parent.guard()
++    assert parent.native_road_phase == 'authoring', 'Landscape authority is not the current authoring operation'
++    assert parent.native_road_run is None or parent.native_road_run is run, 'Landscape authority belongs to another road operation'
++    assert parent.lease_line == run.lease_line, 'Landscape authority lease differs'
++    assert parent.p['map'] == run.plan['named_map'], 'Landscape authority map differs'
++    source = Path(run.p['source']).resolve(strict=True)
++    assert Path(parent.p['source']).resolve(strict=True) == source, 'Landscape authority source differs'
++    assert hashlib.sha256(source.read_bytes()).hexdigest() == run.plan['source_sha256'], 'Current geographic source changed'
++    previous = parent.state['previous_landscape_accounting']
++    assert not previous['unaccounted_actor_paths'], 'Previous Landscape ownership was not established'
++    assert previous['source_sha256'] == run.plan['source_sha256'], 'Previous Landscape source differs'
++    allowed = previous['live_actor_paths']
++    assert len(allowed) == len(set(allowed)), 'Duplicate previous Landscape identities'
++    assert set(allowed).issubset(parent.previous_baked_paths), 'Previous Landscape lacks retained lifecycle ownership'
++    owner = parent.wrapper.get_houdini_asset_actor()
++    live = {actor.get_path_name(): actor for actor in actors}
++    assert len(live) == len(actors), 'Duplicate loaded actor identities'
++    assert owner and live.get(owner.get_path_name()) == owner, 'Current official HDA owner is not loaded'
++    assert previous['hda_actor_path'] == owner.get_path_name(), 'Official HDA owner changed'
++    assert owner.get_outermost().get_path_name() == run.plan['named_map'], 'Official HDA owner is in another world'
++    authority = callback()
++    assert isinstance(authority, dict), 'Missing current Landscape authority'
++    actor, evidence = authority.get('actor'), authority.get('evidence')
++    assert isinstance(actor, unreal.Landscape) and isinstance(evidence, dict), 'Incomplete current Landscape authority'
++    path = actor.get_path_name()
++    assert live.get(path) == actor and unreal.load_object(None, path) == actor, 'Current Landscape object is missing or stale'
++    assert actor.get_outermost().get_path_name() == world.get_outermost().get_path_name() == run.plan['named_map'], 'Current Landscape is in another world'
++    prefix = run.plan['named_map'] + '.' + run.plan['named_map'].rsplit('/', 1)[-1] + ':PersistentLevel.'
++    assert path.startswith(prefix) and all(p.startswith(prefix) for p in allowed), 'Landscape path is outside the named world'
++    expected = {
++        'schema': 'environmentpipeline.current_road_landscape.v1', 'pid': os.getpid(),
++        'named_map': run.plan['named_map'], 'area_id': run.plan['area_id'],
++        'source_sha256': run.plan['source_sha256'], 'centreline_sha256': run.plan['centreline_sha256'],
++        'lease_sha256': hashlib.sha256(run.lease_line.encode('utf-8')).hexdigest(),
++        'operation_started_epoch': parent.started_epoch, 'hda_actor_path': owner.get_path_name(),
++        'current_actor_path': path, 'accounted_previous_landscape_paths': sorted(allowed),
++        'official_output_verified': True}
++    assert evidence.get('official_output_verified') is True, 'Official current Landscape output is unverified'
++    assert evidence == expected, 'Current Landscape operation/source/owner evidence differs'
++    landscape_paths = {a.get_path_name() for a in actors if isinstance(a, unreal.Landscape)}
++    assert not landscape_paths - {path} - set(allowed), 'Unexpected Landscape ownership'
++    frozen = run._current_landscape_evidence
++    if frozen is not None:
++        assert run._current_landscape_actor == actor and frozen == expected, 'Current Landscape authority changed during road operation'
++    else:
++        run._current_landscape_actor = actor
++        run._current_landscape_evidence = json.loads(json.dumps(expected))
++    run.state['current_landscape_authority'] = json.loads(json.dumps(expected))
++    return actor
+ 
+ 
+ class LandscapeSampler:
+@@ -9,16 +70,11 @@
+         self.world = run.guard()
+         actors = list(unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors())
+         landscapes = [a for a in actors if isinstance(a, unreal.Landscape)]
+-        cooked = [a for a in landscapes if a.get_name().startswith('GeoCity_city_v015_PermanentBank_')
+-                  and a.get_name().endswith('_' + run.plan['area_id'] + '_landscape')]
+         if saved:
+             assert len(landscapes) == 1, 'Saved area requires exactly one Landscape'
+             self.landscape = landscapes[0]
+         else:
+-            assert len(cooked) == 1, 'Exactly one current official HDA cooked Landscape is required'
+-            self.landscape = cooked[0]
+-            assert all(a == self.landscape or a.get_name() == run.plan['area_id'] + '_landscape'
+-                       for a in landscapes), 'Unexpected Landscape ownership'
++            self.landscape = _current_landscape(run, self.world, actors)
+         self.path = self.landscape.get_path_name()
+         assert self.path.startswith(run.plan['named_map'] + '.')
+         self.ignored = [a for a in actors if a != self.landscape]
+--- Staging\ManagedSystemsAstra_2026-10-04\Task2_Roads\BeforeLandscapeAuthority\geocity_roadbld_workflow.py
++++ Content/Python/geocity_roadbld_workflow.py
+@@ -535,7 +535,7 @@
+ class RoadBLDRun:
+     """One asynchronous, area-owned editor operation; root is the only caller."""
+     def __init__(self, profile, export=None, settings=None, reviewed_dirty_packages=(),
+-                 state_path=None, delivery_path=None, on_complete=None):
++                 state_path=None, delivery_path=None, on_complete=None, landscape_authority=None):
+         assert unreal is not None, 'RoadBLD authoring requires the existing Unreal editor'
+         self.profile_path = str(profile) if isinstance(profile, (str, Path)) else None
+         self.p, self.plan = _read(profile), plan(profile, export, settings)
+@@ -554,6 +554,10 @@
+         self.actor_subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+         self.reviewed_dirty = set(reviewed_dirty_packages)
+         self.on_complete = on_complete
++        self.landscape_authority = landscape_authority
++        self._landscape_authority_parent = getattr(landscape_authority, '__self__', None)
++        self._current_landscape_actor = None
++        self._current_landscape_evidence = None
+         self.tick_handle = None
+         self.network = None
+         self.roads = []
+@@ -838,6 +842,11 @@
+ 
+     def start(self):
+         self.preflight()
++        # Freeze exact current official terrain before creating native output.
++        # Later clipping/correction samplers revalidate this same authority.
++        from geocity_roadbld_landscape import LandscapeSampler
++        self.landscape_sampler = LandscapeSampler(self)
++        self.write()
+         self.build_presets()
+         self.guard()
+         self.check_landscape_policy('network_spawn')
+@@ -1440,7 +1449,8 @@
+         result = {key: self.state[key] for key in keys}
+         for key in ('grounding_report', 'native_grounding_validation', 'native_landscape_authority',
+                     'native_landscape_edit_policy', 'native_owned_landscape_patches',
+-                    'native_appearance_by_preset', 'native_props', 'native_props_validation'):
++                    'native_appearance_by_preset', 'native_props', 'native_props_validation',
++                    'current_landscape_authority'):
+             if key in self.state:
+                 result[key] = self.state[key]
+         result.update(schema=DELIVERY_SCHEMA, provider='RoadBLD', phase='native_generated_validated_pending_save', saved=False,
+@@ -1521,7 +1531,8 @@
+         for key in ('grounding_report', 'native_grounding_validation', 'native_appearance_by_preset',
+                     'native_props', 'native_props_validation', 'retired_failed_generations', 'retired_successful_generations',
+                     'unvalidated_previous_mesh_packages_preserved',
+-                    'native_landscape_authority', 'native_landscape_edit_policy', 'native_owned_landscape_patches'):
++                    'native_landscape_authority', 'native_landscape_edit_policy', 'native_owned_landscape_patches',
++                    'current_landscape_authority'):
+             if key in self.state:
+                 delivery[key] = self.state[key]
+         _write(self.delivery_path, delivery)
+@@ -1609,7 +1620,7 @@
+ 
+ 
+ def build(profile, export=None, settings=None, reviewed_dirty_packages=(), state_path=None,
+-          delivery_path=None, on_complete=None):
++          delivery_path=None, on_complete=None, landscape_authority=None):
+     """Begin native generation in the current licensed editor; return live run.
+ 
+     on_complete(run, True) means generated/validated, before any map save or old
+@@ -1617,7 +1628,8 @@
+     and Bake, then calls run.commit(hda_receipt) before its named map save. False
+     is a failed staged generation with a precise receipt and no saved replacement.
+     """
+-    operation = RoadBLDRun(profile, export, settings, reviewed_dirty_packages, state_path, delivery_path, on_complete)
++    operation = RoadBLDRun(profile, export, settings, reviewed_dirty_packages, state_path, delivery_path,
++                          on_complete, landscape_authority=landscape_authority)
+     ACTIVE.append(operation)
+     try:
+         return operation.start()

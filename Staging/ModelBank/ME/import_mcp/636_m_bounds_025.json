@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 161,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Props/SM_H0046_Foodcrate.SM_H0046_Foodcrate"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-16.291234970092773,\"y\":-24.008255004882812,\"z\":-9.0908806669176556e-06},\"max\":{\"x\":16.291379928588867,\"y\":24.008195877075195,\"z\":24.865663528442383},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 161,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-16.291234970092773,\"y\":-24.008255004882812,\"z\":-9.0908806669176556e-06},\"max\":{\"x\":16.291379928588867,\"y\":24.008195877075195,\"z\":24.865663528442383},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

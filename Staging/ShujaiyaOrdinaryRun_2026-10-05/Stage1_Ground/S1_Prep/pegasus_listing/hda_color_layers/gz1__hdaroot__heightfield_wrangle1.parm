@@ -1,0 +1,58 @@
+{
+version 0.8
+folder0	[ 0	locks=0 ]	(	0	0	)
+group	[ 0	locks=0 ]	(	""	)
+bindeach	[ 0	locks=0 ]	(	"off"	)
+snippet	[ 0	locks=0 ]	(	"vector color = v@Cd;
+
+for ( int i = 1; i <= chi('layers'); i++)
+{
+    string layernumber = itoa(i);
+    int layerenable = chi('layerenable_' + layernumber);
+    
+    if ( layerenable == 1 )
+    {
+        string layername = chs('layername_' + layernumber);
+        vector layercolor = chv('layercolor_' +layernumber);
+        float layermask = volumesample(0, layername, @P);
+        
+        color = lerp(color, layercolor, layermask);
+    }
+}
+
+v@Cd = color;
+
+"	)
+exportlist	[ 0	locks=0 ]	(	*	)
+vex_strict	[ 0	locks=0 ]	(	"off"	)
+autobind	[ 0	locks=0 ]	(	"on"	)
+bindings	[ 0	locks=0 ]	(	0	)
+vex_geometrygenerator	[ 0	locks=0 ]	(	"off"	)
+vdb_signedflood	[ 0	locks=0 ]	(	"on"	)
+vex_cwdpath	[ 0	locks=0 ]	(	.	)
+vex_outputmask	[ 0	locks=0 ]	(	*	)
+vex_precision	[ 0	locks=0 ]	(	auto	)
+folder1	[ 0	locks=0 ]	(	0	0	)
+layers	[ 0	locks=0 ]	(	[ layers	7 ] 	)
+layerenable_1	[ 0	locks=0 ]	(	[ layerenable_1	0 ] 	)
+layername_1	[ 0	locks=0 ]	(	[ layername_1	"" ] 	)
+layercolor_1	[ 0	locks=0 ]	(	[ layercolor_1r	1 ] 	[ layercolor_1g	1 ] 	[ layercolor_1b	1 ] 	)
+layerenable_2	[ 0	locks=0 ]	(	[ layerenable_2	0 ] 	)
+layername_2	[ 0	locks=0 ]	(	[ layername_2	"" ] 	)
+layercolor_2	[ 0	locks=0 ]	(	[ layercolor_2r	1 ] 	[ layercolor_2g	1 ] 	[ layercolor_2b	1 ] 	)
+layerenable_3	[ 0	locks=0 ]	(	[ layerenable_3	0 ] 	)
+layername_3	[ 0	locks=0 ]	(	[ layername_3	"" ] 	)
+layercolor_3	[ 0	locks=0 ]	(	[ layercolor_3r	1 ] 	[ layercolor_3g	1 ] 	[ layercolor_3b	1 ] 	)
+layerenable_4	[ 0	locks=0 ]	(	[ layerenable_4	0 ] 	)
+layername_4	[ 0	locks=0 ]	(	[ layername_4	"" ] 	)
+layercolor_4	[ 0	locks=0 ]	(	[ layercolor_4r	1 ] 	[ layercolor_4g	1 ] 	[ layercolor_4b	1 ] 	)
+layerenable_5	[ 0	locks=0 ]	(	[ layerenable_5	0 ] 	)
+layername_5	[ 0	locks=0 ]	(	[ layername_5	"" ] 	)
+layercolor_5	[ 0	locks=0 ]	(	[ layercolor_5r	1 ] 	[ layercolor_5g	1 ] 	[ layercolor_5b	1 ] 	)
+layerenable_6	[ 0	locks=0 ]	(	[ layerenable_6	0 ] 	)
+layername_6	[ 0	locks=0 ]	(	[ layername_6	"" ] 	)
+layercolor_6	[ 0	locks=0 ]	(	[ layercolor_6r	1 ] 	[ layercolor_6g	1 ] 	[ layercolor_6b	1 ] 	)
+layerenable_7	[ 0	locks=0 ]	(	[ layerenable_7	0 ] 	)
+layername_7	[ 0	locks=0 ]	(	[ layername_7	"" ] 	)
+layercolor_7	[ 0	locks=0 ]	(	[ layercolor_7r	1 ] 	[ layercolor_7g	1 ] 	[ layercolor_7b	1 ] 	)
+}

@@ -1,0 +1,234 @@
+{
+  "schema": "environmentpipeline.task1.postclip_seam.v1",
+  "status": "DIAGNOSIS_AND_REPAIR_PROPOSAL_AWAITING_ALL40_CAPTURE_NO_SOURCE_EDIT",
+  "timestamp_utc": "2026-10-03T21:40:18.402193+00:00",
+  "evidence": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\EXTERIOR_INTERVAL_EVIDENCE_20261003T213208608026Z.json",
+    "sha256": "ceefd83835f2b9206d2ecfc25860f4a8fe37ee304d2ee639d7e250586eacc5ab",
+    "revision": "20261003T203730573110",
+    "source_piece_id": "296365952:0",
+    "segment_index": 4,
+    "segment_length_cm": 197.64157770229355,
+    "uncovered_length_after_existing_tolerance_cm": 0.034679102978231124,
+    "nearest_pad_edge_cm": 321.23880862209336,
+    "all41_segments_of_this_source_scanned": true,
+    "only_this_gap_on_captured_source": true,
+    "geometry": {
+      "actual_same_source_surfaces": {
+        "segment_intervals": [
+          [
+            0.0,
+            0.4612367876575603
+          ],
+          [
+            0.4614122522707323,
+            1.0
+          ]
+        ],
+        "surfaces": [
+          {
+            "component": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_164.RoadBLD Mesh",
+            "nearest_eligible_face_index": 608,
+            "nearest_eligible_distance_cm": 0.027339551289545166,
+            "vertices_cm": [
+              [
+                15274.7109375,
+                25304.60546875,
+                6461.5927734375
+              ],
+              [
+                15341.5078125,
+                25361.1240234375,
+                6474.791015625
+              ],
+              [
+                15341.1171875,
+                25353.501953125,
+                6473.8056640625
+              ]
+            ],
+            "raw_midpoint_hits_any_material": [],
+            "midpoint_covered": null,
+            "direct_source_membership": true
+          },
+          {
+            "component": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_92.RoadBLD Mesh",
+            "nearest_eligible_face_index": 9,
+            "nearest_eligible_distance_cm": 0.027339551486311217,
+            "vertices_cm": [
+              [
+                15274.67822265625,
+                25304.6494140625,
+                6462.951171875
+              ],
+              [
+                15185.626953125,
+                25229.27734375,
+                6462.951171875
+              ],
+              [
+                15236.48779296875,
+                25349.7705078125,
+                6465.1689453125
+              ]
+            ],
+            "raw_midpoint_hits_any_material": [],
+            "midpoint_covered": null,
+            "direct_source_membership": true
+          }
+        ]
+      },
+      "retained_preclip_grounded_arrays": {
+        "segment_intervals": [
+          [
+            0.0,
+            0.4612367876575603
+          ],
+          [
+            0.4614122522707323,
+            1.0
+          ]
+        ],
+        "surfaces": [
+          {
+            "component": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_164.RoadBLD Mesh",
+            "nearest_eligible_face_index": 660,
+            "nearest_eligible_distance_cm": 0.027339551289545166,
+            "vertices_cm": [
+              [
+                15274.7109375,
+                25304.60546875,
+                6461.5928164978395
+              ],
+              [
+                15341.5078125,
+                25361.1240234375,
+                6474.790836565022
+              ],
+              [
+                15341.1171875,
+                25353.501953125,
+                6473.805432543813
+              ]
+            ],
+            "raw_midpoint_hits_any_material": [],
+            "midpoint_covered": null,
+            "direct_source_membership": true
+          },
+          {
+            "component": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_92.RoadBLD Mesh",
+            "nearest_eligible_face_index": 9,
+            "nearest_eligible_distance_cm": 0.027339551486311217,
+            "vertices_cm": [
+              [
+                15274.67822265625,
+                25304.6494140625,
+                6462.951268741197
+              ],
+              [
+                15185.626953125,
+                25229.27734375,
+                6462.951262249971
+              ],
+              [
+                15236.48779296875,
+                25349.7705078125,
+                6465.169164773744
+              ]
+            ],
+            "raw_midpoint_hits_any_material": [],
+            "midpoint_covered": null,
+            "direct_source_membership": true
+          }
+        ]
+      }
+    }
+  },
+  "diagnosis": "Real uncovered source interval between same-source asphalt faces. The midpoint has no raw projected triangle hit of any material, so selected normals/material/provenance filters do not cause this gap. Same interval and nearest XY faces already exist in retained preclip arrays; clipping did not introduce it. Preclip station-based proof and existing seam repair use <=100cm station spacing; final analytic interval proof detects the between-station gap. Original native creation mechanism remains unmeasured. No metric/unit defect demonstrated.",
+  "pure_arithmetic_proposal": {
+    "existing_generic_planner": "geocity_roadbld_seams.plan_boundary_fan",
+    "proposal": {
+      "source_road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49",
+      "source_point_world_cm": [
+        15274.695379897155,
+        25304.62811808711,
+        6462.950242983207
+      ],
+      "component_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_164.RoadBLD Mesh",
+      "geometry_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.RoadGeo_164",
+      "native_source_road_paths": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_67"
+      ],
+      "parent_asphalt_triangle_index": 608,
+      "boundary_edge_vertex_indices": [
+        4089,
+        71
+      ],
+      "boundary_edge_world_cm": [
+        [
+          15341.5078125,
+          25361.1240234375,
+          6474.791015625
+        ],
+        [
+          15274.7109375,
+          25304.60546875,
+          6461.5927734375
+        ]
+      ],
+      "boundary_asphalt_incidence": 1,
+      "native_whole_mesh_edge_incidence": 1,
+      "duplicate_boundary_vertices": false,
+      "nearest_boundary_distance_cm": 0.027339551289545166,
+      "boundary_projection_xy_cm": [
+        15274.713039326236,
+        25304.60724715926
+      ],
+      "support_vertex_world_cm": [
+        15274.630786923797,
+        25304.704457773987,
+        6461.594061888827
+      ],
+      "support_extension_beyond_source_cm": 0.1,
+      "boundary_extension_cm": 0.12733955128954516,
+      "xy_extension_cap_cm": 10.0,
+      "patch_projected_area_cm2": 5.571076092996963,
+      "native_clockwise_upward_winding": true,
+      "original_coordinates_changed": 0,
+      "material_id": 0,
+      "saved": false
+    },
+    "segment_intervals_after_added_triangle_in_memory": [
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "geometric_cross_normal": [
+      0.10947907792420067,
+      0.10151449952788476,
+      -0.9887917565809649
+    ],
+    "caveat": "Only Python array arithmetic; no native mesh/material/editor changes. Midpoint Landscape sample was provisionally used for support Z. Actual new support XY requires its own authoritative Landscape sample and native upward-normal check before acceptance."
+  },
+  "reusable_fix_proposal": [
+    "Add generic continuous same-source segment-gap discovery to transient grounding conditioning before final source coverage and before asset creation. Preserve full preclip physical coverage, including future pad-interior clipping; do not convert exterior gaps into exclusions.",
+    "Use existing bounded native boundary-fan mechanism for analytically detected small gaps, including exact source ownership, unchanged existing vertices/topology, native UV interpolation, material 0 and measured upward normals. Recompute whole analytic source coverage after each proposed append and require the entire interval to close. Keep finite count/time/cap guards; choose scope only after all-40 gap evidence.",
+    "Retain unchanged final verifier thresholds and protected partition. Run the existing whole-triangle pad/area clipping checks on corrected transient outputs before any native binding.",
+    "For currently bound candidates, first prove exact 87-binding baseline against immutable prior receipt and preserve it. Root must choose/review an explicit scoped correction transaction and new immutable receipt linking old inputs to new measured outputs; never overwrite old geometry hashes or silently reassign report fields. Preserve current r/p/network/roads/rebuild/corner state."
+  ],
+  "awaiting_evidence": "Task2 all40 continuous gap intervals plus eligible/raw geometry for each gap, current87 hashes and original/preclip comparisons. Current capture contains only two same-source surfaces, not all87; do not claim all-source diagnosis or bounded repair count.",
+  "source_unchanged_sha256": {
+    "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+    "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+    "geocity_roadbld_seams.py": "1f28642b257ca11dbf2c0f96d2afa1a9980feef1b5861dcb4c11cf07dab76e7f",
+    "geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "geocity_roadbld_workflow.py": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a"
+  },
+  "editor_calls": 0,
+  "source_edits": 0,
+  "current_candidates_changed": false,
+  "thresholds_relaxed": false,
+  "old_clip_receipt_modified": false
+}

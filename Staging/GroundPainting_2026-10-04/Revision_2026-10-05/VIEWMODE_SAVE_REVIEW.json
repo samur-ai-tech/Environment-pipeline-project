@@ -1,0 +1,27 @@
+{
+  "status": "APPROVED_WITHIN_EXACT_GROUND_SCOPE",
+  "reviewer": "/root/startup_review",
+  "review_type": "Independent read-only source and exact one-line diff review",
+  "reviewed_utc": "2026-10-05T01:47:04Z",
+  "script": "Staging/GroundPainting_2026-10-04/native_revision_save.py",
+  "script_sha256": "b13b5037f8fa40bc21fffc32a2f6bac442d904e4a1832cac159d78f9e3ddb836",
+  "script_pins_sha256_at_review": "8e8a934a7024eb44bb9b6b9c4d5ac6eb28c014863e5b3617a4de487664487e27",
+  "previous_reviewed_script_sha256": "92bb6eb0f3f6bea3c180bbe5fff0b2d8a93175c5d3c7b57751b9abc2c45df95c",
+  "exact_prior_source_match_after_removing_added_line": true,
+  "syntax_parse_passed": true,
+  "pin_matches_current_script": true,
+  "added_guard": "Each close, middle and wide capture must report viewmode_readback exactly <ViewModeIndex.VMI_LIT: 3> and a nonempty active_viewport_key before any named save.",
+  "scope_review": [
+    "The added assertion runs in the existing current-PID, current-area and exact-image-path capture validation loop before package saving.",
+    "Existing actual image review and graph-preservation receipts, PNG dimension checks and unique operation receipt checks remain required.",
+    "Existing actual-PID ground lease, original world, source guard, paused official Engine, callback zero, autosave off and HDA autoCook/autoBake off checks are unchanged.",
+    "Named save remains limited to the reviewed master, four project mask copies, current area material instance and exact original map if dirty. No Save All, vendor/source edit, Grass edit, generation, Cook or Bake is added."
+  ],
+  "limitations": [
+    "This approval covers the source change and named-save safeguards; it does not certify current visual quality or user acceptance.",
+    "Fresh concrete actual-Lit image review and current graph-preservation evidence must still pass before the parent writer executes save."
+  ],
+  "native_calls_performed_by_reviewer": false,
+  "content_or_source_mutations_performed_by_reviewer": false,
+  "authorized_review_receipt_only": true
+}

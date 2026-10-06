@@ -1,0 +1,208 @@
+[
+  {
+    "case": "clear_B",
+    "preset": "PresetClear",
+    "high": false,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 9.43545,
+        "p10_ms": 8.3328,
+        "p90_ms": 100.6824
+      }
+    },
+    "gpu_columns": [],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\clear_B.csv"
+  },
+  {
+    "case": "clear_H",
+    "preset": "PresetClear",
+    "high": true,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 9.622,
+        "p10_ms": 8.3322,
+        "p90_ms": 100.7143
+      }
+    },
+    "gpu_columns": [],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\clear_H.csv"
+  },
+  {
+    "case": "partly_H",
+    "preset": "PresetPartlyCloudy",
+    "high": true,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 13.6028,
+        "p10_ms": 8.3325,
+        "p90_ms": 100.3992
+      },
+      "GPU/VolumetricCloud": {
+        "n": 150,
+        "median_ms": 0.27035,
+        "p10_ms": 0.233,
+        "p90_ms": 0.4015
+      },
+      "GPU/VolumetricCloudShadow": {
+        "n": 150,
+        "median_ms": 0.6305000000000001,
+        "p10_ms": 0.6243,
+        "p90_ms": 0.7641
+      },
+      "GPU/VolCloudReconstruction": {
+        "n": 150,
+        "median_ms": 0.0094,
+        "p10_ms": 0.0084,
+        "p90_ms": 0.0103
+      },
+      "GPU/VolCloudComposeOverScene": {
+        "n": 150,
+        "median_ms": 0.0151,
+        "p10_ms": 0.0148,
+        "p90_ms": 0.0235
+      }
+    },
+    "gpu_columns": [
+      "GPU/VolumetricCloudShadow",
+      "GPU/VolumetricCloud",
+      "GPU/VolCloudReconstruction",
+      "GPU/VolCloudComposeOverScene"
+    ],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\partly_H.csv"
+  },
+  {
+    "case": "partly_B",
+    "preset": "PresetPartlyCloudy",
+    "high": false,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 12.96125,
+        "p10_ms": 8.3327,
+        "p90_ms": 100.6578
+      },
+      "GPU/VolumetricCloud": {
+        "n": 150,
+        "median_ms": 0.1922,
+        "p10_ms": 0.1823,
+        "p90_ms": 0.2046
+      },
+      "GPU/VolumetricCloudShadow": {
+        "n": 150,
+        "median_ms": 0.63095,
+        "p10_ms": 0.6242,
+        "p90_ms": 0.7625
+      },
+      "GPU/VolCloudReconstruction": {
+        "n": 150,
+        "median_ms": 0.0093,
+        "p10_ms": 0.0083,
+        "p90_ms": 0.0119
+      },
+      "GPU/VolCloudComposeOverScene": {
+        "n": 150,
+        "median_ms": 0.0151,
+        "p10_ms": 0.0149,
+        "p90_ms": 0.0234
+      }
+    },
+    "gpu_columns": [
+      "GPU/VolumetricCloudShadow",
+      "GPU/VolumetricCloud",
+      "GPU/VolCloudReconstruction",
+      "GPU/VolCloudComposeOverScene"
+    ],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\partly_B.csv"
+  },
+  {
+    "case": "overcast_B",
+    "preset": "PresetOvercast",
+    "high": false,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 12.88095,
+        "p10_ms": 8.333,
+        "p90_ms": 102.6154
+      },
+      "GPU/VolumetricCloud": {
+        "n": 150,
+        "median_ms": 0.1292,
+        "p10_ms": 0.1241,
+        "p90_ms": 0.1347
+      },
+      "GPU/VolumetricCloudShadow": {
+        "n": 150,
+        "median_ms": 0.76655,
+        "p10_ms": 0.7566,
+        "p90_ms": 0.7748
+      },
+      "GPU/VolCloudReconstruction": {
+        "n": 150,
+        "median_ms": 0.01085,
+        "p10_ms": 0.0087,
+        "p90_ms": 0.0124
+      },
+      "GPU/VolCloudComposeOverScene": {
+        "n": 150,
+        "median_ms": 0.0239,
+        "p10_ms": 0.0234,
+        "p90_ms": 0.0255
+      }
+    },
+    "gpu_columns": [
+      "GPU/VolumetricCloudShadow",
+      "GPU/VolumetricCloud",
+      "GPU/VolCloudReconstruction",
+      "GPU/VolCloudComposeOverScene"
+    ],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\overcast_B.csv"
+  },
+  {
+    "case": "overcast_H",
+    "preset": "PresetOvercast",
+    "high": true,
+    "metrics": {
+      "FrameTime": {
+        "n": 150,
+        "median_ms": 10.2335,
+        "p10_ms": 8.3326,
+        "p90_ms": 102.0252
+      },
+      "GPU/VolumetricCloud": {
+        "n": 150,
+        "median_ms": 0.32175,
+        "p10_ms": 0.3,
+        "p90_ms": 0.3316
+      },
+      "GPU/VolumetricCloudShadow": {
+        "n": 150,
+        "median_ms": 0.7667,
+        "p10_ms": 0.7577,
+        "p90_ms": 0.7728
+      },
+      "GPU/VolCloudReconstruction": {
+        "n": 150,
+        "median_ms": 0.0093,
+        "p10_ms": 0.0084,
+        "p90_ms": 0.0096
+      },
+      "GPU/VolCloudComposeOverScene": {
+        "n": 150,
+        "median_ms": 0.0236,
+        "p10_ms": 0.0233,
+        "p90_ms": 0.024
+      }
+    },
+    "gpu_columns": [
+      "GPU/VolumetricCloudShadow",
+      "GPU/VolumetricCloud",
+      "GPU/VolCloudReconstruction",
+      "GPU/VolCloudComposeOverScene"
+    ],
+    "raw_csv": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ReusableSky_2026-10-06\\Stage2\\Performance\\overcast_H.csv"
+  }
+]

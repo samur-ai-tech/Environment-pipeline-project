@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 814,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 814,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009\"]}"
+    }
+   ]
+  }
+ }
+}

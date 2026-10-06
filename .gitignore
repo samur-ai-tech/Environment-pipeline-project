@@ -1,0 +1,64 @@
+# Reviewed for the baseline commit on 2026-09-27.
+# Reasons are recorded in Staging/GitBaseline_2026-09-27/BASELINE_REPORT.md.
+
+# Generated caches and build output
+/DerivedDataCache/
+/Intermediate/
+/Binaries/
+/Plugins/*/Intermediate/
+
+# Saved: caches and downloads
+/Saved/PersistentDownloadDir/
+/Saved/HeightMapCache/
+/Saved/ShaderDebugInfo/
+/Saved/Crashes/
+/Saved/Temp/
+/Saved/Cooked/
+/Saved/StagedBuilds/
+/Saved/MaterialStats/
+/Saved/Diff/
+
+# Saved/Logs: three of these logs contain live login (bearer) tokens
+/Saved/Logs/
+
+# Separate clone of github.com/Samorai-Studio/Environmentpipeline (its own repository, left untouched)
+/Environmentpipeline/
+
+# IDE folders
+.vs/
+.idea/
+
+# --- Added 2026-10-06 (consolidation, INVENTORY.md section 6; patterns tested in a scratch repo) ---
+/Build/
+# whole Saved folder: Autosaves, PersistentDownloadDir, Crashes, per-user Config, token-bearing logs
+/Saved/
+__pycache__/
+*.pyc
+# Unreal and Codex log copies under Staging may hold tokens (2 found on 2026-10-06); scan before adding any exception
+*.log
+/Plugins/UnrealCopilot/Content/Python/.venv/
+/Staging/AssetBankOperator_2026-10-06/OwnedPackChunks/
+/Staging/AssetBankOperator_2026-10-06/OwnedPackSources/
+/Staging/AssetBankOperator_2026-10-06/NativeIntake/
+# backup binaries and catalog copies inside Before-type folders (json/md/manifests stay tracked)
+/Staging/**/*Before*/**/*.uasset
+/Staging/**/*Before*/**/*.umap
+/Staging/**/*Before*/**/*.png
+/Staging/**/*Before*/**/*.jpg
+/Staging/**/*Before*/**/*.tga
+/Staging/**/*Before*/**/*.tif
+/Staging/**/*Before*/**/*.fbx
+/Staging/**/*Before*/**/*.blend
+/Staging/**/*Before*/**/*.sc
+/Staging/**/*Before*/**/*.raw
+/Staging/**/*Before*/**/*.r8
+/Staging/**/*Before*/**/*.r16
+/Staging/**/*Before*/**/*.bin
+/Staging/**/*Before*/**/*CATALOG_RECEIPT*.json
+/Staging/**/*Before*/**/*CATALOG.json
+/Staging/**/*Preserve_*/**/*.umap
+/Staging/**/*Preserve_*/**/*.uasset
+/Staging/**/*Preserve_*/**/*CATALOG_RECEIPT*.json
+# pinned rollback map copies stay tracked (re-include)
+!/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/Hybrid_Auto/Before/*.umap
+!/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/PathB_MW/Before/*.umap

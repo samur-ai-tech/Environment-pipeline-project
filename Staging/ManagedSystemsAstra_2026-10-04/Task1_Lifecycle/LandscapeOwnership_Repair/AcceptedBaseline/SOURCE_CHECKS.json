@@ -1,0 +1,81 @@
+{
+  "schema": "environmentpipeline.task1_offline_checks.v1",
+  "checks": [
+    {
+      "check": "runtime allowlist preserves bank and provider settings",
+      "passed": true
+    },
+    {
+      "check": "reject unowned bank",
+      "passed": true
+    },
+    {
+      "check": "reject unowned road settings",
+      "passed": true
+    },
+    {
+      "check": "reject unowned material outside area",
+      "passed": true
+    },
+    {
+      "check": "reject concurrent profile edit",
+      "passed": true
+    },
+    {
+      "check": "actual-PID managed menu lease accepted",
+      "passed": true
+    },
+    {
+      "check": "reject stale/unactivated managed lease",
+      "passed": true
+    },
+    {
+      "check": "reject stale/unactivated managed lease",
+      "passed": true
+    },
+    {
+      "check": "reject stale/unactivated managed lease",
+      "passed": true
+    },
+    {
+      "check": "retained Shujaiya native building ledger passes",
+      "passed": true
+    },
+    {
+      "check": "unsupported building refuses complete-area Bake",
+      "passed": true
+    },
+    {
+      "check": "module count mismatch refuses complete-area Bake",
+      "passed": true
+    },
+    {
+      "check": "paint waits for full readiness without resetting capacity",
+      "passed": true
+    },
+    {
+      "check": "cleanup error still detaches callbacks and holds unsafe release",
+      "passed": true
+    },
+    {
+      "check": "official Landscape identity deduplicates layers and rejects missing binding",
+      "passed": true
+    },
+    {
+      "check": "suppression token must match before official Bake",
+      "passed": true
+    },
+    {
+      "check": "sealer snapshot covers dedicated RoadBLD config without publishing seal",
+      "passed": true
+    },
+    {
+      "check": "compile retained Python sources with installed Unreal Python runtime",
+      "passed": true
+    }
+  ],
+  "passed": 18,
+  "unreal_imported": false,
+  "native_execution": false,
+  "combined_manifest_sealed": false
+}

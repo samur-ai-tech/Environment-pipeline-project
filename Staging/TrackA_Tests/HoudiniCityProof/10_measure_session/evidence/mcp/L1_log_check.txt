@@ -1,0 +1,210 @@
+L1 log check. Read once with Get-Content at 2026-09-28T13:23:23.6950752+03:00 (after the last MCP call, 13:22:51.758 local).
+File: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Saved\Logs\Environmentpipeline.log  size=396961  LastWriteTime=2026-09-28T13:22:51.8750674+03:00  lines=2946
+Line 1: Log file open, 09/28/26 12:53:50
+MAP LOAD HoudiniCityProof at line 2418: [2026.09.28-10.09.59:417][525]Cmd: MAP LOAD FILE="../../../../../../Users/USER/Documents/Unreal Projects/Environmentpipeline/Content/Developers/USER/HoudiniCityProof/HoudiniCityProof.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+
+== Whole new log (from line 1)
+count [Houdini Engine cooking paused\.] = 1
+  L2403: [2026.09.28-10.04.44:037][748]LogHoudiniEngineEditor: Houdini Engine cooking paused.
+count [Houdini Engine cooking resumed] = 0
+
+== After the MAP LOAD HoudiniCityProof line (from line 2419)
+count [LoadErrors] = 0
+count [FPackageName: Skipped package] = 0
+count [HAPI Asynchronous] = 0
+count [Successfully intialized] = 0
+count [Successfully initialized] = 0
+count [FinishedCooking] = 0
+count [SavePackage] = 0
+count [LogSavePackage] = 0
+count [License failed] = 0
+count [Houdini Engine cooking resumed] = 0
+count [HARS] = 0
+count [Re-cook] = 0
+count [Recook] = 0
+count [Instantiat] = 0
+count [LogHoudini] = 0
+
+== Lines after MAP LOAD (all, up to 60)
+  L2419: [2026.09.28-10.09.59:442][525]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+  L2420: [2026.09.28-10.09.59:443][525]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+  L2421: [2026.09.28-10.09.59:443][525]LogWorldPartition: UWorldPartition::Uninitialize : World = /Temp/Untitled_1.Untitled_1
+  L2422: [2026.09.28-10.09.59:469][525]LogAudio: Display: Audio Device unregistered from world 'Untitled_1'.
+  L2423: [2026.09.28-10.09.59:488][525]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+  L2424: [2026.09.28-10.09.59:552][525]LogWorld: UWorld::CleanupWorld for HoudiniCityProof, bSessionEnded=true, bCleanupResources=true
+  L2425: [2026.09.28-10.09.59:552][525]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+  L2426: [2026.09.28-10.09.59:571][525]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+  L2427: [2026.09.28-10.09.59:585][525]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+  L2428: [2026.09.28-10.09.59:588][525]LogAudio: Display: Audio Device (ID: 1) registered with world 'HoudiniCityProof'.
+  L2429: [2026.09.28-10.09.59:588][525]LogChaosDD: Creating Chaos Debug Draw Scene for world HoudiniCityProof
+  L2430: [2026.09.28-10.09.59:607][525]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+  L2431: [2026.09.28-10.09.59:623][525]LogUObjectHash: Compacting FUObjectHashTables data took   0.46ms
+  L2432: [2026.09.28-10.09.59:629][525]Cmd: MAP CHECKDEP NOCLEARLOG
+  L2433: [2026.09.28-10.09.59:629][525]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.029ms to complete.
+  L2434: [2026.09.28-10.09.59:713][527]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+  L2435: 		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+  L2436: 		NumGeometrySegments changed: current: 0 - new: 512
+  L2437: [2026.09.28-10.11.08:514][776]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1016.106201
+  L2438: [2026.09.28-10.11.08:722][801]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+  L2439: [2026.09.28-10.11.08:722][802]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1016.306213, Update Interval: 344.413574
+  L2440: [2026.09.28-10.14.58:696][393]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2441: [2026.09.28-10.14.58:696][393]LogModelContextProtocol: Initializing new session: 9709af7445ab63f9742eb795148a4e9d
+  L2442: [2026.09.28-10.14.58:727][397]LogModelContextProtocol: Session initialized: 9709af7445ab63f9742eb795148a4e9d
+  L2443: [2026.09.28-10.14.58:735][398]LogModelContextProtocol: Running tool: 'list_toolsets'
+  L2444: [2026.09.28-10.15.17:203][614]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2445: [2026.09.28-10.15.17:203][615]LogModelContextProtocol: Initializing new session: 599a4ee9452716616f98d19216b53b0a
+  L2446: [2026.09.28-10.15.17:212][616]LogModelContextProtocol: Session initialized: 599a4ee9452716616f98d19216b53b0a
+  L2447: [2026.09.28-10.15.17:220][616]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2448: [2026.09.28-10.15.17:229][617]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2449: [2026.09.28-10.15.17:246][619]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2450: [2026.09.28-10.15.17:254][620]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2451: [2026.09.28-10.15.17:279][623]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2452: [2026.09.28-10.15.17:312][627]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2453: [2026.09.28-10.15.43:672][790]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2454: [2026.09.28-10.15.43:672][790]LogModelContextProtocol: Initializing new session: bb4c072a4738f70362a8c29880969a27
+  L2455: [2026.09.28-10.15.43:681][791]LogModelContextProtocol: Session initialized: bb4c072a4738f70362a8c29880969a27
+  L2456: [2026.09.28-10.15.43:689][792]LogModelContextProtocol: Running tool: 'call_tool'
+  L2457: [2026.09.28-10.15.43:691][792]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.get_current_level'
+  L2458: [2026.09.28-10.15.43:706][794]LogModelContextProtocol: Running tool: 'call_tool'
+  L2459: [2026.09.28-10.15.43:706][794]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.find_actors'
+  L2460: [2026.09.28-10.15.43:714][795]LogModelContextProtocol: Running tool: 'call_tool'
+  L2461: [2026.09.28-10.15.43:714][795]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.asset.AssetTools.is_dirty'
+  L2462: [2026.09.28-10.16.04:968][345]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2463: [2026.09.28-10.16.04:969][345]LogModelContextProtocol: Initializing new session: ec86383a44175b7b57a549b2bb66f9f2
+  L2464: [2026.09.28-10.16.04:977][346]LogModelContextProtocol: Session initialized: ec86383a44175b7b57a549b2bb66f9f2
+  L2465: [2026.09.28-10.16.04:985][347]LogModelContextProtocol: Running tool: 'call_tool'
+  L2466: [2026.09.28-10.16.04:985][347]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.find_actors'
+  L2467: [2026.09.28-10.16.04:994][348]LogModelContextProtocol: Running tool: 'call_tool'
+  L2468: [2026.09.28-10.16.04:994][348]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2469: [2026.09.28-10.16.05:002][349]LogModelContextProtocol: Running tool: 'call_tool'
+  L2470: [2026.09.28-10.16.05:002][349]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2471: [2026.09.28-10.16.05:027][352]LogModelContextProtocol: Running tool: 'call_tool'
+  L2472: [2026.09.28-10.16.05:027][352]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2473: [2026.09.28-10.16.05:035][353]LogModelContextProtocol: Running tool: 'call_tool'
+  L2474: [2026.09.28-10.16.05:035][353]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2475: [2026.09.28-10.16.05:060][356]LogModelContextProtocol: Running tool: 'call_tool'
+  L2476: [2026.09.28-10.16.05:060][356]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2477: [2026.09.28-10.16.18:936][ 21]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2478: [2026.09.28-10.16.18:936][ 21]LogModelContextProtocol: Initializing new session: 4b71fffc4d81e9524eee5684ece7c900
+
+== Lines stamped 10.11.30 UTC or later (13:11:30 local; MEASURE window)
+  L2440: [2026.09.28-10.14.58:696][393]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2441: [2026.09.28-10.14.58:696][393]LogModelContextProtocol: Initializing new session: 9709af7445ab63f9742eb795148a4e9d
+  L2442: [2026.09.28-10.14.58:727][397]LogModelContextProtocol: Session initialized: 9709af7445ab63f9742eb795148a4e9d
+  L2443: [2026.09.28-10.14.58:735][398]LogModelContextProtocol: Running tool: 'list_toolsets'
+  L2444: [2026.09.28-10.15.17:203][614]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2445: [2026.09.28-10.15.17:203][615]LogModelContextProtocol: Initializing new session: 599a4ee9452716616f98d19216b53b0a
+  L2446: [2026.09.28-10.15.17:212][616]LogModelContextProtocol: Session initialized: 599a4ee9452716616f98d19216b53b0a
+  L2447: [2026.09.28-10.15.17:220][616]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2448: [2026.09.28-10.15.17:229][617]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2449: [2026.09.28-10.15.17:246][619]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2450: [2026.09.28-10.15.17:254][620]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2451: [2026.09.28-10.15.17:279][623]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2452: [2026.09.28-10.15.17:312][627]LogModelContextProtocol: Running tool: 'describe_toolset'
+  L2453: [2026.09.28-10.15.43:672][790]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2454: [2026.09.28-10.15.43:672][790]LogModelContextProtocol: Initializing new session: bb4c072a4738f70362a8c29880969a27
+  L2455: [2026.09.28-10.15.43:681][791]LogModelContextProtocol: Session initialized: bb4c072a4738f70362a8c29880969a27
+  L2456: [2026.09.28-10.15.43:689][792]LogModelContextProtocol: Running tool: 'call_tool'
+  L2457: [2026.09.28-10.15.43:691][792]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.get_current_level'
+  L2458: [2026.09.28-10.15.43:706][794]LogModelContextProtocol: Running tool: 'call_tool'
+  L2459: [2026.09.28-10.15.43:706][794]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.find_actors'
+  L2460: [2026.09.28-10.15.43:714][795]LogModelContextProtocol: Running tool: 'call_tool'
+  L2461: [2026.09.28-10.15.43:714][795]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.asset.AssetTools.is_dirty'
+  L2462: [2026.09.28-10.16.04:968][345]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2463: [2026.09.28-10.16.04:969][345]LogModelContextProtocol: Initializing new session: ec86383a44175b7b57a549b2bb66f9f2
+  L2464: [2026.09.28-10.16.04:977][346]LogModelContextProtocol: Session initialized: ec86383a44175b7b57a549b2bb66f9f2
+  L2465: [2026.09.28-10.16.04:985][347]LogModelContextProtocol: Running tool: 'call_tool'
+  L2466: [2026.09.28-10.16.04:985][347]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.scene.SceneTools.find_actors'
+  L2467: [2026.09.28-10.16.04:994][348]LogModelContextProtocol: Running tool: 'call_tool'
+  L2468: [2026.09.28-10.16.04:994][348]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2469: [2026.09.28-10.16.05:002][349]LogModelContextProtocol: Running tool: 'call_tool'
+  L2470: [2026.09.28-10.16.05:002][349]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2471: [2026.09.28-10.16.05:027][352]LogModelContextProtocol: Running tool: 'call_tool'
+  L2472: [2026.09.28-10.16.05:027][352]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2473: [2026.09.28-10.16.05:035][353]LogModelContextProtocol: Running tool: 'call_tool'
+  L2474: [2026.09.28-10.16.05:035][353]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2475: [2026.09.28-10.16.05:060][356]LogModelContextProtocol: Running tool: 'call_tool'
+  L2476: [2026.09.28-10.16.05:060][356]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2477: [2026.09.28-10.16.18:936][ 21]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2478: [2026.09.28-10.16.18:936][ 21]LogModelContextProtocol: Initializing new session: 4b71fffc4d81e9524eee5684ece7c900
+  L2479: [2026.09.28-10.16.18:961][ 24]LogModelContextProtocol: Session initialized: 4b71fffc4d81e9524eee5684ece7c900
+  L2480: [2026.09.28-10.16.18:978][ 26]LogModelContextProtocol: Running tool: 'call_tool'
+  L2481: [2026.09.28-10.16.18:978][ 26]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2482: [2026.09.28-10.16.18:986][ 27]LogModelContextProtocol: Running tool: 'call_tool'
+  L2483: [2026.09.28-10.16.18:986][ 27]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_class'
+  L2484: [2026.09.28-10.16.18:994][ 28]LogModelContextProtocol: Running tool: 'call_tool'
+  L2485: [2026.09.28-10.16.18:994][ 28]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_properties'
+  L2486: [2026.09.28-10.16.18:995][ 28]LogScript: Warning: GetObjectProperties on '/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable' (HoudiniCookable): the following properties could not be read: CurrentState, CookCount, bHasBeenLoaded, bLastCookSuccess, OutputData, BakingData, ComponentData, ParameterData
+  L2489: [2026.09.28-10.16.19:003][ 29]LogModelContextProtocol: Running tool: 'call_tool'
+  L2490: [2026.09.28-10.16.19:003][ 29]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_properties'
+  L2491: [2026.09.28-10.16.19:003][ 29]LogScript: Warning: GetObjectProperties on '/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1.HoudiniCookable' (HoudiniCookable): the following properties could not be read: CurrentState, CookCount, bHasBeenLoaded, bLastCookSuccess, OutputData, BakingData, ComponentData, ParameterData
+  L2494: [2026.09.28-10.16.37:737][277]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2495: [2026.09.28-10.16.37:737][277]LogModelContextProtocol: Initializing new session: 468373fa4730fcf3c8d5c2ab77bac22a
+  L2496: [2026.09.28-10.16.37:746][278]LogModelContextProtocol: Session initialized: 468373fa4730fcf3c8d5c2ab77bac22a
+  L2497: [2026.09.28-10.16.37:754][279]LogModelContextProtocol: Running tool: 'call_tool'
+  L2498: [2026.09.28-10.16.37:754][279]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2499: [2026.09.28-10.17.04:744][517]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1372.331177
+  L2500: [2026.09.28-10.17.04:944][541]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+  L2501: [2026.09.28-10.17.04:944][542]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1372.523193, Update Interval: 302.310852
+  L2502: [2026.09.28-10.17.17:770][ 80]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2503: [2026.09.28-10.17.17:770][ 80]LogModelContextProtocol: Initializing new session: 17c4b71b42f2b78d160a6eb40cf7f970
+  L2504: [2026.09.28-10.17.17:778][ 81]LogModelContextProtocol: Session initialized: 17c4b71b42f2b78d160a6eb40cf7f970
+  L2505: [2026.09.28-10.17.17:787][ 82]LogModelContextProtocol: Running tool: 'call_tool'
+  L2506: [2026.09.28-10.17.17:787][ 82]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2507: [2026.09.28-10.17.17:795][ 83]LogModelContextProtocol: Running tool: 'call_tool'
+  L2508: [2026.09.28-10.17.17:795][ 83]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2509: [2026.09.28-10.17.17:803][ 84]LogModelContextProtocol: Running tool: 'call_tool'
+  L2510: [2026.09.28-10.17.17:803][ 84]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2511: [2026.09.28-10.17.17:811][ 85]LogModelContextProtocol: Running tool: 'call_tool'
+  L2512: [2026.09.28-10.17.17:811][ 85]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2513: [2026.09.28-10.17.17:836][ 88]LogModelContextProtocol: Running tool: 'call_tool'
+  L2514: [2026.09.28-10.17.17:836][ 88]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2515: [2026.09.28-10.17.17:845][ 89]LogModelContextProtocol: Running tool: 'call_tool'
+  L2516: [2026.09.28-10.17.17:845][ 89]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.list_properties'
+  L2517: [2026.09.28-10.17.49:233][855]LogModelContextProtocol: Display: Client requested protocol version '2025-06-18', negotiated '2025-06-18'
+  L2518: [2026.09.28-10.17.49:233][855]LogModelContextProtocol: Initializing new session: 7a90a94a43c83b10d6e35c81eebefced
+  L2519: [2026.09.28-10.17.49:266][859]LogModelContextProtocol: Session initialized: 7a90a94a43c83b10d6e35c81eebefced
+  L2520: [2026.09.28-10.17.49:275][860]LogModelContextProtocol: Running tool: 'call_tool'
+  L2521: [2026.09.28-10.17.49:275][860]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_properties'
+  L2522: [2026.09.28-10.17.49:275][860]LogScript: Warning: GetObjectProperties on '/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.InputData' (CookableInputData): the following properties could not be read: Inputs, bCookOnInputChange, bCookOnCookableInputCook
+  L2525: [2026.09.28-10.17.49:284][861]LogModelContextProtocol: Running tool: 'call_tool'
+count of stamped lines in window = 493
+
+== Second read at 2026-09-28T13:23:34.0138747+03:00, lines=2946. Lines from L2440 (first MEASURE MCP line) to end that are NOT LogModelContextProtocol / LogEOSSDK / LogScript-warning lines:
+  L2487: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2488: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2492: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2493: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2523: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2524: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2528: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2529: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2533: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2534: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2540: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2541: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2545: 	ToolsetLibrary /Script/ToolsetRegistry.Default__ToolsetLibrary
+  L2546: 	Function /Script/ToolsetRegistry.ToolsetLibrary:GetObjectProperties:64X
+  L2627: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentDeactivated" type FActorComponentDeactivateSignature unhandled during Json schema generation.
+  L2628: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentActivated" type FActorComponentActivatedSignature unhandled during Json schema generation.
+  L2629: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "PhysicsVolumeChangedDelegate" type FPhysicsVolumeChanged unhandled during Json schema generation.
+  L2630: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnTouchExited" type FComponentOnTouchExitedSignature unhandled during Json schema generation.
+  L2631: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnTouchEntered" type FComponentOnTouchEnteredSignature unhandled during Json schema generation.
+  L2632: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnTouchEnded" type FComponentOnTouchEndedSignature unhandled during Json schema generation.
+  L2633: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnTouchBegan" type FComponentOnTouchBeganSignature unhandled during Json schema generation.
+  L2634: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnInputTouchLeave" type FComponentEndTouchOverSignature unhandled during Json schema generation.
+  L2635: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnInputTouchEnter" type FComponentBeginTouchOverSignature unhandled during Json schema generation.
+  L2636: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnInputTouchEnd" type FComponentOnInputTouchEndSignature unhandled during Json schema generation.
+  L2637: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnInputTouchBegin" type FComponentOnInputTouchBeginSignature unhandled during Json schema generation.
+  L2638: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnReleased" type FComponentOnReleasedSignature unhandled during Json schema generation.
+  L2639: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnClicked" type FComponentOnClickedSignature unhandled during Json schema generation.
+  L2640: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnEndCursorOver" type FComponentEndCursorOverSignature unhandled during Json schema generation.
+  L2641: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnBeginCursorOver" type FComponentBeginCursorOverSignature unhandled during Json schema generation.
+  L2642: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentPhysicsStateChanged" type FComponentPhysicsStateChanged unhandled during Json schema generation.
+  L2643: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentSleep" type FComponentSleepSignature unhandled during Json schema generation.
+  L2644: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentWake" type FComponentWakeSignature unhandled during Json schema generation.
+  L2645: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentEndOverlap" type FComponentEndOverlapSignature unhandled during Json schema generation.
+  L2646: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentBeginOverlap" type FComponentBeginOverlapSignature unhandled during Json schema generation.
+  L2647: [2026.09.28-10.19.48:274][138]LogJson: Warning: Property "OnComponentHit" type FComponentHitSignature unhandled during Json schema generation.
+count = 35
+Last line: L2946 [2026.09.28-10.22.51:741][149]LogModelContextProtocol: Dispatching toolset tool: 'editor_toolset.toolsets.object.ObjectTools.get_properties'

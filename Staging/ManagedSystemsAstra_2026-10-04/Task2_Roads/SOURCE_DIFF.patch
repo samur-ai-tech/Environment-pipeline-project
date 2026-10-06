@@ -1,0 +1,283 @@
+--- Before/geocity_roadbld_junctions.py
++++ Content/Python/geocity_roadbld_junctions.py
+@@ -791,6 +791,7 @@
+     """
+     base = _base()
+     run.guard()
++    run.check_landscape_policy('junction_authoring')
+     report = run.state.get('junction_repair_report')
+     try:
+         if report is None:
+--- Before/geocity_roadbld_workflow.py
++++ Content/Python/geocity_roadbld_workflow.py
+@@ -8,6 +8,7 @@
+ the saved delivery receipt then governs ordinary retained replacement.
+ """
+ import datetime
++import configparser
+ import hashlib
+ import json
+ import math
+@@ -33,6 +34,8 @@
+ NATIVE_LANDSCAPE_EDIT_FLAGS = ('bEnableIntersectionLandscapePatch',
+     'bEnableIntersectionLandscapeVisibilityHole', 'bEnableRoadLandscapePaint',
+     'bUseRoadLandscapeHeightPatch', 'bAutoCreatePaintLayerInfo')
++NATIVE_SETTINGS_CLASS = '/Script/RoadBLDRuntime.RoadBLDRuntimeSettings'
++NATIVE_SETTINGS_CONFIG = 'Config/DefaultRoadBLD.ini'
+ VEHICLE_CLASSES = {'secondary', 'secondary_link', 'tertiary', 'residential', 'service', 'unclassified'}
+ DEFAULTS = {
+     'road_preset': '/RoadBLD/RoadBLD/RoadKit_USA/Presets/RP_Default_USA_Street_2Lane',
+@@ -60,17 +63,54 @@
+ }
+ 
+ 
++def inspect_geographic_landscape_authority():
++    """Read the installed config contract and both native settings views.
++
++    RoadBLDRuntimeSettings is Config=RoadBLD, not Config=Engine. Its
++    reflected Get() accessor is checked as well as the class default object;
++    neither a disk edit nor a CDO-only observation proves effective policy.
++    This function never sets defaults, reloads config, builds, or saves.
++    """
++    path = Path(__file__).resolve().parents[2] / NATIVE_SETTINGS_CONFIG
++    report = {'schema': 'environmentpipeline.roadbld_landscape_authority.v1',
++              'config_category': 'RoadBLD', 'project_config_path': str(path),
++              'settings_class': NATIVE_SETTINGS_CLASS, 'required_value': False,
++              'project_flags': {}, 'native_views': {}, 'errors': [], 'passed': False}
++    try:
++        raw = path.read_bytes()
++        report['project_config_sha256'] = hashlib.sha256(raw).hexdigest()
++        config = configparser.RawConfigParser(strict=False)
++        config.read_string(raw.decode('utf-8-sig'))
++        report['project_flags'] = {name: config.getboolean(NATIVE_SETTINGS_CLASS, name)
++                                   for name in NATIVE_LANDSCAPE_EDIT_FLAGS}
++        if any(report['project_flags'].values()):
++            report['errors'].append('Project RoadBLD configuration permits terrain writes')
++    except Exception as exc:
++        report['errors'].append('Project RoadBLD configuration: ' + repr(exc))
++    try:
++        cdo = unreal.get_default_object(unreal.RoadBLDRuntimeSettings)
++        for label, settings in (('class_default', cdo), ('native_get', _call(cdo, 'Get'))):
++            if settings is None or _path(settings.get_class()) != NATIVE_SETTINGS_CLASS:
++                raise RuntimeError('Unexpected native settings object: ' + label)
++            flags = {name: _get(settings, name) for name in NATIVE_LANDSCAPE_EDIT_FLAGS}
++            report['native_views'][label] = {'object_path': _path(settings), 'flags': flags}
++            if not all(value is False for value in flags.values()):
++                report['errors'].append(label + ' does not confirm all five terrain-write flags False')
++    except Exception as exc:
++        report['errors'].append('Effective native RoadBLD configuration: ' + repr(exc))
++    report['passed'] = not report['errors'] and len(report['native_views']) == 2
++    return report
++
++
+ def require_geographic_landscape_authority():
+-    """Require the installed project settings before any native generation.
+-
+-    Per-road switches do not disable the native project intersection patches.
+-    This project retains Houdini's height/paint data through the official Engine.
+-    """
+-    settings = unreal.get_default_object(unreal.RoadBLDRuntimeSettings)
+-    flags = {name: bool(settings.get_editor_property(name)) for name in NATIVE_LANDSCAPE_EDIT_FLAGS}
+-    if any(flags.values()):
+-        raise RuntimeError('Native RoadBLD project terrain edits are enabled; restart with the retained geographic project configuration: ' + str(flags))
+-    return flags
++    """Fail before authoring if the retained Houdini terrain policy is absent."""
++    report = inspect_geographic_landscape_authority()
++    if not report['passed']:
++        raise RuntimeError('RoadBLD terrain authority failed. Apply project ' + NATIVE_SETTINGS_CONFIG +
++                           ' and use a sealed fresh startup; no runtime override is permitted: ' +
++                           json.dumps(report, sort_keys=True))
++    # Preserve the ordinary menu's existing five-flag return contract.
++    return report['native_views']['native_get']['flags']
+ 
+ 
+ def _read(value):
+@@ -87,6 +127,30 @@
+     temporary = path.with_suffix(path.suffix + '.pending')
+     temporary.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding='utf-8')
+     temporary.replace(path)
++
++
++def _retirement_history(previous, prior_state, retiring_failed):
++    """Keep historical ledgers across replacements; never use them for deletion."""
++    failed, successful, meshes = {}, {}, set()
++    for receipt in (previous or {}, prior_state or {}):
++        for row in receipt.get('retired_failed_generations', []):
++            failed[_sha(row)] = _read(row)
++        for row in receipt.get('retired_successful_generations', []):
++            successful[_sha(row)] = _read(row)
++        meshes.update(receipt.get('unvalidated_previous_mesh_packages_preserved', []))
++    for row in retiring_failed:
++        failed[_sha(row)] = _read(row)
++    for row in failed.values():
++        meshes.update(row.get('unvalidated_mesh_paths', []))
++    if previous:
++        keys = ('revision', 'area_id', 'named_map', 'source_sha256', 'centreline_sha256',
++                'network_actor_path', 'road_actor_paths', 'geometry_actor_paths',
++                'owned_actor_paths', 'named_generated_dependency_paths')
++        row = _read({key: previous[key] for key in keys if key in previous})
++        successful[_sha(row)] = row
++    return {'retired_failed_generations': list(failed.values()),
++            'retired_successful_generations': list(successful.values()),
++            'unvalidated_previous_mesh_packages_preserved': sorted(meshes)}
+ 
+ 
+ def _path(obj):
+@@ -546,7 +610,7 @@
+ 
+     def preflight(self):
+         self.guard()
+-        self.state['native_landscape_edit_policy'] = require_geographic_landscape_authority()
++        self.check_landscape_policy('preflight')
+         process = subprocess.run(['powershell.exe', '-NoProfile', '-Command',
+                                   'Get-Process UnrealEditor -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id'],
+                                  capture_output=True, text=True, timeout=10,
+@@ -587,6 +651,31 @@
+         self.state['reviewed_dirty_packages'] = sorted(dirty)
+         self.state['license_verified'] = True
+         self.write()
++
++    def check_landscape_policy(self, stage):
++        report = inspect_geographic_landscape_authority()
++        self.state['native_landscape_authority'] = report
++        self.state['native_landscape_policy_stage'] = stage
++        if not report['passed']:
++            self.write()
++            raise RuntimeError('Native terrain edits are forbidden before ' + stage + ': ' + json.dumps(report, sort_keys=True))
++        self.state['native_landscape_edit_policy'] = report['native_views']['native_get']['flags']
++        return report
++
++    def verify_owned_landscape_patches(self):
++        """Detection only: disabling an applied patch after rebuild is too late."""
++        patch_type = getattr(unreal, 'LandscapePatchComponent', None)
++        if patch_type is None:
++            raise RuntimeError('Installed LandscapePatchComponent readback is unavailable')
++        patches = []
++        for actor in self.owned_actors():
++            for patch in actor.get_components_by_class(patch_type):
++                enabled = patch.is_enabled()
++                patches.append({'path': _path(patch), 'enabled': enabled})
++                if enabled is not False:
++                    raise RuntimeError('Native generation enabled a forbidden Landscape patch: ' + _path(patch))
++        self.state['native_owned_landscape_patches'] = patches
++        return patches
+ 
+     def reconcile_failed_generations(self):
+         """Account exact saved failed actors for later scoped retirement, not acceptance.
+@@ -751,6 +840,7 @@
+         self.preflight()
+         self.build_presets()
+         self.guard()
++        self.check_landscape_policy('network_spawn')
+         self.network = self.actor_subsystem.spawn_actor_from_class(unreal.DynamicRoadNetwork, unreal.Vector(0, 0, 0))
+         assert self.network, 'Native network spawn failed'
+         self.tag(self.network)
+@@ -764,6 +854,7 @@
+ 
+     def create_road(self, row):
+         self.guard()
++        self.check_landscape_policy('road_authoring')
+         preset = self.presets[row['preset_key']]
+         road = self.network.add_road_to_road_network(preset, 0.0)
+         assert road, 'Native road spawn failed for source ' + str(row['source_osm_id'])
+@@ -845,6 +936,8 @@
+         operation['attempts'] += 1
+         self.write()
+         assert time.monotonic() <= operation['deadline_monotonic'], 'Native rebuild dispatch deadline expired before dispatch'
++        self.check_landscape_policy('rebuild_dispatch')
++        self.write()
+         result = _tool('RoadBLDBuildToolset', 'Rebuild', self.network, False, True, False, 0, False)
+         error = str(result.error)
+         call = {'is_complete': bool(result.is_complete), 'error': error,
+@@ -1040,6 +1133,8 @@
+ 
+     def _validate_native(self):
+         self.guard()
++        self.check_landscape_policy('native_validation')
++        self.verify_owned_landscape_patches()
+         assert not self.network.is_road_network_stale(), 'Native network remains stale'
+         all_roads = self.roads + self.derived_junction_roads
+         networks = list(_tool('RoadBLDDiscoveryToolset', 'DescribeNetwork', self.network, len(all_roads) + 1))
+@@ -1262,6 +1357,8 @@
+                 if 'RUNNING' in name:
+                     return
+                 assert 'SUCCEEDED' in name, 'Native rebuild did not succeed: ' + str(_plain(status))
++                self.check_landscape_policy('rebuild_completed')
++                self.verify_owned_landscape_patches()
+                 if self.rebuild_pass == 1:
+                     if self.junction_repair is None:
+                         import geocity_roadbld_junctions as junctions
+@@ -1284,11 +1381,6 @@
+                     if needs_alignment_pass:
+                         self.request_rebuild()
+                         return
+-                    patch_type = getattr(unreal, 'LandscapePatchComponent', None)
+-                    if patch_type:
+-                        for actor in self.owned_actors():
+-                            for patch in actor.get_components_by_class(patch_type):
+-                                patch.set_is_enabled(False)
+                     self.state.update(phase='clipping', native_rebuild_completed=True)
+                     self.write()
+                     self.clip_final_geometry()
+@@ -1346,7 +1438,9 @@
+                 'junction_repair', 'derived_junction_roads', 'actual_native_road_actor_count',
+                 'derived_junction_road_count', 'clipping_report', 'native_component_bindings')
+         result = {key: self.state[key] for key in keys}
+-        for key in ('grounding_report', 'native_grounding_validation'):
++        for key in ('grounding_report', 'native_grounding_validation', 'native_landscape_authority',
++                    'native_landscape_edit_policy', 'native_owned_landscape_patches',
++                    'native_appearance_by_preset', 'native_props', 'native_props_validation'):
+             if key in self.state:
+                 result[key] = self.state[key]
+         result.update(schema=DELIVERY_SCHEMA, provider='RoadBLD', phase='native_generated_validated_pending_save', saved=False,
+@@ -1399,9 +1493,11 @@
+                 self.guard()
+                 assert self.actor_subsystem.destroy_actor(actor), 'Previous tagged output removal failed'
+             assert not paths.intersection(_path(a) for a in self.actor_subsystem.get_all_level_actors())
+-        self.state['retired_failed_generations'] = self.retained_failed_generations
++        # Snapshot current and historical ledgers before clearing the live
++        # failed-actor list. Historical entries are evidence, not deletion input.
++        self.state.update(_retirement_history(self.previous, self.prior_state,
++                                              self.retained_failed_generations))
+         self.state['retained_failed_generations'] = []
+-        self.state['unvalidated_previous_mesh_packages_preserved'] = [p for row in self.retained_failed_generations for p in row.get('unvalidated_mesh_paths', [])]
+         world = self.guard()
+         assert unreal.EditorLoadingAndSavingUtils.save_packages([world.get_outermost()], False), 'Named retained map save failed'
+         self.save_dependencies(owned, include_map=True)
+@@ -1423,7 +1519,9 @@
+                         coordinate_frame=FRAME, bake_performed=False, reopened=False,
+                         hda_vehicle_surfaces_suppressed=True, utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+         for key in ('grounding_report', 'native_grounding_validation', 'native_appearance_by_preset',
+-                    'native_props', 'native_props_validation', 'retired_failed_generations', 'unvalidated_previous_mesh_packages_preserved'):
++                    'native_props', 'native_props_validation', 'retired_failed_generations', 'retired_successful_generations',
++                    'unvalidated_previous_mesh_packages_preserved',
++                    'native_landscape_authority', 'native_landscape_edit_policy', 'native_owned_landscape_patches'):
+             if key in self.state:
+                 delivery[key] = self.state[key]
+         _write(self.delivery_path, delivery)
+--- Before/DefaultEngine.ini
++++ Config/DefaultEngine.ini
+@@ -56,10 +56,7 @@
+ bPauseCookingOnStart=True
+ bUseSessionSyncForAutomaticServer=True
+ 
+-[/Script/RoadBLDRuntime.RoadBLDRuntimeSettings]
+-bEnableIntersectionLandscapePatch=False
+-bEnableIntersectionLandscapeVisibilityHole=False
+-bEnableRoadLandscapePaint=False
+-bUseRoadLandscapeHeightPatch=False
+-bAutoCreatePaintLayerInfo=False
++; RoadBLDRuntimeSettings uses Config=RoadBLD. Its terrain-write policy belongs
++; in project Config/DefaultRoadBLD.ini, not the Engine configuration category.
++; The ordinary GeoCity action requires both native settings views to read False.
+ 
+--- Before/DefaultRoadBLD.ini
++++ Config/DefaultRoadBLD.ini
+@@ -0,0 +1,7 @@
++; GeoCity terrain and paint are owned by Houdini through official Houdini Engine.
++[/Script/RoadBLDRuntime.RoadBLDRuntimeSettings]
++bEnableIntersectionLandscapePatch=False
++bEnableIntersectionLandscapeVisibilityHole=False
++bEnableRoadLandscapePaint=False
++bUseRoadLandscapeHeightPatch=False
++bAutoCreatePaintLayerInfo=False

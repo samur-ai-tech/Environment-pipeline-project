@@ -1,0 +1,55 @@
+{
+  "schema": "environmentpipeline.manager_decisions.v1",
+  "date_utc": "2026-10-06",
+  "recorded_by": "Claude Code session cc37d4d2-3d62-4f53-b689-28432b5527ae (sole manager)",
+  "source": "Aviv, live Claude Code session: five-item instruction block pasted ~14:35Z; choice-window answers ~14:50Z and ~15:25Z",
+  "decisions": [
+    {"id": "D-20261006-01", "topic": "blocked models", "decision": "Review every block; report exact id/name, reason, TECHNICAL failure vs earlier SELECTION decision; fix technical problems where possible; a model is not defective merely because it was excluded from selection; show original exclusion reasons before asking for a decision.", "status": "ordered"},
+    {"id": "D-20261006-02", "topic": "ground", "decision": "Current ground appearance is not accepted. Ground work goes to a separate chat later. Do not reopen ground design in other tasks. Shujaiya profile pointer stays as is (wait for the ground chat); no Shujaiya generation until then.", "status": "ordered"},
+    {"id": "D-20261006-03", "topic": "licensing", "decision": "Licensing is in order for this work (City Sample, MW Landscape Auto Material, MOUT Arabian and the installed packs). No further ownership or acquisition questions.", "status": "confirmed"},
+    {"id": "D-20261006-04", "topic": "roads and ordinary generation", "decision": "Resolve the road failures through the retained pipeline and demonstrate the complete ordinary operation on an original map: generation, visible roads and environment, named saves, reopening, regeneration without unwanted duplicates. Road repair: bounded fix of the junction-opening assertion; fallback = roads off with the saved 2026-10-03 road actors.", "status": "ordered"},
+    {"id": "D-20261006-05", "topic": "failed models", "decision": "Dedicated task; central review folder Staging/InvalidModelReview_2026-10-06/ with review copies and a register (original location, exact failure, repair status, validation result); preserve originals and saved bank assets; keep collecting failures.", "status": "ordered"},
+    {"id": "D-20261006-06", "topic": "palms", "decision": "Accept the 18 Phoenix palms (Palms_Pack_02) enabled for Gaza by the asset-bank chat; excluded from Iran. The older declined-palms hold (Palms_Pack_01) is unchanged.", "status": "decided"},
+    {"id": "D-20261006-07", "topic": "profile edits by the asset-bank chat", "decision": "Accepted as done under Aviv's direct authorization; reviewed under the B3 ratification.", "status": "decided (default, not contested)"},
+    {"id": "D-20261006-08", "topic": "parallel editors and sealed code", "decision": "Parallel editors on disjoint scopes are allowed (AGENTS.md rule). The manager does NOT change code. The sealed single-editor check and the road repair are delegated to an operator chat through Staging/Briefs_2026-10-06/BRIEF_1_SEALED_CODE.md; the manager ratifies the reseal.", "status": "decided"},
+    {"id": "D-20261006-09", "topic": "Linear", "decision": "The manager updates Linear project P-ENG-12 from this session. Stage 4 (ENG-1068) stays open.", "status": "decided"},
+    {"id": "D-20261006-11", "topic": "order after the two stop reports (~16:05Z)", "decision": "The asset-bank chat does not run anything now; the 72 saved models count as connected pending the next ordinary run; it closes editor 29900 without saving. The brief-1 code chat continues and finishes its work (Part A and Part B) in a fresh session; the manager wrote its instructions (Staging/Briefs_2026-10-06/MESSAGE_CODE_CHAT_2_CONTINUE.md) and ratified its deviation (bank save scope stays out of the generation scope).", "status": "decided"},
+    {"id": "D-20261006-12", "topic": "reseal while the sky editor is open (~16:30Z)", "decision": "The brief-1 code chat may edit and reseal the generation code while the sky Stage 3 editor (PID 29940, GazaRimal, Aviv's own work) is open, because that editor never runs a GeoCity action; the bank editor 29900 was closed at 16:20:47Z with 0 saves. Any editor that will generate must still be closed. Message: Staging/Briefs_2026-10-06/MESSAGE_CODE_CHAT_3_SKY_EDITOR_OK.md.", "status": "decided"},
+    {"id": "D-20261006-13", "topic": "brief-1 scope confirmed (~17:15Z)", "decision": "Both parts stay as briefed (parallel-editor safeguard and road junction-opening repair). Aviv had expected a small road fix; the manager explained that the road assertion is a safety check that needs diagnostic capture, one reproduction run and a cause fix, and that part A was his own earlier decision; he confirmed both parts. Measured at 17:12Z: prepared copies only, live code and seal unchanged. Message: Staging/Briefs_2026-10-06/MESSAGE_CODE_CHAT_4_APPLY_NOW.md.", "status": "decided"},
+    {"id": "D-20261006-10", "topic": "sky", "decision": "The reusable sky is Aviv's own work (Codex operator chat 01a1118e, PID 5200/28148, released 14:55:53Z); not part of the manager's plan. Its saved changes (BP_EnvironmentSky, Rimal map 1d670c8e, SunPosition in the .uproject) are recorded as baselines and reviewed under B3.", "status": "noted"}
+  ],
+  "measured_facts_behind_the_decisions": {
+    "generation_requires_single_editor": "Content/Python/geocity_editor_action.py:236-240, geocity_bank_workflow.py:292-295 (:483,:990), geocity_roadbld_workflow.py:618-622, launch_editor.ps1:38,75; lease last-line checks geocity_bank_workflow.py:193-194 on every tick",
+    "iran_generation_refused": "2026-10-06T14:33:46Z, 'GeoCity requires this to be the only open Unreal editor.' (sky editor PID 5200 open); modal closed 14:40:39Z; bank chat released OWNER=NONE 14:48:43Z",
+    "bank_intake": "72 models imported/validated/saved, 0 failures; DT_EnvironmentBank_v4 1223->1295 rows, digest f6fff4f9->e0bd4e85; profiles Shujaiya 4174a627->f722381f, Rimal 492b9ac5->e6dead27, Iran 004ec07d->cb0f3cab at 14:32:58Z",
+    "sky_delivery": "BP_EnvironmentSky saved 14:52:18Z; Rimal map a6961c8e->1d670c8e 14:52:20Z; .uproject c51cab0c->3a1d89f3 (SunPosition enabled); sealed support files unchanged; seal 258469e1 intact",
+    "shujaiya_ground_pointer": "profile landscape_material MI_GeoCityGround_Auto does not exist; only MI_GeoCityGround (2026-10-05 18:43Z) exists",
+    "road_assertion": "geocity_roadbld_seams.py:504 in _append_connector_apron; failed ledger has no junction id/values; code path never completed in any recorded run",
+    "six_kit_parts": "triangle_count_changed, one triangle lost each; records under Staging/BankIntegration_2026-10-04/ModularNative_2026-10-05/"
+  },
+  "order_of_work": [
+    "0 bank chat finishes its Iran verification on PID 29900 and releases; manager re-measures baselines and does the fresh-reopen probe",
+    "1 blocked-models register + InvalidModelReview folder (manager, file work)",
+    "2 brief 1 to an operator chat: parallel-editor safeguard (part A) and road repair (part B); manager ratifies B3",
+    "3 clean ordinary run with visible roads on Rimal (or Shujaiya after the ground chat)",
+    "4 B3 ratification; Linear kept current; consolidation for Git",
+    "5 ground in Aviv's separate chat; vegetation/props after the clean run"
+  ],
+  "linear": {
+    "project": "P-ENG-12",
+    "status_update_id": "fdd062a8-c760-4647-8ca7-a3bd47dac5b0",
+    "stage_issues_updated": {"ENG-1066": "append", "ENG-1068": "append, stays In Progress", "ENG-1069": "append, Backlog -> In Progress"},
+    "new_issues": {
+      "ENG-1142": "Blocked-models register (ENG-1066, Todo)",
+      "ENG-1143": "InvalidModelReview folder (ENG-1066, Todo)",
+      "ENG-1144": "Asset-bank intake 2026-10-06 (ENG-1066, In Progress)",
+      "ENG-1145": "B3 ratification (ENG-1066, Todo)",
+      "ENG-1146": "Native road repair (ENG-1069, Todo, High)",
+      "ENG-1147": "Parallel-editor safeguard (ENG-1069, Todo)",
+      "ENG-1148": "Ground appearance, separate chat (ENG-1069, Backlog)",
+      "ENG-1149": "Consolidation and first Git commit (project-level, Todo)",
+      "ENG-1150": "Clean ordinary run with visible roads (ENG-1069, Todo, High, blockedBy ENG-1146)",
+      "ENG-1151": "Vegetation and props scatter (ENG-1069, Backlog, blockedBy ENG-1150)"
+    }
+  }
+}

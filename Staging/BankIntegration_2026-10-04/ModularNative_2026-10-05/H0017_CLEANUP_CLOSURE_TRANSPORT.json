@@ -1,0 +1,18 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"ok\":true,\"stdout\":\"{\\\"count\\\": 14, \\\"outside_referencers\\\": {}, \\\"all_absent_disk\\\": true, \\\"docs\\\": \\\"X.delete_loaded_assets(assets_to_delete) -> bool\\\\r\\\\nDelete assets from the Content Browser that are already loaded.\\\\nThis is a Force Delete. It doesn't check if the assets have references in other Levels or by Actors.\\\\nIt will close all the asset editors and may clear the Transaction buffer (Undo History).\\\\nWill try to mark the files as deleted.\\\\r\\\\n\\\\r\\\\nArgs:\\\\r\\\\n    assets_to_delete (Array[Object]): Assets that we want to delete.\\\\r\\\\n\\\\r\\\\nReturns:\\\\r\\\\n    bool: True if the operation succeeds.\\\"}\\n\",\"result\":{}}"
+      }
+    ],
+    "structuredContent": {
+      "ok": true,
+      "stdout": "{\"count\": 14, \"outside_referencers\": {}, \"all_absent_disk\": true, \"docs\": \"X.delete_loaded_assets(assets_to_delete) -> bool\\r\\nDelete assets from the Content Browser that are already loaded.\\nThis is a Force Delete. It doesn't check if the assets have references in other Levels or by Actors.\\nIt will close all the asset editors and may clear the Transaction buffer (Undo History).\\nWill try to mark the files as deleted.\\r\\n\\r\\nArgs:\\r\\n    assets_to_delete (Array[Object]): Assets that we want to delete.\\r\\n\\r\\nReturns:\\r\\n    bool: True if the operation succeeds.\"}\n",
+      "result": {}
+    },
+    "isError": false
+  }
+}

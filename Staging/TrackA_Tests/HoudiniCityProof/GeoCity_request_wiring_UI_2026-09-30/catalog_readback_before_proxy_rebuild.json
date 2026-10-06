@@ -1,0 +1,925 @@
+{
+  "attributes": {
+    "P": {
+      "size": 3,
+      "storage": "numericData.Float32",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_10_BoundsMinZCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_11_BoundsMaxXCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_12_BoundsMaxYCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_13_BoundsMaxZCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_14_AnchorValid": {
+      "size": 1,
+      "storage": "numericData.Int8",
+      "type": "attribData.Int"
+    },
+    "unreal_data_table_15_AnchorZCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_16_OrientationValid": {
+      "size": 1,
+      "storage": "numericData.Int8",
+      "type": "attribData.Int"
+    },
+    "unreal_data_table_17_ForwardAxis": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_18_AssetRevision": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_1_SchemaVersion": {
+      "size": 1,
+      "storage": "numericData.Int32",
+      "type": "attribData.Int"
+    },
+    "unreal_data_table_2_AssetId": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_3_ObjectPath": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_4_Role": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_5_VariantId": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_6_RunEligible": {
+      "size": 1,
+      "storage": "numericData.Int8",
+      "type": "attribData.Int"
+    },
+    "unreal_data_table_7_BoundsValid": {
+      "size": 1,
+      "storage": "numericData.Int8",
+      "type": "attribData.Int"
+    },
+    "unreal_data_table_8_BoundsMinXCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_9_BoundsMinYCm": {
+      "size": 1,
+      "storage": "numericData.Float64",
+      "type": "attribData.Float"
+    },
+    "unreal_data_table_rowname": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_data_table_rowstruct": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    },
+    "unreal_object_path": {
+      "size": 1,
+      "storage": "String",
+      "type": "attribData.String"
+    }
+  },
+  "catalog_sha256": "6c71d3be7edc5186799488eba057c99ef9cb0b1ad36d850521f274891509238e",
+  "eligible_count": 0,
+  "houdini": "22.0.429",
+  "instances": [],
+  "interface": "GeoCity bank v1",
+  "internal_request_count": 59,
+  "internal_request_roles": {
+    "street_pole": 15,
+    "tree": 44
+  },
+  "internal_request_sample_ids": [
+    "GazaRimal:pole_144276113_2_2",
+    "GazaRimal:pole_144276113_3_0",
+    "GazaRimal:pole_144276113_4_0",
+    "GazaRimal:pole_144276113_5_1",
+    "GazaRimal:pole_144276113_5_2",
+    "GazaRimal:pole_41254127_2_1",
+    "GazaRimal:pole_41255144_6_0",
+    "GazaRimal:pole_41255144_6_1",
+    "GazaRimal:pole_41257711_11_0",
+    "GazaRimal:pole_41257711_2_2"
+  ],
+  "pid": 28836,
+  "rejected": [
+    {
+      "reasons": [
+        "disabled",
+        "technical_check_only",
+        "no_recorded_release",
+        "OrientationValid=false",
+        "unsupported_forward_axis"
+      ],
+      "row": "H0013"
+    },
+    {
+      "reasons": [
+        "disabled",
+        "technical_check_only",
+        "no_recorded_release",
+        "OrientationValid=false",
+        "unsupported_forward_axis"
+      ],
+      "row": "H0051"
+    },
+    {
+      "reasons": [
+        "disabled",
+        "technical_check_only",
+        "no_recorded_release",
+        "OrientationValid=false",
+        "unsupported_forward_axis"
+      ],
+      "row": "H0907"
+    },
+    {
+      "reasons": [
+        "disabled",
+        "technical_check_only",
+        "no_recorded_release",
+        "BoundsValid=false",
+        "AnchorValid=false",
+        "OrientationValid=false",
+        "unsupported_forward_axis",
+        "invalid_bounds"
+      ],
+      "row": "H0958"
+    }
+  ],
+  "release_id": "",
+  "request_count": 59,
+  "request_roles": {
+    "street_pole": 15,
+    "tree": 44
+  },
+  "requests": [
+    {
+      "P": [
+        -74.49759674072266,
+        35.682437896728516,
+        5.3953776359558105
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 38.29890823364258,
+      "placement_id": "GazaRimal:pole_144276113_2_2",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -46.91089630126953,
+        34.28620910644531,
+        27.013744354248047
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 37.9522705078125,
+      "placement_id": "GazaRimal:pole_144276113_3_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -9.474298477172852,
+        36.23096466064453,
+        35.927154541015625
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 37.96247482299805,
+      "placement_id": "GazaRimal:pole_144276113_4_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        73.35954284667969,
+        40.048980712890625,
+        100.43437957763672
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 37.881744384765625,
+      "placement_id": "GazaRimal:pole_144276113_5_1",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        91.15980529785156,
+        43.118934631347656,
+        134.55404663085938
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 37.881744384765625,
+      "placement_id": "GazaRimal:pole_144276113_5_2",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -182.86685180664062,
+        39.95823287963867,
+        -259.0933837890625
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 314.4974670410156,
+      "placement_id": "GazaRimal:pole_41254127_2_1",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        253.53028869628906,
+        35.33785629272461,
+        -189.91033935546875
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 45.780029296875,
+      "placement_id": "GazaRimal:pole_41255144_6_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        277.9398193359375,
+        35.62504577636719,
+        -164.8269805908203
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 45.780029296875,
+      "placement_id": "GazaRimal:pole_41255144_6_1",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -172.2948455810547,
+        36.483036041259766,
+        -167.50772094726562
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 225.70091247558594,
+      "placement_id": "GazaRimal:pole_41257711_11_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        52.06134796142578,
+        37.50606155395508,
+        53.67242431640625
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 225.1275177001953,
+      "placement_id": "GazaRimal:pole_41257711_2_2",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        27.399795532226562,
+        38.49203872680664,
+        28.814456939697266
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 225.24118041992188,
+      "placement_id": "GazaRimal:pole_41257711_3_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -110.36317443847656,
+        34.7784538269043,
+        -130.4564208984375
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 224.41880798339844,
+      "placement_id": "GazaRimal:pole_41257711_8_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -146.7480926513672,
+        34.76738739013672,
+        -143.08477783203125
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 223.20802307128906,
+      "placement_id": "GazaRimal:pole_41257711_9_0",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        273.93914794921875,
+        38.72205352783203,
+        -234.87814331054688
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 135.52247619628906,
+      "placement_id": "GazaRimal:pole_41257784_35_2",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        240.5581817626953,
+        35.5190315246582,
+        -218.91842651367188
+      ],
+      "bank_role": "street_pole",
+      "bank_yaw_degrees": 135.52247619628906,
+      "placement_id": "GazaRimal:pole_41257784_35_3",
+      "request_origin": "geographic_street_pole"
+    },
+    {
+      "P": [
+        -175.75729370117188,
+        35.254478454589844,
+        -153.20037841796875
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 333.8204345703125,
+      "placement_id": "GazaRimal:tree_-10_-9",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -189.26792907714844,
+        39.57102966308594,
+        -260.44580078125
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 23.887788772583008,
+      "placement_id": "GazaRimal:tree_-11_-15",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -190.8927001953125,
+        35.19353485107422,
+        -156.95077514648438
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 350.6116638183594,
+      "placement_id": "GazaRimal:tree_-11_-9",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -193.7873992919922,
+        32.64926528930664,
+        222.65545654296875
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 95.1016845703125,
+      "placement_id": "GazaRimal:tree_-11_12",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -204.25535583496094,
+        32.977230072021484,
+        -47.87038040161133
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 336.6222839355469,
+      "placement_id": "GazaRimal:tree_-12_-3",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -201.63568115234375,
+        32.3597297668457,
+        203.29461669921875
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 312.6004638671875,
+      "placement_id": "GazaRimal:tree_-12_11",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -209.06283569335938,
+        33.447689056396484,
+        66.46104431152344
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 163.81712341308594,
+      "placement_id": "GazaRimal:tree_-12_3",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -222.63111877441406,
+        34.09751510620117,
+        -78.71083068847656
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 122.04480743408203,
+      "placement_id": "GazaRimal:tree_-13_-5",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -219.81088256835938,
+        32.415061950683594,
+        79.31183624267578
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 181.93443298339844,
+      "placement_id": "GazaRimal:tree_-13_4",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -224.36094665527344,
+        32.431880950927734,
+        101.45465850830078
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 282.9978942871094,
+      "placement_id": "GazaRimal:tree_-13_5",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -245.22695922851562,
+        39.277523040771484,
+        -274.03594970703125
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 285.32025146484375,
+      "placement_id": "GazaRimal:tree_-14_-16",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -242.22637939453125,
+        32.51546096801758,
+        -40.855098724365234
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 111.85765838623047,
+      "placement_id": "GazaRimal:tree_-14_-3",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -240.9688262939453,
+        33.52882766723633,
+        -64.94561767578125
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 324.3030700683594,
+      "placement_id": "GazaRimal:tree_-14_-4",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -244.76397705078125,
+        32.93743133544922,
+        -95.78366088867188
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 13.405096054077148,
+      "placement_id": "GazaRimal:tree_-14_-6",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -244.68746948242188,
+        32.55976867675781,
+        245.91897583007812
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 59.53508758544922,
+      "placement_id": "GazaRimal:tree_-14_13",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -259.6829528808594,
+        32.607276916503906,
+        258.2554931640625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 89.68121337890625,
+      "placement_id": "GazaRimal:tree_-15_14",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -277.13739013671875,
+        31.671571731567383,
+        247.50393676757812
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 352.139892578125,
+      "placement_id": "GazaRimal:tree_-16_13",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -278.472900390625,
+        32.28132247924805,
+        258.0400390625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 196.53269958496094,
+      "placement_id": "GazaRimal:tree_-16_14",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -9.149810791015625,
+        35.78483963012695,
+        -131.0806884765625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 31.7458553314209,
+      "placement_id": "GazaRimal:tree_-1_-8",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -44.3906135559082,
+        34.53207778930664,
+        46.55796813964844
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 128.1999969482422,
+      "placement_id": "GazaRimal:tree_-3_2",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -66.55255889892578,
+        40.775577545166016,
+        -242.59365844726562
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 297.8572082519531,
+      "placement_id": "GazaRimal:tree_-4_-14",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -67.26617431640625,
+        41.123844146728516,
+        -257.12945556640625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 2.5417795181274414,
+      "placement_id": "GazaRimal:tree_-4_-15",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -82.07199096679688,
+        35.20524597167969,
+        -167.25308227539062
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 39.66658020019531,
+      "placement_id": "GazaRimal:tree_-5_-10",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -82.4635009765625,
+        41.896095275878906,
+        -264.21295166015625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 358.9233093261719,
+      "placement_id": "GazaRimal:tree_-5_-15",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -97.94593048095703,
+        35.45745086669922,
+        -140.226318359375
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 81.2209243774414,
+      "placement_id": "GazaRimal:tree_-6_-8",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -116.74163818359375,
+        34.595123291015625,
+        136.96725463867188
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 188.0303497314453,
+      "placement_id": "GazaRimal:tree_-7_7",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -116.21647644042969,
+        34.80618667602539,
+        151.39453125
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 144.66403198242188,
+      "placement_id": "GazaRimal:tree_-7_8",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -133.04977416992188,
+        38.061614990234375,
+        -184.41302490234375
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 133.49610900878906,
+      "placement_id": "GazaRimal:tree_-8_-11",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -132.73233032226562,
+        31.853551864624023,
+        -75.9097900390625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 279.1317443847656,
+      "placement_id": "GazaRimal:tree_-8_-5",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -132.60488891601562,
+        34.73060607910156,
+        140.39505004882812
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 211.54115295410156,
+      "placement_id": "GazaRimal:tree_-8_7",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        -148.01126098632812,
+        32.2181510925293,
+        4.578507423400879
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 315.80242919921875,
+      "placement_id": "GazaRimal:tree_-9_0",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        7.732943534851074,
+        37.326324462890625,
+        -152.70278930664062
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 183.49583435058594,
+      "placement_id": "GazaRimal:tree_0_-9",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        202.54736328125,
+        42.42787551879883,
+        129.9351043701172
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 310.46875,
+      "placement_id": "GazaRimal:tree_11_7",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        229.0525665283203,
+        43.27945327758789,
+        131.81884765625
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 250.31930541992188,
+      "placement_id": "GazaRimal:tree_12_7",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        265.425537109375,
+        43.0789794921875,
+        117.4709701538086
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 306.98553466796875,
+      "placement_id": "GazaRimal:tree_14_6",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        282.02471923828125,
+        38.302974700927734,
+        -223.59112548828125
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 181.94119262695312,
+      "placement_id": "GazaRimal:tree_15_-13",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        277.53826904296875,
+        43.04849624633789,
+        101.36917114257812
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 299.8912353515625,
+      "placement_id": "GazaRimal:tree_15_5",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        23.001052856445312,
+        41.356014251708984,
+        112.83119201660156
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 0.6496344804763794,
+      "placement_id": "GazaRimal:tree_1_6",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        40.04063415527344,
+        35.3338508605957,
+        -117.1583023071289
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 261.33856201171875,
+      "placement_id": "GazaRimal:tree_2_-7",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        101.67304992675781,
+        43.67088317871094,
+        207.65496826171875
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 2.266871690750122,
+      "placement_id": "GazaRimal:tree_5_11",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        113.46578979492188,
+        36.52143096923828,
+        -184.72607421875
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 331.6526184082031,
+      "placement_id": "GazaRimal:tree_6_-11",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        134.53907775878906,
+        34.80923843383789,
+        4.913717746734619
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 7.723542213439941,
+      "placement_id": "GazaRimal:tree_7_0",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        176.31103515625,
+        37.67529296875,
+        11.126039505004883
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 273.33758544921875,
+      "placement_id": "GazaRimal:tree_9_0",
+      "request_origin": "geographic_tree"
+    },
+    {
+      "P": [
+        175.55694580078125,
+        41.339332580566406,
+        131.5676727294922
+      ],
+      "bank_role": "tree",
+      "bank_yaw_degrees": 70.1603012084961,
+      "placement_id": "GazaRimal:tree_9_7",
+      "request_origin": "geographic_tree"
+    }
+  ],
+  "rows": [
+    {
+      "AnchorValid": 1,
+      "AnchorZCm": -0.354519575834274,
+      "AssetId": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "AssetRevision": "E5BB8F2CA2CF7AC473FA479251725933123A31F9F9D41D775EB11E675A039DA6",
+      "BoundsMaxXCm": 1615.8203125,
+      "BoundsMaxYCm": 1049.00915527344,
+      "BoundsMaxZCm": 4868.0,
+      "BoundsMinXCm": -1273.86730957031,
+      "BoundsMinYCm": -1081.92077636719,
+      "BoundsMinZCm": -0.354519575834274,
+      "BoundsValid": 1,
+      "ForwardAxis": "",
+      "Name": "H0013",
+      "ObjectPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+      "OrientationValid": 0,
+      "Role": "whole_building",
+      "RunEligible": 0,
+      "SchemaVersion": 1,
+      "VariantId": "H0013"
+    },
+    {
+      "AnchorValid": 1,
+      "AnchorZCm": 3.50867111365005e-07,
+      "AssetId": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin",
+      "AssetRevision": "1B1CA536131E7AE3D5616F887B29277EE6A29829D350D6D497B1043B44FC419D",
+      "BoundsMaxXCm": 16.5599250793457,
+      "BoundsMaxYCm": 16.5365676879883,
+      "BoundsMaxZCm": 74.4018478393555,
+      "BoundsMinXCm": -12.8370847702026,
+      "BoundsMinYCm": -17.8982353210449,
+      "BoundsMinZCm": 3.50867111365005e-07,
+      "BoundsValid": 1,
+      "ForwardAxis": "",
+      "Name": "H0051",
+      "ObjectPath": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+      "OrientationValid": 0,
+      "Role": "street_prop",
+      "RunEligible": 0,
+      "SchemaVersion": 1,
+      "VariantId": "H0051"
+    },
+    {
+      "AnchorValid": 1,
+      "AnchorZCm": 0.67620587348938,
+      "AssetId": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "AssetRevision": "3C1726F412F92AC187A66E0C040C70ECE42423527D1060C4D6AC5C57AFF289BC",
+      "BoundsMaxXCm": 688.686401367188,
+      "BoundsMaxYCm": 668.271362304688,
+      "BoundsMaxZCm": 1561.33740234375,
+      "BoundsMinXCm": -680.353271484375,
+      "BoundsMinYCm": -700.472045898438,
+      "BoundsMinZCm": 0.67620587348938,
+      "BoundsValid": 1,
+      "ForwardAxis": "",
+      "Name": "H0907",
+      "ObjectPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+      "OrientationValid": 0,
+      "Role": "whole_building",
+      "RunEligible": 0,
+      "SchemaVersion": 1,
+      "VariantId": "H0907"
+    },
+    {
+      "AnchorValid": 0,
+      "AnchorZCm": 0.0,
+      "AssetId": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+      "AssetRevision": "E9575502D9E03F75537E2EDCD02D22F444920AEE7AA4AB1E48765752168BC3E6",
+      "BoundsMaxXCm": 0.0,
+      "BoundsMaxYCm": 0.0,
+      "BoundsMaxZCm": 0.0,
+      "BoundsMinXCm": 0.0,
+      "BoundsMinYCm": 0.0,
+      "BoundsMinZCm": 0.0,
+      "BoundsValid": 0,
+      "ForwardAxis": "",
+      "Name": "H0958",
+      "ObjectPath": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm",
+      "OrientationValid": 0,
+      "Role": "vegetation",
+      "RunEligible": 0,
+      "SchemaVersion": 1,
+      "VariantId": "H0958"
+    }
+  ]
+}

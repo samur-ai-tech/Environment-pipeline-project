@@ -1,0 +1,108 @@
+{
+  "schema": "environmentpipeline.task2.current_landscape_fix.v1",
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "written_utc": "2026-10-04T13:51:41.360205+00:00",
+  "authorized_scope": [
+    "Content/Python/geocity_roadbld_landscape.py",
+    "Content/Python/geocity_roadbld_workflow.py"
+  ],
+  "source_hashes": {
+    "Content/Python/geocity_roadbld_clip.py": {
+      "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_grounding.py": {
+      "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_junctions.py": {
+      "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_landscape.py": {
+      "sha256": "4f48f02ada40ffaf22f2272a7fc7637738d1c8b72fbed5bcf1c1915073333a63",
+      "changed_in_landscape_fix": true
+    },
+    "Content/Python/geocity_roadbld_props.py": {
+      "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_seams.py": {
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_topology.py": {
+      "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+      "changed_in_landscape_fix": false
+    },
+    "Content/Python/geocity_roadbld_workflow.py": {
+      "sha256": "451bb0d4d0d2d318440ed1fef31a668e529549a7e7387b48229f6be70100f342",
+      "changed_in_landscape_fix": true
+    },
+    "Config/DefaultEngine.ini": {
+      "sha256": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+      "changed_in_landscape_fix": false
+    },
+    "Config/DefaultRoadBLD.ini": {
+      "sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+      "changed_in_landscape_fix": false
+    }
+  },
+  "scope_verification": "Other six road modules and both configs match previously accepted frozen hashes.",
+  "measured_task4_evidence": {
+    "receipt": "Staging/ManagedSystemsAstra_2026-10-04/Task4_Integration/SHUJAIYA_RUN1_FAILURE_NATIVE.json",
+    "pid": 33168,
+    "rebuild_pass": 3,
+    "owned_landscape_patches": [],
+    "failure_phase": "failed_clipping",
+    "actual_current_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0",
+    "explanation": "Native rebuild completed pass3; old suffix selector rejected the exact current official actor ending _landscape_0. Prior baked Landscape remained accounted. This receipt belongs to task4, not task2 native activity."
+  },
+  "implemented": "Bound lifecycle-parent authority supplies exact actor plus source/owner/current-operation evidence. The run freezes this before presets/network creation. All pre-Bake samplers revalidate it, including clipping and grounding.correction. Unknown Landscapes reject. No name heuristic, early deletion, collision or geometry gate changes.",
+  "checks": {
+    "status": "PASSED_OFFLINE_LANDSCAPE_AUTHORITY_CHECKS",
+    "checks": [
+      "Recorded _0 actor selected exactly; repeated resolution stays identical",
+      "Synchronous build entry before parent assigns native_road_run",
+      "Unknown Landscape rejects",
+      "Foreign current world rejects",
+      "Missing current loaded actor rejects",
+      "Stale same-path object rejects",
+      "Missing callback rejects",
+      "Unbound callback rejects",
+      "Foreign parent rejects",
+      "Wrong current road run rejects",
+      "Failed parent rejects",
+      "Wrong native phase rejects",
+      "Changed lease rejects",
+      "Missing HDA owner rejects",
+      "Unaccounted prior Landscape rejects",
+      "Prior paths missing lifecycle ownership rejects",
+      "Wrong evidence source_sha256",
+      "Wrong evidence centreline_sha256",
+      "Wrong evidence pid",
+      "Wrong evidence operation_started_epoch",
+      "Wrong evidence hda_actor_path",
+      "Wrong evidence current_actor_path",
+      "Wrong evidence lease_sha256",
+      "Wrong evidence official_output_verified",
+      "Changed current operation after first binding rejects",
+      "Saved two-Landscape world still rejects",
+      "Saved singleton remains supported without pre-Bake authority call",
+      "Task1 actual callback body and task2 selector agree on recorded _0 authority envelope"
+    ],
+    "collision_method_AST_unchanged": true,
+    "correction_uses_same_sampler": true,
+    "native_calls": 0,
+    "unreal_imports": 0,
+    "native_selector_execution": "NOT_RUN",
+    "task1_callback_source_sha256_at_check": "35fcda79a941642ac10a73e1e4f780bdb9090fa77373796d5541f0a3adbf6603",
+    "limits": "Recorded paths and metadata with fake UObject/actor enumeration. Real official helper, collision, clipping, save/reopen and regeneration require manager-activated fresh startup."
+  },
+  "callback_integration": "Task1 current_road_landscape_authority callback body was exercised with this selector using mocked official helper/native IO; see exact task1 source hash in checks.",
+  "native_execution_of_new_fix": "NOT_RUN",
+  "native_calls_by_task2": 0,
+  "maps_content_config_profiles_upstream_changes": false,
+  "source_editing_stopped": true,
+  "manager_next": "Review combined sources/seal, then fresh manager-authorized startup; bank is NEXT native writer after safe task4 release. No hot reload or generation authorization inferred."
+}

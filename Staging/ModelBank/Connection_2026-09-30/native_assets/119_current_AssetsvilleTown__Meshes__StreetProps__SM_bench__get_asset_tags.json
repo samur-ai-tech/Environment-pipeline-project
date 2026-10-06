@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 129,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_bench"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"67x233x102\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/bench.fbx\\\", \\\"Timestamp\\\" : \\\"1512819529\\\", \\\"FileMD5\\\" : \\\"7a3377e7c899d7b31839b6f57b1e9eff\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"558\",\"UVChannels\":\"2\",\"Vertices\":\"1164\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 129,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"67x233x102\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/bench.fbx\\\", \\\"Timestamp\\\" : \\\"1512819529\\\", \\\"FileMD5\\\" : \\\"7a3377e7c899d7b31839b6f57b1e9eff\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"558\",\"UVChannels\":\"2\",\"Vertices\":\"1164\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,147 @@
+{
+  "schema": "environmentpipeline.task3_restart_review.v1",
+  "status": "RESTART_SOURCE_CONFIG_AND_ACTUAL_BOOTSTRAP_VERIFIED",
+  "utc": "2026-10-03T20:28:55.247680+00:00",
+  "scope": "Read-only filesystem/AST review; only new TASK3_RESTART_REVIEW outputs written. No source/config/editor/assets/metadata changed.",
+  "reviewed_files": {
+    "Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\init_unreal.py": "934ea9468084fb0bd9416fccf34ce74b17d64419da8a60e91d243f73e058a777",
+    "Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\recovery_startup.py": "566bedc5b42975a67c1371b3676308f7c829c041b3f33f1648bd380e4d37a4e6",
+    "Staging\\ManagedAstra_2026-10-03\\launch_replacement_editor_PREPARED.ps1": "17dce6eaa11a4e35898a5a78bc2d51ba8e65e2c54883c858ae416d47c67e62e8"
+  },
+  "source_review_preserved_sha256": "ebbc7799accefb6081149c34f1430871596b6c25dda3fb5e157abde5156051b5",
+  "crash_review_preserved_sha256": "a5830d543d78854ac389a52a6b62658a01178130046e517f0ec25166b9c26f33",
+  "saved_map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+  "launch_blockers": [],
+  "material_configuration_finding": {
+    "status": "RESOLVED_IN_FINAL_PLAN_NO_GUARD_CHANGE",
+    "blocks_editor_startup": false,
+    "blocks_following_native_generation_with_proposed_child": false,
+    "final_child_path": "/Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity",
+    "guard": "road_worn in full material path.lower() at grounding.py898; new MI_RoadBLD_Asphalt_Road_Worn_GeoCity meets condition.",
+    "parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.MI_RoadBLD_Asphalt_Road_Worn",
+    "only_override": {
+      "MV_PatchMult": 1.0
+    },
+    "ordinary_route": "Both profiles roadbld_workflow.settings.road_material -> bank author_native_roads -> native settings -> build_presets RoadMaterial and IntersectionMaterial. Fresh normal regeneration naturally records child in both areas new immutable clip/binding ledgers.",
+    "implementation_boundary": "This is a reviewed plan only. Exactparent/localoverride/effectiveparameter and resulting material binding/appearance need actual authoring and saved/reopen readback under ordinary assignment. No oldledger or nativevendor changes; no claim value1.0 is final visuallyaccepted."
+  },
+  "positive_checks": [
+    "Python entry/bootstrap AST valid; no imports executed.",
+    "Launcher checks no existing UnrealEditor, installed5.8exe/project/bootstrap/entry/map existence and hashes plus original mapfe56a24d... before spawn; child environment scoped; hiddenwindow configuration; launches once and does not acquire stale lease.",
+    "Bootstrap persistent module uses granular fsynced BEFORE/AFTER native calls, only exact namedmap, exactlyoneexistingHDA, expectedHDAasset, no cook/rebuild/generation/save/mapcopy. Stops owncallback and leaves newPIDlease to manager.",
+    "Old p/r/callbacks are not reconstructed; active workflow modules must beempty.",
+    "Original saved map hash still matches preordinary baseline.",
+    "Final source hashes match READY freeze and originalreview receipt unchanged.",
+    "Final mapfe56a24d... unchanged;4completeautosave copies match originals; only intended config andrestoremetadata byte changes verified.",
+    "Root alone launches one existingproject/originalmap instance; no editor calls were made byreview."
+  ],
+  "additional_preflight_requirements": [],
+  "not_performed": [
+    "Configuration changes or launch",
+    "Runtime settings or savedmap readback",
+    "Material creation/profile edit",
+    "Regeneration/save/visualacceptance"
+  ],
+  "prior_preparation_review": {
+    "status": "CHANGES_REQUESTED_PREPARATION_REVISION_PENDING",
+    "utc": "2026-10-03T20:22:36.849848+00:00",
+    "reviewed_files": {
+      "Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\init_unreal.py": "934ea9468084fb0bd9416fccf34ce74b17d64419da8a60e91d243f73e058a777",
+      "Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\recovery_startup.py": "c4a6120a677c1e67796d2c9ae5d89656bd4426a1500311e70e70aef7aec1ab92",
+      "Staging\\ManagedAstra_2026-10-03\\launch_replacement_editor_PREPARED.ps1": "7714325ebd4030ec64f3633afed6a14b1af6222ff3bc77c66d5bdc319e70ef8d"
+    },
+    "launch_blockers": [
+      {
+        "id": "STARTUP_COOK_LOCK",
+        "priority": 1,
+        "evidence": "Reviewed launcher7714325... starts named map with -NoAutoSave only. Config/SavedConfig search still shows no bPauseCookingOnStart override. Bootstrap c4a6120... pauses in init Python after engine/module startup. Installed Engine.cpp257 reads bPauseCookingOnStart to set global cook enable and may register ticker before this hook.",
+        "required": "Complete root-requested scoped durable bPauseCookingOnStart=True under exact installed config class before launch, preserve before/after hashes and assert effective config in launch preflight. Bootstrap must read/assert initial pause; it must not treat a late pause as evidence of startup safety."
+      },
+      {
+        "id": "AUTOSAVE_RESTORE_GUARD",
+        "priority": 1,
+        "evidence": "PackageRestoreData.json remains RestoreEnabled=True with original partial17:35map+3HSM entries. Launcher only records restoreRecoveryPacks=False in journal; that field prevents no recovery action. Bootstrap reads autosave_runtime but neither assertsFalse nor disables it. -NoAutoSave alone was unproven in oldprocess.",
+        "required": "Complete root-requested prelaunch recovery/autosave suppression with exact supported settings/metadata and preserved originals; launch must verify intended guarded state. Bootstrap must assert runtime bAutoSaveEnable=False. No recovery/autosave package copied into Content."
+      }
+    ],
+    "material_configuration_finding": {
+      "priority": 1,
+      "blocks_editor_startup": false,
+      "blocks_following_native_generation_with_proposed_child": true,
+      "proposed_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_RoadBLD_Asphalt_Worn_ControlledPatches",
+      "guard": "Content/Python/geocity_roadbld_grounding.py:898 requires road_worn substring in material0 path.lower().",
+      "finding": "Proposed MI_RoadBLD_Asphalt_Worn_ControlledPatches lacks road_worn and fails existing family guard even when its parent is correct. Preserve guard and use shared child name MI_RoadBLD_Asphalt_Road_Worn_ControlledPatches (same reviewed shared folder) or another agreed road_worn path.",
+      "parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.MI_RoadBLD_Asphalt_Road_Worn",
+      "override": {
+        "MV_PatchMult": 1.0
+      },
+      "required_readback": "Exact parent chain, only intended local scalar override and effective value. Path guard alone is not parent proof. Both normal profiles roadbld_workflow.settings.road_material must reference same savedchild. build_presets maps it to RoadMaterial and IntersectionMaterial; fresh both-area generation records materials naturally in new clip/binding ledgers. Do not alter old immutable clip ledgers or vendor assets. Saved/reopen/Lit review remains required;1.0 not yet visually accepted."
+    }
+  },
+  "final_preparation": {
+    "status": "RESTART_READY_PREPARATION_AWAITING_ROOT_FINAL_REVIEW_NO_LAUNCH",
+    "preparation_sha256": "e4dd06989d2ef5f9199b48c03c59cc2dec52aa2fa28ea31a85b64131a390f2bc",
+    "configuration_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_SAFE_STARTUP_CONFIG_RECEIPT.json",
+    "configuration_receipt_sha256": "a4043dffcad76c1771b372d65cc32af6597fc3a0a33c1f99ca13148449143b6f",
+    "editor_launched_by_review": false,
+    "manager_may_activate_single_launch": true,
+    "runtime_readiness_is_after_launch_observation_not_additional_prelaunch_prerequisite": true
+  },
+  "resolved_blockers": [
+    {
+      "id": "STARTUP_COOK_LOCK",
+      "resolution": "Verified exact one-key Config/DefaultEngine.ini addition under /Script/HoudiniEngineRuntime.HoudiniRuntimeSettings: bPauseCookingOnStart=True. Installed configEngine UCLASS and Engine.cpp257 read this before Python. Launcher hashes final config receipt. Bootstrap reads CDO flag and requires API already paused; if unexpectedly unpaused it safety-pauses then stops instead of treating that as successful startup.",
+      "config_before_sha256": "46087592acaf3238203bf395f134b329f416a089eeb63c6aedcf9918e12c5f16",
+      "config_after_sha256": "ea7343553bcf4f589aac1d6c256d61948f9dcf00b343db4e0fd979e8e7174868"
+    },
+    {
+      "id": "AUTOSAVE_RESTORE_GUARD",
+      "resolution": "Verified exact UTF16LE RestoreEnabled true-to-false replacement with unchanged Packages array/remaining bytes. All4 original autosave files and preserved copies match exact hashes. Launcher validates metadata hash and RestoreEnabled=False. Process-only EditorPerProjectUserSettings scalar overrides set bAutoSaveEnable=False and RestoreOpenAssetTabsOnRestart=NeverRestore before map; runtime early/world-ready checks explicitly disable/assertFalse. NoAutoSave supplementary; saved user settings file unchanged.",
+      "restore_before_sha256": "6c2340b223488821f2d868f5a3311697c3eb2e41b1987fdd8c8c924c101dd57b",
+      "restore_after_sha256": "c1f2d2a04f8735763b43e8eea34ad11d9004e42fb4eded7e72d51bad4aa238c7"
+    }
+  ],
+  "syntax_and_API_review": {
+    "python": "Both AST parsed without execution/import.",
+    "powershell": "System.Management.Automation.Language.Parser.ParseFile returned no syntax errors; launcher not executed.",
+    "autobake": "Bootstrap now checks existing wrapper.is_auto_bake_enabled and fails ifTrue. Installed HoudiniPublicAPIAssetWrapper.h605 exposes IsAutoBakeEnabled.",
+    "settings": "Installed EditorLoadingSavingSettings.h94 config=EditorPerProjectUserSettings; bAutoSaveEnable config property170-171; NeverRestore enum42.",
+    "process_override_syntax": "Comma-separated -ini:CATEGORY:[SECTION]:KEY=VALUE syntax independently checked against Epic official5.8 configuration documentation; scalar values and exact class category match.",
+    "primary_reference": "https://dev.epicgames.com/documentation/en-us/unreal-engine/configuration-files-in-unreal-engine#overrideconfigurationfromthecommand-line"
+  },
+  "postlaunch_observations_already_in_workflow": [
+    "Bootstrapreceipt must show actual originalmap/HDAidentity, globalpause/auto-cookoff/auto-bakeoff/autosaveFalse and stoppedbootstrapcallback with emptyworkflowACTIVE/callbacks. If bootstrap does not run or stops, inspect its fsynced journal.",
+    "Root acquires fresh solePIDlease and reconciles savedmetadata with preserved baseline before ordinarygeneration. No oldp/r reconstruction.",
+    "OfficialEngine valid session and nativeRoadBLD licensed sign-in are existing regeneration gates, not new editorlaunch requirements.",
+    "Named save/reopen and actual Lit appearance review remain later delivery evidence."
+  ],
+  "actual_bootstrap_review": {
+    "utc": "2026-10-03T20:31:44.305625+00:00",
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RECOVERY_STARTUP_20261003T202902027153Z.json",
+    "sha256": "a73eefad8d29a38716c9e98f6338234d7a400b56ddab8a9050dc77dc7c8d245e",
+    "journal": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RECOVERY_STARTUP_20261003T202902027153Z.jsonl",
+    "journal_sha256": "c6c7a6877f86d25952fee8acc9360eef3a28533668d321ddabb3fb024a16506d",
+    "pid": 21780,
+    "matched_before_after_native_calls": 37,
+    "completed": true,
+    "original_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+    "one_HDA": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+    "one_Landscape": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape"
+    ],
+    "one_native_network": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoadNetwork_0"
+    ],
+    "clean_before_after": true,
+    "initial_and_final_engine_paused": true,
+    "startup_pause_setting": true,
+    "initial_and_final_autosave_disabled": true,
+    "HDA_auto_cook_and_auto_bake_disabled": true,
+    "workflow_callbacks": 0,
+    "bootstrap_callbacks": 0,
+    "official_session_at_bootstrap": false,
+    "readiness_note": "Official API exists but session valid=False at bootstrap. Root activated task2 to initialize/verify official service before ordinary generation. This was not a failed startup or a new approval requirement.",
+    "root_fresh_assignment": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\MANAGER_FRESH_DELIVERY_ACTIVATION.json",
+    "reviewer_editor_calls": 0
+  }
+}

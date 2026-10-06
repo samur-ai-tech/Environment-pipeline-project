@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2536,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/StarterContent/Materials/M_Concrete_Tiles"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.007,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade\",\"/Game/StarterContent/Textures/T_MacroVariation\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_D\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_M\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_N\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_Variation_M\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2536,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade\",\"/Game/StarterContent/Textures/T_MacroVariation\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_D\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_M\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_N\",\"/Game/StarterContent/Textures/T_Concrete_Tiles_Variation_M\"]}"
+    }
+   ]
+  }
+ }
+}

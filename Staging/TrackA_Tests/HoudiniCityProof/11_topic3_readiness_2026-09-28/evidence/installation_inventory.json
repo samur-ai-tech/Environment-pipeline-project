@@ -1,0 +1,543 @@
+{
+  "captured": "2026-09-28T15:02:35.5026065+03:00",
+  "project": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline",
+  "engineAssociation": "C:/Program Files/Epic Games/UE_5.8",
+  "engineBuild": {
+    "MajorVersion": 5,
+    "MinorVersion": 8,
+    "PatchVersion": 2,
+    "Changelist": 56702186,
+    "CompatibleChangelist": 55116800,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.8"
+  },
+  "engineBuildId": "55116800",
+  "pluginBuild": {
+    "BuildId": "55116800",
+    "Modules": {
+      "HoudiniEngine": "UnrealEditor-HoudiniEngine.dll",
+      "HoudiniEngineEditor": "UnrealEditor-HoudiniEngineEditor.dll",
+      "HoudiniEngineRuntime": "UnrealEditor-HoudiniEngineRuntime.dll"
+    }
+  },
+  "pluginVendorFileCount": 819,
+  "pluginProjectFileCount": 819,
+  "pluginVendorMismatches": [],
+  "discoveryHoudiniPluginPaths": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\HoudiniEngine.uplugin"
+  ],
+  "plugins": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\CityBLD\\CityBLD.uplugin",
+      "name": "CityBLD",
+      "version": 1,
+      "versionName": "1.4.0",
+      "enabledByDefault": null,
+      "dependencies": [
+        {
+          "Name": "AssetManagerEditor",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "EditorScriptingUtilities",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "GeometryScripting",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "Landmass",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "LandscapePatch",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PCG",
+          "Enabled": true
+        },
+        {
+          "Name": "PCGGeometryScriptInterop",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PlatformCrypto",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "ProceduralMeshComponent",
+          "Enabled": true
+        },
+        {
+          "Name": "Text3D",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "WorldBLD",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\HoudiniEngine.uplugin",
+      "name": "HoudiniEngine",
+      "version": 22000429,
+      "versionName": "3.0 - H22.0.429",
+      "enabledByDefault": true,
+      "dependencies": [
+        {
+          "Name": "PCG",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\RoadBLD\\RoadBLD.uplugin",
+      "name": "RoadBLD",
+      "version": 1,
+      "versionName": "1.7.4",
+      "enabledByDefault": null,
+      "dependencies": [
+        {
+          "Name": "AssetManagerEditor",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "EditorScriptingUtilities",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "GeometryScripting",
+          "Enabled": true
+        },
+        {
+          "Name": "Landmass",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "LandscapePatch",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PCG",
+          "Enabled": true
+        },
+        {
+          "Name": "PCGGeometryScriptInterop",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PlatformCrypto",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "ProceduralMeshComponent",
+          "Enabled": true
+        },
+        {
+          "Name": "Text3D",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "WorldBLD",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\TwinBLD\\TwinBLD.uplugin",
+      "name": "TwinBLD",
+      "version": 1,
+      "versionName": "0.5.7",
+      "enabledByDefault": null,
+      "dependencies": [
+        {
+          "Name": "WorldBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "CityBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "RoadBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "GeometryProcessing",
+          "Enabled": true
+        },
+        {
+          "Name": "GeometryScripting",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\WorldBLD\\WorldBLD.uplugin",
+      "name": "WorldBLD",
+      "version": 1,
+      "versionName": "1.4.10",
+      "enabledByDefault": null,
+      "dependencies": [
+        {
+          "Name": "AssetManagerEditor",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "EditorScriptingUtilities",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PlatformCrypto",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "GeometryProcessing",
+          "Enabled": true
+        },
+        {
+          "Name": "GeometryScripting",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "MeshModelingToolset",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        },
+        {
+          "Name": "PCG",
+          "Enabled": true
+        },
+        {
+          "Name": "ImpostorBaker",
+          "Enabled": true,
+          "TargetAllowList": [
+            "Editor"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\WorldBLDMCPToolset\\WorldBLDMCPToolset.uplugin",
+      "name": "WorldBLDMCPToolset",
+      "version": 1,
+      "versionName": "0.1.4",
+      "enabledByDefault": null,
+      "dependencies": [
+        {
+          "Name": "ModelContextProtocol",
+          "Enabled": true
+        },
+        {
+          "Name": "EditorToolset",
+          "Enabled": true
+        },
+        {
+          "Name": "ToolsetRegistry",
+          "Enabled": true
+        },
+        {
+          "Name": "WorldBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "CityBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "RoadBLD",
+          "Enabled": true
+        },
+        {
+          "Name": "TwinBLD",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\PCG\\PCG.uplugin",
+      "name": "PCG",
+      "version": 8,
+      "versionName": "1.0",
+      "enabledByDefault": true,
+      "dependencies": [
+        {
+          "Name": "EditorScriptingUtilities",
+          "Enabled": true
+        },
+        {
+          "Name": "ComputeFramework",
+          "Enabled": true
+        },
+        {
+          "Name": "GeometryProcessing",
+          "Enabled": true
+        },
+        {
+          "Name": "MeshModelingToolset",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\ModelContextProtocol\\ModelContextProtocol.uplugin",
+      "name": "ModelContextProtocol",
+      "version": 1,
+      "versionName": "1.0",
+      "enabledByDefault": false,
+      "dependencies": [
+        {
+          "Name": "EngineAssetDefinitions",
+          "Enabled": true
+        },
+        {
+          "Name": "ToolsetRegistry",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\PythonScriptPlugin\\PythonScriptPlugin.uplugin",
+      "name": "PythonScriptPlugin",
+      "version": 1,
+      "versionName": "1.0",
+      "enabledByDefault": false,
+      "dependencies": [
+        {
+          "Name": "ContentBrowserFileDataSource",
+          "Enabled": true,
+          "ProgramAllowList": [
+            "LiveLinkHub"
+          ],
+          "TargetAllowList": [
+            "Editor",
+            "Program"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Editor\\EditorScriptingUtilities\\EditorScriptingUtilities.uplugin",
+      "name": "EditorScriptingUtilities",
+      "version": 1,
+      "versionName": "1.0",
+      "enabledByDefault": false,
+      "dependencies": null
+    }
+  ],
+  "binaries": [
+    {
+      "path": "C:\\Program Files\\Side Effects Software\\Houdini 22.0.429\\bin\\houdini.exe",
+      "bytes": 166704,
+      "version": "22, 0, 0, 429",
+      "sha256": "3DB5DECC203FBCA58AE68092499FB88CED8C9E11E962193CB3C74FDC15A200AB"
+    },
+    {
+      "path": "C:\\Program Files\\Side Effects Software\\Houdini 22.0.429\\bin\\HARS.exe",
+      "bytes": 4538160,
+      "version": "22, 0, 0, 429",
+      "sha256": "CA277FEE09D4FA52A1097659640C439F66E69F0B630D5CB1C109270E2B74AE6C"
+    },
+    {
+      "path": "C:\\Program Files\\Side Effects Software\\Houdini 22.0.429\\bin\\libHAPIL.dll",
+      "bytes": 129840,
+      "version": "22, 0, 0, 429",
+      "sha256": "A9221D1D71724445B190C0FCC3D474684082423C6BAAE2A85FB46160ABAD364F"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "bytes": 512952,
+      "version": "++UE5+Release-5.8-CL-56702186",
+      "sha256": "6F9C95C131F37CBDC384ADE02FCF6ED828BAA366B25234D0D85E212244CAC9AA"
+    }
+  ],
+  "environment": [
+    {
+      "scope": "Process",
+      "name": "HOME",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "HOUDINI_USER_PREF_DIR",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "HOUDINI_PACKAGE_DIR",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "HSITE",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "HFS",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "SIDEFXLABS",
+      "value": null
+    },
+    {
+      "scope": "Process",
+      "name": "HAPI_LICENSE_MODE",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HOME",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HOUDINI_USER_PREF_DIR",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HOUDINI_PACKAGE_DIR",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HSITE",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HFS",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "SIDEFXLABS",
+      "value": null
+    },
+    {
+      "scope": "User",
+      "name": "HAPI_LICENSE_MODE",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HOME",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HOUDINI_USER_PREF_DIR",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HOUDINI_PACKAGE_DIR",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HSITE",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HFS",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "SIDEFXLABS",
+      "value": null
+    },
+    {
+      "scope": "Machine",
+      "name": "HAPI_LICENSE_MODE",
+      "value": null
+    }
+  ],
+  "activeProcesses": [
+    {
+      "Name": "sesinetd.exe",
+      "ProcessId": 4472,
+      "CreationDate": "2026-09-25T22:09:48.414402+03:00",
+      "ExecutablePath": null
+    },
+    {
+      "Name": "hserver.exe",
+      "ProcessId": 4520,
+      "CreationDate": "2026-09-25T22:09:48.417561+03:00",
+      "ExecutablePath": null
+    }
+  ],
+  "stop": "STOP requested by manager at 11:26 on 2026-09-27: all work paused for a transition to new conversations. Finish the current step safely (if any), write your handoff as instructed by Aviv, do not start new tasks.\n",
+  "policy": "Offline only; no executable from Unreal or Houdini was launched; no live MCP call."
+}

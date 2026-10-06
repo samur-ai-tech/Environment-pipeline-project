@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 143,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0077_Stones_Stack.SM_H0077_Stones_Stack"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-84.772178649902344,\"y\":-31.79749870300293,\"z\":-4.8012884690251667e-06},\"max\":{\"x\":82.47210693359375,\"y\":83.702911376953125,\"z\":51.818138122558594},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 143,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-84.772178649902344,\"y\":-31.79749870300293,\"z\":-4.8012884690251667e-06},\"max\":{\"x\":82.47210693359375,\"y\":83.702911376953125,\"z\":51.818138122558594},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

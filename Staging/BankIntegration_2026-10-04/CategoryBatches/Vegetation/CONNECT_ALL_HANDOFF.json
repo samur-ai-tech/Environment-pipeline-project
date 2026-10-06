@@ -1,0 +1,14 @@
+{
+  "schema": "environmentpipeline.vegetation_connection_handoff.v1",
+  "status": "BANK_CONTENT_CONNECTION_ACTION_READY",
+  "request": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\CONNECT_ALL_VEGETATION_REQUEST.json",
+  "request_sha256": "5a035d34dbc0e6355cbb38cd6c4a26d71ae0eb443dfcf84724d03e4c5acceb14",
+  "manifest": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\CONNECT_ALL_EXECUTION_MANIFEST.json",
+  "manifest_sha256": "4f53dd84f196aef029ec40ffd3b19c760d3d25795c1f8e927fd57c1f1b9aa395",
+  "native_execute": "bank_batch_loader.execute(manifest_path, expected_sha256, \"connect_remaining_vegetation\")",
+  "category_native_execution_performed": false,
+  "expected_after_success": "76 of 80 canonical vegetation rows native-bound; four MOUT family rows require existing native-source supply. This is catalog connection, not activation of held models or ordinary area output.",
+  "manager_profile_action": "Merge/compose the bank-generated PROFILE_BANK_FIELD_PATCH.json with the preceding catalog change chain; bank and category do not edit manager profiles.",
+  "stopped_work": "New material diagnostics, material-mask guesswork and extra individual model demonstrations.",
+  "new_inspector_draft": "foliage_mask_inspector_v1.py is deferred, unsealed, and has no authorized execute command."
+}

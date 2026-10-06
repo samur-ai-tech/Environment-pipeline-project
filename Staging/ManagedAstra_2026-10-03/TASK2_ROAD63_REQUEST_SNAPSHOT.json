@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-03T19:05:36.882572+00:00",
+  "request_sha256": "89364f9327b9c5f30317a35131247257973217cdd6d4520a9dcf96fcc6f619a6",
+  "request": {
+    "landscape_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_2859_3235_0_GazaShujaiya_landscape",
+    "additional_source_required": {
+      "piece_id": "41254723:0",
+      "native_source_suffix": "DynamicRoad_63",
+      "reason": "All40-road <=50cm actual profile reveals a second11.129389cm interpolation error, not only previously failed DynamicRoad_53. Source-grade selection now checks<=50cm so both deficient pieces are corrected. Need captured single-source native refined mesh and exact currentLandscape values at its nearest source-centerline projections, plus original controls and<=50cm source stations, to validate all source-specific corrected output before freeze.",
+      "read_only_collection": "Find only owned RoadGeo components whose native SourceRoads is exactly [DynamicRoad_63]. Read-copy original mesh, apply existing uniform tessellation1 to temporary copy as in previous evidence, record world vertices/triangles/material IDs/native face normals/upward mask and current bindings. For each copied vertex, project onto exact original source XY polyline (nearest segment, ties by original source order); collect Landscape at rounded6-decimal unique projected XYs. No bound mesh/edit/rebuild/cook/save. Include exact source row/native controls/source refs and unchanged full participant/checkpoint/bindings evidence.",
+      "original_row_from": "TASK2_ALL_SOURCE_LANDSCAPE_PROFILES_20261003T185815153909Z.json / roads piece_id41254723:0"
+    }
+  }
+}

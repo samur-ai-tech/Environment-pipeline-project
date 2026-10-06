@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 137,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0089_Tires.SM_H0089_Tires"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-28.562030792236328,\"y\":-22.672319412231445,\"z\":-0.65578168630599976},\"max\":{\"x\":34.522945404052734,\"y\":22.815616607666016,\"z\":48.90185546875},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 137,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-28.562030792236328,\"y\":-22.672319412231445,\"z\":-0.65578168630599976},\"max\":{\"x\":34.522945404052734,\"y\":22.815616607666016,\"z\":48.90185546875},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

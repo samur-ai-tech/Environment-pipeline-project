@@ -1,0 +1,34 @@
+{
+  "schema": "environmentpipeline.ground_held_copy_helper_review.v1",
+  "status": "REVIEWED_BOUNDED_NAMED_HELD_SAVE_AND_MEASURED_RESULT",
+  "reviewer": "/root/startup_review",
+  "utc": "2026-10-05T07:59:05.223172+00:00",
+  "pid": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "helper_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\native_ground_held_copy_save.py",
+  "helper_sha256": "de6ee9fd7aa6b4afc959edbc908436dbcdb800e8759f06a7f5bb08a899ec984f",
+  "scope_review_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\HELD_COPY_SAVE_REVIEW_PID32464.json",
+  "scope_review_sha256": "4c07ae16f80d4109f06ae6b58447a642fda8f1c383794eadf48715350e349572",
+  "saved_receipt_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\HELD_UNUSED_MOUT_COPY_SAVED_PID32464.json",
+  "saved_receipt_sha256": "917978bcfcabdd02b6a0871f8e0fdfdd7d7e33cb88473e1c5dd5c3e625a60437",
+  "only_saved_package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K",
+  "held_file_sha256": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+  "hold_status": "HELD_UNUSED_SUPERSEDED_MOUT_DERIVATIVE",
+  "working_ground_use_authorized": false,
+  "source_failure_sha256": "43434496fff82505a125ffa70bb8ad5cf8f8ca43aa507d9f6905b61f0c437f7f",
+  "partial_ready_sha256": "3a0b0a4e958a44a2820d0a9f55b4a0bffd22df501c601edd6d48a6684ee1a3b3",
+  "source_checks": [
+    "Fixed sole PID32464, exact original world and active root ground lease; 12 runtime modules; HDA paused/autooff; autosave off and callbacks absent.",
+    "Full concrete partial-ready snapshot equality before the named save; exactly one dirty copy and maps clean; target file absent; no graph or effective MI texture reference.",
+    "One save_loaded_asset(copy, only_if_is_dirty=True), protected by a unique once marker; no duplication, binding, compile, source update, map save or Save All.",
+    "Measured result: 1015 graph nodes, all three MI states, scene, runtime modules, CVars, copy PBR properties and every 95 previously existing disk-file hash unchanged; dirty content/maps empty."
+  ],
+  "limitations": [
+    "Static source review completed after root had executed the separately scope-approved save; it is not presented as a prior source approval.",
+    "Failure handling in this small helper is assertion/once-marker based; unexpected errors retain the marker and require separate measured recovery.",
+    "This held save does not qualify or select the obsolete MOUT derivative and does not approve ground appearance."
+  ],
+  "native_calls_performed_by_reviewer": false,
+  "visual_approval": false,
+  "completion_approval": false
+}

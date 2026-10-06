@@ -1,0 +1,2679 @@
+{
+ "schema": "environmentpipeline.bank_editor_readonly_inspection.v1",
+ "utc": "2026-10-05T14:49:47.705829+00:00",
+ "inspector": "Claude Code subagent (read-only)",
+ "evidence_labels": {
+  "MEASURED_FILE": "read from files on disk now",
+  "MEASURED_IMPORTER": "importer readback written by the live editor PID21608 at import time (read from file)",
+  "CODE": "read from adapter/consumer source",
+  "INFERRED": "derived, not directly measured",
+  "NOT_MEASURED": "not measured"
+ },
+ "live_editor_access": {
+  "mcp_calls_made": 0,
+  "reason": "At inspection start the editor was NOT in the 13:59Z stopped state: a v004 resume import was actively writing (about 1 part/s). After every part the importer asserts that the dirty packages are a subset of its own, so any inspection side effect could fail the other chat. Per the read-only rule, no MCP/editor calls were made. Answers come from files, mostly the importer's own live-editor readbacks.",
+  "pid_check": "MEASURED: tasklist shows exactly one UnrealEditor.exe, PID 21608 (start 2026-10-05 16:48:05 local)."
+ },
+ "q7_state": {
+  "changed_since_1359Z_stop": true,
+  "resume": {
+   "activation": "MODULAR_NATIVE_RESUME_V004",
+   "activation_utc": "2026-10-05T14:31:30Z",
+   "operator_thread_id": "01a10c77-46ba-7001-a657-5014f6205d3a",
+   "note": "This operator thread is not the bank operator named in the brief (01a1067c-...). The v004 lease line has no manager_thread_id field.",
+   "last_lease_line": "2026-10-05T14:47:48.959815+00:00 OWNER=CODEX_BANK_INTEGRATION operator_thread_id=01a10c77-46ba-7001-a657-5014f6205d3a task=modular_bank assigned_editor_PID=21608 activation=IMPORT_COMPLETE_REPAIR_QUEUE native_authorized_now=false ordinary_generation_authorized=false preserved_failed_unsaved_meshes=6 running_imports=0"
+  },
+  "progress_snapshot": {
+   "status": "COMPLETE_WITH_REPAIR_QUEUE",
+   "reused_existing": 34,
+   "imported_saved": 569,
+   "failed": 6,
+   "last_part": "SM_H0931_Extension_End",
+   "label": "MEASURED_FILE RESUME_RESULT_v004.json"
+  },
+  "dirty_packages_now": {
+   "value": {
+    "content": [
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier03_EastFacade",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier04_EastFacade",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_EastFacade",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/H0019/Modules/SM_H0019_Roof_EastFacade"
+    ],
+    "maps": []
+   },
+   "label": "MEASURED_IMPORTER (last write of RESUME_RESULT_v004.json dirty_remaining)"
+  },
+  "stop_time_15_dirty_packages": {
+   "value": "All 15 are now saved on disk. Each .uasset sha256 matches its pin in MaterialReceipts/part receipts. SM_H0017_Ground_SWCorner was reimported in place and saved.",
+   "label": "MEASURED_FILE"
+  },
+  "cooking_paused": {
+   "value": true,
+   "label": "INFERRED: resume_boundary() asserts HoudiniPublicAPI is_asset_cooking_paused() before every batch, and batches keep succeeding"
+  },
+  "callbacks": {
+   "value": null,
+   "label": "NOT_MEASURED: v004 resume_boundary does not call geocity_runtime_guard.verify(); the v003 preflight did"
+  },
+  "maps_dirty": {
+   "value": [],
+   "label": "MEASURED_IMPORTER"
+  }
+ },
+ "q1_textures": {
+  "label": "MEASURED_IMPORTER for srgb/compression/flip_green/filter/address (MaterialReceipts texture_properties via get_used_textures); MEASURED_FILE for source format/size (PNG IHDR / JPEG SOF headers)",
+  "policy": {
+   "color": "sRGB true, TC_DEFAULT",
+   "data (ORM: R=AO not connected, G=Roughness, B=Metallic)": "sRGB false, TC_MASKS (linear)",
+   "normal": "sRGB false, TC_VECTOR_DISPLACEMENTMAP (uncompressed RGBA8), flip_green false, sampled as LinearColor and decoded in the shader (deliberate; not TC_NORMALMAP)"
+  },
+  "count": 74,
+  "rows": [
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_0edd8ee8c195233d53dd_color",
+    "kind": "color",
+    "family": "H0929",
+    "source": "0edd8ee8c1_Arab_x29_Diffuse_Map_0edd8ee8c195.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_155102dc639ea9de18e2_data",
+    "kind": "data",
+    "family": "H0021",
+    "source": "155102dc63_B09_stara_MaskMap_7898a37ebad8_ORM_e137fbcd6f3d3b.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color",
+    "kind": "color",
+    "family": "H0911",
+    "source": "15781a595f_Arab_x9_Diffuse_Map_15781a595fe9.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_16ab4708d3e882b31465_color",
+    "kind": "color",
+    "family": "H0019",
+    "source": "16ab4708d3_B07_M02_AlbedoTransparency_16ab4708d3e8.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_1755bbb2b1a2ff463cf4_data",
+    "kind": "data",
+    "family": "H0019",
+    "source": "1755bbb2b1_B07_M1_MaskMap_b013435aa9b8_ORM_052ecd4c3bae0b.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_2623bb25c9bb516f12cc_data",
+    "kind": "data",
+    "family": "H0019",
+    "source": "2623bb25c9_B07_M3_MaskMap_84166c91d324_ORM_baface20ddc4c5.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_2c98a6224ef087da7bee_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "2c98a6224e_B05_ACON_2c98a6224ef0.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 512,
+    "h": 512,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_34a3e29f3e8da8377881_color",
+    "kind": "color",
+    "family": "H0019",
+    "source": "34a3e29f3e_B07_M03_AlbedoTransparency_34a3e29f3e8d.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b3c4559d236d5d74fc1_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "3b3c4559d2_B05_ACON_Front_3b3c4559d236.png",
+    "srgb": true,
+    "compression": "TC_EDITOR_ICON",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 1274,
+    "h": 888,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": false,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b4e73eb9ec806638c7d_data",
+    "kind": "data",
+    "family": "H0021",
+    "source": "3b4e73eb9e_B09_M2_MaskMap_41561666ff06_ORM_2a5ad0cb089f5c.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3d1032385d34c1902a42_data",
+    "kind": "data",
+    "family": "H0017",
+    "source": "3d1032385d_B05_Wood_MaskMap_1d6408f3b0f3_ORM_aa7c38c64baeeb.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3daa98cc7ea1c0d6de7c_data",
+    "kind": "data",
+    "family": "H0017",
+    "source": "3daa98cc7e_B05_M3_MaskMap_d3efd84cd166_ORM_a27459ac66f11c.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_42dc7a7439c528593ff5_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "42dc7a7439_B09_M1_BaseColor_42dc7a7439c5.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a4ab7c7a74fa24f0631_data",
+    "kind": "data",
+    "family": "H0021",
+    "source": "4a4ab7c7a7_B09_Cloth_MaskMap_27c526c917b2_ORM_a74a1ef4e13b6f.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a4cddeb9d819fd3a7d4_color",
+    "kind": "color",
+    "family": "H0018",
+    "source": "4a4cddeb9d_B06_M03_lbedoTransparency_4a4cddeb9d81.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a9e616ee4f3d42ca48a_color",
+    "kind": "color",
+    "family": "H0919",
+    "source": "4a9e616ee4_Arab_x17_Diffuse_Map_4a9e616ee4f3.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4cf1a2cdd0040ca40af1_color",
+    "kind": "color",
+    "family": "H0019",
+    "source": "4cf1a2cdd0_B07_M04_AlbedoTransparency_4cf1a2cdd004.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4f26796ba8b877ad4c42_data",
+    "kind": "data",
+    "family": "H0017",
+    "source": "4f26796ba8_B05_cloths_MaskMap_eed3d454821a_ORM_e701de827c2143.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_5edf49b89a062ecd7645_color",
+    "kind": "color",
+    "family": "H0018",
+    "source": "5edf49b89a_B06_M02_lbedoTransparency_5edf49b89a06.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_60d94b56f4ae09eff60f_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "60d94b56f4_B09_Cloth_BaseColor_60d94b56f4ae.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_669633203a450f815f6d_data",
+    "kind": "data",
+    "family": "H0021",
+    "source": "669633203a_B09_M3_MaskMap_c293b6bdc9e7_ORM_8138cab21e70d8.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_69799f1d2a6b273ed9eb_color",
+    "kind": "color",
+    "family": "H0921",
+    "source": "69799f1d2a_Arab_x20_Diffuse_Map_69799f1d2a6b.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_6ed0865e36be10f56295_color",
+    "kind": "color",
+    "family": "H0017",
+    "source": "6ed0865e36_B05_Wood_BaseColor_6ed0865e36be.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_6f5c57eba71bef8c799e_data",
+    "kind": "data",
+    "family": "H0017",
+    "source": "6f5c57eba7_B05_M4_MaskMap_871f9e5c6678_ORM_3366d5bb099e0b.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_7b53fd0d5e8a4d1c3cd1_color",
+    "kind": "color",
+    "family": "H0925",
+    "source": "7b53fd0d5e_Arab_x25_Diffuse_Map_7b53fd0d5e8a.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_801a53fb45a825e62e51_data",
+    "kind": "data",
+    "family": "H0019",
+    "source": "801a53fb45_B07_M4_MaskMap_d9e96425277e_ORM_62a7355c47a0ec.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_8316d604883d50b587b4_data",
+    "kind": "data",
+    "family": "H0017",
+    "source": "8316d60488_B05_props_MaskMap_3a8620960b13_ORM_f4bf9231f54b44.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_8c3148849a28d829d284_color",
+    "kind": "color",
+    "family": "H0017",
+    "source": "8c3148849a_B05_cloths_BaseColor_8c3148849a28.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9109c49991a308333fb9_color",
+    "kind": "color",
+    "family": "H0931",
+    "source": "9109c49991_Arab_x31_Diffuse_Map_9109c49991a3.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_91d9c3c4978e8a857fc0_color",
+    "kind": "color",
+    "family": "H0017",
+    "source": "91d9c3c497_B05_props_BaseColor_91d9c3c4978e.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_940ba51e094444010bc6_color",
+    "kind": "color",
+    "family": "H0918",
+    "source": "940ba51e09_Arab_x16_Diffuse_Map_940ba51e0944.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9965bf1b063129c2f407_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "9965bf1b06_B09_stara_BaseColor_9965bf1b0631.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9aadc3e4f027977c50df_color",
+    "kind": "color",
+    "family": "H0924",
+    "source": "9aadc3e4f0_Arab_x24_Diffuse_Map_9aadc3e4f027.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a07f4340f1e263bec451_data",
+    "kind": "data",
+    "family": "H0018",
+    "source": "a07f4340f1_B06_M02_MaskMap_d1309806fae7_ORM_0e1aba6076e833.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a13c553b44c69aca29c3_color",
+    "kind": "color",
+    "family": "H0920",
+    "source": "a13c553b44_Arab_x18_Diffuse_Map_a13c553b44c6.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a16fec2d94c975bed447_data",
+    "kind": "data",
+    "family": "H0018",
+    "source": "a16fec2d94_B06_M01_MaskMap_f8b8491c2eaa_ORM_67fb45f4f9d3f9.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ab69ee812e0a2fdcd753_data",
+    "kind": "data",
+    "family": "H0018",
+    "source": "ab69ee812e_B06_M03_MaskMap_8f9834789ce6_ORM_6862d4be737b3a.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_b09f51380ea1fa171f3e_color",
+    "kind": "color",
+    "family": "H0017",
+    "source": "b09f51380e_B05_M3_BaseColor_b09f51380ea1.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_b2b2ad4ac94c07e3dcb7_color",
+    "kind": "color",
+    "family": "H0923",
+    "source": "b2b2ad4ac9_Arab_x23_Diffuse_Map_b2b2ad4ac94c.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_bfb08bd33024c5dd2a8c_color",
+    "kind": "color",
+    "family": "H0926",
+    "source": "bfb08bd330_Arab_x26_Diffuse_Map_bfb08bd33024.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_c3eac19be94bed5c7864_color",
+    "kind": "color",
+    "family": "H0019",
+    "source": "c3eac19be9_B07_M01_AlbedoTransparency_c3eac19be94b.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_c76b332dc14c9bf3e9d5_data",
+    "kind": "data",
+    "family": "H0019",
+    "source": "c76b332dc1_B07_M2_MaskMap_d9447e436d3f_ORM_e13ad6f3a8cb6c.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ca2a5d170626d2889ec1_color",
+    "kind": "color",
+    "family": "H0930",
+    "source": "ca2a5d1706_Arab_x30_Diffuse_Map_ca2a5d170626.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_cac16aa1de90a8b97334_color",
+    "kind": "color",
+    "family": "H0910",
+    "source": "cac16aa1de_Arab_x8_Diffuse_Map_cac16aa1de90.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_cbf1c957ef22861eb09b_data",
+    "kind": "data",
+    "family": "H0018",
+    "source": "cbf1c957ef_B06_M04_MaskMap_2088f1e858cd_ORM_b8bcce58edd710.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d3762d0fb840d49e456c_color",
+    "kind": "color",
+    "family": "H0909",
+    "source": "d3762d0fb8_Arab_x7_Diffuse_Map_d3762d0fb840.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d5b29eb476b1e560c6f5_color",
+    "kind": "color",
+    "family": "H0018",
+    "source": "d5b29eb476_B06_M04_lbedoTransparency_d5b29eb476b1.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d7c8fabb51090a9c2ef9_color",
+    "kind": "color",
+    "family": "H0018",
+    "source": "d7c8fabb51_B06_M01_lbedoTransparency_d7c8fabb5109.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d9dfce23f21f2e2f9401_data",
+    "kind": "data",
+    "family": "H0021",
+    "source": "d9dfce23f2_B09_M1_MaskMap_8b074e1ad164_ORM_0d12b5c930bcd7.png",
+    "srgb": false,
+    "compression": "TC_MASKS",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_df2c1bdc7adb13780090_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "df2c1bdc7a_B09_M2_BaseColor_df2c1bdc7adb.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_eab1b02296a8c0bf8845_color",
+    "kind": "color",
+    "family": "H0017",
+    "source": "eab1b02296_B05_M4_BaseColor_eab1b02296a8.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_eb1e0eee0486f5137a3f_color",
+    "kind": "color",
+    "family": "H0021",
+    "source": "eb1e0eee04_B09_M3_BaseColor_eb1e0eee0486.png",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_f846884d5fcda405ddf5_color",
+    "kind": "color",
+    "family": "H0927",
+    "source": "f846884d5f_Arab_x27_Diffuse_Map_f846884d5fcd.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ff8c5c3c91f24a5ef80e_color",
+    "kind": "color",
+    "family": "H0917",
+    "source": "ff8c5c3c91_Arab_x15_Diffuse_Map_ff8c5c3c91f2.jpg",
+    "srgb": true,
+    "compression": "TC_DEFAULT",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "JPEG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": true
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_0e6e88d133c99edab35d_NormalRGB",
+    "kind": "normal",
+    "family": "H0021",
+    "source": "0e6e88d133_B09_Cloth_Normal_0e6e88d133c9.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_37c693da55784973ffed_NormalRGB",
+    "kind": "normal",
+    "family": "H0018",
+    "source": "37c693da55_B06_M04_Normal_37c693da5578.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_3cbef5c4afa734094f34_NormalRGB",
+    "kind": "normal",
+    "family": "H0017",
+    "source": "3cbef5c4af_B05_cloths_Normal_3cbef5c4afa7.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_41a265da6b874e13aaf1_NormalRGB",
+    "kind": "normal",
+    "family": "H0018",
+    "source": "41a265da6b_B06_M03_Normal_41a265da6b87.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_525c4f4840834d38c71c_NormalRGB",
+    "kind": "normal",
+    "family": "H0019",
+    "source": "525c4f4840_B07_M02_Normal_525c4f484083.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_563ef62840e0d4cd7ee7_NormalRGB",
+    "kind": "normal",
+    "family": "H0017",
+    "source": "563ef62840_B05_M4_Normal_563ef62840e0.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_5f0ff92852d0f4fc770b_NormalRGB",
+    "kind": "normal",
+    "family": "H0017",
+    "source": "5f0ff92852_B05_Wood_Normal_5f0ff92852d0.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_78ee71067bb77944c9c3_NormalRGB",
+    "kind": "normal",
+    "family": "H0018",
+    "source": "78ee71067b_B06_M01_Normal_78ee71067bb7.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_824bce6ed35393bb8bae_NormalRGB",
+    "kind": "normal",
+    "family": "H0019",
+    "source": "824bce6ed3_B07_M03_Normal_824bce6ed353.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8e8f980064cc7e0112ce_NormalRGB",
+    "kind": "normal",
+    "family": "H0021",
+    "source": "8e8f980064_B09_M2_Normal_8e8f980064cc.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8edd9248e6a779b96632_NormalRGB",
+    "kind": "normal",
+    "family": "H0021",
+    "source": "8edd9248e6_B09_M3_Normal_8edd9248e6a7.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8f521bd0d9e32ed194c8_NormalRGB",
+    "kind": "normal",
+    "family": "H0017",
+    "source": "8f521bd0d9_B05_props_Normal_8f521bd0d9e3.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_aadd9920f9c02920e350_NormalRGB",
+    "kind": "normal",
+    "family": "H0017",
+    "source": "aadd9920f9_B05_M3_Normal_aadd9920f9c0.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_c2330f7b66ffbc940654_NormalRGB",
+    "kind": "normal",
+    "family": "H0021",
+    "source": "c2330f7b66_B09_M1_Normal_c2330f7b66ff.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_d0667724f33f4ad7e2c2_NormalRGB",
+    "kind": "normal",
+    "family": "H0018",
+    "source": "d0667724f3_B06_M02_Normal_d0667724f33f.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_d58d7ec7b773e6bbda33_NormalRGB",
+    "kind": "normal",
+    "family": "H0021",
+    "source": "d58d7ec7b7_B09_stara_Normal_d58d7ec7b773.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_dbd3fefd72f0bb8a1cdb_NormalRGB",
+    "kind": "normal",
+    "family": "H0931",
+    "source": "dbd3fefd72_T_DarkBrickWall_normal_8a8345f5c69c.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_ddcdf4e38bba1a7246be_NormalRGB",
+    "kind": "normal",
+    "family": "H0019",
+    "source": "ddcdf4e38b_B07_M04_Normal_ddcdf4e38bba.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_e1c3f534a999b8d2e1fe_NormalRGB",
+    "kind": "normal",
+    "family": "H0019",
+    "source": "e1c3f534a9_B07_M01_Normal_e1c3f534a999.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 4096,
+    "h": 4096,
+    "bit_depth": 8,
+    "channels": "RGB",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   },
+   {
+    "native": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB",
+    "kind": "normal",
+    "family": "H0930",
+    "source": "f64380cbb2_T_CracksStreet_normal_076f5fec4437.png",
+    "srgb": false,
+    "compression": "TC_VECTOR_DISPLACEMENTMAP",
+    "flip_green": false,
+    "filter": "TF_DEFAULT",
+    "address": "TA_WRAP/TA_WRAP",
+    "format": "PNG",
+    "w": 2048,
+    "h": 2048,
+    "bit_depth": 8,
+    "channels": "RGBA",
+    "matches_adapter_policy": true,
+    "matches_ue_default_convention": false
+   }
+  ],
+  "note_family_field": "family = last family in the request that references this texture; shared textures serve several families",
+  "mismatches": [
+   {
+    "path": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b3c4559d236d5d74fc1_color",
+    "issue": "Color texture uses TC_EDITOR_ICON (UserInterface2D, uncompressed) instead of TC_DEFAULT. The source is a 1274x888 non-power-of-two RGBA PNG. This is the Recovery_RGBA8 case: the adapter now accepts it as is. It is used by M_7e5df697466e78c7c5a3 (H0017 AC front) and M_a9eff272846ae541957c (H0021). The effect is cosmetic (no BC compression, likely no mips or streaming), not a connection cause."
+   },
+   {
+    "path": "20 x /Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_*_NormalRGB",
+    "issue": "These are not TC_NORMALMAP, by design, and the shader decode is correct. Cost: about 1.58 GiB of uncompressed GPU memory including mips for 20 normals (mostly 4096^2). That risks pressure on the streaming pool (blurry mips). Not a connection cause."
+   },
+   {
+    "path": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_f64380cbb2cfca811599_normal",
+    "issue": "Duplicate source: an older shared TC_NORMALMAP (green-flipped) copy of the same file sits next to the modular T_f64380cbb2cfca811599_NormalRGB. The modular materials do not use it. Housekeeping only."
+   }
+  ],
+  "all_texture_uassets_exist": true,
+  "not_measured": [
+   "mip_gen_settings",
+   "LOD group",
+   "never_stream",
+   "compiled platform data/GPU format",
+   "in-memory (vs saved) property values"
+  ]
+ },
+ "q2_materials": {
+  "label": "CODE (adapter material_for) + MEASURED_IMPORTER (MaterialReceipts) + request recipes",
+  "type": "41 standalone UMaterial assets (MaterialFactoryNew), one per recipe hash. There is no kit master, no MaterialInstanceConstant and no parameters. TextureSample nodes have the texture hard-wired, so no parameter is ever bound or left empty.",
+  "parent_chain": "none (each M_* is a base Material)",
+  "nine_stop_dirty_materials": [
+   "M_0944f399a843749db749",
+   "M_09f5e50e9c4203d2d3b2",
+   "M_137eb381e9843126066c",
+   "M_414564f5c9f060c3cb70",
+   "M_7e5df697466e78c7c5a3",
+   "M_889b72fa4da16cf39f50",
+   "M_a93c0c04295da45cc845",
+   "M_b5b215df6458e595bfda",
+   "M_d6c8b66c8065206f9aea"
+  ],
+  "materials": [
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_0944f399a843749db749",
+    "family": "H0017",
+    "source_material": "_wood_Mtl",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3d1032385d34c1902a42_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_6ed0865e36be10f56295_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_5f0ff92852d0f4fc770b_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_09f5e50e9c4203d2d3b2",
+    "family": "H0017",
+    "source_material": "_Building_05_cloths",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4f26796ba8b877ad4c42_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_8c3148849a28d829d284_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_3cbef5c4afa734094f34_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_137731c12db96bc2f772",
+    "family": "H0018",
+    "source_material": "standardSurface9SG",
+    "normal_strength": 0.5600000023841858,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_cbf1c957ef22861eb09b_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d5b29eb476b1e560c6f5_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_37c693da55784973ffed_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_137eb381e9843126066c",
+    "family": "H0017",
+    "source_material": "Airconditioner_inverter_textured:acbody1",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.5309584140777588,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_2c98a6224ef087da7bee_color"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_194fa2264db1fbe3eec8",
+    "family": "H0910",
+    "source_material": "Arab_x8",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_cac16aa1de90a8b97334_color"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_255860fd88109acd288b",
+    "family": "H0927",
+    "source_material": "Arab_x27",
+    "normal_strength": 0.20000000298023224,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_f846884d5fcda405ddf5_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_2b0a320e294b09401789",
+    "family": "H0919",
+    "source_material": "Arab_x17",
+    "normal_strength": 0.03999999910593033,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a9e616ee4f3d42ca48a_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_2c17222f042762592741",
+    "family": "H0021",
+    "source_material": "standard",
+    "normal_strength": 1.0,
+    "two_sided": true,
+    "channels": {
+     "Base Color": [
+      0.5018999576568604,
+      0.5018999576568604,
+      0.5018999576568604,
+      1.0
+     ],
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_304631c18ec20728cc3d",
+    "family": "H0925",
+    "source_material": "Arab_x25",
+    "normal_strength": 0.05999999865889549,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.7279999852180481,
+     "Metallic": 1.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_7b53fd0d5e8a4d1c3cd1_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_3b51ce7815c8c27d835c",
+    "family": "H0930",
+    "source_material": "Arab_x30",
+    "normal_strength": 0.09000000357627869,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ca2a5d170626d2889ec1_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_3d26b37727f84219fcb0",
+    "family": "H0929",
+    "source_material": "Arab_x29",
+    "normal_strength": 0.14000000059604645,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_0edd8ee8c195233d53dd_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_40538a714d724eddf5f3",
+    "family": "H0021",
+    "source_material": "acbody",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.5309584140777588,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_2c98a6224ef087da7bee_color"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_414564f5c9f060c3cb70",
+    "family": "H0017",
+    "source_material": "_building_5_M3",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3daa98cc7ea1c0d6de7c_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_b09f51380ea1fa171f3e_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_aadd9920f9c02920e350_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_555bbd416e20ac7c26ac",
+    "family": "H0019",
+    "source_material": "Mat_003",
+    "normal_strength": 1.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_2623bb25c9bb516f12cc_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_34a3e29f3e8da8377881_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_824bce6ed35393bb8bae_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_59ff3600e65ee92ed281",
+    "family": "H0909",
+    "source_material": "Arab_x7",
+    "normal_strength": 0.25999999046325684,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d3762d0fb840d49e456c_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8",
+    "family": "H0911",
+    "source_material": "Arab_x9",
+    "normal_strength": 0.1599999964237213,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_74776571e64512be37bc",
+    "family": "H0923",
+    "source_material": "Arab_x23",
+    "normal_strength": 0.18000000715255737,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_b2b2ad4ac94c07e3dcb7_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_7e5df697466e78c7c5a3",
+    "family": "H0017",
+    "source_material": "Airconditioner_inverter_textured:Airconditioner_front1",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.3480798006057739,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b3c4559d236d5d74fc1_color"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_8121be2ac296800a2947",
+    "family": "H0918",
+    "source_material": "Arab_x16",
+    "normal_strength": 0.10999999940395355,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_940ba51e094444010bc6_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_866e201467249b8920b4",
+    "family": "H0021",
+    "source_material": "stara",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_155102dc639ea9de18e2_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9965bf1b063129c2f407_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_d58d7ec7b773e6bbda33_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_885a5c2c0fd5da43815c",
+    "family": "H0920",
+    "source_material": "Arab_x18",
+    "normal_strength": 0.4399999976158142,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a13c553b44c69aca29c3_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_889b72fa4da16cf39f50",
+    "family": "H0017",
+    "source_material": "Airconditioner_inverter_textured:standard1",
+    "normal_strength": 1.0,
+    "two_sided": true,
+    "channels": {
+     "Base Color": [
+      0.5018999576568604,
+      0.5018999576568604,
+      0.5018999576568604,
+      1.0
+     ],
+     "Roughness": 0.5309584140777588,
+     "Metallic": 0.5,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_9779acbf85a11b4df9d5",
+    "family": "H0021",
+    "source_material": "Building_09_M1",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_42dc7a7439c528593ff5_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d9dfce23f21f2e2f9401_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_c2330f7b66ffbc940654_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_a93c0c04295da45cc845",
+    "family": "H0017",
+    "source_material": "_lambert2",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_8316d604883d50b587b4_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_91d9c3c4978e8a857fc0_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8f521bd0d9e32ed194c8_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_a9eff272846ae541957c",
+    "family": "H0021",
+    "source_material": "Airconditioner_front",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.3480798006057739,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "flat_constant",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b3c4559d236d5d74fc1_color"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_ad422b748ef80ff9a1e1",
+    "family": "H0018",
+    "source_material": "standardSurface8SG",
+    "normal_strength": 0.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a4cddeb9d819fd3a7d4_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ab69ee812e0a2fdcd753_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_41a265da6b874e13aaf1_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_ae65e76b48763fe2044d",
+    "family": "H0019",
+    "source_material": "Mat_002",
+    "normal_strength": 1.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_16ab4708d3e882b31465_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_c76b332dc14c9bf3e9d5_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_525c4f4840834d38c71c_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_b24cae6ed9c7e25537db",
+    "family": "H0019",
+    "source_material": "Mat_001",
+    "normal_strength": 1.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_1755bbb2b1a2ff463cf4_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_c3eac19be94bed5c7864_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_e1c3f534a999b8d2e1fe_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_b5b215df6458e595bfda",
+    "family": "H0017",
+    "source_material": "_Building_05_props",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_8316d604883d50b587b4_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_91d9c3c4978e8a857fc0_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8f521bd0d9e32ed194c8_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_b68e2d38f002ece83a66",
+    "family": "H0931",
+    "source_material": "Arab_x31",
+    "normal_strength": 0.5099999904632568,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9109c49991a308333fb9_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_dbd3fefd72f0bb8a1cdb_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_bde74c529fea66e84611",
+    "family": "H0021",
+    "source_material": "Building_09_M2",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_3b4e73eb9ec806638c7d_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_df2c1bdc7adb13780090_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8e8f980064cc7e0112ce_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_c3368e8385ed4b7b625d",
+    "family": "H0926",
+    "source_material": "Arab_x26",
+    "normal_strength": 0.27000001072883606,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_bfb08bd33024c5dd2a8c_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_c65bfa0406563d8ef9b7",
+    "family": "H0021",
+    "source_material": "Building_09_M3",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_669633203a450f815f6d_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_eb1e0eee0486f5137a3f_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_8edd9248e6a779b96632_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_cd1dca859cafeb11e20e",
+    "family": "H0921",
+    "source_material": "Arab_x20",
+    "normal_strength": 0.6800000071525574,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_69799f1d2a6b273ed9eb_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_dbd3fefd72f0bb8a1cdb_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_cdee53ee8a3dfe1ecca3",
+    "family": "H0924",
+    "source_material": "Arab_x24",
+    "normal_strength": 0.20999999344348907,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_9aadc3e4f027977c50df_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_d6c8b66c8065206f9aea",
+    "family": "H0017",
+    "source_material": "_Building_5_M4",
+    "normal_strength": 0.6000000238418579,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_6f5c57eba71bef8c799e_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_eab1b02296a8c0bf8845_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_563ef62840e0d4cd7ee7_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_de1dd835442e298c10e9",
+    "family": "H0018",
+    "source_material": "standardSurface5SG",
+    "normal_strength": 2.8399999141693115,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a16fec2d94c975bed447_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_d7c8fabb51090a9c2ef9_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_78ee71067bb77944c9c3_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_df4390a0e81ec499f13f",
+    "family": "H0018",
+    "source_material": "standardSurface6SG",
+    "normal_strength": 2.319999933242798,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_5edf49b89a062ecd7645_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_a07f4340f1e263bec451_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_d0667724f33f4ad7e2c2_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_f39955ce0673cd9613df",
+    "family": "H0019",
+    "source_material": "Mat_004",
+    "normal_strength": 1.0,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4cf1a2cdd0040ca40af1_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_801a53fb45a825e62e51_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_ddcdf4e38bba1a7246be_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_f5e852b10735c477f407",
+    "family": "H0917",
+    "source_material": "Arab_x14",
+    "normal_strength": 0.5199999809265137,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": 0.858578622341156,
+     "Metallic": 0.0,
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_ff8c5c3c91f24a5ef80e_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_dbd3fefd72f0bb8a1cdb_NormalRGB"
+    ],
+    "uasset_exists": true
+   },
+   {
+    "material": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_f8c114f6d594010d9f71",
+    "family": "H0021",
+    "source_material": "Cloth_MTL",
+    "normal_strength": 0.5,
+    "two_sided": false,
+    "channels": {
+     "Base Color": "color.RGB",
+     "Roughness": "data.G",
+     "Metallic": "data.B",
+     "Alpha": 1.0,
+     "Emission Color": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    },
+    "normal": "texture",
+    "textures": [
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_4a4ab7c7a74fa24f0631_data",
+     "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_60d94b56f4ae09eff60f_color",
+     "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_0e6e88d133c99edab35d_NormalRGB"
+    ],
+    "uasset_exists": true
+   }
+  ],
+  "may_look_default": [
+   {
+    "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_889b72fa4da16cf39f50",
+    "why": "Constant grey 0.502, two-sided, no textures. The source \"Airconditioner_inverter_textured:standard1\" is untextured, so this is source-faithful, but it looks like a default material."
+   },
+   {
+    "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_2c17222f042762592741",
+    "why": "Same case: H0021 \"standard\", constant grey, two-sided."
+   }
+  ],
+  "checker_or_compile_errors": {
+   "value": null,
+   "label": "NOT_MEASURED (needs the live editor). recompile_material was called, but no compile-error readback is recorded."
+  }
+ },
+ "q3_slot_mapping": {
+  "label": "MEASURED_IMPORTER (part receipts material_slots) vs MEASURED_FILE SOURCE_BINDINGS.json",
+  "examples": [
+   {
+    "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0910/Modules/SM_H0910_Ground_SECorner",
+    "slots": [
+     {
+      "slot": 0,
+      "source": "Arab_x8",
+      "native": "Arab_x8",
+      "material": "M_194fa2264db1fbe3eec8",
+      "tris": 171
+     }
+    ]
+   },
+   {
+    "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Ground_SWCorner",
+    "source_slots": 9,
+    "used_source_slots": [
+     2,
+     4
+    ],
+    "slots": [
+     {
+      "slot": 0,
+      "source": "_Building_5_M4",
+      "native": "_Building_5_M4",
+      "material": "M_d6c8b66c8065206f9aea",
+      "tris": 634
+     },
+     {
+      "slot": 1,
+      "source": "_lambert2",
+      "native": "_lambert2",
+      "material": "M_a93c0c04295da45cc845",
+      "tris": 696
+     }
+    ]
+   },
+   {
+    "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0018/Modules/SM_H0018_Tier03_EastFacade",
+    "slots": [
+     {
+      "slot": 0,
+      "source": "standardSurface9SG",
+      "material": "M_137731c12db96bc2f772",
+      "tris": 859
+     },
+     {
+      "slot": 1,
+      "source": "standardSurface5SG",
+      "material": "M_de1dd835442e298c10e9",
+      "tris": 532
+     },
+     {
+      "slot": 2,
+      "source": "standardSurface6SG",
+      "material": "M_df4390a0e81ec499f13f",
+      "tris": 605
+     },
+     {
+      "slot": 3,
+      "source": "standardSurface8SG",
+      "material": "M_ad422b748ef80ff9a1e1",
+      "tris": 358
+     }
+    ]
+   }
+  ],
+  "sweep": "All 603 saved part receipts were checked (final set after completion; 1019 native slots). Every native slot is bound to a /Prepared/Modular/Dependencies/Materials/M_* material; 0 are WorldGridMaterial or None. Per-slot face counts were asserted equal to the source. Unused source slots are dropped (746). The only name differences come from FBX namespace stripping (e.g. \"acbody1\" vs \"Airconditioner_inverter_textured:acbody1\"), matched by suffix as intended.",
+  "unbound_risk": {
+   "parts": [
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier03_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier04_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_EastFacade",
+    "/Game/Project/Shared/ModelBank/Prepared/Modular/H0019/Modules/SM_H0019_Roof_EastFacade"
+   ],
+   "label": "INFERRED: these meshes failed the triangle guard (adapter v004 line 259) before mesh.set_material (line 278). They are dirty, unsaved, and almost certainly still carry import-default slots (WorldGrid/default). Not measured live."
+  }
+ },
+ "q4_normal_strength": {
+  "finding": "The modular importer does NOT ignore normal strength. That blocker (STOP_REPORT 12:35Z, repeated in USER_STOP_STATUS_REPORT) describes import_prepared.material_for (Staging/BankIntegration_2026-10-04/import_prepared.py lines 116-118), which wires the sampled normal RGB straight to MP_NORMAL. Modular materials use the adapter's own material_for (modular_native_adapter_v004.py lines 153-165, unchanged since v001). It decodes n=(2r-1, 1-2g, 2b-1) with one OpenGL-to-DirectX green flip, scales by (s, s, clamp(s,0,1)), adds (0, 0, 1-clamp(s,0,1)), normalizes and connects the result to MP_NORMAL. That equals Blender's normalize((nx*s, ny*s, 1+(nz-1)*clamp(s,0,1))).",
+  "strengths_seen": "0.0 to 2.84 (e.g. H0018 M_de1dd835442e298c10e9 = 2.84 and M_df4390a0e81ec499f13f = 2.32; H0919 M_2b0a320e294b09401789 = 0.04). M_ad422b748ef80ff9a1e1 has strength 0 with a bound normal map, so it renders flat, as in Blender.",
+  "label": "CODE + MEASURED_IMPORTER (MaterialReceipts normal_strength; ModularNormalStrength metadata tag written)",
+  "visual_verification": "NOT_MEASURED"
+ },
+ "q5_consumer": {
+  "reachable": false,
+  "evidence": [
+   "MEASURED_FILE: the production HDA package Content/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank.uasset (sha256 357eeac6...) equals its pre-change backup in Staging/ModularConstruction_2026-10-05/Bindings/NATIVE_BINDING_PLAN.json, so the derivative was never imported.",
+   "MEASURED_FILE: the production hdalc (61303c15...) and geocity_city_module.py (e67b6e15...) equal the derivative BUILD_RECEIPT base hashes. The production module has 0 \"source_family\" references, and its Courtyard lane is hard-wired to /Game/ModularCourtyard Meshes/Mats paths (e.g. lines 1316, 4278-4282, 5870-5874).",
+   "MEASURED_FILE: both AREA_PROFILE.json files (PermanentIntegration b1648e34..., GazaShujaiyaIntegration 00877b7c...) equal their backups and contain 0 \"source_family_registry_ref\".",
+   "MEASURED_FILE: the complete-family lane exists only in the unpromoted derivative Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank/revisions/20261005_modular_source_families_v001 (hdalc b5ab917a..., module 616e2512..., 95 source_family references). Its BUILD_RECEIPT records ordinary_selection_enabled=false and official_engine_native_output=false.",
+   "MEASURED_FILE: the normalizer/registry input is FAMILY.json. It existed only for H0910/H0911 during the run; finalize_resume_v004.py wrote all 20 at 14:47:48Z (18 complete; H0017 and H0019 incomplete). No consumer has consumed them yet.",
+   "MEASURED_FILE: every part receipt has procedural_eligible=false; every family in the request has enabled=false and explicit_hold=true.",
+   "MEASURED_FILE (CODE): Staging/ModularConstruction_2026-10-05/ContractAudit/normalize_bank_readback.py APPROVED_REQUESTS (lines 15-20) accepts only request 8a253d5b... (first 34 parts) and f738f677... (v002). The 18 new FAMILY.json files and all 569 new part receipts carry request_sha256 1fa6654d... (v003), so APPROVED_REQUESTS[request_sha] (line 52) fails for them. As written, the registry cannot be built for 18 of 20 families."
+  ],
+  "consumer_offset_field": "CODE: the unpromoted consumer applies source assembly_translation_m through its basis matrix (derivative geocity_city_module.py line 6395; RETAINED_SOURCE_FAMILY_APPEND.py line 312). This is equivalent to the receipt field native_assembly_translation_cm."
+ },
+ "q6_screenshot": {
+  "taken": false,
+  "reason": "A read-only capture is impossible without spawning an actor, moving a camera or opening an asset editor. All are excluded, and another operator was writing to the editor."
+ },
+ "post_completion_state": {
+  "label": "MEASURED_FILE at about 14:49Z",
+  "resume_result": "COMPLETE_WITH_REPAIR_QUEUE: 34 reused + 569 imported/saved + 6 failed = 609",
+  "lease": "2026-10-05T14:47:48Z OWNER=CODEX_BANK_INTEGRATION activation=IMPORT_COMPLETE_REPAIR_QUEUE native_authorized_now=false running_imports=0",
+  "family_receipts": "FAMILY.json written for all 20 at 14:47:48Z (finalize_resume_v004.py). 18 have complete_native_import=true; H0017 is 58/63 and H0019 is 56/57 (false)",
+  "consumer_hashes_rechecked": "Production HDA uasset, production module and both AREA_PROFILE hashes are unchanged after completion"
+ },
+ "connection_geometry": {
+  "label": "MEASURED_IMPORTER (receipt bounds_cm + basis_readback.native_assembly_translation_cm)",
+  "finding": "Each native mesh keeps its source-object origin as its pivot (bake_pivot_in_vertex=false). Every part needs its own translation (14/14 distinct in H0910, 58/58 in H0017). With the translations applied, parts abut exactly: H0017 Ground_Core x-max 299.1 = Ground_EastFacade x-min 299.1, and NECorner y-max -628.7 = EastFacade y-min -628.7. Placed at one common origin they overlap and do not join. The source-to-native basis is [[1,0,0],[0,-1,0],[0,0,1]] (handedness Y flip, the same in every family). UV0 matches with V = 1-v. No part has collision (0 simple collision on all), and each has 1 LOD.",
+  "scope_limit": "MEASURED_FILE: all 603 receipts have full_geometry_or_uv_equivalence=false (UV0 checked at probe points only), and the 8 extension-band repeat seams are unqualified. The findings cover placement and assembly. Visible texture or seam continuity across part boundaries is NOT measured."
+ },
+ "failures": [
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier01_WestFacade",
+   "error": "('triangle_count_changed', 'SM_H0017_Tier01_WestFacade', 65855, {65856})"
+  },
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_WestFacade",
+   "error": "('triangle_count_changed', 'SM_H0017_Tier05_WestFacade', 16680, {16681})"
+  },
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier03_EastFacade",
+   "error": "('triangle_count_changed', 'SM_H0017_Tier03_EastFacade', 97417, {97418})"
+  },
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier04_EastFacade",
+   "error": "('triangle_count_changed', 'SM_H0017_Tier04_EastFacade', 69336, {69337})"
+  },
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0017/Modules/SM_H0017_Tier05_EastFacade",
+   "error": "('triangle_count_changed', 'SM_H0017_Tier05_EastFacade', 21197, {21198})"
+  },
+  {
+   "part": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0019/Modules/SM_H0019_Roof_EastFacade",
+   "error": "('triangle_count_changed', 'SM_H0019_Roof_EastFacade', 2700, {2701})"
+  }
+ ],
+ "failure_pattern": "MEASURED_FILE: in all 6 failures the native triangle count is exactly source - 1. Only 2 request parts have a roundtrip allowance. H0017 (5 failed) and H0019 (1 failed) cannot be complete families until these are repaired.",
+ "root_causes_ranked": [
+  {
+   "rank": 1,
+   "class": "c_missing_consumer",
+   "summary": "No production consumer branch reaches any of the 20 families. The derivative HDA is unpromoted, the profiles are unbound, the normalizer rejects the v003 request lineage (1fa6654d) used by 18 families, and the H0017/H0019 FAMILY receipts are incomplete."
+  },
+  {
+   "rank": 2,
+   "class": "c_consumer_placement_frame",
+   "summary": "Parts connect only when each one is placed with its own native_assembly_translation_cm. Nothing in production applies these, so manual or Courtyard placement cannot join them."
+  },
+  {
+   "rank": 3,
+   "class": "b_partial",
+   "summary": "6 meshes failed an off-by-one triangle guard and are unsaved with default slots. This blocks complete-family status for H0017 and H0019."
+  }
+ ],
+ "verdict": "Mainly (c): the missing consumer branch, including the per-part assembly placement the consumer must apply. (b) applies only to the 6 failed, unsaved meshes. (a) Texture settings are not a cause; the only texture findings are one cosmetic TC_EDITOR_ICON texture and the memory cost of the normal maps.",
+ "proposed_fixes_not_executed": [
+  "Consumer: after manager review, add the v003 request 1fa6654d... (NATIVE_IMPORT_REQUEST_v003.json) to APPROVED_REQUESTS in normalize_bank_readback.py. Root then normalizes and binds the 18 complete FAMILY.json receipts into the registry. The manager promotes the dated derivative HDA into the canonical native HDA and merges building_assembly_contract.source_family_registry_ref into both profiles.",
+  "Placement: this is already implemented in the unpromoted consumer (source assembly_translation_m times the basis matrix). For a manual check, place each part at its native_assembly_translation_cm instead of at a common origin.",
+  "Failures: for the 6 parts, add the measured native triangle count as an allowed roundtrip value only after a per-slot face-count check (the existing roundtrip_slot_triangle_counts mechanism). Then reimport in place, which makes set_material run, and save.",
+  "Optional: set T_3b3c4559d236d5d74fc1_color to TC_DEFAULT (shared texture; needs its owner). Consider TC_BC7 with sRGB off for the NormalRGB textures to keep the exact shader decode at a quarter of the memory."
+ ],
+ "nothing_executed": true,
+ "files_written": [
+  "INSPECTION.json",
+  "INSPECTION.md"
+ ]
+}

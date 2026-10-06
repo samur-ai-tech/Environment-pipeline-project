@@ -1,0 +1,29 @@
+{
+  "schema": "environmentpipeline.manager_preserved_restart_activation.v1",
+  "utc": "2026-10-04T16:12:09.3272604Z",
+  "approved": true,
+  "scope": "NO_SAVE_PRESERVED_RESTART",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+  "pid": 32508,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "request_sha256": "a4cb46efd41bbdf3c620566291b7e13f07eceb1f17ce7e4d4a8fdb51083137f8",
+  "script_sha256": "abcba15e9fc346aef1c504df596edaa3a6b1fa7907d5b52b4f074687bea93413",
+  "exact_original_buffers_to_discard": [
+    "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G",
+    "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G",
+    "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+  ],
+  "recovery_receipt_sha256": "e8efbf4f6e4f4b3f82f646fb623078e1814b4f521547882814c08160ebed9041",
+  "recovery_copies_retained": true,
+  "ordinary_generation_authorized": false,
+  "save_authorized": false,
+  "forced_termination_authorized": false,
+  "review": "Root reviewed exact shutdown source;41pins and9protected hashes match;3recoveries each disk-deserialized with distinct native package/object identity and full property/geometry/material equality; root independently verified mesh parsed properties after path remap with no orphan exclusions",
+  "post_exit_required": [
+    "Confirm PID32508 exited and no UnrealEditor exists",
+    "Verify every protected original/map/catalog/profile/source hash and all84 saved imports plus3recovery package hashes",
+    "Manager publishes OWNER=NONE after actual exit; no competing editor"
+  ],
+  "fresh_start_authorization": "Separately gated on actual post-exit hashes and root OWNER=NONE; reviewed original-map paused launcher only"
+}

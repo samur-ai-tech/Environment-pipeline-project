@@ -1,0 +1,160 @@
+{
+  "status": "ALIGNED_OFFLINE_PRODUCER_CONSUMER_PASS_NOT_ACTIVE",
+  "schema_version": "v2 profile + semantic owner environmentpipeline.semantic_consumer.v2 artifact",
+  "profile_patch": "PROFILE_PATCH_PROPOSAL.json",
+  "source_owner_contract": {
+    "status": "ADDITIVE_CLASSIFIED_CONSUMER_PACKAGE_SAVED_NOT_ACTIVE",
+    "package": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\Iran_38196167_46086167_4km\\semantic_acquisitions\\20261004T155016073136Z_consumer_v2\\city_source_v1.json",
+    "package_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+    "contract": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\Iran_38196167_46086167_4km\\semantic_acquisitions\\20261004T155016073136Z_consumer_v2\\semantic_consumer_contract.json",
+    "contract_sha256": "e7957ed95cf84170c5f77e23f177bee9db940f1381e21521918656a0a2e0b761",
+    "original_package": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\Iran_38196167_46086167_4km\\semantic_acquisitions\\20261004T104517213997Z\\city_source_v1.json",
+    "original_sha256_unchanged": "20e94b92d782a8ca3b11773d360361bdc52051397c89c9c46b69a20f9c220cba",
+    "water_components": [
+      {
+        "id": "worldcover_water_cells_129_9",
+        "cells_row_north_col_east": [
+          [
+            129,
+            9
+          ],
+          [
+            129,
+            10
+          ],
+          [
+            130,
+            9
+          ],
+          [
+            130,
+            10
+          ],
+          [
+            130,
+            11
+          ],
+          [
+            130,
+            12
+          ],
+          [
+            131,
+            9
+          ],
+          [
+            131,
+            10
+          ],
+          [
+            131,
+            11
+          ]
+        ],
+        "cell_count": 9,
+        "classified_grid_area_m2": 900.0,
+        "example_HDA_x_z_m": [
+          -1925.0,
+          725.0
+        ],
+        "geometry_kind": "categorical_pixel_footprints_only",
+        "water_level_m": null,
+        "shoreline_is_surveyed": false
+      }
+    ],
+    "active_profiles_changed": false,
+    "no_new_source_observation": "Original classified raster/OSM/geographic role files unchanged; added consumer policy only"
+  },
+  "config_timing": {
+    "before_cook": "Validate exact source package, semantic policy and class grid bytes. Declare potential supported shader target names only. No invented emitted counts.",
+    "after_cook": "Require receipt.semantic_surface_contract object, canonical semantic_surface_contract_sha256, semantic_surface_complete=true, semantic_grass_provider, semantic_nonweight_layers, semantic_hda_understory_suppressed=true for native provider, actual nonbuilding_instances ledger and semantic_runtime_binding_sha256."
+  },
+  "geometry_detail_to_catalog": "Producer detail semantic_surface_contract_json should be parsed unchanged into catalog receipt semantic_surface_contract. Canonical digest uses json.dumps(sort_keys=True,separators=(comma,colon),allow_nan=False) UTF8 SHA256.",
+  "output_contract_required": {
+    "schema": "environmentpipeline.semantic_landscape_contract.v1",
+    "identities": [
+      "area_id",
+      "source_package_sha256",
+      "class_grid_sha256",
+      "policy_sha256 (owner consumer-contract file SHA)"
+    ],
+    "fixed_fields": {
+      "coordinate_frame": "houdini_x_east_y_up_z_south_to_unreal_cm_x_z_y",
+      "coverage_scope": "emitted_landscape_including_border",
+      "vegetation_provider": "native_landscape_grass",
+      "grass_layer": "GC_GrassEligible",
+      "grass_allowed_classes": [
+        10,
+        20,
+        30
+      ],
+      "water_mode": "classification_surface"
+    },
+    "class_targets": "Exact owner class_material_targets",
+    "class_counts": "All12 classes explicit, whole emitted classified lattice including border; count0 valid",
+    "role_layers": {
+      "RoadBed": "Dirt_Path",
+      "BuildingPad": "Sand_Path",
+      "Steep": "Sand_02"
+    },
+    "layers": "Each mapped class/role plus GC_GrassEligible, GC_WaterCandidate and PB_Custom_Ground_R/G/B. {kind:weight|mask|constant,state:painted|zero|absent,nonzero_sample_count:int; constants value:float}. Masks always emitted, including zero. All aux nonweight.",
+    "probes": "Unique {id,hda_location_m:[east,up,south],source_class_id:optional int,tags:[class:<code>|role:RoadBed|role:BuildingPad|role:Steep|grass:positive|grass:excluded],expected_weights:{each emitted layer: scalar or [lo,hi]}}. Intervals max width.02; fixed additional native tolerance4/255. Require every nonzero source class/role and every painted layer a known positive sample. Excluded class and water/road/pad/steep probes test Grass mask. Native actual identity HDA transform must pass before fixed cm conversion.",
+    "water_diagnostic": "GC_WaterCandidate is raw historical class80 diagnostic; excluded class-cell interior probes expect0/1. Not included in surface normalization. PB_Custom_Ground colour carries priority-masked display, not water geometry."
+  },
+  "runtime_binding": {
+    "parameter": "semantic_runtime_binding_json",
+    "default": "empty; HDA refuses native Grass suppression without valid measured preparation token",
+    "schema": "environmentpipeline.semantic_runtime_binding.v1",
+    "returned_by": "prepare(run) result semantic_runtime_binding",
+    "exact_owner_requested_fields": [
+      "area_id",
+      "source_package_sha256",
+      "consumer_contract_sha256",
+      "landscape_material",
+      "provider",
+      "mask_layer",
+      "grass_mesh_paths",
+      "coverage",
+      "density_per_10m2",
+      "material_layer_names",
+      "native_binding_receipt_sha256",
+      "catalog_sha256"
+    ],
+    "additional_fields": [
+      "grass_type",
+      "nonweight_layer_names",
+      "materials_by_mesh",
+      "material_graph_prepared",
+      "canonical_area_eligibility_verified",
+      "output_weight_readback_verified=false",
+      "visible_lit_grass_verified=false",
+      "grass_bindings_verified"
+    ],
+    "receipt": "prepare also returns native_binding_receipt, whose canonical digest matches native_binding_receipt_sha256. This is measured metadata, not authorization or native output proof.",
+    "revalidation": "verify_landscape re-reads source, graph/type/material/coverage/area eligibility and reconstructs same token; requires HDA echo digest semantic_runtime_binding_sha256."
+  },
+  "lifecycle_owner_required_patch": [
+    "Before generation, validate promoted same-type HDA includes new semantic_runtime_binding_json parm; missing parameter fails before authoring. No hot reload.",
+    "After prepare returns, set strings[semantic_runtime_binding_json] to canonical JSON token using existing public setter/readback; do not synthesize token from profile. Gaza path omits the new parm.",
+    "Run cooked/pre-Bake/after-Bake semantic readback whenever landscape_semantics exists. This bounded receiver now rejects any provider other than the pinned native_landscape_grass source policy before native preparation. No unsupported disabled/HDA branch is advertised. Preserve current120s bounded readiness and all complete-output gates.",
+    "Preserve measured preparation token/readback and actual HDA surface contract in success/failure receipts. No bypass for sparse class80 or zero-expected roles.",
+    "For semantic inspect_near_view use receipt=current complete catalog receipt; legacy call remains compatible."
+  ],
+  "active_source_profiles_native_changed": false,
+  "final_decision": "Rich v1 producer output and actual producer receipt attachment pass actual staged consumer contract/token/readback shape checks. See PRODUCER_INTEGRATION_RESULT.json. RGB source comparison tolerates float32 storage roundoff 1e-7; native paint tolerance remains4/255.",
+  "prepare_return_keys": [
+    "enabled",
+    "provider",
+    "semantic_contract_sha256",
+    "ground_layer",
+    "coverage_readback",
+    "coverage_setter_result",
+    "named_area_packages",
+    "shader_readback",
+    "source_identity",
+    "semantic_runtime_binding",
+    "native_binding_receipt",
+    "bank_eligibility_changed",
+    "visible_lit_grass_verified"
+  ]
+}

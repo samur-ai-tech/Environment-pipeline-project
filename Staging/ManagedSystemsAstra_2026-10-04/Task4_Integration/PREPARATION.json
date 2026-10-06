@@ -1,0 +1,191 @@
+{
+  "schema": "environmentpipeline.managed_systems.task4_preparation.v1",
+  "date_local": "2026-10-04",
+  "timezone": "Asia/Jerusalem",
+  "task": "task4",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "status": "SUCCESSOR_CONTINUATION_PREPARED_NATIVE_INACTIVE",
+  "preparation_complete": true,
+  "native_activation_ready": false,
+  "writable_scope": "Staging/ManagedSystemsAstra_2026-10-04/Task4_Integration/* documentation only",
+  "evidence": {
+    "authoritative_stop": "Staging/SystemCompletion_2026-10-04/STOP_HANDOFF.json",
+    "local_disk_reconciliation": "DISK_RECONCILIATION.json",
+    "procedure": "ORDINARY_OPERATION.txt",
+    "precedence": "Specific stop, crash and native receipts supersede predecessor RESULT.txt and historical status prose.",
+    "observed_this_task": "Filesystem hashes, exact saved ledgers, installed configuration metadata, source text and OS process inventory only. No Unreal/Houdini API, module import, graph evaluation or UI interaction.",
+    "native_state_limit": "See PREFLIGHT_NATIVE.json UTC: actual fresh PID5368 clean and paused, all five native policy flags false in both views, no active runs, wrapper source matches. Both Landscapes persist; second actor ownership cannot be resolved by current protected-property API."
+  },
+  "reconciliation": {
+    "original_map_hashes_match_stop": true,
+    "saved_grass_material_asset_hashes_match_stop": 3,
+    "shujaiya_last_success_baked_actors": 42,
+    "shujaiya_prior_successful_road_actors": 136,
+    "shujaiya_saved_failed_generation": "20261003T203730573110",
+    "shujaiya_saved_failed_road_actors": 132,
+    "shujaiya_recorded_total_tagged_road_actors": 268,
+    "preserved_unvalidated_mesh_packages": 87,
+    "preserved_mesh_files_verified_present_and_hashed": 87,
+    "rimal_last_success_baked_actors": 43,
+    "rimal_prior_successful_road_actors": 68,
+    "rimal_area_ground_child_exists": false,
+    "crashed_20261004_road_generation": "20261004T121315605561",
+    "crashed_transaction_resumable": false,
+    "new_crashed_preset_files_present": 0,
+    "saved_landscape_overlap": "Two exact actors are listed in DISK_RECONCILIATION.json. Only GazaShujaiya_landscape is present in LAST_SUCCESSFUL_WORKFLOW_STATE.baked_actor_paths. The suffixed GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape requires explicit loaded ownership/reference reconciliation before scoped replacement.",
+    "crash_assessment": "PID30548 Landscape/RenderCore access violation is documented. Immediate native patch activity suggests a contribution but does not prove root cause or that a config repair resolves it."
+  },
+  "activation_dependencies": [
+    "Manager explicitly activates task4, specifies current manager/task identity and actual sole-PID lease; historical OWNER=NONE release is insufficient.",
+    "Task1, task2 and task3 deliver final frozen source hashes and installed API contracts; manager reconciles shared interfaces and profile fields.",
+    "Manager-approved fresh startup includes init, all runtime modules, launcher, manifest, effective configuration inputs and both profile hashes. No source hot reload.",
+    "Manager settles the released PID27188 clean shutdown/fresh-start sequence; task4 may perform it only under explicit activation.",
+    "Effective RoadBLDRuntimeSettings default object returns all five required flags false before ordinary generation; missing/inaccessible flags fail closed.",
+    "Exact two-Landscape and prior successful/failed actor ownership and reference contract is approved; complete new output precedes scoped retirement.",
+    "Task1 supplies an approved managed-lease/menu transition and runtime profile write allowlist; task4 does not improvise a lease release or profile rewrite."
+  ],
+  "required_native_terrain_policy": {
+    "native_class": "unreal.RoadBLDRuntimeSettings",
+    "read": "unreal.get_default_object(unreal.RoadBLDRuntimeSettings), then supported get_editor_property for each exact flag; retain raw values and class/object path in receipt",
+    "expected": {
+      "bEnableIntersectionLandscapePatch": false,
+      "bEnableIntersectionLandscapeVisibilityHole": false,
+      "bEnableRoadLandscapePaint": false,
+      "bUseRoadLandscapeHeightPatch": false,
+      "bAutoCreatePaintLayerInfo": false
+    },
+    "installed_domain_evidence": "Plugins/RoadBLD/Intermediate/Build/Win64/UnrealEditor/Inc/RoadBLDRuntime/UHT/RoadBLDRuntimeSettings.gen.cpp ClassParams declares RoadBLD; plugin Config/DefaultRoadBLD.ini enables all five.",
+    "stop_readback": "All five true despite project Config/DefaultEngine.ini false entries.",
+    "required_config_review": "Manager explicitly assigned Config/DefaultRoadBLD.ini to task2. Task4 read the project file and confirmed all five false entries. Task2/manager must still reconcile generated/user and launch overrides and seal the final config. Effective default-object readback remains mandatory after activation and fresh startup. Vendor config remains outside mutation scope."
+  },
+  "owner_interface_requests": [
+    {
+      "id": "T4-LIFECYCLE-01",
+      "owner": "task1 + manager",
+      "request": "Replace predecessor startup identity and specify managed actual-PID lease to registered-menu transition. Baseline launch_editor.ps1 stamps CODEX_SYSTEM_COMPLETION/old manager, while generate_current_area accepts only OWNER=NONE. Resolve in sealed source; do not make task4 fake a release.",
+      "review_status": "SOURCE_FROZEN_MANAGER_REVIEWED_NATIVE_GENERATION_NOT_RUN"
+    },
+    {
+      "id": "T4-LIFECYCLE-02",
+      "owner": "task1 + manager",
+      "request": "Provide exact saved extra-Landscape ownership reconciliation before operation. Successful baked ledger contains only GazaShujaiya_landscape; neither labels nor class/count alone authorize retirement of the other saved actor. Preserve unknown actors and stop if unmatched.",
+      "review_status": "NATIVE_BLOCKER_PROTECTED_LANDSCAPE_PROPERTY"
+    },
+    {
+      "id": "T4-ROADS-01",
+      "owner": "task2 + manager",
+      "request": "Seal correct effective config and native preflight. Preserve 132 failed actor paths and 87 package hashes independently of overwritten crash state. Baseline commit copies retained_failed_generations into retired_failed_generations then empties the former before constructing unvalidated_previous_mesh_packages_preserved, producing an empty preservation receipt; correct the ledger reporting without deleting packages.",
+      "review_status": "CONFIG_NATIVE_VERIFIED_LEDGER_FIX_SOURCE_FROZEN_GENERATION_NOT_RUN"
+    },
+    {
+      "id": "T4-PROFILE-01",
+      "owner": "manager + task1 + task3",
+      "request": "Approve exact runtime-owned profile fields versus manager source configuration. Baseline ordinary finish_save rewrites profile road_provider, road_provider_contract and roadbld_workflow.status using its in-memory profile. Ensure concurrent manager/bank fields cannot be overwritten. Record before/after field diff and hashes. Task4 requests no direct field patch now.",
+      "review_status": "SOURCE_FROZEN_MANAGER_REVIEWED_NATIVE_GENERATION_NOT_RUN"
+    },
+    {
+      "id": "T4-GROUND-01",
+      "owner": "task3 + task1",
+      "request": "Supply final supported bounded paint-readiness result and its lifecycle consumer contract; provide deterministic relevant-layer locations/exclusions and actual grass cache inspection procedure. Baseline ground_paint_weight_observed only proves sampled Ground, not all four layers, geographic land cover or visible Grass.",
+      "review_status": "SOURCE_FROZEN_MANAGER_REVIEWED_NATIVE_GENERATION_NOT_RUN"
+    }
+  ],
+  "operation_order": [
+    "Explicit activation and fresh sealed Shujaiya startup/preflight",
+    "Registered Tools > GeoCity: Generate / Regenerate Current Area in original Shujaiya",
+    "Complete-output gates, exact scoped replacement, named dependency/map persistence; measured geometry/material/grass and Lit views",
+    "Fresh-process Shujaiya reopen with cook paused; compare stable saved identities before any generation",
+    "Second ordinary Shujaiya generation; semantic identity comparison, no duplicate growth, named saves and persistence verification",
+    "Same sequence in original Rimal under reviewed map/PID lease transitions",
+    "Clean paused release with exact saved hashes, callbacks/dirty readback, remaining limits and acceptance status"
+  ],
+  "completion_states": {
+    "source_implementation": "All source owners frozen; manager review/seal passed; native Landscape ownership API blocker found",
+    "actual_native_operation_this_task": "Shujaiya ordinary run1 reached roads; failed exact Landscape sampler gate before Bake/map save",
+    "visible_result_this_task": "NOT_RUN",
+    "named_persistence_this_task": "Six partial dependency saves recorded; no new map/road delivery",
+    "fresh_process_reopen_this_task": "NOT_RUN",
+    "ordinary_regeneration_this_task": "NOT_RUN",
+    "user_acceptance": "NOT_GRANTED"
+  },
+  "manager_review_update": {
+    "recorded_utc": "2026-10-04T12:42:32.861161Z",
+    "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+    "decision": "Preparation reviewed; remain native-inactive pending final contracts and safeguards",
+    "task1": "Assigned launcher/menu identity, second saved Landscape accounting and runtime profile preservation",
+    "task2": "Explicit ownership of Config/DefaultRoadBLD.ini confirmed; preservation-ledger finding under review",
+    "task3": "Tightening full Grass settings and normalized paint/exclusion/readiness checks",
+    "config_disk_observation": {
+      "path": "Config/DefaultRoadBLD.ini",
+      "sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+      "all_five_false_entries_present": true,
+      "effective_native_readback": "NOT_RUN",
+      "native_crash_resolution": "UNPROVED"
+    },
+    "native_activation_issued": false
+  },
+  "inspection_result": {
+    "receipt": "PREFLIGHT.json",
+    "native_receipt": "PREFLIGHT_NATIVE.json",
+    "actual_pid": 5368,
+    "lease_activation": "AWAITING_MANAGER_ACTUAL_PID",
+    "generation_authorized": false,
+    "all_five_flags_false_in_CDO_and_native_Get": true,
+    "sealed_bound_modules": 12,
+    "dirty_maps": [],
+    "dirty_content": [],
+    "source_owner_blocker": "task1: protected Landscape property on all five official HoudiniLandscapeTargetLayerOutput objects prevents extra saved Landscape ownership readback",
+    "preserved_candidate_hashes": 87,
+    "exact_prior_road_path_union_matches": true
+  },
+  "final_inspection_handoff": "INSPECTION_HANDOFF.json",
+  "landscape_export_diagnostic": {
+    "receipt": "LANDSCAPE_EXPORT_DIAGNOSTIC.json",
+    "exported_exact_objects": 5,
+    "all_exports_succeeded": true,
+    "all_refs_resolve_to_exact_second_saved_landscape": true,
+    "both_saved_landscapes_accounted_for_diagnostically": true,
+    "loaded_lifecycle_repaired": false,
+    "source_owner_review_required": true,
+    "generation_authorized": false
+  },
+  "latest_native_preflight": {
+    "receipt": "PREFLIGHT.json",
+    "actual_pid": 33168,
+    "consumer_passed": true,
+    "state_unchanged": true,
+    "all_five_policy_flags_false": true,
+    "unaccounted_landscapes": [],
+    "generation_authorized": false,
+    "manager_generation_lease_pending": true
+  },
+  "current_failure": {
+    "receipt": "SHUJAIYA_RUN1_FAILURE.json",
+    "native_receipt": "SHUJAIYA_RUN1_FAILURE_NATIVE.json",
+    "pid": 33168,
+    "lease_retained": true,
+    "dirty_maps": 1,
+    "dirty_content": 14,
+    "callback_handles": 0,
+    "source_owner": "task2",
+    "new_generation_prohibited_pending_manager_review": true
+  },
+  "bank_turn_handoff": {
+    "receipt": "BANK_TURN_HANDOFF.json",
+    "process_exited": true,
+    "owner": "NONE",
+    "native_inactive": true,
+    "sequence_superseded_by_bank_next": true,
+    "source_failure_still_open": true
+  },
+  "previous_manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "latest_continuation": {
+    "review": "Continuation/REVIEW.json",
+    "manifest": "Continuation/CONTINUATION_MANIFEST.json",
+    "checklist": "Continuation/CONTINUATION.txt",
+    "manifest_sha256": "f12c4b2474d0468030876c41545b2eb685746c84dcb77f6175fb8411e2bd3fc2",
+    "native_execution": "NOT_RUN",
+    "prior_handoff": "BANK_TURN_HANDOFF.json",
+    "boundary": "Bank owns PID32508 inspection-only; no clean bank handoff or task4 activation."
+  }
+}

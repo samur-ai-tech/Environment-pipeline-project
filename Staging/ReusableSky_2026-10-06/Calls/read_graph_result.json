@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "stdout": "",
+  "result": {
+    "update": "(fn UpdateSun ()\n  (bind _compassmesh (Variables|Default|GetCompassMesh))\n  (Utilities|IsValid (Variables|Default|GetDirectionalLight)\n    (:\"Is Valid\"\n      (bind (_hour _minute _second) (Class|SunSky|GetHMSFromSolarTime (Variables|01TimeandSun|GetTimeOfDay)))\n      (bind _sunpositiondata (SunPosition|GetSunPosition (Variables|02DateLocationandNorth|GetLatitude) (Variables|02DateLocationandNorth|GetLongitude) (Variables|02DateLocationandNorth|GetTimeZone) (Class|SunSky|IsDST (Variables|02DateLocationandNorth|GetUseDaylightSavingTime) (Variables|Date|GetDSTStartMonth) (Variables|Date|GetDSTStartDay) (Variables|Date|GetDSTEndMonth) (Variables|Date|GetDSTEndDay) (Variables|Date|GetDSTSwitchHour)) (Variables|02DateLocationandNorth|GetYear) (Variables|02DateLocationandNorth|GetMonth) (Variables|02DateLocationandNorth|GetDay) _hour _minute _second))\n      (Variables|Location|SetElevation (Utilities|Struct|BreakSunPositionData _sunpositiondata))\n      (bind _output_get (Variables|Location|SetCorrectedElevation (Utilities|Struct|BreakSunPositionData _sunpositiondata)))\n      (bind _output_get_1 (Variables|Location|SetAzimuth (Utilities|Struct|BreakSunPositionData _sunpositiondata)))\n      (Transformation|SetWorldRotation (Variables|Default|GetDirectionalLight) (Math|Rotator|MakeRotator 0.0 _output_get (+ _output_get_1 (Variables|02DateLocationandNorth|GetNorthOffset))))\n      (Utilities|IsValid _compassmesh\n        (:\"Is Valid\"\n          (Transformation|SetWorldRotation _compassmesh 0.0 0.0 (+ (Variables|02DateLocationandNorth|GetNorthOffset) 90.000000)))))))\n",
+    "event": "(event EventTick (DeltaSeconds)\n  (bind _month (Variables|02DateLocationandNorth|GetMonth))\n  (bind _returnvalue (Math|Conversions|ToFloat(Integer) _month))\n  (bind _day (Variables|02DateLocationandNorth|GetDay))\n  (bind _returnvalue_1 (Math|Conversions|ToFloat(Integer) _day))\n  (bind _timeofday (Variables|01TimeandSun|GetTimeOfDay))\n  (bind _returnvalue_2 (+ _returnvalue _returnvalue_1))\n  (if (!= (Variables|EventTick|GetHashVal) _returnvalue_2)\n    (Variables|EventTick|SetHashVal _returnvalue_2)\n    (switch Utilities|FlowControl|Switch|SwitchonEComponentMobility (Class|SceneComponent|GetMobility (Variables|Default|GetDirectionalLight))\n      (:Movable\n        (Class|SunSky|UpdateSun)))))\n\n(event EventBeginPlay\n  (Class|SunSky|UpdateSun))\n",
+    "blueprint_editor_methods": [
+      "refresh_all_open_blueprint_editors",
+      "refresh_open_editors_for_blueprint"
+    ],
+    "exporters": [
+      "ObjectExporterT3D"
+    ]
+  }
+}

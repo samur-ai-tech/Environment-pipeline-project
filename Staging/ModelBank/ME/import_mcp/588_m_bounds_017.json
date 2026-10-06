@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 113,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0025_Barrier.SM_H0025_Barrier"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-96.608123779296875,\"y\":-20.375692367553711,\"z\":-0.10250954329967499},\"max\":{\"x\":96.6055908203125,\"y\":20.236059188842773,\"z\":56.563663482666016},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 113,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-96.608123779296875,\"y\":-20.375692367553711,\"z\":-0.10250954329967499},\"max\":{\"x\":96.6055908203125,\"y\":20.236059188842773,\"z\":56.563663482666016},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "native_catalog_asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0902_Slum_k_fbx",
+    "original_blend": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\_Unsorted\\Slum_k_fbx__0902.blend",
+    "original_blend_sha256": "9d364958f05af65c9d1cff3edd0ed519623986f6cc843f12356c7ed81135b165",
+    "source_report": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Reports\\0902.json",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\NativeMaterialCorrections\\H0902\\MaterialResolved.blend",
+    "prepared_blend_sha256": "12eed4af11177047757bb3355e51620c095c0f34df8dde1f9cb61d2ee76b8f3f",
+    "geometry_uv_slotindex_sha256": "935eb56478c0c671b974c566e22edd9431764789cd2bb753a95ac9483cbd40bf",
+    "geometry_uv_material_slot_faces_unchanged": true,
+    "reopened_verified": true,
+    "material_changes": [
+      {
+        "material": "Slum_k",
+        "removed_normal_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Textures\\T_CracksStreet_normal_076f5fec4437.png",
+        "correction": "Disconnect unrelated street-crack normal from building surface; preserve base color and all remaining texture/scalar inputs. Native derivative will use neutral tangent normal (0,0,1).",
+        "reconnect_nodes": [
+          "Normal Map",
+          "Principled BSDF"
+        ]
+      }
+    ],
+    "source_material_preview": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\NativeMaterialCorrections\\H0902\\MaterialResolved.png",
+    "native_material_applied": false,
+    "enabled": false,
+    "reason": "Historical native pixels showed unrelated street-crack relief over complete building facade; exact source graph identifies the incorrect normal binding. No replacement texture is guessed."
+  },
+  {
+    "native_catalog_asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0016_Building_03",
+    "original_blend": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\Building 03__0016.blend",
+    "original_blend_sha256": "320b3a0dba76de291099810670af8965454d78a06a9d5c4306742895de32f82c",
+    "source_report": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Reports\\0016.json",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\NativeMaterialCorrections\\H0016\\MaterialResolved.blend",
+    "prepared_blend_sha256": "6c08193f7b9d094ad551ad014a1ee2909ace9b3bdbb0260a700817984748af81",
+    "geometry_uv_slotindex_sha256": "a97194823cca48bc891f142885b5bb893951db6fab93248fcdaeb3fec35bffd0",
+    "geometry_uv_material_slot_faces_unchanged": true,
+    "reopened_verified": true,
+    "material_changes": [
+      {
+        "material": "Building_03_001_MTL",
+        "removed_normal_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Textures\\T_CracksStreet_normal_076f5fec4437.png",
+        "correction": "Disconnect unrelated street-crack normal from building surface; preserve base color and all remaining texture/scalar inputs. Native derivative will use neutral tangent normal (0,0,1).",
+        "reconnect_nodes": [
+          "Normal Map",
+          "Principled BSDF"
+        ]
+      }
+    ],
+    "source_material_preview": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\NativeMaterialCorrections\\H0016\\MaterialResolved.png",
+    "native_material_applied": false,
+    "enabled": false,
+    "reason": "Historical native pixels showed unrelated street-crack relief over complete building facade; exact source graph identifies the incorrect normal binding. No replacement texture is guessed."
+  }
+]

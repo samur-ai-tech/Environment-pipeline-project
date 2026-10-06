@@ -1,0 +1,64 @@
+{
+  "schema": "environmentpipeline.task2.reviewed_helper_install_preparation.v1",
+  "status": "PREPARED_ONLY_NO_EDITOR_EXECUTION_NO_FINAL_SOURCE_HASHES",
+  "utc": "2026-10-03T22:24:43.950478+00:00",
+  "installer": "Staging\\ManagedAstra_2026-10-03\\prepare_reviewed_helper_install_21780.py",
+  "installer_sha256": "b30910065dba1399b46b6e58395a43fce972e5648bf35f34b5182b6bef68dc90",
+  "allowed_definition_modules": [
+    "geocity_roadbld_grounding",
+    "geocity_roadbld_seams",
+    "geocity_roadbld_clip"
+  ],
+  "preserved_modules": [
+    "geocity_bank_workflow",
+    "geocity_roadbld_workflow",
+    "geocity_roadbld_junctions",
+    "fresh_delivery_21780",
+    "continue_explicit_callbacks_21780"
+  ],
+  "preserved_live_inputs": [
+    "same bank/native ACTIVE list identities",
+    "same parent/native objects, classes, transaction token and revision",
+    "same 40 source roads, four corners and participant checkpoint",
+    "same 87 bound asset paths, materials, transforms and collision",
+    "same sampler object",
+    "parent/native states, reports and immutable clip ledger",
+    "same typed callback and observer function code identities",
+    "same callback-helper FROZEN map"
+  ],
+  "guard_map_update": "Only d.FROZEN data replaced with full explicitly reviewed map. No guard function edits, no skipped checks, no dropped entries. Includes grounding/seams/clip and verified retained workflow/junction file hashes; old runtime map measured before installation must exactly match activation expected_preinstall_guard_map. callbacks module/install/FROZEN stay unchanged.",
+  "installation_method": "Compile exact reviewed source bytes under editor Python; execute only reviewed import-inert definitions into three allowed helper module namespaces. Clear stale helper names, retain existing module identity. No importlib reload of preserved modules. Definition-only rollback on failure; never geometry rollback.",
+  "two_stage_sequence": [
+    "Manager freezes helper source/API and independent review; completes and reviews installer manifest; removes preparation hard stop with new installer hash.",
+    "Narrow installation-only activation permits schedule(install) on sole PID; it does not authorize geometry correction.",
+    "Compare preserved inputs and hash-map update, then schedule(inspect) as separate read-only callback. Runtime marshal/code hashes measured inside actual editor Python and captured with sys.version/cache_tag/marshal version.",
+    "Root reviews postinstall inspection and supplies its measured values to the separate authored continuation activation."
+  ],
+  "required_manifest": "Staging/ManagedAstra_2026-10-03/MANAGER_REVIEWED_HELPER_INSTALL_ACTIVATION.json",
+  "required_manifest_fields": [
+    "install_authorized",
+    "inspect_authorized",
+    "pid",
+    "installer_sha256",
+    "baseline_sha256",
+    "helper_source_sha256 (exact three-module mapping; final values pending)",
+    "install_order (reviewed permutation of exact allowed modules)",
+    "independent_review_path",
+    "independent_review_sha256",
+    "typed_callback_file_sha256",
+    "observer_file_sha256",
+    "preserved_module_file_sha256 (bank/native/junctions)",
+    "expected_preinstall_guard_map (actual live d.FROZEN, possibly older than file map)",
+    "reviewed_guard_map (full retained plus changed helper hash map)",
+    "runtime_entrypoints (labels to actual frozen helper module/attribute names; correction/lineage API pending)"
+  ],
+  "runtime_hashes": "NOT computed with external Python. Installer and inspection measure marshal hashes only inside editor for adapter functions, d.call and callbacks.install. Continuation manifest receives reviewed actual values afterward.",
+  "syntax_checked_without_import_or_execution": true,
+  "typed_callback_helper_unchanged": true,
+  "observer_helper_unchanged": true,
+  "editor_calls": 0,
+  "final_source_hashes_set": false,
+  "source_file_changes": false,
+  "authoring_performed": false,
+  "remaining": "Await source-owner final entry points/report schema and frozen source; finalize installation and continuation manifests with root review. No manager activation manifest created by task2."
+}

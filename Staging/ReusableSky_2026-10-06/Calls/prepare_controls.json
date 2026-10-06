@@ -1,0 +1,400 @@
+{
+  "ok": true,
+  "stdout": "RENAME {\r\n\t\"blueprint_path\": \"/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky.BP_EnvironmentSky\",\r\n\t\"auto_compile\": false,\r\n\t\"auto_save\": false,\r\n\t\"ok\": true,\r\n\t\"total_commands\": 1,\r\n\t\"executed_commands\": 1,\r\n\t\"rolled_back\": false,\r\n\t\"compiled\": false,\r\n\t\"saved\": false,\r\n\t\"steps\": [\r\n\t\t{\r\n\t\t\t\"index\": 0,\r\n\t\t\t\"op\": \"rename_variable\",\r\n\t\t\t\"ok\": true\r\n\t\t}\r\n\t]\r\n}\n",
+  "result": {
+    "renamed": "{\r\n\t\"blueprint_path\": \"/Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky.BP_EnvironmentSky\",\r\n\t\"auto_compile\": false,\r\n\t\"auto_save\": false,\r\n\t\"ok\": true,\r\n\t\"total_commands\": 1,\r\n\t\"executed_commands\": 1,\r\n\t\"rolled_back\": false,\r\n\t\"compiled\": false,\r\n\t\"saved\": false,\r\n\t\"steps\": [\r\n\t\t{\r\n\t\t\t\"index\": 0,\r\n\t\t\t\"op\": \"rename_variable\",\r\n\t\t\t\"ok\": true\r\n\t\t}\r\n\t]\r\n}",
+    "pins": {
+      "Class|PostProcessComponent|SetEnabled": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "bEnabled",
+            "Boolean",
+            "false"
+          ],
+          [
+            "self",
+            "Post Process Component Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "Output_Get",
+            "Boolean"
+          ]
+        ]
+      },
+      "Actor|GetAllActorsOfClass": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "ActorClass",
+            "Actor Class Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "OutActors",
+            "Array of Actor Object References"
+          ]
+        ]
+      },
+      "Actor|GetComponentsByClass": {
+        "inputs": [
+          [
+            "self",
+            "Actor Object Reference",
+            ""
+          ],
+          [
+            "ComponentClass",
+            "Actor Component Class Reference",
+            "/Script/Engine.ActorComponent"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Array of Actor Component Object References"
+          ]
+        ]
+      },
+      "Components|GetOwner": {
+        "inputs": [
+          [
+            "self",
+            "Actor Component Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Actor Object Reference"
+          ]
+        ]
+      },
+      "Rendering|IsVisible": {
+        "inputs": [
+          [
+            "self",
+            "Scene Component Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Boolean"
+          ]
+        ]
+      },
+      "TypedElementFramework|Testing|GetDisplayName": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Test Typed Element Interface A Interface",
+            ""
+          ],
+          [
+            "InElementHandle",
+            "Script Typed Element Handle Structure (by ref)",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "TypedElementFramework|Testing|GetDisplayName(Message)": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Object Reference",
+            ""
+          ],
+          [
+            "InElementHandle",
+            "Script Typed Element Handle Structure (by ref)",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "Utilities|GetDisplayName": {
+        "inputs": [
+          [
+            "Object",
+            "Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "String"
+          ]
+        ]
+      },
+      "Sequencer|Sequence|GetDisplayName": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "InBinding",
+            "Movie Scene Binding Proxy Structure (by ref)",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "Input|PlayerMappable|GetDisplayName": {
+        "inputs": [
+          [
+            "self",
+            "Player Mappable Input Config Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Text (by ref)"
+          ]
+        ]
+      },
+      "Class|PlayerMappableKeySettings|GetDisplayName": {
+        "inputs": [
+          [
+            "self",
+            "Player Mappable Key Settings Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "DisplayName",
+            "Text"
+          ]
+        ]
+      },
+      "Class|EnhancedPlayerMappableKeyProfile|GetDisplayName": {
+        "inputs": [
+          [
+            "self",
+            "Enhanced Player Mappable Key Profile Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "DisplayName",
+            "Text"
+          ]
+        ]
+      },
+      "OptimusNodeGraph|GetDisplayName": {
+        "inputs": [
+          [
+            "self",
+            "Optimus Node Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "Sequencer|Track|GetDisplayName": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "Track",
+            "Movie Scene Track Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "Utilities|String|ToString(Text)": {
+        "inputs": [
+          [
+            "InText",
+            "Text (by ref)",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "String"
+          ]
+        ]
+      },
+      "Transformation|SetRelativeRotation": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Scene Component Object Reference",
+            ""
+          ],
+          [
+            "NewRotation",
+            "Rotator",
+            "0, 0, 0"
+          ],
+          [
+            "bSweep",
+            "Boolean",
+            "false"
+          ],
+          [
+            "bTeleport",
+            "Boolean",
+            "false"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "SweepHitResult",
+            "Hit Result Structure"
+          ]
+        ]
+      },
+      "Class|StaticMeshSocket|SetRelativeRotation": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "RelativeRotation",
+            "Rotator",
+            "0, 0, 0"
+          ],
+          [
+            "self",
+            "Static Mesh Socket Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "Output_Get",
+            "Rotator"
+          ]
+        ]
+      }
+    },
+    "pp_pins_count": 0,
+    "graph_editor_methods": [
+      "add_node_pin",
+      "find_graph_entry_pin",
+      "get_editor_property",
+      "is_editor_property_overridden",
+      "remove_node_pin",
+      "reset_editor_property",
+      "set_editor_property"
+    ],
+    "node_methods": [
+      "find_data_input_pin",
+      "find_execute_pin",
+      "find_input_pin",
+      "find_input_pin_by_index",
+      "find_output_pin",
+      "find_output_pin_by_index",
+      "find_result_pin",
+      "find_self_pin",
+      "find_then_pin",
+      "list_all_pins",
+      "list_input_pins",
+      "list_output_pins"
+    ]
+  }
+}

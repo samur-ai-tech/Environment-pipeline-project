@@ -1,0 +1,60 @@
+{
+  "commands": {
+    "validate_registration_offline": "import runpy; run = runpy.run_path('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\sealed_run.py')[\"run\"]; run('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\CommandManifests\\\\6042b4a797b733a95acf87985a1baf9aa0f04be98d2cd7565b18ab1f7591fe4d.json', \"validate_transaction\", {'transaction_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\Transactions\\\\166d8600484472dc0ce1b5b32e7f9f7cb62182b1744862ab3503c474808289e4\\\\TRANSACTION.json'})",
+    "native_inspection_after_activation": "import runpy; run = runpy.run_path('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\sealed_run.py')[\"run\"]; run('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\CommandManifests\\\\6042b4a797b733a95acf87985a1baf9aa0f04be98d2cd7565b18ab1f7591fe4d.json', \"inspect\", {'job_ids': ['NU_59987c75dc106641c44f', 'NU_edbfc358be0e45d31466', 'NU_423dad85ee33fec77816', 'NU_5a307f6911c279a04c04', 'NU_bec0553f5648e25ec0e6', 'NU_d5cd149c8ab80eaa1c61', 'NU_63c41ff1844c276997cc', 'NU_24d75a71148d13f90cdf', 'NU_2f0c1660f6cd3784b4d3'], 'activation_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\INSPECTION_ACTIVATION.json'})",
+    "native_registration_after_activation": "import runpy; run = runpy.run_path('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\sealed_run.py')[\"run\"]; run('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\CommandManifests\\\\6042b4a797b733a95acf87985a1baf9aa0f04be98d2cd7565b18ab1f7591fe4d.json', \"apply_registration\", {'transaction_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\Transactions\\\\166d8600484472dc0ce1b5b32e7f9f7cb62182b1744862ab3503c474808289e4\\\\TRANSACTION.json', 'activation_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\REGISTRATION_ACTIVATION.json'})"
+  },
+  "authority": {
+    "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+    "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+    "supplier_thread_id": "01a1075c-313d-7133-9bc5-580cb2681f9b",
+    "assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\ASSIGNMENT.json",
+    "assignment_sha256": "ca21eece0c4abad9dd4bf2b10b7c4affed026f3196844c4d4febce9549d5bde7",
+    "succession_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\ManagementTransfer\\STATE.json",
+    "succession_sha256": "ab8ba7509118c66a8eb84b4bd72eaef5b80ed87bc0661184b53328c12c392e30",
+    "bank_assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ASSIGNMENT.json",
+    "bank_assignment_sha256": "b846f1192d47d8ac7da1742c0901ff96fe0f3b8aa99e516976b9e10740116799"
+  },
+  "command_manifest_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\CommandManifests\\6042b4a797b733a95acf87985a1baf9aa0f04be98d2cd7565b18ab1f7591fe4d.json",
+  "command_manifest_sha256": "503d0e319c335d4b096d3799b0b0146d96cdaa5866a28ba34788600121509a64",
+  "activation_common_required_fields": {
+    "authority": {
+      "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+      "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+      "supplier_thread_id": "01a1075c-313d-7133-9bc5-580cb2681f9b",
+      "assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\ASSIGNMENT.json",
+      "assignment_sha256": "ca21eece0c4abad9dd4bf2b10b7c4affed026f3196844c4d4febce9549d5bde7",
+      "succession_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\ManagementTransfer\\STATE.json",
+      "succession_sha256": "ab8ba7509118c66a8eb84b4bd72eaef5b80ed87bc0661184b53328c12c392e30",
+      "bank_assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ASSIGNMENT.json",
+      "bank_assignment_sha256": "b846f1192d47d8ac7da1742c0901ff96fe0f3b8aa99e516976b9e10740116799"
+    },
+    "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+    "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+    "pid": "actual sole PID assigned by root after clean recovery",
+    "command_manifest_sha256": "503d0e319c335d4b096d3799b0b0146d96cdaa5866a28ba34788600121509a64",
+    "ordinary_generation_authorized": false
+  },
+  "registration_additional_fields": {
+    "action": "apply_held_native_supply_registration",
+    "transaction_sha256": "148d44f8ca534faf924e045e64a41b42cdce4dbbee1bfd87043419dfa8942929",
+    "decision_sha256": "cc7895d1fd84bbeb013dce73943f81f0c7020431e508c7d1418a6e0c848d2874",
+    "row_count_consumers_reviewed": "root sets true after bank repair review"
+  },
+  "inspection_additional_fields": {
+    "action": "inspect_native_supply_batch",
+    "job_ids": [
+      "NU_59987c75dc106641c44f",
+      "NU_edbfc358be0e45d31466",
+      "NU_423dad85ee33fec77816",
+      "NU_5a307f6911c279a04c04",
+      "NU_bec0553f5648e25ec0e6",
+      "NU_d5cd149c8ab80eaa1c61",
+      "NU_63c41ff1844c276997cc",
+      "NU_24d75a71148d13f90cdf",
+      "NU_2f0c1660f6cd3784b4d3"
+    ],
+    "batch_sha256": "0d9a72b8410e23d11144065c2da6c7f8e2f8a903351fb26dd8ff87857b171507"
+  },
+  "templates_are_not_activations": true
+}

@@ -1,0 +1,19 @@
+STAGE 1 DELIVERED — 2026-10-06
+
+Implemented: native BP_EnvironmentSky with directly owned DirectionalLight, SkyAtmosphere, realtime SkyLight, editor-only north arrow and opt-in PostProcessComponent. Native SunPosition is the only astronomical solar solver. Construction Script updates without Play. Separate time/manual inputs, 0–24 slider, HH:MM, date/location/UTC/DST/north, conflict detection and explicit activation.
+
+Saved: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+Saved original map: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Retained instance: PersistentLevel.BP_EnvironmentSky_C_0 (EnvironmentSky). Map actor count 121 before, 122 after. Final setting 12:00, June 21 2026, 31.52/34.44, UTC+2, DST off, north0, Manual Sun off, exposure override off, rig enabled. Asset default rig is inactive.
+
+Reopened: fresh PID28148 after authored PID5200 exited. Plugin loaded from Environmentpipeline.uproject without -EnablePlugins. Exact asset/actor, clock, solar vector, original-light visibility, native component visibility and north arrow passed. Dirty content=0, dirty maps=0. REOPEN_VERIFIED.json is the native receipt. Sky editor is closed after verification; see EXIT_28148.json and ASSIGNMENT.json.
+
+Visual evidence: Evidence/before.png, morning.png (06:00), noon.png (12:00), evening.png (18:00), reopened_noon.png. Same original-map camera. Morning/evening show distinct opposite long shadows and changed atmospheric illumination; noon shows the high sun and short shadows. Existing clouds/fog in these views were retained, not implemented as part of this stage.
+
+Preservation: exact prior component visibility recorded in LIGHTING_RESTORATION.json before disabling the four conflicting original components. All original actors retained. No ground/building/road/Houdini/profile changes. Asset Bank editor PID29900, its buffers, maps and saved packages were not saved, closed or modified by this task. Its own release receipt reported 72 bank models saved at 14:48:43Z. Its generation guard paused during the separate sky editor session; this task did not bypass that safeguard.
+
+Vendor inspection side effect: inspecting the original /SunPosition/SunSky graph marked that vendor package dirty in PID5200. It was excluded from all named saves and discarded at orderly exit. The retained Blueprint is a project-owned derivative using native components, not a change to the vendor original. Dependencies are recorded in DEPENDENCIES.json.
+
+Governance: AGENTS.md now permits disjoint editors/packages/maps per the user's explicit parallel-editor instruction. It prohibits shared package/map edits and stale overwrites, retains named saves and bank preservation, and keeps manager identity unchanged. Sky's dedicated ports19841/18081/8001 were PID verified. The bank owner file was not changed by this task. Only the SunPosition plugin entry was added to the project descriptor; no other plugin or render configuration was changed.
+
+Verification scope: CONTROL_VERIFICATION.json records mode separation, clock, wrap, date, DST, repeatability and exposure checks using ordinary editor property changes, with zero explicit UpdateSky calls or Play. NORTH_ARROW_VERIFIED.json records arrow visibility and 0/90-degree yaw. Fresh-process readback and visual capture passed. Runtime BeginPlay/UpdateSky wiring is implemented but PIE/packaged runtime remains untested. Second-map use, migration and user visual acceptance remain unverified. Later clouds/haze/moon/stars work is not claimed.

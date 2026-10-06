@@ -1,0 +1,1281 @@
+{
+  "schema": "environmentpipeline.managed_astra.task2_delivery_result.v1",
+  "date": "2026-10-03",
+  "task": "task2_delivery",
+  "worker_thread_id": "01a102e1-25e6-7f13-b593-4988290a283b",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "status": "PREPARED_ONLY_NO_EDITOR_CHANGED_SAVED_MAP_REQUIRES_ROOT_RECONCILIATION",
+  "v4_execution": {
+    "pre_resume_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_PRE_CLIPPING_RESUME_20261003T191211676211Z.json",
+    "grounding_sha256": "b77be9186f1b43d969eaca9a272753b71586b83ef43fde834557d92345d56221",
+    "all_four_source_hashes_verified": true,
+    "latest_height_failure_original_geometry_and_old_proof_guards": "passed live",
+    "completed_corners_retained": 4,
+    "native_rebuild_pass_retained": 3,
+    "scheduled": "Existing post-rebuild native geometry continuation. No native rebuild, new export Cook, junction replay or new transaction.",
+    "delivery_not_yet_saved": true
+  },
+  "road63_missing_evidence_collected": {
+    "status": "READ_ONLY_ROAD63_GEOMETRY_HEIGHTS_COMPLETE",
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_ROAD63_PROJECTED_GEOMETRY_20261003T190536980521Z.json",
+    "sha256": "ad5190f6ae476b8b2f205cff31a6a294efc7b2dceb7cf349258e10dd087df9f5",
+    "bytes": 9967553,
+    "request_snapshot": "Staging/ManagedAstra_2026-10-03/TASK2_ROAD63_REQUEST_SNAPSHOT.json",
+    "request_sha256": "89364f9327b9c5f30317a35131247257973217cdd6d4520a9dcf96fcc6f619a6",
+    "collection_status": "Staging/ManagedAstra_2026-10-03/TASK2_ROAD63_COLLECTION_STATUS.json",
+    "collector": "Staging/ManagedAstra_2026-10-03/collect_road63_projected_geometry.py",
+    "elapsed_seconds": 7.219,
+    "source_actor": "DynamicRoad_63",
+    "piece_id": "41254723:0",
+    "single_source_native_components": 1,
+    "new_projected_Landscape_height_samples": 8404,
+    "projection_rule": "Nearest original sourceXY segment, ties by source order; unique projected queryXY rounded to6decimals as requested. Each refined vertex retains its full-precision projection, source segment/fraction and height-query index.",
+    "contents": "Original and uniform-tessellation1 native geometry, actual GeometryScript face normals/upward masks/materialIDs, transforms/materials/collision/sourceRefs, exact original source row/native controls, full participant/checkpoint/binding ledger,8404 actual currentLandscape heights. Existing source controls and<=0.5m stations reused from the hashed all40-road dataset; completed Road53 measurements not duplicated.",
+    "participant_checkpoint_bindings_unchanged": true,
+    "callbacks": 0,
+    "no_helper_reload_source_edit_geometry_mutation_cook_rebuild_or_save": true
+  },
+  "v4_continuation_guard_preparation": {
+    "script": "Staging/ManagedAstra_2026-10-03/resume_existing_shuj_clipping.py",
+    "sha256": "73f5f0508face3f9cf3d550a1ab35ccf9b27cab9b24d21c02a24119f8196f30e",
+    "status": "SYNTAX_VALID_NOT_EXECUTED_WAITING_MANAGER_V4_FREEZE_REVIEW",
+    "latest_exact_failure": "TASK2_HEIGHT_GATE_STOP_20261003T185123265485Z.json",
+    "old_proofs_retained": [
+      "TASK2_GROUNDING_STOP_20261003T183116246178Z.json",
+      "TASK2_GROUNDING_GEOMETRY_20261003T183550025521Z.json",
+      "TASK2_HEIGHT_GATE_DETAIL_20261003T185441439244Z.json"
+    ],
+    "guards": "Latest exact height error and full report/owned snapshot, equality to previous completed-corner snapshots, revision/token/network/40+4 roads/pass3, exact whole bound native-subobject/transform/material ledger, exact captured SourceRefs, offending mesh collision and freshly read original vertex/triangle equality. Fresh immutable pre-resume receipt before helper reload or state changes.",
+    "preservation": "No conditioning, old legacy adoption, reset of junction_repair, native rebuild, new export Cook or new transaction. Only reviewed Ground/clip modules reload after activation and complete four-file hash freeze. Grounded numerical diagnostic output is never used as continuation geometry input."
+  },
+  "all_road_and_exact_projection_evidence": {
+    "all40_dataset": "Staging/AppearanceRepair_2026-10-03/TASK2_ALL_SOURCE_LANDSCAPE_PROFILES_20261003T185815153909Z.json",
+    "all40_sha256": "4b0e3c3b49f1bc64bf0e51ff6dd4e3b38f1a8d29b86ef1ca96d4c3138f0ac023",
+    "all40_status": "Staging/ManagedAstra_2026-10-03/TASK2_ALL_SOURCE_PROFILE_STATUS.json",
+    "all40_elapsed_seconds": 10.094,
+    "source_roads": 40,
+    "exported_control_samples": 3377,
+    "genuine_geographic_control_samples": 180,
+    "dense_station_samples": 13376,
+    "maximum_spacing_cm": 50.0,
+    "max_exported_control_delta_cm": 5.269650186281069,
+    "max_exported_control_location": {
+      "piece_id": "41255258:0",
+      "actor": "DynamicRoad_73",
+      "index": 48,
+      "xy_cm": [
+        9648.735771804559,
+        -2548.744877049181
+      ]
+    },
+    "max_genuine_geographic_control_delta_cm": 1.9876171400037492,
+    "max_dense_interpolated_grade_delta_cm": 11.290390104236394,
+    "max_dense_location": {
+      "piece_id": "301713727:0",
+      "actor": "DynamicRoad_53",
+      "segment": 11,
+      "fraction": 0.5,
+      "xy_cm": [
+        -2389.3798510233564,
+        -8304.684829711914
+      ]
+    },
+    "original_control_or_dense_deltas_over20cm": 0,
+    "feasibility_interpretation": "Every measured pair of +/-10cm height intervals overlaps; original exported controls already differ from actual terrain by under10cm. Dense values expose the current grade interpolation defect. This is a pointwise necessary feasibility check, not physical geometry acceptance or permission to move source controls.",
+    "exact441_dataset": "Staging/AppearanceRepair_2026-10-03/TASK2_EXACT_PROJECTED_LANDSCAPE_441_20261003T185959855574Z.json",
+    "exact441_sha256": "7fe2357e2d61ed2201d31dfbff38216a8811a801a341134507a3e91d69a04ba8",
+    "exact441_request_snapshot": "Staging/ManagedAstra_2026-10-03/TASK2_HEIGHT_441_REQUEST_SNAPSHOT.json",
+    "exact441_request_sha256": "9950e614296366b5a75a11ac63427683e617b2168d3836ba7ef9450d70464f55",
+    "exact441_status": "Staging/ManagedAstra_2026-10-03/TASK2_EXACT_HEIGHT_441_STATUS.json",
+    "exact441_elapsed_seconds": 0.438,
+    "exact441_points_preserved": true,
+    "exact441_sample_height_key": "actual_Landscape_z_cm",
+    "sampling_scope": "Both batches reuse the exact current-export Landscape-only sampler. No source-helper reload, source/control/geometry/terrain edits, new mesh, Cook, rebuild or save. Full participant/checkpoint identity and bound mesh/material/transform ledger unchanged.",
+    "callbacks": 0,
+    "autosave_current": false,
+    "original_autosave": true
+  },
+  "read_only_height_detail": {
+    "status": "READ_ONLY_HEIGHT_DETAIL_COMPLETE",
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_HEIGHT_GATE_DETAIL_20261003T185441439244Z.json",
+    "collector": "Staging/ManagedAstra_2026-10-03/collect_height_gate_detail.py",
+    "status_receipt": "Staging/ManagedAstra_2026-10-03/TASK2_HEIGHT_DETAIL_STATUS.json",
+    "elapsed_seconds": 0.266,
+    "source_profile_collision_samples": 25,
+    "local_25cm_collision_samples": 40,
+    "sampler_mode": "verified_source_longitudinal_native_lane_grade; exact original source row for sole-source DynamicRoad_53",
+    "failed_sample_source_segment": 11,
+    "failed_sample_fraction": 0.5,
+    "triangle": 418,
+    "triangle_vertex_indices": [
+      681,
+      689,
+      687
+    ],
+    "barycentric_weights": [
+      0.17280908902231853,
+      0.8271909109776888,
+      -7.367086853785703e-15
+    ],
+    "original_native_refined_triangle_height_cm": 4665.761558811902,
+    "pure_replayed_grounded_triangle_height_cm": 4661.829436651035,
+    "pure_replay_matches_actual_failed_height_exactly": true,
+    "bracketing_source_vs_Landscape_error_cm": [
+      -0.594720156066,
+      0.740391392014
+    ],
+    "maximum_all25_export_vertex_grade_collision_error_cm": 1.546773418000157,
+    "diagnostic_inference": "The exported source endpoints fit actual collision closely while the intervening linear grade crosses a terrain dip at the failing midpoint. Evidence supports investigating sampling/interpolation between source vertices, not an arbitrary uniform height offset. Source owner determines the physical correction with10cm gate unchanged.",
+    "actual_Landscape_height_at_failed_sample_cm": 4645.539046546517,
+    "asphalt_clearance_cm": 5.0,
+    "error_cm": 11.290390104518337,
+    "triangle_vertex_source_grade_z_cm": [
+      4652.846674118284,
+      4657.661478633054,
+      4657.661478167861
+    ],
+    "triangle_vertex_actual_Landscape_z_cm": [
+      4652.812623204794,
+      4648.873330118848,
+      4642.967355230023
+    ],
+    "geometry_evidence": "Original bound geometry, precise actual controls, refined geometry reference, all replayed grounded vertices, source profile and local collision samples, triangle normals/material IDs from prior receipt. Lost temporary outputs were reconstructed purely from captured geometry and loaded unchanged sampler; nothing was rebound.",
+    "participant_and_checkpoint_unchanged": true,
+    "callbacks": 0,
+    "no_bound_mesh_mutation_or_workflow_continuation": true,
+    "no_helper_reload": true
+  },
+  "latest_height_failure": {
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_HEIGHT_GATE_STOP_20261003T185123265485Z.json",
+    "failure_log_utc": "2026-10-03T18:50:02.621Z",
+    "phase": "failed_clipping",
+    "gate": "Actual native asphalt exceeds source-ground height tolerance",
+    "source_road": "DynamicRoad_53",
+    "source_osm_id": "301713727",
+    "piece_id": "301713727:0",
+    "component": "RoadGeo_96.RoadBLD Mesh",
+    "triangle_after_transient_refinement": 418,
+    "point_world_cm": [
+      -2389.3798510233564,
+      -8304.684829711914,
+      4661.829436650753
+    ],
+    "actual_asphalt_z_cm": 4661.829436651035,
+    "actual_Landscape_z_cm": 4645.539046546517,
+    "expected_Landscape_plus_clearance_cm": 4650.539046546517,
+    "error_cm": 11.290390104518337,
+    "unchanged_limit_cm": 10.0,
+    "evidence": "Full latest parent/native states and owned participant snapshot, original geographic source row, actual SourceRoads, bound mesh/material/collision/transform and transient refined native vertices/triangles/material IDs/GeometryScript face normals, plus nine actual current-export Landscape height samples around the failed point.",
+    "previous_lateral_failure": "Reviewed v3 passed the former RoadGeo_174 lateral-reference gate and reached full source-ground verification. No increase to300cm cap.",
+    "grounding_report_committed": false,
+    "bound_clipping_report": false,
+    "completed_corners_preserved": 4,
+    "rebuild_pass_preserved": 3,
+    "callbacks": 0,
+    "engine_paused": true,
+    "engine_valid": true,
+    "autosave_current": false,
+    "original_autosave": true,
+    "lease_retained": true,
+    "suppression_cook_bake_performed": false,
+    "map_saved": false,
+    "map_sha256_unchanged": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "next_action": "Manager/source-owner diagnosis of actual longitudinal asphalt versus collision-height discrepancy. No10cm gate relaxation, source ownership takeover or native rebuild. Await reviewed source repair and explicit continuation guarded by this new exact stopped state."
+  },
+  "post_rebuild_continuation_execution": {
+    "pre_resume_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_PRE_CLIPPING_RESUME_20261003T184644339032Z.json",
+    "grounding_sha256": "fb2c3cc1fec8d8626fcb6d4e4b54d8e3767c1b083fb63899b78e0e5505048a92",
+    "clip_sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+    "exact_stopped_participant_and_binding_guards": "passed live",
+    "completed_corners_retained": 4,
+    "native_rebuild_pass_retained": 3,
+    "schedule_result": "One-shot post-rebuild grounding/clipping continuation scheduled. No new export Cook, conditioning, native rebuild, network or operation."
+  },
+  "post_rebuild_continuation_prepared": {
+    "script": "Staging/ManagedAstra_2026-10-03/resume_existing_shuj_clipping.py",
+    "entrypoint": "schedule() only after explicit manager resume and completed source freeze/review",
+    "status": "PREPARED_SYNTAX_VALID_NOT_EXECUTED",
+    "preconditions": "Exact latest failed_clipping error, stopped parent state, unchanged complete junction report/token/revision/pass3 and all40+4 participants; full bound native-subobject mesh/transform/material ledger equal to measured collection; related SourceRefs exact, all others owned; zero callbacks, paused valid Engine, originalTrue/currentFalse autosave and unchanged transferred lease.",
+    "source_freeze": "Requires all four junction/workflow/grounding/clip frozen hashes. Reloads only grounding and clip after fresh immutable evidence; bank/workflow ACTIVE objects and junction report remain intact.",
+    "continuation": "One-shot guarded Slate callback performs existing clip_final_geometry -> validate -> on_complete. Does not use the normal rebuilding or conditioning tick branch, request rebuild, create a network, restart export Cook or reset junction_repair. Existing parent handler owns later official suppression Cook/Bake/named-save lifecycle after native validation passes.",
+    "failure": "Preserves new exact state and re-disables autosave after failure cleanup; no automatic repeated retry. No editor calls performed for this preparation."
+  },
+  "read_only_grounding_geometry_evidence": {
+    "status": "READ_ONLY_EVIDENCE_COMPLETE",
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_GROUNDING_GEOMETRY_20261003T183550025521Z.json",
+    "collection_status": "Staging/ManagedAstra_2026-10-03/TASK2_GEOMETRY_COLLECTION_STATUS.json",
+    "collector": "Staging/ManagedAstra_2026-10-03/collect_grounding_failure_geometry.py",
+    "receipt_bytes": 5515611,
+    "elapsed_seconds": 0.328,
+    "contents": "Five actual native surfaces with complete world vertices, triangle indices, material IDs, actual GeometryScript face normals/upward masks, near-failure triangle lists and closest actual asphalt faces. Failure geo also has uniform-tessellation1 transient geometry matching the failed preparation. Full transforms/material slots/collision, native SourceRoads, original parent rows, measured preset/sidewalk/curb settings, all-owned bindings and unchanged full participant checkpoint are included.",
+    "failed_refined_vertex": {
+      "vertex_index": 229,
+      "distance_to_failed_point_cm": 0.0
+    },
+    "actual_same_native_source": "Only RoadGeo_174 among the selected meshes references DynamicRoad_88; nearest upward asphalt319.0322265625cm.",
+    "related_parent_junction": "RoadGeo_145 references DynamicRoad_65 and DynamicRoad_83 and has upward asphalt150.00504402580873cm from the failed point. It does not natively reference DynamicRoad_88; evidence is for diagnosis, not permission to use it.",
+    "parent_piece_ids": [
+      "41254771:0",
+      "41257647:0"
+    ],
+    "parent_widths_m": [
+      7.0,
+      12.0
+    ],
+    "sidewalk_width_m": 1.5,
+    "failure_distance_from_original_shared_endpoint_cm": 522.0157040244846,
+    "recorded_endpoint_pullback_cm": 150.0,
+    "all_owned_bound_meshes_are_native_geo_subobjects": true,
+    "all_owned_bindings_unchanged_during_collection": true,
+    "participant_snapshot_unchanged": true,
+    "junction_checkpoint_unchanged": true,
+    "grounding_report_committed": false,
+    "clipping_report_bound": false,
+    "partial_binding_conclusion": "Failure occurred inside transient ground_native_geos before prepared outputs returned. clip_native_outputs was never entered; no candidate component binding changed in this attempt. Temporary read-copy geometry is the only edited geometry. No retained mesh, Cook, rebuild or package save was created by collection.",
+    "continuation": "None. One-shot collection callback unregistered before extraction; workflow callbacks remain stopped. No helper modules reloaded while Task1 edits source."
+  },
+  "latest_physical_failure": {
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_GROUNDING_STOP_20261003T183116246178Z.json",
+    "failure_log_utc": "2026-10-03T18:29:50.553Z",
+    "error": "Same-source native asphalt union has no bounded reference",
+    "component": "RoadGeo_174.RoadBLD Mesh",
+    "source_road": "DynamicRoad_88 (derived connector)",
+    "point_world_cm": [
+      -12966.939453125,
+      11392.55078125,
+      4948.57421875
+    ],
+    "lateral_cap_cm": 300.0,
+    "nearest_same_source_asphalt_xy_cm": 319.0322265625,
+    "phase": "failed_clipping",
+    "failure_stage": "ground_native_geos transient preparation, before clipping bindings and official suppression",
+    "junction_checkpoint": {
+      "phase": "native_corners_authored_pending_rebuild",
+      "checkpoint_version": 1,
+      "task_index": 4,
+      "step_index": 0,
+      "completed_corner_count": 4
+    },
+    "original_source_roads": 40,
+    "derived_connectors": 4,
+    "rebuild_pass": 3,
+    "completed_edits_must_not_replay": true,
+    "grounding_report_committed": false,
+    "bound_clipping_report": false,
+    "source_and_checkpoint_evidence": "Full parent/native states, full owned participant snapshot, failing component/material/collision references and exact source-road linkage preserved in stop receipt.",
+    "callbacks": 0,
+    "engine_paused": true,
+    "engine_valid": true,
+    "autosave_current": false,
+    "original_autosave": true,
+    "lease_retained": true,
+    "map_saved": false,
+    "map_sha256_still_matches_original_backup": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "next_action": "Manager coordinates grounded-geometry/source adapter diagnosis and explicit continuation at the post-rebuild geometry stage. Task2 does not own grounding source. Do not widen the 300cm cap, replay completed junction edits, rerun initial legacy recovery, respawn roads or blindly rebuild final candidates. Existing resume_existing_shuj.py is intentionally inapplicable to this new failed_clipping state."
+  },
+  "current_continuation": {
+    "setup_result": "EXACT_EMPTY_CONNECTOR_POLICY_REPAIRED",
+    "setup_before": "Staging/AppearanceRepair_2026-10-03/TASK2_CONNECTOR_POLICY_BEFORE_20261003T182613497094Z.json",
+    "setup_after": "Staging/AppearanceRepair_2026-10-03/TASK2_CONNECTOR_POLICY_AFTER_20261003T182613497094Z.json",
+    "actual_differences_only": {
+      "bEnableLandscapeSplineMirroring": [
+        true,
+        false
+      ],
+      "RoadThickness": [
+        25.0,
+        5.0
+      ]
+    },
+    "first_parent": "DynamicRoad_60; exact partner DynamicRoad_79, both starts, radius100cm",
+    "fresh_pre_resume": "Staging/AppearanceRepair_2026-10-03/TASK2_PRE_RESUME_20261003T182619503603Z.json",
+    "same_native_revision": "20261003T172549017159",
+    "checkpoint_version": 1,
+    "progress_at_update": "All four corner tasks completed and native passes finished through pass3; subsequent transient grounding failed. See latest_physical_failure.",
+    "old_native_error_fields": "Historical retained evidence; use current phase and junction checkpoint for progress.",
+    "saved_delivery_claimed": false
+  },
+  "prepared_followups_not_executed": {
+    "empty_connector_policy_repair": "Staging/ManagedAstra_2026-10-03/repair_existing_empty_connector_policy.py",
+    "repair_status": "PREPARED_WAITING_EXPLICIT_MANAGER_AUTHORIZATION; syntax checked only, no editor execution.",
+    "repair_guards": "Exact latest failure receipt181945, unchanged legacy report, no checkpoint/operation, same revision/network/40 sources/empty DynamicRoad_86, full owned-state snapshot. Read-only recovery preflight derives first parent and reproduces entire old trim-proof hash. Fresh immutable before receipt precedes any mutation. Only eight _POLICY_FIELDS may copy from that parent; full after state must equal before with only that connector policy replaced. No SDK edit/save/rebuild/default edit/respawn. Callback count remains zero.",
+    "resume_guard_updated": "resume_existing_shuj.py now requires exact TASK2_FAILED_RECOVERY_20261003T181945515173Z.json error/recovery_error/report. Not rerun.",
+    "capture_plan": "Staging/ManagedAstra_2026-10-03/TASK2_CAPTURE_PLAN.json",
+    "capture_script": "Staging/ManagedAstra_2026-10-03/capture_saved_view.py",
+    "capture_plan_preparation": "prepare_capture_views.py executed offline against 40 road proofs and hash-verified original OSM. Seven source-derived poses: ground_close, ground_second_location, ground_grazing, curb_street_close, junction_close, pad_margin_close, area_overview.",
+    "capture_status": "PREPARED_NOT_CAPTURED; syntax checked without Unreal import. No viewport or editor call during filesystem preparation.",
+    "capture_guards": "Explicit activation, current saved native revision and successful saved/reopen verification, clean named packages, paused Engine and zero workflow callbacks. Resolve close-view heights by tracing only the sole saved Landscape. Set explicit camera then installed CaptureViewport Current, no rebuild. Write native PNG directly to file without base64 output; actual camera/warnings/PNG hash captured. Each image still needs pixel review; apparent roughness and normals under current lighting are not independently quantified."
+  },
+  "latest_execution_attempt": {
+    "source_junctions_sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+    "pre_resume_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_PRE_RESUME_20261003T181901247258Z.json",
+    "failure_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_FAILED_RECOVERY_20261003T181945515173Z.json",
+    "error": "AssertionError('Native road enables excluded landscape/edge feature: bEnableLandscapeSplineMirroring')",
+    "identified_actor": "DynamicRoad_86, the lone existing empty derived connector",
+    "actual_readback": "All 40 original roads have mirroring False. Only DynamicRoad_86 has mirroring True; its conform/paint/edge/abutment flags are False and RoadPCGGraph is null. Full actor/policy readback is in the immutable failure evidence.",
+    "phase": "failed_conditioning",
+    "legacy_report_unchanged": true,
+    "operation": null,
+    "task_index": null,
+    "step_index": null,
+    "checkpoint_version": null,
+    "completed_corner_count": 0,
+    "callbacks": 0,
+    "autosave_current": false,
+    "original_autosave": true,
+    "engine_paused": true,
+    "map_saved": false,
+    "next_action": "Manager must coordinate the narrow existing-empty-connector policy/recovery handling with source owner, then explicitly resume. Task2 has not changed any actor policy, loosened a gate, respawned or edited source. Preserve the new exact failed_conditioning error/evidence on the next reentry."
+  },
+  "manager_requested_source_repair_stop": {
+    "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_SOURCE_REPAIR_STOP_20261003T181028712570Z.json",
+    "utc": "2026-10-03T21:10:28.71257+03:00",
+    "reason": "Manager reports Task3 S1: expected reciprocal offsets incorrectly hardcoded 0.0 while SDK computes signed lateral offsets; exact hashing distinguishes negative zero. Also retain the earlier live unsupported RoadsInNetwork failure for Task1 repair.",
+    "callbacks": 0,
+    "native_tick_running": false,
+    "callback_action": "Already stopped by the earlier read-only recovery failure; verified zero bank/native callbacks, no unregister necessary.",
+    "native_phase": "failed_conditioning",
+    "parent_phase": "failed_native_road_transaction",
+    "operation": null,
+    "task_index": null,
+    "step_index": null,
+    "checkpoint_version": null,
+    "completed_corner_count": 0,
+    "original_legacy_report_unchanged": true,
+    "participants": "Same 40 source roads, DynamicRoadNetwork_1, lone existing DynamicRoad_86, revision 20261003T172549017159, rebuild pass1. Exact actor paths, transaction token and full report preserved in immutable stop receipt.",
+    "autosave_current": false,
+    "original_autosave": true,
+    "engine_paused": true,
+    "lease_retained": true,
+    "edits_or_saves_after_stop_request": false,
+    "continuation": "Await manager-reviewed Task1 source repair/freeze and explicit continuation. No source edits, respawn, completed SDK replay or checkpoint clearing."
+  },
+  "scope_performed": "Preparation completed; manager activated task2 and transferred p/r lease. Verified frozen hashes, sole PID/world, zero callbacks, paused valid Engine and autosave protection. Preserved full pre-resume evidence, reloaded only frozen native modules and scheduled the existing transaction continuation. Recovery failed in read-only participant snapshot before any native edit. No predecessor source edits, profile writes, lease changes, map/dependency saves, cooks or network creation.",
+  "active_execution": {
+    "activation_receipt": "Staging/ManagedAstra_2026-10-03/EDITOR_OWNERSHIP_TRANSFER.json",
+    "activated_utc": "2026-10-03T21:05:04.864062+03:00",
+    "source_hashes_verified": {
+      "geocity_roadbld_junctions.py": "f429df4117a31c47b1c6653c41b85103082d8c248232dc5181975e01a0d8158f",
+      "geocity_roadbld_workflow.py": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6"
+    },
+    "resume_script": "Staging/ManagedAstra_2026-10-03/resume_existing_shuj.py",
+    "pre_resume_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_PRE_RESUME_20261003T180725494112Z.json",
+    "failed_recovery_evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_FAILED_RECOVERY_20261003T180806528881Z.json",
+    "failure": "RuntimeError: Missing reflected property RoadsInNetwork on DynamicRoadNetwork_1",
+    "failure_location": "Content/Python/geocity_roadbld_junctions.py:378, _owned_state(), called by _legacy_empty_recovery() before any SDK edit",
+    "source_repair_required": "Task1/manager must replace unsupported direct RoadsInNetwork access with an installed supported native discovery/API read, preserving exact membership/order/identity proof. Do not relax the proof or bypass ownership. Worker does not own this source file.",
+    "native_phase": "failed_conditioning",
+    "parent_phase": "failed_native_road_transaction",
+    "legacy_report_unchanged": true,
+    "checkpoint_version_created": false,
+    "same_original_source_roads": 40,
+    "same_derived_connectors": 1,
+    "rebuild_pass": 1,
+    "callbacks": 0,
+    "engine_paused": true,
+    "engine_valid": true,
+    "autosave_current": false,
+    "original_autosave": true,
+    "map_saved": false,
+    "lease_retained_for_manager_coordination": true,
+    "next_action": "Wait for manager-reviewed source repair/freeze and explicit resume instruction. Preserve current p/r, old report, empty connector and previous delivery. The resume script currently expects failed_rebuilding and must be adjusted to the proven failed_conditioning state for a reviewed retry, without erasing failure evidence."
+  },
+  "activation_required": {
+    "source": "Task1 must deliver READY_FOR_EDITOR, syntax-valid frozen junction/workflow files, SHA-256 values and recovery entry-point instructions; manager must review them.",
+    "manager": "Manager must explicitly activate task2 and grant sole editor ownership for the existing PID32752 transaction. Only manager changes assignments/lease and updates the existing p/r lease_line after checking callbacks, PID and world.",
+    "observed_assignment": "waiting_source_and_manager_activation; editor_calls_authorized=false",
+    "task1_handoff_present_at_preparation": false
+  },
+  "filesystem_verified": {
+    "native_state_path": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/ROADBLD_WORKFLOW_STATE.json",
+    "native_phase": "failed_rebuilding",
+    "native_revision": "20261003T172549017159",
+    "native_saved": false,
+    "source_road_count": 40,
+    "native_error": "AssertionError('Native source conditioning did not succeed')",
+    "network_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoadNetwork_1",
+    "parent_phase": "failed_native_road_transaction",
+    "pending_license_log": "Saved/Logs/Environmentpipeline.log:30631 [2026.10.03-17.26.04:819][707]LogScript: Warning: RoadBLDToolset: The RoadBLD license check is still running. Retry in a few seconds.",
+    "old_delivery_revision": "20261003T133607905511",
+    "old_delivery_saved": true,
+    "old_delivery_original_roads": 40,
+    "old_delivery_derived_roads": 6,
+    "old_delivery_total_roads": 46,
+    "backup_directory": "Staging/AppearanceRepair_2026-10-03/BeforeOrdinaryReplacement/GazaShujaiya",
+    "backup_manifest": "Staging/AppearanceRepair_2026-10-03/BeforeOrdinaryReplacement/GazaShujaiya/MANIFEST.json",
+    "backup_verification": "All seven files exist and match manifest byte counts and SHA-256 hashes: profile, HDA receipt, original map, last successful bank state, current bank state, native state and native delivery.",
+    "saved_map_bytes": 39195123,
+    "saved_map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "saved_map_matches_backup": true,
+    "before_transfer_junctions_sha256": "ada8c2bc75f2dc0c11349374d0ee2041404d7d89eee957a5fe9082635eb42f39",
+    "before_transfer_workflow_sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+    "rimal_saved_verification": "Staging/AppearanceRepair_2026-10-03/SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json has phase=passed and pid=32752. No new Rimal editor inspection performed."
+  },
+  "handoff_documented_not_live_verified": {
+    "objects": "geocity_bank_workflow.ACTIVE[-1] is p; geocity_roadbld_workflow.ACTIVE[-1] is r. Preserve both, transaction token, previous delivery, native object lists and original autosave value. Do not reload bank workflow.",
+    "connector": "Exactly one empty owned derived connector DynamicRoad_86 exists in the new network; no source parent controls changed; completed_corner_count absent/zero.",
+    "recovery_evidence": "Old in-memory preflight report has frozen original/expected trim proofs but no planned_tasks. Preserve and pass it through Task1's reviewed recovery path before adoption; do not reconstruct by rediscovering after partial mutations.",
+    "live_state": "Manager handoff reports official Engine valid/paused, auto-cooking disabled, callbacks zero and autosave temporarily disabled. No live calls permitted in preparation."
+  },
+  "manager_transfer_clarification": {
+    "receipt": "Staging/ManagedAstra_2026-10-03/EDITOR_TRANSFER_SNAPSHOT.json",
+    "receipt_utc": "2026-10-03T20:52:02.835814+03:00",
+    "evidence_scope": "Manager's actual editor snapshot read from disk by task2; no task2 editor calls.",
+    "pid": 32752,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "native_revision": "20261003T172549017159",
+    "source_road_count": 40,
+    "derived_road_count": 1,
+    "derived_actor": "DynamicRoad_86",
+    "callbacks": 0,
+    "engine_valid": true,
+    "engine_paused": true,
+    "autosave_currently_enabled": false,
+    "original_autosave_enabled": true,
+    "config_saved": false,
+    "map_save_performed": false,
+    "autosave_resolution": "The snapshot supersedes the stale failure receipt. Manager reports p.write now records this state. Preserve original True and keep live autosave False during the incomplete transaction.",
+    "lease_resolution": "Manager will retain OWNER=CODEX_APPEARANCE_MANAGER, append explicit worker_thread_id/task, and transfer only current p/r lease_line with callbacks zero before activation. Existing inspector guards remain intact; no inspector ownership change needed.",
+    "activation_granted": false
+  },
+  "concrete_blockers_and_activation_checks": [
+    "Task1 source freeze and explicit manager activation remain pending. Do not import in-progress source as a finished fix.",
+    "At activation recheck the manager-issued sole-writer lease, PID/world/callbacks/autosave against EDITOR_TRANSFER_SNAPSHOT.json. Only manager transfers the lease and current p/r lease_line; no guard bypass.",
+    "Connector identity, original source controls/links/radii/presets, live p/r references and actual dirty packages still require full pre-resume verification after activation. Abort on ambiguous or changed participants; never spawn another network as a recovery shortcut."
+  ],
+  "execution_plan_after_activation": [
+    "Verify manager activation and frozen source hashes. Read final lease and inspect the sole PID32752, exact existing Shujaiya world, dirty packages, callbacks, p/r identities, transaction token, previous delivery and autosave state. Capture immutable pre-resume state and old preflight evidence under AppearanceRepair before changing in-memory state.",
+    "Follow Task1's frozen recovery entry point. Reload only the approved native helpers/workflow while retaining p/r, restore native ACTIVE identity if reload resets it, and reassign r.__class__. Do not reload bank workflow or discard objects. Adopt DynamicRoad_86 only with exact owner/area/revision/network/preset/closed-policy and unchanged-original-source proof.",
+    "Use r.state['phase']='conditioning' through the reviewed continuation, p.native_road_phase='authoring', r.on_complete=p.after_native_roads and refreshed p.started_epoch. Restore parent delegates/watch and native Slate callback once with zero-callback/reentrancy guards. Continue the existing export; no additional export Cook, network, map or source changes.",
+    "Resume checkpointed connector-controls/parent-A/parent-B/link-A/link-B/final-verification operations. Retry only after fresh exact pending-license evidence from that call plus unchanged participants; about one second between attempts, 60-second maximum per operation without resetting its deadline. Restore temporary CDO/template radii before yielding. Exact expected-after state advances without replay; ambiguous state fails closed.",
+    "Complete normal native geometry conditioning and pass2, terrain grounding, same-source curb fit, bounded seam repair only if required, geographic area/pad clipping, full upward-asphalt source coverage, <=10cm physical height gate, controls/radii/reciprocal links, materials/UVs/normals/collision and ownership checks. Use actual GeometryScript face normals. Never relax thresholds or rebuild corrected final candidates.",
+    "Let p.after_native_roads validate the unsaved contract and drive the official Engine provider-suppression Cook/Bake. Keep the current-cook Landscape sampler in staged_contract; commit creates saved=True sampler only after Bake. Revalidate the sole saved Landscape and suppression receipt/token. Save the named dependency closure before removing exactly the previous tagged generation, then save the original named map and required profiles through the existing lifecycle.",
+    "Once callbacks are zero and official cooking paused, schedule verify_saved_native_area.py once. Require saved_readback and same-map reopen_readback native inspections plus bank/native-anchor/material/normal-provenance readbacks. Inspect filesystem progress while the bounded Slate operation runs; no stacked editor calls. Confirm clean named map/dependencies and absence of overlapping providers/extra networks/cooked copies.",
+    "Capture actual Lit ground/street images using the installed native CaptureViewport toolset without another rebuild. Verify both existing areas' retained delivery evidence, preserve Rimal's completed candidate, and leave a useful saved Lit view. Restore original autosave only after clean completion. Record exact receipts/images, measured gates, saved/reopened scope and outstanding visual issues in this result; manager alone updates authoritative documents and lease."
+  ],
+  "delivery_gates": {
+    "new_shuj_physical_validation": "FAILED at later source-ground height gate after v3 resolved lateral-reference failure: RoadGeo_96/DynamicRoad_53 error11.2903901045cm exceeds10cm. No gate loosened.",
+    "official_suppression_cook_bake": "NOT_RUN",
+    "named_saves": "NOT_RUN",
+    "saved_and_reopened_readback": "NOT_RUN",
+    "lit_ground_street_images": "NOT_RUN",
+    "fresh_process_restart": "NOT_PLANNED; same-editor saved-map reopen only",
+    "user_appearance_acceptance": "NOT_CLAIMED"
+  },
+  "preservation": "No source ownership takeover, HDA rewrite, new editor/network/map copy, SaveAll, global defaults/config saves, auth/license bypass, physical-gate relaxation, held asset or rights change, broad cleanup, Linear, memory update, heartbeat restart, chat creation or cross-chat message. Preserve the existing saved result and original sources until validated scoped replacement.",
+  "post_clip_failure": {
+    "phase": "failed_validating",
+    "road": "DynamicRoad_41",
+    "grounding_passed": true,
+    "bound_clipped_assets": 87,
+    "map_saved": false,
+    "saved_map_hash_unchanged": true,
+    "suppression_cook_performed": false,
+    "stop_receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_POST_CLIP_COVERAGE_STOP_20261003T192250614726Z.json",
+    "stop_sha256": "553b5fedd7781672b2dbb81740d4c917b9d8ee73382da854acf779b48cb93d1c",
+    "Road41_missing_samples": 20,
+    "Road41_total_samples": 199,
+    "all40_status_receipt": "Staging/ManagedAstra_2026-10-03/TASK2_ALL40_POST_CLIP_GAPS_STATUS.json",
+    "workflow_callbacks": 0,
+    "autosave_current": false,
+    "original_autosave": true,
+    "official_engine_paused": true,
+    "official_engine_session_valid": true,
+    "completed_corners": 4,
+    "rebuild_pass": 3,
+    "current_boundary": "Bound candidate stage. Do not run old clipping resume, re-ground or native rebuild. Preserve exact bound meshes and await manager-reviewed source repair."
+  },
+  "post_clip_all40_diagnosis": {
+    "all40_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_ALL40_POST_CLIP_GAPS_20261003T192521158589Z.json",
+    "all40_sha256": "4e13c9270191f003d770909349247bb6ba31ef41d3d9b0d715d878c3ae3950a9",
+    "all40_bytes": 36090031,
+    "scan_elapsed_seconds": 16.921999999991385,
+    "source_roads": 40,
+    "source_samples_at_max1m": 6711,
+    "missing_samples": 20,
+    "affected_roads": 1,
+    "road": "DynamicRoad_41",
+    "piece_id": "1096660488:0",
+    "source_osm_id": "1096660488",
+    "Road41_samples": 199,
+    "missing_inside_protected_pads": 20,
+    "pad_sample_counts": {
+      "298979086": 10,
+      "301838006": 10
+    },
+    "missing_outside_area": 0,
+    "nearest_eligible_upward_asphalt_distance_range_cm": [
+      2.416585957746884,
+      438.49152409720205
+    ],
+    "raw_face_receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_POST_CLIP_RAW_FACE_DIAGNOSTIC_20261003T192707931110Z.json",
+    "raw_face_sha256": "7817c61e0d16dfad195b21b064012ba7e4796e680780b967e165398e83b991a8",
+    "missing_samples_covered_by_any_raw_material0_face_regardless_normal": 0,
+    "retained_preclip_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_RETAINED_PRECLIP_20261003T192818405581Z.json",
+    "retained_preclip_sha256": "fd93062853246a18ed33d4b9330a4252fd19736ede3abcc8e9ecc1482237a341",
+    "all20_missing_samples_covered_by_retained_preclip_Geo90_arrays": true,
+    "retained_preclip_note": "Geo90 retained points/triangles/upward mask cover all20; current transient object has been clipped so actual preclip GeometryScript normals are unavailable for that object. Postclip actual GeometryScript normals are captured; no raw material0 face covers these points regardless normal. Preclip availability statement in all40 receipt superseded by supplement.",
+    "evidence_contents": "All40 rows, every6711station coverage count, all20missing exact XY/segment/fraction, nearesteligible actual asphalt vertices/material/upward/sourceRefs; pad containment/nearestedges andarea signed distances; exact full actualaffected4surface geometry/materialIDs/GeometryScriptnormals,4originalnative geometries, full binding source/new receipts, all87 actual geometryhashes, passedGround report,4corner/pass3 checkpoint, participant/binding ledger.",
+    "conclusion": "Measured protected-pad clipping removes asphalt covering an unchanged original geographic source centerline. Not a normal-threshold-only omission: zero raw asphalt faces remain at all20missing points. Both current pad-protection and exact-centerline gates conflict here. Source owner must repair or escalate source policy; no tolerance or gate changed.",
+    "callbacks": 0,
+    "participant_checkpoint_bound_meshes_unchanged": true,
+    "official_engine_paused": true,
+    "autosave_current": false,
+    "map_saved": false,
+    "suppression_cook_performed": false,
+    "awaiting": "Manager-reviewed source repair; old original-mesh clipping restart remains forbidden."
+  },
+  "unsaved_candidate_visual_diagnosis": {
+    "status": "THREE_LIT_VIEWS_VISUALLY_INSPECTED_UNSAVED_CANDIDATE",
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_UNSAVED_CURRENT_CANDIDATE_LIT_20261003T193949763435Z.json",
+    "sha256": "4181a9289b4082513318591591c42c0329609957f1759e5a20dc49e6e7a92a42",
+    "images": [
+      {
+        "name": "curb_street_close",
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_curb_street_close_20261003T193949763435Z.png",
+        "sha256": "97b601ecda7dbc6c820d8a106d8ec7f876d2b9184df99753448da9918cd425cc",
+        "observations": "Actual Lit street view: grain/cracks and strong rectangular dark asphalt patches; pale sidewalks have visible curbs and appear continuous in this stretch. Soil has natural small detail but broad tan color. Several facade colors are visible with repeated window/floor patterns. No numeric roughness or normal-channel measurement is inferred from the pixels."
+      },
+      {
+        "name": "pad_margin_close",
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_pad_margin_close_20261003T193949763435Z.png",
+        "sha256": "bd3d97dc1451047e1ef5dd6e28f0acbf990b73859a9e02e8054ca7702d3a5f3a",
+        "observations": "Actual Lit near-ground view: soil grain, irregular darker marks and a shallow mound/grade toward building base are visible. Base meets ground in this crop without a visible open gap. Broad tan ground remains visually uniform at larger scale; image does not establish all-pad support or final art acceptance."
+      },
+      {
+        "name": "source1096660488_pad_conflict",
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_source1096660488_pad_conflict_20261003T193949763435Z.png",
+        "sha256": "ae294b52e69875d34b5b365ca95fbf792bb77afce4574573fde06e00f471152f",
+        "observations": "Actual Lit elevated conflict view: adjacent buildings occupy the road corridor, with asphalt/sidewalk approaching their edges on both sides. Roof/building crowding and abrupt road termination at occupied pads remain apparent. Exact pad/source identities come from the coordinate evidence, not pixel-only identification."
+      }
+    ],
+    "label": "UNSAVED_CURRENT_CANDIDATE",
+    "pid": 32752,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+    "exact_current_export_landscape": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_2859_3235_0_GazaShujaiya_landscape",
+    "camera_before": {
+      "location_cm": [
+        4608.865597859457,
+        -5051.65602064708,
+        6282.671656150142
+      ],
+      "rotation": [
+        -31.40000280737877,
+        331.4000095129013,
+        0.0
+      ]
+    },
+    "camera_restored": true,
+    "callbacks": 0,
+    "participant_binding_checkpoint_dirty_packages_unchanged": true,
+    "official_engine_paused": true,
+    "official_engine_valid": true,
+    "saved_reopen_acceptance": false,
+    "no_cook_rebuild_save_geometry_material_edit_or_helper_reload": true,
+    "capture_api_behavior": "Installed CaptureViewport CURRENT never starts rebuild; bWaitForRebuild=False. Camera angles verified using explicit Rotator keyword fields.",
+    "future_saved_capture_note": "Existing capture_saved_view.py still uses positional Rotator(pitch,yaw,0), which maps incorrectly in this installed binding. Before later saved capture, change to explicit keywords and verify actual returned rotation. Saved verification guards were not weakened or edited."
+  },
+  "selected_material_diagnosis": {
+    "status": "SELECTED_MATERIAL_DIAGNOSIS_COMPLETE_READ_ONLY",
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_SELECTED_MATERIAL_DIAGNOSIS_20261003T194532750777Z.json",
+    "sha256": "0cca1d1a4f265db431514aa552db7489d2e8d69da855a952b069c95dbeef2c5b",
+    "bytes": 50404,
+    "full_readback": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_SELECTED_STREET_MATERIAL_READBACK_20261003T194350969417Z.json",
+    "connections": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_ASPHALT_PATCH_CONNECTIONS_20261003T194532750777Z.json",
+    "street_piece": "41254867:0",
+    "patch_finding": {
+      "texture": "/WorldBLD/AssetLibrary/EpicContent/MSPresets/MSTextures/patch_04.patch_04",
+      "UV_channel": 0,
+      "texture_coordinate_tiling": [
+        1,
+        1
+      ],
+      "UV_expression": "TextureCoordinate_11 * MV_PatchScale -> RG -> patch_04 UVs",
+      "patch_expression": "patch_04 -> Desaturation(Fraction=1) -> Saturate -> multiply MV_PatchMult -> add macro noise -> alpha of MV_Tint_Hi/MV_Tint_Lo blend -> base-color multiply -> MV_TintAmount -> MVAmount -> material attributes -> Enable MacroVary -> BaseColor",
+      "asphalt_effective": {
+        "MV_PatchScale": 0.08799999952316284,
+        "MV_PatchMult": 5.534815788269043,
+        "MV_TintAmount": 1.0,
+        "MVAmount": 0.2160000056028366,
+        "Enable MacroVary": true,
+        "Use UV Only": false
+      },
+      "projection_note": "Patch subbranch explicitly uses UV0 even though global Use UV Only is false. Do not describe this specific patch branch as world projection.",
+      "source_texture_settings": {
+        "srgb": false,
+        "compression": "TC_DEFAULT",
+        "virtual_texture_streaming": true,
+        "size_xy": [
+          1024,
+          1024
+        ]
+      },
+      "assessment": "Confirmed active material patch branch consistent with dark rectangles. No isolated shader/texture-pixel experiment performed, so not an exclusive causal attribution for every visible dark shape."
+    },
+    "Natural_readback_confirmed": true,
+    "callbacks": 0,
+    "bound_participants_dirty_packages_unchanged": true,
+    "no_mutations": true,
+    "review_owner": "Task3; root adjudicates changes after native coverage freeze."
+  },
+  "postbinding_continuation_preparation": {
+    "status": "FINAL_THREE_SCRIPTS_FROZEN_READY_FOR_REVIEW_NOT_ACTIVATED",
+    "scripts": {
+      "resume_existing_shuj_postbinding.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_postbinding.py",
+        "sha256": "38f29a01f43c2f0c90e24238fa7e344887f351fb42be90568eebd75619de6d07",
+        "syntax": "passed_compile_only",
+        "reload_targets": [
+          "grounding"
+        ],
+        "APIs": {
+          "frozen": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256",
+          "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, manager_activation"
+        },
+        "editor_executed": false
+      },
+      "verify_postbinding_saved_area.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\verify_postbinding_saved_area.py",
+        "sha256": "8eca27cf555e33d71e9078b8c39f170a891385e41bd75f47e76b5f9be6d89d8c",
+        "syntax": "passed_compile_only",
+        "reload_targets": [
+          "grounding"
+        ],
+        "APIs": {
+          "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, expected_inspector_sha256, manager_activation"
+        },
+        "editor_executed": false
+      },
+      "inspect_native_road_delivery.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\inspect_native_road_delivery.py",
+        "sha256": "bfbf0451515d783d34100998319ee18b653843b7351dbc32abc03049cddd2255",
+        "syntax": "passed_compile_only",
+        "reload_targets": [],
+        "APIs": {
+          "inspect_delivery": "profile_path=None, context='saved_readback', receipt_path=None, max_seconds=180.0"
+        },
+        "editor_executed": false
+      }
+    },
+    "resume_api": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, manager_activation",
+    "saved_reopen_api": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, expected_inspector_sha256, manager_activation",
+    "authorization_guards": "Exact root activation argument plus manager assignment active_editor_writer, worker thread/PID32752/lease and sole process, READY_FOR_EDITOR complete four-file freeze, root-supplied reviewed grounding and Task3 receipt SHA. No execution or reload performed during preparation.",
+    "preservation_guards": "Immutable stop/all40 receipts; exact failed parent/native phases,error,revision,token; original saved map SHA; full participant/preset snapshot; exact4corner checkpoint/pass3; 87 bindings mesh/material/transform/collision/sourceRefs; fresh actual87 geometry/materialID/upward hashes; original source rows, passedGround and clip reports; dirty packages; zero callbacks; officialEnginepaused+valid and autosaveFalse/originalTrue.",
+    "continuation": "Grounding verifier only reloads. Existing r class, ACTIVE object, reports and bound geometry preserved. First read-only final verifier must pass before any parent phase/delegate/watch transition. Then r.validate(),r.finish(),original r.on_complete(r,True) once; ordinary suppression/Bake/commit/named saves continue through retained parent. No re-ground/re-clip/rebuild/corner/control replay.",
+    "saved_inspector_required_pending": "Completed: proxy carries exact contract clipping_report and preparation grounding_report; saved LandscapeSampler(saved=True) unchanged. Original schema/basis/core comparisons retained. Explicit partition/exclusion/continuity/clipping ledger fields compared when present in retained expected contract. Wrapper additionally compares all recorded final proof fields except elapsed_seconds; no weakening for old Rimal.",
+    "current_source_status": "IMPLEMENTING_POSTCLIP_PARTITION_REQUESTING_ALL87_CAPTURE",
+    "inspector_patch_performed": true,
+    "editor_calls_this_preparation": 0,
+    "source_helper_reload": false,
+    "Rimal_boundary": "Manager reports all41 retained clipping geometry hashes match final native grounding geometry, including seam asset; no stale clip concern found. This was root filesystem comparison only, no fresh Rimal editor readback. Keep exact hashes and old core comparison.",
+    "workflow_digest_update": {
+      "status": "EXACT_MANAGER_APPROVED_FINAL_WORKFLOW_DIGEST_EXPLICIT_ARGUMENT_IMPLEMENTED",
+      "current_source_handoff_status": "IMPLEMENTING_POSTCLIP_PARTITION_REQUESTING_ALL87_CAPTURE",
+      "required_change": "Implemented exact final grounding/workflow digest arguments, matched to READY_FOR_EDITOR freeze and actual files; no workflow reload or live r class replacement.",
+      "live_object_policy": "Current r instance/class and native ACTIVE ledger remain preserved through this transaction; only grounding verifier reloads.",
+      "later_normal_Tools_action": "After successful named delivery/reopen and clean state, coordinate root-authorized idle-only workflow refresh if needed for new pure plan diagnostics, preserving ACTIVE ledger/state. No idle reload is authorized or performed now."
+    },
+    "no_action_method_syntax_check": {
+      "resume_existing_shuj_postbinding.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_postbinding.py",
+        "sha256": "38f29a01f43c2f0c90e24238fa7e344887f351fb42be90568eebd75619de6d07",
+        "syntax": "passed_compile_only",
+        "reload_targets": [
+          "grounding"
+        ],
+        "APIs": {
+          "frozen": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256",
+          "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, manager_activation"
+        },
+        "editor_executed": false
+      },
+      "verify_postbinding_saved_area.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\verify_postbinding_saved_area.py",
+        "sha256": "8eca27cf555e33d71e9078b8c39f170a891385e41bd75f47e76b5f9be6d89d8c",
+        "syntax": "passed_compile_only",
+        "reload_targets": [
+          "grounding"
+        ],
+        "APIs": {
+          "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, expected_inspector_sha256, manager_activation"
+        },
+        "editor_executed": false
+      },
+      "inspect_native_road_delivery.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\inspect_native_road_delivery.py",
+        "sha256": "bfbf0451515d783d34100998319ee18b653843b7351dbc32abc03049cddd2255",
+        "syntax": "passed_compile_only",
+        "reload_targets": [],
+        "APIs": {
+          "inspect_delivery": "profile_path=None, context='saved_readback', receipt_path=None, max_seconds=180.0"
+        },
+        "editor_executed": false
+      }
+    },
+    "source_four_file_hashes": {
+      "geocity_roadbld_junctions.py": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "geocity_roadbld_workflow.py": "1909fb60f22be17a18012a5b2a8f990d6fdc7c5c73b8ae164f8fbef5e74ad453",
+      "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+      "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211"
+    },
+    "first_operation": "After guards/evidence and grounding-only refresh, one-shot callback calls fresh grounding.verify_native_delivery with original failed_validating and parent phases unchanged and workflow callbacks0. Failure writes precheck error only. On pass, restore same parent authoring lifecycle; fresh r.validate then finish and original verified completion callback exactly once.",
+    "pending": "Task3 final frozen-source/owned-script review, root review and explicit execution activation. No schedule calls or editor reloads performed."
+  },
+  "partition_boundary_8_height_evidence": {
+    "status": "READ_ONLY_EXACT8_BOUNDARY_HEIGHTS_COMPLETE",
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_PARTITION_BOUNDARY_8_HEIGHTS_20261003T195409078839Z.json",
+    "sha256": "f6db86d413320ad3aa83d29743ea2a35b8040de577e5d59b48d116deff49e3e4",
+    "elapsed_seconds": 0.07800000000861473,
+    "sample_count": 8,
+    "request_snapshot": "Staging\\ManagedAstra_2026-10-03\\TASK2_PARTITION_8_HEIGHT_REQUEST_SNAPSHOT.json",
+    "request_sha256": "1905ec35d72407e4cf78c5ec82fea175afe0fefe5ac3104e8054a209d20b1e76",
+    "callbacks": 0,
+    "participant_binding_checkpoint_dirty_packages_unchanged": true,
+    "no_geometry_processing_reload_cook_rebuild_save": true
+  },
+  "postbinding_crash": {
+    "status": "EDITOR_PROCESS_CRASHED_DURING_POSTBINDING_GUARDS_NO_RETRY",
+    "utc": "20261003T200538728869Z",
+    "former_pid": 32752,
+    "unreal_editor_processes_after": [],
+    "tool_error": "Transport closed after14.7seconds",
+    "crash_log_time_utc": "2026-10-03T20:04:21.63Z",
+    "fatal_error": "EXCEPTION_ACCESS_VIOLATION reading address0x000000005f5f7318",
+    "callstack_modules": [
+      "python311.dll",
+      "UnrealEditor-PythonScriptPlugin.dll",
+      "UnrealEditor-Slate.dll"
+    ],
+    "root_cause": "Not established. Log lacksPythonline/guard progress. No pre-resume receipt exists; the frozen script creates that receipt before grounding module reload or scheduling final verifier/lifecycle.",
+    "pre_resume_receipts_found": [],
+    "pre_resume_receipt_created": false,
+    "new_grounding_reload_or_final_verifier_execution": "Not reached by script control flow if receipt absence reflects completed writes; no successful execution evidence.",
+    "suppression_cook_bake_named_save": "No evidence of initiation; diskworkflow states unchanged at prior failures.",
+    "saved_map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "saved_map_matches_prior_baseline": true,
+    "parent_disk_phase": "failed_native_road_transaction",
+    "native_disk_phase": "failed_validating",
+    "native_disk_saved": false,
+    "prior_saved_delivery_revision": "20261003T133607905511",
+    "crash_directory": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000",
+    "crash_files": [
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\CrashContext.runtime-xml",
+        "bytes": 215262,
+        "sha256": "69304889ae27b07e5e2061684c29342ce72f5deb6ce2d6dcae6b6f8bf6e6ddf3"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\CrashReportClient.ini",
+        "bytes": 239,
+        "sha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893",
+        "preserved_copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\CrashReportClient.ini"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\Environmentpipeline.log",
+        "bytes": 7007373,
+        "sha256": "0a6f477467530ab653a2029f300fbb6c4a297a3e8fddc39e38d215573fab8d18",
+        "preserved_copy": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\Crash_Environmentpipeline.log"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\UEMinidump.dmp",
+        "bytes": 2112316,
+        "sha256": "c7c9d5668be9f87faa6a31c500cf5f4b2d800694a440a9576414d6bf8ba52d86"
+      }
+    ],
+    "preserved_log": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\Environmentpipeline.log",
+    "preserved_log_sha256": "cfc67986074fa6a1827188fe9be12951f862fe2814c599b2532a52b7bb29c590",
+    "in_memory_bound_candidate": "Editor process terminated;87unsavedbound candidates andlivep/r objects are no longer available. Existing geometry/provenance snapshots andPNG evidence remain on disk.",
+    "autosave": "WasFalse/originalTrue before call; process terminated before explicit restoration. Config was not saved by our autosave management. No claim of live setting restoration.",
+    "lease": "Retained unchanged for manager; PID32752 is stale after crash.",
+    "no_editor_restart_retry_rebuild_recovery_save_or_lease_change": true,
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\CRASH_RECEIPT.json",
+    "receipt_sha256": "612ae5bbda39dc6099048c606535992d5585a6a93dc8173808149be410b9aa8f"
+  },
+  "replacement_editor_preparation": {
+    "status": "RESTART_READY_PREPARATION_AWAITING_ROOT_FINAL_REVIEW_NO_LAUNCH",
+    "plan": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_REPLACEMENT_BOOTSTRAP_PREPARATION.json",
+    "sha256": "e4dd06989d2ef5f9199b48c03c59cc2dec52aa2fa28ea31a85b64131a390f2bc",
+    "scripts": {
+      "init_unreal.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\init_unreal.py",
+        "sha256": "934ea9468084fb0bd9416fccf34ce74b17d64419da8a60e91d243f73e058a777",
+        "executed": false
+      },
+      "recovery_startup.py": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryBootstrap\\recovery_startup.py",
+        "sha256": "566bedc5b42975a67c1371b3676308f7c829c041b3f33f1648bd380e4d37a4e6",
+        "executed": false
+      },
+      "launch_replacement_editor_PREPARED.ps1": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\launch_replacement_editor_PREPARED.ps1",
+        "sha256": "17dce6eaa11a4e35898a5a78bc2d51ba8e65e2c54883c858ae416d47c67e62e8",
+        "executed": false
+      }
+    },
+    "current_state_preserve_directory": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RecoveryPreparationPreserve_20261003T201942432179Z",
+    "baseline_files_verified": 7,
+    "launch_count": 0,
+    "asset_profile_edits": false,
+    "awaiting": "Rootfinalstartupreviewandexlicitlaunchactivation",
+    "safe_startup_configuration_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_SAFE_STARTUP_CONFIG_RECEIPT.json",
+    "only_hda_receipt_reconciliation": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_HDA_RECEIPT_RECONCILIATION.json",
+    "asphalt_child_plan": "/Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity",
+    "future_execution_requirement": "HeavyUObject/geometryreadbackandauthoring must usefreshobjects in persistentone-shotSlateGameThreadcallbacks withflushedBEFORE/AFTERbreadcrumbs. Existingordinarynativequeue stayscallbackbased. CrashwasGameThread; stagedjournalingisnotaprovencrashcure. Neverinvoke oldPID-specificresume/wrapper oroldp/r."
+  },
+  "single_replacement_launch": {
+    "pid": 21780,
+    "launch_count": 1,
+    "journal": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\REPLACEMENT_LAUNCH_20261003T2028266786177Z.jsonl",
+    "activation": "ROOT_ACTIVATED_REPLACEMENT_EDITOR_STARTUP",
+    "editor_RPC_calls_after_launch": 1,
+    "new_PID_lease_acquired": true,
+    "next": "Root activated service readiness, saved baseline readback, shared asphalt child and fresh ordinary two-area delivery.",
+    "no_launch_retry": true
+  },
+  "replacement_bootstrap": {
+    "receipt": "Staging/ManagedAstra_2026-10-03/RECOVERY_STARTUP_20261003T202902027153Z.json",
+    "sha256": "a73eefad8d29a38716c9e98f6338234d7a400b56ddab8a9050dc77dc7c8d245e",
+    "readback": {
+      "status": "READY_FOR_MANAGER_NEW_PID_LEASE",
+      "pid": 21780,
+      "expected_map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "old_pid": 32752,
+      "lease_acquired": false,
+      "new_operation_required": true,
+      "old_p_r_not_reconstructed": true,
+      "journal": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\RECOVERY_STARTUP_20261003T202902027153Z.jsonl",
+      "no_Cook_rebuild_generation_save_asset_profile_edit_recovery_pack_or_autosave_restore": true,
+      "autosave_original_user_policy": true,
+      "autosave_restoration_policy": "Keep runtime disabled through manager-owned recovery/generation; root restores originalTrue only after named completion/reopen/clean checks. No config save frombootstrap.",
+      "recovery_policy": "Prelaunch RestoreEnabled=False manifest; original flag andallfourautosavefiles preserved. No package import/delete/automatic flag restoration.",
+      "autosave_runtime_observed_on_bootstrap_entry": false,
+      "Houdini_bPauseCookingOnStart": true,
+      "Engine_paused_before": true,
+      "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "dirty_before": {
+        "maps": [],
+        "content": []
+      },
+      "hda_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0",
+      "hda_asset": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank.GeoCity_city_v015_PermanentBank",
+      "hda_auto_cooking_before": false,
+      "hda_auto_cooking_after": false,
+      "hda_auto_bake_enabled": false,
+      "live_landscapes": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape"
+      ],
+      "live_native_networks": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoadNetwork_0"
+      ],
+      "autosave_at_world_ready_before_safety_check": false,
+      "autosave_runtime": false,
+      "startup_autosave_protection": "EditorPerProjectUserSettings scalar command-line override bAutoSaveEnable=False plus runtime check; NoAutoSave is supplementary only",
+      "Engine_paused": true,
+      "Engine_session_valid": false,
+      "workflow_modules": {
+        "geocity_bank_workflow": {
+          "loaded": true,
+          "active_count": 0,
+          "callback_count": 0
+        },
+        "geocity_roadbld_workflow": {
+          "loaded": false,
+          "active_count": 0,
+          "callback_count": 0
+        }
+      },
+      "service_readiness": {
+        "official_API_available": true,
+        "official_session_valid": false,
+        "RoadBLD_classes_exposed": true,
+        "Copilot_modules_loaded": true,
+        "MCP_transport_not_probed": true,
+        "RoadBLD_signin_license_not_checked_or_changed": true
+      },
+      "dirty_after": {
+        "maps": [],
+        "content": []
+      },
+      "bootstrap_callbacks": 0,
+      "elapsed_seconds": 0.07800000000861473
+    }
+  },
+  "fresh_services_and_baseline": {
+    "services": "FRESH_readiness_20261003T203232858143Z.json",
+    "baseline": "FRESH_baseline_20261003T203340389995Z.json",
+    "material_stop": "FRESH_material_20261003T203359715729Z.json",
+    "material_named_save_performed": false,
+    "profiles_edited": false,
+    "generation_started": false
+  },
+  "fresh_delivery": {
+    "services": "FRESH_readiness_20261003T203232858143Z.json",
+    "baseline": "FRESH_baseline_20261003T203340389995Z.json",
+    "material": "FRESH_material_finish_20261003T203444712261Z.json",
+    "profiles": "FRESH_ASPHALT_PROFILES_20261003T203505211461Z.json",
+    "generation": "FRESH_generate_shuj_20261003T203505716317Z.json",
+    "source_frozen": true,
+    "runtime_autosave": false,
+    "original_user_autosave": true,
+    "lease_unchanged": true,
+    "material_API_note": "Setter returned false, but local and effective readbacks proved exact override; verified all other scalar/vector/texture/static parameters match original before named save."
+  },
+  "fresh_license_dispatch_stop": {
+    "preserve_directory": "Staging\\ManagedAstra_2026-10-03\\FreshLicenseDispatchStop_20261003T2038118863771Z",
+    "revision": "20261003T203730573110",
+    "parent_phase": "failed_native_road_transaction",
+    "native_phase": "failed_authoring",
+    "original_roads_authored": 40,
+    "dispatch_error": "RoadBLD license check is still running. Retry in a few seconds.",
+    "native_rebuild_job_started": false,
+    "map_saved": false,
+    "next": "Resolved by one supported request_rebuild on exact same fresh revision, after zero-job/zero-geos/40-source-control guards; original queue restored without source reload.",
+    "continuation_receipt": "FRESH_fresh_dispatch_retry_20261003T203838955104Z.json",
+    "rebuild_job_id": "19d5d010-47eb-c755-b729-9c81554ef290"
+  },
+  "fresh_junction_stop": {
+    "preserve_directory": "Staging\\ManagedAstra_2026-10-03\\FreshJunctionStop_20261003T2039391429154Z",
+    "revision": "20261003T203730573110",
+    "parent_phase": "failed_native_road_transaction",
+    "native_phase": "failed_rebuilding",
+    "rebuild_pass": 1,
+    "completed_corners": 0,
+    "operation": "connector_controls",
+    "derived_actor": "DynamicRoad_86",
+    "capture_start_byte": 476884,
+    "capture_end_byte": 476884,
+    "capture_suffix": "",
+    "result_network": "",
+    "exact_pending_license": false,
+    "log_warning_UTC": "2026-10-03T20:38:49.167Z",
+    "failure": "Native edit failed without fresh call-local pending-license evidence",
+    "diagnosis": "Later saved log contains exact pending-license warning for SetControlPoints, while immediate call-local captured suffix was empty. Log flush timing is an inference; no captured evidence exemption or retry performed.",
+    "map_saved": false,
+    "source_modified": false,
+    "further_authoring_stopped": true,
+    "live_receipt": "Staging\\ManagedAstra_2026-10-03\\FRESH_fresh_junction_stop_20261003T203938737856Z.json",
+    "live_receipt_sha256": "9185a64b0768f47b7ec208c8d37536b91fad003224f41f237a0a1ae474954427",
+    "actual_participants_unchanged_from_pre_call": true,
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native_tick": false
+    },
+    "Engine_valid": true,
+    "Engine_paused": true,
+    "autosave_current": false,
+    "saved_map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "saved_map_unchanged": true,
+    "exact_call_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_JUNCTION_CALL_EVIDENCE_20261003T204100038374Z.json",
+    "exact_call_evidence_sha256": "5aa8fab069f7a6b30b78a3ddff42b9eda090ae007f3700e7230ce4a05497baba",
+    "readback_refresh_guard": "ASSIGNMENTS editor_calls_authorized=false; no action scheduled",
+    "latest_read_only_receipt": "Staging\\ManagedAstra_2026-10-03\\FRESH_READONLY_STOP_20261003T204227744766Z.json",
+    "latest_read_only_receipt_sha256": "dcc00c4b19f7706fbf1f0e327ce64ff122d9211348d66f98f28b3355c2dbc74f",
+    "read_only_permission_used": true,
+    "operation_deadline_monotonic_preserved": 167732.562,
+    "deadline_expired": true,
+    "parent_native_states_unchanged": true
+  },
+  "license_continuation_preparation": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_LICENSE_CONTINUATION_PREPARATION.json",
+    "sha256": "e458414610b44e2b315b4f6a118e2e7391e7aa7cee0fc8fbb2b4a7043f897de8",
+    "wrapper_sha256": "883f47b936967b17d773a9c86b48c9fcfe65db9b4833fdf1d61af65eb7925947",
+    "status": "PREPARED_SYNTAX_VALID_NOT_IMPORTED_NOT_EXECUTED_AWAITING_ROOT_FREEZE_REVIEW_ACTIVATION",
+    "executed": false
+  },
+  "v6_continuation_stop": {
+    "receipt": "FRESH_LICENSE_CONTINUATION_20261003T205502525516Z.json",
+    "preserve_directory": "Staging\\ManagedAstra_2026-10-03\\DelegateRegistrationStop_20261003T205632100481Z",
+    "error": "HoudiniPublicAPIAssetWrapper_OnHoudiniAssetPostCook: Callable has the incorrect number of arguments (expected 2, got 0)",
+    "cause": "Owned observation wrapper uses variadic args; Unreal delegate inspects explicit positional arity. Source v6 refresh and new intent completed; no native edit dispatched.",
+    "no_retry": true,
+    "source_v6_modified": false,
+    "next": "Root review of owned callback instrumentation compatibility; preserve newly created intent/deadline without extension.",
+    "live_stop_receipt": "Staging\\ManagedAstra_2026-10-03\\DELEGATE_STOP_20261003T205631646029Z.json",
+    "live_stop_receipt_sha256": "abb098e40d3ee76948c028d7a881ded46cab891f297e0c6e4dc5a7269b90dfcc",
+    "new_operation_attempts": 0,
+    "new_operation_deadline": 168707.234,
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native": false
+    },
+    "Engine_paused": true,
+    "autosave": false,
+    "observation_hooks_restored": true,
+    "participants_unchanged": true
+  },
+  "callback_arity_continuation_preparation": {
+    "plan": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_CALLBACK_ARITY_CONTINUATION_PREPARATION.json",
+    "plan_sha256": "0b8afeea67f0c39aea9903940a1534cc4274970d226f2687c4604ac5a34df334",
+    "wrapper_sha256": "ef063beaca5a466c4d7fbd2dd8328a20d83337ebb30c84c8e8fc9997a08bafc6",
+    "status": "FIXED_EXPLICIT_ARITY_WRAPPER_READY_NOT_IMPORTED_OR_EXECUTED",
+    "executed": false
+  },
+  "explicit_callback_continuation": {
+    "receipt": "EXPLICIT_CALLBACK_CONTINUATION_20261003T210723561587Z.json",
+    "same_revision": "20261003T203730573110",
+    "all_callbacks_registered": true,
+    "native_actual_argcounts": {
+      "after_cook": 2,
+      "after_processing": 1,
+      "after_bake": 2,
+      "watch": 1,
+      "finish_save": 1,
+      "tick": 1
+    },
+    "completed_corners": 4,
+    "rebuild_pass": 3,
+    "source_helpers_reloaded": false,
+    "expired_intents_preserved": true,
+    "fresh_delivery_driver_v6_hashbarrier_file_sha256": "dc2bab424cf5e2b43933a3e9173375e4d1b33352b1d3a70e3d82328febc02246",
+    "next": "Existing grounding/clipping/fullnative validation, then official suppressionCook/Bake/namedSave/reopen/Lit; Rimal later.",
+    "progress": {
+      "utc": "2026-10-03T21:14:57.911724+00:00",
+      "native_phase": "clipping",
+      "parent_phase": "native_road_authoring",
+      "guard_journal_advancing": true,
+      "no_new_error_recorded": true,
+      "physical_pass_not_yet_complete": true,
+      "named_save_not_started": true
+    }
+  },
+  "grounding_timeout_stop": {
+    "preserve_directory": "Staging\\ManagedAstra_2026-10-03\\GroundingTimeoutPreserve_20261003T211926123482Z",
+    "error": "Native grounding exceeded bounded time; no asset bindings changed",
+    "revision": "20261003T203730573110",
+    "completed_corners": 4,
+    "rebuild_pass": 3,
+    "failed_phase": "failed_clipping",
+    "original_timeout_seconds": 600,
+    "timeout_not_extended": true,
+    "source_modified": false,
+    "suppression_Cook_Bake_namedSave_performed": false,
+    "no_retry": true,
+    "journal": "EXPLICIT_CALLBACK_CONTINUATION_20261003T210723561587Z.jsonl",
+    "possible_instrumentation_cost": "Every native.guard invocation was surrounded by two synchronous flushed filesystem writes per manager-required before/after journaling. Timing impact has not yet been isolated; no claim of geometry defect or performance root cause.",
+    "live_receipt": "Staging\\ManagedAstra_2026-10-03\\GROUNDING_TIMEOUT_STOP_20261003T211925662803Z.json",
+    "live_receipt_sha256": "96bed34749da573c64be90bc638c5b78c68b02f04cd725029e5b9b415442768c",
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native": false
+    },
+    "Engine_valid": true,
+    "Engine_paused": true,
+    "autosave": false,
+    "native_geos": 87,
+    "clipping_report_exists": false,
+    "grounding_report_exists": false,
+    "observation_hooks_restored": true
+  },
+  "guard_observer_coalescing": {
+    "applied": "at idle after grounding timeout, not during pass",
+    "previous_bytes": "Staging\\ManagedAstra_2026-10-03\\fresh_delivery_21780.before_guard_log_coalescing.py",
+    "old_sha256": "dc2bab424cf5e2b43933a3e9173375e4d1b33352b1d3a70e3d82328febc02246",
+    "new_sha256": "d28d94887169c4190c106b3df5ee8d2e648c22c53b97636b8df86877c85074b5",
+    "diff": "Staging\\ManagedAstra_2026-10-03\\GUARD_OBSERVER_COALESCING.diff",
+    "scope": "Only call observer helper, time import and counter dictionary; every original guard call still unconditional; repeated native.guard/parent.guard BEFORE/AFTER coalesced to at most once per second with omitted counts; all failures immediately flushed. Other labels unchanged.",
+    "runtime_apply": "Replaced only pure call definition/time import/counter dictionary in persistent module; no source helper reload, ACTIVE replacement, UObject access or generation continuation.",
+    "runtime_readback": "GUARD_OBSERVER_COALESCING_READBACK_20261003T2120.jsonl",
+    "all_original_guard_calls": 8,
+    "journal_rows": 2,
+    "new_attempt_started": false
+  },
+  "grounding_only_restart": {
+    "receipt": "Staging\\ManagedAstra_2026-10-03\\GROUNDING_ONLY_RESUME_20261003T212400186387Z.json",
+    "status": "post_rebuild_grounding_clipping_running",
+    "source_unchanged": true,
+    "same87bindings_materials_transforms_collision_verified": true,
+    "sequence": "Direct one-shot clip_final_geometry then validate, finish, original parent completion; no clipping-phase tick dispatch",
+    "new_local_timer_seconds": 600,
+    "same_network_roads_corners_rebuild_pass": true,
+    "no_partial_transient_reuse": true
+  },
+  "exterior_interval_stop": {
+    "preserve_directory": "Staging\\ManagedAstra_2026-10-03\\ExteriorIntervalStop_20261003T213017494226Z",
+    "revision": "20261003T203730573110",
+    "phase": "failed_validating",
+    "error": "AssertionError('Unaccounted exterior interval: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49 segment=4 intervals=[[0.0, 0.4612367876575603], [0.4614122522707323, 1.0]]')",
+    "road": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_49",
+    "source_osm_id": "296365952",
+    "piece_id": "296365952:0",
+    "segment_index": 4,
+    "source_segment_endpoints_cm": [
+      [
+        15333.599853515625,
+        25235.032923081344,
+        6459.529358903936
+      ],
+      [
+        15205.914306640625,
+        25385.892441693475,
+        6466.944711722246
+      ]
+    ],
+    "uncovered_normalized_interval": [
+      0.4612367876575603,
+      0.4614122522707323
+    ],
+    "source_segment_xy_length_cm": 197.64157770229355,
+    "inferred_uncovered_source_length_cm": 0.034679102978231124,
+    "length_basis": "Computed from reported normalized gap and original source segment XY length; not independent mesh-face measurement.",
+    "grounding_passed": true,
+    "grounding_elapsed_seconds": 212.78099999998813,
+    "clipped_bound_assets": 87,
+    "suppression_Cook_Bake_save": false,
+    "no_retry_or_gate_relaxation": true,
+    "actual_evidence_receipt": "Staging\\ManagedAstra_2026-10-03\\EXTERIOR_INTERVAL_EVIDENCE_20261003T213208608026Z.json",
+    "actual_evidence_sha256": "ceefd83835f2b9206d2ecfc25860f4a8fe37ee304d2ee639d7e250586eacc5ab",
+    "actual_same_source_surfaces": 2,
+    "captured_preclip_surfaces": 2,
+    "actual_asphalt_intervals": [
+      [
+        0.0,
+        0.4612367876575603
+      ],
+      [
+        0.4614122522707323,
+        1.0
+      ]
+    ],
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native": false
+    },
+    "Engine_valid": true,
+    "Engine_paused": true,
+    "autosave": false,
+    "participants_bindings_dirty_unchanged": true
+  },
+  "all40_exterior_interval_evidence": {
+    "schema": "environmentpipeline.task2.readonly_all40_intervals_summary.v1",
+    "created_utc": "2026-10-03T21:45:13.290727+00:00",
+    "status": "EVIDENCE_COMPLETE_VALIDATION_REMAINS_FAILED",
+    "receipt": "Staging\\ManagedAstra_2026-10-03\\ALL40_INTERVALS_20261003T213901084762Z.json",
+    "receipt_sha256": "b90d29863efb84d7afb18954c927cb4d361012117e71a540cecbd7966995d2fc",
+    "receipt_bytes": 754954580,
+    "collector": "Staging\\ManagedAstra_2026-10-03\\capture_all40_intervals_21780.py",
+    "collector_sha256": "3645c5050f01431b3dc131416cbaab743c9afa42a81abb537b1d58c8cbb7feee",
+    "revision": "20261003T203730573110",
+    "pid": 21780,
+    "source_piece_count": 40,
+    "continuous_segment_count": 3337,
+    "station_samples": 6711,
+    "actual_bound_components": 87,
+    "affected_original_native_surfaces": 58,
+    "available_affected_original_native_surfaces": 58,
+    "affected_retained_preclip_arrays": 58,
+    "segment_collection_errors": 0,
+    "probe_measurement_errors": 0,
+    "gap_count": 22,
+    "affected_source_piece_count": 16,
+    "computed_gap_lengths_cm": {
+      "min": 0.009818274830950314,
+      "max": 50.872545440543306,
+      "sum": 176.69231643670898
+    },
+    "length_basis": "Along original source XY segments from analytic uncovered interval fractions; not independent nearest mesh-edge distance.",
+    "raw_diagnostic_full_segment_coverage": {
+      "asphalt_any_orientation": 1,
+      "all_materials_any_orientation": 4
+    },
+    "raw_diagnostic_interpretation": "Diagnostic variants retain source provenance but disable face-normal and/or material filters; they are not acceptance results. All-material coverage on four gap segments and asphalt-any-orientation coverage on one warrant source-owner diagnosis, not gate relaxation.",
+    "height_issue_probes": 46,
+    "height_issue_probes_without_eligible_hit": 46,
+    "height_issue_probes_with_measured_offset_above_10cm": 0,
+    "height_interpretation": "All flagged probes are analytic gap/boundary probes without eligible actual hits, not measured height-offset failures. No original station probe was flagged.",
+    "protected_source_excluded_length_cm": 1887.338120057525,
+    "protected_source_physical_continuity": false,
+    "immutable_clip_report_sha256": "9c5cd6f505c23934e02f8d00058b2f3c3e5eddaf73524d8fd0b61e1a4c24447a",
+    "bound_geometry_matches_immutable_clip_ledger": true,
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native": false
+    },
+    "Engine_valid": true,
+    "Engine_paused": true,
+    "autosave": false,
+    "dirty_counts": {
+      "maps": 1,
+      "content": 101
+    },
+    "participants_reports_dirty_unchanged": true,
+    "no_geometry_mutation_source_reload_Cook_rebuild_or_save": true,
+    "elapsed_seconds": 33.32799999997951,
+    "next_boundary": "Source-owner diagnosis and manager-reviewed activation required before any authoring continuation. Preserve all 87 bound unsaved candidate assets; no rebuild, reground, reclip, Cook, Bake or save performed in this collection.",
+    "summary": "Staging\\ManagedAstra_2026-10-03\\ALL40_INTERVALS_20261003T213901084762Z_SUMMARY.json",
+    "summary_sha256": "6f5f582b2c1a265480d1006ff4896dd7dbab174dee22d4f762df2c863f022285",
+    "offline_review": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_OFFLINE_REVIEW_20261003T213901084762Z.json",
+      "sha256": "ece32cb4f912c99fd5b98e7872278b46d67bb8a62006d808b18bbb82f6b3f72f",
+      "bytes": 5072941,
+      "geometry_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_AFFECTED_DEDUP_GEOMETRY_20261003T213901084762Z.json.gz",
+      "geometry_sha256": "4f5bf006ff935d237c03fa4d44344430609484b158314df59ac3d17a6169167e",
+      "geometry_bytes": 54676458,
+      "preclip_full_segment_coverage_count": 1,
+      "gap_count": 22,
+      "surface_counts_by_stage": {
+        "actual_bound": 58,
+        "retained_preclip": 58,
+        "original_native": 58
+      },
+      "review_geometry_packages": {
+        "actual_bound": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_AFFECTED_ACTUAL_BOUND_20261003T213901084762Z.json.gz",
+          "sha256": "96e0e31519dec5c3c2c7245e300cda9ae0d7b5db5b2517b6420d9b6980b2a267",
+          "bytes": 27313819,
+          "components": 58,
+          "geometry_blobs": 58
+        },
+        "retained_preclip": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_AFFECTED_RETAINED_PRECLIP_20261003T213901084762Z.json.gz",
+          "sha256": "0b786ea8faff0b7713e6ca4355fd694a685ca19b8c78632eb42881ebf8168028",
+          "bytes": 13527570,
+          "components": 58,
+          "geometry_blobs": 58
+        },
+        "original_native": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\ALL40_AFFECTED_ORIGINAL_NATIVE_20261003T213901084762Z.json.gz",
+          "sha256": "2ee7991c1e6912c2d9fe1b415cc050204f9e84270feaff998783ac25cc6a6979",
+          "bytes": 8008961,
+          "components": 58,
+          "geometry_blobs": 58
+        }
+      },
+      "current_gap_preclip_comparison": {
+        "fully_covered": 1,
+        "not_fully_covered": 21
+      }
+    }
+  },
+  "same_postbinding_correction_preparation": {
+    "status": "PREPARED_NOT_EXECUTED_ADAPTER_CONTRACT_AND_ROOT_REVIEW_REQUIRED",
+    "receipt": "Staging\\ManagedAstra_2026-10-03\\TASK2_SAME_POSTBINDING_PREPARATION.json",
+    "receipt_sha256": "92b9c5e65e201778fc7994186e54e1ba2baa7e01156f1194c00ccbac1a06dfae",
+    "wrapper": "Staging\\ManagedAstra_2026-10-03\\prepare_same_postbinding_continuation_21780.py",
+    "wrapper_sha256": "66a80604aecce5bc5c5c1f27557b433cab0ef08376c9db44cbfc33cbcd66b570",
+    "baseline": "Staging\\ManagedAstra_2026-10-03\\SAME_POSTBINDING_BASELINE_20261003T213208608026Z.json",
+    "baseline_sha256": "f314d11b0fbd33f889a3f7f6b3b3e1c0535c00417e106995e2e4946bc2659cca",
+    "executed": false
+  },
+  "reviewed_helper_install_preparation": {
+    "receipt": "Staging\\ManagedAstra_2026-10-03\\TASK2_REVIEWED_HELPER_INSTALL_PREPARATION.json",
+    "receipt_sha256": "c46a714217b5640d1c190408890149c76f227ccafb57ec238089eb8b8fadeaff",
+    "installer": "Staging\\ManagedAstra_2026-10-03\\prepare_reviewed_helper_install_21780.py",
+    "installer_sha256": "b30910065dba1399b46b6e58395a43fce972e5648bf35f34b5182b6bef68dc90",
+    "status": "PREPARED_ONLY_NO_EDITOR_EXECUTION_NO_FINAL_SOURCE_HASHES",
+    "executed": false
+  },
+  "v3_fresh_owner_preparation": {
+    "manifest": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK2_V3_FRESH_PACKAGE_20261004.json",
+    "manifest_sha256": "4e357e05540bcded2f25c7d6f2e10fa02c71e9cfd17972af979d388da6cd6647",
+    "installer": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\v3_fresh_owner_20261004.py",
+    "installer_sha256": "8e72ca981c2da16c6ded6bfab4123aab09943ce7b29db92383025b6c503a668c",
+    "status": "PREPARED_ONLY_NO_EDITOR_CHANGED_SAVED_MAP_REQUIRES_ROOT_RECONCILIATION",
+    "executed": false
+  }
+}

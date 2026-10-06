@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2781,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Wall02"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"400x20x280\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Wall01.fbx\\\", \\\"Timestamp\\\" : \\\"1517157118\\\", \\\"FileMD5\\\" : \\\"74bc3fac5815dfb88efe44d0a86a68a2\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"3\",\"Materials\":\"1\",\"ResourceSize\":\"16\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"24\",\"UVChannels\":\"2\",\"Vertices\":\"48\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2781,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"400x20x280\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Wall01.fbx\\\", \\\"Timestamp\\\" : \\\"1517157118\\\", \\\"FileMD5\\\" : \\\"74bc3fac5815dfb88efe44d0a86a68a2\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"3\",\"Materials\":\"1\",\"ResourceSize\":\"16\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"24\",\"UVChannels\":\"2\",\"Vertices\":\"48\"}}"
+    }
+   ]
+  }
+ }
+}

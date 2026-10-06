@@ -1,0 +1,597 @@
+{
+  "ok": true,
+  "stdout": "",
+  "result": {
+    "found": {
+      "Math|Rotator|MakeRotator": [
+        "Math|Rotator|MakeRotator"
+      ],
+      "Math|Float|Truncate": [
+        "Math|Float|Truncate(Vector2D)",
+        "Math|Float|Truncate(Vector)",
+        "Math|Float|TruncatetoInteger64",
+        "Math|Float|Truncate"
+      ],
+      "ToString(Text)": [
+        "Utilities|String|ToString(Text)"
+      ],
+      "Variables|Default|Get": [
+        "Variables|Default|GetSkySphereObject",
+        "Variables|Default|GetNorthArrow",
+        "Variables|Default|GetExposureOverride",
+        "Variables|Default|GetVolumetricCloud",
+        "Variables|Default|GetSkyAtmosphere",
+        "Variables|Default|GetDirectionalLight",
+        "Variables|Default|GetSkyLight",
+        "Variables|Default|GetCompassMesh",
+        "Variables|Default|GetScene"
+      ],
+      "Variables|01": [
+        "Variables|01TimeandSun|GetTimeOfDay",
+        "Variables|01TimeandSun|SetTimeOfDay",
+        "Variables|01TimeandSun|GetManualSun",
+        "Variables|01TimeandSun|SetManualSun",
+        "Variables|01TimeandSun|GetClockDisplay",
+        "Variables|01TimeandSun|SetClockDisplay"
+      ],
+      "Variables|02": [
+        "Variables|02DateLocationandNorth|GetLatitude",
+        "Variables|02DateLocationandNorth|SetLatitude",
+        "Variables|02DateLocationandNorth|GetLongitude",
+        "Variables|02DateLocationandNorth|SetLongitude",
+        "Variables|02DateLocationandNorth|GetYear",
+        "Variables|02DateLocationandNorth|SetYear",
+        "Variables|02DateLocationandNorth|GetMonth",
+        "Variables|02DateLocationandNorth|SetMonth",
+        "Variables|02DateLocationandNorth|GetDay",
+        "Variables|02DateLocationandNorth|SetDay",
+        "Variables|02DateLocationandNorth|GetTimeZone",
+        "Variables|02DateLocationandNorth|SetTimeZone",
+        "Variables|02DateLocationandNorth|GetUseDaylightSavingTime",
+        "Variables|02DateLocationandNorth|SetUseDaylightSavingTime",
+        "Variables|02DateLocationandNorth|GetNorthOffset",
+        "Variables|02DateLocationandNorth|SetNorthOffset"
+      ],
+      "Variables|03": [
+        "Variables|03ManualSun|GetManualDirection",
+        "Variables|03ManualSun|SetManualDirection",
+        "Variables|03ManualSun|GetManualElevation",
+        "Variables|03ManualSun|SetManualElevation"
+      ],
+      "Variables|04": [
+        "Variables|04Lighting|GetSunIntensity",
+        "Variables|04Lighting|SetSunIntensity",
+        "Variables|04Lighting|GetSkyIntensity",
+        "Variables|04Lighting|SetSkyIntensity"
+      ],
+      "Variables|05": [
+        "Variables|05Exposure|GetOverrideExposure",
+        "Variables|05Exposure|SetOverrideExposure",
+        "Variables|05Exposure|GetExposureEV100",
+        "Variables|05Exposure|SetExposureEV100"
+      ],
+      "SetEnabled": [
+        "Interchange|Node|SetEnabled",
+        "ChaosPhysics|SetEnableDamagefromCollision",
+        "Class|GeometryCollectionComponent|SetEnableDamagefromCollision",
+        "Class|GeometryCollectionRenderLevelSetActor|SetEnabled",
+        "AudioVolume|SetEnabled",
+        "Class|PostProcessComponent|SetEnabled",
+        "Class|HUD|SetEnableDebugTextShadow",
+        "ClusterUnion|SetEnableDamagefromCollision",
+        "Class|ClusterUnionComponent|SetEnableDamagefromCollision",
+        "Class|PostProcessVolume|SetEnabled",
+        "Class|TakeRecorderSource|SetEnabled",
+        "Class|PCGSettingsInterface|SetEnabled",
+        "PhysicsControl|SetControlsinSetEnabled",
+        "IKRig|SetEnabled",
+        "Class|StampController|SetEnableDebugDraw"
+      ],
+      "MakePostProcessSettings": [
+        "Utilities|Struct|MakePostProcessSettings"
+      ],
+      "SetmembersinPostProcessSettings": [
+        "Utilities|Struct|SetmembersinPostProcessSettings"
+      ],
+      "IsVisible": [
+        "Rendering|IsVisible",
+        "Widget|IsVisible",
+        "DataLayer|Editor|IsVisible"
+      ],
+      "SetCorrectedElevation": [
+        "Class|SunSky|SetCorrectedElevation",
+        "Variables|Location|SetCorrectedElevation"
+      ],
+      "SetAzimuth": [
+        "Class|SunSky|SetAzimuth",
+        "Variables|Location|SetAzimuth"
+      ]
+    },
+    "pins": {
+      "SunPosition|GetSunPosition": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "Latitude",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "Longitude",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "TimeZone",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "bIsDaylightSavingTime",
+            "Boolean",
+            "false"
+          ],
+          [
+            "Year",
+            "Integer",
+            "0"
+          ],
+          [
+            "Month",
+            "Integer",
+            "0"
+          ],
+          [
+            "Day",
+            "Integer",
+            "0"
+          ],
+          [
+            "Hours",
+            "Integer",
+            "0"
+          ],
+          [
+            "Minutes",
+            "Integer",
+            "0"
+          ],
+          [
+            "Seconds",
+            "Integer",
+            "0"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "SunPositionData",
+            "Sun Position Data Structure"
+          ]
+        ]
+      },
+      "Utilities|Struct|BreakSunPositionData": {
+        "inputs": [
+          [
+            "SunPositionData",
+            "Sun Position Data Structure (by ref)",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "Elevation",
+            "Float (single-precision)"
+          ],
+          [
+            "CorrectedElevation",
+            "Float (single-precision)"
+          ],
+          [
+            "Azimuth",
+            "Float (single-precision)"
+          ],
+          [
+            "SunriseTime",
+            "Timespan Structure"
+          ],
+          [
+            "SunsetTime",
+            "Timespan Structure"
+          ],
+          [
+            "SolarNoon",
+            "Timespan Structure"
+          ]
+        ]
+      },
+      "Transformation|SetWorldRotation": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Scene Component Object Reference",
+            ""
+          ],
+          [
+            "NewRotation",
+            "Rotator",
+            "0, 0, 0"
+          ],
+          [
+            "bSweep",
+            "Boolean",
+            "false"
+          ],
+          [
+            "bTeleport",
+            "Boolean",
+            "false"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "SweepHitResult",
+            "Hit Result Structure"
+          ]
+        ]
+      },
+      "Rendering|SetVisibility": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Scene Component Object Reference",
+            ""
+          ],
+          [
+            "bNewVisibility",
+            "Boolean",
+            "false"
+          ],
+          [
+            "bPropagateToChildren",
+            "Boolean",
+            "false"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ]
+        ]
+      },
+      "Rendering|Components|Light|SetIntensity": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Light Component Object Reference",
+            ""
+          ],
+          [
+            "NewIntensity",
+            "Float (single-precision)",
+            "0.0"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ]
+        ]
+      },
+      "Rendering|Components|SkyLight|SetIntensity": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "self",
+            "Sky Light Component Object Reference",
+            ""
+          ],
+          [
+            "NewIntensity",
+            "Float (single-precision)",
+            "0.0"
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ]
+        ]
+      },
+      "Utilities|Text|ToText(Integer)": {
+        "inputs": [
+          [
+            "Value",
+            "Integer",
+            "0"
+          ],
+          [
+            "bAlwaysSign",
+            "Boolean",
+            "false"
+          ],
+          [
+            "bUseGrouping",
+            "Boolean",
+            "true"
+          ],
+          [
+            "MinimumIntegralDigits",
+            "Integer",
+            "1"
+          ],
+          [
+            "MaximumIntegralDigits",
+            "Integer",
+            "324"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Text"
+          ]
+        ]
+      },
+      "Utilities|String|Append": {
+        "inputs": [
+          [
+            "A",
+            "String",
+            ""
+          ],
+          [
+            "B",
+            "String",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "String"
+          ]
+        ]
+      },
+      "Class|PostProcessComponent|SetSettings": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "Settings",
+            "Post Process Settings Structure",
+            ""
+          ],
+          [
+            "self",
+            "Post Process Component Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "Output_Get",
+            "Post Process Settings Structure"
+          ]
+        ]
+      },
+      "Class|PostProcessComponent|SetBlendWeight": {
+        "inputs": [
+          [
+            "execute",
+            "Exec",
+            ""
+          ],
+          [
+            "BlendWeight",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "self",
+            "Post Process Component Object Reference",
+            ""
+          ]
+        ],
+        "outputs": [
+          [
+            "then",
+            "Exec"
+          ],
+          [
+            "Output_Get",
+            "Float (single-precision)"
+          ]
+        ]
+      },
+      "Math|DateTime|DaysInMonth": {
+        "inputs": [
+          [
+            "Year",
+            "Integer",
+            "0"
+          ],
+          [
+            "Month",
+            "Integer",
+            "0"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Integer"
+          ]
+        ]
+      },
+      "Math|Integer|Clamp(Integer)": {
+        "inputs": [
+          [
+            "Value",
+            "Integer",
+            "0"
+          ],
+          [
+            "Min",
+            "Integer",
+            "0"
+          ],
+          [
+            "Max",
+            "Integer",
+            "0"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Integer"
+          ]
+        ]
+      },
+      "Math|Float|Clamp(Float)": {
+        "inputs": [
+          [
+            "Value",
+            "Float (double-precision)",
+            "0.0"
+          ],
+          [
+            "Min",
+            "Float (double-precision)",
+            "0.0"
+          ],
+          [
+            "Max",
+            "Float (double-precision)",
+            "1.0"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Float (double-precision)"
+          ]
+        ]
+      },
+      "Math|Rotator|MakeRotator": {
+        "inputs": [
+          [
+            "Roll",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "Pitch",
+            "Float (single-precision)",
+            "0.0"
+          ],
+          [
+            "Yaw",
+            "Float (single-precision)",
+            "0.0"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Rotator"
+          ]
+        ]
+      },
+      "Math|Float|Truncate": {
+        "inputs": [
+          [
+            "A",
+            "Float (double-precision)",
+            "0.0"
+          ]
+        ],
+        "outputs": [
+          [
+            "ReturnValue",
+            "Integer"
+          ]
+        ]
+      }
+    },
+    "metadata_sample": "{}",
+    "postprocess_methods": [
+      "__setattr__",
+      "add_asset_user_data_of_class",
+      "add_local_offset",
+      "add_world_offset",
+      "enabled",
+      "get_asset_user_data_of_class",
+      "has_asset_user_data_of_class",
+      "is_component_tick_enabled",
+      "reset_editor_property",
+      "reset_relative_transform",
+      "set_absolute",
+      "set_active",
+      "set_auto_activate",
+      "set_component_tick_enabled",
+      "set_component_tick_interval",
+      "set_component_tick_interval_and_cooldown",
+      "set_editor_properties",
+      "set_editor_property",
+      "set_hidden_in_game",
+      "set_is_replicated",
+      "set_mobility",
+      "set_relative_location",
+      "set_relative_location_and_rotation",
+      "set_relative_rotation",
+      "set_relative_scale3d",
+      "set_relative_transform",
+      "set_tick_group",
+      "set_tickable_when_paused",
+      "set_visibility",
+      "set_world_location",
+      "set_world_location_and_rotation",
+      "set_world_rotation",
+      "set_world_scale3d",
+      "set_world_transform",
+      "settings"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "implemented_saved_reopened",
+  "utc": "2026-10-02T13:15:09.289609+00:00",
+  "hda": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\GeoCity_city_v015_PermanentBank.hdalc",
+  "type": "trackb::geocity_city::15.0",
+  "hda_sha256": "bd62ec4d9df7fa3b90b7959ebda927c0d85c7066fded8de1361e98f065d019b1",
+  "module_sha256": "e69e5da20a731e1b7295337a724a715bbdccc8d8fd4f1f64193ba9b75298000a",
+  "source_hda_sha256": "da7252754a6fdf451156671a35f076db3ccb7137f269a35439b01fbb58ddf9bf",
+  "default_bank_object_path": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4.DT_EnvironmentBank_v4",
+  "technical_preview_default": false,
+  "schema_version": 3,
+  "houdini": "22.0.429",
+  "new_nodes": [
+    "catalog_road_material",
+    "catalog_sidewalk_material",
+    "catalog_wholebuilding_replacement"
+  ],
+  "modular_route": "measured_scoped_native_facade_assembly_with_closed_floor_roof_door_corners",
+  "attachments": "held_until_valid_contract",
+  "validation": "Actual official Engine r017 replacement/Bake/named saves completed in both existing areas; all667 pads covered, native material/anchor counts checked, closed roofs visually inspected, both saved maps unloaded/reopened without recook. Same-editor persistence; no fresh process restart or final appearance acceptance.",
+  "revision": "r017_retained_native_environment",
+  "revision_utc": "2026-10-03T03:01:02.261510+00:00",
+  "repair": "Retained native facade/door/floor/roof/corner assembly; final support and graded terrain; bounded roadside/generated-tree fitting; concrete roof slabs; failed generated decoration omitted explicitly from final proxy outputs; corrected outward Houdini front winding and aligned normals for every closed generated roof/floor/corner solid",
+  "integrated_utc": "2026-10-03T03:18:29.365639+00:00",
+  "engine_compatibility_fix": "Named float4 orient as existing working bank selector; no Attrib.setTypeInfo",
+  "actual_area_results": {
+    "GazaRimal": {
+      "building_count": 269,
+      "whole_buildings": 60,
+      "assembled_buildings": 209,
+      "native_instance_count": 16009,
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration"
+    },
+    "GazaShujaiya": {
+      "building_count": 398,
+      "whole_buildings": 41,
+      "assembled_buildings": 357,
+      "native_instance_count": 18016,
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration"
+    }
+  }
+}

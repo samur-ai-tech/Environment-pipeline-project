@@ -1,0 +1,300 @@
+{
+  "status": "FOR_MANAGER_REVIEW_NOT_NATIVE_EXECUTED",
+  "operator": "task4 only after manager actual-sole-PID lease and fresh sealed startup",
+  "prerequisites": [
+    "Task1/task2/task3 source freeze, manager integration of PROFILE_PATCHES and paint_ready lifecycle gate.",
+    "Prove all five native RoadBLD landscape-edit flags false in effective configuration before ordinary generation.",
+    "Reconcile original Shujaiya two saved Landscapes through parent scoped replacement; never select a prior saved Landscape for new-output verification.",
+    "Verify source coordinate frame and HDA actor placement agree with source-derived world probes before accepting them. No native action by task3."
+  ],
+  "ordinary_action": "Tools > GeoCity: Generate / Regenerate Current Area",
+  "graph_contract": {
+    "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural",
+    "base_instance": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "owned_nodes": [
+      "GeoCity_LandscapeGrass:Ground",
+      "GeoCity_LandscapeGrass:Density",
+      "GeoCity_LandscapeGrass:GroundDensity",
+      "GeoCity_LandscapeGrass:Output"
+    ],
+    "edges": [
+      "LandscapeLayerSample(Sand_01) -> Multiply.A",
+      "ScalarParameter(GeoCity_GrassCoverage, default 0) -> Multiply.B",
+      "Multiply -> LandscapeGrassOutput.GeoCityGroundGrass"
+    ],
+    "graph_reuse": "Validate one owned node per label and one total Grass output; reconnect exactly three owned edges on ordinary preparation, compile/save exact master. No material editor-dependent graph-input API, no deletion of original material nodes."
+  },
+  "grass_contract": {
+    "asset": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+    "meshes": [
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2"
+    ],
+    "bank_rule": "Both exact paths must still be enabled understory rows for current area; no table writes.",
+    "total_density_per_10m2": 12.0,
+    "per_variety_density_per_10m2": 6.0,
+    "coverage": 0.15,
+    "start_cull_cm": 10000,
+    "end_cull_cm": 20000,
+    "quality_and_platform": "Same defaults, empty overrides. Read actual structs even when metadata matches.",
+    "use_grid": true,
+    "placement_jitter": 1.0,
+    "random_rotation": true,
+    "align_to_surface": true,
+    "scaling": "UNIFORM",
+    "scale_xyz": [
+      1,
+      1,
+      1
+    ],
+    "weight_attenuates_max_scale": false,
+    "allowed_density_range": [
+      0,
+      1
+    ],
+    "min_lod": -1,
+    "override_materials": "Use existing profile.instance_materials for each exact mesh; load/read valid MaterialInterface dependencies, preserve native originals.",
+    "density_scalability": "Retain native enable_density_scaling and report it; viewer/foliage quality may suppress cache. Do not call zero cache visible or silently change quality."
+  },
+  "areas": [
+    {
+      "area_id": "GazaShujaiya",
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "area_material": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+      "ordinary_operations": [
+        "prepare reuses exact GrassType and Natural master; reconciles actual variety settings and reasserts existing owned graph edges",
+        "Create MI_GeoCityGround only if absent, verify ownership if present; set parent to retained Natural MI, verify corrected normal copies, set/read coverage .15 even if setter flag is False",
+        "Explicitly save shared GrassType/master and this area MI; update in-memory profile landscape_material before official HDA parameter assignment",
+        "Use official output/Bake and parent lifecycle paint_ready gate; named dependency/map saves only after full other subsystem checks"
+      ],
+      "named_ground_packages": [
+        "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+        "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+      ],
+      "saved_baseline": "Shujaiya child and shared packages already saved; reuse",
+      "probe_patch": {
+        "profile": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+        "profile_sha256_at_read": "e6b8c095f6353f5727c3779eb45c48f2a69fa08aa274dea97a2891b7c45ba708",
+        "merge_fields": {
+          "landscape_material": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+          "landscape_grass": {
+            "paint_probe_locations": [
+              {
+                "id": "pad:GazaShujaiya:299323280",
+                "world_location_cm": [
+                  -2208.1764221191406,
+                  -1232.9643249511719,
+                  4817.329788208008
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 12.540021752557234
+              },
+              {
+                "id": "pad:GazaShujaiya:298471279",
+                "world_location_cm": [
+                  -21532.550484793526,
+                  -25966.883632114957,
+                  4066.1808013916016
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 6.080855214002401
+              },
+              {
+                "id": "pad:GazaShujaiya:298979131",
+                "world_location_cm": [
+                  -21583.508682250977,
+                  20417.945098876953,
+                  4976.163864135742
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 7.08860052008779
+              },
+              {
+                "id": "road:980861403:0",
+                "world_location_cm": [
+                  153.5573622759651,
+                  -15948.199552648208,
+                  4370.260990522529
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 48.211466519553134
+              },
+              {
+                "id": "road:1014615106:0",
+                "world_location_cm": [
+                  -27149.72844803538,
+                  -25693.253731657536,
+                  3793.465898474479
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 14.559701899918695
+              },
+              {
+                "id": "road:1096660488:0",
+                "world_location_cm": [
+                  -10182.897429770612,
+                  -19323.83052744764,
+                  4044.2730033038815
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 6.96596033354669
+              }
+            ],
+            "rules": "Ground is a geometric slope/open-space mask, not land-cover semantics. All four palette weights are normalized. Native Grass uses Ground times coverage; roads, pads and steep weights exclude/reduce it. Existing HDA placements remain retained."
+          }
+        },
+        "preserve_other_fields": true,
+        "source_receipt": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json",
+        "source_receipt_sha256": "c7604bf1d7e67919898012458652771b2b6a8dddd383aac7b587f20a4fb4d42b",
+        "probe_status": "Source-derived expectations, NOT native weight measurements. World cm uses recorded identity-frame Houdini X,Yup,Z -> Unreal X,Z,Y * 100. Task4 must confirm actual output frame before accepting."
+      }
+    },
+    {
+      "area_id": "GazaRimal",
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "area_material": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+      "ordinary_operations": [
+        "prepare reuses exact GrassType and Natural master; reconciles actual variety settings and reasserts existing owned graph edges",
+        "Create MI_GeoCityGround only if absent, verify ownership if present; set parent to retained Natural MI, verify corrected normal copies, set/read coverage .15 even if setter flag is False",
+        "Explicitly save shared GrassType/master and this area MI; update in-memory profile landscape_material before official HDA parameter assignment",
+        "Use official output/Bake and parent lifecycle paint_ready gate; named dependency/map saves only after full other subsystem checks"
+      ],
+      "named_ground_packages": [
+        "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+        "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround"
+      ],
+      "saved_baseline": "Rimal child absent on disk at task3 read; ordinary creation required",
+      "probe_patch": {
+        "profile": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+        "profile_sha256_at_read": "8341112c3ae1fa9d1b9dc1fcdb6924254525877210a14bb7d8060ddc6af863e6",
+        "merge_fields": {
+          "landscape_material": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+          "landscape_grass": {
+            "paint_probe_locations": [
+              {
+                "id": "pad:GazaRimal:295759628",
+                "world_location_cm": [
+                  -15378.797149658203,
+                  -544.0439860026042,
+                  3254.193115234375
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 11.87194871534403
+              },
+              {
+                "id": "pad:GazaRimal:295761953",
+                "world_location_cm": [
+                  -16642.5537109375,
+                  11444.315719604492,
+                  3523.2532501220703
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 12.756103180073168
+              },
+              {
+                "id": "pad:GazaRimal:295759169",
+                "world_location_cm": [
+                  27645.213317871094,
+                  22125.510787963867,
+                  4805.495834350586
+                ],
+                "expected_role": "BuildingPad",
+                "minimum_weight": 0.8,
+                "source": "native_building_assembly_records footprint interior",
+                "interior_clearance_m": 19.59079719964461
+              },
+              {
+                "id": "road:980818241:0",
+                "world_location_cm": [
+                  25068.28109623758,
+                  25341.06695816609,
+                  4911.856058279947
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 17.007650690977783
+              },
+              {
+                "id": "road:41254127:0",
+                "world_location_cm": [
+                  -23298.41504651853,
+                  -22767.59572945009,
+                  3890.468699006677
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 9.726957892795173
+              },
+              {
+                "id": "road:41255144:0",
+                "world_location_cm": [
+                  21843.76717371577,
+                  -20838.07451507958,
+                  3515.9680975285382
+                ],
+                "expected_role": "RoadBed",
+                "minimum_weight": 0.8,
+                "source": "roadbld_centerlines piece midpoint",
+                "building_clearance_m": 5.5706370510402134
+              }
+            ],
+            "rules": "Ground is a geometric slope/open-space mask, not land-cover semantics. All four palette weights are normalized. Native Grass uses Ground times coverage; roads, pads and steep weights exclude/reduce it. Existing HDA placements remain retained."
+          }
+        },
+        "preserve_other_fields": true,
+        "source_receipt": "Staging/ModelBank/PermanentIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json",
+        "source_receipt_sha256": "8d0e796cc2f235075dcf4c640e96ca0b50f68a9911bdf9ba54087c69e178952c",
+        "probe_status": "Source-derived expectations, NOT native weight measurements. World cm uses recorded identity-frame Houdini X,Yup,Z -> Unreal X,Z,Y * 100. Task4 must confirm actual output frame before accepting."
+      }
+    }
+  ],
+  "paint_verification": {
+    "api": "Landscape.get_target_layer_names; LandscapeComponent.editor_get_paint_layer_weight_by_name_at_location",
+    "targets": {
+      "Ground": "Sand_01",
+      "Steep": "Sand_02",
+      "RoadBed": "Dirt_Path",
+      "BuildingPad": "Sand_Path"
+    },
+    "sample_set": "25 interior grid points per current Landscape component plus six manager-owned source-derived known road/pad points per area",
+    "readiness": "paint_ready requires finite normalized four-target weights (4/255 tolerance), all four roles nonzero in samples, no zero/failure samples, no known-location role mismatch. Narrow target absence is unresolved sampled evidence, not proof of an empty weightmap. Known RoadBed and BuildingPad probes must explicitly pass; grid-only output cannot pass. Missing or duplicate/nonfinite probes fail closed before preparation/readiness.",
+    "postprocessing": "Zero readback is recorded as pending. Keep existing bounded retry after completed Bake and before old actor retirement/named result saves. Do not use ground_paint_weight_observed alone.",
+    "known_points": "PROFILE_PATCHES.json includes exact world cm and source receipt hashes. Road/pad minimum target weight 0.8; Ground therefore <= about 0.2 at those test points, not a claim of exact zero at partial boundaries.",
+    "ground_steep_locations": "Use role_weight_readback.Ground.best_sample and .Steep.best_sample from the actual normalized native readback; save those exact locations/weights as new receipts. Prefer near Ground >0.8 and Steep >0.8. If sparse grid misses steep, task4 reports coordinates from a known actual steep location and manager supplies extra profile probe; no gate relaxation or upstream change.",
+    "full_exclusion": "At full road/pad/steep weight ~1 the Ground grass input must be ~0. Fractional slope/boundary weights reduce Grass proportionally.",
+    "geographic_semantics": "Sand_01 is geometric Ground; not new land-cover classification or surveyed vegetation."
+  },
+  "near_view_acceptance": [
+    "After complete ordinary operation and shader/paint readiness, use a Ground best_sample inside the actual geographic area (not merely the outer terrain margin). Place camera about 200-400 cm above local ground, within 50 m; record actual camera transform and Lit viewport mode.",
+    "Record current grass.Enable, grass.DensityScale, grass.CullDistanceScale, grass quality/per-quality mode and foliage scalability using supported read-only console queries; zero/disabled explains absence but does not pass visibility. Do not force cache via a separate pilot.",
+    "Allow normal native grass streaming/update to settle. Call inspect_near_view(run, current_landscape, actual_camera_location_cm, radius_cm=5000) through the activated task4 run/guard context. Capture existing world instance positions. One nearby cached instance is separate from a Lit screenshot with visible permitted grass and textured ground.",
+    "Inspect both permitted mesh varieties in suitable near views where available; record missing variety explicitly. Inspect named source road/pad positions and a recorded steep location for exclusions. Preserve nearby road/building context in images.",
+    "Distant cache, zero cache, graph/type binding or Ground pixels alone never establish visible grass. inspect_near_view deliberately always returns visible_lit_grass_verified=false; task4 writes an independently reviewed image receipt."
+  ],
+  "persistence_and_regeneration": [
+    "Record exact named material/type packages, map, emitted LayerInfo/Bake dependencies from ordinary lifecycle ledger; no Save All, no save_assets([]), no original/vendor normal saves.",
+    "Reopen each named map, then fresh editor process with exact source seal and new actual-PID lease. Read material parent, two corrected normal copies, four target names/weights and settings again; grass cache is transient and must repopulate near view.",
+    "Repeat ordinary current-area operation. Require stable four graph nodes/one GrassType/one area MI, no duplicate landscape or HDA copies, unchanged named mesh/material identities and correct scoped replacement. Cache instance counts are viewer-dependent; do not require literal persistence of HISM counts.",
+    "Record source implementation, native generation, nearby cache, Lit appearance, named save, same-map reopen, fresh-process reopen, repeated generation and user acceptance separately."
+  ]
+}

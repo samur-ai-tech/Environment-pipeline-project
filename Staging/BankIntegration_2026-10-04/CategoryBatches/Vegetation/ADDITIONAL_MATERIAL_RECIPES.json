@@ -1,0 +1,347 @@
+[
+  {
+    "asset_id": "external.T0976",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\Derivatives\\external_T0976\\Prepared_Category.blend",
+    "prepared_blend_sha256": "f06473b63ecff81a8956c54a1aabec12ca06e625aaa454442b87088c4af441dd",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "Bark",
+        "prepared_material_name": "Bark",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.5882353186607361,
+          0.5882353186607361,
+          0.5882353186607361,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.699999988079071,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\DesertBark01_Albedo_c39f1ee5f29d.png",
+            "sha256": "c39f1ee5f29da98937573c27bc434e7bb598643783cd3115fa1f46ce2742bf09",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\DesertBark01_nrm_d0472048ac76.png",
+            "sha256": "d0472048ac76764836d5990857341c776083b7cd0b6e71cde9cf20c06ec7eefd",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "normal_basis": "Existing prepared tangent-space graph retained; native transfer/readback remains required."
+      },
+      {
+        "slot": 1,
+        "source_material": "Leafs",
+        "prepared_material_name": "Leafs",
+        "backface_culling": false,
+        "diffuse_color": [
+          0.5879999995231628,
+          0.5879999995231628,
+          0.5879999995231628,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.75,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Alpha"
+              }
+            ]
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\DesertBranch_3d3c64faf685_albedo_017bfcf778c95b.png",
+            "sha256": "611fc2adfa0c93c65d4a4f4d36a265e71cf14cf55a9c4b40095d42ac11968cc4",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              },
+              {
+                "socket": "Alpha",
+                "destinations": [
+                  "Principled BSDF.Alpha"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\DesertBranch_nrm_966c919e860d.png",
+            "sha256": "966c919e860de3c832b408dffea9f389d89459412fdf3f95a5994608bd55083f",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "normal_basis": "Existing prepared tangent-space graph retained; native transfer/readback remains required."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_object": "VegetationJoinedLOD0",
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "material_transfer_status": "recipe_saved_native_binding_pending"
+  },
+  {
+    "asset_id": "external.T1144",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\Derivatives\\external_T1144\\Prepared_Category.blend",
+    "prepared_blend_sha256": "3e7de4c14661be1b8707ce430ded55240e7761261336b47f38a214673805d746",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "07_-_Default",
+        "prepared_material_name": "07_-_Default",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              0.7529411911964417,
+              0.7529411911964417,
+              0.7529411911964417,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.699999988079071,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Alpha"
+              }
+            ]
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\hedge_15b21ff0eb04_albedo_347bdd29638904.png",
+            "sha256": "7ae46dd5aba6c851680650fca71c5e7a940b4c22e4b4a93349cb31863b0bc52d",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              },
+              {
+                "socket": "Alpha",
+                "destinations": [
+                  "Principled BSDF.Alpha"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Terre\\Textures\\hedge_n_bb34011bccf3.png",
+            "sha256": "685f9fd684e52c8916fbd258dc9d0358a9696981bae461ddf2311e565fb418ed",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "normal_basis": "Existing prepared tangent-space graph retained; native transfer/readback remains required."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_object": "HedgeSmall_Untitled",
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "material_transfer_status": "recipe_saved_native_binding_pending"
+  }
+]

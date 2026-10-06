@@ -1,0 +1,91 @@
+{
+  "schema": "environmentpipeline.task2.road_source_handoff.v1",
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "worker_thread_id": "01a106e8-f1fa-7741-bbcd-6c772df0ae03",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "source_hashes": {
+    "Content/Python/geocity_roadbld_clip.py": {
+      "sha256": "479842e4de932da3e9e0b0c0e6a5683b94ae25e41d0500913a4cc44408189565",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_grounding.py": {
+      "sha256": "0a0d813a7a05f42ab6967bab6608e7e7fb2cd3fe6501fe80441d76f4dc951f89",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_junctions.py": {
+      "sha256": "a2afdf91e503513272c687c96bdc5aaf89bc2741da15a000cacb9dbffc9a9f2e",
+      "changed_by_task2": true
+    },
+    "Content/Python/geocity_roadbld_landscape.py": {
+      "sha256": "48dcc0771b7c780a0f8d7d7afa2ce5fcd3fb92d8f3cf0524f0eed1b1e66155b4",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_props.py": {
+      "sha256": "bf59bf96169af3a631735b96c75f51bba6f36f692836fc197052ad996c053449",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_seams.py": {
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_topology.py": {
+      "sha256": "0b39c79efe33cc1eaf610cd17a28655b5f433711cbc794fce02237d1b5b036a3",
+      "changed_by_task2": false
+    },
+    "Content/Python/geocity_roadbld_workflow.py": {
+      "sha256": "625a77066edf3a62e98a6dbef4ba70f36d26e7a55bcf5b3fe896e006440d566d",
+      "changed_by_task2": true
+    },
+    "Config/DefaultEngine.ini": {
+      "sha256": "ba043fdcf89107ab35a7aa579e44629c88a01b54e0bf87422918c5f95255d5cd",
+      "changed_by_task2": true
+    },
+    "Config/DefaultRoadBLD.ini": {
+      "sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43",
+      "changed_by_task2": true
+    }
+  },
+  "configuration_applied": true,
+  "native_policy_verified": false,
+  "interfaces": {
+    "unchanged": "require_geographic_landscape_authority() returns the existing flat five-false dict or raises; no mutation.",
+    "new_readonly": "inspect_geographic_landscape_authority() returns passed/errors, project config SHA, CDO/native Get paths and flags. It never sets defaults, reloads config, builds or saves.",
+    "run": "check_landscape_policy(stage) records structured evidence; verify_owned_landscape_patches() detects enabled patches without disabling them.",
+    "receipt_fields": [
+      "native_landscape_authority",
+      "native_landscape_edit_policy",
+      "native_owned_landscape_patches",
+      "retired_failed_generations",
+      "retired_successful_generations",
+      "unvalidated_previous_mesh_packages_preserved"
+    ],
+    "profile_field_patches": [],
+    "profile_reason": "Existing enabled road workflow/material setting suffices; terrain authority is project-wide and must not be profile-toggleable.",
+    "task1_required": [
+      "Keep pre-HDA require_geographic_landscape_authority call.",
+      "Include both project config files in final startup seal/hash verification; task2 did not edit task1 sealer/manifest/guard.",
+      "Keep existing build/staged_contract/commit and correction rollback ordering; reconcile prior saved Landscapes by exact official-output ownership."
+    ]
+  },
+  "native_preflight": [
+    "Manager/task4 only: actual sole UnrealEditor PID, exact current lease, original target map, paused Houdini, autoCook/autoBake off, zero callbacks and exact dirty packages. A released PID is not activation.",
+    "After all source owners freeze, task1 reseals final code and both Config/DefaultRoadBLD.ini and Config/DefaultEngine.ini. Start a fresh process; no hot reload into PID27188 or another old process.",
+    "Before any HDA mutation/native authoring save inspect_geographic_landscape_authority() report: passed=true; project_flags, native_views.class_default.flags and native_views.native_get.flags must each contain five literal false values. Record both settings object paths and project config SHA.",
+    "If either native view is enabled/unavailable, stop. Inspect the RoadBLD hierarchy/accessor. No CDO setter, runtime config reload, vendor edit or output suppression to force a pass.",
+    "Reconcile the two known saved Shujaiya Landscapes and exact successful/failed road actors. LandscapeSampler still demands one current cooked Landscape and one final saved Landscape; do not select arbitrarily or broadly remove actors.",
+    "Use the registered ordinary current-map action with licensed RoadBLD. Policy gates occur before network spawn, road creation, junction edits, every rebuild dispatch, after rebuild and during native validation.",
+    "Capture native logs and patch readback for each rebuild. No enabled owned LandscapePatchComponent is accepted or disabled afterward. Also inspect tile-patch logs and authoritative height/paint for changes outside owned components; zero owned components alone is not no-write proof."
+  ],
+  "required_validation": [
+    "Both originals: exact source XY, class/full width, protected-building exclusions, complete exterior intervals/sidewalks/junction seams and support/height gates. No fixed-road exceptions or lowered limits.",
+    "Validate actual UVs, split normals, material slots, collision and one visible road provider; preserve native originals and project-owned preset copies.",
+    "Inspect class-aware markings/crossings/native modules/PropSpawners in generated components and Lit views. Enabled settings are not visible detail proof. Empty native kit features remain explicit content gaps.",
+    "Check prop provenance, exact retained transforms/contact and omitted-conflict receipts; no bank expansion, held releases or candidate approvals.",
+    "Pending correction handles survive link checks, two validations and staged contract; rollback restores prior UV/normal/material/collision/state until explicit commit immediately before suppression. Real UObject lifetime and rollback fidelity remain unproven. Do not revive historical in-memory snapshots.",
+    "build callback true means validated unsaved output. staged_contract must feed the same PID/token/source official suppression Cook/Bake. commit rechecks the sole Landscape/provider before exact prior-road retirement and named saves.",
+    "Independently compare SAVED_ROAD_PRESERVATION.json: 132 failed actor paths, 87 saved package hashes and 136 successful actor paths/dependencies. Preserve packages; retire only verified current actor ledgers after replacement passes.",
+    "Task4 proves Shujaiya then Rimal Lit appearance, named saves, fresh-process reopen and repeated ordinary generation without duplicate providers/actors/Landscapes. User acceptance remains separate."
+  ],
+  "source_editing_stopped": true,
+  "next": "Manager review/task1 final seal, then task4 only after actual-PID activation."
+}

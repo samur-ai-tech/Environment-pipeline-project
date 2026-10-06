@@ -1,0 +1,59 @@
+{
+  "status": "PROPOSED_ONLY_MANAGER_MERGE_REQUIRED",
+  "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Iran_38196167_46086167_4km\\AREA_PROFILE.json",
+  "before_sha256": "004ec07d97a3ef76dfb60835fb133fee1e2f5df1d98f1fae121d46dbc2953a1a",
+  "required_source_sha256": "849cf4ce32b504ae9323aabf2de0dbfcbbcde1d756d5020ba0571b1340280669",
+  "set": {
+    "building_rules_json": {
+      "schema": "environmentpipeline.building_rules.v1",
+      "defaults": {
+        "warehouse": {
+          "storeys": 1,
+          "storey_height_m": 6.0
+        },
+        "station": {
+          "storeys": 1,
+          "storey_height_m": 4.0
+        },
+        "unknown": {
+          "storeys": 1,
+          "storey_height_m": 3.2
+        },
+        "residential": {
+          "storeys": 2,
+          "storey_height_m": 3.2
+        },
+        "commercial": {
+          "storeys": 1,
+          "storey_height_m": 4.0
+        },
+        "other": {
+          "storeys": 1,
+          "storey_height_m": 3.2
+        }
+      },
+      "valid_height_m": [
+        2.65,
+        250.0
+      ],
+      "valid_storeys": [
+        1,
+        60
+      ],
+      "height_levels_conflict": "retain_both_source_values_block_incompatible_layout",
+      "missing_roof": "inferred_flat_closed_slab_not_surveyed",
+      "whole_use_contracts": {},
+      "content_input": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\IranBuildingAdaptation_2026-10-04\\ConsumerIntegration\\INPUT_CONTRACT_COMBINED.json",
+        "sha256": "358f5dae4916f6669bc022b034c5fb51367aca03a8fd58da53c195cc6e7afc96"
+      }
+    }
+  },
+  "policy_source": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\IranBuildingAdaptation_2026-10-04\\building_extension.py",
+    "sha256": "b4174d0e4ba3204c0c9c63817a658d83f4e33bba2c2dd88691a3a966abc85203"
+  },
+  "semantics_profile_proposal": "Staging/ManagedSystemsAstra_2026-10-04/Task3_GroundGrass/IranSemanticConsumer/PROFILE_PATCH_PROPOSAL.json",
+  "qualification": "No acceptance or eligibility manufactured. Producer building_dependencies_complete must be true for ordinary delivery. Current supplied candidates remain unqualified.",
+  "ordinary_activation": false
+}

@@ -1,0 +1,319 @@
+{
+  "schema": "environmentpipeline.prepared_bank_additive_intake.v1",
+  "owner": "01a1067c-5012-7550-b449-015b53c9d726",
+  "manager": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "target_registry": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankPreparation_2026-10-04\\PREPARED_BANK.json",
+  "target_registry_before_sha256": "d39349a197dc4d74840f42808919c5f5bb6c12f1a20f47a066acd7fc24473ad0",
+  "source_transaction": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\4f2d4a05efea18d537e8d10e35f4460d328a8a66e853cd182a721411a0f83de9\\TRANSACTION.json",
+  "source_transaction_sha256": "1973dd7677cc96b257d756e8eca2a1b64530c87b2fd523678d2b3efc6665d586",
+  "require_native_registration_applied_digest": "c4dc687602dc2e40ffd2ad2e13ea8ba0ccecc1300a2ae7e616bd1501e0cb11a1",
+  "merge_key": "asset_id",
+  "merge_rule": "append these exact two records only after registration APPLIED receipt; preserve every existing record; reject duplicate identity/name/casefold path; no eligibility or family release.",
+  "rows": [
+    {
+      "asset_id": "native.Current.03d5b98d84743f46a66b09e1",
+      "catalog_row_name": "MB_D50A3CC7885428ABE5D601BC31ED5D9D",
+      "name": "SM_wallGarageDoor_01",
+      "category": "Buildings/Modules",
+      "family_id": "native_current_warehouse_loading_opening",
+      "source_package": "AssetsvilleTown",
+      "source_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\AssetsvilleTown\\Meshes\\BuildingTilset\\SM_wallGarageDoor_01.uasset",
+      "record_kind": "asset_candidate",
+      "object_path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01.SM_wallGarageDoor_01",
+      "native_class_recorded": "StaticMesh",
+      "runtime_enabled": false,
+      "runtime_hold_preserved": true,
+      "hold_reasons_preserved": [
+        "native_supply_qualification_pending"
+      ],
+      "named_holds_preserved": [],
+      "palm_hold_not_released": false,
+      "rights_state_preserved": "acquisition_and_terms_unverified",
+      "canonical_qualified": false,
+      "request_role": "",
+      "placement_rule": "",
+      "allowed_zones_current": "",
+      "style_source_recorded": "stylized_town",
+      "style_context_current": "stylized_town",
+      "normal_scope_current": "none_pending_individual_review",
+      "new_normal_scope_requested": [],
+      "newly_imported": false,
+      "newly_connected": false,
+      "newly_enabled": false,
+      "new_area_generation": false,
+      "native_preview_sources": [],
+      "prepared_source": null,
+      "current_package_sha256": "54260fba1a56ccd0b86079314480dd0d5850c1b4db3685fb8a7fc656da53447d",
+      "package_exists": true,
+      "package_revision_matches_runtime": true,
+      "phase_status": "modular_native_measured_qualification_pending",
+      "required_consumer_context": "modular_building_assembly",
+      "native_measurement": {
+        "status": "measured",
+        "asset_id": "native.Current.03d5b98d84743f46a66b09e1",
+        "path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01.SM_wallGarageDoor_01",
+        "pid": 32508,
+        "measurement_reused_from": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\R020_NATIVE_CONTENT_CONTRACTS.json",
+        "measurement_source_sha256": "0c5ac47894ac4cc83fd8328621b0fb4a8022f1e1a19ff9ba82deaa0e8326ee96",
+        "bounds_cm": {
+          "min": [
+            -19.00002670288086,
+            -399.99908447265625,
+            -1.1567824890991163e-19
+          ],
+          "max": [
+            47.25592041015625,
+            0.0018891692161560059,
+            300.0
+          ]
+        },
+        "vertex_bounds_cm": {
+          "min": [
+            -19.00002670288086,
+            -399.99908447265625,
+            -1.1567824890991163e-19
+          ],
+          "max": [
+            47.25592041015625,
+            0.0018891692161560059,
+            300.0
+          ]
+        },
+        "dimensions_cm": [
+          66.25594711303711,
+          400.0009736418724,
+          300.0
+        ],
+        "vertex_scan": "complete_compact_ids_from_existing_native_writer_receipt",
+        "source_vertex_count": 64,
+        "triangles_LOD0": 72,
+        "uv_channels": 1,
+        "lod_count": 1,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "customMat_01",
+            "imported_name": "customMat_01",
+            "path": "/Game/AssetsvilleTown/Materials/MI_BrickSmall_01_red.MI_BrickSmall_01_red"
+          },
+          {
+            "slot": 1,
+            "name": "customMat_02",
+            "imported_name": "customMat_02",
+            "path": "/Game/AssetsvilleTown/Materials/MI_Wallpaper_01_blue.MI_Wallpaper_01_blue"
+          },
+          {
+            "slot": 2,
+            "name": "colorPalette",
+            "imported_name": "colorPalette",
+            "path": "/Game/AssetsvilleTown/Materials/MI_ColorPalette.MI_ColorPalette"
+          }
+        ],
+        "bottom_support_candidate": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 20,
+          "xy_min": [
+            -19.00002670288086,
+            -399.99908447265625
+          ],
+          "xy_max": [
+            19.000057220458984,
+            0.0018891692161560059
+          ]
+        },
+        "dependencies": {
+          "packages": [
+            "/Game/AssetsvilleTown/Materials/MI_BrickSmall_01_red",
+            "/Game/AssetsvilleTown/Materials/MI_ColorPalette",
+            "/Game/AssetsvilleTown/Materials/MI_Wallpaper_01_blue",
+            "/Game/AssetsvilleTown/Materials/MasterMaterials/M_BaseColorPalette",
+            "/Game/AssetsvilleTown/Materials/MasterMaterials/M_BaseTexture",
+            "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01",
+            "/Game/AssetsvilleTown/Textures/Base/T_colorPalette2048",
+            "/Game/AssetsvilleTown/Textures/Base/T_colorPalette_METAL",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_brickSmall_01_red",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_planks_01",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_wallpaper_01_blue",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_wallpaper_23"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "existing_native_writer_hard_soft_closure_plus_current_dependency_file_hashes"
+        },
+        "contact_status": "functional_base_not_qualified",
+        "facing_status": "not_reviewed"
+      },
+      "blockers": [
+        "native_supply_qualification_pending",
+        "loading_aperture_not_measured",
+        "functional_facing_not_reviewed",
+        "source_style_stylized_town_not_area_qualified",
+        "source_openings_survey_not_available"
+      ],
+      "native_supply_provenance": {
+        "job_id": "NU_03d5b98d84743f46a66b",
+        "measurement_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Receipts\\NU_03d5b98d84743f46a66b.json",
+        "receipt_sha256": "807cf05f2b89fc33a8cf94b5c4555e0fa076fbf0f9b4d1d1748a3501a741a746",
+        "source_original_preserved": true,
+        "copied_native_asset": false,
+        "registered_held_only": true
+      }
+    },
+    {
+      "asset_id": "native.Current.eb007c34606172659e7ec43f",
+      "catalog_row_name": "MB_254BFE973B020DDCFB1E2FCF30D1FE15",
+      "name": "SM_wallGarageDoor_01_double",
+      "category": "Buildings/Modules",
+      "family_id": "native_current_warehouse_loading_opening",
+      "source_package": "AssetsvilleTown",
+      "source_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\AssetsvilleTown\\Meshes\\BuildingTilset\\SM_wallGarageDoor_01_double.uasset",
+      "record_kind": "asset_candidate",
+      "object_path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01_double.SM_wallGarageDoor_01_double",
+      "native_class_recorded": "StaticMesh",
+      "runtime_enabled": false,
+      "runtime_hold_preserved": true,
+      "hold_reasons_preserved": [
+        "native_supply_qualification_pending"
+      ],
+      "named_holds_preserved": [],
+      "palm_hold_not_released": false,
+      "rights_state_preserved": "acquisition_and_terms_unverified",
+      "canonical_qualified": false,
+      "request_role": "",
+      "placement_rule": "",
+      "allowed_zones_current": "",
+      "style_source_recorded": "stylized_town",
+      "style_context_current": "stylized_town",
+      "normal_scope_current": "none_pending_individual_review",
+      "new_normal_scope_requested": [],
+      "newly_imported": false,
+      "newly_connected": false,
+      "newly_enabled": false,
+      "new_area_generation": false,
+      "native_preview_sources": [],
+      "prepared_source": null,
+      "current_package_sha256": "12a5def62f5276d55c639263425b7d05f1543a439b7f92fc6e73a709a98693c2",
+      "package_exists": true,
+      "package_revision_matches_runtime": true,
+      "phase_status": "modular_native_measured_qualification_pending",
+      "required_consumer_context": "modular_building_assembly",
+      "native_measurement": {
+        "status": "measured",
+        "asset_id": "native.Current.eb007c34606172659e7ec43f",
+        "path": "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01_double.SM_wallGarageDoor_01_double",
+        "pid": 32508,
+        "measurement_reused_from": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\R020_NATIVE_CONTENT_CONTRACTS.json",
+        "measurement_source_sha256": "0c5ac47894ac4cc83fd8328621b0fb4a8022f1e1a19ff9ba82deaa0e8326ee96",
+        "bounds_cm": {
+          "min": [
+            -19.000024795532227,
+            -799.9990844726562,
+            -1.1567824890991163e-19
+          ],
+          "max": [
+            47.255924224853516,
+            0.0018891692161560059,
+            300.0
+          ]
+        },
+        "vertex_bounds_cm": {
+          "min": [
+            -19.000024795532227,
+            -799.9990844726562,
+            -1.1567824890991163e-19
+          ],
+          "max": [
+            47.255924224853516,
+            0.0018891692161560059,
+            300.0
+          ]
+        },
+        "dimensions_cm": [
+          66.25594902038574,
+          800.0009736418724,
+          300.0
+        ],
+        "vertex_scan": "complete_compact_ids_from_existing_native_writer_receipt",
+        "source_vertex_count": 64,
+        "triangles_LOD0": 72,
+        "uv_channels": 1,
+        "lod_count": 1,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "customMat_01",
+            "imported_name": "customMat_01",
+            "path": "/Game/AssetsvilleTown/Materials/MI_BrickSmall_01_red.MI_BrickSmall_01_red"
+          },
+          {
+            "slot": 1,
+            "name": "customMat_02",
+            "imported_name": "customMat_02",
+            "path": "/Game/AssetsvilleTown/Materials/MI_Wallpaper_01_blue.MI_Wallpaper_01_blue"
+          },
+          {
+            "slot": 2,
+            "name": "colorPalette",
+            "imported_name": "colorPalette",
+            "path": "/Game/AssetsvilleTown/Materials/MI_ColorPalette.MI_ColorPalette"
+          }
+        ],
+        "bottom_support_candidate": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 20,
+          "xy_min": [
+            -19.000024795532227,
+            -799.9990844726562
+          ],
+          "xy_max": [
+            19.00005531311035,
+            0.0018891692161560059
+          ]
+        },
+        "dependencies": {
+          "packages": [
+            "/Game/AssetsvilleTown/Materials/MI_BrickSmall_01_red",
+            "/Game/AssetsvilleTown/Materials/MI_ColorPalette",
+            "/Game/AssetsvilleTown/Materials/MI_Wallpaper_01_blue",
+            "/Game/AssetsvilleTown/Materials/MasterMaterials/M_BaseColorPalette",
+            "/Game/AssetsvilleTown/Materials/MasterMaterials/M_BaseTexture",
+            "/Game/AssetsvilleTown/Meshes/BuildingTilset/SM_wallGarageDoor_01_double",
+            "/Game/AssetsvilleTown/Textures/Base/T_colorPalette2048",
+            "/Game/AssetsvilleTown/Textures/Base/T_colorPalette_METAL",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_brickSmall_01_red",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_planks_01",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_wallpaper_01_blue",
+            "/Game/AssetsvilleTown/Textures/Tiled/T_wallpaper_23"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "existing_native_writer_hard_soft_closure_plus_current_dependency_file_hashes"
+        },
+        "contact_status": "functional_base_not_qualified",
+        "facing_status": "not_reviewed"
+      },
+      "blockers": [
+        "native_supply_qualification_pending",
+        "loading_aperture_not_measured",
+        "functional_facing_not_reviewed",
+        "source_style_stylized_town_not_area_qualified",
+        "source_openings_survey_not_available"
+      ],
+      "native_supply_provenance": {
+        "job_id": "NU_eb007c34606172659e7e",
+        "measurement_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Receipts\\NU_eb007c34606172659e7e.json",
+        "receipt_sha256": "bdf3162ce12c7d730d37797628d0b5e668384473ce39dee90a49b4ab0dd07b8d",
+        "source_original_preserved": true,
+        "copied_native_asset": false,
+        "registered_held_only": true
+      }
+    }
+  ],
+  "category_consumer": "Buildings/Modules",
+  "native_execution_performed_here": false,
+  "qualification_next_steps": [
+    "bank/category owner consumes these exact provenance and measurement records",
+    "measure actual loading aperture, connector planes, support and exterior normal",
+    "Lit review source style and material appearance",
+    "resolve exact source-opening/assembly consumer contract with root",
+    "individual authorization required to change current qualification hold"
+  ]
+}

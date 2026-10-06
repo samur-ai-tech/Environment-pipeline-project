@@ -1,0 +1,473 @@
+{
+  "mode": "kks3800",
+  "tool_count": 22,
+  "tools": [
+    {
+      "name": "get_actors_in_level",
+      "schema": {
+        "properties": {},
+        "title": "get_actors_in_levelArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "find_actors_by_name",
+      "schema": {
+        "properties": {
+          "pattern": {
+            "title": "Pattern",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pattern"
+        ],
+        "title": "find_actors_by_nameArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "spawn_actor",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "type": "string"
+          },
+          "location": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "items": {
+              "type": "number"
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "rotation": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "items": {
+              "type": "number"
+            },
+            "title": "Rotation",
+            "type": "array"
+          },
+          "static_mesh": {
+            "default": null,
+            "title": "Static Mesh",
+            "type": "string"
+          },
+          "intensity": {
+            "default": null,
+            "title": "Intensity",
+            "type": "number"
+          },
+          "color": {
+            "default": null,
+            "items": {
+              "type": "number"
+            },
+            "title": "Color",
+            "type": "array"
+          },
+          "temperature": {
+            "default": null,
+            "title": "Temperature",
+            "type": "number"
+          },
+          "attenuation_radius": {
+            "default": null,
+            "title": "Attenuation Radius",
+            "type": "number"
+          },
+          "source_radius": {
+            "default": null,
+            "title": "Source Radius",
+            "type": "number"
+          },
+          "soft_source_radius": {
+            "default": null,
+            "title": "Soft Source Radius",
+            "type": "number"
+          },
+          "cast_shadows": {
+            "default": null,
+            "title": "Cast Shadows",
+            "type": "boolean"
+          },
+          "inner_cone_angle": {
+            "default": null,
+            "title": "Inner Cone Angle",
+            "type": "number"
+          },
+          "outer_cone_angle": {
+            "default": null,
+            "title": "Outer Cone Angle",
+            "type": "number"
+          },
+          "source_width": {
+            "default": null,
+            "title": "Source Width",
+            "type": "number"
+          },
+          "source_height": {
+            "default": null,
+            "title": "Source Height",
+            "type": "number"
+          },
+          "barn_door_angle": {
+            "default": null,
+            "title": "Barn Door Angle",
+            "type": "number"
+          },
+          "barn_door_length": {
+            "default": null,
+            "title": "Barn Door Length",
+            "type": "number"
+          },
+          "scale": {
+            "default": null,
+            "items": {
+              "type": "number"
+            },
+            "title": "Scale",
+            "type": "array"
+          }
+        },
+        "required": [
+          "name",
+          "type"
+        ],
+        "title": "spawn_actorArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "delete_actor",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "delete_actorArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "set_actor_property",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "property_name": {
+            "title": "Property Name",
+            "type": "string"
+          },
+          "property_value": {
+            "title": "property_value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "property_name",
+          "property_value"
+        ],
+        "title": "set_actor_propertyArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_editor_context",
+      "schema": {
+        "properties": {},
+        "title": "get_editor_contextArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_viewport_camera",
+      "schema": {
+        "properties": {},
+        "title": "get_viewport_cameraArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "take_editor_screenshot",
+      "schema": {
+        "properties": {},
+        "title": "take_editor_screenshotArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_cvar",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "title": "get_cvarArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "set_cvar",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ],
+        "title": "set_cvarArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "create_blueprint",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "parent_class": {
+            "title": "Parent Class",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "parent_class"
+        ],
+        "title": "create_blueprintArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "compile_blueprint",
+      "schema": {
+        "properties": {
+          "blueprint_name": {
+            "title": "Blueprint Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "blueprint_name"
+        ],
+        "title": "compile_blueprintArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "open_blueprint",
+      "schema": {
+        "properties": {
+          "blueprint_name": {
+            "title": "Blueprint Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "blueprint_name"
+        ],
+        "title": "open_blueprintArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "list_assets",
+      "schema": {
+        "properties": {
+          "directory_path": {
+            "default": "/Game",
+            "title": "Directory Path",
+            "type": "string"
+          },
+          "recursive": {
+            "default": true,
+            "title": "Recursive",
+            "type": "boolean"
+          },
+          "asset_class": {
+            "default": "",
+            "title": "Asset Class",
+            "type": "string"
+          },
+          "name_pattern": {
+            "default": "",
+            "title": "Name Pattern",
+            "type": "string"
+          }
+        },
+        "title": "list_assetsArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_asset_info",
+      "schema": {
+        "properties": {
+          "asset_path": {
+            "title": "Asset Path",
+            "type": "string"
+          }
+        },
+        "required": [
+          "asset_path"
+        ],
+        "title": "get_asset_infoArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_folder_structure",
+      "schema": {
+        "properties": {
+          "directory_path": {
+            "default": "/Game",
+            "title": "Directory Path",
+            "type": "string"
+          },
+          "max_depth": {
+            "default": -1,
+            "title": "Max Depth",
+            "type": "integer"
+          },
+          "include_asset_counts": {
+            "default": false,
+            "title": "Include Asset Counts",
+            "type": "boolean"
+          }
+        },
+        "title": "get_folder_structureArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "start_pie",
+      "schema": {
+        "properties": {},
+        "title": "start_pieArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "stop_pie",
+      "schema": {
+        "properties": {},
+        "title": "stop_pieArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "is_pie_active",
+      "schema": {
+        "properties": {},
+        "title": "is_pie_activeArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "search_unreal_tools",
+      "schema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "category": {
+            "default": "",
+            "title": "Category",
+            "type": "string"
+          },
+          "limit": {
+            "default": 10,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "search_unreal_toolsArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "describe_unreal_tools",
+      "schema": {
+        "properties": {
+          "names": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Names",
+            "type": "array"
+          }
+        },
+        "required": [
+          "names"
+        ],
+        "title": "describe_unreal_toolsArguments",
+        "type": "object"
+      }
+    },
+    {
+      "name": "execute_unreal_tool",
+      "schema": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "params": {
+            "additionalProperties": true,
+            "title": "Params",
+            "type": "object"
+          }
+        },
+        "required": [
+          "name",
+          "params"
+        ],
+        "title": "execute_unreal_toolArguments",
+        "type": "object"
+      }
+    }
+  ],
+  "editor_context": "CallToolResult(content=[TextContent(type='text', text='{\\n  \"status\": \"success\",\\n  \"result\": {\\n    \"selected_actors\": [],\\n    \"open_asset_editors\": [],\\n    \"active_tab\": \"Message Log\",\\n    \"current_level\": \"L_GazaRimal_BankIntegration\",\\n    \"pie_active\": false\\n  }\\n}', annotations=None, meta=None)], structured_content={'result': {'status': 'success', 'result': {'selected_actors': [], 'open_asset_editors': [], 'active_tab': 'Message Log', 'current_level': 'L_GazaRimal_BankIntegration', 'pie_active': False}}}, meta=None, data=get_editor_contextOutput(result={'status': 'success', 'result': {'selected_actors': [], 'open_asset_editors': [], 'active_tab': 'Message Log', 'current_level': 'L_GazaRimal_BankIntegration', 'pie_active': False}}), is_error=False)"
+}

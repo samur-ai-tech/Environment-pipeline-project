@@ -1,0 +1,112 @@
+{
+  "schema": "environmentpipeline.task4.successor_preparation_review.v1",
+  "utc": "2026-10-04T15:54:52.010343+00:00",
+  "status": "REVIEW_FIXES_PREPARED_OFFLINE_PASS_NATIVE_NOT_ACTIVATED",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "operator_thread_id": "01a106e8-f85a-7a72-a010-e1cb28356e2b",
+  "native_calls": 0,
+  "source_profile_content_changes": false,
+  "lease_changes": false,
+  "continuation_manifest_sha256": "4bbec2997a28a89933bea2743f26290aecacb6b140c1001bfd6143029ea1d11e",
+  "runtime_manifest_sha256": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+  "snapshot_files_verified": 130,
+  "catalog": {
+    "typed_source_digest": "dd42592ab7971f6d95bcd3be4a28cf4b13b781f2fbacdad7fc131ef46de9e2d2",
+    "typed_csv_digest": "dd42592ab7971f6d95bcd3be4a28cf4b13b781f2fbacdad7fc131ef46de9e2d2",
+    "native_saved_receipt_digest": "dd42592ab7971f6d95bcd3be4a28cf4b13b781f2fbacdad7fc131ef46de9e2d2",
+    "native_live_checked_this_turn": false,
+    "rows": 1223
+  },
+  "areas": [
+    {
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "profile_sha256": "c5dac846015f2b644e0a3d23ef80e7368bc2a6c52e45e45064452a1cdca6d077",
+      "map_sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+      "source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+      "source_sha256": "db5c0bcef1205b22e72e9df1e09a2b0f0daa39bcec3c2670819edf4e40b0fa19",
+      "table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "hda": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "last_success_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "catalog_sha256": "dd42592ab7971f6d95bcd3be4a28cf4b13b781f2fbacdad7fc131ef46de9e2d2"
+    },
+    {
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "profile_sha256": "1f128cbf31e952f9d2d9ff2748bf622ea222e87ab9d06d5e98c964210f67e6be",
+      "map_sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+      "source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaRimal/city_source_v1.json",
+      "source_sha256": "dbcfcb2ed3786c470262e01d2a78579e3efa9b418f837e376bab5242bff574d9",
+      "table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "hda": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "last_success_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+      "catalog_sha256": "dd42592ab7971f6d95bcd3be4a28cf4b13b781f2fbacdad7fc131ef46de9e2d2"
+    }
+  ],
+  "checks": {
+    "python_AST": "PASS_three_files_no_Unreal_execution",
+    "powershell_AST": "PASS_no_launch",
+    "source_seal": "PASS_12_modules_startup_4_support_files",
+    "profile_source_csv_recorded_native_digest": "PASS_live_native_NOT_RUN",
+    "old87candidate_hashes": "PASS_unchanged_unapproved",
+    "startup_activation_file_exists": false,
+    "offline_gate_checks": 28,
+    "offline_gate_receipt": "REVIEW_GATE_CHECKS.json",
+    "actual_clean_release": "ABSENT_launch_blocked"
+  },
+  "inspection_review": [
+    {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\inspect_bank_startup.py",
+      "sha256_at_final_review": "05916fbc5cb3e3381eadd107efe754674d02fadea2775cf79922efda58cd0db2",
+      "finding": "Initially pinned outgoing manager ID; another owner corrected it during this read-only preparation. Final read binds activation and bank ASSIGNMENT.system_owner/thread. Task4 made no edits to this file. It remains bank-only and must not be reused as task4 activation."
+    },
+    {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task1_Lifecycle\\LandscapeOwnership_Repair\\CHECK_NATIVE_CONSUMER.py",
+      "sha256": "c34b03ea61649705695b57f86cb615246445f26b9eb1d0f2f57b98ad8c10bd1d",
+      "finding": "Manager identity already resolves current ASSIGNMENTS. Its SOURCE_HANDOFF pins the earlier 94c0588a workflow, so it rejects current f349d1289b workflow. Do not run it for this continuation. Replacement inspection in this folder binds the complete current seal and catalog/profile snapshot."
+    },
+    {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\SystemCompletion_2026-10-04\\launch_editor.ps1",
+      "finding": "Current-manager identity already comes from ASSIGNMENTS; task4 uses retained sealed launcher without shared-source changes."
+    }
+  ],
+  "parent_landscape_repair": {
+    "sealed": true,
+    "selector_native_execution": "NOT_RUN",
+    "prior_failure": "phase failed_clipping; suffix-based selector rejected official current actor ending _landscape_0",
+    "new_contract": "Exact parent callback current actor, official HDA, source/centreline, PID, map, lease, operation epoch and accounted prior paths; saved singleton remains required after successful delivery.",
+    "offline_evidence": "Staging/ManagedSystemsAstra_2026-10-04/Task2_Roads/LANDSCAPE_AUTHORITY_CHECKS.json"
+  },
+  "bank_boundary": {
+    "observed_os_pid": 32508,
+    "native_state_source": "BankIntegration MANAGEMENT_TRANSFER_CHECKPOINT plus current lease; no native reinspection by Task4",
+    "lease": "2026-10-04T15:32:41.803320+00:00 OWNER=CODEX_BANK_INTEGRATION manager_thread_id=01a10789-2e6a-7321-ad85-0a2964f8a937 operator_thread_id=01a1067c-5012-7550-b449-015b53c9d726 task=bank assigned_editor_PID=32508 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=INSPECTION_ONLY scope=read_only_exact_dirty_original_preservation_recovery native_authorized_now=false ordinary_generation_authorized=false dirty_original_packages=3 native_handoff_clean=false management_transfer=true",
+    "clean_handoff": false,
+    "dirty_originals_documented": [
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Leaves_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Materials/MI_Plant_07_6_Stem_G",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_07_6_G"
+    ]
+  },
+  "remaining": [
+    "Manager-reviewed clean completed bank handoff",
+    "Refresh immutable snapshot after authorized bank/profile changes; source/CSV/recorded native digests must match",
+    "Explicit successor startup approval, fresh original-map startup and actual PID native inspection",
+    "Explicit actual-PID generation activation; live official Engine, five false terrain flags and licensed RoadBLD",
+    "Both original areas ordinary initial generation, geometry/Lit/visible Grass, named saves, fresh reopen, ordinary repeat, repeated save/reopen, clean release",
+    "User visual acceptance separate"
+  ],
+  "independent_manager_approval": "NOT_ISSUED_BY_TASK4",
+  "bounded_review_fixes": {
+    "sole_process": "Fresh read-only OS enumeration before/after native inspection requires actual os.getpid singleton; OS helper observed [32508] during preparation, no native calls.",
+    "landscape": "Exact manager-selected hash-bound map/source/HDA/live/official/baked membership; nonempty official set; separate new receipt for successful saved singleton.",
+    "release": "Actual hash-bound clean release receipt validates PID/map/operator/saves/preservation and exact immediate OWNER=NONE receipt reference before launch and again in inspection. No clean release exists in this package.",
+    "live_world": "Every snapshot rereads current editor world.",
+    "authority": "Every verification checks transferred status, successor/current manager, exact current task4 operator and original map identities.",
+    "catalog": "Explicit immutable receipt/readback selection; no hardcoded bank receipt or silent fallback. Supports bank and supplier successful saved receipts with exact matching rows/digest/source/CSV/readback. Current selection is a prepared candidate requiring manager designation hash.",
+    "scope": "Only Task4 Continuation staging files changed. No native/system/profile edits, source reload, launch, lease transition or save."
+  },
+  "native_table_selection": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\Task4_Integration\\Continuation\\NATIVE_TABLE_SELECTION_c90cc9f0a0d2fc30.json",
+  "native_table_selection_sha256": "f994c85eb0f7d317de4d39cecfef376a9410d2e562666dde3eb8319c2613b4d5",
+  "release_schema_note": "CLEAN_RELEASE_CONTRACT.txt describes required measured data. If actual bank release uses another schema, manager must review exact reader adaptation; no synthetic release permitted."
+}

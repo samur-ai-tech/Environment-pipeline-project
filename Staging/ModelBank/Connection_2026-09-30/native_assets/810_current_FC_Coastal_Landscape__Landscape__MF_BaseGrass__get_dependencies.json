@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 820,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/FC_Coastal_Landscape/Landscape/MF_BaseGrass"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/Landscape\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals\",\"/DatasmithContent/Materials/Water/MaterialFunctions/MF_NormalStrength_WS\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground_1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 820,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/Landscape\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals\",\"/DatasmithContent/Materials/Water/MaterialFunctions/MF_NormalStrength_WS\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground_1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\"]}"
+    }
+   ]
+  }
+ }
+}

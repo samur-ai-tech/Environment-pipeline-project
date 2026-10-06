@@ -1,0 +1,40 @@
+{
+  "schema": "environmentpipeline.parallel_nonmodular_bank.v1",
+  "authorization": "Direct user request in bank chat on 2026-10-04: create one chat per ordinary category and execute complete retained category batches, using existing checks instead of another inventory or isolated examples.",
+  "bank_integrator_thread": "01a1067c-5012-7550-b449-015b53c9d726",
+  "system_manager_thread": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "categories": {
+    "Props": {
+      "thread_id": "01a10779-abc5-7fc0-ab27-7fcd31501397",
+      "title": "חבר את כל הפרופים הרגילים לבנק",
+      "scope": "All existing ordinary nonmodular SmallProps and StreetProps, including prepared external sources and already imported content. Exclude roof/wall/sign/fence/road-surface attachments and modular pieces.",
+      "owned_directory": "Staging/BankIntegration_2026-10-04/CategoryBatches/Props"
+    },
+    "Vegetation": {
+      "thread_id": "01a10779-b2a0-7cf2-8782-1e679225dc0b",
+      "title": "חבר את כל הצמחייה הרגילה לבנק",
+      "scope": "All existing ordinary vegetation, including native trees, shrubs, understory and prepared external sources. Preserve declined palms and all explicit holds.",
+      "owned_directory": "Staging/BankIntegration_2026-10-04/CategoryBatches/Vegetation"
+    },
+    "WholeBuildings": {
+      "thread_id": "01a10779-be71-7910-8b4b-db1ad71b2af6",
+      "title": "חבר את כל הבניינים השלמים לבנק",
+      "scope": "All existing whole-building assets and prepared external whole buildings. Do not start modular-kit assembly, facade module or opening work.",
+      "owned_directory": "Staging/BankIntegration_2026-10-04/CategoryBatches/WholeBuildings"
+    }
+  },
+  "required_delivery": [
+    "Retained executable batch adapter and exact READY_JOBS.json per owned category",
+    "Reuse current canonical IDs, existing measurements, source preparations, material recipes and prior receipts",
+    "Resolve category configuration and routine derivative/import problems, not an inventory-only report",
+    "Per-asset runtime row deltas, material overrides, import jobs and current evidence references",
+    "Concrete exceptional blockers only; no invented readiness, rights or visual approval",
+    "Automatic selection and placement through the existing shared catalog and generator, not one-off scene placement"
+  ],
+  "shared_write_rule": "Category chats write only their own directory and derivatives beneath it. The bank integrator alone writes shared bank staging files, canonical source/CSV and native Unreal assets under the actual editor lease. The system manager alone merges shared area profiles and coordinates ordinary generation.",
+  "verification": "No repeated inventory, demonstration maps or per-model proof loops. Reuse existing evidence; keep transaction integrity, source identity, dependency, save/readback and actual ordinary-output checks needed to establish successful integration.",
+  "preserve": ["original assets and source files", "existing catalog identities", "all explicit holds and rights", "H0013", "H0907", "H0051", "H0958", "H0094", "declined palms", "87 unvalidated road candidates", "source style labels"],
+  "ordinary_generation": "Manager-coordinated single writer on original GazaRimal and GazaShujaiya; no alternate generator or maps.",
+  "persistence_requirement": "User explicitly requires permanent saved integration: normal shared-bank selection and placement must be retained across regeneration and project reopen. File preparation and one-off scene placement do not complete the assignment.",
+  "status": "CATEGORY_CHATS_CREATED_AND_DISPATCHED"
+}

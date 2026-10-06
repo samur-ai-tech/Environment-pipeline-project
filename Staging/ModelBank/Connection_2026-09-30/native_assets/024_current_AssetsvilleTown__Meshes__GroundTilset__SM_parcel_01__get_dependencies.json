@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 34,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_parcel_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/AssetsvilleTown/Materials/MI_GroundTile\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 34,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/AssetsvilleTown/Materials/MI_GroundTile\"]}"
+    }
+   ]
+  }
+ }
+}

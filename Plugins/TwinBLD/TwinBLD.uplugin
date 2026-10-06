@@ -1,0 +1,49 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.5.7",
+	"FriendlyName": "TwinBLD",
+	"Description": "Generate photorealistic worlds from map data, powered by RoadBLD and CityBLD.",
+	"Category": "WorldBLD",
+	"CreatedBy": "WorldBLD LLC",
+	"CreatedByURL": "https://worldbld.com",
+	"DocsURL": "https://worldbld.notion.site/TwinBLD-Documentation-2a81ba824a308178b2b5ce558ac93595",
+	"MarketplaceURL": "",
+	"SupportURL": "https://worldbld.com",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "TwinBLDEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "WorldBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "CityBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "RoadBLD",
+			"Enabled": true
+		},
+		{
+			"Name": "GeometryProcessing",
+			"Enabled": true
+		},
+		{
+			"Name": "GeometryScripting",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}

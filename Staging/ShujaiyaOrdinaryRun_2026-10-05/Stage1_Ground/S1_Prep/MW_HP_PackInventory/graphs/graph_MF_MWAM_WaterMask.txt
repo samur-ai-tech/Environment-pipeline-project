@@ -1,0 +1,25 @@
+Add_13 [Add]  A<-WorldPosition_1:2.B B<-OneMinus_7:0
+Add_14 [Add] {"ConstB": 0.1} A<-ScalarParameter_7:0
+Constant_3 [Constant]  
+FunctionInput_0 [FunctionInput] {"InputName": "Mask", "InputType": "FunctionInput_Scalar"} 
+FunctionInput_1 [FunctionInput] {"InputName": "SnowVertexMask", "InputType": "FunctionInput_Scalar"} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "WaterMask"} A<-StaticSwitchParameter_13:0
+MaterialFunctionCall_28 [MaterialFunctionCall] {"MaterialFunction": "SlopeMask"} FunctionInputs[2].Input<-ScalarParameter_36:0 FunctionInputs[3].Input<-Multiply_20:0
+Multiply_1 [Multiply]  A<-Multiply_40:0 B<-OneMinus_1:0
+Multiply_20 [Multiply]  A<-ScalarParameter_1:0 B<-FunctionInput_0:0
+Multiply_39 [Multiply]  A<-Add_13:0 B<-Add_14:0
+Multiply_40 [Multiply]  A<-Saturate_0:0 B<-MaterialFunctionCall_28:0
+OneMinus_1 [OneMinus]  Input<-FunctionInput_1:0
+OneMinus_7 [OneMinus]  Input<-ScalarParameter_8:0
+OneMinus_8 [OneMinus]  Input<-Multiply_39:0
+Power_9 [Power] {"ConstExponent": 4.0} Base<-Multiply_1:0
+Saturate_0 [Saturate]  Input<-OneMinus_8:0
+Saturate_1 [Saturate]  Input<-Power_9:0
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_WaterEdgeContrast", "DefaultValue": 4.0, "Group": "1_Water"} 
+ScalarParameter_36 [ScalarParameter] {"ParameterName": "MW_WaterSlopePower", "DefaultValue": 1536.0, "Group": "1_Water"} 
+ScalarParameter_7 [ScalarParameter] {"ParameterName": "MW_WaterWorldPositionPower", "DefaultValue": 0.0001, "Group": "1_Water"} 
+ScalarParameter_8 [ScalarParameter] {"ParameterName": "MW_WaterMaxWorldPosition", "Group": "1_Water"} 
+StaticSwitchParameter_13 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-Saturate_1:0 B<-Constant_3:0
+WorldPosition_1 [WorldPosition]  
+MF_MWAM_WaterMask [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_WaterMaskEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_WaterMaskEditorOnlyData [MaterialFunctionEditorOnlyData]  

@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v2/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Original_Submesh_0\",\"Original_Submesh_1\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 13,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Original_Submesh_0\",\"Original_Submesh_1\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2661,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_FountainBase"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"1600x1600x60\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/FountainBase.fbx\\\", \\\"Timestamp\\\" : \\\"1518447057\\\", \\\"FileMD5\\\" : \\\"c9fb515f8f1e9bb10bf557234fd32181\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"2\",\"ResourceSize\":\"19\",\"SectionsWithCollision\":\"2\",\"Triangles\":\"26\",\"UVChannels\":\"2\",\"Vertices\":\"44\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2661,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"1600x1600x60\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/FountainBase.fbx\\\", \\\"Timestamp\\\" : \\\"1518447057\\\", \\\"FileMD5\\\" : \\\"c9fb515f8f1e9bb10bf557234fd32181\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"2\",\"ResourceSize\":\"19\",\"SectionsWithCollision\":\"2\",\"Triangles\":\"26\",\"UVChannels\":\"2\",\"Vertices\":\"44\"}}"
+    }
+   ]
+  }
+ }
+}

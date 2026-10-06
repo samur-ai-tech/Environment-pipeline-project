@@ -1,0 +1,1256 @@
+{
+  "schema": "environmentpipeline.task4.bank_shutdown_dependency_preservation.v1",
+  "utc": "2026-10-04T13:38:24.3338831Z",
+  "scope": "Exact last-success HDA and native road dependency paths from prepared baseline",
+  "limitation": "Hashes measured before shutdown, not before generation. Last-write times provide corroboration of no file save during current operation; post-shutdown hashes must match these.",
+  "dependencies": [
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_buildings",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_buildings.uasset",
+      "exists": true,
+      "sha256": "131d8b96174e265a6839151afcb87bfb2617f0f0ce729ca9ecd60a52db47ce20",
+      "modified_utc": "2026-10-03T17:18:35.7054616Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_road_surfaces",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_road_surfaces.uasset",
+      "exists": true,
+      "sha256": "c773d0d71ed68e6621b84f522e9399b9e11891f9e1de69ed16d7f9ebc376e808",
+      "modified_utc": "2026-10-03T17:18:35.7254940Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Dirt_Path",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Dirt_Path.uasset",
+      "exists": true,
+      "sha256": "fbef7fc7fe5963c937780d0fb741410a78da1ffccb02eab5472e5619bcc05b0e",
+      "modified_utc": "2026-10-03T17:18:37.0648127Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_01",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_01.uasset",
+      "exists": true,
+      "sha256": "ae5d6768115f040ddc66ee5cbdb3b90362212840d8e4b3bcc6ff09609fab17fc",
+      "modified_utc": "2026-10-03T17:18:37.0703202Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_02",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_02.uasset",
+      "exists": true,
+      "sha256": "61a9a807071f0dfa2ab972f7ce8900d35197fabceddd131e89876450139b1274",
+      "modified_utc": "2026-10-03T17:18:37.0758403Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_Path",
+      "file": "Content/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_1427_1805_0_GazaRimal_landscape_0_Sand_Path.uasset",
+      "exists": true,
+      "sha256": "0d8762ebd8b710eeaa903097be20f051a3d890705bbde2865c9f4f124a691d05",
+      "modified_utc": "2026-10-03T17:18:37.0813612Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_002256c25b5fcd46",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_002256c25b5fcd46.uasset",
+      "exists": true,
+      "sha256": "bf88810d7e6727926ea654e79ffde641bc18d32c2c68c50d5b55c20f70f6fcc1",
+      "modified_utc": "2026-10-03T17:18:36.3302014Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_06aee7d2cd600a66",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_06aee7d2cd600a66.uasset",
+      "exists": true,
+      "sha256": "e6bae61fb35e22606ee4ee46c51184bda80abcef647f161c80db53ab8d2627cb",
+      "modified_utc": "2026-10-03T17:18:36.0214249Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_0a48b520e22cd96b",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_0a48b520e22cd96b.uasset",
+      "exists": true,
+      "sha256": "b40dc538ca6fa8474b0f40e89010e50b0fbdfc2468e2988038c9451919164061",
+      "modified_utc": "2026-10-03T17:18:36.1822999Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_1056a6f58f0070bd",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_1056a6f58f0070bd.uasset",
+      "exists": true,
+      "sha256": "01b1439d53fffe03f42b39b462e63e8bb3e40616423f743a68fa94abd7784a3b",
+      "modified_utc": "2026-10-03T17:18:36.1702521Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_1121ae745133a783",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_1121ae745133a783.uasset",
+      "exists": true,
+      "sha256": "319b9198e90359776a0055adcdeac7667768635c46cdf2002a37d93d23e05ef1",
+      "modified_utc": "2026-10-03T17:18:36.0104107Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_11ad11d6008d5f36",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_11ad11d6008d5f36.uasset",
+      "exists": true,
+      "sha256": "a7f738b2a7228f5fa502edff7b7692f193373fc085b4908ea884f97bd9d9bc46",
+      "modified_utc": "2026-10-03T17:18:35.9638287Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_155cafe30e142c42",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_155cafe30e142c42.uasset",
+      "exists": true,
+      "sha256": "5c4a5f71929123de9b85b1169d0d67d8fcd0fe1753d965a6a798db86657f3162",
+      "modified_utc": "2026-10-03T17:18:36.1116380Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_23093eeae2226c62",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_23093eeae2226c62.uasset",
+      "exists": true,
+      "sha256": "3082ce2b673448945c085a24a35e09a3eac608d95fb15c2738f09eadb67e3556",
+      "modified_utc": "2026-10-03T17:18:36.1191377Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2b0c1441de7628d2",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2b0c1441de7628d2.uasset",
+      "exists": true,
+      "sha256": "cb501affea999dec87357725566c9395790214da597aed4ea7ba15bfe5b1a9e4",
+      "modified_utc": "2026-10-03T17:18:36.1016159Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2c0149cd3a261871",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2c0149cd3a261871.uasset",
+      "exists": true,
+      "sha256": "0feed9ce1b62932e29dea84d0e5b7f1c8eaa508f9ae3487e0b5d5485f012a44e",
+      "modified_utc": "2026-10-03T17:18:36.2379273Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2cb3677fdbd97c55",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_2cb3677fdbd97c55.uasset",
+      "exists": true,
+      "sha256": "8ad4f665a4cfe85b45305a35bfcf54df0003c63dea10efef813ac3a6d8093d7b",
+      "modified_utc": "2026-10-03T17:18:36.2600328Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_3365a81bec2ac2c7",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_3365a81bec2ac2c7.uasset",
+      "exists": true,
+      "sha256": "485a3cf1a8d90f6a527a548e00e1939630804eb8135094d6a60478d3270ae10b",
+      "modified_utc": "2026-10-03T17:18:35.9728576Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_35ee92afdb1243d0",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_35ee92afdb1243d0.uasset",
+      "exists": true,
+      "sha256": "a624aeb7763d0e6b9235e11a8e4f35d0aee1465e46279ea0087588de0e11305f",
+      "modified_utc": "2026-10-03T17:18:36.2154049Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_414d052ab95abbe9",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_414d052ab95abbe9.uasset",
+      "exists": true,
+      "sha256": "6652db1ef10e9c4b4702e0484feb0ad2cef8763337e424753c80f4bf4957dd2c",
+      "modified_utc": "2026-10-03T17:18:36.3423435Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4266862b4e2e9c40",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4266862b4e2e9c40.uasset",
+      "exists": true,
+      "sha256": "635e79e193f70985193bc15cecebf4e68bb648bc78ffa4de028d18fc12ccb515",
+      "modified_utc": "2026-10-03T17:18:35.9214572Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4979dcfc3f8ec1cc",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4979dcfc3f8ec1cc.uasset",
+      "exists": true,
+      "sha256": "2c214a7188a6f2bc2c820a1e0508d117192a6f1c723cb7e28b91cba8cb1bf78a",
+      "modified_utc": "2026-10-03T17:18:36.0489460Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4c4e1f9242e74cdf",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_4c4e1f9242e74cdf.uasset",
+      "exists": true,
+      "sha256": "fdb57509742f718e15d6a8fee0e850f2f648e136781488a6c4bf59964f87b648",
+      "modified_utc": "2026-10-03T17:18:35.9893788Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_51300ea2ff271268",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_51300ea2ff271268.uasset",
+      "exists": true,
+      "sha256": "f9b0cac1ca307ec3ce4865aa4c97f1f2a8f5402c7de10ac5642d68ccbab8ede1",
+      "modified_utc": "2026-10-03T17:18:36.1452127Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_62a789b1a5bdc7b7",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_62a789b1a5bdc7b7.uasset",
+      "exists": true,
+      "sha256": "2240c4b71fe0314b509170ad175824770538a95933b5e5537677bd2b61e8dbd6",
+      "modified_utc": "2026-10-03T17:18:36.1346948Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_664df9759608a0ea",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_664df9759608a0ea.uasset",
+      "exists": true,
+      "sha256": "70fbc428dc1c6bcde6e71528af74f0571cc81829d0725dfb2a36607c1b8e58ce",
+      "modified_utc": "2026-10-03T17:18:35.9487817Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_6fad34bab257332e",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_6fad34bab257332e.uasset",
+      "exists": true,
+      "sha256": "71b4952dd92c13ac13021b56e718c8feecaf9baedf66493cb5e2e32e4d381e09",
+      "modified_utc": "2026-10-03T17:18:36.0329412Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_7789438bf8f0abfa",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_7789438bf8f0abfa.uasset",
+      "exists": true,
+      "sha256": "5ff1562d600d427da0c2c34e8be0dfa6a5f7a8036c59390fbcb71660f2e06274",
+      "modified_utc": "2026-10-03T17:18:36.1938356Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_8794b672a2b9ad77",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_8794b672a2b9ad77.uasset",
+      "exists": true,
+      "sha256": "cb3d0e7d5ca3eb3fbe1e7c9af446d549ac4493969658ab1dda44deae099ccfe6",
+      "modified_utc": "2026-10-03T17:18:36.3673871Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_8aae3260b03e9b73",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_8aae3260b03e9b73.uasset",
+      "exists": true,
+      "sha256": "539e4c2e697b23e00a8f29d2f8f5a086d820d062a31aa5f83a1978a151f1b11a",
+      "modified_utc": "2026-10-03T17:18:36.0800387Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_938b6b1ddee9e2ab",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_938b6b1ddee9e2ab.uasset",
+      "exists": true,
+      "sha256": "d6b5ee17b3233a24d8d9797189e9ef743657904debd9b690ddeb59c832408e82",
+      "modified_utc": "2026-10-03T17:18:36.3201787Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_93de69200fd699a0",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_93de69200fd699a0.uasset",
+      "exists": true,
+      "sha256": "2d39c97e79a8a302a8a938b75bd238ba489d6fdce89d6e9a2aa8e09d2dd3eba9",
+      "modified_utc": "2026-10-03T17:18:36.2836127Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_9ede640f7d70c2ae",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_9ede640f7d70c2ae.uasset",
+      "exists": true,
+      "sha256": "f9022a60b2bb06d2048aae5eaa7977e689e0779611ab9a19775d0fc4ed33cc55",
+      "modified_utc": "2026-10-03T17:18:36.3819194Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_9f02a98f1fd2cf13",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_9f02a98f1fd2cf13.uasset",
+      "exists": true,
+      "sha256": "c1844c06af823054e7bed5850efa2107c7be14d5f915e93f5f7568c5b4ae6f9b",
+      "modified_utc": "2026-10-03T17:18:36.0950872Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_a0554631e104848e",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_a0554631e104848e.uasset",
+      "exists": true,
+      "sha256": "061cf127ec9bae8cb28666fec0591ce8413d0c287b1f086a7f648e30834c3765",
+      "modified_utc": "2026-10-03T17:18:36.2269134Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_abff5d9ab08ff238",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_abff5d9ab08ff238.uasset",
+      "exists": true,
+      "sha256": "2986f87562d506e5a0a1515b9b47ca2b61a80994b8a7f2b9c23b2212660656d5",
+      "modified_utc": "2026-10-03T17:18:36.0024086Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_addaf01963e23c71",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_addaf01963e23c71.uasset",
+      "exists": true,
+      "sha256": "7e38de240eb98788c9fcd6710ff66ed44838ba0a4f42201d4a4c951f925abaf9",
+      "modified_utc": "2026-10-03T17:18:36.2484359Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_b4b9a00029bcdf78",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_b4b9a00029bcdf78.uasset",
+      "exists": true,
+      "sha256": "c72835e8eb417d25609b186c58c667b7ee6a8d28be5bb32a0c249fdc4ddcd870",
+      "modified_utc": "2026-10-03T17:18:36.3543655Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_ce03c6e06d4a7ad4",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_ce03c6e06d4a7ad4.uasset",
+      "exists": true,
+      "sha256": "75b4c02279b2990b2b455cad317ded9fb571000b61a73e6495b50f5470cd15e9",
+      "modified_utc": "2026-10-03T17:18:36.3046561Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_d849b34670a3e35d",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_d849b34670a3e35d.uasset",
+      "exists": true,
+      "sha256": "40b1560f684624be0bc7b1e2b730c08c56719428bdcbe736920e31fc37b4d305",
+      "modified_utc": "2026-10-03T17:18:36.2951396Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_d91dcda39df22e23",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_d91dcda39df22e23.uasset",
+      "exists": true,
+      "sha256": "317d84d76276fbf6cfeaf2a0b6cf000de33f0735529065f7f6a9a63c509f7d73",
+      "modified_utc": "2026-10-03T17:18:36.2043797Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_dc13e1a394b6ed29",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_dc13e1a394b6ed29.uasset",
+      "exists": true,
+      "sha256": "776bc09397ddc762232d4fae43611d6d7759961114f231461e4f50f240c2c706",
+      "modified_utc": "2026-10-03T17:18:36.0609990Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e1c3723506e1e6ca",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e1c3723506e1e6ca.uasset",
+      "exists": true,
+      "sha256": "39740dd6f7596cfc3479cbc98d5d497a801185a22206811c6e31696c4b0a672f",
+      "modified_utc": "2026-10-03T17:18:36.0715297Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e38faf723751c58a",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e38faf723751c58a.uasset",
+      "exists": true,
+      "sha256": "cf4ff9111b98bd2a4b6a503d53c855c77ca9e91f20323a4749cf36eb4159c4ad",
+      "modified_utc": "2026-10-03T17:18:36.2700615Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e93ccd5c64255fe6",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_e93ccd5c64255fe6.uasset",
+      "exists": true,
+      "sha256": "eab378dc87dce72462ee64daf064461055fa19d77ecfa92beeb166e4dc4ad32d",
+      "modified_utc": "2026-10-03T17:18:35.9392562Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_fa36a7af435412c2",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_fa36a7af435412c2.uasset",
+      "exists": true,
+      "sha256": "8b758dfb47a5805d8f35536a35aaea62926a9aa7329428e47eb6b9a2c26657a7",
+      "modified_utc": "2026-10-03T17:18:35.9104457Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_fd29505196d624e8",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/ClippedGeometry/20261003T143631839378_165050602285/SM_Clipped_fd29505196d624e8.uasset",
+      "exists": true,
+      "sha256": "a787d324bf16f5135a35f52ce21e1dd2edab19a30e632cbe21ce53ff2c3a2a7a",
+      "modified_utc": "2026-10-03T17:18:35.9322576Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_3778242a7440",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_3778242a7440.uasset",
+      "exists": true,
+      "sha256": "b19dfd5f788b9ebb572bbabe02c9e601e25dff793eb67376edc60996d4a986cf",
+      "modified_utc": "2026-10-03T17:18:35.7575657Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_8a1b6abe9392",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_8a1b6abe9392.uasset",
+      "exists": true,
+      "sha256": "d044ee500a80835f5ebd5762c5a8e8b97104a454fb3bdda079deaa92b09136a8",
+      "modified_utc": "2026-10-03T17:18:35.7700955Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_a82f7e8593f5",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_a82f7e8593f5.uasset",
+      "exists": true,
+      "sha256": "ced5a0ef37c2a74a0762ff2bdf9909bdba85566a2bc5800d0f92e78997d8fa0a",
+      "modified_utc": "2026-10-03T17:18:35.7826591Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_eba69971b0a2",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_eba69971b0a2.uasset",
+      "exists": true,
+      "sha256": "fa38dda1f1715d5f520ddbaa69ffd2aba7107e0fac67a536103d2561543930c8",
+      "modified_utc": "2026-10-03T17:18:35.7956979Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_f1a2f4445986",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_residential_f1a2f4445986.uasset",
+      "exists": true,
+      "sha256": "e990fb9f8912e1217c53544c24d2f3295905a876446324c5464a01ae606c2058",
+      "modified_utc": "2026-10-03T17:18:35.8082185Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_51b8183b3fbb",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_51b8183b3fbb.uasset",
+      "exists": true,
+      "sha256": "8d73973bb8a7121f9bf2620a8bc8b7d215e5525815ad094f36c17e7103cd75da",
+      "modified_utc": "2026-10-03T17:18:35.8202435Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_67df6f90b4ac",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_67df6f90b4ac.uasset",
+      "exists": true,
+      "sha256": "4d952e2b71239fbb234367425cf43b26d809f093e944978b4a37c1a0eafd592f",
+      "modified_utc": "2026-10-03T17:18:35.8342898Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_c976d586672e",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_secondary_c976d586672e.uasset",
+      "exists": true,
+      "sha256": "d73195c944fa749534462dd53868db22e894d84fc0f1a3035238518a9b0ac03b",
+      "modified_utc": "2026-10-03T17:18:35.8473178Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_service_05d2fda0cfc0",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_service_05d2fda0cfc0.uasset",
+      "exists": true,
+      "sha256": "811217b2c96ea1c7ecda8dd8980c5b2bad54c8a9f4bac26cc0fa0469b5f4cbd1",
+      "modified_utc": "2026-10-03T17:18:35.8533455Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_service_5402f6d77989",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_service_5402f6d77989.uasset",
+      "exists": true,
+      "sha256": "2cc863a5ac3e70dd2940c57c9884035aa0040d37633710ab590639b812904c70",
+      "modified_utc": "2026-10-03T17:18:35.8593474Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_132ca8c67f0a",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_132ca8c67f0a.uasset",
+      "exists": true,
+      "sha256": "b8f3c90729c3b8177ecac10025d2f815147ec2b64f78e929028932e94779fd83",
+      "modified_utc": "2026-10-03T17:18:35.8723914Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_478692f07b1d",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_478692f07b1d.uasset",
+      "exists": true,
+      "sha256": "f95927bd008f8f43a1158ed0859ead6606b8ce37e2ceaa6a24b6eca30733d4c0",
+      "modified_utc": "2026-10-03T17:18:35.8859266Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_8731350b53e7",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Presets/RP_tertiary_8731350b53e7.uasset",
+      "exists": true,
+      "sha256": "d54ab3a009a7cf94b17b5d7ae1eb57fefb0929c8802134c19b339097e7aa5f3d",
+      "modified_utc": "2026-10-03T17:18:35.8984348Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_3778242a7440",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_3778242a7440.uasset",
+      "exists": true,
+      "sha256": "9ecc3e37cf49c809b324a1d3cf7553e4aa58b19cacb69392a15459cf5ffef795",
+      "modified_utc": "2026-10-03T17:18:35.7515616Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_8a1b6abe9392",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_8a1b6abe9392.uasset",
+      "exists": true,
+      "sha256": "28f78737dd588d60f66bde320770ec9d562380d4432ec81a082cf8c2191cddb8",
+      "modified_utc": "2026-10-03T17:18:35.7635874Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_a82f7e8593f5",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_a82f7e8593f5.uasset",
+      "exists": true,
+      "sha256": "c8ea61af578b804bb94b09a5c6b11cd01056af124e84b3c04aa27019d63583b9",
+      "modified_utc": "2026-10-03T17:18:35.7766135Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_eba69971b0a2",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_eba69971b0a2.uasset",
+      "exists": true,
+      "sha256": "bcfeb2a742a44b88b52f5c66796bc707478b9f94424af41e914b0cecaebf39a4",
+      "modified_utc": "2026-10-03T17:18:35.7891719Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_f1a2f4445986",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_residential_f1a2f4445986.uasset",
+      "exists": true,
+      "sha256": "16d4bdb269c96c8b79d33e1611ec56bbb1e7ab40b1fd491ac24e01a95dd321a3",
+      "modified_utc": "2026-10-03T17:18:35.8022213Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_51b8183b3fbb",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_51b8183b3fbb.uasset",
+      "exists": true,
+      "sha256": "6c17ed011a4cf63ee8e2fd5bf56d340a954869f1fea1c426005cbe72b6fee760",
+      "modified_utc": "2026-10-03T17:18:35.8137403Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_67df6f90b4ac",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_67df6f90b4ac.uasset",
+      "exists": true,
+      "sha256": "c1d045891aa082810d745c248350bdc40280844aba9136a206fe64857b9b7166",
+      "modified_utc": "2026-10-03T17:18:35.8272615Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_c976d586672e",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_secondary_c976d586672e.uasset",
+      "exists": true,
+      "sha256": "413f8b3428978532e4b0da3262a9b2c1e4a35e1489795755838b3ea1b0338deb",
+      "modified_utc": "2026-10-03T17:18:35.8402939Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_132ca8c67f0a",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_132ca8c67f0a.uasset",
+      "exists": true,
+      "sha256": "aa51a5db4538b07295f6c804e605a299c68c3543ab207981423abc45dea368c2",
+      "modified_utc": "2026-10-03T17:18:35.8658760Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_478692f07b1d",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_478692f07b1d.uasset",
+      "exists": true,
+      "sha256": "ebca3a414aa5af2731b77e45c121f35e21e946acb71978d6efda906f36418b32",
+      "modified_utc": "2026-10-03T17:18:35.8788936Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_8731350b53e7",
+      "file": "Content/Project/Areas/GazaRimal/RoadBLD/Sidewalks/RSP_tertiary_8731350b53e7.uasset",
+      "exists": true,
+      "sha256": "7342eabdd05a715bac739a6ae65a7ce193205096d09d31c035334d6015e1b7a4",
+      "modified_utc": "2026-10-03T17:18:35.8919348Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_buildings",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_buildings.uasset",
+      "exists": true,
+      "sha256": "0099b4f355bd46893f67b31caa0dcf85782febc91840f0678e034555862f77c4",
+      "modified_utc": "2026-10-03T14:29:33.6199050Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Dirt_Path",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Dirt_Path.uasset",
+      "exists": true,
+      "sha256": "ed1e442884447e3c25adb9a8865d06d7365bc03c5be11d180aaffa8481cc4a99",
+      "modified_utc": "2026-10-03T14:29:42.9271402Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_01",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_01.uasset",
+      "exists": true,
+      "sha256": "ba5f20045337722332f895737cf06127337cbd6407eaff89f411ffda74d40261",
+      "modified_utc": "2026-10-03T14:29:42.9343495Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_02",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_02.uasset",
+      "exists": true,
+      "sha256": "a26322bad620607bd7556654f55629ef9d0dd8baf9c2fb2a0d822ae3ede23d25",
+      "modified_utc": "2026-10-03T14:29:42.9398494Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_Path",
+      "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_Path.uasset",
+      "exists": true,
+      "sha256": "6f19570c6413bb1cde71d7602f35d8ba3b5aab2a116953d49133ddae1340db2a",
+      "modified_utc": "2026-10-03T14:29:42.9463556Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_02c56f805cc3f541",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_02c56f805cc3f541.uasset",
+      "exists": true,
+      "sha256": "48f9d9dbed6888e445cc1800edc45d6860e96e134e05213704309b70abf7ec0f",
+      "modified_utc": "2026-10-03T14:29:41.5406067Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_052c5088d33068d9",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_052c5088d33068d9.uasset",
+      "exists": true,
+      "sha256": "9f7f86e258687fc0de5577cc3748a557789ed89311bef7ea6f2905d4ed0c0cf9",
+      "modified_utc": "2026-10-03T14:29:41.2827398Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_05d75691a8f3a35d",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_05d75691a8f3a35d.uasset",
+      "exists": true,
+      "sha256": "5ccb9ac786c893194c46e3a4d51a340d2191b610f8ed170d809a85183812618a",
+      "modified_utc": "2026-10-03T14:29:41.1350922Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_07c5e12f93baa8bf",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_07c5e12f93baa8bf.uasset",
+      "exists": true,
+      "sha256": "92d8174d8c6ca412d6c8527d3a7cceaa0b812867ec582b38e10d550fb93ca9b9",
+      "modified_utc": "2026-10-03T14:29:41.2311713Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0900a45836661de6",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0900a45836661de6.uasset",
+      "exists": true,
+      "sha256": "c6d741a99acfd59773920cccd167f12a37a6bb96ee31e50db3c37d56afed73ae",
+      "modified_utc": "2026-10-03T14:29:40.9410932Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0949fe578ac926d6",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0949fe578ac926d6.uasset",
+      "exists": true,
+      "sha256": "66e034c0760c8e4589914adbd68c6647da320aa8784e6e6a488dd5dc4240b75a",
+      "modified_utc": "2026-10-03T14:29:41.0495086Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0c7e9a47ba7f5941",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_0c7e9a47ba7f5941.uasset",
+      "exists": true,
+      "sha256": "afcef5362d1a9efde3107a2fb6b0908f7b8fcd942dbeb89f29829a43cce15aca",
+      "modified_utc": "2026-10-03T14:29:41.1596157Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_12e1e8d23843a58f",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_12e1e8d23843a58f.uasset",
+      "exists": true,
+      "sha256": "5bf664bdaa9fd051fcf1179f3f9d3fe95ba5ab0ec3c6d6d75235974a3106a38f",
+      "modified_utc": "2026-10-03T14:29:41.2707181Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_19497ffe00bfae81",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_19497ffe00bfae81.uasset",
+      "exists": true,
+      "sha256": "4893b7b979506dcee8ed2516b67c4c2fc8bd744bd9523d97dd9b96aa62cc892f",
+      "modified_utc": "2026-10-03T14:29:41.4650455Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_1e68e0f411a2e291",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_1e68e0f411a2e291.uasset",
+      "exists": true,
+      "sha256": "dcb2aac5af751edb5917c6e4cc33c2d86ab0ea048421c6666264342936ae3c46",
+      "modified_utc": "2026-10-03T14:29:41.3924694Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_20c5010434449aa9",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_20c5010434449aa9.uasset",
+      "exists": true,
+      "sha256": "510bae93875ec0cdc1adf83cea45a5fea5281f4f3167c40ced908d33017bce9c",
+      "modified_utc": "2026-10-03T14:29:41.2466880Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_20ce77aeea28aae8",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_20ce77aeea28aae8.uasset",
+      "exists": true,
+      "sha256": "45e77854dac29b3ad5e2ed9c055fdd28f48d2449221195edf310b869c1857649",
+      "modified_utc": "2026-10-03T14:29:41.2587067Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_21c8d3c49ee0969a",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_21c8d3c49ee0969a.uasset",
+      "exists": true,
+      "sha256": "b7d21aebaab320de2dd869eef525a336770352139b01663757dddc89a39eabed",
+      "modified_utc": "2026-10-03T14:29:41.4530406Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_249c857a8d81c8b4",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_249c857a8d81c8b4.uasset",
+      "exists": true,
+      "sha256": "672f16625e2e48084fd06dab77454abad2955564cb74af22f63345ddfec59184",
+      "modified_utc": "2026-10-03T14:29:41.6842314Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_276bf84cfec756c2",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_276bf84cfec756c2.uasset",
+      "exists": true,
+      "sha256": "1174888bc35138e7394ddaa93d7a1b3089e7c4cdd7404744fa9e3000eb3868ae",
+      "modified_utc": "2026-10-03T14:29:41.0600148Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_2fdc0515e99d4dc9",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_2fdc0515e99d4dc9.uasset",
+      "exists": true,
+      "sha256": "9497e565c545208bc213db23165b036cf8d9e6568fbdd5eb3dc00341dc006cdc",
+      "modified_utc": "2026-10-03T14:29:41.5521294Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_34130e9cee1d64cb",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_34130e9cee1d64cb.uasset",
+      "exists": true,
+      "sha256": "d496e7db18192035c08b32817d8c1b4d97df1f6700321dce2d95d065fdcbb642",
+      "modified_utc": "2026-10-03T14:29:41.6947481Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_350be26250dbdf06",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_350be26250dbdf06.uasset",
+      "exists": true,
+      "sha256": "5a82c186c6b3f63e45555d6f0d40a83edd033f2b4790906ea1971284c8edf951",
+      "modified_utc": "2026-10-03T14:29:36.6039644Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_37916b545f0532b4",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_37916b545f0532b4.uasset",
+      "exists": true,
+      "sha256": "1dd84c1691319ab1eb904b17138f9a2f3485a9bb0b42a20790132291738e1a1d",
+      "modified_utc": "2026-10-03T14:29:41.3804531Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_38d248c64eebc03d",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_38d248c64eebc03d.uasset",
+      "exists": true,
+      "sha256": "93512488fd6c34dc11c396814d7455760909b3f7f0cd1acef9dae5a3aebbde25",
+      "modified_utc": "2026-10-03T14:29:41.6732198Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_3dd8561698407871",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_3dd8561698407871.uasset",
+      "exists": true,
+      "sha256": "81a063e7475c8a04ce1de2683330ce4ae7ff65ceac6adadafeaffbb041501ea0",
+      "modified_utc": "2026-10-03T14:29:41.3334124Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_42bdace28baffd36",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_42bdace28baffd36.uasset",
+      "exists": true,
+      "sha256": "020c5b39d1ea14fb3fb7f81f217e93ff98b1a2503f8af7f7f2e2297c969e129c",
+      "modified_utc": "2026-10-03T14:29:41.5290958Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4792a2c3c02550b5",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4792a2c3c02550b5.uasset",
+      "exists": true,
+      "sha256": "3e3d3bee9c852ff26f51749db8651a9ee2aa482faef8dcce287be51b14fa6d2f",
+      "modified_utc": "2026-10-03T14:29:40.9949511Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4911f045db67e3f1",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4911f045db67e3f1.uasset",
+      "exists": true,
+      "sha256": "04835776ae3c135cbf226ff2644fe5d59c6bafc8ed4ad2891c6d541d6ef3b462",
+      "modified_utc": "2026-10-03T14:29:41.1475973Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4d315b045b854c74",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_4d315b045b854c74.uasset",
+      "exists": true,
+      "sha256": "3aa35960c481e6b39c8064dbbc8f80f90e29be7367680ac8db9b12695193a137",
+      "modified_utc": "2026-10-03T14:29:41.5781487Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_52cf53564efe1743",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_52cf53564efe1743.uasset",
+      "exists": true,
+      "sha256": "b5509780d7be9ff0b013f49522451935d33d94e8448e2f7a5a13a4cd5e018e08",
+      "modified_utc": "2026-10-03T14:29:41.2181646Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_55199100f213e798",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_55199100f213e798.uasset",
+      "exists": true,
+      "sha256": "f4845241876e31561ec8a7b0405f949bbbf821e1f8f3e903a2b109d52728625c",
+      "modified_utc": "2026-10-03T14:29:41.4159955Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_5692dc28d87d068d",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_5692dc28d87d068d.uasset",
+      "exists": true,
+      "sha256": "80108578dba50685ff65b8767033f284f59c8c736fa60439da3ebf6f8d1c573a",
+      "modified_utc": "2026-10-03T14:29:41.6266569Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_56dc9e39a04838e2",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_56dc9e39a04838e2.uasset",
+      "exists": true,
+      "sha256": "42a2918527026608f7423737a9d2c76a0484db3ca988ef5999ad8bf5ce01204b",
+      "modified_utc": "2026-10-03T14:29:41.4775563Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_5a20f9e8501a6b05",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_5a20f9e8501a6b05.uasset",
+      "exists": true,
+      "sha256": "b35620ba9b3eb9f6ab8a5c3a5e6ef8cc2475dfd2eda4710227072f1ae34bbc94",
+      "modified_utc": "2026-10-03T14:29:41.4049836Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6aed3cca0f6c993b",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6aed3cca0f6c993b.uasset",
+      "exists": true,
+      "sha256": "6be3b0c691eaf3941fced7cdae14cfc5c661ea15b4152a8271fa0bf126130fec",
+      "modified_utc": "2026-10-03T14:29:41.0084613Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6b6cae8510eff573",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6b6cae8510eff573.uasset",
+      "exists": true,
+      "sha256": "ae3251c15da7a05d18dbf2be963f8c51d2d41474f07417ea35d9c2584ecd4157",
+      "modified_utc": "2026-10-03T14:29:41.5911297Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6c35f5821d470064",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_6c35f5821d470064.uasset",
+      "exists": true,
+      "sha256": "6b83a8287efe49b3ab4f27b61e1f82478fd3f17077a24b40b5b22bbb608bf3a3",
+      "modified_utc": "2026-10-03T14:29:41.3569346Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_715d9acf4624134a",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_715d9acf4624134a.uasset",
+      "exists": true,
+      "sha256": "0000d61dcd130be01f05f3294bea151483f18adbaa0c3c85b0964ec1d501232b",
+      "modified_utc": "2026-10-03T14:29:41.0379888Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_779ac2f285c95cb2",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_779ac2f285c95cb2.uasset",
+      "exists": true,
+      "sha256": "5e21959062aa13087c35c2e9a9c5620a25b335895800291f2e8dac43b8ba904b",
+      "modified_utc": "2026-10-03T14:29:41.3208950Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_789c3fe5c535a289",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_789c3fe5c535a289.uasset",
+      "exists": true,
+      "sha256": "1b478fd026755cd30a21c28b70ddcafc505c55522195e275a29da1f7a18e34da",
+      "modified_utc": "2026-10-03T14:29:41.4405140Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_79e23698cc726321",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_79e23698cc726321.uasset",
+      "exists": true,
+      "sha256": "c0a0ecb55ff81e74b4552978c177ea00949b150990e229074ea30f19f9ba6b92",
+      "modified_utc": "2026-10-03T14:29:40.9699220Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_806827b50f2226ae",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_806827b50f2226ae.uasset",
+      "exists": true,
+      "sha256": "6e9e68515358fe5f5e506aaf1faa32a54c257cdd884333bb983374dc0610e83e",
+      "modified_utc": "2026-10-03T14:29:41.3674450Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_846493f28f4bdce7",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_846493f28f4bdce7.uasset",
+      "exists": true,
+      "sha256": "1d23de8fdf3d44f1f6bbd94be81a0470842286af854f4232497623af560aa41a",
+      "modified_utc": "2026-10-03T14:29:41.1946499Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_87d807ef003115c3",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_87d807ef003115c3.uasset",
+      "exists": true,
+      "sha256": "46d4a864b8e00086a4c6cd05f7c1d1676c4e35911e27dc1d6c8542357c34db70",
+      "modified_utc": "2026-10-03T14:29:41.0855404Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_896f2389d62de9e1",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_896f2389d62de9e1.uasset",
+      "exists": true,
+      "sha256": "8c08b0f0bd5ebbbe7aeb4f79b7b5eb2fd5e04bac2b60b3f234b719906bb28db0",
+      "modified_utc": "2026-10-03T14:29:41.0725281Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8a4a407d2b466006",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8a4a407d2b466006.uasset",
+      "exists": true,
+      "sha256": "1d7c0f40a79515a56df4b7997db0b3f392757547d54aa614436ba421a7e60f47",
+      "modified_utc": "2026-10-03T14:29:41.3449200Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8b2ecf7323740e44",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8b2ecf7323740e44.uasset",
+      "exists": true,
+      "sha256": "d2f407f40caf958392a2578679475e8e324ec67751fb6272cebb2bc14e7555d1",
+      "modified_utc": "2026-10-03T14:29:41.0980506Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8fabc38dd9fa5c8b",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_8fabc38dd9fa5c8b.uasset",
+      "exists": true,
+      "sha256": "920851f2fd71f813354c18b4e0745f87503adf850434df5a4c866b0f41c876ff",
+      "modified_utc": "2026-10-03T14:29:41.1811304Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_91401a391bd83b94",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_91401a391bd83b94.uasset",
+      "exists": true,
+      "sha256": "50a10072be99a7ebfd940baa6fb57e73e9665148cf9053af9607ae8a410263ef",
+      "modified_utc": "2026-10-03T14:29:41.1230815Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_9855e99d5c78a5a6",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_9855e99d5c78a5a6.uasset",
+      "exists": true,
+      "sha256": "0f34a394735509a97af95f5e8db15ae9b895033700e3d1e1b1b7ca9591f08c11",
+      "modified_utc": "2026-10-03T14:29:41.6622072Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_9ab0a2258f6a71e5",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_9ab0a2258f6a71e5.uasset",
+      "exists": true,
+      "sha256": "6d566fc2e2e58506394c10f364855c7d786f3d2d1fe4b5a5fb31d7c28bb1adda",
+      "modified_utc": "2026-10-03T14:29:40.9285812Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_a9b550fd9547f92f",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_a9b550fd9547f92f.uasset",
+      "exists": true,
+      "sha256": "1e7677b73e3a4d2e383f116f6931d430b322f873f7375652c40d3725c5268788",
+      "modified_utc": "2026-10-03T14:29:41.3078877Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_ac03916095892861",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_ac03916095892861.uasset",
+      "exists": true,
+      "sha256": "e04c9516a433fba54ef2ab70fb42b0910ca5fad251fad4cd5aa27b43ca704fbf",
+      "modified_utc": "2026-10-03T14:29:41.1706219Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_b0e9286ef40a9237",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_b0e9286ef40a9237.uasset",
+      "exists": true,
+      "sha256": "0d347c847d30a98490891d2142b9c81cb73b78aad925d31f02f9cdff7b89efe2",
+      "modified_utc": "2026-10-03T14:29:40.8670863Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_b9977b18f5f51050",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_b9977b18f5f51050.uasset",
+      "exists": true,
+      "sha256": "9a34378dcb9d317580a9afbd8ff43705f3e86d168ab318f627048decec9d6338",
+      "modified_utc": "2026-10-03T14:29:40.8775967Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c0678e7b11d8b7d5",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c0678e7b11d8b7d5.uasset",
+      "exists": true,
+      "sha256": "221ab1cd8859fd0f1ed32f97bba839e53f12c6ebdfd803127caf3e3cc21fb3e3",
+      "modified_utc": "2026-10-03T14:29:41.6031412Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c196576fb0a77f31",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c196576fb0a77f31.uasset",
+      "exists": true,
+      "sha256": "6018c228f9e236aa19cbd16c3299860ab55431b26a19a288aeb84b4f3b435278",
+      "modified_utc": "2026-10-03T14:29:40.9160696Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c861bd4a746f7c40",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c861bd4a746f7c40.uasset",
+      "exists": true,
+      "sha256": "66a42dd94af781c1544aff6f6523123f2953003e6913663921a64c292a8e3008",
+      "modified_utc": "2026-10-03T14:29:41.6511965Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c94360b01070fefe",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_c94360b01070fefe.uasset",
+      "exists": true,
+      "sha256": "44eaa948fbee4fbfa2d43d7af016abd55888b67cc07e9f3814630d4d462c6404",
+      "modified_utc": "2026-10-03T14:29:41.5150877Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_ceafaf55c693d3e0",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_ceafaf55c693d3e0.uasset",
+      "exists": true,
+      "sha256": "a1053a871830f952221ab29c2bd20d7a5a25f10ca06bc9f6d5cb671f32d45f64",
+      "modified_utc": "2026-10-03T14:29:41.6391709Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d03d4383becad8b8",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d03d4383becad8b8.uasset",
+      "exists": true,
+      "sha256": "ab7e92ee0e0dd7306d03d1b3a4ab0a4453d42048cb416bd9baa2917f14457a2f",
+      "modified_utc": "2026-10-03T14:29:40.9030632Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d08d8bf9546448d0",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d08d8bf9546448d0.uasset",
+      "exists": true,
+      "sha256": "12493c097bd057143650bbbfa93f5448920333c0fcc02665dc4a63acb7d31461",
+      "modified_utc": "2026-10-03T14:29:40.9554078Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d2b8656764f7a864",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_d2b8656764f7a864.uasset",
+      "exists": true,
+      "sha256": "6f173628de70e1518968eba004bfe27a977cb1cc1119354380add4d2f6e07a3a",
+      "modified_utc": "2026-10-03T14:29:40.8905467Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_da260dd283b4ccd7",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_da260dd283b4ccd7.uasset",
+      "exists": true,
+      "sha256": "cb5909a649bf782215d0dc4627c5594fab1e9e2db9982062ba403748a6fd1954",
+      "modified_utc": "2026-10-03T14:29:41.0234787Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_daa1eb92d5eb3dd3",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_daa1eb92d5eb3dd3.uasset",
+      "exists": true,
+      "sha256": "fe702ce8e85e2f1b4ec5fbdc9c2d50fbe4d702bbd2921e8653f87289212698fd",
+      "modified_utc": "2026-10-03T14:29:41.1095622Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_dd8f7d4761d6a3db",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_dd8f7d4761d6a3db.uasset",
+      "exists": true,
+      "sha256": "71e8f6d0402787686ffd7c59d92e19f885c0ee366f4cbb7166b7ee7fe59a331b",
+      "modified_utc": "2026-10-03T14:29:40.9824373Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e332c893165fedbf",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e332c893165fedbf.uasset",
+      "exists": true,
+      "sha256": "9cfa53bef8c4fdace7a67410ca21f368754d805a07a80ef990cb3a6fafc259bf",
+      "modified_utc": "2026-10-03T14:29:41.4910656Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e8d48bd9407f8c75",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e8d48bd9407f8c75.uasset",
+      "exists": true,
+      "sha256": "7476e36a7149c9ee2cd7f67c355b531660f6f0ee8703da9fe8c85824de2fb6d7",
+      "modified_utc": "2026-10-03T14:29:41.4280074Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e9d13d0bd6f358ba",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_e9d13d0bd6f358ba.uasset",
+      "exists": true,
+      "sha256": "4d73510a854e98bd9553554d9d93c71d6941d907f42588526451189bd65ffb4c",
+      "modified_utc": "2026-10-03T14:29:41.5656423Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_eae9660f159f5a3a",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_eae9660f159f5a3a.uasset",
+      "exists": true,
+      "sha256": "db2e05ad4afe9f4a545dd157336e9ecc0e4a6de65f03b764dedc415eece2b676",
+      "modified_utc": "2026-10-03T14:29:41.2071562Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f3e09c68a089229b",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f3e09c68a089229b.uasset",
+      "exists": true,
+      "sha256": "34f1a71627d4bf13817eacdbfadcc62bb74037be19529b6489d70b5d6893d819",
+      "modified_utc": "2026-10-03T14:29:41.2953798Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f686740d5cac1410",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f686740d5cac1410.uasset",
+      "exists": true,
+      "sha256": "24aefb2cdd7c2e7c0034fe35d3f8d729543724ed642cec353c77cb895bc811af",
+      "modified_utc": "2026-10-03T14:29:41.6146527Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f771633f5357da08",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/ClippedGeometry/20261003T133607905511_141625759113/SM_Clipped_f771633f5357da08.uasset",
+      "exists": true,
+      "sha256": "b7c8f377af4dd44a2d44b54f12434288117c7885db070e256ca107377466707d",
+      "modified_utc": "2026-10-03T14:29:41.5030814Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_73fd2cbe9bb1",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_73fd2cbe9bb1.uasset",
+      "exists": true,
+      "sha256": "14b6493f3edb84f5e17bb5b3ed4e79279057954640968eee736c3cce7327e902",
+      "modified_utc": "2026-10-03T14:29:33.7567679Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_7c14e3aba8d3",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_7c14e3aba8d3.uasset",
+      "exists": true,
+      "sha256": "a74e063d62a786623b279671b9a5d74e7e7b7f10f3502de531491b785d036cd5",
+      "modified_utc": "2026-10-03T14:29:33.7712967Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_e1e586034f5a",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_e1e586034f5a.uasset",
+      "exists": true,
+      "sha256": "11b318b4f037d4b90eed73f6083699165d97b51c36200d39c7601a77bfee7305",
+      "modified_utc": "2026-10-03T14:29:33.7878215Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_e35ff5512378",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_e35ff5512378.uasset",
+      "exists": true,
+      "sha256": "31f89186657f335a9da0f272d47533cfe68d179e1ef8181e765d98fefc70d5e7",
+      "modified_utc": "2026-10-03T14:29:33.8023360Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_78901930f2b9",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_78901930f2b9.uasset",
+      "exists": true,
+      "sha256": "ae08faaf5f1121304c647a5c1cb08e9608e6d4d55bb9c470fd12eea2b7f96e97",
+      "modified_utc": "2026-10-03T14:29:33.8093456Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_c4e4d7375528",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_c4e4d7375528.uasset",
+      "exists": true,
+      "sha256": "06379d5b0d2fe362e60868881a28a1553e9284d01914838d1103349c1dfb0cd8",
+      "modified_utc": "2026-10-03T14:29:33.8233628Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_73fd2cbe9bb1",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_73fd2cbe9bb1.uasset",
+      "exists": true,
+      "sha256": "01591d65f9f07c9962facdfd59939401669e0be44e98f989eae54e9149167f70",
+      "modified_utc": "2026-10-03T14:29:33.7427548Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_7c14e3aba8d3",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_7c14e3aba8d3.uasset",
+      "exists": true,
+      "sha256": "0d7b52c23941a346e31c01e124a294cfabb7e712c43a7621ab4a5ee83607ff06",
+      "modified_utc": "2026-10-03T14:29:33.7642992Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_e1e586034f5a",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_e1e586034f5a.uasset",
+      "exists": true,
+      "sha256": "2892cae4b21d00f14016c33e02bd548e173db7860b6f342501d5e24195469ddc",
+      "modified_utc": "2026-10-03T14:29:33.7798102Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_e35ff5512378",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_e35ff5512378.uasset",
+      "exists": true,
+      "sha256": "d8781218488dc79bf9384d67b30a1549d7b6dd8abce19c1c9d6cfb872c8882c0",
+      "modified_utc": "2026-10-03T14:29:33.7948309Z",
+      "modified_before_run": true
+    },
+    {
+      "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_c4e4d7375528",
+      "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_c4e4d7375528.uasset",
+      "exists": true,
+      "sha256": "535f36578fbb98f810b1ec2a9e8b18cddd78b83fa07b5b8e2f8690d34835c06b",
+      "modified_utc": "2026-10-03T14:29:33.8163566Z",
+      "modified_before_run": true
+    }
+  ]
+}

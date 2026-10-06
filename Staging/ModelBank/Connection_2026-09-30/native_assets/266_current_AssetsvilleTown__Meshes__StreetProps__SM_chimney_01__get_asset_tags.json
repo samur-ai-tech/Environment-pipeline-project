@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 276,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_chimney_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"225x100x409\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/chimney_01.fbx\\\", \\\"Timestamp\\\" : \\\"1536033481\\\", \\\"FileMD5\\\" : \\\"211ccaef7955d1611aca8efff2e941d5\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"2\",\"SectionsWithCollision\":\"2\",\"Triangles\":\"82\",\"UVChannels\":\"2\",\"Vertices\":\"164\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 276,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"225x100x409\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/chimney_01.fbx\\\", \\\"Timestamp\\\" : \\\"1536033481\\\", \\\"FileMD5\\\" : \\\"211ccaef7955d1611aca8efff2e941d5\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"2\",\"SectionsWithCollision\":\"2\",\"Triangles\":\"82\",\"UVChannels\":\"2\",\"Vertices\":\"164\"}}"
+    }
+   ]
+  }
+ }
+}

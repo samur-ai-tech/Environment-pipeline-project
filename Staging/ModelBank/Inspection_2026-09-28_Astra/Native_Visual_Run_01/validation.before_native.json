@@ -1,0 +1,99 @@
+{
+  "verified_at": "2026-09-28T16:33:03.9871067+03:00",
+  "checker": "PowerShell Import-Csv independent persisted-file verification",
+  "checks": {
+    "record_count_1215": true,
+    "unique_ids_1215": true,
+    "stable_id_order": true,
+    "column_count_86": true,
+    "families_324": true,
+    "members_1320": true,
+    "member_paths_unique": true,
+    "subset_132": true,
+    "subset_all_ids_valid": true,
+    "family_covers_all_ids_once": true,
+    "protected_original_fields_unchanged": true,
+    "ladder_remains_unqualified": true,
+    "two_source_csv_hashes_unchanged": true,
+    "original_backup_hash_matches": true,
+    "all_rows_have_review": true
+  },
+  "failures": [],
+  "source_csv_hashes": [
+    {
+      "file": "CURRENT_PACK_SELECTION_2026-09-28.csv",
+      "before": "eb51dc9dd6e55c4c223c10832464f0ef3cf9d8884d2aedd41b7684f0beb84828",
+      "after": "eb51dc9dd6e55c4c223c10832464f0ef3cf9d8884d2aedd41b7684f0beb84828",
+      "unchanged": true
+    },
+    {
+      "file": "EXTERNAL_SOURCE_SELECTION_2026-09-28.csv",
+      "before": "3b8aeeabf016f8c1b131a6bfd3fa11d1eb6c926d39e7a309bb0e04899bc7462f",
+      "after": "3b8aeeabf016f8c1b131a6bfd3fa11d1eb6c926d39e7a309bb0e04899bc7462f",
+      "unchanged": true
+    }
+  ],
+  "index_sha256": "6a8f5578eec6c7678f49efaac0847ca54db7334fbf316f00c2d2d7fe284c884c",
+  "original_field_change_counts": [
+    {
+      "Name": "building_type",
+      "Count": 1
+    },
+    {
+      "Name": "category",
+      "Count": 27
+    },
+    {
+      "Name": "decision",
+      "Count": 594
+    },
+    {
+      "Name": "decision_reason",
+      "Count": 1215
+    },
+    {
+      "Name": "functional_role",
+      "Count": 50
+    },
+    {
+      "Name": "index_revision",
+      "Count": 1215
+    },
+    {
+      "Name": "representation",
+      "Count": 50
+    },
+    {
+      "Name": "style",
+      "Count": 1
+    }
+  ],
+  "unexpected_changes": [],
+  "recommendations": [
+    {
+      "Name": "consolidate",
+      "Count": 56
+    },
+    {
+      "Name": "exclude",
+      "Count": 28
+    },
+    {
+      "Name": "keep",
+      "Count": 497
+    },
+    {
+      "Name": "review",
+      "Count": 634
+    }
+  ],
+  "limits": "Does not verify native asset quality, rights terms, generation, or acceptance.",
+  "member_metadata_recheck": {
+    "checked_at": "2026-09-28T13:33:29.374Z",
+    "paths": 1320,
+    "changes": [],
+    "scope": "size and modification timestamp only; not a content-hash or native-load check"
+  },
+  "subset_member_paths": 173,
+  "source_preview_images": 17
+}

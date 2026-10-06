@@ -1,0 +1,68 @@
+{
+ "utc": "2026-10-06T13:48:24Z",
+ "manager": "cc37d4d2",
+ "area": "Iran_38196167_46086167_4km",
+ "editor_pid": 29900,
+ "route": "ordinary menu path geocity_editor_action.generate_current_area() (GEOCITY_MENU self-issued lease) after the managed-lease path was refused (Iran map absent from ASSIGNMENTS.native_area_maps)",
+ "lease_lines": {
+  "dispatch": "2026-10-06T13:27:51Z OWNER=GEOCITY_MENU task=GENERATE_CURRENT_AREA PID=29900",
+  "release": "2026-10-06T13:39:07Z OWNER=NONE released_phase=baked_saved_verified"
+ },
+ "ledger": "Staging/Iran_4km_2026-10-04/LAST_SUCCESSFUL_WORKFLOW_STATE.json (phase baked_saved_verified, pid 29900, utc 13:27:52Z)",
+ "measured": {
+  "map_sha256_before": "623aa0c0",
+  "map_sha256_after": "c409279c",
+  "map_saved_utc": "13:39:07Z",
+  "profile_sha256_before_after": "004ec07d (unchanged)",
+  "manifest": "258469e1",
+  "instance_count": 66984,
+  "baked_actor_count": 34,
+  "landscape_count_live": 1,
+  "houdini_asset_actors_live": 1,
+  "static_mesh_actors_live": 3,
+  "cooked_mesh_component_count": 0,
+  "buildings": {
+   "assembled": 11,
+   "whole_native": 0,
+   "source_pads": 11,
+   "module_points": 4202
+  },
+  "street_poles": 243,
+  "street_props": 238,
+  "top_meshes": {
+   "SM_Grass_02_3": 12954,
+   "SM_Grass_05_2": 12832,
+   "rubble_trash_pile_a": 1842,
+   "rubble_dirt_pebble_pile_a": 1739,
+   "tree_role_component": 26034
+  },
+  "packages_written": {
+   "map": 1,
+   "Bake": 3,
+   "LayerInfos": 4,
+   "Cook/78F86F39": 7
+  },
+  "dirty_after_release": [
+   "3 transient Cook main_geo packages (not saved, as in earlier runs)"
+  ],
+  "log": {
+   "python_errors": 0,
+   "warnings": [
+    "LogHoudiniEngine Package already exists on disk (13x, overwrite of same-named cook/bake/layerinfo packages)",
+    "LogGrass Failed to build grass maps for 706/1024 landscape components",
+    "WorldBLD RefreshOwnershipStatus token empty"
+   ]
+  }
+ },
+ "captures": "Operator/IranRun_20261006/CAPTURE_RECEIPT_r002.json (4 Lit images 1044x575 via EditorAppToolset.CaptureViewport; r001 failed: annotations field required)",
+ "not_done": [
+  "fresh reopen of the saved Iran map (editor still open, OWNER=NONE)",
+  "visual acceptance by Aviv"
+ ],
+ "labels": "measured from ledger, log, probes and file hashes; no inference",
+ "corrections_after_review_20261006": {
+  "top_meshes": "ledger native_components ranked: SM_Thicket_03_G 26034 (whole tree role), SM_Grass_02_3 12954, SM_Grass_05_2 12832, SM_Rubbish_bug_1t 2261, SM_Palet_a 2045, SM_Palet_b 2027, rubble_trash_pile_a 1842, rubble_dirt_pebble_pile_a 1739",
+  "python_errors": "0 inside the generation window 13:27:51-13:39:07Z; 1 LogPython Error earlier at 13:19:20Z (managed-lease refusal), which opened a modal GeoCity dialog closed at 13:25:48Z",
+  "captures": "1044x575 is below the 1600 px hybrid capture gate; fov was not passed (CaptureViewport has no fov input)"
+ }
+}

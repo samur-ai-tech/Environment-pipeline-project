@@ -1,0 +1,967 @@
+{
+ "schema": "environmentpipeline.stage1_ground_s1_maxreuse_edit_spec.v1",
+ "written_utc": "2026-10-05",
+ "status": "DESIGN_ONLY_NOT_EXECUTED",
+ "labels": "M=MEASURED, D=DOCUMENTED, I=INFERRED",
+ "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural",
+ "base_mi": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+ "children": {
+  "GazaShujaiya": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+  "GazaRimal": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround"
+ },
+ "baseline_expect": {
+  "node_count": 1015,
+  "graph_sha256": "605c55d04955ec410d51f42f7e7bb66d949cf5fbefcb42df5e31034473e40a1b",
+  "reachable_any_root_plus_grass": 631,
+  "reachable_active4_plus_grass": 241,
+  "roots": {
+   "color": "LandscapeLayerBlend_6",
+   "normal": "LandscapeLayerBlend_7",
+   "roughness": "LandscapeLayerBlend_8",
+   "ao": "LandscapeLayerBlend_0"
+  },
+  "param_name_count": 292,
+  "source": "Revision_2026-10-05/EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json (M); disk 78b0f7cd header-identical (M); edges (I)"
+ },
+ "master_default_rule": "every new TextureObjectParameter default is a package the master ALREADY imports (MASTER_GRAPH_FACTS_r030.json current_disk_headers.master.referenced_packages, M): MOUT T_Sand_01_Albedo, T_Sand_01_Normal_GeoCity, T_Sand_0x_Mask_GeoCity; EpicResident2K is NOT a master import and must not become one; post-save + post-reopen header import set of /Game and /Engine packages must equal baseline",
+ "new_desc_prefix": "GeoCity_GroundS1_20261005:",
+ "canvas": "x -4000..-1840, y >= 36000",
+ "reuse_existing_nodes_resolve_by_desc_and_class": {
+  "Saturate_1": "GeoCity_GroundRevision_20261005:SharedDistanceAlpha",
+  "Distance_0": "GeoCity_GroundRevision_20261005:CameraDistance",
+  "WorldPosition_1": "GeoCity_GroundRevision_20261005:WorldPosition",
+  "StaticBool_0": "GeoCity_GroundRevision_20261005:True",
+  "StaticBool_1": "GeoCity_GroundRevision_20261005:False",
+  "Constant_1": "GeoCity_GroundRevision_20261005:One"
+ },
+ "layer_taps_bypass_Clamp_3_20_21": {
+  "Sand_01": {
+   "role": "Ground",
+   "color": "Multiply_5 (Sand_01TintedColor)",
+   "normal": "Normalize_0 (Sand_01UnitNormal)",
+   "roughness": "ScalarParameter_105"
+  },
+  "Sand_02": {
+   "role": "Steep",
+   "color": "Multiply_10 (Sand_02TintedColor)",
+   "normal": "Normalize_3",
+   "roughness": "ScalarParameter_106"
+  },
+  "Dirt_Path": {
+   "role": "RoadBed",
+   "color": "Multiply_12 (Dirt_PathTintedColor)",
+   "normal": "Normalize_4",
+   "roughness": "ScalarParameter_103"
+  },
+  "Sand_Path": {
+   "role": "BuildingPad",
+   "color": "Multiply_14 (Sand_PathTintedColor)",
+   "normal": "Normalize_5",
+   "roughness": "ScalarParameter_108"
+  }
+ },
+ "new_llbs": {
+  "count": 3,
+  "copy_of": [
+   "LandscapeLayerBlend_6",
+   "LandscapeLayerBlend_7",
+   "LandscapeLayerBlend_8"
+  ],
+  "layers": 69,
+  "entry_fields_copied": [
+   "layer_name",
+   "blend_type",
+   "preview_weight",
+   "const_layer_input",
+   "const_height_input"
+  ],
+  "height_blend_layers": [
+   "Sand_01",
+   "Sand_02",
+   "Dirt_Path",
+   "Sand_Path"
+  ],
+  "other_65": "LB_WEIGHT_BLEND; Layer pin re-linked to the exact (source, output) read from the old LLB",
+  "height_pin_names": "read from the freshly created node via get_material_expression_input_names (expected \"Height <layer>\", I)",
+  "ao": "LandscapeLayerBlend_0 untouched (four Gaza inputs are Constant_1, so AO==1 under any weights)"
+ },
+ "parameters": [
+  {
+   "name": "GeoCity_S1_GazaGround",
+   "class": "StaticSwitchParameter",
+   "nodes": 3,
+   "default": false,
+   "gaza": {
+    "GazaShujaiya": true,
+    "GazaRimal": true
+   },
+   "role": "gate at BaseColor/Normal/Roughness roots; False input = existing LandscapeLayerBlend_6/_7/_8"
+  },
+  {
+   "name": "GeoCity_S1_PalA_Albedo",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_COLOR",
+   "default": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col"
+   },
+   "set": "SandA"
+  },
+  {
+   "name": "GeoCity_S1_PalA_Normal",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_NORMAL",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm"
+   },
+   "set": "SandA"
+  },
+  {
+   "name": "GeoCity_S1_PalA_TileCm",
+   "class": "VectorParameter",
+   "default": [
+    512,
+    6144,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     512,
+     6144,
+     0,
+     1
+    ]
+   },
+   "note": "R=near tile cm, G=far tile cm (MW Desert 512/6144)"
+  },
+  {
+   "name": "GeoCity_S1_PalA_Tint",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     1.35,
+     1.6,
+     1.7,
+     1
+    ]
+   },
+   "label": "INFERRED from offline built-colour estimate"
+  },
+  {
+   "name": "GeoCity_S1_PalA_NormalStrength",
+   "class": "ScalarParameter",
+   "default": 1.0,
+   "gaza": {
+    "both": 0.75
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalA_Roughness",
+   "class": "ScalarParameter",
+   "default": 0.8,
+   "gaza": {
+    "both": 0.92
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalB_Albedo",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_COLOR",
+   "default": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col"
+   },
+   "set": "SandC"
+  },
+  {
+   "name": "GeoCity_S1_PalB_Normal",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_NORMAL",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm"
+   },
+   "set": "SandC"
+  },
+  {
+   "name": "GeoCity_S1_PalB_TileCm",
+   "class": "VectorParameter",
+   "default": [
+    512,
+    6144,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     470,
+     5300,
+     0,
+     1
+    ]
+   },
+   "note": "R=near tile cm, G=far tile cm (MW Desert 512/6144)"
+  },
+  {
+   "name": "GeoCity_S1_PalB_Tint",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     1.5,
+     1.9,
+     2.4,
+     1
+    ]
+   },
+   "label": "INFERRED from offline built-colour estimate"
+  },
+  {
+   "name": "GeoCity_S1_PalB_NormalStrength",
+   "class": "ScalarParameter",
+   "default": 1.0,
+   "gaza": {
+    "both": 1.0
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalB_Roughness",
+   "class": "ScalarParameter",
+   "default": 0.8,
+   "gaza": {
+    "both": 0.9
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalC_Albedo",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_COLOR",
+   "default": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col"
+   },
+   "set": "Dirt"
+  },
+  {
+   "name": "GeoCity_S1_PalC_Normal",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_NORMAL",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm"
+   },
+   "set": "Dirt"
+  },
+  {
+   "name": "GeoCity_S1_PalC_TileCm",
+   "class": "VectorParameter",
+   "default": [
+    512,
+    6144,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     390,
+     4700,
+     0,
+     1
+    ]
+   },
+   "note": "R=near tile cm, G=far tile cm (MW Desert 512/6144)"
+  },
+  {
+   "name": "GeoCity_S1_PalC_Tint",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     2.5,
+     2.5,
+     2.5,
+     1
+    ]
+   },
+   "label": "INFERRED from offline built-colour estimate"
+  },
+  {
+   "name": "GeoCity_S1_PalC_NormalStrength",
+   "class": "ScalarParameter",
+   "default": 1.0,
+   "gaza": {
+    "both": 0.3
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalC_Roughness",
+   "class": "ScalarParameter",
+   "default": 0.8,
+   "gaza": {
+    "both": 0.95
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalD_Albedo",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_COLOR",
+   "default": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col"
+   },
+   "set": "Stones"
+  },
+  {
+   "name": "GeoCity_S1_PalD_Normal",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_NORMAL",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm"
+   },
+   "set": "Stones"
+  },
+  {
+   "name": "GeoCity_S1_PalD_TileCm",
+   "class": "VectorParameter",
+   "default": [
+    512,
+    6144,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     384,
+     4608,
+     0,
+     1
+    ]
+   },
+   "note": "R=near tile cm, G=far tile cm (MW Desert 512/6144)"
+  },
+  {
+   "name": "GeoCity_S1_PalD_Tint",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     2.5,
+     2.4,
+     2.2,
+     1
+    ]
+   },
+   "label": "INFERRED from offline built-colour estimate"
+  },
+  {
+   "name": "GeoCity_S1_PalD_NormalStrength",
+   "class": "ScalarParameter",
+   "default": 1.0,
+   "gaza": {
+    "both": 1.0
+   }
+  },
+  {
+   "name": "GeoCity_S1_PalD_Roughness",
+   "class": "ScalarParameter",
+   "default": 0.8,
+   "gaza": {
+    "both": 0.85
+   }
+  },
+  {
+   "name": "GeoCity_S1_NoiseMask",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_MASKS",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk"
+   }
+  },
+  {
+   "name": "GeoCity_S1_NoiseTileCm",
+   "class": "VectorParameter",
+   "default": [
+    25000,
+    6000,
+    800,
+    1
+   ],
+   "gaza": {
+    "GazaShujaiya": [
+     25000,
+     6000,
+     800,
+     1
+    ],
+    "GazaRimal": [
+     30000,
+     7000,
+     900,
+     1
+    ]
+   },
+   "note": "R/G/B = octave 1/2/3 tile cm"
+  },
+  {
+   "name": "GeoCity_S1_VariationMask",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_MASKS",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk"
+   }
+  },
+  {
+   "name": "GeoCity_S1_VariationNormal",
+   "class": "TextureObjectParameter",
+   "sampler_type": "SAMPLERTYPE_NORMAL",
+   "default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+   "gaza": {
+    "both": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm"
+   }
+  },
+  {
+   "name": "GeoCity_S1_VariationTileCm",
+   "class": "ScalarParameter",
+   "default": 65536.0,
+   "gaza": {
+    "both": 65536.0
+   },
+   "note": "MW Desert 512x128 cm"
+  },
+  {
+   "name": "GeoCity_S1_ZoneA",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.0,
+     0.2,
+     0,
+     1
+    ]
+   },
+   "note": "SmoothStep(R, G, oct1.R)"
+  },
+  {
+   "name": "GeoCity_S1_ZoneB",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.45,
+     0.65,
+     0,
+     1
+    ]
+   },
+   "note": "SmoothStep(R, G, oct2.G)"
+  },
+  {
+   "name": "GeoCity_S1_ZoneC",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.5,
+     0.7,
+     0,
+     1
+    ]
+   },
+   "note": "SmoothStep(R, G, oct1.G)"
+  },
+  {
+   "name": "GeoCity_S1_ZoneD",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.6,
+     0.8,
+     0,
+     1
+    ]
+   },
+   "note": "SmoothStep(R, G, oct3.B)"
+  },
+  {
+   "name": "GeoCity_S1_GroundMix",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaza": {
+    "GazaShujaiya": [
+     1,
+     0.7,
+     0.55,
+     0.3
+    ],
+    "GazaRimal": [
+     1,
+     0.6,
+     0.25,
+     0.2
+    ]
+   },
+   "note": "RGBA = PalA..PalD amount"
+  },
+  {
+   "name": "GeoCity_S1_SteepMix",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaza": {
+    "both": [
+     0,
+     0,
+     0.2,
+     0.5
+    ]
+   },
+   "note": "RGBA = PalA..PalD amount"
+  },
+  {
+   "name": "GeoCity_S1_RoadBedMix",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaza": {
+    "GazaShujaiya": [
+     0,
+     0,
+     0.8,
+     0.3
+    ],
+    "GazaRimal": [
+     0,
+     0,
+     0.4,
+     0.3
+    ]
+   },
+   "note": "RGBA = PalA..PalD amount"
+  },
+  {
+   "name": "GeoCity_S1_PadMix",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaza": {
+    "both": [
+     0.3,
+     0,
+     0.3,
+     0.6
+    ]
+   },
+   "note": "RGBA = PalA..PalD amount"
+  },
+  {
+   "name": "GeoCity_S1_SlopeCos",
+   "class": "VectorParameter",
+   "default": [
+    0.819,
+    0.966,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.819,
+     0.966,
+     0,
+     1
+    ]
+   },
+   "note": "steep = 1 - SmoothStep(R, G, VertexNormalWS.z); 35deg/15deg"
+  },
+  {
+   "name": "GeoCity_S1_GroundAutoSlope",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "both": 0.6
+   }
+  },
+  {
+   "name": "GeoCity_S1_SteepWeightRange",
+   "class": "VectorParameter",
+   "default": [
+    0.0,
+    0.001,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.25,
+     0.45,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "GeoCity_S1_HeightBlendAmount",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "both": 0.8
+   }
+  },
+  {
+   "name": "GeoCity_S1_HeightRef",
+   "class": "ScalarParameter",
+   "default": 0.2,
+   "gaza": {
+    "both": 0.2
+   }
+  },
+  {
+   "name": "GeoCity_S1_HeightContrast",
+   "class": "ScalarParameter",
+   "default": 1.0,
+   "gaza": {
+    "both": 2.0
+   }
+  },
+  {
+   "name": "GeoCity_S1_HeightBias",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "gaza": {
+    "both": [
+     0,
+     0.1,
+     -0.05,
+     0.05
+    ]
+   },
+   "note": "RGBA = Ground/Steep/RoadBed/Pad"
+  },
+  {
+   "name": "GeoCity_S1_MWVariationAmount",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "GazaShujaiya": 0.5,
+    "GazaRimal": 0.4
+   },
+   "note": "C*lerp(1, VarMask.rgb*1.5, a)  (MW master graph :73, :47)"
+  },
+  {
+   "name": "GeoCity_S1_HueTintA",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     1.05,
+     1.0,
+     0.92,
+     1
+    ]
+   }
+  },
+  {
+   "name": "GeoCity_S1_HueTintB",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.94,
+     0.95,
+     1.0,
+     1
+    ]
+   }
+  },
+  {
+   "name": "GeoCity_S1_HueRange",
+   "class": "VectorParameter",
+   "default": [
+    0.25,
+    0.55,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.25,
+     0.55,
+     0,
+     1
+    ]
+   },
+   "note": "SmoothStep(R, G, oct1.B)"
+  },
+  {
+   "name": "GeoCity_S1_ValueAmp",
+   "class": "VectorParameter",
+   "default": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     0.08,
+     0.2,
+     0,
+     1
+    ]
+   },
+   "note": "R near, G far; C*(1+(oct2.R-0.5)*2*lerp(R,G,alphaFar))"
+  },
+  {
+   "name": "GeoCity_S1_FarRangeCm",
+   "class": "VectorParameter",
+   "default": [
+    8000,
+    40000,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     8000,
+     40000,
+     0,
+     1
+    ]
+   },
+   "note": "alphaFar = saturate((Distance_0 - R) / G)"
+  },
+  {
+   "name": "GeoCity_S1_FarTint",
+   "class": "VectorParameter",
+   "default": [
+    1,
+    1,
+    1,
+    0
+   ],
+   "gaza": {
+    "GazaShujaiya": [
+     0.9,
+     0.87,
+     0.82,
+     1
+    ],
+    "GazaRimal": [
+     0.93,
+     0.9,
+     0.86,
+     1
+    ]
+   },
+   "note": "RGB tint, A amount"
+  },
+  {
+   "name": "GeoCity_S1_FarNormalFlatten",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "both": 0.6
+   }
+  },
+  {
+   "name": "GeoCity_S1_MacroNormalStrength",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "both": 0.25
+   },
+   "note": "MW_VariationNormalIntensity default 0.25"
+  },
+  {
+   "name": "GeoCity_S1_AlbedoRoughAmount",
+   "class": "ScalarParameter",
+   "default": 0.0,
+   "gaza": {
+    "both": 0.5
+   }
+  },
+  {
+   "name": "GeoCity_S1_RoughMulPow",
+   "class": "VectorParameter",
+   "default": [
+    1.0,
+    0.5,
+    0,
+    1
+   ],
+   "gaza": {
+    "both": [
+     1.3,
+     1.2,
+     0,
+     1
+    ]
+   },
+   "note": "R_alb=((1-lum)*mul)^pow; MW fn defaults 1/0.5, Desert MI 1.3/1.2"
+  }
+ ],
+ "shujaiya_only_override": {
+  "GeoCity_GrassCoverage": 0.0,
+  "reason": "Decision 3 (no grass now); ratified 16:19Z baseline has 0.15 -> manager must confirm; next prepare() rewrites the profile value (LW:374-382)"
+ },
+ "never_touch_child_params": [
+  "Sand_01_Normal",
+  "Sand_02_Normal"
+ ],
+ "mw_function_tiers": {
+  "A_default_textures_only": "no MW function referenced; master gains zero /Game/MWLandscapeAutoMaterial imports; MW textures bound only in the two children",
+  "B_reference_only_if_preflight_clean": [
+   "/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DefaultLayer (x4, all 12 inputs wired)",
+   "/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_CombineNormal (x1)",
+   "/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness (x1, optional)"
+  ],
+  "replace_with_engine_or_existing": {
+   "MF_MWAM_SlopeMask": "VertexNormalWS.z SmoothStep (alt: Engine SlopeMask, WorldAlignedBlend w/Vertex Normals)",
+   "MF_MWAM_DepthFade": "existing Saturate_1 SharedDistanceAlpha",
+   "MF_MWAM_CombineNormalSimple": "inline Add/Multiply",
+   "MF_MWAM_LandscapeUVs": "inline WorldPosition.xy / tile"
+  },
+  "never": [
+   "MF_MWAM_LayerBlend",
+   "MF_MWAM_Snow",
+   "MF_MWAM_SnowMask",
+   "MF_MWAM_WaterMask",
+   "MW_MWAM_Water",
+   "MF_MWAM_Opacity",
+   "MF_MWAM_SubSurface",
+   "MF_MWAM_PivotMask",
+   "MTL_MWAM_AutoMaterial_MASTER as parent",
+   "MTL_MWAM_Landscape_* MIs as parent",
+   "LGT_MWAM_* (second Grass output)"
+  ]
+ },
+ "save": {
+  "session_shujaiya": [
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+  ],
+  "session_rimal": [
+   "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround"
+  ],
+  "reject_prefixes": [
+   "/Game/MWLandscapeAutoMaterial/",
+   "/Game/HighPoly_Tree_Model/",
+   "/Game/StarterContent/",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/LG_GeoCity_PermittedGroundGrass",
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_",
+   "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_"
+  ],
+  "api": "unreal.EditorLoadingAndSavingUtils.save_packages(named, False) (GP/native_revision_save.py:42); never Save All / save_assets([])"
+ },
+ "sample_estimate_gaza_4layer_component": {
+  "retained_lookups_I": 45,
+  "new_lookups": 21,
+  "total_I": 66,
+  "new_texture_params": 11,
+  "new_sampler_states": 0,
+  "iran_permutation_delta": 0
+ },
+ "capture": {
+  "cameras": [
+   "Staging/GroundPainting_2026-10-04/CAMERAS_GazaShujaiya.json",
+   "Staging/GroundPainting_2026-10-04/CAMERAS_GazaRimal.json"
+  ],
+  "size": [
+   1600,
+   1000
+  ],
+  "fov": 65,
+  "viewmodes": [
+   "VMI_LIT",
+   "VMI_UNLIT"
+  ],
+  "stages": [
+   "S1_B0",
+   "S1",
+   "S1_fresh"
+  ],
+  "exposure_lock": "transient r.EyeAdaptation.MethodOverride (name M in UnrealEditor-Renderer.dll; value semantics I) + empirical lock test; never PPV/ini",
+  "residency": "transient r.Streaming.FullyLoadUsedTextures 1 during captures (cvar name M) - needs root OK; else owned NeverStream copies (decision 4)"
+ }
+}

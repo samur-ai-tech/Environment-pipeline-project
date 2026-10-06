@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2622,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_BigBuilding01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"4531x4800x2502\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/BigBuilding01.fbx\\\", \\\"Timestamp\\\" : \\\"1518550457\\\", \\\"FileMD5\\\" : \\\"ff935e55386b10cd40556bd0bd7b49bf\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"61\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"648\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"4502\",\"UVChannels\":\"2\",\"Vertices\":\"4916\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2622,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"4531x4800x2502\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/BigBuilding01.fbx\\\", \\\"Timestamp\\\" : \\\"1518550457\\\", \\\"FileMD5\\\" : \\\"ff935e55386b10cd40556bd0bd7b49bf\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"61\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"648\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"4502\",\"UVChannels\":\"2\",\"Vertices\":\"4916\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,16 @@
+{
+    channel controllayer {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"height\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../controllayer\") }
+    }
+    channel displacescale {
+      lefttype = extend
+      righttype = extend
+      default = -5
+      flags = 0
+      segment { length = 0 value = -5 -5 expr = ch(\"../distort_layer_amount\") }
+    }
+  }

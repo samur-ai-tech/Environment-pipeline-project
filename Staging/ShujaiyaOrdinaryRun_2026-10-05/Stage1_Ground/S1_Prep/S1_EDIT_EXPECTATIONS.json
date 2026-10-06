@@ -1,0 +1,869 @@
+{
+ "schema": "environmentpipeline.stage1_s1_minimal_safe_spec.v1",
+ "status": "IMPLEMENTED_DESIGN_EXPECTATIONS_NOT_EXECUTED",
+ "generated_by": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\s1_material_edit_offline.py",
+  "target": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\s1_material_edit.py",
+  "target_sha256": "c04d7c488a18c51e59aae41d86b028a318f86c21db06e6137016dafd9ca248cc",
+  "args_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\S1_ARGS_TEMPLATE.json"
+ },
+ "design_notes": "D2 + corrections: GroundC (SandC) slot, Soil_FarScale, Variation mask/normal (amount 0 until review), SteepStones reusing Pad outputs, HeightAmount identity formula H=lerp(1-w,h,A), SteepLo/Hi defaults 0/0.001 (identity) instead of D2 0.25/0.45.",
+ "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+ "base_mi_untouched": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+ "children": {
+  "GazaShujaiya": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+  "GazaRimal": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround"
+ },
+ "new_function_packages": [
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend"
+ ],
+ "functions": {
+  "MF_GeoCity_MacroNoise": {
+   "inputs": [
+    "NoiseTex:T2D",
+    "LandscapeUV:V2",
+    "TileNearCm:S",
+    "TileFarCm:S",
+    "GridCm:S"
+   ],
+   "outputs": [
+    "NoiseNear:V3",
+    "NoiseFar:V3"
+   ],
+   "texture_samples": 2,
+   "sampler_type": "SAMPLERTYPE_MASKS",
+   "sampler_source": "SSM_WRAP_WORLD_GROUP_SETTINGS"
+  },
+  "MF_GeoCity_DistanceBlend": {
+   "inputs": [
+    "Tex:T2D",
+    "NearUV:V2",
+    "FarScale:S",
+    "Alpha:S"
+   ],
+   "outputs": [
+    "Color:V3"
+   ],
+   "texture_samples": 2,
+   "sampler_type": "SAMPLERTYPE_COLOR",
+   "sampler_source": "SSM_WRAP_WORLD_GROUP_SETTINGS"
+  },
+  "MF_GeoCity_MacroColor": {
+   "inputs": [
+    "Base:V3",
+    "NoiseNear:V3",
+    "NoiseFar:V3",
+    "HueA:V3",
+    "HueB:V3",
+    "HueAmount:S",
+    "ValueAmount:S",
+    "DistanceAlpha:S",
+    "FarSaturation:S",
+    "FarValue:S",
+    "FarAmount:S"
+   ],
+   "outputs": [
+    "Color:V3"
+   ],
+   "texture_samples": 0
+  },
+  "MF_GeoCity_SlopeBlend": {
+   "inputs": [
+    "SteepWeight:S",
+    "NormalZ:S",
+    "Noise:S",
+    "Lo:S",
+    "Hi:S",
+    "Jitter:S",
+    "SlopeMix:S"
+   ],
+   "outputs": [
+    "Alpha:S"
+   ],
+   "texture_samples": 0
+  },
+  "MF_GeoCity_HeightBlend": {
+   "inputs": [
+    "Near:V3",
+    "Far:V3",
+    "Weight:S",
+    "Bias:S",
+    "Contrast:S",
+    "Amount:S"
+   ],
+   "outputs": [
+    "Height:S"
+   ],
+   "texture_samples": 0
+  }
+ },
+ "node_desc_prefix": "GeoCity_GroundS1_20261005:",
+ "canvas": {
+  "x": [
+   -4000,
+   -1840
+  ],
+  "y_min": 36000
+ },
+ "new_parameters": [
+  {
+   "name": "GeoCity_S1_Enable",
+   "kind": "static_switch",
+   "master_default": false,
+   "GazaRimal": true,
+   "GazaShujaiya": true
+  },
+  {
+   "name": "GeoCity_S1_MacroNoise",
+   "kind": "texture_masks",
+   "master_default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk"
+  },
+  {
+   "name": "GeoCity_S1_GroundB_Albedo",
+   "kind": "texture_color",
+   "master_default": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col"
+  },
+  {
+   "name": "GeoCity_S1_GroundB_Normal",
+   "kind": "texture_normal",
+   "master_default": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm"
+  },
+  {
+   "name": "GeoCity_S1_GroundC_Albedo",
+   "kind": "texture_color",
+   "master_default": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col"
+  },
+  {
+   "name": "GeoCity_S1_GroundC_Normal",
+   "kind": "texture_normal",
+   "master_default": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm"
+  },
+  {
+   "name": "GeoCity_S1_Soil_Albedo",
+   "kind": "texture_color",
+   "master_default": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col"
+  },
+  {
+   "name": "GeoCity_S1_VariationMask",
+   "kind": "texture_masks",
+   "master_default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk"
+  },
+  {
+   "name": "GeoCity_S1_VariationNormal",
+   "kind": "texture_normal",
+   "master_default": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+   "GazaRimal": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm",
+   "GazaShujaiya": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm"
+  },
+  {
+   "name": "GeoCity_S1_HueA",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaRimal": [
+    1.06,
+    1.01,
+    0.94,
+    1.0
+   ],
+   "GazaShujaiya": [
+    1.05,
+    1.0,
+    0.92,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_HueB",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaRimal": [
+    0.98,
+    0.97,
+    0.98,
+    1.0
+   ],
+   "GazaShujaiya": [
+    0.97,
+    0.96,
+    0.98,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_GroundB_Tint",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaRimal": [
+    1.12,
+    1.08,
+    1.04,
+    1.0
+   ],
+   "GazaShujaiya": [
+    1.1,
+    1.06,
+    1.02,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_GroundC_Tint",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaRimal": [
+    1.4,
+    1.36,
+    1.32,
+    1.0
+   ],
+   "GazaShujaiya": [
+    1.4,
+    1.36,
+    1.32,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_Soil_Tint",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaRimal": [
+    2.3,
+    2.15,
+    2.0,
+    1.0
+   ],
+   "GazaShujaiya": [
+    2.3,
+    2.15,
+    2.0,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_MacroTileNearCm",
+   "kind": "scalar",
+   "master_default": 3700.0,
+   "GazaRimal": 3700.0,
+   "GazaShujaiya": 3700.0
+  },
+  {
+   "name": "GeoCity_S1_MacroTileFarCm",
+   "kind": "scalar",
+   "master_default": 31100.0,
+   "GazaRimal": 23300.0,
+   "GazaShujaiya": 31100.0
+  },
+  {
+   "name": "GeoCity_S1_HueAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.8,
+   "GazaShujaiya": 1.0
+  },
+  {
+   "name": "GeoCity_S1_ValueAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.14,
+   "GazaShujaiya": 0.18
+  },
+  {
+   "name": "GeoCity_S1_FarSaturation",
+   "kind": "scalar",
+   "master_default": 1.0,
+   "GazaRimal": 1.15,
+   "GazaShujaiya": 1.2
+  },
+  {
+   "name": "GeoCity_S1_FarValue",
+   "kind": "scalar",
+   "master_default": 1.0,
+   "GazaRimal": 0.92,
+   "GazaShujaiya": 0.9
+  },
+  {
+   "name": "GeoCity_S1_FarAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.75,
+   "GazaShujaiya": 0.75
+  },
+  {
+   "name": "GeoCity_S1_GroundB_TileCm",
+   "kind": "scalar",
+   "master_default": 512.0,
+   "GazaRimal": 450.0,
+   "GazaShujaiya": 512.0
+  },
+  {
+   "name": "GeoCity_S1_GroundB_FarScale",
+   "kind": "scalar",
+   "master_default": 12.0,
+   "GazaRimal": 12.0,
+   "GazaShujaiya": 12.0
+  },
+  {
+   "name": "GeoCity_S1_GroundB_Amount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.45,
+   "GazaShujaiya": 0.55
+  },
+  {
+   "name": "GeoCity_S1_GroundB_NormalStrength",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.6,
+   "GazaShujaiya": 0.6
+  },
+  {
+   "name": "GeoCity_S1_GroundC_TileCm",
+   "kind": "scalar",
+   "master_default": 470.0,
+   "GazaRimal": 470.0,
+   "GazaShujaiya": 470.0
+  },
+  {
+   "name": "GeoCity_S1_GroundC_FarScale",
+   "kind": "scalar",
+   "master_default": 12.0,
+   "GazaRimal": 12.0,
+   "GazaShujaiya": 12.0
+  },
+  {
+   "name": "GeoCity_S1_GroundC_Amount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.6,
+   "GazaShujaiya": 0.35
+  },
+  {
+   "name": "GeoCity_S1_GroundC_NormalStrength",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.6,
+   "GazaShujaiya": 0.6
+  },
+  {
+   "name": "GeoCity_S1_Soil_TileCm",
+   "kind": "scalar",
+   "master_default": 400.0,
+   "GazaRimal": 400.0,
+   "GazaShujaiya": 400.0
+  },
+  {
+   "name": "GeoCity_S1_Soil_FarScale",
+   "kind": "scalar",
+   "master_default": 12.0,
+   "GazaRimal": 12.0,
+   "GazaShujaiya": 12.0
+  },
+  {
+   "name": "GeoCity_S1_Soil_Amount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.3,
+   "GazaShujaiya": 0.45
+  },
+  {
+   "name": "GeoCity_S1_PatchLo",
+   "kind": "scalar",
+   "master_default": 0.45,
+   "GazaRimal": 0.45,
+   "GazaShujaiya": 0.45
+  },
+  {
+   "name": "GeoCity_S1_PatchHi",
+   "kind": "scalar",
+   "master_default": 0.65,
+   "GazaRimal": 0.65,
+   "GazaShujaiya": 0.65
+  },
+  {
+   "name": "GeoCity_S1_SteepLo",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.25,
+   "GazaShujaiya": 0.25
+  },
+  {
+   "name": "GeoCity_S1_SteepHi",
+   "kind": "scalar",
+   "master_default": 0.001,
+   "GazaRimal": 0.45,
+   "GazaShujaiya": 0.45
+  },
+  {
+   "name": "GeoCity_S1_SteepJitter",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.15,
+   "GazaShujaiya": 0.15
+  },
+  {
+   "name": "GeoCity_S1_SteepSlopeMix",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.5,
+   "GazaShujaiya": 0.5
+  },
+  {
+   "name": "GeoCity_S1_SteepStones",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.35,
+   "GazaShujaiya": 0.35
+  },
+  {
+   "name": "GeoCity_S1_HeightBias",
+   "kind": "scalar",
+   "master_default": 0.85,
+   "GazaRimal": 0.85,
+   "GazaShujaiya": 0.85
+  },
+  {
+   "name": "GeoCity_S1_HeightContrast",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 3.0,
+   "GazaShujaiya": 3.0
+  },
+  {
+   "name": "GeoCity_S1_HeightAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.8,
+   "GazaShujaiya": 0.8
+  },
+  {
+   "name": "GeoCity_S1_ContactRoad",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_ContactPad",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_ContactDarken",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_ContactSoil",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_ContactRough",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_NormalFade",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.7,
+   "GazaShujaiya": 0.7
+  },
+  {
+   "name": "GeoCity_S1_RoughVar",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.08,
+   "GazaShujaiya": 0.08
+  },
+  {
+   "name": "GeoCity_S1_VariationTileCm",
+   "kind": "scalar",
+   "master_default": 65536.0,
+   "GazaRimal": 65536.0,
+   "GazaShujaiya": 65536.0
+  },
+  {
+   "name": "GeoCity_S1_VariationAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  },
+  {
+   "name": "GeoCity_S1_VariationNormalStrength",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaRimal": 0.0,
+   "GazaShujaiya": 0.0
+  }
+ ],
+ "new_parameter_names": 52,
+ "new_landscape_layer_samples": [
+  "Sand_01",
+  "Sand_02",
+  "Dirt_Path",
+  "Sand_Path"
+ ],
+ "new_llbs": {
+  "count": 3,
+  "layers": [
+   "Sand_01",
+   "Sand_02",
+   "Dirt_Path",
+   "Sand_Path"
+  ],
+  "blend_type": "LB_HEIGHT_BLEND",
+  "preview_weight": {
+   "Sand_01": 1.0,
+   "Sand_02": 0.0,
+   "Dirt_Path": 0.0,
+   "Sand_Path": 0.0
+  },
+  "pins": [
+   "Layer <name>",
+   "Height <name>"
+  ],
+  "height_sources_identical_on_all_three": true
+ },
+ "static_switch_nodes": {
+  "name": "GeoCity_S1_Enable",
+  "count": 3,
+  "default": false,
+  "False_pin_sources": [
+   "LandscapeLayerBlend_6",
+   "LandscapeLayerBlend_7",
+   "LandscapeLayerBlend_8"
+  ],
+  "roots": [
+   "MP_BASE_COLOR",
+   "MP_NORMAL",
+   "MP_ROUGHNESS"
+  ],
+  "ao_root": "LandscapeLayerBlend_0 unchanged"
+ },
+ "switch_pins": {
+  "true": "True",
+  "false": "False"
+ },
+ "added_node_count": 157,
+ "allowed_sampler_sources": [
+  "SSM_WRAP_WORLD_GROUP_SETTINGS"
+ ],
+ "existing_param_child_overrides": {
+  "both_children": {
+   "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+   "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+   "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+   "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+   "Dirt_Path_Tint": [
+    2.2,
+    2.1,
+    2.0,
+    1.0
+   ],
+   "Dirt_Path_TileCm": [
+    400.0,
+    400.0,
+    400.0,
+    1.0
+   ],
+   "Sand_Path_Tint": [
+    2.0,
+    1.95,
+    1.9,
+    1.0
+   ],
+   "Sand_Path_TileCm": [
+    300.0,
+    300.0,
+    300.0,
+    1.0
+   ]
+  },
+  "per_area": {
+   "GazaRimal": {
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "Dirt_Path_Tint": [
+     2.2,
+     2.1,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.95,
+     1.9,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   },
+   "GazaShujaiya": {
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "Dirt_Path_Tint": [
+     2.2,
+     2.1,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.95,
+     1.9,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   }
+  }
+ },
+ "sampler_estimate": {
+  "new_samples": 12,
+  "direct_master_samples": 4,
+  "new_sampler_states": 0,
+  "iran_change": 0
+ },
+ "baseline_expectations": {
+  "node_count": 1015,
+  "graph_sha256_r030": "605c55d04955ec410d51f42f7e7bb66d949cf5fbefcb42df5e31034473e40a1b",
+  "reachable_any_root_plus_grass": 631,
+  "reachable_active4_plus_grass": 241,
+  "root_layer_pins_connected": 207,
+  "master_and_children_preview_stats_PID10460": {
+   "vs": 148,
+   "ps": 183,
+   "samplers": 1,
+   "ps_samples": 3
+  },
+  "disk_sha256": {
+   "master": "78b0f7cd620c7fb760d6e2a633b7f73b4a6f2e664b81f901a3be6bfc5a40b752",
+   "base_mi": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+   "shujaiya_child": "8c54b7e3562941b9da1574404e16282f1628f0d45bcbde5c918ee68838f8a236",
+   "rimal_child": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+  }
+ },
+ "selftest": {
+  "functions": {
+   "MF_GeoCity_MacroNoise": {
+    "nodes": 22,
+    "samples": 2,
+    "inputs": [
+     "NoiseTex",
+     "LandscapeUV",
+     "TileNearCm",
+     "TileFarCm",
+     "GridCm"
+    ],
+    "outputs": [
+     "NoiseNear",
+     "NoiseFar"
+    ]
+   },
+   "MF_GeoCity_DistanceBlend": {
+    "nodes": 11,
+    "samples": 2,
+    "inputs": [
+     "Tex",
+     "NearUV",
+     "FarScale",
+     "Alpha"
+    ],
+    "outputs": [
+     "Color"
+    ]
+   },
+   "MF_GeoCity_MacroColor": {
+    "nodes": 32,
+    "samples": 0,
+    "inputs": [
+     "Base",
+     "NoiseNear",
+     "NoiseFar",
+     "HueA",
+     "HueB",
+     "HueAmount",
+     "ValueAmount",
+     "DistanceAlpha",
+     "FarSaturation",
+     "FarValue",
+     "FarAmount"
+    ],
+    "outputs": [
+     "Color"
+    ]
+   },
+   "MF_GeoCity_SlopeBlend": {
+    "nodes": 16,
+    "samples": 0,
+    "inputs": [
+     "SteepWeight",
+     "NormalZ",
+     "Noise",
+     "Lo",
+     "Hi",
+     "Jitter",
+     "SlopeMix"
+    ],
+    "outputs": [
+     "Alpha"
+    ]
+   },
+   "MF_GeoCity_HeightBlend": {
+    "nodes": 16,
+    "samples": 0,
+    "inputs": [
+     "Near",
+     "Far",
+     "Weight",
+     "Bias",
+     "Contrast",
+     "Amount"
+    ],
+    "outputs": [
+     "Height"
+    ]
+   }
+  },
+  "master": {
+   "added_node_count": 157,
+   "direct_texture_samples": 4,
+   "direct_sampler_types": [
+    "SAMPLERTYPE_MASKS",
+    "SAMPLERTYPE_NORMAL",
+    "SAMPLERTYPE_NORMAL",
+    "SAMPLERTYPE_NORMAL"
+   ],
+   "function_calls": [
+    "MF_GeoCity_DistanceBlend",
+    "MF_GeoCity_DistanceBlend",
+    "MF_GeoCity_DistanceBlend",
+    "MF_GeoCity_HeightBlend",
+    "MF_GeoCity_HeightBlend",
+    "MF_GeoCity_HeightBlend",
+    "MF_GeoCity_HeightBlend",
+    "MF_GeoCity_MacroColor",
+    "MF_GeoCity_MacroNoise",
+    "MF_GeoCity_SlopeBlend"
+   ],
+   "effective_new_samples": 12,
+   "parameter_names": 52,
+   "parameter_nodes": 54,
+   "class_counts": {
+    "MaterialExpressionAdd": 5,
+    "MaterialExpressionClamp": 1,
+    "MaterialExpressionComponentMask": 5,
+    "MaterialExpressionConstant3Vector": 3,
+    "MaterialExpressionDivide": 4,
+    "MaterialExpressionLandscapeLayerBlend": 3,
+    "MaterialExpressionLandscapeLayerSample": 4,
+    "MaterialExpressionLinearInterpolate": 18,
+    "MaterialExpressionMaterialFunctionCall": 10,
+    "MaterialExpressionMax": 5,
+    "MaterialExpressionMultiply": 26,
+    "MaterialExpressionNormalize": 6,
+    "MaterialExpressionOneMinus": 3,
+    "MaterialExpressionSaturate": 2,
+    "MaterialExpressionScalarParameter": 38,
+    "MaterialExpressionSmoothStep": 3,
+    "MaterialExpressionStaticSwitchParameter": 3,
+    "MaterialExpressionTextureObjectParameter": 8,
+    "MaterialExpressionTextureSample": 4,
+    "MaterialExpressionVectorParameter": 5,
+    "MaterialExpressionVertexNormalWS": 1
+   },
+   "root_dims": {
+    "color": 3,
+    "normal": 3,
+    "roughness": 1
+   },
+   "links": 351,
+   "layer_samples": [
+    "Dirt_Path",
+    "Sand_01",
+    "Sand_02",
+    "Sand_Path"
+   ]
+  },
+  "status": "SELFTEST_PASSED_MOCK_ENGINE",
+  "scope": "Python wiring/pin-name/dimension logic only; engine behaviour (pin names of StaticSwitchParameter/height LLB/FunctionOutput/VertexNormalWS, compile, propagation) is asserted at run time by s1_material_edit.py."
+ }
+}

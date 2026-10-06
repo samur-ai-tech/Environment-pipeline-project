@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1995,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Light_01b"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"24x24x36\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"J:/SoulCollision/SM_Slums_Light_01b.FBX\\\", \\\"Timestamp\\\" : \\\"1413235205\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"3\",\"SectionsWithCollision\":\"0\",\"Triangles\":\"896\",\"UVChannels\":\"3\",\"Vertices\":\"713\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1995,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"24x24x36\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"J:/SoulCollision/SM_Slums_Light_01b.FBX\\\", \\\"Timestamp\\\" : \\\"1413235205\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"3\",\"SectionsWithCollision\":\"0\",\"Triangles\":\"896\",\"UVChannels\":\"3\",\"Vertices\":\"713\"}}"
+    }
+   ]
+  }
+ }
+}

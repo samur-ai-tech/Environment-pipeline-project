@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1726,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Palms_Pack_01/Meshes/SM_Palm_01_11_G"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Bark\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Bark_Details\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Branch\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Branch_Dry\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Leaves_G\",\"/Game/Palms_Pack_01/Materials/Impostor_Mat/MI_Palm_01_11_Impostor_G\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1726,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Bark\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Bark_Details\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Branch\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Branch_Dry\",\"/Game/Palms_Pack_01/Materials/MI_Palm_01_11_Leaves_G\",\"/Game/Palms_Pack_01/Materials/Impostor_Mat/MI_Palm_01_11_Impostor_G\"]}"
+    }
+   ]
+  }
+ }
+}

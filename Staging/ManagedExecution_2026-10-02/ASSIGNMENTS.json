@@ -1,0 +1,97 @@
+{
+  "schema": "environmentpipeline.managed_execution.v1",
+  "date": "2026-10-02",
+  "manager_thread": "01a0fd40-d08c-7b52-8979-86526c619950",
+  "user_authorization": "Execute all five current-plan tasks as real permanent changes; create a chat per task; no separate tests/proof exercises",
+  "editor_turn": null,
+  "old_heartbeat": "PAUSED",
+  "tasks": [
+    {
+      "id": "task_1",
+      "name": "Generator and normal input action",
+      "thread_id": "01a0fd98-6316-73e3-a532-ae385a340f0f",
+      "host_id": "local",
+      "status": "completed",
+      "depends_on": null,
+      "result_path": "Staging/ManagedExecution_2026-10-02/Task1/RESULT.txt",
+      "result_summary": "r006 imported/saved; seven native outputs; 164 actual cooked placements; ordinary Generate/Regenerate action implemented; live cooked/baked overlap remains unsaved for task4"
+    },
+    {
+      "id": "task_2",
+      "name": "Normal asset selection",
+      "thread_id": "01a0fd98-b963-7fd2-9fe5-8259096f3b14",
+      "host_id": "local",
+      "status": "completed_with_coverage_limits",
+      "depends_on": "task_1",
+      "result_path": "Staging/ManagedExecution_2026-10-02/Task2/RESULT.txt",
+      "result_summary": "15 selected normal-use meshes configured/saved with synchronized native table/profile; held/dependency-limited pole remains unavailable; task3 must repair surface-material normal routing and placement priority"
+    },
+    {
+      "id": "task_3",
+      "name": "Materials and geographic placement",
+      "thread_id": "01a0fd99-0870-7520-81df-16a2c5b966d8",
+      "host_id": "local",
+      "status": "completed_with_coverage_limits",
+      "depends_on": "task_2",
+      "result_path": "Staging/ManagedExecution_2026-10-02/Task3/RESULT.txt",
+      "result_summary": "r007 normal material routing, terrain-conforming roads/UV and full footprint/placement priorities saved; seven outputs / 160 native placements incl31 trees23 buildings; remaining visible stripes and legacy proxy overlap assigned to task4; task4 r010 closed internal-sidewalk striping and matched tree proxy overlap in the actual saved area"
+    },
+    {
+      "id": "task_4",
+      "name": "Saved GazaRimal environment",
+      "thread_id": "01a0fd99-549d-7c91-9f5d-9ad55e4512fe",
+      "host_id": "local",
+      "status": "completed",
+      "depends_on": "task_3",
+      "result_path": "Staging/ManagedExecution_2026-10-02/Task4/RESULT.txt",
+      "result_summary": "r010 saved actual GazaRimal: one Landscape, 160 native placements, zero cooked copies, nine named generated dependencies; internal sidewalk stripes corrected; full normal Generate/Regenerate replacement/save route implemented; 35 acknowledged unreferenced Cook leftovers remain unsaved; native pole/fallback coverage and visual acceptance remain explicit; Task5 final shared repair supersedes this first-area snapshot with r014 / 170 native placements"
+    },
+    {
+      "id": "task_5",
+      "name": "Second geographic area",
+      "thread_id": "01a0fd99-997f-7e31-b771-1d3616736b30",
+      "host_id": "local",
+      "status": "completed_with_coverage_limits",
+      "depends_on": "task_4",
+      "result_path": "Staging/ManagedExecution_2026-10-02/Task5/RESULT.txt",
+      "additional_scope": "Repair actual partial-overlap sidewalk geometry and observed GazaRimal road-junction coverage gaps in shared source; apply retained corrections to both named GazaShujaiya and GazaRimal areas through ordinary replacement/named saving. No proof campaign or broader final-style/asset work.",
+      "result_summary": "r014 saved both real areas through ordinary replacement/Bake/named save: GazaRimal170 / GazaShujaiya277 native placements; one Landscape and zero cooked copies each; nine generated dependencies each. Shared road union/junction completion, Labs half-width adapter and sidewalk subtraction retained; two-area normal scopes/profiles synchronized. Unmatched building/tree/pole fallback, zero final native street_prop/pole placements and final visual acceptance remain explicit."
+    }
+  ],
+  "dispatch_complete": true,
+  "execution_status": "retained_two_area_delivery_with_asset_coverage_limits",
+  "updated_at": "2026-10-02T22:25:54.124187+03:00",
+  "final_shared_revision": "r014",
+  "final_deliveries": [
+    {
+      "area": "GazaRimal",
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "native_placements": 170,
+      "whole_buildings": 23,
+      "trees": 36,
+      "small_props": 55,
+      "shrubs": 5,
+      "understory": 51,
+      "street_props": 0,
+      "native_poles": 0,
+      "landscapes": 1,
+      "cooked_mesh_copies": 0,
+      "named_generated_dependencies": 9
+    },
+    {
+      "area": "GazaShujaiya",
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "native_placements": 277,
+      "whole_buildings": 18,
+      "trees": 72,
+      "small_props": 74,
+      "shrubs": 9,
+      "understory": 104,
+      "street_props": 0,
+      "native_poles": 0,
+      "landscapes": 1,
+      "cooked_mesh_copies": 0,
+      "named_generated_dependencies": 9
+    }
+  ]
+}

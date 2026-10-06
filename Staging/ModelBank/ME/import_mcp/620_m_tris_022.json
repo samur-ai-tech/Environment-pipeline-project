@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 145,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_triangle_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Props/SM_H0077_Stones_Stack.SM_H0077_Stones_Stack"
+     },
+     "lod_index": 0
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":1934}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 145,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":1934}"
+    }
+   ]
+  }
+ }
+}

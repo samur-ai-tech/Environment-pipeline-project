@@ -1,0 +1,32 @@
+{
+  "checks": [
+    "Python syntax: all RoadBLD modules",
+    "AST scope: only four named functions changed",
+    "Buffered stale warning flushed before cursor; buffered current denial captured after call",
+    "Capture rejects stale_only",
+    "Capture rejects other_error",
+    "Capture rejects duplicate",
+    "Capture rejects partial_line",
+    "Capture rejects other_native",
+    "Missing flush fails before native dispatch",
+    "Dispatch: exact current result yields; no retry before one second; original deadline retained; success counted once",
+    "Expired dispatch refuses SDK replay and preserves deadline",
+    "Changed participant refuses dispatch retry",
+    "Different failure or incomplete result never authorizes retry",
+    "Changed participants after denial never authorize retry",
+    "Edit checkpoint: one-second yield, original deadline unchanged, expired operation never dispatched",
+    "Edit denial rejects nondefault network, roads, rebuild job, warnings, or rebuild flag",
+    "Edit checkpoint rejects participant changes before replay"
+  ],
+  "AST_changed": {
+    "geocity_roadbld_junctions.py": [
+      "_call_with_log",
+      "_edit_step"
+    ],
+    "geocity_roadbld_workflow.py": [
+      "RoadBLDRun.request_rebuild",
+      "RoadBLDRun.tick"
+    ]
+  },
+  "method": "offline production-AST execution with isolated fake logging and result objects; no Unreal import or editor calls"
+}

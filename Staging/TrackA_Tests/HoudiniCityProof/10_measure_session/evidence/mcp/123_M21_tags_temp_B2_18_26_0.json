@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/HoudiniEngine/Temp/B2_labs_osm/99E93569/B2_labs_osm_18_26_0_main_geo"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.017,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"63046x66916x0\",\"AssetImportData\":\"[]\",\"BuildRequiredMemoryEstimate\":\"1818950\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"0\",\"DefaultCollision\":\"BlockAll\",\"DistanceFieldSize\":\"528\",\"EstNaniteCompressedSize\":\"0\",\"EstTotalCompressedSize\":\"14501\",\"HasHiResMesh\":\"False\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NaniteEnabled\":\"False\",\"NaniteFallbackPercent\":\"100.0\",\"NaniteTriangles\":\"0\",\"NaniteVertices\":\"0\",\"NeverStream\":\"False\",\"PhysicsSize\":\"45582\",\"QualityLevelMinLOD\":\"0\",\"SectionsWithCollision\":\"1\",\"StaticMaterials\":\"houdini_default_material,'/HoudiniEngine/houdini_default_material.houdini_default_material'>\",\"Triangles\":\"637\",\"UVChannels\":\"8\",\"Vertices\":\"1205\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"63046x66916x0\",\"AssetImportData\":\"[]\",\"BuildRequiredMemoryEstimate\":\"1818950\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"0\",\"DefaultCollision\":\"BlockAll\",\"DistanceFieldSize\":\"528\",\"EstNaniteCompressedSize\":\"0\",\"EstTotalCompressedSize\":\"14501\",\"HasHiResMesh\":\"False\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"MinLOD\":\"0\",\"NaniteEnabled\":\"False\",\"NaniteFallbackPercent\":\"100.0\",\"NaniteTriangles\":\"0\",\"NaniteVertices\":\"0\",\"NeverStream\":\"False\",\"PhysicsSize\":\"45582\",\"QualityLevelMinLOD\":\"0\",\"SectionsWithCollision\":\"1\",\"StaticMaterials\":\"houdini_default_material,'/HoudiniEngine/houdini_default_material.houdini_default_material'>\",\"Triangles\":\"637\",\"UVChannels\":\"8\",\"Vertices\":\"1205\"}}"
+    }
+   ]
+  }
+ }
+}

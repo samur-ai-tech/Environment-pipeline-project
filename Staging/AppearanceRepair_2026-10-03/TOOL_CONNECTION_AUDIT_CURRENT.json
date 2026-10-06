@@ -1,0 +1,257 @@
+{
+  "schema": "environmentpipeline.tool_connection_audit.v1",
+  "recorded_utc": "2026-10-03T16:05:55Z",
+  "editor_writer": "Astra task2 under root manager",
+  "editor_pid": 32752,
+  "worker_editor_calls_performed": false,
+  "worker_houdini_calls_performed": false,
+  "root_handshake_evidence": {
+    "attribution": "Measured by sole editor owner and supplied directly to this audit; not independently repeated by worker",
+    "official_houdini_engine": {
+      "is_session_valid": true,
+      "cooking_paused": true
+    },
+    "houdini_mcp": {
+      "connected": true,
+      "version": "22.0.429",
+      "rpc_port": 18811,
+      "session": "headless_auxiliary_untitled"
+    },
+    "unreal_copilot_python_rpc": {
+      "responded": true,
+      "world_area": "GazaRimal",
+      "editor_pid": 32752
+    },
+    "kks_get_material_info": {
+      "succeeded": true,
+      "result_kind": "material_graph_metadata",
+      "rendered_image_verified": false
+    },
+    "roadbld_describe_network": {
+      "responded": true,
+      "world_area": "GazaRimal",
+      "stale": false,
+      "rebuild": false,
+      "original_road_count": 24,
+      "roadgeo_count": 43,
+      "handshake_alone_establishes_final_save_reopen": false
+    },
+    "snapshot_utc": "2026-10-03T16:05:55Z"
+  },
+  "worker_listener_readback": {
+    "utc": "2026-10-03T16:05:55Z",
+    "method": "read-only operating-system TCP listener inspection",
+    "api_handshake_inferred_from_listener": false,
+    "listeners": [
+      {
+        "address": "127.0.0.1",
+        "port": 8000,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 19840,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 18080,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 55557,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 18811,
+        "pid": 8636
+      }
+    ]
+  },
+  "retained_surface_evidence": {
+    "actual_receipts": [
+      "ACTUAL_GazaRimal.json",
+      "ACTUAL_GazaShujaiya.json",
+      "REOPEN_GazaRimal_20261003T172107331435Z.json"
+    ],
+    "material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "supported_layer_count": 69,
+    "texture_choice_count": 39,
+    "actual_painted_target_names": [
+      "Dirt_Path",
+      "Sand_01",
+      "Sand_02",
+      "Sand_Path"
+    ],
+    "eight_native_selected_texture_parameters_verified_in_r018_receipts": true,
+    "ground_shader_repair_status": "named_assets_saved_graph_verified",
+    "final_ground_visual_acceptance": false,
+    "canonical_catalog_and_native_originals_preserved_requirement": true,
+    "ground_shader_repair_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+    "ground_shader_repair_receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+    "ground_shader_named_saved_asset_count": 4,
+    "original_normal_texture_hashes_unchanged": true,
+    "material_layer_names_preserved_count": 69,
+    "profile_normal_overrides_configured_both_areas": true,
+    "root_reported_lit_view_observation": "Rimal saved Lit image shows ground texture and soil patches; user acceptance remains open.",
+    "rimal_repaired_shader_reopened_verified": true,
+    "rimal_repaired_shader_reopen_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+    "rimal_selected_normal_overrides_verified": {
+      "Sand_01_Normal": {
+        "canonical_original": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.T_Sand_01_Normal",
+        "copy": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+        "original_sha256": "5f85662de5f20cf230a19373c9b24f95f3f5e13fa2456d1c8b6db710957ddd54",
+        "receipt_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+        "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+        "canonical_catalog_preserved": true,
+        "original_bytes_unchanged": true,
+        "saved_normal_settings_verified": true
+      },
+      "Sand_02_Normal": {
+        "canonical_original": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.T_Sand_02_Normal",
+        "copy": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+        "original_sha256": "e305c2d7558b2f5e633b8242566d76b883d90b37e4c6ea40cf94cb0469a205a9",
+        "receipt_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+        "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+        "canonical_catalog_preserved": true,
+        "original_bytes_unchanged": true,
+        "saved_normal_settings_verified": true
+      }
+    },
+    "saved_lit_image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\RIMAL_SAVED_LIT_20261003T1722.png",
+    "saved_lit_image_worker_inspected": true
+  },
+  "registered_catalog_scope": {
+    "snapshot_date": "2026-10-02",
+    "existing_unreal_toolsets": 36,
+    "kks_registered_operations": 471,
+    "all_registered_operations_executed": false,
+    "dedicated_landscape_paint_weightmap_operation_found": false,
+    "no_claim_about_native_landscape_editor_ui_availability": true,
+    "reason_not_executed": "Many registered operations mutate assets or world state or invoke other effects. Only bounded authorized functional handshakes were performed by root."
+  },
+  "limitations": [
+    "Operating-system listeners do not prove successful API operations.",
+    "The auxiliary Houdini MCP session is separate from official Houdini Engine.",
+    "A connected material or returned graph does not prove appearance acceptance.",
+    "The 2026-10-02 guide's inactive official Engine snapshot is historical.",
+    "No worker editor actions, Cook, Bake, map saves, weight changes or broad operation execution were performed."
+  ],
+  "updated_utc": "2026-10-03T18:30:10.7269034Z",
+  "native_grounding_current": {
+    "area_id": "GazaRimal",
+    "phase": "saved_reopened_verified",
+    "passed": true,
+    "native_verification_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json",
+    "native_verification_sha256": "20702fa387aa670556e486cd14b2f5d80d59efb85e11c92938c0101d32b5044f",
+    "bank_reopen_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+    "bank_reopen_sha256": "baf8a87424dcd01f145444217dae89fe52b32552c3c253b93adea16185ca0b15",
+    "revision": "20261003T143631839378",
+    "saved": true,
+    "reopened": true,
+    "no_recook": true,
+    "fresh_editor_process_restart": false,
+    "original_source_road_count": 24,
+    "total_native_road_count": 24,
+    "roadgeo_count": 43,
+    "bound_mesh_count": 41,
+    "exact_null_placeholder_count": 2,
+    "null_placeholders_physically_supported": true,
+    "owned_native_actor_count": 68,
+    "named_native_dependency_count": 65,
+    "saved_hda_actor_count": 43,
+    "named_hda_dependency_count": 6,
+    "bank_native_instance_count": 16009,
+    "max_surface_height_error_cm": 7.729658493965417,
+    "actual_native_triangle_count": 795580,
+    "protected_building_pad_count": 269,
+    "failing_pad_overlap_count": 0,
+    "max_area_escape_cm": 0.0010130792873042083,
+    "exact_materials_transforms_collision_and_geometry_hashes_verified": true,
+    "saved_named_packages_clean": true,
+    "user_visual_acceptance": false
+  },
+  "current_operation": {
+    "area_id": "GazaShujaiya",
+    "phase": "ordinary_replacement_in_progress",
+    "started_utc": "2026-10-03T17:22:46Z",
+    "editor_pid": 32752,
+    "evidence_attribution": "Latest ordinary replacement start reported by sole editor owner; no worker editor probe.",
+    "new_replacement_final_save_reopen_verified": false,
+    "astra_status": "Task2 resumed the exact Shujaiya generation:4 corner tasks complete, native rebuild complete, geometry grounding/clipping active unsaved"
+  },
+  "connection_snapshot_profile_map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+  "manager_listener_refresh": {
+    "utc": "2026-10-03T18:30:10.7269034Z",
+    "method": "Read-only operating-system process/TCP listener inspection while task2 alone owns editor",
+    "sole_editor_pid": 32752,
+    "listener_snapshot": [
+      {
+        "address": "127.0.0.1",
+        "port": 55557,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 19840,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 18811,
+        "pid": 8636
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 18080,
+        "pid": 32752
+      },
+      {
+        "address": "127.0.0.1",
+        "port": 8000,
+        "pid": 32752
+      }
+    ],
+    "api_handshake_inferred": false,
+    "root_editor_calls": false
+  },
+  "current_crash_reconciliation": {
+    "utc": "2026-10-03T23:22:56.484492+03:00",
+    "former_editor_pid": 32752,
+    "current_editor_count": 0,
+    "editor_services": "not_currently_ready_restart_required",
+    "auxiliary_service_refresh": "not_performed",
+    "prior_measurements": "historical_not_current_readiness",
+    "new_handshake_required": true
+  },
+  "fresh_replacement_readiness": {
+    "utc": "2026-10-04T00:10:17.366725+03:00",
+    "sole_editor_pid": 21780,
+    "services_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_readiness_20261003T203232858143Z.json",
+    "Engine_valid": true,
+    "RoadBLD_licensed": true,
+    "editor_Python_functional": true,
+    "asphalt_named_save_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_material_finish_20261003T203444712261Z.json",
+    "listeners": {
+      "8000": 21780,
+      "19840": 21780,
+      "18080": 21780,
+      "55557": 21780,
+      "18811": 8636
+    },
+    "every_registered_tool_executed": false,
+    "auxiliary_Houdini_functional_refresh": false,
+    "fresh_delivery_saved": false
+  },
+  "fresh_auxiliary_houdini_handshake": {
+    "utc": "2026-10-03T22:17:24Z",
+    "connected": true,
+    "version": "22.0.429",
+    "port": 18811,
+    "hip": "C:/Users/USER/.codex/vendor_imports/houdini-mcp/untitled.hip",
+    "receipt": "Staging/ManagedAstra_2026-10-03/ROOT_HOUDINI_CONNECTION_20261003T221724Z.json",
+    "scope": "Auxiliary authoring session only; no Cook/source/editor changes"
+  }
+}

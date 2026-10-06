@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1014,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Roof_Trims/beam_roof_trim_corner_5x4_a"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"649x799x150\",\"CollisionPrims\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"10.05\",\"Triangles\":\"32\",\"UVChannels\":\"2\",\"Vertices\":\"66\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1014,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"649x799x150\",\"CollisionPrims\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"10.05\",\"Triangles\":\"32\",\"UVChannels\":\"2\",\"Vertices\":\"66\"}}"
+    }
+   ]
+  }
+ }
+}

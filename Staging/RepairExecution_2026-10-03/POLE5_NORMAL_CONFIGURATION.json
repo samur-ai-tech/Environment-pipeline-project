@@ -1,0 +1,133 @@
+{
+  "after_typed_catalog_sha256": "135fda14b5173ca919b1568b3faff20e1763cfb3dc90c0635983d1ce32b3ded1",
+  "apply_targets": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_source.json",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_full.csv",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json"
+  ],
+  "areas": [
+    "GazaRimal",
+    "GazaShujaiya"
+  ],
+  "asset_id": "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5",
+  "authorization": "Aviv explicitly requested retained implementation until the environment works; manager assigned this non-held supported native pole for the two existing areas",
+  "before_typed_catalog_sha256": "890a497927a479b5011e9639f165c2640342a6b4bb1d013b099e97bcbd6d57eb",
+  "bounds_max_cm": [
+    12.5546875,
+    10.872679710388184,
+    800.0000305175781
+  ],
+  "bounds_min_cm": [
+    -12.5546875,
+    -10.872679710388184,
+    3.0517578125e-05
+  ],
+  "date_local": "2026-10-03",
+  "decision_id": "Aviv_RetainedRepair_2026-10-03_Pole5",
+  "digest_policy": "Sorted native v3 row names; Boolean/schema ints, exact finite Python float conversion, strings; canonical sorted-key compact JSON. No Float32 re-rounding.",
+  "enabled_rows_after": 18,
+  "enabled_rows_before": 17,
+  "input_file_sha256": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_full.csv": "6188f4daf287e75fe69f30643a51e6f1a8198404fef3e641ca1c01bca3059913",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\catalog_v4_source.json": "0683a7cd4a9b7abf86f936efb4bffa33d3a30ad8b2a9500225d9e37632be095e"
+  },
+  "instance_material_slots": [
+    "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_539c9025ec84.MI_539c9025ec84"
+  ],
+  "manager_next_action": "Review/apply this script, import the exact CSV into the existing native v3 table, compare native typed digest, save the named table, and run ordinary area generation",
+  "measured_placement_count": null,
+  "native_scale": [
+    1,
+    1,
+    1
+  ],
+  "native_table_import": "not_performed",
+  "object_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_utility_pole_5.SM_utility_pole_5",
+  "other_row_changes": 0,
+  "preserved_holds": [
+    "H0013",
+    "H0907",
+    "H0051",
+    "H0958",
+    "H0094",
+    "declined palms",
+    "all other existing holds"
+  ],
+  "previous_decision_receipts": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task5\\NORMAL_SCOPE_CONFIGURATION.json",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task5\\NORMAL_SCOPE_CONFIGURATION.json"
+  ],
+  "release_id": "GazaRimal_NormalUse_2026-10-02_v001",
+  "rights_state_preserved": "unverified",
+  "row_count": 1223,
+  "row_name": "MB_D7354F34502E4C88BEA903711C9F0A51",
+  "runtime_context_style_set": "mediterranean_urban",
+  "runtime_field_changes": {
+    "AllowedAreas": {
+      "after": "GazaRimal|GazaShujaiya",
+      "before": "any_validated_area"
+    },
+    "AnchorValid": {
+      "after": "true",
+      "before": "false"
+    },
+    "AnchorZCm": {
+      "after": "3.0517578125e-05",
+      "before": "0.0"
+    },
+    "DecisionId": {
+      "after": "Aviv_RetainedRepair_2026-10-03_Pole5",
+      "before": ""
+    },
+    "ForwardAxis": {
+      "after": "+X",
+      "before": ""
+    },
+    "OrientationValid": {
+      "after": "true",
+      "before": "false"
+    },
+    "PlacementRule": {
+      "after": "roadside_pole",
+      "before": "roadside_prop"
+    },
+    "PlacementScope": {
+      "after": "area_zone",
+      "before": "none"
+    },
+    "ReleaseId": {
+      "after": "GazaRimal_NormalUse_2026-10-02_v001",
+      "before": ""
+    },
+    "RequestRole": {
+      "after": "street_pole",
+      "before": "street_prop"
+    },
+    "Role": {
+      "after": "street_pole",
+      "before": ""
+    },
+    "RunEligible": {
+      "after": "true",
+      "before": "false"
+    },
+    "SelectionWeight": {
+      "after": "1.0",
+      "before": "0.0"
+    },
+    "StyleSet": {
+      "after": "mediterranean_urban",
+      "before": "stylized_town"
+    }
+  },
+  "schema": "environmentpipeline.project_pole_normal_configuration.v1",
+  "scope": "Project use in GazaRimal and GazaShujaiya only; no canonical qualification, global release, rights approval or final visual acceptance",
+  "source_category": "StreetProps",
+  "source_style_set": "stylized_town",
+  "stale_source_digest_metadata_before": {
+    "catalog_sha256": "1c27e488a4c5f2c97c4adb3a3ba1ad7fea5257669a4caa6c20f360915baae1e7",
+    "normal_use_catalog_digest": "79efcfc4d5bd38fa52b8aca072e843753046380596d1adc41ace1891d4cd3169"
+  },
+  "status": "catalog_profiles_configured_native_import_not_performed"
+}

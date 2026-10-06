@@ -1,0 +1,93 @@
+{
+  "schema": "environmentpipeline.final_H0017_supplier_rebase.v1",
+  "status": "REBASED_FROZEN_DATA_READY_FOR_ROOT_BANK_REVIEW",
+  "source_code_changed": false,
+  "manifest": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\CommandManifests\\6b035556fa619c1af361feb3aed492c9c29f9d0f6406d998bf27c37e58084da7.json",
+    "sha256": "07fba21d0416c7dd14625ec75ccabe8ae3fd9a076bf3e6425d230819f54952d0"
+  },
+  "baseline_native_receipt": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_TABLE_TYPED_f6fff4f9759af2db7f72efde779e5082415a8dfb961ebece67b1bb3c28438665_PID30328.json",
+    "sha256": "194bd96025347dd3d24f3c1e1483fa4ac1758fc3ba2d61750025fc9fe115bb57",
+    "native_table_package_sha256": "f763b072da32dc31fb3372005067ce56b3058d2886f0075b4d1b1a06e254c3e8"
+  },
+  "baseline": {
+    "digest": "f6fff4f9759af2db7f72efde779e5082415a8dfb961ebece67b1bb3c28438665",
+    "source_sha256": "440eba2ad088423d4fa6fd22b13d26d4b3e06b1c1be08dde3b9968fe2afd86b1",
+    "csv_sha256": "7f232e5e10efedb318646e427ba7c3272c1a9aa9fc2cdedb8f5cba3a2828a6ef",
+    "rows": 1223,
+    "active": 29,
+    "saved_external_bindings_reported_by_bank": 92
+  },
+  "registration": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\e261e1dc8e9da56adc8d0342d0238cac6652e0e1b2cf8af584878afa1d284f2d\\TRANSACTION.json",
+    "sha256": "dfc0264a7c6ae7d4296e7189a077209cdb532fa1abf7b704f0096b750ec70f13",
+    "decision_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\e261e1dc8e9da56adc8d0342d0238cac6652e0e1b2cf8af584878afa1d284f2d\\DECISION.json",
+    "decision_sha256": "3339bbf68687c02ff902d53c0b43a6514a19af8fad92f8bdbf27be0798550c48",
+    "after_rows": 1225,
+    "after_digest": "bf2006c32174bb0020cee49e08b7f8c52bfbcc95ad1ec0d97cd32c756c238416",
+    "after_source_sha256": "3a406f843bf8f2f10f73d06694ae80be82fe301790e406050e7192aa6f38bd0d",
+    "after_csv_sha256": "b79a32853ac9da0a80a124f5870276fbe27df5288281a241357eac968d4b4a06",
+    "existing1223records_exactly_preserved": true,
+    "newly_enabled": []
+  },
+  "prepared": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\792c454348a158f1fb7cea58d65c8aca0e0257db280b4bb47a0cc34743ea3a19\\TRANSACTION.json",
+    "sha256": "1c776f67a145b5fae02e7d9ef65606e853e982634d642ebdd3ea9546171616cc",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\792c454348a158f1fb7cea58d65c8aca0e0257db280b4bb47a0cc34743ea3a19\\PREPARED_INTAKE.json",
+    "intake_sha256": "c3547cbd8caa2998d9760ce86c7b75e929b5aed1350cfc4d6f7dd56df63f0974",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "prepared_expected_post_registration_digest": "bf2006c32174bb0020cee49e08b7f8c52bfbcc95ad1ec0d97cd32c756c238416",
+  "prepared_expected_source_sha256": "3a406f843bf8f2f10f73d06694ae80be82fe301790e406050e7192aa6f38bd0d",
+  "prepared_expected_csv_sha256": "b79a32853ac9da0a80a124f5870276fbe27df5288281a241357eac968d4b4a06",
+  "prepared_before_sha256": "d39349a197dc4d74840f42808919c5f5bb6c12f1a20f47a066acd7fc24473ad0",
+  "prepared_sequence": "Only after exact registration APPLIED and full hash-bound NATIVE_TABLE_AFTER exist; sealed callback checks current source/CSV/DT rows and binary. Bank-owned commit consumes after bytes atomically.",
+  "bank_handler_read_only_review": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\commit_supplier_prepared.py",
+    "sha256": "8e7be3332def369ee7b6060dfa2a2b15306e2149eb1dc88179e95d21746bb975",
+    "callback_name_matches": true,
+    "preserves_prior_fields": true,
+    "writes_owned_prepared_registry_only": true,
+    "owner_followup": "Handler currently rechecks source/CSV/prepared immediately before os.replace. Supplier callback now also returns expected_native_table_package_sha256 and verified_saved_native_after; bank should add current DT package hash to final CAS and copy verified receipt reference into its APPLIED receipt. Bank owns this edit/reseal; supplier did not alter it."
+  },
+  "exact_commands_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\EXACT_COMMANDS.json",
+  "exact_commands_sha256": "bdcac84def3b2256f091097e6dda7952788733acf36ee60a4ebf2aaf99b6db6f",
+  "targeted_measurement_jobs": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\TargetedJobs\\ac6029203df1c3457fc6df201ef0495bd7564debf337a898a27617bdc5eef9cc\\REQUEST.json",
+    "sha256": "4e449c59bd69e9e8710f3e3f76676fa757d213625a6d07fa3e1bb48f2297f6a5",
+    "job_ids": [
+      "NU_bec0553f5648e25ec0e6",
+      "NU_a083b80710f2f1964814",
+      "NU_2a042d4f85289d403ec7",
+      "NU_0de70e66afd34c0b6301",
+      "NU_0578953dbe96b3a1eebb",
+      "NU_39235413a24a9b050a5b",
+      "NU_d62b1ba0a2e59d93a97c",
+      "NU_8c80be71172f994d4600",
+      "NU_c247d726647fbd09e57e",
+      "NU_1518ec1a321c3a7b6c76",
+      "NU_dde2c58b9c163d6170b4",
+      "NU_d0a1054a5956fbda1c70",
+      "NU_eb7ab02a131aaa339199",
+      "NU_3634d948d49c75552804"
+    ]
+  },
+  "native_activation_created": false,
+  "native_operations_performed": false,
+  "shared_writes_performed": false,
+  "offline_checks_passed": 89,
+  "ready_handoff": {
+    "status": "READY_FOR_REVIEW_NATIVE_EXECUTION_PAUSED",
+    "immutable_ready_handoff": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\READY\\836f3fb4206b04c90737d29b52da223ea3a8384785ee3851c46e694a318c989e\\HANDOFF.json",
+    "sha256": "36cd627813847a285935e44869b1e730b950d27665661facfe5cc5ef386ffe03",
+    "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+    "transaction_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\e261e1dc8e9da56adc8d0342d0238cac6652e0e1b2cf8af584878afa1d284f2d\\TRANSACTION.json",
+    "summary": "Generic final-target measurement, held registration and role-aware prepared intake implemented;89 offline checks;6 measured records,2 additions,4 existing augmentations;14 targeted jobs. Bank applies shared CAS; native execution not performed."
+  },
+  "runtime_identity": "Manifest unchanged07fba21...; exact loaded source/path/code hashes still required; no cache replacement."
+}

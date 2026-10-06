@@ -1,0 +1,27 @@
+{
+ "schema": "environmentpipeline.s1_material_edit.args.v2a",
+ "_note": "S1v2a save in the apply PID after review: named saves of MF_GeoCityV2a_MacroColor, the master and the Shujaiya child only. macro_noise_source=perlin is fixed at inspect/apply (it sets the master sampler type) and MUST be repeated unchanged in every later args file (tune/save/child_save/verify assert it). grass_coverage is deliberately absent (child keeps its current value, as in B0). state_receipt = the reviewed phase-a tune receipt (null = apply). visual_review_receipt: root-written JSON under Stage1_Ground {pid, save_approved:true, areas:[GazaShujaiya], state_receipt_sha256, state_instances_sha256, captures:{GazaShujaiya:[...]}, stage}. Attest operator_preconditions right before the save.",
+ "mode": "save",
+ "label": "s1v2a_shuj_r001_save",
+ "root_activation": "<FILL: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/Activation/S1V2A_ROOT_ACTIVATION_GazaShujaiya_PID<pid>.json>",
+ "root_activation_sha256": "<FILL: its sha256>",
+ "expected_pid": "<FILL: editor PID (integer)>",
+ "script_sha256": "bf1bee4f94fbc83b43901913a9b7e48c1592723cf44a6069b83b2ba3eab2aace",
+ "executed_script_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1v2/s1v2a_material_edit.py",
+ "operator_preconditions": {
+  "no_asset_editors_open_on_s1_assets": false
+ },
+ "backup_manifest": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/Before/S1B_20261005T202836Z/BACKUP_MANIFEST.json",
+ "backup_manifest_sha256": "c32afcdb5c2b848d912b5888761dc7ee5c6fc3d8f7220b1a45ef136d77532864",
+ "macro_noise_source": "perlin",
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "apply_receipt": "<FILL: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1v2/receipts_v2a/S1V2A_APPLY_s1v2a_shuj_r001_apply_PID<pid>.json>",
+ "apply_receipt_sha256": "<FILL: its sha256>",
+ "state_receipt": "<FILL: C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1v2/receipts_v2a/S1V2A_TUNE_s1v2a_shuj_t001_PID<pid>.json>",
+ "state_receipt_sha256": "<FILL: its sha256>",
+ "visual_review_receipt": "<FILL: abs path of the root-written review receipt under Stage1_Ground>",
+ "visual_review_receipt_sha256": "<FILL: its sha256>",
+ "visual_review_waiver": null
+}

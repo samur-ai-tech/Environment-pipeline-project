@@ -1,0 +1,771 @@
+[
+  {
+    "name": "MaterialExpressionVectorParameter_34",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      14450
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_01_TileCm"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_35",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      14730
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ],
+    "inputs": [
+      null,
+      "MaterialExpressionVectorParameter_34",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_71",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      14550
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_01_Albedo"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_72",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      14730
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_01_Normal"
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_71",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      14930
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Ground_MacroTileCm"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_73",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15050
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      null,
+      "MaterialExpressionVectorParameter_71",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionScalarParameter_34",
+    "class": "MaterialExpressionScalarParameter",
+    "xy": [
+      -1380,
+      15170
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Ground_SoilBlendStrength"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_74",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15230
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Ground_MacroSoilAlbedo"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_75",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15410
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Ground_MacroSoilNormal"
+  },
+  {
+    "name": "MaterialExpressionLinearInterpolate_0",
+    "class": "MaterialExpressionLinearInterpolate",
+    "xy": [
+      -800,
+      14590
+    ],
+    "input_names": [
+      "A",
+      "B",
+      "Alpha"
+    ],
+    "inputs": [
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionNormalize_1",
+    "class": "MaterialExpressionNormalize",
+    "xy": [
+      -530,
+      14770
+    ],
+    "input_names": [
+      "VectorInput"
+    ],
+    "inputs": [
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionMultiply_35",
+    "class": "MaterialExpressionMultiply",
+    "xy": [
+      -270,
+      14550
+    ],
+    "input_names": [
+      "A",
+      "B"
+    ],
+    "inputs": [
+      "MaterialExpressionLinearInterpolate_0",
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_73",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      15300
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_02_TileCm"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_76",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15400
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      null,
+      "MaterialExpressionVectorParameter_73",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_77",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15580
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ],
+    "inputs": [
+      null,
+      "MaterialExpressionVectorParameter_73",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionMultiply_36",
+    "class": "MaterialExpressionMultiply",
+    "xy": [
+      -270,
+      15400
+    ],
+    "input_names": [
+      "A",
+      "B"
+    ],
+    "inputs": [
+      "MaterialExpressionMaterialFunctionCall_76",
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_175",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      14450
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_01_TileCm"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_152",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      14550
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_01_Albedo"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_152",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      14550
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_152",
+      "MaterialExpressionVectorParameter_175",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_153",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      14730
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_01_Normal"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_153",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      14730
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_153",
+      "MaterialExpressionVectorParameter_175",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_176",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      14930
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Ground_MacroTileCm"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_154",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15050
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Ground_MacroMask"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_154",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15050
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_154",
+      "MaterialExpressionVectorParameter_176",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionComponentMask_3",
+    "class": "MaterialExpressionComponentMask",
+    "xy": [
+      -1380,
+      15070
+    ],
+    "input_names": [
+      "None"
+    ],
+    "inputs": [
+      "MaterialExpressionMaterialFunctionCall_154"
+    ]
+  },
+  {
+    "name": "MaterialExpressionScalarParameter_104",
+    "class": "MaterialExpressionScalarParameter",
+    "xy": [
+      -1380,
+      15170
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Ground_SoilBlendStrength"
+  },
+  {
+    "name": "MaterialExpressionMultiply_74",
+    "class": "MaterialExpressionMultiply",
+    "xy": [
+      -1150,
+      15070
+    ],
+    "input_names": [
+      "A",
+      "B"
+    ],
+    "inputs": [
+      "MaterialExpressionComponentMask_3",
+      "MaterialExpressionScalarParameter_104"
+    ]
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_155",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15230
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Ground_MacroSoilAlbedo"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_155",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15230
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_155",
+      "MaterialExpressionVectorParameter_175",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_156",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15410
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Ground_MacroSoilNormal"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_156",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15410
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_156",
+      "MaterialExpressionVectorParameter_175",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionLinearInterpolate_2",
+    "class": "MaterialExpressionLinearInterpolate",
+    "xy": [
+      -800,
+      14590
+    ],
+    "input_names": [
+      "A",
+      "B",
+      "Alpha"
+    ],
+    "inputs": [
+      "MaterialExpressionMaterialFunctionCall_152",
+      "MaterialExpressionMaterialFunctionCall_155",
+      "MaterialExpressionMultiply_74"
+    ]
+  },
+  {
+    "name": "MaterialExpressionLinearInterpolate_3",
+    "class": "MaterialExpressionLinearInterpolate",
+    "xy": [
+      -800,
+      14770
+    ],
+    "input_names": [
+      "A",
+      "B",
+      "Alpha"
+    ],
+    "inputs": [
+      "MaterialExpressionMaterialFunctionCall_153",
+      "MaterialExpressionMaterialFunctionCall_156",
+      "MaterialExpressionMultiply_74"
+    ]
+  },
+  {
+    "name": "MaterialExpressionNormalize_2",
+    "class": "MaterialExpressionNormalize",
+    "xy": [
+      -530,
+      14770
+    ],
+    "input_names": [
+      "VectorInput"
+    ],
+    "inputs": [
+      "MaterialExpressionLinearInterpolate_3"
+    ]
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_177",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -500,
+      14550
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_01_Tint"
+  },
+  {
+    "name": "MaterialExpressionMultiply_75",
+    "class": "MaterialExpressionMultiply",
+    "xy": [
+      -270,
+      14550
+    ],
+    "input_names": [
+      "A",
+      "B"
+    ],
+    "inputs": [
+      "MaterialExpressionLinearInterpolate_2",
+      "MaterialExpressionVectorParameter_177"
+    ]
+  },
+  {
+    "name": "MaterialExpressionScalarParameter_105",
+    "class": "MaterialExpressionScalarParameter",
+    "xy": [
+      -500,
+      14970
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_01_Roughness"
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_178",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -2300,
+      15300
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_02_TileCm"
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_157",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15400
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_02_Albedo"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_157",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15400
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_157",
+      "MaterialExpressionVectorParameter_178",
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionTextureObjectParameter_158",
+    "class": "MaterialExpressionTextureObjectParameter",
+    "xy": [
+      -2300,
+      15580
+    ],
+    "input_names": [
+      "UVs",
+      "Apply View MipBias"
+    ],
+    "inputs": [
+      null,
+      null
+    ],
+    "parameter": "Sand_02_Normal"
+  },
+  {
+    "name": "MaterialExpressionMaterialFunctionCall_158",
+    "class": "MaterialExpressionMaterialFunctionCall",
+    "xy": [
+      -1850,
+      15580
+    ],
+    "input_names": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ],
+    "inputs": [
+      "MaterialExpressionTextureObjectParameter_158",
+      "MaterialExpressionVectorParameter_178",
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "MaterialExpressionVectorParameter_179",
+    "class": "MaterialExpressionVectorParameter",
+    "xy": [
+      -500,
+      15400
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_02_Tint"
+  },
+  {
+    "name": "MaterialExpressionMultiply_76",
+    "class": "MaterialExpressionMultiply",
+    "xy": [
+      -270,
+      15400
+    ],
+    "input_names": [
+      "A",
+      "B"
+    ],
+    "inputs": [
+      "MaterialExpressionMaterialFunctionCall_157",
+      "MaterialExpressionVectorParameter_179"
+    ]
+  },
+  {
+    "name": "MaterialExpressionScalarParameter_106",
+    "class": "MaterialExpressionScalarParameter",
+    "xy": [
+      -500,
+      15820
+    ],
+    "input_names": [],
+    "inputs": [],
+    "parameter": "Sand_02_Roughness"
+  }
+]

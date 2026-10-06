@@ -1,0 +1,36 @@
+{
+  "schema": "environmentpipeline.native_road_crash.v1",
+  "pid": "30548",
+  "error": "Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000028",
+  "engine_version": "5.8.2-56702186+++UE5+Release-5.8",
+  "crashed_stack_modules": [
+    "UnrealEditor_Landscape",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_Core",
+    "UnrealEditor_Core",
+    "UnrealEditor_Core",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_RenderCore",
+    "UnrealEditor_Core",
+    "UnrealEditor_Core",
+    "kernel32",
+    "ntdll"
+  ],
+  "actual_crash_time_utc": "2026-10-04T12:13:30Z",
+  "source_context": "Saved\\Crashes\\UECC-Windows-C1E68E114377E19DDE986C9560FA5CD8_0000\\CrashContext.runtime-xml",
+  "prior_map_saved": false,
+  "prior_operation_phase": "first native RoadBLD rebuild after40roads authored",
+  "observed_native_patch_log": "ApplyBakedTileLandscapePatches,32 patches,0 height and weight texels; old saved Landscape weightmaps missing mips",
+  "native_project_flags_before": {
+    "bEnableIntersectionLandscapePatch": true,
+    "bEnableIntersectionLandscapeVisibilityHole": true,
+    "bEnableRoadLandscapePaint": true,
+    "bUseRoadLandscapeHeightPatch": true
+  },
+  "retained_fix": "Disable5 native project landscape edit/auto-layer settings in DefaultEngine.ini, fail before HDA action if settings are still enabled",
+  "causality": "Landscape render crash is measured; contribution of native patch writes inferred from immediate log/stack, not symbolized proprietary implementation",
+  "normal_operation_after_config_fix": "NOT_RUN"
+}

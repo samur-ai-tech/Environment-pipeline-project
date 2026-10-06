@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2706,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Lamp01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"200x35x46\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Lamp01.fbx\\\", \\\"Timestamp\\\" : \\\"1518451395\\\", \\\"FileMD5\\\" : \\\"ad1c28a8e2d0cdb6ca3c19fed2aa46f0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"49\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"204\",\"UVChannels\":\"2\",\"Vertices\":\"308\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2706,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"200x35x46\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Lamp01.fbx\\\", \\\"Timestamp\\\" : \\\"1518451395\\\", \\\"FileMD5\\\" : \\\"ad1c28a8e2d0cdb6ca3c19fed2aa46f0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"49\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"204\",\"UVChannels\":\"2\",\"Vertices\":\"308\"}}"
+    }
+   ]
+  }
+ }
+}

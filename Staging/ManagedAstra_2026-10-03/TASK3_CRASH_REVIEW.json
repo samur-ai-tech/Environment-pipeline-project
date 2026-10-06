@@ -1,0 +1,193 @@
+{
+  "schema": "environmentpipeline.task3_postbinding_crash_review.v1",
+  "status": "CRASH_CAUSE_UNDETERMINED_SAVED_BASELINE_VERIFIED_STARTUP_GUARDS_REQUIRED",
+  "utc": "2026-10-03T20:14:35.110826+00:00",
+  "scope": "Independent filesystem/source review only. No editor launch/call, source/asset/config/profile changes, thread messages or production-module execution. Original TASK3_REVIEW_RESULT.json/TXT remain unchanged.",
+  "immutable_source_review_sha256": "ebbc7799accefb6081149c34f1430871596b6c25dda3fb5e157abde5156051b5",
+  "confirmed_crash": {
+    "former_pid": 32752,
+    "crash_thread": "GameThread",
+    "thread_id": 26672,
+    "exception": "EXCEPTION_ACCESS_VIOLATION reading0x000000005f5f7318",
+    "stack": "Twenty python311 frames followed by PythonScriptPlugin, Slate and UnrealEditor; unsymbolized.",
+    "root_cause": "UNDETERMINED",
+    "off_thread_claim": "Not supported: recorded crashed thread is GameThread and Slate is in its stack. schedule guards do precede that script own registered post-tick continuation; those are different statements.",
+    "stale_uobject_or_reflection": "Possible classes of failure only. No captured Python line, per-guard breadcrumb, failing object identity or UObject/reflection symbol establishes either. Do not report either as cause.",
+    "oom": "Not established: bIsOOM=0; reported memory counters are zero and are not valid evidence of actual available RAM.",
+    "audio_warning": "13-second audio hardware wait logged at fatal timestamp is not evidence that audio caused Python access violation.",
+    "evidence": {
+      "Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\CrashContext.runtime-xml": {
+        "bytes": 215083,
+        "sha256": "049d9f635f978d434d13ba4b1e02cbda8dc74affef64014019ee31daa2bcde7a"
+      },
+      "Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\Environmentpipeline.log": {
+        "bytes": 7007373,
+        "sha256": "0a6f477467530ab653a2029f300fbb6c4a297a3e8fddc39e38d215573fab8d18"
+      },
+      "Saved\\Crashes\\UECC-Windows-3DF6A2DA4F9260548E8F1A8FD7AF5D18_0000\\UEMinidump.dmp": {
+        "bytes": 2112316,
+        "sha256": "c7c9d5668be9f87faa6a31c500cf5f4b2d800694a440a9576414d6bf8ba52d86"
+      },
+      "Staging\\AppearanceRepair_2026-10-03\\TASK2_POSTBINDING_EDITOR_CRASH_20261003T200538728869Z\\CRASH_RECEIPT.json": {
+        "bytes": 4044,
+        "sha256": "612ae5bbda39dc6099048c606535992d5585a6a93dc8173808149be410b9aa8f"
+      }
+    },
+    "execution_boundary": "No TASK2_PRE_POSTBINDING_RESUME receipt exists. Frozen script writes this after full guards/old-reader capture and before grounding reload/new final verifier. This supports failure in/before receipt creation, conditional on normal write control flow, not a precise guard location. No successful final verifier, suppression/Bake or named save is evidenced."
+  },
+  "saved_baseline": {
+    "backup_manifest_all7_hashes_verified": true,
+    "baseline_files": {
+      "AREA_PROFILE.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\AREA_PROFILE.json",
+        "sha256": "ce04f4d6b34daaf36a30a484d74574a440127aee36f1cacbeebedd98b734a880",
+        "bytes": 2246242
+      },
+      "HDA_CATALOG_RECEIPT.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\HDA_CATALOG_RECEIPT.json",
+        "sha256": "730fc012db81cde199e067d34c33eda11076d189a0261ca7748106d01fbe9a2c",
+        "bytes": 202370780
+      },
+      "L_GazaShujaiya_BankIntegration.umap": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\L_GazaShujaiya_BankIntegration.umap",
+        "sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+        "bytes": 39195123
+      },
+      "LAST_SUCCESSFUL_WORKFLOW_STATE.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\LAST_SUCCESSFUL_WORKFLOW_STATE.json",
+        "sha256": "729124235f3659efbe5b70cf76442a6a73559e5c770c90b0569fb4aff82dfd36",
+        "bytes": 22284572
+      },
+      "ROADBLD_DELIVERY.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\ROADBLD_DELIVERY.json",
+        "sha256": "0cf135372a34c80993ecd148c260494260d0fbfeb8e6e690cf636e859052137d",
+        "bytes": 2124678
+      },
+      "ROADBLD_WORKFLOW_STATE.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\ROADBLD_WORKFLOW_STATE.json",
+        "sha256": "fabee57192a0bcebc436664bf79bab08d7c224113dbdb97bff1d8ee15d789a9e",
+        "bytes": 3255586
+      },
+      "WORKFLOW_STATE.json": {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeOrdinaryReplacement\\GazaShujaiya\\WORKFLOW_STATE.json",
+        "sha256": "912312043e915c52d86ecbb402b2370dc16b8f18622cc6b376443bc81fcec9a9",
+        "bytes": 22284595
+      }
+    },
+    "map": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap",
+    "map_sha256": "fe56a24d0eb493f70c3582c2167124b79d1930704be0bac8d33683c8d178c0e7",
+    "map_bytes": 39195123,
+    "map_identical_to_preordinary_backup": true,
+    "physical_map_copy_required": false,
+    "prior_native_delivery_revision": "20261003T133607905511",
+    "prior_delivery_sha256": "0cf135372a34c80993ecd148c260494260d0fbfeb8e6e690cf636e859052137d",
+    "prior_saved_delivery_identical_to_backup": true,
+    "named_native_dependencies": 80,
+    "missing_native_dependencies": [],
+    "prior_delivery_limits": "Prior133607 delivery is saved/reopened historical native output and contains no grounding_report/native_grounding_validation. It is a recoverable baseline, not proof of current v4/v5 grounded/clipped result or final appearance.",
+    "metadata_mismatches": {
+      "AREA_PROFILE": "Only roadbld_workflow differs: saved_verified/sign-in1333 versus in_progress/sign-in1722. All remaining profile fields compare equal.",
+      "HDA_CATALOG_RECEIPT": {
+        "saved_baseline_sha256": "730fc012db81cde199e067d34c33eda11076d189a0261ca7748106d01fbe9a2c",
+        "failed_run_current_sha256": "7d167fab06aa56b14f8d844114325accf53f87b1fc9f0d962d33c5b6d0689177",
+        "note": "Current catalog was replaced by failed ordinary export and does not describe original saved map; use retained baseline catalog for initial saved-map readback."
+      },
+      "WORKFLOW_STATE": "Current failed_native_road_transaction; prior saved baseline WORKFLOW_STATE baked_saved_verified. Archive failure before any normal overwrite or scoped metadata restoration.",
+      "ROADBLD_WORKFLOW_STATE": "Current failed_validating/savedFalse172549; original native delivery remains133607. Do not interpret failed state as saved map.",
+      "LAST_SUCCESSFUL_WORKFLOW_STATE": "Current SHA912312043e915c52d86ecbb402b2370dc16b8f18622cc6b376443bc81fcec9a9 equals backup WORKFLOW_STATE, the latest saved baseline. DO NOT blindly replace it with older backup LAST_SUCCESSFUL SHA729124235f3659efbe5b70cf76442a6a73559e5c770c90b0569fb4aff82dfd36."
+    }
+  },
+  "unsaved_candidate": {
+    "old_native_revision": "20261003T172549017159",
+    "stop_dirty_content_packages": 90,
+    "dirty_content_packages_present_at_exact_Content_paths": 0,
+    "bound_clipped_candidate_components": 87,
+    "candidate_generation_directory_present": false,
+    "lost_runtime_state": "Old p/r, UObject references, native callback handles, transient grounding copies,87bound candidate assets and in-memory corner/checkpoint state cannot be resumed in a new process. Captured geometry/receipts remain evidence, not restorable native live actors.",
+    "recovery_route": "Fresh ordinary regeneration in existing named map from original saved native delivery after manager preflight; new PID/token/revision. Never invoke old postbinding/failed_clipping continuation against a new process or force its fields from JSON."
+  },
+  "autosave_restore": {
+    "metadata": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Autosaves\\PackageRestoreData.json",
+    "sha256": "6c2340b223488821f2d868f5a3311697c3eb2e41b1987fdd8c8c924c101dd57b",
+    "encoding": "UTF-16LE",
+    "RestoreEnabled": true,
+    "listed_packages": [
+      {
+        "PackagePathName": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "PackageAssetName": "L_GazaShujaiya_BankIntegration",
+        "AutoSavePath": "Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration_Auto0.umap"
+      },
+      {
+        "PackagePathName": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3236_0_main_geo_HSM",
+        "AutoSavePath": "Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3236_0_main_geo_HSM_Auto0.uasset"
+      },
+      {
+        "PackagePathName": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3237_0_main_geo_HSM",
+        "AutoSavePath": "Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3237_0_main_geo_HSM_Auto0.uasset"
+      },
+      {
+        "PackagePathName": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3238_0_main_geo_HSM",
+        "AutoSavePath": "Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2859_3238_0_main_geo_HSM_Auto0.uasset"
+      }
+    ],
+    "listed_autosave_facts": [
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Autosaves\\Game\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration_Auto0.umap",
+        "bytes": 106040989,
+        "sha256": "bee525f04290d70ae75fec4aabb7a45c3401199f838c1dc49b46f0f3a1b80b9d",
+        "mtime_utc": "2026-10-03T17:35:56.613576+00:00"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Autosaves\\Game\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Cook\\GeoCity_city_v015_PermanentBank\\311CD685\\GeoCity_city_v015_PermanentBank_2859_3236_0_main_geo_HSM_Auto0.uasset",
+        "bytes": 51472243,
+        "sha256": "17210b6c7941247bb6ea8c52655da0b5787c7c0df06073c924c93bf997b57592",
+        "mtime_utc": "2026-10-03T17:35:56.666226+00:00"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Autosaves\\Game\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Cook\\GeoCity_city_v015_PermanentBank\\311CD685\\GeoCity_city_v015_PermanentBank_2859_3237_0_main_geo_HSM_Auto0.uasset",
+        "bytes": 25996915,
+        "sha256": "a3f15757d707f79557767f792229cd87a5509f1e6baf6b296f68ba6787beea2d",
+        "mtime_utc": "2026-10-03T17:35:56.693314+00:00"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Autosaves\\Game\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Cook\\GeoCity_city_v015_PermanentBank\\311CD685\\GeoCity_city_v015_PermanentBank_2859_3238_0_main_geo_HSM_Auto0.uasset",
+        "bytes": 33060341,
+        "sha256": "5b9d38a01279f4165a26652b10c25f62d7a28a0ba9548ab5c086f973a1678017",
+        "mtime_utc": "2026-10-03T17:35:56.726880+00:00"
+      }
+    ],
+    "decision": "Preserve exact autosave files and restore metadata as crash evidence. Do not accept Recover/Restore or copy autosave packages over Content. Listed map and3HSMs are17:35:56 partial run, before19:12 clipped candidate, and do not form requested retained result. Existing -NoAutoSave launch argument alone is not proven protection: same process later had autosave enabled before scoped suspension and these autosaves exist. Explicit runtime autosave readback/disable required before any mutable transaction."
+  },
+  "startup_cooking_and_callbacks": {
+    "installed_source_evidence": [
+      "Plugins/HoudiniEngine/Source/HoudiniEngineRuntime/Private/HoudiniRuntimeSettings.h:156 config=Engine/defaultconfig",
+      "Plugins/HoudiniEngine/Source/HoudiniEngineRuntime/Private/HoudiniRuntimeSettings.cpp:85 bPauseCookingOnStart=false",
+      "Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniEngine.cpp:255-271 initializes bEnableCookingGlobal=!bPauseCookingOnStart and may start ticking",
+      "Content/Python/init_unreal.py:1-3 only registers editor action",
+      "Content/Python/geocity_editor_action.py:199-207 registers Tools action only"
+    ],
+    "configuration_observed": "No bPauseCookingOnStart setting found in current project Config or Saved/Config/WindowsEditor during review. Prior global pause was process runtime state, not a restart guarantee.",
+    "required_prelaunch": "Use a verified effective startup bPauseCookingOnStart=True configuration/process override before the existing map loads. Verify official global pause after startup and retained HDA auto-cooking/auto-Bake off before inspection. Do not rely on later Python pause to eliminate startup window. No exact unverified command-line grammar is asserted here.",
+    "callbacks": "Previous process callback handles are dead. Fresh bank/native ACTIVE lists initialize empty on import, but zero callbacks must be freshly observed; project init registers menu only. No old delegates/handles/ACTIVE objects should be restored. Fresh startup preflight must verify sole editor PID, world, lease, clean/expected dirty packages and actual official session readiness separately from auxiliary endpoints.",
+    "license": "Fresh normal start must verify signed-in licensed RoadBLD through existing native auth; prior sign-in timestamp or recorded license flag is not current authorization. No authentication bypass."
+  },
+  "recommended_manager_sequence": [
+    "Preserve crash logs, failed state/catalog/profile and current autosave metadata before any baseline metadata restoration; all original prior receipts remain history.",
+    "Prepare startup cooking pause and autosave/recovery handling, then manager activates one replacement editor on the existing original named map; no new map/project.",
+    "Keep matching original map and saved native delivery unchanged. Reconcile initial catalog/profile with verified BeforeOrdinaryReplacement baseline, preserving current latest LAST_SUCCESSFUL ledger. Archive failure states; do not rewrite them as successful.",
+    "Fresh read-only inspection on GameThread with granular flushed breadcrumbs and freshly acquired valid actors/components/wrappers. First identify world/PID/pause/auto-cook/autosave/dirty state before deeper reflected queries or geometry copy.",
+    "Use fresh ordinary official generation and retained source freeze after manager activation. Each operation retains normal full preclip, complementary postclip, clipping/material/topology/collision/height/ownership gates, named saves/reopen. No reconstruction of dead transaction."
+  ],
+  "not_performed": [
+    "Crash dump symbolication/native debugger analysis",
+    "Editor restart or loading any map",
+    "Auto-recovery acceptance or metadata/config edits",
+    "Fresh callback/auto-cook/material/actor readback",
+    "Ordinary regeneration, Bake, save or acceptance"
+  ],
+  "source_or_previous_review_changes": false,
+  "written_files_only": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_CRASH_REVIEW.json",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_CRASH_REVIEW.txt"
+  ]
+}

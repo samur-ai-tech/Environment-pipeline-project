@@ -1,0 +1,39 @@
+--- fresh_delivery_21780.before_guard_log_coalescing.py
++++ fresh_delivery_21780.py
+@@ -1,5 +1,5 @@
+ """Task2 PID21780 delivery steps; persistent one-shot GameThread callbacks."""
+-import datetime,hashlib,json,os,sys,traceback
++import datetime,hashlib,json,os,sys,time,traceback
+ from pathlib import Path
+ ROOT=Path('C:/Users/USER/Documents/Unreal Projects/Environmentpipeline')
+ HERE=ROOT/'Staging/ManagedAstra_2026-10-03'
+@@ -8,13 +8,28 @@
+ PARENT='/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn'
+ FROZEN={'geocity_roadbld_junctions.py':'dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802','geocity_roadbld_workflow.py':'a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a','geocity_roadbld_grounding.py':'62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d','geocity_roadbld_clip.py':'872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211'}
+ ACTIVE=[]
++_GUARD_JOURNAL={}
+ def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+ def write(p,data):
+     with Path(p).open('w',encoding='utf-8') as f:json.dump(data,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+ def journal(s,event,**kw):
+     with s['journal'].open('a',encoding='utf-8') as f:f.write(json.dumps(dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),pid=os.getpid(),event=event,**kw))+'\n');f.flush();os.fsync(f.fileno())
+ def call(s,label,fn):
+-    journal(s,'BEFORE_NATIVE',operation=label);value=fn();journal(s,'AFTER_NATIVE',operation=label);return value
++    state=None;emit=True
++    if label in ('native.guard','parent.guard'):
++        state=_GUARD_JOURNAL.setdefault((str(s['journal']),label),{'last':float('-inf'),'calls':0,'omitted':0})
++        state['calls']+=1;now=time.monotonic();emit=now-state['last']>=1.0
++        if emit:
++            journal(s,'BEFORE_NATIVE',operation=label,guard_calls=state['calls'],omitted_log_pairs=state['omitted'])
++            state.update(last=now,omitted=0)
++        else:state['omitted']+=1
++    else:journal(s,'BEFORE_NATIVE',operation=label)
++    try:value=fn()  # Every original guard executes unconditionally, every call.
++    except Exception:
++        journal(s,'NATIVE_EXCEPTION',operation=label,error=traceback.format_exc(),guard_counters=state)
++        raise
++    if emit:journal(s,'AFTER_NATIVE',operation=label)
++    return value
+ def path(s,obj,label):return call(s,label+'.path',obj.get_path_name) if obj else None
+ def guards():
+     assert os.getpid()==21780

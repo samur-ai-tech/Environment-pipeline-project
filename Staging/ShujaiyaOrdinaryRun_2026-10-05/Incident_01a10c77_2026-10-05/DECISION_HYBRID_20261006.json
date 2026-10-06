@@ -1,0 +1,29 @@
+{
+  "schema": "environmentpipeline.manager_decision.v1",
+  "utc": "2026-10-06T07:48:10Z",
+  "manager": "cc37d4d2",
+  "aviv_decisions_2026-10-06": {
+    "ground_route": "Hybrid: project copy of MW auto-landscape master + Urban layer from Houdini Sand_Path/Dirt_Path weights (plan: Stage1_Ground/Hybrid_Auto/PLAN_HYBRID.md)",
+    "urban_texture_set": "Asphalt_cracked (ModularCourtyard)",
+    "urban_amounts": {
+      "pads": 1.0,
+      "roads": 1.0
+    },
+    "concurrent_bank_editor": "let it finish; manager waits for orderly release"
+  },
+  "accepted_profile_change_by_bank_chat": {
+    "utc": "2026-10-06T07:33:34Z",
+    "files": {
+      "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json": "1bd89e5bab88207dbaa340a8afc5b2c5a2e2a6544564fadecde07d979e3fd014",
+      "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json": "492b9ac54fc3e00d9055dff9bf48fc2002873fea1476d676279041d20bf72efa"
+    },
+    "change": "building_assembly_contract.source_family_registry_ref added (ModularConstruction registry 8d8622b2...); Path B leaves intact",
+    "acceptance": "ACCEPTED by manager with Aviv's \"let the bank finish\"; noted: no lease line was written by that chat (process violation, recorded, not reverted)"
+  },
+  "state": "Shujaiya profile points at MI_GeoCityGround_MW (absent on disk): NO regeneration until the hybrid MI exists and the profile is repointed; v2a and full-v2 shelved; Path B superseded by Hybrid.",
+  "bank_chat_activity_2026-10-06": {
+    "noted_utc": "2026-10-06T09:46:56Z",
+    "native_hda_now": "3cf1f84020c9783fe626766140e961e2175bf32976c6a04f518028fe13e6ff4a",
+    "note": "native HDA changed again at 07:33:34Z (ratified B2 was 2358c514); ~86 Content/Project packages written in the morning by the bank chat (registry/family work); editor PID35156 open >2h without a lease line. To be ratified as B3 together with the hybrid, after review."
+  }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1206,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Upper_Deco/deco_fire_escape_ladder"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.015,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"6x67x350\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"12.80\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"114\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1206,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"6x67x350\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"12.80\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"114\"}}"
+    }
+   ]
+  }
+ }
+}

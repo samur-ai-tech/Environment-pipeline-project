@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 60,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0014_Building_01.SM_H0014_Building_01"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Airconditioner_front1\",\"acbody1\",\"standard1\",\"Building_03_001_MTL\",\"Building_03_002_MTL\",\"Building_03_003_MTL\",\"Props_MTL\",\"Props2_MTL\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 60,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Airconditioner_front1\",\"acbody1\",\"standard1\",\"Building_03_001_MTL\",\"Building_03_002_MTL\",\"Building_03_003_MTL\",\"Props_MTL\",\"Props2_MTL\"]}"
+    }
+   ]
+  }
+ }
+}

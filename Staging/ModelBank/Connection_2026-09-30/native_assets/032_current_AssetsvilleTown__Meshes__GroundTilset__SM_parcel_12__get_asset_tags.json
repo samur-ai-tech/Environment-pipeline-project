@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 42,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_parcel_12"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"3200x1600x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parcel_12.fbx\\\", \\\"Timestamp\\\" : \\\"1535427409\\\", \\\"FileMD5\\\" : \\\"e44741c70f50ce9c4546195747e19d71\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"182\",\"UVChannels\":\"2\",\"Vertices\":\"364\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 42,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"3200x1600x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/parcel_12.fbx\\\", \\\"Timestamp\\\" : \\\"1535427409\\\", \\\"FileMD5\\\" : \\\"e44741c70f50ce9c4546195747e19d71\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"2\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"182\",\"UVChannels\":\"2\",\"Vertices\":\"364\"}}"
+    }
+   ]
+  }
+ }
+}

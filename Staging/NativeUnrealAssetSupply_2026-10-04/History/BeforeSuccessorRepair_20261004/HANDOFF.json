@@ -1,0 +1,112 @@
+{
+  "schema": "environmentpipeline.native_supply_handoff.v1",
+  "utc": "2026-10-04T14:55:05.781637+00:00",
+  "status": "RETAINED_ADAPTER_AND_MEASURED_ADDITIVE_TRANSACTION_READY_NATIVE_OWNER_DEPENDENCIES_OPEN",
+  "supplier_thread": "01a1075c-313d-7133-9bc5-580cb2681f9b",
+  "manager_thread": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "native_writer_thread": "01a1067c-5012-7550-b449-015b53c9d726",
+  "summary": {
+    "jobs": 180,
+    "by_status": {
+      "owner_existing_work": 13,
+      "ready_native_inspection": 68,
+      "blocked_source_registry_and_namespace_remap": 99
+    },
+    "by_source": {
+      "Current": 81,
+      "CitySample": 75,
+      "GISWorldBLD": 24
+    },
+    "by_role": {
+      "whole_warehouse": 2,
+      "modular_roof": 15,
+      "modular_corner": 32,
+      "warehouse_loading_opening": 2,
+      "modular_entrance": 10,
+      "modular_glazing": 12,
+      "wall_hosted_utility": 8,
+      "surface_material": 14,
+      "understory": 8,
+      "street_prop": 6,
+      "linear_boundary": 6,
+      "roof_hosted_utility": 5,
+      "sign_hosted": 1,
+      "tree": 10,
+      "modular_straight": 20,
+      "small_prop": 5,
+      "vegetation": 24
+    },
+    "canonical_existing": 51,
+    "unique_new_identity_candidates": 129
+  },
+  "source_version_evidence": "CitySample prior log shows UE5.8.2 CL56702186; matches installed engine; current native compatibility unverified.",
+  "first_concrete_supply": {
+    "existing_measured_modules": 7,
+    "new_native_operations": 0,
+    "held_registration_ready_ids": [
+      "native.Current.03d5b98d84743f46a66b09e1",
+      "native.Current.eb007c34606172659e7ec43f"
+    ],
+    "new_assets_copied": 0,
+    "existing_bank_rows_preserved": 1223,
+    "prepared_rows": 1225,
+    "transaction_sha256": "3bc3a60e1311889742915d773a43d12f65624f6023032728933920fbe617a397",
+    "native_apply_done": false
+  },
+  "verification": {
+    "status": "passed",
+    "checks": [
+      "deterministic_queue_rebuild",
+      "unique_job_ids",
+      "native_Game_contract",
+      "prepared_external_namespace",
+      "deterministic_additive_registration",
+      "all_preexisting_rows_exactly_preserved",
+      "new_rows_held_and_unselected",
+      "stale_mesh_rejected_before_bundle_write",
+      "canonical_source_unchanged",
+      "python_syntax"
+    ],
+    "native_tests_run": false,
+    "new_editors_launched": 0,
+    "queue_sha256": "34ea608b5b6ebceb15f887d840f312986fd06f962afd4876e4e1c36aef9ee747",
+    "transaction_sha256": "3bc3a60e1311889742915d773a43d12f65624f6023032728933920fbe617a397"
+  },
+  "next_coordinator_actions": [
+    "Review two-row held transaction and fixed1223 consumer dependency B001.",
+    "Dispatch WRITER_BATCH.json via current bank writer.",
+    "Review source-session/migration namespace contract B003; never use a second editor.",
+    "Assign exact missing consumers from ROLE_CONTRACTS.json."
+  ],
+  "not_completed": [
+    "external dependency closure",
+    "external native migration and namespace remap",
+    "new native table registration",
+    "new selection qualification",
+    "consumer implementation",
+    "area generation/Lit review/named save/reopen/regeneration"
+  ],
+  "ordinary_generation_authorized": false,
+  "shared_files_modified": false,
+  "native_originals_modified": false,
+  "blockers_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\BLOCKERS.json",
+  "artifacts": {
+    "adopt_measured.py": "1dd2932565748f0432c3815fe9d51b1c45919ebcad52fe0f39850007da1b6f13",
+    "ADOPTED_NATIVE_EVIDENCE.json": "279375c3a3beaf36b544e3507f1ff5b79f5b5d2b210672f429a069e2847f7d29",
+    "API_AND_VERSION_EVIDENCE.json": "e743347227cf634277354ab2ef42607b87a6673abda5f58f11a0cb57fd7286f9",
+    "BLOCKERS.json": "0130e744bc329ec794d56f9b05ebf82219a0a1b756c67bddee02449e3020dbd4",
+    "CATEGORY_OUTCOMES.json": "badc16ed1fc7be20207fab27b5399325ab44055032215cbf227f5f70ae6ee7c8",
+    "finalize.py": "ce32a6923844d3d58e5f26b8c41ef5e896bc48a3568a588cad08c5590ce86933",
+    "intake.py": "0e4c41e4071b0c21ac79d3d4fe066fde966de4861b4176bc95d1313e1aae20ae",
+    "native_supplier.py": "74be8e5f8cafd50309d5511c24534711651c07b4eb0a178e42f1d45ba1d40c70",
+    "PROFILE_PATCH_REQUEST.json": "bd444c0320aedb3da9fa2e1b465d575dba8ec7c437aacd688fb6ed09a2a4e387",
+    "READY_JOBS.json": "34ea608b5b6ebceb15f887d840f312986fd06f962afd4876e4e1c36aef9ee747",
+    "REGISTRATION_TRANSACTION.json": "3bc3a60e1311889742915d773a43d12f65624f6023032728933920fbe617a397",
+    "ROLE_CONTRACTS.json": "747f98f87125e798f43a402fe6d85e4174759640a30670353f753370842ea8b6",
+    "source_migration.py": "1fa7bb7d98dd12baf5c63731675452090351c7711add293fa8b65bc09f0acab4",
+    "SOURCES.json": "88ca9a47a0caaad0b08221032057a5c99cf089f29e728a7869628194a1835a5d",
+    "VERIFICATION.json": "8f09dfb5aca0ad4ec3f146173d27247ae3b8ec97536aafa96a6ef7c16b8b2992",
+    "verify_supplier.py": "8e07ec77ec2efcac328fc12f6d6a8c211a456fbf0cc0cfe75eeaa367d08a50d2",
+    "WRITER_BATCH.json": "2bada5eb8f57e473cd68aed98a67d11a26672da480babfdeefd920599c26ef81"
+  }
+}

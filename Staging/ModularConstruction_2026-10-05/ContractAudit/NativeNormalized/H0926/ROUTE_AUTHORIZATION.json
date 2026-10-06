@@ -1,0 +1,46 @@
+{
+  "schema": "environmentpipeline.modular_route_authorization.v1",
+  "approved": true,
+  "execution_mode": "connection",
+  "family_id": "source_derived_modular.H0926.v001",
+  "parent_asset_id": "external.H0926",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "source_family_sha256": "c3710ca364640dd0e21f312a21c884a7d6050cc54c7ce49b5f4a764de758c110",
+  "native_manifest_sha256": "d8bcc3fe6adfee859232b3069d138092fb671171e99a081c03d0780536888382",
+  "use_scope": "retained_complete_family_dependency",
+  "preserve_canonical_holds": true,
+  "actual_named_or_dependency_hold": false,
+  "allowed_area_ids": [
+    "GazaRimal",
+    "GazaShujaiya"
+  ],
+  "placement_scope": "approved_areas",
+  "allowed_source_osm_ids": {},
+  "capabilities": [
+    "exact_reconstruction"
+  ],
+  "allowed_repeat_counts": [
+    1
+  ],
+  "allowed_validation_gates": [
+    "houdini_repeat",
+    "official_engine_output",
+    "named_save",
+    "fresh_reopen",
+    "regeneration",
+    "native_material_visual_fidelity",
+    "native_reflection_normals_material_culling"
+  ],
+  "ordinary_selection_authorized": true,
+  "manager_scope_ref": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\ModularFamilyScopes\\H0926.json",
+    "sha256": "5628ec1d21b4c10cae85f0c73dba5048f6658e4c94adf8db6883a716bd8884f0"
+  },
+  "placement_plan_ref": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Validation\\QUALIFICATION_PLACEMENT_PLAN.json",
+    "sha256": "452d693e5ef56fb12e7f90d99ee9c59b0101ba1bb3883c91f2e50946ce205369"
+  },
+  "additional_test_cycles_requested": false,
+  "connection_without_additional_tests_authorized": true,
+  "unperformed_validation_remains_pending": true
+}

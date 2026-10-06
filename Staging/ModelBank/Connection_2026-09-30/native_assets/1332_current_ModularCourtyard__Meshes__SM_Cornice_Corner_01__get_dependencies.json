@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1342,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ModularCourtyard/Meshes/SM_Cornice_Corner_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ModularCourtyard/Mats/MI_Wall_Plaster_gray\",\"/Game/ModularCourtyard/Mats/MI_rail_balkony\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1342,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ModularCourtyard/Mats/MI_Wall_Plaster_gray\",\"/Game/ModularCourtyard/Mats/MI_rail_balkony\"]}"
+    }
+   ]
+  }
+ }
+}

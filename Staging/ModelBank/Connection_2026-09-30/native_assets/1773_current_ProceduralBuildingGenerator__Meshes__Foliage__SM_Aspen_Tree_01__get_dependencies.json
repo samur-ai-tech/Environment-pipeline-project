@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1783,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Foliage/SM_Aspen_Tree_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Foliage/MI_Aspen_Tree_Lit_Blowing\",\"/Game/ProceduralBuildingGenerator/Materials/Foliage/M_Aspen_Tree_Bark\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1783,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Foliage/MI_Aspen_Tree_Lit_Blowing\",\"/Game/ProceduralBuildingGenerator/Materials/Foliage/M_Aspen_Tree_Bark\"]}"
+    }
+   ]
+  }
+ }
+}

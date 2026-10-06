@@ -1,0 +1,43 @@
+Add_0 [Add]  A<-StaticSwitch_4:0 B<-FunctionInput_8:0
+AppendVector_0 [AppendVector]  A<-FunctionInput_9:0 B<-FunctionInput_9:0
+AppendVector_1 [AppendVector]  A<-AppendVector_0:0 B<-Constant_0:0
+Constant_0 [Constant] {"R": 1.0} 
+Constant3Vector_0 [Constant3Vector]  
+FunctionInput_0 [FunctionInput] {"InputName": "TextureBaseColor", "InputType": "FunctionInput_Texture2D"} Preview<-TextureObject_1:0
+FunctionInput_1 [FunctionInput] {"InputName": "TextureNormal", "InputType": "FunctionInput_Texture2D", "SortPriority": 1} Preview<-TextureObject_0:0
+FunctionInput_10 [FunctionInput] {"InputName": "AdvInstructions", "InputType": "FunctionInput_StaticBool", "SortPriority": 10} Preview<-StaticBool_0:0
+FunctionInput_11 [FunctionInput] {"InputName": "AdvInstructionsUVs", "InputType": "FunctionInput_StaticBool", "SortPriority": 11} Preview<-StaticBool_1:0
+FunctionInput_2 [FunctionInput] {"InputName": "DepthFadeMask", "InputType": "FunctionInput_Scalar", "SortPriority": 2} 
+FunctionInput_3 [FunctionInput] {"InputName": "UVNear", "InputType": "FunctionInput_Vector2", "SortPriority": 3} Preview<-TextureCoordinate_0:0
+FunctionInput_4 [FunctionInput] {"InputName": "UVFar", "InputType": "FunctionInput_Vector2", "SortPriority": 5} Preview<-TextureCoordinate_0:0
+FunctionInput_5 [FunctionInput] {"InputName": "ColorCorrection", "SortPriority": 8} Preview<-Constant3Vector_0:0
+FunctionInput_6 [FunctionInput] {"InputName": "UVFarMultiplier", "InputType": "FunctionInput_Scalar", "PreviewValue": "<unparsed StructProperty 16B: bad name idx 1065353216>", "SortPriority": 6} 
+FunctionInput_7 [FunctionInput] {"InputName": "UVNearMultiplier", "InputType": "FunctionInput_Scalar", "PreviewValue": "<unparsed StructProperty 16B: bad name idx 1065353216>", "SortPriority": 4} 
+FunctionInput_8 [FunctionInput] {"InputName": "WaterRefractionUV", "InputType": "FunctionInput_Vector2", "SortPriority": 7} 
+FunctionInput_9 [FunctionInput] {"InputName": "NormalIntensity", "InputType": "FunctionInput_Scalar", "PreviewValue": "<unparsed StructProperty 16B: bad name idx 1065353216>", "SortPriority": 9} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "BaseColor"} A<-StaticSwitch_2:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "NormalNear", "SortPriority": 1} A<-StaticSwitch_1:0
+FunctionOutput_2 [FunctionOutput] {"OutputName": "NormalFar", "SortPriority": 2} A<-StaticSwitch_0:0
+LinearInterpolate_26 [LinearInterpolate]  A<-TextureSample_9:0.RGB B<-TextureSample_18:0.RGB Alpha<-Multiply_5:0
+Multiply_0 [Multiply]  A<-FunctionInput_3:0 B<-FunctionInput_7:0
+Multiply_1 [Multiply]  A<-FunctionInput_4:0 B<-FunctionInput_6:0
+Multiply_2 [Multiply]  A<-TextureSample_25:0.RGB B<-AppendVector_1:0
+Multiply_3 [Multiply]  A<-TextureSample_2:0.RGB B<-AppendVector_1:0
+Multiply_4 [Multiply]  A<-FunctionInput_5:0 B<-LinearInterpolate_26:0
+Multiply_5 [Multiply] {"ConstB": 0.75} A<-FunctionInput_2:0
+StaticBool_0 [StaticBool]  
+StaticBool_1 [StaticBool]  
+StaticSwitch_0 [StaticSwitch]  A<-Multiply_3:0 B<-TextureSample_2:0.RGB Value<-FunctionInput_10:0
+StaticSwitch_1 [StaticSwitch]  A<-Multiply_2:0 B<-TextureSample_25:0.RGB Value<-FunctionInput_10:0
+StaticSwitch_2 [StaticSwitch]  A<-Multiply_4:0 B<-LinearInterpolate_26:0 Value<-FunctionInput_10:0
+StaticSwitch_3 [StaticSwitch]  A<-Multiply_1:0 B<-FunctionInput_4:0 Value<-FunctionInput_11:0
+StaticSwitch_4 [StaticSwitch]  A<-Multiply_0:0 B<-FunctionInput_3:0 Value<-FunctionInput_11:0
+TextureCoordinate_0 [TextureCoordinate]  
+TextureObject_0 [TextureObject] {"Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObject_1 [TextureObject] {"Texture": "TEX_MW_Temp_col"} 
+TextureSample_18 [TextureSample] {"SamplerSource": "SSM_Wrap_WorldGroupSettings"} Coordinates<-StaticSwitch_3:0 TextureObject<-FunctionInput_0:0
+TextureSample_2 [TextureSample] {"SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} Coordinates<-StaticSwitch_3:0 TextureObject<-FunctionInput_1:0
+TextureSample_25 [TextureSample] {"SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} Coordinates<-Add_0:0 TextureObject<-FunctionInput_1:0
+TextureSample_9 [TextureSample] {"SamplerSource": "SSM_Wrap_WorldGroupSettings"} Coordinates<-Add_0:0 TextureObject<-FunctionInput_0:0
+MF_MWAM_DefaultLayer [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_DefaultLayerEditorOnlyData", "CombinedInputTypes": 543, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_DefaultLayerEditorOnlyData [MaterialFunctionEditorOnlyData]  

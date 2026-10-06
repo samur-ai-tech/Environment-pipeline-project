@@ -1,0 +1,42 @@
+REUSABLE SKY — STAGE 1
+Native asset: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky.BP_EnvironmentSky
+Validated engine: Unreal Engine 5.8.2. Required plugin: Sun Position Calculator (SunPosition), now enabled in Environmentpipeline.uproject.
+
+NORMAL USE
+1. Drag BP_EnvironmentSky from the Content Browser into the scene. It starts inactive.
+2. Read Status and Conflict Actors. Preserve any existing lighting before disabling its conflicting DirectionalLight, SkyLight and SkyAtmosphere components. Also inspect sky domes and other sky-manager Blueprints; arbitrary vendor sky systems are not automatically recognized. The Blueprint never disables or deletes other actors.
+3. Enable Rig Enabled. If an existing visible sun, sky light or atmosphere remains, this rig stays inactive. After resolving an external conflict, press Update Sky or change a control to refresh the report.
+4. Set Latitude, Longitude, Year, Month, Day, Time Zone (UTC hours), and Use Daylight Saving Time. DST is an explicit one-hour correction, not an automatic regional calendar. Defaults are Gaza 31.52 N / 34.44 E, UTC+2, 21 June 2026, DST off.
+5. Adjust North Offset in degrees: 0 means world +X is north; positive rotation follows Unreal yaw. The red editor arrow indicates north. Set the sky actor somewhere convenient; the sun direction follows North Offset independently of the actor's rotation.
+6. Move Time Of Day between 0 and 24; Clock Display shows HH:MM. 12.5 is 12:30. 24 wraps to 00:00. Editor changes update immediately without Play. Clock Display, Status, Conflict Actors and Runtime Notes are computed displays; changing their text is not a sky control.
+7. Enable Manual Sun for artistic placement. Manual Direction is azimuth clockwise from north; Manual Elevation is degrees above the horizon, clamped to -90..90. Your stored time and manual values remain separate. Changing the time in Manual mode updates the clock but does not rotate the sun. Disable Manual Sun to resume the stored time calculation.
+8. Sun Intensity and Sky Intensity tune illumination. Override Exposure is OFF by default. To opt in, enable it and expand Exposure Settings > Lens > Exposure. Equal Min EV100 and Max EV100 values fix exposure (default 3). Those are native post-process settings; change only desired exposure overrides. Existing camera/volume priorities can still affect the final image.
+
+EDITOR AND RUNTIME
+Construction Script calls UpdateSky, and BeginPlay calls the same function. Runtime callers changing variables must call UpdateSky afterward. No editor or runtime time-animation loop is implemented. Runtime PIE/cooked application behavior has not been exercised in this delivery.
+The solar solver clamps invalid input ranges locally; use a valid calendar date for intentional results. Latitude -90..90, longitude -180..180, UTC -12..14, year 1..9999. Below-horizon direct sun intensity is zero. This is not a completed night-lighting system.
+
+RETAINED RIMAL INTEGRATION
+Original map: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Actor: EnvironmentSky (BP_EnvironmentSky_C_0), saved at 12:00 in Time mode.
+Original components disabled, with actors and all other settings retained:
+  DirectionalLight_0.LightComponent0
+  SkyLight_0.SkyLightComponent0
+  SkyAtmosphere_0.SkyAtmosphereComponent
+  StaticMeshActor_0.StaticMeshComponent0 (label SM_SkySphere)
+Full paths and prior visibility are in LIGHTING_RESTORATION.json. To restore original lighting, first disable Rig Enabled, then restore visibility on those four original components. Existing ExponentialHeightFog_0 and VolumetricCloud_0 were unchanged. Clouds in the evidence are the scene's existing clouds, not a feature supplied by Stage 1.
+
+PERSISTENCE AND PORTABILITY
+BP_EnvironmentSky and the Rimal map were explicitly saved and reopened in a fresh editor process. No Save All. No bank, model, material, ground, road, Houdini, generation profile or vendor package was saved by this task.
+To move the package to another compatible project, use Asset Actions > Migrate and enable Sun Position Calculator there. DEPENDENCIES.json lists the actual dependencies. The asset needs no authoring scripts, Python or PWL/MW package at runtime. Only this UE 5.8.2 project and Rimal map have been verified.
+
+VERIFIED
+Editor time/manual isolation; HH:MM; midnight wrap; repeatable solar direction; north rotation and arrow; leap-date input; explicit DST; optional exposure; conflict-safe inactive placement; morning/noon/evening appearance; named saves; clean fresh-process reopening.
+STILL UNVERIFIED / LATER SCOPE
+Packaged runtime, PIE interaction, migration to another project, second-map integration, all platform/renderer combinations, polar-day edge cases, and user visual acceptance. Cloud/haze controls, moon, stars and time animation belong to later stages.
+
+הוראות קצרות
+גרור את BP_EnvironmentSky לסצנה. בדוק שאין שמש או תאורת שמיים מתנגשות, ואז הפעל Rig Enabled.
+בחר תאריך, מיקום ואזור זמן. הזז את Time Of Day; השעה מוצגת ב־Clock Display והשינוי נראה בעורך בלי Play.
+North Offset קובע את כיוון הצפון. להפעלה ידנית סמן Manual Sun ושנה כיוון וגובה. השעה והערכים הידניים נשמרים בנפרד.
+במפת Rimal השחקן כבר נמצא ושמור בשעה 12:00. עננים, ירח וכוכבים אינם חלק מהשלב הזה.

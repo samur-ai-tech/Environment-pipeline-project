@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 840,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/FC_Coastal_Landscape/Landscape/MF_Soil1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.026,
+ "isError": null,
+ "text": "{\"returnValue\":{\"bExposeToLibrary\":\"False\",\"CombinedInputTypes\":\"0\",\"CombinedOutputTypes\":\"2063\",\"LibraryCategoriesText\":\"(NSLOCTEXT(\\\"MaterialExpression\\\", \\\"Misc\\\", \\\"Misc\\\"))\",\"MaterialFunctionUsage\":\"Default\",\"PreviewBlendMode\":\"BLEND_Opaque\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 840,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"bExposeToLibrary\":\"False\",\"CombinedInputTypes\":\"0\",\"CombinedOutputTypes\":\"2063\",\"LibraryCategoriesText\":\"(NSLOCTEXT(\\\"MaterialExpression\\\", \\\"Misc\\\", \\\"Misc\\\"))\",\"MaterialFunctionUsage\":\"Default\",\"PreviewBlendMode\":\"BLEND_Opaque\"}}"
+    }
+   ]
+  }
+ }
+}

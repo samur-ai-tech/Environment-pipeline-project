@@ -1,0 +1,40 @@
+ROADBLD RETAINED NATIVE ADAPTER - SOURCE HANDOFF (2026-10-03)
+
+Stable adapter: Content/Python/geocity_roadbld_workflow.py
+SHA256: c27c327c36fb314f8e4d95ff3a8892de6e23299c2e764d9ad6142999948dd7b5
+Owner: native_asset_audit; root is sole Unreal/editor writer.
+This handoff is source-ready. Native generation, suppression, save, reopen and visual acceptance have NOT been executed by this agent. Parent reports the native RoadBLD license is now true after user sign-in; the adapter still checks it at preflight/every callback.
+
+Use the normal geocity_bank_workflow.run(profile, action='regenerate') after root explicitly enables its roadbld_workflow option. Call geocity_roadbld_workflow.preflight(profile, reviewed_dirty_packages=reviewed_dirty) before any HDA mutation. The normal interface is build(profile, export=completed_hda_receipt['roadbld_centerlines'], settings=profile_settings, reviewed_dirty_packages=reviewed_dirty, on_complete=root_callback). Build returns a live run; callback(run, True) means generated/validated and UNSAVED. Root calls run.staged_contract(), verifies its exact live paths/lease/PID/token/map, and performs the official HDA suppression cook/Bake. Then run.commit(hda_receipt) verifies matching suppression/token and finalizes named saves. status(run) exposes bounded state. No implicit Houdini cook occurs inside this adapter.
+
+Architecture and retention
+- Native DynamicRoadNetwork owns DynamicRoad actors created from original geographic pieces, using typed RoadSplineAuthoringPoint records. X/Z source meters map to Unreal X/Y centimeters; corrected final terrain Y maps to Unreal Z centimeters plus one 5cm surface clearance.
+- All complete OSM ways are provenance only. Only exact in-area analytic-clipped pieces are authored, preserving every in-area original control point. Counts of original source ways and generated pieces are separate; this delivery happens to be24/24 Rimal and40/40 Shujaiya.
+- Area-scoped copies of installed native road/sidewalk Blueprint presets retain the vendor originals and dependencies. Source full widths are divided into two unmarked pavement bands. No inferred survey lane count, USA double yellow, parking, PCG, props, automatic crossing or landscape paint is introduced. Native sidewalk curbs use1.5m by class, service defaults0m.
+- One batched asynchronous native rebuild, then a second rebuild with generated junction landscape alignment disabled. Only owned kit landscape patches are disabled; final HDA terrain remains authoritative. Native kit children/attachments are included in ownership and dependency saves.
+- Authored native actors are retained in the real named map. No blind BakeRoadGeoToMesh call: that reflected API is void with settings/dialog behavior not proved. This result requires the native plugins; it is not claimed plugin-independent.
+
+Validation and source proof
+- AST syntax passed. Actual current r018 exports for BOTH retained areas passed finite/source-digest/frame/class/fullwidth/clipped-control/provenance checks and full geographic pad proof.
+- Rimal:24source ways,24pieces,13preset variants;269pads=209assembly+60whole. Actual assembly/source ring maximum error0.0000682394m; original road/source vertex maximum error0.0001726335m.
+- Shujaiya:40source ways,40pieces,6preset variants;398pads=357assembly+41whole. Actual assembly/source ring maximum error0.0000762939m; original road/source vertex maximum error0.0000629136m.
+- Every actual pad source ID is reconciled against original SHA-verified XML using the SAME local projection/float32/duplicate-collinear conditioning contract. All566 actual assembly footprint rings match; all101 whole-building geographic source IDs complete the exact667pad count. The source footprint derivation is validation only, with no new generator or bridge.
+- All667 real pad rings passed simple-polygon triangulation and area-preservation checks. Convex intersection area invariants passed.
+- Runtime validation requires exact authored controls, widths, complete piece/geometry coverage, no stale network, no native discovery junction/geometry issues, complete materials, physical native centerline <=50cm from original geography and final-ground profile <=10cm.
+- Actual native generated mesh components are read into transient unsaved DynamicMesh copies through installed GeometryScript. Every instance is expanded by its exact native world transform. Every generated native triangle is checked against the authoritative area rectangle and all geographic pad polygons. Any unsupported copy, empty native RoadGeo, boundary escape>2cm, summed protected-pad intersection>0.0001m2 or45second validation timeout prevents activation. Concrete component/pad/triangle conflicts are recorded. Conservative summed intersections may reject repeated overlapping surfaces; no false positive result is asserted.
+- Native GeometryScript, Transform.transform_location and exact ISM transform signatures were checked read-only by parent in the actual editor. Generated native geometry and these calls have NOT yet been exercised on a RoadBLD generation.
+
+Lifecycle and failure boundary
+The staged phase native_generated_validated_pending_save has saved=false and a live token bound to PID/lease/revision/map. HDA suppression consumes only that exact validated transaction, retains pedestrian/track surfaces, and exports the original contract. commit refuses any receipt without matching provider/area/source/centerline/sourceIDs/pieceIDs/count/token and confirmed suppressed vehicle surfaces. Only after completed HDA Bake/old scoped HDA cleanup does commit remove prior native actors listed in their receipt and save named dependencies/map. The root's saved-contract persistence/final named map save follows. There is no intermediate map save with both visible road providers.
+
+If generation fails, the previous saved delivery receipt/map are preserved. Exact staged paths are recorded and no broad rollback or Save All occurs. Root must reconcile those paths before retry; the adapter rejects unrecorded owned staging. Native runtime may enforce a larger radius or produce full-width road caps/sidewalks beyond the map or building pads. These remain concrete runtime blockers to solve through supported native settings/geometry; source plan success does not release them or assert final roads work.
+
+Evidence files
+Staging/Diagnostics_2026-10-03/ROADBLD_FIT_AUDIT.txt
+Staging/AppearanceRepair_2026-10-03/NATIVE_API_PROBE.json
+Staging/AppearanceRepair_2026-10-03/ROADBLD_CONTRACT_PROPOSAL.json
+Staging/ModelBank/PermanentIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json
+Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json
+Installed exact APIs: Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Toolsets/; Plugins/RoadBLD/Intermediate/Build/Win64/UnrealEditor/Inc/RoadBLDRuntime/UHT/; UE5.8 GeometryScripting public SceneUtilityFunctions.h/MeshQueryFunctions.h/ListUtilityFunctions.h.
+
+No editor launch, app mutation, native cook/build/save, source profile/lifecycle edits, native original asset edits or rights/hold releases were performed by this agent. Actual licensed native lifecycle and two-map visual/persistence verification belong to root.

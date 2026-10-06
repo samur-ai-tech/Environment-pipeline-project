@@ -1,0 +1,127 @@
+{
+  "manifest": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\manifest.json",
+  "area_bounds": {
+    "west": 34.443,
+    "south": 31.516,
+    "east": 34.449,
+    "north": 31.521,
+    "note": "OSM extract box and <bounds>; about 570 m x 554 m"
+  },
+  "origin": {
+    "lon0": 34.446,
+    "lat0": 31.5185,
+    "rule": "centre of the OSM <bounds> box (CONTRACT.md section 2)"
+  },
+  "local_frame": {
+    "Mlat_m_per_deg": 110878,
+    "Mlon_m_per_deg": 94983,
+    "x_east_m": "(lon - lon0) * Mlon",
+    "y_north_m": "(lat - lat0) * Mlat",
+    "unreal": "X = x * 100, Y = -y * 100 (south), Z = H * 100, centimetres",
+    "status": "provisional values from CONTRACT.md section 2, pending Track A tests; used only for the distances in validation/control_points.json"
+  },
+  "files": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\GazaRimal_2023-01-01.osm",
+      "recorded_sha256": "f1c6cf0e9093a73174fdb8402d0c1d4e5a484c8dee81d3699940ac03f4e716c4",
+      "actual_sha256": "f1c6cf0e9093a73174fdb8402d0c1d4e5a484c8dee81d3699940ac03f4e716c4",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\GazaRimal_2023-01-01.osm.pbf",
+      "recorded_sha256": "0b82a976784e01802d875bac6aceb752fb4e3203af433562fa6e783387b10a53",
+      "actual_sha256": "0b82a976784e01802d875bac6aceb752fb4e3203af433562fa6e783387b10a53",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\intermediate\\GazaRimal_2023-01-01_step1_extract.osm",
+      "recorded_sha256": "f475a0484a55a19781528e2893949b0e35b426732703f0ba745886c54b6f5cdb",
+      "actual_sha256": "f475a0484a55a19781528e2893949b0e35b426732703f0ba745886c54b6f5cdb",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\intermediate\\GazaRimal_2023-01-01_step1_extract.osm.pbf",
+      "recorded_sha256": "144b6a50a85300d1de0c33d2d17323cb454d68ae11698913049233537faa94d3",
+      "actual_sha256": "144b6a50a85300d1de0c33d2d17323cb454d68ae11698913049233537faa94d3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\query.txt",
+      "recorded_sha256": "087a6def55be69394d65a4e51caca5ea7c79440e043b77f55d7db35e8763f3e8",
+      "actual_sha256": "087a6def55be69394d65a4e51caca5ea7c79440e043b77f55d7db35e8763f3e8",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\osm\\LICENSE_ODbL.txt",
+      "recorded_sha256": "4f0ddf07e82822d7664b22553ed8219de9bff3cdc1e1d7b45b76b14a248909d3",
+      "actual_sha256": "4f0ddf07e82822d7664b22553ed8219de9bff3cdc1e1d7b45b76b14a248909d3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\copdem_N31_E034.tif",
+      "recorded_sha256": "d157903d3c8adb88598def6c1e40f938ecf7a366a598aa000fe45de250ea756a",
+      "actual_sha256": "d157903d3c8adb88598def6c1e40f938ecf7a366a598aa000fe45de250ea756a",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\copdem_N31_E034.xml",
+      "recorded_sha256": "beefb577f8b359897670f066a73a0833bd5ea0122bf61762cbe30a06222045d3",
+      "actual_sha256": "beefb577f8b359897670f066a73a0833bd5ea0122bf61762cbe30a06222045d3",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\copdem_N31_E034_sources.kml",
+      "recorded_sha256": "e6d980ddcff71075037aea37d2e5f7eabe24111d10db03c01b5f5a4949b563cb",
+      "actual_sha256": "e6d980ddcff71075037aea37d2e5f7eabe24111d10db03c01b5f5a4949b563cb",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\COPDEM_license.pdf",
+      "recorded_sha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+      "actual_sha256": "9cd37d37ea654bbcaf0a2e059e6a3a5b5f76072824d8dd860ccf274ada8951bd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\GazaRimal_dsm_egm2008_m.tif",
+      "recorded_sha256": "a8230ea4c118ee22234c21182378dd52ddfe4f5be55d1c6095b65ecc6bcacb47",
+      "actual_sha256": "a8230ea4c118ee22234c21182378dd52ddfe4f5be55d1c6095b65ecc6bcacb47",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\elevation\\COPERNICUS_NOTICE.txt",
+      "recorded_sha256": "8ef455ad4c3977248787c8ec2a0fbb20b7edb8429f8798e9f9c2eca39d6e528e",
+      "actual_sha256": "8ef455ad4c3977248787c8ec2a0fbb20b7edb8429f8798e9f9c2eca39d6e528e",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\tools\\osm_counts.py",
+      "recorded_sha256": "30241496c6cdea723720c078511c22be6f9c833c5f95d27b6122c0ad77330b74",
+      "actual_sha256": "30241496c6cdea723720c078511c22be6f9c833c5f95d27b6122c0ad77330b74",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\tools\\control_points.py",
+      "recorded_sha256": "c36ae1de27327cd02c858f2cdeb67d332800e83d6d720160f32084925d4178f2",
+      "actual_sha256": "c36ae1de27327cd02c858f2cdeb67d332800e83d6d720160f32084925d4178f2",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\tools\\qgis_view.py",
+      "recorded_sha256": "e0ffefa025e6df605b8864f885e48e35ed30f9668ae692bbb74df545f9a658bd",
+      "actual_sha256": "e0ffefa025e6df605b8864f885e48e35ed30f9668ae692bbb74df545f9a658bd",
+      "matches": true
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\GazaRimal\\tools\\README.md",
+      "recorded_sha256": "bac4b651fa4f807d1b97c96998c8b49b8573360cc9530e97be22c48387f861e9",
+      "actual_sha256": "bac4b651fa4f807d1b97c96998c8b49b8573360cc9530e97be22c48387f861e9",
+      "matches": true
+    }
+  ],
+  "control_points_in_files": false,
+  "control_points_sha256": "68c7a3ed28be47f3d314d6a5fec2b95e8bd1c196eabc80acdace433ae34fa351",
+  "hda_files_excluding_backup": [
+    "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\CityProof\\B1_probebox.hdalc",
+    "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\CityProof\\B2_labs_osm.hdalc"
+  ]
+}

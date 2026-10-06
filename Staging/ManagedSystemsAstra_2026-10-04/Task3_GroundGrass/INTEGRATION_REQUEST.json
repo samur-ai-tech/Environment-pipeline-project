@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_READY_FOR_MANAGER_REVIEW",
+  "owner": "task3",
+  "interface_change": {
+    "function": "geocity_landscape_workflow.verify_landscape(run, landscape, receipt)",
+    "compatible_keys_retained": [
+      "ground_paint_weight_observed",
+      "native_grass_instance_count",
+      "paint_weight_readback"
+    ],
+    "new_gate": "paint_ready",
+    "reason": "Ground alone can be nonzero with missing, unnormalized or misrouted road/pad/steep paint. paint_ready requires finite normalized four-target samples, all four roles observed and manager-owned known-location probes passing; zero readback remains pending.",
+    "task1_requested_patch": {
+      "file": "Content/Python/geocity_bank_workflow.py",
+      "location": "finish_save after verify_landscape, existing bounded 120s readiness wait before obsolete actor retirement/saves",
+      "replace_condition": "if not grass['ground_paint_weight_observed']:",
+      "with_condition": "if not grass['paint_ready']:",
+      "retain": "existing bounded callback retry and no save before readiness; include pending_sample_ids, unobserved_roles and paint_contract_failures in failure receipt; also include missing_known_exclusion_roles and known_exclusion_probe_ids_passed",
+      "cooked_postprocess": "Record readback only; do not fail solely for zero CPU paint weights before Bake."
+    }
+  },
+  "manager_profile_patch_file": "Staging/ManagedSystemsAstra_2026-10-04/Task3_GroundGrass/PROFILE_PATCHES.json",
+  "native_acceptance_separate": "Task4 must move to known Ground best_sample for actual near Lit review, use inspect_near_view with actual camera location, save/reopen/regenerate; cache is not visual acceptance.",
+  "source_edits_other_owners": false,
+  "source_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+  "manager_profile_integration": "Manager reports applied; current on-disk declared fields verified, PROFILE_CURRENT_READBACK.json"
+}

@@ -1,0 +1,3694 @@
+[
+  {
+    "asset_id": "external.H0017",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\external_H0017\\Prepared.blend",
+    "prepared_blend_sha256": "bb0a2f3b95ca94c78d65d58ff6a0484db37cf5a552ce1e587c7ac7f7cd41efcc",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "_Building_05_cloths",
+        "prepared_material_name": "_Building_05_cloths",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_cloths_BaseColor_8c3148849a28.png",
+            "sha256": "8c3148849a28d829d284e075361b74622b1e91c6422381550c2443e35839cf3e",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_cloths_Normal_3cbef5c4afa7.png",
+            "sha256": "3cbef5c4afa734094f340f7ee64ee069f1aa6ec72598ffc3aa045b125e9f9c32",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_cloths_MaskMap_eed3d454821a_ORM_e701de827c2143.png",
+            "sha256": "4f26796ba8b877ad4c42079015c5e5684a72e874923bb5dcdac658b39b2828e0",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 1,
+        "source_material": "_building_5_M3",
+        "prepared_material_name": "_building_5_M3",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M3_BaseColor_b09f51380ea1.png",
+            "sha256": "b09f51380ea1fa171f3e7068037799d83a7a5f56a9b384a3970588e9cf4715e1",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M3_Normal_aadd9920f9c0.png",
+            "sha256": "aadd9920f9c02920e3503306918aca32e736ce7589e1bb5618891e689074cbd1",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M3_MaskMap_d3efd84cd166_ORM_a27459ac66f11c.png",
+            "sha256": "3daa98cc7ea1c0d6de7cf632409d6489c5301e2afa32e8a6af25828d8cba4348",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 2,
+        "source_material": "_Building_5_M4",
+        "prepared_material_name": "_Building_5_M4",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M4_BaseColor_eab1b02296a8.png",
+            "sha256": "eab1b02296a8c0bf88453aee7ed79bce5f70e596b9d8b02def578dc2adbfdb8b",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M4_Normal_563ef62840e0.png",
+            "sha256": "563ef62840e0d4cd7ee74db62c17323b8d8e3a0fd01b6734cb1c88c006416f7c",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_M4_MaskMap_871f9e5c6678_ORM_3366d5bb099e0b.png",
+            "sha256": "6f5c57eba71bef8c799e67a0d2d84bd39663b5659daae8e401091a148b493901",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 3,
+        "source_material": "_Building_05_props",
+        "prepared_material_name": "_Building_05_props",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_BaseColor_91d9c3c4978e.png",
+            "sha256": "91d9c3c4978e8a857fc0e58fafca6d725099b3a38b112d9ea83136cf505aa133",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_Normal_8f521bd0d9e3.png",
+            "sha256": "8f521bd0d9e32ed194c826351b33aff64f5acd70a7bb127fc1f611675992560b",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_MaskMap_3a8620960b13_ORM_f4bf9231f54b44.png",
+            "sha256": "8316d604883d50b587b4659bf9d8e66eec0ec7c71d0c15f8f97694f083b9ef86",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 4,
+        "source_material": "_lambert2",
+        "prepared_material_name": "_lambert2",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_BaseColor_91d9c3c4978e.png",
+            "sha256": "91d9c3c4978e8a857fc0e58fafca6d725099b3a38b112d9ea83136cf505aa133",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_Normal_8f521bd0d9e3.png",
+            "sha256": "8f521bd0d9e32ed194c826351b33aff64f5acd70a7bb127fc1f611675992560b",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_props_MaskMap_3a8620960b13_ORM_f4bf9231f54b44.png",
+            "sha256": "8316d604883d50b587b4659bf9d8e66eec0ec7c71d0c15f8f97694f083b9ef86",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 5,
+        "source_material": "Airconditioner_inverter_textured:Airconditioner_front1",
+        "prepared_material_name": "Airconditioner_inverter_textured:Airconditioner_front1",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.3480798006057739,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": []
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_ACON_Front_3b3c4559d236.png",
+            "sha256": "3b3c4559d236d5d74fc12c79c07f5c6f0855eaa41df73e721111cc86057cadf9",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 6,
+        "source_material": "Airconditioner_inverter_textured:acbody1",
+        "prepared_material_name": "Airconditioner_inverter_textured:acbody1",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.5309584140777588,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": []
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_ACON_2c98a6224ef0.png",
+            "sha256": "2c98a6224ef087da7beed7374b5119b5c0c027e4cd12c906fa383d953c90f1e1",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 7,
+        "source_material": "Airconditioner_inverter_textured:standard1",
+        "prepared_material_name": "Airconditioner_inverter_textured:standard1",
+        "backface_culling": false,
+        "diffuse_color": [
+          0.5018999576568604,
+          0.5018999576568604,
+          0.5018999576568604,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              0.5018999576568604,
+              0.5018999576568604,
+              0.5018999576568604,
+              1.0
+            ],
+            "links": []
+          },
+          "Metallic": {
+            "default": 0.5,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.5309584140777588,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 1.0,
+            "links": []
+          }
+        },
+        "linked_images": [],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 8,
+        "source_material": "_wood_Mtl",
+        "prepared_material_name": "_wood_Mtl",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_Wood_BaseColor_6ed0865e36be.png",
+            "sha256": "6ed0865e36be10f56295e415d69920962c596b9e2cddcd291db0bf0c6bb4c03d",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_Wood_Normal_5f0ff92852d0.png",
+            "sha256": "5f0ff92852d0f4fc770bc00758ccf8314be5855ee9619f1f13fbda1b3daa772e",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_Wood_MaskMap_1d6408f3b0f3_ORM_aa7c38c64baeeb.png",
+            "sha256": "3d1032385d34c1902a42cf2a3acde0e02962753dd6924ee120869d7f407d0dca",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_material_render": null,
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "source_objects": [
+      "Building_base",
+      "Cloths",
+      "Details",
+      "Doors",
+      "Glass",
+      "Windows",
+      "balkons"
+    ],
+    "material_transfer_status": "recipe_saved_native_binding_pending",
+    "native_material_behavior_exceptions": []
+  },
+  {
+    "asset_id": "external.H0018",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\external_H0018\\Prepared.blend",
+    "prepared_blend_sha256": "13d8cdfe1107d02439693bdd0c8b8e99cc41d48b77d8e67968a0d81a8610e19c",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "standardSurface9SG",
+        "prepared_material_name": "standardSurface9SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M04_lbedoTransparency_d5b29eb476b1.png",
+            "sha256": "d5b29eb476b1e560c6f59ddb449500f602e556e3b69fd4b982b7543a9a5a537d",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M04_Normal_37c693da5578.png",
+            "sha256": "37c693da55784973ffed77330f8b7369b42c54de254eb3fee66a1d3100186f0c",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M04_MaskMap_2088f1e858cd_ORM_b8bcce58edd710.png",
+            "sha256": "cbf1c957ef22861eb09bdce1b347731eaa946e8b0f35678fbc12ed928659f8bf",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 1,
+        "source_material": "standardSurface5SG",
+        "prepared_material_name": "standardSurface5SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          0.07840000092983246,
+          0.07840000092983246,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M01_lbedoTransparency_d7c8fabb5109.png",
+            "sha256": "d7c8fabb51090a9c2ef9a7ff4aed94ddfa2da67e43b7ea7451776c5a0ec6bdad",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M01_Normal_78ee71067bb7.png",
+            "sha256": "78ee71067bb77944c9c31b99a618777f46930e2a172297ea6713bf47e450866d",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M01_MaskMap_f8b8491c2eaa_ORM_67fb45f4f9d3f9.png",
+            "sha256": "a16fec2d94c975bed4475cad927694cd463c7afee79a4cada9aa3760d03f3fd4",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 2,
+        "source_material": "standardSurface6SG",
+        "prepared_material_name": "standardSurface6SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M02_lbedoTransparency_5edf49b89a06.png",
+            "sha256": "5edf49b89a062ecd7645732f382a6a78f28a552eeccda597131481fe2e88dc46",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M02_Normal_d0667724f33f.png",
+            "sha256": "d0667724f33f4ad7e2c2e076192f3e9af406cf3a3dcc7ab0b2e117539c870d3e",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M02_MaskMap_d1309806fae7_ORM_0e1aba6076e833.png",
+            "sha256": "a07f4340f1e263bec451ba75aa3ec45afe2ccd5737e741c365f55813d04c285a",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 3,
+        "source_material": "standardSurface8SG",
+        "prepared_material_name": "standardSurface8SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M03_lbedoTransparency_4a4cddeb9d81.png",
+            "sha256": "4a4cddeb9d819fd3a7d42c36fe50b7c7ea24ec1262bd91fb4d8850a44a1faa92",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M03_Normal_41a265da6b87.png",
+            "sha256": "41a265da6b874e13aaf1cae03559397288551e3ce26104c93679c8acac17068f",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B06_M03_MaskMap_8f9834789ce6_ORM_6862d4be737b3a.png",
+            "sha256": "ab69ee812e0a2fdcd753a184eaa04436dd79054abb3aed2a57fe6de11f6bba53",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_material_render": null,
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "source_objects": [
+      "Balkon_Fense",
+      "Builging_Base",
+      "Builging_BasePavement",
+      "Details1",
+      "Glass",
+      "Roof",
+      "Windows"
+    ],
+    "material_transfer_status": "recipe_saved_native_binding_pending",
+    "native_material_behavior_exceptions": []
+  },
+  {
+    "asset_id": "external.H0019",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\external_H0019\\Prepared.blend",
+    "prepared_blend_sha256": "9326eccab3180e50bda5aef53fed4ce3254961a1e677cc4d09867e9648fe221c",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "Mat_004",
+        "prepared_material_name": "Mat_004",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M04_AlbedoTransparency_4cf1a2cdd004.png",
+            "sha256": "4cf1a2cdd0040ca40af14e65c6faf2a160b76e184a5964cb2b48d7d85bebeb32",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M04_Normal_ddcdf4e38bba.png",
+            "sha256": "ddcdf4e38bba1a7246be2f6776452ddaf3c5151641d36e1eebcffb0c5e13e71c",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M4_MaskMap_d9e96425277e_ORM_62a7355c47a0ec.png",
+            "sha256": "801a53fb45a825e62e51509227b01dfaed3cf17f31e0fe037c97c9598817617f",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 1,
+        "source_material": "Mat_003",
+        "prepared_material_name": "Mat_003",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M03_AlbedoTransparency_34a3e29f3e8d.png",
+            "sha256": "34a3e29f3e8da8377881e3e000253e977121c85a0e506478b0e87b95e76e4b1c",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M03_Normal_824bce6ed353.png",
+            "sha256": "824bce6ed35393bb8bae51499d2e47fdac3687f8ae48f4c3df787f675d58f0b5",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M3_MaskMap_84166c91d324_ORM_baface20ddc4c5.png",
+            "sha256": "2623bb25c9bb516f12ccaf31ab8821d0b385ee1f0fabad3e23567c5baf4166d3",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 2,
+        "source_material": "Mat_002",
+        "prepared_material_name": "Mat_002",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M02_AlbedoTransparency_16ab4708d3e8.png",
+            "sha256": "16ab4708d3e882b31465fa08e7a17bc853480d67ed4ada3785bd533a02c92798",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M02_Normal_525c4f484083.png",
+            "sha256": "525c4f4840834d38c71cf7ec3963799039bf8df015dd1b11a92d7f99b2ae940d",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M2_MaskMap_d9447e436d3f_ORM_e13ad6f3a8cb6c.png",
+            "sha256": "c76b332dc14c9bf3e9d5228d74d02b9f76b20978bb2c48c77073163667621da4",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 3,
+        "source_material": "Mat_001",
+        "prepared_material_name": "Mat_001",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M01_AlbedoTransparency_c3eac19be94b.png",
+            "sha256": "c3eac19be94bed5c786407ac375d50fec93c1da76296e25c67b1815963205c36",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M01_Normal_e1c3f534a999.png",
+            "sha256": "e1c3f534a999b8d2e1fe2bc40120fee7c329698b4f88cf6ad7a18778f84a6da9",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B07_M1_MaskMap_b013435aa9b8_ORM_052ecd4c3bae0b.png",
+            "sha256": "1755bbb2b1a2ff463cf43c24d2f87efff04ddec42f22fd8e112cbf2d73e1acb7",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_material_render": null,
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "source_objects": [
+      "Balkone",
+      "Base",
+      "Base.001",
+      "Details1",
+      "Windows"
+    ],
+    "material_transfer_status": "recipe_saved_native_binding_pending",
+    "native_material_behavior_exceptions": []
+  },
+  {
+    "asset_id": "external.H0020",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\external_H0020\\Prepared.blend",
+    "prepared_blend_sha256": "421d6fd484968ac7210e6b156ca0c3b469f2a42b96d15b640f4100079d10d0ae",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "aiStandardSurface1SG",
+        "prepared_material_name": "aiStandardSurface1SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M01_lbedoTransparency_1cddd34c4a99.png",
+            "sha256": "1cddd34c4a997a17b2fc11ec6dd3a6183cc68c7d3288d941a5c3d2620ed3691d",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M01_Normal_d6483aaad19f.png",
+            "sha256": "d6483aaad19f8aa5acec205797e483f7135871b5df270589ddd88b61828fd18e",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M01_MaskMap_b3310895cd55_ORM_14832f5769c618.png",
+            "sha256": "59b5dce8bb69836439f52832e442caba40f8a12fd8589a0d3786ab760fc00586",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 1,
+        "source_material": "aiStandardSurface3SG",
+        "prepared_material_name": "aiStandardSurface3SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M03_lbedoTransparency_abe834ecbee8.png",
+            "sha256": "abe834ecbee82593050752da09d0f2500a62f5bcdfed1b036eeafff5e566b23e",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M03_Normal_0f91772e8b3a.png",
+            "sha256": "0f91772e8b3acc9665f0f531e7238666154181ef7ea96cb5b9be2fcfdddd1247",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M03_MaskMap_7f3abac88953_ORM_ada2e46418cc91.png",
+            "sha256": "52aea8b240de7d20f9274f7e0490275123500248eebab3172153a2c1a19de20c",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 2,
+        "source_material": "aiStandardSurface2SG",
+        "prepared_material_name": "aiStandardSurface2SG",
+        "backface_culling": true,
+        "diffuse_color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M02_lbedoTransparency_d306960837eb.png",
+            "sha256": "d306960837ebb774a5bc7f6a48b670b4465b7d91555b420318254126dd868d52",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M02_Normal_82a60ce1577d.png",
+            "sha256": "82a60ce1577d3abd14fc049f04d737736cf579fc218b1bcfa6e7a3a8515ca3d6",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B08_M02_MaskMap_d6f897f62c8e_ORM_f6fcc54c69a0eb.png",
+            "sha256": "6bfb3f3497ea64febfbc5eaad3b9e8e032693ee7dedfa0b74e83bcd8d3954cbb",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_material_render": null,
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "source_objects": [
+      "Building_08.001",
+      "Building_08_Base",
+      "Details",
+      "Stairs"
+    ],
+    "material_transfer_status": "recipe_saved_native_binding_pending",
+    "native_material_behavior_exceptions": []
+  },
+  {
+    "asset_id": "external.H0021",
+    "prepared_blend": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Prepared_2026-10-04\\external_H0021\\Prepared.blend",
+    "prepared_blend_sha256": "5e83a3634e75be8dbc9104c6681a2e1dbcdefbaf18226bee8f7d6accdaa413fe",
+    "materials": [
+      {
+        "slot": 0,
+        "source_material": "stara",
+        "prepared_material_name": "stara",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_stara_BaseColor_9965bf1b0631.png",
+            "sha256": "9965bf1b063129c2f407d0135c83d6d02069c8f9e48a45745e2deeb7bad0c405",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_stara_Normal_d58d7ec7b773.png",
+            "sha256": "d58d7ec7b773e6bbda33716cd8ea53d847d8e67baef0b7560fccbdf609ca5eee",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_stara_MaskMap_7898a37ebad8_ORM_e137fbcd6f3d3b.png",
+            "sha256": "155102dc639ea9de18e2040bd558f3d700c3b1e7165f01bd63865c890433b4f7",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 1,
+        "source_material": "Building_09_M1",
+        "prepared_material_name": "Building_09_M1",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M1_BaseColor_42dc7a7439c5.png",
+            "sha256": "42dc7a7439c528593ff521fe4d68bc62c13131939f7eff23402dc61180564b06",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M1_Normal_c2330f7b66ff.png",
+            "sha256": "c2330f7b66ffbc940654be02314a1b918c660afe66c6f37ecf50945f1589a7ce",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M1_MaskMap_8b074e1ad164_ORM_0d12b5c930bcd7.png",
+            "sha256": "d9dfce23f21f2e2f9401f3a58de80acb124067a3b434804693ba20f39ed3aadb",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 2,
+        "source_material": "Building_09_M2",
+        "prepared_material_name": "Building_09_M2",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M2_BaseColor_df2c1bdc7adb.png",
+            "sha256": "df2c1bdc7adb137800902cf0004a3061729310716f014c3c3d389b9c27ab520b",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M2_Normal_8e8f980064cc.png",
+            "sha256": "8e8f980064cc7e0112ce06489bf267855ea9b5c2e18b06a7e7ca9ce0e0829f12",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M2_MaskMap_41561666ff06_ORM_2a5ad0cb089f5c.png",
+            "sha256": "3b4e73eb9ec806638c7d72115f1db96220bfe873ec4c314a08e73edee186b2bb",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 3,
+        "source_material": "Cloth_MTL",
+        "prepared_material_name": "Cloth_MTL",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_Cloth_BaseColor_60d94b56f4ae.png",
+            "sha256": "60d94b56f4ae09eff60f74655be97f9295a8d1fa6857f1458c7303a9e4a583cb",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_Cloth_Normal_0e6e88d133c9.png",
+            "sha256": "0e6e88d133c99edab35da30243039a792e206cfd30ce65141dfbbd3bbdc56794",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_Cloth_MaskMap_27c526c917b2_ORM_a74a1ef4e13b6f.png",
+            "sha256": "4a4ab7c7a74fa24f06319790fb7d9f23793a00c0cdd57284f20d6b0674574865",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 4,
+        "source_material": "Airconditioner_front",
+        "prepared_material_name": "Airconditioner_front",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.3480798006057739,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": []
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_ACON_Front_3b3c4559d236.png",
+            "sha256": "3b3c4559d236d5d74fc12c79c07f5c6f0855eaa41df73e721111cc86057cadf9",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 5,
+        "source_material": "acbody",
+        "prepared_material_name": "acbody",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.5309584140777588,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": []
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B05_ACON_2c98a6224ef0.png",
+            "sha256": "2c98a6224ef087da7beed7374b5119b5c0c027e4cd12c906fa383d953c90f1e1",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 6,
+        "source_material": "standard",
+        "prepared_material_name": "standard",
+        "backface_culling": false,
+        "diffuse_color": [
+          0.5018999576568604,
+          0.5018999576568604,
+          0.5018999576568604,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              0.5018999576568604,
+              0.5018999576568604,
+              0.5018999576568604,
+              1.0
+            ],
+            "links": []
+          },
+          "Metallic": {
+            "default": 0.0,
+            "links": []
+          },
+          "Roughness": {
+            "default": 0.858578622341156,
+            "links": []
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 1.0,
+            "links": []
+          }
+        },
+        "linked_images": [],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      },
+      {
+        "slot": 7,
+        "source_material": "Building_09_M3",
+        "prepared_material_name": "Building_09_M3",
+        "backface_culling": true,
+        "diffuse_color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "principled_inputs": {
+          "Base Color": {
+            "default": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "links": [
+              {
+                "node": "Image Texture",
+                "type": "TEX_IMAGE",
+                "output": "Color"
+              }
+            ]
+          },
+          "Metallic": {
+            "default": 1.0,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Blue"
+              }
+            ]
+          },
+          "Roughness": {
+            "default": 0.5527864098548889,
+            "links": [
+              {
+                "node": "Separate Color",
+                "type": "SEPARATE_COLOR",
+                "output": "Green"
+              }
+            ]
+          },
+          "Alpha": {
+            "default": 1.0,
+            "links": []
+          },
+          "Normal": {
+            "default": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "links": [
+              {
+                "node": "Normal Map",
+                "type": "NORMAL_MAP",
+                "output": "Normal"
+              }
+            ]
+          },
+          "Emission Color": {
+            "default": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "links": []
+          },
+          "Emission Strength": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "linked_images": [
+          {
+            "node": "Image Texture",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M3_BaseColor_eb1e0eee0486.png",
+            "sha256": "eb1e0eee0486f5137a3f82f51c49f40ae6039d137da6d9311c47fbb506d249ea",
+            "colorspace": "sRGB",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Principled BSDF.Base Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.001",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M3_Normal_8edd9248e6a7.png",
+            "sha256": "8edd9248e6a779b9663233eb61b4dae9737827921881949fa38cec225f1b31b4",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Normal Map.Color"
+                ]
+              }
+            ]
+          },
+          {
+            "node": "Image Texture.002",
+            "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\GIS_WorldBLD\\SourceData\\ModelBanks_Archive\\Unreal_Model_Library_2026-09-24\\Sources\\Hergel\\Blender\\Architecture\\..\\..\\Textures\\B09_M3_MaskMap_c293b6bdc9e7_ORM_8138cab21e70d8.png",
+            "sha256": "669633203a450f815f6d67a79e05acc5c3059a12ad08661e6204a4a5e45b6efe",
+            "colorspace": "Non-Color",
+            "outputs": [
+              {
+                "socket": "Color",
+                "destinations": [
+                  "Separate Color.Color"
+                ]
+              }
+            ]
+          }
+        ],
+        "source_additional_surface_parameters": {
+          "Transmission Weight": {
+            "default": 0.0,
+            "links": []
+          },
+          "IOR": {
+            "default": 1.5,
+            "links": []
+          },
+          "Coat Weight": {
+            "default": 0.0,
+            "links": []
+          }
+        },
+        "normal_basis": "Preserved prepared Blender Normal Map graph; use existing importer tangent-space conversion; material appearance remains unverified."
+      }
+    ],
+    "source_preserved": true,
+    "native_imported": false,
+    "source_material_render": null,
+    "render_kind": "existing_preparation_reused_no_new_render",
+    "source_objects": [
+      "Airconditioner",
+      "Balkons",
+      "Building_Base",
+      "Cloths",
+      "Curtains",
+      "Details",
+      "Glass",
+      "Windows"
+    ],
+    "material_transfer_status": "recipe_saved_native_binding_pending",
+    "native_material_behavior_exceptions": []
+  }
+]

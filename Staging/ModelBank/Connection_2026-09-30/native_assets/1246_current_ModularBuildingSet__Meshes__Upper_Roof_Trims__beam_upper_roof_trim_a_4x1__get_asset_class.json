@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1256,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Upper_Roof_Trims/beam_upper_roof_trim_a_4x1"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":\"StaticMesh\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1256,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"StaticMesh\"}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1883 @@
+[
+  {
+    "name": "get_scene_info",
+    "title": "Get Scene Info",
+    "description": "Get current Houdini scene information.\n\nReturns information about the currently open scene including:\n- Hip file path\n- Houdini version\n- List of nodes in /obj",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "create_node",
+    "title": "Create Node",
+    "description": "Create a new node in the Houdini scene.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_type": {
+          "type": "string",
+          "description": "The type of node to create (e.g., \"geo\", \"null\", \"cam\")"
+        },
+        "parent_path": {
+          "default": "/obj",
+          "type": "string",
+          "description": "The parent node path (default: \"/obj\")"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional name for the new node"
+        }
+      },
+      "required": [
+        "node_type"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "execute_code",
+    "title": "Execute Code",
+    "description": "Execute Python code in Houdini with scene change tracking and safety rails.\n\nIMPORTANT: The 'hou' module is pre-injected as a global variable. Do NOT use\n'import hou' or 'from hou import ...' - just use 'hou' directly in your code.\n\nUse this for complex operations that aren't covered by other tools.\n\nSAFETY FEATURES:\n- Policy profiles: \"read-only\" (inspection only), \"normal\" (default),\n  \"privileged\" (requires server config gate).\n- Dangerous operation detection: hou.exit(), os.remove(), subprocess,\n  eval/exec, network egress (socket/urllib/requests), etc.\n- Heavy geometry guard: Blocks direct node.geometry()/geo.points()/geo.prims() access by default\n- Config+request bypass: allow_dangerous / allow_heavy_geometry are only\n  honored when the server also sets HOUDINI_MCP_ALLOW_BYPASS=true.\n- Output size caps: Prevents massive output from overwhelming the response\n- Execution timeout with rollback: on timeout the run is rolled back via a\n  named Houdini undo group when available, else it fails closed.\n- Scene diff limits: Caps the number of nodes returned in scene changes\n- Structured audit block returned on every call.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Python code to execute"
+        },
+        "capture_diff": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, captures before/after scene state and returns changes (default: False)"
+        },
+        "max_stdout_size": {
+          "default": 100000,
+          "type": "integer",
+          "description": "Maximum stdout size in bytes (default: 100000 = 100KB)"
+        },
+        "max_stderr_size": {
+          "default": 100000,
+          "type": "integer",
+          "description": "Maximum stderr size in bytes (default: 100000 = 100KB)"
+        },
+        "max_diff_nodes": {
+          "default": 1000,
+          "type": "integer",
+          "description": "Maximum nodes in scene diff added_nodes list (default: 1000)"
+        },
+        "timeout": {
+          "default": 30,
+          "type": "integer",
+          "description": "Execution timeout in seconds (default: 30)"
+        },
+        "allow_dangerous": {
+          "default": false,
+          "type": "boolean",
+          "description": "Request-side opt-in to bypass dangerous-pattern blocking.\nOnly honored when HOUDINI_MCP_ALLOW_BYPASS is enabled server-side."
+        },
+        "allow_heavy_geometry": {
+          "default": false,
+          "type": "boolean",
+          "description": "Request-side opt-in to allow direct SOP geometry access.\nOnly honored when HOUDINI_MCP_ALLOW_BYPASS is enabled. Prefer get_geo_summary()."
+        },
+        "policy": {
+          "default": "normal",
+          "type": "string",
+          "description": "Safety profile - \"read-only\", \"normal\" (default), or \"privileged\"."
+        }
+      },
+      "required": [
+        "code"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "set_parameter",
+    "title": "Set Parameter",
+    "description": "Set a parameter value on a node.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Full path to the node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "param_name": {
+          "type": "string",
+          "description": "Name of the parameter (e.g., \"radx\", \"tx\", \"scale\")"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "Value to set - can be:\n   - float/int for numeric parameters\n   - str for string/menu parameters\n   - bool for toggle parameters\n   - List[float]/List[int] for vector parameters (e.g., translate, rotate, scale)"
+        }
+      },
+      "required": [
+        "node_path",
+        "param_name",
+        "value"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_node_info",
+    "title": "Get Node Info",
+    "description": "Get detailed information about a node.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Full path to the node"
+        },
+        "include_params": {
+          "default": true,
+          "type": "boolean",
+          "description": "Whether to include parameter values (default: True)"
+        },
+        "include_input_details": {
+          "default": true,
+          "type": "boolean",
+          "description": "When True, expand input connections to show source node,\n                  output index, and connection index details (default: True)"
+        },
+        "include_errors": {
+          "default": false,
+          "type": "boolean",
+          "description": "When True, include cook state and error/warning information (default: False)"
+        },
+        "force_cook": {
+          "default": false,
+          "type": "boolean",
+          "description": "When True, force cook the node before checking errors (default: False)"
+        },
+        "compact": {
+          "default": false,
+          "type": "boolean",
+          "description": "When True, return minimal info (path, type, counts only) for reduced payload (default: False)"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "delete_node",
+    "title": "Delete Node",
+    "description": "Delete a node from the scene.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Full path to the node to delete"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "save_scene",
+    "title": "Save Scene",
+    "description": "Save the current Houdini scene.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "file_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional path to save to. If not provided, saves to current file."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "load_scene",
+    "title": "Load Scene",
+    "description": "Load a Houdini scene file.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "file_path": {
+          "type": "string",
+          "description": "Path to the .hip file to load"
+        }
+      },
+      "required": [
+        "file_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "new_scene",
+    "title": "New Scene",
+    "description": "Create a new empty Houdini scene.\n\nWarning: This will clear the current scene. Make sure to save first if needed.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "serialize_scene",
+    "title": "Serialize Scene",
+    "description": "Serialize the scene structure to a dictionary.\n\nUseful for comparing scene states before and after operations,\nor for understanding the scene hierarchy.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "root_path": {
+          "default": "/obj",
+          "type": "string",
+          "description": "Root node path to serialize from (default: \"/obj\")"
+        },
+        "include_params": {
+          "default": false,
+          "type": "boolean",
+          "description": "Include parameter values (can be verbose, default: False)"
+        },
+        "summarize": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, use AI to analyze scene structure (default: False).\n      Identifies complexity hotspots and optimization opportunities."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_last_scene_diff",
+    "title": "Get Last Scene Diff",
+    "description": "Get the scene diff from the last execute_code call.\n\nShows what nodes were added, removed, or modified during the last\ncode execution. Useful for understanding what changes were made.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_node_types",
+    "title": "List Node Types",
+    "description": "List available Houdini node types.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional category filter (e.g., \"Object\", \"Sop\", \"Cop2\", \"Vop\")"
+        },
+        "max_results": {
+          "default": 100,
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 100, max: 500)"
+        },
+        "name_filter": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional substring filter for node type names (case-insensitive)"
+        },
+        "offset": {
+          "default": 0,
+          "type": "integer",
+          "description": "Number of results to skip for pagination (default: 0)"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "cursor": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_children",
+    "title": "List Children",
+    "description": "List child nodes with paths, types, and current input connections.\n\nThis tool is essential for understanding node networks and helps agents\ninsert nodes without breaking existing connections. Each child includes\ndetailed input connection information showing which nodes are connected\nand at which indices.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the parent node (e.g., \"/obj/geo1\")"
+        },
+        "recursive": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, recursively traverse all descendants (default: False)"
+        },
+        "max_depth": {
+          "default": 10,
+          "type": "integer",
+          "description": "Maximum recursion depth to prevent infinite loops (default: 10)"
+        },
+        "max_nodes": {
+          "default": 1000,
+          "type": "integer",
+          "description": "Maximum number of nodes to return as safety limit (default: 1000)"
+        },
+        "compact": {
+          "default": false,
+          "type": "boolean",
+          "description": "When True, return only path/name/type without connection details (default: False)"
+        },
+        "limit": {
+          "default": 20,
+          "type": "integer"
+        },
+        "cursor": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "find_nodes",
+    "title": "Find Nodes",
+    "description": "Find nodes by name pattern or type using glob/substring matching.\n\nSupports wildcard patterns (* and ?) for flexible searching. When pattern\ncontains no wildcards, also performs substring matching.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "root_path": {
+          "default": "/obj",
+          "type": "string",
+          "description": "Root path to start search from (default: \"/obj\")"
+        },
+        "pattern": {
+          "default": "*",
+          "type": "string",
+          "description": "Glob pattern or substring to match node names (default: \"*\")\n    Examples: \"noise*\", \"*grid*\", \"sphere\""
+        },
+        "node_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional node type filter (e.g., \"sphere\", \"noise\", \"geo\")"
+        },
+        "max_results": {
+          "default": 100,
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 100)"
+        },
+        "offset": {
+          "default": 0,
+          "type": "integer",
+          "description": "Number of results to skip for pagination (default: 0)"
+        },
+        "limit": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "cursor": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "render_viewport",
+    "title": "Render Viewport",
+    "description": "Render the viewport and return the image as base64.\n\nCreates a temporary camera, positions it to frame the scene geometry,\nrenders the scene, and returns the rendered image encoded as base64.\nUseful for AI vision analysis of the current scene state.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "camera_position": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[x, y, z] world position for camera (default: auto-calculated)"
+        },
+        "camera_rotation": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[rx, ry, rz] rotation in degrees (default: [-30, 45, 0] isometric)"
+        },
+        "look_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Node path to look at (centers camera on this node's geometry)"
+        },
+        "resolution": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[width, height] in pixels (default: [512, 512])"
+        },
+        "renderer": {
+          "default": "opengl",
+          "type": "string",
+          "description": "Render engine - \"opengl\" (fast) or \"karma\" (quality)"
+        },
+        "output_format": {
+          "default": "png",
+          "type": "string",
+          "description": "Image format - \"png\", \"jpg\", or \"exr\""
+        },
+        "auto_frame": {
+          "default": true,
+          "type": "boolean",
+          "description": "If True, automatically frame all visible geometry (default: True)"
+        },
+        "orthographic": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, use orthographic projection (default: False)"
+        },
+        "karma_engine": {
+          "default": "cpu",
+          "type": "string",
+          "description": "Karma render engine - \"cpu\" (quality) or \"gpu\" (fast XPU). Only used when renderer=\"karma\""
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "render_quad_view",
+    "title": "Render Quad View",
+    "description": "Render 4 canonical views (Front, Left, Top, Perspective) in one call.\n\nCreates a camera rig and renders standardized views for spatial understanding.\nReturns all 4 images as base64-encoded strings. This is more efficient than\ncalling render_viewport 4 times as it reuses the camera rig and calculates\nthe bounding box only once.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "resolution": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "[width, height] in pixels (default: [512, 512])"
+        },
+        "renderer": {
+          "default": "opengl",
+          "type": "string",
+          "description": "Render engine - \"opengl\" (fast) or \"karma\" (quality)"
+        },
+        "output_format": {
+          "default": "png",
+          "type": "string",
+          "description": "Image format - \"png\", \"jpg\", or \"exr\""
+        },
+        "orthographic": {
+          "default": true,
+          "type": "boolean",
+          "description": "If True, use orthographic projection for Front/Left/Top views (default: True)"
+        },
+        "include_perspective": {
+          "default": true,
+          "type": "boolean",
+          "description": "If True, include perspective view; if False, only orthographic views (default: True)"
+        },
+        "karma_engine": {
+          "default": "cpu",
+          "type": "string",
+          "description": "Karma render engine - \"cpu\" (quality) or \"gpu\" (fast XPU). Only used when renderer=\"karma\""
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_render_nodes",
+    "title": "List Render Nodes",
+    "description": "List all render nodes (ROPs) in the /out context.\n\nReturns information about each render node including type, path,\nand basic configuration like camera and output path.\n\nReturns:\n    Dict with:\n    - status: \"success\" or \"error\"\n    - count: Number of render nodes found\n    - render_nodes: List of render node info with:\n        - path: Full node path\n        - name: Node name\n        - type: ROP type (opengl, karma, ifd, etc.)\n        - camera: Camera path if set\n        - output: Output image path if set\n        - bypassed: Whether the node is bypassed\n\nExamples:\n    list_render_nodes()  # List all ROPs in /out",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_render_settings",
+    "title": "Get Render Settings",
+    "description": "Get current render configuration for a ROP node.\n\nReturns all relevant render settings based on the ROP type (Karma, Mantra, OpenGL).",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rop_path": {
+          "type": "string",
+          "description": "Full path to the ROP node (e.g., \"/out/karma1\")"
+        }
+      },
+      "required": [
+        "rop_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "set_render_settings",
+    "title": "Set Render Settings",
+    "description": "Modify render settings on a ROP node.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rop_path": {
+          "type": "string",
+          "description": "Full path to the ROP node (e.g., \"/out/karma1\")"
+        },
+        "settings": {
+          "additionalProperties": true,
+          "type": "object",
+          "description": "Dict of parameter names to values to set"
+        }
+      },
+      "required": [
+        "rop_path",
+        "settings"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "create_render_node",
+    "title": "Create Render Node",
+    "description": "Create a new render node (ROP) with optional settings.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rop_type": {
+          "type": "string",
+          "description": "Type of ROP to create. Common types:\n- \"opengl\": Fast viewport render (recommended for previews)\n- \"karma\": Karma renderer (CPU or GPU)\n- \"ifd\": Mantra renderer"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional name for the node (auto-generated if not provided)"
+        },
+        "settings": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional dict of parameter values to set on creation"
+        }
+      },
+      "required": [
+        "rop_type"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "find_error_nodes",
+    "title": "Find Error Nodes",
+    "description": "Find all nodes with cook errors or warnings in the scene.\n\nScans the entire node hierarchy starting from root_path and returns\nall nodes that have errors or warnings. Essential for debugging\ncomplex scenes where error locations are unknown.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "root_path": {
+          "default": "/",
+          "type": "string",
+          "description": "Root path to start search from (default: \"/\" for entire scene)"
+        },
+        "include_warnings": {
+          "default": true,
+          "type": "boolean",
+          "description": "Whether to include nodes with warnings (default: True)"
+        },
+        "max_results": {
+          "default": 100,
+          "type": "integer",
+          "description": "Maximum number of results to return (default: 100)"
+        },
+        "summarize": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, use AI to triage and prioritize errors (default: False).\n      Provides actionable fix order and identifies root causes."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "check_connection",
+    "title": "Check Connection",
+    "description": "Check Houdini connection status with detailed info.\n\nReturns connection status, Houdini version, build info, and current hip file.\nAttempts to connect if not already connected.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "ping_houdini",
+    "title": "Ping Houdini",
+    "description": "Quick connectivity test to Houdini.\n\nReturns True if Houdini RPC server is reachable.\nDoes not maintain a persistent connection.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "connect_nodes",
+    "title": "Connect Nodes",
+    "description": "Wire output of source node to input of destination node.\n\nValidates that node types are compatible (e.g., SOP→SOP, OBJ→OBJ) before connecting.\nAutomatically disconnects existing connection if the destination input is already wired.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "src_path": {
+          "type": "string",
+          "description": "Path to source node (e.g., \"/obj/geo1/grid1\")"
+        },
+        "dst_path": {
+          "type": "string",
+          "description": "Path to destination node (e.g., \"/obj/geo1/noise1\")"
+        },
+        "dst_input_index": {
+          "default": 0,
+          "type": "integer",
+          "description": "Input index on destination node (default: 0)"
+        },
+        "src_output_index": {
+          "default": 0,
+          "type": "integer",
+          "description": "Output index on source node (default: 0)"
+        }
+      },
+      "required": [
+        "src_path",
+        "dst_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "disconnect_node_input",
+    "title": "Disconnect Node Input",
+    "description": "Break/disconnect an input connection on a node.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the node (e.g., \"/obj/geo1/noise1\")"
+        },
+        "input_index": {
+          "default": 0,
+          "type": "integer",
+          "description": "Input index to disconnect (default: 0)"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "set_node_flags",
+    "title": "Set Node Flags",
+    "description": "Set display, render, and bypass flags on a node.\n\nOnly non-None values are set, allowing partial flag updates.\nChecks for flag availability using hasattr() before setting.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "display": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Display flag value (True/False) or None to skip"
+        },
+        "render": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Render flag value (True/False) or None to skip"
+        },
+        "bypass": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Bypass flag value (True/False) or None to skip"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "reorder_inputs",
+    "title": "Reorder Inputs",
+    "description": "Reorder inputs on a node (useful for merge nodes).\n\nStores existing connections, disconnects all, then reconnects in new order.\nnew_order specifies the new position for each input: [1, 0, 2] swaps first two inputs.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the node (e.g., \"/obj/geo1/merge1\")"
+        },
+        "new_order": {
+          "items": {
+            "type": "integer"
+          },
+          "type": "array",
+          "description": "List specifying new input order (e.g., [1, 0, 2] to swap first two)"
+        }
+      },
+      "required": [
+        "node_path",
+        "new_order"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_parameter_schema",
+    "title": "Get Parameter Schema",
+    "description": "Get parameter metadata/schema for intelligent parameter setting.\n\nReturns detailed parameter information including types, defaults, ranges,\nmenu items, tuple sizes, and current values. Essential for understanding\nwhat parameters are available on a node and how to set them correctly.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Full path to the node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "parm_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional specific parameter name. If provided, returns only that parameter's schema.\n      If None, returns schema for all parameters (up to max_parms)"
+        },
+        "max_parms": {
+          "default": 100,
+          "type": "integer",
+          "description": "Maximum number of parameters to return when parm_name is None (default: 100)"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_geo_summary",
+    "title": "Get Geo Summary",
+    "description": "Get geometry statistics and metadata for verification.\n\nReturns comprehensive geometry information including point/primitive counts,\nbounding box, attributes, groups, and optionally sample points. This tool is\nessential for agents to verify results after geometry operations.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Full path to the SOP node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "max_sample_points": {
+          "default": 16,
+          "type": "integer",
+          "description": "Maximum number of sample points to return (default: 16, max: 10000).\n              Set to 0 to skip point sampling."
+        },
+        "include_attributes": {
+          "default": true,
+          "type": "boolean",
+          "description": "Whether to include attribute metadata (default: True)"
+        },
+        "include_groups": {
+          "default": true,
+          "type": "boolean",
+          "description": "Whether to include group information (default: True)"
+        },
+        "summarize": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, use AI to generate a concise summary of the geometry (default: False).\n      Useful for large/complex geometry to reduce token usage."
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_houdini_help",
+    "title": "Get Houdini Help",
+    "description": "Fetch Houdini documentation from SideFX website.\n\nRetrieves and parses help documentation for nodes, VEX functions,\nand Python API. Helps AI understand Houdini concepts without\nhallucinating parameter names or functionality.\n\nNOTE: This tool does NOT require a Houdini connection - it fetches\ndocumentation directly from the SideFX website.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "help_type": {
+          "type": "string",
+          "description": "Type of documentation to fetch. Supported types:\n- \"sop\": SOP nodes (e.g., \"box\", \"scatter\", \"vdbfrompolygons\")\n- \"obj\": Object nodes (e.g., \"geo\", \"cam\", \"light\")\n- \"dop\": DOP nodes (e.g., \"pyrosolver\", \"rbdpackedobject\")\n- \"cop2\": COP nodes (e.g., \"mosaic\", \"blur\")\n- \"chop\": CHOP nodes (e.g., \"math\", \"wave\")\n- \"vop\": VOP nodes (e.g., \"bind\", \"noise\")\n- \"lop\": LOP/Solaris nodes (e.g., \"usdimport\", \"materiallibrary\")\n- \"top\": TOP/PDG nodes (e.g., \"pythonscript\", \"wedge\")\n- \"rop\": ROP nodes (e.g., \"geometry\", \"karma\")\n- \"vex_function\": VEX functions (e.g., \"noise\", \"lerp\", \"chramp\")\n- \"python_hou\": Python hou module classes (e.g., \"Node\", \"Geometry\")"
+        },
+        "item_name": {
+          "type": "string",
+          "description": "Name of the node or function (e.g., \"box\", \"noise\", \"Node\")"
+        },
+        "timeout": {
+          "default": 10,
+          "type": "integer",
+          "description": "Request timeout in seconds (default: 10)"
+        }
+      },
+      "required": [
+        "help_type",
+        "item_name"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "create_material",
+    "title": "Create Material",
+    "description": "Create a new material/shader node.\n\nCreates a material node in the specified context (typically /mat or /shop).\nSupports common material types like Principled Shader, MaterialX, and classic shaders.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "material_type": {
+          "default": "principledshader",
+          "type": "string",
+          "description": "Type of material to create. Common types:\n- \"principledshader\": Houdini's standard PBR shader (recommended)\n- \"mtlxstandard_surface\": MaterialX Standard Surface\n- \"classicshader\": Classic Mantra shader"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional name for the material. Auto-generated if not provided."
+        },
+        "parent_path": {
+          "default": "/mat",
+          "type": "string",
+          "description": "Parent context path (default: \"/mat\", alternative: \"/shop\")"
+        },
+        "parameters": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional dict of parameter values to set on the material.\nCommon principledshader parameters:\n- basecolor: [r, g, b] base color\n- rough: float roughness (0-1)\n- metallic: float metallic (0-1)"
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "assign_material",
+    "title": "Assign Material",
+    "description": "Assign a material to geometry.\n\nCreates a Material SOP inside the geometry node to apply the material,\nor sets the shop_materialpath parameter directly.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geometry_path": {
+          "type": "string",
+          "description": "Path to the geometry OBJ node (e.g., \"/obj/geo1\")"
+        },
+        "material_path": {
+          "type": "string",
+          "description": "Path to the material node (e.g., \"/mat/principledshader1\")"
+        },
+        "group": {
+          "default": "",
+          "type": "string",
+          "description": "Optional primitive group to apply material to (empty = all primitives)"
+        }
+      },
+      "required": [
+        "geometry_path",
+        "material_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_material_info",
+    "title": "Get Material Info",
+    "description": "Get detailed information about a material node.\n\nReturns material type, parameters, and texture references.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "material_path": {
+          "type": "string",
+          "description": "Path to the material node (e.g., \"/mat/principledshader1\")"
+        }
+      },
+      "required": [
+        "material_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "layout_children",
+    "title": "Layout Children",
+    "description": "Auto-layout child nodes in a network.\n\nCalls Houdini's built-in layoutChildren() to automatically arrange\nchild nodes in a clean, organized layout.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the parent node (e.g., \"/obj/geo1\")"
+        },
+        "horizontal_spacing": {
+          "default": 2.0,
+          "type": "number",
+          "description": "Horizontal spacing between nodes (default: 2.0)"
+        },
+        "vertical_spacing": {
+          "default": 1.0,
+          "type": "number",
+          "description": "Vertical spacing between nodes (default: 1.0)"
+        }
+      },
+      "required": [
+        "node_path"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "set_node_color",
+    "title": "Set Node Color",
+    "description": "Set the display color of a node in the network editor.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "color": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array",
+          "description": "RGB color values as [r, g, b] where each value is 0.0-1.0"
+        }
+      },
+      "required": [
+        "node_path",
+        "color"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "set_node_position",
+    "title": "Set Node Position",
+    "description": "Set the position of a node in the network editor.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "type": "string",
+          "description": "Path to the node (e.g., \"/obj/geo1/sphere1\")"
+        },
+        "x": {
+          "type": "number",
+          "description": "X position in network editor units"
+        },
+        "y": {
+          "type": "number",
+          "description": "Y position in network editor units"
+        }
+      },
+      "required": [
+        "node_path",
+        "x",
+        "y"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "create_network_box",
+    "title": "Create Network Box",
+    "description": "Create a network box around a group of nodes.\n\nNetwork boxes help organize and visually group related nodes.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "parent_path": {
+          "type": "string",
+          "description": "Path to the parent network (e.g., \"/obj/geo1\")"
+        },
+        "node_paths": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "description": "List of node paths to include in the box"
+        },
+        "label": {
+          "default": "",
+          "type": "string",
+          "description": "Optional label text for the network box"
+        },
+        "color": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional RGB color [r, g, b] for the box (0.0-1.0 each)"
+        }
+      },
+      "required": [
+        "parent_path",
+        "node_paths"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "manage_cache",
+    "title": "Manage Cache",
+    "description": "Manage the Houdini MCP cache system.\n\nThe cache stores frequently-accessed data like node types and parameter\nschemas to improve performance. Node types are cached on first access\nand subsequent calls are instant.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "default": "stats",
+          "type": "string",
+          "description": "Cache action to perform:\n- \"stats\": Get cache statistics (hits, misses, entry counts)\n- \"invalidate\": Clear all caches (forces refresh on next access)\n- \"warmup\": Pre-populate caches (may take a few seconds)"
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "get_summarization_status",
+    "title": "Get Summarization Status",
+    "description": "Get AI summarization configuration and status.\n\nReturns current summarization settings including:\n- Whether summarization is enabled\n- Which model is being used\n- Proxy URL\n- Token thresholds for automatic summarization\n\nUse this to verify AI summarization is properly configured\nbefore using summarize=True on other tools.\n\nReturns:\n    Dict with summarization configuration including:\n    - enabled: Whether AI summarization is active\n    - model: Claude model used for summarization\n    - proxy_url: URL of the Claude API proxy\n    - auto_threshold_tokens: Token count that triggers auto-summarization\n    - target_summary_tokens: Target size for generated summaries",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "capture_pane_screenshot",
+    "title": "Capture Pane Screenshot",
+    "description": "Capture a screenshot of a Houdini pane tab.\n\nUses Qt screen grab to capture the specified pane type. Returns\nbase64-encoded PNG or saves to disk if save_path provided.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pane_type_name": {
+          "default": "NetworkEditor",
+          "type": "string",
+          "description": "Pane type to capture (default: \"NetworkEditor\")\nCommon types: NetworkEditor, SceneViewer, Parm, IPRViewer,\nCompositorViewer, ChannelEditor, PythonShell, Textport"
+        },
+        "save_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional path to save PNG file (returns base64 if not provided)"
+        },
+        "fit_contents": {
+          "default": false,
+          "type": "boolean",
+          "description": "If True, fit/frame all contents before capture (default: False).\nWhen False, captures the current view (what the user is looking at).\nSupported for: NetworkEditor, SceneViewer, CompositorViewer, ChannelEditor."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "list_visible_panes",
+    "title": "List Visible Panes",
+    "description": "List all visible pane tabs in the current Houdini layout.\n\nReturns information about all panes across all desktops, including\nwhich ones are capturable (visible on current desktop with valid geometry).\n\nReturns:\n    Dict with:\n    - current_desktop: Name of active desktop\n    - panes: List of pane info (name, type, desktop, is_visible, capturable)\n    - capturable_count: Number of panes that can be captured\n    - total_count: Total number of panes\n    - available_types: List of all valid pane type names",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "capture_multiple_panes",
+    "title": "Capture Multiple Panes",
+    "description": "Capture screenshots of multiple pane types in one call.\n\nMore efficient than calling capture_pane_screenshot multiple times\nas it reuses Qt module references.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "pane_types": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "description": "List of pane type names to capture\ne.g., [\"NetworkEditor\", \"SceneViewer\", \"Parm\"]"
+        },
+        "save_dir": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional directory to save PNGs (returns base64 if not provided)"
+        }
+      },
+      "required": [
+        "pane_types"
+      ]
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  },
+  {
+    "name": "render_node_network",
+    "title": "Render Node Network",
+    "description": "Capture a screenshot of a node's network showing its children.\n\nNavigates the NetworkEditor to the specified node and captures a screenshot.\nUseful for visualizing the network structure of any node context.",
+    "input_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "node_path": {
+          "default": "/obj",
+          "type": "string",
+          "description": "Path to the node whose network to capture (default: \"/obj\").\nThe NetworkEditor will navigate into this node to show its children.\nExamples: \"/obj\", \"/obj/geo1\", \"/stage\", \"/mat\""
+        },
+        "fit_contents": {
+          "default": true,
+          "type": "boolean",
+          "description": "If True, frame all children in view before capture (default: True).\nSet to False to capture the current zoom/pan state."
+        }
+      }
+    },
+    "execution": null,
+    "output_schema": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": {
+      "fastmcp": {
+        "tags": []
+      }
+    }
+  }
+]

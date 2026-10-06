@@ -1,0 +1,904 @@
+{
+  "schema": "environmentpipeline.s1_capture.v1",
+  "label": "GazaShujaiya_S1_B0_r001",
+  "area": "GazaShujaiya",
+  "status": "ENDED_INCOMPLETE",
+  "created_utc": "2026-10-05T20:52:19.520864+00:00",
+  "pid": 23156,
+  "owner": "GEOCITY_GROUND_S1",
+  "operator_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+  "script": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\s1_capture.py",
+    "sha256": "fe5156d4974ba6d0d077966874cccbc825ca484c905b2656e2d46658a2103263"
+  },
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "child": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+  "cameras": {
+    "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAMERAS_GazaShujaiya.json",
+    "sha256": "9cd59936201f2e1a4825eb49dbff87aff7ea468a5ebc183d6303e658f28956c0",
+    "presets": {
+      "close": {
+        "eye": [
+          -1518.2358806223988,
+          2096.7158944428124,
+          4988.994542480257
+        ],
+        "target": [
+          -1268.1745794274116,
+          2408.9167042506506,
+          4835.460048837922
+        ],
+        "fov": 65
+      },
+      "middle": {
+        "eye": [
+          -8268.174579427412,
+          -6591.083295749349,
+          12835.460048837922
+        ],
+        "target": [
+          -1268.1745794274116,
+          2408.9167042506506,
+          4835.460048837922
+        ],
+        "fov": 65
+      },
+      "wide": {
+        "eye": [
+          -31348.5971,
+          -31348.5971,
+          50452.64532641337
+        ],
+        "target": [
+          0,
+          0,
+          4854.685926413367
+        ],
+        "fov": 65
+      }
+    }
+  },
+  "settings": {
+    "min_settle_frames": 120,
+    "min_settle_seconds": 8.0,
+    "screenshot_delay": 2.0,
+    "min_gi_quality": 2,
+    "require_sole_editor": true,
+    "restore_ui": true,
+    "log_problem_gate": true,
+    "viewmode": "LIT",
+    "width": 1600,
+    "height": 1000,
+    "force_game_view": true
+  },
+  "exposure": {
+    "mode": "manual_cvar",
+    "exposure_offset": 0.0,
+    "qualification": "Exposure locked by the process-global transient cvar r.EyeAdaptation.MethodOverride=3 (Manual) plus r.ExposureOffset; restored in end. The viewport-only routes (editor viewport post-process settings, fixed EV100 ExposureSettings) have no Python setter.",
+    "viewport_only_route": {
+      "status": "NOT_AVAILABLE_IN_PYTHON",
+      "evidence": [
+        "LevelEditorSubsystem.h / UnrealEditorSubsystem.h / AutomationBlueprintFunctionLibrary.h expose no exposure or post-process setter",
+        "Fixed EV100 (ToggleInGameExposure/FixedEV100) exists only as a UnrealEd UI command; its saved preference is in the ini line below"
+      ]
+    },
+    "saved_viewport_preference": {
+      "line_sha256": "b902b376b995957c8b69c4943e27827f39e343086095088218f93d1a752f6c58",
+      "persp_view_mode": "VMI_Lit",
+      "exposure_settings": "FixedEV100=1.000000,bFixed=False",
+      "EditorShowFlagsString": {
+        "PostProcessing": "1",
+        "EyeAdaptation": "1",
+        "Tonemapper": "1",
+        "LocalExposure": "1",
+        "Lighting": "1",
+        "Game": "0"
+      },
+      "GameShowFlagsString": {
+        "PostProcessing": "1",
+        "EyeAdaptation": "1",
+        "Tonemapper": "1",
+        "LocalExposure": "1",
+        "Lighting": "1",
+        "Game": "1"
+      }
+    },
+    "locked_readback": {
+      "r.EyeAdaptation.MethodOverride": "3",
+      "r.ExposureOffset": "0",
+      "r.EyeAdaptationQuality": "2",
+      "r.EyeAdaptation.PreExposureOverride": "0",
+      "r.EyeAdaptation.LensAttenuation": "0.78",
+      "r.EyeAdaptation.CachedLightingPreExposure": "4",
+      "r.DefaultFeature.AutoExposure": "1",
+      "r.DefaultFeature.AutoExposure.Method": "0",
+      "r.DefaultFeature.AutoExposure.Bias": "1",
+      "r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange": "1",
+      "r.DefaultFeature.LocalExposure.HighlightContrastScale": "0.8",
+      "r.DefaultFeature.LocalExposure.ShadowContrastScale": "0.8",
+      "r.LUT.TonemappingMethod": "-1"
+    },
+    "ev": {
+      "label": "INFERRED",
+      "status": "COMPUTED_FROM_ASSUMED_POST_PROCESS_DEFAULTS",
+      "assumed_defaults": {
+        "apply_physical_camera_exposure": true,
+        "camera_iso": 100.0,
+        "camera_shutter_speed": 60.0,
+        "depth_of_field_fstop": 4.0
+      },
+      "ev100_physical_camera": 9.906890595608518,
+      "exposure_compensation_ev": 1.0,
+      "ev100_effective_estimate": 8.906890595608518,
+      "formula": "EV100=log2(N^2*shutter*100/ISO); effective=EV100-(r.DefaultFeature.AutoExposure.Bias+r.ExposureOffset)",
+      "caveat": "Engine manual-exposure math is not installed as source; confirm with paired captures."
+    }
+  },
+  "residency": {
+    "mode": "force_bound_textures",
+    "seconds": 60.0,
+    "extra_parameters": [],
+    "require_confirmed": true,
+    "qualification": "TEMPORARY_RESIDENCY_DIAGNOSTIC_ONLY (REV/STREAMING_DIAGNOSTIC_REVIEW.json temporary_residency_test). Acceptance needs root decision on owned NeverStream copies or Aviv viewport review.",
+    "bound": {
+      "parameter_listing": "LISTED",
+      "parameters": {
+        "Sand_01_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+        "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+        "Sand_02_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+        "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+        "Dirt_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+        "Dirt_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+        "Sand_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+        "Sand_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+        "Ground_MacroMask": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+      }
+    },
+    "textures": [
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+      "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+    ],
+    "texture_props_begin": {
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K": {
+        "lod_bias": "0",
+        "lod_group": "<TextureGroup.TEXTUREGROUP_WORLD: 0>",
+        "max_texture_size": "2048",
+        "never_stream": "True",
+        "global_force_mip_levels_to_be_resident": "False",
+        "num_cinematic_mip_levels": "0",
+        "virtual_texture_streaming": "False",
+        "srgb": "True",
+        "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+      },
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K": {
+        "lod_bias": "0",
+        "lod_group": "<TextureGroup.TEXTUREGROUP_WORLD_NORMAL_MAP: 1>",
+        "max_texture_size": "2048",
+        "never_stream": "True",
+        "global_force_mip_levels_to_be_resident": "False",
+        "num_cinematic_mip_levels": "0",
+        "virtual_texture_streaming": "False",
+        "srgb": "False",
+        "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+      },
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K": {
+        "lod_bias": "0",
+        "lod_group": "<TextureGroup.TEXTUREGROUP_WORLD: 0>",
+        "max_texture_size": "2048",
+        "never_stream": "True",
+        "global_force_mip_levels_to_be_resident": "False",
+        "num_cinematic_mip_levels": "0",
+        "virtual_texture_streaming": "False",
+        "srgb": "True",
+        "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+      },
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K": {
+        "lod_bias": "0",
+        "lod_group": "<TextureGroup.TEXTUREGROUP_WORLD_NORMAL_MAP: 1>",
+        "max_texture_size": "2048",
+        "never_stream": "True",
+        "global_force_mip_levels_to_be_resident": "False",
+        "num_cinematic_mip_levels": "0",
+        "virtual_texture_streaming": "False",
+        "srgb": "False",
+        "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+      },
+      "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation": {
+        "lod_bias": "0",
+        "lod_group": "<TextureGroup.TEXTUREGROUP_WORLD: 0>",
+        "max_texture_size": "0",
+        "never_stream": "True",
+        "global_force_mip_levels_to_be_resident": "False",
+        "num_cinematic_mip_levels": "0",
+        "virtual_texture_streaming": "False",
+        "srgb": "True",
+        "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+      }
+    }
+  },
+  "priors": {
+    "active_viewport_key": "FourPanes2x2.Viewport 1.Viewport1",
+    "camera": {
+      "keyed": {
+        "eye": [
+          -1540.258896,
+          -4487.489675,
+          7144.410406
+        ],
+        "rotation": [
+          0.0,
+          -85.796846,
+          0.0
+        ],
+        "fov": 90.0
+      },
+      "primary": {
+        "eye": [
+          -1540.258896,
+          -4487.489675,
+          7144.410406
+        ],
+        "rotation": [
+          0.0,
+          -85.796846,
+          0.0
+        ]
+      },
+      "view_mode": "VMI_LIT"
+    },
+    "game_view": "False",
+    "cvars": {
+      "exposure": {
+        "r.EyeAdaptation.MethodOverride": "-1",
+        "r.ExposureOffset": "0",
+        "r.EyeAdaptationQuality": "2",
+        "r.EyeAdaptation.PreExposureOverride": "0",
+        "r.EyeAdaptation.LensAttenuation": "0.78",
+        "r.EyeAdaptation.CachedLightingPreExposure": "4",
+        "r.DefaultFeature.AutoExposure": "1",
+        "r.DefaultFeature.AutoExposure.Method": "0",
+        "r.DefaultFeature.AutoExposure.Bias": "1",
+        "r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange": "1",
+        "r.DefaultFeature.LocalExposure.HighlightContrastScale": "0.8",
+        "r.DefaultFeature.LocalExposure.ShadowContrastScale": "0.8",
+        "r.LUT.TonemappingMethod": "-1"
+      },
+      "showflag_overrides": {
+        "ShowFlag.PostProcessing": "2",
+        "ShowFlag.EyeAdaptation": "2",
+        "ShowFlag.Tonemapper": "2",
+        "ShowFlag.LocalExposure": "2",
+        "ShowFlag.Lighting": "2",
+        "ShowFlag.Game": "2"
+      },
+      "streaming": {
+        "r.TextureStreaming": "1",
+        "r.Streaming.PoolSize": "1000",
+        "r.Streaming.MipBias": "0",
+        "r.Streaming.UsePerTextureBias": "1",
+        "r.Streaming.Boost": "1",
+        "r.Streaming.MaxEffectiveScreenSize": "0",
+        "r.Streaming.HiddenPrimitiveScale": "0.5",
+        "r.Streaming.FullyLoadUsedTextures": "0",
+        "r.Streaming.UseAllMips": "0",
+        "r.ScreenPercentage": "0",
+        "sg.TextureQuality": "3"
+      },
+      "lighting": {
+        "r.DynamicGlobalIlluminationMethod": "1",
+        "r.ReflectionMethod": "1",
+        "sg.GlobalIlluminationQuality": "3",
+        "sg.ReflectionQuality": "3",
+        "sg.ShadowQuality": "3",
+        "sg.PostProcessQuality": "3",
+        "r.Substrate": "1"
+      }
+    }
+  },
+  "environment": {
+    "actors": [
+      {
+        "name": "DirectionalLight_0",
+        "class": "DirectionalLight",
+        "label": "GazaShujaiya_Sun",
+        "rotation": [
+          -24.999999999999996,
+          8.773384513949065e-16,
+          -35.0
+        ],
+        "component": {
+          "intensity": "3.0",
+          "light_color": "<Struct 'Color' (0x000001DDEFF920B8) {b: 255, g: 255, r: 255, a: 255}>",
+          "atmosphere_sun_light": "True"
+        }
+      },
+      {
+        "name": "SkyLight_0",
+        "class": "SkyLight",
+        "label": "GazaShujaiya_SkyLight",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "component": {
+          "intensity": "1.0",
+          "real_time_capture": "True",
+          "source_type": "<SkyLightSourceType.SLS_CAPTURED_SCENE: 0>"
+        }
+      },
+      {
+        "name": "SkyAtmosphere_0",
+        "class": "SkyAtmosphere",
+        "label": "GazaShujaiya_Atmosphere",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "GazaShujaiya_landscape",
+        "class": "Landscape",
+        "label": "GazaShujaiya_landscape",
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "landscape_material": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround"
+      }
+    ],
+    "throttle_cpu_when_not_foreground": "True",
+    "viewport_size": [
+      1044,
+      575
+    ]
+  },
+  "material_begin": {
+    "parent": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "GeoCity_GrassCoverage": 0.15000000596046448,
+    "GeoCity_S1_Enable": false,
+    "GeoCity_S1_GazaGround": false
+  },
+  "guard_begin": {
+    "pid": 23156,
+    "lease": "2026-10-05T20:48:31+00:00 OWNER=GEOCITY_GROUND_S1 manager_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae operator_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae assigned_editor_PID=23156 map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=STARTUP_INSPECTION_ONLY scope=GeoCity_GroundS1_20261005_readonly",
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "key": "FourPanes2x2.Viewport 1.Viewport1",
+    "hda_actors": 1,
+    "cooking_paused": true,
+    "autosave": false,
+    "editor_pids": [
+      23156
+    ]
+  },
+  "dirty_begin": {
+    "maps": [],
+    "content": []
+  },
+  "allowed_dirty_content": [],
+  "disk_begin": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset": {
+      "exists": true,
+      "bytes": 1151295,
+      "mtime_ns": 1791225805752666000,
+      "sha256": "70f82e50eccf6dc322c5612cf1c2739c806e71196e50ef90998a8fc2f396e104"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\MI_SurfaceBank_Natural.uasset": {
+      "exists": true,
+      "bytes": 12026,
+      "mtime_ns": 1791043731741273300,
+      "sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\LG_GeoCity_PermittedGroundGrass.uasset": {
+      "exists": true,
+      "bytes": 6461,
+      "mtime_ns": 1791114050882733100,
+      "sha256": "ff09a0a110b49f9268d55078676d14ecf791b1e1ebe457c523e1cc8ceea7b5c1"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset": {
+      "exists": true,
+      "bytes": 26214,
+      "mtime_ns": 1791225805944861600,
+      "sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset": {
+      "exists": true,
+      "bytes": 20831,
+      "mtime_ns": 1791193904155955400,
+      "sha256": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\L_GazaShujaiya_BankIntegration.umap": {
+      "exists": true,
+      "bytes": 68164347,
+      "mtime_ns": 1791226440567524500,
+      "sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0"
+    },
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaRimal\\BankIntegration_v015\\L_GazaRimal_BankIntegration.umap": {
+      "exists": true,
+      "bytes": 33208729,
+      "mtime_ns": 1791146315378182600,
+      "sha256": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd"
+    }
+  },
+  "applied_cvars": [
+    {
+      "name": "r.EyeAdaptation.MethodOverride",
+      "prior": "-1",
+      "value": "3",
+      "readback": "3"
+    },
+    {
+      "name": "r.ExposureOffset",
+      "prior": "0",
+      "value": "0.0",
+      "readback": "0"
+    }
+  ],
+  "shots": [
+    {
+      "index": 0,
+      "shot": "close",
+      "image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_00_close.png",
+      "state": "REQUESTED",
+      "prepared_utc": "2026-10-05T20:52:19.893762+00:00",
+      "prepare_epoch": 1791233539.893762,
+      "prepare_frame": 1791,
+      "prepare_log_offset": 360093,
+      "camera_after_prepare": {
+        "keyed": {
+          "eye": [
+            -1518.2358806223988,
+            2096.7158944428124,
+            4988.994542480257
+          ],
+          "rotation": [
+            -20.998611450195312,
+            51.30656433105469,
+            0.0
+          ],
+          "fov": 65.0
+        },
+        "primary": {
+          "eye": [
+            -1518.2358806223988,
+            2096.7158944428124,
+            4988.994542480257
+          ],
+          "rotation": [
+            -20.998611450195312,
+            51.30656433105469,
+            0.0
+          ]
+        },
+        "view_mode": "VMI_LIT"
+      },
+      "camera_verdict": {
+        "eye_match": true,
+        "rotation_match": true,
+        "fov_match": true,
+        "primary_eye_match": true,
+        "primary_rotation_match": true,
+        "view_mode_match": true,
+        "all_match": true
+      },
+      "rotation": [
+        -20.99861168036853,
+        51.30656330077867,
+        0.0
+      ],
+      "eye_clearance": {
+        "first_hit_actor": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape",
+        "impact_z": 4818.994542480257,
+        "eye_minus_impact_cm": 170.0
+      },
+      "refusals": [],
+      "gate": {
+        "seconds": 10.364735126495361,
+        "frames": 949,
+        "finish_loading_seconds": 1.3440000000409782,
+        "frames_caveat": "MEASURED: KismetSystemLibrary GetFrameCount (h:287) counts engine ticks, not viewport redraws; see render_proof",
+        "finish_loading_effect": "INFERRED (cpp not installed): flush loading/compilation/streaming",
+        "pending_shader_compile_getter": "NOT_EXPOSED (no UFUNCTION; GP native_stochastic_verify_readonly.py:86-95)",
+        "log_scan": {
+          "lines": 8,
+          "shader_or_material_problems": [],
+          "problem_count": 0,
+          "shader_compiler_display_lines": [],
+          "shader_compiler_display_count": 0,
+          "lumen_cached_lighting_exposure_clipping_warnings": []
+        },
+        "residency": {
+          "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K": {
+            "verdict": "NEVER_STREAM_RESIDENT",
+            "record": null,
+            "streamer_view0_matches_camera": null
+          },
+          "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K": {
+            "verdict": "NEVER_STREAM_RESIDENT",
+            "record": null,
+            "streamer_view0_matches_camera": null
+          },
+          "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K": {
+            "verdict": "NEVER_STREAM_RESIDENT",
+            "record": null,
+            "streamer_view0_matches_camera": null
+          },
+          "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K": {
+            "verdict": "NEVER_STREAM_RESIDENT",
+            "record": null,
+            "streamer_view0_matches_camera": null
+          },
+          "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation": {
+            "verdict": "NEVER_STREAM_RESIDENT",
+            "record": null,
+            "streamer_view0_matches_camera": null
+          }
+        },
+        "render_proof": {
+          "label": "INFERRED",
+          "status": "RENDER_PROOF_UNAVAILABLE",
+          "eye": [
+            -1518.2358806223988,
+            2096.7158944428124,
+            4988.994542480257
+          ],
+          "tolerance_cm": 1.0,
+          "streamed_textures": {},
+          "mismatched": [],
+          "with_view_records": 0
+        },
+        "log_status": "LOCATED"
+      },
+      "request_utc": "2026-10-05T20:52:31.732030+00:00",
+      "request_frame": 2740,
+      "camera_at_request": {
+        "keyed": {
+          "eye": [
+            -1518.2358806223988,
+            2096.7158944428124,
+            4988.994542480257
+          ],
+          "rotation": [
+            -20.998611450195312,
+            51.30656433105469,
+            0.0
+          ],
+          "fov": 65.0
+        },
+        "primary": {
+          "eye": [
+            -1518.2358806223988,
+            2096.7158944428124,
+            4988.994542480257
+          ],
+          "rotation": [
+            -20.998611450195312,
+            51.30656433105469,
+            0.0
+          ]
+        },
+        "view_mode": "VMI_LIT"
+      },
+      "render_proof": "RENDER_PROOF_UNAVAILABLE",
+      "valid_task": true,
+      "post_request": {
+        "dirty_unchanged": true,
+        "key_unchanged": true,
+        "view_mode": "VMI_LIT"
+      },
+      "quarantine": [
+        {
+          "from": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_00_close.png",
+          "utc": "2026-10-05T20:53:57.733901+00:00",
+          "png": {
+            "bytes": 31034,
+            "sha256": "e384254aa56dff5c490ec85c159d5f0a09a014809e131a78e94aa568fa983329",
+            "signature_ok": true,
+            "width": 1600,
+            "height": 1000,
+            "iend_present": true
+          },
+          "to": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_00_close.INVALIDATED.png",
+          "status": "QUARANTINED",
+          "shot_index": 0,
+          "shot_state": "REQUESTED"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "shot": "middle",
+      "image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_01_middle.png",
+      "state": "PENDING",
+      "errors": [
+        {
+          "utc": "2026-10-05T20:52:38.428150+00:00",
+          "phase": "prepare",
+          "error": "RuntimeError('A requested screenshot is still pending completion')"
+        },
+        {
+          "utc": "2026-10-05T20:52:48.664609+00:00",
+          "phase": "request",
+          "error": "RuntimeError('Shot must be PREPARED, is PENDING')"
+        },
+        {
+          "utc": "2026-10-05T20:52:54.997021+00:00",
+          "phase": "complete",
+          "error": "RuntimeError('Shot must be REQUESTED, is PENDING')"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "shot": "wide",
+      "image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_02_wide.png",
+      "state": "PENDING",
+      "errors": [
+        {
+          "utc": "2026-10-05T20:52:55.329836+00:00",
+          "phase": "prepare",
+          "error": "RuntimeError('A requested screenshot is still pending completion')"
+        },
+        {
+          "utc": "2026-10-05T20:53:05.662722+00:00",
+          "phase": "request",
+          "error": "RuntimeError('Shot must be PREPARED, is PENDING')"
+        },
+        {
+          "utc": "2026-10-05T20:53:11.996906+00:00",
+          "phase": "complete",
+          "error": "RuntimeError('Shot must be REQUESTED, is PENDING')"
+        }
+      ]
+    }
+  ],
+  "native_cancel": "NOT_AVAILABLE (MEASURED: UAutomationEditorTask exposes only IsTaskDone/IsValidTask, UE_5.8 AutomationBlueprintFunctionLibrary.h:46-51); late PNGs are quarantined by end, never deleted",
+  "log": {
+    "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Logs\\Environmentpipeline.log",
+    "offset": 359825,
+    "marker": "S1_CAPTURE_LOG_MARKER_96b00b6d63c94d18920d0794782666df",
+    "status": "LOCATED",
+    "begin_offset": 359825
+  },
+  "restore_fallback": {
+    "rule": "Run mode=end in the begin PID before any editor exit. Do not edit or re-pin S1_Prep/s1_capture.py while this receipt is BEGUN/ACTIVE (end tolerates it, other phases refuse).",
+    "console_commands_reverse_order": [
+      "r.ExposureOffset 0",
+      "r.EyeAdaptation.MethodOverride -1"
+    ],
+    "game_view": "LevelEditorSubsystem.editor_set_game_view(False, \"FourPanes2x2.Viewport 1.Viewport1\")"
+  },
+  "phases": [
+    {
+      "phase": "begin",
+      "utc": "2026-10-05T20:52:19.649481+00:00",
+      "frame": 1765,
+      "outcome": "OK"
+    },
+    {
+      "phase": "prepare",
+      "utc": "2026-10-05T20:52:19.902267+00:00",
+      "frame": 1791,
+      "outcome": "OK",
+      "index": 0
+    },
+    {
+      "phase": "request",
+      "utc": "2026-10-05T20:52:31.744039+00:00",
+      "frame": 2740,
+      "outcome": "REQUESTED",
+      "index": 0
+    },
+    {
+      "phase": "prepare",
+      "utc": "2026-10-05T20:52:38.428150+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 1,
+      "error": "RuntimeError('A requested screenshot is still pending completion')"
+    },
+    {
+      "phase": "request",
+      "utc": "2026-10-05T20:52:48.664609+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 1,
+      "error": "RuntimeError('Shot must be PREPARED, is PENDING')"
+    },
+    {
+      "phase": "complete",
+      "utc": "2026-10-05T20:52:54.997021+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 1,
+      "error": "RuntimeError('Shot must be REQUESTED, is PENDING')"
+    },
+    {
+      "phase": "prepare",
+      "utc": "2026-10-05T20:52:55.329836+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 2,
+      "error": "RuntimeError('A requested screenshot is still pending completion')"
+    },
+    {
+      "phase": "request",
+      "utc": "2026-10-05T20:53:05.662722+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 2,
+      "error": "RuntimeError('Shot must be PREPARED, is PENDING')"
+    },
+    {
+      "phase": "complete",
+      "utc": "2026-10-05T20:53:11.996906+00:00",
+      "frame": null,
+      "outcome": "FAILED",
+      "index": 2,
+      "error": "RuntimeError('Shot must be REQUESTED, is PENDING')"
+    },
+    {
+      "phase": "end",
+      "utc": "2026-10-05T20:53:57.734402+00:00",
+      "frame": 3257,
+      "outcome": "ENDED_INCOMPLETE",
+      "retry": false
+    }
+  ],
+  "updated_utc": "2026-10-05T20:53:57.734402+00:00",
+  "end": {
+    "utc": "2026-10-05T20:53:57.599288+00:00",
+    "retry_of": null,
+    "cancel": true,
+    "script_check": {
+      "unchanged": true,
+      "current_sha256": "fe5156d4974ba6d0d077966874cccbc825ca484c905b2656e2d46658a2103263"
+    },
+    "invalidated_pending": [],
+    "invalidated_images_at_end": [],
+    "native_cancel": "NOT_AVAILABLE (MEASURED: UAutomationEditorTask exposes only IsTaskDone/IsValidTask, UE_5.8 AutomationBlueprintFunctionLibrary.h:46-51); late PNGs are quarantined by end, never deleted",
+    "cvar_restore_source": "REGISTRY",
+    "receipt_rows_match_registry": true,
+    "cvar_restore": [
+      {
+        "name": "r.ExposureOffset",
+        "restored_to": "0",
+        "readback": "0",
+        "restored": true
+      },
+      {
+        "name": "r.EyeAdaptation.MethodOverride",
+        "restored_to": "-1",
+        "readback": "-1",
+        "restored": true
+      }
+    ],
+    "restore_priority_note": "INFERRED: restore goes through execute_console_command, so each restored cvar is now held at SetByConsole priority for the rest of the session; string values equal the priors, the set-by priority may not.",
+    "cvars_restored": true,
+    "requested_not_completed": [
+      0
+    ],
+    "ui_restored": {
+      "game_view": {
+        "prior": "False",
+        "viewport_key": "FourPanes2x2.Viewport 1.Viewport1",
+        "before": false,
+        "action": "UNCHANGED",
+        "after": false,
+        "restored": true,
+        "status": "OK"
+      },
+      "camera": {
+        "keyed": {
+          "eye": [
+            -1540.258896,
+            -4487.489675,
+            7144.410406
+          ],
+          "rotation": [
+            0.0,
+            -85.79684448242188,
+            0.0
+          ],
+          "fov": 90.0
+        },
+        "primary": {
+          "eye": [
+            -1540.258896,
+            -4487.489675,
+            7144.410406
+          ],
+          "rotation": [
+            0.0,
+            -85.79684448242188,
+            0.0
+          ]
+        },
+        "view_mode": "VMI_LIT"
+      }
+    },
+    "cvars_equal_priors": true,
+    "cvar_differences": {
+      "exposure": {},
+      "showflag_overrides": {},
+      "streaming": {},
+      "lighting": {}
+    },
+    "texture_props_unchanged": true,
+    "dirty": {
+      "maps": [],
+      "content": []
+    },
+    "disk_unchanged": true,
+    "material_end": {
+      "parent": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+      "GeoCity_GrassCoverage": 0.15000000596046448,
+      "GeoCity_S1_Enable": false,
+      "GeoCity_S1_GazaGround": false
+    },
+    "dirty_unchanged": true,
+    "saved_viewport_preference_end": {
+      "line_sha256": "b902b376b995957c8b69c4943e27827f39e343086095088218f93d1a752f6c58",
+      "persp_view_mode": "VMI_Lit",
+      "exposure_settings": "FixedEV100=1.000000,bFixed=False",
+      "EditorShowFlagsString": {
+        "PostProcessing": "1",
+        "EyeAdaptation": "1",
+        "Tonemapper": "1",
+        "LocalExposure": "1",
+        "Lighting": "1",
+        "Game": "0"
+      },
+      "GameShowFlagsString": {
+        "PostProcessing": "1",
+        "EyeAdaptation": "1",
+        "Tonemapper": "1",
+        "LocalExposure": "1",
+        "Lighting": "1",
+        "Game": "1"
+      }
+    },
+    "log_slice": {
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\CAPTURE_GazaShujaiya_S1_B0_r001_LOG.txt",
+      "sha256": "531442e4b91a7343bac73e074d39fe1e3895c88d6abd69faf655654cfd115794",
+      "end_offset": 361541,
+      "scan": {
+        "lines": 21,
+        "shader_or_material_problems": [],
+        "problem_count": 0,
+        "shader_compiler_display_lines": [],
+        "shader_compiler_display_count": 0,
+        "lumen_cached_lighting_exposure_clipping_warnings": []
+      }
+    },
+    "image_sweep": {
+      "utc": "2026-10-05T20:53:57.734402+00:00",
+      "quarantined": [
+        {
+          "from": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_00_close.png",
+          "utc": "2026-10-05T20:53:57.733901+00:00",
+          "png": {
+            "bytes": 31034,
+            "sha256": "e384254aa56dff5c490ec85c159d5f0a09a014809e131a78e94aa568fa983329",
+            "signature_ok": true,
+            "width": 1600,
+            "height": 1000,
+            "iend_present": true
+          },
+          "to": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\images\\GazaShujaiya_S1_B0_r001_00_close.INVALIDATED.png",
+          "status": "QUARANTINED",
+          "shot_index": 0,
+          "shot_state": "REQUESTED"
+        }
+      ],
+      "tasks_still_live": []
+    },
+    "registry": "RELEASED",
+    "next": null
+  }
+}

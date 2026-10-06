@@ -1,0 +1,65 @@
+{
+  "schema": "environmentpipeline.modular_active_chain_review.v1",
+  "status": "READ_ONLY_REVIEW_PASSED_BASELINE_IDENTIFIED",
+  "scope": "20WholeBuildingConversions only; no startup/native/live-source authorization",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "independent_reviewer": "/root/modular_activation_chain_review",
+  "baseline_revision": "r018_retained_appearance",
+  "definition_type": "trackb::geocity_city::15.0",
+  "external_root": "C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank",
+  "module_sha256": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b",
+  "hda_sha256": "61303c1559b82daa7afca90213725dfde691905bf551ab1ef7e373e740cb8440",
+  "definition_receipt_sha256": "cd20de41751bcc95c582ef9820e663a44b47639238cb473ba1ba735206c57355",
+  "native_hda_sha256": "357eeac66369e1ac3940592a3a922202aaf7e296c1183587365a30cc83485399",
+  "active_runtime_manifest": "Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json",
+  "runtime_manifest_sha256": "3cd33b1513c8c040377d0da9e98225c737bffa034f1241d99371b1e2e4c5a9cd",
+  "source_checks": "All12runtime modules plus startup/support diskhashes match; saved ground RUNTIME_STARTUP_PID35000 records same loaded seal. Released historical PID is not a lease.",
+  "hooks": {
+    "assembly_layout_line": 5994,
+    "cook_normal_building_assembly_points_line": 6035,
+    "graph_contract_line": 4753,
+    "profile_parameter": "building_assembly_contract_json",
+    "workflow_parameter_lines": "517-518"
+  },
+  "required_output": [
+    "orderedmaterial_slots",
+    "unreal_material0...",
+    "unreal_instance",
+    "orient",
+    "scale",
+    "stableplacement/sourceIDs",
+    "rolebuilding_module",
+    "family/palette metadata",
+    "assembly_material_signature",
+    "unreal_split_attr=assembly_material_signature",
+    "coverage/support/receipts/replacementledger"
+  ],
+  "preserved_guard": "While existing styles enabled, workflow requires at least two family and palette counts; do not relax to bypass missing metadata.",
+  "new_source_owner": "01a10c07-cd82-7871-8450-30b7e1001e02 owns only staged candidate and submitted dated derivative destination, not current external base/production target.",
+  "startup_risk": "Existing launcher consumes stopped legacy bankassignment/BANK_ACTIVATION and does not itself teststartup_authorized. New20family launch must actually consume bounded manageractivation; no successful launch infers authority.",
+  "map_sha256": {
+    "GazaRimal": "a6961c8e017901e61ccd3f64aa5d77dd881d83f5f17a410f45ff571103c2d8fd",
+    "GazaShujaiya": "17d5929a02b03d9e022c0043ec95bcd99ad030574959ecd6b6812a0b5d49fba3"
+  },
+  "profiles": [
+    {
+      "File": "Staging/ModelBank/PermanentIntegration_2026-10-02/AREA_PROFILE.json",
+      "Hash": "B1648E342DFEDCA1191190C9F77607E3B998C44E0F5D64AC9EA1CDC279300667",
+      "Map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "HDA": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "Table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "Source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaRimal/city_source_v1.json",
+      "Catalog": "f6fff4f9759af2db7f72efde779e5082415a8dfb961ebece67b1bb3c28438665"
+    },
+    {
+      "File": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/AREA_PROFILE.json",
+      "Hash": "00877B7CF8CB5BA3AFA8D7AA2F4B5B099F8A98BAAE20668AAE4BA7BEDBC1910F",
+      "Map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "HDA": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "Table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "Source": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+      "Catalog": "f6fff4f9759af2db7f72efde779e5082415a8dfb961ebece67b1bb3c28438665"
+    }
+  ],
+  "unrelated_work_stays_stopped": true
+}

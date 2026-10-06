@@ -1,0 +1,67 @@
+{
+  "status": "PASSED_SOURCE_STATIC_CHECKS",
+  "frozen_files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "d9124420d27c7e32e240c1e6700f7b151a4e238eacd0fee378a2a0c118eb853e",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "c33118eaf50529dfb0fe9e67561a0516b704fa7f615ccf4ca07eddc4bfda55a9",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "ba19eb39184f9a03a04b06cff630beb73f919a1190629bf30de54a1cf281349c",
+      "syntax_valid": true
+    },
+    "geocity_roadbld_seams.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_seams.py",
+      "sha256": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289",
+      "syntax_valid": true
+    },
+    "geocity_bank_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_bank_workflow.py",
+      "sha256": "8e1cc47148c150168c72c255dfea9b4ef264a0635860a3c5240b7a3d00fc11b2",
+      "syntax_valid": true
+    }
+  },
+  "unchanged_gate_functions_AST": [
+    "AsphaltField",
+    "_source_eligibility",
+    "_parent_trim_cross_section_support",
+    "verify_source_coverage",
+    "analyze_protected_source_intervals",
+    "_physical_segment_intervals",
+    "verify_clipped_source_partition",
+    "ground_native_geos",
+    "verify_native_delivery"
+  ],
+  "original_verify_links_body_AST_preserved": true,
+  "original_native_validate_and_staged_contract_bodies_AST_preserved": true,
+  "workflow_generation_topology_rebuild_Bake_save_unmodified": true,
+  "workflow_changed_methods": [
+    "validate",
+    "_validate_native (original validate body renamed)",
+    "staged_contract",
+    "_staged_contract_native (original staged_contract body renamed)",
+    "fail"
+  ],
+  "clip_changed_functions": [
+    "_candidate_metadata",
+    "_restore_candidate_asset"
+  ],
+  "parent_scope": "Only after_native_roads: commit hook after successful contract state write, immediately before cooking-pause check/resume; rollback hook before parent.fail",
+  "metadata_API_header": {
+    "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Editor\\EditorScriptingUtilities\\Source\\EditorScriptingUtilities\\Public\\EditorAssetLibrary.h",
+    "sha256": "b5391568dfccf3e1822da38ef6829d74fff12bb782b1a4e36654cea5d0c22bbd"
+  },
+  "immutable_v2_review_hashes_verified": true,
+  "v2_seams_and_all_physical_gates_unchanged": true
+}

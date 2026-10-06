@@ -1,0 +1,68 @@
+    parm {
+        name    "layer"
+        baseparm
+        label   "Distort Layers"
+        export  none
+    }
+    parm {
+        name    "masklayer"
+        baseparm
+        label   "Mask Layer"
+        export  none
+    }
+    parm {
+        name    "noisetype"
+        baseparm
+        label   "Noise Type"
+        export  none
+    }
+    parm {
+        name    "amp"
+        baseparm
+        label   "Amplitude"
+        export  none
+    }
+    parm {
+        name    "element_size"
+        baseparm
+        label   "Element Size"
+        export  none
+    }
+    parm {
+        name    "element_scale"
+        baseparm
+        label   "Element Scale"
+        export  none
+    }
+    parm {
+        name    "offset"
+        baseparm
+        label   "Offset"
+        export  none
+    }
+    parm {
+        name    "rough"
+        baseparm
+        label   "Roughness"
+        export  none
+    }
+    parm {
+        name    "maxoctave"
+        baseparm
+        label   "Max Octaves"
+        export  none
+    }
+    parm {
+        name    "steps"
+        baseparm
+        label   "Substeps"
+        export  none
+    }
+    parm {
+        name    "newparameter"
+        label   "Label"
+        type    float
+        default { "0" }
+        range   { 0 10 }
+        parmtag { "script_callback_language" "python" }
+    }

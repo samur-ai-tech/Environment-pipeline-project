@@ -1,0 +1,794 @@
+{
+  "kind": "TRACK_A_OFFLINE_REVIEW_OF_BANK_ASTRA_004_NATIVE_RECEIPTS",
+  "reviewed_at": "2026-09-29T10:08:39.809Z",
+  "verdict": "BOUNDED_NATIVE_BOUNDS_BUILD_SCALE_AND_DIRECT_DEPENDENCY_EVIDENCE_RECONCILED",
+  "review_scope": "Read raw receipts and local package/source files; visually inspected three saved screenshots. No Unreal/Houdini contact and no bank edits.",
+  "catalog_sha256": "12225013b06810665b5e429299f1cd9e9931588aeae4b1ffe1a33282b5719098",
+  "counts": {
+    "raw_responses": 27,
+    "bounds": 3,
+    "materials": 6,
+    "direct_texture_dependencies": 12,
+    "referenced_package_hash_matches": 21
+  },
+  "bounds": [
+    {
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+      "measured_local_box": {
+        "min": {
+          "x": -680.353271484375,
+          "y": -700.4720458984375,
+          "z": 0.6762058734893799
+        },
+        "max": {
+          "x": 688.6864013671875,
+          "y": 668.2713623046875,
+          "z": 1561.33740234375
+        },
+        "isValid": true
+      },
+      "equals_import": true,
+      "extent_native_units": {
+        "x": 1369.0396728515625,
+        "y": 1368.743408203125,
+        "z": 1560.6611964702606
+      },
+      "kind": "asset_local_AABB_including_bounds_extensions",
+      "contact_or_footprint_verified": false,
+      "physical_scale_qualified": false
+    },
+    {
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+      "measured_local_box": {
+        "min": {
+          "x": -1273.8673095703125,
+          "y": -1081.9207763671875,
+          "z": -0.3545195758342743
+        },
+        "max": {
+          "x": 1615.8203125,
+          "y": 1049.0091552734375,
+          "z": 4868
+        },
+        "isValid": true
+      },
+      "equals_import": true,
+      "extent_native_units": {
+        "x": 2889.6876220703125,
+        "y": 2130.929931640625,
+        "z": 4868.354519575834
+      },
+      "kind": "asset_local_AABB_including_bounds_extensions",
+      "contact_or_footprint_verified": false,
+      "physical_scale_qualified": false
+    },
+    {
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+      "measured_local_box": {
+        "min": {
+          "x": -12.837084770202637,
+          "y": -17.898235321044922,
+          "z": 3.5086711136500526e-7
+        },
+        "max": {
+          "x": 16.559925079345703,
+          "y": 16.53656768798828,
+          "z": 74.40184783935547
+        },
+        "isValid": true
+      },
+      "equals_import": true,
+      "extent_native_units": {
+        "x": 29.39700984954834,
+        "y": 34.4348030090332,
+        "z": 74.40184748848836
+      },
+      "kind": "asset_local_AABB_including_bounds_extensions",
+      "contact_or_footprint_verified": false,
+      "physical_scale_qualified": false
+    }
+  ],
+  "direct_dependencies": [
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f"
+      ],
+      "equals_import_after_save": true
+    },
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd",
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683"
+      ],
+      "equals_import_after_save": true
+    },
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f",
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660"
+      ],
+      "equals_import_after_save": true
+    },
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b",
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae"
+      ],
+      "equals_import_after_save": true
+    },
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7",
+        "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487"
+      ],
+      "equals_import_after_save": true
+    },
+    {
+      "material": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003",
+      "direct_dependencies": [
+        "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+        "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+        "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e"
+      ],
+      "equals_import_after_save": true
+    }
+  ],
+  "registry_classes": [
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003",
+      "registry_class": "Material"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+      "registry_class": "Texture2D"
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e",
+      "registry_class": "Texture2D"
+    }
+  ],
+  "package_hashes": [
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.uasset",
+      "sha256": "3c1726f412f92ac187a66e0c040c70ece42423527d1060c4d6ac5c57aff289bc",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.uasset",
+      "sha256": "e5bb8f2ca2cf7ac473fa479251725933123a31f9f9d41d775eb11e675a039da6",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.uasset",
+      "sha256": "1b1ca536131e7ae3d5616f887b29277ee6a29829d350d6d497b1043b44fc419d",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.uasset",
+      "sha256": "8a6cb98f403a571730bcb354f91d50f121b7a103ba0c4b64247e31b90bf4a2a5",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.uasset",
+      "sha256": "407a0a0ec186e259fcb053ed60945189bea93d69c1b051f566209ad0f37bf044",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.uasset",
+      "sha256": "092c2346a55de1716e7ba21aa7e319018c40bc41a6fe4c2b03a5c93529d7c43e",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.uasset",
+      "sha256": "6a89b360444c03ff3c9f827b91e23e8e53492b3bd113874c10f17e021f6d0834",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.uasset",
+      "sha256": "c46417038cefd3b1aa1b0c5bba51027a3782bd86acce9ad975130aad56eac020",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.uasset",
+      "sha256": "96ad2e5e865181573931552805f0ffea8fe6c8c1ea1c48b0c58060ad36d717f7",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f.uasset",
+      "sha256": "939bb053cb7041677a1f22fe9487201d9ff030ee590097c57adf2fe01f5c67fc",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd.uasset",
+      "sha256": "8b27ef839d0f6a1c8c5a9aedbeca1b6d40edbdbf8b1edbb2a3d5d262d7263d6e",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683.uasset",
+      "sha256": "666fc6feb5125cb541182daff529620f76726081af943364cb9c58d185045197",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f.uasset",
+      "sha256": "05bf9e9480cdd8aa3cb2957f0da4bd0cb0ac7e0e9d41edee8f6f847baf3ba108",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660.uasset",
+      "sha256": "497324355dba1875b8540f4ba43691e5c287eac6290eb95d98e811252254733f",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b.uasset",
+      "sha256": "7f8f9679c84dbb92a5c7384929c1af5b65dc3b347d87cae2dfc833278532e31c",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae.uasset",
+      "sha256": "f4f007bbd1743b493ef2690d39837f8a2bf4968a93f19d3bc5d5c4cc845fae25",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7.uasset",
+      "sha256": "d102bbc6c3cb0c2c47f7290e73f783aa1abaeac742c952bbb08778653ad62c0f",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487.uasset",
+      "sha256": "5a56625a45e4d5d4476ed15f81f29e947b2c20d49756e2e4e07bdf2f0c73ea1f",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.uasset",
+      "sha256": "2210aa724bfecc9f8cfb0ffb526fca3b9d66a460b90d61da61c2fb6c4d0d1792",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.uasset",
+      "sha256": "16e765c22db8c30e6382b2b84a59e121f3206571fe94e2ad78cab7d837677948",
+      "matches_BANK_ASTRA_004": true
+    },
+    {
+      "package": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e",
+      "relative_file": "Content/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e.uasset",
+      "sha256": "de80e2faaaabbdb2d4e0974a183e5b46007eb8052f9f90ea90421e0249345f33",
+      "matches_BANK_ASTRA_004": true
+    }
+  ],
+  "raw_responses": [
+    {
+      "file": "001_bounds_SM_H0907_Arab_x3_fbx.json",
+      "tool": "get_bounds",
+      "arguments": {
+        "mesh": {
+          "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx"
+        }
+      },
+      "sha256": "b0d7b854fa983fade829ab5d2f1f55f06c75eed53f2d96853cd997f8ed3b30f0"
+    },
+    {
+      "file": "002_bounds_SM_H0013_Building_04.json",
+      "tool": "get_bounds",
+      "arguments": {
+        "mesh": {
+          "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04"
+        }
+      },
+      "sha256": "23103fb1fc32d0c71a86987526acc81b9c293005bdf0e7b728d18c40c9c7bfcf"
+    },
+    {
+      "file": "003_bounds_SM_H0051_Garbagebin.json",
+      "tool": "get_bounds",
+      "arguments": {
+        "mesh": {
+          "refPath": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin"
+        }
+      },
+      "sha256": "934fcf3d4eba79103f7374a585ceffff06a4d54378d8bbab1aaa857a8cd8064f"
+    },
+    {
+      "file": "004_deps_Arab_X3.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3"
+      },
+      "sha256": "2fd2480f0fca0a889b2f0405af7d2d34bbbb67aa7afb82da845e6fe96447efc9"
+    },
+    {
+      "file": "005_class_Arab_X3.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3"
+      },
+      "sha256": "a44039364f81d11d5292b7af5084fad68729bbbac3df29e98fa88d1382a7047f"
+    },
+    {
+      "file": "006_deps_Material_Building_04_1011.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011"
+      },
+      "sha256": "c41a801f7809543b87888327fd6ec95873a1b1af9353d53799f316fce8325ea2"
+    },
+    {
+      "file": "007_class_Material_Building_04_1011.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011"
+      },
+      "sha256": "85895cb9f031ec21725097b1bcf69ab83e310d12e84de59deb934fe55f3c393f"
+    },
+    {
+      "file": "008_deps_Material_Building_04_1001.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001"
+      },
+      "sha256": "4e5d04c25bd97b3869ac5ec8b6425e454560617696897c7fb8c5b5967b70fdb8"
+    },
+    {
+      "file": "009_class_Material_Building_04_1001.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001"
+      },
+      "sha256": "fbcb1be0939d450412c25e8af2f3ebdb7e551ad5ac22688b49dec4f2e816110e"
+    },
+    {
+      "file": "010_deps_Material_Building_04_1031.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031"
+      },
+      "sha256": "4d4ba40d3a0ae7a09f4adc265438c71bd40d54be5d13164e217ce214bb576580"
+    },
+    {
+      "file": "011_class_Material_Building_04_1031.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031"
+      },
+      "sha256": "acab241033fa6cd802fa3aebc4c1fc7ea334ce59a199f3375f9e35bd5c1573c4"
+    },
+    {
+      "file": "012_deps_Material_Building_04_1021.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021"
+      },
+      "sha256": "79ba38578840ce08e13609e5472bea8c018fa930eeee9ac52842f9db2ac5cfae"
+    },
+    {
+      "file": "013_class_Material_Building_04_1021.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021"
+      },
+      "sha256": "4ec50c5b12e9bf2ba2c4de3c66bff512aaf2da6104c2881ac805dafa291e8aeb"
+    },
+    {
+      "file": "014_deps_Street_Props_Pack__003.json",
+      "tool": "get_dependencies",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003"
+      },
+      "sha256": "7a68028859cc37031baea060651ccc7ce00af61f7d6bb1e81f10ea510ea54d65"
+    },
+    {
+      "file": "015_class_Street_Props_Pack__003.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003"
+      },
+      "sha256": "8f7700e2162a6d3744409084222537c4843c14ab22c7fed74630bcdb70554f14"
+    },
+    {
+      "file": "016_direct_class_Arab_x3_Diffuse_Map_9e424ef08c1f.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f"
+      },
+      "sha256": "96d66b10d6d347a7f873d64bcfce29fb27a4303760e4655dc661cbe8a9c50b3d"
+    },
+    {
+      "file": "017_direct_class_B04_M02_lbedoTransparency_c286d2b07cbd.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd"
+      },
+      "sha256": "3ab0d0c2aea65c3b2952ca86cc523f1e82a29de9dfba762ed4bb576cde9155d1"
+    },
+    {
+      "file": "018_direct_class_B04_M02_Normal_ba61051ad683.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683"
+      },
+      "sha256": "66c05c443791127452cd5b252f1e195d7be3631fd2d1ae27484a9278f43e5d3f"
+    },
+    {
+      "file": "019_direct_class_B04_M01_lbedoTransparency_feb997124e3f.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f"
+      },
+      "sha256": "e0e9332269f26e39914142ddb81117c3068d71506235c8c1a0e3b81d54fe3510"
+    },
+    {
+      "file": "020_direct_class_B04_M01_Normal_c3ebb6845660.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660"
+      },
+      "sha256": "0412fa251eb49cbf865bfd8b00af3dc7eb21e29694191783e843d7c3f8abcca2"
+    },
+    {
+      "file": "021_direct_class_B04_M04_lbedoTransparency_e0ebfc1dbb4b.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b"
+      },
+      "sha256": "f01db2b795a8c54d6d2a38c48e869575384c8aaf8da18f785fe5cae80ded8053"
+    },
+    {
+      "file": "022_direct_class_B04_M04_Normal_b6e59e496bae.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae"
+      },
+      "sha256": "720d0c80de20527cbfde139866863c65be3e080f9e48ca63cb0db704b39f4fad"
+    },
+    {
+      "file": "023_direct_class_B04_M03_lbedoTransparency_e52816c231d7.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7"
+      },
+      "sha256": "63df0c6176fed3682b2bede9db05b89773b291365039ce422e9eca6bf0aac881"
+    },
+    {
+      "file": "024_direct_class_B04_M03_Normal_a4f020a17487.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487"
+      },
+      "sha256": "203b0e1cb3948b87e96f75e98d72d51bacd8cd09d7db748c668d8a1df721524a"
+    },
+    {
+      "file": "025_direct_class_Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd"
+      },
+      "sha256": "951c02278602d729c895c48b077bdb1c1758b3b6bfa93612e307076f6ccc30c7"
+    },
+    {
+      "file": "026_direct_class_Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693"
+      },
+      "sha256": "4774e94cd0803009358276bd8d41f48a84d5ff19b6b651ac46d67a67ab02e9cd"
+    },
+    {
+      "file": "027_direct_class_Arabic_Assets_01_Normal_1011_99d47d234c4e.json",
+      "tool": "get_asset_class",
+      "arguments": {
+        "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e"
+      },
+      "sha256": "568eddb9f7f9aa2a08e0d6f30f1a311db1f56f227c535656f2f75421d48472c6"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/Toolsets/EditorToolset/Content/Python/editor_toolset/toolsets/static_mesh.py",
+      "sha256": "01c4c781103b8d1723ec55a7a6a476d434148f31a0e7de25e9061492b6296b13"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/Toolsets/EditorToolset/Content/Python/editor_toolset/toolsets/asset.py",
+      "sha256": "f69c28f1ca3a8bfd2fb8c27e4cb7607df0264ca278a8166bead6ddd0d4f17d20"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Engine/StaticMesh.h",
+      "sha256": "8effdddd5ef30d453a6cd8bde93efd8c27b6677eec907fc510503e0e701ceb9e"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/AssetRegistry/Public/AssetRegistry/IAssetRegistry.h",
+      "sha256": "3ea171eaf6a071caf8e1a93393fbab4b3a643224cff70ce87628cb3841885e08"
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Config/BaseEditor.ini",
+      "sha256": "e995577015578cf706ebcf28debc6a6f742593317a1091e12de5f673a7f120e4"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniEnginePrivatePCH.h",
+      "sha256": "f4e1432aed448489c75680b1736c73d78d95fd97a4bbd6df0943e0c15bc1e141"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniInputTranslator.cpp",
+      "sha256": "9bfc0675643e28c03ec3f9c3a23586e093daef3c0b5f4b7412e4387bdfb6e985"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "01_H0051_build_scale__1.jpg",
+      "sha256": "12d98de30eafaf66dd666f7b61310ba383f9f62f58900721fd3d91a0ae0569c5",
+      "observed": "Correct mesh tab, LOD0 Build Scale displays 1.0/1.0/1.0; All Saved visible; no physical length unit shown."
+    },
+    {
+      "path": "02_H0013_build_scale__1.jpg",
+      "sha256": "6ce6be477d9fc05f4cf96920fbe266144ed555e8778da288ef8405752f92f358",
+      "observed": "Correct mesh tab, LOD0 Build Scale displays 1.0/1.0/1.0; All Saved visible; no physical length unit shown."
+    },
+    {
+      "path": "03_H0907_build_scale__1.jpg",
+      "sha256": "83eac39466278f1e03f7edbb810cadc5aead8e14af655a25f644c974dea892e3",
+      "observed": "Correct mesh tab, LOD0 Build Scale displays 1.0/1.0/1.0; All Saved visible; no physical length unit shown."
+    }
+  ],
+  "new_source_findings": {
+    "bounds": "StaticMesh.h:2202-2204 documents GetBoundingBox including bounds extensions. PositiveBoundsExtension/NegativeBoundsExtension values were not read in BANK-ASTRA-004.",
+    "dependencies": "IAssetRegistry.h:146-180 defaults soft+hard package, game+editor references true; searchable names and soft/hard management false. Tool calls registry.get_dependencies once. Texture2D class does not prove dependency leaf.",
+    "units": "BaseEditor.ini:600-603 declares centimetre display default; inspected project and Saved config search found no DistanceUnits override. This narrows interface unit convention but does not establish source import physical scale or support contact."
+  },
+  "vendor_sources": [
+    {
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/units-of-measurement-in-unreal-engine?lang=en-US",
+      "supports": "UE5.8 default distance/length centimetres; editor unit preferences exist."
+    },
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/StaticMesh",
+      "supports": "UE5.8 get_bounding_box includes bounds extensions."
+    }
+  ],
+  "remaining": [
+    "Bank owner records declared AABB kind/unit evidence and selected-asset revision; actual table/HDA binding remains unmeasured.",
+    "Bounds extension readback or explicit declared envelope use; physical role-scale and contact remain unqualified.",
+    "Recursive dependency traversal including mesh and returned texture frontier, unresolved dependencies and revisioned manifest.",
+    "Material custom-data channel graph audit, actual HDA/CAT1/INST1/lifecycle proof remain open."
+  ],
+  "no_new_gate_pass": true,
+  "receiving_unit_interpretation": {
+    "decision": "Raw measured native UE X/Y/Z values may be encoded unchanged into existing candidate local_bounds_*_cm fields, under project centimetre convention. No additional unit-label live test required.",
+    "physical_scale_qualification": false,
+    "houdini_conversion": "(x,z,y)/100 exactly once for DataTable scalar metadata; reference bbox attrs already converted by plugin.",
+    "bounds_kind": "native asset-local AABB including configured bounds extensions",
+    "note": "Bank candidates remain disabled; no actual DataTable binding filled."
+  },
+  "float32_wire_numeric_model": {
+    "coordinates": 18,
+    "max_absolute_difference_cm": 0,
+    "scope": "Offline numeric model only; not an observed DataTable export.",
+    "values": [
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "min",
+        "axis": "x",
+        "native_value": -680.353271484375,
+        "float32_value": -680.353271484375,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "min",
+        "axis": "y",
+        "native_value": -700.4720458984375,
+        "float32_value": -700.4720458984375,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "min",
+        "axis": "z",
+        "native_value": 0.6762058734893799,
+        "float32_value": 0.6762058734893799,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "max",
+        "axis": "x",
+        "native_value": 688.6864013671875,
+        "float32_value": 688.6864013671875,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "max",
+        "axis": "y",
+        "native_value": 668.2713623046875,
+        "float32_value": 668.2713623046875,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+        "side": "max",
+        "axis": "z",
+        "native_value": 1561.33740234375,
+        "float32_value": 1561.33740234375,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "min",
+        "axis": "x",
+        "native_value": -1273.8673095703125,
+        "float32_value": -1273.8673095703125,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "min",
+        "axis": "y",
+        "native_value": -1081.9207763671875,
+        "float32_value": -1081.9207763671875,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "min",
+        "axis": "z",
+        "native_value": -0.3545195758342743,
+        "float32_value": -0.3545195758342743,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "max",
+        "axis": "x",
+        "native_value": 1615.8203125,
+        "float32_value": 1615.8203125,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "max",
+        "axis": "y",
+        "native_value": 1049.0091552734375,
+        "float32_value": 1049.0091552734375,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+        "side": "max",
+        "axis": "z",
+        "native_value": 4868,
+        "float32_value": 4868,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "min",
+        "axis": "x",
+        "native_value": -12.837084770202637,
+        "float32_value": -12.837084770202637,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "min",
+        "axis": "y",
+        "native_value": -17.898235321044922,
+        "float32_value": -17.898235321044922,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "min",
+        "axis": "z",
+        "native_value": 3.5086711136500526e-7,
+        "float32_value": 3.5086711136500526e-7,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "max",
+        "axis": "x",
+        "native_value": 16.559925079345703,
+        "float32_value": 16.559925079345703,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "max",
+        "axis": "y",
+        "native_value": 16.53656768798828,
+        "float32_value": 16.53656768798828,
+        "absolute_difference_cm": 0
+      },
+      {
+        "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+        "side": "max",
+        "axis": "z",
+        "native_value": 74.40184783935547,
+        "float32_value": 74.40184783935547,
+        "absolute_difference_cm": 0
+      }
+    ]
+  }
+}

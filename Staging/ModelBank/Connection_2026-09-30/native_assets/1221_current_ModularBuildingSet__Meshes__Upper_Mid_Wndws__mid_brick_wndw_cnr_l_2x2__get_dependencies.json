@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1231,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Upper_Mid_Wndws/mid_brick_wndw_cnr_l_2x2"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Bricks_Tiles/brick_wall_grey\",\"/Game/ModularBuildingSet/materials/Concrete/concrete_trim\",\"/Game/ModularBuildingSet/materials/Glass/Glass_Opaque\",\"/Game/ModularBuildingSet/materials/Metal/metal_trim___default\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1231,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Bricks_Tiles/brick_wall_grey\",\"/Game/ModularBuildingSet/materials/Concrete/concrete_trim\",\"/Game/ModularBuildingSet/materials/Glass/Glass_Opaque\",\"/Game/ModularBuildingSet/materials/Metal/metal_trim___default\"]}"
+    }
+   ]
+  }
+ }
+}

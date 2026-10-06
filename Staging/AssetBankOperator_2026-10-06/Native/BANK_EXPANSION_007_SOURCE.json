@@ -1,0 +1,2320 @@
+{
+  "batch_id": "BANK_EXPANSION_007",
+  "pid": 29900,
+  "closure": {
+    "packages": [
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_9",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_09_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_09_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_09_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_09_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_09_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_09_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/M_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/M_Impostor",
+        "classes": [
+          "Material"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+          "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+          "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+          "/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay",
+          "/Game/Palms_Pack_02/Material_Functions/MF_Impostor_ThreeFrameBlend"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_Impostor_ThreeFrameBlend",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
+          "/Engine/EngineResources/Black",
+          "/Engine/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset",
+          "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/FoliageScaleFactor",
+          "/Game/Palms_Pack_02/Material_Functions/MF_FrameBlendWeights_TextureObject",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImposterFrameTransform",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImposterFrameTransform_Setup",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImposterSpriteProjection",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorGridToVector",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorInfo",
+          "/Game/Palms_Pack_02/Material_Functions/MF_TriangleInterpolator",
+          "/Game/Palms_Pack_02/Material_Functions/MF_VirtualPlaneCoordinates_Imposter"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_VirtualPlaneCoordinates_Imposter",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_TriangleInterpolator",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorInfo",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorGridToVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+          "/Engine/Functions/Engine_MaterialFunctions01/Vectors/OctahedronToUnitVector",
+          "/Engine/Functions/Engine_MaterialFunctions01/Vectors/UnitVectorToOctahedron",
+          "/Game/Palms_Pack_02/Material_Functions/MF_HemiOctahedronToUnitVector",
+          "/Game/Palms_Pack_02/Material_Functions/MF_UnitVectorToHemiOctahedra"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_UnitVectorToHemiOctahedra",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_HemiOctahedronToUnitVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/Vectors/UnitVectorToOctahedron",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/Vectors/OctahedronToUnitVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_ImposterSpriteProjection",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Game/Palms_Pack_02/Material_Functions/MF_HemiOctahedronToUnitVector",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorGridToVector"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_ImposterFrameTransform_Setup",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions01/Vectors/OctahedronToUnitVector",
+          "/Game/Palms_Pack_02/Material_Functions/MF_HemiOctahedronToUnitVector",
+          "/Game/Palms_Pack_02/Material_Functions/MF_ImpostorGridToVector"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_ImposterFrameTransform",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_FrameBlendWeights_TextureObject",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Material_Functions/MF_FrameBlendWeights"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_FrameBlendWeights",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/FoliageScaleFactor",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/EngineResources/Black",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/EngineMaterials/BlendFunc_DefBase",
+          "/Engine/EngineMaterials/BlendFunc_DefBlend"
+        ]
+      },
+      {
+        "package": "/Engine/EngineMaterials/BlendFunc_DefBlend",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/EngineMaterials/BlendFunc_DefBase",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/EngineResources/DefaultTexture",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/M_Trees_PP2"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/M_Trees_PP2",
+        "classes": [
+          "Material"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+          "/Engine/Functions/Engine_MaterialFunctions02/HueShift",
+          "/Engine/EngineResources/DefaultTexture",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength",
+          "/Engine/EngineMaterials/BaseFlattenNormalMap",
+          "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+          "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+          "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+          "/Engine/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset",
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+          "/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_Overlay",
+          "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+          "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+          "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+          "/Engine/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+          "/Game/Palms_Pack_02/Material_Functions/MF_SimpleGrassWind_MOD"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Material_Functions/MF_SimpleGrassWind_MOD",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageShader",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/PivotPainter2FoliageAnimation",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale",
+          "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+          "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/SimpExPivPos",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/PP2_rgb_XVect_a_XExtent",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_ReturnParentTextureInfo",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/2dArrayLookupByIndex",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodePostion",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_DecodeAxisVector",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_Decode8BitAlphaAxisExtent",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/ms_PivotPainter2_UnpackIntegerAsFloat",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/FixRotateAboutAxisNormals",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/PivotPainter2/ms_PivotPainter2_CalculateMeshElementIndex",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Lerp_Multiple_Float2",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable"
+        ]
+      },
+      {
+        "package": "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable",
+        "classes": [
+          "MaterialFunction"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/EngineMaterials/BaseFlattenNormalMap",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Engine/EngineResources/DefaultTexture",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_AO",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Bark_AO",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_09_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_09_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_7",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_07_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_07_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_07_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_07_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_07_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_07_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_4",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_04_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_04_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_04_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_04_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_04_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_04_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_3",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_03_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_03_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_03_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_03_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_03_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_03_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_8",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_08_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_08_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_08_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_08_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_08_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_08_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_7_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_07_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_07_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_07_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/PivotPainter2/test2_rgb_PivotPos_a_ParentIndexInt_UV_2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Wind",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_5_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_05_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_05_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_05_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_05_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_05_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_05_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_05_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_6",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_06_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_06_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_06_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_06_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_06_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_06_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_1",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_01_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_01_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_01_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_01_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_01_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_01_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_8_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_08_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_08_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_08_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_10",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_10_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_10_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_10_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_10_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_10_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_10_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_10_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_10_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_1_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_01_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_01_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_01_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_4_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_04_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_04_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_04_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_6_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_06_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_06_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_06_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_5",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_05_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_05_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/SM_Palm_02_2",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_02_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_02_Impostor",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_Impostor_MASTER",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_02_Impostor_Color",
+          "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_02_Impostor_Normal"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_02_Impostor_Normal",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/Impostor_Tex/T_Palm_02_02_Impostor_Color",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_GYD",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_GYD",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Leaves_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+        "classes": [
+          "Texture2D"
+        ],
+        "dependencies": []
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Leaves_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Grass_11_12_13_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry2",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry2",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Branch_Dry2_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch_Dry",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Branch",
+          "/Game/Palms_Pack_02/Textures/T_Stem_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark_Details",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark_Details",
+          "/Game/Palms_Pack_02/Textures/T_Palm_Bark_Detail_Color",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Bark",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_AO",
+          "/Game/Palms_Pack_02/Textures/T_Palm_02_Bark_Normal",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_2_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_02_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_02_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_02_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Meshes/Ivy_Meshes/SM_Palm_02_3_Ivy",
+        "classes": [
+          "StaticMesh"
+        ],
+        "dependencies": [
+          "/Script/NavigationSystem",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Bark_Details",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Branch_Dry2",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_Dry",
+          "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Leaves_GYD",
+          "/Game/Palms_Pack_02/Materials/Impostor_Mat/MI_Palm_02_03_Impostor"
+        ]
+      },
+      {
+        "package": "/Game/Palms_Pack_02/Materials/MI_Palm_02_03_Ivy_Leaves",
+        "classes": [
+          "MaterialInstanceConstant"
+        ],
+        "dependencies": [
+          "/Game/Palms_Pack_02/Materials/MI_Palm_MASTER_Ivy_Leaves",
+          "/Game/Palms_Pack_02/Textures/T_Ivy_02_Leaves_Color_G",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_PivotPos_a_ParentIndexInt_UV_3",
+          "/Game/Palms_Pack_02/Textures/PP2_Tex/T_Palm_02_03_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_3"
+        ]
+      }
+    ],
+    "missing": []
+  },
+  "dirty_before": {
+    "content": [
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_374_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_375_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_376_0_main_geo"
+    ],
+    "maps": []
+  },
+  "dirty_after": {
+    "content": [
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_374_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_375_0_main_geo",
+      "/Game/Project/Areas/Iran_38196167_46086167_4km/BankIntegration_v015/Cook/GeoCity_city_v015_4km/78F86F39/GeoCity_city_v015_4km_3_376_0_main_geo"
+    ],
+    "maps": []
+  },
+  "state": "source_registry_inspected"
+}

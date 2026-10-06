@@ -1,0 +1,45 @@
+{
+  "schema": "environmentpipeline.epic_resident_plan.v1",
+  "pid": 26820,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "items": [
+    {
+      "source": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+      "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+    },
+    {
+      "source": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+      "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+    },
+    {
+      "source": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+      "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+    },
+    {
+      "source": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+      "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+    }
+  ],
+  "bindings": {
+    "Sand_01_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Sand_02_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Dirt_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Dirt_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Sand_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+  },
+  "policy": {
+    "never_stream": true,
+    "max_texture_size": 2048,
+    "global_force_mip_levels_to_be_resident": false
+  },
+  "reference_sha256": "89a02abd7c180bdf6b37b0c2e4eaf43636c195f21d0b36afae1f853f22198024",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "reason": "Measured native fresh textureCurrent/Wanted128 plus stalewideStreamView0 while close screenshot requests lose fine pebbles. Four original2kEpic sources duplicated with unchanged color/normal PBR semantics; per-owned-copy policy makes rendering deterministic without globalforce.",
+  "estimated_compressed_full_mip_mib": 18.66675567626953,
+  "no_source_upscale": true,
+  "original_epic_assets_immutable": true
+}

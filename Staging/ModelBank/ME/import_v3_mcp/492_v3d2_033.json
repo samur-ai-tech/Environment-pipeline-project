@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 44,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Props/MI_baseMaterial_AC"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Props/T_ac_BaseColor_c269320793a1\",\"/Game/Project/Shared/Bank_ME_v3/Props/T_white_cd3693fd6329_albedo_db4a9624048c10\",\"/Game/Project/Shared/Bank_ME_v3/Props/T_ac_Normal_276e5b18dd8a\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 44,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Props/T_ac_BaseColor_c269320793a1\",\"/Game/Project/Shared/Bank_ME_v3/Props/T_white_cd3693fd6329_albedo_db4a9624048c10\",\"/Game/Project/Shared/Bank_ME_v3/Props/T_ac_Normal_276e5b18dd8a\"]}"
+    }
+   ]
+  }
+ }
+}

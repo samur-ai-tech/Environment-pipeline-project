@@ -1,0 +1,157 @@
+I've reviewed the entry docs, lease file, v006/v007 receipts, and a live process snapshot. Now I'll check the DataTable diagnosis, launch two read-only research agents (plugin source/docs and WorldBLD log forensics), and review the bank and open editors.
+
+PID 30076 has a "Save Content" dialog open, and its log shows another agent ran a read-only inspection script there at 13:36, so it's still active. I'm just reading the new state file now without touching anything.
+
+The 13:35 MCP handshake in PID 32804 was likely just my own session auto-connecting, not an active issue. PID 30076's log updated at 13:38, so I'm checking now whether it's in the process of exiting.
+
+Still waiting on two background research agents (DataTable root cause and WorldBLD log forensics). Meanwhile I've verified the bank flags, the v006/v007 inventories, and the live window state. One important event happened during the audit: PID 30076 closed at 13:38:16 local with nothing saved. I'll put the full report together once both agents report back.
+
+Status: the WorldBLD forensics are done and I've checked them against the transcripts myself. One research agent is still running, on the root cause of the zero DataTable rows on Recook. I'll write the final report when it finishes.
+
+I found that during v007, a Recook read an empty catalog but still registered as a success, since pilot mode skips the empty-table check. I'll pull the exact numbers from that cook and then write the report.
+
+PID 32804 has now closed as well, at about 14:03. I'm checking its log and lease lines before I finish.
+
+# Independent read-only audit: Environmentpipeline, 1 Oct 2026, 13:35–14:10
+
+I edited no project file, gave Unreal and Houdini no input, and did not touch Linear. One thing to disclose: this session's `unreal-mcp` client connected to PID 32804 automatically at 13:35:16 and only listed its tools ([Environmentpipeline.log:4337-4342](Saved/Logs/Environmentpipeline.log)). I called no MCP tool.
+
+## Read first: the state changed during the audit
+
+1. **Both editors are closed, and a new one is running.** PID 30076 exited at 13:38 and PID 32804 at 14:03, both through Don't Save. Since 14:08:42 a new editor, PID 37600, has been running under the lease `V007-FRESH-READONLY-REOPEN`. [measured, 14:09:47]
+2. **v007 can cook an empty catalog without reporting any error.** When `bank_pilot_enabled` is on, v007 skips the empty-Input-0 guard (`Pipeline Environment/Houdini/GeoCity_city_v007/geocity_city_module.py:1568-1569`). With an empty input, the parser just returns no rows (`:1132-1133`). This already happened: the 10:29:33 v007 Recook produced `schema_version 1`, `interface "GeoCity bank v1"`, `rows 0`, one pole and 59 requests, and the log shows a normal `FinishedCooking` with no error (`.codex/sessions/2026/09/30/rollout-…01a0f41d….jsonl` L18153 and L18159; [Environmentpipeline_2.log:2793-2795](Saved/Logs/Environmentpipeline_2.log)). [measured] So "HDA Successfully Cooked", or a quiet Cook Log, does not mean the catalog loaded. The current plan relies on exactly that signal.
+3. **The inventory scripts cannot see Houdini proxy meshes.** They only query `unreal.StaticMeshComponent` ([inventory_native.py:117](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v007_FullCatalogPolePilot_2026-10-01/inventory_native.py), [inspect_open_v007_readonly.py:108](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v007_FullCatalogPolePilot_2026-10-01/inspect_open_v007_readonly.py)). Any "no duplicate" result from these scripts covers only that one component class. [measured]
+
+The manager's [reconciliation note](Staging/ToolchainChecks/CLAUDE_CODE_AUDIT_RECONCILIATION_2026-10-01.md) and the 14:06 edits to CURRENT_STATE and WORK_PLAN cite a different Claude Code session (`cc88478b`), not this audit. [measured]
+
+## Q1. What actually worked
+
+- **[measured] Proven:**
+  - The official plugin cooked the HDA in Unreal for v002 through v007, baked native output, and saved named maps.
+  - A fresh editor process reopened saved maps for:
+    - v004 on both areas;
+    - v006 GazaRimal Update and v006 GazaShujaiya;
+    - the v006 Landscape test map, whose height and four paint layers matched byte for byte ([sentinel](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v006_LandscapeSentinel_2026-10-01/RESULT.md));
+    - the catalog fixture ([fixture](Staging/ModelBank/CatalogFixture_2026-10-01/FRESH_REOPEN_RESULT.md));
+    - the v006 pole map, with its duplicate.
+  - A Recook after a fresh reopen worked without rebinding the table twice: the Landscape test map and the fixture. Neither was followed by a replace-bake, a save and a second reopen.
+- **[not run] Still open:**
+  - For v007: the fresh reopen, a component inventory of the saved map, Recook, replace-bake, and a duplicate and leftover-package check. Its 16-actor result was taken in the same process, on the unsaved `/Temp/Untitled_2` world before "Save Level As".
+  - For every version: one complete cycle of reopen → Recook → replace-bake with cooked output removed → save → second reopen → duplicate check across all component types.
+  - Also never done: a full reference check, ActorGuid identity, v007 on the second area, and visual or final acceptance.
+- **Source data note:** the pole pilots used the acquired 2026 GazaRimal package (59 requests); earlier proofs used the 2023 package (60). [SourceData/GazaShujaiya/STATUS.md](<C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/STATUS.md>) still says the area was never cooked; that is stale.
+
+## Q2. Does "the bank is connected" mean anything is usable? No
+
+- **[measured] The ledger** ([ledger CSV](Staging/ModelBank/BANK_ASSETID_REVIEW_LEDGER_2026-10-01.csv)):
+  - 1,215 rows, 1,215 unique IDs, 324 families.
+  - For all 1,215 rows: `CatalogRunEligible=false`, `GenerationEnabled=false`, and Qualified, Generated, VisuallyVerified and Accepted are all `no`.
+  - H0013, H0907, H0051 and H0958 are `technical_check_only`. The two declined palms, `SM_Palm_01_03_G` and `SM_Palm_01_08_G`, are marked `id_inferred`.
+- **[measured] The catalog CSV:** `RunEligible=false` on all 1,215 rows, `ReleaseId` and `DecisionId` blank, and `PlacementScope none`. 317 rows have no object path.
+- **[measured] The v007 readback:** 1,215 rows with `RunEligible 0` and `eligible_count 0`. The single instance has `selection_source=direct_picker_pilot` and `row=null`.
+- **[measured] The pole's [authorization](Staging/ModelBank/DirectPickerPilot_2026-10-01/authorization.json):** one placement only (`GazaRimal:pole_144276113_2_2`), rights unverified, visual not reviewed, `catalog_run_eligible false`.
+- **Meaning:** "connected" only means the disabled catalog reaches the HDA. Nothing is eligible, generated through the catalog, approved or accepted.
+- **[inference] One gap:** the pole's ledger row says `Generated=no`, but the pole is in two saved maps. The flag seems to mean "generated through the catalog".
+
+## Q3. The duplicate pole
+
+- **[measured] v006 duplicated the whole city output, not just the pole.** In the [fresh inventory](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v006_ApprovedPolePilot_2026-10-01/NATIVE_INVENTORY_20261001T065600Z.json), the HDA actor still holds six cooked components: the pole plus five cooked `main_geo` city meshes at the origin. Five baked `GazaRimal_*` mesh actors sit at the same origin.
+- **Cause:** "Remove Cooked Output After Bake" was off ([RESULT.md:34](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v006_ApprovedPolePilot_2026-10-01/RESULT.md)). [documented] SideFX says that with it on, "all the temporary/cook outputs of the HDA will be automatically destroyed" ([Details panel](https://www.sidefx.com/docs/houdini/unreal/detailspanel.html)). The v002 pilot had Replace and Remove both on and passed ([RESULT.md:19](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_direct_picker_UI_2026-10-01/RESULT.md)).
+- **Was it fixed in v007 after reopening? Not established.**
+  - After the bake, the HDA actor showed zero StaticMesh components, which suggests Remove was on. [inference]
+  - The v007 files don't record the bake settings, and the map was never reopened.
+  - The inventory could not have seen leftover proxy meshes.
+
+## Q4. Why Input 0 sometimes delivers zero DataTable rows
+
+- **[measured] The symptom:** the guard at `geocity_city_module.py:1567-1570` fails while the table still shows in Details. There are 9 logged cases from 30 Sep 22:41 to 1 Oct 06:17, plus the silent v007 case at 10:29.
+- **[measured] Correction to the v007 result:** [catalog_readback_rebound_recook.json](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v007_FullCatalogPolePilot_2026-10-01/catalog_readback_rebound_recook.json) is a copy made at 10:34:36 (transcript L18320) of the receipt file the HDA overwrites on every cook. The "same SHA before and after rebind" claim is false: before the rebind, the catalog was empty.
+- **[measured] The pattern:** in every case where the order of events is known, the failure was the second or later upload of the same DataTable input in the same editor process, after a successful one. Every recovery was a first upload: either a new input object after clear and reselect, or a fresh process. The 10:29 case is the cleanest: good cook at 10:24, a read-only inventory, then a plain Recook came back empty. Nothing changed in between: no parameter or mode change, no bake, no other editor.
+- **[measured] Workaround:** clear and reselect the same table, then one explicit Recook. It worked in every recorded attempt. Recook alone failed (v005, four times in a row), and so did Rebuild (v002).
+- **Likely causes, ranked:**
+  1. **[inference] The plugin's re-upload path.** Every Recook or Rebuild sets the loaded flag ([HoudiniCookable.cpp:1369](Plugins/HoudiniEngine/Source/HoudiniEngineRuntime/Private/HoudiniCookable.cpp)). That leads to `UpdateInputs` and then `DestroyInputNodes` ([HoudiniInputTranslator.cpp:5104-5120](Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniInputTranslator.cpp)). The DataTable node is rebuilt, but its reference merge node is reused, and the result of that call is ignored (`:5746`).
+  2. **[measured] Several editors shared one Houdini Engine server (HARS), a confounder.** [DefaultEngine.ini:55-56](Config/DefaultEngine.ini) sets `bUseSessionSyncForAutomaticServer=True`, so every editor attached to HARS 28836. [documented] SideFX says HARS "only supports a single client connection" ([HAPI sessions](https://www.sidefx.com/docs/hengine/_h_a_p_i__sessions.html)). Against this cause: the first two failures happened with only one client.
+  3. **Low:** the HDA's object_merge reading input 0 by path.
+  4. **Low:** the table or its row struct not loaded at upload time.
+  5. **Very low:** success-masking at `HoudiniInputTranslator.cpp` lines 846-861.
+  - I found no Epic documentation that applies; the whole input path is SideFX plugin and HAPI code.
+- **Missing evidence:**
+  - Nobody captured the Houdini scene in the failed state (for example `Houdini.Save` to a scratch `.hiplc` before rebinding), so the actual node wiring and point counts are unknown.
+  - No repeat with a single client on the server.
+  - Logs from the earlier runs: the [diagnosis](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v006_update_UI_2026-10-01/DATATABLE_RECOOK_DIAGNOSIS.md) cites log files that have since been deleted or rotated.
+
+## Q5. The WorldBLD activity Aviv saw
+
+- **[measured] What happened:**
+  - At 13:27:52 a Codex worker (thread `01a0f681`) clicked the menu bar at (402,7) under an action titled "Inspect Unreal Tools menu". Its screenshot shows the WorldBLD dropdown open.
+  - At 13:28:08.705 it pressed Escape. The editor log shows `SELECT NONE` at 13:28:08.881 ([_2.log:3528](Saved/Logs/Environmentpipeline_2.log)).
+- **[measured] No evidence of any change:**
+  - No menu command appears in the transcript.
+  - No Content file was written after 10:38:21.
+  - The `.uproject` and `Plugins` have not changed since 25 Sep; `Config` was last changed on 30 Sep.
+  - The list of unsaved packages was identical at 11:13 and 13:36.
+  - WorldBLD modules load at every editor startup; that is normal and not activation.
+- **[measured] Activity nobody accounts for:**
+  - 13:20:13: PID 30076 drew a Hebrew character and loaded one package, with no agent input logged.
+  - 10:42: a third editor ran with no lease.
+  - 10:43:17: a "Save Content" prompt closed in PID 32804, with no lease.
+- **Verdict:** a mis-click by the UI automation made the WorldBLD menu visible. Nothing shows a WorldBLD asset was activated or changed. Unreal logs don't record menu opens or manual input, and there is no screen recording, so a click that left no lasting effect cannot be fully ruled out. The manager first told Aviv only the Tools menu was opened (13:35:10) and corrected this at 13:36:16.
+
+## Q6. PIDs 30076 and 32804, and their unsaved packages
+
+- **[measured] PID 30076: closed, nothing saved.**
+  - At 13:36:37 an inventory still found the same 10 unsaved packages and no unsaved map ([open-state file](Staging/TrackA_Tests/HoudiniCityProof/GeoCity_v007_FullCatalogPolePilot_2026-10-01/OPEN_STATE_20261001T103637Z.json)).
+  - The Save Content prompt closed at 13:38:16, followed by `QUIT_EDITOR` and exit at 13:38:20 ([_2.log:3535-3615](Saved/Logs/Environmentpipeline_2.log)).
+  - No save lines appear in the log, no Content file was written, and the v007 map still hashes to `A930F944…`.
+  - The click landed where "Don't Save" sits in [the prompt screenshot](Staging/ToolchainChecks/EDITOR_CLOSURE_2026-10-01/V7_PID30076_EXIT_PROMPT.jpg). That it was that button is inferred from the layout.
+- **[measured] PID 32804: also closed, nothing saved.**
+  - At 14:00:24 an inventory found its 15 unsaved packages.
+  - The prompt closed at 14:03:18 and the editor exited at 14:03:24 ([Environmentpipeline.log:4362-4443](Saved/Logs/Environmentpipeline.log)).
+  - The B2 map still hashes to `6ABBC0BB…`, and HARS 28836 exited with it.
+- **[measured] Who authorized what** (manager transcript `.codex/sessions/2026/10/01/rollout-…01a0f67f….jsonl`):
+  - 13:25:55 (L639): Aviv chose to discard both groups and close both windows.
+  - 13:31:35 (L755): the manager ordered: "Stop all further UI input immediately, including closing either window, until this is audited."
+  - 13:34:07 (L783): the manager told Aviv Unreal work was paused until this review.
+  - 13:34:15 (L791): Aviv said that if two windows aren't needed, close one.
+  - 13:35:16 (L812): the manager overrode its own hold and ordered only PID 30076 closed, reusing the 13:25:55 discard choice.
+  - 13:41:04 (L926): Aviv said to continue with the plan.
+  - So the 32804 close had Aviv's go-ahead. The 30076 close came after the hold, while this audit was running, and before Aviv's "continue".
+- **[measured] One safety note:** the manager thread ran with `danger-full-access` and `approval_policy never` (L925), so nothing stopped the 13:35 order from turning into a click. Your global rules forbid that mode for Codex runs I launch; whether it should also apply to the Codex app is your call.
+
+## Agree / disagree with the manager's current records
+
+| Claim | Assessment |
+|---|---|
+| v007 read 1,215 rows, rejected all, 59 requests, one pole | **Agree** for the final 10:34 cook. **Disagree** with "same SHA before and after rebind"; the cook before the rebind was empty. |
+| v007 has 16 actors and no cooked duplicate | **Partly agree.** It was measured in the same process, before the save, counting StaticMesh components only. |
+| v006 has two overlapping pole components | **Understated.** All five city meshes are duplicated too. |
+| The bank is a disabled interface with zero qualified models | **Agree**; every flag confirms it. |
+| The Input-0 failure is intermittent and undiagnosed | **Partly agree.** It is undiagnosed, but it follows a consistent pattern; the records cite stale logs and understate the shared-server setup. |
+| The WorldBLD menu was opened by mistake, with no command | **Agree** with the corrected 13:36 statement. |
+| "The next gate checks the saved actors and components" | **Not sufficient** unless the inventory script counts proxy components. |
+
+**Most likely explanation for each failure:**
+- **Duplicate:** the bake setting, "Remove Cooked Output" off.
+- **Zero rows:** re-uploading the same input in one process, made worse by the shared server and hidden by v007's pilot-mode bypass.
+- **WorldBLD:** an automation click made from a shifted screenshot.
+- **Unexpected close:** a broken process; the manager overrode its own hold before the audit finished.
+
+## Smallest safe next steps (proposed, none executed)
+
+1. **Stop PID 37600 before any Recook.** Change the next gate before anything is cooked. Stop condition: after every cook, read the receipt, and stop unless it shows:
+   - `schema_version=2` and the v2 interface;
+   - `rows=1215`, `rejected=1215`, `eligible=0`, `requests=59`;
+   - exactly one instance with `direct_picker_pilot`.
+
+   Before the next cook, save a timestamped copy of the receipt, since each cook overwrites it.
+2. **Make the read-only inventory count every component type on every actor,** including Houdini proxy meshes. Stop condition: the reopened map matches 16 actors, one pole on `bank_instances_0`, nothing cooked left on the HDA actor, and map hash `A930F944…`.
+3. **Keep the logs.** Copy `Environmentpipeline.log`, `_2.log` and `_3.log` (or their rotated backups) before more editors launch. Stop condition: the copies' hashes match the originals.
+4. **Use this run as the first single-client test.** Confirm that PID 37600 is the parent of the current HARS. If a second Recook in the same process still empties Input 0, the shared server is not required for the failure. Capture the Houdini scene before any rebind.
+5. **On a Restore Packages prompt, choose Skip.** Autosave copies of the 25 discarded packages remain on disk.
+6. **Bake settings:** Replace Previous Bake on, Remove Cooked Output on, Auto Bake off. Save only named paths, then do a second fresh reopen. Stop on any duplicate component or an actor count other than 16.
+7. **Fix the records:** the false SHA claim, the full-city duplicate in v006, the inventory blind spot, and the 13:35 hold override.
+
+Files are in `C:\Users\USER\AppData\Local\Temp\claude\C--Users-USER-Documents-Unreal-Projects-Environmentpipeline\d4293915-f686-4c3c-8ff7-80d5fcb1614f\scratchpad\`:
+- INDEPENDENT_AUDIT_2026-10-01.md
+
+I also saved a memory note with these findings. If you want to share this with the manager, I can publish it as a private page.

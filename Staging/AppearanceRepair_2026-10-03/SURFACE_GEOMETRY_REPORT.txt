@@ -1,0 +1,88 @@
+RETAINED SURFACE GEOMETRY PATCH — STABLE HANDOFF
+2026-10-03; worker terrain_contact_audit; manager is the only editor/source writer.
+
+File: SURFACE_GEOMETRY_PATCH.py (503 lines)
+SHA256: 626be081a81bc49c8f49824f8c80b7360fb61b40e866a0882dc23b193c525089
+Append once AFTER all retained r017 PythonModule patches. No new graph input is
+needed: the two existing grounded surface SOPs already receive complete road
+coverage, eligible full-width source lines and final corrected terrain. The
+existing corrected geographic-pad SOP is read independently, without a cycle.
+No external Python shape dependency, native asset edit or source-package edit.
+
+Default retained behavior
+-------------------------
+Houdini remains the visible drivable-road provider. Full source road widths,
+complete coverage, road/pad masks and geographic/source identities remain intact.
+Footways use the already scoped MI_ConcreteGrain. Path/track source routes expose
+the existing Dirt_Path RoadBed painting without an asphalt overlay. Optional
+native route materials can be configured explicitly; no new bank row is released.
+Visible surface geometry excludes true building-footprint interiors. This
+changes rendered overlap, not the authoritative full road coverage or masks.
+
+Sidewalks are restricted to exterior edges classified as drivable roads. Offset
+strips receive round convex corner sectors and bounded round branch joins.
+Concave overlap, road interiors, true pads and already emitted sidewalk coverage
+are subtracted using the existing triangle/4m spatial-index helpers. This closes
+the former convex-corner gaps and removes duplicated concave ribbons. Final
+material output retains the existing 1m terrain bricking and 8cm/16cm lifts.
+This patch does not add a curb vertical wall: native RoadBLD owns that profile.
+
+Three optional string parms
+---------------------------
+road_provider: default 'houdini'; native option 'RoadBLD'.
+road_provider_contract_json: default '{}'.
+route_surface_materials_json: default '{}'. Keys may be footway/path/track;
+each value is a native object path or {path,uv_units_per_metre}. An empty path
+means mask-only. Current defaults are concrete footway, mask-only path/track.
+The helpers retain these defaults even before the root adds the parms.
+The root should bind these strings through geocity_bank_workflow from the
+profile and, for native mode, require contract.named_map == profile.map.
+
+Bounded native export and commit gate
+------------------------------------
+receipt.roadbld_centerlines uses environmentpipeline.roadbld_centerlines.v1.
+The source JSON file-byte hash is source_sha256. The roads-only canonical JSON
+hash is centreline_sha256 (sorted keys, compact separators, ensure_ascii=False).
+Coordinates are not rounded or snapped. Each source record preserves all
+source_points_xz_m plus analytically clipped in-area pieces on FINAL terrain.
+Each piece includes piece_id, <=2m points_m, original_point_indices (indices
+into points_m), parallel original_source_vertex_indices, boundary_point_indices.
+Outside source-way excursions do not become artificial in-area connectors.
+area_box_xz_m is [xmin,zmin,xmax,zmax]. Complete OSM ways extending beyond the
+active area are provenance, not native geometry with clamped outside heights.
+
+The native gate checks exact source/hash/area/source IDs, clipped piece IDs and
+counts, per-source piece/path coverage, network/native actor paths and map scope.
+It accepts either a complete saved delivery or the root's distinct staged
+phase native_generated_validated_pending_save/saved=false, with
+livevalidated_editor_transaction=true and transaction{pid,lease_sha256,revision,
+named_map,token}. The manager must verify those LIVE actors under the current
+one-writer lease before setting staged native mode. No first save of overlapping
+providers is required. Official HDA suppression/Bake and native commit/map save
+remain the manager/adapter transaction; default Houdini mode is never activated
+by an existing contract alone. Missing/stale/incomplete native mode fails closed.
+
+Receipt/lifecycle integration
+-----------------------------
+receipt.surface_geometry.road_provider exposes provider, area/source/digest/IDs,
+counts, generated_piece_ids, vehicle_surfaces_suppressed and original contract.
+receipt.surface_geometry.outputs.catalog_road_material.visible_face_count and
+.catalog_sidewalk_material.visible_face_count are complete final-output counts.
+Lifecycle expected mesh identities may discard a road/sidewalk output ONLY when
+its completed ledger has zero visible faces. Actual native suppression must also
+have the exact validated provider contract. This permits true mask-only routes
+and prevents falsely calling missing vehicle roads a successful HDA delivery.
+The selector wrapper writes both exports and surface ledgers into the existing
+catalog receipt; no auxiliary city generator or alternative Engine route.
+
+Verification performed offline
+------------------------------
+Combined retained source + appended patch parsed successfully. The joined
+convex profile matches analytic area67.0232515926m2; an outside building pad
+removes exactly3m2; concave profile union matches54.5290644907m2. Maximum analytic
+area error2.84e-14m2. Analytic line clipping retained two separate in-area pieces
+across an outside excursion, retained source-vertex mappings, introduced no
+outside connector, and kept all points inside the box at <=2m spacing.
+No Houdini evaluation, Engine cook, editor operation, map change or live source
+edit was performed by this worker. Actual final style/geometry/collision and
+ordinary regeneration must be checked after manager integration.

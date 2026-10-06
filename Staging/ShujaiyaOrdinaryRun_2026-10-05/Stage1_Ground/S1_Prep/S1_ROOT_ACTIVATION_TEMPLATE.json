@@ -1,0 +1,38 @@
+{
+ "schema": "environmentpipeline.s1_root_activation.v1",
+ "_note": "TEMPLATE for ROOT. The file NAME must start with S1_ROOT_ACTIVATION and the file must sit under Stage1_Ground but not under S1_Prep (EDIT:378). One activation binds ONE editor PID (EDIT:384), so root makes a filled copy per editor session, e.g. Stage1_Ground/Activation/S1_ROOT_ACTIVATION_<Area>_PID<pid>.json, and puts that copy's path + sha256 into the args. Fill every <...>, and write the matching EDITOR_OWNER.txt line: OWNER=<OWNER> manager_thread_id=<manager_thread_id> operator_thread_id=<operator_thread_id> assigned_editor_PID=<PID> map=<map> activation=<one of authoring_activations> scope=GeoCity_GroundS1_20261005_material_edit. Read-only modes (inspect/verify) may instead run under a listed [activation, scope] readonly pair; s1_verify.py accepts only activation=STARTUP_INSPECTION_ONLY. OWNER must not be a non-S1 owner (script FOREIGN_OWNERS). modes per area: GazaShujaiya = 'modes' below (Session A uses inspect/apply/tune/save, Session B uses verify in a new PID); GazaRimal = '_modes_GazaRimal' (Session C tune + child_save, Session D verify in a new PID). Concrete prepared copies: Stage1_Ground/Activation/S1_ROOT_ACTIVATION_GazaShujaiya.json and S1_ROOT_ACTIVATION_GazaRimal.json.",
+ "scope": "GeoCity_GroundS1_20261005_material_edit",
+ "OWNER": "<root-named S1 OWNER token>",
+ "manager_thread_id": "<root manager thread id>",
+ "operator_thread_id": "<operator thread id>",
+ "assigned_editor_PID": 0,
+ "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "modes": [
+  "inspect",
+  "apply",
+  "tune",
+  "save",
+  "verify"
+ ],
+ "_modes_GazaRimal": [
+  "tune",
+  "child_save",
+  "verify"
+ ],
+ "script_sha256": "<sha256 of the reviewed s1_material_edit.py>",
+ "authoring_activations": [
+  "<root-named authoring activation, e.g. GROUND_S1_AUTHORING>"
+ ],
+ "readonly_pairs": [
+  [
+   "STARTUP_INSPECTION_ONLY",
+   "<scope root writes on a read-only S1 startup line>"
+  ]
+ ],
+ "expected_hda_count": 1,
+ "max_tune_iterations": 3,
+ "expected_consumers": null
+}

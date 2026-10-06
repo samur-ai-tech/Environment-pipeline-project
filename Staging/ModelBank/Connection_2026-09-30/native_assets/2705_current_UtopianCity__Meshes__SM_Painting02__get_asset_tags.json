@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2715,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Painting02"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"200x0x200\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Painting02.fbx\\\", \\\"Timestamp\\\" : \\\"1518465389\\\", \\\"FileMD5\\\" : \\\"4d517f8a844c589b175dbf5fa33f4184\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"0\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"2\",\"Materials\":\"1\",\"ResourceSize\":\"8\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"2\",\"UVChannels\":\"2\",\"Vertices\":\"4\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2715,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"200x0x200\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Painting02.fbx\\\", \\\"Timestamp\\\" : \\\"1518465389\\\", \\\"FileMD5\\\" : \\\"4d517f8a844c589b175dbf5fa33f4184\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"0\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"2\",\"Materials\":\"1\",\"ResourceSize\":\"8\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"2\",\"UVChannels\":\"2\",\"Vertices\":\"4\"}}"
+    }
+   ]
+  }
+ }
+}

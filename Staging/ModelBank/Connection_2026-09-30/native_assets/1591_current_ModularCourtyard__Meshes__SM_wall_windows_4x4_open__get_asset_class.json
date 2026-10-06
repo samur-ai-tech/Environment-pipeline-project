@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1601,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/ModularCourtyard/Meshes/SM_wall_windows_4x4_open"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":\"StaticMesh\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1601,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"StaticMesh\"}"
+    }
+   ]
+  }
+ }
+}

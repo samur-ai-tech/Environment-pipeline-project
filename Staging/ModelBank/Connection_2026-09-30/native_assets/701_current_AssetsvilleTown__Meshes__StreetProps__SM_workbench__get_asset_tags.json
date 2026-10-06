@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 711,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_workbench"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.033,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"111x252x123\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/workbench.fbx\\\", \\\"Timestamp\\\" : \\\"1512819525\\\", \\\"FileMD5\\\" : \\\"b9e444708705343a788539fc6979bdc0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1506\",\"UVChannels\":\"2\",\"Vertices\":\"3303\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 711,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"111x252x123\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/workbench.fbx\\\", \\\"Timestamp\\\" : \\\"1512819525\\\", \\\"FileMD5\\\" : \\\"b9e444708705343a788539fc6979bdc0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1506\",\"UVChannels\":\"2\",\"Vertices\":\"3303\"}}"
+    }
+   ]
+  }
+ }
+}

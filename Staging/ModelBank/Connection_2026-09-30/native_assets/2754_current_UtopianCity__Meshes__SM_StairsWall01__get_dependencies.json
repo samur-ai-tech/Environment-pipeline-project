@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2764,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_StairsWall01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.007,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/UtopianCity/Materials/M_Brut\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2764,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/UtopianCity/Materials/M_Brut\"]}"
+    }
+   ]
+  }
+ }
+}

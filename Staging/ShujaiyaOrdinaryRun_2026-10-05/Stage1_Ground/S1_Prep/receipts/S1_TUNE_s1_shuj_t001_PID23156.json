@@ -1,0 +1,4471 @@
+{
+ "schema": "environmentpipeline.s1_material_edit.tune.v1",
+ "status": "TUNED_VERIFIED_NO_SAVE",
+ "mode": "tune",
+ "phase": "a",
+ "label": "s1_shuj_t001",
+ "pid": 23156,
+ "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+ "area": "GazaShujaiya",
+ "utc": "2026-10-05T21:16:44.237378+00:00",
+ "script_sha256": "5c48daaffd81e46a81bacfbac22a2353f32cb3b188b95c550190fc98497c0705",
+ "apply_receipt": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\receipts\\S1_APPLY_s1_shuj_r001_apply_PID23156.json",
+  "sha256": "7c91d8552a11c0a30f63f4ff48d391e101efd4bff8142581739ab4839c384c61"
+ },
+ "save_receipt": null,
+ "state_receipt": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\receipts\\S1_APPLY_s1_shuj_r001_apply_PID23156.json",
+  "sha256": "7c91d8552a11c0a30f63f4ff48d391e101efd4bff8142581739ab4839c384c61",
+  "schema": "environmentpipeline.s1_material_edit.apply.v1"
+ },
+ "operator_preconditions": {
+  "no_asset_editors_open_on_s1_assets": true,
+  "measured_by": "unreal-mcp EditorToolset.EditorAppToolset.GetOpenAssets returned [] at 2026-10-05T20:58:13Z (PID 23156)",
+  "attested_by": "Claude manager cc37d4d2"
+ },
+ "activation": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Activation\\S1_ROOT_ACTIVATION_GazaShujaiya_PID23156.json",
+  "sha256": "7c9ae2b8b2939236b6a00f5508525c9dd225ed79854257ac920d9f0495a7e200"
+ },
+ "lease_kind": "authoring",
+ "executed_script": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1_Prep\\s1_material_edit.py",
+  "sha256": "5c48daaffd81e46a81bacfbac22a2353f32cb3b188b95c550190fc98497c0705"
+ },
+ "plan": {
+  "textures": {
+   "GeoCity_S1_MacroNoise": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+    "kind": "MASKS"
+   },
+   "GeoCity_S1_GroundB_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_GroundB_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+    "kind": "NORMAL"
+   },
+   "GeoCity_S1_GroundC_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_GroundC_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+    "kind": "NORMAL"
+   },
+   "GeoCity_S1_Soil_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_VariationMask": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+    "kind": "MASKS"
+   },
+   "GeoCity_S1_VariationNormal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm",
+    "kind": "NORMAL"
+   },
+   "Dirt_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR"
+   },
+   "Dirt_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "kind": "NORMAL"
+   },
+   "Sand_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "kind": "COLOR"
+   },
+   "Sand_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "kind": "NORMAL"
+   }
+  },
+  "vectors": {
+   "GeoCity_S1_HueA": [
+    1.0499999523162842,
+    1.0,
+    0.9200000166893005,
+    1.0
+   ],
+   "GeoCity_S1_HueB": [
+    0.9700000286102295,
+    0.9599999785423279,
+    0.9800000190734863,
+    1.0
+   ],
+   "GeoCity_S1_GroundB_Tint": [
+    1.100000023841858,
+    1.059999942779541,
+    1.0199999809265137,
+    1.0
+   ],
+   "GeoCity_S1_GroundC_Tint": [
+    1.2999999523162842,
+    1.2699999809265137,
+    1.2400000095367432,
+    1.0
+   ],
+   "GeoCity_S1_Soil_Tint": [
+    2.0,
+    1.899999976158142,
+    1.7999999523162842,
+    1.0
+   ],
+   "Dirt_Path_Tint": [
+    2.200000047683716,
+    2.0999999046325684,
+    2.0,
+    1.0
+   ],
+   "Dirt_Path_TileCm": [
+    400.0,
+    400.0,
+    400.0,
+    1.0
+   ],
+   "Sand_Path_Tint": [
+    2.0,
+    1.9500000476837158,
+    1.899999976158142,
+    1.0
+   ],
+   "Sand_Path_TileCm": [
+    300.0,
+    300.0,
+    300.0,
+    1.0
+   ]
+  },
+  "scalars": {
+   "GeoCity_S1_MacroTileNearCm": 3700.0,
+   "GeoCity_S1_MacroTileFarCm": 31100.0,
+   "GeoCity_S1_HueAmount": 0.6000000238418579,
+   "GeoCity_S1_ValueAmount": 0.10999999940395355,
+   "GeoCity_S1_FarSaturation": 1.100000023841858,
+   "GeoCity_S1_FarValue": 0.8999999761581421,
+   "GeoCity_S1_FarAmount": 0.6000000238418579,
+   "GeoCity_S1_GroundB_TileCm": 512.0,
+   "GeoCity_S1_GroundB_FarScale": 12.0,
+   "GeoCity_S1_GroundB_Amount": 0.4000000059604645,
+   "GeoCity_S1_GroundB_NormalStrength": 0.6000000238418579,
+   "GeoCity_S1_GroundC_TileCm": 470.0,
+   "GeoCity_S1_GroundC_FarScale": 12.0,
+   "GeoCity_S1_GroundC_Amount": 0.25,
+   "GeoCity_S1_GroundC_NormalStrength": 0.6000000238418579,
+   "GeoCity_S1_Soil_TileCm": 400.0,
+   "GeoCity_S1_Soil_FarScale": 12.0,
+   "GeoCity_S1_Soil_Amount": 0.30000001192092896,
+   "GeoCity_S1_PatchLo": 0.4000000059604645,
+   "GeoCity_S1_PatchHi": 0.699999988079071,
+   "GeoCity_S1_SteepLo": 0.25,
+   "GeoCity_S1_SteepHi": 0.44999998807907104,
+   "GeoCity_S1_SteepJitter": 0.15000000596046448,
+   "GeoCity_S1_SteepSlopeMix": 0.5,
+   "GeoCity_S1_SteepStones": 0.3499999940395355,
+   "GeoCity_S1_HeightBias": 0.8500000238418579,
+   "GeoCity_S1_HeightContrast": 2.0,
+   "GeoCity_S1_HeightAmount": 0.6000000238418579,
+   "GeoCity_S1_ContactRoad": 0.0,
+   "GeoCity_S1_ContactPad": 0.0,
+   "GeoCity_S1_ContactDarken": 0.0,
+   "GeoCity_S1_ContactSoil": 0.0,
+   "GeoCity_S1_ContactRough": 0.0,
+   "GeoCity_S1_NormalFade": 0.699999988079071,
+   "GeoCity_S1_RoughVar": 0.05000000074505806,
+   "GeoCity_S1_VariationTileCm": 65536.0,
+   "GeoCity_S1_VariationAmount": 0.0,
+   "GeoCity_S1_VariationNormalStrength": 0.0,
+   "GeoCity_GrassCoverage": 0.0
+  }
+ },
+ "planned_textures": {
+  "GazaShujaiya": {
+   "GeoCity_S1_MacroNoise": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+    "kind": "MASKS",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_MASKS: 2>",
+    "virtual_texture_streaming": false,
+    "size_x": 2048,
+    "size_y": 2048
+   },
+   "GeoCity_S1_GroundB_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+    "kind": "COLOR",
+    "srgb": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_GroundB_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+    "kind": "NORMAL",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_GroundC_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+    "kind": "COLOR",
+    "srgb": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_GroundC_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+    "kind": "NORMAL",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_Soil_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR",
+    "srgb": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_VariationMask": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+    "kind": "MASKS",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_MASKS: 2>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "GeoCity_S1_VariationNormal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm",
+    "kind": "NORMAL",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "Dirt_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR",
+    "srgb": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "Dirt_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "kind": "NORMAL",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "Sand_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "kind": "COLOR",
+    "srgb": true,
+    "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   },
+   "Sand_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "kind": "NORMAL",
+    "srgb": false,
+    "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+    "virtual_texture_streaming": false,
+    "size_x": 4096,
+    "size_y": 4096
+   }
+  }
+ },
+ "previous_plan": {
+  "textures": {
+   "GeoCity_S1_MacroNoise": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+    "kind": "MASKS"
+   },
+   "GeoCity_S1_GroundB_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_GroundB_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+    "kind": "NORMAL"
+   },
+   "GeoCity_S1_GroundC_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_GroundC_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+    "kind": "NORMAL"
+   },
+   "GeoCity_S1_Soil_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR"
+   },
+   "GeoCity_S1_VariationMask": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+    "kind": "MASKS"
+   },
+   "GeoCity_S1_VariationNormal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm",
+    "kind": "NORMAL"
+   },
+   "Dirt_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "kind": "COLOR"
+   },
+   "Dirt_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "kind": "NORMAL"
+   },
+   "Sand_Path_Albedo": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "kind": "COLOR"
+   },
+   "Sand_Path_Normal": {
+    "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "kind": "NORMAL"
+   }
+  },
+  "vectors": {
+   "GeoCity_S1_HueA": [
+    1.0499999523162842,
+    1.0,
+    0.9200000166893005,
+    1.0
+   ],
+   "GeoCity_S1_HueB": [
+    0.9700000286102295,
+    0.9599999785423279,
+    0.9800000190734863,
+    1.0
+   ],
+   "GeoCity_S1_GroundB_Tint": [
+    1.100000023841858,
+    1.059999942779541,
+    1.0199999809265137,
+    1.0
+   ],
+   "GeoCity_S1_GroundC_Tint": [
+    1.399999976158142,
+    1.3600000143051147,
+    1.3200000524520874,
+    1.0
+   ],
+   "GeoCity_S1_Soil_Tint": [
+    2.299999952316284,
+    2.1500000953674316,
+    2.0,
+    1.0
+   ],
+   "Dirt_Path_Tint": [
+    2.200000047683716,
+    2.0999999046325684,
+    2.0,
+    1.0
+   ],
+   "Dirt_Path_TileCm": [
+    400.0,
+    400.0,
+    400.0,
+    1.0
+   ],
+   "Sand_Path_Tint": [
+    2.0,
+    1.9500000476837158,
+    1.899999976158142,
+    1.0
+   ],
+   "Sand_Path_TileCm": [
+    300.0,
+    300.0,
+    300.0,
+    1.0
+   ]
+  },
+  "scalars": {
+   "GeoCity_S1_MacroTileNearCm": 3700.0,
+   "GeoCity_S1_MacroTileFarCm": 31100.0,
+   "GeoCity_S1_HueAmount": 1.0,
+   "GeoCity_S1_ValueAmount": 0.18000000715255737,
+   "GeoCity_S1_FarSaturation": 1.2000000476837158,
+   "GeoCity_S1_FarValue": 0.8999999761581421,
+   "GeoCity_S1_FarAmount": 0.75,
+   "GeoCity_S1_GroundB_TileCm": 512.0,
+   "GeoCity_S1_GroundB_FarScale": 12.0,
+   "GeoCity_S1_GroundB_Amount": 0.550000011920929,
+   "GeoCity_S1_GroundB_NormalStrength": 0.6000000238418579,
+   "GeoCity_S1_GroundC_TileCm": 470.0,
+   "GeoCity_S1_GroundC_FarScale": 12.0,
+   "GeoCity_S1_GroundC_Amount": 0.3499999940395355,
+   "GeoCity_S1_GroundC_NormalStrength": 0.6000000238418579,
+   "GeoCity_S1_Soil_TileCm": 400.0,
+   "GeoCity_S1_Soil_FarScale": 12.0,
+   "GeoCity_S1_Soil_Amount": 0.44999998807907104,
+   "GeoCity_S1_PatchLo": 0.44999998807907104,
+   "GeoCity_S1_PatchHi": 0.6499999761581421,
+   "GeoCity_S1_SteepLo": 0.25,
+   "GeoCity_S1_SteepHi": 0.44999998807907104,
+   "GeoCity_S1_SteepJitter": 0.15000000596046448,
+   "GeoCity_S1_SteepSlopeMix": 0.5,
+   "GeoCity_S1_SteepStones": 0.3499999940395355,
+   "GeoCity_S1_HeightBias": 0.8500000238418579,
+   "GeoCity_S1_HeightContrast": 3.0,
+   "GeoCity_S1_HeightAmount": 0.800000011920929,
+   "GeoCity_S1_ContactRoad": 0.0,
+   "GeoCity_S1_ContactPad": 0.0,
+   "GeoCity_S1_ContactDarken": 0.0,
+   "GeoCity_S1_ContactSoil": 0.0,
+   "GeoCity_S1_ContactRough": 0.0,
+   "GeoCity_S1_NormalFade": 0.699999988079071,
+   "GeoCity_S1_RoughVar": 0.07999999821186066,
+   "GeoCity_S1_VariationTileCm": 65536.0,
+   "GeoCity_S1_VariationAmount": 0.0,
+   "GeoCity_S1_VariationNormalStrength": 0.0,
+   "GeoCity_GrassCoverage": 0.0
+  }
+ },
+ "child_disk_before": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Areas\\GazaShujaiya\\BankIntegration_v015\\Materials\\MI_GeoCityGround.uasset",
+  "exists": true,
+  "sha256": "8fb548f8a70b65bfb696d8d7bb7c07a4914d83ecb5750c20c4c6e65391421228"
+ },
+ "dirty_before": {
+  "maps": [],
+  "content": [
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+  ]
+ },
+ "log": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Logs\\Environmentpipeline.log",
+  "offset": 426796
+ },
+ "setter_returns": {
+  "switch": false,
+  "GeoCity_S1_MacroNoise": false,
+  "GeoCity_S1_GroundB_Albedo": false,
+  "GeoCity_S1_GroundB_Normal": false,
+  "GeoCity_S1_GroundC_Albedo": false,
+  "GeoCity_S1_GroundC_Normal": false,
+  "GeoCity_S1_Soil_Albedo": false,
+  "GeoCity_S1_VariationMask": false,
+  "GeoCity_S1_VariationNormal": false,
+  "Dirt_Path_Albedo": false,
+  "Dirt_Path_Normal": false,
+  "Sand_Path_Albedo": false,
+  "Sand_Path_Normal": false,
+  "GeoCity_S1_HueA": false,
+  "GeoCity_S1_HueB": false,
+  "GeoCity_S1_GroundB_Tint": false,
+  "GeoCity_S1_GroundC_Tint": false,
+  "GeoCity_S1_Soil_Tint": false,
+  "Dirt_Path_Tint": false,
+  "Dirt_Path_TileCm": false,
+  "Sand_Path_Tint": false,
+  "Sand_Path_TileCm": false,
+  "GeoCity_S1_MacroTileNearCm": false,
+  "GeoCity_S1_MacroTileFarCm": false,
+  "GeoCity_S1_HueAmount": false,
+  "GeoCity_S1_ValueAmount": false,
+  "GeoCity_S1_FarSaturation": false,
+  "GeoCity_S1_FarValue": false,
+  "GeoCity_S1_FarAmount": false,
+  "GeoCity_S1_GroundB_TileCm": false,
+  "GeoCity_S1_GroundB_FarScale": false,
+  "GeoCity_S1_GroundB_Amount": false,
+  "GeoCity_S1_GroundB_NormalStrength": false,
+  "GeoCity_S1_GroundC_TileCm": false,
+  "GeoCity_S1_GroundC_FarScale": false,
+  "GeoCity_S1_GroundC_Amount": false,
+  "GeoCity_S1_GroundC_NormalStrength": false,
+  "GeoCity_S1_Soil_TileCm": false,
+  "GeoCity_S1_Soil_FarScale": false,
+  "GeoCity_S1_Soil_Amount": false,
+  "GeoCity_S1_PatchLo": false,
+  "GeoCity_S1_PatchHi": false,
+  "GeoCity_S1_SteepLo": false,
+  "GeoCity_S1_SteepHi": false,
+  "GeoCity_S1_SteepJitter": false,
+  "GeoCity_S1_SteepSlopeMix": false,
+  "GeoCity_S1_SteepStones": false,
+  "GeoCity_S1_HeightBias": false,
+  "GeoCity_S1_HeightContrast": false,
+  "GeoCity_S1_HeightAmount": false,
+  "GeoCity_S1_ContactRoad": false,
+  "GeoCity_S1_ContactPad": false,
+  "GeoCity_S1_ContactDarken": false,
+  "GeoCity_S1_ContactSoil": false,
+  "GeoCity_S1_ContactRough": false,
+  "GeoCity_S1_NormalFade": false,
+  "GeoCity_S1_RoughVar": false,
+  "GeoCity_S1_VariationTileCm": false,
+  "GeoCity_S1_VariationAmount": false,
+  "GeoCity_S1_VariationNormalStrength": false,
+  "GeoCity_GrassCoverage": false
+ },
+ "explicit_save_called": false,
+ "dirty_after_setters": {
+  "maps": [],
+  "content": [
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+  ]
+ },
+ "state_instances": {
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural": {
+   "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+   "parent": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural",
+   "scalars": {
+    "BaseGrass1_Roughness": 0.8399999737739563,
+    "Farmland1_Roughness": 0.8399999737739563,
+    "Grass_Roughness": 0.8399999737739563,
+    "Sand1_Roughness": 0.8399999737739563,
+    "Sand2_Roughness": 0.8399999737739563,
+    "Soil1_Roughness": 0.8399999737739563,
+    "Soil2_Roughness": 0.8399999737739563,
+    "TreeGround_Roughness": 0.8399999737739563,
+    "SC_CobbleStone_Pebble_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Rough_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Smooth_Roughness": 0.8199999928474426,
+    "SC_Concrete_Grime_Roughness": 0.8199999928474426,
+    "SC_Concrete_Poured_Roughness": 0.8199999928474426,
+    "SC_Concrete_Tiles_Roughness": 0.8199999928474426,
+    "SC_Ground_Gravel_Roughness": 0.8199999928474426,
+    "SC_Rock_Sandstone_Roughness": 0.8199999928474426,
+    "Dirt_Path_Roughness": 0.8999999761581421,
+    "Ground_SoilBlendStrength": 0.6000000238418579,
+    "PB_solid_neutral_black_Roughness": 0.8799999952316284,
+    "PB_solid_sand_pale_Roughness": 0.8999999761581421,
+    "PB_solid_sand_warm_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_tan_Roughness": 0.9100000262260437,
+    "PB_solid_clay_red_Roughness": 0.8799999952316284,
+    "PB_solid_rock_limestone_Roughness": 0.8399999737739563,
+    "PB_solid_rock_basalt_Roughness": 0.8700000047683716,
+    "PB_solid_gravel_dark_Roughness": 0.8700000047683716,
+    "PB_solid_road_worn_Roughness": 0.8899999856948853,
+    "PB_solid_concrete_mid_Roughness": 0.8399999737739563,
+    "PB_solid_dry_grass_Roughness": 0.9200000166893005,
+    "PB_solid_moss_green_Roughness": 0.9399999976158142,
+    "PB_solid_wet_sand_Roughness": 0.75,
+    "PB_Custom_Ground_Roughness": 0.8500000238418579,
+    "PB_Custom_RoadBed_Roughness": 0.8500000238418579,
+    "Sand_01_Roughness": 0.8999999761581421,
+    "Sand_02_Roughness": 0.8999999761581421,
+    "Sand_03_Roughness": 0.8999999761581421,
+    "Sand_Path_Roughness": 0.8999999761581421,
+    "Wet_Sand_01_Roughness": 0.8999999761581421,
+    "Wet_Sand_02_Roughness": 0.8999999761581421,
+    "Wet_Sand_03_Roughness": 0.8999999761581421,
+    "PB_starter_SC_Ground_Grass_Roughness": 0.9100000262260437,
+    "PB_starter_SC_Ground_Moss_Roughness": 0.9300000071525574,
+    "PB_starter_SC_Rock_Basalt_Roughness": 0.8199999928474426,
+    "PB_starter_SC_Rock_Slate_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Concrete_Panels_Roughness": 0.800000011920929,
+    "PB_starter_SC_Brick_Clay_Beveled_Roughness": 0.8600000143051147,
+    "PB_starter_SC_Brick_Clay_New_Roughness": 0.8299999833106995,
+    "PB_starter_SC_Brick_Clay_Old_Roughness": 0.8799999952316284,
+    "PB_starter_SC_Brick_Cut_Stone_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Brick_Hewn_Stone_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Cliff_1_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Rock_04_Roughness": 0.8700000047683716,
+    "PB_coastal_CL_Rock_05_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Sand_1_Direct_Roughness": 0.8999999761581421,
+    "PB_coastal_CL_Stone_01_Roughness": 0.8399999737739563,
+    "PB_solid_neutral_white_Roughness": 0.8500000238418579,
+    "PB_solid_neutral_gray_Roughness": 0.8500000238418579,
+    "PB_solid_sand_light_Roughness": 0.8999999761581421,
+    "PB_solid_sand_ochre_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_brown_Roughness": 0.9300000071525574,
+    "PB_solid_rock_sandstone_Roughness": 0.8600000143051147,
+    "PB_solid_rock_slate_Roughness": 0.8500000238418579,
+    "PB_solid_gravel_light_Roughness": 0.8600000143051147,
+    "PB_solid_road_asphalt_Roughness": 0.8700000047683716,
+    "PB_solid_concrete_light_Roughness": 0.8199999928474426,
+    "PB_solid_concrete_dark_Roughness": 0.8600000143051147,
+    "PB_solid_grass_green_Roughness": 0.8999999761581421,
+    "PB_solid_snow_white_Roughness": 0.800000011920929,
+    "PB_Custom_Steep_Roughness": 0.8500000238418579,
+    "PB_Custom_BuildingPad_Roughness": 0.8500000238418579,
+    "Ground_MacroContrast": 3.0,
+    "GeoCity_GrassCoverage": 0.0,
+    "GeoCity_DistanceStartCm": 1200.0,
+    "GeoCity_DistanceRangeCm": 4800.0,
+    "GeoCity_RoughnessDetail": 0.75,
+    "GeoCity_AOStrength": 0.30000001192092896,
+    "GeoCity_MacroAmount": 0.07999999821186066,
+    "GeoCity_CellScale": 0.10000000149011612,
+    "GeoCity_PatternScale": 1.0,
+    "Sand_01_FarScale": 5.0,
+    "Sand_01_NormalStrength": 1.600000023841858,
+    "Sand_02_FarScale": 5.0,
+    "Sand_02_NormalStrength": 1.600000023841858,
+    "Dirt_Path_FarScale": 5.0,
+    "Dirt_Path_NormalStrength": 1.600000023841858,
+    "Sand_Path_FarScale": 5.0,
+    "Sand_Path_NormalStrength": 1.600000023841858,
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 31100.0,
+    "GeoCity_S1_HueAmount": 0.0,
+    "GeoCity_S1_ValueAmount": 0.0,
+    "GeoCity_S1_FarSaturation": 1.0,
+    "GeoCity_S1_FarValue": 1.0,
+    "GeoCity_S1_FarAmount": 0.0,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.0,
+    "GeoCity_S1_GroundB_NormalStrength": 0.0,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.0,
+    "GeoCity_S1_GroundC_NormalStrength": 0.0,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.0,
+    "GeoCity_S1_PatchLo": 0.44999998807907104,
+    "GeoCity_S1_PatchHi": 0.6499999761581421,
+    "GeoCity_S1_SteepLo": 0.0,
+    "GeoCity_S1_SteepHi": 0.0010000000474974513,
+    "GeoCity_S1_SteepJitter": 0.0,
+    "GeoCity_S1_SteepSlopeMix": 0.0,
+    "GeoCity_S1_SteepStones": 0.0,
+    "GeoCity_S1_HeightBias": 0.8500000238418579,
+    "GeoCity_S1_HeightContrast": 0.0,
+    "GeoCity_S1_HeightAmount": 0.0,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.0,
+    "GeoCity_S1_RoughVar": 0.0,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0
+   },
+   "vectors": {
+    "BaseGrass1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Farmland1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Grass_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "TreeGround_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     260.0,
+     260.0,
+     260.0,
+     1.0
+    ],
+    "Sand_01_TileCm": [
+     220.0,
+     220.0,
+     220.0,
+     1.0
+    ],
+    "BaseGrass1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Farmland1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "TreeGround_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     0.5,
+     0.44999998807907104,
+     0.36000001430511475,
+     1.0
+    ],
+    "Ground_MacroTileCm": [
+     3600.0,
+     3600.0,
+     3600.0,
+     1.0
+    ],
+    "Sand_02_TileCm": [
+     350.0,
+     350.0,
+     350.0,
+     1.0
+    ],
+    "Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Wet_Sand_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_02_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_solid_neutral_white_Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_gray_Color": [
+     0.2158605009317398,
+     0.2158605009317398,
+     0.2158605009317398,
+     1.0
+    ],
+    "PB_solid_sand_light_Color": [
+     0.6795424818992615,
+     0.5394794940948486,
+     0.3277781009674072,
+     1.0
+    ],
+    "PB_solid_sand_ochre_Color": [
+     0.3915724754333496,
+     0.23074005544185638,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_dirt_brown_Color": [
+     0.15592646598815918,
+     0.09305896610021591,
+     0.05780543014407158,
+     1.0
+    ],
+    "PB_solid_rock_sandstone_Color": [
+     0.3967552185058594,
+     0.2581828534603119,
+     0.1441284716129303,
+     1.0
+    ],
+    "PB_solid_rock_slate_Color": [
+     0.10702310502529144,
+     0.13286831974983215,
+     0.14995978772640228,
+     1.0
+    ],
+    "PB_solid_gravel_light_Color": [
+     0.35153260827064514,
+     0.35153260827064514,
+     0.32314321398735046,
+     1.0
+    ],
+    "PB_solid_road_asphalt_Color": [
+     0.02955683507025242,
+     0.03433980792760849,
+     0.0382043719291687,
+     1.0
+    ],
+    "PB_solid_concrete_light_Color": [
+     0.48514994978904724,
+     0.4677838087081909,
+     0.41788506507873535,
+     1.0
+    ],
+    "PB_solid_concrete_dark_Color": [
+     0.13013647496700287,
+     0.13013647496700287,
+     0.11443537473678589,
+     1.0
+    ],
+    "PB_solid_grass_green_Color": [
+     0.11953842639923096,
+     0.1946178376674652,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_snow_white_Color": [
+     0.7835378050804138,
+     0.7991027235984802,
+     0.7758222222328186,
+     1.0
+    ],
+    "Sand_01_Tint": [
+     0.699999988079071,
+     0.6600000262260437,
+     0.5600000023841858,
+     1.0
+    ],
+    "Sand_02_Tint": [
+     0.6399999856948853,
+     0.6200000047683716,
+     0.5699999928474426,
+     1.0
+    ],
+    "Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     0.6100000143051147,
+     0.5299999713897705,
+     0.4000000059604645,
+     1.0
+    ],
+    "Wet_Sand_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_02_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_black_Color": [
+     0.005605391692370176,
+     0.006512090563774109,
+     0.007499032188206911,
+     1.0
+    ],
+    "PB_solid_sand_pale_Color": [
+     0.8148465752601624,
+     0.715693473815918,
+     0.533276379108429,
+     1.0
+    ],
+    "PB_solid_sand_warm_Color": [
+     0.5394794940948486,
+     0.3613067865371704,
+     0.16513219475746155,
+     1.0
+    ],
+    "PB_solid_dirt_tan_Color": [
+     0.32314321398735046,
+     0.19120168685913086,
+     0.09530746936798096,
+     1.0
+    ],
+    "PB_solid_clay_red_Color": [
+     0.34191441535949707,
+     0.109461709856987,
+     0.061246052384376526,
+     1.0
+    ],
+    "PB_solid_rock_limestone_Color": [
+     0.48514994978904724,
+     0.46207699179649353,
+     0.3762621283531189,
+     1.0
+    ],
+    "PB_solid_rock_basalt_Color": [
+     0.05951123684644699,
+     0.0666259378194809,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_gravel_dark_Color": [
+     0.13563333451747894,
+     0.14126329123973846,
+     0.12743768095970154,
+     1.0
+    ],
+    "PB_solid_road_worn_Color": [
+     0.07036009430885315,
+     0.07227185368537903,
+     0.07227185368537903,
+     1.0
+    ],
+    "PB_solid_concrete_mid_Color": [
+     0.28744083642959595,
+     0.28314873576164246,
+     0.2581828534603119,
+     1.0
+    ],
+    "PB_solid_dry_grass_Color": [
+     0.31854677200317383,
+     0.30054378509521484,
+     0.13286831974983215,
+     1.0
+    ],
+    "PB_solid_moss_green_Color": [
+     0.08650045841932297,
+     0.1384316086769104,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_wet_sand_Color": [
+     0.22696587443351746,
+     0.18782077729701996,
+     0.13286831974983215,
+     1.0
+    ],
+    "Ground_MacroTile2Cm": [
+     5700.0,
+     5700.0,
+     5700.0,
+     1.0
+    ],
+    "Ground_MacroOffsetCm": [
+     1700.0,
+     2900.0,
+     0.0,
+     0.0
+    ],
+    "GeoCity_S1_HueA": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "textures": {
+    "BaseGrass1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.T_Grass_03_BC",
+    "BaseGrass1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Farmland1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Farmland1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Grass_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Grass_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.T_Sand_2_BC",
+    "Sand1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "Sand2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.T_Soil_1_BC",
+    "Soil1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.T_StoneGround_BC",
+    "Soil2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "TreeGround_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC",
+    "TreeGround_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "SC_CobbleStone_Pebble_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D.T_CobbleStone_Pebble_D",
+    "SC_CobbleStone_Pebble_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_N.T_CobbleStone_Pebble_N",
+    "SC_CobbleStone_Rough_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Rough_D.T_CobbleStone_Rough_D",
+    "SC_CobbleStone_Rough_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Rough_N.T_CobbleStone_Rough_N",
+    "SC_CobbleStone_Smooth_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_D.T_CobbleStone_Smooth_D",
+    "SC_CobbleStone_Smooth_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_N.T_CobbleStone_Smooth_N",
+    "SC_Concrete_Grime_Albedo": "/Game/StarterContent/Textures/T_Concrete_Grime_D.T_Concrete_Grime_D",
+    "SC_Concrete_Grime_Normal": "/Game/StarterContent/Textures/T_Metal_Rust_N.T_Metal_Rust_N",
+    "SC_Concrete_Poured_Albedo": "/Game/StarterContent/Textures/T_Concrete_Poured_D.T_Concrete_Poured_D",
+    "SC_Concrete_Poured_Normal": "/Game/StarterContent/Textures/T_Concrete_Poured_N.T_Concrete_Poured_N",
+    "SC_Concrete_Tiles_Albedo": "/Game/StarterContent/Textures/T_Concrete_Tiles_D.T_Concrete_Tiles_D",
+    "SC_Concrete_Tiles_Normal": "/Game/StarterContent/Textures/T_Concrete_Tiles_N.T_Concrete_Tiles_N",
+    "SC_Ground_Gravel_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "SC_Ground_Gravel_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "SC_Rock_Sandstone_Albedo": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+    "SC_Rock_Sandstone_Normal": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+    "Dirt_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+    "Dirt_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+    "Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+    "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+    "Ground_MacroSoilAlbedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+    "Ground_MacroSoilNormal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+    "Ground_MacroMask": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation",
+    "Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo",
+    "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+    "Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.T_Sand_03_Albedo",
+    "Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.T_Sand_03_Normal",
+    "Sand_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo",
+    "Sand_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal",
+    "Wet_Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.T_Wet_Sand_01_Albedo",
+    "Wet_Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.T_Wet_Sand_01_Normal",
+    "Wet_Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.T_Wet_Sand_02_Albedo",
+    "Wet_Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.T_Wet_Sand_02_Normal",
+    "Wet_Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.T_Wet_Sand_03_Albedo",
+    "Wet_Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.T_Wet_Sand_03_Normal",
+    "PB_starter_SC_Ground_Grass_Albedo": "/Game/StarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D",
+    "PB_starter_SC_Ground_Grass_Normal": "/Game/StarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N",
+    "PB_starter_SC_Ground_Moss_Albedo": "/Game/StarterContent/Textures/T_ground_Moss_D.T_ground_Moss_D",
+    "PB_starter_SC_Ground_Moss_Normal": "/Game/StarterContent/Textures/T_Ground_Moss_N.T_Ground_Moss_N",
+    "PB_starter_SC_Rock_Basalt_Albedo": "/Game/StarterContent/Textures/T_Rock_Basalt_D.T_Rock_Basalt_D",
+    "PB_starter_SC_Rock_Basalt_Normal": "/Game/StarterContent/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N",
+    "PB_starter_SC_Rock_Slate_Albedo": "/Game/StarterContent/Textures/T_Rock_Slate_D.T_Rock_Slate_D",
+    "PB_starter_SC_Rock_Slate_Normal": "/Game/StarterContent/Textures/T_Rock_Slate_N.T_Rock_Slate_N",
+    "PB_starter_SC_Concrete_Panels_Albedo": "/Game/StarterContent/Textures/T_Concrete_Panels_D.T_Concrete_Panels_D",
+    "PB_starter_SC_Concrete_Panels_Normal": "/Game/StarterContent/Textures/T_Concrete_Panels_N.T_Concrete_Panels_N",
+    "PB_starter_SC_Brick_Clay_Beveled_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D",
+    "PB_starter_SC_Brick_Clay_Beveled_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N",
+    "PB_starter_SC_Brick_Clay_New_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_New_D.T_Brick_Clay_New_D",
+    "PB_starter_SC_Brick_Clay_New_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_New_N.T_Brick_Clay_New_N",
+    "PB_starter_SC_Brick_Clay_Old_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Old_D.T_Brick_Clay_Old_D",
+    "PB_starter_SC_Brick_Clay_Old_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Old_N.T_Brick_Clay_Old_N",
+    "PB_starter_SC_Brick_Cut_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D",
+    "PB_starter_SC_Brick_Cut_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_N.T_Brick_Cut_Stone_N",
+    "PB_starter_SC_Brick_Hewn_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_D.T_Brick_Hewn_Stone_D",
+    "PB_starter_SC_Brick_Hewn_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_N.T_Brick_Hewn_Stone_N",
+    "PB_coastal_CL_Cliff_1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.T_Cliff_1_4K_BCD",
+    "PB_coastal_CL_Cliff_1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_04_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.T_Rock_04_BC",
+    "PB_coastal_CL_Rock_04_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_05_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.T_Rock_05_BC",
+    "PB_coastal_CL_Rock_05_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Sand_1_Direct_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "PB_coastal_CL_Sand_1_Direct_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Stone_01_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.T_Stone_01_BCD",
+    "PB_coastal_CL_Stone_01_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand_01_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "Sand_02_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity",
+    "Dirt_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.T_Dirt_Path_01_Mask_GeoCity",
+    "Sand_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.T_Sand_Path_01_Mask_GeoCity",
+    "GeoCity_S1_MacroNoise": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "GeoCity_S1_GroundB_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_GroundB_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "GeoCity_S1_GroundC_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_GroundC_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "GeoCity_S1_Soil_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_VariationMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "GeoCity_S1_VariationNormal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal"
+   },
+   "override_guid_capture": "GUID_NOT_CAPTURED_PYTHON_UNEXPOSED",
+   "scalar_overrides": [
+    {
+     "name": "Ground_SoilBlendStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "Ground_MacroContrast",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 3.0
+    }
+   ],
+   "vector_overrides": [
+    {
+     "name": "Sand_01_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      0.699999988079071,
+      0.6600000262260437,
+      0.5600000023841858,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_02_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      0.6399999856948853,
+      0.6200000047683716,
+      0.5699999928474426,
+      1.0
+     ]
+    },
+    {
+     "name": "Dirt_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      0.5,
+      0.44999998807907104,
+      0.36000001430511475,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      0.6100000143051147,
+      0.5299999713897705,
+      0.4000000059604645,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroTile2Cm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      5700.0,
+      5700.0,
+      5700.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroOffsetCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1700.0,
+      2900.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texture_overrides": [
+    {
+     "name": "Sand_01_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity"
+    },
+    {
+     "name": "Sand_02_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity"
+    }
+   ]
+  },
+  "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround": {
+   "path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+   "parent": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+   "scalars": {
+    "BaseGrass1_Roughness": 0.8399999737739563,
+    "Farmland1_Roughness": 0.8399999737739563,
+    "Grass_Roughness": 0.8399999737739563,
+    "Sand1_Roughness": 0.8399999737739563,
+    "Sand2_Roughness": 0.8399999737739563,
+    "Soil1_Roughness": 0.8399999737739563,
+    "Soil2_Roughness": 0.8399999737739563,
+    "TreeGround_Roughness": 0.8399999737739563,
+    "SC_CobbleStone_Pebble_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Rough_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Smooth_Roughness": 0.8199999928474426,
+    "SC_Concrete_Grime_Roughness": 0.8199999928474426,
+    "SC_Concrete_Poured_Roughness": 0.8199999928474426,
+    "SC_Concrete_Tiles_Roughness": 0.8199999928474426,
+    "SC_Ground_Gravel_Roughness": 0.8199999928474426,
+    "SC_Rock_Sandstone_Roughness": 0.8199999928474426,
+    "Dirt_Path_Roughness": 0.800000011920929,
+    "Ground_SoilBlendStrength": 0.10000000149011612,
+    "PB_solid_neutral_black_Roughness": 0.8799999952316284,
+    "PB_solid_sand_pale_Roughness": 0.8999999761581421,
+    "PB_solid_sand_warm_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_tan_Roughness": 0.9100000262260437,
+    "PB_solid_clay_red_Roughness": 0.8799999952316284,
+    "PB_solid_rock_limestone_Roughness": 0.8399999737739563,
+    "PB_solid_rock_basalt_Roughness": 0.8700000047683716,
+    "PB_solid_gravel_dark_Roughness": 0.8700000047683716,
+    "PB_solid_road_worn_Roughness": 0.8899999856948853,
+    "PB_solid_concrete_mid_Roughness": 0.8399999737739563,
+    "PB_solid_dry_grass_Roughness": 0.9200000166893005,
+    "PB_solid_moss_green_Roughness": 0.9399999976158142,
+    "PB_solid_wet_sand_Roughness": 0.75,
+    "PB_Custom_Ground_Roughness": 0.8500000238418579,
+    "PB_Custom_RoadBed_Roughness": 0.8500000238418579,
+    "Sand_01_Roughness": 0.800000011920929,
+    "Sand_02_Roughness": 0.800000011920929,
+    "Sand_03_Roughness": 0.8999999761581421,
+    "Sand_Path_Roughness": 0.800000011920929,
+    "Wet_Sand_01_Roughness": 0.8999999761581421,
+    "Wet_Sand_02_Roughness": 0.8999999761581421,
+    "Wet_Sand_03_Roughness": 0.8999999761581421,
+    "PB_starter_SC_Ground_Grass_Roughness": 0.9100000262260437,
+    "PB_starter_SC_Ground_Moss_Roughness": 0.9300000071525574,
+    "PB_starter_SC_Rock_Basalt_Roughness": 0.8199999928474426,
+    "PB_starter_SC_Rock_Slate_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Concrete_Panels_Roughness": 0.800000011920929,
+    "PB_starter_SC_Brick_Clay_Beveled_Roughness": 0.8600000143051147,
+    "PB_starter_SC_Brick_Clay_New_Roughness": 0.8299999833106995,
+    "PB_starter_SC_Brick_Clay_Old_Roughness": 0.8799999952316284,
+    "PB_starter_SC_Brick_Cut_Stone_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Brick_Hewn_Stone_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Cliff_1_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Rock_04_Roughness": 0.8700000047683716,
+    "PB_coastal_CL_Rock_05_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Sand_1_Direct_Roughness": 0.8999999761581421,
+    "PB_coastal_CL_Stone_01_Roughness": 0.8399999737739563,
+    "PB_solid_neutral_white_Roughness": 0.8500000238418579,
+    "PB_solid_neutral_gray_Roughness": 0.8500000238418579,
+    "PB_solid_sand_light_Roughness": 0.8999999761581421,
+    "PB_solid_sand_ochre_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_brown_Roughness": 0.9300000071525574,
+    "PB_solid_rock_sandstone_Roughness": 0.8600000143051147,
+    "PB_solid_rock_slate_Roughness": 0.8500000238418579,
+    "PB_solid_gravel_light_Roughness": 0.8600000143051147,
+    "PB_solid_road_asphalt_Roughness": 0.8700000047683716,
+    "PB_solid_concrete_light_Roughness": 0.8199999928474426,
+    "PB_solid_concrete_dark_Roughness": 0.8600000143051147,
+    "PB_solid_grass_green_Roughness": 0.8999999761581421,
+    "PB_solid_snow_white_Roughness": 0.800000011920929,
+    "PB_Custom_Steep_Roughness": 0.8500000238418579,
+    "PB_Custom_BuildingPad_Roughness": 0.8500000238418579,
+    "Ground_MacroContrast": 2.799999952316284,
+    "GeoCity_GrassCoverage": 0.0,
+    "GeoCity_DistanceStartCm": 1200.0,
+    "GeoCity_DistanceRangeCm": 6000.0,
+    "GeoCity_RoughnessDetail": 0.75,
+    "GeoCity_AOStrength": 0.20000000298023224,
+    "GeoCity_MacroAmount": 0.07999999821186066,
+    "GeoCity_CellScale": 1.0,
+    "GeoCity_PatternScale": 1.0,
+    "Sand_01_FarScale": 2.0,
+    "Sand_01_NormalStrength": 0.6000000238418579,
+    "Sand_02_FarScale": 5.0,
+    "Sand_02_NormalStrength": 0.8999999761581421,
+    "Dirt_Path_FarScale": 1.0,
+    "Dirt_Path_NormalStrength": 0.20000000298023224,
+    "Sand_Path_FarScale": 5.0,
+    "Sand_Path_NormalStrength": 1.600000023841858,
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 31100.0,
+    "GeoCity_S1_HueAmount": 0.6000000238418579,
+    "GeoCity_S1_ValueAmount": 0.10999999940395355,
+    "GeoCity_S1_FarSaturation": 1.100000023841858,
+    "GeoCity_S1_FarValue": 0.8999999761581421,
+    "GeoCity_S1_FarAmount": 0.6000000238418579,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.4000000059604645,
+    "GeoCity_S1_GroundB_NormalStrength": 0.6000000238418579,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.25,
+    "GeoCity_S1_GroundC_NormalStrength": 0.6000000238418579,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.30000001192092896,
+    "GeoCity_S1_PatchLo": 0.4000000059604645,
+    "GeoCity_S1_PatchHi": 0.699999988079071,
+    "GeoCity_S1_SteepLo": 0.25,
+    "GeoCity_S1_SteepHi": 0.44999998807907104,
+    "GeoCity_S1_SteepJitter": 0.15000000596046448,
+    "GeoCity_S1_SteepSlopeMix": 0.5,
+    "GeoCity_S1_SteepStones": 0.3499999940395355,
+    "GeoCity_S1_HeightBias": 0.8500000238418579,
+    "GeoCity_S1_HeightContrast": 2.0,
+    "GeoCity_S1_HeightAmount": 0.6000000238418579,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.699999988079071,
+    "GeoCity_S1_RoughVar": 0.05000000074505806,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0
+   },
+   "vectors": {
+    "BaseGrass1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Farmland1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Grass_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "TreeGround_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "BaseGrass1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Farmland1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "TreeGround_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     2.200000047683716,
+     2.0999999046325684,
+     2.0,
+     1.0
+    ],
+    "Ground_MacroTileCm": [
+     3000.0,
+     3000.0,
+     3000.0,
+     1.0
+    ],
+    "Sand_02_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Wet_Sand_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_02_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_solid_neutral_white_Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_gray_Color": [
+     0.2158605009317398,
+     0.2158605009317398,
+     0.2158605009317398,
+     1.0
+    ],
+    "PB_solid_sand_light_Color": [
+     0.6795424818992615,
+     0.5394794940948486,
+     0.3277781009674072,
+     1.0
+    ],
+    "PB_solid_sand_ochre_Color": [
+     0.3915724754333496,
+     0.23074005544185638,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_dirt_brown_Color": [
+     0.15592646598815918,
+     0.09305896610021591,
+     0.05780543014407158,
+     1.0
+    ],
+    "PB_solid_rock_sandstone_Color": [
+     0.3967552185058594,
+     0.2581828534603119,
+     0.1441284716129303,
+     1.0
+    ],
+    "PB_solid_rock_slate_Color": [
+     0.10702310502529144,
+     0.13286831974983215,
+     0.14995978772640228,
+     1.0
+    ],
+    "PB_solid_gravel_light_Color": [
+     0.35153260827064514,
+     0.35153260827064514,
+     0.32314321398735046,
+     1.0
+    ],
+    "PB_solid_road_asphalt_Color": [
+     0.02955683507025242,
+     0.03433980792760849,
+     0.0382043719291687,
+     1.0
+    ],
+    "PB_solid_concrete_light_Color": [
+     0.48514994978904724,
+     0.4677838087081909,
+     0.41788506507873535,
+     1.0
+    ],
+    "PB_solid_concrete_dark_Color": [
+     0.13013647496700287,
+     0.13013647496700287,
+     0.11443537473678589,
+     1.0
+    ],
+    "PB_solid_grass_green_Color": [
+     0.11953842639923096,
+     0.1946178376674652,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_snow_white_Color": [
+     0.7835378050804138,
+     0.7991027235984802,
+     0.7758222222328186,
+     1.0
+    ],
+    "Sand_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_02_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.9500000476837158,
+     1.899999976158142,
+     1.0
+    ],
+    "Wet_Sand_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_02_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_black_Color": [
+     0.005605391692370176,
+     0.006512090563774109,
+     0.007499032188206911,
+     1.0
+    ],
+    "PB_solid_sand_pale_Color": [
+     0.8148465752601624,
+     0.715693473815918,
+     0.533276379108429,
+     1.0
+    ],
+    "PB_solid_sand_warm_Color": [
+     0.5394794940948486,
+     0.3613067865371704,
+     0.16513219475746155,
+     1.0
+    ],
+    "PB_solid_dirt_tan_Color": [
+     0.32314321398735046,
+     0.19120168685913086,
+     0.09530746936798096,
+     1.0
+    ],
+    "PB_solid_clay_red_Color": [
+     0.34191441535949707,
+     0.109461709856987,
+     0.061246052384376526,
+     1.0
+    ],
+    "PB_solid_rock_limestone_Color": [
+     0.48514994978904724,
+     0.46207699179649353,
+     0.3762621283531189,
+     1.0
+    ],
+    "PB_solid_rock_basalt_Color": [
+     0.05951123684644699,
+     0.0666259378194809,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_gravel_dark_Color": [
+     0.13563333451747894,
+     0.14126329123973846,
+     0.12743768095970154,
+     1.0
+    ],
+    "PB_solid_road_worn_Color": [
+     0.07036009430885315,
+     0.07227185368537903,
+     0.07227185368537903,
+     1.0
+    ],
+    "PB_solid_concrete_mid_Color": [
+     0.28744083642959595,
+     0.28314873576164246,
+     0.2581828534603119,
+     1.0
+    ],
+    "PB_solid_dry_grass_Color": [
+     0.31854677200317383,
+     0.30054378509521484,
+     0.13286831974983215,
+     1.0
+    ],
+    "PB_solid_moss_green_Color": [
+     0.08650045841932297,
+     0.1384316086769104,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_wet_sand_Color": [
+     0.22696587443351746,
+     0.18782077729701996,
+     0.13286831974983215,
+     1.0
+    ],
+    "Ground_MacroTile2Cm": [
+     31300.0,
+     31300.0,
+     31300.0,
+     1.0
+    ],
+    "Ground_MacroOffsetCm": [
+     7300.0,
+     12700.0,
+     0.0,
+     0.0
+    ],
+    "GeoCity_S1_HueA": [
+     1.0499999523162842,
+     1.0,
+     0.9200000166893005,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.9700000286102295,
+     0.9599999785423279,
+     0.9800000190734863,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.100000023841858,
+     1.059999942779541,
+     1.0199999809265137,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.2999999523162842,
+     1.2699999809265137,
+     1.2400000095367432,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     2.0,
+     1.899999976158142,
+     1.7999999523162842,
+     1.0
+    ]
+   },
+   "textures": {
+    "BaseGrass1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.T_Grass_03_BC",
+    "BaseGrass1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Farmland1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Farmland1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Grass_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Grass_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.T_Sand_2_BC",
+    "Sand1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "Sand2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.T_Soil_1_BC",
+    "Soil1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.T_StoneGround_BC",
+    "Soil2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "TreeGround_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC",
+    "TreeGround_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "SC_CobbleStone_Pebble_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D.T_CobbleStone_Pebble_D",
+    "SC_CobbleStone_Pebble_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_N.T_CobbleStone_Pebble_N",
+    "SC_CobbleStone_Rough_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Rough_D.T_CobbleStone_Rough_D",
+    "SC_CobbleStone_Rough_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Rough_N.T_CobbleStone_Rough_N",
+    "SC_CobbleStone_Smooth_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_D.T_CobbleStone_Smooth_D",
+    "SC_CobbleStone_Smooth_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_N.T_CobbleStone_Smooth_N",
+    "SC_Concrete_Grime_Albedo": "/Game/StarterContent/Textures/T_Concrete_Grime_D.T_Concrete_Grime_D",
+    "SC_Concrete_Grime_Normal": "/Game/StarterContent/Textures/T_Metal_Rust_N.T_Metal_Rust_N",
+    "SC_Concrete_Poured_Albedo": "/Game/StarterContent/Textures/T_Concrete_Poured_D.T_Concrete_Poured_D",
+    "SC_Concrete_Poured_Normal": "/Game/StarterContent/Textures/T_Concrete_Poured_N.T_Concrete_Poured_N",
+    "SC_Concrete_Tiles_Albedo": "/Game/StarterContent/Textures/T_Concrete_Tiles_D.T_Concrete_Tiles_D",
+    "SC_Concrete_Tiles_Normal": "/Game/StarterContent/Textures/T_Concrete_Tiles_N.T_Concrete_Tiles_N",
+    "SC_Ground_Gravel_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "SC_Ground_Gravel_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "SC_Rock_Sandstone_Albedo": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+    "SC_Rock_Sandstone_Normal": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+    "Sand_01_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Ground_MacroSoilAlbedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Ground_MacroSoilNormal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Ground_MacroMask": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation",
+    "Sand_02_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.T_Sand_03_Albedo",
+    "Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.T_Sand_03_Normal",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+    "Wet_Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.T_Wet_Sand_01_Albedo",
+    "Wet_Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.T_Wet_Sand_01_Normal",
+    "Wet_Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.T_Wet_Sand_02_Albedo",
+    "Wet_Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.T_Wet_Sand_02_Normal",
+    "Wet_Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.T_Wet_Sand_03_Albedo",
+    "Wet_Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.T_Wet_Sand_03_Normal",
+    "PB_starter_SC_Ground_Grass_Albedo": "/Game/StarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D",
+    "PB_starter_SC_Ground_Grass_Normal": "/Game/StarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N",
+    "PB_starter_SC_Ground_Moss_Albedo": "/Game/StarterContent/Textures/T_ground_Moss_D.T_ground_Moss_D",
+    "PB_starter_SC_Ground_Moss_Normal": "/Game/StarterContent/Textures/T_Ground_Moss_N.T_Ground_Moss_N",
+    "PB_starter_SC_Rock_Basalt_Albedo": "/Game/StarterContent/Textures/T_Rock_Basalt_D.T_Rock_Basalt_D",
+    "PB_starter_SC_Rock_Basalt_Normal": "/Game/StarterContent/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N",
+    "PB_starter_SC_Rock_Slate_Albedo": "/Game/StarterContent/Textures/T_Rock_Slate_D.T_Rock_Slate_D",
+    "PB_starter_SC_Rock_Slate_Normal": "/Game/StarterContent/Textures/T_Rock_Slate_N.T_Rock_Slate_N",
+    "PB_starter_SC_Concrete_Panels_Albedo": "/Game/StarterContent/Textures/T_Concrete_Panels_D.T_Concrete_Panels_D",
+    "PB_starter_SC_Concrete_Panels_Normal": "/Game/StarterContent/Textures/T_Concrete_Panels_N.T_Concrete_Panels_N",
+    "PB_starter_SC_Brick_Clay_Beveled_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D",
+    "PB_starter_SC_Brick_Clay_Beveled_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N",
+    "PB_starter_SC_Brick_Clay_New_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_New_D.T_Brick_Clay_New_D",
+    "PB_starter_SC_Brick_Clay_New_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_New_N.T_Brick_Clay_New_N",
+    "PB_starter_SC_Brick_Clay_Old_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Old_D.T_Brick_Clay_Old_D",
+    "PB_starter_SC_Brick_Clay_Old_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Old_N.T_Brick_Clay_Old_N",
+    "PB_starter_SC_Brick_Cut_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D",
+    "PB_starter_SC_Brick_Cut_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_N.T_Brick_Cut_Stone_N",
+    "PB_starter_SC_Brick_Hewn_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_D.T_Brick_Hewn_Stone_D",
+    "PB_starter_SC_Brick_Hewn_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_N.T_Brick_Hewn_Stone_N",
+    "PB_coastal_CL_Cliff_1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.T_Cliff_1_4K_BCD",
+    "PB_coastal_CL_Cliff_1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_04_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.T_Rock_04_BC",
+    "PB_coastal_CL_Rock_04_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_05_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.T_Rock_05_BC",
+    "PB_coastal_CL_Rock_05_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Sand_1_Direct_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "PB_coastal_CL_Sand_1_Direct_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Stone_01_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.T_Stone_01_BCD",
+    "PB_coastal_CL_Stone_01_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand_01_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "Sand_02_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity",
+    "Dirt_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.T_Dirt_Path_01_Mask_GeoCity",
+    "Sand_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.T_Sand_Path_01_Mask_GeoCity",
+    "GeoCity_S1_MacroNoise": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+    "GeoCity_S1_GroundB_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+    "GeoCity_S1_GroundB_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+    "GeoCity_S1_GroundC_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+    "GeoCity_S1_GroundC_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+    "GeoCity_S1_Soil_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+    "GeoCity_S1_VariationMask": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+    "GeoCity_S1_VariationNormal": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm"
+   },
+   "override_guid_capture": "GUID_NOT_CAPTURED_PYTHON_UNEXPOSED",
+   "scalar_overrides": [
+    {
+     "name": "GeoCity_GrassCoverage",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "Ground_MacroContrast",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 2.799999952316284
+    },
+    {
+     "name": "Ground_SoilBlendStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.10000000149011612
+    },
+    {
+     "name": "Sand_01_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Sand_02_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Dirt_Path_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Sand_Path_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Sand_01_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "Sand_02_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.8999999761581421
+    },
+    {
+     "name": "Dirt_Path_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.20000000298023224
+    },
+    {
+     "name": "Sand_Path_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.600000023841858
+    },
+    {
+     "name": "Sand_01_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 2.0
+    },
+    {
+     "name": "Sand_02_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 5.0
+    },
+    {
+     "name": "Dirt_Path_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.0
+    },
+    {
+     "name": "Sand_Path_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 5.0
+    },
+    {
+     "name": "GeoCity_DistanceStartCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1200.0
+    },
+    {
+     "name": "GeoCity_DistanceRangeCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 6000.0
+    },
+    {
+     "name": "GeoCity_RoughnessDetail",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.75
+    },
+    {
+     "name": "GeoCity_AOStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.20000000298023224
+    },
+    {
+     "name": "GeoCity_MacroAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.07999999821186066
+    },
+    {
+     "name": "GeoCity_CellScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.0
+    },
+    {
+     "name": "GeoCity_PatternScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.0
+    },
+    {
+     "name": "GeoCity_S1_MacroTileNearCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 3700.0
+    },
+    {
+     "name": "GeoCity_S1_MacroTileFarCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 31100.0
+    },
+    {
+     "name": "GeoCity_S1_HueAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "GeoCity_S1_ValueAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.10999999940395355
+    },
+    {
+     "name": "GeoCity_S1_FarSaturation",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.100000023841858
+    },
+    {
+     "name": "GeoCity_S1_FarValue",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.8999999761581421
+    },
+    {
+     "name": "GeoCity_S1_FarAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "GeoCity_S1_GroundB_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 512.0
+    },
+    {
+     "name": "GeoCity_S1_GroundB_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 12.0
+    },
+    {
+     "name": "GeoCity_S1_GroundB_Amount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.4000000059604645
+    },
+    {
+     "name": "GeoCity_S1_GroundB_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "GeoCity_S1_GroundC_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 470.0
+    },
+    {
+     "name": "GeoCity_S1_GroundC_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 12.0
+    },
+    {
+     "name": "GeoCity_S1_GroundC_Amount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.25
+    },
+    {
+     "name": "GeoCity_S1_GroundC_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "GeoCity_S1_Soil_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 400.0
+    },
+    {
+     "name": "GeoCity_S1_Soil_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 12.0
+    },
+    {
+     "name": "GeoCity_S1_Soil_Amount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.30000001192092896
+    },
+    {
+     "name": "GeoCity_S1_PatchLo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.4000000059604645
+    },
+    {
+     "name": "GeoCity_S1_PatchHi",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.699999988079071
+    },
+    {
+     "name": "GeoCity_S1_SteepLo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.25
+    },
+    {
+     "name": "GeoCity_S1_SteepHi",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.44999998807907104
+    },
+    {
+     "name": "GeoCity_S1_SteepJitter",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.15000000596046448
+    },
+    {
+     "name": "GeoCity_S1_SteepSlopeMix",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.5
+    },
+    {
+     "name": "GeoCity_S1_SteepStones",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.3499999940395355
+    },
+    {
+     "name": "GeoCity_S1_HeightBias",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.8500000238418579
+    },
+    {
+     "name": "GeoCity_S1_HeightContrast",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 2.0
+    },
+    {
+     "name": "GeoCity_S1_HeightAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.6000000238418579
+    },
+    {
+     "name": "GeoCity_S1_ContactRoad",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_ContactPad",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_ContactDarken",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_ContactSoil",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_ContactRough",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_NormalFade",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.699999988079071
+    },
+    {
+     "name": "GeoCity_S1_RoughVar",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.05000000074505806
+    },
+    {
+     "name": "GeoCity_S1_VariationTileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 65536.0
+    },
+    {
+     "name": "GeoCity_S1_VariationAmount",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_S1_VariationNormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    }
+   ],
+   "vector_overrides": [
+    {
+     "name": "Sand_01_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      200.0,
+      200.0,
+      200.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_02_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      200.0,
+      200.0,
+      200.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Dirt_Path_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      400.0,
+      400.0,
+      400.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_Path_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      300.0,
+      300.0,
+      300.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_01_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_02_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Dirt_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      2.200000047683716,
+      2.0999999046325684,
+      2.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      2.0,
+      1.9500000476837158,
+      1.899999976158142,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroTileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      3000.0,
+      3000.0,
+      3000.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroTile2Cm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      31300.0,
+      31300.0,
+      31300.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroOffsetCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      7300.0,
+      12700.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "GeoCity_S1_HueA",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0499999523162842,
+      1.0,
+      0.9200000166893005,
+      1.0
+     ]
+    },
+    {
+     "name": "GeoCity_S1_HueB",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      0.9700000286102295,
+      0.9599999785423279,
+      0.9800000190734863,
+      1.0
+     ]
+    },
+    {
+     "name": "GeoCity_S1_GroundB_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.100000023841858,
+      1.059999942779541,
+      1.0199999809265137,
+      1.0
+     ]
+    },
+    {
+     "name": "GeoCity_S1_GroundC_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.2999999523162842,
+      1.2699999809265137,
+      1.2400000095367432,
+      1.0
+     ]
+    },
+    {
+     "name": "GeoCity_S1_Soil_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      2.0,
+      1.899999976158142,
+      1.7999999523162842,
+      1.0
+     ]
+    }
+   ],
+   "texture_overrides": [
+    {
+     "name": "Sand_01_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_01_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_02_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_02_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+    },
+    {
+     "name": "Dirt_Path_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col"
+    },
+    {
+     "name": "Dirt_Path_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm"
+    },
+    {
+     "name": "Sand_Path_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col"
+    },
+    {
+     "name": "Sand_Path_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm"
+    },
+    {
+     "name": "Ground_MacroMask",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+    },
+    {
+     "name": "Ground_MacroSoilAlbedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+    },
+    {
+     "name": "Ground_MacroSoilNormal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+    },
+    {
+     "name": "GeoCity_S1_MacroNoise",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk"
+    },
+    {
+     "name": "GeoCity_S1_GroundB_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col"
+    },
+    {
+     "name": "GeoCity_S1_GroundB_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm"
+    },
+    {
+     "name": "GeoCity_S1_GroundC_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col"
+    },
+    {
+     "name": "GeoCity_S1_GroundC_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm"
+    },
+    {
+     "name": "GeoCity_S1_Soil_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col"
+    },
+    {
+     "name": "GeoCity_S1_VariationMask",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk"
+    },
+    {
+     "name": "GeoCity_S1_VariationNormal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm"
+    }
+   ]
+  },
+  "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround": {
+   "path": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+   "parent": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+   "scalars": {
+    "BaseGrass1_Roughness": 0.8399999737739563,
+    "Farmland1_Roughness": 0.8399999737739563,
+    "Grass_Roughness": 0.8399999737739563,
+    "Sand1_Roughness": 0.8399999737739563,
+    "Sand2_Roughness": 0.8399999737739563,
+    "Soil1_Roughness": 0.8399999737739563,
+    "Soil2_Roughness": 0.8399999737739563,
+    "TreeGround_Roughness": 0.8399999737739563,
+    "SC_CobbleStone_Pebble_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Rough_Roughness": 0.8199999928474426,
+    "SC_CobbleStone_Smooth_Roughness": 0.8199999928474426,
+    "SC_Concrete_Grime_Roughness": 0.8199999928474426,
+    "SC_Concrete_Poured_Roughness": 0.8199999928474426,
+    "SC_Concrete_Tiles_Roughness": 0.8199999928474426,
+    "SC_Ground_Gravel_Roughness": 0.8199999928474426,
+    "SC_Rock_Sandstone_Roughness": 0.8199999928474426,
+    "Dirt_Path_Roughness": 0.800000011920929,
+    "Ground_SoilBlendStrength": 0.10000000149011612,
+    "PB_solid_neutral_black_Roughness": 0.8799999952316284,
+    "PB_solid_sand_pale_Roughness": 0.8999999761581421,
+    "PB_solid_sand_warm_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_tan_Roughness": 0.9100000262260437,
+    "PB_solid_clay_red_Roughness": 0.8799999952316284,
+    "PB_solid_rock_limestone_Roughness": 0.8399999737739563,
+    "PB_solid_rock_basalt_Roughness": 0.8700000047683716,
+    "PB_solid_gravel_dark_Roughness": 0.8700000047683716,
+    "PB_solid_road_worn_Roughness": 0.8899999856948853,
+    "PB_solid_concrete_mid_Roughness": 0.8399999737739563,
+    "PB_solid_dry_grass_Roughness": 0.9200000166893005,
+    "PB_solid_moss_green_Roughness": 0.9399999976158142,
+    "PB_solid_wet_sand_Roughness": 0.75,
+    "PB_Custom_Ground_Roughness": 0.8500000238418579,
+    "PB_Custom_RoadBed_Roughness": 0.8500000238418579,
+    "Sand_01_Roughness": 0.800000011920929,
+    "Sand_02_Roughness": 0.800000011920929,
+    "Sand_03_Roughness": 0.8999999761581421,
+    "Sand_Path_Roughness": 0.800000011920929,
+    "Wet_Sand_01_Roughness": 0.8999999761581421,
+    "Wet_Sand_02_Roughness": 0.8999999761581421,
+    "Wet_Sand_03_Roughness": 0.8999999761581421,
+    "PB_starter_SC_Ground_Grass_Roughness": 0.9100000262260437,
+    "PB_starter_SC_Ground_Moss_Roughness": 0.9300000071525574,
+    "PB_starter_SC_Rock_Basalt_Roughness": 0.8199999928474426,
+    "PB_starter_SC_Rock_Slate_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Concrete_Panels_Roughness": 0.800000011920929,
+    "PB_starter_SC_Brick_Clay_Beveled_Roughness": 0.8600000143051147,
+    "PB_starter_SC_Brick_Clay_New_Roughness": 0.8299999833106995,
+    "PB_starter_SC_Brick_Clay_Old_Roughness": 0.8799999952316284,
+    "PB_starter_SC_Brick_Cut_Stone_Roughness": 0.8399999737739563,
+    "PB_starter_SC_Brick_Hewn_Stone_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Cliff_1_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Rock_04_Roughness": 0.8700000047683716,
+    "PB_coastal_CL_Rock_05_Roughness": 0.8600000143051147,
+    "PB_coastal_CL_Sand_1_Direct_Roughness": 0.8999999761581421,
+    "PB_coastal_CL_Stone_01_Roughness": 0.8399999737739563,
+    "PB_solid_neutral_white_Roughness": 0.8500000238418579,
+    "PB_solid_neutral_gray_Roughness": 0.8500000238418579,
+    "PB_solid_sand_light_Roughness": 0.8999999761581421,
+    "PB_solid_sand_ochre_Roughness": 0.8999999761581421,
+    "PB_solid_dirt_brown_Roughness": 0.9300000071525574,
+    "PB_solid_rock_sandstone_Roughness": 0.8600000143051147,
+    "PB_solid_rock_slate_Roughness": 0.8500000238418579,
+    "PB_solid_gravel_light_Roughness": 0.8600000143051147,
+    "PB_solid_road_asphalt_Roughness": 0.8700000047683716,
+    "PB_solid_concrete_light_Roughness": 0.8199999928474426,
+    "PB_solid_concrete_dark_Roughness": 0.8600000143051147,
+    "PB_solid_grass_green_Roughness": 0.8999999761581421,
+    "PB_solid_snow_white_Roughness": 0.800000011920929,
+    "PB_Custom_Steep_Roughness": 0.8500000238418579,
+    "PB_Custom_BuildingPad_Roughness": 0.8500000238418579,
+    "Ground_MacroContrast": 2.5,
+    "GeoCity_GrassCoverage": 0.0,
+    "GeoCity_DistanceStartCm": 1200.0,
+    "GeoCity_DistanceRangeCm": 4800.0,
+    "GeoCity_RoughnessDetail": 0.75,
+    "GeoCity_AOStrength": 0.30000001192092896,
+    "GeoCity_MacroAmount": 0.07999999821186066,
+    "GeoCity_CellScale": 1.0,
+    "GeoCity_PatternScale": 1.0,
+    "Sand_01_FarScale": 2.0,
+    "Sand_01_NormalStrength": 1.600000023841858,
+    "Sand_02_FarScale": 5.0,
+    "Sand_02_NormalStrength": 1.600000023841858,
+    "Dirt_Path_FarScale": 5.0,
+    "Dirt_Path_NormalStrength": 0.20000000298023224,
+    "Sand_Path_FarScale": 5.0,
+    "Sand_Path_NormalStrength": 1.600000023841858,
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 31100.0,
+    "GeoCity_S1_HueAmount": 0.0,
+    "GeoCity_S1_ValueAmount": 0.0,
+    "GeoCity_S1_FarSaturation": 1.0,
+    "GeoCity_S1_FarValue": 1.0,
+    "GeoCity_S1_FarAmount": 0.0,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.0,
+    "GeoCity_S1_GroundB_NormalStrength": 0.0,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.0,
+    "GeoCity_S1_GroundC_NormalStrength": 0.0,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.0,
+    "GeoCity_S1_PatchLo": 0.44999998807907104,
+    "GeoCity_S1_PatchHi": 0.6499999761581421,
+    "GeoCity_S1_SteepLo": 0.0,
+    "GeoCity_S1_SteepHi": 0.0010000000474974513,
+    "GeoCity_S1_SteepJitter": 0.0,
+    "GeoCity_S1_SteepSlopeMix": 0.0,
+    "GeoCity_S1_SteepStones": 0.0,
+    "GeoCity_S1_HeightBias": 0.8500000238418579,
+    "GeoCity_S1_HeightContrast": 0.0,
+    "GeoCity_S1_HeightAmount": 0.0,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.0,
+    "GeoCity_S1_RoughVar": 0.0,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0
+   },
+   "vectors": {
+    "BaseGrass1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Farmland1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Grass_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Sand2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil1_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "Soil2_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "TreeGround_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     100.0,
+     100.0,
+     100.0,
+     1.0
+    ],
+    "Sand_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "BaseGrass1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Farmland1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Soil2_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "TreeGround_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Pebble_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Rough_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_CobbleStone_Smooth_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Grime_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Poured_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Concrete_Tiles_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Ground_Gravel_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "SC_Rock_Sandstone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Ground_MacroTileCm": [
+     14000.0,
+     14000.0,
+     14000.0,
+     1.0
+    ],
+    "Sand_02_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "Wet_Sand_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_02_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "Wet_Sand_03_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_TileCm": [
+     150.0,
+     150.0,
+     150.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_TileCm": [
+     200.0,
+     200.0,
+     200.0,
+     1.0
+    ],
+    "PB_solid_neutral_white_Color": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_gray_Color": [
+     0.2158605009317398,
+     0.2158605009317398,
+     0.2158605009317398,
+     1.0
+    ],
+    "PB_solid_sand_light_Color": [
+     0.6795424818992615,
+     0.5394794940948486,
+     0.3277781009674072,
+     1.0
+    ],
+    "PB_solid_sand_ochre_Color": [
+     0.3915724754333496,
+     0.23074005544185638,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_dirt_brown_Color": [
+     0.15592646598815918,
+     0.09305896610021591,
+     0.05780543014407158,
+     1.0
+    ],
+    "PB_solid_rock_sandstone_Color": [
+     0.3967552185058594,
+     0.2581828534603119,
+     0.1441284716129303,
+     1.0
+    ],
+    "PB_solid_rock_slate_Color": [
+     0.10702310502529144,
+     0.13286831974983215,
+     0.14995978772640228,
+     1.0
+    ],
+    "PB_solid_gravel_light_Color": [
+     0.35153260827064514,
+     0.35153260827064514,
+     0.32314321398735046,
+     1.0
+    ],
+    "PB_solid_road_asphalt_Color": [
+     0.02955683507025242,
+     0.03433980792760849,
+     0.0382043719291687,
+     1.0
+    ],
+    "PB_solid_concrete_light_Color": [
+     0.48514994978904724,
+     0.4677838087081909,
+     0.41788506507873535,
+     1.0
+    ],
+    "PB_solid_concrete_dark_Color": [
+     0.13013647496700287,
+     0.13013647496700287,
+     0.11443537473678589,
+     1.0
+    ],
+    "PB_solid_grass_green_Color": [
+     0.11953842639923096,
+     0.1946178376674652,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_snow_white_Color": [
+     0.7835378050804138,
+     0.7991027235984802,
+     0.7758222222328186,
+     1.0
+    ],
+    "Sand_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_02_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_02_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "Wet_Sand_03_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Grass_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Ground_Moss_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Basalt_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Rock_Slate_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Concrete_Panels_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Beveled_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_New_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Clay_Old_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Cut_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_starter_SC_Brick_Hewn_Stone_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Cliff_1_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_04_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Rock_05_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Sand_1_Direct_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_coastal_CL_Stone_01_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "PB_solid_neutral_black_Color": [
+     0.005605391692370176,
+     0.006512090563774109,
+     0.007499032188206911,
+     1.0
+    ],
+    "PB_solid_sand_pale_Color": [
+     0.8148465752601624,
+     0.715693473815918,
+     0.533276379108429,
+     1.0
+    ],
+    "PB_solid_sand_warm_Color": [
+     0.5394794940948486,
+     0.3613067865371704,
+     0.16513219475746155,
+     1.0
+    ],
+    "PB_solid_dirt_tan_Color": [
+     0.32314321398735046,
+     0.19120168685913086,
+     0.09530746936798096,
+     1.0
+    ],
+    "PB_solid_clay_red_Color": [
+     0.34191441535949707,
+     0.109461709856987,
+     0.061246052384376526,
+     1.0
+    ],
+    "PB_solid_rock_limestone_Color": [
+     0.48514994978904724,
+     0.46207699179649353,
+     0.3762621283531189,
+     1.0
+    ],
+    "PB_solid_rock_basalt_Color": [
+     0.05951123684644699,
+     0.0666259378194809,
+     0.07036009430885315,
+     1.0
+    ],
+    "PB_solid_gravel_dark_Color": [
+     0.13563333451747894,
+     0.14126329123973846,
+     0.12743768095970154,
+     1.0
+    ],
+    "PB_solid_road_worn_Color": [
+     0.07036009430885315,
+     0.07227185368537903,
+     0.07227185368537903,
+     1.0
+    ],
+    "PB_solid_concrete_mid_Color": [
+     0.28744083642959595,
+     0.28314873576164246,
+     0.2581828534603119,
+     1.0
+    ],
+    "PB_solid_dry_grass_Color": [
+     0.31854677200317383,
+     0.30054378509521484,
+     0.13286831974983215,
+     1.0
+    ],
+    "PB_solid_moss_green_Color": [
+     0.08650045841932297,
+     0.1384316086769104,
+     0.08437620848417282,
+     1.0
+    ],
+    "PB_solid_wet_sand_Color": [
+     0.22696587443351746,
+     0.18782077729701996,
+     0.13286831974983215,
+     1.0
+    ],
+    "Ground_MacroTile2Cm": [
+     24100.0,
+     24100.0,
+     24100.0,
+     1.0
+    ],
+    "Ground_MacroOffsetCm": [
+     6000.0,
+     10300.0,
+     0.0,
+     0.0
+    ],
+    "GeoCity_S1_HueA": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "textures": {
+    "BaseGrass1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC.T_Grass_03_BC",
+    "BaseGrass1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Farmland1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Farmland1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Grass_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC.T_Grass_05_BC",
+    "Grass_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_2_BC.T_Sand_2_BC",
+    "Sand1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "Sand2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Soil_1_BC.T_Soil_1_BC",
+    "Soil1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Soil2_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC.T_StoneGround_BC",
+    "Soil2_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "TreeGround_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC",
+    "TreeGround_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "SC_CobbleStone_Pebble_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_D.T_CobbleStone_Pebble_D",
+    "SC_CobbleStone_Pebble_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Pebble_N.T_CobbleStone_Pebble_N",
+    "SC_CobbleStone_Rough_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Rough_D.T_CobbleStone_Rough_D",
+    "SC_CobbleStone_Rough_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Rough_N.T_CobbleStone_Rough_N",
+    "SC_CobbleStone_Smooth_Albedo": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_D.T_CobbleStone_Smooth_D",
+    "SC_CobbleStone_Smooth_Normal": "/Game/StarterContent/Textures/T_CobbleStone_Smooth_N.T_CobbleStone_Smooth_N",
+    "SC_Concrete_Grime_Albedo": "/Game/StarterContent/Textures/T_Concrete_Grime_D.T_Concrete_Grime_D",
+    "SC_Concrete_Grime_Normal": "/Game/StarterContent/Textures/T_Metal_Rust_N.T_Metal_Rust_N",
+    "SC_Concrete_Poured_Albedo": "/Game/StarterContent/Textures/T_Concrete_Poured_D.T_Concrete_Poured_D",
+    "SC_Concrete_Poured_Normal": "/Game/StarterContent/Textures/T_Concrete_Poured_N.T_Concrete_Poured_N",
+    "SC_Concrete_Tiles_Albedo": "/Game/StarterContent/Textures/T_Concrete_Tiles_D.T_Concrete_Tiles_D",
+    "SC_Concrete_Tiles_Normal": "/Game/StarterContent/Textures/T_Concrete_Tiles_N.T_Concrete_Tiles_N",
+    "SC_Ground_Gravel_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "SC_Ground_Gravel_Normal": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+    "SC_Rock_Sandstone_Albedo": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+    "SC_Rock_Sandstone_Normal": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+    "Dirt_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Dirt_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Sand_01_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Ground_MacroSoilAlbedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Ground_MacroSoilNormal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Ground_MacroMask": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation",
+    "Sand_02_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K",
+    "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+    "Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Albedo.T_Sand_03_Albedo",
+    "Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_03/T_Sand_03_Normal.T_Sand_03_Normal",
+    "Sand_Path_Albedo": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K",
+    "Sand_Path_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+    "Wet_Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.T_Wet_Sand_01_Albedo",
+    "Wet_Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.T_Wet_Sand_01_Normal",
+    "Wet_Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.T_Wet_Sand_02_Albedo",
+    "Wet_Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.T_Wet_Sand_02_Normal",
+    "Wet_Sand_03_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Albedo.T_Wet_Sand_03_Albedo",
+    "Wet_Sand_03_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_03/T_Wet_Sand_03_Normal.T_Wet_Sand_03_Normal",
+    "PB_starter_SC_Ground_Grass_Albedo": "/Game/StarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D",
+    "PB_starter_SC_Ground_Grass_Normal": "/Game/StarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N",
+    "PB_starter_SC_Ground_Moss_Albedo": "/Game/StarterContent/Textures/T_ground_Moss_D.T_ground_Moss_D",
+    "PB_starter_SC_Ground_Moss_Normal": "/Game/StarterContent/Textures/T_Ground_Moss_N.T_Ground_Moss_N",
+    "PB_starter_SC_Rock_Basalt_Albedo": "/Game/StarterContent/Textures/T_Rock_Basalt_D.T_Rock_Basalt_D",
+    "PB_starter_SC_Rock_Basalt_Normal": "/Game/StarterContent/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N",
+    "PB_starter_SC_Rock_Slate_Albedo": "/Game/StarterContent/Textures/T_Rock_Slate_D.T_Rock_Slate_D",
+    "PB_starter_SC_Rock_Slate_Normal": "/Game/StarterContent/Textures/T_Rock_Slate_N.T_Rock_Slate_N",
+    "PB_starter_SC_Concrete_Panels_Albedo": "/Game/StarterContent/Textures/T_Concrete_Panels_D.T_Concrete_Panels_D",
+    "PB_starter_SC_Concrete_Panels_Normal": "/Game/StarterContent/Textures/T_Concrete_Panels_N.T_Concrete_Panels_N",
+    "PB_starter_SC_Brick_Clay_Beveled_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_D.T_Brick_Clay_Beveled_D",
+    "PB_starter_SC_Brick_Clay_Beveled_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Beveled_N.T_Brick_Clay_Beveled_N",
+    "PB_starter_SC_Brick_Clay_New_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_New_D.T_Brick_Clay_New_D",
+    "PB_starter_SC_Brick_Clay_New_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_New_N.T_Brick_Clay_New_N",
+    "PB_starter_SC_Brick_Clay_Old_Albedo": "/Game/StarterContent/Textures/T_Brick_Clay_Old_D.T_Brick_Clay_Old_D",
+    "PB_starter_SC_Brick_Clay_Old_Normal": "/Game/StarterContent/Textures/T_Brick_Clay_Old_N.T_Brick_Clay_Old_N",
+    "PB_starter_SC_Brick_Cut_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_D.T_Brick_Cut_Stone_D",
+    "PB_starter_SC_Brick_Cut_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Cut_Stone_N.T_Brick_Cut_Stone_N",
+    "PB_starter_SC_Brick_Hewn_Stone_Albedo": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_D.T_Brick_Hewn_Stone_D",
+    "PB_starter_SC_Brick_Hewn_Stone_Normal": "/Game/StarterContent/Textures/T_Brick_Hewn_Stone_N.T_Brick_Hewn_Stone_N",
+    "PB_coastal_CL_Cliff_1_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD.T_Cliff_1_4K_BCD",
+    "PB_coastal_CL_Cliff_1_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_04_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_04_BC.T_Rock_04_BC",
+    "PB_coastal_CL_Rock_04_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Rock_05_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Rock_05_BC.T_Rock_05_BC",
+    "PB_coastal_CL_Rock_05_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Sand_1_Direct_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC.T_Sand_1_BC",
+    "PB_coastal_CL_Sand_1_Direct_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "PB_coastal_CL_Stone_01_Albedo": "/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD.T_Stone_01_BCD",
+    "PB_coastal_CL_Stone_01_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "Sand_01_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "Sand_02_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity",
+    "Dirt_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.T_Dirt_Path_01_Mask_GeoCity",
+    "Sand_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.T_Sand_Path_01_Mask_GeoCity",
+    "GeoCity_S1_MacroNoise": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "GeoCity_S1_GroundB_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_GroundB_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "GeoCity_S1_GroundC_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_GroundC_Normal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal",
+    "GeoCity_S1_Soil_Albedo": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+    "GeoCity_S1_VariationMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+    "GeoCity_S1_VariationNormal": "/Engine/EngineMaterials/DefaultNormal.DefaultNormal"
+   },
+   "override_guid_capture": "GUID_NOT_CAPTURED_PYTHON_UNEXPOSED",
+   "scalar_overrides": [
+    {
+     "name": "Ground_MacroContrast",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 2.5
+    },
+    {
+     "name": "Ground_SoilBlendStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.10000000149011612
+    },
+    {
+     "name": "Sand_01_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Sand_02_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Dirt_Path_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "Sand_Path_Roughness",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.800000011920929
+    },
+    {
+     "name": "GeoCity_GrassCoverage",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.0
+    },
+    {
+     "name": "GeoCity_CellScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 1.0
+    },
+    {
+     "name": "Sand_01_FarScale",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 2.0
+    },
+    {
+     "name": "Dirt_Path_NormalStrength",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": 0.20000000298023224
+    }
+   ],
+   "vector_overrides": [
+    {
+     "name": "Sand_01_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      200.0,
+      200.0,
+      200.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_02_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      200.0,
+      200.0,
+      200.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Dirt_Path_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      100.0,
+      100.0,
+      100.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_Path_TileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      150.0,
+      150.0,
+      150.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_01_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_02_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Dirt_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Sand_Path_Tint",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroTileCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      14000.0,
+      14000.0,
+      14000.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroTile2Cm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      24100.0,
+      24100.0,
+      24100.0,
+      1.0
+     ]
+    },
+    {
+     "name": "Ground_MacroOffsetCm",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": [
+      6000.0,
+      10300.0,
+      0.0,
+      0.0
+     ]
+    }
+   ],
+   "texture_overrides": [
+    {
+     "name": "Sand_01_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_01_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_02_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_02_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+    },
+    {
+     "name": "Dirt_Path_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+    },
+    {
+     "name": "Dirt_Path_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_Path_Albedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+    },
+    {
+     "name": "Sand_Path_Normal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+    },
+    {
+     "name": "Ground_MacroSoilAlbedo",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+    },
+    {
+     "name": "Ground_MacroSoilNormal",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+    },
+    {
+     "name": "Ground_MacroMask",
+     "association": "<MaterialParameterAssociation.GLOBAL_PARAMETER: 2>",
+     "index": -1,
+     "value": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+    }
+   ]
+  }
+ },
+ "state_instances_sha256": "3e06986889e7c818748262afb82bd282250c0db6df10c0ab1b95b2141c6a43c9",
+ "state_switches": {
+  "names": [
+   "GeoCity_S1_Enable"
+  ],
+  "defaults": {
+   "GeoCity_S1_Enable": false
+  },
+  "instances": {
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural": {
+    "GeoCity_S1_Enable": false
+   },
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround": {
+    "GeoCity_S1_Enable": true
+   },
+   "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround": {
+    "GeoCity_S1_Enable": false
+   }
+  }
+ },
+ "effective_plans": {
+  "GazaShujaiya": {
+   "textures": {
+    "GeoCity_S1_MacroNoise": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+     "kind": "MASKS"
+    },
+    "GeoCity_S1_GroundB_Albedo": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col.TEX_MWAM_SandA_col",
+     "kind": "COLOR"
+    },
+    "GeoCity_S1_GroundB_Normal": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_nrm.TEX_MWAM_SandA_nrm",
+     "kind": "NORMAL"
+    },
+    "GeoCity_S1_GroundC_Albedo": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col.TEX_MWAM_SandC_col",
+     "kind": "COLOR"
+    },
+    "GeoCity_S1_GroundC_Normal": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_nrm.TEX_MWAM_SandC_nrm",
+     "kind": "NORMAL"
+    },
+    "GeoCity_S1_Soil_Albedo": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+     "kind": "COLOR"
+    },
+    "GeoCity_S1_VariationMask": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_msk.TEX_MWAM_Variation_msk",
+     "kind": "MASKS"
+    },
+    "GeoCity_S1_VariationNormal": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Extra/TEX_MWAM_Variation_nrm.TEX_MWAM_Variation_nrm",
+     "kind": "NORMAL"
+    },
+    "Dirt_Path_Albedo": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col.TEX_MWAM_Dirt_col",
+     "kind": "COLOR"
+    },
+    "Dirt_Path_Normal": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm.TEX_MWAM_Dirt_nrm",
+     "kind": "NORMAL"
+    },
+    "Sand_Path_Albedo": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col.TEX_MWAM_Stones_col",
+     "kind": "COLOR"
+    },
+    "Sand_Path_Normal": {
+     "path": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm.TEX_MWAM_Stones_nrm",
+     "kind": "NORMAL"
+    }
+   },
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.0499999523162842,
+     1.0,
+     0.9200000166893005,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.9700000286102295,
+     0.9599999785423279,
+     0.9800000190734863,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.100000023841858,
+     1.059999942779541,
+     1.0199999809265137,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.2999999523162842,
+     1.2699999809265137,
+     1.2400000095367432,
+     1.0
+    ],
+    "GeoCity_S1_Soil_Tint": [
+     2.0,
+     1.899999976158142,
+     1.7999999523162842,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     2.200000047683716,
+     2.0999999046325684,
+     2.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.0,
+     1.9500000476837158,
+     1.899999976158142,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_MacroTileNearCm": 3700.0,
+    "GeoCity_S1_MacroTileFarCm": 31100.0,
+    "GeoCity_S1_HueAmount": 0.6000000238418579,
+    "GeoCity_S1_ValueAmount": 0.10999999940395355,
+    "GeoCity_S1_FarSaturation": 1.100000023841858,
+    "GeoCity_S1_FarValue": 0.8999999761581421,
+    "GeoCity_S1_FarAmount": 0.6000000238418579,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 12.0,
+    "GeoCity_S1_GroundB_Amount": 0.4000000059604645,
+    "GeoCity_S1_GroundB_NormalStrength": 0.6000000238418579,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 12.0,
+    "GeoCity_S1_GroundC_Amount": 0.25,
+    "GeoCity_S1_GroundC_NormalStrength": 0.6000000238418579,
+    "GeoCity_S1_Soil_TileCm": 400.0,
+    "GeoCity_S1_Soil_FarScale": 12.0,
+    "GeoCity_S1_Soil_Amount": 0.30000001192092896,
+    "GeoCity_S1_PatchLo": 0.4000000059604645,
+    "GeoCity_S1_PatchHi": 0.699999988079071,
+    "GeoCity_S1_SteepLo": 0.25,
+    "GeoCity_S1_SteepHi": 0.44999998807907104,
+    "GeoCity_S1_SteepJitter": 0.15000000596046448,
+    "GeoCity_S1_SteepSlopeMix": 0.5,
+    "GeoCity_S1_SteepStones": 0.3499999940395355,
+    "GeoCity_S1_HeightBias": 0.8500000238418579,
+    "GeoCity_S1_HeightContrast": 2.0,
+    "GeoCity_S1_HeightAmount": 0.6000000238418579,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.699999988079071,
+    "GeoCity_S1_RoughVar": 0.05000000074505806,
+    "GeoCity_S1_VariationTileCm": 65536.0,
+    "GeoCity_S1_VariationAmount": 0.0,
+    "GeoCity_S1_VariationNormalStrength": 0.0,
+    "GeoCity_GrassCoverage": 0.0
+   }
+  }
+ },
+ "s1_disk": {},
+ "mw_file_sha256": {
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_msk.uasset": "00dc5ca3ee4a8dc78d0bb960b93da33576f4eb731c6920f5b3a3ddb79333d42c",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Extra\\TEX_MWAM_Variation_nrm.uasset": "654aa4761ebcbaca226ea94fe27f9ec9c235787139949fb929491676386c9cd3",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\FX\\TEX_MW_Noise_msk.uasset": "3a1cd5d3a8962709975e8ada22066bdeae40816639dc4dba57fbc4384562c89b",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_col.uasset": "2f92efe27b2e52a50d64e7132ff4ec37668ec575e4dfe6177a7c639777890189",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Dirt_nrm.uasset": "95a68732263208253d29dfa690463fdde1e15b9b103297adbc9ff6795a73ab9d",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_col.uasset": "a8b2d030b679b70088fc807f04ffe0549c1435c4008ff167054f2e8e8110586d",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandA_nrm.uasset": "d4016cbe5d9a031afabd45176e0432284098365cb08cf9e09c93fc9df379f7ee",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_col.uasset": "60c8b3db6ff74f121490e6e03c932e23e9eb5f31a334dbceb48461aa5bba35bc",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_SandC_nrm.uasset": "df39c940ec6e6ccc79a318bbdc9959d2bdf33743eba4cd2eb456e853eee21854",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_col.uasset": "ed58b0060e65e1165a22f4a0f2ad2aafeb2bf5256471a171b9bbe26441507ebb",
+  "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MWLandscapeAutoMaterial\\Textures\\Ground\\TEX_MWAM_Stones_nrm.uasset": "abbc89f7ab1d20ab291cb9aa0e9c72d66387f137835ef02138fbbf0e557e87eb"
+ },
+ "dirty_after": {
+  "maps": [],
+  "content": [
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+  ]
+ },
+ "child_statistics": {
+  "num_vertex_shader_instructions": 153,
+  "num_pixel_shader_instructions": 211,
+  "num_samplers": 2,
+  "num_vertex_texture_samples": 3,
+  "num_pixel_texture_samples": 29,
+  "num_virtual_texture_samples": 0,
+  "num_uv_scalars": 2,
+  "num_interpolator_scalars": 0
+ },
+ "base_statistics": {
+  "num_vertex_shader_instructions": 148,
+  "num_pixel_shader_instructions": 183,
+  "num_samplers": 1,
+  "num_vertex_texture_samples": 0,
+  "num_pixel_texture_samples": 3,
+  "num_virtual_texture_samples": 0,
+  "num_uv_scalars": 0,
+  "num_interpolator_scalars": 0
+ },
+ "next_step": "mode=save in this PID with state_receipt=this receipt after capture/review, or another tune; on doubt exit with Do not Save."
+}

@@ -1,0 +1,195 @@
+{
+  "schema": "environmentpipeline.bank_executable_supplier_delivery.v1",
+  "status": "EXECUTABLE_PAYLOAD_READY_NATIVE_NOT_ACTIVATED_GENERIC_REVIEW_PENDING",
+  "command_manifest": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\CommandManifests\\fef53357e7bdf8f720b79c7189560cdbde9996d062f1c6812b57af8a123828be.json",
+    "sha256": "a05072da2558050cc0dcf513ee495dc1c90568f36f47854bcf00e240bc287adc"
+  },
+  "sealed_entrypoint": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\sealed_run.py",
+  "entrypoint_sha256": "6357ea42aa1d8f4caed18f347b36ca99410b6d538ca38a569834249a40eeff75",
+  "native_measurement_module": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\targeted_measurement.py",
+  "native_measurement_module_sha256": "1f6f922ce09c6483f025f31ace413e0456693913dc67c40e3711ff25d81a5935",
+  "job_request": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\TargetedJobs\\eebc6767d410e84bc4bbcb4e828c51b59a13080c8d8f872d5672919243121b78\\REQUEST.json",
+    "sha256": "37a386d29a970bd77c1dccf545a2a1211fd0788692c1b608a197f1784ab273a6",
+    "job_ids": [
+      "NU_bec0553f5648e25ec0e6",
+      "NU_a083b80710f2f1964814",
+      "NU_2a042d4f85289d403ec7",
+      "NU_0de70e66afd34c0b6301",
+      "NU_0578953dbe96b3a1eebb",
+      "NU_39235413a24a9b050a5b",
+      "NU_d62b1ba0a2e59d93a97c",
+      "NU_8c80be71172f994d4600",
+      "NU_c247d726647fbd09e57e",
+      "NU_1518ec1a321c3a7b6c76",
+      "NU_dde2c58b9c163d6170b4",
+      "NU_d0a1054a5956fbda1c70",
+      "NU_eb7ab02a131aaa339199",
+      "NU_3634d948d49c75552804"
+    ]
+  },
+  "command": "import runpy; run = runpy.run_path('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\sealed_run.py')[\"run\"]; run('C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\CommandManifests\\\\fef53357e7bdf8f720b79c7189560cdbde9996d062f1c6812b57af8a123828be.json', \"inspect\", {'job_ids': ['NU_bec0553f5648e25ec0e6', 'NU_a083b80710f2f1964814', 'NU_2a042d4f85289d403ec7', 'NU_0de70e66afd34c0b6301', 'NU_0578953dbe96b3a1eebb', 'NU_39235413a24a9b050a5b', 'NU_d62b1ba0a2e59d93a97c', 'NU_8c80be71172f994d4600', 'NU_c247d726647fbd09e57e', 'NU_1518ec1a321c3a7b6c76', 'NU_dde2c58b9c163d6170b4', 'NU_d0a1054a5956fbda1c70', 'NU_eb7ab02a131aaa339199', 'NU_3634d948d49c75552804'], 'measurement_request_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\TargetedJobs\\\\eebc6767d410e84bc4bbcb4e828c51b59a13080c8d8f872d5672919243121b78\\\\REQUEST.json', 'activation_path': 'C:\\\\Users\\\\USER\\\\Documents\\\\Unreal Projects\\\\Environmentpipeline\\\\Staging\\\\NativeUnrealAssetSupply_2026-10-04\\\\TARGETED_INSPECTION_ACTIVATION.json'})",
+  "activation_common_required_fields": {
+    "authority": {
+      "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+      "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+      "supplier_thread_id": "01a1075c-313d-7133-9bc5-580cb2681f9b",
+      "assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\ASSIGNMENT.json",
+      "assignment_sha256": "ca21eece0c4abad9dd4bf2b10b7c4affed026f3196844c4d4febce9549d5bde7",
+      "succession_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\ManagementTransfer\\STATE.json",
+      "succession_sha256": "ab8ba7509118c66a8eb84b4bd72eaef5b80ed87bc0661184b53328c12c392e30",
+      "bank_assignment_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ASSIGNMENT.json",
+      "bank_assignment_sha256": "b846f1192d47d8ac7da1742c0901ff96fe0f3b8aa99e516976b9e10740116799"
+    },
+    "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+    "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+    "pid": "actual sole PID assigned by root after clean recovery",
+    "command_manifest_sha256": "a05072da2558050cc0dcf513ee495dc1c90568f36f47854bcf00e240bc287adc",
+    "ordinary_generation_authorized": false
+  },
+  "activation_action_fields": {
+    "action": "inspect_native_supply_batch",
+    "job_ids": [
+      "NU_bec0553f5648e25ec0e6",
+      "NU_a083b80710f2f1964814",
+      "NU_2a042d4f85289d403ec7",
+      "NU_0de70e66afd34c0b6301",
+      "NU_0578953dbe96b3a1eebb",
+      "NU_39235413a24a9b050a5b",
+      "NU_d62b1ba0a2e59d93a97c",
+      "NU_8c80be71172f994d4600",
+      "NU_c247d726647fbd09e57e",
+      "NU_1518ec1a321c3a7b6c76",
+      "NU_dde2c58b9c163d6170b4",
+      "NU_d0a1054a5956fbda1c70",
+      "NU_eb7ab02a131aaa339199",
+      "NU_3634d948d49c75552804"
+    ],
+    "queue_sha256": "5610624a3f6f0223634d9c04fdccf21ffc1aabee22799213d5b98c133b9ed50e",
+    "measurement_request_sha256": "37a386d29a970bd77c1dccf545a2a1211fd0788692c1b608a197f1784ab273a6"
+  },
+  "activation_file_to_be_issued_by_manager": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\TARGETED_INSPECTION_ACTIVATION.json",
+  "lease_does_not_bypass_clean_preflight": true,
+  "pending_bank_material_finalization": "Bank reported27H0017owned dirty packages; complete owner finalization before supplier inspect clean preflight. Supplier performs no editor actions.",
+  "capture_outputs": [
+    "full LOD0 triangle positions/UVs/polygon groups",
+    "material slot/parent graph/scalar/shader data",
+    "bounds/dependencies/package hashes",
+    "immutable per-job native receipts"
+  ],
+  "qualification_limits": {
+    "max_frame_depth_cm": 56,
+    "warehouse_opening_height_strictly_less_than_cm": 595,
+    "station_opening_height_strictly_less_than_cm": 395,
+    "native_scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "functional_measurement_boundary": "Raw triangle/UV/material evidence is executable now. Category owner must bind reviewed front/contact axes and frame/leaf/glazing triangle labels, measure clear aperture and movement clearance. These are not fabricated by AABB or filename.",
+  "existing_rejections": [
+    "garage panels depth0.66256m exceeds retained0.56m closure; no thickness increase",
+    "B08 entrance5m high exceeds station4m; no height or storey change",
+    "B94 entrance4m high exceeds retained station opening roof-clearance3.95m",
+    "whole warehouse covers about3.83percent of each source warehouse;45percent gate preserved",
+    "glass material candidates cannot qualify opaque station walls"
+  ],
+  "registration_candidate": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\1c74def774bebdff5dcde972d0ebdab156c35ef94c327cee8bf5c23fcc65daa7\\TRANSACTION.json",
+    "sha256": "35384f603392b7c22e9aa369337f163b6a5d7460bd20bbe77336a73f35a9408d"
+  },
+  "prepared_candidate": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\faf47d6001cb9d31c4f261a405b40fbf2d9dfb38ff5d074f4b17d2d54d5d8bbe\\TRANSACTION.json",
+    "sha256": "e37ad163e6ff64c1fd7cffd82ae5a589902d11c02ff9ee91ac3bd9fb1bda3ad9",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\faf47d6001cb9d31c4f261a405b40fbf2d9dfb38ff5d074f4b17d2d54d5d8bbe\\PREPARED_INTAKE.json",
+    "intake_sha256": "6b1b3be205046324a78c77103393379ec6ab801ac5f86965ebd46ed11ee3084c",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "rebase_source_digest": "2c2900c36274fa61f3079f088f746aa1b27d3fde83a1c6a77c0feeacfd82ae99",
+  "after_registration_digest": "8647ab6a825477924015b48395463444fe1feebf21de526341172510ae1299cc",
+  "saved_native_baseline_receipt": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NATIVE_TABLE_TYPED_2c2900c36274fa61f3079f088f746aa1b27d3fde83a1c6a77c0feeacfd82ae99_PID30328.json",
+    "sha256": "2716e6f7fe9b472b3577ae964f3f166a5e273dbe8cc333293a7c04a9955805d3",
+    "table_package_sha256": "43c22296925a960cb45d08e4924725ff5a1ee716d17a16e7c67009d93b3a7fab"
+  },
+  "all1223rows_preserved": true,
+  "all29eligible_ids_preserved": [
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5",
+    "current_ModularBuildingSet__Meshes__Rubble_Piles__rubble_dirt_pebble_pile_a",
+    "current_ModularBuildingSet__Meshes__Rubble_Piles__rubble_trash_pile_a",
+    "current_ModularCourtyard__Meshes__SM_Palet_a",
+    "current_ModularCourtyard__Meshes__SM_Palet_b",
+    "current_ModularCourtyard__Meshes__SM_Rubbish_bug_1t",
+    "current_ModularCourtyard__Meshes__SM_Rubbish_bug_2t",
+    "current_ModularCourtyard__Meshes__SM_dumpster",
+    "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_02_3",
+    "current_Palms_Pack_01__Add_Props__Grass__Meshes__SM_Grass_05_2",
+    "current_Palms_Pack_01__Add_Props__Thicket__Meshes__SM_Thicket_01_G",
+    "current_Palms_Pack_01__Add_Props__Thicket__Meshes__SM_Thicket_02_G",
+    "current_Palms_Pack_01__Add_Props__Thicket__Meshes__SM_Thicket_03_G",
+    "current_ProceduralBuildingGenerator__Meshes__Slum__Trashbag",
+    "current_ProceduralBuildingGenerator__Meshes__Slum__Trashcan_Closed02",
+    "current_ProceduralBuildingGenerator__Meshes__Slum__Trashcan_Open01",
+    "current_ProceduralBuildingGenerator__Meshes__Slum__Trashcan_Open02",
+    "current_ProceduralBuildingGenerator__Meshes__Slum__Trashcan_Open03",
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0014_Building_01",
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0015_Building_02",
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0903_Slum_s_fbx",
+    "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0904_Slum_v_fbx",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0034_Cart",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0046_Foodcrate",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0058_Gaz",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0059_Grill_",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0089_Tires",
+    "native_material_ea89b64bf4db34be9604",
+    "native_material_e9dc9dceb83c92f5fc04"
+  ],
+  "seven_new_native_bindings_preserved": [
+    {
+      "asset_id": "external.ST_Conifer",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Conifer/SM_Conifer.SM_Conifer",
+      "native_revision": "b90953afeb92b08bebeb725b05d4dfddb1bb5efc51ff085f5b59f6592f3e1291"
+    },
+    {
+      "asset_id": "external.ST_Cypress_Forest_Desktop",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Cypress_Forest_Desktop/SM_Cypress_Forest_Desktop.SM_Cypress_Forest_Desktop",
+      "native_revision": "357b5b39825602db17f7415b6ca0e9e2e8d112c217f259ab9b4de21525973f4a"
+    },
+    {
+      "asset_id": "external.ST_Pine_A",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Pine_A/SM_Pine_A.SM_Pine_A",
+      "native_revision": "3264ee9f4c1da377bd4019f43f83b4f14bba50b97382715e92fbbcd2d156d4ed"
+    },
+    {
+      "asset_id": "external.ST_Pine_B",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Pine_B/SM_Pine_B.SM_Pine_B",
+      "native_revision": "d942e274699971b1c29ab12c59870b5bf07eec1acd70255a2eef1141203e367d"
+    },
+    {
+      "asset_id": "external.ST_Pine_C",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Pine_C/SM_Pine_C.SM_Pine_C",
+      "native_revision": "f276d66c4f8eb6275564a637076305ce71f0d13ef15380827abedfeea20384f6"
+    },
+    {
+      "asset_id": "external.ST_Pine_D",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_ST_Pine_D/SM_Pine_D.SM_Pine_D",
+      "native_revision": "4384df38f5b2bf56d4772e61b45413075f28886259e72303a16fb8149a7bae2c"
+    },
+    {
+      "asset_id": "external.T0976",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/External/external_T0976/SM_DesertBush.SM_DesertBush",
+      "native_revision": "c58b6a2883e0dec9b2c9cfd6edf8d6fb43338c0283c5d29992f7648699813273"
+    }
+  ],
+  "native_readback_basis": "Verified bank saved typed receipt against exact source/CSV and current DataTable package bytes; supplier did not call live editor.",
+  "review_status": "Generic consumer independent review remains active; this is a rebased candidate, not execution activation. Revalidate after any pending bank catalog changes.",
+  "loaded_module_rule": "Reuse only exact path+loaded source hash+code hash. Mismatch requires fresh process; never hot reload or replace helper cache.",
+  "shared_writes_performed": false,
+  "native_operations_performed": false
+}

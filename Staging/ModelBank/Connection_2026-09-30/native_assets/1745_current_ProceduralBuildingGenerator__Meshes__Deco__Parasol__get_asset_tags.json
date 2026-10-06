@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1755,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/Parasol"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"269x269x333\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/Parasol.fbx\\\", \\\"Timestamp\\\" : \\\"1565337254\\\", \\\"FileMD5\\\" : \\\"0e1c3ab1ea951f0723f6be44fe7fc210\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"364\",\"UVChannels\":\"2\",\"Vertices\":\"435\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1755,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"269x269x333\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/Modular City V2/Meshes/Deco/Parasol.fbx\\\", \\\"Timestamp\\\" : \\\"1565337254\\\", \\\"FileMD5\\\" : \\\"0e1c3ab1ea951f0723f6be44fe7fc210\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseComplexAsSimple\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"4\",\"Materials\":\"3\",\"SectionsWithCollision\":\"3\",\"Triangles\":\"364\",\"UVChannels\":\"2\",\"Vertices\":\"435\"}}"
+    }
+   ]
+  }
+ }
+}

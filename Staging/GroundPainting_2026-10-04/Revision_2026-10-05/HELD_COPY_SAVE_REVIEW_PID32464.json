@@ -1,0 +1,49 @@
+{
+  "schema": "environmentpipeline.ground_held_copy_save_review.v1",
+  "status": "APPROVED_NAMED_HELD_COPY_SAVE",
+  "utc": "2026-10-05T07:50:19.173253+00:00",
+  "reviewer": "/root/startup_review",
+  "pid": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "execution_thread_id": "01a10883-481f-7723-bdaa-fed004f15ef1",
+  "named_packages": [
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K"
+  ],
+  "new_asset_paths": [
+    "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/Resident4K/T_Sand_01_Albedo_GeoCityResident4K.T_Sand_01_Albedo_GeoCityResident4K"
+  ],
+  "target_disk_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\Resident4K\\T_Sand_01_Albedo_GeoCityResident4K.uasset",
+  "failure_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\GROUND_TEXTURE_POLICY_apply_GazaShujaiya_r025_retained_residency_PID32464.json",
+  "failure_receipt_sha256": "43434496fff82505a125ffa70bb8ad5cf8f8ca43aa507d9f6905b61f0c437f7f",
+  "partial_ready_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\GROUND_TEXTURE_PARTIAL_READY_PID32464.json",
+  "partial_ready_receipt_sha256": "3a0b0a4e958a44a2820d0a9f55b4a0bffd22df501c601edd6d48a6684ee1a3b3",
+  "old_creation_helper_sha256": "bdba22a3bcf801663788166649e3fd593704507f133995a1085ed0b37c2404b4",
+  "approved_operation": "Save exactly the sole existing dirty unbound Texture2D as an unused held checkpoint. No binding, additional duplication, source or material edits, compile, cleanup, Cook/Bake or Save All.",
+  "hold_status": "HELD_UNUSED_SUPERSEDED_MOUT_DERIVATIVE",
+  "working_ground_use_authorized": false,
+  "old_MOUT_recovery_activation_authorized": false,
+  "latest_working_source_selection": "Original Unreal/Epic StarterContent, as relayed by root from latest human source correction.",
+  "observed_validation": {
+    "copy_disk_absent_before_save": true,
+    "sole_dirty_content_is_named_copy_maps_clean": true,
+    "no_current_graph_MI_or_scene_reference_to_copy": true,
+    "no_MI_update_or_binding_occurred": true,
+    "current1015_graph_and_all3_MIs_scene_sources_CVars_equal_failed_apply_before": true,
+    "source_and_existing_disk_files_unchanged_count": 95,
+    "runtime_module_count": 12,
+    "copy_resource_size4096_by4096_after_ordinary_ticks": true,
+    "all_exposed_source_copy_PBR_fields_equal_except_never_stream_and_max_texture_size": true,
+    "unsupported_metadata_not_inferred": true
+  },
+  "required_execution_checks": [
+    "Immediately recheck exact actual PID/root ground lease/world/source guards, cooking paused/HDA autooff/autosave off/callback0.",
+    "Require the same sole named dirty package, maps clean and held copy unbound before save.",
+    "Use only the explicit named asset/package save; do not save source, master, base, area MI or map.",
+    "Read back target file existence/SHA and maps/content clean; confirm every previously existing file/hash and graph/MI/scene state unchanged."
+  ],
+  "postsave_evidence": "NOT_YET_PERFORMED_AT_REVIEW",
+  "visual_approval": false,
+  "completion_approval": false,
+  "native_calls_performed_by_reviewer": false
+}

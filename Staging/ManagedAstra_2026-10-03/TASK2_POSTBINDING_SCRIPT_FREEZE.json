@@ -1,0 +1,48 @@
+{
+  "status": "FINAL_THREE_SCRIPTS_FROZEN_READY_FOR_REVIEW_NOT_ACTIVATED",
+  "scripts": {
+    "resume_existing_shuj_postbinding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_postbinding.py",
+      "sha256": "38f29a01f43c2f0c90e24238fa7e344887f351fb42be90568eebd75619de6d07",
+      "syntax": "passed_compile_only",
+      "reload_targets": [
+        "grounding"
+      ],
+      "APIs": {
+        "frozen": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256",
+        "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, manager_activation"
+      },
+      "editor_executed": false
+    },
+    "verify_postbinding_saved_area.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\verify_postbinding_saved_area.py",
+      "sha256": "8eca27cf555e33d71e9078b8c39f170a891385e41bd75f47e76b5f9be6d89d8c",
+      "syntax": "passed_compile_only",
+      "reload_targets": [
+        "grounding"
+      ],
+      "APIs": {
+        "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, expected_inspector_sha256, manager_activation"
+      },
+      "editor_executed": false
+    },
+    "inspect_native_road_delivery.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\inspect_native_road_delivery.py",
+      "sha256": "bfbf0451515d783d34100998319ee18b653843b7351dbc32abc03049cddd2255",
+      "syntax": "passed_compile_only",
+      "reload_targets": [],
+      "APIs": {
+        "inspect_delivery": "profile_path=None, context='saved_readback', receipt_path=None, max_seconds=180.0"
+      },
+      "editor_executed": false
+    }
+  },
+  "source_four_file_hashes": {
+    "geocity_roadbld_junctions.py": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+    "geocity_roadbld_workflow.py": "1909fb60f22be17a18012a5b2a8f990d6fdc7c5c73b8ae164f8fbef5e74ad453",
+    "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+    "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211"
+  },
+  "execution_authorized": false,
+  "editor_executed": false
+}

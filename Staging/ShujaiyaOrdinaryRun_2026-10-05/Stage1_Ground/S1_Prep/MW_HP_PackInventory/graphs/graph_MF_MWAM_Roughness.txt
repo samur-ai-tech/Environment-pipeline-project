@@ -1,0 +1,10 @@
+FunctionInput_0 [FunctionInput] {"InputName": "Roughness", "InputType": "FunctionInput_Scalar"} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "Roughness"} A<-Power_0:0
+Multiply_0 [Multiply]  A<-StaticSwitchParameter_0:0 B<-ScalarParameter_0:0
+OneMinus_0 [OneMinus]  Input<-FunctionInput_0:0
+Power_0 [Power]  Base<-Multiply_0:0 Exponent<-ScalarParameter_1:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_RoughnessMultiplier", "DefaultValue": 1.0, "Group": "Lighting"} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_RoughnessPower", "DefaultValue": 0.5, "Group": "Lighting"} 
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_UseInvertedRoughness", "DefaultValue": true, "Group": "Lighting"} A<-OneMinus_0:0 B<-FunctionInput_0:0
+MF_MWAM_Roughness [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_RoughnessEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_RoughnessEditorOnlyData [MaterialFunctionEditorOnlyData]  

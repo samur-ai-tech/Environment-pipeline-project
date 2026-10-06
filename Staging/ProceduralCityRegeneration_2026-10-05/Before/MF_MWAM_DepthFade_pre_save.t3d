@@ -1,0 +1,87 @@
+Begin Object Class=/Script/Engine.MaterialFunction Name="MF_MWAM_DepthFade" ExportPath="/Script/Engine.MaterialFunction'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="MF_MWAM_DepthFadeEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MF_MWAM_DepthFadeEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="MF_MWAM_DepthFadeEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MF_MWAM_DepthFadeEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_MWAM_DepthFade:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_MWAM_DepthFade:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_DepthFade:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_DepthFade:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionStaticBool'MF_MWAM_DepthFade:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionComponentMask'MF_MWAM_DepthFade:MaterialExpressionComponentMask_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_MWAM_DepthFade:MaterialExpressionMaterialFunctionCall_1'")
+      R=True
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=D4419F5E4C145CB99ED6B285C5176535
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionFunctionOutput_0'"
+      OutputName="DepthFadeMask"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_MWAM_DepthFade:MaterialExpressionComponentMask_0'")
+      bLastPreviewed=True
+      Id=728B2A454DCE8A9109714BAAAD768716
+      MaterialExpressionEditorX=416
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=D13D2819461ECCDBEFB25D80D808B9DB
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.CameraDepthFade'"
+      FunctionInputs(0)=(ExpressionInputId=79FFEA6C4F3A46F51F8E50A349E4BB4B,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_DepthFade:MaterialExpressionScalarParameter_0'",InputName="Fade Length"))
+      FunctionInputs(1)=(ExpressionInputId=D5EC0E2F4DB888679BFC2A8B921262ED,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_DepthFade:MaterialExpressionScalarParameter_1'",InputName="Fade Offset"))
+      FunctionInputs(2)=(ExpressionInputId=7B4195E6455691CA3782398687468578,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'MF_MWAM_DepthFade:MaterialExpressionStaticBool_0'",InputName="For Vertex Shader"))
+      FunctionOutputs(0)=(ExpressionOutputId=160C00424E845E293F44DCBE13738CEE,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=7DB1A2C547C055FEFC4042B28099F556
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionScalarParameter_0'"
+      DefaultValue=4096.000000
+      ParameterName="MW_DistanceBlendFadeLength"
+      ExpressionGUID=B53AAED7482165D11A564DADF749EDA5
+      Group="UVs"
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=6D65512043F9101B2D01C6B9B0B5DA3B
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionScalarParameter_1'"
+      DefaultValue=512.000000
+      ParameterName="MW_DistanceBlendFadeOffset"
+      ExpressionGUID=92D08C5549CFDE2945D75CB0E2A7FB99
+      Group="UVs"
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=6D65512043F9101B2D01C6B9B0B5DA3B
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:MaterialExpressionStaticBool_0'"
+      Value=True
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=FEB668B042D84349A26737BF83C79F70
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_DepthFade'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_DepthFade.MF_MWAM_DepthFade:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   bExposeToLibrary=True
+   LibraryCategoriesText(0)=NSLOCTEXT("", "F0025AE849BE1F6AB6E366821333ACDD", "MAWI")
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_MWAM_DepthFadeEditorOnlyData'"
+   StateId=C1A476E341FB97A3BD737A9C627DD6BB
+   CombinedInputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

@@ -1,0 +1,113 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "save_assets",
+    "arguments": {
+     "asset_paths": [
+      "/Game/Project/Shared/Bank_ME/Buildings/Arab_X3",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0907_Arab_x3_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/Arab_x2",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0906_Arab_x2_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/Arab_x1",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0905_Arab_x1_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/Slum_v",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0904_Slum_v_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/slum_s",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0903_Slum_s_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/Slum_k",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0902_Slum_k_fbx",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_006",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_005",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL_002",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL_006",
+      "/Game/Project/Shared/Bank_ME/Buildings/stara",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_Fabric_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0016_Building_03",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_02_1002",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_02_1001",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_02_1004",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_02_1003",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0015_Building_02",
+      "/Game/Project/Shared/Bank_ME/Buildings/Props2_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/Props_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_003_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_002_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/Building_03_001_MTL",
+      "/Game/Project/Shared/Bank_ME/Buildings/standard1",
+      "/Game/Project/Shared/Bank_ME/Buildings/acbody1",
+      "/Game/Project/Shared/Bank_ME/Buildings/Airconditioner_front1",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0014_Building_01",
+      "/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1021",
+      "/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1031",
+      "/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1001",
+      "/Game/Project/Shared/Bank_ME/Buildings/Material_Building_04_1011",
+      "/Game/Project/Shared/Bank_ME/Buildings/SM_H0013_Building_04",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0051_Garbagebin",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/Street_Props_Pack__004",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0094_Woodenpole",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0083_Streetsign_001",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/Street_Props_Pack__010",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0082_Streetsign",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/Street_Props_Pack__006",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0081_Streetpowerbox",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0079_Streetlight",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/Street_Props_Pack__003",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0060_Metal_Barrier",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/Street_Props_Pack__012",
+      "/Game/Project/Shared/Bank_ME/StreetFurniture/SM_H0025_Barrier",
+      "/Game/Project/Shared/Bank_ME/Props/MI_baseMaterial_AC",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0650_SM_AirConditioner",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__012",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0091_Watertank_001",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__002",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0090_Watertank",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0089_Tires",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0077_Stones_Stack",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0059_Grill_",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__010",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0058_Gaz",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__003",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0046_Foodcrate",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__007",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0043_Foodcart_001",
+      "/Game/Project/Shared/Bank_ME/Props/Street_Props_Pack__009",
+      "/Game/Project/Shared/Bank_ME/Props/SM_H0034_Cart",
+      "/Game/Project/Shared/Bank_ME/Vehicles/Street_Props_Pack__009",
+      "/Game/Project/Shared/Bank_ME/Vehicles/SM_H0039_Destryoedcar",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Nopal",
+      "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0647_Nopal",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Material__41",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Material__40",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Material__28",
+      "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0636_Acacia",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_1",
+      "/Game/Project/Shared/Bank_ME/Vegetation/Original_Submesh_0",
+      "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm"
+     ]
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.343,
+ "isError": null,
+ "text": "{\"returnValue\":true}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":true}"
+    }
+   ]
+  }
+ }
+}

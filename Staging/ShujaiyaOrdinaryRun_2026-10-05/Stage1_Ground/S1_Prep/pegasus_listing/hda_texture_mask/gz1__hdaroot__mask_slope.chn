@@ -1,0 +1,16 @@
+{
+    channel max_slopeangle {
+      lefttype = extend
+      righttype = extend
+      default = 90
+      flags = 0
+      segment { length = 0 value = 90 90 expr = ch(\"min_slopeangle\")+10 }
+    }
+    channel min_slopeangle {
+      lefttype = extend
+      righttype = extend
+      default = 25
+      flags = 0
+      segment { length = 0 value = 25 25 expr = ch(\"../slope_angle\") }
+    }
+  }

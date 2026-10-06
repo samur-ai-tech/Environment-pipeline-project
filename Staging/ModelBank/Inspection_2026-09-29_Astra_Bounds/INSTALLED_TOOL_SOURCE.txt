@@ -1,0 +1,44 @@
+static_mesh.py:101-110
+    def get_bounds(mesh: unreal.StaticMesh) -> unreal.Box:
+        """Returns the local-space bounding box of a static mesh.
+
+        Args:
+            mesh: The static mesh asset to query.
+
+        Returns:
+            The local-space axis-aligned bounding box.
+        """
+        return mesh.get_bounding_box()
+asset.py:255-269
+    def get_asset_class(asset_path: str) -> str:
+        """Gets the class of an asset.
+
+        Args:
+            asset_path: Content path to the asset.
+
+        Returns:
+            The class name of the asset (e.g. 'StaticMesh', 'Material', 'HeroCharacter_C').
+        """
+        package_path = AssetTools._to_package_path(asset_path)
+        if not AssetTools._eas().does_asset_exist(package_path):
+            raise ValueError(f'Asset does not exist: {package_path}')
+        ar = unreal.AssetRegistryHelpers.get_asset_registry()
+        asset_data_list = ar.get_assets_by_package_name(package_path)
+        assert asset_data_list, f'Unexpected: asset exists but not in registry: {package_path}'
+asset.py:427-442
+    def get_dependencies(asset_path: str) -> list[str]:
+        """Lists assets that the specified asset depends on.
+
+        Args:
+            asset_path: Content path to the asset.
+
+        Returns:
+            A list of content paths for assets that the given asset depends on.
+        """
+        package_path = AssetTools._to_package_path(asset_path)
+        if not AssetTools._eas().does_asset_exist(package_path):
+            raise ValueError(f'Asset does not exist: {package_path}')
+        registry = unreal.AssetRegistryHelpers.get_asset_registry()
+        options = unreal.AssetRegistryDependencyOptions()
+        dependencies = registry.get_dependencies(package_path, options)
+        return [str(dep) for dep in dependencies]

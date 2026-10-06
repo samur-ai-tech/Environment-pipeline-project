@@ -1,0 +1,99 @@
+TASK 2 — NORMAL ASSET SELECTION
+2026-10-02, Asia/Jerusalem
+Status: permanent selected mesh configuration and named native table save complete;
+street-pole role unavailable. Normal material routing requires Task3 source repair.
+
+RETAINED CHANGES [measured]
+Staging/ModelBank/PermanentIntegration_2026-10-02:
+- catalog_v4_source.json: revision 2026-10-02.normal.v002; all 1,223 identities retained.
+- catalog_v4_full.csv: exactly 15 selected mesh rows RunEligible=true.
+- AREA_PROFILE.json: mode=released, scoped release/decision receipt and digest.
+Saved only /Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4.
+Native exported rows, typed source rows and profile agree on digest:
+79efcfc4d5bd38fa52b8aca072e843753046380596d1adc41ace1891d4cd3169
+ReleaseId=GazaRimal_NormalUse_2026-10-02_v001
+DecisionId=Aviv_ManagedExecution_2026-10-02_Task2
+Decision receipt: Task2/NORMAL_ASSET_CONFIGURATION.json; profile pins its SHA256.
+This records Aviv's current implementation authorization for project-scoped normal
+configuration; it does not invent legal, redistribution or final visual approval.
+Canonical qualification/general-generation fields and historical rights states
+remain preserved. No broad bank release was performed.
+
+ACTUAL SELECTED PATHS [measured]
+Whole buildings, under /Game/Project/Shared/Bank_ME_v3/Buildings:
+  SM_H0014_Building_01, SM_H0015_Building_02,
+  SM_H0903_Slum_s_fbx, SM_H0904_Slum_v_fbx.
+Small props:
+  /Game/ModularBuildingSet/Meshes/Rubble_Piles/rubble_dirt_pebble_pile_a
+  /Game/ModularBuildingSet/Meshes/Rubble_Piles/rubble_trash_pile_a
+  /Game/ModularCourtyard/Meshes/SM_Palet_a
+  /Game/ModularCourtyard/Meshes/SM_Palet_b
+  /Game/ModularCourtyard/Meshes/SM_Rubbish_bug_1t
+Street prop: /Game/ModularCourtyard/Meshes/SM_dumpster
+Shrubs: /Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_01_G,
+        /Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_02_G
+Tree: /Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_03_G
+Understory: /Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3,
+            /Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2
+Full object paths, material slots and metadata are in NORMAL_ASSET_CONFIGURATION.json.
+No standing palms were enabled; unresolved declined palms remain preserved.
+
+NORMAL METADATA [measured/configured]
+Each selected mesh was read through native GeometryScript LOD geometry without
+altering its asset. Exact vertex extrema replace inherited bounds; minimum vertex
+Z defines bottom contact. Tree core vertices within 25 cm of local origin also
+reach the same -54.54593277 cm contact, separating this from a foliage-only minimum.
+Scale is native 1:1. ForwardAxis is the positive native longest horizontal extent
+(+X or +Y), an explicit geographic footprint alignment convention, not approved
+facade facing. OrientationValid means that defined alignment is configured;
+Task3 must inspect actual facing and contact in the real area.
+All 15 rows have Role=RequestRole, supported PlacementRule, valid bounds/contact,
+revision hash of the actual native package, weight=1, area_zone scope,
+AllowedAreas=GazaRimal, matching role zones and common release/decision IDs.
+Existing conservative spacing is retained, at least mesh horizontal diagonal
+plus 100 cm. Metadata records 100 cm clearance and no rescaling.
+No HDA/wrapper code, native mesh/material originals, actor transforms or map changed.
+
+POLE LIMIT [measured/documented]
+Focused installed StaticMesh name/path search in UtopianCity,
+ProceduralBuildingGenerator and ModularCourtyard found only these alternatives:
+- SM_Lamp01: 46.36 cm luminaire geometry at local Z127.54..173.90; no shaft;
+  rights record unverified.
+- SM_Lamplight: 24.56 cm attachment and explicit attachment hold.
+- Lamp_Var2: 98.95 cm high / 167.64 cm projecting fixture, not a complete pole.
+- SM_Lamp: 108.24 cm fixture, not a complete street pole.
+- SM_Streetlight: explicit dependency_closure_unresolved_or_unmeasured hold.
+SM_utility_pole_1 remains stylized_town, incompatible with this area's policy.
+SM_H0094_Woodenpole remains held. No compatible permitted complete pole was found.
+street_pole remains a REQUIRED unresolved role in profile and decision receipt;
+it was not silently dropped, relabelled or reported complete.
+
+TASK3 CONCRETE INTEGRATION HANDOFF
+1. Task1 measured 51/52 tree requests suppressed by global spacing despite fitting
+   candidates. Repair shared request priority/spacing with this exact normal slate;
+   do not relax terrain/rights guards indiscriminately. Tree policy uses Thicket_03_G.
+2. Normal surface-material routing has an existing source defect:
+   _nonbuilding_active_rows projects EVERY row to bank_evaluate_v2, whose normal
+   eligibility requires mesh BoundsValid/AnchorValid/OrientationValid and positive
+   XYZ extents. road_surface/sidewalk_surface material rows have no physical bounds.
+   cook_permanent_surface_material also obtains candidates through that evaluator.
+   Do not fabricate mesh bounds for materials. Keep the distinct generated-surface
+   lane, validate supported native material class/style/use/scope/revision independently
+   in reusable source, then configure the exact existing MI_Asphalt and MI_ConcreteGrain
+   rows for normal material routing and synchronize table/profile/decision digest.
+   Currently their RunEligible remains false. Original cooked output still retains
+   Task1's material delivery; no normal recook was performed by Task2.
+3. Whole-building full containment, contact and facing still need Task3 repair/actual
+   area inspection. Axis metadata is spatial alignment, not visual acceptance.
+4. Profile AllowedAreas is explicitly GazaRimal. Task5 must configure second-area
+   scope/release intentionally; do not infer a general bank release.
+
+EDITOR HANDOFF [measured]
+One editor PID15568. Task1's exact eight dirty map/Cook packages remain unchanged;
+native table is saved and absent from dirty packages. Live area still has preserved
+baked plus cooked output/two Landscapes from Task1. No Cook, Bake, map save,
+discard, deletion, new editor or Save All was performed. Task4 owns replacement/save.
+Lease released to OWNER=NONE; manager controls next editor turn.
+Preserved explicit holds: H0013/H0907/H0051/H0958/H0094, declined palms and all other
+held rows. Unsupported signs/roof attachments/modular assemblies remain excluded.
+Before-images of the three assigned source/profile files are retained in Task2.

@@ -1,0 +1,874 @@
+[
+  {
+    "name": "get_actors_in_level",
+    "title": null,
+    "description": "Get a list of all actors in the current level.",
+    "input_schema": {
+      "properties": {},
+      "title": "get_actors_in_levelArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Result",
+          "type": "array"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_actors_in_levelOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "find_actors_by_name",
+    "title": null,
+    "description": "Find actors by name pattern.",
+    "input_schema": {
+      "properties": {
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pattern"
+      ],
+      "title": "find_actors_by_nameArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Result",
+          "type": "array"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "find_actors_by_nameOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "spawn_actor",
+    "title": null,
+    "description": "Create a new actor in the current level.\n\n        Args:\n            ctx: The MCP context\n            name: The name to give the new actor (must be unique)\n            type: The type of actor to create (e.g. StaticMeshActor, PointLight, SpotLight, RectLight, DirectionalLight, CameraActor)\n            location: The [x, y, z] world location to spawn at\n            rotation: The [pitch, yaw, roll] rotation in degrees\n            static_mesh: Asset path for StaticMeshActor (default: /Engine/BasicShapes/Cube.Cube)\n            intensity: Light intensity in candelas\n            color: Light color as [r, g, b] (0-1 range)\n            temperature: Color temperature in Kelvin (enables temperature mode)\n            attenuation_radius: Light falloff radius\n            source_radius: Soft shadow source radius (Point/SpotLight)\n            soft_source_radius: Additional soft shadow radius (Point/SpotLight)\n            cast_shadows: Whether the light casts shadows\n            inner_cone_angle: SpotLight inner cone angle in degrees\n            outer_cone_angle: SpotLight outer cone angle in degrees\n            source_width: RectLight width in cm\n            source_height: RectLight height in cm\n            barn_door_angle: RectLight barn door angle\n            barn_door_length: RectLight barn door length\n            scale: Actor scale as [x, y, z]\n\n        Returns:\n            Dict containing the created actor's properties",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "location": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "items": {
+            "type": "number"
+          },
+          "title": "Location",
+          "type": "array"
+        },
+        "rotation": {
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "items": {
+            "type": "number"
+          },
+          "title": "Rotation",
+          "type": "array"
+        },
+        "static_mesh": {
+          "default": null,
+          "title": "Static Mesh",
+          "type": "string"
+        },
+        "intensity": {
+          "default": null,
+          "title": "Intensity",
+          "type": "number"
+        },
+        "color": {
+          "default": null,
+          "items": {
+            "type": "number"
+          },
+          "title": "Color",
+          "type": "array"
+        },
+        "temperature": {
+          "default": null,
+          "title": "Temperature",
+          "type": "number"
+        },
+        "attenuation_radius": {
+          "default": null,
+          "title": "Attenuation Radius",
+          "type": "number"
+        },
+        "source_radius": {
+          "default": null,
+          "title": "Source Radius",
+          "type": "number"
+        },
+        "soft_source_radius": {
+          "default": null,
+          "title": "Soft Source Radius",
+          "type": "number"
+        },
+        "cast_shadows": {
+          "default": null,
+          "title": "Cast Shadows",
+          "type": "boolean"
+        },
+        "inner_cone_angle": {
+          "default": null,
+          "title": "Inner Cone Angle",
+          "type": "number"
+        },
+        "outer_cone_angle": {
+          "default": null,
+          "title": "Outer Cone Angle",
+          "type": "number"
+        },
+        "source_width": {
+          "default": null,
+          "title": "Source Width",
+          "type": "number"
+        },
+        "source_height": {
+          "default": null,
+          "title": "Source Height",
+          "type": "number"
+        },
+        "barn_door_angle": {
+          "default": null,
+          "title": "Barn Door Angle",
+          "type": "number"
+        },
+        "barn_door_length": {
+          "default": null,
+          "title": "Barn Door Length",
+          "type": "number"
+        },
+        "scale": {
+          "default": null,
+          "items": {
+            "type": "number"
+          },
+          "title": "Scale",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ],
+      "title": "spawn_actorArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "spawn_actorOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "delete_actor",
+    "title": null,
+    "description": "Delete an actor by name.",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "delete_actorArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "delete_actorOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "set_actor_property",
+    "title": null,
+    "description": "Set a property on an actor.\n        \n        Args:\n            name: Name of the actor\n            property_name: Name of the property to set\n            property_value: Value to set the property to\n            \n        Returns:\n            Dict containing response from Unreal with operation status",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "property_name": {
+          "title": "Property Name",
+          "type": "string"
+        },
+        "property_value": {
+          "title": "property_value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "property_name",
+        "property_value"
+      ],
+      "title": "set_actor_propertyArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "set_actor_propertyOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "get_editor_context",
+    "title": null,
+    "description": "Get the current Unreal Editor context in one call.\n        Returns selected actors, open asset editors, active tab, current level, and PIE state.\n        Use this before any context-sensitive operation to understand what the user is looking at.",
+    "input_schema": {
+      "properties": {},
+      "title": "get_editor_contextArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_editor_contextOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "get_viewport_camera",
+    "title": null,
+    "description": "Get the active Level Editor viewport camera position, rotation, FOV and view mode.",
+    "input_schema": {
+      "properties": {},
+      "title": "get_viewport_cameraArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_viewport_cameraOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "take_editor_screenshot",
+    "title": null,
+    "description": "Capture the active Level Editor viewport as a base64-encoded PNG image.\n        Returns: width, height, image_base64 (PNG). Editor must be open with a visible 3D viewport.\n        Does NOT require PIE — captures the editor scene directly.",
+    "input_schema": {
+      "properties": {},
+      "title": "take_editor_screenshotArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "take_editor_screenshotOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "get_cvar",
+    "title": null,
+    "description": "Get the current value of an Unreal Engine console variable (CVar).\n        Useful for reading project debug flags and engine settings.\n        Args:\n            name: CVar name, e.g. \"r.ScreenPercentage\" or \"MyGame.Debug.Enabled\"",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "get_cvarArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_cvarOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "set_cvar",
+    "title": null,
+    "description": "Set an Unreal Engine console variable (CVar) value.\n        Args:\n            name: CVar name, e.g. \"r.ScreenPercentage\" or \"MyGame.Debug.Enabled\"\n            value: New value as string, e.g. \"1\" or \"0\" or \"100.0\"",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ],
+      "title": "set_cvarArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "set_cvarOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "create_blueprint",
+    "title": null,
+    "description": "Create a new Blueprint class.",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "parent_class": {
+          "title": "Parent Class",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "parent_class"
+      ],
+      "title": "create_blueprintArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "create_blueprintOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "compile_blueprint",
+    "title": null,
+    "description": "Compile a Blueprint.",
+    "input_schema": {
+      "properties": {
+        "blueprint_name": {
+          "title": "Blueprint Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "blueprint_name"
+      ],
+      "title": "compile_blueprintArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "compile_blueprintOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "open_blueprint",
+    "title": null,
+    "description": "Open a Blueprint in the Unreal Editor for live viewing.\n\n        Opens the Blueprint editor window so you can see changes as they\n        are made programmatically. Call this before build_blueprint_graph\n        or execute_blueprint_batch to watch edits appear live.\n\n        Args:\n            blueprint_name: Name or path of the Blueprint to open\n\n        Returns:\n            Dict with the opened Blueprint name",
+    "input_schema": {
+      "properties": {
+        "blueprint_name": {
+          "title": "Blueprint Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "blueprint_name"
+      ],
+      "title": "open_blueprintArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "open_blueprintOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "list_assets",
+    "title": null,
+    "description": "List all assets in a directory.\n\n        Args:\n            ctx: MCP context.\n            directory_path: Content browser path to search (default \"/Game\").\n            recursive: Whether to search subdirectories.\n            asset_class: Optional class name filter (e.g. \"StaticMesh\", \"Material\").\n            name_pattern: Optional wildcard name filter (e.g. \"WBP_*\", \"*Crafting*\"). Supports * and ? wildcards.\n\n        Returns:\n            Dict with 'assets' array of {path, name, class} and 'count'.",
+    "input_schema": {
+      "properties": {
+        "directory_path": {
+          "default": "/Game",
+          "title": "Directory Path",
+          "type": "string"
+        },
+        "recursive": {
+          "default": true,
+          "title": "Recursive",
+          "type": "boolean"
+        },
+        "asset_class": {
+          "default": "",
+          "title": "Asset Class",
+          "type": "string"
+        },
+        "name_pattern": {
+          "default": "",
+          "title": "Name Pattern",
+          "type": "string"
+        }
+      },
+      "title": "list_assetsArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "list_assetsOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "get_asset_info",
+    "title": null,
+    "description": "Get detailed information about a single asset.\n\n        Args:\n            ctx: MCP context.\n            asset_path: Full asset path (e.g. \"/Game/Meshes/SM_Ball\").\n\n        Returns:\n            Dict with name, class, package_path, disk_size_bytes, tags, etc.",
+    "input_schema": {
+      "properties": {
+        "asset_path": {
+          "title": "Asset Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_path"
+      ],
+      "title": "get_asset_infoArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_asset_infoOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "get_folder_structure",
+    "title": null,
+    "description": "Get the folder structure of a content browser directory as a nested tree.\n\n        Args:\n            ctx: MCP context.\n            directory_path: Root path to start from (default \"/Game\").\n            max_depth: Maximum recursion depth (-1 for unlimited).\n            include_asset_counts: If True, include asset count per folder.\n\n        Returns:\n            Dict with nested 'tree' object {name, path, children, asset_count}.",
+    "input_schema": {
+      "properties": {
+        "directory_path": {
+          "default": "/Game",
+          "title": "Directory Path",
+          "type": "string"
+        },
+        "max_depth": {
+          "default": -1,
+          "title": "Max Depth",
+          "type": "integer"
+        },
+        "include_asset_counts": {
+          "default": false,
+          "title": "Include Asset Counts",
+          "type": "boolean"
+        }
+      },
+      "title": "get_folder_structureArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "get_folder_structureOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "start_pie",
+    "title": null,
+    "description": "Start Play In Editor (PIE) session.\n        Call is_pie_active() after a short delay to confirm PIE is ready.",
+    "input_schema": {
+      "properties": {},
+      "title": "start_pieArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "start_pieOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "stop_pie",
+    "title": null,
+    "description": "Stop the current Play In Editor (PIE) session.",
+    "input_schema": {
+      "properties": {},
+      "title": "stop_pieArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "stop_pieOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "is_pie_active",
+    "title": null,
+    "description": "Check if a Play In Editor (PIE) session is currently running.",
+    "input_schema": {
+      "properties": {},
+      "title": "is_pie_activeArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": {
+      "properties": {
+        "result": {
+          "additionalProperties": true,
+          "title": "Result",
+          "type": "object"
+        }
+      },
+      "required": [
+        "result"
+      ],
+      "title": "is_pie_activeOutput",
+      "type": "object"
+    },
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "search_unreal_tools",
+    "title": null,
+    "description": "Search hundreds of additional UnrealMCP tools beyond the 20 core ones.\n\n        Use this when a core tool doesn't cover what you need. Returns\n        compact results (name + short description). Call describe_unreal_tools\n        next to get parameter schemas, then execute_unreal_tool to invoke.\n\n        Available domains (rough tool counts in parens):\n        - editor (15): actor spawn/delete, transforms, CVars, PIE, screenshots\n        - blueprint (~100): create/compile blueprints, graph editing, 50+ node\n          types, inspection, search, complexity analysis\n        - widget (~120): UMG + Common UI — containers, buttons, text, lists,\n          tree/tile views, styling, animations, event binding\n        - material (~30): PBR materials, material graph nodes, instance\n          parameters, material functions\n        - metasound (~25): EXPERIMENTAL — oscillators, filters, envelopes,\n          audio routing. Simple graphs work; complex cases often break.\n        - niagara (~35): NOT WORKING YET — scaffolded only, do not rely on\n        - behavior_tree (~50): BT composites, decorators, services, tasks,\n          runtime control\n        - blackboard (8): BB keys and values, runtime state\n        - eqs (~15): environment queries, generators, tests\n        - pcg (~25): EXPERIMENTAL — procedural content generation nodes,\n          property marshaler. Trivial graphs only; AI gets pin semantics\n          and data-layer rules wrong often.\n        - asset (~15): bulk rename/move, redirectors, folder analysis,\n          references\n        - input (~10): Enhanced Input mappings, action/axis bindings\n        - procedural (6): walls, stairs, towers, arches, pyramids, mazes\n        - project (1): Common UI config\n\n        Examples:\n        - search(\"button\")                 → add_button_to_widget, CommonButton\n        - search(\"damage\")                 → BP nodes dealing with damage\n        - search(\"blackboard key\")         → blackboard_tools entries\n        - search(\"\", category=\"material\")  → every material tool\n        - search(\"timeline\")               → blueprint timeline nodes\n        ",
+    "input_schema": {
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "category": {
+          "default": "",
+          "title": "Category",
+          "type": "string"
+        },
+        "limit": {
+          "default": 10,
+          "title": "Limit",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "title": "search_unreal_toolsArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "describe_unreal_tools",
+    "title": null,
+    "description": "Get compact parameter schemas for up to 5 tools by name.\n\n        Call after search_unreal_tools. Returns\n        {name, params: [{name, type, required, default, desc}]}.\n        Hard-capped at 5 tools per call to keep response size bounded —\n        make multiple calls if you need more.\n        ",
+    "input_schema": {
+      "properties": {
+        "names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Names",
+          "type": "array"
+        }
+      },
+      "required": [
+        "names"
+      ],
+      "title": "describe_unreal_toolsArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  },
+  {
+    "name": "execute_unreal_tool",
+    "title": null,
+    "description": "Execute a non-core UnrealMCP tool by name with a params dict.\n\n        Use describe_unreal_tools first to learn the expected params.\n        On parameter error the response includes ``expected_params`` so\n        you can self-correct without another describe call. For the 20\n        core tools, call them directly — they're already loaded.\n        ",
+    "input_schema": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "params": {
+          "additionalProperties": true,
+          "title": "Params",
+          "type": "object"
+        }
+      },
+      "required": [
+        "name",
+        "params"
+      ],
+      "title": "execute_unreal_toolArguments",
+      "type": "object"
+    },
+    "execution": null,
+    "output_schema": null,
+    "icons": null,
+    "annotations": null,
+    "meta": null
+  }
+]

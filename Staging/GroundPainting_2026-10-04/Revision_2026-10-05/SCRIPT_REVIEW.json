@@ -1,0 +1,82 @@
+{
+  "schema": "environmentpipeline.independent_ground_script_review.v1",
+  "reviewer": "/root/startup_review",
+  "reviewed_utc": "2026-10-05T00:45:50Z",
+  "status": "APPROVED_WITHIN_EXACT_GROUND_SCOPE",
+  "review_method": "Independent source inspection, installed function readback and engine header comparison, AST parsing and disk SHA256 validation. No Unreal native calls or native authoring were performed by this reviewer.",
+  "script_sha256": {
+    "native_graph_revision.py": "7890eebfa06c73d6fff840a272992ec2e7dc0e10f4e9612601e7e311a2b8a338",
+    "native_revision_apply.py": "5872edb2f362cb45aed21fb1998467a858c7826f64e3f98fb2667a0aaec60cde",
+    "native_revision_save.py": "92bb6eb0f3f6bea3c180bbe5fff0b2d8a93175c5d3c7b57751b9abc2c45df95c",
+    "native_revision_verify.py": "d5a42c9b81e2de21ed85e3eac14182b40043f76102ffc6719579765949297fa1"
+  },
+  "script_pins_sha256": "523b672c3ea5181c14b9c8846cb4a9a757ef0ce141720b662f020467c25e6c7a",
+  "all_four_script_pins_match": true,
+  "all_four_scripts_parse": true,
+  "preflight_evidence": {
+    "receipt": "Staging/GroundPainting_2026-10-04/GazaShujaiya_revision_r001_pre_PID30632.json",
+    "sha256": "b8fdd95b8bef7845ee04e4e68963cebdae6284d99fdc1ac7a7934668e4bf674d",
+    "pid": 30632,
+    "area": "GazaShujaiya",
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "actor_count": 316,
+    "old_graph_expression_count": 704,
+    "dirty_content": [],
+    "dirty_maps": [],
+    "cooking_paused": true,
+    "autosave": false,
+    "hda_count": 1,
+    "hda_auto_cook": false,
+    "hda_auto_bake": false,
+    "geocity_callbacks": 0,
+    "qualification": "Read from the exact fresh native preflight receipt; reviewer did not execute an additional native probe. Every mutation helper rechecks its applicable actual-PID lease and paused safeguards."
+  },
+  "backup_validation": {
+    "manifest_sha256": "4e01a9926ae0e2479879a52fadeb13fdc1d3a927025e0db098f42b677e2bdd83",
+    "original_and_backup_files_checked": 13,
+    "original_or_backup_mismatches": [],
+    "preserved_file_count": 65,
+    "sealed_source_configuration_file_count": 17,
+    "preserved_or_sealed_mismatches": []
+  },
+  "concrete_mutation_scope": {
+    "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+    "target_layers": ["Sand_01", "Sand_02", "Dirt_Path", "Sand_Path"],
+    "existing_nodes_preserved": 704,
+    "existing_layer_names_preserved": 69,
+    "permitted_existing_pin_changes": "Exactly the four target layer inputs in each existing color, normal and roughness root: twelve pins. Other existing node properties and edges remain unchanged.",
+    "new_ao": "One 69-layer weight blend; target AO uses packed G with bounded strength and all other layers receive constant 1.",
+    "sampling": "Sand_01, Dirt_Path and Sand_Path use installed MF_DistanceCellBlend with matching near/far UVs, cell parameters and shared distance alpha across color/normal/packed masks. Sand_02 retains Engine WorldAligned near/far sampling. Normal objects are typed NORMAL with IsNormalMap true; sampled normals pass installed MF_NormalIntensity and Normalize VectorInput. Packed masks use linear TC_MASKS and MASKS sampler, R roughness and G AO; B height is unused.",
+    "coordinates": "Landscape XY coordinates use a fixed 100cm grid constant after actual Landscape X/Y scale 100 is checked. Target tile sizes are centimeters.",
+    "macro": "Sand_01 color receives a clamped low-amplitude multiplier bounded to 0.92..1.08; no displacement or geographic height change.",
+    "new_asset_paths": [
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity"
+    ],
+    "apply": "Only the allowlisted target scalar/vector and bounded macro/distance/cell overrides. Current r001 recipes contain no Grass or scene edits; positive cell/pattern scales and post-apply actor re-enumeration are checked.",
+    "named_save_allowlist": "Only this master, these four mask copies, the current original area's MI_GeoCityGround and its original map when dirty. No Save All, base instance, GrassType, original normal copies or vendor packages are included."
+  },
+  "reporting_correction_verified": {
+    "explicit_save_called": false,
+    "description": "The graph helper now distinguishes no explicit save call from duplicate_asset disk effects. It records all four new mask disk states before, immediately after duplication and after success/failure, including existing file SHA256 or a read error. It separately records the thirteen existing package hashes and their unchanged status. This satisfies the sole remaining review request."
+  },
+  "safeguards_verified": [
+    "Exact GroundPainting owner, execution thread, actual PID, original world and GROUND_AUTHORING activation before mutation; sealed runtime guard verification.",
+    "Paused official Engine, one HDA with autoCook/autoBake off, autosave off and zero managed GeoCity callbacks during graph authoring; applicable checks repeated in apply and compile/save.",
+    "Initially clean packages and exact ready backup manifest; no existing copy destinations; exclusive once-marker and unique receipt paths before mutations; failure receipts preserve partial-state evidence without automatic retry or cleanup.",
+    "Existing graph, Grass graph/settings/effective coverage, scene transforms/bindings, source hashes and dirty package bounds are read back after graph mutation.",
+    "Compilation is a separate action. A named save requires graph-preserved evidence with exact PID/area/world/master plus an approved current visual review receipt and all close/middle/wide PNG capture metadata and minimum dimensions.",
+    "Verifier reports graph_preserved false without a reference; a successful reference comparison records reference file path, file SHA256 and signature SHA256. Fresh Rimal/reopen evidence must use the actual current world/PID."
+  ],
+  "excluded_actions": [
+    "Houdini source or HDA edits, Cook, Bake, ordinary generation or generator migration",
+    "Geographic heights, weights, semantic layers, geometry, actors, lighting or Grass authoring",
+    "Vendor function copies or vendor/native original asset mutation",
+    "Bank catalog/eligibility/rights/hold release, alternative maps/projects or broad saves"
+  ],
+  "remaining_native_validation": "This approval covers the exact reviewed bounded scripts, not compiled shader correctness, appearance, persistence or user acceptance. Root remains the sole native writer and must review actual compilation, graph receipts and close/middle/wide Lit imagery before named saves, followed by fresh original-map reopen/readback. No native helper had been executed at review time.",
+  "ordinary_generation_authorized": false,
+  "native_execution_performed_by_reviewer": false
+}

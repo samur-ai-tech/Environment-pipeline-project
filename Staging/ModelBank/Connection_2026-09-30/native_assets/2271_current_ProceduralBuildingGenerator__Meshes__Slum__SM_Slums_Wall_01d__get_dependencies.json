@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2281,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Wall_01d"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Tin\",\"/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Roof_01a\",\"/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02b\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2281,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Tin\",\"/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Roof_01a\",\"/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Vent_02b\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood\"]}"
+    }
+   ]
+  }
+ }
+}

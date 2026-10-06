@@ -1,0 +1,16 @@
+Stage 1: BLOCKED BEFORE NATIVE AUTHORING - 2026-10-06
+
+The user requested actual native implementation. This is an incomplete delivery, not a substitute plan.
+Intended asset: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+Implemented: no. Native saved: no. Reopened: no. New sky behavior visually verified: no.
+
+Completed: read-only plan, governance, installed solar API, project descriptor, live world/dirty/cooking checks, exact lighting-conflict inventory, existing generation replacement scope review, and existing viewport capture. Dirty packages remained the same three pre-existing Cook packages; map remained clean. No native assets, scene lights, plugins, generation sources or profiles changed by this chat.
+
+Blocking state: no written sky assignment or sky lease. Latest observed owner is ASSET_BANK_OPERATOR on PID 29900, operator 01a11162-9e10-7803-8485-1beb251d64ed, activation recorded 2026-10-06T14:14:05.258675+00:00. Native inspection stopped. The designated Claude manager session is live in Claude Desktop; it was not concurrently resumed from the command line.
+
+Required next: Aviv relays MANAGER_TURN_REQUEST.txt to the designated manager. Manager schedules the sky native turn after the existing operator release, names the original map and actual PID, coordinates SunPosition enablement/restart and unrelated dirty-buffer disposition, authorizes exact lighting-conflict handling and named save/reopen scope. Fresh preflight is mandatory; these observations do not grant future authority.
+
+Exact actor paths and prior dirty package names: PREFLIGHT_READONLY.json. The OWNER=NONE line there predates the bank activation and is no longer current. No morning/noon/evening evidence or usage instructions can honestly be delivered before native implementation.
+
+Reference checked: https://dev.epicgames.com/documentation/en-us/unreal-engine/sun-and-sky-actor-in-unreal-engine
+Epic documents that manual SunSky light rotation resets when other geographic controls change. Implementation must explicitly isolate manual inputs from the time solver and validate editor updates without Play.

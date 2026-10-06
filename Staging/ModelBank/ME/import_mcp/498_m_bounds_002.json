@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 23,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0905_Arab_x1_fbx.SM_H0905_Arab_x1_fbx"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-1149.8597412109375,\"y\":-126.27178955078125,\"z\":17.690759658813477},\"max\":{\"x\":1042.6173095703125,\"y\":895.30987548828125,\"z\":980.823486328125},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 23,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-1149.8597412109375,\"y\":-126.27178955078125,\"z\":17.690759658813477},\"max\":{\"x\":1042.6173095703125,\"y\":895.30987548828125,\"z\":980.823486328125},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

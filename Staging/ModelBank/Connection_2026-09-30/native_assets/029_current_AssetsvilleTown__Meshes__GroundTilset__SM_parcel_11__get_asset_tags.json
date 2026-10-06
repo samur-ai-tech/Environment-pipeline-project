@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 39,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_parcel_11"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"4800x3600x15\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"E:/Grafika/Grafika 3D/MyProjects/2018/LowPolyPiotrek/Unreal/Final/LightmapFix/parcel_11.FBX\\\", \\\"Timestamp\\\" : \\\"1533501253\\\", \\\"FileMD5\\\" : \\\"61e8afcfeed0b13566f59e7077a1026e\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"240\",\"UVChannels\":\"2\",\"Vertices\":\"368\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 39,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"4800x3600x15\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"E:/Grafika/Grafika 3D/MyProjects/2018/LowPolyPiotrek/Unreal/Final/LightmapFix/parcel_11.FBX\\\", \\\"Timestamp\\\" : \\\"1533501253\\\", \\\"FileMD5\\\" : \\\"61e8afcfeed0b13566f59e7077a1026e\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"240\",\"UVChannels\":\"2\",\"Vertices\":\"368\"}}"
+    }
+   ]
+  }
+ }
+}

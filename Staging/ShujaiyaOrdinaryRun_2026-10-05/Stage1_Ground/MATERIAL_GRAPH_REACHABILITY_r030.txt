@@ -1,0 +1,186 @@
+SOURCE: Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json key 'before' (fresh-reopen read-only graph dump of M_SurfaceBank_Natural, 1015 nodes). Offline reachability from roots color/normal/roughness/ao + LandscapeGrassOutput. Read-only derived evidence written by Stage1 material-history research subagent 2026-10-05. Param defaults are MASTER defaults; MI overrides differ.
+
+ROOTS {"color": "LandscapeLayerBlend_6", "normal": "LandscapeLayerBlend_7", "roughness": "LandscapeLayerBlend_8", "ao": "LandscapeLayerBlend_0", "specular": null, "metallic": null, "emissive": null, "wpo": null, "opacity": null, "opacity_mask": null}
+SETTINGS {'tangent_space_normal': True, 'enable_tessellation': False, 'blend_mode': '<BlendMode.BLEND_OPAQUE: 0>', 'shading_model': '<MaterialShadingModel.MSM_DEFAULT_LIT: 1>', 'material_domain': '<MaterialDomain.MD_SURFACE: 0>', 'two_sided': False, 'use_material_attributes': False}
+reachable 631 of 1015
+classes [('MaterialExpressionVectorParameter', 177), ('MaterialExpressionMaterialFunctionCall', 162), ('MaterialExpressionTextureObjectParameter', 123), ('MaterialExpressionScalarParameter', 120), ('MaterialExpressionMultiply', 97), ('MaterialExpressionLinearInterpolate', 67), ('MaterialExpressionTextureSample', 61), ('MaterialExpressionConstant3Vector', 45), ('MaterialExpressionAdd', 27), ('MaterialExpressionClamp', 22), ('MaterialExpressionComponentMask', 21), ('MaterialExpressionLandscapeLayerSample', 19), ('MaterialExpressionAppendVector', 12), ('MaterialExpressionNormalize', 11), ('MaterialExpressionDivide', 8), ('MaterialExpressionCustom', 8), ('MaterialExpressionLandscapeLayerBlend', 6), ('MaterialExpressionConstant2Vector', 4), ('MaterialExpressionWorldPosition', 2), ('MaterialExpressionSaturate', 2), ('MaterialExpressionStaticBool', 2), ('MaterialExpressionSubtract', 2), ('MaterialExpressionConstant', 2), ('MaterialExpressionFloor', 2), ('MaterialExpressionFrac', 2), ('MaterialExpressionDDX', 2), ('MaterialExpressionDDY', 2), ('MaterialExpressionOneMinus', 1), ('MaterialExpressionLandscapeGrassOutput', 1), ('MaterialExpressionCameraPositionWS', 1), ('MaterialExpressionDistance', 1), ('MaterialExpressionLandscapeLayerCoords', 1), ('MaterialExpressionSmoothStep', 1), ('MaterialExpressionMax', 1)]
+
+== ('color', 'Sand_01') nodes 144 funcs ['WorldAlignedTexture.WorldAlignedTexture']
+   classes {'Multiply': 25, 'Add': 22, 'TextureSample': 13, 'LinearInterpolate': 11, 'ComponentMask': 10, 'Clamp': 9, 'ScalarParameter': 8, 'Custom': 8, 'Divide': 6, 'VectorParameter': 5, 'Constant2Vector': 4, 'TextureObjectParameter': 3}
+   params [('Dirt_Path_Albedo', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo'), ('Dirt_Path_FarScale', 'ScalarParameter', 5.0), ('Dirt_Path_TileCm', 'VectorParameter', [260.0, 260.0, 260.0, 1.0]), ('Dirt_Path_Tint', 'VectorParameter', [1.0, 1.0, 1.0, 1.0]), ('GeoCity_CellScale', 'ScalarParameter', 0.10000000149011612), ('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_MacroAmount', 'ScalarParameter', 0.07999999821186066), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0]), ('Ground_SoilBlendStrength', 'ScalarParameter', 0.25), ('Sand_01_Albedo', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo'), ('Sand_01_FarScale', 'ScalarParameter', 5.0), ('Sand_01_TileCm', 'VectorParameter', [220.0, 220.0, 220.0, 1.0]), ('Sand_01_Tint', 'VectorParameter', [1.0, 1.0, 1.0, 1.0])]
+
+== ('color', 'Sand_02') nodes 19 funcs ['WorldAlignedTexture.WorldAlignedTexture']
+   classes {'ScalarParameter': 3, 'Clamp': 2, 'VectorParameter': 2, 'Multiply': 2, 'MaterialFunctionCall': 2, 'Saturate': 1, 'WorldPosition': 1, 'Divide': 1, 'Subtract': 1, 'TextureObjectParameter': 1, 'Distance': 1, 'CameraPositionWS': 1}
+   params [('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('Sand_02_Albedo', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo'), ('Sand_02_FarScale', 'ScalarParameter', 5.0), ('Sand_02_TileCm', 'VectorParameter', [350.0, 350.0, 350.0, 1.0]), ('Sand_02_Tint', 'VectorParameter', [1.0, 1.0, 1.0, 1.0])]
+
+== ('color', 'Dirt_Path') nodes 44 funcs []
+   classes {'TextureSample': 5, 'Multiply': 4, 'ScalarParameter': 4, 'Clamp': 4, 'ComponentMask': 4, 'Divide': 4, 'VectorParameter': 3, 'LinearInterpolate': 3, 'TextureObjectParameter': 2, 'Add': 2, 'Saturate': 1, 'WorldPosition': 1}
+   params [('Dirt_Path_Albedo', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo'), ('Dirt_Path_FarScale', 'ScalarParameter', 5.0), ('Dirt_Path_TileCm', 'VectorParameter', [260.0, 260.0, 260.0, 1.0]), ('Dirt_Path_Tint', 'VectorParameter', [1.0, 1.0, 1.0, 1.0]), ('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0])]
+
+== ('color', 'Sand_Path') nodes 44 funcs []
+   classes {'TextureSample': 5, 'Clamp': 4, 'Divide': 4, 'ScalarParameter': 4, 'ComponentMask': 4, 'Multiply': 4, 'LinearInterpolate': 3, 'VectorParameter': 3, 'Add': 2, 'TextureObjectParameter': 2, 'Saturate': 1, 'WorldPosition': 1}
+   params [('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0]), ('Sand_Path_Albedo', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo'), ('Sand_Path_FarScale', 'ScalarParameter', 5.0), ('Sand_Path_TileCm', 'VectorParameter', [300.0, 300.0, 300.0, 1.0]), ('Sand_Path_Tint', 'VectorParameter', [1.0, 1.0, 1.0, 1.0])]
+
+== ('normal', 'Sand_01') nodes 140 funcs ['MF_NormalIntensity.MF_NormalIntensity']
+   classes {'Add': 21, 'Multiply': 20, 'TextureSample': 13, 'LinearInterpolate': 11, 'ScalarParameter': 9, 'Clamp': 9, 'ComponentMask': 9, 'Custom': 8, 'Divide': 6, 'Normalize': 5, 'Constant2Vector': 4, 'TextureObjectParameter': 3}
+   params [('Dirt_Path_FarScale', 'ScalarParameter', 5.0), ('Dirt_Path_Normal', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal'), ('Dirt_Path_NormalStrength', 'ScalarParameter', 1.600000023841858), ('Dirt_Path_TileCm', 'VectorParameter', [260.0, 260.0, 260.0, 1.0]), ('GeoCity_CellScale', 'ScalarParameter', 0.10000000149011612), ('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0]), ('Ground_SoilBlendStrength', 'ScalarParameter', 0.25), ('Sand_01_FarScale', 'ScalarParameter', 5.0), ('Sand_01_Normal', 'TextureObjectParameter', '/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity'), ('Sand_01_NormalStrength', 'ScalarParameter', 1.600000023841858), ('Sand_01_TileCm', 'VectorParameter', [220.0, 220.0, 220.0, 1.0])]
+
+== ('normal', 'Sand_02') nodes 21 funcs ['MF_NormalIntensity.MF_NormalIntensity', 'WorldAlignedNormal.WorldAlignedNormal']
+   classes {'ScalarParameter': 4, 'MaterialFunctionCall': 3, 'Clamp': 3, 'Saturate': 1, 'WorldPosition': 1, 'LinearInterpolate': 1, 'Normalize': 1, 'TextureObjectParameter': 1, 'Divide': 1, 'Subtract': 1, 'VectorParameter': 1, 'Multiply': 1}
+   params [('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('Sand_02_FarScale', 'ScalarParameter', 5.0), ('Sand_02_Normal', 'TextureObjectParameter', '/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity'), ('Sand_02_NormalStrength', 'ScalarParameter', 1.600000023841858), ('Sand_02_TileCm', 'VectorParameter', [350.0, 350.0, 350.0, 1.0])]
+
+== ('normal', 'Dirt_Path') nodes 47 funcs ['MF_NormalIntensity.MF_NormalIntensity']
+   classes {'ScalarParameter': 5, 'Clamp': 5, 'TextureSample': 5, 'ComponentMask': 4, 'Divide': 4, 'Multiply': 3, 'LinearInterpolate': 3, 'VectorParameter': 2, 'TextureObjectParameter': 2, 'Add': 2, 'Normalize': 2, 'Saturate': 1}
+   params [('Dirt_Path_FarScale', 'ScalarParameter', 5.0), ('Dirt_Path_Normal', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal'), ('Dirt_Path_NormalStrength', 'ScalarParameter', 1.600000023841858), ('Dirt_Path_TileCm', 'VectorParameter', [260.0, 260.0, 260.0, 1.0]), ('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0])]
+
+== ('normal', 'Sand_Path') nodes 47 funcs ['MF_NormalIntensity.MF_NormalIntensity']
+   classes {'Clamp': 5, 'TextureSample': 5, 'ScalarParameter': 5, 'Divide': 4, 'ComponentMask': 4, 'LinearInterpolate': 3, 'Multiply': 3, 'Add': 2, 'Normalize': 2, 'TextureObjectParameter': 2, 'VectorParameter': 2, 'Saturate': 1}
+   params [('GeoCity_DistanceRangeCm', 'ScalarParameter', 4800.0), ('GeoCity_DistanceStartCm', 'ScalarParameter', 1200.0), ('GeoCity_PatternScale', 'ScalarParameter', 1.0), ('Ground_MacroMask', 'TextureObjectParameter', '/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation'), ('Ground_MacroTileCm', 'VectorParameter', [3600.0, 3600.0, 3600.0, 1.0]), ('Sand_Path_FarScale', 'ScalarParameter', 5.0), ('Sand_Path_Normal', 'TextureObjectParameter', '/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal'), ('Sand_Path_NormalStrength', 'ScalarParameter', 1.600000023841858), ('Sand_Path_TileCm', 'VectorParameter', [300.0, 300.0, 300.0, 1.0])]
+
+== ('roughness', 'Sand_01') nodes 1 funcs []
+   classes {'ScalarParameter': 1}
+   params [('Sand_01_Roughness', 'ScalarParameter', 0.8999999761581421)]
+
+== ('roughness', 'Sand_02') nodes 1 funcs []
+   classes {'ScalarParameter': 1}
+   params [('Sand_02_Roughness', 'ScalarParameter', 0.8999999761581421)]
+
+== ('roughness', 'Dirt_Path') nodes 1 funcs []
+   classes {'ScalarParameter': 1}
+   params [('Dirt_Path_Roughness', 'ScalarParameter', 0.8999999761581421)]
+
+== ('roughness', 'Sand_Path') nodes 1 funcs []
+   classes {'ScalarParameter': 1}
+   params [('Sand_Path_Roughness', 'ScalarParameter', 0.8999999761581421)]
+
+== ('ao', 'Sand_01') nodes 1 funcs []
+   classes {'Constant': 1}
+   params []
+
+== ('ao', 'Sand_02') nodes 1 funcs []
+   classes {'Constant': 1}
+   params []
+
+== ('ao', 'Dirt_Path') nodes 1 funcs []
+   classes {'Constant': 1}
+   params []
+
+== ('ao', 'Sand_Path') nodes 1 funcs []
+   classes {'Constant': 1}
+   params []
+
+== ALL PARAMS reachability (ground-ish)
+  DEAD TreeGround_TileCm VectorParameter_14 default=[300.0, 300.0, 300.0, 1.0]
+  DEAD SC_Ground_Gravel_TileCm VectorParameter_28 default=[200.0, 200.0, 200.0, 1.0]
+  DEAD Dirt_Path_TileCm VectorParameter_32 default=[260.0, 260.0, 260.0, 1.0]
+  DEAD Sand_01_TileCm VectorParameter_34 default=[220.0, 220.0, 220.0, 1.0]
+  DEAD TreeGround_Albedo TextureObjectParameter_51 default=/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC
+  DEAD TreeGround_Normal TextureObjectParameter_52 default=/Engine/EngineMaterials/DefaultNormal.DefaultNormal
+  DEAD TreeGround_Tint VectorParameter_51 default=[1.0, 1.0, 1.0, 1.0]
+  DEAD TreeGround_Roughness ScalarParameter_24 default=0.8399999737739563
+  DEAD SC_Ground_Gravel_Albedo TextureObjectParameter_65 default=/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D
+  DEAD SC_Ground_Gravel_Normal TextureObjectParameter_66 default=/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N
+  DEAD SC_Ground_Gravel_Tint VectorParameter_65 default=[1.0, 1.0, 1.0, 1.0]
+  DEAD SC_Ground_Gravel_Roughness ScalarParameter_31 default=0.8199999928474426
+  DEAD Dirt_Path_Albedo TextureObjectParameter_69 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo
+  DEAD Dirt_Path_Normal TextureObjectParameter_70 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal
+  DEAD Dirt_Path_Tint VectorParameter_69 default=[1.0, 1.0, 1.0, 1.0]
+  DEAD Dirt_Path_Roughness ScalarParameter_33 default=0.8999999761581421
+  DEAD Sand_01_Albedo TextureObjectParameter_71 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo
+  DEAD Sand_01_Normal TextureObjectParameter_72 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.T_Sand_01_Normal
+  DEAD Ground_MacroTileCm VectorParameter_71 default=[3600.0, 3600.0, 3600.0, 1.0]
+  DEAD Ground_SoilBlendStrength ScalarParameter_34 default=0.25
+  DEAD Ground_MacroSoilAlbedo TextureObjectParameter_74 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo
+  DEAD Ground_MacroSoilNormal TextureObjectParameter_75 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal
+  DEAD Sand_02_TileCm VectorParameter_73 default=[350.0, 350.0, 350.0, 1.0]
+  DEAD Sand_Path_TileCm VectorParameter_77 default=[300.0, 300.0, 300.0, 1.0]
+  DEAD Wet_Sand_01_TileCm VectorParameter_79 default=[200.0, 200.0, 200.0, 1.0]
+  DEAD Wet_Sand_02_TileCm VectorParameter_81 default=[200.0, 200.0, 200.0, 1.0]
+  DEAD PB_starter_SC_Ground_Grass_TileCm VectorParameter_85 default=[200.0, 200.0, 200.0, 1.0]
+  DEAD PB_starter_SC_Ground_Moss_TileCm VectorParameter_87 default=[200.0, 200.0, 200.0, 1.0]
+  DEAD PB_Custom_Ground_R LandscapeLayerSample_0 default=None
+  DEAD PB_Custom_Ground_B LandscapeLayerSample_2 default=None
+  DEAD PB_Custom_Ground_Roughness ScalarParameter_83 default=0.8500000238418579
+  LIVE TreeGround_TileCm VectorParameter_155 default=[300.0, 300.0, 300.0, 1.0]
+  LIVE TreeGround_Albedo TextureObjectParameter_132 default=/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_ForestGround_03_BC.T_ForestGround_03_BC
+  LIVE TreeGround_Normal TextureObjectParameter_133 default=/Engine/EngineMaterials/DefaultNormal.DefaultNormal
+  LIVE TreeGround_Tint VectorParameter_156 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE TreeGround_Roughness ScalarParameter_94 default=0.8399999737739563
+  LIVE SC_Ground_Gravel_TileCm VectorParameter_169 default=[200.0, 200.0, 200.0, 1.0]
+  LIVE SC_Ground_Gravel_Albedo TextureObjectParameter_146 default=/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D
+  LIVE SC_Ground_Gravel_Normal TextureObjectParameter_147 default=/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N
+  LIVE SC_Ground_Gravel_Tint VectorParameter_170 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE SC_Ground_Gravel_Roughness ScalarParameter_101 default=0.8199999928474426
+  LIVE Dirt_Path_TileCm VectorParameter_173 default=[260.0, 260.0, 260.0, 1.0]
+  LIVE Dirt_Path_Albedo TextureObjectParameter_150 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo
+  LIVE Dirt_Path_Normal TextureObjectParameter_151 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal
+  LIVE Dirt_Path_Tint VectorParameter_174 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Dirt_Path_Roughness ScalarParameter_103 default=0.8999999761581421
+  LIVE Sand_01_TileCm VectorParameter_175 default=[220.0, 220.0, 220.0, 1.0]
+  LIVE Sand_01_Albedo TextureObjectParameter_152 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo
+  LIVE Sand_01_Normal TextureObjectParameter_153 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity
+  LIVE Ground_MacroTileCm VectorParameter_176 default=[3600.0, 3600.0, 3600.0, 1.0]
+  LIVE Ground_MacroMask TextureObjectParameter_154 default=/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation
+  LIVE Ground_SoilBlendStrength ScalarParameter_104 default=0.25
+  DEAD Ground_MacroSoilAlbedo TextureObjectParameter_155 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo
+  DEAD Ground_MacroSoilNormal TextureObjectParameter_156 default=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal
+  LIVE Sand_01_Tint VectorParameter_177 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Sand_01_Roughness ScalarParameter_105 default=0.8999999761581421
+  LIVE Sand_02_TileCm VectorParameter_178 default=[350.0, 350.0, 350.0, 1.0]
+  LIVE Sand_02_Albedo TextureObjectParameter_157 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo
+  LIVE Sand_02_Normal TextureObjectParameter_158 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity
+  LIVE Sand_02_Tint VectorParameter_179 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Sand_02_Roughness ScalarParameter_106 default=0.8999999761581421
+  LIVE Sand_Path_TileCm VectorParameter_182 default=[300.0, 300.0, 300.0, 1.0]
+  LIVE Sand_Path_Albedo TextureObjectParameter_161 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo
+  LIVE Sand_Path_Normal TextureObjectParameter_162 default=/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal
+  LIVE Sand_Path_Tint VectorParameter_183 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Sand_Path_Roughness ScalarParameter_108 default=0.8999999761581421
+  LIVE Wet_Sand_01_TileCm VectorParameter_184 default=[200.0, 200.0, 200.0, 1.0]
+  LIVE Wet_Sand_01_Albedo TextureObjectParameter_163 default=/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Albedo.T_Wet_Sand_01_Albedo
+  LIVE Wet_Sand_01_Normal TextureObjectParameter_164 default=/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_01/T_Wet_Sand_01_Normal.T_Wet_Sand_01_Normal
+  LIVE Wet_Sand_01_Tint VectorParameter_185 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Wet_Sand_01_Roughness ScalarParameter_109 default=0.8999999761581421
+  LIVE Wet_Sand_02_TileCm VectorParameter_186 default=[200.0, 200.0, 200.0, 1.0]
+  LIVE Wet_Sand_02_Albedo TextureObjectParameter_165 default=/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Albedo.T_Wet_Sand_02_Albedo
+  LIVE Wet_Sand_02_Normal TextureObjectParameter_166 default=/Game/MOUT_Arabian/Textures/Landscape/Wet_Sand_02/T_Wet_Sand_02_Normal.T_Wet_Sand_02_Normal
+  LIVE Wet_Sand_02_Tint VectorParameter_187 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE Wet_Sand_02_Roughness ScalarParameter_110 default=0.8999999761581421
+  LIVE PB_starter_SC_Ground_Grass_TileCm VectorParameter_190 default=[200.0, 200.0, 200.0, 1.0]
+  LIVE PB_starter_SC_Ground_Grass_Albedo TextureObjectParameter_169 default=/Game/StarterContent/Textures/T_Ground_Grass_D.T_Ground_Grass_D
+  LIVE PB_starter_SC_Ground_Grass_Normal TextureObjectParameter_170 default=/Game/StarterContent/Textures/T_Ground_Grass_N.T_Ground_Grass_N
+  LIVE PB_starter_SC_Ground_Grass_Tint VectorParameter_191 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE PB_starter_SC_Ground_Grass_Roughness ScalarParameter_112 default=0.9100000262260437
+  LIVE PB_starter_SC_Ground_Moss_TileCm VectorParameter_192 default=[200.0, 200.0, 200.0, 1.0]
+  LIVE PB_starter_SC_Ground_Moss_Albedo TextureObjectParameter_171 default=/Game/StarterContent/Textures/T_ground_Moss_D.T_ground_Moss_D
+  LIVE PB_starter_SC_Ground_Moss_Normal TextureObjectParameter_172 default=/Game/StarterContent/Textures/T_Ground_Moss_N.T_Ground_Moss_N
+  LIVE PB_starter_SC_Ground_Moss_Tint VectorParameter_193 default=[1.0, 1.0, 1.0, 1.0]
+  LIVE PB_starter_SC_Ground_Moss_Roughness ScalarParameter_113 default=0.9300000071525574
+  LIVE PB_Custom_Ground_R LandscapeLayerSample_12 default=None
+  LIVE PB_Custom_Ground_G LandscapeLayerSample_13 default=None
+  LIVE PB_Custom_Ground_B LandscapeLayerSample_14 default=None
+  LIVE PB_Custom_Ground_Roughness ScalarParameter_153 default=0.8500000238418579
+  DEAD Ground_MacroTile2Cm VectorParameter_1 default=[5700.0, 5700.0, 5700.0, 1.0]
+  DEAD Ground_MacroOffsetCm VectorParameter_3 default=[1700.0, 2900.0, 0.0, 0.0]
+  DEAD Ground_MacroContrast ScalarParameter_0 default=3.0
+  LIVE Sand_01 LandscapeLayerSample_1 default=None
+  LIVE GeoCity_GrassCoverage ScalarParameter_1 default=0.0
+  LIVE GeoCity_DistanceStartCm ScalarParameter_2 default=1200.0
+  LIVE GeoCity_DistanceRangeCm ScalarParameter_3 default=4800.0
+  DEAD GeoCity_RoughnessDetail ScalarParameter_4 default=0.75
+  DEAD GeoCity_AOStrength ScalarParameter_5 default=0.30000001192092896
+  LIVE GeoCity_MacroAmount ScalarParameter_6 default=0.07999999821186066
+  LIVE GeoCity_CellScale ScalarParameter_7 default=0.10000000149011612
+  LIVE GeoCity_PatternScale ScalarParameter_8 default=1.0
+  DEAD Sand_01_PackedMask TextureObjectParameter_0 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity
+  LIVE Sand_01_FarScale ScalarParameter_9 default=5.0
+  LIVE Sand_01_NormalStrength ScalarParameter_10 default=1.600000023841858
+  DEAD Sand_02_PackedMask TextureObjectParameter_1 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity
+  LIVE Sand_02_FarScale ScalarParameter_11 default=5.0
+  LIVE Sand_02_NormalStrength ScalarParameter_12 default=1.600000023841858
+  DEAD Dirt_Path_PackedMask TextureObjectParameter_2 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.T_Dirt_Path_01_Mask_GeoCity
+  LIVE Dirt_Path_FarScale ScalarParameter_13 default=5.0
+  LIVE Dirt_Path_NormalStrength ScalarParameter_14 default=1.600000023841858
+  DEAD Sand_Path_PackedMask TextureObjectParameter_3 default=/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.T_Sand_Path_01_Mask_GeoCity
+  LIVE Sand_Path_FarScale ScalarParameter_15 default=5.0
+  LIVE Sand_Path_NormalStrength ScalarParameter_16 default=1.600000023841858

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 141,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_bike_rack"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.033,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"83x265x71\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/bike_rack.fbx\\\", \\\"Timestamp\\\" : \\\"1512819532\\\", \\\"FileMD5\\\" : \\\"0728e9e300c0e7d73670c0f7f32a4a24\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1000\",\"UVChannels\":\"2\",\"Vertices\":\"2434\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 141,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"83x265x71\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/bike_rack.fbx\\\", \\\"Timestamp\\\" : \\\"1512819532\\\", \\\"FileMD5\\\" : \\\"0728e9e300c0e7d73670c0f7f32a4a24\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"1000\",\"UVChannels\":\"2\",\"Vertices\":\"2434\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,192 @@
+MTL_MWAM_AutoMaterial_MASTER [Material] {"bUsedWithNanite": true, "EditorX": 2528, "EditorY": 944, "bUseMaterialAttributes": true, "EditorOnlyData": "export:MTL_MWAM_AutoMaterial_MASTEREditorOnlyData", "TextureStreamingDataVersion": 1, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0", "ParameterOverviewExpansion": "<map 784B>"} 
+MTL_MWAM_AutoMaterial_MASTEREditorOnlyData [MaterialEditorOnlyData]  BaseColor<-StaticSwitchParameter_16:0 Metallic<-MaterialFunctionCall_14:1 Specular<-MaterialFunctionCall_14:2 Roughness<-MaterialFunctionCall_14:3 Normal<-MaterialFunctionCall_14:4 OpacityMask<-LandscapeVisibilityMask_0:0 MaterialAttributes<-MakeMaterialAttributes_0:0
+Add_0 [Add]  A<-Multiply_15:0 B<-Multiply_12:0
+Add_1 [Add]  A<-Add_0:0 B<-Multiply_8:0
+Add_2 [Add]  A<-Add_1:0 B<-Multiply_6:0
+Add_4 [Add]  A<-Multiply_5:0 B<-Add_5:0
+Add_5 [Add]  A<-Multiply_4:0 B<-Multiply_2:0
+Add_6 [Add]  A<-Multiply_14:0 B<-Add_4:0
+AppendVector_2 [AppendVector]  A<-Subtract_3:0 B<-Subtract_4:0
+AppendVector_3 [AppendVector]  A<-AppendVector_2:0 B<-MaterialFunctionCall_11:0
+AppendVector_4 [AppendVector]  A<-MaterialFunctionCall_16:1 B<-MaterialFunctionCall_9:0
+Clamp_0 [Clamp]  Input<-TextureSample_15:3.B
+Constant_0 [Constant]  
+Constant_5 [Constant] {"R": 1.0} 
+Divide_0 [Divide]  A<-MaterialFunctionCall_10:2 B<-ScalarParameter_19:0
+Divide_1 [Divide]  A<-MaterialFunctionCall_10:1 B<-ScalarParameter_0:0
+Divide_2 [Divide]  A<-MaterialFunctionCall_10:1 B<-ScalarParameter_22:0
+Divide_3 [Divide]  A<-MaterialFunctionCall_10:1 B<-ScalarParameter_23:0
+Divide_4 [Divide]  A<-MaterialFunctionCall_10:1 B<-ScalarParameter_31:0
+Divide_7 [Divide]  A<-MaterialFunctionCall_10:3 B<-ScalarParameter_3:0
+LandscapeGrassOutput_0 [LandscapeGrassOutput]  GrassTypes[0].Input<-StaticSwitchParameter_15:0 GrassTypes[1].Input<-StaticSwitchParameter_9:0 GrassTypes[2].Input<-StaticSwitchParameter_8:0 GrassTypes[3].Input<-StaticSwitchParameter_7:0 GrassTypes[4].Input<-StaticSwitchParameter_14:0
+LandscapeLayerSample_1 [LandscapeLayerSample] {"ParameterName": "RemoveFoliage"} 
+LandscapePhysicalMaterialOutput_0 [LandscapePhysicalMaterialOutput]  Inputs[0].Input<-NamedRerouteUsage_1:0 Inputs[1].Input<-NamedRerouteUsage_2:0 Inputs[2].Input<-NamedRerouteUsage_3:0 Inputs[3].Input<-NamedRerouteUsage_4:0 Inputs[4].Input<-NamedRerouteUsage_5:0 Inputs[5].Input<-NamedRerouteUsage_0:0
+LandscapeVisibilityMask_0 [LandscapeVisibilityMask]  
+MakeMaterialAttributes_0 [MakeMaterialAttributes]  BaseColor<-StaticSwitchParameter_16:0 Metallic<-MaterialFunctionCall_14:1 Specular<-MaterialFunctionCall_14:2 Roughness<-MaterialFunctionCall_14:3 Normal<-MaterialFunctionCall_14:4
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_LayerBlend"} FunctionInputs[0].Input<-MaterialFunctionCall_4:0 FunctionInputs[1].Input<-MaterialFunctionCall_3:0 FunctionInputs[2].Input<-MaterialFunctionCall_6:0 FunctionInputs[3].Input<-MaterialFunctionCall_2:0 FunctionInputs[4].Input<-MaterialFunctionCall_12:0 FunctionInputs[5].Input<-MaterialFunctionCall_5:0 FunctionInputs[6].Input<-MaterialFunctionCall_13:0 FunctionInputs[7].Input<-MaterialFunctionCall_11:0 FunctionInputs[9].Input<-MaterialFunctionCall_4:1 FunctionInputs[10].Input<-MaterialFunctionCall_4:2 FunctionInputs[11].Input<-MaterialFunctionCall_3:1 FunctionInputs[12].Input<-MaterialFunctionCall_3:2 FunctionInputs[13].Input<-MaterialFunctionCall_6:1 FunctionInputs[14].Input<-MaterialFunctionCall_6:2 FunctionInputs[15].Input<-MaterialFunctionCall_2:1 FunctionInputs[16].Input<-MaterialFunctionCall_2:2 FunctionInputs[17].Input<-MaterialFunctionCall_7:1 FunctionInputs[18].Input<-MaterialFunctionCall_7:2 FunctionInputs[19].Input<-MaterialFunctionCall_12:1 FunctionInputs[20].Input<-MaterialFunctionCall_13:1 FunctionInputs[21].Input<-MaterialFunctionCall_11:1 FunctionInputs[22].Input<-MaterialFunctionCall_16:0
+MaterialFunctionCall_1 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_Snow"} FunctionInputs[0].Input<-MaterialFunctionCall_14:0 FunctionInputs[1].Input<-MaterialFunctionCall_7:0 FunctionInputs[2].Input<-MaterialFunctionCall_16:1
+MaterialFunctionCall_10 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_LandscapeUVs"} 
+MaterialFunctionCall_11 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_SlopeMask"} FunctionInputs[0].Input<-ScalarParameter_33:0 FunctionInputs[1].Input<-ScalarParameter_8:0 FunctionInputs[2].Input<-ScalarParameter_7:0
+MaterialFunctionCall_12 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_SlopeMask"} FunctionInputs[0].Input<-ScalarParameter_5:0 FunctionInputs[1].Input<-ScalarParameter_28:0 FunctionInputs[2].Input<-ScalarParameter_27:0
+MaterialFunctionCall_13 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_SlopeMask"} FunctionInputs[0].Input<-ScalarParameter_4:0 FunctionInputs[1].Input<-ScalarParameter_26:0 FunctionInputs[2].Input<-ScalarParameter_25:0
+MaterialFunctionCall_14 [MaterialFunctionCall] {"MaterialFunction": "MW_MWAM_Water"} FunctionInputs[0].Input<-StaticSwitchParameter_5:0 FunctionInputs[1].Input<-Multiply_1:0 FunctionInputs[2].Input<-MaterialFunctionCall_8:0 FunctionInputs[3].Input<-StaticSwitchParameter_0:0 FunctionInputs[4].Input<-MaterialFunctionCall_10:2 FunctionInputs[5].Input<-MaterialFunctionCall_9:0
+MaterialFunctionCall_15 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_CombineNormalSimple"} FunctionInputs[0].Input<-MaterialFunctionCall_0:1 FunctionInputs[1].Input<-MaterialFunctionCall_0:2
+MaterialFunctionCall_16 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_SnowMask"} FunctionInputs[0].Input<-Multiply_7:0
+MaterialFunctionCall_18 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_CombineNormal"} FunctionInputs[0].Input<-MaterialFunctionCall_15:0 FunctionInputs[1].Input<-TextureSampleParameter2D_0:0.RGB FunctionInputs[2].Input<-ScalarParameter_1:0 FunctionInputs[3].Input<-ScalarParameter_6:0
+MaterialFunctionCall_2 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DefaultLayer"} FunctionInputs[0].Input<-TextureObjectParameter_0:0 FunctionInputs[1].Input<-TextureObjectParameter_4:0 FunctionInputs[2].Input<-MaterialFunctionCall_5:0 FunctionInputs[3].Input<-MaterialFunctionCall_10:2 FunctionInputs[4].Input<-ScalarParameter_13:0 FunctionInputs[5].Input<-Divide_7:0 FunctionInputs[6].Input<-ScalarParameter_14:0 FunctionInputs[7].Input<-MaterialFunctionCall_14:5 FunctionInputs[8].Input<-VectorParameter_3:0.RGB FunctionInputs[9].Input<-ScalarParameter_10:0 FunctionInputs[10].Input<-StaticBoolParameter_1:0 FunctionInputs[11].Input<-StaticBoolParameter_7:0
+MaterialFunctionCall_3 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DefaultLayer"} FunctionInputs[0].Input<-TextureObjectParameter_2:0 FunctionInputs[1].Input<-TextureObjectParameter_7:0 FunctionInputs[2].Input<-MaterialFunctionCall_5:0 FunctionInputs[3].Input<-MaterialFunctionCall_10:2 FunctionInputs[4].Input<-ScalarParameter_17:0 FunctionInputs[5].Input<-Divide_7:0 FunctionInputs[6].Input<-ScalarParameter_18:0 FunctionInputs[7].Input<-MaterialFunctionCall_14:5 FunctionInputs[8].Input<-VectorParameter_5:0.RGB FunctionInputs[9].Input<-ScalarParameter_11:0 FunctionInputs[10].Input<-StaticBoolParameter_2:0 FunctionInputs[11].Input<-StaticBoolParameter_5:0
+MaterialFunctionCall_4 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DefaultLayer"} FunctionInputs[0].Input<-TextureObjectParameter_1:0 FunctionInputs[1].Input<-TextureObjectParameter_8:0 FunctionInputs[2].Input<-MaterialFunctionCall_5:0 FunctionInputs[3].Input<-MaterialFunctionCall_10:2 FunctionInputs[4].Input<-ScalarParameter_20:0 FunctionInputs[5].Input<-Divide_7:0 FunctionInputs[6].Input<-ScalarParameter_21:0 FunctionInputs[7].Input<-MaterialFunctionCall_14:5 FunctionInputs[8].Input<-VectorParameter_6:0.RGB FunctionInputs[9].Input<-ScalarParameter_12:0 FunctionInputs[10].Input<-StaticBoolParameter_3:0 FunctionInputs[11].Input<-StaticBoolParameter_4:0
+MaterialFunctionCall_5 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DepthFade"} 
+MaterialFunctionCall_6 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DefaultLayer"} FunctionInputs[0].Input<-TextureObjectParameter_3:0 FunctionInputs[1].Input<-TextureObjectParameter_6:0 FunctionInputs[2].Input<-MaterialFunctionCall_5:0 FunctionInputs[3].Input<-MaterialFunctionCall_10:2 FunctionInputs[4].Input<-ScalarParameter_15:0 FunctionInputs[5].Input<-Divide_7:0 FunctionInputs[6].Input<-ScalarParameter_16:0 FunctionInputs[7].Input<-MaterialFunctionCall_14:5 FunctionInputs[8].Input<-VectorParameter_4:0.RGB FunctionInputs[9].Input<-ScalarParameter_9:0 FunctionInputs[10].Input<-StaticBoolParameter_0:0 FunctionInputs[11].Input<-StaticBoolParameter_6:0
+MaterialFunctionCall_7 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_DefaultLayer"} FunctionInputs[0].Input<-TextureObjectParameter_9:0 FunctionInputs[1].Input<-TextureObjectParameter_5:0 FunctionInputs[2].Input<-MaterialFunctionCall_5:0 FunctionInputs[3].Input<-MaterialFunctionCall_10:2 FunctionInputs[4].Input<-ScalarParameter_29:0 FunctionInputs[5].Input<-Divide_7:0 FunctionInputs[6].Input<-ScalarParameter_30:0 FunctionInputs[8].Input<-VectorParameter_2:0.RGB FunctionInputs[9].Input<-ScalarParameter_24:0 FunctionInputs[10].Input<-StaticBoolParameter_8:0 FunctionInputs[11].Input<-StaticBoolParameter_9:0
+MaterialFunctionCall_8 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_Roughness"} FunctionInputs[0].Input<-Multiply_16:0
+MaterialFunctionCall_9 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_WaterMask"} FunctionInputs[0].Input<-MaterialFunctionCall_16:0 FunctionInputs[1].Input<-Clamp_0:0
+Multiply_0 [Multiply]  A<-LandscapeVisibilityMask_0:0 B<-OneMinus_2:0
+Multiply_1 [Multiply]  A<-Multiply_27:0 B<-Saturate_3:0
+Multiply_10 [Multiply]  A<-OneMinus_0:0 B<-Reroute_2:0
+Multiply_11 [Multiply] {"ConstB": 1.5} A<-Multiply_9:0
+Multiply_12 [Multiply] {"Desc": "Grass"} A<-Subtract_1:0 B<-ScalarParameter_32:0
+Multiply_13 [Multiply]  A<-OneMinus_0:0 B<-Subtract_0:0
+Multiply_14 [Multiply] {"Desc": "Dirt"} A<-ScalarParameter_34:0 B<-Reroute_2:0
+Multiply_15 [Multiply] {"Desc": "Dirt"} A<-Reroute_2:0 B<-ScalarParameter_2:0
+Multiply_16 [Multiply]  A<-StaticSwitchParameter_5:0 B<-Add_2:0
+Multiply_2 [Multiply] {"Desc": "Rock"} A<-ScalarParameter_37:0 B<-Subtract_2:0
+Multiply_21 [Multiply]  A<-OneMinus_0:0 B<-Subtract_1:0
+Multiply_22 [Multiply]  A<-OneMinus_3:0 B<-Multiply_10:0
+Multiply_23 [Multiply]  A<-Saturate_0:0 B<-Power_8:0
+Multiply_24 [Multiply]  A<-OneMinus_3:0 B<-Multiply_13:0
+Multiply_25 [Multiply]  A<-OneMinus_4:0 B<-Multiply_21:0
+Multiply_26 [Multiply] {"ConstB": 4.0} A<-Reroute_3:0
+Multiply_27 [Multiply] {"ConstB": 0.5} A<-OneMinus_6:0
+Multiply_3 [Multiply]  A<-Saturate_0:0 B<-Power_5:0
+Multiply_33 [Multiply]  A<-Saturate_0:0 B<-Power_0:0
+Multiply_34 [Multiply]  A<-Saturate_0:0 B<-Power_2:0
+Multiply_35 [Multiply]  A<-Saturate_0:0 B<-Power_4:0
+Multiply_38 [Multiply]  A<-OneMinus_0:0 B<-Subtract_2:0
+Multiply_4 [Multiply] {"Desc": "Stones"} A<-ScalarParameter_36:0 B<-Subtract_0:0
+Multiply_42 [Multiply]  A<-OneMinus_3:0 B<-Multiply_38:0
+Multiply_43 [Multiply]  A<-Reroute_3:0 B<-TextureSample_0:3.B
+Multiply_5 [Multiply] {"Desc": "Grass"} A<-ScalarParameter_35:0 B<-Subtract_1:0
+Multiply_6 [Multiply] {"Desc": "Rock"} A<-Subtract_2:0 B<-ScalarParameter_39:0
+Multiply_7 [Multiply] {"ConstB": 0.001} A<-TextureSample_4:2.G
+Multiply_8 [Multiply] {"Desc": "Stones"} A<-Subtract_0:0 B<-ScalarParameter_38:0
+Multiply_9 [Multiply]  A<-TextureSampleParameter2D_2:0.RGB B<-MaterialFunctionCall_0:0
+NamedRerouteDeclaration_0 [NamedRerouteDeclaration] {"Name": "LandscapeVisMask"} Input<-LandscapeVisibilityMask_0:0
+NamedRerouteDeclaration_2 [NamedRerouteDeclaration] {"Name": "WaterMask"} Input<-MaterialFunctionCall_9:0
+NamedRerouteDeclaration_3 [NamedRerouteDeclaration] {"Name": "RocksMask"} Input<-Multiply_23:0
+NamedRerouteDeclaration_4 [NamedRerouteDeclaration] {"Name": "StonesMask"} Input<-Multiply_33:0
+NamedRerouteDeclaration_5 [NamedRerouteDeclaration] {"Name": "GrassMask"} Input<-Multiply_34:0
+NamedRerouteDeclaration_6 [NamedRerouteDeclaration] {"Name": "DirtMask"} Input<-Multiply_35:0
+NamedRerouteDeclaration_7 [NamedRerouteDeclaration] {"Name": "SnowMask"} Input<-Multiply_3:0
+NamedRerouteUsage_0 [NamedRerouteUsage]  
+NamedRerouteUsage_1 [NamedRerouteUsage]  
+NamedRerouteUsage_2 [NamedRerouteUsage]  
+NamedRerouteUsage_3 [NamedRerouteUsage]  
+NamedRerouteUsage_4 [NamedRerouteUsage]  
+NamedRerouteUsage_5 [NamedRerouteUsage]  
+NamedRerouteUsage_6 [NamedRerouteUsage] {"Desc": "Hook this up to OpacityMask and set the materials blend mode to Masked Opacity if you want to paint holes into the landscape."} 
+OneMinus_0 [OneMinus]  Input<-MaterialFunctionCall_9:0
+OneMinus_2 [OneMinus]  Input<-LandscapeLayerSample_1:0
+OneMinus_3 [OneMinus]  Input<-Reroute_3:0
+OneMinus_4 [OneMinus]  Input<-Multiply_26:0
+OneMinus_6 [OneMinus]  Input<-StaticSwitchParameter_5:0
+Power_0 [Power] {"ConstExponent": 4.0} Base<-Multiply_24:0
+Power_2 [Power] {"ConstExponent": 4.0} Base<-Multiply_25:0
+Power_4 [Power] {"ConstExponent": 4.0} Base<-Multiply_22:0
+Power_5 [Power] {"ConstExponent": 4.0} Base<-Multiply_43:0
+Power_8 [Power] {"ConstExponent": 4.0} Base<-Multiply_42:0
+Reroute_0 [Reroute] {"Desc": "Stones"} Input<-MaterialFunctionCall_12:0
+Reroute_1 [Reroute] {"Desc": "Grass"} Input<-MaterialFunctionCall_13:0
+Reroute_2 [Reroute] {"Desc": "Dirt"} Input<-MaterialFunctionCall_11:0
+Reroute_3 [Reroute] {"Desc": "Snow"} Input<-MaterialFunctionCall_16:1
+Saturate_0 [Saturate]  Input<-Multiply_0:0
+Saturate_3 [Saturate]  Input<-Add_6:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_WaterEdgeMaskUVSize", "DefaultValue": 16.0, "Group": "1_Water"} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_NormalIntensity", "DefaultValue": 1.0, "Group": "0_Snow"} 
+ScalarParameter_10 [ScalarParameter] {"ParameterName": "MW_DirtNormalIntensity", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_11 [ScalarParameter] {"ParameterName": "MW_StonesNormalIntensity", "DefaultValue": 1.0, "Group": "4_Stones"} 
+ScalarParameter_12 [ScalarParameter] {"ParameterName": "MW_RockNormalIntensity", "DefaultValue": 1.0, "Group": "5_Rock"} 
+ScalarParameter_13 [ScalarParameter] {"ParameterName": "MW_DirtUVNearMultiplier", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_14 [ScalarParameter] {"ParameterName": "MW_DirtUVFarMultiplier", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_15 [ScalarParameter] {"ParameterName": "MW_GrassUVNearMultiplier", "DefaultValue": 1.0, "Group": "3_Grass"} 
+ScalarParameter_16 [ScalarParameter] {"ParameterName": "MW_GrassUVFarMultiplier", "DefaultValue": 1.0, "Group": "3_Grass"} 
+ScalarParameter_17 [ScalarParameter] {"ParameterName": "MW_StonesUVNearMultiplier", "DefaultValue": 1.0, "Group": "4_Stones"} 
+ScalarParameter_18 [ScalarParameter] {"ParameterName": "MW_StonesUVFarMultiplier", "DefaultValue": 1.0, "Group": "4_Stones"} 
+ScalarParameter_19 [ScalarParameter] {"ParameterName": "MW_VariationWorldUVSize", "DefaultValue": 32.0, "Group": "LandscapeVariation", "Desc": " (Default is 384/32)"} 
+ScalarParameter_2 [ScalarParameter] {"ParameterName": "MW_DirtRoughness", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_20 [ScalarParameter] {"ParameterName": "MW_RockUVNearMultiplier", "DefaultValue": 1.0, "Group": "5_Rock"} 
+ScalarParameter_21 [ScalarParameter] {"ParameterName": "MW_RockUVFarMultiplier", "DefaultValue": 1.0, "Group": "5_Rock"} 
+ScalarParameter_22 [ScalarParameter] {"ParameterName": "MW_LandscapeSize", "DefaultValue": 2017.0, "Group": "LandscapeVariation", "Desc": "Enter the size of your landscape in unreal units. (Default is 2017)"} 
+ScalarParameter_23 [ScalarParameter] {"ParameterName": "MW_SnowProceduralMaskSize", "DefaultValue": 32.0, "Group": "0_Snow"} 
+ScalarParameter_24 [ScalarParameter] {"ParameterName": "MW_SnowNormalIntensity", "DefaultValue": 1.0, "Group": "0_Snow"} 
+ScalarParameter_25 [ScalarParameter] {"ParameterName": "MW_GrassMaxWorldPositionPower", "DefaultValue": 0.0001, "Group": "3_Grass"} 
+ScalarParameter_26 [ScalarParameter] {"ParameterName": "MW_GrassMaxWorldPosition", "DefaultValue": 1000000.0, "Group": "3_Grass"} 
+ScalarParameter_27 [ScalarParameter] {"ParameterName": "MW_StonesMaxWorldPositionPower", "DefaultValue": 0.0001, "Group": "4_Stones"} 
+ScalarParameter_28 [ScalarParameter] {"ParameterName": "MW_StonesMaxWorldPosition", "DefaultValue": 1000000.0, "Group": "4_Stones"} 
+ScalarParameter_29 [ScalarParameter] {"ParameterName": "MW_SnowUVNearMultiplier", "DefaultValue": 1.0, "Group": "0_Snow"} 
+ScalarParameter_3 [ScalarParameter] {"ParameterName": "MW_LandscapeWorldUVSizeFar", "DefaultValue": 8192.0, "Group": "UVs"} 
+ScalarParameter_30 [ScalarParameter] {"ParameterName": "MW_SnowUVFarMultiplier", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_31 [ScalarParameter] {"ParameterName": "MW_SnowEdgeMaskUVSize", "DefaultValue": 256.0, "Group": "0_Snow"} 
+ScalarParameter_32 [ScalarParameter] {"ParameterName": "MW_GrassRoughness", "DefaultValue": 1.0, "Group": "3_Grass"} 
+ScalarParameter_33 [ScalarParameter] {"ParameterName": "MW_DirtSlopePower", "DefaultValue": 128.0, "Group": "2_Dirt"} 
+ScalarParameter_34 [ScalarParameter] {"ParameterName": "MW_DirtSpecular", "DefaultValue": 1.0, "Group": "2_Dirt"} 
+ScalarParameter_35 [ScalarParameter] {"ParameterName": "MW_GrassSpecular", "DefaultValue": 1.0, "Group": "3_Grass"} 
+ScalarParameter_36 [ScalarParameter] {"ParameterName": "MW_StonesSpecular", "DefaultValue": 1.0, "Group": "4_Stones"} 
+ScalarParameter_37 [ScalarParameter] {"ParameterName": "MW_RockSpecular", "DefaultValue": 1.0, "Group": "5_Rock"} 
+ScalarParameter_38 [ScalarParameter] {"ParameterName": "MW_StonesRoughness", "DefaultValue": 1.0, "Group": "4_Stones"} 
+ScalarParameter_39 [ScalarParameter] {"ParameterName": "MW_RockRoughness", "DefaultValue": 1.0, "Group": "5_Rock"} 
+ScalarParameter_4 [ScalarParameter] {"ParameterName": "MW_GrassSlopePower", "DefaultValue": 8.0, "Group": "3_Grass"} 
+ScalarParameter_5 [ScalarParameter] {"ParameterName": "MW_StonesSlopePower", "DefaultValue": 2.0, "Group": "4_Stones"} 
+ScalarParameter_6 [ScalarParameter] {"ParameterName": "MW_VariationNormalIntensity", "DefaultValue": 0.25, "Group": "LandscapeVariation"} 
+ScalarParameter_7 [ScalarParameter] {"ParameterName": "MW_DirtMaxWorldPositionPower", "DefaultValue": 0.0001, "Group": "2_Dirt"} 
+ScalarParameter_8 [ScalarParameter] {"ParameterName": "MW_DirtMaxWorldPosition", "DefaultValue": 1000000.0, "Group": "2_Dirt"} 
+ScalarParameter_9 [ScalarParameter] {"ParameterName": "MW_GrassNormalIntensity", "DefaultValue": 1.0, "Group": "3_Grass"} 
+StaticBoolParameter_0 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseGrassAdvanced", "Group": "3_Grass"} 
+StaticBoolParameter_1 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseDirtAdvanced", "Group": "2_Dirt"} 
+StaticBoolParameter_2 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseStonesAdvanced", "Group": "4_Stones"} 
+StaticBoolParameter_3 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseRockAdvanced", "Group": "5_Rock"} 
+StaticBoolParameter_4 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseRockAdvancedUVs", "Group": "5_Rock"} 
+StaticBoolParameter_5 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseStonesAdvancedUVs", "Group": "4_Stones"} 
+StaticBoolParameter_6 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseGrassAdvancedUVs", "Group": "3_Grass"} 
+StaticBoolParameter_7 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseDirtAdvancedUVs", "Group": "2_Dirt"} 
+StaticBoolParameter_8 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseSnowAdvanced", "Group": "0_Snow"} 
+StaticBoolParameter_9 [StaticBoolParameter] {"ParameterName": "MW_[x]_UseSnowAdvancedUVs", "Group": "0_Snow"} 
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseLandscapeVariation", "DefaultValue": true, "Group": "LandscapeVariation"} A<-MaterialFunctionCall_18:0 B<-MaterialFunctionCall_15:0
+StaticSwitchParameter_14 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseSnowProcedurals", "DefaultValue": true, "Group": "0_Snow"} A<-Multiply_3:0 B<-Constant_0:0
+StaticSwitchParameter_15 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseRockProcedurals", "DefaultValue": true, "Group": "5_Rock"} A<-Multiply_23:0 B<-Constant_0:0
+StaticSwitchParameter_16 [StaticSwitchParameter] {"ParameterName": "MW_DebugBake", "Group": "#Debug"} A<-StaticSwitchParameter_17:0 B<-MaterialFunctionCall_1:0
+StaticSwitchParameter_17 [StaticSwitchParameter] {"ParameterName": "MW_DebugSnowWater", "Group": "#Debug"} A<-AppendVector_4:0 B<-StaticSwitchParameter_18:0
+StaticSwitchParameter_18 [StaticSwitchParameter] {"ParameterName": "MW_DebugMaskSnowWater", "DefaultValue": true, "Group": "#Debug"} A<-Subtract_6:0 B<-AppendVector_3:0
+StaticSwitchParameter_4 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseVariationFitLandscape", "Group": "LandscapeVariation"} A<-Divide_2:0 B<-Divide_0:0
+StaticSwitchParameter_5 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseLandscapeVariation", "DefaultValue": true, "Group": "LandscapeVariation"} A<-Multiply_11:0 B<-MaterialFunctionCall_0:0
+StaticSwitchParameter_7 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseDirtProcedurals", "DefaultValue": true, "Group": "2_Dirt"} A<-Multiply_35:0 B<-Constant_0:0
+StaticSwitchParameter_8 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseGrassProcedurals", "DefaultValue": true, "Group": "3_Grass"} A<-Multiply_34:0 B<-Constant_0:0
+StaticSwitchParameter_9 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseStonesProcedurals", "DefaultValue": true, "Group": "4_Stones"} A<-Multiply_33:0 B<-Constant_0:0
+Subtract_0 [Subtract] {"Desc": "Stones"} A<-Reroute_0:0 B<-Reroute_1:0
+Subtract_1 [Subtract] {"Desc": "Grass"} A<-Reroute_1:0 B<-Reroute_2:0
+Subtract_2 [Subtract] {"Desc": "Rocks"} A<-Constant_5:0 B<-Reroute_0:0
+Subtract_3 [Subtract]  A<-MaterialFunctionCall_12:0 B<-MaterialFunctionCall_13:0
+Subtract_4 [Subtract]  A<-MaterialFunctionCall_13:0 B<-MaterialFunctionCall_11:0
+Subtract_5 [Subtract]  A<-AppendVector_3:0 B<-MaterialFunctionCall_9:0
+Subtract_6 [Subtract]  A<-Subtract_5:0 B<-MaterialFunctionCall_16:1
+TextureObject_7 [TextureObject] {"Texture": "TEX_MW_Noise_msk", "SamplerType": "SAMPLERTYPE_Masks"} 
+TextureObjectParameter_0 [TextureObjectParameter] {"ParameterName": "MW_TextureDirtBaseColor", "Group": "2_Dirt", "Texture": "TEX_MW_Temp_col"} 
+TextureObjectParameter_1 [TextureObjectParameter] {"ParameterName": "MW_TextureRockBaseColor", "Group": "5_Rock", "Texture": "TEX_MW_Temp_col"} 
+TextureObjectParameter_2 [TextureObjectParameter] {"ParameterName": "MW_TextureStonesBaseColor", "Group": "4_Stones", "Texture": "TEX_MW_Temp_col"} 
+TextureObjectParameter_3 [TextureObjectParameter] {"ParameterName": "MW_TextureGrassBaseColor", "Group": "3_Grass", "Texture": "TEX_MW_Temp_col"} 
+TextureObjectParameter_4 [TextureObjectParameter] {"ParameterName": "MW_TextureDirtNormal", "Group": "2_Dirt", "Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObjectParameter_5 [TextureObjectParameter] {"ParameterName": "MW_TextureSnowNormal", "Group": "0_Snow", "Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObjectParameter_6 [TextureObjectParameter] {"ParameterName": "MW_TextureGrassNormal", "Group": "3_Grass", "Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObjectParameter_7 [TextureObjectParameter] {"ParameterName": "MW_TextureStonesNormal", "Group": "4_Stones", "Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObjectParameter_8 [TextureObjectParameter] {"ParameterName": "MW_TextureRockNormal", "Group": "5_Rock", "Texture": "TEX_MW_Temp_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureObjectParameter_9 [TextureObjectParameter] {"ParameterName": "MW_TextureSnowBaseColor", "Group": "0_Snow", "Texture": "TEX_MW_Temp_col"} 
+TextureSample_0 [TextureSample] {"Texture": "TEX_MW_Noise_msk", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-Divide_3:0 TextureObject<-TextureObject_7:0
+TextureSample_15 [TextureSample] {"Texture": "TEX_MW_Noise_msk", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-Divide_1:0 TextureObject<-TextureObject_7:0
+TextureSample_4 [TextureSample] {"Texture": "TEX_MW_Noise_msk", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-Divide_4:0 TextureObject<-TextureObject_7:0
+TextureSampleParameter2D_0 [TextureSampleParameter2D] {"ParameterName": "MW_TextureLandscapeVariationNormal", "Group": "LandscapeVariation", "Texture": "TEX_MWAM_Variation_nrm", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} Coordinates<-StaticSwitchParameter_4:0
+TextureSampleParameter2D_2 [TextureSampleParameter2D] {"ParameterName": "MW_TextureLandscapeVariationMask", "Group": "LandscapeVariation", "Texture": "TEX_MWAM_Variation_msk", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-StaticSwitchParameter_4:0
+VectorParameter_2 [VectorParameter] {"ParameterName": "MW_SnowColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "0_Snow"} 
+VectorParameter_3 [VectorParameter] {"ParameterName": "MW_DirtColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "2_Dirt"} 
+VectorParameter_4 [VectorParameter] {"ParameterName": "MW_GrassColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "3_Grass"} 
+VectorParameter_5 [VectorParameter] {"ParameterName": "MW_StonesColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "4_Stones"} 
+VectorParameter_6 [VectorParameter] {"ParameterName": "MW_RockColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "5_Rock"} 

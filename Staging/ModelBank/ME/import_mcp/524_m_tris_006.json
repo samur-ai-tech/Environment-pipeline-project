@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 49,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_triangle_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0016_Building_03.SM_H0016_Building_03"
+     },
+     "lod_index": 0
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":822754}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 49,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":822754}"
+    }
+   ]
+  }
+ }
+}

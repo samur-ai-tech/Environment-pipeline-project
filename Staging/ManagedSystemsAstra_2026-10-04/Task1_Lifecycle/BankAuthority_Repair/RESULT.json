@@ -1,0 +1,77 @@
+{
+  "schema": "environmentpipeline.task1_bank_authority_supplement.v1",
+  "utc": "2026-10-04T13:58:02.718063+00:00",
+  "status": "SOURCE_FROZEN_READY_FOR_MANAGER_REVIEW_NATIVE_NOT_RUN",
+  "task_thread_id": "01a106e8-ef65-78e0-aa96-f419393ebd6c",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "sources": [
+    {
+      "file": "Content/Python/geocity_bank_workflow.py",
+      "before_sha256": "94c0588a113fc514e5d21cf720abbaf36f386ff2ae01fdcdf2ddcdab5934cb89",
+      "sha256": "f349d1289b8344e72339babddf80d538405a65a2ad31243ddc167d70b87022ce"
+    },
+    {
+      "file": "Content/Python/geocity_editor_action.py",
+      "before_sha256": "d9385a2dae749f5d4c609d0bd6c82c8d1b25ee426146db8debacc3fda7e6bff1",
+      "sha256": "1b13b051a053d74dba7d55e7be6c365aab500ad44dd12be096d9eb267f5ab16a"
+    },
+    {
+      "file": "Staging/SystemCompletion_2026-10-04/launch_editor.ps1",
+      "before_sha256": "dfec58634021770698da978e7d73543de97e6dcb3f253d544bbc7b6ad3c931b4",
+      "sha256": "ba70eac43059886bf42de61837c4de7f4b11367e4a02f4c79ae78de8d05732a5"
+    }
+  ],
+  "existing_combined_manifest_sha256": "17a9105f071afddcaf5fcde2ab41be2a62948db7a265fa6ce59701c050edde82",
+  "manifest_resealed": false,
+  "preserved_baseline": "Before/ contains exact three accepted source files, prior combined seal and supplemental pointer; older accepted receipts untouched",
+  "bank_contract": {
+    "startup": "Same reviewed launcher and mandatory map/profile/manifest hashes; bank operator resolved against bank assignment plus root BANK_ACTIVATION. Startup OWNER=CODEX_MANAGED_SYSTEMS_STARTUP task=bank, exact actual PID and awaiting activation. Inspection cannot generate.",
+    "content_lease_owner": "CODEX_BANK_INTEGRATION",
+    "content_scope": "Existing bank-owned native import/material/catalog preflight and EDITOR_ACQUIRED.json remain bank/root responsibility; task1 does not authorize or implement these operations.",
+    "lease_template": "OWNER=CODEX_BANK_INTEGRATION manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a1067c-5012-7550-b449-015b53c9d726 task=bank assigned_editor_PID=<actual> map=<exact original map> activation=MANAGER_ACTIVATED",
+    "activation_file": "Staging/ManagedSystemsAstra_2026-10-04/BANK_ACTIVATION.json",
+    "required_generation_fields": {
+      "native_authorized_now": true,
+      "ordinary_generation_authorized": true,
+      "assigned_editor_PID": "actual integer PID matching lease and os.getpid()",
+      "map": "exact named original map matching lease and active world"
+    },
+    "existing_fields_checked": [
+      "schema",
+      "manager_thread_id",
+      "bank_thread_id",
+      "scope_receipt",
+      "native_save_scope"
+    ],
+    "imports_only": "Root may activate the exact bank native content lease and native_authorized_now while ordinary_generation_authorized remains false/missing. Menu, direct lifecycle guard and public run reject generation until it is literal true. Public run preflight rejects before constructing GeoCityRun, history/workflow writes, ACTIVE registration or failure cleanup/Engine mutations. Root alone integrates bank catalog/profile patches first.",
+    "task4": "Existing exact task4 generation and launcher path preserved; no bank masquerading as task4 or OWNER=NONE"
+  },
+  "landscape_interface": {
+    "receipt": "Staging/ManagedSystemsAstra_2026-10-04/Task2_Roads/ROAD_LANDSCAPE_INTERFACE.json",
+    "receipt_sha256": "c9e710dda0025000fdedc6fe90a50b02d7213a4538cdefa43ce140b9f488d761",
+    "callback": "GeoCityRun.current_road_landscape_authority bound method, passed as landscape_authority= to task2 build",
+    "resolution": "Fresh official_landscapes(self.wrapper) before build and on callback. Exactly one source-bound current Landscape, exact accounted prior list and owner, no unknown loaded Landscapes, no suffix inference or dependency on cooked_landscape.",
+    "evidence_schema": "environmentpipeline.current_road_landscape.v1",
+    "parent_receipt_field": "current_road_landscape_authority",
+    "provider_receipt_field": "current_landscape_authority",
+    "prior_retirement": "Unchanged; no early prior Landscape deletion or weakened final singleton/partial-output gate"
+  },
+  "checks": {
+    "SOURCE_CHECKS.json": 33,
+    "LAUNCHER_CHECKS.json": 8,
+    "BaselineRegression/SOURCE_CHECKS.json": 18
+  },
+  "total_offline_checks": 59,
+  "unreal_imported": false,
+  "native_execution": false,
+  "editor_launched": false,
+  "lease_modified": false,
+  "profiles_modified": false,
+  "manager_next": [
+    "Review these exact hashes plus task2 final frozen interface; root alone performs final combined seal.",
+    "Fresh paused original-map bank startup via reviewed launcher, then factual sole-PID/world/dirty/Engine checks and bank EDITOR_ACQUIRED.json.",
+    "Root issues exact CODEX_BANK_INTEGRATION native content lease. Keep ordinary_generation_authorized false until merged profile/catalog and combined source/contracts pass.",
+    "For generation, root supplies literal flags plus assigned_editor_PID/map in BANK_ACTIVATION and same exact actual-PID lease identities.",
+    "Prove current official Landscape selection through native road rebuild/clipping/grounding, final suppression, scoped Bake and prior retirement; named save/reopen/regeneration and appearance remain separate native acceptance."
+  ]
+}

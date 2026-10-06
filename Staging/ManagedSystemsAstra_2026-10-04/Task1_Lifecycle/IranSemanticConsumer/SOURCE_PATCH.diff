@@ -1,0 +1,281 @@
+--- Content/Python/geocity_bank_workflow.py
++++ Content/Python/geocity_bank_workflow.py
+@@ -133,6 +133,95 @@
+             return item.replace('\\','/')
+         return item
+     return json.dumps(portable(value),sort_keys=True,separators=(',',':'))
++
++def _consumer_json(value):
++    return json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False)
++
++
++def _consumer_digest(value):
++    return hashlib.sha256(_consumer_json(value).encode('utf-8')).hexdigest()
++
++
++def _consumer_hashref(reference):
++    assert isinstance(reference,dict) and set(('path','sha256')).issubset(reference),'Missing hash-bound consumer reference'
++    path=Path(reference['path'])
++    assert path.is_absolute(),'Consumer reference must be absolute'
++    raw=path.read_bytes()
++    assert hashlib.sha256(raw).hexdigest()==reference['sha256'],'Consumer evidence bytes changed: '+str(path)
++    return json.loads(raw)
++
++
++def _semantic_prepared_binding(profile,prepared):
++    """Validate measured Task3 token against exact source and native receipt."""
++    envelope=profile['landscape_semantics']
++    assert envelope['schema']=='environmentpipeline.semantic_landscape_profile.v2'
++    path=Path(profile['source']);raw=path.read_bytes();source=json.loads(raw)
++    source_sha=hashlib.sha256(raw).hexdigest()
++    assert source_sha==envelope['source_package_sha256'],'Semantic source package changed'
++    ref=source['semantic_consumer_contract']
++    policy_path=(path.parent/ref['path']).resolve()
++    policy=_consumer_hashref({'path':str(policy_path),'sha256':ref['sha256']})
++    assert ref['sha256']==envelope['consumer_contract_sha256'],'Semantic consumer contract changed'
++    assert policy['schema']=='environmentpipeline.semantic_consumer.v2'
++    geography_ref=source['semantic_geography'];geography_path=(path.parent/geography_ref['path']).resolve()
++    geography=_consumer_hashref({'path':str(geography_path),'sha256':geography_ref['sha256']})
++    assert policy['semantic_manifest_sha256']==geography_ref['sha256']
++    grid_ref=geography['class_grid'];grid_bytes=(geography_path.parent/grid_ref['path']).read_bytes()
++    assert hashlib.sha256(grid_bytes).hexdigest()==grid_ref['sha256']==envelope['class_grid_sha256'],'Semantic class grid changed'
++    assert len(grid_bytes)==grid_ref['bytes']
++    token=prepared['semantic_runtime_binding'];native=prepared['native_binding_receipt']
++    assert isinstance(token,dict) and isinstance(native,dict),'Measured semantic preparation is missing'
++    grass=policy['grass']
++    assert grass['provider']=='native_landscape_grass','Current reviewed native semantic consumer supports only native_landscape_grass'
++    expected={'schema':'environmentpipeline.semantic_runtime_binding.v1','area_id':source['area_id'],
++              'source_package_sha256':source_sha,'consumer_contract_sha256':ref['sha256'],
++              'landscape_material':profile['landscape_material'],'provider':grass['provider'],
++              'mask_layer':grass['mask_layer'],'grass_mesh_paths':grass['mesh_paths'],
++              'coverage':grass['coverage'] if grass['provider']=='native_landscape_grass' else 0.0,
++              'density_per_10m2':grass['density_per_10m2'],
++              'catalog_sha256':profile['catalog_sha256'],'native_binding_receipt_sha256':_consumer_digest(native)}
++    assert source['area_id']==policy['area_id']==profile['map'].split('/')[4]
++    for key,value in expected.items():assert token.get(key)==value,'Prepared semantic binding differs: '+key
++    assert token['material_graph_prepared'] is True,'Native material graph is not prepared'
++    assert token['canonical_area_eligibility_verified'] is True and token['grass_bindings_verified'] is True
++    assert profile['landscape_grass']['enabled'] is True
++    assert token.get('output_weight_readback_verified') is False and token.get('visible_lit_grass_verified') is False,'Preparation cannot assert generated output or appearance'
++    assert native['landscape_material']==token['landscape_material']
++    assert native['material_layer_names']==token['material_layer_names']
++    assert len(token['material_layer_names'])==len(set(token['material_layer_names']))
++    assert set(policy['class_material_targets'].values()).issubset(token['material_layer_names'])
++    return {'token':json.loads(_consumer_json(token)),'json':_consumer_json(token),'sha256':_consumer_digest(token),
++            'source_package_sha256':source_sha,'consumer_contract_sha256':ref['sha256'],
++            'class_grid_sha256':envelope['class_grid_sha256'],'source_contract':policy,
++            'native_binding_receipt':native,'native_output_verified':False}
++
++
++def _building_rules_binding(profile):
++    """Forward reviewed building policy and pinned evidence; never qualify it."""
++    value=profile.get('building_rules_json')
++    if value is None:return None
++    if isinstance(value,str):value=json.loads(value)
++    assert isinstance(value,dict) and value.get('schema')=='environmentpipeline.building_rules.v1'
++    # Normalize file-reference separators before computing the exact wire digest.
++    rules=json.loads(_hda_json(value))
++    content=rules.get('content_input')
++    assert isinstance(content,dict),'Building content input requires a hashref or atomic inline object'
++    if 'schema' not in content:
++        payload=_consumer_hashref(content);input_sha=content['sha256']
++    else:payload=content;input_sha=_consumer_digest(content)
++    source_path=Path(profile['source']);source_bytes=source_path.read_bytes();source=json.loads(source_bytes)
++    source_sha=hashlib.sha256(source_bytes).hexdigest()
++    assert payload.get('schema')=='environmentpipeline.building_content_input.v1'
++    assert payload.get('source_sha256')==source_sha and payload.get('area_id')==source['area_id'],'Building input does not match exact geographic source'
++    assert source['area_id']==profile['map'].split('/')[4]
++    refs=payload['refs']
++    assert {'adopted','role_contracts','whole_consumer'}.issubset(refs),'Building qualification evidence references missing'
++    for reference in refs.values():_consumer_hashref(reference)
++    if payload.get('inference_policy'):
++        assert payload['inference_policy']['source_sha256']==source_sha,'Building inference policy source mismatch'
++    return {'json':_consumer_json(rules),'sha256':_consumer_digest(rules),'source_sha256':source_sha,
++            'content_input_sha256':input_sha,'evidence_refs':refs,
++            'qualification_verified_by_lifecycle':False,'qualification_owner':'HDA building evidence consumer'}
+ 
+ class GeoCityRun:
+     def __init__(self, profile_path,reviewed_dirty_packages=(),release_menu_lease=False):
+@@ -478,9 +567,99 @@
+              'output_generation_disabled_after':False,
+              'actual_outputs_verified_after_processing':False})
+ 
++    def consumer_parameter_strings(self,w):
++        """Prepare exact optional contracts; original definitions need no new parm."""
++        tuples=w.get_parameter_tuples()
++        assert tuples is not None,'Official parameter interface is unavailable'
++        tuples={str(name):value for name,value in tuples.items()}
++        strings={}
++        def present(name,required=False):
++            if name not in tuples:
++                assert not required,'Promoted HDA lacks required parameter: '+name
++                return False
++            assert len(tuples[name].string_values)==1,'Consumer parameter must be one string: '+name
++            return True
++        semantic=self.p.get('landscape_semantics') is not None
++        if present('semantic_runtime_binding_json',semantic):
++            if semantic:
++                binding=_semantic_prepared_binding(self.p,self.state['landscape_grass_connection'])
++                prior=self.state.get('semantic_native_binding')
++                assert prior is None or prior==binding,'Semantic receiver/source changed between complete cooks'
++                self.state['semantic_native_binding']=binding
++                strings['semantic_runtime_binding_json']=binding['json']
++            else:
++                # New definition on a legacy area must not inherit another area's token.
++                strings['semantic_runtime_binding_json']=''
++        building=self.p.get('building_rules_json') is not None
++        if present('building_rules_json',building):
++            if building:
++                binding=_building_rules_binding(self.p)
++                prior=self.state.get('building_rules_binding')
++                assert prior is None or prior==binding,'Building policy/evidence changed between complete cooks'
++                self.state['building_rules_binding']=binding
++                strings['building_rules_json']=binding['json']
++            else:
++                # Preserve the definition's existing inference defaults. Only
++                # remove stale cross-area evidence when no profile contract exists.
++                raw=w.get_string_parameter_value('building_rules_json')
++                if raw:
++                    rules=json.loads(raw)
++                    assert isinstance(rules,dict),'Malformed retained building defaults'
++                    if 'content_input' in rules:
++                        rules.pop('content_input')
++                        strings['building_rules_json']=_consumer_json(rules)
++                        self.state['cleared_stale_building_content_input']=True
++        self.state['consumer_parameter_requests']=dict(strings)
++        return strings
++
++    def verify_consumer_receipt(self,receipt):
++        """Persist exact producer evidence, then reject incomplete/mismatched output."""
++        if self.p.get('landscape_semantics') is not None:
++            keys=('semantic_surface_contract','semantic_surface_contract_sha256','semantic_surface_complete',
++                  'semantic_grass_provider','semantic_nonweight_layers','semantic_hda_understory_suppressed',
++                  'semantic_runtime_binding_sha256','semantic_consumer','semantic_native_postcook_verified')
++            self.state['semantic_producer_receipt']={key:receipt.get(key) for key in keys}
++            self.write()
++            binding=_semantic_prepared_binding(self.p,self.state['landscape_grass_connection'])
++            assert binding==self.state['semantic_native_binding'],'Semantic source/receiver changed after Cook'
++            raw=receipt.get('semantic_surface_contract')
++            assert isinstance(raw,dict) and raw.get('schema')=='environmentpipeline.semantic_landscape_contract.v1'
++            assert receipt.get('semantic_surface_contract_sha256')==_consumer_digest(raw)
++            assert receipt.get('semantic_surface_complete') is True,'Semantic surface is incomplete'
++            assert receipt.get('semantic_native_postcook_verified') is False,'Producer cannot assert native postcook acceptance'
++            token=binding['token']
++            for key,value in {'area_id':token['area_id'],'source_package_sha256':token['source_package_sha256'],
++                              'policy_sha256':token['consumer_contract_sha256'],'class_grid_sha256':binding['class_grid_sha256'],
++                              'vegetation_provider':token['provider']}.items():
++                assert raw.get(key)==value,'Semantic producer identity differs: '+key
++            assert receipt.get('semantic_grass_provider')==token['provider']
++            assert receipt.get('semantic_runtime_binding_sha256')==binding['sha256'],'HDA receiver acknowledgment differs'
++            assert set(receipt['semantic_nonweight_layers'])==set(raw['auxiliary_layers'])
++            assert set(raw['auxiliary_layers']).issubset(token['nonweight_layer_names'])
++            assert set(raw['paint_layers']).union(raw['auxiliary_layers']).issubset(token['material_layer_names'])
++            assert isinstance(receipt['nonbuilding_instances'],list)
++            if token['provider']=='native_landscape_grass':
++                assert receipt.get('semantic_hda_understory_suppressed') is True
++                assert not any(item.get('role')=='understory' for item in receipt['nonbuilding_instances'])
++            consumer=receipt['semantic_consumer']
++            assert consumer['source_contract']==binding['source_contract']
++            assert consumer['contract_sha256']==binding['consumer_contract_sha256'] and consumer['runtime_binding']==token
++            self.state['semantic_producer_receipt_verified']=True
++        if self.p.get('building_rules_json') is not None:
++            keys=('building_dependencies_complete','building_content_revision','building_content_input_sha256',
++                  'building_content_rejections','qualified_whole_building_records')
++            self.state['building_consumer_receipt']={key:receipt.get(key) for key in keys}
++            self.write()
++            binding=_building_rules_binding(self.p)
++            assert binding==self.state['building_rules_binding'],'Building evidence changed after Cook'
++            assert receipt.get('building_content_input_sha256')==binding['content_input_sha256']
++            assert receipt.get('building_dependencies_complete') is True,'Building content dependencies remain incomplete'
++
++
+     def configure_and_bind(self,w):
+         self.guard()
+         self.guard_processes()
++        consumer_strings=self.consumer_parameter_strings(w)
+         w.set_auto_cooking_enabled(False)
+         assert not w.is_auto_cooking_enabled()
+         self.configure_engine_outputs(w)
+@@ -522,9 +701,12 @@
+         bools={'bank_inspection_only':False,'bank_pilot_enabled':False,'module_test_enabled':False,
+                'modular_pilot_enabled':False,'nonbuilding_enabled':True,
+                'technical_preview_enabled':mode=='technical_preview','bank_release_enabled':mode=='released'}
++        strings.update(consumer_strings)
+         for name,value in strings.items():
+             assert w.set_string_parameter_value(name,value),name
+             assert w.get_string_parameter_value(name)==value,name
++        self.state['consumer_parameter_readback']={name:w.get_string_parameter_value(name) for name in consumer_strings}
++        self.write()
+         for name,value in bools.items():
+             assert w.set_bool_parameter_value(name,value),name
+             assert w.get_bool_parameter_value(name)==value,name
+@@ -584,6 +766,7 @@
+                     'objects':[{'part_name':i.part_name,'split_identifier':i.split_identifier,
+                                 'object':_path(w.get_output_object_at(index,i)),
+                                 'component':_path(w.get_output_component_at(index,i))} for i in identifiers]})
++            self.verify_consumer_receipt(receipt)
+             self.state['outputs']=outputs
+             self.state['request_roles']=receipt['request_roles']
+             self.state['placement_diagnostics']=receipt['placement_diagnostics']
+@@ -648,14 +831,14 @@
+             self.state['surface_geometry']=receipt.get('surface_geometry',{})
+             landscapes=list(self.official_landscapes(w).values())
+             assert len(landscapes)==1 and _path(landscapes[0].landscape_material)==self.p['landscape_material']
+-            if self.p.get('landscape_grass',{}).get('enabled'):
++            if self.p.get('landscape_grass',{}).get('enabled') or self.p.get('landscape_semantics') is not None:
+                 self.state['geographic_ground_connection']=geocity_landscape_workflow.verify_landscape(self,landscapes[0],receipt)
+             self.guard()
+             self.state.update(phase='cooked_verified',row_count=len(receipt['rows']),
+                               catalog_sha256=receipt['catalog_sha256'],output_count=w.get_num_outputs(),
+                               instance_count=actual,roles=dict(Counter(x['role'] for x in instances)),native_components=meshes)
+             self.state.pop('error',None);self.write()
+-            if (self.p.get('landscape_grass',{}).get('enabled')
++            if ((self.p.get('landscape_grass',{}).get('enabled') or self.p.get('landscape_semantics') is not None)
+                     and not self.state['geographic_ground_connection']['paint_ready']):
+                 self.cooked_landscape=landscapes[0]
+                 self.completed_receipt=receipt
+@@ -829,12 +1012,14 @@
+             if components:
+                 assert time.time()-self.bake_completed_epoch<120,'Cooked output was not removed'
+                 return
+-            if self.p.get('landscape_grass',{}).get('enabled'):
++            if self.p.get('landscape_grass',{}).get('enabled') or self.p.get('landscape_semantics') is not None:
+                 # Inspect this completed Bake, before exact obsolete actors
+                 # are retired below. A prior saved Landscape can still exist.
+                 landscapes=[a for a in self.wrapper.get_baked_output_actors() if isinstance(a,unreal.Landscape)]
+                 assert len(landscapes)==1,'Completed Bake has no unique geographic Landscape'
+-                grass=geocity_landscape_workflow.verify_landscape(self,landscapes[0],json.loads(self.receipt.read_text()))
++                complete_receipt=json.loads(self.receipt.read_text())
++                self.verify_consumer_receipt(complete_receipt)
++                grass=geocity_landscape_workflow.verify_landscape(self,landscapes[0],complete_receipt)
+                 self.state['geographic_ground_connection']=grass
+                 if not grass['paint_ready']:
+                     # Native post-processing can precede CPU paint readback:
+@@ -885,7 +1070,7 @@
+                     if mesh in expected:
+                         all_native[mesh]+=comp.get_instance_count() if isinstance(comp,unreal.InstancedStaticMeshComponent) else 1
+             assert all_native==expected,'Overlapping native bank copies remain in the area'
+-            if self.p.get('landscape_grass',{}).get('enabled'):
++            if self.p.get('landscape_grass',{}).get('enabled') or self.p.get('landscape_semantics') is not None:
+                 landscape=next(a for a in worlds if isinstance(a,unreal.Landscape))
+                 self.state['geographic_ground_connection']=geocity_landscape_workflow.verify_landscape(self,landscape,receipt)
+             self.save_generated_dependencies(baked)
+@@ -1002,6 +1187,8 @@
+             from geocity_editor_action import acknowledged_cook_leftovers
+             assert foreign.issubset(acknowledged_cook_leftovers(self.project,foreign)),'Foreign dirty packages are not exact acknowledged unreferenced area cook leftovers'
+         self.state['reviewed_dirty_packages']=sorted(self.reviewed_dirty_packages)
++        if self.p.get('building_rules_json') is not None:
++            self.state['building_rules_binding']=_building_rules_binding(self.p)
+         if not self.api.is_session_valid():
+             self.state['phase']='connecting_official_engine';self.write()
+             self.api.create_session()
+@@ -1009,6 +1196,9 @@
+         self.state['official_engine_connected']=True
+         self.suspend_transaction_autosave()
+         self.state['landscape_grass_connection']=geocity_landscape_workflow.prepare(self)
++        if self.p.get('landscape_semantics') is not None:
++            self.state['semantic_native_binding']=_semantic_prepared_binding(self.p,self.state['landscape_grass_connection'])
++        self.write()
+         self.was_paused=self.api.is_asset_cooking_paused()
+         self.action=action
+         actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()

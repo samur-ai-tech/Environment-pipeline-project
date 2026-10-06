@@ -1,0 +1,33 @@
+Task2 - Native RoadBLD current-Landscape selector repair
+Status: SOURCE_READY_FOR_MANAGER_REVIEW
+Date: 4 October 2026
+
+Current bounded source fix
+
+Only geocity_roadbld_landscape.py and geocity_roadbld_workflow.py changed in this repair. The other six road modules and both configuration files match the previously accepted frozen hashes. Earlier sources/results are preserved in BeforeLandscapeAuthority/; no editor, native/MCP, map, Content, profile, configuration or upstream operation was performed by task2.
+
+Task4 measured native rebuild pass3 with no owned Landscape patches, but clipping stopped because the name-based selector expected _GazaShujaiya_landscape while the exact current official actor ended _GazaShujaiya_landscape_0. The exact official helper identified it; the previous baked Landscape remained accounted. This is task4 recorded native evidence, not a task2 native operation or final road delivery.
+
+The repair removes the name-based selector. build(...) and RoadBLDRun.__init__(...) append the optional landscape_authority keyword. Actual build requires a bound method from the active official lifecycle parent. It supplies the exact native actor plus PID, named world, area, source/centreline hashes, lease, current-operation start, HDA owner and exact pre-operation accounted Landscape paths.
+
+The selector checks loaded actor identity, same named package/current-world enumeration, parent guard/current phase/road run, source bytes, HDA owner, operation evidence and every other loaded Landscape. Unknown, foreign, stale or missing authority fails. The run freezes the current actor/evidence before presets or network creation. Later pre-Bake samplers must match it. Both clip_final_geometry and grounding.correction already use this same sampler. No suffix expansion, first/newest-actor guess, early prior deletion or lowered gate was introduced.
+
+Collision/contact sampling is AST-identical to the previous implementation. saved=True retains the final singleton check after parent scoped prior-output retirement. Geometry thresholds, clipping, support, UVs/normals/materials/collision, markings/crossings/props and correction lifetime/rollback are unchanged.
+
+Checks and integration
+
+LANDSCAPE_AUTHORITY_CHECKS.json records 28 passing focused checks using the recorded _0 path and explicit fake native IO. Tests reject unknown/foreign/stale/missing actors, wrong source/owner/operation/lease, failed parent and changed authority. They also exercise task1's actual callback body against the task2 selector with the official-helper IO boundary substituted. The saved two-Landscape state still fails; the saved singleton works. The existing 29 policy/history source checks and syntax compilation also pass.
+
+ROAD_LANDSCAPE_INTERFACE.json is implemented and frozen. SOURCE_HANDOFF.json contains final hashes and integration requirements. LANDSCAPE_SELECTOR_RESULT.json, LANDSCAPE_FAILURE_EVIDENCE.json and LANDSCAPE_SELECTOR_DIFF.patch provide the specific evidence and change. RESULT.json is the combined current machine-readable outcome.
+
+Earlier retained repair
+
+Correct project Config=RoadBLD values, native CDO/Get policy gates, no posthoc patch disabling, and preservation-history carry-forward remain unchanged. SAVED_ROAD_PRESERVATION.json independently retains 132 failed actor paths, 87 saved unapproved package hashes and 136 successful actor paths/dependencies. No candidate approval or package deletion occurred.
+
+Source implementation: complete and frozen for manager review.
+New selector native execution: NOT RUN.
+Final visible roads/support/details: not verified.
+New named persistence/reopen/regeneration: not verified.
+User acceptance: not claimed.
+
+Manager reviews the combined source seal and fresh startup. Bank is NEXT native writer after safe task4 release, per manager sequencing. No source hot reload, native generation or further repair is authorized by this handoff. Task2 awaits exact manager-assigned feedback.

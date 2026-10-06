@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-09-28T23:35:31.681Z",
+  "scope": "Offline document and JSON checks only; no runtime test",
+  "json_files": [
+    {
+      "file": "bank_field_alias_map.proposed.json",
+      "valid_json": true
+    },
+    {
+      "file": "bank_handoff_receipt.template.json",
+      "valid_json": true
+    },
+    {
+      "file": "catalog_wire_contract.proposed.json",
+      "valid_json": true
+    },
+    {
+      "file": "hda_interface_target.v1.json",
+      "valid_json": true
+    },
+    {
+      "file": "integration_binding.template.json",
+      "valid_json": true
+    },
+    {
+      "file": "measurement.template.json",
+      "valid_json": true
+    },
+    {
+      "file": "proof_landscape_material.spec.json",
+      "valid_json": true
+    }
+  ],
+  "required_references": [
+    {
+      "file": "COOK_CONTROL.md",
+      "exists": true
+    },
+    {
+      "file": "EARLY_PROOF_READINESS.md",
+      "exists": true
+    },
+    {
+      "file": "BANK_GATE_REQUIREMENTS.md",
+      "exists": true
+    },
+    {
+      "file": "PREPARATION_STATUS_2026-09-29.md",
+      "exists": true
+    },
+    {
+      "file": "bank_handoff_receipt.template.json",
+      "exists": true
+    }
+  ],
+  "wire_54_fields_match_alias_order_and_types": true,
+  "all_actual_wire_bank_and_attribute_bindings_null": true,
+  "all_actual_alias_bindings_null": true,
+  "asset_revision_has_no_unsafe_alias": true,
+  "native_class_is_proposed_asset_class_source": true,
+  "catalog_sha256_at_end": "B05F8691402B47B4C6730F842163BD0555662C0802D4CA7EAADFE04266DCCC9F",
+  "catalog_unchanged_during_this_pass": true,
+  "no_missing_proposed_source_headers": true,
+  "no_executable_helper_in_packet": true,
+  "fr1_ruling_binding_present": true
+}

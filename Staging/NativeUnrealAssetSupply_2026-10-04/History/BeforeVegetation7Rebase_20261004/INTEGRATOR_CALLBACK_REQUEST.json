@@ -1,0 +1,20 @@
+{
+  "schema": "supplier_integrator_callback_request.v2",
+  "status": "IMPLEMENTED_READY_FOR_BANK_OWNED_CONSUMPTION",
+  "callback_contract_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\INTEGRATOR_CALLBACK_CONTRACT.json",
+  "callback_contract_sha256": "aed537b44241250ba68e8ca86ef94698dd48e754a9f7631bdd18f421fce923cf",
+  "prepared_intake": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\81a181cea2d88ade5da18de2f4806c5bd12ae390c4d09a8b2c3ea33e4fac6d0f\\TRANSACTION.json",
+    "sha256": "e2a6552faf36d7edc8aa626930b469a0c0a1e5e1fe6d5290a52b0e84f816d3dd",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\81a181cea2d88ade5da18de2f4806c5bd12ae390c4d09a8b2c3ea33e4fac6d0f\\PREPARED_INTAKE.json",
+    "intake_sha256": "2e21e9a9637766371d31af93670813c5fedd7603d9781ac787e001282bf3c6d2",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "source_review_request": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\GENERIC_INTAKE_REVIEW_REQUEST.json",
+  "action_for_bank": "Integrate sealed apply_prepared CAS callback in retained bank-owned consumption; bank alone commits prepared registry and projects compatible configurations. Do not apply stale source/prepared snapshots.",
+  "action_for_root": "Independent source review, seal into actual native startup manifest and activate bank only after clean recovery; review exact targeted job IDs."
+}

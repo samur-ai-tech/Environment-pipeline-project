@@ -1,0 +1,316 @@
+{
+  "schema": "environmentpipeline.retained_repair_result.v1",
+  "utc": "2026-10-03T03:18:29.365639+00:00",
+  "status": "implemented_saved_reopened",
+  "generator_revision": "r017_retained_native_environment",
+  "external_hda_sha256": "bd62ec4d9df7fa3b90b7959ebda927c0d85c7066fded8de1361e98f065d019b1",
+  "module_sha256": "e69e5da20a731e1b7295337a724a715bbdccc8d8fd4f1f64193ba9b75298000a",
+  "catalog_rows": 1223,
+  "normal_enabled_rows": 18,
+  "catalog_sha256": "135fda14b5173ca919b1568b3faff20e1763cfb3dc90c0635983d1ce32b3ded1",
+  "areas": {
+    "GazaRimal": {
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "native_instance_count": 16009,
+      "roles": {
+        "whole_building": 60,
+        "tree": 45,
+        "street_pole": 27,
+        "street_prop": 23,
+        "shrub": 2,
+        "small_prop": 54,
+        "understory": 55,
+        "building_module": 15743
+      },
+      "whole_buildings": 60,
+      "assembled_buildings": 209,
+      "building_count": 269,
+      "unsupported_buildings": 0,
+      "baked_actor_count": 23,
+      "named_generated_dependency_paths": [
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_buildings",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_road_surfaces",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Bake/GazaRimal_sidewalks",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Dirt_Path",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_01",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_02",
+        "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_Path"
+      ],
+      "landscape_count": 1,
+      "cooked_mesh_components": 0,
+      "proxy_outputs": {
+        "street_pole": {
+          "source_count": 36,
+          "removed_count": 27,
+          "omitted_generated_count": 9,
+          "remaining_count": 0,
+          "remaining_primitives": 0
+        },
+        "tree": {
+          "source_count": 60,
+          "removed_count": 45,
+          "omitted_generated_count": 15,
+          "remaining_count": 0,
+          "remaining_primitives": 0
+        }
+      },
+      "all_native_transferred_anchors_verified_within_1mm": true,
+      "native_material_slots_verified": true,
+      "sampled_native_buildings_for_collision": 4,
+      "maximum_sampled_bbox_support_error_cm": 1.0471343994140625,
+      "landscape_readback": [
+        {
+          "material": "/Game/Project/Shared/SurfacePainting/MI_SurfaceBank_AllLayers.MI_SurfaceBank_AllLayers",
+          "valid_target_layer_names": [
+            "Dirt_Path",
+            "Sand_01",
+            "Sand_02",
+            "Sand_Path"
+          ],
+          "assigned_layer_infos": [
+            {
+              "target": "Dirt_Path",
+              "layer": "Dirt_Path",
+              "info": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Dirt_Path"
+            },
+            {
+              "target": "Sand_01",
+              "layer": "Sand_01",
+              "info": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_01.GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_01"
+            },
+            {
+              "target": "Sand_02",
+              "layer": "Sand_02",
+              "info": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_02.GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_02"
+            },
+            {
+              "target": "Sand_Path",
+              "layer": "Sand_Path",
+              "info": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/GazaRimal/LayerInfos/GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_5718_6095_0_GazaRimal_landscape_Sand_Path"
+            }
+          ],
+          "resolved_selected_layer_texture_parameters": {
+            "Dirt_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+            "Dirt_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+            "Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+            "Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.T_Sand_01_Normal",
+            "Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo",
+            "Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.T_Sand_02_Normal",
+            "Sand_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo",
+            "Sand_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal"
+          },
+          "texture_query_scope": "Shared base MI; no Landscape component static-weight permutation. Empty used-textures here is inconclusive.",
+          "used_texture_paths": []
+        }
+      ],
+      "persistence": {
+        "utc": "2026-10-03T03:13:36.328998+00:00",
+        "method": "Saved map unloaded and opened again in the same owned editor; Engine paused, no recook or new bake",
+        "all_saved_baked_actors_present": true,
+        "cooked_mesh_components": 0,
+        "hda_actor_count": 1,
+        "auto_cooking_enabled": false,
+        "fresh_editor_process_restart_performed": false
+      },
+      "map_sha256": "984a39069c8055666bdf651966632741feb2ad3ec218a6fdbc46516b871832dd"
+    },
+    "GazaShujaiya": {
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "native_instance_count": 18016,
+      "roles": {
+        "whole_building": 41,
+        "tree": 79,
+        "street_pole": 53,
+        "street_prop": 41,
+        "shrub": 3,
+        "small_prop": 64,
+        "understory": 101,
+        "building_module": 17634
+      },
+      "whole_buildings": 41,
+      "assembled_buildings": 357,
+      "building_count": 398,
+      "unsupported_buildings": 0,
+      "baked_actor_count": 23,
+      "named_generated_dependency_paths": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_buildings",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_road_surfaces",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Bake/GazaShujaiya_sidewalks",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Dirt_Path",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_01",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_02",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_Path"
+      ],
+      "landscape_count": 1,
+      "cooked_mesh_components": 0,
+      "proxy_outputs": {
+        "street_pole": {
+          "source_count": 57,
+          "removed_count": 53,
+          "omitted_generated_count": 4,
+          "remaining_count": 0,
+          "remaining_primitives": 0
+        },
+        "tree": {
+          "source_count": 114,
+          "removed_count": 79,
+          "omitted_generated_count": 35,
+          "remaining_count": 0,
+          "remaining_primitives": 0
+        }
+      },
+      "all_native_transferred_anchors_verified_within_1mm": true,
+      "native_material_slots_verified": true,
+      "sampled_native_buildings_for_collision": 4,
+      "maximum_sampled_bbox_support_error_cm": 1.2142181396484375,
+      "landscape_readback": [
+        {
+          "material": "/Game/Project/Shared/SurfacePainting/MI_SurfaceBank_AllLayers.MI_SurfaceBank_AllLayers",
+          "valid_target_layer_names": [
+            "Dirt_Path",
+            "Sand_01",
+            "Sand_02",
+            "Sand_Path"
+          ],
+          "assigned_layer_infos": [
+            {
+              "target": "Dirt_Path",
+              "layer": "Dirt_Path",
+              "info": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Dirt_Path.GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Dirt_Path"
+            },
+            {
+              "target": "Sand_01",
+              "layer": "Sand_01",
+              "info": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_01.GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_01"
+            },
+            {
+              "target": "Sand_02",
+              "layer": "Sand_02",
+              "info": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_02.GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_02"
+            },
+            {
+              "target": "Sand_Path",
+              "layer": "Sand_Path",
+              "info": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_Path.GeoCity_city_v015_PermanentBank_5741_4664_0_GazaShujaiya_landscape_Sand_Path"
+            }
+          ],
+          "resolved_selected_layer_texture_parameters": {
+            "Dirt_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+            "Dirt_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+            "Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+            "Sand_01_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.T_Sand_01_Normal",
+            "Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo",
+            "Sand_02_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.T_Sand_02_Normal",
+            "Sand_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo",
+            "Sand_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal"
+          },
+          "texture_query_scope": "Shared base MI; no Landscape component static-weight permutation. Empty used-textures here is inconclusive.",
+          "used_texture_paths": []
+        }
+      ],
+      "persistence": {
+        "utc": "2026-10-03T03:12:56.628738+00:00",
+        "method": "Saved map unloaded and opened again in the same owned editor; Engine paused, no recook or new bake",
+        "all_saved_baked_actors_present": true,
+        "cooked_mesh_components": 0,
+        "hda_actor_count": 1,
+        "fresh_editor_process_restart_performed": false
+      },
+      "map_sha256": "01ca593fab90b4356fc8fa573f73f894ba2876231513ced03f5d472e4af6cd97"
+    }
+  },
+  "appearance_accepted": false,
+  "held_assets_released": false,
+  "editor_handoff": {
+    "utc": "2026-10-03T03:15:11.866388+00:00",
+    "pid": 15568,
+    "world": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+    "engine_paused": true,
+    "auto_cooking_enabled": false,
+    "lifecycle_callbacks": 0,
+    "dirty_maps": [],
+    "named_area_dependencies_clean": true,
+    "unsaved_content_packages": [
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_374_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_375_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_376_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_377_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_378_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1449_374_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1449_375_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1449_376_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1449_377_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1449_378_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1451_374_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1451_375_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1451_376_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1451_377_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1451_378_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1450_376_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1450_377_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1450_378_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1452_378_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1452_374_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1452_375_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1452_376_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1452_377_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1453_378_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1453_374_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1453_375_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1453_376_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1453_377_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1454_374_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1454_375_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1454_376_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1454_377_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1454_378_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2882_1812_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_1425_1809_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_1425_1810_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_1425_1811_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_1425_1812_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_1425_1813_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2881_1813_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2881_1809_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2881_1810_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2881_1811_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2881_1812_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2882_1813_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2882_1809_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2882_1810_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_2882_1811_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_4310_3240_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_2860_3237_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_2860_3238_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_2860_3239_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_2860_3240_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_2860_3241_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_4310_3241_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_4310_3237_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_4310_3238_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_4310_3239_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5741_4666_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_4288_4665_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_4288_4666_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_4288_4667_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_4288_4668_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_4288_4669_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5740_4665_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5740_4666_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5739_4667_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5739_4665_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5739_4666_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5741_4667_0_main_geo",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_5741_4665_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_5718_6096_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_5718_6097_0_main_geo",
+      "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_5718_6098_0_main_geo"
+    ],
+    "unsaved_content_scope": "Exact previously recorded unreferenced Cook leftovers only; no Save All or broad cleanup",
+    "source_revision": "r017_retained_native_environment"
+  }
+}

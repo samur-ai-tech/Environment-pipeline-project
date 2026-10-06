@@ -1,0 +1,223 @@
+SOURCE: Staging/GroundPainting_2026-10-04/Revision_2026-10-05/EPIC_RESIDENT_CONSUMER_verify_r030_fresh_reopen_PID18844.json key 'before' (fresh-reopen read-only graph dump of M_SurfaceBank_Natural, 1015 nodes). Offline reachability from roots color/normal/roughness/ao + LandscapeGrassOutput. Read-only derived evidence written by Stage1 material-history research subagent 2026-10-05. Param defaults are MASTER defaults; MI overrides differ.
+
+LAYER {"layer_name": "Sand_01", "blend_type": "<LandscapeLayerBlendType.LB_WEIGHT_BLEND: 0>", "preview_weight": 0.0, "const_layer_input": [0.0, 0.0, 0.0], "const_height_input": 0.0}
+edge {'source': '/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_42', 'output': ''}
+-> MaterialExpressionLinearInterpolate_42 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:GroundSoilcolor const_a=0.0 const_b=1.0 const_alpha=0.5
+  A.:-> MaterialExpressionMultiply_8 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:SandRestrainedMacroColor const_a=0.0 const_b=1.0
+    A.:-> MaterialExpressionMultiply_5 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:Sand_01TintedColor const_a=0.0 const_b=1.0
+      A.:-> MaterialExpressionLinearInterpolate_64 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:colorDistanceBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+        A.:-> MaterialExpressionLinearInterpolate_48 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearcolorCellBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+          A.:-> MaterialExpressionLinearInterpolate_46 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearcolorBottom const_a=0.0 const_b=1.0 const_alpha=0.5
+            A.RGB:-> MaterialExpressionTextureSample_37 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:NearcolorPhase0 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0
+              UVs.:-> MaterialExpressionAdd_11 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearTranslatedUV0 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_15 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Sand_01NearPatternUV const_a=0.0 const_b=1.0
+                  A.:-> MaterialExpressionMultiply_4 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:Sand_01NearUV const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionLandscapeLayerCoords_0 [LandscapeLayerCoords] desc=GeoCity_GroundRevision_20261005:LandscapeXY mapping_scale=1.0 mapping_type=<TerrainCoordMappingType.TCMT_XY: 1> custom_uv_type=<LandscapeCustomizedCoordType.LCCT_NONE: 0> mapping_rotation=0.0 mapping_pan_u=0.0 mapping_pan_v=0.0
+                    B.:-> MaterialExpressionDivide_1 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:Sand_01CentimetersToUV const_a=1.0 const_b=2.0
+                      A.:-> MaterialExpressionConstant_0 [Constant] r=100.0 desc=GeoCity_GroundRevision_20261005:LandscapeGridCm100 r=100.0
+                      B.:-> MaterialExpressionClamp_6 [Clamp] desc=GeoCity_GroundRevision_20261005:Sand_01TilePositive min_default=1.0 max_default=1000000.0
+                        None.:-> MaterialExpressionComponentMask_1 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundRevision_20261005:Sand_01TileR r=True g=False b=False a=False
+                          None.RGB:-> MaterialExpressionVectorParameter_175 [VectorParameter] parameter_name=Sand_01_TileCm default_value=[220.0, 220.0, 220.0, 1.0] group=None sort_priority=32
+                  B.:-> MaterialExpressionScalarParameter_8 [ScalarParameter] parameter_name=GeoCity_PatternScale default_value=1.0 desc=GeoCity_GroundRevision_20261005:GeoCity_PatternScale group=None sort_priority=32
+                B.:-> MaterialExpressionCustom_0 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:NearHash0 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOu
+                  Cell.:-> MaterialExpressionFloor_0 [Floor] desc=GeoCity_GroundStochastic_20261005:NearCellID
+                    None.:-> MaterialExpressionMultiply_23 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearCellQ const_a=0.0 const_b=1.0
+                      A.:-> MaterialExpressionMultiply_15 (seen)
+                      B.:-> MaterialExpressionMax_0 [Max] const_a=0.0 const_b=0.009999999776482582 desc=GeoCity_GroundStochastic_20261005:CellScaleMin001 const_a=0.0 const_b=0.009999999776482582
+                        A.:-> MaterialExpressionScalarParameter_7 [ScalarParameter] parameter_name=GeoCity_CellScale default_value=0.10000000149011612 desc=GeoCity_GroundRevision_20261005:GeoCity_CellScale group=None sort_priority=32
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 [TextureObjectParameter] parameter_name=Sand_01_Albedo texture=/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_FROM_TEXTURE_ASSET: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=
+              DDX(UVs).:-> MaterialExpressionDDX_0 [DDX] desc=GeoCity_GroundStochastic_20261005:NearUntranslatedDDX
+                Value.:-> MaterialExpressionMultiply_15 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_0 [DDY] desc=GeoCity_GroundStochastic_20261005:NearUntranslatedDDY
+                Value.:-> MaterialExpressionMultiply_15 (seen)
+            B.RGB:-> MaterialExpressionTextureSample_38 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:NearcolorPhase1 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0
+              UVs.:-> MaterialExpressionAdd_13 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearTranslatedUV1 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_15 (seen)
+                B.:-> MaterialExpressionCustom_1 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:NearHash1 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOu
+                  Cell.:-> MaterialExpressionAdd_12 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearCellIdentity1 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_0 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_1 [Constant2Vector] r=1.0 g=0.0 desc=GeoCity_GroundStochastic_20261005:CellNeighbor1 r=1.0 g=0.0
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_0 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_0 (seen)
+            Alpha.:-> MaterialExpressionComponentMask_17 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundStochastic_20261005:NearSmoothX r=True g=False b=False a=False
+              None.:-> MaterialExpressionMultiply_28 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearQuintic const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_25 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearFraction3 const_a=0.0 const_b=1.0
+                  A.:-> MaterialExpressionMultiply_24 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearFraction2 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFrac_0 [Frac] desc=GeoCity_GroundStochastic_20261005:NearCellFraction
+                      None.:-> MaterialExpressionMultiply_23 (seen)
+                    B.:-> MaterialExpressionFrac_0 (seen)
+                  B.:-> MaterialExpressionFrac_0 (seen)
+                B.:-> MaterialExpressionAdd_10 [Add] const_a=0.0 const_b=10.0 desc=GeoCity_GroundStochastic_20261005:NearPlus10 const_a=0.0 const_b=10.0
+                  A.:-> MaterialExpressionMultiply_27 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearPolynomial const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFrac_0 (seen)
+                    B.:-> MaterialExpressionAdd_9 [Add] const_a=0.0 const_b=-15.0 desc=GeoCity_GroundStochastic_20261005:NearMinus15 const_a=0.0 const_b=-15.0
+                      A.:-> MaterialExpressionMultiply_26 [Multiply] const_a=0.0 const_b=6.0 desc=GeoCity_GroundStochastic_20261005:NearFraction6 const_a=0.0 const_b=6.0
+                        A.:-> MaterialExpressionFrac_0 (seen)
+          B.:-> MaterialExpressionLinearInterpolate_47 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearcolorTop const_a=0.0 const_b=1.0 const_alpha=0.5
+            A.RGB:-> MaterialExpressionTextureSample_39 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:NearcolorPhase2 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0
+              UVs.:-> MaterialExpressionAdd_15 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearTranslatedUV2 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_15 (seen)
+                B.:-> MaterialExpressionCustom_2 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:NearHash2 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOu
+                  Cell.:-> MaterialExpressionAdd_14 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearCellIdentity2 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_0 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_2 [Constant2Vector] r=0.0 g=1.0 desc=GeoCity_GroundStochastic_20261005:CellNeighbor2 r=0.0 g=1.0
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_0 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_0 (seen)
+            B.RGB:-> MaterialExpressionTextureSample_40 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:NearcolorPhase3 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0
+              UVs.:-> MaterialExpressionAdd_17 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearTranslatedUV3 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_15 (seen)
+                B.:-> MaterialExpressionCustom_3 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:NearHash3 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOu
+                  Cell.:-> MaterialExpressionAdd_16 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:NearCellIdentity3 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_0 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_3 [Constant2Vector] r=1.0 g=1.0 desc=GeoCity_GroundStochastic_20261005:CellNeighbor3 r=1.0 g=1.0
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_0 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_0 (seen)
+            Alpha.:-> MaterialExpressionComponentMask_17 (seen)
+          Alpha.:-> MaterialExpressionComponentMask_18 [ComponentMask] r=False g=True b=False a=False desc=GeoCity_GroundStochastic_20261005:NearSmoothY r=False g=True b=False a=False
+            None.:-> MaterialExpressionMultiply_28 (seen)
+        B.:-> MaterialExpressionLinearInterpolate_57 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarcolorCellBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+          A.:-> MaterialExpressionLinearInterpolate_55 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarcolorBottom const_a=0.0 const_b=1.0 const_alpha=0.5
+            A.RGB:-> MaterialExpressionTextureSample_49 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:FarcolorPhase0 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+              UVs.:-> MaterialExpressionAdd_20 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarTranslatedUV0 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_16 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Sand_01FarPatternUV const_a=0.0 const_b=1.0
+                  A.:-> MaterialExpressionDivide_2 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:Sand_01FarUV const_a=1.0 const_b=2.0
+                    A.:-> MaterialExpressionMultiply_4 (seen)
+                    B.:-> MaterialExpressionClamp_4 [Clamp] desc=GeoCity_GroundRevision_20261005:Sand_01FarScaleBound min_default=1.0 max_default=32.0
+                      None.:-> MaterialExpressionScalarParameter_9 [ScalarParameter] parameter_name=Sand_01_FarScale default_value=5.0 desc=GeoCity_GroundRevision_20261005:Sand_01_FarScale group=None sort_priority=32
+                  B.:-> MaterialExpressionScalarParameter_8 (seen)
+                B.:-> MaterialExpressionCustom_4 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:FarHash0 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOut
+                  Cell.:-> MaterialExpressionFloor_1 [Floor] desc=GeoCity_GroundStochastic_20261005:FarCellID
+                    None.:-> MaterialExpressionMultiply_29 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarCellQ const_a=0.0 const_b=1.0
+                      A.:-> MaterialExpressionMultiply_16 (seen)
+                      B.:-> MaterialExpressionMax_0 (seen)
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_1 [DDX] desc=GeoCity_GroundStochastic_20261005:FarUntranslatedDDX
+                Value.:-> MaterialExpressionMultiply_16 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_1 [DDY] desc=GeoCity_GroundStochastic_20261005:FarUntranslatedDDY
+                Value.:-> MaterialExpressionMultiply_16 (seen)
+            B.RGB:-> MaterialExpressionTextureSample_50 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:FarcolorPhase1 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+              UVs.:-> MaterialExpressionAdd_22 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarTranslatedUV1 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_16 (seen)
+                B.:-> MaterialExpressionCustom_5 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:FarHash1 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOut
+                  Cell.:-> MaterialExpressionAdd_21 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarCellIdentity1 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_1 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_1 (seen)
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_1 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_1 (seen)
+            Alpha.:-> MaterialExpressionComponentMask_19 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundStochastic_20261005:FarSmoothX r=True g=False b=False a=False
+              None.:-> MaterialExpressionMultiply_34 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarQuintic const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_31 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarFraction3 const_a=0.0 const_b=1.0
+                  A.:-> MaterialExpressionMultiply_30 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarFraction2 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFrac_1 [Frac] desc=GeoCity_GroundStochastic_20261005:FarCellFraction
+                      None.:-> MaterialExpressionMultiply_29 (seen)
+                    B.:-> MaterialExpressionFrac_1 (seen)
+                  B.:-> MaterialExpressionFrac_1 (seen)
+                B.:-> MaterialExpressionAdd_19 [Add] const_a=0.0 const_b=10.0 desc=GeoCity_GroundStochastic_20261005:FarPlus10 const_a=0.0 const_b=10.0
+                  A.:-> MaterialExpressionMultiply_33 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarPolynomial const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFrac_1 (seen)
+                    B.:-> MaterialExpressionAdd_18 [Add] const_a=0.0 const_b=-15.0 desc=GeoCity_GroundStochastic_20261005:FarMinus15 const_a=0.0 const_b=-15.0
+                      A.:-> MaterialExpressionMultiply_32 [Multiply] const_a=0.0 const_b=6.0 desc=GeoCity_GroundStochastic_20261005:FarFraction6 const_a=0.0 const_b=6.0
+                        A.:-> MaterialExpressionFrac_1 (seen)
+          B.:-> MaterialExpressionLinearInterpolate_56 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarcolorTop const_a=0.0 const_b=1.0 const_alpha=0.5
+            A.RGB:-> MaterialExpressionTextureSample_51 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:FarcolorPhase2 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+              UVs.:-> MaterialExpressionAdd_24 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarTranslatedUV2 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_16 (seen)
+                B.:-> MaterialExpressionCustom_6 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:FarHash2 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOut
+                  Cell.:-> MaterialExpressionAdd_23 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarCellIdentity2 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_1 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_2 (seen)
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_1 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_1 (seen)
+            B.RGB:-> MaterialExpressionTextureSample_52 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundStochastic_20261005:FarcolorPhase3 mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_DERIVATIVE: 3> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+              UVs.:-> MaterialExpressionAdd_26 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarTranslatedUV3 const_a=0.0 const_b=1.0
+                A.:-> MaterialExpressionMultiply_16 (seen)
+                B.:-> MaterialExpressionCustom_7 [Custom] code=<pcg-style uint hash -> float2> desc=GeoCity_GroundStochastic_20261005:FarHash3 output_type=<CustomMaterialOutputType.CMOT_FLOAT2: 1> output_type=<CustomMaterialOut
+                  Cell.:-> MaterialExpressionAdd_25 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundStochastic_20261005:FarCellIdentity3 const_a=0.0 const_b=1.0
+                    A.:-> MaterialExpressionFloor_1 (seen)
+                    B.:-> MaterialExpressionConstant2Vector_3 (seen)
+              Tex.:-> MaterialExpressionTextureObjectParameter_152 (seen)
+              DDX(UVs).:-> MaterialExpressionDDX_1 (seen)
+              DDY(UVs).:-> MaterialExpressionDDY_1 (seen)
+            Alpha.:-> MaterialExpressionComponentMask_19 (seen)
+          Alpha.:-> MaterialExpressionComponentMask_20 [ComponentMask] r=False g=True b=False a=False desc=GeoCity_GroundStochastic_20261005:FarSmoothY r=False g=True b=False a=False
+            None.:-> MaterialExpressionMultiply_34 (seen)
+        Alpha.:-> MaterialExpressionSaturate_1 [Saturate] desc=GeoCity_GroundRevision_20261005:SharedDistanceAlpha
+          None.:-> MaterialExpressionDivide_0 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:DistanceRatio const_a=1.0 const_b=2.0
+            A.:-> MaterialExpressionSubtract_0 [Subtract] const_a=1.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:DistanceMinusStart const_a=1.0 const_b=1.0
+              A.:-> MaterialExpressionDistance_0 [Distance] desc=GeoCity_GroundRevision_20261005:CameraDistance
+                A.:-> MaterialExpressionCameraPositionWS_0 [CameraPositionWS] desc=GeoCity_GroundRevision_20261005:Camera
+                B.XYZ:-> MaterialExpressionWorldPosition_1 [WorldPosition] desc=GeoCity_GroundRevision_20261005:WorldPosition
+              B.:-> MaterialExpressionScalarParameter_2 [ScalarParameter] parameter_name=GeoCity_DistanceStartCm default_value=1200.0 desc=GeoCity_GroundRevision_20261005:GeoCity_DistanceStartCm group=None sort_priority=32
+            B.:-> MaterialExpressionClamp_0 [Clamp] desc=GeoCity_GroundRevision_20261005:PositiveDistanceRange min_default=1.0 max_default=1000000.0
+              None.:-> MaterialExpressionScalarParameter_3 [ScalarParameter] parameter_name=GeoCity_DistanceRangeCm default_value=4800.0 desc=GeoCity_GroundRevision_20261005:GeoCity_DistanceRangeCm group=None sort_priority=32
+      B.RGB:-> MaterialExpressionVectorParameter_177 [VectorParameter] parameter_name=Sand_01_Tint default_value=[1.0, 1.0, 1.0, 1.0] group=None sort_priority=32
+    B.:-> MaterialExpressionAdd_1 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:MacroMultiplier const_a=0.0 const_b=1.0
+      A.:-> MaterialExpressionConstant_1 [Constant] r=1.0 desc=GeoCity_GroundRevision_20261005:One r=1.0
+      B.:-> MaterialExpressionMultiply_7 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:MacroVariation const_a=0.0 const_b=1.0
+        A.:-> MaterialExpressionSubtract_1 [Subtract] const_a=1.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:MacroCentered const_a=1.0 const_b=1.0
+          A.:-> MaterialExpressionMultiply_6 [Multiply] const_a=0.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:MacroDouble const_a=0.0 const_b=2.0
+            A.:-> MaterialExpressionClamp_7 [Clamp] desc=GeoCity_GroundRevision_20261005:MacroRedBound min_default=0.0 max_default=1.0
+              None.:-> MaterialExpressionComponentMask_2 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundRevision_20261005:MacroRed r=True g=False b=False a=False
+                None.XYZ Texture:-> MaterialExpressionMaterialFunctionCall_154 [MaterialFunctionCall] material_function=WorldAlignedTexture.WorldAlignedTexture
+                  TextureObject.:-> MaterialExpressionTextureObjectParameter_154 [TextureObjectParameter] parameter_name=Ground_MacroMask texture=/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_FROM_TEXTURE_ASSET: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=
+                  TextureSize.RGB:-> MaterialExpressionVectorParameter_176 [VectorParameter] parameter_name=Ground_MacroTileCm default_value=[3600.0, 3600.0, 3600.0, 1.0] group=None sort_priority=32
+          B.:-> MaterialExpressionConstant_1 (seen)
+        B.:-> MaterialExpressionClamp_3 [Clamp] desc=GeoCity_GroundRevision_20261005:MacroAmountBound min_default=0.0 max_default=0.07999999821186066
+          None.:-> MaterialExpressionScalarParameter_6 [ScalarParameter] parameter_name=GeoCity_MacroAmount default_value=0.07999999821186066 desc=GeoCity_GroundRevision_20261005:GeoCity_MacroAmount group=None sort_priority=32
+  B.:-> MaterialExpressionMultiply_12 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:Dirt_PathTintedColor const_a=0.0 const_b=1.0
+    A.:-> MaterialExpressionLinearInterpolate_26 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorDistanceBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+      A.:-> MaterialExpressionLinearInterpolate_24 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorNearBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+        A.RGB:-> MaterialExpressionTextureSample_13 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorNearA mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+          UVs.:-> MaterialExpressionMultiply_17 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathNearPatternUV const_a=0.0 const_b=1.0
+            A.:-> MaterialExpressionMultiply_11 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRevision_20261005:Dirt_PathNearUV const_a=0.0 const_b=1.0
+              A.:-> MaterialExpressionLandscapeLayerCoords_0 (seen)
+              B.:-> MaterialExpressionDivide_3 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:Dirt_PathCentimetersToUV const_a=1.0 const_b=2.0
+                A.:-> MaterialExpressionConstant_0 (seen)
+                B.:-> MaterialExpressionClamp_14 [Clamp] desc=GeoCity_GroundRevision_20261005:Dirt_PathTilePositive min_default=1.0 max_default=1000000.0
+                  None.:-> MaterialExpressionComponentMask_8 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundRevision_20261005:Dirt_PathTileR r=True g=False b=False a=False
+                    None.RGB:-> MaterialExpressionVectorParameter_173 [VectorParameter] parameter_name=Dirt_Path_TileCm default_value=[260.0, 260.0, 260.0, 1.0] group=None sort_priority=32
+            B.:-> MaterialExpressionScalarParameter_8 (seen)
+          Tex.:-> MaterialExpressionTextureObjectParameter_150 [TextureObjectParameter] parameter_name=Dirt_Path_Albedo texture=/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_FROM_TEXTURE_ASSET: 0> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 
+        B.RGB:-> MaterialExpressionTextureSample_14 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorNearB mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+          UVs.:-> MaterialExpressionAdd_4 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathNearShiftedUV const_a=0.0 const_b=1.0
+            A.:-> MaterialExpressionMultiply_17 (seen)
+            B.:-> MaterialExpressionConstant2Vector_0 [Constant2Vector] r=0.3709999918937683 g=0.6190000176429749 desc=GeoCity_GroundRefinement_20261005:FixedTranslation r=0.3709999918937683 g=0.6190000176429749
+          Tex.:-> MaterialExpressionTextureObjectParameter_150 (seen)
+        Alpha.:-> MaterialExpressionSmoothStep_0 [SmoothStep] desc=GeoCity_GroundRefinement_20261005:SharedSmoothMask const_min=0.20000000298023224 const_max=0.800000011920929
+          Value.:-> MaterialExpressionComponentMask_16 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundRefinement_20261005:MacroR r=True g=False b=False a=False
+            None.RGB:-> MaterialExpressionTextureSample_0 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundRefinement_20261005:MacroMask mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+              UVs.:-> MaterialExpressionDivide_7 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRefinement_20261005:MacroWorldUV const_a=1.0 const_b=2.0
+                A.:-> MaterialExpressionComponentMask_14 [ComponentMask] r=True g=True b=False a=False desc=GeoCity_GroundRefinement_20261005:WorldXY r=True g=True b=False a=False
+                  None.XYZ:-> MaterialExpressionWorldPosition_1 (seen)
+                B.:-> MaterialExpressionClamp_20 [Clamp] desc=GeoCity_GroundRefinement_20261005:MacroTile20to35m min_default=2000.0 max_default=3500.0
+                  None.:-> MaterialExpressionComponentMask_15 [ComponentMask] r=True g=False b=False a=False desc=GeoCity_GroundRefinement_20261005:MacroTileR r=True g=False b=False a=False
+                    None.RGB:-> MaterialExpressionVectorParameter_176 (seen)
+              Tex.:-> MaterialExpressionTextureObjectParameter_154 (seen)
+      B.:-> MaterialExpressionLinearInterpolate_25 [LinearInterpolate] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorFarBlend const_a=0.0 const_b=1.0 const_alpha=0.5
+        A.RGB:-> MaterialExpressionTextureSample_15 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorFarA mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+          UVs.:-> MaterialExpressionMultiply_18 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathFarPatternUV const_a=0.0 const_b=1.0
+            A.:-> MaterialExpressionDivide_4 [Divide] const_a=1.0 const_b=2.0 desc=GeoCity_GroundRevision_20261005:Dirt_PathFarUV const_a=1.0 const_b=2.0
+              A.:-> MaterialExpressionMultiply_11 (seen)
+              B.:-> MaterialExpressionClamp_12 [Clamp] desc=GeoCity_GroundRevision_20261005:Dirt_PathFarScaleBound min_default=1.0 max_default=32.0
+                None.:-> MaterialExpressionScalarParameter_13 [ScalarParameter] parameter_name=Dirt_Path_FarScale default_value=5.0 desc=GeoCity_GroundRevision_20261005:Dirt_Path_FarScale group=None sort_priority=32
+            B.:-> MaterialExpressionScalarParameter_8 (seen)
+          Tex.:-> MaterialExpressionTextureObjectParameter_150 (seen)
+        B.RGB:-> MaterialExpressionTextureSample_16 [TextureSample] sampler_type=<MaterialSamplerType.SAMPLERTYPE_COLOR: 0> desc=GeoCity_GroundRefinement_20261005:Dirt_PathcolorFarB mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> sampler_source=<SamplerSourceMode.SSM_WRAP_WORLD_GROUP_SETTINGS: 1> mip_value_mode=<TextureMipValueMode.TMVM_NONE: 0> automatic_view_mip_bias=True const_mip_value=-1 const_coordinate=0 gather_mode=<TextureGatherMode.TGM_NONE: 0>
+          UVs.:-> MaterialExpressionAdd_5 [Add] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:Dirt_PathFarShiftedUV const_a=0.0 const_b=1.0
+            A.:-> MaterialExpressionMultiply_18 (seen)
+            B.:-> MaterialExpressionConstant2Vector_0 (seen)
+          Tex.:-> MaterialExpressionTextureObjectParameter_150 (seen)
+        Alpha.:-> MaterialExpressionSmoothStep_0 (seen)
+      Alpha.:-> MaterialExpressionSaturate_1 (seen)
+    B.RGB:-> MaterialExpressionVectorParameter_174 [VectorParameter] parameter_name=Dirt_Path_Tint default_value=[1.0, 1.0, 1.0, 1.0] group=None sort_priority=32
+  Alpha.:-> MaterialExpressionClamp_21 [Clamp] desc=GeoCity_GroundRefinement_20261005:SoilAlpha0to35 min_default=0.0 max_default=0.3499999940395355
+    None.:-> MaterialExpressionMultiply_22 [Multiply] const_a=0.0 const_b=1.0 desc=GeoCity_GroundRefinement_20261005:SoilStrength const_a=0.0 const_b=1.0
+      A.:-> MaterialExpressionAdd_8 [Add] const_a=0.0 const_b=0.25 desc=GeoCity_GroundRefinement_20261005:SoilMaskBase const_a=0.0 const_b=0.25
+        A.:-> MaterialExpressionMultiply_21 [Multiply] const_a=0.0 const_b=0.75 desc=GeoCity_GroundRefinement_20261005:SoilMaskSpan const_a=0.0 const_b=0.75
+          A.:-> MaterialExpressionSmoothStep_0 (seen)
+      B.:-> MaterialExpressionScalarParameter_104 [ScalarParameter] parameter_name=Ground_SoilBlendStrength default_value=0.25 group=None sort_priority=32

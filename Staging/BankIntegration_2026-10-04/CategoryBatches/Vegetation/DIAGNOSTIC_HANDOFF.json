@@ -1,0 +1,46 @@
+{
+  "schema": "environmentpipeline.vegetation_diagnosis_handoff.v1",
+  "status": "FROZEN_SOURCE_READY_BANK_LEASE_CHECKPOINT_REQUIRED",
+  "bank_integrator_thread": "01a1067c-5012-7550-b449-015b53c9d726",
+  "manager_thread": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "freeze_receipt": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\SOURCE_FREEZE.json",
+    "sha256": "d953e6e922401ca852317eee0271811e4604dcda30087b9055af5fffe33f86b7"
+  },
+  "execution_manifest": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\EXECUTION_MANIFEST.json",
+    "sha256": "32e9333a3fde41f30ff6ad5da048f72767a1f9caf09c594df2bb2d09fbb510d2"
+  },
+  "adapter": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\category_batch.py",
+    "sha256": "80039997587f42d1a9f192761b5d4696e6fa27ece3f57a7259230fc82644aeb8"
+  },
+  "entrypoint": "collect_material_diagnostics(ids=plant07_asset_ids)",
+  "plant07_asset_ids": [
+    "current_Palms_Pack_01__Add_Props__Plants__Meshes__SM_Plant_07_2_G",
+    "current_Palms_Pack_01__Add_Props__Plants__Meshes__SM_Plant_07_5_G",
+    "current_Palms_Pack_01__Add_Props__Plants__Meshes__SM_Plant_07_6_G"
+  ],
+  "expected_output": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\CategoryBatches\\Vegetation\\NATIVE_MATERIAL_DIAGNOSTICS.json",
+  "output_schema": "Dictionary keyed by canonical asset_id; value includes source_sha256, slots[].selected_slot_path, slots[].chain, reused contact receipt, ready=false and originals_changed=false.",
+  "diagnostic_fields": [
+    "Every material/instance chain path and package SHA",
+    "Effective scalar and texture parameters for each instance",
+    "Base blend mode, two-sided state, opacity mask clip and instancing usage",
+    "Referenced textures with exact native paths/package SHAs",
+    "BaseColor/OpacityMask/WorldPositionOffset input node identities",
+    "Reused native contact measurement; no recreated per-model proof"
+  ],
+  "bank_return_receipts": [
+    "Exact NATIVE_MATERIAL_DIAGNOSTICS.json path and file SHA after successful collection",
+    "Bank-owned invocation receipt with actual PID30328, original world, latest lease, current EDITOR_ACQUIRED PID/world, reviewed loaded source paths/hashes, manifest SHA and official paused state",
+    "Exact dirty package/map state before and after; collector must pass unchanged-dirty-state guard before publishing output",
+    "Any actual native Lit leaf-visibility observation/image and its asset/source identity, separately from graph diagnosis",
+    "Exact proposed evidence-bound material edits and diagnosis SHA before executing retained derivative repairs; keep ready=false until actual contact/facing/material validation"
+  ],
+  "current_lease_limit": "Last recorded lease is CODEX_MANAGED_SYSTEMS_STARTUP, activation AWAITING_MANAGER_ACTUAL_PID. It does not pass native_bank_ops.preflight. The bank needs manager-issued bank ownership and a fresh PID30328 EDITOR_ACQUIRED checkpoint before invoking the collector. Mutating entries additionally require MANAGER_ACTIVATED and no dirty vendor vegetation.",
+  "read_only_collector_category_invoked": false,
+  "source_or_payload_edits_performed": false,
+  "native_editor_operations_by_category": 0,
+  "preserved": "All source/vendor originals, palms, explicit holds, rights, styles and Plant07 diagnosis requirement."
+}

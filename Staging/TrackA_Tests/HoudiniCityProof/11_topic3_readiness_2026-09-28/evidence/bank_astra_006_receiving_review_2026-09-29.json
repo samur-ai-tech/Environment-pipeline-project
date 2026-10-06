@@ -1,0 +1,1016 @@
+{
+  "kind": "TRACK_A_OFFLINE_RECEIVING_REVIEW_BANK_ASTRA_006",
+  "reviewed_at": "2026-09-29T10:51:05.523Z",
+  "verdict": "VERIFIED_UNUSED_FOR_SIX_FROZEN_INSPECTED_MATERIAL_GRAPHS_SUPPORTED",
+  "bank_receipt": {
+    "path": "Staging/ModelBank/Inspection_2026-09-29_Astra_Channels/MATERIAL_CHANNEL_AUDIT.json",
+    "sha256": "a18b4e302b1c147b5cba49dcca81021013ccc61e6d73369a2d1d9f8462975ef9"
+  },
+  "receiving_policy": "MATERIAL_CHANNEL_AUDIT_RECEIVING_2026-09-29.md",
+  "checks": {
+    "graph_calls": 6,
+    "exact_node_class_calls": 12,
+    "graph_node_counts": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "raw_calls_hashed_and_reparsed": 18,
+    "all_actual_classes": "/Script/Engine.MaterialExpressionTextureSample",
+    "selected_material_hashes_match_closure_and_current": 6,
+    "protected_current_hashes_match": 174,
+    "Content_metadata_rows_equal": 5991,
+    "source_hashes_match_current": 4,
+    "scalar_or_three_vector_readers": 0,
+    "unresolved_opaque_paths_in_returned_graphs": 0,
+    "conditional_DataIndex_queries": "NOT_APPLICABLE_NO_READER_NODES",
+    "conditional_CustomPrimitiveData_queries": "NOT_APPLICABLE_NO_PARAMETER_NODES"
+  },
+  "materials": [
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.Arab_X3",
+      "package_sha256": "8a6cb98f403a571730bcb354f91d50f121b7a103ba0c4b64247e31b90bf4a2a5",
+      "graph_nodes": 1,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    },
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011",
+      "package_sha256": "407a0a0ec186e259fcb053ed60945189bea93d69c1b051f566209ad0f37bf044",
+      "graph_nodes": 2,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    },
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001",
+      "package_sha256": "092c2346a55de1716e7ba21aa7e319018c40bc41a6fe4c2b03a5c93529d7c43e",
+      "graph_nodes": 2,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    },
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031",
+      "package_sha256": "6a89b360444c03ff3c9f827b91e23e8e53492b3bd113874c10f17e021f6d0834",
+      "graph_nodes": 2,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    },
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021",
+      "package_sha256": "c46417038cefd3b1aa1b0c5bba51027a3782bd86acce9ad975130aad56eac020",
+      "graph_nodes": 2,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    },
+    {
+      "material_object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003",
+      "package_sha256": "96ad2e5e865181573931552805f0ffea8fe6c8c1ea1c48b0c58060ad36d717f7",
+      "graph_nodes": 3,
+      "node_classes": [
+        "/Script/Engine.MaterialExpressionTextureSample"
+      ],
+      "receiving_status": "VERIFIED_UNUSED_FOR_FROZEN_INSPECTED_GRAPH",
+      "per_instance_channels": [],
+      "compiled_shader_consumption": "NOT_MEASURED"
+    }
+  ],
+  "raw_receipts": [
+    {
+      "path": "mcp/001_graph_Arab_X3.json",
+      "sha256": "e1ceb7caba4cd3a765ce0fcadc4c070be83a028c27cb90cabedf804a052a0183",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.Arab_X3"
+    },
+    {
+      "path": "mcp/007_class_Arab_X3_Arab_X3_MaterialExpressionTextureSample_0.json",
+      "sha256": "2567a61a2f20ba2bf9d221d7a11f0ffb47d4e2080593e08b3c91785dace5a9bd",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.Arab_X3:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/002_graph_Material_Building_04_1011.json",
+      "sha256": "97232610636abb8c3d7d18bf41de861590f9095a0899ba506a5686e62cb09fb9",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011"
+    },
+    {
+      "path": "mcp/008_class_Material_Building_04_1011_Material_Building_04_1011_MaterialExpressionTextureSample_0.json",
+      "sha256": "90d62620331e02154dfdf40cb1486af6ec026572324769d08f609eec3ba1f14a",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/009_class_Material_Building_04_1011_Material_Building_04_1011_MaterialExpressionTextureSample_1.json",
+      "sha256": "9ca56e07e0b80295444aec2cf4b713c26302a8a569cfa1b8d35fce00d2d297b9",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011:MaterialExpressionTextureSample_1",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/003_graph_Material_Building_04_1001.json",
+      "sha256": "fc3dfacca63ead16c790fd74e1c63d23581dfbadb922a46590f6f781b8c82900",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001"
+    },
+    {
+      "path": "mcp/010_class_Material_Building_04_1001_Material_Building_04_1001_MaterialExpressionTextureSample_0.json",
+      "sha256": "2a8749e5243a24f404c31028b90e1854c6cefd6c5f2580d95c723d8772764100",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/011_class_Material_Building_04_1001_Material_Building_04_1001_MaterialExpressionTextureSample_1.json",
+      "sha256": "e15e26cadd1564c8d9dd0b5999d5d95c99823f602edb3128de8d30d6e6583d07",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001:MaterialExpressionTextureSample_1",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/004_graph_Material_Building_04_1031.json",
+      "sha256": "e138a4f977eea08edf5614bc7167a93d3547a7c48f5fe6578c77667572576dfd",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031"
+    },
+    {
+      "path": "mcp/012_class_Material_Building_04_1031_Material_Building_04_1031_MaterialExpressionTextureSample_0.json",
+      "sha256": "4540684c3d1c48aecd3055d2fdba4574451458df8b69ee791b13ca1fbaa5d764",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/013_class_Material_Building_04_1031_Material_Building_04_1031_MaterialExpressionTextureSample_1.json",
+      "sha256": "9222a8015f74cb4fddc51ede47906f2e8476b1ca2a7264eb069052e7a3f2dceb",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031:MaterialExpressionTextureSample_1",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/005_graph_Material_Building_04_1021.json",
+      "sha256": "1499f7a32702bb6fdac22fb494eafdb90d14653c7b844fd01be79734469f71ad",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021"
+    },
+    {
+      "path": "mcp/014_class_Material_Building_04_1021_Material_Building_04_1021_MaterialExpressionTextureSample_0.json",
+      "sha256": "a0032fb4d5c10c56f0557a4e970ea40717d2dc90192c920df1d2a65b2a09ad5e",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/015_class_Material_Building_04_1021_Material_Building_04_1021_MaterialExpressionTextureSample_1.json",
+      "sha256": "361c4ad9b6f4ad54b03cb99c9b1afb10f4ff7adbd7161dfdd10aa9fd1ebb7380",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021:MaterialExpressionTextureSample_1",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/006_graph_Street_Props_Pack__003.json",
+      "sha256": "fffad852daf6ff0d220b6527cfa2bb3af46935d384dbf3bdb1d04ccf229cbef0",
+      "tool": "get_expressions",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003"
+    },
+    {
+      "path": "mcp/016_class_Street_Props_Pack__003_Street_Props_Pack__003_MaterialExpressionTextureSample_0.json",
+      "sha256": "f85344fad79a39905d13788c00b096739864e73783b9a26fc3ff9d2cfbc66a4f",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003:MaterialExpressionTextureSample_0",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/017_class_Street_Props_Pack__003_Street_Props_Pack__003_MaterialExpressionTextureSample_1.json",
+      "sha256": "5c92c04da6a77a0e1fe12fbd8b508b5f5cf532b5def859e77f1fb3b4b358e2a0",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003:MaterialExpressionTextureSample_1",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    },
+    {
+      "path": "mcp/018_class_Street_Props_Pack__003_Street_Props_Pack__003_MaterialExpressionTextureSample_2.json",
+      "sha256": "2b4ce12094ed8ee3cdbf618c068f83d816e44cde2927da2590f6e1fe7411a0da",
+      "tool": "get_class",
+      "node": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003:MaterialExpressionTextureSample_2",
+      "actual_class": "/Script/Engine.MaterialExpressionTextureSample"
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\EditorToolset\\Content\\Python\\editor_toolset\\toolsets\\material.py",
+      "sha256": "cd6801e55ca4025414b67a258142856046078450478aeef48c887b808c6c0f6b",
+      "matches_prepared_policy_source": true
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\EditorToolset\\Content\\Python\\editor_toolset\\toolsets\\object.py",
+      "sha256": "91b7085a5d029d83a020ab8c170acce0b1c7f938976a266daa7c23f36da8126a",
+      "matches_prepared_policy_source": true
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Public\\Materials\\MaterialExpressionPerInstanceCustomData.h",
+      "sha256": "858ab3d96843b4472896fae8068d8cd38bf8a484961bffbc3fe3084eada7a459",
+      "matches_prepared_policy_source": true
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Public\\Materials\\MaterialExpressionTextureSample.h",
+      "sha256": "0dd7d0f7f2d7dc4e6de1c065e3e7f56190aad9f9786d22a1b969e1cdf9d6c57e",
+      "matches_prepared_policy_source": null
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\acbody1.uasset",
+      "sha256": "1070f23d452a97858387c8e6eef3d2e8bb093c5c436432bb71bf59f84c894d5f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Airconditioner_front1.uasset",
+      "sha256": "00707efae73febb5e63b4df278c53a6d31362c24d8ab113380acf25fc7f52331"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_x1_Diffuse_Map_f77e5a25686e.uasset",
+      "sha256": "aed8c680e2b6e6d6b8e98346d12b18cf7c7f3d7f1c707e8d3cf5db30e839347f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_x1.uasset",
+      "sha256": "2c716b270d56d93106024cfc621955b0c5f9921387488c560f063434d426bca7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_x2_Diffuse_Map_10ed83aa497e.uasset",
+      "sha256": "08d7ef2bc587a28bb617767464cce7bd9888be8db97722356d951436a0be4a7f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_x2.uasset",
+      "sha256": "9780a911b8600fa5ab3575a031961d185fb225a5e66a6fc1ec83ebadc60ac463"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_x3_Diffuse_Map_9e424ef08c1f.uasset",
+      "sha256": "939bb053cb7041677a1f22fe9487201d9ff030ee590097c57adf2fe01f5c67fc"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Arab_X3.uasset",
+      "sha256": "8a6cb98f403a571730bcb354f91d50f121b7a103ba0c4b64247e31b90bf4a2a5"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M01_lbedoTransparency_139c7766c3f2.uasset",
+      "sha256": "a613635bb9380b0b133194530bd3afeb39ace5376c988b778d9c399b328b4351"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M01_Normal_67a5464e9176.uasset",
+      "sha256": "2cf5dfa125f5f6d79fbd9da3fe1d4132d2524e665e144176656eec30c08b9ebd"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M02_lbedoTransparency_16abd7adb28e.uasset",
+      "sha256": "adfd634b96034f90f9c55dc414f79f724a48ffac719d11a5a531006d98bdfab4"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M02_Normal_533467f593ec.uasset",
+      "sha256": "ff3e89556e4520058d9b872a72105f03b88ba96d392b275e91c578eb8af908d1"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M03_lbedoTransparency_07d4f4f3c8ee.uasset",
+      "sha256": "2ab1a141939044b0e753829cd52a0a2e91a5e96e7cbe9b6065ec41132758238a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M03_Normal_34b9d42e6629.uasset",
+      "sha256": "bed5a9a70ba19f2ebbafa3368937edf6b5343424e5a1bbecf4540e507284c1fe"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M04_lbedoTransparency_ab5c7a5b2f26.uasset",
+      "sha256": "95ca642c404f9d24fdae857bbf5c0fd1878a217048d6f3e4c4af34abcda3b670"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B02_M04_Normal_4f3147c5a798.uasset",
+      "sha256": "36b8e46223932af50c7dc7b5e29e605c2b63f6ffd0528bbb22c3172c822489a9"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_Fabric_AlbedoTransparency_a702b7b55df7.uasset",
+      "sha256": "c326d04a7ed9e516b50169137d4ae155333a6b290b8355aa46c7841f56b19409"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_Fabric_Normal_3c4e7a154ae2.uasset",
+      "sha256": "33a4054ccd3672db55591dfe53bbf4486ba7e8e767c0c5b847a0f3ec20ffeff8"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_AlbedoTransparency_d92da9103c5b_ncl1_1.uasset",
+      "sha256": "20ba4c875d3418e2f338cb5b8af77942c9fdf42db23a407fbbfb407e7e2d1097"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_AlbedoTransparency_d92da9103c5b_ncl1_2.uasset",
+      "sha256": "180893b5b97962673313e41e3fb8c0282518ae8257ae56ae76df567e6e3bc405"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_AlbedoTransparency_d92da9103c5b_ncl1_3.uasset",
+      "sha256": "02c9cace9c019a863f807ca204d6b512893ea70117af3bf8c1c6e02af8d1900e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_Normal_6055121aba1a_ncl1_1.uasset",
+      "sha256": "df4dc229b5f2f8054804ffde6dc1a8b65b5c6687b38b050f49d5e60ec2dcaacb"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_Normal_6055121aba1a_ncl1_2.uasset",
+      "sha256": "9a42b07a8c084224a9999c0f515431d2597a14c9fa2657c56c4779aa39344a16"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M02_Normal_6055121aba1a_ncl1_3.uasset",
+      "sha256": "989909deadf1591b4575b327652c8fd64787679c48032d2af914943ea3fbf374"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M03_AlbedoTransparency_5e1788c20ae7_ncl1_1.uasset",
+      "sha256": "82c09493f5aa96a1c787512aadb4f2f3557292ddf9e8aba7ac3ca03727d34dc4"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_M03_Normal_20fe53daa836_ncl1_1.uasset",
+      "sha256": "cb67d4be1bed1261a7aa6b61f2c3b50554b2a373ecc92cec082dd8ccf08bdb2b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_Stara_AlbedoTransparency_1becdeaf4adb.uasset",
+      "sha256": "ac0c36d6f96caf15e00dc3b9540065dbc695351f907b7bf496938ae7df065b8b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B03_Stara_Normal_1e4701d96125.uasset",
+      "sha256": "000911f236b2365d3f8656d11b205e079d81a4df0b6e47f65ac5eb58509d9fd2"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M01_lbedoTransparency_feb997124e3f.uasset",
+      "sha256": "05bf9e9480cdd8aa3cb2957f0da4bd0cb0ac7e0e9d41edee8f6f847baf3ba108"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M01_Normal_c3ebb6845660.uasset",
+      "sha256": "497324355dba1875b8540f4ba43691e5c287eac6290eb95d98e811252254733f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M02_lbedoTransparency_c286d2b07cbd.uasset",
+      "sha256": "8b27ef839d0f6a1c8c5a9aedbeca1b6d40edbdbf8b1edbb2a3d5d262d7263d6e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M02_Normal_ba61051ad683.uasset",
+      "sha256": "666fc6feb5125cb541182daff529620f76726081af943364cb9c58d185045197"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M03_lbedoTransparency_e52816c231d7.uasset",
+      "sha256": "d102bbc6c3cb0c2c47f7290e73f783aa1abaeac742c952bbb08778653ad62c0f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M03_Normal_a4f020a17487.uasset",
+      "sha256": "5a56625a45e4d5d4476ed15f81f29e947b2c20d49756e2e4e07bdf2f0c73ea1f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M04_lbedoTransparency_e0ebfc1dbb4b.uasset",
+      "sha256": "7f8f9679c84dbb92a5c7384929c1af5b65dc3b347d87cae2dfc833278532e31c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B04_M04_Normal_b6e59e496bae.uasset",
+      "sha256": "f4f007bbd1743b493ef2690d39837f8a2bf4968a93f19d3bc5d5c4cc845fae25"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B05_ACON_2c98a6224ef0.uasset",
+      "sha256": "8e5c1cad7436b4b8bb41a6b95b06a0a42146e1164bc611c8d170ca6fb10de926"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\B05_ACON_Front_3b3c4559d236.uasset",
+      "sha256": "6c16199eacbe4ea93bab5427c188e781cd84dc02b66cb409cb74c113d184dd8e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_02_1001.uasset",
+      "sha256": "2701936d1df3811d59dac47f311a9efa20800b5d3871ac7543d5778db64b31d8"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_02_1002.uasset",
+      "sha256": "f1deaf033641ef7b2a33de271aafeaf62f72de3656ffb80b0edbc4b9a88127b1"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_02_1003.uasset",
+      "sha256": "aa7fe6f1f532ffecad0d45a41a49f590a77358325d7bce804a20fb71b0615ad1"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_02_1004.uasset",
+      "sha256": "32b0d611ed2b1650ff3e1cd57a74665e3e81991b7b8e1dc703a7e2b9d52a788c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_001_MTL.uasset",
+      "sha256": "3421489e82b2766706ccff991df3689ef01f2008f4ed6e77f6eb0a4eab887385"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_002_MTL_002.uasset",
+      "sha256": "20dac0f0199cd743739ab2f9d773bdbc59a191e799ddab0323b05d65664314c0"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_002_MTL_005.uasset",
+      "sha256": "d65e5de9ea8b1b8176b9230ab9c88edba0fd8d0d321d299c84f71484d5eda50b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_002_MTL_006.uasset",
+      "sha256": "a36a63e478aacac60f184108799adea42b0839eb38f1c50d09dea4e9659d473e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_002_MTL.uasset",
+      "sha256": "b2bdf9eecae5b36eaf5883dc228d23b1448075939469ff8ba991028dda49ad01"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_003_MTL_006.uasset",
+      "sha256": "e7cebb9c5349a9c601b1798c84c47de603ee16919c0097f947db21c6598f6901"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_003_MTL.uasset",
+      "sha256": "30284ce2f6dcb25d1513d84fce38e468e86e6090f7a6667cb13a07114b6bcf92"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Building_03_Fabric_MTL.uasset",
+      "sha256": "86b5dfa611c4dd8fba14b0794d5b04f875bb1af1686d7b6c45ec4933a2a21e49"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Material_Building_04_1001.uasset",
+      "sha256": "092c2346a55de1716e7ba21aa7e319018c40bc41a6fe4c2b03a5c93529d7c43e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Material_Building_04_1011.uasset",
+      "sha256": "407a0a0ec186e259fcb053ed60945189bea93d69c1b051f566209ad0f37bf044"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Material_Building_04_1021.uasset",
+      "sha256": "c46417038cefd3b1aa1b0c5bba51027a3782bd86acce9ad975130aad56eac020"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Material_Building_04_1031.uasset",
+      "sha256": "6a89b360444c03ff3c9f827b91e23e8e53492b3bd113874c10f17e021f6d0834"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M01_BaseColor_2a017bf5e27e.uasset",
+      "sha256": "e3083f49ae97559f82b1dcf491a6c1dd87812049704bceebb692c7b49e186e5d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M01_Normal_fadc44fde19d.uasset",
+      "sha256": "f894b1bb2c801a36272f6c8d336049ad31d5e67f6ed5b5a4cfb7586989a83d1b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M02_BaseColor_f659e25c169e.uasset",
+      "sha256": "b60e1e0b9ef9fb2f527a396a66154ca749363ad5d00ec5bd454401e144606627"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M02_Normal_f5b504b589ba.uasset",
+      "sha256": "b25f800e34cff76f551b20f3e5ca4721f57a7483210aa6fa1c75a0b40e5a22de"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M03_BaseColor_2d96674a64a5.uasset",
+      "sha256": "4907dae97bd9ba234b9e5603fd3ea25478031c8e6f07425479bc5a1ec6ae055e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_M03_Normal_3462d167c80e.uasset",
+      "sha256": "4fbd5e18528348afdde0625453de4d41555b2fab19c38069cdf6e613082b2adc"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_Props_BaseColor_f19a3a8493e9.uasset",
+      "sha256": "158ce0569eaaea180d0d22bbba7acbbaa0acef28fb419fb34ff4b145b9779d97"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_Props_Normal_0f74a6916665.uasset",
+      "sha256": "60d390f0fbed1390dd30bc4b857a51be9d737b7a21e86cee4b146b7f89f44807"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_Props02_BaseColor_38cc16464c5b.uasset",
+      "sha256": "4afaf132ad244aa27b12856aefa85804cd9aa6ea9c2cc94c3bfe0628890be6fc"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Modular_B01_Props02_Normal_3a246455c558.uasset",
+      "sha256": "790b25237688990808013f30233ac08c6c86b8b8403e506d090481661c13b2f0"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Props_MTL.uasset",
+      "sha256": "7ed9e7d723eaac6de2586770b9d68d41e0e6aa5a4354cc044b447af693e43966"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Props2_MTL.uasset",
+      "sha256": "1ce923370ce27425db3c3f8090ae5fe0587c6d0d06d0032ba8dc896131d68c48"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Slum_k__Diffuse_Map_176ddbcf6ec9.uasset",
+      "sha256": "402b96af1840f2942082e76f6378fe96818e4d6c852e0f6dec6e883ce3a489cf"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Slum_k.uasset",
+      "sha256": "e17539850d438fe6bdb55cc40c7b1daa6b83754f2017dd510e3fabb56d7ecc40"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Slum_s_Diffuse_Map_a764ce2d0400.uasset",
+      "sha256": "a7acd0f1b85de48d27b5e3afeae4f577d8cdd8d602a2cfb369e0f6e47c7e2eb7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\slum_s.uasset",
+      "sha256": "89a6595c6e8c8b74c29bf7b214d0bd140a060e3b6bc27991428889f0663a8d4f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Slum_v_Diffuse_Map_e09fe98a64e7.uasset",
+      "sha256": "ee65a3a3123a5ecce0e29079b5067dced95419dda4114563749ce0e6d26de503"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\Slum_v.uasset",
+      "sha256": "b552ca9fafb03f4c4486f3b1fc55b42d2a7a4f0dac025a0eb2b7a672d2b95066"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0013_Building_04.uasset",
+      "sha256": "e5bb8f2ca2cf7ac473fa479251725933123a31f9f9d41d775eb11e675a039da6"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0014_Building_01.uasset",
+      "sha256": "6acc9b6199eff7d2be9dcd51a9b4d11baaab14ad41f931c7a51a348a60623c32"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0015_Building_02.uasset",
+      "sha256": "106253b92e6b9c4c7a3cbbca9ee6baca337449d8957d3e8cbfef5779096655d2"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0016_Building_03.uasset",
+      "sha256": "6847230aaa168d18c285f509d0240be893bda67ccce2ed602fe1a3a8adc5dfef"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0902_Slum_k_fbx.uasset",
+      "sha256": "e1a75d52903ef0378f64f6995c4a5d97f5f87a4eb425eba8f56a9ac00a61cf8f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0903_Slum_s_fbx.uasset",
+      "sha256": "d2ce4b65b3fd4f251f600129a8c2e6587daefb4ddbb2e10a86f5a60d0a426601"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0904_Slum_v_fbx.uasset",
+      "sha256": "85be7a192c262caa13e52b69299d0313cb2a7003ca5295e2b2c1b259d8708973"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0905_Arab_x1_fbx.uasset",
+      "sha256": "eeece3a7a5e10650027d038db226be26a79a3ea40baa5fcb3ca1b82e8013a049"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0906_Arab_x2_fbx.uasset",
+      "sha256": "ea18336bf2c80f900479a7d5c43ef1a318ea7d1412d61ecc68f61287c2bd3b62"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0907_Arab_x3_fbx.uasset",
+      "sha256": "3c1726f412f92ac187a66e0c040c70ece42423527d1060c4d6ac5c57aff289bc"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\standard1.uasset",
+      "sha256": "7c03150dd63eb20762538ab2b896af07f35c4a03b2181b29dc1a657a7a163165"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\stara.uasset",
+      "sha256": "80bcd2b61641e10befc944ab465ff948a6c66f51a89015425797a7067bead8f7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\T_CracksStreet_normal_076f5fec4437.uasset",
+      "sha256": "d227ee503df95102aed4198417a72065c7f8d5f82b6f4c927b3d4377b266914a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.uasset",
+      "sha256": "4e8c3d2b5e2b573b3c4c5e557247a4626bbf288a607ec5004a0721a0a25b4d2e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.uasset",
+      "sha256": "598fafd477c963fc42e56bc7bb611cbacfb6e0e6760325d3ded808db14a78bb6"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_01_Normal_1011_99d47d234c4e.uasset",
+      "sha256": "b0555ce744d4fbd04bd38ab477945f4c7491bb4a56c149923e81b52aa632b661"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_AlbedoTransparency_1001_e15ff2bc3f44.uasset",
+      "sha256": "7de4eb056578ba90ad01fb742ba8dd53ea2b00a3638f5659f1d9f58f2a78938d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.uasset",
+      "sha256": "8dd8a3190768e9cfe1e7665265dbd830a113b1751b16bee92f61773124fb6b35"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0.uasset",
+      "sha256": "2e31aada0e6b3e4c7e0f8c4014b8466f35b8c8fd9093c1cc49a1afcf8e13fc6e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Emission_1001_d5168f6fb17f_albedo_4fd132a09ab085.uasset",
+      "sha256": "a2fce304d4cc99c3d819f202720668e4ba8d30c60b15857e02a029f0f1b8b0b0"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.uasset",
+      "sha256": "59099e0052940c651123a689fc44647eb75c3bae7f0817324c7be2a004ec0f11"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1.uasset",
+      "sha256": "e3fd3eedce0bf21aee9da25a4452385849a1863431dd137b31298df044d74c81"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Normal_1001_565c6a72dc3a.uasset",
+      "sha256": "c9e73afe18241fc0eee0bcb25429746b97304dcc8cb2f81ca557ac05dae356c7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.uasset",
+      "sha256": "e966ab2ed080c470240d68abeca302f7b24938673845a4a47376169f0cd2b259"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Arabic_Assets_02_Normal_1021_2c16efe4e182.uasset",
+      "sha256": "f5dfa063bfe1a6900daa9624762f6bec28b72feaf543a3dca44ac5056d06c6ee"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Food_Kart_02_AlbedoTransparency_1001_386eea6a6f53.uasset",
+      "sha256": "febae263cb8ae03a76721bc432e0c265b7cdc60844f2385bdfbfd9293a315601"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Food_Kart_02_Emission_1001_6267b0cf82bd_albedo_800dc792862e74.uasset",
+      "sha256": "399c48a8b9886fef118ab77f233c6293dd81c988a6d2167fcfa4aa0a36e43782"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Food_Kart_02_Mat_Food_Kart_002_Normal_1001_29bd824972ed.uasset",
+      "sha256": "7435cb77319d0d33fa1b3b84f01c46ade52fd81f410fcebc11b4d37a98f2b811"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\MI_baseMaterial_AC.uasset",
+      "sha256": "7ca45387d5875a77a503a740106c9cca1af2adc98c7b61bdefa42e2d361a45c7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0034_Cart.uasset",
+      "sha256": "284383e117c3d0c16825f292c79c5ff402318bed53488700138bb05dd4d58df6"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0043_Foodcart_001.uasset",
+      "sha256": "33e6d9389583285bc8235bea8c0f4d2ee21ac211697878c5dd606a9d4ff65002"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0046_Foodcrate.uasset",
+      "sha256": "e432143f4392b1b1690fb65e9484ee9db864bb811c42b043dedafed3e32b1810"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0058_Gaz.uasset",
+      "sha256": "764b3ddfed9526e579f31d37e10a898bc123301db19e6964f514caa5cb1a439e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0059_Grill_.uasset",
+      "sha256": "9cb62294909cfc9ae6b39d435f1af5d33a94ea63717f01418817a509dfc55e10"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0077_Stones_Stack.uasset",
+      "sha256": "869b0eacf395103d2a879a25693ef65ed0e6b90b9de16312d095b986a768ed3c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0089_Tires.uasset",
+      "sha256": "8ed278488d3de50ee3092174f027d8c53c65f0e8f6bfc5ff0bd23df45ec0ba34"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0090_Watertank.uasset",
+      "sha256": "bf468a3e116906571a00a184b00f9f75da0a7d549ed57af0d3ac8da0f82c9c5a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0091_Watertank_001.uasset",
+      "sha256": "0bc3ef02a8feb22320d4d6bdacd9f5ad57c7ab6e7d08afb6b12c343d5c8ddfe2"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\SM_H0650_SM_AirConditioner.uasset",
+      "sha256": "161e4fa7097691dd8c786439d68a5f691ad9979820fbe14ff3d72100d277d487"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__002.uasset",
+      "sha256": "c2b0d60d642ade9fb41c72c42f8dbf7c8e6ba20ae7c666052dc77b46066f9034"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__003.uasset",
+      "sha256": "625de87719cee63ed87c6d89370c23f46f0f4331218ad10133fad72ae9a04f44"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__007.uasset",
+      "sha256": "a67d8b9b220d400eae0f7d08abe15c9b44ab7134e2cc101d01c62e27ebb1b235"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__009.uasset",
+      "sha256": "4e1fd60c92913f3369153057bb9780ed2f17662ce2c7ced67b60183cddf6b9ba"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__010.uasset",
+      "sha256": "20783cc01029ddb7fdf885c052cde59cbadd32b8e14aa6ab1be5ebddca380ac6"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Street_Props_Pack__012.uasset",
+      "sha256": "a2c03a8567b3ba7b5510c0af43d7b9597f829a93b25a3e5655337f9221940f67"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\T_ac_BaseColor_c269320793a1.uasset",
+      "sha256": "9f6d48ad6a889818a9ceba3ec096cec31e40d5a670fd836a5aaf2651db891445"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\T_ac_Normal_276e5b18dd8a.uasset",
+      "sha256": "d0abbd9a7bc783b289e237cc0c1fac400560d250c09c32dd03b905c9e0a57fe8"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\T_white_cd3693fd6329_albedo_db4a9624048c10.uasset",
+      "sha256": "da2cae56ed88fee9dc7af4dd06457578077b465486cadb3e69882c3a62c2c403"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Props\\Tank_conditioning_Base_Map_115a9e70cd64.uasset",
+      "sha256": "c4f6ba2f75ed1e8bc33467c3ca22e1c6328ce8d3862e99be56d88a0f2edd69e0"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd.uasset",
+      "sha256": "2210aa724bfecc9f8cfb0ffb526fca3b9d66a460b90d61da61c2fb6c4d0d1792"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_AlbedoTransparency_1021_75389a549181.uasset",
+      "sha256": "57bb02d2bc748ce278910f6af00927751134e931a1692f72e8f0dfb94184678b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693.uasset",
+      "sha256": "16e765c22db8c30e6382b2b84a59e121f3206571fe94e2ad78cab7d837677948"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_Emission_1021_629bf903b421_albedo_2c65c30a38a16c.uasset",
+      "sha256": "33fe8d998b684f14eba4053ff4a66b44f877486c839b81e3e4460aaacb65d37f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_Normal_1011_99d47d234c4e.uasset",
+      "sha256": "de80e2faaaabbdb2d4e0974a183e5b46007eb8052f9f90ea90421e0249345f33"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_01_Normal_1021_72e10d9ab937.uasset",
+      "sha256": "6202e0776b2db0d995e10bada4ec4fc878458af263d92dbe26f24775ca958ef0"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_AlbedoTransparency_1001_e15ff2bc3f44.uasset",
+      "sha256": "0b242bcfde244d570b1dffb7c6d01cb0267b1412098d4337724fd9c30d2f229c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0.uasset",
+      "sha256": "6b8c17d81baf654d97b76039f6df88f17eb7cf75d9a578e52d2080fc6ea169f3"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_Emission_1001_d5168f6fb17f_albedo_4fd132a09ab085.uasset",
+      "sha256": "0f23c00c14626696e3f223a214737874e26336c2eee318a69b259ebe5d2b108a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1.uasset",
+      "sha256": "b6aff46e903e8152b7ad25a7361bf8025b90499450c060510cf7927cb3dc1d89"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_Normal_1001_565c6a72dc3a.uasset",
+      "sha256": "d007316c9b605f416117bbff854fe72811c77dff827bfa1d6e80128f3501896d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Arabic_Assets_02_Normal_1021_2c16efe4e182.uasset",
+      "sha256": "2fb1045b277aa583f10046e76b226e2e2840edebd79f23f3edeeb849a7037d5d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Box_AlbedoTransparency_1021_e8b133bd44c7.uasset",
+      "sha256": "d60e9cfdfa29bb3682f90946cb0a9fa0866dccb7717379fb3fbe2f159c1873a9"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Box_Mat_003_Normal_1021_5c6ed22df8b5.uasset",
+      "sha256": "f470795cf6138ef1c265231198c0be4980fa53b5e299f9a427387999356a973c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0025_Barrier.uasset",
+      "sha256": "5434d674fe248bf4f56a2ec99656a385568279c20615610cd5b51a68a41de2f9"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0051_Garbagebin.uasset",
+      "sha256": "1b1ca536131e7ae3d5616f887b29277ee6a29829d350d6d497b1043b44fc419d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0060_Metal_Barrier.uasset",
+      "sha256": "aa9fabebb563a252f0f93205006a9c37b02063c72f34189081b9de86601049b9"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0079_Streetlight.uasset",
+      "sha256": "20e8435480e8e6588e180685d23e37da4549c4205012c397844cf2cccfe3b42a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0081_Streetpowerbox.uasset",
+      "sha256": "0e40ed8d7860bbebe2927507f443ec28e337c302d1bc5f83cc1a48069952bdfb"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0082_Streetsign.uasset",
+      "sha256": "8cf85c401514c7243fd9541d3c1185a724ab73a094e9d4612df0d27cf4b77eab"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0083_Streetsign_001.uasset",
+      "sha256": "d6be84c0f55c18ffd76cb130334bb2ed7eca81ccd5fb2d3e6d92eae0756a57c7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0094_Woodenpole.uasset",
+      "sha256": "0a4326c6e3caa16852e55476048b6213df42f5ff10af07f94a2787a573f04829"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Street_Props_Pack__003.uasset",
+      "sha256": "96ad2e5e865181573931552805f0ffea8fe6c8c1ea1c48b0c58060ad36d717f7"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Street_Props_Pack__004.uasset",
+      "sha256": "6520937f8ce1f6f377caeddb590e8e2bed795ea1632316847de6aac40c5fc339"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Street_Props_Pack__006.uasset",
+      "sha256": "396fcf1b18940425a676dff265bc82f86fa620008990f6f1fd7f1f423a07146f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Street_Props_Pack__010.uasset",
+      "sha256": "171b4bc6ec32a69922ad167a5a63e105b9de582340c992c618bb0698ec61694d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\Street_Props_Pack__012.uasset",
+      "sha256": "694961d0159e60e6a6e5d7fbc1d994164b22b702af63d56535cf223ce968fa7c"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\AcaciaBark_Albedo_44677b97aa82.uasset",
+      "sha256": "200b5b93753a7d258eb1f67eadc31d25b60bf6b7e651e491b128161155d59e8e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\AcaciaBark_Normal_ac37ac262edc.uasset",
+      "sha256": "ed928938056fdeb5e2c097704409e260ce41de8d071ca635fee663c3218f588f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\AcaciaLeafs_58d09573c5d1_albedo_9705e7b1e21f43.uasset",
+      "sha256": "3dcf72f2d8a99b19443ea67e39784a7a42f990fcdc26da68db59a93f2b9c12e8"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\AcaciaLeafs_Normal_f2ea8e494140.uasset",
+      "sha256": "253826a87747ec02aaef86f94c0503a0f4b3cd3ad5f65a73649483748a730b7a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29.uasset",
+      "sha256": "1419bd8316e55e093537fc92ac45e45e284ebd67040cf30d52b1416f127c2bbe"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\coconut_palm_leaf_n_d2a3401423b4.uasset",
+      "sha256": "227d7d3a787e6d1ad3a03c6408a3b6359112736ade4dc10e9eaa6ef5a809dba3"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Material__28.uasset",
+      "sha256": "aceb0b37cb361215d3c18848c17c09ff84e41f4d9c07ea86ee056adae57afdcb"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Material__40.uasset",
+      "sha256": "341b36f8f4cfde73f0c7c802553709a759d05f3a4d6c24e5931c62c7d466c49a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Material__41.uasset",
+      "sha256": "73084f8a3ed9aee744b82af4d7747d1987b2d615c430e5d84781e1cfdd454948"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Nopal_Albedo_37ea2458f30a_albedo_563c50f27df12d.uasset",
+      "sha256": "2b5589595571588bc5bd247222a6de836b31a370ac577345133a4024b81a890b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Nopal_NormalMap_4307c4801264.uasset",
+      "sha256": "8f54b323ded09a19cb161b00c1166e1323be6591b428583f1c9592f0d4f934f1"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Nopal.uasset",
+      "sha256": "64a9a4fdd894ec3b83368f86e368b6fc1f28f04b575a67b21bf4ad7fa321f216"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Original_Submesh_0.uasset",
+      "sha256": "a96652f763e913eb9e196743b75d453311da75236c509d69edf42c0632465ac9"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\Original_Submesh_1.uasset",
+      "sha256": "29baa8cc251ef50fd95c41d46c3257ee8d75a720f27f723ba4042fd954a48971"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\palm03_5453f80b0bad.uasset",
+      "sha256": "a3c6e2d71ba64ab7b14be7988930f318739ec123aed2b1328e279c8000b6702a"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\palm03_n_f1f0a8361d5f.uasset",
+      "sha256": "6b7b8c01751cd1d7e23066c6c3981240f1e6183d1ac6f4aaaf1af051fbc74803"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\SM_H0636_Acacia.uasset",
+      "sha256": "a2d8c95bd79e7290e94a678e3900ff1399b168015168985af31121fffa827f0f"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\SM_H0647_Nopal.uasset",
+      "sha256": "b0f196fb259577829a9c0e88a4d39b3ee9786cdf63a8d1f63741cef4b6c83917"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\SM_H0958_CoconutPalm.uasset",
+      "sha256": "e9575502d9e03f75537e2edcd02d22f444920aee7aa4ab1e48765752168bc3e6"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vehicles\\Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571.uasset",
+      "sha256": "066586d2167de18e71c2b81cea40a63ad5a4a628becf567826d701431a8cc24b"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vehicles\\Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58.uasset",
+      "sha256": "ebd35856a8180f4f0c24cc7253dfb164510c785c20f0f59f9538f8deed56b007"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vehicles\\Arabic_Assets_02_Normal_1011_2f3a4fe8b88a.uasset",
+      "sha256": "19ff128a1f833025c1894c51142ce477eee0bc3936518093904740c3d0cb0a6d"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vehicles\\SM_H0039_Destryoedcar.uasset",
+      "sha256": "8277ae7e2d7a0186f80e132c789472f739555181fb65ea2e5834f37b2b7e702e"
+    },
+    {
+      "path": "Content\\Project\\Shared\\Bank_ME_v3\\Vehicles\\Street_Props_Pack__009.uasset",
+      "sha256": "8bdebedfbe2e31b467e3ef320a4444bbf9d879e7895f7bf46da90183f8327f85"
+    },
+    {
+      "path": "Staging\\ModelBank\\BANK_CANDIDATE_INDEX_2026-09-28.csv",
+      "sha256": "bfee371865ded0d32c9372f704ff0b333e869b4bfe6c72392a7de8f98e2cc8e9"
+    },
+    {
+      "path": "Staging\\TrackA_Tests\\HoudiniCityProof\\10_measure_session\\coordination\\EDITOR_OWNER.txt",
+      "sha256": "7cedab9994aade2b04be88f77ebd121b1427abb1d179decfb80aa936a2e5c111"
+    }
+  ],
+  "side_effects": {
+    "SAVED": {
+      "added": [
+        "Saved\\Config\\CrashReportClient\\UECC-Windows-26C30F0B4A9776212517BE9EC370A422\\CrashReportClient.ini",
+        "Saved\\Logs\\AutoSDKInfo-backup-2026.09.25-10.04.18.json",
+        "Saved\\Logs\\AutoSDKInfo-backup-2026.09.25-10.04.18.txt",
+        "Saved\\Logs\\Environmentpipeline-backup-2026.09.29-10.28.57.log"
+      ],
+      "removed": [
+        "Saved\\Config\\CrashReportClient\\UECC-Windows-F5AF336F4F9E57FD6FF24ABA1732CC39\\CrashReportClient.ini",
+        "Saved\\Logs\\AutoSDKInfo-backup-2026.09.25-10.04.19.json",
+        "Saved\\Logs\\AutoSDKInfo-backup-2026.09.25-10.04.19.txt",
+        "Saved\\Logs\\Environmentpipeline-backup-2026.09.27-16.55.08.log"
+      ],
+      "changed": [
+        "Saved\\Autosaves\\PackageRestoreData.json",
+        "Saved\\AutoScreenshot.png",
+        "Saved\\Config\\WindowsEditor\\EditorPerProjectUserSettings.ini",
+        "Saved\\Logs\\AutoSDKInfo.json",
+        "Saved\\Logs\\AutoSDKInfo.txt",
+        "Saved\\Logs\\Environmentpipeline.log",
+        "Saved\\ShaderDebugInfo\\PCD3D_SM6\\WorldGridMaterial_67bacdd81a65e5e9\\Default\\DDCKey-Editor.txt"
+      ],
+      "before_count": 84,
+      "after_count": 84
+    },
+    "INTERMEDIATE": {
+      "added": [
+        "Intermediate\\CachedAssetRegistry\\CachedAssetRegistry_0_081F20B644ED8D211963C283540507B4.bin"
+      ],
+      "removed": [
+        "Intermediate\\CachedAssetRegistry\\CachedAssetRegistry_0_899BBD5E438CEFF8F4C8099A9E64FCEA.bin"
+      ],
+      "changed": [
+        "Intermediate\\CachedAssetRegistry\\CachedAssetRegistry_0.ref",
+        "Intermediate\\CachedAssetRegistryDiscovery.bin",
+        "Intermediate\\PipInstall\\extra_urls.txt",
+        "Intermediate\\PipInstall\\Lib\\site-packages\\plugin_site_package.pth",
+        "Intermediate\\PipInstall\\merged_requirements.in",
+        "Intermediate\\PipInstall\\pyreqs_plugins.list"
+      ],
+      "before_count": 11,
+      "after_count": 11
+    }
+  },
+  "catalog": {
+    "revision": "v6_current_bounds_2026-09-29",
+    "sha256": "bfee371865ded0d32c9372f704ff0b333e869b4bfe6c72392a7de8f98e2cc8e9",
+    "all_1215_candidates_disabled": true
+  },
+  "bank_to_wire_interpretation": {
+    "MaterialCustomDataChannels": "Empty String is receivable with this VERIFIED_UNUSED graph receipt for the same six material/three mesh file revisions; without receipt an empty String remains unknown.",
+    "AssetRevision": "Still null/unissued at this disabled-candidate stage; owner binds final revision/QualificationEvidence before eligibility.",
+    "actual_DataTable_HAPI_bindings": "All remain null/unverified.",
+    "scope_asset_ids": [
+      "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin"
+    ],
+    "full_Tier1_channel_reserved": false,
+    "H0958_audited": false
+  },
+  "claim_limits": [
+    "Complete returned graph inventory and exact runtime node classes at pinned source/package revisions; no compiled shader consumption or rendered material proof.",
+    "No unsupported DataIndex readback capability was exercised because no reader was present. This does not prove future property reads will work.",
+    "No global/reserved token channel until every actually selected material, including final H0958 choice, is covered.",
+    "Saved and Intermediate deltas are independently reconciled; no whole-machine immutability claim.",
+    "No bank edits, editor contact, HDA cook/bake or eligibility promotion by Track A."
+  ],
+  "remaining": [
+    "Bank-issued AssetRevision/qualification linkage, material/role/rights decisions, physical scale, support contact, footprint and orientation.",
+    "H0958 selected asset/material evidence and all later selected-bank revisions.",
+    "CAT1/INST1, native ID-buffer preservation, Tier1 and final integration lifecycle."
+  ]
+}

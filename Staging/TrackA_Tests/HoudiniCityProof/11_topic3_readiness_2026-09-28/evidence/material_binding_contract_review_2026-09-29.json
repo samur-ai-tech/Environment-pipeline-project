@@ -1,0 +1,322 @@
+{
+  "kind": "OFFLINE_MATERIAL_RECEIVING_CONTRACT_REVIEW_NOT_CATALOG_OR_LIVE_PROOF",
+  "prepared_at": "2026-09-29T09:46:00.135Z",
+  "scope": "Only Topic 3 packet edited. Recorded native bank receipts read; no current native editor readback or dependency traversal.",
+  "contract": "MATERIAL_BINDING_CONTRACT_2026-09-29.md",
+  "schema": "material_bindings.schema.json",
+  "wire": {
+    "columns": 54,
+    "ordinals_names_types_anticipated_attributes_actual_nulls_unchanged": true,
+    "actual_bank_field_null_count": 54,
+    "actual_exported_attribute_null_count": 54
+  },
+  "recorded_bank_bindings": [
+    {
+      "asset_id": "H0907",
+      "binding": {
+        "slot_index": 0,
+        "slot_name": "Arab_X3",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.Arab_X3"
+      },
+      "receipt": "H0907_MATERIAL_REFERENCE.txt",
+      "sha256": "9f9a2d26744f28e1c3d50f339e912e0506ce238c5caeab2c8617faf6d0c6340e"
+    },
+    {
+      "asset_id": "H0013",
+      "binding": {
+        "slot_index": 0,
+        "slot_name": "Material_Building_04_1011",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011"
+      },
+      "receipt": "H0013_MATERIAL_ELEMENT_0.txt",
+      "sha256": "74c4fa61a24639e51f9c3df59bfe3ba61ea7e7e53e92db8622b3e8b3a00ead6a"
+    },
+    {
+      "asset_id": "H0013",
+      "binding": {
+        "slot_index": 1,
+        "slot_name": "Material_Building_04_1001",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001"
+      },
+      "receipt": "H0013_MATERIAL_ELEMENT_1.txt",
+      "sha256": "5857d152a8b86ba772fd156698fa8441b8c1dca6bf9405c1d14f3fc0cadf8514"
+    },
+    {
+      "asset_id": "H0013",
+      "binding": {
+        "slot_index": 2,
+        "slot_name": "Material_Building_04_1031",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031"
+      },
+      "receipt": "H0013_MATERIAL_ELEMENT_2.txt",
+      "sha256": "e877db7e7ee62e5ec2cdba4aa7f80459a2a2b5d17360b5f0a0fc22a1beb64e46"
+    },
+    {
+      "asset_id": "H0013",
+      "binding": {
+        "slot_index": 3,
+        "slot_name": "Material_Building_04_1021",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021"
+      },
+      "receipt": "H0013_MATERIAL_ELEMENT_3.txt",
+      "sha256": "15e0fa0516bff1d1784a2a398d36b0b3a53e9ea423221bbd42740fe71d838887"
+    },
+    {
+      "asset_id": "H0051",
+      "binding": {
+        "slot_index": 0,
+        "slot_name": "Street_Props_Pack__003",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003"
+      },
+      "receipt": "H0051_MATERIAL_REFERENCE.txt",
+      "sha256": "63089618492a41652a19ae448ab47edd4db100c46b2336a9ca98956bd8674d85"
+    }
+  ],
+  "slot_names_basis": "OBSERVATIONS.json labels 02/10 H0907, 12/13/25 H0013, 27 H0051; H0051 current label differs from historical import label according to bank owner. No inferred qualification.",
+  "parsed_ordered_arrays_for_owner_review": {
+    "H0907": [
+      {
+        "slot_index": 0,
+        "slot_name": "Arab_X3",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3.Arab_X3"
+      }
+    ],
+    "H0013": [
+      {
+        "slot_index": 0,
+        "slot_name": "Material_Building_04_1011",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011.Material_Building_04_1011"
+      },
+      {
+        "slot_index": 1,
+        "slot_name": "Material_Building_04_1001",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001.Material_Building_04_1001"
+      },
+      {
+        "slot_index": 2,
+        "slot_name": "Material_Building_04_1031",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031.Material_Building_04_1031"
+      },
+      {
+        "slot_index": 3,
+        "slot_name": "Material_Building_04_1021",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021.Material_Building_04_1021"
+      }
+    ],
+    "H0051": [
+      {
+        "slot_index": 0,
+        "slot_name": "Street_Props_Pack__003",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003.Street_Props_Pack__003"
+      }
+    ]
+  },
+  "validation": {
+    "method": "One-off offline semantic checks against the published schema constraints and extra ordering/eligibility rules; no executable helper saved or Unreal API called.",
+    "cases": [
+      {
+        "case": "H0907 observed",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "H0013 observed order",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "H0051 current slot name",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "duplicate slot index",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "out of order",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "slot count mismatch",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "string index",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "package-only path",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "clipboard wrapper",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "unknown extra field",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "null path audit",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "null path eligibility",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "zero slots audit",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "zero slots eligibility",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "unknown scalar not array",
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      {
+        "case": "duplicate names/materials preserved",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "None observed slot name",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      },
+      {
+        "case": "decoded JSON round trip",
+        "expected": true,
+        "observed": true,
+        "pass": true
+      }
+    ],
+    "passed": 18
+  },
+  "sources": [
+    {
+      "path": "Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniInstanceTranslator.cpp",
+      "sha256": "a49230212da722f914739f00ef035f37f2b9eb0001b5a88445da8affe672e0a8"
+    },
+    {
+      "path": "Plugins/HoudiniEngine/Source/HoudiniEngine/Private/HoudiniInputTranslator.cpp",
+      "sha256": "9bfc0675643e28c03ec3f9c3a23586e093daef3c0b5f4b7412e4387bdfb6e985"
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/AGENTS.md",
+      "sha256": "d4c843ca4041dfb13ee13effd90daf0947aeb20f7d75552e376882ccb124b5d7",
+      "current_sha256": "d4c843ca4041dfb13ee13effd90daf0947aeb20f7d75552e376882ccb124b5d7"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/BANK_CANDIDATE_INDEX_2026-09-28.csv",
+      "sha256": "495985e2697c4bbbbe735e80184c5e73da5b94a4444feb5bafdcbc6621adea42",
+      "current_sha256": "495985e2697c4bbbbe735e80184c5e73da5b94a4444feb5bafdcbc6621adea42"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-29_Astra_Tier1/OBSERVATIONS.json",
+      "sha256": "fe925569abab7c8db8c9225b18fe05f1827416238f5edd9703da1ebeac12eec0",
+      "current_sha256": "fe925569abab7c8db8c9225b18fe05f1827416238f5edd9703da1ebeac12eec0"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/Inspection_2026-09-29_Astra_Tier1/FINAL_VALIDATION.json",
+      "sha256": "9dc053869ae696498c9de012025d764aab683c12c6116dfca9e1aed0431066ef",
+      "current_sha256": "9dc053869ae696498c9de012025d764aab683c12c6116dfca9e1aed0431066ef"
+    },
+    {
+      "path": "C:/Users/USER/Documents/Pipeline Environment/CONTRACT.md",
+      "sha256": "0a8a49b54fa28a5a33539f6aca651fe3b25710057c7aa98b0b7e145f4817f710",
+      "current_sha256": "0a8a49b54fa28a5a33539f6aca651fe3b25710057c7aa98b0b7e145f4817f710"
+    }
+  ],
+  "remaining": [
+    "Bank owner adopts encoding in its selected subset; actual table/export binding not delivered.",
+    "Current recursive dependency closure and material custom-data channel audit remain unverified.",
+    "Native cook/bake/reopen preservation and HDA connection not run."
+  ],
+  "packet_json_parse_checks": [
+    {
+      "path": "material_bindings.schema.json",
+      "sha256": "c01e7706cfb9ba78720ab0f6d867c880e0b8c37e554eae53bafd1d17e8931341"
+    },
+    {
+      "path": "catalog_wire_contract.proposed.json",
+      "sha256": "982d0b1086ac6d4fdf9a7f2d385f28b4c2b1de62b5f2bba83c88bb6c8f6d8b52"
+    },
+    {
+      "path": "hda_interface_target.v1.json",
+      "sha256": "8c02c5a8030415fea72e2bcdb084307bc94ee44a887d3727948e7c6a5cda0766"
+    },
+    {
+      "path": "bank_handoff_receipt.template.json",
+      "sha256": "a7402dd8f16ff60399f9b7fe7d63ef3a4338c217f5033165fb350707b2c78b43"
+    },
+    {
+      "path": "bank_field_alias_map.proposed.json",
+      "sha256": "9066b376e519703ef2a4acb363914e84be1dd20ce66368acb5d018c19d30e0df"
+    },
+    {
+      "path": "measurement.template.json",
+      "sha256": "e57daa397b85bb84657e73d0471076489621513dffa3618cf9ad0a220e0ce866"
+    }
+  ],
+  "packet_document_checks": [
+    {
+      "path": "MATERIAL_BINDING_CONTRACT_2026-09-29.md",
+      "sha256": "cab2d30f321ab59fb7cde57aad3e333b76d622944b07418fb4ae916dc9257540"
+    },
+    {
+      "path": "BANK_INTERFACE_REQUIREMENTS.md",
+      "sha256": "6ee3e815b62ab25dc46b946b607539ed078e65c90ace197e0f3fb99fb6d67f8f"
+    },
+    {
+      "path": "READINESS.md",
+      "sha256": "201d8f536d59a6f8ffa258144af4e330023ba5b574088cd5907a258983de18ec"
+    },
+    {
+      "path": "PREPARATION_STATUS_2026-09-29.md",
+      "sha256": "94154f1c7f3fef5a0b9b7aafa3b319373afdc9233c6754f87cb05cb605ea416e"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "sha256": "8a422a75fb345badc9ee86097df635d5460ee82c873057fb4fc19391212ed39a"
+    },
+    {
+      "path": "MEASUREMENT_SPEC.md",
+      "sha256": "85d93666e48e96ae02d71479fdcb3a9e69f240f9ff91b5ad874b6255e1a804fd"
+    }
+  ]
+}

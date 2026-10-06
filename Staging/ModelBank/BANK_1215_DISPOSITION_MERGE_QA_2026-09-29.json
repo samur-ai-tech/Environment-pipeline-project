@@ -1,0 +1,105 @@
+{
+  "baseline_file": "Staging/ModelBank/BANK_CANDIDATE_INDEX_2026-09-29.csv",
+  "baseline_sha256": "1553B0AFE81F816C1AD6F2F44CE4B1CEC6C3943E68251E4E73C7B61ACB3DC1B1",
+  "lane_files": {
+    "architecture": {
+      "path": "Staging/ModelBank/DECISION_REVIEW_ARCHITECTURE_2026-09-29.csv",
+      "sha256": "D9779E5A6243D354EC48512ED512CB72B474929225A4C2CF203881093B82B12C",
+      "rows": 490
+    },
+    "props": {
+      "path": "Staging/ModelBank/DECISION_REVIEW_PROPS_2026-09-29.csv",
+      "sha256": "6ED434E75615FE8CD8921E4536500AD6D88583AE3F354CCEF74CC8A11D486302",
+      "rows": 551
+    },
+    "surface_vegetation": {
+      "path": "Staging/ModelBank/DECISION_REVIEW_SURFACE_VEGETATION_2026-09-29.csv",
+      "sha256": "0993B40227DE38467DA1CC464117558AA69E69EFA1874C536F8AF028E78FEE90",
+      "rows": 174
+    }
+  },
+  "merged_file": "Staging/ModelBank/BANK_1215_DISPOSITION_REVIEW_2026-09-29.csv",
+  "merged_sha256": "CDB8A5679C797215BF7E9847543FD91C9D7101774E73BBC311466D27B69D9B01",
+  "rows": 1215,
+  "columns": 19,
+  "unique_ids": 1215,
+  "exact_v7_order": true,
+  "family_count": 324,
+  "source_scope": {
+    "current": 930,
+    "external": 285
+  },
+  "proposal_states": {
+    "reserve": 1187,
+    "exclude": 28
+  },
+  "exclude_preliminary": {
+    "exclude": 28
+  },
+  "final_state_blank": 1215,
+  "qualified_or_enabled_baseline_rows": 0,
+  "category_counts": {
+    "StreetProps": 172,
+    "Utility/RooftopProps": 130,
+    "SmallProps": 174,
+    "Buildings/Modules": 445,
+    "Signs": 95,
+    "Buildings/Whole": 66,
+    "Vegetation": 80,
+    "Materials/Ground": 22,
+    "Utility/SceneSetup": 16,
+    "Utility/Dependencies": 8,
+    "Materials/Road": 6,
+    "Materials/Facade": 1
+  },
+  "representation_proposals": {
+    "bg_module_candidate": {
+      "reserve": 408
+    },
+    "compound_junction_assembly": {
+      "reserve": 1
+    },
+    "compound_prop_instance": {
+      "reserve": 5
+    },
+    "compound_vegetation_instance": {
+      "reserve": 3
+    },
+    "dependency": {
+      "reserve": 8
+    },
+    "material": {
+      "reserve": 11
+    },
+    "material_function_dependency": {
+      "reserve": 10
+    },
+    "module_candidate": {
+      "reserve": 16
+    },
+    "prop": {
+      "reserve": 527,
+      "exclude": 11
+    },
+    "prop_instance": {
+      "reserve": 7
+    },
+    "scene_setup": {
+      "exclude": 16
+    },
+    "surface_instance": {
+      "reserve": 40,
+      "exclude": 1
+    },
+    "texture_set": {
+      "reserve": 8
+    },
+    "vegetation_instance": {
+      "reserve": 77
+    },
+    "whole_instance": {
+      "reserve": 66
+    }
+  },
+  "issues": []
+}

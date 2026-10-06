@@ -1,0 +1,244 @@
+,pegasus::Sop/heightfield_occlusion_mask::1.0
+-----
+(pegasus::heightfield_occlusion_mask::1.0
+-----
+`oplib:/pegasus::Sop/heightfield_occlusion_mask::1.0?pegasus::Sop/heightfield_occlusion_mask::1.0
+-----
+=opdef:/pegasus::Sop/heightfield_occlusion_mask::1.0?IconImage
+-----
+einputcolors='1 "RGB 0.145142 0.666504 0.556641" ' outputcolors='1 "RGB 0.700195 0.700195 0.700195" ' 
+-----
+# Dialog script for pegasus::heightfield_occlusion_mask::1.0 automatically generated
+
+{
+    name	pegasus::heightfield_occlusion_mask::1.0
+    script	ians::hf_occlusion_mask::1.0
+    label	"HeightField Occlusion Mask"
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+    inputlabel	2	"Sub-Network Input #2"
+    inputlabel	3	"Sub-Network Input #3"
+    inputlabel	4	"Sub-Network Input #4"
+
+    groupsimple {
+        name    "occlusion_layers"
+        label   "Occlusion Layers"
+
+        parm {
+            name    "blend1"
+            label   "Small"
+            type    float
+            default { "1" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "medium"
+            label   "Medium"
+            type    float
+            default { "0.75" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "large"
+            label   "Large"
+            type    float
+            default { "0.5" }
+            range   { 0 1 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+        parm {
+            name    "sepparm3"
+            label   "Spacer"
+            type    separator
+            default { "" }
+            parmtag { "sidefx::layout_height" "small" }
+            parmtag { "sidefx::look" "blank" }
+        }
+        parm {
+            name    "postscale"
+            label   "Scale"
+            type    float
+            default { "1" }
+            range   { 0 10 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "script_callback_language" "python" }
+        }
+    }
+
+    groupcollapsible {
+        name    "ramp"
+        label   "Ramp"
+
+        parm {
+            name    "remap"
+            label   "Remap"
+            type    ramp_flt
+            default { "3" }
+            range   { 1! 10 }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "rampfloatdefault" "1pos ( 0 ) 1value ( 0 ) 1interp ( bspline ) 2pos ( 0.17494601011276245 ) 2value ( 1 ) 2interp ( bspline ) 3pos ( 1 ) 3value ( 1 ) 3interp ( bspline )" }
+        }
+    }
+
+    groupcollapsible {
+        name    "advanced"
+        label   "Advanced"
+
+        groupsimple {
+            name    "ao_small"
+            label   "AO Small"
+
+            parm {
+                name    "aosmall_viewdistance"
+                label   "View Distance"
+                type    float
+                default { "10" }
+                range   { 0! 1000 }
+                parmtag { "autoscope" "0000000000000000" }
+            }
+            parm {
+                name    "combine1"
+                label   "Blend Mode"
+                type    ordinal
+                default { "max" }
+                menu {
+                    "copy"  "Copy"
+                    "add"   "Add"
+                    "sub"   "Subtract"
+                    "mul"   "Multiply"
+                    "div"   "Divide"
+                    "max"   "Maximum"
+                    "min"   "Minimum"
+                }
+                parmtag { "autoscope" "0000000000000000" }
+                parmtag { "script_callback_language" "python" }
+            }
+        }
+
+        groupsimple {
+            name    "ao_medium"
+            label   "AO Medium"
+
+            parm {
+                name    "aomedium_viewdistance"
+                label   "View Distance"
+                type    float
+                default { "50" }
+                range   { 0! 1000 }
+                parmtag { "autoscope" "0000000000000000" }
+            }
+            parm {
+                name    "combine2"
+                label   "Blend Mode"
+                type    ordinal
+                default { "max" }
+                menu {
+                    "copy"  "Copy"
+                    "add"   "Add"
+                    "sub"   "Subtract"
+                    "mul"   "Multiply"
+                    "div"   "Divide"
+                    "max"   "Maximum"
+                    "min"   "Minimum"
+                }
+                parmtag { "autoscope" "0000000000000000" }
+                parmtag { "script_callback_language" "python" }
+            }
+        }
+
+        groupsimple {
+            name    "ao_large"
+            label   "AO Large"
+
+            parm {
+                name    "aolarge_viewdistance"
+                label   "View Distance"
+                type    float
+                default { "100" }
+                range   { 0! 1000 }
+                parmtag { "autoscope" "0000000000000000" }
+            }
+            parm {
+                name    "combine3"
+                label   "Blend Mode"
+                type    ordinal
+                default { "max" }
+                menu {
+                    "copy"  "Copy"
+                    "add"   "Add"
+                    "sub"   "Subtract"
+                    "mul"   "Multiply"
+                    "div"   "Divide"
+                    "max"   "Maximum"
+                    "min"   "Minimum"
+                }
+                parmtag { "autoscope" "0000000000000000" }
+                parmtag { "script_callback_language" "python" }
+            }
+        }
+
+    }
+
+}
+# Automatically generated script
+\set noalias = 1
+#
+#  Creation script for pegasus::heightfield_occlusion_mask::1.0 operator
+#
+
+if ( "$arg1" == "" ) then
+    echo This script is intended as a creation script
+    exit
+endif
+
+# Node $arg1 (pegasus::Sop/heightfield_occlusion_mask::1.0)
+opexprlanguage -s hscript $arg1
+opuserdata -n '___Version___' -v '' $arg1
+
+-----
+CheckExternal := 1;
+ContentsCompressionType := 1;
+ForbidOutsideParms := 1;
+GzipContents := 1;
+LockContents := 1;
+MakeDefault := 1;
+ParmsFromVfl := 0;
+PrefixDroppedParmLabel := 0;
+PrefixDroppedParmName := 0;
+SaveCachedCode := 0;
+SaveIcon := 1;
+SaveSpareParms := 0;
+UnlockOnCreate := 0;
+UseDSParms := 1;
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <tool name="$HDA_DEFAULT_TOOL" label="$HDA_LABEL" icon="$HDA_ICON">
+    <toolMenuContext name="viewer">
+      <contextNetType>SOP</contextNetType>
+    </toolMenuContext>
+    <toolMenuContext name="network">
+      <contextOpType>$HDA_TABLE_AND_NAME</contextOpType>
+    </toolMenuContext>
+    <toolSubmenu>Pegasus/Terrain</toolSubmenu>
+    <script scriptType="python"><![CDATA[import soptoolutils
+
+soptoolutils.genericTool(kwargs, '$HDA_NAME')]]></script>
+  </tool>
+</shelfDocument>
+PIC2
+-----
+Created by Houdini20.0.653 [05/03/24 12:44:40]

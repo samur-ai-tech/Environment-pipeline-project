@@ -1,0 +1,1870 @@
+{
+ "schema": "environmentpipeline.ground_hybrid_expectations.v1",
+ "status": "OFFLINE_EXPECTATIONS_NOT_EXECUTED",
+ "generated_from": {
+  "target": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\hybrid_build_master.py",
+  "target_sha256": "ad7daced2dd8e40c52a115c8bd6319b779603650cbd330f62d924bcfe223492d",
+  "generator": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\hybrid_build_master_offline.py",
+  "generator_sha256": "69c98d513ae0b99eff16aab770cd05fea56f0bbc0a9bc52c391fb804b4d0e2ef"
+ },
+ "plan": "Stage1_Ground/Hybrid_Auto/PLAN_HYBRID.md (Urban graph, Option A injection into MakeMaterialAttributes_0)",
+ "node_desc_prefix": "GeoCity_GroundHybrid_20261006:",
+ "canvas": {
+  "x0": 2500,
+  "y0": 1400,
+  "cols": 8,
+  "xstep": 240,
+  "ystep": 230
+ },
+ "vendor_node_count": 190,
+ "added_node_count": 56,
+ "expected_node_count": 246,
+ "mma_rewire": {
+  "BaseColor": "new:OutBaseColor",
+  "Normal": "new:OutUnitNormal",
+  "Roughness": "new:OutRoughness",
+  "Specular": "new:OutSpecular",
+  "AmbientOcclusion": "new:OutAmbientOcclusion"
+ },
+ "mma_unchanged": {
+  "Metallic": [
+   "anchor:water",
+   "Metallic"
+  ]
+ },
+ "anchors": {
+  "debug_bake": "MaterialExpressionStaticSwitchParameter_16",
+  "water": "MaterialExpressionMaterialFunctionCall_14",
+  "mma": "MaterialExpressionMakeMaterialAttributes_0"
+ },
+ "parameters": {
+  "scalars": {
+   "Urban_Amount": 0.0,
+   "Urban_PadAmount": 1.0,
+   "Urban_RoadAmount": 1.0,
+   "Urban_TileCm": 400.0,
+   "Urban_FarScale": 6.0,
+   "Urban_FarDistanceCm": 4000.0,
+   "Urban_GridCm": 100.0,
+   "Urban_RoughnessScale": 1.0,
+   "Urban_NormalStrength": 1.0,
+   "Urban_Specular": 0.5
+  },
+  "vectors": {
+   "Urban_Tint": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "textures": [
+   "Urban_BaseColor",
+   "Urban_Normal",
+   "Urban_Roughness",
+   "Urban_AO"
+  ],
+  "group": "GeoCity_Urban"
+ },
+ "layer_samples_after": [
+  "Dirt_Path",
+  "RemoveFoliage",
+  "Sand_01",
+  "Sand_02",
+  "Sand_Path"
+ ],
+ "sample_textures": {
+  "NearColorSample": "Urban_BaseColor",
+  "FarColorSample": "Urban_BaseColor",
+  "NormalSample": "Urban_Normal",
+  "RoughnessSample": "Urban_Roughness",
+  "AOSample": "Urban_AO"
+ },
+ "texture_sets": {
+  "asphalt_cracked": {
+   "textures": {
+    "Urban_BaseColor": [
+     "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_basecolor.T_asphalt_cracked_basecolor",
+     "color"
+    ],
+    "Urban_Normal": [
+     "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_normal.T_asphalt_cracked_normal",
+     "normal"
+    ],
+    "Urban_Roughness": [
+     "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_roughness.T_asphalt_cracked_roughness",
+     "linear"
+    ],
+    "Urban_AO": [
+     "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_AO.T_asphalt_cracked_AO",
+     "linear"
+    ]
+   },
+   "channels": {
+    "roughness": "R",
+    "ao": "R"
+   },
+   "nodes": {
+    "Urban_Amount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2500,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_Amount",
+      "default_value": 0.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_PadAmount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2740,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_PadAmount",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_RoadAmount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2980,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_RoadAmount",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_TileCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3220,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_TileCm",
+      "default_value": 400.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_FarScale": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3460,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_FarScale",
+      "default_value": 6.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_FarDistanceCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3700,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_FarDistanceCm",
+      "default_value": 4000.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_GridCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3940,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_GridCm",
+      "default_value": 100.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_RoughnessScale": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 4180,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_RoughnessScale",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_NormalStrength": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2500,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_NormalStrength",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Specular": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2740,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Specular",
+      "default_value": 0.5,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Tint": {
+     "class": "MaterialExpressionVectorParameter",
+     "edges": {},
+     "x": 2980,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Tint",
+      "default_value": [
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ],
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_BaseColor": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3220,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_BaseColor",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Normal": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3460,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Normal",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Roughness": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3700,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Roughness",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_AO": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3940,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_AO",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "WeightSand_01": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 4180,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Sand_01"
+     }
+    },
+    "WeightSand_02": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2500,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Sand_02"
+     }
+    },
+    "WeightDirt_Path": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2740,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Dirt_Path"
+     }
+    },
+    "WeightSand_Path": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2980,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Sand_Path"
+     }
+    },
+    "PadWeight": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:WeightSand_Path",
+       ""
+      ],
+      "B": [
+       "new:Urban_PadAmount",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 1860,
+     "props": {}
+    },
+    "RoadWeight": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:WeightDirt_Path",
+       ""
+      ],
+      "B": [
+       "new:Urban_RoadAmount",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 1860,
+     "props": {}
+    },
+    "PadPlusRoad": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:PadWeight",
+       ""
+      ],
+      "B": [
+       "new:RoadWeight",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 1860,
+     "props": {}
+    },
+    "GroundLayerSum": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:WeightSand_01",
+       ""
+      ],
+      "B": [
+       "new:WeightSand_02",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 1860,
+     "props": {}
+    },
+    "LayerPresenceZero": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:GroundLayerSum",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 1860,
+     "props": {
+      "const_b": 0.0
+     }
+    },
+    "UrbanMaskRaw": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:PadPlusRoad",
+       ""
+      ],
+      "B": [
+       "new:LayerPresenceZero",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanCoverage": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:UrbanMaskRaw",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanMaskAmount": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:UrbanCoverage",
+       ""
+      ],
+      "B": [
+       "new:Urban_Amount",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanMask": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:UrbanMaskAmount",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2090,
+     "props": {}
+    },
+    "LandscapeCoords": {
+     "class": "MaterialExpressionLandscapeLayerCoords",
+     "edges": {},
+     "x": 3460,
+     "y": 2090,
+     "props": {}
+    },
+    "TileCmPositive": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_TileCm",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2090,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "CmToUV": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:Urban_GridCm",
+       ""
+      ],
+      "B": [
+       "new:TileCmPositive",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2090,
+     "props": {}
+    },
+    "NearUV": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:LandscapeCoords",
+       ""
+      ],
+      "B": [
+       "new:CmToUV",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2090,
+     "props": {}
+    },
+    "FarScaleMin1": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_FarScale",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2320,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "FarUV": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:NearUV",
+       ""
+      ],
+      "B": [
+       "new:FarScaleMin1",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2320,
+     "props": {}
+    },
+    "PixelDepth": {
+     "class": "MaterialExpressionPixelDepth",
+     "edges": {},
+     "x": 2980,
+     "y": 2320,
+     "props": {}
+    },
+    "FarDistancePositive": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_FarDistanceCm",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2320,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "DistanceRaw": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:PixelDepth",
+       ""
+      ],
+      "B": [
+       "new:FarDistancePositive",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2320,
+     "props": {}
+    },
+    "DistanceAlpha": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:DistanceRaw",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2320,
+     "props": {}
+    },
+    "NearColorSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_BaseColor",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2320,
+     "props": {}
+    },
+    "FarColorSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:FarUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_BaseColor",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2320,
+     "props": {}
+    },
+    "NearFarColor": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "new:NearColorSample",
+       "RGB"
+      ],
+      "B": [
+       "new:FarColorSample",
+       "RGB"
+      ],
+      "Alpha": [
+       "new:DistanceAlpha",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanColor": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:NearFarColor",
+       ""
+      ],
+      "B": [
+       "new:Urban_Tint",
+       "RGB"
+      ]
+     },
+     "x": 2740,
+     "y": 2550,
+     "props": {}
+    },
+    "NormalSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_Normal",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2550,
+     "props": {}
+    },
+    "FlatNormal": {
+     "class": "MaterialExpressionConstant3Vector",
+     "edges": {},
+     "x": 3220,
+     "y": 2550,
+     "props": {
+      "constant": [
+       0.0,
+       0.0,
+       1.0,
+       0.0
+      ]
+     }
+    },
+    "UrbanNormalStrength": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "new:FlatNormal",
+       ""
+      ],
+      "B": [
+       "new:NormalSample",
+       "RGB"
+      ],
+      "Alpha": [
+       "new:Urban_NormalStrength",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanUnitNormal": {
+     "class": "MaterialExpressionNormalize",
+     "edges": {
+      "VectorInput": [
+       "new:UrbanNormalStrength",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2550,
+     "props": {}
+    },
+    "RoughnessSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_Roughness",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2550,
+     "props": {}
+    },
+    "RoughnessScaled": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:RoughnessSample",
+       "R"
+      ],
+      "B": [
+       "new:Urban_RoughnessScale",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanRoughness": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:RoughnessScaled",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2780,
+     "props": {}
+    },
+    "AOSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_AO",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2780,
+     "props": {}
+    },
+    "OutBaseColor": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:debug_bake",
+       ""
+      ],
+      "B": [
+       "new:UrbanColor",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2780,
+     "props": {}
+    },
+    "OutNormalBlend": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Normal"
+      ],
+      "B": [
+       "new:UrbanUnitNormal",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2780,
+     "props": {}
+    },
+    "OutUnitNormal": {
+     "class": "MaterialExpressionNormalize",
+     "edges": {
+      "VectorInput": [
+       "new:OutNormalBlend",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2780,
+     "props": {}
+    },
+    "OutRoughness": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Roughness"
+      ],
+      "B": [
+       "new:UrbanRoughness",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2780,
+     "props": {}
+    },
+    "OutSpecular": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Specular"
+      ],
+      "B": [
+       "new:Urban_Specular",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2780,
+     "props": {}
+    },
+    "OutAmbientOcclusion": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "B": [
+       "new:AOSample",
+       "R"
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2780,
+     "props": {
+      "const_a": 1.0
+     }
+    }
+   }
+  },
+  "concrete_plate": {
+   "textures": {
+    "Urban_BaseColor": [
+     "/Game/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_BaseColor.T_Concrete_plate_BaseColor",
+     "color"
+    ],
+    "Urban_Normal": [
+     "/Game/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_Normal.T_Concrete_plate_Normal",
+     "normal"
+    ],
+    "Urban_Roughness": [
+     "/Game/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_ORM.T_Concrete_plate_ORM",
+     "linear"
+    ],
+    "Urban_AO": [
+     "/Game/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_ORM.T_Concrete_plate_ORM",
+     "linear"
+    ]
+   },
+   "channels": {
+    "roughness": "G",
+    "ao": "R"
+   },
+   "nodes": {
+    "Urban_Amount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2500,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_Amount",
+      "default_value": 0.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_PadAmount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2740,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_PadAmount",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_RoadAmount": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2980,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_RoadAmount",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_TileCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3220,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_TileCm",
+      "default_value": 400.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_FarScale": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3460,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_FarScale",
+      "default_value": 6.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_FarDistanceCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3700,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_FarDistanceCm",
+      "default_value": 4000.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_GridCm": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 3940,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_GridCm",
+      "default_value": 100.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_RoughnessScale": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 4180,
+     "y": 1400,
+     "props": {
+      "parameter_name": "Urban_RoughnessScale",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_NormalStrength": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2500,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_NormalStrength",
+      "default_value": 1.0,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Specular": {
+     "class": "MaterialExpressionScalarParameter",
+     "edges": {},
+     "x": 2740,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Specular",
+      "default_value": 0.5,
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Tint": {
+     "class": "MaterialExpressionVectorParameter",
+     "edges": {},
+     "x": 2980,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Tint",
+      "default_value": [
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ],
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_BaseColor": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3220,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_BaseColor",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Normal": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3460,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Normal",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_Roughness": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3700,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_Roughness",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "Urban_AO": {
+     "class": "MaterialExpressionTextureObjectParameter",
+     "edges": {},
+     "x": 3940,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Urban_AO",
+      "group": "GeoCity_Urban"
+     }
+    },
+    "WeightSand_01": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 4180,
+     "y": 1630,
+     "props": {
+      "parameter_name": "Sand_01"
+     }
+    },
+    "WeightSand_02": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2500,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Sand_02"
+     }
+    },
+    "WeightDirt_Path": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2740,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Dirt_Path"
+     }
+    },
+    "WeightSand_Path": {
+     "class": "MaterialExpressionLandscapeLayerSample",
+     "edges": {},
+     "x": 2980,
+     "y": 1860,
+     "props": {
+      "parameter_name": "Sand_Path"
+     }
+    },
+    "PadWeight": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:WeightSand_Path",
+       ""
+      ],
+      "B": [
+       "new:Urban_PadAmount",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 1860,
+     "props": {}
+    },
+    "RoadWeight": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:WeightDirt_Path",
+       ""
+      ],
+      "B": [
+       "new:Urban_RoadAmount",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 1860,
+     "props": {}
+    },
+    "PadPlusRoad": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:PadWeight",
+       ""
+      ],
+      "B": [
+       "new:RoadWeight",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 1860,
+     "props": {}
+    },
+    "GroundLayerSum": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:WeightSand_01",
+       ""
+      ],
+      "B": [
+       "new:WeightSand_02",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 1860,
+     "props": {}
+    },
+    "LayerPresenceZero": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:GroundLayerSum",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 1860,
+     "props": {
+      "const_b": 0.0
+     }
+    },
+    "UrbanMaskRaw": {
+     "class": "MaterialExpressionAdd",
+     "edges": {
+      "A": [
+       "new:PadPlusRoad",
+       ""
+      ],
+      "B": [
+       "new:LayerPresenceZero",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanCoverage": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:UrbanMaskRaw",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanMaskAmount": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:UrbanCoverage",
+       ""
+      ],
+      "B": [
+       "new:Urban_Amount",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2090,
+     "props": {}
+    },
+    "UrbanMask": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:UrbanMaskAmount",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2090,
+     "props": {}
+    },
+    "LandscapeCoords": {
+     "class": "MaterialExpressionLandscapeLayerCoords",
+     "edges": {},
+     "x": 3460,
+     "y": 2090,
+     "props": {}
+    },
+    "TileCmPositive": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_TileCm",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2090,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "CmToUV": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:Urban_GridCm",
+       ""
+      ],
+      "B": [
+       "new:TileCmPositive",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2090,
+     "props": {}
+    },
+    "NearUV": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:LandscapeCoords",
+       ""
+      ],
+      "B": [
+       "new:CmToUV",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2090,
+     "props": {}
+    },
+    "FarScaleMin1": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_FarScale",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2320,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "FarUV": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:NearUV",
+       ""
+      ],
+      "B": [
+       "new:FarScaleMin1",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2320,
+     "props": {}
+    },
+    "PixelDepth": {
+     "class": "MaterialExpressionPixelDepth",
+     "edges": {},
+     "x": 2980,
+     "y": 2320,
+     "props": {}
+    },
+    "FarDistancePositive": {
+     "class": "MaterialExpressionMax",
+     "edges": {
+      "A": [
+       "new:Urban_FarDistanceCm",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2320,
+     "props": {
+      "const_b": 1.0
+     }
+    },
+    "DistanceRaw": {
+     "class": "MaterialExpressionDivide",
+     "edges": {
+      "A": [
+       "new:PixelDepth",
+       ""
+      ],
+      "B": [
+       "new:FarDistancePositive",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2320,
+     "props": {}
+    },
+    "DistanceAlpha": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:DistanceRaw",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2320,
+     "props": {}
+    },
+    "NearColorSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_BaseColor",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2320,
+     "props": {}
+    },
+    "FarColorSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:FarUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_BaseColor",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2320,
+     "props": {}
+    },
+    "NearFarColor": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "new:NearColorSample",
+       "RGB"
+      ],
+      "B": [
+       "new:FarColorSample",
+       "RGB"
+      ],
+      "Alpha": [
+       "new:DistanceAlpha",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanColor": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:NearFarColor",
+       ""
+      ],
+      "B": [
+       "new:Urban_Tint",
+       "RGB"
+      ]
+     },
+     "x": 2740,
+     "y": 2550,
+     "props": {}
+    },
+    "NormalSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_Normal",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2550,
+     "props": {}
+    },
+    "FlatNormal": {
+     "class": "MaterialExpressionConstant3Vector",
+     "edges": {},
+     "x": 3220,
+     "y": 2550,
+     "props": {
+      "constant": [
+       0.0,
+       0.0,
+       1.0,
+       0.0
+      ]
+     }
+    },
+    "UrbanNormalStrength": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "new:FlatNormal",
+       ""
+      ],
+      "B": [
+       "new:NormalSample",
+       "RGB"
+      ],
+      "Alpha": [
+       "new:Urban_NormalStrength",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanUnitNormal": {
+     "class": "MaterialExpressionNormalize",
+     "edges": {
+      "VectorInput": [
+       "new:UrbanNormalStrength",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2550,
+     "props": {}
+    },
+    "RoughnessSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_Roughness",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2550,
+     "props": {}
+    },
+    "RoughnessScaled": {
+     "class": "MaterialExpressionMultiply",
+     "edges": {
+      "A": [
+       "new:RoughnessSample",
+       "G"
+      ],
+      "B": [
+       "new:Urban_RoughnessScale",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2550,
+     "props": {}
+    },
+    "UrbanRoughness": {
+     "class": "MaterialExpressionSaturate",
+     "edges": {
+      "None": [
+       "new:RoughnessScaled",
+       ""
+      ]
+     },
+     "x": 2500,
+     "y": 2780,
+     "props": {}
+    },
+    "AOSample": {
+     "class": "MaterialExpressionTextureSample",
+     "edges": {
+      "UVs": [
+       "new:NearUV",
+       ""
+      ],
+      "Tex": [
+       "new:Urban_AO",
+       ""
+      ]
+     },
+     "x": 2740,
+     "y": 2780,
+     "props": {}
+    },
+    "OutBaseColor": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:debug_bake",
+       ""
+      ],
+      "B": [
+       "new:UrbanColor",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 2980,
+     "y": 2780,
+     "props": {}
+    },
+    "OutNormalBlend": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Normal"
+      ],
+      "B": [
+       "new:UrbanUnitNormal",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3220,
+     "y": 2780,
+     "props": {}
+    },
+    "OutUnitNormal": {
+     "class": "MaterialExpressionNormalize",
+     "edges": {
+      "VectorInput": [
+       "new:OutNormalBlend",
+       ""
+      ]
+     },
+     "x": 3460,
+     "y": 2780,
+     "props": {}
+    },
+    "OutRoughness": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Roughness"
+      ],
+      "B": [
+       "new:UrbanRoughness",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3700,
+     "y": 2780,
+     "props": {}
+    },
+    "OutSpecular": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "A": [
+       "anchor:water",
+       "Specular"
+      ],
+      "B": [
+       "new:Urban_Specular",
+       ""
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 3940,
+     "y": 2780,
+     "props": {}
+    },
+    "OutAmbientOcclusion": {
+     "class": "MaterialExpressionLinearInterpolate",
+     "edges": {
+      "B": [
+       "new:AOSample",
+       "R"
+      ],
+      "Alpha": [
+       "new:UrbanMask",
+       ""
+      ]
+     },
+     "x": 4180,
+     "y": 2780,
+     "props": {
+      "const_a": 1.0
+     }
+    }
+   }
+  }
+ },
+ "sampler_estimate": {
+  "new_texture_samples": 5,
+  "all_shared_wrap": true,
+  "vendor_measured": {
+   "num_samplers": 2,
+   "num_pixel_texture_samples": 48
+  },
+  "gate_max_samplers": 3
+ },
+ "selftest": {
+  "unit_checks": "PASSED",
+  "texture_sets": {
+   "asphalt_cracked": {
+    "added_node_count": 56,
+    "links": 79,
+    "class_counts": {
+     "MaterialExpressionAdd": 3,
+     "MaterialExpressionConstant3Vector": 1,
+     "MaterialExpressionDivide": 3,
+     "MaterialExpressionLandscapeLayerCoords": 1,
+     "MaterialExpressionLandscapeLayerSample": 4,
+     "MaterialExpressionLinearInterpolate": 7,
+     "MaterialExpressionMax": 3,
+     "MaterialExpressionMultiply": 7,
+     "MaterialExpressionNormalize": 2,
+     "MaterialExpressionPixelDepth": 1,
+     "MaterialExpressionSaturate": 4,
+     "MaterialExpressionScalarParameter": 10,
+     "MaterialExpressionTextureObjectParameter": 4,
+     "MaterialExpressionTextureSample": 5,
+     "MaterialExpressionVectorParameter": 1
+    },
+    "mma_pin_dims": {
+     "BaseColor": 3,
+     "Normal": 3,
+     "Roughness": 1,
+     "Specular": 1,
+     "AmbientOcclusion": 1
+    },
+    "texture_samples": 5,
+    "parameters": 15,
+    "layer_samples": [
+     "Dirt_Path",
+     "Sand_01",
+     "Sand_02",
+     "Sand_Path"
+    ],
+    "texture_param_auto_sampler_notes": {
+     "Urban_BaseColor": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_Normal": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_Roughness": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_AO": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     }
+    }
+   },
+   "concrete_plate": {
+    "added_node_count": 56,
+    "links": 79,
+    "class_counts": {
+     "MaterialExpressionAdd": 3,
+     "MaterialExpressionConstant3Vector": 1,
+     "MaterialExpressionDivide": 3,
+     "MaterialExpressionLandscapeLayerCoords": 1,
+     "MaterialExpressionLandscapeLayerSample": 4,
+     "MaterialExpressionLinearInterpolate": 7,
+     "MaterialExpressionMax": 3,
+     "MaterialExpressionMultiply": 7,
+     "MaterialExpressionNormalize": 2,
+     "MaterialExpressionPixelDepth": 1,
+     "MaterialExpressionSaturate": 4,
+     "MaterialExpressionScalarParameter": 10,
+     "MaterialExpressionTextureObjectParameter": 4,
+     "MaterialExpressionTextureSample": 5,
+     "MaterialExpressionVectorParameter": 1
+    },
+    "mma_pin_dims": {
+     "BaseColor": 3,
+     "Normal": 3,
+     "Roughness": 1,
+     "Specular": 1,
+     "AmbientOcclusion": 1
+    },
+    "texture_samples": 5,
+    "parameters": 15,
+    "layer_samples": [
+     "Dirt_Path",
+     "Sand_01",
+     "Sand_02",
+     "Sand_Path"
+    ],
+    "texture_param_auto_sampler_notes": {
+     "Urban_BaseColor": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_Normal": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_Roughness": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     },
+     "Urban_AO": {
+      "auto_sampler_type_after_texture": "AUTO_FROM_TEXTURE"
+     }
+    }
+   }
+  },
+  "assign_verify_checks": {
+   "assign_parity_measured_desert": {
+    "compared": 99,
+    "differing": [
+     "MW_DirtColorCorrection",
+     "MW_GrassColorCorrection",
+     "MW_RockColorCorrection",
+     "MW_SnowColorCorrection",
+     "MW_StonesColorCorrection",
+     "MW_[x]_UseDirtProcedurals",
+     "MW_[x]_UseRockAdvanced",
+     "MW_[x]_UseRockProcedurals",
+     "MW_[x]_UseSnowAdvanced",
+     "MW_[x]_UseStonesAdvanced",
+     "MW_[x]_UseStonesProcedurals"
+    ]
+   },
+   "assign_validate": "PASSED",
+   "verify_validate": "PASSED",
+   "verify_layerinfo_suffix_on_measured_B2_ledger": [
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_1428_1804_0_GazaShujaiya_landscape_Dirt_Path",
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_1428_1804_0_GazaShujaiya_landscape_Sand_01",
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_1428_1804_0_GazaShujaiya_landscape_Sand_02",
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/GazaShujaiya/LayerInfos/GeoCity_city_v015_PermanentBank_1428_1804_0_GazaShujaiya_landscape_Sand_Path"
+   ]
+  },
+  "vendor_dump_check": {
+   "rows": 190,
+   "remove_foliage_reached_from": {
+    "MaterialExpressionLandscapeLayerSample_1": [
+     "MaterialExpressionLandscapeGrassOutput_0"
+    ]
+   },
+   "canvas_free": true,
+   "mma_sources_match": true,
+   "t3d_probe": {
+    "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Operator\\MWPreview_20261006\\MTL_MWAM_AutoMaterial_MASTER.t3d",
+    "sha256": "730b90a90ab4f951cde04d2809a0c298a462f8899895d6b85c81a5e05a2ad19e",
+    "water_outputs": [
+     "BaseColor",
+     "Metallic",
+     "Specular",
+     "Roughness",
+     "Normal",
+     "WaterRefractionUV"
+    ],
+    "mma_true_outputs": {
+     "BaseColor": [
+      "MaterialExpressionStaticSwitchParameter_16",
+      0,
+      ""
+     ],
+     "Metallic": [
+      "MaterialExpressionMaterialFunctionCall_14",
+      1,
+      "Metallic"
+     ],
+     "Specular": [
+      "MaterialExpressionMaterialFunctionCall_14",
+      2,
+      "Specular"
+     ],
+     "Roughness": [
+      "MaterialExpressionMaterialFunctionCall_14",
+      3,
+      "Roughness"
+     ],
+     "Normal": [
+      "MaterialExpressionMaterialFunctionCall_14",
+      4,
+      "Normal"
+     ]
+    }
+   }
+  },
+  "set_difference": {
+   "labels": [
+    "RoughnessScaled"
+   ],
+   "reason": "roughness channel R (Asphalt roughness map) vs G (Concrete ORM)"
+  },
+  "status": "SELFTEST_PASSED_MOCK_ENGINE",
+  "scope": "Python wiring/pin-name/dimension logic only; engine behaviour (duplicate_asset, compile, sampler validation, PixelDepth output names) is asserted at run time by hybrid_build_master.py."
+ }
+}

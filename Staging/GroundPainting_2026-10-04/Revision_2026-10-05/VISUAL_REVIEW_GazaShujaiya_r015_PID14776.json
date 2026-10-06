@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-10-05",
+  "reviewer": "Independent read-only visual review agent",
+  "pid": 14776,
+  "area": "GazaShujaiya",
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "stage": "revision_r015_stochastic_actual_lit",
+  "images": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r015_stochastic_actual_lit_close.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r015_stochastic_actual_lit_middle.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r015_stochastic_actual_lit_wide.png"
+  ],
+  "comparison_images": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_close.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_middle.png",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_actual_lit_restored_wide.png"
+  ],
+  "images_opened_and_visually_inspected": true,
+  "measured_viewmode": 3,
+  "measured_viewmode_name": "VMI_LIT",
+  "viewmode_evidence": "All six corresponding saved capture receipts record actual getter VMI_LIT enum3. The reviewer read receipts and opened pixels, without invoking native APIs.",
+  "active_viewport_key": "FourPanes2x2.Viewport 1.Viewport1",
+  "comparison_camera_match": {
+    "eye_target_fov_equal": true,
+    "rotation_equal": true,
+    "evidence": "Camera eye, target, FOV65 and rotation arrays agree exactly in the r014/r015 capture receipts for each of the three shots."
+  },
+  "revision_reported_by_root": "Sand01-only four-cell numeric-hash translation stochastic graph; matched color, normal and packed-mask coordinates with explicit original continuous-UV derivatives. This visual review is not an independent shader correctness or cost approval.",
+  "save_approved_within_scope": false,
+  "decision": "Visible anti-tiling improvement over the reviewed r014 images is not convincingly demonstrated by these captures. No prominent new cell seam is observed, but absence of obvious regression is not sufficient evidence to approve this revision as the requested visual improvement.",
+  "visible_findings": {
+    "close": [
+      "Fine granular dry ground is resolved, with small dark pits and streaks; it retains the credible close detail already visible in r014.",
+      "Several recognizable dark pit clusters and directional streaks remain in almost the same locations and appearance as r014. Lighter sand flecks appear slightly redistributed or softened, but the visible change is small.",
+      "No conspicuous square cell boundary or new wet-looking sheen is visible in this still image. Temporal stability is untested."
+    ],
+    "middle": [
+      "The large open areas remain broadly pale sand with a directional fine weave. Distinct compacted-soil, loose-sand and gravel surface roles are limited in the viewed plots.",
+      "The new image does not visibly establish the marked breakup of repeated texture placement described in the selected tutorial demonstration.",
+      "Building and curb contacts still read as abrupt existing intersections. This review does not attribute them to a specific material, height, mesh or mask defect."
+    ],
+    "wide": [
+      "The overall ground appearance is nearly unchanged from r014: pale open plots and low-contrast directional texture remain.",
+      "Large angular bright and dark regions remain visible in the outer bare terrain. The prior flat-isolation diagnostic did not eliminate them; their cause is unproved and they are not claimed to be stochastic texture seams.",
+      "A regular fine texture remains in the outer and foreground bare regions. The still images do not establish which active layer contributes it."
+    ]
+  },
+  "reference_comparison": {
+    "basis": "Existing VIDEO_REVIEW.md records selected direct playback and decoded reference frames. This reviewer read that document; no claim of fully watching either video is made.",
+    "gap": "The selected cell-bombing demonstrations visibly disrupt repeated surface placement. That degree of visible benefit is not demonstrated in this r014/r015 comparison. Height-aware surface transitions and object-ground integration also remain absent from the shown result; real displacement and environment composition are separate mechanisms and are not implied by this material revision.",
+    "tutorial_quality": "NOT_ESTABLISHED"
+  },
+  "next_evidence_needed": [
+    "Root must finish actual material statistics and compile-log review, then confirm these captures represent the completed active shader rather than an intermediate capture. The close capture was requested approximately six seconds after the compile request recorded in COMPILE_GazaShujaiya_r015_stochastic_PID14776.json; this timing alone does not prove incomplete compilation.",
+    "Confirm that the modified Sand01 branch contributes materially to the exact viewed ground before interpreting the nearly unchanged dark motifs. No branch-inactive diagnosis follows from screenshots alone.",
+    "Obtain a bounded matched-view or camera-movement comparison across multiple stochastic cells that visibly demonstrates reduced repeated motifs without blurred detail, new cell boundaries or distance-transition popping.",
+    "Establish ordinary fresh-process camera tracking and texture residency without finite force requests or material-preview cache. Sharp current images do not prove default streaming persistence."
+  ],
+  "remaining_limitations": [
+    "This review establishes appearance only at the captured cameras; it does not measure shader cost, compiled permutation correctness or stochastic temporal behavior.",
+    "Fine detail may depend on previously resident mips. Default reopened sharpness and expiry stability remain unresolved.",
+    "The broad outer angular shading has no established cause. No lighting change or geographic height/weight change is recommended on image evidence alone.",
+    "Existing building appearance, roads and sidewalks, sparse vegetation, layout and dressing are outside this bounded ground revision review.",
+    "No tint or contrast escalation is recommended merely to make a subtle sampler edit look different. The useful target is visible irregular placement at plausible grain scale, with coherent surface roles."
+  ],
+  "user_acceptance": "PENDING",
+  "whole_environment_acceptance": "NOT_ESTABLISHED",
+  "ordinary_visual_persistence": "NOT_ESTABLISHED",
+  "native_operations_performed_by_reviewer": false,
+  "content_or_settings_edits_performed_by_reviewer": false
+}

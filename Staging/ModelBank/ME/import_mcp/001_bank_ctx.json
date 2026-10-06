@@ -1,0 +1,31 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "GetEditorContext",
+    "arguments": {},
+    "toolset_name": "WorldBLDToolset.WorldBLDToolset"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"mapName\":\"T2_Orient\",\"worldPath\":\"/Game/Developers/USER/TrackA_T0-T5/T2_Orient.T2_Orient\",\"bWorldBLDEditorModeActive\":false}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"mapName\":\"T2_Orient\",\"worldPath\":\"/Game/Developers/USER/TrackA_T0-T5/T2_Orient.T2_Orient\",\"bWorldBLDEditorModeActive\":false}}"
+    }
+   ]
+  }
+ }
+}

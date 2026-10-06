@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "list_properties",
+    "arguments": {
+     "instance": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.ProxyData"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":\"{\\\"bOverrideGlobalProxyStaticMeshSettings\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\", meta = (DisplayAfter = \\\\\\\"StaticMeshGenerationProperties\\\\\\\")\\\"},\\\"bEnableProxyStaticMeshOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"For StaticMesh outputs: should a fast proxy be created first?\\\"},\\\"bEnableProxyStaticMeshRefinementByTimerOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"If fast proxy meshes are being created, must it be baked as a StaticMesh after a period of no updates?\\\"},\\\"proxyMeshAutoRefineTimeoutSecondsOverride\\\":{\\\"type\\\":\\\"number\\\",\\\"description\\\":\\\"If the option to automatically refine the proxy mesh via a timer has been selected, this controls the timeout in seconds.\\\"},\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorldOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Automatically refine proxy meshes to UStaticMesh before the map is saved\\\"},\\\"bEnableProxyStaticMeshRefinementOnPreBeginPIEOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Automatically refine proxy meshes to UStaticMesh before starting a play in editor session\\\"}}\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"{\\\"bOverrideGlobalProxyStaticMeshSettings\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\", meta = (DisplayAfter = \\\\\\\"StaticMeshGenerationProperties\\\\\\\")\\\"},\\\"bEnableProxyStaticMeshOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"For StaticMesh outputs: should a fast proxy be created first?\\\"},\\\"bEnableProxyStaticMeshRefinementByTimerOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"If fast proxy meshes are being created, must it be baked as a StaticMesh after a period of no updates?\\\"},\\\"proxyMeshAutoRefineTimeoutSecondsOverride\\\":{\\\"type\\\":\\\"number\\\",\\\"description\\\":\\\"If the option to automatically refine the proxy mesh via a timer has been selected, this controls the timeout in seconds.\\\"},\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorldOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Automatically refine proxy meshes to UStaticMesh before the map is saved\\\"},\\\"bEnableProxyStaticMeshRefinementOnPreBeginPIEOverride\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Automatically refine proxy meshes to UStaticMesh before starting a play in editor session\\\"}}\"}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "environmentpipeline.task4.inspection_blocker_handoff.v1",
+  "written_utc": "2026-10-04T13:06:49.8994521Z",
+  "status": "CLEAN_PROCESS_EXIT_RELEASED_NATIVE_INACTIVE_BANK_NEXT",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "operator_thread_id": "01a106e8-f85a-7a72-a010-e1cb28356e2b",
+  "manager_direction": "Accept concrete ownership blocker; keep PID5368 clean paused, prohibit generation/retirement and all parameter/Cook/Bake/save/removal operations. Further supported read-only diagnostics require explicit request.",
+  "last_native_receipt": "PREFLIGHT_NATIVE.json",
+  "last_native_readback_utc": "2026-10-04T16:03:16.05806+03:00",
+  "last_native_pid": 5368,
+  "last_native_world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration",
+  "last_native_state": {
+    "cooking_paused": true,
+    "auto_cook": false,
+    "auto_bake": false,
+    "dirty_maps": [],
+    "dirty_content": [],
+    "official_session_valid": false,
+    "active_runs": {
+      "geocity_bank_workflow": [],
+      "geocity_roadbld_workflow": []
+    }
+  },
+  "native_state_refreshed_this_update": false,
+  "no_further_native_calls_this_update": true,
+  "verified_policy": "All five false in CDO and native Get at recorded native receipt time",
+  "roadbld_license_at_readback": true,
+  "generation_authorized": false,
+  "generation_started": false,
+  "blocker": [
+    {
+      "owner": "task1 + manager",
+      "file": "Content/Python/geocity_bank_workflow.py",
+      "function": "GeoCityRun.official_landscapes",
+      "line": 294,
+      "native_exception": "Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read",
+      "observed_objects": 5,
+      "impact": "account_previous_landscapes cannot establish extra saved Landscape ownership through its current public API contract; ordinary operation must not begin",
+      "required_resolution": "Source owner must provide a supported exact read-only ownership method and manager review/reseal/fresh-start plan. No protected-property bypass, class/name inference, deletion, gate lowering or task4 source edit."
+    }
+  ],
+  "repair_scope": {
+    "owner": "task1",
+    "only_authorized_source": "Content/Python/geocity_bank_workflow.py",
+    "other_source_config_profile_scopes": "FROZEN",
+    "task4_source_write_authority": false
+  },
+  "preservation": {
+    "landscape_actors": [
+      {
+        "path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GazaShujaiya_landscape",
+        "class": "/Script/Landscape.Landscape",
+        "tags": [],
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural"
+      },
+      {
+        "path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape",
+        "class": "/Script/Landscape.Landscape",
+        "tags": [],
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural"
+      }
+    ],
+    "official_output_objects": [
+      {
+        "output_index": 0,
+        "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002957CE5F540) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+        "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_0",
+        "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+        "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+      },
+      {
+        "output_index": 0,
+        "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002957CE59A00) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+        "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_1",
+        "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+        "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+      },
+      {
+        "output_index": 0,
+        "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AAC70D0) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+        "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_2",
+        "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+        "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+      },
+      {
+        "output_index": 0,
+        "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACC300) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+        "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_3",
+        "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+        "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+      },
+      {
+        "output_index": 0,
+        "identifier": "<Struct 'HoudiniPublicAPIOutputObjectIdentifier' (0x000002966AACE510) {split_identifier: \"EditableLayer\", part_name: \"\"}>",
+        "object": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.HoudiniAssetActor_0.HoudiniCookable.HoudiniOutput_0.HoudiniLandscapeTargetLayerOutput_4",
+        "class": "/Script/HoudiniEngineRuntime.HoudiniLandscapeTargetLayerOutput",
+        "binding_error": "Exception(\"Object: Property 'Landscape' for attribute 'landscape' on 'HoudiniLandscapeTargetLayerOutput' is protected and cannot be read\")"
+      }
+    ],
+    "actor_package_ledgers": "DISK_RECONCILIATION.json and PREFLIGHT_NATIVE.json",
+    "preserved_candidates": 87,
+    "candidate_hash_evidence": "PREFLIGHT.json#preservation.candidate_checks",
+    "road_actor_paths_verified": 268,
+    "original_map_hash_evidence": "PREFLIGHT.json#preservation.original_maps",
+    "no_actor_or_package_removal": true
+  },
+  "lease_transition_performed_this_update": false,
+  "next": "Remain inactive. Correction requires manager review and reseal, then explicitly reviewed fresh startup. No hot reload. Generation requires separate exact-PID activation.",
+  "later_explicit_diagnostic": {
+    "receipt": "LANDSCAPE_EXPORT_DIAGNOSTIC.json",
+    "authorization": "Manager explicitly authorized five exact built-in ObjectExporterT3D text exports after first-export validity check",
+    "status": "CONFIRMED_NATIVE_INACTIVE",
+    "last_native_readback_utc": "2026-10-04T16:13:21.093909+03:00",
+    "diagnostic_ownership_unaccounted": [],
+    "lifecycle_source_repair_and_fresh_review_still_required": true
+  },
+  "current_fresh_handoff": {
+    "actual_pid": 33168,
+    "preflight": "PREFLIGHT.json",
+    "confirmation": "LANDSCAPE_CONSUMER_CONFIRMATION.json",
+    "passed": true,
+    "state_unchanged": true,
+    "exact_official_records": 5,
+    "unaccounted_landscapes": 0,
+    "generation_authorized": false,
+    "activation": "AWAITING_MANAGER_ACTUAL_PID",
+    "precedence": "This new fresh confirmation supersedes the historical PID5368 ownership blocker and source-repair-pending fields retained below."
+  },
+  "superseding_native_failure": "SHUJAIYA_RUN1_FAILURE.json; supersedes clean inspection state; PID33168 dirty/paused, lease held, callbacks detached, manager recovery required",
+  "latest_bank_turn_release": "BANK_TURN_HANDOFF.json supersedes all retained live-PID/lease/dirty recovery paragraphs: PID33168 exited orderly, failed unsaved changes discarded by manager authority, OWNER=NONE, task4 inactive."
+}

@@ -1,0 +1,18 @@
+TO: designated Environmentpipeline manager, Claude session cc37d4d2-3d62-4f53-b689-28432b5527ae
+FROM: Reusable Sky operator, Codex chat 01a1118e-256a-7d83-8a2b-ad3293e53281
+DATE: 2026-10-06
+STATUS: REQUEST ONLY — NOT AN ASSIGNMENT OR EDITOR LEASE
+
+Aviv requested Stage 2 implementation and explicitly requires your editor assignment before native changes. Please provide a written assignment for this operator covering:
+1. The original map and exact writable packages. Proposed: original GazaRimal /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration and /Game/Project/Shared/Atmosphere/ReusableSky/ only.
+2. The assigned editor PID and endpoint, or explicit startup permission followed by actual-PID activation. Existing PID29900 belongs to the Iran/bank workflow and will not be taken over, restarted, closed or used for sky writes without an explicit handoff.
+3. Scheduling relative to the bank/GeoCity run, whose generation guard requires a sole editor. No new parallel sky process will be launched from this request.
+4. A native preflight of actual world, dirty packages, active owner, autosave/cooking state and saved Stage 1 public controls before authoring.
+5. Exact handling of the existing Rimal cloud actor VolumetricCloud_0. Proposed: retain the actor/material unchanged, record its original visibility, and disable only its cloud component during deliberate activation of the package-owned clouds. Leave ExponentialHeightFog_0 untouched; haze uses the rig's existing SkyAtmosphere.
+6. Named saves of the project-owned Blueprint/material derivatives and assigned map, followed by fresh-process reopen and a clean editor release. No Save All, bank/profile/Houdini/ground/building/road/vendor edits or generation.
+
+Dependency is ready: this same operator delivered Stage 1, saved and reopened it, and closed both sky PIDs5200 and28148. STAGE1_HANDOFF.json records the explicit release and current disk hashes. Stage 1 is no longer modifying the Blueprint. Stage 2 has made no native changes.
+
+Requested implementation: one owned VolumetricCloud component; Cloud Amount, speed/direction, haze and four presets; Balanced/High local quality; per-instance dynamic material parameters; one coordinated UpdateSky path that retains all Stage 1 time/manual/exposure inputs. PREPARATION.txt describes the integration and verification boundary. No moon or stars.
+
+Please return your written assignment through Aviv under the project's established coordination route. This request does not write a manager identity, acquire a lease, or claim that native work is active.

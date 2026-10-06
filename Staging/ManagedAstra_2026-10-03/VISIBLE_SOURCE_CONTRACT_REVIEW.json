@@ -1,0 +1,146 @@
+{
+  "schema": "environmentpipeline.manager_visible_source_contract_review.v1",
+  "utc": "2026-10-03T19:36:49.195424+00:00",
+  "status": "POLICY_DISTINCTION_ACCEPTED_SOURCE_CORRECTION_ACTIVATED_PENDING_FROZEN_REVIEW",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "source_module": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\geocity_city_module.py",
+  "source_module_sha256": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b",
+  "module_ranges": {
+    "unaltered_route_control_export": [
+      5464,
+      5507
+    ],
+    "intentional_visible_pad_exclusion": [
+      5630,
+      5697
+    ]
+  },
+  "actual_current_HDA_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\HDA_CATALOG_RECEIPT.json",
+  "actual_current_HDA_receipt_sha256": "7d167fab06aa56b14f8d844114325accf53f87b1fc9f0d962d33c5b6d0689177",
+  "actual_surface_geometry": {
+    "outputs": {
+      "catalog_road_material": {
+        "building_pad_excluded_area_m2": 955.3492086451656,
+        "class_input_faces": {
+          "residential": 133462,
+          "service": 6023,
+          "track": 3383,
+          "unclassified": 6009
+        },
+        "class_mask_only_faces": {
+          "track": 3383
+        },
+        "class_visible_faces": {
+          "residential": 131072,
+          "service": 6008,
+          "unclassified": 6009
+        },
+        "lane": "road_surface",
+        "native_provider_suppressed_faces": 0,
+        "policy": "class_aware_visible_profiles_final_terrain_building_pad_exclusion",
+        "road_provider": {
+          "provider": "houdini",
+          "reason": "authoritative_houdini_visible_provider",
+          "vehicle_mesh_suppressed": false,
+          "vehicle_surfaces_suppressed": false
+        },
+        "route_materials": {
+          "footway": {
+            "path": "/Game/UtopianCity/Materials/MI_ConcreteGrain.MI_ConcreteGrain",
+            "uv_units_per_metre": 1.0
+          },
+          "path": {
+            "path": "",
+            "uv_units_per_metre": 1.0
+          },
+          "track": {
+            "path": "",
+            "uv_units_per_metre": 1.0
+          }
+        },
+        "source_coverage_preserved": true,
+        "visible_face_count": 143089
+      },
+      "catalog_sidewalk_material": {
+        "building_pad_excluded_area_m2": 0.0,
+        "class_input_faces": {
+          "residential": 64734,
+          "service": 5841,
+          "unclassified": 4621
+        },
+        "class_mask_only_faces": {},
+        "class_visible_faces": {
+          "residential": 64734,
+          "service": 5841,
+          "unclassified": 4621
+        },
+        "joined_sidewalk": {
+          "branch_round_join_count": 1365,
+          "convex_round_join_count": 1309,
+          "drivable_edge_count": 8825,
+          "maximum_round_join_chord_error_m": 0.007222909991704607,
+          "non_drivable_edge_count": 426,
+          "policy": "drivable_exterior_union_round_joins_pad_exclusion_no_overlapping_profiles",
+          "retained_area_m2": 15955.791789200512,
+          "retained_triangle_count": 15603,
+          "schema": "environmentpipeline.joined_sidewalks.v1",
+          "source_coverage_preserved": true,
+          "strip_candidate_count": 8825,
+          "terrain_lift_m": 0.16,
+          "width_m": 1.5
+        },
+        "lane": "sidewalk_surface",
+        "native_provider_suppressed_faces": 0,
+        "policy": "class_aware_visible_profiles_final_terrain_building_pad_exclusion",
+        "road_provider": {
+          "provider": "houdini",
+          "reason": "authoritative_houdini_visible_provider",
+          "vehicle_mesh_suppressed": false,
+          "vehicle_surfaces_suppressed": false
+        },
+        "route_materials": {
+          "footway": {
+            "path": "/Game/UtopianCity/Materials/MI_ConcreteGrain.MI_ConcreteGrain",
+            "uv_units_per_metre": 1.0
+          },
+          "path": {
+            "path": "",
+            "uv_units_per_metre": 1.0
+          },
+          "track": {
+            "path": "",
+            "uv_units_per_metre": 1.0
+          }
+        },
+        "source_coverage_preserved": true,
+        "visible_face_count": 75196
+      }
+    },
+    "road_provider": {
+      "provider": "houdini",
+      "reason": "authoritative_houdini_visible_provider",
+      "vehicle_mesh_suppressed": false,
+      "vehicle_surfaces_suppressed": false
+    },
+    "schema": "environmentpipeline.class_aware_surface_geometry.v1",
+    "source_coverage_preserved": true
+  },
+  "native_failure_receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_ALL40_POST_CLIP_GAPS_20261003T192521158589Z.json",
+  "native_failure_sha256": "4e13c9270191f003d770909349247bb6ba31ef41d3d9b0d715d878c3ae3950a9",
+  "measured_native_failure": {
+    "all40_samples": 6711,
+    "covered_outside_protected_pads": 6691,
+    "exact_protected_pad_interior_samples": 20,
+    "missing_outside_protected_pads": 0,
+    "affected_source": "1096660488:0",
+    "footprint_ids": [
+      "298979086",
+      "301838006"
+    ],
+    "all20_preclip_asphalt_covered": true,
+    "all20_postclip_any_material_any_normal_absent": true
+  },
+  "proposed_correction": "Retain full physical preclip gate. Apply final visible coverage proof to exact analytic source segment partition under unchanged original protected footprint rings, certify every original station and explicit exclusion interval with source/pad hashes, enforce outside asphalt and no footprint overlap. Persist original-source conflict without claiming continuous driveable path or final geography/art acceptance. No source/control, building, bound geometry or threshold changes.",
+  "not_authorized": "No hardcoded missing-station exemptions, source reroute, footprint erasure, generated originals replacement, tolerances widened or false continuity acceptance.",
+  "independent_review_summary": "Confirms full-footprint building slabs; exact source overlaps18.87m, no layer/bridge/tunnel/passage tags; visible partition alignment appropriate but continuous drivable path remains false."
+}

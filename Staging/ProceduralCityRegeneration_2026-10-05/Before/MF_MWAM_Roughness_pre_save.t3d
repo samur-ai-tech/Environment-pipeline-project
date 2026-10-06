@@ -1,0 +1,107 @@
+Begin Object Class=/Script/Engine.MaterialFunction Name="MF_MWAM_Roughness" ExportPath="/Script/Engine.MaterialFunction'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="MF_MWAM_RoughnessEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MF_MWAM_RoughnessEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionOneMinus_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionPower_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionStaticSwitchParameter_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="MF_MWAM_RoughnessEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MF_MWAM_RoughnessEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_MWAM_Roughness:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_MWAM_Roughness:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'MF_MWAM_Roughness:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionOneMinus'MF_MWAM_Roughness:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionMultiply'MF_MWAM_Roughness:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionPower'MF_MWAM_Roughness:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_Roughness:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_Roughness:MaterialExpressionScalarParameter_1'"))
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionFunctionInput_0'"
+      InputName="Roughness"
+      Id=ABC3AA9F4479BC0710CDB7B4E035FF0C
+      InputType=FunctionInput_Scalar
+      MaterialExpressionEditorX=-816
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=E03133774A92B35AB80145AB04856D0D
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionFunctionOutput_0'"
+      OutputName="Roughness"
+      A=(Expression="/Script/Engine.MaterialExpressionPower'MF_MWAM_Roughness:MaterialExpressionPower_0'")
+      bLastPreviewed=True
+      Id=8EF44B1B4A95411EFF20A0BB18DDD7B2
+      MaterialExpressionEditorX=526
+      MaterialExpressionEditorY=305
+      MaterialExpressionGuid=A4A58938424E0F339A9A1888E787829D
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'MF_MWAM_Roughness:MaterialExpressionStaticSwitchParameter_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_Roughness:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=128
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=D921CEB440E559F4268F36AF3C4DB817
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionOneMinus_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_MWAM_Roughness:MaterialExpressionFunctionInput_0'")
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=7A2089F84F3A6E3798D2F59999A02F83
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_0" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionPower_0'"
+      Base=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_MWAM_Roughness:MaterialExpressionMultiply_0'")
+      Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_MWAM_Roughness:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=318
+      MaterialExpressionEditorY=337
+      MaterialExpressionGuid=969403BE47B61BA28A7CA4BDAB583D38
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="MW_RoughnessMultiplier"
+      ExpressionGUID=E544C3194C7B9CF4829860925796E8F4
+      Group="Lighting"
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=C5964AAB4ADC18130BD404AB450916F5
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionScalarParameter_1'"
+      DefaultValue=0.500000
+      ParameterName="MW_RoughnessPower"
+      ExpressionGUID=D2A11BCA4132C252A62A03A8F38AD1E1
+      Group="Lighting"
+      MaterialExpressionEditorX=128
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=C5964AAB4ADC18130BD404AB450916F5
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:MaterialExpressionStaticSwitchParameter_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_MWAM_Roughness:MaterialExpressionOneMinus_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_MWAM_Roughness:MaterialExpressionFunctionInput_0'")
+      DefaultValue=True
+      ParameterName="MW_UseInvertedRoughness"
+      ExpressionGUID=DA7649664EBC4470A4CE278A14535E5D
+      Group="Lighting"
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=FF1DDEAB4BBF5BFD164E55A0C009E960
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_Roughness'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_Roughness.MF_MWAM_Roughness:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   bExposeToLibrary=True
+   LibraryCategoriesText(0)=NSLOCTEXT("", "AC0E8AF44A78CDB06232C6A9052DBC23", "MAWI")
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_MWAM_RoughnessEditorOnlyData'"
+   StateId=2511409E420DAD6888ADA3B58C158CE9
+   CombinedInputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

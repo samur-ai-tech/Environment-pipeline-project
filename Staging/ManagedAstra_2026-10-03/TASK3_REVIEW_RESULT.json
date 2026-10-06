@@ -1,0 +1,1566 @@
+{
+  "schema": "environmentpipeline.managed_astra_independent_review.v1",
+  "reviewed_utc": "2026-10-03T20:00:30.132538+00:00",
+  "task": "task3_review",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "status": "POSTCLIP_PARTITION_SOURCE_REVIEW_PASSED_CONTINUATION_UPDATES_PENDING",
+  "scope": "Filesystem, saved receipts, source inspection without import, and original local saved Lit image only.",
+  "editor_calls": 0,
+  "houdini_calls": 0,
+  "source_asset_profile_mutations": 0,
+  "user_appearance_accepted": false,
+  "verdict": "The exact source road crosses two true retained building footprints. Existing HDA policy intentionally excludes visible roads from those interiors while preserving full source centerlines. A generic analytic complementary-partition accounting contract is evidence-supported, but is not continuous physical/drivable coverage and has not yet been implemented or validated. Root owns contract adjudication; live delivery and final appearance remain open.",
+  "evidence": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TOOL_CONNECTION_AUDIT_CURRENT.json",
+      "sha256": "6188a92a65a82726c7eeff027f7aa4537ab0aa18e3287a188512cf69853a68d1"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_PAINTING_RESULT.json",
+      "sha256": "16e949ecc4026daa376eacf9bff6d84bb2bb59eb09f09ee71321377244e7cfde"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+      "sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json",
+      "sha256": "20702fa387aa670556e486cd14b2f5d80d59efb85e11c92938c0101d32b5044f"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+      "sha256": "baf8a87424dcd01f145444217dae89fe52b32552c3c253b93adea16185ca0b15"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\ROADBLD_INSPECT_GazaRimal_reopen_readback_20261003T172107797670Z.json",
+      "sha256": "c47d8a9e1795f8eb3ad67f22852ba73a90f283b60ec8b2393346ab3dce894371"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\NATIVE_SEAM_NORMAL_READBACK_20261003T172145Z.json",
+      "sha256": "19d2f4504e1f640d7f521580528dc0ad289769dff83479087ebf1b73d4f9f841"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\RIMAL_SAVED_LIT_20261003T1722.png",
+      "sha256": "c3b6230736d45ffff7b12f3c2b7efec46d6f343747056a0cd66bc44a6d6b9e18"
+    }
+  ],
+  "source_review": {
+    "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\geocity_city_module.py",
+    "sha256": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b",
+    "matches_manager_handoff": true,
+    "references": [
+      "cook_surface_palette:3821-3842 maps only four semantic roles",
+      "cook_city_terrain:5108-5137 retains roads/pads and slope-based Ground/Steep",
+      "prepare_appearance_materials.py:84-110 adds macro variation only to Sand_01 and uses scalar roughness per layer",
+      "finish_ground_shader_repair.py retains repaired graph, exact original layer names and four named saves"
+    ]
+  },
+  "connections": {
+    "basis": "Audited local connection report and exported catalogs; no fresh API calls or listener probes in this worker.",
+    "snapshot_utc": "2026-10-03T16:05:55Z",
+    "official_engine": "Manager measured valid and paused at snapshot; later actual Cook/Bake/save/reopen receipts substantiate use. Current live readiness not independently measured.",
+    "auxiliary_houdini": "Manager measured Houdini 22.0.429 auxiliary untitled session, RPC18811, separate from official Engine.",
+    "unreal_copilot": "Reported actual Rimal world/PID32752 via Python RPC; recorded listeners19840/18080.",
+    "existing_unreal_mcp": "Recorded port8000/PID32752 plus functional native RoadBLD inspection.",
+    "kks3800": "Recorded port55557/PID32752 plus successful material graph metadata operation.",
+    "catalog_verified": {
+      "kks_operations": 471,
+      "existing_toolsets": 36,
+      "existing_operations": 397,
+      "dedicated_landscape_paint_weightmap_operation_found": false,
+      "scope": "Names/schemas of these saved catalogs only; native Landscape UI availability not assessed."
+    },
+    "all_operations_executed": false,
+    "catalog_registration_is_not_operation_validation": true
+  },
+  "ground_shader": {
+    "status": "named_saved_graph_and_rimal_reopen_verified_in_receipts",
+    "saved_asset_count": 4,
+    "saved_assets": [
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural"
+    ],
+    "layer_names_preserved": true,
+    "supported_layer_count": 69,
+    "selected_targets": [
+      "Dirt_Path",
+      "Sand_01",
+      "Sand_02",
+      "Sand_Path"
+    ],
+    "role_mapping": {
+      "Ground": "Sand_01",
+      "Steep": "Sand_02",
+      "RoadBed": "Dirt_Path",
+      "BuildingPad": "Sand_Path"
+    },
+    "not_69_painted_classes": true,
+    "actual_per_layer_weight_coverage_measured_by_worker": false,
+    "normal_repairs": "Two scoped Sand normal copies: sRGB false, TC_NORMALMAP, NORMAL samplers; current original package bytes independently match immutable before hashes.",
+    "macro_formula": "0.60 * saturate(3 * (1 - (0.55 * mask36m.R + 0.45 * mask57m_offset.R)))",
+    "soil_tile_cm": 260,
+    "first_mask_tile_cm": 3600,
+    "second_mask_tile_cm": 5700,
+    "normal_space": "Prior installed-package decode reports WorldSpace false -> world-to-tangent, compatible with reported tangent_space_normal true. Both installed function hashes independently match that report; no new binary decode performed.",
+    "both_profiles_match_material_and_override_provenance": true,
+    "roughness": "Current custom shader remains scalar0.9 per selected layer. Native MF_Layer_Base R-channel roughness route is now independently decoded; rendered need and native resolved MI overrides remain unverified.",
+    "geographic_painting_limit": "Ground/Steep are slope based; RoadBed/BuildingPad use feature masks. The macro shader is visual variation, not added land-use/soil-class evidence."
+  },
+  "rimal": {
+    "receipt_status": "passed",
+    "generator_revision": "r018_retained_appearance",
+    "bank_instances": 16009,
+    "native_material_groups": 40,
+    "hda_baked_actors": 43,
+    "hda_dependencies": 6,
+    "original_roads": 24,
+    "roadgeo_actors": 43,
+    "bound_meshes": 41,
+    "owned_native_actors": 68,
+    "native_dependencies": 65,
+    "exact_empty_placeholders": 2,
+    "empty_placeholder_support": "Both retained placeholders have separate same-source owned merged-mesh coverage at every sampled source centerline location.",
+    "grounding_samples": 4953,
+    "max_sample_spacing_cm": 100,
+    "max_height_error_cm": 7.729658493965417,
+    "height_gate_cm": 10,
+    "grounding_scope": "Actual upward asphalt at original source centerlines, sampled <=1m and checked against sole saved Landscape plus original exported points. Not every road/sidewalk vertex or traversal proof.",
+    "triangles": 795580,
+    "protected_pads": 269,
+    "failing_pad_overlap_count": 0,
+    "pad_overlap_precision_note": "Receipt records tiny positive numerical intersections below failure tolerance; do not describe mathematical zero intersection.",
+    "max_area_escape_cm": 0.0010130792873042083,
+    "geometry_material_transform_collision_identity_verified": true,
+    "saved_named_packages_clean": true,
+    "same_editor_reopened": true,
+    "no_recook": true,
+    "fresh_process_restart": false,
+    "cooked_mesh_components": 0,
+    "landscape_count": 1,
+    "worker_reperformed_editor_readback": false
+  },
+  "visual_review": {
+    "image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\RIMAL_SAVED_LIT_20261003T1722.png",
+    "original_image_opened": true,
+    "view": "Lit aerial, 770x540",
+    "observed": [
+      "Ground has visible texture and irregular mottling; no evidence of an entirely flat constant-color ground shader in this view.",
+      "Large exposed terrain areas, especially the upper background and right-side open parcel, remain dominated by similar beige soil.",
+      "Road asphalt and pale sidewalk/curb edges are visible; facade colors vary, but repeated window grids and broad plain pale roofs remain visually prominent."
+    ],
+    "limits": [
+      "Image is not a ground-level close view: texture density, normal detail, roughness response and road/soil transition quality are not resolved.",
+      "Dark gaps/shadows near buildings cannot be diagnosed as holes or floating geometry from this single view.",
+      "No global junction/curb continuity or all-foundation acceptance can be inferred from an aerial screenshot."
+    ],
+    "aesthetic_verdict": "Appearance still needs focused review; technical shader repair alone does not settle the reported poor painting quality."
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "kind": "visible_remaining_appearance_limit",
+      "severity": "medium",
+      "summary": "Broad ground treatment remains visually repetitive despite working macro texture.",
+      "evidence": "Original saved Lit image upper/background and right open-ground regions; four-role source painting.",
+      "action": "Manager should review saved Lit street-level ground, slope, pad margin and road/soil transitions before declaring painting finished."
+    },
+    {
+      "id": "F2",
+      "kind": "source_scope_limit",
+      "severity": "medium",
+      "summary": "Macro sand/soil blend varies color and normal but leaves Sand_01 roughness uniform within the layer.",
+      "evidence": "prepare_appearance_materials.py:84-110; repaired graph and unchanged roughness declaration.",
+      "action": "Check close-view material response; preserve unknown packed-mask channels until semantics are established. This is not a proven normal-space defect or a reason to flip conventions."
+    },
+    {
+      "id": "F3",
+      "kind": "verification_scope",
+      "severity": "medium",
+      "summary": "7.73cm result proves sampled centerline grounding, not full-width sidewalk edges or every building foundation.",
+      "evidence": "geocity_roadbld_grounding.py:274-364 and saved inspection.",
+      "action": "Retain physical gates and inspect curb/junction/ground margins in actual saved Shujaiya views; report coverage precisely."
+    },
+    {
+      "id": "F4",
+      "kind": "documentation_staleness",
+      "severity": "low",
+      "summary": "Active documents still mix r017/old material/PID15568/OWNER=NONE statements with current r018 work.",
+      "evidence": "CURRENT_STATE.md and WORK_PLAN.md versus latest manager handoff and immutable Rimal receipts.",
+      "action": "Manager reports active documents reconciled and r017 labelled historical; prior observation retained as history. No worker edits.",
+      "status": "manager_reports_reconciled_after_initial_review"
+    },
+    {
+      "id": "S1",
+      "priority": 2,
+      "status": "resolved_static_in_bounded_api_offset_repair_v2",
+      "title": "Expected reciprocal link offsets do not match SDK semantics",
+      "source": "Content/Python/geocity_roadbld_junctions.py",
+      "lines": [
+        479,
+        487
+      ],
+      "comparison_lines": [
+        433,
+        450,
+        606,
+        610,
+        639,
+        643
+      ],
+      "installed_api": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Common/RoadBLDToolsetUtils.cpp:854-875",
+      "evidence": "_expected_edit appends offset=0.0 in both link directions. CreateReciprocalLink computes CalculateRightAxisOffset and stores +offset on A and -offset on B. _matches tolerates coordinates/radii only, then hashes links exactly via json.dumps; 0.0 and -0.0 hash differently. Small legitimate nonzero projection/coordinate rounding can also differ from hardcoded zero.",
+      "impact": "A valid successful Link call, or missed-completion replay reconciliation of that link, can fail with Native edit differs from exact expected controls/links/policy or Ambiguous native partial edit. Source/actors remain unsaved; no duplicate replay occurs, but the ordinary continuation stops after applying a valid link.",
+      "certainty": "Static API/serialization mismatch confirmed. Actual current transaction offsets have not been measured; native AddEndpointLink sign-zero normalization was not established.",
+      "requested_resolution": "Model the installed calculated offset from the frozen endpoint readback, or compare reciprocal offsets numerically under the already established <=0.1cm verifier bound with exact endpoint identities/counts and reciprocal consistency. Canonicalize signed zero for numeric comparisons. Keep exact unchanged-before snapshots and all physical gates; do not suppress this error or replay a present link.",
+      "historical_status": "requires_source_owner_resolution_before_continuation",
+      "resolution_review": "task1.refreeze_correction_review",
+      "resolved_source_sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699"
+    },
+    {
+      "id": "S2",
+      "priority": 1,
+      "status": "resolved_static_in_bounded_api_offset_repair_v2",
+      "title": "Direct RoadsInNetwork reflection is unavailable in the running editor",
+      "source": "Content/Python/geocity_roadbld_junctions.py",
+      "lines": [
+        378,
+        380
+      ],
+      "evidence": "TASK2_FAILED_RECOVERY_20261003T180806528881Z.json records RuntimeError Missing reflected property RoadsInNetwork at _owned_state before any SDK edit; legacy report unchanged, callbacks0, same40 sources/one derived connector. Installed DynamicRoadNetwork.gen.cpp:2146 declares UHT property but flags0x0114000000000000 omit Edit/BlueprintVisible, unlike the other snapshot properties.",
+      "impact": "Legacy adoption and all checkpoint snapshots stop before the retry state machine can begin. S1 remains separate and was not exercised.",
+      "requested_resolution": "Use RoadBLDDiscoveryToolset.DescribeNetwork(run.network, MaxRoads) and its reflected FRoadBLDNetworkInfo.Roads -> summary.Actor.RefPath. Request at least expected participant count (prefer count+1), verify exactly one network result, Actor.RefPath, RoadCount==expected count, len(Roads)==RoadCount, no duplicates and ordered paths==run.roads+run.derived_junction_roads. Continue validating each DescribeRoad.Network.RefPath and ownership. MaxRoads=0 currently returns no summaries and cannot prove membership.",
+      "installed_api_references": [
+        "RoadBLDDiscoveryToolset.h:113",
+        "RoadBLDDiscoveryToolset.cpp:139-172,617-625",
+        "RoadBLDToolsetTypes.h:310-347",
+        "DynamicRoadNetwork.gen.cpp:2145-2146"
+      ],
+      "membership_scope": "MakeNetworkInfo iterates actual RoadsInNetwork in order but skips invalid UObject entries. This proves all valid native road members and their order; do not claim visibility of invalid/stale raw-array slots or substitute the expected ledger itself as observation.",
+      "historical_status": "confirmed_live_blocker_requires_source_repair",
+      "resolution_review": "task1.refreeze_correction_review",
+      "resolved_source_sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699"
+    }
+  ],
+  "task1": {
+    "handoff_available": true,
+    "final_source_review": "S1_S2_resolved_static_at_verified_v2_hashes",
+    "no_editor_readiness_approval": true,
+    "final_hashes_verified": true,
+    "review": {
+      "status": "final_hashes_verified_one_static_finding_requires_resolution",
+      "reviewed_utc": "2026-10-03T18:03:29.714182+00:00",
+      "method": "Read the two source files and installed plugin C++/UHT declarations; AST parsing only. No import/execution of either module and no editor calls.",
+      "task1_handoff": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK1_SOURCE_RESULT.json",
+      "task1_handoff_sha256": "e147f714ed182e03b00b929cddea8a764b980a42552cd0d0b01fc2a429c05835",
+      "frozen_files": {
+        "geocity_roadbld_junctions.py": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+          "sha256": "f429df4117a31c47b1c6653c41b85103082d8c248232dc5181975e01a0d8158f",
+          "matches_final_handoff": true,
+          "syntax_ast_parse_passed": true
+        },
+        "geocity_roadbld_workflow.py": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+          "sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+          "matches_final_handoff": true,
+          "syntax_ast_parse_passed": true
+        }
+      },
+      "passed_static_checks": [
+        "Reflected tool structs support Location/TurnRadius (FRoadBLDPoint), Road/bStart endpoints, Road/bLinkedToStart/RightAxisOffset link info, Network/PresetId/ControlPoints/LeftLanes/RightLanes/Start/End road info, Actor/RoadCount/bStale/bRebuildInProgress network info and Network.RefPath edit result. Call argument order matches installed SetControlPoints and ConnectEndpoints headers.",
+        "Preset/actor material, sidewalk, crown, closed-policy, PCG and radius property names checked against installed UHT declarations. Boolean bitfields are declared through FBoolPropertyParams, not STRUCT_OFFSET.",
+        "Recorded SDK edits freeze before/expected-after before dispatch; expected-after advances without another call. Competing/missing link state fails closed. SDK refuses already-linked endpoints; this makes the reconciliation necessary.",
+        "Pending retry requires only the bytes appended during the one synchronous SDK call, exact known warning and one RoadBLDToolset line, unsuccessful network result, and exactly unchanged full participant snapshot. An old legacy message is used only for bounded adoption eligibility, not future retries.",
+        "A single operation retains started/deadline monotonic values through phase reentry and retries after one second. Deadline checked on entry and immediately before dispatch; no sleep or timer reset. Delayed/missing log evidence fails closed.",
+        "Scoped CDO/template defaults are restored in finally, then previously owned instance radius values are restored before after-snapshot/yield. No config/default asset save added.",
+        "Legacy adoption is bounded to actual Shujaiya revision/network/first empty connector and unchanged original sources. step_index=1 skips spawn. New spawn sets a persisted spawn_dispatched guard before calling; unknown outcome cannot respawn.",
+        "Frozen tasks/trim/automatic proof hashes protect continuation; discovery is not rerun after checkpointed edits. Workflow uses state[phase]=conditioning and None yield, with pass2 only after completed report and _tick_running reentrancy guard.",
+        "Both final source hashes match TASK1_SOURCE_RESULT.json READY_FOR_EDITOR; both files AST parse without imports."
+      ],
+      "findings": [
+        {
+          "id": "S1",
+          "priority": 2,
+          "status": "requires_source_owner_resolution_before_continuation",
+          "title": "Expected reciprocal link offsets do not match SDK semantics",
+          "source": "Content/Python/geocity_roadbld_junctions.py",
+          "lines": [
+            479,
+            487
+          ],
+          "comparison_lines": [
+            433,
+            450,
+            606,
+            610,
+            639,
+            643
+          ],
+          "installed_api": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Common/RoadBLDToolsetUtils.cpp:854-875",
+          "evidence": "_expected_edit appends offset=0.0 in both link directions. CreateReciprocalLink computes CalculateRightAxisOffset and stores +offset on A and -offset on B. _matches tolerates coordinates/radii only, then hashes links exactly via json.dumps; 0.0 and -0.0 hash differently. Small legitimate nonzero projection/coordinate rounding can also differ from hardcoded zero.",
+          "impact": "A valid successful Link call, or missed-completion replay reconciliation of that link, can fail with Native edit differs from exact expected controls/links/policy or Ambiguous native partial edit. Source/actors remain unsaved; no duplicate replay occurs, but the ordinary continuation stops after applying a valid link.",
+          "certainty": "Static API/serialization mismatch confirmed. Actual current transaction offsets have not been measured; native AddEndpointLink sign-zero normalization was not established.",
+          "requested_resolution": "Model the installed calculated offset from the frozen endpoint readback, or compare reciprocal offsets numerically under the already established <=0.1cm verifier bound with exact endpoint identities/counts and reciprocal consistency. Canonicalize signed zero for numeric comparisons. Keep exact unchanged-before snapshots and all physical gates; do not suppress this error or replay a present link."
+        }
+      ],
+      "limits": [
+        "Static review does not validate actual Unreal calls, async entitlement completion, generated geometry or saved delivery.",
+        "Operation deadline applies to dispatch/retry; a synchronous SDK call cannot be preempted by this Python deadline.",
+        "On an exception the helper marks failed_native_corner_repair; restarting such a failed report requires explicit reconciliation rather than merely setting conditioning. Preserve checkpoints.",
+        "No clearance, pad, centerline, width or source gates were loosened by this review."
+      ],
+      "recommendation": "Manager/source owner resolve S1 and freeze the resulting source before activation; recheck hashes. No live readiness or appearance acceptance granted."
+    },
+    "reflection_followup": {
+      "reviewed_utc": "2026-10-03T18:12:46.093890+00:00",
+      "status": "S2_confirmed_S1_outstanding_await_refreeze",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_PRE_RESUME_20261003T180725494112Z.json",
+          "sha256": "110bcf60969a1fbb571157c5377c94c5d69c97fcb97cf4891295a12b9c198877"
+        },
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_FAILED_RECOVERY_20261003T180806528881Z.json",
+          "sha256": "a2ef1f5df9b7c928d350611f5ef2c351d2976e4bbf0b99e2a26ff64801e90c55"
+        },
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_SOURCE_REPAIR_STOP_20261003T181028712570Z.json",
+          "sha256": "0519284052a790215dc2bbcd599cdff86bd50b39f43e5894b085ac5546b82c13"
+        }
+      ],
+      "source_hashes": {
+        "geocity_roadbld_junctions.py": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+        "geocity_roadbld_workflow.py": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6"
+      },
+      "receipt_comparison": {
+        "legacy_report_independently_equal": true,
+        "checkpoint_created": false,
+        "source_roads": 40,
+        "derived_roads": 1,
+        "same_connector": "DynamicRoad_86",
+        "rebuild_pass": 1,
+        "callbacks": 0,
+        "map_saved": false,
+        "engine_valid": true,
+        "engine_paused": true,
+        "evidence_scope": "Saved Task2 receipts, not new worker live probe."
+      },
+      "property_audit": {
+        "RoadsInNetwork": "UHT declaration exists but no CPF_Edit or CPF_BlueprintVisible; actual Python read failed. UHT presence alone is not proof of supported get_editor_property access.",
+        "actor_and_preset_fields": "SourceDrawPreset, ControlSpline, TurnRadiusLimit and every _POLICY_FIELDS/preset_policy property found in installed UHT with Edit/BlueprintVisible flags. Tags is inherited AActor editor property and already used by retained workflow. No additional concrete mismatch found among these fields.",
+        "tool_struct_fields": "Network.Actor/RoadCount/bStale/bRebuildInProgress/Roads; road-summary Actor; road-info Network/PresetId/ControlPoints/LeftLanes/RightLanes/Start/End; point Location/TurnRadius; lane WidthAtStart/WidthAtEnd; link Road/bLinkedToStart/RightAxisOffset are public reflected EditAnywhere/BlueprintReadWrite fields in RoadBLDToolsetTypes.h.",
+        "point_rows_helper": "No _point_rows definition or call exists in the currently frozen two files or current Content/Python search. Cannot approve an unprovided new helper. Current _owned_state uses DescribeRoad ControlPoints correctly with Location/TurnRadius.",
+        "point_reader_recommendation": "DescribeRoad implementation reads world-space GetLocationAtSplinePoint and GetPointTurnRadius into FRoadBLDPoint.Location/TurnRadius (cpp658-664). If extracting a helper, retain these fields and array order; MaxRadius belongs to a different native control type and is not FRoadBLDPoint API."
+      },
+      "findings": [
+        {
+          "id": "S2",
+          "priority": 1,
+          "status": "confirmed_live_blocker_requires_source_repair",
+          "title": "Direct RoadsInNetwork reflection is unavailable in the running editor",
+          "source": "Content/Python/geocity_roadbld_junctions.py",
+          "lines": [
+            378,
+            380
+          ],
+          "evidence": "TASK2_FAILED_RECOVERY_20261003T180806528881Z.json records RuntimeError Missing reflected property RoadsInNetwork at _owned_state before any SDK edit; legacy report unchanged, callbacks0, same40 sources/one derived connector. Installed DynamicRoadNetwork.gen.cpp:2146 declares UHT property but flags0x0114000000000000 omit Edit/BlueprintVisible, unlike the other snapshot properties.",
+          "impact": "Legacy adoption and all checkpoint snapshots stop before the retry state machine can begin. S1 remains separate and was not exercised.",
+          "requested_resolution": "Use RoadBLDDiscoveryToolset.DescribeNetwork(run.network, MaxRoads) and its reflected FRoadBLDNetworkInfo.Roads -> summary.Actor.RefPath. Request at least expected participant count (prefer count+1), verify exactly one network result, Actor.RefPath, RoadCount==expected count, len(Roads)==RoadCount, no duplicates and ordered paths==run.roads+run.derived_junction_roads. Continue validating each DescribeRoad.Network.RefPath and ownership. MaxRoads=0 currently returns no summaries and cannot prove membership.",
+          "installed_api_references": [
+            "RoadBLDDiscoveryToolset.h:113",
+            "RoadBLDDiscoveryToolset.cpp:139-172,617-625",
+            "RoadBLDToolsetTypes.h:310-347",
+            "DynamicRoadNetwork.gen.cpp:2145-2146"
+          ],
+          "membership_scope": "MakeNetworkInfo iterates actual RoadsInNetwork in order but skips invalid UObject entries. This proves all valid native road members and their order; do not claim visibility of invalid/stale raw-array slots or substitute the expected ledger itself as observation."
+        }
+      ],
+      "prior_review_correction": "Previous reflected-field review covered tool structs and actor/preset policy fields but missed direct network RoadsInNetwork accessibility. Its general static pass did not prove every live Python property; S2 now explicitly supersedes that implication.",
+      "required_next_step": "Source owner resolves S1 and S2, refreezes with new hashes; manager then requests focused correction review. Keep current failed_conditioning state, immutable legacy failure and unchanged participants. No worker continuation or readiness approval.",
+      "ground_quality": "Still open pending actual saved Lit street/ground views. No aesthetic acceptance.",
+      "editor_calls": 0,
+      "code_edits": 0
+    },
+    "refreeze_correction_review": {
+      "reviewed_utc": "2026-10-03T18:16:53.368215+00:00",
+      "status": "S1_S2_RESOLVED_STATIC_SOURCE_REVIEW",
+      "source_revision": "bounded_api_offset_repair_v2",
+      "handoff_sha256": "5bf42d562bc08aa74aa6c71eb01b71cfd5f5cbbd025f7bce629611599a31ea55",
+      "frozen_files": {
+        "geocity_roadbld_junctions.py": {
+          "sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+          "matches_handoff": true,
+          "ast_parse": true
+        },
+        "geocity_roadbld_workflow.py": {
+          "sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+          "matches_handoff": true,
+          "ast_parse": true
+        }
+      },
+      "S1": {
+        "status": "resolved_in_frozen_source",
+        "evidence": "_edit_step records new_link_endpoints only for link_a/link_b and passes that list to _matches both for post-call validation and pre-call missed-completion reconciliation. _matches requires exactly one link at each selected endpoint, exact reciprocal road/start identity, finite abs(offset)<=0.1cm and offset == -reciprocal_offset; only these new offsets are normalized to expected zero before comparison. Numeric equality handles signed zero. Existing links remain untouched by normalization; the next checkpoint stores actual offsets. Pending-license unchanged-before uses exact _sha, not tolerant _matches.",
+        "lines": "junctions.py:435-480,630-642,675-683",
+        "physical_limits_changed": false
+      },
+      "S2": {
+        "status": "resolved_in_frozen_source",
+        "evidence": "_owned_state calls DescribeNetwork(exact network,len(paths)+1), requires one result and Actor.RefPath identity, RoadCount==len(paths), unique expected actor paths and returned Roads[].Actor.RefPath list exactly equal in order. List equality also establishes returned length==expected count, so truncation, missing, duplicate or extra valid members fail. It rejects bRebuildInProgress and retains actual bStale in the snapshot; each DescribeRoad.Network is still checked. No direct RoadsInNetwork get remains.",
+        "lines": "junctions.py:372-407",
+        "api_basis": "Installed MakeNetworkInfo iterates valid native members in order; MaxRoads caps summaries only, not RoadCount. Invalid raw-array UObject slots remain outside this discovery proof."
+      },
+      "recovery": {
+        "status": "handoff_contract_verified_task2_script_update_still_required",
+        "current_receipt_phase": "failed_conditioning",
+        "legacy_report_independently_equal": true,
+        "checkpoint_created": false,
+        "original_sources": 40,
+        "derived": 1,
+        "handoff_guards": "Exact native failed_conditioning and parent failed_native_road_transaction; exact saved error/recovery_error; equality of original report to failed receipt; no checkpoint_version; exact revision/pass/source/derived count and DynamicRoad_86. Fresh unique pre-resume snapshot before phase changes. No broad failed-state acceptance.",
+        "source_adoption": "_legacy_empty_recovery still checks original failed-native-corner signature, revision/network/connector/empty controls and links, unchanged sources, original proof hash, preset/radius/ownership and old exact log evidence. It stores deepcopy/hash of legacy report, starts step1 and preserves failed legacy evidence if adoption fails. No respawn or report erasure introduced.",
+        "integration_remaining": "At this review resume_existing_shuj.py still asserts failed_rebuilding. Task2 must implement the already supplied exact failed_conditioning guard before running it after manager reactivation. This is an explicit pending task2 integration step, not an unresolved S1/S2 source correction."
+      },
+      "other_properties": "Prior independent installed-header/UHT audit found the concrete actor/preset/component/tool-result fields supported; no newly introduced field beyond NetworkInfo.Roads and RoadSummary.Actor.RefPath, both verified. Task1 reports42 checked fields; this review relies on named declarations and focused changed-field validation rather than asserting42 fresh live reads.",
+      "syntax_only_no_imports": true,
+      "editor_calls": 0,
+      "code_edits": 0,
+      "verdict": "No remaining S1/S2 source objection to manager-controlled continuation after Task2 exact resume-script adaptation and manager reactivation. This is static correction acceptance, not a live retry, geometry, save/reopen or appearance acceptance.",
+      "ground_quality": "Open pending actual saved Lit ground/street views; prior Rimal findings retained."
+    }
+  },
+  "shujaiya_required_final_verification": [
+    "Manager activation after frozen task1 source review; use existing transaction/network/connector and retained original sources.",
+    "Record each license-pending retry using only that call log suffix plus exact unchanged participants; fixed per-operation deadline, restored CDO/template defaults, and exact before/after checkpoint reconciliation. No license bypass.",
+    "Fresh final source/derived-junction control, reciprocal-link, radius, preset, ownership and original-source provenance readback; source counts derived from current contract, not copied from the older 46-road generation.",
+    "Final actual upward asphalt source coverage <=1m/<=10cm, protected-pad/area fit and same-source support for any exact null placeholder; retained geometry/material/UV/normal/collision gates unchanged.",
+    "Official HDA native-provider suppression lifecycle completes before named dependency closure/map save; previous successful delivery stays until replacement passes; no saved overlapping providers or cooked copies.",
+    "Saved-map readback and same-editor reopen with cooking paused/no recook: one Landscape, 398 building pads covered, 18016 bank instances unless explicitly justified change, exact material partitions/anchors, native ledgers and named packages clean.",
+    "Reopened shared Natural MI, four target bindings, eight selected texture values and two corrected normal copies with immutable provenance match; 69 supported names never presented as 69 painted classes.",
+    "Actual saved Lit ground/street close view plus junction/slope/pad-margin view and area view; inspect broad soil repetition, texture scale, normals, roughness, curb transitions and seam shading. User acceptance remains separate.",
+    "Report latest ordinary regeneration completion separately from resumed partial transaction, saved/reopened state, fresh-process restart not performed, and user visual acceptance. Do not claim a fresh uninterrupted rerun merely because recovery completed.",
+    "At clean final handoff, manager verifies callbacks/paused state, named package cleanliness and restores original autosave setting under the authorized lifecycle."
+  ],
+  "not_performed": [
+    "Live connection handshake",
+    "Editor/Houdini import or evaluation",
+    "Asset/source/profile edits",
+    "Fresh map/process reopen",
+    "Traversal",
+    "Final Shujaiya review",
+    "User acceptance"
+  ],
+  "written_files_only": [
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_REVIEW_RESULT.json",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\TASK3_REVIEW.txt"
+  ],
+  "ground_roughness_followup": {
+    "reviewed_utc": "2026-10-03T18:21:55.082751+00:00",
+    "status": "native_roughness_red_channel_verified_saved_closeview_still_pending",
+    "scope": "Bounded filesystem/receipt and binary graph read; no editor/Houdini calls, code/asset/profile changes or image generation.",
+    "authoritative_native_function": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Materials\\Landscape\\Material_Function\\MF_Layer_Base.uasset",
+      "sha256": "49aaee67d04b07a367122af74acd53551b2106de93068d2b810adecbbe0421db",
+      "matches_MOUT_MATERIAL_COPY_receipt": true,
+      "decode_method": "Read original UE package summary,156 names at offset384,84 exports at5791/stride104, then tagged serialized expression properties. ExpressionInput graph references, channel masks and scalar defaults are recorded below. No package imported or evaluated.",
+      "graph_nodes": [
+        {
+          "export_index": 19,
+          "name": "MaterialExpressionFunctionInput_1",
+          "serial_offset": 116458,
+          "serial_size": 394,
+          "properties": {
+            "InputName": "Roughness",
+            "InputType": "FunctionInput_Scalar",
+            "PreviewValue": "0000803f00000000000000000000803f"
+          }
+        },
+        {
+          "export_index": 24,
+          "name": "MaterialExpressionFunctionInput_5",
+          "serial_offset": 118553,
+          "serial_size": 443,
+          "properties": {
+            "Preview": {
+              "export_index": 74,
+              "node": "MaterialExpressionTextureObject_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "InputName": "RGB Mask",
+            "InputType": "FunctionInput_Texture2D"
+          }
+        },
+        {
+          "export_index": 29,
+          "name": "MaterialExpressionFunctionOutput_3",
+          "serial_offset": 120564,
+          "serial_size": 347,
+          "properties": {
+            "OutputName": "Result_1",
+            "A": {
+              "export_index": 35,
+              "node": "MaterialExpressionMakeMaterialAttributes_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "export_index": 31,
+          "name": "MaterialExpressionLinearInterpolate_0",
+          "serial_offset": 121130,
+          "serial_size": 419,
+          "properties": {
+            "A": {
+              "export_index": 79,
+              "node": "MaterialExpressionTextureSample_4",
+              "output_index": 1,
+              "mask_enabled": 1,
+              "mask_rgba": [
+                1,
+                0,
+                0,
+                0
+              ]
+            },
+            "B": {
+              "export_index": 78,
+              "node": "MaterialExpressionTextureSample_3",
+              "output_index": 1,
+              "mask_enabled": 1,
+              "mask_rgba": [
+                1,
+                0,
+                0,
+                0
+              ]
+            },
+            "Alpha": {
+              "export_index": 57,
+              "node": "MaterialExpressionReroute_12",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "export_index": 35,
+          "name": "MaterialExpressionMakeMaterialAttributes_0",
+          "serial_offset": 122806,
+          "serial_size": 759,
+          "properties": {
+            "BaseColor": {
+              "export_index": 55,
+              "node": "MaterialExpressionReroute_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "Specular": {
+              "export_index": 52,
+              "node": "MaterialExpressionPower_1",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "Roughness": {
+              "export_index": 54,
+              "node": "MaterialExpressionPower_3",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "Normal": {
+              "export_index": 36,
+              "node": "MaterialExpressionMaterialFunctionCall_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "WorldDisplacement": {
+              "export_index": 47,
+              "node": "MaterialExpressionMultiply_7",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "TessellationMultiplier": {
+              "export_index": 34,
+              "node": "MaterialExpressionLinearInterpolate_4",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "AmbientOcclusion": {
+              "export_index": 60,
+              "node": "MaterialExpressionReroute_4",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "export_index": 41,
+          "name": "MaterialExpressionMultiply_1",
+          "serial_offset": 130919,
+          "serial_size": 334,
+          "properties": {
+            "A": {
+              "export_index": 71,
+              "node": "MaterialExpressionStaticSwitchParameter_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "B": {
+              "export_index": 19,
+              "node": "MaterialExpressionFunctionInput_1",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "export_index": 54,
+          "name": "MaterialExpressionPower_3",
+          "serial_offset": 135006,
+          "serial_size": 334,
+          "properties": {
+            "Base": {
+              "export_index": 41,
+              "node": "MaterialExpressionMultiply_1",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "Exponent": {
+              "export_index": 62,
+              "node": "MaterialExpressionScalarParameter_10",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "export_index": 62,
+          "name": "MaterialExpressionScalarParameter_10",
+          "serial_offset": 137083,
+          "serial_size": 320,
+          "properties": {
+            "DefaultValue": 1.5,
+            "ParameterName": "Roughness Contrast"
+          }
+        },
+        {
+          "export_index": 71,
+          "name": "MaterialExpressionStaticSwitchParameter_0",
+          "serial_offset": 140033,
+          "serial_size": 458,
+          "properties": {
+            "A": {
+              "export_index": 31,
+              "node": "MaterialExpressionLinearInterpolate_0",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "B": {
+              "export_index": 79,
+              "node": "MaterialExpressionTextureSample_4",
+              "output_index": 1,
+              "mask_enabled": 1,
+              "mask_rgba": [
+                1,
+                0,
+                0,
+                0
+              ]
+            },
+            "DefaultValue": true,
+            "ParameterName": "Distance_Tilling"
+          }
+        },
+        {
+          "export_index": 78,
+          "name": "MaterialExpressionTextureSample_3",
+          "serial_offset": 142613,
+          "serial_size": 416,
+          "properties": {
+            "Coordinates": {
+              "export_index": 42,
+              "node": "MaterialExpressionMultiply_10",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "TextureObject": {
+              "export_index": 24,
+              "node": "MaterialExpressionFunctionInput_5",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "SamplerType": "SAMPLERTYPE_Masks"
+          }
+        },
+        {
+          "export_index": 79,
+          "name": "MaterialExpressionTextureSample_4",
+          "serial_offset": 143029,
+          "serial_size": 416,
+          "properties": {
+            "Coordinates": {
+              "export_index": 56,
+              "node": "MaterialExpressionReroute_1",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "TextureObject": {
+              "export_index": 24,
+              "node": "MaterialExpressionFunctionInput_5",
+              "output_index": 0,
+              "mask_enabled": 0,
+              "mask_rgba": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "SamplerSource": "SSM_Wrap_WorldGroupSettings",
+            "SamplerType": "SAMPLERTYPE_Masks"
+          }
+        }
+      ],
+      "verified_path": "Result_1 output export29 -> MakeMaterialAttributes export35 Roughness -> Power_3 export54 -> Multiply_1 export41: A=Distance_Tilling switch export71, B=Roughness input export19. Power exponent=Roughness Contrast export62 default1.5.",
+      "channel_proof": "Distance_Tilling=true -> Lerp export31, both A sample79/output1/MaskR and B sample78/output1/MaskR. Distance_Tilling=false -> sample79/output1/MaskR. Both samples use TextureObject export24, FunctionInput RGB Mask, and SAMPLERTYPE_Masks. Thus R-channel roughness is graph-proven, not inferred from filename.",
+      "formula": "pow(selected_or_distance_blended_mask_R * RoughnessInput, RoughnessContrast); Contrast default1.5. Native distance-tiling switch defaults true.",
+      "unverified_semantics": "AO/specular/height channel semantics not generalized from this roughness trace. No claim about every current native MI override or rendered response."
+    },
+    "native_master": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Materials\\Landscape\\Master_Material\\MM_Landscape.uasset",
+      "sha256": "57897a23374d048a56ce3d1f4468798da9ee4063129ca083717fce246504d111",
+      "default_parameters": "01 Roughness through08 Roughness each serialize DefaultValue1.0 in native master. Full resolved native MI scalar/static-switch override state was not established; do not substitute defaults as current live values.",
+      "prior_receipt": "Staging/PaintBank_2026-10-02/MOUT_MATERIAL_LOAD.json identifies original master/function and mask bindings for Dirt Path, Sand, Sand02 and Sand Path."
+    },
+    "available_existing_masks": [
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Textures\\Landscape\\Dirt_Path_01\\T_Dirt_Path_01_Mask.uasset",
+        "sha256": "37b7dd4809870747f7d9bfa81fe35dbb405b94c81e1d9d8c65c0c0fe7112cc4c",
+        "matches_original_copy_receipt": true
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Textures\\Landscape\\Sand_01\\T_Sand_01_Mask.uasset",
+        "sha256": "686ce008d4a870f7652d323fb157798905acbba8bd721274113b87ca1d678361",
+        "matches_original_copy_receipt": true
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Textures\\Landscape\\Sand_02\\T_Sand_02_Mask.uasset",
+        "sha256": "e489e39935e9ab0bee7a0e61ede1f39aca1f774cf3755a069ba028267451369e",
+        "matches_original_copy_receipt": true
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\MOUT_Arabian\\Textures\\Landscape\\Sand_Path_01\\T_Sand_Path_01_Mask.uasset",
+        "sha256": "a553c31817fdbc6f342b36232f1c260b531e66efbc432761b236b06083aee482",
+        "matches_original_copy_receipt": true
+      }
+    ],
+    "texture_settings_limit": "2026-10-02 MOUT_NATIVE_LOAD records these masks sRGB=true/TC_DEFAULT. Current bytes match that transfer, but no new live texture-setting read performed. If a masks-sampler branch is chosen, verify settings and use scoped linear/masks copies if correction is needed; preserve originals. Do not reuse corrected normal copies as masks.",
+    "current_retained_difference": {
+      "basis": "Immutable GROUND_SHADER_REPAIR receipt plus prepare_appearance_materials.py source",
+      "roughness_by_selected_role": {
+        "Dirt_Path": 0.8999999761581421,
+        "Sand_01": 0.8999999761581421,
+        "Sand_02": 0.8999999761581421,
+        "Sand_Path": 0.8999999761581421
+      },
+      "macro_soil": "Current Sand01 soil macro blend changes color and normal only; roughness is still the role scalar. The verified native R mask contains a supported roughness source that this custom shader does not currently sample.",
+      "variety_limit": "Adding roughness texture cannot establish geographic land-use variety or fix the broad beige albedo repetition by itself."
+    },
+    "conditional_option": {
+      "state": "available_evidence_based_option_not_yet_recommended_for_execution",
+      "trigger": "Only if actual saved Lit street/ground close views show uniformly dull/plastic surface response or missing fine roughness variation. Current aerial image alone does not establish that defect.",
+      "bounded_option": "In the retained Natural project master, sample the existing matching Sand01/DirtPath mask R at the same220cm/260cm projections as their respective color/normal branches; respect verified native multiply/contrast semantics after resolving intended MI parameters, then blend those two roughness results with the existing soil macro alpha. Sand02/SandPath can use their own matching verified-native mask family if their close views warrant it. No change to semantic landscape weights or native parent assets.",
+      "parameter_limit": "Do not blindly replace0.9 with native defaults1.0/1.5. Native resolved overrides and actual close view must determine whether this is needed. Preserve the four targets/all69 names, corrected normal-copy paths and native originals; named project copies only.",
+      "no_edit_plan_activated": true
+    },
+    "task2_latest_evidence": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\TASK2_FAILED_RECOVERY_20261003T181945515173Z.json",
+      "sha256": "07518052ec6f898880596cd463b220570b04f46f752855773990e56e9e538d33",
+      "utc": "20261003T181945515173Z",
+      "native_phase": "failed_conditioning",
+      "error": "AssertionError('Native road enables excluded landscape/edge feature: bEnableLandscapeSplineMirroring')",
+      "legacy_report_unchanged": true,
+      "callbacks": 0,
+      "map_saved": false,
+      "meaning": "Latest saved receipt reports closed-policy failure bEnableLandscapeSplineMirroring with40sources/one derived connector and no save. No new final saved Lit Shujaiya images/handoff were available at this inspection. The exact offending actor is not inferred from this top-level error."
+    },
+    "visual_acceptance": false,
+    "saved_lit_close_review": "pending_new_actual_images",
+    "editor_calls": 0,
+    "source_or_asset_edits": 0
+  },
+  "grounding_provenance_review": {
+    "status": "REVIEWED_FOR_BOUNDED_LIVE_CONTINUATION_ACTUAL_PHYSICAL_GATES_PENDING",
+    "reviewed_utc": "2026-10-03T18:45:49.236054+00:00",
+    "task1_freeze_status": "READY_FOR_EDITOR",
+    "source_sha256": "fb2c3cc1fec8d8626fcb6d4e4b54d8e3767c1b083fb63899b78e0e5505048a92",
+    "evidence_path": "Staging/AppearanceRepair_2026-10-03/TASK2_GROUNDING_GEOMETRY_20261003T183550025521Z.json",
+    "evidence_sha256": "5413408cacd48c397c10b77f1708078e0ca10d67650acfa59bf33d82e2dfad59",
+    "finding": {
+      "id": "G1",
+      "severity": "blocking_for_this_working_version",
+      "source": "Content/Python/geocity_roadbld_grounding.py:244",
+      "description": "Working cross-section helper still excludes the actual nearest parent asphalt. Query projection onto DynamicRoad_65 trim is longitudinal150.00020530894716/lateral500.0003336553408cm. RoadGeo_145 triangle128 nearest point is [-13058.3828125,11511.4609375], distance150.00504402580873cm; its parent projection is longitudinal150.20730643957404/lateral349.99543259438707cm. Thus nearest reference exceeds the proposed length+0.1cm condition (150.1cm), so fallback still rejects. Parent83 is not an alternative: query along=-493.0635345363147cm. Other named parent fields are977.415cm and1369.302cm away, beyond unchanged300cm cap. This is independent arithmetic on actual receipt, not a source import or editor call.",
+      "scope": "Task1 is still working; review the eventual frozen algorithm, not a claim against a final freeze.",
+      "constraint": "Do not increase300cm or borrow unrelated geometry. The query must retain exact parent/trim provenance. Actual supporting parent asphalt continues beyond the trimmed endpoint; inspect and justify its bounded local support separately from query eligibility. See offline_corridor_intersection; simply clipping reference XY to the same trim corridor is insufficient.",
+      "status": "RESOLVED_IN_FROZEN_SOURCE"
+    },
+    "editor_calls": 0,
+    "source_imports": 0,
+    "source_asset_profile_mutations": false,
+    "native_grounding_clipping_and_saved_review": "NOT_PERFORMED; final actual physical gate still required",
+    "roughness_findings": "Preserve existing ground_roughness_followup as conditional only.",
+    "offline_corridor_intersection": {
+      "method": "Independent 2D Sutherland-Hodgman clipping of each recorded actual material0/upward RoadGeo_145 triangle against parent65 longitudinal[-0.1,150.1]cm and signed lateral[-350.1,350.1]cm, then segment nearest-point arithmetic. No source imports or editor.",
+      "nearest_distance_cm": 408.7255006342139,
+      "triangle": 127,
+      "nearest_local_along_signed_across_cm": [
+        150.10000000000025,
+        -91.27484520409628
+      ],
+      "implication": "Merely searching actual triangle points clipped into this exact corridor also cannot resolve this failure within300cm. Query eligibility may stay inside the exact trim, but physically adjacent parent asphalt extends beyond the trim endpoint; a justified distinction between query provenance and parent-reference support is needed. This supersedes the tentative clipped-support suggestion in preliminary G1."
+    },
+    "previous_working_source_sha256": "9061bd253f94d5cae85a977d05dabaaa5fc89b8882936b25f3317cd7ad6d9cba",
+    "working_resolution": "Frozen correction accepts only a query inside its exact original150cm trim and actual nearest upward asphalt from the exact named parent, projected into the verified finite retained endpoint segment and native pavement half-width, with unchanged300cm Euclidean cap. Captured query and reference satisfy all bounds.",
+    "independent_offline_capture_arithmetic": {
+      "method": "Independent point-triangle XY nearest-distance calculations using captured native material0/upward masks; no project module imported. Actual captured uniformly tessellated RoadGeo_174 geometry only, five captured surfaces.",
+      "unique_connector_vertex_xy": 609,
+      "connector_xy_needing_fallback_beyond300cm": 1,
+      "fallback_supported_by_exact_parent_surface": 1,
+      "unresolved_xy": 0,
+      "support_geo": "RoadGeo_145",
+      "support_triangle": 128,
+      "max_fallback_distance_cm": 150.00504402580873,
+      "limit": "This verifies captured XY reference availability only. No Landscape Z sampling, grounded output, clipping, final source physical gate, saved map or close-view validation has been performed.",
+      "selected_by_existing_plane_height_tiebreak_triangle": 129
+    },
+    "current_source_review": {
+      "source_scope": "Only bounded derived-connector query to a native surface naming its exact validated parent. No reverse borrowing by a parent or unrelated derived sibling through this added predicate. All surfaces supplied by existing current-map owned RoadGeo collection.",
+      "query_bounds": "Original endpoint to native trimmed endpoint, longitudinal[-0.1,length+0.1]cm; trim length matches recorded pullback within0.1cm. Same300cm distance cap retained.",
+      "reference_bounds": "Actual upward material0 nearest triangle from the exact native parent SourceRoads. Reference lies inside the finite first retained native endpoint segment (+/-0.1cm tolerance), with cross-track distance<=verified parent half-width+0.1cm. Explicit actual Euclidean reference distance<=300cm.",
+      "native_width_and_segment_proof": "_validated_derived_provenance calls verify_source_road and verify_derived_roads before creating proof. Source validator verifies expected controls hash, actual controls/radii, widths at both endpoints against width_m*100 within0.1cm, original protected source points and closed preset policy. Segment is oriented inward at either start or end from the verified expected controls.",
+      "retained_segment_measurement": {
+        "length_cm": 47.32210073423316,
+        "reference_along_cm": 0.20730643957328834,
+        "reference_across_cm": 349.99543259438707,
+        "half_width_cm": 350.0
+      },
+      "selection_note": "Actual triangles128 and129 share the nearest vertex at150.005044cm. Independent triangle128 result establishes distance; existing highest-plane-Z tie-break chooses triangle129 (4933.569110247512cm vs triangle1284932.957905165342cm), matching task1 arithmetic receipt.",
+      "unchanged_final_gate": "_source_eligibility radial predicate and verify_source_coverage still require actual upward owned asphalt coverage along all40 sources at<=100cm sample spacing, source/Landscape height<=10cm; exact protected-footprint and later clipping/save gates remain required.",
+      "syntax": "Parsed current source AST without importing project modules.",
+      "verdict": "PASS for the frozen bounded provenance correction; no remaining blocking source finding. Manager may use this independent review when deciding task2 reactivation. This report neither activates an editor writer nor claims actual physical output passed."
+    },
+    "frozen_files_verified": {
+      "geocity_roadbld_junctions.py": {
+        "sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+        "current_bytes_match": true,
+        "ast_parse_passed": true
+      },
+      "geocity_roadbld_workflow.py": {
+        "sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+        "current_bytes_match": true,
+        "ast_parse_passed": true
+      },
+      "geocity_roadbld_grounding.py": {
+        "sha256": "fb2c3cc1fec8d8626fcb6d4e4b54d8e3767c1b083fb63899b78e0e5505048a92",
+        "current_bytes_match": true,
+        "ast_parse_passed": true
+      },
+      "geocity_roadbld_clip.py": {
+        "sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+        "current_bytes_match": true,
+        "ast_parse_passed": true
+      }
+    },
+    "remaining_required_work": [
+      "Manager-controlled guarded continuation from the same completed native rebuild, preserving all40 original and4derived roads and the completed four-corner checkpoint.",
+      "Actual grounding across all87 current native components, subsequent seam/clipping/protected-footprint and <=10cm source/Landscape physical gates.",
+      "Successful ordinary provider suppression, named saves, saved/reopen verification and actual saved Lit ground/street close views.",
+      "Conditional original native-mask roughness findings stay in ground_roughness_followup; do not activate roughness changes from this source review alone."
+    ],
+    "grounding_report_committed": false,
+    "visual_acceptance": false,
+    "post_rebuild_continuation_review": {
+      "status": "REVIEWED_FOR_BOUNDED_LIVE_CONTINUATION_BY_MANAGER_ACTIVATED_TASK2",
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_clipping.py",
+      "sha256": "6a3df77f77d24b0a4211e1a2b39318b60c260a7164723d6cde1f350d0af1e74f",
+      "syntax": "AST parsed without importing or executing the script.",
+      "failed_state_guards": "Checks manager task2 assignment, exact worker lease/PID32752, current world through p/r.guard, one editor, no parent/native/own callbacks, paused valid official Engine, suspended autosave. Requires failed_clipping/failed_native_road_transaction, exact recorded failure error and junction report equality/hash.",
+      "retained_native_checkpoint": "Requires completed_corner_count4, checkpoint_version1/task_index4/step_index0/no operation, native_corners_authored_pending_rebuild, revision20261003T172549017159/pass3, same token/network,40 original+4derived and network not stale. Full participant snapshot must equal both stop and geometry evidence. Captured receipt confirms these values and native_rebuild_completed=True.",
+      "bound_geometry": "Compares entire component/mesh/transform/material snapshot against all87 recorded bindings, requires native RoadGeoSurfaceMesh subobjects (or recorded null), current owned SourceRoads and exact five sampled surface source lists. Requires no committed grounding or clipping report.",
+      "source_reload": "Checks exact paths and current SHA256 for all four frozen files; reloads only clip and grounding. Preserves bank/native ACTIVE object identities, p/r classes, complete junction report and transaction token. No junction/workflow reload or native corner/rebuild call.",
+      "execution": "Writes uniquely named pre-resume receipt before helper reload/state edits. Restores parent cook/processing handlers and watch once after stopped-state guards. One-shot callback marks started and unregisters itself before work, rechecks lease/checkpoint, sets _tick_running, calls clip_final_geometry -> validate -> finish -> original completion callback once. This matches the normal post-rebuild sequence without dispatching an extra rebuild or conditioning operation.",
+      "failure": "Normal r.fail invokes native failure receipt and parent failure handling; finally clears _tick_running and suspends transaction autosave if either phase failed. Previous delivery retained; no explicit saved-map mutation in this script.",
+      "scope_limit": "Static review only. Does not establish that current live guards pass or authorize this reviewer to run them. Original completion callback may perform the already-authorized official provider-suppression and named-save lifecycle after physical validation.",
+      "blocking_findings": []
+    }
+  },
+  "height_grounding_review": {
+    "status": "FROZEN_V4_REVIEWED_FOR_BOUNDED_LIVE_CONTINUATION",
+    "reviewed_utc": "2026-10-03T19:11:54.603205+00:00",
+    "evidence_path": "Staging/AppearanceRepair_2026-10-03/TASK2_HEIGHT_GATE_STOP_20261003T185123265485Z.json",
+    "evidence_sha256": "d5174beca2ba285673f1d6ac8183c4478789d2216ab0f2a1dcf3930a42e0fba8",
+    "measured": {
+      "road": "DynamicRoad_53",
+      "geometry": "RoadGeo_96",
+      "triangle": 418,
+      "failed_point_cm": [
+        -2389.3798510233564,
+        -8304.684829711914,
+        4661.829436650753
+      ],
+      "original_source_segment_zero_based": 11,
+      "fraction": 0.49999999999999906,
+      "exported_interpolated_ground_z_cm": 4656.829436650753,
+      "actual_grounded_asphalt_z_cm": 4661.829436651035,
+      "actual_Landscape_ground_z_cm": 4645.539046546517,
+      "Landscape_plus5cm": 4650.539046546517,
+      "height_error_cm": 11.290390104518337,
+      "unchanged_height_limit_cm": 10.0,
+      "callbacks": 0,
+      "grounding_report_committed": false,
+      "clipping_report_bound": false,
+      "saved": false
+    },
+    "independent_calculation": "Projected the failure onto the original source XY segments: exactly the midpoint of segment11, zero XY distance. Linear exported grade+5cm agrees with reported native asphalt within3e-10cm. Thus the observed local failure is a longitudinal target mismatch, not a floating offset introduced by the asphalt interpolation at this point.",
+    "inference_limit": "The nine surrounding real Landscape samples show nonuniform local slope but do not alone prove the underlying HDA-vs-native triangulation/interpolation cause. Do not label the specific upstream cause measured without additional evidence.",
+    "projection_evidence_gap": "Actual triangle418 vertices681/689/687 project to source segment11 at fractions0.0832774977/0.5870578183/0.5870577696. Closest existing sample distances are52.450818/17.280726/17.280717cm; no exact projected vertex heights exist in the nine-sample receipt. Need requested actual Landscape projection samples before evaluating corrected triangle height.",
+    "review_constraints": [
+      "Use the exact owned current official HDA Landscape collision sampler; no neighbouring actor or road hit.",
+      "Preserve one longitudinal grade across the native cross-section; no global Z offset, height tolerance increase or unrelated-source borrowing.",
+      "Keep300cm lateral support,10cm physical height, original source-point checks and existing protected/clip/save gates.",
+      "Verify actual corrected triangles against original unchanged physical samples; target sampler agreement alone is insufficient."
+    ],
+    "task1_status": "READY_FOR_EDITOR",
+    "prior_lateral_provenance_review": "Passed frozenv3 retained; new failure is at the subsequent physical height gate. Prior report explicitly left that gate pending.",
+    "editor_calls": 0,
+    "source_imports": 0,
+    "source_asset_profile_mutations": false,
+    "roughness": "Previous roughness findings preserved and conditional only.",
+    "additional_height_detail": {
+      "path": "Staging/AppearanceRepair_2026-10-03/TASK2_HEIGHT_GATE_DETAIL_20261003T185441439244Z.json",
+      "sha256": "17e5bfd90a459ef4ec8e306a21c04bd6d6e14c10dff2b75673afbed81e93c80f",
+      "max_abs_exported_vertex_vs_current_Landscape_cm": 1.546773418000157,
+      "exported_vertex_count": 25,
+      "local_segment11_endpoint_Landscape_z_cm": [
+        4652.645482136621,
+        4660.867719928938
+      ],
+      "segment11_fraction0375_Landscape_z_cm": 4645.221272614217,
+      "segment11_fraction05_Landscape_z_cm": 4645.539046546517,
+      "measured_interpretation": "All25 exported vertices agree with current Landscape within1.547cm, but actual terrain between vertices forms a dip that linear exported grade misses. This directly establishes interval undersampling for this failed source segment. The specific HDA raster/native triangulation implementation causing the dip remains unproven.",
+      "cross_section_evidence": "Native vertices689/687 project to essentially the same source location but actual lateral terrain heights differ5.905975cm; sampling each lateral vertex independently changes the road cross-section. Sampling the named Landscape at shared source projection is consistent with the intended grade preservation."
+    },
+    "full_area_profile_independent_check": {
+      "path": "Staging/AppearanceRepair_2026-10-03/TASK2_ALL_SOURCE_LANDSCAPE_PROFILES_20261003T185815153909Z.json",
+      "sha256": "4b0e3c3b49f1bc64bf0e51ff6dd4e3b38f1a8d29b86ef1ca96d4c3138f0ac023",
+      "road_count": 40,
+      "export_control_count": 3377,
+      "genuine_control_count": 180,
+      "dense_station_count": 13376,
+      "station_max_interval_cm": 50.0,
+      "source_interpolation_reconstruction_max_error_cm": 0.0,
+      "max_control_vs_Landscape_cm": 5.269650186281069,
+      "max_genuine_control_vs_Landscape_cm": 1.9876171400037492,
+      "max_dense_vs_Landscape_cm": 11.290390104236394,
+      "roads_with_measured_interpolation_above10cm": [
+        {
+          "road": "DynamicRoad_53",
+          "piece_id": "301713727:0",
+          "delta_cm": 11.290390104236394
+        },
+        {
+          "road": "DynamicRoad_63",
+          "piece_id": "41254723:0",
+          "delta_cm": 11.129389237085888
+        }
+      ],
+      "controls_above10cm": 0,
+      "dense_stations_above20cm": 0,
+      "verification_method": "Recomputed every dense source XY/Z from its original segment/fraction and every absolute delta from actual heights; checked file SHA, dataset identity and exact source53 local receipt values. No source import or editor.",
+      "exact100cm_selection_queries_not_in_50cm_dataset": [
+        {
+          "road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_66",
+          "segment": 211,
+          "fraction": 0.5,
+          "xy_cm": [
+            22300.728861490887,
+            -4479.849751790364
+          ],
+          "nearest_dataset_distance_cm": 22.79213504748113
+        },
+        {
+          "road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_66",
+          "segment": 212,
+          "fraction": 0.5,
+          "xy_cm": [
+            22390.97442626953,
+            -4582.597351074219
+          ],
+          "nearest_dataset_distance_cm": 22.792135047478727
+        },
+        {
+          "road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_66",
+          "segment": 213,
+          "fraction": 0.5,
+          "xy_cm": [
+            22481.219991048176,
+            -4685.344950358073
+          ],
+          "nearest_dataset_distance_cm": 22.79213504748113
+        },
+        {
+          "road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_67",
+          "segment": 263,
+          "fraction": 0.5,
+          "xy_cm": [
+            19395.845005767576,
+            27679.637147692363
+          ],
+          "nearest_dataset_distance_cm": 23.871426579353187
+        },
+        {
+          "road_actor_path": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_85",
+          "segment": 0,
+          "fraction": 0.5,
+          "xy_cm": [
+            -28432.22820415038,
+            -5890.03182082764
+          ],
+          "nearest_dataset_distance_cm": 23.465142684191683
+        }
+      ],
+      "selection_replay_limit": "6711 exact<=100cm query positions are required by current working _measure_source_grade.6706 are in this dataset; five on roads66/67 are not because ceil(segment_length/100) and ceil(segment_length/50) create different fractions. Do not use nearest/interpolated sampled heights as actual collision measurements for these five. The live sampler will query them directly; this is an offline completeness limit, not a source blocker."
+    },
+    "exact_projected_53_replay": {
+      "evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_EXACT_PROJECTED_LANDSCAPE_441_20261003T185959855574Z.json",
+      "sha256": "7fe2357e2d61ed2201d31dfbff38216a8811a8d29b86ef1ca96d4c3138f0ac023",
+      "request_sha256": "9950e614296366b5a75a11ac63427683e617b2168d3836ba7ef9450d70464f55",
+      "exact_request_xy_and_order_verified": true,
+      "sample_count": 441,
+      "named_Landscape_matches_stop": true,
+      "independent_method": "For all1448 captured refined vertices, independently project XY to original source polyline, match exact recorded projection height (6decimal cache key), and apply new-target-minus-old-source-grade to task2 reconstructed original grounding. This preserves each measured native asphalt/curb offset and unchangedXY/topology. Independently barycentrically evaluate original upward material0 triangles; no project source imported.",
+      "failed_sample_old_error_cm": 11.290390104518337,
+      "failed_sample_corrected_asphalt_z_cm": 4654.554189405585,
+      "actual_Landscape_plus5_cm": 4650.539046546517,
+      "failed_sample_new_error_cm": 4.015142859067964,
+      "captured_source_gate_positions_directly_covered": 40,
+      "max_error_at_these40_positions_cm": 4.015142859067964,
+      "coverage_limit": "Captured single RoadGeo_96 has no top-triangle coverage for9 of49 whole-source gate points, including[-1044.9521382649739,-9324.118041992188]. Even existing0.01cm boundary snap does not cover the first missing point. Other owned native source/junction meshes are not in this component-only capture. Therefore do not claim fullRoad53 source coverage from these1448 vertices; normal actual native surface union must verify it.",
+      "physical_gate_status": "Offline captured-component arithmetic only; exact failed point is within unchanged10cm after projected-grade correction. Live grounded mesh readback, seams/union/clipping/save gates still required."
+    },
+    "road63_captured_top_face_replay": {
+      "evidence": "Staging/AppearanceRepair_2026-10-03/TASK2_ROAD63_PROJECTED_GEOMETRY_20261003T190536980521Z.json",
+      "sha256": "ad5190f6ae476b8b2f205cff31a6a294efc7b2dceb7cf349258e10dd087df9f5",
+      "geo": "RoadGeo_106",
+      "only_native_source": "DynamicRoad_63",
+      "total_native_refined_vertices": 17370,
+      "actual_upward_asphalt_triangles": 3220,
+      "unique_vertices_used_by_upward_asphalt_triangles": 1903,
+      "actual_Landscape_projection_samples": 8404,
+      "independent_method": "Independently projected all1903 top-face vertices against the115-point original source polyline; exact per-vertex projection records match with0cm discrepancy, rounded6 query coordinates map to captured actual Landscape heights. Independent XY-grid/barycentric computation applies actual projected height+5 minus highest original native asphalt-plane baseline at each top vertex, preserving native offsets. Then evaluates all457 dense source stations against captured top triangles with unchanged0.01cm boundary tolerance. No project source imported.",
+      "covered_dense_stations": 351,
+      "outside_captured_single_component": 106,
+      "max_corrected_asphalt_vs_actual_Landscape_error_cm": 2.055428056835808,
+      "max_corrected_vs_covered_export_control_height_cm": 2.3122468855453917,
+      "specific_grade_failure_segment90_fraction05_in_this_component": false,
+      "scope_limit": "Road63 dense11.129389cm source-grade mismatch location is outside this single-source Geo106 component. Captured changed component passes covered stations, but other existing junction providers and full source union must validate the remaining106 stations. Do not claim the specific Road63 mismatch point resolved by this component-only replay. Native mesh readback/seams/clipping/save remain unperformed."
+    },
+    "source_revision": "measured_projected_source_grade_v4",
+    "frozen_files_verified": {
+      "geocity_roadbld_junctions.py": {
+        "sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+        "current_bytes_match": true,
+        "ast_parse_passed_without_import": true
+      },
+      "geocity_roadbld_workflow.py": {
+        "sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+        "current_bytes_match": true,
+        "ast_parse_passed_without_import": true
+      },
+      "geocity_roadbld_grounding.py": {
+        "sha256": "b77be9186f1b43d969eaca9a272753b71586b83ef43fde834557d92345d56221",
+        "current_bytes_match": true,
+        "ast_parse_passed_without_import": true
+      },
+      "geocity_roadbld_clip.py": {
+        "sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+        "current_bytes_match": true,
+        "ast_parse_passed_without_import": true
+      }
+    },
+    "frozen_source_review": {
+      "verdict": "PASS; no remaining blocking source finding for the bounded manager-activated continuation.",
+      "selection": "Generic per-original-source measurement at<=50cm, keyed/cached by exact source road path. Uses current named Landscape and unchanged ground_profile_tolerance_cm<=10; no hardcoded road/OSM/piece IDs. Independent exact replay of all13376 selection points has0 missing samples and selects only301713727:0/Road53 and41254723:0/Road63.",
+      "previous_offline_query_gap": "RESOLVED: final50cm selector exactly matches the measured dataset; previous five-query100cm replay gap is historical and does not apply to the freeze.",
+      "grade_behavior": "Only measured failing original single-source pieces use actual Landscape at nearest original source XY projection. Other originals retain exported grade; derived connector grade and multi-source junction handling are unchanged. Nearest-distance min preserves original segment order on ties.",
+      "collision_target_purity": "Existing workflow constructs current-cook LandscapeSampler; it selects the unique official HDA Landscape in the exact area world, ignores every other actor, and asserts blocking hit actor, LandscapeHeightfieldCollisionComponent owner, exact traceXY and finiteZ. Same guarded sampler supplies both selection and projected grade. No new foreign geometry target.",
+      "cache_and_finite_values": "Existing original source point validation retained. Optional sampler must be callable; actual grade measurement and projected returned Z must be finite. Per-source selection cached once; vertex/projection caches use existing6decimal precision. Source XY, native lateral/curb offsets, one original tessellation level and report evidence remain preserved.",
+      "unchanged_final_gates": "verify_source_coverage and source eligibility still require actual owned upward triangle coverage at<=1m, actual Landscape+clearance error<=10cm, and exported-control error<=10cm. Existing300cm asphalt reference, named-parent finite-segment provenance, XY/topology/material/UV/normal/collision/area/pad gates unchanged.",
+      "captured_evidence": "Independent actual Road53 failed-point replay11.290390->4.015143cm; Road63 captured top-face covered stations max2.055428cm and covered exported controls max2.312247cm. Captured provider coverage limits explicitly retained; no claim of complete live source union."
+    },
+    "continuation_review": {
+      "status": "PASS_FOR_MANAGER_ACTIVATED_BOUNDED_POST_REBUILD_CONTINUATION",
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_clipping.py",
+      "sha256": "73f5f0508face3f9cf3d550a1ab35ccf9b27cab9b24d21c02a24119f8196f30e",
+      "guard_review": "Requires exact latest185123 height failure and both old/current unchanged junction report/participant proofs;4 completed corners/checkpoint1/task4/step0/no operation, pass3,40+4roads, exact network/token/lease/world/PID, callbacks0, paused validEngine, suspendedautosave. Checks all4 frozen file paths/hashes and all87 unchanged native bindings/materials/transforms/owned sources. Also compares current offending native geometry and collision against original post-failure receipts.",
+      "execution_review": "Reloads only ground/clip helper modules as in the previously manager-reviewed script; bank/native/junction modules, classes, ACTIVE lists and transaction stay intact. This is broader than task1 preferred grounding-only reload but remains within the manager-requested ground/clip helper boundary; clip hash is unchanged. One-shot callback marks started/unregisters before guarded clip_final_geometry -> validate -> finish -> original completion. No native rebuild, corner replay, source control edit, old reconstructed input reuse or new transaction.",
+      "failure_review": "Normal native/parent failure handling retains evidence and previous delivery; finally clears reentrancy flag and resuspends transaction autosave. Only validated success enters existing official suppression/named-save lifecycle.",
+      "execution_performed_by_reviewer": false,
+      "blocking_findings": []
+    },
+    "required_remaining": "Actual87-component grounded readback, seams/full-source-union/clip/physical validation, official suppression, named saves/reopen and saved Lit close-view review; final appearance remains unaccepted.",
+    "blocking_findings": []
+  },
+  "postclip_pad_contract_review": {
+    "status": "INDEPENDENT_PAD_CONTRACT_AND_PARTITION_PROPOSAL_REVIEW_COMPLETE",
+    "reviewed_utc": "2026-10-03T19:41:11.074689+00:00",
+    "scope": "Read-only retained source, source-code, geometry/placement receipts and independent arithmetic. Only TASK3 reports changed; no editor/source import/evaluation/source or asset edits.",
+    "evidence_sha256": {
+      "TASK2_ALL40_POST_CLIP_GAPS_20261003T192521158589Z.json": "4e13c9270191f003d770909349247bb6ba31ef41d3d9b0d715d878c3ae3950a9",
+      "TASK2_POST_CLIP_RAW_FACE_DIAGNOSTIC_20261003T192707931110Z.json": "7817c61e0d16dfad195b21b064012ba7e4796e680780b967e165398e83b991a8",
+      "TASK2_RETAINED_PRECLIP_20261003T192818405581Z.json": "fd93062853246a18ed33d4b9330a4252fd19736ede3abcc8e9ecc1482237a341",
+      "city_source_v1.json": "db5c0bcef1205b22e72e9df1e09a2b0f0daa39bcec3c2670819edf4e40b0fa19",
+      "GazaShujaiya_2023-01-01.osm": "54374986c93e6c5b47e3a1be58ba43ba1233607d1aae5f1c1749042b984e00d6",
+      "HDA_CATALOG_RECEIPT.json": "7d167fab06aa56b14f8d844114325accf53f87b1fc9f0d962d33c5b6d0689177",
+      "geocity_city_module.py": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b"
+    },
+    "source_paths": {
+      "manifest": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/city_source_v1.json",
+      "osm": "C:/Users/USER/Documents/Pipeline Environment/SourceData/GazaShujaiya/osm/GazaShujaiya_2023-01-01.osm",
+      "hda_module": "C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank/geocity_city_module.py",
+      "placement_receipt": "Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/HDA_CATALOG_RECEIPT.json"
+    },
+    "pad_semantics": {
+      "conclusion": "These protected polygons are exact original OSM building outlines, NOT padded clearances or terrain collars.",
+      "independent_projection": "Reprojected original XML nodes using the manifest frame and float32 conversion. Both plan pad rings match all original vertices exactly (0.0m maximum ring distance).",
+      "adapter_contract": "geocity_roadbld_workflow.py:258-313 verifies original OSM SHA, complete pad identity coverage and actual assembly rings within0.001m before building unbuffered protected rings.",
+      "terrain_margin_distinction": "Retained terrain_support separately uses a one-cell halo and adaptive4..26m smoothing collar. Neither is used as the RoadBLD protected polygon. Shrinking a presumed pad margin cannot resolve these two interior crossings.",
+      "actual_generated_buildings": [
+        {
+          "osm_id": "298979086",
+          "area_m2": 268.469874705188,
+          "stories": 5,
+          "height_m": 16.0,
+          "native_modules": 92,
+          "generated_solids": 197,
+          "full_footprint_floor_slabs": 5,
+          "roof_slabs": 1,
+          "base_m": 41.34523010253906,
+          "ground_floor_slab_top_m": 41.52523010253906,
+          "entrance_width_m": 1.444458160400391,
+          "height_rule": "seeded_rule_not_measured"
+        },
+        {
+          "osm_id": "301838006",
+          "area_m2": 137.2061440469697,
+          "stories": 3,
+          "height_m": 9.600000381469727,
+          "native_modules": 42,
+          "generated_solids": 65,
+          "full_footprint_floor_slabs": 3,
+          "roof_slabs": 1,
+          "base_m": 41.34523010253906,
+          "ground_floor_slab_top_m": 41.52523010253906,
+          "entrance_width_m": 1.444458160400391,
+          "height_rule": "seeded_rule_not_measured"
+        }
+      ],
+      "building_evidence_limit": "Retained actual HDA/placement receipt reports complete wall intervals, native envelopes inside true footprint, full footprint floors/roof and normal door openings. This turn did not re-read live native building geometry/collision. Procedural stories/heights do not establish real-world building heights.",
+      "missing_source_samples_whose_preclip_Z_lies_inside_recorded_floor_slab": 20
+    },
+    "original_OSM_semantics": {
+      "snapshot": "2023-01-01",
+      "package_created": "2026-10-01",
+      "features": [
+        {
+          "id": "1096660488",
+          "type": "way",
+          "version": 2,
+          "timestamp": "2022-09-22T07:40:16Z",
+          "tags": {
+            "highway": "residential"
+          },
+          "source_nodes": 4
+        },
+        {
+          "id": "298979086",
+          "type": "way",
+          "version": 2,
+          "timestamp": "2021-06-27T11:33:23Z",
+          "tags": {
+            "building": "yes",
+            "source": "Pleiades 20140706, CNES, Airbus Defense and Space"
+          }
+        },
+        {
+          "id": "301838006",
+          "type": "way",
+          "version": 1,
+          "timestamp": "2014-09-04T20:04:26Z",
+          "tags": {
+            "building": "yes"
+          }
+        }
+      ],
+      "interpretation": "No bridge, tunnel, layer, covered or building-passage tag appears on these retained ways. No retained evidence justifies grade separation. Road timestamp is newer than the building-way versions, but edit recency alone does not prove either geometry is wrong, obsolete or removable."
+    },
+    "independent_exact_crossing_intervals": [
+      {
+        "building_id": "298979086",
+        "original_road_segment": 1,
+        "parameter_range": [
+          0.06756088071244777,
+          0.17290820090541406
+        ],
+        "source_station_range_m": [
+          27.31897577234808,
+          37.14639445586419
+        ],
+        "length_m": 9.827418683516111,
+        "entry_xz_m": [
+          -143.99954041170284,
+          -135.9883324481596
+        ],
+        "exit_xz_m": [
+          -138.17114558945522,
+          -143.900852386657
+        ]
+      },
+      {
+        "building_id": "301838006",
+        "original_road_segment": 1,
+        "parameter_range": [
+          0.24439585441209347,
+          0.3413661718909496
+        ],
+        "source_station_range_m": [
+          43.81518394595673,
+          52.861146463015864
+        ],
+        "length_m": 9.045962517059131,
+        "entry_xz_m": [
+          -134.21605428965034,
+          -149.27021045567943
+        ],
+        "exit_xz_m": [
+          -128.85112146297547,
+          -156.55354304628005
+        ]
+      }
+    ],
+    "retained_policy_review": {
+      "HDA_source_export": "geocity_city_module.py:5464-5507 exports complete original geographic polylines, clipped only to the area box; original vertices and identity remain.",
+      "HDA_visible_surface": "geocity_city_module.py:5399-5407 builds the pad index from centroid_buildings_and_ground_pads;5630-5697 subtracts these polygons from visible road/sidewalk primitives while writing source_coverage_preserved=True and the full unmodified route export. Helper1044-1078 subtracts triangles; no padding is added in this step.",
+      "work_plan": "WORK_PLAN.md:11 explicitly asks building-footprint exclusion while preserving geographic features/full source widths. Line12 asks exact source coverage for native activation. These phrases need the distinction between preserved geographic source and physically visible asphalt made explicit.",
+      "answer_to_manager": "YES: unconditional post-clip physical asphalt coverage at every original centerline station is incompatible with the retained HDA visible-pad-exclusion policy for these evidenced crossings. The existing renderer already distinguishes preserved source coverage from visible geometry. A general complementary-partition proof can align adapter semantics without rewriting source roads/buildings. It must be named and reported as a changed post-clip accounting contract, not claim that the old unconditional physical gate passed.",
+      "proposal_status": "Conceptually supported by retained code and evidence; implementation has not been reviewed or run. Root owns contract adjudication and any authorization/assignment."
+    },
+    "required_partition_proof": [
+      "Retain the complete same-revision source/centerline identity and full actual preclip upward-asphalt coverage plus existing height checks, bound to the exact original native inputs and verified grounding report. A fabricated or stale preclip receipt is insufficient.",
+      "For every original source segment, analytically split against the UNION of immutable exact protected footprint polygons. Persist parameter/station intervals, source and footprint IDs/hashes; handle overlapping polygons, tangencies, vertices and boundary-coincident segments deterministically. No hardcoded IDs, path exemptions or buffer expansion.",
+      "Every strict pad-interior interval must be explicitly classified protected exclusion, with exact same immutable source pad identity and preserved building coverage provenance. The exclusion must not be inferred from missing triangles or a broad bounding box.",
+      "Every exterior interval must be physically covered by actual same-source eligible upward asphalt after clipping. Verify interval coverage using actual triangle XY intersections/union, plus unchanged height sampling and source provenance. Stations alone can miss sub-metre gaps; analytic pad splits alone do not prove exterior triangle coverage.",
+      "Account for pad-boundary transitions explicitly, retaining only existing float32/boundary tolerances. Do not enlarge interior masks, clamp outside points inward, bridge holes, change300cm support or either10cm height gate.",
+      "Keep the separate actual mesh-vs-footprint overlap, area limits, material/UV/normal/collision, seams and named persistence gates. Zero unexplained exterior gaps and zero forbidden pad overlap means their existing numerical tolerances, not an invented claim of exact real-arithmetic zero.",
+      "Persist separate results for full geographic source preservation, preclip physical coverage, postclip exterior physical coverage and protected exclusions. Include interval lengths and route-discontinuity state in ordinary generation and saved/reopen evidence. Do not label the combined result continuous drivable source coverage."
+    ],
+    "options": [
+      {
+        "option": "Align postclip adapter with retained visible-surface policy",
+        "support": "Best evidenced option without changing the original sources or buildings; implement/review the generic complementary-partition proof above.",
+        "limit": "Allows intentional rendered gaps through footprints; does not solve real-world data inconsistency, route connectivity, driving or visual acceptance."
+      },
+      {
+        "option": "Adjudicate the geographic conflict and regenerate from an explicit derived correction",
+        "support": "Necessary if a continuous road is required; investigate retained or independently verified dated mapping before choosing road reroute, building-footprint correction or a documented special structure.",
+        "limit": "No current evidence chooses which feature is wrong. Keep original packages immutable, preserve provenance/versioned overrides and propagate a decision consistently to HDA, masks, placements, roads and both-area regeneration. Root owns this decision."
+      },
+      {
+        "option": "Keep current failed candidate stopped pending a contract decision",
+        "support": "Correct interim behavior under the present unconditional postclip gate.",
+        "limit": "No validate/finish retry or saved delivery claim until the chosen contract is implemented and actual outputs pass it."
+      }
+    ],
+    "rejected_shortcuts": [
+      "Treating the polygons as inflated margins, shrinking/deleting protected pads, restoring asphalt inside full-footprint slabs, inventing a tunnel/bridge or route diversion from edit timestamps.",
+      "Exempting the20 observed sample indices/one road ID, accepting nearby or foreign-source asphalt, raising tolerances, skipping exterior heights or counting any missing triangle as pad exclusion.",
+      "Calling retained assemblies, road generation or all city aesthetics accepted from clipping/partition proof alone."
+    ],
+    "remaining_visual_implications": "The preserved7m residential road (plus sidewalks) stops and resumes at two generated buildings; exact centreline exclusions total18.87338120057524m. Road/sidewalk ends at facades may look abrupt, narrow or blocked. Actual saved Lit close views and collision/traversal assessment are still needed; no current evidence makes this a continuous drivability result or final geographic/art acceptance.",
+    "editor_calls": 0,
+    "source_imports_or_evaluation": 0,
+    "source_asset_profile_mutations": false,
+    "source_contract_implementation_performed": false,
+    "roughness_guidance": "Prior native-mask roughness findings remain conditional and unrelated to this footprint/source coverage conflict.",
+    "manager_decision": "Manager accepted the documented existing HDA distinction and activated task1 to implement the generic postclip source-partition proof. Root owns source/contract adjudication; task3 now awaits final frozen implementation and any actual unsaved diagnostic views for independent review.",
+    "implementation_review_status": "AWAITING_TASK1_FINAL_FREEZE"
+  },
+  "unsaved_shujaiya_visual_review": {
+    "status": "UNSAVED_DIAGNOSTICS_AND_ACTUAL_EFFECTIVE_MATERIALS_REVIEWED",
+    "reviewed_utc": "2026-10-03T19:44:17.829404+00:00",
+    "images": {
+      "curb_street_close": {
+        "path": "Staging/AppearanceRepair_2026-10-03/SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_curb_street_close_20261003T193949763435Z.png",
+        "sha256": "97b601ecda7dbc6c820d8a106d8ec7f876d2b9184df99753448da9918cd425cc",
+        "viewed_original": true
+      },
+      "pad_margin_close": {
+        "path": "Staging/AppearanceRepair_2026-10-03/SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_pad_margin_close_20261003T193949763435Z.png",
+        "sha256": "bd3d97dc1451047e1ef5dd6e28f0acbf990b73859a9e02e8054ca7702d3a5f3a",
+        "viewed_original": true
+      },
+      "source1096660488_pad_conflict": {
+        "path": "Staging/AppearanceRepair_2026-10-03/SHUJ_UNSAVED_CURRENT_CANDIDATE_LIT_source1096660488_pad_conflict_20261003T193949763435Z.png",
+        "sha256": "ae294b52e69875d34b5b365ca95fbf792bb77afce4574573fde06e00f471152f",
+        "viewed_original": true
+      }
+    },
+    "observed": {
+      "curb_street_close": "Visible ground has fine sand/soil relief and variation; road, pale sidewalk and dark curb edge meet continuously along the shown straight section. Several conspicuous dark brown rectangular asphalt patches and an abrupt grey/worn region recur down the road. Facades vary in color/material but repeated window grids, similar massing and flat roofs remain. This view does not establish all corners or whole-area contact.",
+      "pad_margin_close": "Textured ground meets the visible lower building edge without an obvious floating gap in this angle. Fine ground texture is legible. Large warm beige ground area and repeated tall window rhythm remain visually prominent; no factual basis to call painting or all contacts accepted.",
+      "source1096660488_pad_conflict": "Road and sidewalk visibly terminate against/are occluded by buildings on the recorded conflict route. Full flat roof slabs and repeated facades occupy that corridor. This agrees with retained footprint policy conflict and does not show a usable through route."
+    },
+    "installed_asphalt_evidence": {
+      "instance": "Plugins/RoadBLD/Content/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.uasset",
+      "instance_sha256": "8d14fda278327685cc2c2d9c0035da3eed3f3773a612e93ebb8a3c480def578a",
+      "parent": "Plugins/RoadBLD/Content/RoadBLD/DefaultRoadKit/Materials/M_RoadBLD_Asphalt_Master.uasset",
+      "parent_sha256": "5376e16c1081c771ebcbb72de0cf1db675cb4e8db9b238222fb5b74b66daef50",
+      "read_only_package_findings": [
+        "Instance references parent M_RoadBLD_Asphalt_Master, native patch_04 texture, MV_PatchMult and MV_PatchScale parameter names.",
+        "Parent package includes authored graph comment adding large patches, controls Enable MacroVary/MV_PatchMult/MV_PatchScale/MV_LargeScale/MV_Tint_Hi/MV_Tint_Lo, and Asphalt Variation.",
+        "Parent also contains World Position/Use UV Only/UV Only - WP Override/UV Scale and MF_TextureCellBombing references."
+      ],
+      "interpretation": "The installed material has an intentional large-patch variation design. This supports intentional patch variation as a concrete hypothesis for the rectangles, not a conclusion that current effective values or mapping are correct. Binary names/comments do not alone prove active branch connectivity, final bound params, projection mode or texture scale. Await task2 actual bound material/inheritance/parameter readback before prescribing changes.",
+      "no_roughness_only_claim": "Visible patch shape/color has not been traced to roughness alone. Prior ground native-mask roughness option remains conditional and is not a remedy for road patch rectangles or blocked routes."
+    },
+    "acceptance": "All three are actual CURRENT UNSAVED candidate diagnostics. They do not establish saved/reopened persistence, complete road connectivity, final geography or Aviv appearance acceptance.",
+    "editor_calls": 0,
+    "source_asset_mutations": false,
+    "effective_material_followup": {
+      "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_SELECTED_STREET_MATERIAL_READBACK_20261003T194350969417Z.json",
+      "sha256": "7b5116ef5853f5d70d601b8da2256b30a007348486359ab489811a1539f0a7ea",
+      "actual_bindings": "Five captured native road components for source41254867:0 use the selected worn asphalt family; current Landscape actually binds MI_SurfaceBank_Natural. Readback states bindings/checkpoint/dirty packages unchanged.",
+      "asphalt_instance": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.MI_RoadBLD_Asphalt_Road_Worn",
+      "active_switches": {
+        "DebugCellNoise": false,
+        "DebugCellBorders": false,
+        "DebugRandomPosition": false,
+        "DebugOrigPatterm": false,
+        "Use UV Only": false,
+        "Enable Grime": true,
+        "Enable MacroVary": true,
+        "Enable Cracks": true
+      },
+      "selected_scalars": {
+        "MV_PatchMult": 5.534815788269043,
+        "MV_PatchScale": 0.08799999952316284,
+        "MVAmount": 0.2160000056028366,
+        "MV_DetailIntensity": 7.942996978759766,
+        "MV_TintAmount": 1.0,
+        "Asphalt Variation": 1.0,
+        "BaseRoughnessMult": 0.6499999761581421,
+        "AsphaltGlobalScale": 0.05000000074505806
+      },
+      "parent_default_comparison": {
+        "MV_PatchMult": 1.0,
+        "MV_PatchScale": 0.009999999776482582,
+        "MVAmount": 1.0,
+        "MV_DetailIntensity": 1.0
+      },
+      "finding": "Large-patch variation is an intentional installed material feature and is enabled in the actual bound instance: Enable MacroVary=True, MV_PatchMult5.5348 (parent1.0), MV_PatchScale0.088(parent0.01), MV_DetailIntensity7.943(parent1.0), MVAmount0.216(parent1.0). The native parent explicitly annotates adding large patches and references patch_04. Debug cell/border/random-position/original-pattern switches are allFalse; Use UV Only=False. No evidence here identifies a debug checker or missing-texture fallback.",
+      "confidence_limit": "Superseded in part by patch_graph_trace: supported connection capture now proves UV0 patch-to-BaseColor wiring. Exact per-pixel contribution still depends on texture pixels and vertex-color modulation, which were not measured.",
+      "bounded_option": "If root authorizes a visual refinement after coverage proof, use a named project-local child/copy of the installed worn-asphalt instance and tune its existing patch strength/scale/amount with actual retained-area Lit inspection. Keep base asphalt textures/normal conventions and native originals; inspect macro/patch wiring before any UV rewrite. No numeric replacement value or disabling all variation is approved by this review.",
+      "roughness": "Actual BaseRoughnessMult0.65 does not establish a cause for rectangular color patches. The earlier ground roughness-mask option remains separate and conditional; it is not the primary evidence-backed remedy for these asphalt rectangles."
+    },
+    "patch_graph_trace": {
+      "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_ASPHALT_PATCH_CONNECTIONS_20261003T194532750777Z.json",
+      "sha256": "e71fdb55e20dbd5e1322db3c4d6a8f851867f28b8cb456575b1dbe1277c36ae3",
+      "method": "Joined136 supported MaterialEditingLibrary connection records with136 corresponding native node-property records from selected material receipt. No asset evaluation/import/editor actions by reviewer.",
+      "texture_mapping": "TextureCoordinate_11(UV0,tiling1x1) -> Multiply_55(MV_PatchScale) -> ComponentMask_22(RG) -> TextureSample_21(patch_04). This patch branch deliberately uses meshUV0. Static Use UV Only=False selects WorldPosition for a separate mapping branch; it does not make patch_04 world projected.",
+      "color_chain": "patch_04 -> Desaturation_3(fraction1) -> Saturate_6 -> Multiply_56(MV_PatchMult) -> Add_7(other macro noise) -> Lerp_22(MV_Tint_Hi,MV_Tint_Lo) -> Multiply_53(existing BaseColor) -> Lerp_23(MV_TintAmount) -> Lerp_29(MVAmount) -> Lerp_31(vertex-color modulation) -> SetMaterialAttributes_6(Base Color only) -> enabled MacroVary switch -> final output.",
+      "material_diagnosis": "Rectangular patch variation has a deliberate, connected native BaseColor path with measured nonzero strength, distinct from roughness. Patch scale0.088 and multiplier5.5348 operate on UV0 patch texture; native graph metadata and current bindings support this as the direct material mechanism to tune. This is not evidence of an accidental world-vs-UV switch: UV0 is intentional for these patches.",
+      "contrast_detail": "After saturation, patch value is multiplied by5.5348 and added to another macro term before the Hi/Lo tint Lerp. No clamp node appears between that Add and tintLerp; alpha can exceed1 for sufficiently bright patch texels, extrapolating beyond the dark tint. This explains why patch strength can produce harsh dark contrast. Exact per-pixel effect is not measured because texture pixels/vertex-color modulation are not captured here.",
+      "bounded_next_step": "Prefer a reviewed named project-local material child adjusting existing patch multiplier/scale/amount, preserving base textures/native parent and geometry UVs, followed by actual retained Lit review. A roughness-only edit does not address this connected BaseColor mechanism. No material mutation performed."
+    },
+    "narrow_retained_asphalt_option": {
+      "status": "PROPOSAL_ONLY_ROOT_HAS_NOT_ACTIVATED_AUTHORING",
+      "proposed_asset": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_RoadBLD_Asphalt_Road_Worn_Gaza",
+      "parent": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn.MI_RoadBLD_Asphalt_Road_Worn",
+      "single_initial_override": {
+        "parameter": "MV_PatchMult",
+        "current_effective": 5.534815788269043,
+        "proposed": 1.0,
+        "basis": "Use the installed master default strength as an evidence-based first retained refinement, inheriting the worn instance so other intentional worn-surface settings stay intact. Final value requires actual retained-area Lit assessment."
+      },
+      "keep_initially": "MV_PatchScale0.088, MVAmount0.216, base textures/normals, grime/crack controls, native meshUV0 and world-position branch, sidewalk material and selected Natural ground remain unchanged. Do not simultaneously alter multiple knobs or assume reducing roughness removes BaseColor patch shapes.",
+      "valid_graph_path": "MV_PatchMult is native ScalarParameter_92 -> Multiply_56 after saturatedpatch_04 -> macro tintLerp -> SetMaterialAttributes_6 BaseColor -> active EnableMacroVary. This directly reduces the measured patch-color term.",
+      "future_ordinary_settings": "Normal bank workflow passes area profile roadbld_workflow.settings to geocity_roadbld_workflow.build; plan merges settings.adapter_settings into DEFAULTS, including road_material. build_presets sets BOTH RoadMaterial and IntersectionMaterial from that road_material. A retained choice needs a named shared adapter-settings source used by the intended area profiles, not merely current component-slot overrides. Name includes Road_Worn to preserve the existing explicit asphalt-family validation, with verified parent chain rather than filename alone as justification.",
+      "current_bound_candidate_boundary": "Do not change current87 material bindings while partition source replay/immutable clipping ledgers are being validated. That would invalidate the captured binding/material evidence. Root should activate material authoring separately after coverage proof, record exact before/after bindings and unchanged geometry/collision, and reconcile material identity in ordinary provider/save receipts. No native geometry reclip or rebuild is justified just to adjust one material scalar.",
+      "save_reopen_implications": "Save only the named child and named affected area/preset/mesh dependencies actually changed. Reopen each intended area and read actual road/intersection slot material paths, inherited parent, effectiveMV_PatchMult and same geometry/collision identity; inspect saved Lit street view. Verify next ordinary generation selects the shared child through settings. Current unsaved screenshots do not establish any of this.",
+      "scope": "Proposed shared road appearance choice only; native vendor package preserved, no source geography/building/HDA or terrain-roughness change. Root decides intended areas; no source/asset/profile edits performed by task3."
+    }
+  },
+  "postclip_partition_source_review": {
+    "status": "NO_BLOCKING_SOURCE_FINDINGS_ON_EXACT_FROZEN_V5",
+    "utc": "2026-10-03T20:00:30.132538+00:00",
+    "frozen_files": {
+      "geocity_roadbld_junctions.py": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "geocity_roadbld_workflow.py": "1909fb60f22be17a18012a5b2a8f990d6fdc7c5c73b8ae164f8fbef5e74ad453",
+      "geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+      "geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211"
+    },
+    "scope": "Filesystem and AST source review; independent actual-bound triangle arithmetic. No source imports, project-function execution, editor calls, geometry edits or task messages.",
+    "preclip_unchanged": "AST comparison with BeforePostClipRepair confirms only verify_native_delivery changed among pre-existing grounding definitions; verify_source_coverage and ground_native_run full physical proof are unchanged. Junction and clipping files retain prior hashes.",
+    "ordinary_path": "workflow.plan adds generic exact protected-source diagnostic and constructor retains it. Current live run need not reload/reclass workflow; final validate dynamically imports the grounding verifier.",
+    "ledger": "verify_native_delivery compares the entire clipping report with its recorded receipt. _verify_partition_ledger checks preclip source/piece identities and pass, exact component set/count, actor and bound mesh paths, world frame, materials, attributes and current world triangle hashes against clipping fit proof. Whole-mesh fit remains independently recomputed in workflow.validate.",
+    "partition_algorithm": "All original plan pieces/points/widths and immutable protected rings are retained. Exact ring edge intersections identify strict interior intervals; boundaries/tangencies/collinear edges are not interior waivers. Actual same-source upward material0 triangle intervals plus existing 0.01cm Euclidean edge tolerance cover exterior segments continuously. Derived coverage retains verified native parent trim-circle eligibility. Interval arithmetic seam tolerance is 1e-13 in segment fraction. No source-ID, missing-point-list, foreign-source, widened mask, remesh, reclip or reground exception.",
+    "height_and_boundary": "Original non-interior <=100cm stations and original control height constraints remain <=10cm; every exclusion boundary and exterior 0.02cm probe requires actual same-source asphalt and actual named Landscape height. Excluded interior samples are explicitly separate and do not supply asphalt/height evidence.",
+    "zero_exclusion_Rimal": "Calls unchanged verify_source_coverage and preserves historical schema/basis/source-row/empty-geometry proof, then adds analytic actual exterior coverage and separate partition fields. Extra whole-interval verification is not yet live-verified here. Manager independently reported all41 recorded geometry hashes still match Rimal clipping ledger; task3 has not repeated a live Rimal inspection.",
+    "independent_actual_boundary_math": {
+      "receipt": "Staging/AppearanceRepair_2026-10-03/TASK2_PARTITION_BOUNDARY_8_HEIGHTS_20261003T195409078839Z.json",
+      "sha256": "f6db86d413320ad3aa83d29743ea2a35b8040de577e5d59b48d116deff49e3e4",
+      "method": "Independent barycentric/closest-edge arithmetic against four captured same-native-source bound surfaces, material0 and actual upward mask; no production helper execution. All4 geometry digests matched immutable clipping bindings. Eight recorded actual Landscape samples used directly.",
+      "probes_passed": 8,
+      "max_height_error_cm": 1.4686398074409226,
+      "max_selected_face_boundary_distance_cm": 0.0010767871850424645,
+      "unchanged_limits_cm": {
+        "height": 10,
+        "xy": 0.01
+      }
+    },
+    "source_owner_replay_scope": "Task1 reports all99 Road41 analytic segments accounted,179 physical and20 excluded original stations,4.026631523364813cm maximum physical height error. Independent task3 source/pad adjudication already measured18.87338120057524m excluded inside exactly2 occupied original footprints. Task3 has not independently rerun all99 continuous intervals or full87 geometry.",
+    "not_yet_proven": "Fresh actual87 component/all40 continuous exterior and boundary validation, unchanged topology/collision/material/fit gates, official suppression lifecycle, scoped save/reopen and saved Lit acceptance. Other39 continuous triangle proofs are not part of the captured Road41 replay.",
+    "honest_result_semantics": "Source geography is accounted; physical_surface_continuous remains false for Shujaiya because18.873381m intersects occupied protected footprints. This does not repair the real geography conflict or establish a continuously driveable route. Final appearance remains unaccepted.",
+    "source_blocking_findings": []
+  },
+  "postbinding_continuation_review": {
+    "status": "PREPARED_SCRIPTS_NOT_YET_READY_PENDING_FINAL_FREEZE_UPDATES",
+    "utc": "2026-10-03T20:00:30.132538+00:00",
+    "reviewed_scripts": {
+      "resume_existing_shuj_postbinding.py": "cf955e5eeff964dee47806fa6d912b9164819b4457c4cda95cc329f9a4bb7ba7",
+      "verify_postbinding_saved_area.py": "954174dc23cbfd9c5fa863b03cc8cdfdf00a1a2029eb11cba95f1d6a2d555c93"
+    },
+    "verified_guards": "Root activation, assignment, lease/PID, callback/autosave/Engine state, exact failed_validating revision/token/pass3/four-corner checkpoint, full participant and87binding/material/transform/collision identity, actual87 geometry/materialID/upward digests, dirty packages and saved map baseline. Only grounding reload; no native rebuild, corner replay, grounding, clipping or rebinding.",
+    "required_updates_before_activation": [
+      "Replace stale hardcoded workflow freeze7a13fad... with explicit root-approved frozen workflow1909fb60... argument in both wrappers/frozen(). Keep live native workflow class and ACTIVE ledger unchanged.",
+      "Update saved inspector proxy to carry retained clipping_report and preparation grounding_report for new final verifier. Current inspected inspector c9f32506... lacks both and fails closed.",
+      "Preserve all recorded final proof fields except elapsed_seconds during saved/reopen comparisons, including partition/exclusions/continuity/immutable-ledger fields; preserve historical Rimal core fields.",
+      "Reconcile source owner required first read-only verify_native_delivery step before parent callbacks/state advance; prepared resume currently schedules direct r.validate after parent state/delegates change. A separate successful root/task2 read-only proof can satisfy this without geometry processing."
+    ],
+    "executed": false,
+    "full_live_validation_passed": false
+  }
+}

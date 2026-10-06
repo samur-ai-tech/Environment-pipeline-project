@@ -1,0 +1,171 @@
+{
+  "schema": "environmentpipeline.epic_completed_verify_script_review.v1",
+  "status": "APPROVED_READ_ONLY_COMPLETED_EPIC_VERIFY",
+  "reviewer": "/root/startup_review",
+  "utc": "2026-10-05T08:16:51.870498+00:00",
+  "helper_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\native_epic_completed_verify.py",
+  "helper_sha256": "4cdbed23867bb1db0cecb3da312fa05852cb79f0c55abd042746d8e723d57c1a",
+  "pid_at_recipe_completion": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "completion_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EPIC_RECIPE_COMPLETED_PID32464.json",
+  "completion_receipt_sha256": "ffb2e6bf77f33e1fb9eb447b878db5afae16cff93fb81ef87340ae7fe8587b26",
+  "completion_helper_sha256": "7908aff3fea9f76579c02036986fcbb280f0d613378f6e00c2c23951cd18bfc8",
+  "partial_receipt_sha256": "85fd33b23842031f3f8ef4e80ce0f012cc56c1272ceecdc8857e1577564ca44f",
+  "failed_apply_receipt_sha256": "fdc4d1583634030925400aba8d54754c194f66035ba7363ec644301b9c8c0272",
+  "failed_apply_helper_sha256": "19d99d44b31ca2027a3d814c76dd5ab1ff6d17dd44578cd2a55ad880a9d3a5c0",
+  "plan_sha256": "ccc7eaa90391d2d5f148c68d205d2b90fb57163c1e7060761dc1de7ce26f7e7f",
+  "exact_graph_deltas": [
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_8",
+      "field": "edges",
+      "key": "Layer Sand_02",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionClamp_11",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionScalarParameter_106",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_8",
+      "field": "edges",
+      "key": "Layer Dirt_Path",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionClamp_15",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionScalarParameter_103",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_8",
+      "field": "edges",
+      "key": "Layer Sand_Path",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionClamp_19",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionScalarParameter_108",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_8",
+      "field": "edges",
+      "key": "Layer Sand_01",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_44",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionScalarParameter_105",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionTextureObjectParameter_154",
+      "field": "properties",
+      "key": "sampler_type",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionTextureObjectParameter_154",
+      "field": "properties",
+      "key": "texture",
+      "before": "/Game/ModularCourtyard/Textures/T_dirt3_M.T_dirt3_M",
+      "after": "/Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation"
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_0",
+      "field": "edges",
+      "key": "Layer Sand_02",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_10",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionConstant_1",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_0",
+      "field": "edges",
+      "key": "Layer Dirt_Path",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_12",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionConstant_1",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_0",
+      "field": "edges",
+      "key": "Layer Sand_Path",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_14",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionConstant_1",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLandscapeLayerBlend_0",
+      "field": "edges",
+      "key": "Layer Sand_01",
+      "before": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionLinearInterpolate_45",
+        "output": ""
+      },
+      "after": {
+        "source": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionConstant_1",
+        "output": ""
+      }
+    },
+    {
+      "node": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.M_SurfaceBank_Natural:MaterialExpressionTextureSample_0",
+      "field": "properties",
+      "key": "sampler_type",
+      "before": "<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7>",
+      "after": "<MaterialSamplerType.SAMPLERTYPE_COLOR: 0>"
+    }
+  ],
+  "enumerated_MI_control_counts": {
+    "textures": 9,
+    "scalars": 4,
+    "vectors": 8,
+    "total": 21
+  },
+  "independent_pure_receipt_reconstruction_passed": true,
+  "validated_checks": [
+    "Mode is unconditionally verify; apply/inspect branches are unreachable through the entry point. No mutation/compile/save/residency/loading/CVar command is called in verify.",
+    "SHA-bound input documents; fixed original Shujaiya area; fresh exact-current-PID baseline; sole process and root authoring or inspection lease; runtime12, callbacks/autosave/HDA paused-autooff safeguards.",
+    "Actual completion ffb2, original failed apply fdc4 and partial85fd provenance preserved without false success attribution.",
+    "Exact full 1015-node expected state with only eight R/AO rewires and three macro properties; retained Custom code/input/output/mip fields, 69 layer structures, roots/material settings and Grass identity.",
+    "All 21 current-child controls and ordered global override identities checked at exact float32 values; untouched base/Rimal local overrides remain exact, with explicitly allowed inherited Epic macro resolution change.",
+    "Current scene compared to SHA-bound current baseline and author reference; all original Epic17, preserved65, sealed17, protected package backups, held unused copy properties/hash and CVars remain strict.",
+    "Only master/current-child dirty content may exist, maps always clean; exact before/after snapshot preservation and unique output receipt required."
+  ],
+  "limitations": [
+    "A future fresh process requires a fresh current-PID baseline and exact caller-bound master/current-child disk SHA values after separately reviewed named saves. This verifier itself does not authenticate a named Save receipt.",
+    "Source identity and full native readback do not establish successful Landscape shader compilation, GPU cost, ordinary streamer-camera tracking, visual acceptance or generator/regeneration success.",
+    "Source palette is an Epic texture adaptation using retained sampling, constant dry roughness .8 and AO1; original Epic master graphs are not cloned.",
+    "Native GUID and legacy paint arrays remain unexposed and are not claimed as captured. Resource-size metadata may settle; persistent source properties remain exact."
+  ],
+  "native_calls_performed_by_reviewer": false,
+  "visual_approval": false,
+  "content_save_approval": false,
+  "completion_approval": false
+}

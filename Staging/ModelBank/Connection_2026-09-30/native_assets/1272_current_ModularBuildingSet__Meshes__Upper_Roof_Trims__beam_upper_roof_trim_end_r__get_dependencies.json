@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1282,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Upper_Roof_Trims/beam_upper_roof_trim_end_r"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Concrete/concrete_trim\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1282,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/ModularBuildingSet/materials/Concrete/concrete_trim\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "schema": "environmentpipeline.ground_hybrid_decisions.v1",
+ "recorded_utc": "2026-10-06",
+ "sources": [
+  "Staging/ShujaiyaOrdinaryRun_2026-10-05/Incident_01a10c77_2026-10-05/DECISION_HYBRID_20261006.json",
+  "Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/Hybrid_Auto/PLAN_HYBRID.md"
+ ],
+ "aviv_2026-10-06": {
+  "ground_route": "Hybrid: project copy M_GeoCityAuto of the MW auto-landscape master + Urban layer from the Houdini Sand_Path (BuildingPad) and Dirt_Path (RoadBed) paint weights; MW slope/height auto layering everywhere else",
+  "urban_texture_set": {
+   "chosen": "asphalt_cracked",
+   "textures": {
+    "Urban_BaseColor": "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_basecolor",
+    "Urban_Normal": "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_normal",
+    "Urban_Roughness": "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_roughness",
+    "Urban_AO": "/Game/ModularCourtyard/Textures/Asphalt/Asphalt_cracked/T_asphalt_cracked_AO"
+   },
+   "graph_consequence": "separate Urban_Roughness and Urban_AO texture objects (not one ORM); 5 Shared:Wrap samples",
+   "rule": "inspect measures sRGB/compression/LOD group/VT and derives sampler types; roughness and AO must be linear (sRGB off) and VT off, else STOP and use the documented fallback; never edit vendor/project textures",
+   "documented_fallback": {
+    "set": "concrete_plate",
+    "textures": "/Game/ModularCourtyard/Textures/Concrete_plate/T_Concrete_plate_{BaseColor,Normal,ORM}",
+    "channels": {"roughness": "ORM.G", "ao": "ORM.R"},
+    "requires": "inspect status STOP_TEXTURE_FALLBACK_REQUIRED + build ARGS fallback_acknowledged_by_manager=true"
+   }
+  },
+  "urban_amounts": {"Urban_PadAmount": 1.0, "Urban_RoadAmount": 1.0, "Urban_Amount_in_MI": 1.0, "tunable_later": true},
+  "concurrent_bank_editor": "wait for its orderly release (PID 35156); manager accepted the registry-ref profile leaf in writing"
+ },
+ "manager_2026-10-06": {
+  "injection": "Option A: Lerps into MakeMaterialAttributes_0 BaseColor/Normal/Roughness/Specular + new AmbientOcclusion; Metallic and the material root unchanged (Substrate on)",
+  "sand_02": "not fed into the MW rock/slope masks; Sand_01 and Sand_02 only kept reachable through LayerPresenceZero = (W_Sand_01 + W_Sand_02) * 0",
+  "master_defaults": "neutral (Urban_Amount 0 => pure MW); the area MI sets Urban_Amount 1",
+  "grass": "stays off (profile landscape_grass.enabled=false; 5 MW Procedurals OFF in the MI)",
+  "mi_base": "DesertExample's 13 scalar + 11 texture overrides replicated; 5 Advanced ON; Water OFF; Snow ON; tint preset P1_gaza_pale_sand (PathB_MW/TINT_PRESETS.json)",
+  "path_b_mi": "MI_GeoCityGround_MW was never saved and must stay absent"
+ }
+}

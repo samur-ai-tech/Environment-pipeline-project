@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 999,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Roof_Trims/beam_roof_trim_corner_1x1_a_interior"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"96x150x120\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"5.87\",\"SourceFile\":\"F:/Back-Ups/Art Institute/__Art-Tests_Jobs/_Unreal Marketplace/ChinaTown_BuildingSet/Unreal_fbx/beam_roof_trim_corner_1x1_a_interior.fbx\",\"Triangles\":\"32\",\"UVChannels\":\"2\",\"Vertices\":\"64\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 999,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"96x150x120\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"5.87\",\"SourceFile\":\"F:/Back-Ups/Art Institute/__Art-Tests_Jobs/_Unreal Marketplace/ChinaTown_BuildingSet/Unreal_fbx/beam_roof_trim_corner_1x1_a_interior.fbx\",\"Triangles\":\"32\",\"UVChannels\":\"2\",\"Vertices\":\"64\"}}"
+    }
+   ]
+  }
+ }
+}

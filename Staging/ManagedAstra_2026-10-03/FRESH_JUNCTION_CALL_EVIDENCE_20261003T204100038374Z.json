@@ -1,0 +1,124 @@
+{
+  "status": "EXACT_FAILED_CALL_EVIDENCE_PACKAGED_NO_CONTINUATION",
+  "pid": 21780,
+  "revision": "20261003T203730573110",
+  "preserved_native_state": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FreshJunctionStop_20261003T2039391429154Z\\ROADBLD_WORKFLOW_STATE.json",
+  "preserved_native_state_sha256": "91d23eb55e8c40bb18925daac608fbdd0a27a507d611c86ea452bb6de0655a95",
+  "live_checkpoint_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_fresh_junction_stop_20261003T203938737856Z.json",
+  "live_checkpoint_sha256": "9185a64b0768f47b7ec208c8d37536b91fad003224f41f237a0a1ae474954427",
+  "operation": {
+    "step": "connector_controls",
+    "task_index": 0,
+    "attempts": 1,
+    "started_monotonic": 167672.562,
+    "deadline_monotonic": 167732.562
+  },
+  "signature": "FRoadBLDEditResult URoadBLDAuthoringToolset::SetControlPoints(ADynamicRoad* Road, const TArray<FRoadBLDPoint>& Points, double LinkTolerance, bool bSnapEndpointsToJunctions, bool bCloseCorners, bool bRebuild)",
+  "signature_source": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Toolsets/RoadBLDAuthoringToolset.h:165",
+  "arguments": {
+    "Road": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_86",
+    "Points": [
+      {
+        "Location": [
+          -28373.238151063404,
+          19160.159281107946,
+          4690.695161832911
+        ],
+        "TurnRadius": 100.0
+      },
+      {
+        "Location": [
+          -28482.100030322254,
+          19087.268141520974,
+          4681.565738364103
+        ],
+        "TurnRadius": 100.0
+      },
+      {
+        "Location": [
+          -28396.42275429771,
+          18963.39404837935,
+          4695.049517231374
+        ],
+        "TurnRadius": 100.0
+      }
+    ],
+    "LinkTolerance": 0.1,
+    "bSnapEndpointsToJunctions": false,
+    "bCloseCorners": false,
+    "bRebuild": false
+  },
+  "temporary_radius_default_cm": 100.0,
+  "defaults_restored": true,
+  "measured_result": {
+    "Network_RefPath": ""
+  },
+  "result_limit": "The failed helper retained only Network.RefPath. Full returned FRoadBLDEditResult fields were not serialized and are unavailable without a new call; no SDK replay performed.",
+  "call_local_capture": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Logs\\Environmentpipeline.log",
+    "start_byte": 476884,
+    "end_byte": 476884,
+    "suffix": "",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exact_pending_license": false,
+    "result_network": ""
+  },
+  "delayed_log_window": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_JUNCTION_DELAYED_LOG_WINDOW_20261003T204100038374Z.bin",
+    "sha256": "2e7cb95c0e794e9493cf2963af76482465b6b84724c34887cbe43236d45d9b7f",
+    "source_log": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FreshJunctionStop_20261003T2039391429154Z\\Environmentpipeline.log",
+    "source_log_sha256": "358df081168a44160e2063bea4ed5a6d80c92519ceac69edb9716bd349dcb23f",
+    "start_byte": 476628,
+    "end_byte": 477557,
+    "warning_byte": 476914,
+    "warning_timestamp_utc": "2026-10-03T20:38:49.167Z",
+    "later_suffix": "[2026.10.03-20.38.49:167][196]LogScript: Warning: RoadBLDToolset: The RoadBLD license check is still running. Retry in a few seconds.\r\n\tRoadBLDAuthoringToolset /Script/RoadBLDToolset.Default__RoadBLDAuthoringToolset\r\n\tFunction /Script/RoadBLDToolset.RoadBLDAuthoringToolset:SetControlPoints:64X\r\n[2026.10.03-20.38.49:385][196]LogPython: Error: GeoCity RoadBLD: AssertionError('Native edit failed without fresh call-local pending-license evidence')\r\n[2026.10.03-20.38.49:396][196]LogPython: Error: GeoCity failed_native_road_transaction: AssertionError(\"Native road authoring failed: AssertionError('Native edit failed without fresh call-local pending-license evidence')\")\r\n"
+  },
+  "participant_checkpoint": {
+    "before_sha256": "8243ff4385644613279a4a2a49870f6d07f6355883a9842106efc42b26a78fe0",
+    "actual_sha256": "8243ff4385644613279a4a2a49870f6d07f6355883a9842106efc42b26a78fe0",
+    "exact_equal": true,
+    "source_roads": 40,
+    "derived_roads": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration.L_GazaShujaiya_BankIntegration:PersistentLevel.DynamicRoad_86"
+    ],
+    "owned_native_geos": 83,
+    "rebuild_pass": 1
+  },
+  "latest_completed_live_readback": {
+    "callbacks": {
+      "parent_watch": false,
+      "parent_save": false,
+      "native_tick": false
+    },
+    "Engine_valid": true,
+    "Engine_paused": true,
+    "autosave_current": false,
+    "HDA_autoCook": false,
+    "HDA_autoBake": false,
+    "dirty": {
+      "maps": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration"
+      ],
+      "content": [
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM",
+        "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_376_0_main_geo_HSM",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_01255a68902d",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_01255a68902d",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_0f63463fc15c",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_0f63463fc15c",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_7624457a72fe",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_7624457a72fe",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_a77371aa51b5",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_a77371aa51b5",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_18822c0e28e6",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_7da3e866242a",
+        "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_7da3e866242a"
+      ]
+    }
+  },
+  "second_readback": "Read-only refresh was refused by current ASSIGNMENTS editor_calls_authorized=false guard before scheduling or native calls. Last completed live readback is the linked 20:39:38 UTC receipt.",
+  "interpretation": "Immediate call-local bytes were empty; a later preserved file contains the exact pending-license warning 30 bytes after that cursor. Consistent with buffered log output, not permission to broaden captured-call evidence or retry.",
+  "no_source_edit_SDK_retry_Cook_rebuild_save_or_state_transition": true
+}

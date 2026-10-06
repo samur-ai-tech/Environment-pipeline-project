@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 849,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/FC_Coastal_Landscape/Landscape/MI_CC_Landscape"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"HasPerInstanceCustomData\":\"False\",\"HasPerInstanceRandom\":\"False\",\"HasSceneColor\":\"False\",\"HasVertexInterpolator\":\"False\",\"Parent\":\"/Script/Engine.Material'/Game/FC_Coastal_Landscape/Landscape/M_Master_CL_Landscape.M_Master_CL_Landscape'\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 849,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"HasPerInstanceCustomData\":\"False\",\"HasPerInstanceRandom\":\"False\",\"HasSceneColor\":\"False\",\"HasVertexInterpolator\":\"False\",\"Parent\":\"/Script/Engine.Material'/Game/FC_Coastal_Landscape/Landscape/M_Master_CL_Landscape.M_Master_CL_Landscape'\"}}"
+    }
+   ]
+  }
+ }
+}

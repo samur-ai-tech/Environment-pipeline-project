@@ -1,0 +1,51 @@
+Clamp_13 [Clamp]  Input<-FunctionInput_1:0
+ComponentMask_5 [ComponentMask] {"R": true, "G": true} Input<-Multiply_15:0
+Constant_1 [Constant]  
+Constant_3 [Constant]  
+Divide_6 [Divide]  A<-FunctionInput_5:0 B<-ScalarParameter_38:0
+Fresnel_0 [Fresnel]  
+FunctionInput_0 [FunctionInput] {"InputName": "BaseColor"} 
+FunctionInput_1 [FunctionInput] {"InputName": "WaterMask", "InputType": "FunctionInput_Scalar", "SortPriority": 4} 
+FunctionInput_2 [FunctionInput] {"InputName": "Specular", "InputType": "FunctionInput_Scalar", "SortPriority": 1} 
+FunctionInput_3 [FunctionInput] {"InputName": "Roughness", "InputType": "FunctionInput_Scalar", "SortPriority": 2} 
+FunctionInput_4 [FunctionInput] {"InputName": "Normal", "SortPriority": 3} 
+FunctionInput_5 [FunctionInput] {"InputName": "WorldCoords", "InputType": "FunctionInput_Vector2", "SortPriority": 4} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "Normal", "SortPriority": 4} A<-StaticSwitchParameter_3:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "Roughness", "SortPriority": 3} A<-StaticSwitchParameter_12:0
+FunctionOutput_2 [FunctionOutput] {"OutputName": "Metallic", "SortPriority": 1} A<-StaticSwitchParameter_10:0
+FunctionOutput_3 [FunctionOutput] {"OutputName": "Specular", "SortPriority": 2} A<-Saturate_1:0
+FunctionOutput_4 [FunctionOutput] {"OutputName": "BaseColor"} A<-StaticSwitchParameter_6:0
+FunctionOutput_5 [FunctionOutput] {"OutputName": "WaterRefractionUV", "SortPriority": 5} A<-StaticSwitchParameter_13:0
+LinearInterpolate_0 [LinearInterpolate]  A<-FunctionInput_2:0 B<-Fresnel_0:0 Alpha<-FunctionInput_1:0
+LinearInterpolate_16 [LinearInterpolate]  A<-FunctionInput_0:0 B<-VectorParameter_9:0.RGB Alpha<-Clamp_13:0
+LinearInterpolate_17 [LinearInterpolate]  A<-FunctionInput_4:0 B<-Multiply_15:0 Alpha<-Saturate_0:0
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_CombineNormalSimple"} FunctionInputs[0].Input<-TextureSample_2:0.RGB FunctionInputs[1].Input<-TextureSample_11:0.RGB
+Multiply_0 [Multiply] {"ConstB": 3.0} A<-Divide_6:0
+Multiply_14 [Multiply] {"ConstB": 0.5} A<-FunctionInput_1:0
+Multiply_15 [Multiply]  A<-MaterialFunctionCall_0:0 B<-VectorParameter_0:0.RGB
+Multiply_16 [Multiply]  A<-Multiply_17:0 B<-FunctionInput_1:0
+Multiply_17 [Multiply] {"ConstB": 0.2} A<-ComponentMask_5:0 B<-ScalarParameter_0:0
+Multiply_30 [Multiply]  A<-FunctionInput_3:0 B<-Power_11:0
+Multiply_41 [Multiply] {"ConstB": 1.2} A<-FunctionInput_1:0
+OneMinus_0 [OneMinus]  Input<-FunctionInput_1:0
+Panner_0 [Panner]  Coordinate<-Divide_6:0
+Panner_1 [Panner]  Coordinate<-Multiply_0:0
+Power_11 [Power] {"ConstExponent": 4.0} Base<-OneMinus_0:0
+Power_12 [Power]  Base<-Multiply_41:0
+Saturate_0 [Saturate]  Input<-Power_12:0
+Saturate_1 [Saturate]  Input<-StaticSwitchParameter_11:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_WaterRefractionIntensity", "DefaultValue": 0.3, "Group": "1_Water"} 
+ScalarParameter_38 [ScalarParameter] {"ParameterName": "MW_WaterUVSize", "DefaultValue": 12.0, "Group": "1_Water"} 
+StaticSwitchParameter_10 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-Multiply_14:0 B<-Constant_1:0
+StaticSwitchParameter_11 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-LinearInterpolate_0:0 B<-FunctionInput_2:0
+StaticSwitchParameter_12 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-Multiply_30:0 B<-FunctionInput_3:0
+StaticSwitchParameter_13 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-Multiply_16:0 B<-Constant_3:0
+StaticSwitchParameter_3 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-LinearInterpolate_17:0 B<-FunctionInput_4:0
+StaticSwitchParameter_6 [StaticSwitchParameter] {"ParameterName": "MW_UseWater", "DefaultValue": true, "Group": "1_Water"} A<-LinearInterpolate_16:0 B<-FunctionInput_0:0
+TextureObject_0 [TextureObject] {"Texture": "TEX_MW_WaterA_nrm", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureSample_11 [TextureSample] {"Texture": "TEX_MW_WaterA_nrm", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} Coordinates<-Panner_0:0 TextureObject<-TextureObject_0:0
+TextureSample_2 [TextureSample] {"Texture": "TEX_MW_WaterA_nrm", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} Coordinates<-Panner_1:0 TextureObject<-TextureObject_0:0
+VectorParameter_0 [VectorParameter] {"ParameterName": "MW_WaterNormalIntensity", "DefaultValue": [0.05, 0.05, 1.0, 1.0], "Group": "1_Water"} 
+VectorParameter_9 [VectorParameter] {"ParameterName": "MW_WaterColor", "DefaultValue": [0.04, 0.0475, 0.05, 1.0], "Group": "1_Water"} 
+MW_MWAM_Water [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MW_MWAM_WaterEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MW_MWAM_WaterEditorOnlyData [MaterialFunctionEditorOnlyData]  

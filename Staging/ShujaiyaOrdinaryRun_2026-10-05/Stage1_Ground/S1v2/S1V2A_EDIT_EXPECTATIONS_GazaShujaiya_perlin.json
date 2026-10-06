@@ -1,0 +1,709 @@
+{
+ "schema": "environmentpipeline.stage1_s1_minimal_safe_spec.v1",
+ "schema_note": "v1 expectations schema reused for review; S1_Prep/s1_verify.py post_s1 cannot consume v2a receipts.",
+ "variant": "s1v2a",
+ "status": "IMPLEMENTED_DESIGN_EXPECTATIONS_NOT_EXECUTED",
+ "generated_by": {
+  "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\s1v2a_material_edit_offline.py",
+  "file_sha256": "3eb534f0c07062ccae2493a468f088f48abfb83d505b19c3944ae59287d9872e",
+  "target": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\s1v2a_material_edit.py",
+  "target_sha256": "bf1bee4f94fbc83b43901913a9b7e48c1592723cf44a6069b83b2ba3eab2aace",
+  "args_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\Args\\S1V2A_ARGS_GazaShujaiya_tune1_perlin.json",
+  "args_sha256": "24011b2e53c3f5a58b2f243f4c29dfda821d06caae1344a029942c578bf24677",
+  "noise_stats": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\NOISE_STATS_v2a.json",
+  "noise_stats_sha256": "877bfa346a56d8e52211e643f7cd781d9a75d5360809d47598135feb77eec667"
+ },
+ "design_notes": "S1v2a (manager order after CODEX_DESIGN_REVIEW.md section 5): one BaseColor static switch; True = MF_GeoCityV2a_MacroColor(LandscapeLayerBlend_6). Every existing chain, weight blend, Grass node and the Normal/Roughness/AO roots untouched. Values = the args child values (t001), i.e. the state that would be saved.",
+ "macro_noise_source": "perlin",
+ "noise_stats_used": {
+  "macro_noise_source": "perlin",
+  "sampler": "MASKS",
+  "master_default_texture": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+  "child_texture": "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M",
+  "master_default_mean_rgb": [
+   0.5072180032730103,
+   0.5072180032730103,
+   0.5072190165519714
+  ],
+  "master_default_inv_std_rgb": [
+   6.443973064422607,
+   6.444043159484863,
+   6.444129943847656
+  ],
+  "measured_std_rgb": [
+   0.155184,
+   0.155182,
+   0.15518
+  ],
+  "measured_block256_std_rgb": [
+   0.051479,
+   0.051479,
+   0.051478
+  ],
+  "weights": [
+   0.45,
+   0.35,
+   0.2
+  ],
+  "sigma_v": 0.6041522986797286,
+  "clamp_v": [
+   -1.2083045973594573,
+   1.2083045973594573
+  ],
+  "octaves": [
+   {
+    "channel": "R",
+    "tile_cm_default": 6100.0,
+    "rotation_deg": 17.0,
+    "offset": [
+     0.13,
+     0.71
+    ]
+   },
+   {
+    "channel": "G",
+    "tile_cm_default": 21100.0,
+    "rotation_deg": 53.0,
+    "offset": [
+     0.37,
+     0.61
+    ]
+   },
+   {
+    "channel": "B",
+    "tile_cm_default": 73300.0,
+    "rotation_deg": 89.0,
+    "offset": [
+     0.83,
+     0.29
+    ]
+   }
+  ],
+  "source": "S1v2/NOISE_STATS_v2a.json (noise_stats_v2a.py, MEASURED source pixels; runtime sampling INFERRED close)",
+  "child_effective": {
+   "GazaShujaiya": {
+    "mean_rgb": [
+     0.5072180032730103,
+     0.5072180032730103,
+     0.5072190165519714
+    ],
+    "inv_std_rgb": [
+     6.443973064422607,
+     6.444043159484863,
+     6.444129943847656
+    ],
+    "texture": "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M"
+   }
+  }
+ },
+ "master": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+ "base_mi_untouched": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+ "children": {
+  "GazaShujaiya": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+  "GazaRimal": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/Materials/MI_GeoCityGround"
+ },
+ "new_function_packages": [
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2a_MacroColor"
+ ],
+ "function_packages_must_be_absent": [
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroNoise",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_DistanceBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_MacroColor",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_SlopeBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCity_HeightBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2_CellSample",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2_MacroField",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2_MacroColor",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2_SlopeBlend",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2_HeightBlend"
+ ],
+ "functions": {
+  "MF_GeoCityV2a_MacroColor": {
+   "inputs": [
+    "Base:V3",
+    "NoiseTex:T2D",
+    "Tile1Cm:S",
+    "Tile2Cm:S",
+    "Tile3Cm:S",
+    "Mean:V3",
+    "InvStd:V3",
+    "ValueAmount:S",
+    "HueGain:S",
+    "HueA:V3",
+    "HueB:V3"
+   ],
+   "outputs": [
+    "Color:V3"
+   ],
+   "texture_samples": 3,
+   "sampler_type": "SAMPLERTYPE_MASKS",
+   "sampler_source": "SSM_WRAP_WORLD_GROUP_SETTINGS",
+   "mip_value_mode": "TMVM_NONE",
+   "nodes_mock": 70,
+   "numeric": {
+    "master_defaults_identity_max_abs_error": 0.0,
+    "t001_extremes": {
+     "mean": {
+      "color": [
+       0.3,
+       0.3,
+       0.3
+      ],
+      "luma_factor": 1.0,
+      "r_over_b": 1.0
+     },
+     "low": {
+      "color": [
+       0.267856,
+       0.274626,
+       0.281395
+      ],
+      "luma_factor": 0.912251,
+      "r_over_b": 0.951887
+     },
+     "high": {
+      "color": [
+       0.333395,
+       0.325374,
+       0.317354
+      ],
+      "luma_factor": 1.088335,
+      "r_over_b": 1.050545
+     }
+    },
+    "brightness_cap": 0.084581
+   }
+  }
+ },
+ "node_desc_prefix": "GeoCity_GroundS1v2a_20261006:",
+ "canvas": {
+  "x": [
+   -4000,
+   -1840
+  ],
+  "y_min": 36000
+ },
+ "new_parameters": [
+  {
+   "name": "GeoCity_S1_Enable",
+   "kind": "static_switch",
+   "master_default": false,
+   "GazaShujaiya": true
+  },
+  {
+   "name": "GeoCity_S1_MacroNoise",
+   "kind": "texture_masks",
+   "master_default": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+   "GazaShujaiya": "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M"
+  },
+  {
+   "name": "GeoCity_S1_MacroMean",
+   "kind": "vector",
+   "master_default": [
+    0.507218,
+    0.507218,
+    0.507219,
+    1.0
+   ],
+   "GazaShujaiya": [
+    0.507218,
+    0.507218,
+    0.507219,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_MacroInvStd",
+   "kind": "vector",
+   "master_default": [
+    6.443973,
+    6.444043,
+    6.44413,
+    1.0
+   ],
+   "GazaShujaiya": [
+    6.443973,
+    6.444043,
+    6.44413,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_MacroTile1Cm",
+   "kind": "scalar",
+   "master_default": 6100.0,
+   "GazaShujaiya": 6100.0
+  },
+  {
+   "name": "GeoCity_S1_MacroTile2Cm",
+   "kind": "scalar",
+   "master_default": 21100.0,
+   "GazaShujaiya": 21100.0
+  },
+  {
+   "name": "GeoCity_S1_MacroTile3Cm",
+   "kind": "scalar",
+   "master_default": 73300.0,
+   "GazaShujaiya": 73300.0
+  },
+  {
+   "name": "GeoCity_S1_ValueAmount",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaShujaiya": 0.07
+  },
+  {
+   "name": "GeoCity_S1_HueGain",
+   "kind": "scalar",
+   "master_default": 0.0,
+   "GazaShujaiya": 0.3
+  },
+  {
+   "name": "GeoCity_S1_HueA",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaShujaiya": [
+    1.034,
+    1.0,
+    0.966,
+    1.0
+   ]
+  },
+  {
+   "name": "GeoCity_S1_HueB",
+   "kind": "vector",
+   "master_default": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "GazaShujaiya": [
+    0.966,
+    1.0,
+    1.034,
+    1.0
+   ]
+  }
+ ],
+ "new_parameter_names": 11,
+ "new_landscape_layer_samples": [],
+ "new_llbs": {
+  "count": 0
+ },
+ "static_switch_nodes": {
+  "name": "GeoCity_S1_Enable",
+  "count": 1,
+  "default": false,
+  "False_pin_sources": [
+   "LandscapeLayerBlend_6"
+  ],
+  "roots": [
+   "MP_BASE_COLOR"
+  ],
+  "untouched_roots": [
+   "MP_NORMAL <- LandscapeLayerBlend_7",
+   "MP_ROUGHNESS <- LandscapeLayerBlend_8",
+   "MP_AMBIENT_OCCLUSION <- LandscapeLayerBlend_0"
+  ]
+ },
+ "switch_pins": {
+  "true": "True",
+  "false": "False"
+ },
+ "added_node_count": 12,
+ "function_calls": [
+  "MF_GeoCityV2a_MacroColor"
+ ],
+ "allowed_sampler_sources": [
+  "SSM_WRAP_WORLD_GROUP_SETTINGS"
+ ],
+ "existing_param_child_overrides": {
+  "both_children": {},
+  "per_area": {
+   "GazaShujaiya": {}
+  }
+ },
+ "grass_coverage": null,
+ "sampler_estimate": {
+  "new_samples": 3,
+  "direct_master_samples": 0,
+  "new_sampler_states": 0,
+  "iran_change": 0
+ },
+ "expected_dirty_after_apply": [
+  "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2a_MacroColor",
+  "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+ ],
+ "named_save_list": {
+  "functions": [
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Functions/MF_GeoCityV2a_MacroColor"
+  ],
+  "master": [
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+  ],
+  "children": [
+   "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+  ]
+ },
+ "baseline_expectations": {
+  "node_count": 1015,
+  "graph_sha256_r030": "605c55d04955ec410d51f42f7e7bb66d949cf5fbefcb42df5e31034473e40a1b",
+  "reachable_any_root_plus_grass": 631,
+  "reachable_active4_plus_grass": 241,
+  "root_layer_pins_connected": 207,
+  "master_and_children_preview_stats_PID10460": {
+   "vs": 148,
+   "ps": 183,
+   "samplers": 1,
+   "ps_samples": 3
+  },
+  "disk_sha256": {
+   "master": "78b0f7cd620c7fb760d6e2a633b7f73b4a6f2e664b81f901a3be6bfc5a40b752",
+   "base_mi": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029",
+   "shujaiya_child": "8c54b7e3562941b9da1574404e16282f1628f0d45bcbde5c918ee68838f8a236",
+   "rimal_child": "99ad6bb82076350867e8487927053def0acc74b54805b58aa1c55079eb86d33b"
+  }
+ },
+ "plans": {
+  "GazaShujaiya": {
+   "textures": {
+    "GeoCity_S1_MacroNoise": {
+     "path": "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M",
+     "kind": "MASKS"
+    }
+   },
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.034000039100647,
+     1.0,
+     0.9660000205039978,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.9660000205039978,
+     1.0,
+     1.034000039100647,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_ValueAmount": 0.07000000029802322,
+    "GeoCity_S1_HueGain": 0.30000001192092896
+   }
+  }
+ },
+ "selftest": {
+  "target": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\s1v2a_material_edit.py",
+  "target_sha256": "bf1bee4f94fbc83b43901913a9b7e48c1592723cf44a6069b83b2ba3eab2aace",
+  "sources": {
+   "macro_variation": {
+    "functions": {
+     "MF_GeoCityV2a_MacroColor": {
+      "nodes": 70,
+      "samples": 3,
+      "sampler": "COLOR",
+      "inputs": [
+       "Base",
+       "NoiseTex",
+       "Tile1Cm",
+       "Tile2Cm",
+       "Tile3Cm",
+       "Mean",
+       "InvStd",
+       "ValueAmount",
+       "HueGain",
+       "HueA",
+       "HueB"
+      ],
+      "outputs": [
+       "Color"
+      ],
+      "numeric": {
+       "master_defaults_identity_max_abs_error": 0.0,
+       "t001_extremes": {
+        "mean": {
+         "color": [
+          0.3,
+          0.3,
+          0.3
+         ],
+         "luma_factor": 1.0,
+         "r_over_b": 1.0
+        },
+        "low": {
+         "color": [
+          0.267856,
+          0.274626,
+          0.281395
+         ],
+         "luma_factor": 0.912251,
+         "r_over_b": 0.951887
+        },
+        "high": {
+         "color": [
+          0.333395,
+          0.325374,
+          0.317354
+         ],
+         "luma_factor": 1.088335,
+         "r_over_b": 1.050545
+        }
+       },
+       "brightness_cap": 0.084581
+      }
+     }
+    },
+    "master": {
+     "added_node_count": 12,
+     "function_calls": [
+      "MF_GeoCityV2a_MacroColor"
+     ],
+     "new_samples": 3,
+     "parameter_names": 11,
+     "class_counts": {
+      "MaterialExpressionMaterialFunctionCall": 1,
+      "MaterialExpressionScalarParameter": 5,
+      "MaterialExpressionStaticSwitchParameter": 1,
+      "MaterialExpressionTextureObjectParameter": 1,
+      "MaterialExpressionVectorParameter": 4
+     },
+     "links": 95,
+     "existing_nodes_with_new_input_links": 0,
+     "roots_rebound": [
+      "color"
+     ]
+    }
+   },
+   "mw_noise": {
+    "functions": {
+     "MF_GeoCityV2a_MacroColor": {
+      "nodes": 70,
+      "samples": 3,
+      "sampler": "MASKS",
+      "inputs": [
+       "Base",
+       "NoiseTex",
+       "Tile1Cm",
+       "Tile2Cm",
+       "Tile3Cm",
+       "Mean",
+       "InvStd",
+       "ValueAmount",
+       "HueGain",
+       "HueA",
+       "HueB"
+      ],
+      "outputs": [
+       "Color"
+      ],
+      "numeric": {
+       "master_defaults_identity_max_abs_error": 0.0,
+       "t001_extremes": {
+        "mean": {
+         "color": [
+          0.3,
+          0.3,
+          0.3
+         ],
+         "luma_factor": 1.0,
+         "r_over_b": 1.0
+        },
+        "low": {
+         "color": [
+          0.267856,
+          0.274626,
+          0.281395
+         ],
+         "luma_factor": 0.912251,
+         "r_over_b": 0.951887
+        },
+        "high": {
+         "color": [
+          0.333395,
+          0.325374,
+          0.317354
+         ],
+         "luma_factor": 1.088335,
+         "r_over_b": 1.050545
+        }
+       },
+       "brightness_cap": 0.084581
+      }
+     }
+    },
+    "master": {
+     "added_node_count": 12,
+     "function_calls": [
+      "MF_GeoCityV2a_MacroColor"
+     ],
+     "new_samples": 3,
+     "parameter_names": 11,
+     "class_counts": {
+      "MaterialExpressionMaterialFunctionCall": 1,
+      "MaterialExpressionScalarParameter": 5,
+      "MaterialExpressionStaticSwitchParameter": 1,
+      "MaterialExpressionTextureObjectParameter": 1,
+      "MaterialExpressionVectorParameter": 4
+     },
+     "links": 95,
+     "existing_nodes_with_new_input_links": 0,
+     "roots_rebound": [
+      "color"
+     ]
+    }
+   },
+   "perlin": {
+    "functions": {
+     "MF_GeoCityV2a_MacroColor": {
+      "nodes": 70,
+      "samples": 3,
+      "sampler": "MASKS",
+      "inputs": [
+       "Base",
+       "NoiseTex",
+       "Tile1Cm",
+       "Tile2Cm",
+       "Tile3Cm",
+       "Mean",
+       "InvStd",
+       "ValueAmount",
+       "HueGain",
+       "HueA",
+       "HueB"
+      ],
+      "outputs": [
+       "Color"
+      ],
+      "numeric": {
+       "master_defaults_identity_max_abs_error": 0.0,
+       "t001_extremes": {
+        "mean": {
+         "color": [
+          0.3,
+          0.3,
+          0.3
+         ],
+         "luma_factor": 1.0,
+         "r_over_b": 1.0
+        },
+        "low": {
+         "color": [
+          0.267856,
+          0.274626,
+          0.281395
+         ],
+         "luma_factor": 0.912251,
+         "r_over_b": 0.951887
+        },
+        "high": {
+         "color": [
+          0.333395,
+          0.325374,
+          0.317354
+         ],
+         "luma_factor": 1.088335,
+         "r_over_b": 1.050545
+        }
+       },
+       "brightness_cap": 0.084581
+      }
+     }
+    },
+    "master": {
+     "added_node_count": 12,
+     "function_calls": [
+      "MF_GeoCityV2a_MacroColor"
+     ],
+     "new_samples": 3,
+     "parameter_names": 11,
+     "class_counts": {
+      "MaterialExpressionMaterialFunctionCall": 1,
+      "MaterialExpressionScalarParameter": 5,
+      "MaterialExpressionStaticSwitchParameter": 1,
+      "MaterialExpressionTextureObjectParameter": 1,
+      "MaterialExpressionVectorParameter": 4
+     },
+     "links": 95,
+     "existing_nodes_with_new_input_links": 0,
+     "roots_rebound": [
+      "color"
+     ]
+    }
+   }
+  },
+  "baseline": {
+   "graph_sha256": "605c55d04955ec410d51f42f7e7bb66d949cf5fbefcb42df5e31034473e40a1b",
+   "root_color": "MaterialExpressionLandscapeLayerBlend_6",
+   "child_only_textures": [
+    "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk.TEX_MW_Noise_msk",
+    "/Game/StarterContent/Textures/T_Perlin_Noise_M.T_Perlin_Noise_M"
+   ],
+   "noise_stats_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\S1v2\\NOISE_STATS_v2a.json",
+   "noise_stats_sha256": "877bfa346a56d8e52211e643f7cd781d9a75d5360809d47598135feb77eec667",
+   "status": "BASELINE_DUMP_AND_NOISE_STATS_MATCH"
+  },
+  "scan": {
+   "status": "AST_SCAN_PASSED",
+   "save_packages_sites": [
+    [
+     "save",
+     1654
+    ],
+    [
+     "child_save",
+     1897
+    ]
+   ],
+   "connect_material_property_sites": [
+    [
+     "apply",
+     1333
+    ]
+   ],
+   "link_sites": [
+    [
+     "Builder.link",
+     798
+    ]
+   ],
+   "instance_setter_functions": [
+    "apply",
+    "tune"
+   ],
+   "forbidden_checked": [
+    "save_assets",
+    "save_asset",
+    "save_loaded_asset",
+    "save_loaded_assets",
+    "save_dirty_packages",
+    "save_directory",
+    "save_current_level",
+    "save_map",
+    "save_all_dirty_levels",
+    "delete_asset",
+    "delete_loaded_asset",
+    "delete_directory",
+    "delete_material_expression",
+    "delete_material_expression_in_function",
+    "delete_all_material_expressions",
+    "delete_all_material_expressions_in_function",
+    "prepare",
+    "verify_landscape",
+    "rename_asset",
+    "duplicate_asset",
+    "consolidate_assets",
+    "disconnect_material_property"
+   ],
+   "save_named_list": "groups = [('functions', [FUNCTION_DIR + '/' + n for n in FUNCTIONS]), ('master', [MASTER]),\n              ('children', [CHILDREN[area]])]"
+  },
+  "status": "SELFTEST_PASSED_MOCK_ENGINE",
+  "scope": "Python wiring/pin-name/dimension logic and the MF maths only; engine behaviour (pin names inside MFs, LWC WorldPosition maths, compile, switch propagation) is asserted at run time."
+ }
+}

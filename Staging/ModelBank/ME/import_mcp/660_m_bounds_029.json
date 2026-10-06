@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 185,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0647_Nopal.SM_H0647_Nopal"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.33,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-44.089256286621094,\"y\":-25.522823333740234,\"z\":-1.8017126321792603},\"max\":{\"x\":33.404609680175781,\"y\":25.772138595581055,\"z\":51.330089569091797},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 185,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-44.089256286621094,\"y\":-25.522823333740234,\"z\":-1.8017126321792603},\"max\":{\"x\":33.404609680175781,\"y\":25.772138595581055,\"z\":51.330089569091797},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

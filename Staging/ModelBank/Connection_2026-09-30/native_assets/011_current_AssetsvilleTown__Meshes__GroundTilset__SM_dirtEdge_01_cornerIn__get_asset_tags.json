@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 21,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/GroundTilset/SM_dirtEdge_01_cornerIn"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"400x400x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/dirtEdge_01_cornerIn.fbx\\\", \\\"Timestamp\\\" : \\\"1545026830\\\", \\\"FileMD5\\\" : \\\"6d5ac5bd0cb4227481955d180b609760\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"18\",\"UVChannels\":\"2\",\"Vertices\":\"24\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 21,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"400x400x0\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/GroundTileset/dirtEdge_01_cornerIn.fbx\\\", \\\"Timestamp\\\" : \\\"1545026830\\\", \\\"FileMD5\\\" : \\\"6d5ac5bd0cb4227481955d180b609760\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"18\",\"UVChannels\":\"2\",\"Vertices\":\"24\"}}"
+    }
+   ]
+  }
+ }
+}

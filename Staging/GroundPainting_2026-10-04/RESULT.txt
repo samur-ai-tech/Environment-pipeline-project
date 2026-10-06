@@ -1,0 +1,50 @@
+GROUND MATERIAL RESULT — 2026-10-04
+
+Both original areas now use retained per-area Natural ground instances. Shujaiya v2 and Rimal v1 were saved, closed cleanly and verified in fresh UnrealEditor processes. The finite ground appearance work is complete with the visual limits below; user acceptance and full regeneration are separate.
+
+WHAT CHANGED AND WHY
+1. Bound each Landscape to its intended area MI. Shujaiya retained both existing Landscapes; Rimal received its previously absent intended child. The shared base/master and all texture bindings stay unchanged.
+2. Authored brighter, more neutral sand and distinct darker soil multipliers. These are linear source-texture multipliers, not promised final RGB colors. Rimal is slightly paler than Shujaiya.
+3. Fine texture tile size changed from220/350/260/300cm to160/260/220/210cm for Sand_01/Sand_02/Dirt_Path/Sand_Path. This supports clearer dry grain/detail nearby. Roughness is .92/.92/.94/.91.
+4. Existing deterministic macro variation was enlarged from36/57m to180/313m in Shujaiya,140/241m in Rimal. Contrast/soil blend are2.8/.72 and2.5/.66 respectively, reducing uniform small-scale brown mottling and introducing broader soft regions.
+5. Geographic layer weights and heights were preserved. The four layer roles remain Ground Sand_01, Steep Sand_02, RoadBed Dirt_Path, BuildingPad Sand_Path. Material tint does not spatially soften a binary geographic edge.
+
+PERSISTENCE AND PRESERVATION
+Named saves were exactly the two original maps plus their two MI_GeoCityGround instances. The Rimal instance is new. No Cook/Bake or regeneration was invoked. Shared master/base/GrassType/corrected normals, original sand normals, sealed sources/config and profiles retain their recorded hashes.
+All native readbacks were paused, autoCook/autoBake/autosave off, callbacks zero, and clean after save/reopen. Effective GrassCoverage stayed0->0; the unused Shujaiya child latent.15 was set to0 before binding to preserve the actual prior effective state. Existing Grass graph/settings were not edited.
+Shujaiya final-pre-save->fresh reopen preserves316numeric actor transforms and260non-Landscape mesh-component records exactly. Rimal initial->final->fresh reopen preserves121numeric actor transforms and87mesh-component records exactly. Each Landscape retains576sampled weights and3sampled collision heights with0sampled height delta. Initial Shujaiya full numeric transform equality is not established because the initial digest used object-string addresses.
+
+ACTUAL VISUAL LIMITS
+The chosen ground is visibly lighter and more varied under the current Lit lighting; dry detail persists after textures finish streaming. First fresh-process close captures were coarse, so final comparisons use the additional settled captures from the same camera.
+Rimal retains preexisting crisp HOLD forms, support-patch edges, small specks and dark borders. Their cause is not established as missing weights or a tint problem. Shujaiya dark outer rectangles from earlier wide captures are absent in reopened/settled captures; cause is not established. No geometry/mask repair is claimed.
+Existing flat lighting and unrelated building/road defects limit overall scene realism. User visual acceptance is PENDING. Full pipeline regeneration is NOT_RUN. Static compatibility follows the unchanged existing prepare() route; that function can separately reset GrassCoverage.
+
+MATCHED ACTUAL IMAGES (all1600x1000, Lit, exact recorded camera/FOV, existing lighting)
+
+GazaShujaiya
+close before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_before_close.png
+close final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_settled_close.png
+middle before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_before_middle.png
+middle final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_settled_middle.png
+wide before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_before_wide.png
+wide final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaShujaiya_settled_wide.png
+
+GazaRimal
+close before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_before_close.png
+close final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_settled_close.png
+middle before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_before_middle.png
+middle final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_settled_middle.png
+wide before: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_before_wide.png
+wide final fresh-process settled: C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\Images\GazaRimal_settled_wide.png
+
+CLEAN HANDOFF
+Sole visible UnrealEditorPID30632 is open on original Shujaiya, matched middle Lit view, clean and paused. Authoring ownership is released (OWNER=NONE). No ongoing generation lease or callbacks are active. See FINAL_HANDOFF.json and the final EDITOR_OWNER line.
+
+READING SET
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\RESULT.json
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\REOPEN_GazaShujaiya.json
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\REOPEN_GazaRimal.json
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\PACKAGE_DIFFS.json
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\INDEPENDENT_PRESERVATION_REVIEW.txt
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\VISUAL_REVIEW.txt
+C:\Users\USER\Documents\Unreal Projects\Environmentpipeline\Staging\GroundPainting_2026-10-04\FINAL_HANDOFF.json

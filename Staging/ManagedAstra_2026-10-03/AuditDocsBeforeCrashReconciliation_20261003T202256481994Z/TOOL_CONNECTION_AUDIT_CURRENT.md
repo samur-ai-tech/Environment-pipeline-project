@@ -1,0 +1,24 @@
+# Current tool connection audit
+
+Updated 2026-10-03. Root now manages three Astra chats; task2 is the sole editor writer on the existing PID32752. The original audit worker read saved files and inspected the local image without editor/Houdini calls. Root's later read-only operating-system refresh confirms one UnrealEditor and all five existing loopback listeners under the same editor/auxiliary Houdini PIDs; this refresh is not an API handshake.
+
+Rimal's native roads and repaired ground material are now saved and reopened without recooking. The [saved/native reopen verification](<C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/AppearanceRepair_2026-10-03/SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json>) passes actual geometry, materials, transforms, collision, ownership, geographic footprint and saved-Landscape grounding checks. The [bank/material reopen receipt](<C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/AppearanceRepair_2026-10-03/REOPEN_GazaRimal_20261003T172107331435Z.json>) verifies the repaired shared material, four painted targets, both documented corrected normal copies and 16,009 native bank instances. There are 43 HDA baked actors with 6 named HDA dependencies, 24 native roads and 43 RoadGeo actors, 41 bound meshes plus 2 exact supported null placeholders, 68 owned native actors and 65 named native dependencies. Fresh saved/reopened maximum surface-height error is **7.729658493965417 cm**. A fresh editor-process restart and user aesthetic acceptance are not claimed.
+
+The [saved Lit image](<C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/AppearanceRepair_2026-10-03/RIMAL_SAVED_LIT_20261003T1722.png>) was inspected by this worker and shows textured ground and irregular soil patches. Shared shader repair named-saved exactly four assets, preserved original normal hashes and all 69 layer names. Ground heights, geographic masks, canonical catalog paths and holds remain preserved. Four targets are painted; 69 supported targets do not mean 69 applied terrain classes.
+
+Shujaiya's **new ordinary replacement is in progress**, started 2026-10-03T17:22:46Z under the same PID. After supported-API source repair and completion of the exact originally empty connector's settings, task2 resumed that same generation. All four corner tasks and native rebuild passes completed; terrain grounding and geographic clipping are active and unsaved. Its prior saved generation remains preserved. This report does not claim completion of the replacement or final two-area appearance acceptance.
+
+| Connection | Functional/listener evidence | Scope |
+| --- | --- | --- |
+| Official Houdini Engine | Root's 16:05 handshake reported valid session and paused cooking. Current actual Rimal Cook/Bake/save/reopen passed. | Authoritative geographic HDA route; paused status is a timestamped snapshot, not a claim that the active Shujaiya operation is idle. |
+| Houdini MCP | Root handshake: Houdini 22.0.429, headless auxiliary untitled session, RPC18811; listener PID8636. | Separate source-authoring session. |
+| Existing Unreal MCP | Port8000 listener PID32752; actual root native RoadBLD discovery/inspection succeeds. | Installed editor/material/native toolsets. |
+| UnrealCopilot | Root Python RPC returned the actual Rimal world/PID32752; ports19840/18080 listened under that PID. | Same owned editor. |
+| kks3800 Unreal_MCP | Root `get_material_info` returned graph metadata; port55557 listener PID32752. | Graph/parameter tools; metadata is not a rendered image. |
+| Native RoadBLD | Rimal's fresh saved/reopened verification passes 24 source roads, 41 actual bound meshes and grounding. | Native authored roads retained in the named map. Shujaiya's new replacement remains active. |
+
+Listener readings and API handshakes remain distinguished in the JSON. The listener/handshake snapshot is 16:05:55 UTC; it was not repeated by this worker while root's replacement ran. The older 2026-10-02 guide's inactive official Engine snapshot is historical.
+
+Installed `MaterialTools` graph wiring/inspection and `MaterialInstanceTools` scalar/vector/texture settings operate on the retained native ground material. The exported 36-toolset catalog and 471-operation kks registry contain no dedicated Landscape paint/weightmap operation; this does not describe the availability of Unreal's native Landscape UI. All 471 operations were not executed because many mutate assets/world state or invoke other effects. Successful bounded handshakes do not prove every registered operation.
+
+Evidence: the saved/reopen receipts and image linked above; immutable `GROUND_SHADER_REPAIR_20261003T160849345599Z.json`; `GROUND_PAINTING_RESULT.json`; prior connection guide and exported schemas. Root's functional handshake results were supplied directly; detailed calls remain in the root task.

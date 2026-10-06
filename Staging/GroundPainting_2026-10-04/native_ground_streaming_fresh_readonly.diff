@@ -1,0 +1,141 @@
+--- native_ground_streaming_readonly.py
++++ native_ground_streaming_fresh_readonly.py
+@@ -1,6 +1,7 @@
+-"""Read-only ground streaming inspection for the current original Shujaiya.
+-
+-ARGS: expected_pid=14776, mode=inspect|investigate, unique ASCII label.
++"""Read-only ground streaming inspection in either fresh original-area process.
++
++ARGS: expected_pid, baseline_receipt + baseline_receipt_sha256,
++mode=inspect|investigate, unique ASCII label. Area is derived from the live world.
+ No editor action is taken by import without ARGS. Root pins and runs this file.
+ Only the fixed streamer log commands are dispatched; their output is in the
+ native log, not in the Python dispatch return. No setters or asset operations.
+@@ -52,14 +53,14 @@
+ 
+ def inspect(args):
+     h = load_definitions()
+-    script = h.HERE / 'native_ground_streaming_readonly.py'
++    script = h.HERE / 'native_ground_streaming_fresh_readonly.py'
+     script_sha = h.sha(script)
+     mode = args.get('mode', 'inspect')
+     assert mode in ('inspect', 'investigate')
+-    assert os.getpid() == args['expected_pid'] == 14776
++    assert isinstance(args['expected_pid'], int) and os.getpid() == args['expected_pid']
+     label = args['label']
+     assert label and all(c.isascii() and (c.isalnum() or c == '_') for c in label)
+-    out = h.REV / ('GROUND_STREAMING_' + label + '_PID14776.json')
++    out = h.REV / ('GROUND_STREAMING_FRESH_' + label + '_PID' + str(os.getpid()) + '.json')
+     assert not out.exists(), 'Preserve the prior streaming receipt'
+ 
+     assignment_file = h.HERE / 'ASSIGNMENT.json'
+@@ -67,13 +68,27 @@
+     assignment = json.loads(assignment_file.read_text(encoding='utf-8-sig'))
+     world = h.unreal.get_editor_subsystem(h.unreal.UnrealEditorSubsystem).get_editor_world()
+     named_map = world.get_outermost().get_path_name()
+-    assert named_map == assignment['original_maps']['GazaShujaiya']
++    area = h.one((k for k, v in assignment['original_maps'].items() if v == named_map), 'original area')
++    assert area in ('GazaShujaiya', 'GazaRimal')
+     assert args.get('world', named_map) == named_map
+     sources, actors = h.guard(assignment, named_map, require_authoring=False)
+     assert len(sources) == 12
++    baseline_file, baseline = h.load_document(args['baseline_receipt'])
++    baseline_sha = args['baseline_receipt_sha256']
++    assert h.sha(baseline_file) == baseline_sha
++    assert baseline['pid'] == os.getpid() and baseline['world'] == named_map and baseline['area'] == area
++    assert baseline['sources'] == sources and baseline['graph_expression_count'] == 1015
++    assert baseline['cooking_paused'] and not baseline['autosave'] and not any(baseline['callbacks'].values())
++    assert len(baseline['hdas']) == 1 and all(not x['auto_cook'] and not x['auto_bake'] for x in baseline['hdas'])
+     before_scene = h.scene_state(actors)
++    assert len(actors) == baseline['actor_count']
++    assert before_scene['transforms'] == baseline['actor_transforms']
++    assert before_scene['native_mesh_components'] == sorted(baseline['native_mesh_components'], key=lambda x: x['component'])
++    expected_landscapes = sorted([{'path': row['path'], 'material': row['material']['path'], 'hidden': row['hidden']}
++                                 for row in baseline['landscapes']], key=lambda x: x['path'])
++    assert [{k: v for k, v in row.items() if k != 'layers'} for row in before_scene['landscapes']] == expected_landscapes
+     landscapes = sorted((a for a in actors if isinstance(a, h.unreal.LandscapeProxy)), key=h.path)
+-    assert len(landscapes) == 2
++    assert len(landscapes) == len(baseline['landscapes']) > 0
+ 
+     manifest_file, manifest = h.load_document(h.REV / 'STOCHASTIC_BACKUP_MANIFEST.json')
+     assert h.sha(manifest_file) == MANIFEST_SHA
+@@ -85,7 +100,7 @@
+     assert all(h.sha(p) == value for p, value in sealed_files.items())
+ 
+     master = h.unreal.load_asset(h.MASTER)
+-    child = h.unreal.load_asset(assignment['material_contract']['area_instances']['GazaShujaiya'])
++    child = h.unreal.load_asset(assignment['material_contract']['area_instances'][area])
+     assert isinstance(master, h.unreal.Material) and isinstance(child, h.unreal.MaterialInstanceConstant)
+     allowed_dirty = {master.get_outermost().get_path_name(), child.get_outermost().get_path_name()}
+ 
+@@ -106,7 +121,25 @@
+         eye, rotation = level.get_level_viewport_camera_info(key)
+         actual_mode = h.unreal.AutomationLibrary.get_editor_active_viewport_view_mode()
+         assert actual_mode == h.unreal.ViewModeIndex.VMI_LIT, 'Read only after the actual active viewport is Lit'
+-        return {'active_key': str(key), 'camera': {
++        editor = h.unreal.get_editor_subsystem(h.unreal.UnrealEditorSubsystem)
++        primary = {}
++        for field, name in (('camera', 'get_level_viewport_camera_info'), ('size', 'get_level_viewport_size')):
++            getter = getattr(editor, name, None)
++            if not callable(getter):
++                primary[field] = {'status': 'API_NOT_EXPOSED', 'method': name}
++                continue
++            try:
++                value = getter()
++                if field == 'camera':
++                    p, r = value
++                    value = {'eye': [float(p.x), float(p.y), float(p.z)],
++                             'rotation': [float(r.pitch), float(r.yaw), float(r.roll)]}
++                else:
++                    value = h.plain(value)
++                primary[field] = {'status': 'READ', 'value': value}
++            except Exception as error:
++                primary[field] = {'status': 'API_FAILURE', 'method': name, 'error': str(error)}
++        return {'primary_viewport': primary, 'active_key': str(key), 'camera': {
+             'eye': [float(eye.x), float(eye.y), float(eye.z)],
+             'rotation': [float(rotation.pitch), float(rotation.yaw), float(rotation.roll)]},
+             'viewmode_readback': str(actual_mode), 'actual_lit': True}
+@@ -149,14 +182,19 @@
+                 'landscapes': landscape_streaming(), 'viewport': viewport()}
+ 
+     before = snapshot()
++    assert before['dirty'] == {'maps': sorted(baseline['dirty_maps']), 'content': sorted(baseline['dirty_content'])}
+     assert before['dirty']['maps'] == [] and set(before['dirty']['content']).issubset(allowed_dirty)
++    assert len(h.LIB.get_material_expressions(master)) == baseline['graph_expression_count']
+     result = {
+-        'schema': 'environmentpipeline.ground_streaming_readonly.v1', 'status': 'STARTED',
++        'schema': 'environmentpipeline.ground_streaming_fresh_readonly.v1', 'status': 'STARTED',
+         'utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'pid': os.getpid(),
+-        'world': named_map, 'area': 'GazaShujaiya', 'mode': mode, 'helper_sha256': script_sha,
++        'world': named_map, 'area': area, 'mode': mode, 'helper_sha256': script_sha,
+         'frozen_definitions_sha256': FROZEN_SHA, 'backup_manifest_sha256': MANIFEST_SHA,
+         'assignment_sha256': ASSIGNMENT_SHA, 'sources': sources,
++        'baseline_receipt': str(baseline_file), 'baseline_receipt_sha256': baseline_sha,
++        'baseline_scene_verified': True, 'landscape_count': len(landscapes),
+         'sealed_files': sealed_files, 'package_sha256_before': disk_before,
++        'scene_before': before_scene,
+         'allowed_dirty_content': sorted(allowed_dirty), 'before': before,
+         'native_mutation': False, 'explicit_compile_called': False, 'explicit_save_called': False,
+         'limitations': [
+@@ -174,9 +212,11 @@
+     failure = None
+     try:
+         if mode == 'investigate':
+-            result['readonly_commands_dispatched'] = list(READONLY_COMMANDS)
++            result['readonly_commands_requested'] = list(READONLY_COMMANDS)
++            result['readonly_commands_dispatched'] = []
+             for command in READONLY_COMMANDS:
+                 h.unreal.SystemLibrary.execute_console_command(world, command)
++                result['readonly_commands_dispatched'].append(command)
+     except Exception as error:
+         failure = error
+         result['dispatch_error'] = repr(error)
+@@ -197,6 +237,8 @@
+             assert all(h.sha(p) == value for p, value in sealed_files.items())
+             assert h.sha(script) == script_sha and h.sha(h.SCRIPT) == FROZEN_SHA
+             assert h.sha(manifest_file) == MANIFEST_SHA and h.sha(assignment_file) == ASSIGNMENT_SHA
++            assert h.sha(baseline_file) == baseline_sha
++            assert len(h.LIB.get_material_expressions(master)) == baseline['graph_expression_count']
+             result['preservation_checks_passed'] = True
+             result['status'] = 'FAILED_DISPATCH_PRESERVATION_PASSED' if failure else 'COMPLETED_READONLY_PRESERVED'
+         except Exception as error:

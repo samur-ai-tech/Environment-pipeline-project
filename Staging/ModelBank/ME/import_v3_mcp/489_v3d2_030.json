@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 41,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__006"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_AlbedoTransparency_1021_e8b133bd44c7\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_Mat_003_Normal_1021_5c6ed22df8b5\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 41,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_AlbedoTransparency_1021_e8b133bd44c7\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_Mat_003_Normal_1021_5c6ed22df8b5\"]}"
+    }
+   ]
+  }
+ }
+}

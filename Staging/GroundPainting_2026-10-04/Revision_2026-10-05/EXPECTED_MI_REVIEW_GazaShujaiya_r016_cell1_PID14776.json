@@ -1,0 +1,66 @@
+{
+  "schema": "environmentpipeline.stochastic_expected_mi_review.v1",
+  "status": "APPROVED_EXACT_EXPECTED_MI",
+  "utc": "2026-10-05T03:44:18.969251+00:00",
+  "reviewer": "/root/startup_review",
+  "pid": 14776,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "execution_thread_id": "01a10883-481f-7723-bdaa-fed004f15ef1",
+  "expected_mi_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\EXPECTED_MI_STOCHASTIC_GazaShujaiya_r016_cell1_PID14776.json",
+  "expected_mi_receipt_sha256": "7ef08604e081eff04a6adfabf89823a36c204ac13f7223660b4b60b450809d49",
+  "frozen_helper_sha256": "e535a74bca2ca6b9ca7856db8152d5b938ef79597b3a17f35c48e14a0dd69f6e",
+  "verifier_sha256": "23db991501f5a11017034c2b81b32f5a5af9f8135779086fe1180a18f3ccd3f9",
+  "reference_receipt_sha256": "841a9a0507d69aec9645138733dae47dbab92f34fdff9b1f6cc3772dbaedaa66",
+  "backup_manifest_sha256": "f73181be9b8ffc1ee499448dd986266ca5ebe76aab2b1a7e3bea52f06b7d202e",
+  "changed_instance_paths": [
+    "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround"
+  ],
+  "prior_mi_receipt_sha256": null,
+  "exact_differences": [
+    {
+      "path": "/scalars/GeoCity_CellScale",
+      "before": 0.10000000149011612,
+      "after": 1.0
+    },
+    {
+      "path": "/scalar_overrides/20/value",
+      "before": 0.10000000149011612,
+      "after": 1.0
+    }
+  ],
+  "matching_parameter_apply_receipt": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\APPLY_GazaShujaiya_r016_cell1_PID14776.json",
+    "sha256": "642ed26481d56554b66175e4b05ed3ba07012c25283e48137b0e96cc21c78583"
+  },
+  "approval_scope": "Identity expectation only for recorded current Shujaiya child GeoCity_CellScale0.1->1. No visual acceptance, native write or save approval follows.",
+  "validation": {
+    "base_and_other_child_states_exact": true,
+    "current_child_other_effective_parameters_and_ordered_override_identity_values_exact": true,
+    "textures_vectors_Grass_parent_fields_exact": true,
+    "all1015_observed_nodes_code_inputs_outputs_mips_roots_settings_exact": true,
+    "scene_and_Grass_exact": true,
+    "all17_original_package_files_and_backups_unchanged": true,
+    "all65_preserved_and17sealed_files_unchanged": true,
+    "map_dirty": false,
+    "only_master_and_current_child_dirty": true
+  },
+  "GUID_scope": "GUID_NOT_CAPTURED_PYTHON_UNEXPOSED; no GUID equality claim.",
+  "native_statistics_qualification": {
+    "observed_loaded_master": {
+      "status": "READ_ONLY_NATIVE_RESULT",
+      "num_vertex_shader_instructions": 148,
+      "num_pixel_shader_instructions": 183,
+      "num_samplers": 1,
+      "num_vertex_texture_samples": 0,
+      "num_pixel_texture_samples": 3,
+      "num_virtual_texture_samples": 0,
+      "num_uv_scalars": 0,
+      "num_interpolator_scalars": 0
+    },
+    "meaning": "Native cached statistics for queried master only. No evidence binds these to the active Landscape component shader permutation; not actual branch cost/GPU timing or shader-success proof.",
+    "compile_success_proven": false,
+    "streaming_residency_proven": false
+  },
+  "reviewer_native_calls": false
+}

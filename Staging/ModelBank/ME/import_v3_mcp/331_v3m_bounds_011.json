@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 77,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0094_Woodenpole.SM_H0094_Woodenpole"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-66.690345764160156,\"y\":-7.0322422981262207,\"z\":-1.0618314263410866e-06},\"max\":{\"x\":66.690361022949219,\"y\":7.0332551002502441,\"z\":337.96200561523438},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 77,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-66.690345764160156,\"y\":-7.0322422981262207,\"z\":-1.0618314263410866e-06},\"max\":{\"x\":66.690361022949219,\"y\":7.0332551002502441,\"z\":337.96200561523438},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

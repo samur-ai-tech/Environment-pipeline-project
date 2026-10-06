@@ -1,0 +1,75 @@
+MTL_MW_VolumeClouds_MASTER [Material] {"MaterialDomain": "MD_Volume", "BlendMode": "BLEND_Additive", "bUsedWithVolumetricCloud": true, "EditorX": 256, "EditorY": -256, "bCanMaskedBeAssumedOpaque": true, "EditorOnlyData": "export:MTL_MW_VolumeClouds_MASTEREditorOnlyData", "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0", "ParameterOverviewExpansion": "<map 60B>"} 
+MTL_MW_VolumeClouds_MASTEREditorOnlyData [MaterialEditorOnlyData]  BaseColor<-Power_5:0 EmissiveColor<-Constant_0:0 SubsurfaceColor<-Multiply_3:0
+Add_0 [Add]  A<-WorldPosition_0:0 B<-Constant3Vector_0:0
+Add_1 [Add]  A<-Multiply_6:0 B<-Multiply_13:0
+Add_2 [Add]  A<-Multiply_14:0 B<-Multiply_6:0
+CloudSampleAttribute_0 [CloudSampleAttribute]  
+CloudSampleAttribute_1 [CloudSampleAttribute]  
+ComponentMask_0 [ComponentMask] {"R": true, "G": true} Input<-Add_0:0
+ComponentMask_1 [ComponentMask] {"R": true} Input<-Custom_1:0
+Constant_0 [Constant]  
+Constant3Vector_0 [Constant3Vector] {"Constant": [500000.0, 500000.0, 0.0, 0.0]} 
+Custom_1 [Custom] {"Desc": "Erode base shape with higher freq noise", "Description": "REMAP", "Code": "return NewMin + (NewMax-NewMin) * saturate(((OrigValue - OrigMin) / (OrigMax - OrigMin)));"} Inputs[0].Input<-Multiply_4:0 Inputs[1].Input<-Multiply_9:0 Inputs[2].Input<-ScalarParameter_11:0 Inputs[3].Input<-ScalarParameter_13:0 Inputs[4].Input<-ScalarParameter_11:0
+Custom_2 [Custom] {"Code": "float HeightDensity = Density;\r\n\r\nif(NormAltitude<0.05 || NormAltitude>0.95)\r\n{\r\n   HeightDensity = 0.0;\r\n}\r\n\r\nreturn HeightDensity;"} Inputs[0].Input<-CloudSampleAttribute_0:2 Inputs[1].Input<-Multiply_0:0
+Custom_3 [Custom] {"Code": "float HeightDensity = NormAltitude < CloudType ? (1.0) : 0.0;\r\n\r\nif(NormAltitude<0.05 || NormAltitude>0.95)\r\n{\r\n   HeightDensity = 0.0;\r\n}\r\n\r\nreturn HeightDensity;"} Inputs[0].Input<-CloudSampleAttribute_0:2 Inputs[1].Input<-Power_1:0
+LinearInterpolate_0 [LinearInterpolate] {"Desc": "Lerp base low and high frequencies base on height"} A<-Multiply_4:0 B<-ComponentMask_1:0 Alpha<-Power_3:0
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "MakeFloat2"} FunctionInputs[0].Input<-Power_1:0 FunctionInputs[1].Input<-OneMinus_0:0
+Multiply_0 [Multiply]  A<-TextureSampleParameter2D_0:1.R B<-TextureSampleParameter2D_1:1.R
+Multiply_1 [Multiply]  A<-ComponentMask_0:0 B<-ScalarParameter_0:0
+Multiply_10 [Multiply]  A<-Power_2:0 B<-Custom_3:0
+Multiply_11 [Multiply] {"ConstB": 3.0} A<-CloudSampleAttribute_1:2 B<-ScalarParameter_17:0
+Multiply_12 [Multiply]  A<-Time_0:0 B<-VectorParameter_2:0.RGB
+Multiply_13 [Multiply] {"ConstB": -0.1} A<-Multiply_12:0
+Multiply_14 [Multiply] {"ConstB": 0.15} A<-Multiply_12:0
+Multiply_15 [Multiply]  A<-VectorParameter_0:0.RGB B<-LinearInterpolate_0:0
+Multiply_16 [Multiply]  A<-Multiply_15:0 B<-ScalarParameter_18:0
+Multiply_2 [Multiply]  A<-Multiply_1:0 B<-ScalarParameter_0:0
+Multiply_3 [Multiply]  A<-Multiply_5:0 B<-LinearInterpolate_0:0
+Multiply_4 [Multiply] {"Desc": "Base shape"} A<-VolumetricAdvancedMaterialInput_1:0 B<-Saturate_1:0
+Multiply_5 [Multiply]  A<-VectorParameter_1:0.RGB B<-ScalarParameter_3:0
+Multiply_6 [Multiply]  A<-WorldPosition_1:0 B<-ScalarParameter_1:0
+Multiply_7 [Multiply]  A<-Add_2:0 B<-ScalarParameter_2:0
+Multiply_8 [Multiply]  A<-Add_1:0 B<-ScalarParameter_14:0
+Multiply_9 [Multiply] {"ConstB": 0.1} A<-Power_4:0 B<-ScalarParameter_15:0
+OneMinus_0 [OneMinus]  Input<-CloudSampleAttribute_0:2
+Power_0 [Power] {"ConstExponent": 10.0} Base<-TextureSample_1:0.RGB Exponent<-ScalarParameter_12:0
+Power_1 [Power] {"Desc": "Cloud type", "ConstExponent": 0.25} Base<-TextureSampleParameter2D_0:2.G
+Power_2 [Power] {"Desc": "Density", "ConstExponent": 1.0} Base<-TextureSampleParameter2D_0:1.R
+Power_3 [Power]  Base<-Saturate_0:0 Exponent<-ScalarParameter_10:0
+Power_4 [Power]  Base<-TextureSample_3:1.R Exponent<-ScalarParameter_16:0
+Power_5 [Power]  Base<-Saturate_2:0 Exponent<-ScalarParameter_19:0
+Saturate_0 [Saturate]  Input<-Multiply_11:0
+Saturate_1 [Saturate]  Input<-Power_0:0
+Saturate_2 [Saturate]  Input<-Multiply_16:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "WeatherUVScale", "DefaultValue": 0.0005} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "ErosionNoiseScale", "DefaultValue": 1e-05} 
+ScalarParameter_10 [ScalarParameter] {"ParameterName": "NoiseHeightExp", "DefaultValue": 3.0} 
+ScalarParameter_11 [ScalarParameter] {"ParameterName": "ErosionMax", "DefaultValue": 1.0} 
+ScalarParameter_12 [ScalarParameter] {"ParameterName": "BaseNoiseExp", "DefaultValue": 15.0} 
+ScalarParameter_13 [ScalarParameter] {"ParameterName": "ErosionNewMin"} 
+ScalarParameter_14 [ScalarParameter] {"ParameterName": "ErosionScale", "DefaultValue": 0.5} 
+ScalarParameter_15 [ScalarParameter] {"ParameterName": "ErosionStength", "DefaultValue": 0.2} 
+ScalarParameter_16 [ScalarParameter] {"ParameterName": "ErosionExp", "DefaultValue": 6.0} 
+ScalarParameter_17 [ScalarParameter] {"ParameterName": "NoiseHeightRange", "DefaultValue": 2.5} 
+ScalarParameter_18 [ScalarParameter] {"ParameterName": "BeerPowder", "DefaultValue": 20.0} 
+ScalarParameter_19 [ScalarParameter] {"ParameterName": "BeerPowderPower", "DefaultValue": 0.5} 
+ScalarParameter_2 [ScalarParameter] {"ParameterName": "BaseNoiseScale", "DefaultValue": 0.05} 
+ScalarParameter_3 [ScalarParameter] {"ParameterName": "ExtinctionScale", "DefaultValue": 0.05} 
+ScalarParameter_4 [ScalarParameter] {"ParameterName": "PhaseG", "DefaultValue": 0.5} 
+ScalarParameter_5 [ScalarParameter] {"ParameterName": "PhaseG2", "DefaultValue": -0.5} 
+ScalarParameter_6 [ScalarParameter] {"ParameterName": "PhaseBlend", "DefaultValue": 0.2} 
+ScalarParameter_7 [ScalarParameter] {"ParameterName": "MultiScatteringContribution", "DefaultValue": 1.0} 
+ScalarParameter_8 [ScalarParameter] {"ParameterName": "MultiScatteringOcclusion", "DefaultValue": 0.1} 
+ScalarParameter_9 [ScalarParameter] {"ParameterName": "MultiScatteringEccentricity", "DefaultValue": 0.1} 
+TextureSample_1 [TextureSample] {"Texture": "T_VolumeNoiseShape64", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-Multiply_7:0
+TextureSample_3 [TextureSample] {"Texture": "T_VolumeNoiseErosion32", "SamplerType": "SAMPLERTYPE_Masks"} Coordinates<-Multiply_8:0
+TextureSampleParameter2D_0 [TextureSampleParameter2D] {"ParameterName": "MW_TextureCloudWeather", "Group": "Textures", "Texture": "CloudWeatherTexture"} Coordinates<-Multiply_2:0
+TextureSampleParameter2D_1 [TextureSampleParameter2D] {"ParameterName": "MW_TextureCloudGradient", "Group": "Textures", "Texture": "CloudGradientTexture"} Coordinates<-MaterialFunctionCall_0:0
+Time_0 [Time]  
+VectorParameter_0 [VectorParameter] {"ParameterName": "Albedo", "DefaultValue": [1.0, 1.0, 1.0, 0.0]} 
+VectorParameter_1 [VectorParameter] {"ParameterName": "Extinction", "DefaultValue": [0.7188, 0.8594, 1.0, 0.0]} 
+VectorParameter_2 [VectorParameter] {"ParameterName": "WindVector", "DefaultValue": [1.0, 1.0, 0.0, 0.0]} 
+VolumetricAdvancedMaterialInput_1 [VolumetricAdvancedMaterialInput]  
+VolumetricAdvancedMaterialOutput_1 [VolumetricAdvancedMaterialOutput]  PhaseG<-ScalarParameter_4:0 PhaseG2<-ScalarParameter_5:0 PhaseBlend<-ScalarParameter_6:0 MultiScatteringContribution<-ScalarParameter_7:0 MultiScatteringOcclusion<-ScalarParameter_8:0 MultiScatteringEccentricity<-ScalarParameter_9:0 ConservativeDensity<-Custom_2:0
+WorldPosition_0 [WorldPosition]  
+WorldPosition_1 [WorldPosition]  

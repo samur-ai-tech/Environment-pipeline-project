@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 69,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_lod_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0013_Building_04.SM_H0013_Building_04"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.331,
+ "isError": null,
+ "text": "{\"returnValue\":1}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 69,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":1}"
+    }
+   ]
+  }
+ }
+}

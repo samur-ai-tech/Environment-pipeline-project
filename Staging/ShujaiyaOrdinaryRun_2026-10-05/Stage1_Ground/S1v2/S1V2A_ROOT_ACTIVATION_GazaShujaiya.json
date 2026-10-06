@@ -1,0 +1,37 @@
+{
+ "schema": "environmentpipeline.s1_root_activation.v1",
+ "_note": "S1v2a activation TEMPLATE prepared offline for root (manager cc37d4d2); NOT active (PID placeholder). The script refuses activation files under S1_Prep or S1v2: root copies this file to Stage1_Ground/Activation/S1V2A_ROOT_ACTIVATION_GazaShujaiya_PID<pid>.json, sets assigned_editor_PID to the integer PID and puts the copy path + sha256 into the args. readonly_pairs also accepts the current v1 read-only lease scope so inspect runs under the existing STARTUP_INSPECTION_ONLY line; apply/tune/save need the authoring line: <utc> OWNER=GEOCITY_GROUND_S1 manager_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae operator_thread_id=cc37d4d2-3d62-4f53-b689-28432b5527ae assigned_editor_PID=<pid> map=/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration activation=GROUND_S1V2A_AUTHORING scope=GeoCity_GroundS1v2a_20261006_material_edit. expected_hda_count 1 as in the v1 activation (passed v1 inspect, PID 23156).",
+ "scope": "GeoCity_GroundS1v2a_20261006_material_edit",
+ "OWNER": "GEOCITY_GROUND_S1",
+ "manager_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+ "operator_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+ "assigned_editor_PID": "<FILL: editor PID of this session (integer)>",
+ "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+ "areas": [
+  "GazaShujaiya"
+ ],
+ "modes": [
+  "inspect",
+  "apply",
+  "tune",
+  "save",
+  "verify"
+ ],
+ "script_sha256": "bf1bee4f94fbc83b43901913a9b7e48c1592723cf44a6069b83b2ba3eab2aace",
+ "authoring_activations": [
+  "GROUND_S1V2A_AUTHORING"
+ ],
+ "readonly_pairs": [
+  [
+   "STARTUP_INSPECTION_ONLY",
+   "GeoCity_GroundS1v2a_20261006_readonly"
+  ],
+  [
+   "STARTUP_INSPECTION_ONLY",
+   "GeoCity_GroundS1_20261005_readonly"
+  ]
+ ],
+ "expected_hda_count": 1,
+ "max_tune_iterations": 3,
+ "expected_consumers": null
+}

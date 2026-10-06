@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 201,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_lod_count",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.334,
+ "isError": true,
+ "text": "Parameter error: /Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm is not a valid object path for property 'mesh'.",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 201,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "Parameter error: /Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm is not a valid object path for property 'mesh'."
+    }
+   ],
+   "isError": true
+  }
+ }
+}

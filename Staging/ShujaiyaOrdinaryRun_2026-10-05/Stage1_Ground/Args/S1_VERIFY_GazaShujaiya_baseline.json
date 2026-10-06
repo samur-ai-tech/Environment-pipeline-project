@@ -1,0 +1,15 @@
+{
+ "_note": "s1_verify.py phase=baseline, Session A, BEFORE inspect/apply, under the READ-ONLY lease line (activation=STARTUP_INSPECTION_ONLY; s1_verify refuses writer activations, :120-122, :496-499). expected_grass_coverage is deliberately absent: the Shujaiya child is 0.15 now (profile coverage re-applied by prepare()) and the coverage comparison feeds the never-waive check effective_values_off_base_on_children; post_s1 must pass {GazaShujaiya: 0.0}. accepted_failures: empty. KNOWN (MEASURED 2026-10-05): S1_MINIMAL_SAFE_SPEC baseline disk_sha256 predates baseline B2 (master 78b0f7cd vs disk 70f82e50; Shujaiya child 8c54b7e3 vs disk 8fb548f8), so disk_matches_spec_baseline is expected to FAIL. Root decides (README 7.15): re-baseline in-editor, or (only if the never-waive old_graph_identity, graph_snapshot and iran_statistics_equal PASS and EDIT inspect's graph-digest gate passes) waive it with the exact text {\"disk_matches_spec_baseline\": \"Disk differs from spec baseline: re-baseline (graph digest decides) before S1\"}. Do NOT add a profile_normal_pins:GazaRimal waiver: the Rimal profile was re-pinned to the EpicResident2K normals (RIMAL_PROFILE_REPIN_20261005T195927Z.json), and an unmatched waiver fails waivers_matched.",
+ "label": "s1_shuj_baseline_r003",
+ "phase": "baseline",
+ "lease_owner": "GEOCITY_GROUND_S1",
+ "operator_thread_id": "cc37d4d2-3d62-4f53-b689-28432b5527ae",
+ "expectations": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/S1_EDIT_EXPECTATIONS_GazaShujaiya.json",
+ "expectations_sha256": "fdb8dba34deacd04218c1ed2c3677248a7e86c3c275759fb49ff99e75231665a",
+ "verifier_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ShujaiyaOrdinaryRun_2026-10-05/Stage1_Ground/S1_Prep/s1_verify.py",
+ "verifier_sha256": "2a93ed9e49b7df99d75d57c7ed7e87a487ab05289e0140b06ee520cefd582f68",
+ "expected_hda_count": 1,
+ "accepted_failures": {
+  "disk_matches_spec_baseline": "Disk differs from spec baseline: re-baseline (graph digest decides) before S1"
+ }
+}

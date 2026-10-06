@@ -1,0 +1,19 @@
+Independent read-only review by ground_mechanism subagent, 2026-10-04
+
+PASS for bounded ground-material changes and fresh-process persistence in both original areas.
+
+Both areas changed only six approved appearance scalars and eleven approved vectors. Resolved texture bindings are unchanged; recipe readbacks match within 1e-4. Area MI_GeoCityGround -> shared MI_SurfaceBank_Natural -> M_SurfaceBank_Natural is preserved.
+
+Effective Landscape GrassCoverage remains 0 -> 0. The unused Shujaiya child's latent .15 override was explicitly changed to zero before binding, avoiding new vegetation outside scope. The new Rimal child inherits zero. Grass varieties and GrassType package are unchanged.
+
+Verified unchanged hashes for shared master, base, GrassType, two corrected normals, both original MOUT sand normals, seventeen sealed source/configuration files and both area profiles. All eight backups match original recorded hashes. Each named save enumerates only its area ground MI and original map, then reports no dirty packages.
+
+Shujaiya final PID28136 -> fresh PID25324 preserves 316 numeric actor transforms, 260 non-Landscape mesh-component records, material and Landscape readback exactly. Initial -> reopened probe preserves 576 weight samples and three height samples per retained Landscape, target layers, visibility and Grass varieties, with zero sampled height delta. Initial Shujaiya records lacked numeric transforms/components; full initial transform equality is NOT established. The representation-changing actor digest is not a geometry comparison.
+
+Rimal initial PID6580 -> final -> fresh PID33112 preserves 121 numeric actor transforms and 87 non-Landscape mesh-component records, mesh/material bindings and instance counts exactly. Its 576 weight samples, three collision-height samples and Grass settings match exactly.
+
+Both reviewed reopened states are clean, cooking paused, autoCook/autoBake/autosave disabled and callbacks zero. These PIDs are review snapshots; use FINAL_HANDOFF.json and EDITOR_OWNER's last nonempty line for current process/ownership.
+
+Limits: sampled terrain probes are not complete heightmap/weightmap hashes. Per-instance transforms and every project/vendor package were not exhaustively hashed. No Cook, Bake, full regeneration, geographic land-cover qualification or user acceptance occurred. Visual quality has a separate review.
+
+Review method: filesystem reads and comparisons only, with no edits or native API calls by the reviewer. Review content was saved by the executing root.

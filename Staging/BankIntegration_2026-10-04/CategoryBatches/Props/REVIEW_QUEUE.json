@@ -1,0 +1,2085 @@
+{
+  "schema": "environmentpipeline.props_missing_review.v1",
+  "current_gaza_rows": [
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Pack1",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack1.SM_Pack1",
+      "configuration_payload": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack1",
+        "row_name": "MB_36DD5CC709A1BA44E7A29E274BD63562",
+        "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack1.SM_Pack1",
+        "package_sha256": "ffe585fc55d86d843206443ca479bba88554ffae1ceb5b177c7d76e4d44241c3",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": 0.3075833022594452,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -3.2869369983673096,
+            -4.669607162475586,
+            0.3075833022594452
+          ],
+          "max": [
+            3.3008744716644287,
+            4.225421905517578,
+            2.917647361755371
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "modularcourtyard__smallprops__wrapped_package",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack1",
+        "path": "/Game/ModularCourtyard/Meshes/SM_Pack1.SM_Pack1",
+        "package_sha256_at_queue": "ffe585fc55d86d843206443ca479bba88554ffae1ceb5b177c7d76e4d44241c3",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -3.2869369983673096,
+            -4.669607162475586,
+            0.3075833320617676
+          ],
+          "max": [
+            3.3008744716644287,
+            4.225421905517578,
+            2.917647361755371
+          ]
+        },
+        "dimensions_cm": [
+          6.587811470031738,
+          8.895029067993164,
+          2.6100640296936035
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 678,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 412,
+        "triangles_LOD0": 770,
+        "vertex_bounds_cm": {
+          "min": [
+            -3.2869369983673096,
+            -4.669607162475586,
+            0.3075833022594452
+          ],
+          "max": [
+            3.3008744716644287,
+            4.225421905517578,
+            2.917647361755371
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": 0.3075833022594452,
+        "dependencies": {
+          "packages": [
+            "/Game/ModularCourtyard/Mats/MI_sigs",
+            "/Game/ModularCourtyard/Mats/Masters/M_Sigs",
+            "/Game/ModularCourtyard/Meshes/SM_Pack1",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_AO",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_Roughness",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_albedo",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_normal"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_cd8e84082017ecbd.MI_cd8e84082017ecbd",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_cd8e84082017ecbd.uasset",
+          "exists": true,
+          "sha256": "04309d1754b17f7814f98c21ef311555cb5fbcaecee9ed579a617c58bcb56022",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Pack2",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack2.SM_Pack2",
+      "configuration_payload": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack2",
+        "row_name": "MB_60A32C9B57866BE83735E8BB3D79FEA1",
+        "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack2.SM_Pack2",
+        "package_sha256": "ed12fa15caed89867c85d9214659b5a96d7a605129a608b8cdec67f763ab6375",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": -0.5952165126800537,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -3.171809673309326,
+            -9.402565956115723,
+            -0.5952165126800537
+          ],
+          "max": [
+            4.119613170623779,
+            0.3297949731349945,
+            3.72564435005188
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "modularcourtyard__smallprops__wrapped_package",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack2",
+        "path": "/Game/ModularCourtyard/Meshes/SM_Pack2.SM_Pack2",
+        "package_sha256_at_queue": "ed12fa15caed89867c85d9214659b5a96d7a605129a608b8cdec67f763ab6375",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -3.171809673309326,
+            -9.402565956115723,
+            -0.5952165126800537
+          ],
+          "max": [
+            4.119613170623779,
+            0.32979488372802734,
+            3.72564435005188
+          ]
+        },
+        "dimensions_cm": [
+          7.2914228439331055,
+          9.73236083984375,
+          4.320860862731934
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 622,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 412,
+        "triangles_LOD0": 770,
+        "vertex_bounds_cm": {
+          "min": [
+            -3.171809673309326,
+            -9.402565956115723,
+            -0.5952165126800537
+          ],
+          "max": [
+            4.119613170623779,
+            0.3297949731349945,
+            3.72564435005188
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -0.5952165126800537,
+        "dependencies": {
+          "packages": [
+            "/Game/ModularCourtyard/Mats/MI_sigs",
+            "/Game/ModularCourtyard/Mats/Masters/M_Sigs",
+            "/Game/ModularCourtyard/Meshes/SM_Pack2",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_AO",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_Roughness",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_albedo",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_normal"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_cd8e84082017ecbd.MI_cd8e84082017ecbd",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_cd8e84082017ecbd.uasset",
+          "exists": true,
+          "sha256": "04309d1754b17f7814f98c21ef311555cb5fbcaecee9ed579a617c58bcb56022",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Pack3",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack3.SM_Pack3",
+      "configuration_payload": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack3",
+        "row_name": "MB_895ABBA1D034AF81070E43C45D5CD9EB",
+        "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack3.SM_Pack3",
+        "package_sha256": "1d566387acb93d7da762a7c649aa9d4a4f39fa5c4e030366f8d15bd3a9db7ba0",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": -1.9805275201797485,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -3.0990424156188965,
+            -4.77255392074585,
+            -1.9805275201797485
+          ],
+          "max": [
+            3.5343000888824463,
+            5.208317756652832,
+            3.536160945892334
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "modularcourtyard__smallprops__wrapped_package",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack3",
+        "path": "/Game/ModularCourtyard/Meshes/SM_Pack3.SM_Pack3",
+        "package_sha256_at_queue": "1d566387acb93d7da762a7c649aa9d4a4f39fa5c4e030366f8d15bd3a9db7ba0",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -3.0990424156188965,
+            -4.77255392074585,
+            -1.9805275201797485
+          ],
+          "max": [
+            3.5343003273010254,
+            5.208317279815674,
+            3.5361608266830444
+          ]
+        },
+        "dimensions_cm": [
+          6.633342742919922,
+          9.980871200561523,
+          5.516688346862793
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 665,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 412,
+        "triangles_LOD0": 770,
+        "vertex_bounds_cm": {
+          "min": [
+            -3.0990424156188965,
+            -4.77255392074585,
+            -1.9805275201797485
+          ],
+          "max": [
+            3.5343000888824463,
+            5.208317756652832,
+            3.536160945892334
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -1.9805275201797485,
+        "dependencies": {
+          "packages": [
+            "/Game/ModularCourtyard/Mats/MI_sigs",
+            "/Game/ModularCourtyard/Mats/Masters/M_Sigs",
+            "/Game/ModularCourtyard/Meshes/SM_Pack3",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_AO",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_Roughness",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_albedo",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_normal"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_cd8e84082017ecbd.MI_cd8e84082017ecbd",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_cd8e84082017ecbd.uasset",
+          "exists": true,
+          "sha256": "04309d1754b17f7814f98c21ef311555cb5fbcaecee9ed579a617c58bcb56022",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Pack4",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack4.SM_Pack4",
+      "configuration_payload": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack4",
+        "row_name": "MB_D9A7587F132A7C32BDD94684844FB2DB",
+        "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack4.SM_Pack4",
+        "package_sha256": "5c90493092a5b75b9ebb300c4de5806e2393394800909291057baa504a7d6c77",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": -1.4178154468536377,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -3.0871849060058594,
+            -4.942534446716309,
+            -1.4178154468536377
+          ],
+          "max": [
+            3.087188720703125,
+            4.94253396987915,
+            1.4178154468536377
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "modularcourtyard__smallprops__wrapped_package",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack4",
+        "path": "/Game/ModularCourtyard/Meshes/SM_Pack4.SM_Pack4",
+        "package_sha256_at_queue": "5c90493092a5b75b9ebb300c4de5806e2393394800909291057baa504a7d6c77",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -3.0871849060058594,
+            -4.942534446716309,
+            -1.4178154468536377
+          ],
+          "max": [
+            3.087188720703125,
+            4.942534446716309,
+            1.4178154468536377
+          ]
+        },
+        "dimensions_cm": [
+          6.174373626708984,
+          9.885068893432617,
+          2.8356308937072754
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 559,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 412,
+        "triangles_LOD0": 770,
+        "vertex_bounds_cm": {
+          "min": [
+            -3.0871849060058594,
+            -4.942534446716309,
+            -1.4178154468536377
+          ],
+          "max": [
+            3.087188720703125,
+            4.94253396987915,
+            1.4178154468536377
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -1.4178154468536377,
+        "dependencies": {
+          "packages": [
+            "/Game/ModularCourtyard/Mats/MI_sigs",
+            "/Game/ModularCourtyard/Mats/Masters/M_Sigs",
+            "/Game/ModularCourtyard/Meshes/SM_Pack4",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_AO",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_Roughness",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_albedo",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_normal"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_cd8e84082017ecbd.MI_cd8e84082017ecbd",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_cd8e84082017ecbd.uasset",
+          "exists": true,
+          "sha256": "04309d1754b17f7814f98c21ef311555cb5fbcaecee9ed579a617c58bcb56022",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ModularCourtyard__Meshes__SM_Pack5",
+      "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack5.SM_Pack5",
+      "configuration_payload": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack5",
+        "row_name": "MB_9D7B6B32F05DC657B50F71CDCAE31382",
+        "object_path": "/Game/ModularCourtyard/Meshes/SM_Pack5.SM_Pack5",
+        "package_sha256": "85ce188b1a4f991755a5e2e585634d5ec689ca0e55ec4914a6c46ed3f1c77de5",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": -1.4741668701171875,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -2.947784423828125,
+            -4.844895839691162,
+            -1.4741668701171875
+          ],
+          "max": [
+            2.9477806091308594,
+            4.844895839691162,
+            1.4741668701171875
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "modularcourtyard__smallprops__wrapped_package",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Pack5",
+        "path": "/Game/ModularCourtyard/Meshes/SM_Pack5.SM_Pack5",
+        "package_sha256_at_queue": "85ce188b1a4f991755a5e2e585634d5ec689ca0e55ec4914a6c46ed3f1c77de5",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -2.947784423828125,
+            -4.844895839691162,
+            -1.4741668701171875
+          ],
+          "max": [
+            2.9477806091308594,
+            4.844895839691162,
+            1.4741668701171875
+          ]
+        },
+        "dimensions_cm": [
+          5.895565032958984,
+          9.689791679382324,
+          2.948333740234375
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Material #28",
+            "path": "/Game/ModularCourtyard/Mats/MI_sigs.MI_sigs"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 559,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 412,
+        "triangles_LOD0": 770,
+        "vertex_bounds_cm": {
+          "min": [
+            -2.947784423828125,
+            -4.844895839691162,
+            -1.4741668701171875
+          ],
+          "max": [
+            2.9477806091308594,
+            4.844895839691162,
+            1.4741668701171875
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -1.4741668701171875,
+        "dependencies": {
+          "packages": [
+            "/Game/ModularCourtyard/Mats/MI_sigs",
+            "/Game/ModularCourtyard/Mats/Masters/M_Sigs",
+            "/Game/ModularCourtyard/Meshes/SM_Pack5",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_AO",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_Roughness",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_albedo",
+            "/Game/ModularCourtyard/Textures/Sigs/T_SIg_normal"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_cd8e84082017ecbd.MI_cd8e84082017ecbd",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_cd8e84082017ecbd.uasset",
+          "exists": true,
+          "sha256": "04309d1754b17f7814f98c21ef311555cb5fbcaecee9ed579a617c58bcb56022",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_07",
+      "object_path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_07.SM_Stone_07",
+      "configuration_payload": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_07",
+        "row_name": "MB_9A17D714DD96A01458EB2D6A434F7291",
+        "object_path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_07.SM_Stone_07",
+        "package_sha256": "51042cabc090660744ce922375955592be9ff172da427e4e6227e53efdccfdba",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "authored_rock_embedment",
+        "anchor_z_cm": -93.48382568359375,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -127.3759536743164,
+            -115.87755584716797,
+            -93.48382568359375
+          ],
+          "max": [
+            109.24361419677734,
+            97.2219009399414,
+            98.93512725830078
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "palms_pack_01__smallprops__natural_stone",
+        "min_spacing_cm": 419,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Stone_07",
+            "path": "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_07.MI_Stone_07"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Preserve intended embedment; the lowest buried rock vertex is not an accepted support plane.",
+        "historical_native_images": [
+          "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\Stone_07.jpg"
+        ],
+        "rights_state_preserved": "exact_listing_identified_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_07",
+        "path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_07.SM_Stone_07",
+        "package_sha256_at_queue": "51042cabc090660744ce922375955592be9ff172da427e4e6227e53efdccfdba",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -127.3759536743164,
+            -115.87755584716797,
+            -93.48382568359375
+          ],
+          "max": [
+            109.24361419677734,
+            97.2219009399414,
+            98.93512725830078
+          ]
+        },
+        "dimensions_cm": [
+          236.61956787109375,
+          213.09945678710938,
+          192.41895294189453
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Stone_07",
+            "path": "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_07.MI_Stone_07"
+          }
+        ],
+        "lod_count": 3,
+        "lod0_render_vertices": 4384,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 2,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 4001,
+        "triangles_LOD0": 7998,
+        "vertex_bounds_cm": {
+          "min": [
+            -127.3759536743164,
+            -115.87755584716797,
+            -93.48382568359375
+          ],
+          "max": [
+            109.24361419677734,
+            97.2219009399414,
+            98.93512725830078
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -93.48382568359375,
+        "dependencies": {
+          "packages": [
+            "/Engine/EngineMaterials/BaseFlattenNormalMap",
+            "/Engine/EngineResources/DefaultTexture",
+            "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_07",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stones_Rocks",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/M_Simple_PBR",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_07",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_07_AO",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_07_Color",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_07_Normal",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_07_Roughness"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_62e0c47a274cf58a.MI_62e0c47a274cf58a",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_62e0c47a274cf58a.uasset",
+          "exists": true,
+          "sha256": "b4059323dff81e791fa32ea46587522af492fd1c0bdd7ebf69264036c6577ebc",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_08",
+      "object_path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_08.SM_Stone_08",
+      "configuration_payload": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_08",
+        "row_name": "MB_CF44382C74418669B8D8E4C2874F1253",
+        "object_path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_08.SM_Stone_08",
+        "package_sha256": "9c0472bd61b001e9f95442f405ca32401fa2331ea90180796848523e2e232c21",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "authored_rock_embedment",
+        "anchor_z_cm": -102.16576385498047,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -144.3397216796875,
+            -100.12715911865234,
+            -102.16576385498047
+          ],
+          "max": [
+            138.41136169433594,
+            84.36637115478516,
+            133.64328002929688
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "palms_pack_01__smallprops__natural_stone",
+        "min_spacing_cm": 438,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Stone_08",
+            "path": "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_08.MI_Stone_08"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Preserve intended embedment; the lowest buried rock vertex is not an accepted support plane.",
+        "historical_native_images": [
+          "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\Stone_08.jpg"
+        ],
+        "rights_state_preserved": "exact_listing_identified_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_Palms_Pack_01__Add_Props__Stones__Meshes__SM_Stone_08",
+        "path": "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_08.SM_Stone_08",
+        "package_sha256_at_queue": "9c0472bd61b001e9f95442f405ca32401fa2331ea90180796848523e2e232c21",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -144.3397216796875,
+            -100.12715911865234,
+            -102.16576385498047
+          ],
+          "max": [
+            138.41136169433594,
+            84.36637115478516,
+            133.64328002929688
+          ]
+        },
+        "dimensions_cm": [
+          282.75108337402344,
+          184.4935302734375,
+          235.80904388427734
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Stone_08",
+            "path": "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_08.MI_Stone_08"
+          }
+        ],
+        "lod_count": 3,
+        "lod0_render_vertices": 4349,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 2,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 4002,
+        "triangles_LOD0": 8000,
+        "vertex_bounds_cm": {
+          "min": [
+            -144.3397216796875,
+            -100.12715911865234,
+            -102.16576385498047
+          ],
+          "max": [
+            138.41136169433594,
+            84.36637115478516,
+            133.64328002929688
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -102.16576385498047,
+        "dependencies": {
+          "packages": [
+            "/Engine/EngineMaterials/BaseFlattenNormalMap",
+            "/Engine/EngineResources/DefaultTexture",
+            "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stone_08",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/MI_Stones_Rocks",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Materials/M_Simple_PBR",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Meshes/SM_Stone_08",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_08_AO",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_08_Color",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_08_Normal",
+            "/Game/Palms_Pack_01/Add_Props/Stones/Textures/T_Stone_08_Roughness"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_9790b73cd87ed389.MI_9790b73cd87ed389",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_9790b73cd87ed389.uasset",
+          "exists": true,
+          "sha256": "c8251b361dc93986e9378a137bc258bf30cefcd624f33f95c34c5f73a0b9b3ac",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Deco__Parasol",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/Parasol.Parasol",
+      "configuration_payload": {
+        "asset_id": "current_ProceduralBuildingGenerator__Meshes__Deco__Parasol",
+        "row_name": "MB_798E5DBA35937DD99F3512FA2E7F1EBA",
+        "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/Parasol.Parasol",
+        "package_sha256": "572422c0e98023f9aa7693797d1637f8a30fc6c1b38f7bf5028676b373c95f49",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "feet_or_support_base",
+        "anchor_z_cm": -5.960464477539063e-08,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -134.71719360351562,
+            -134.71746826171875,
+            -5.960464477539063e-08
+          ],
+          "max": [
+            134.71749877929688,
+            134.71722412109375,
+            333.0162658691406
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "proceduralbuildinggenerator__smallprops__daily_clutter",
+        "min_spacing_cm": 482,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Rubber_2",
+            "path": "/Game/ProceduralBuildingGenerator/Material/solid_Plastic5.solid_Plastic5"
+          },
+          {
+            "slot": 1,
+            "name": "Rubber_1",
+            "path": "/Game/ProceduralBuildingGenerator/Material/solid_Plastic7.solid_Plastic7"
+          },
+          {
+            "slot": 2,
+            "name": "Iron",
+            "path": "/Game/ProceduralBuildingGenerator/Material/Aluminium.Aluminium"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Read actual feet/support vertices and outward facing; retain native geometry and full clearance.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ProceduralBuildingGenerator__Meshes__Deco__Parasol",
+        "path": "/Game/ProceduralBuildingGenerator/Meshes/Deco/Parasol.Parasol",
+        "package_sha256_at_queue": "572422c0e98023f9aa7693797d1637f8a30fc6c1b38f7bf5028676b373c95f49",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -134.71719360351562,
+            -134.71746826171875,
+            0.0
+          ],
+          "max": [
+            134.71749877929688,
+            134.71722412109375,
+            333.0162658691406
+          ]
+        },
+        "dimensions_cm": [
+          269.4346923828125,
+          269.4346923828125,
+          333.0162658691406
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Rubber_2",
+            "path": "/Game/ProceduralBuildingGenerator/Material/solid_Plastic5.solid_Plastic5"
+          },
+          {
+            "slot": 1,
+            "name": "Rubber_1",
+            "path": "/Game/ProceduralBuildingGenerator/Material/solid_Plastic7.solid_Plastic7"
+          },
+          {
+            "slot": 2,
+            "name": "Iron",
+            "path": "/Game/ProceduralBuildingGenerator/Material/Aluminium.Aluminium"
+          }
+        ],
+        "lod_count": 4,
+        "lod0_render_vertices": 435,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>",
+        "source_vertex_count": 207,
+        "triangles_LOD0": 364,
+        "vertex_bounds_cm": {
+          "min": [
+            -134.71719360351562,
+            -134.71746826171875,
+            -5.960464477539063e-08
+          ],
+          "max": [
+            134.71749877929688,
+            134.71722412109375,
+            333.0162658691406
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -5.960464477539063e-08,
+        "dependencies": {
+          "packages": [
+            "/Engine/Functions/Engine_MaterialFunctions02/Math/MultiplyAdd",
+            "/Game/ProceduralBuildingGenerator/Material/Aluminium",
+            "/Game/ProceduralBuildingGenerator/Material/Master_Materials/Master_Simple_Material",
+            "/Game/ProceduralBuildingGenerator/Material/solid_Plastic5",
+            "/Game/ProceduralBuildingGenerator/Material/solid_Plastic7",
+            "/Game/ProceduralBuildingGenerator/Material_Functions/Global_Params",
+            "/Game/ProceduralBuildingGenerator/Meshes/Deco/Parasol",
+            "/Game/ProceduralBuildingGenerator/Textures/Default_Textures/Default_Base_Color",
+            "/Game/ProceduralBuildingGenerator/Textures/Default_Textures/Default_Normal",
+            "/Game/ProceduralBuildingGenerator/Textures/Default_Textures/Default_Roughness"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_9174d8d8c01bf523.MI_9174d8d8c01bf523",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_9174d8d8c01bf523.uasset",
+          "exists": true,
+          "sha256": "33c08b89a03f5de59b791c2f94e0f3e9b271db6f42523c486bae6712fa4c3e90",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        {
+          "slot": 1,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_f1095f4a2c0eeb96.MI_f1095f4a2c0eeb96",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_f1095f4a2c0eeb96.uasset",
+          "exists": true,
+          "sha256": "019dc734c80634a1eaa439d64ae3b4121a6e87b06d5df2e9baaee0f929567b1a",
+          "expected_sha256": null,
+          "matches_expected": true
+        },
+        {
+          "slot": 2,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/MI_66f1769d9b25c041.MI_66f1769d9b25c041",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\MI_66f1769d9b25c041.uasset",
+          "exists": true,
+          "sha256": "b93a4607ef3b6c1b001b77c4c64c16cd403dbe2de5ee65e576993cce8fbc2a69",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Trash_01a",
+      "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Trash_01a.SM_Slums_Trash_01a",
+      "configuration_payload": {
+        "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Trash_01a",
+        "row_name": "MB_C3BF449F4136B2FABB3ABC81890E611A",
+        "object_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Trash_01a.SM_Slums_Trash_01a",
+        "package_sha256": "bf3c22da5c018463c0506d5d38348cd6d190d64fea54179fd1453d6a4a36a010",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "ground_support",
+        "anchor_z_cm": -3.206700086593628,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -74.47270202636719,
+            -47.124298095703125,
+            -3.206700086593628
+          ],
+          "max": [
+            74.47270202636719,
+            47.124298095703125,
+            12.17020034790039
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "proceduralbuildinggenerator__smallprops__debris_or_clutter",
+        "min_spacing_cm": 350,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "M_Slums_Wood_",
+            "path": "/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood.M_Slums_Wood"
+          }
+        ],
+        "existing_instance_materials": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_c1a980f06b77.M_Bank_c1a980f06b77"
+        ],
+        "review_note": "Verify the measured lower support surface; source vertex bounds alone do not mark contact or material appearance accepted.",
+        "historical_native_images": [],
+        "rights_state_preserved": "acquisition_record_terms_unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_ProceduralBuildingGenerator__Meshes__Slum__SM_Slums_Trash_01a",
+        "path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Trash_01a.SM_Slums_Trash_01a",
+        "package_sha256_at_queue": "bf3c22da5c018463c0506d5d38348cd6d190d64fea54179fd1453d6a4a36a010",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -74.47270202636719,
+            -47.124298095703125,
+            -3.206699848175049
+          ],
+          "max": [
+            74.47270202636719,
+            47.124298095703125,
+            12.170200824737549
+          ]
+        },
+        "dimensions_cm": [
+          148.94540405273438,
+          94.24859619140625,
+          15.376900672912598
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "M_Slums_Wood_",
+            "path": "/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood.M_Slums_Wood"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 200,
+        "uv_channels": 2,
+        "simple_collision_count": 0,
+        "convex_collision_count": 4,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 152,
+        "triangles_LOD0": 296,
+        "vertex_bounds_cm": {
+          "min": [
+            -74.47270202636719,
+            -47.124298095703125,
+            -3.206700086593628
+          ],
+          "max": [
+            74.47270202636719,
+            47.124298095703125,
+            12.17020034790039
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -3.206700086593628,
+        "dependencies": {
+          "packages": [
+            "/Engine/EngineMaterials/BaseFlattenNormalMap",
+            "/Engine/EngineMaterials/DefaultNormal_Uncompressed",
+            "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient",
+            "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast",
+            "/Engine/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal",
+            "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/water_d",
+            "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector",
+            "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix",
+            "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components",
+            "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3",
+            "/Engine/Functions/Engine_MaterialFunctions02/WorldAlignedNormals_HighQuality",
+            "/Game/ProceduralBuildingGenerator/Materials/Building/M_Slums_Wood",
+            "/Game/ProceduralBuildingGenerator/Materials/Functions/MF_WET_RunningWater",
+            "/Game/ProceduralBuildingGenerator/Materials/Functions/MF_WorldAlignedPanner",
+            "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Trash_01a",
+            "/Game/ProceduralBuildingGenerator/Textures/Slum/T_Slums_Wood_D",
+            "/Game/ProceduralBuildingGenerator/Textures/Slum/T_Slums_Wood_N",
+            "/Game/ProceduralBuildingGenerator/Textures/Water/T_RainPuddleMask",
+            "/Game/ProceduralBuildingGenerator/Textures/Water/T_RainStreaming_N",
+            "/Game/ProceduralBuildingGenerator/Textures/Water/T_Soul_Water01_N"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_c1a980f06b77.M_Bank_c1a980f06b77",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_c1a980f06b77.uasset",
+          "exists": true,
+          "sha256": "b53d95bbcac911f454c2925c6e6a83c5300386438f73bc2426aaa309b64c02b9",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0043_Foodcart_001",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0043_Foodcart_001.SM_H0043_Foodcart_001",
+      "configuration_payload": {
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0043_Foodcart_001",
+        "row_name": "MB_47F06786ABE853C5E1128D16D0213C2B",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0043_Foodcart_001.SM_H0043_Foodcart_001",
+        "package_sha256": "33e6d9389583285bc8235bea8c0f4d2ee21ac211697878c5dd606a9d4ff65002",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "wheel_and_support_contact",
+        "anchor_z_cm": 14.494669914245605,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -82.90692901611328,
+            -109.58670043945312,
+            14.494669914245605
+          ],
+          "max": [
+            160.6873321533203,
+            110.16575622558594,
+            223.7490692138672
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "bank_me_v3__smallprops__daily_clutter__foodcart_",
+        "min_spacing_cm": 429,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Street Props Pack _007",
+            "path": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__007.Street_Props_Pack__007"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Read wheel/support contact and native facing; preserve functional support and complete dimensions.",
+        "historical_native_images": [
+          "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0043_Foodcart.jpg"
+        ],
+        "rights_state_preserved": "owner_confirmed_for_technical_qualification",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Props__SM_H0043_Foodcart_001",
+        "path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0043_Foodcart_001.SM_H0043_Foodcart_001",
+        "package_sha256_at_queue": "33e6d9389583285bc8235bea8c0f4d2ee21ac211697878c5dd606a9d4ff65002",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -82.90692901611328,
+            -109.58670043945312,
+            14.494669914245605
+          ],
+          "max": [
+            160.6873321533203,
+            110.16575622558594,
+            223.7490692138672
+          ]
+        },
+        "dimensions_cm": [
+          243.5942611694336,
+          219.75245666503906,
+          209.25439929962158
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Street Props Pack _007",
+            "path": "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__007.Street_Props_Pack__007"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 29024,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 21394,
+        "triangles_LOD0": 41840,
+        "vertex_bounds_cm": {
+          "min": [
+            -82.90692901611328,
+            -109.58670043945312,
+            14.494669914245605
+          ],
+          "max": [
+            160.6873321533203,
+            110.16575622558594,
+            223.7490692138672
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": 14.494669914245605,
+        "dependencies": {
+          "packages": [
+            "/Game/Project/Shared/Bank_ME_v3/Props/Food_Kart_02_AlbedoTransparency_1001_386eea6a6f53",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Food_Kart_02_Emission_1001_6267b0cf82bd_albedo_800dc792862e74",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Food_Kart_02_Mat_Food_Kart_002_Normal_1001_29bd824972ed",
+            "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0043_Foodcart_001",
+            "/Game/Project/Shared/Bank_ME_v3/Props/Street_Props_Pack__007"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_e81ed8dd72149722.M_e81ed8dd72149722",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\M_e81ed8dd72149722.uasset",
+          "exists": true,
+          "sha256": "157b2b2cfcc837fbcf33984dde756e3d74a87bda9f42b93a44b25311d81f3589",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Vehicles__SM_H0039_Destryoedcar",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar.SM_H0039_Destryoedcar",
+      "configuration_payload": {
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Vehicles__SM_H0039_Destryoedcar",
+        "row_name": "MB_C0C054E133B9B2D0B045211293954D0B",
+        "object_path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar.SM_H0039_Destryoedcar",
+        "package_sha256": "8277ae7e2d7a0186f80e132c789472f739555181fb65ea2e5834f37b2b7e702e",
+        "role": "small_prop",
+        "placement_rule": "zone_ground_prop",
+        "contact_kind": "wheel_and_support_contact",
+        "anchor_z_cm": -1.7625417709350586,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -164.47445678710938,
+            -74.87554931640625,
+            -1.7625417709350586
+          ],
+          "max": [
+            152.66148376464844,
+            115.63128662109375,
+            121.82240295410156
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "open_ground",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "bank_me_v3__smallprops__unclassified_prop__destryoedcar",
+        "min_spacing_cm": 470,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Street Props Pack _009",
+            "path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009.Street_Props_Pack__009"
+          }
+        ],
+        "existing_instance_materials": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_06554790bd33.M_Bank_06554790bd33"
+        ],
+        "review_note": "Read wheel/support contact and native facing; preserve functional support and complete dimensions.",
+        "historical_native_images": [
+          "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0039_DestroyedCar.jpg"
+        ],
+        "rights_state_preserved": "owner_confirmed_for_technical_qualification",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_Project__Shared__Bank_ME_v3__Vehicles__SM_H0039_Destryoedcar",
+        "path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar.SM_H0039_Destryoedcar",
+        "package_sha256_at_queue": "8277ae7e2d7a0186f80e132c789472f739555181fb65ea2e5834f37b2b7e702e",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -164.47445678710938,
+            -74.87554931640625,
+            -1.7625417709350586
+          ],
+          "max": [
+            152.66148376464844,
+            115.63128662109375,
+            121.82240295410156
+          ]
+        },
+        "dimensions_cm": [
+          317.1359405517578,
+          190.5068359375,
+          123.58494472503662
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Street Props Pack _009",
+            "path": "/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009.Street_Props_Pack__009"
+          }
+        ],
+        "lod_count": 1,
+        "lod0_render_vertices": 10107,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 4686,
+        "triangles_LOD0": 8330,
+        "vertex_bounds_cm": {
+          "min": [
+            -164.47445678710938,
+            -74.87554931640625,
+            -1.7625417709350586
+          ],
+          "max": [
+            152.66148376464844,
+            115.63128662109375,
+            121.82240295410156
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -1.7625417709350586,
+        "dependencies": {
+          "packages": [
+            "/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571",
+            "/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58",
+            "/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a",
+            "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar",
+            "/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_06554790bd33.M_Bank_06554790bd33",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\Instancing\\M_Bank_06554790bd33.uasset",
+          "exists": true,
+          "sha256": "e3083d197c443ee8545809bc3a203dbf10bceb447141c3e8253833e54e12e8ce",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    },
+    {
+      "asset_id": "current_UtopianCity__Meshes__SM_Bench",
+      "object_path": "/Game/UtopianCity/Meshes/SM_Bench.SM_Bench",
+      "configuration_payload": {
+        "asset_id": "current_UtopianCity__Meshes__SM_Bench",
+        "row_name": "MB_FB7E2379D4A2BA42C3EE51DAC0C3DEDE",
+        "object_path": "/Game/UtopianCity/Meshes/SM_Bench.SM_Bench",
+        "package_sha256": "922b9774a1e79bfa8ab8328c95588fde42eec0b0ccafa513ae0f2b99d3b7a7b2",
+        "role": "street_prop",
+        "placement_rule": "roadside_prop",
+        "contact_kind": "feet_or_support_base",
+        "anchor_z_cm": -4.887620434601558e-06,
+        "anchor_basis": "Measured minimum retained as a candidate only; individual functional support review may override it.",
+        "bounds_cm": {
+          "min": [
+            -154.1095428466797,
+            -113.8987808227539,
+            -4.887620434601558e-06
+          ],
+          "max": [
+            154.1095428466797,
+            81.09735870361328,
+            160.0
+          ]
+        },
+        "forward_axis": "+X",
+        "forward_basis": "Unconstrained yaw is acceptable only for reviewed nondirectional ground clutter/vegetation; directional furniture and buildings require native review.",
+        "native_scale": [
+          1,
+          1,
+          1
+        ],
+        "allowed_areas": [
+          "GazaRimal",
+          "GazaShujaiya"
+        ],
+        "allowed_zones": "roadside",
+        "style_context": "mediterranean_urban",
+        "source_style_preserved": "mediterranean_urban",
+        "family_id": "utopiancity__streetprops__street_furniture",
+        "min_spacing_cm": 600,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "BenchMarble",
+            "path": "/Game/UtopianCity/Materials/M_BenchMarble.M_BenchMarble"
+          }
+        ],
+        "existing_instance_materials": [],
+        "review_note": "Read actual feet/support vertices and outward facing; retain native geometry and full clearance.",
+        "historical_native_images": [],
+        "rights_state_preserved": "unverified",
+        "state": "configuration_saved_native_contact_material_review_pending",
+        "activation_requires": "NATIVE_VALIDATION.json explicit per-asset ready=true with matching source SHA, contact/facing review, verified instance materials and no unresolved native dependency",
+        "automatic_ground_activation_allowed": true,
+        "suitability_constraints": [],
+        "style_policy": {
+          "source_style_preserved": "mediterranean_urban",
+          "configured_runtime_style": "mediterranean_urban",
+          "gaza_profile_style": "mediterranean_urban",
+          "matches_current_gaza_style": true,
+          "reason": "The installed selector requires an exact StyleSet match. Style provenance is not silently rewritten to make a row selectable."
+        }
+      },
+      "existing_measurement": {
+        "asset_id": "current_UtopianCity__Meshes__SM_Bench",
+        "path": "/Game/UtopianCity/Meshes/SM_Bench.SM_Bench",
+        "package_sha256_at_queue": "922b9774a1e79bfa8ab8328c95588fde42eec0b0ccafa513ae0f2b99d3b7a7b2",
+        "pid": 30812,
+        "status": "measured",
+        "bounds_cm": {
+          "min": [
+            -154.1095428466797,
+            -113.8987808227539,
+            -7.62939453125e-06
+          ],
+          "max": [
+            154.1095428466797,
+            81.09735870361328,
+            159.99999237060547
+          ]
+        },
+        "dimensions_cm": [
+          308.2190856933594,
+          194.9961395263672,
+          160.0
+        ],
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "BenchMarble",
+            "path": "/Game/UtopianCity/Materials/M_BenchMarble.M_BenchMarble"
+          }
+        ],
+        "lod_count": 4,
+        "lod0_render_vertices": 368,
+        "uv_channels": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 1,
+        "collision_complexity": "<CollisionTraceFlag.CTF_USE_DEFAULT: 0>",
+        "source_vertex_count": 144,
+        "triangles_LOD0": 264,
+        "vertex_bounds_cm": {
+          "min": [
+            -154.1095428466797,
+            -113.8987808227539,
+            -4.887620434601558e-06
+          ],
+          "max": [
+            154.1095428466797,
+            81.09735870361328,
+            160.0
+          ]
+        },
+        "vertex_scan": "complete_compact_ids",
+        "anchor_z_cm_candidate": -4.887620434601558e-06,
+        "dependencies": {
+          "packages": [
+            "/Game/UtopianCity/Materials/M_BenchMarble",
+            "/Game/UtopianCity/Meshes/SM_Bench",
+            "/Game/UtopianCity/Textures/T_BenchSP_BC",
+            "/Game/UtopianCity/Textures/T_BenchSP_Norm",
+            "/Game/UtopianCity/Textures/T_BenchSP_ORM"
+          ],
+          "unresolved_registry_packages": [],
+          "method": "on_disk_hard_and_soft_game_package_registry_closure_not_full_runtime_shader_validation"
+        },
+        "contact_status": "minimum_vertex_or_bounds_candidate_requires_role_contact_review",
+        "facing_status": "not_inferred_from_bounds"
+      },
+      "saved_material_slots": [
+        {
+          "slot": 0,
+          "object_path": "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_9f1cf29ac7d09d42.M_9f1cf29ac7d09d42",
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\Materials\\BankIntegration_20261004\\M_9f1cf29ac7d09d42.uasset",
+          "exists": true,
+          "sha256": "2f4693648ebb61449d0a96af7818c2edae121df419e6a3d7eb7554ab25360884",
+          "expected_sha256": null,
+          "matches_expected": true
+        }
+      ],
+      "missing_evidence": [
+        {
+          "kind": "missing_individual_evidence",
+          "missing": [
+            "contact_reviewed",
+            "facing_reviewed",
+            "material_reviewed"
+          ],
+          "existing_measurements_reused": true,
+          "action": "Batch native review of these precise fields; reuse measurements/material copies. Submit explicit observations to integrate_reviewed, never blanket ready flags."
+        }
+      ],
+      "submission_function": "integrate_reviewed(reviews=[...])"
+    }
+  ],
+  "other_styles": [
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Bicycle_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Bicycle_02",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Chalk_Outline_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_DeadBody_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Drugs_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Flagpole",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_TireSet_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_TireSet_02",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_Windmill_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_barrel_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_barrel_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_barrel_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bench",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bench_02",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bike_rack",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bottle_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bottle_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_box",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_box_tray",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_brush",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_bucket_metal",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_candy_machine_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_candy_machine_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_candy_machine_2a",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_box",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_box_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_box_2_set",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_box_pallete",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_box_tray",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_flat",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_carton_flat_set",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_clothes_bin",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_clothes_bin_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_1_set",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_1_set001",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_3_set",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_4",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_4_set",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_5",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_crate_bottles",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_gasPumpsModern",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_gasPumpsOld",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_gasStationCarPort_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_gas_can",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_gas_can_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_grassCutter",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_grill",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_hammer",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_handTruck_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_hose_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_hydrant",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_ice_machine",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_keg",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_ladder_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_ladder_01a",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_ladder_small",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_lantern",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_mailbox_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_mailbox_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_metal_box",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_metal_box_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_metal_box_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_newspaperSingle",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_newspaperStack",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_paint_bucket_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_paint_bucket_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_paint_bucket_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_paint_set_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_painting_roll",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_palette_euro",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_parking_meter",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_press_box_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_press_box_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_press_box_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_press_box_3a",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_public_phone",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_rolledBars_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_rolledBars_02",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_roofStand_donut",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_spirit_level",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_spray_Can",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_toolbox",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bag",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_1a",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_1b",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_4",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_5",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_big",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_trash_bin_bigOpen",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_3",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_4",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5_line1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5_line2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5_line2a",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_utility_pole_5_lineFlags",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_vending_machine_1",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_vending_machine_2",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_wheelbarrow",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_wooden_blocks",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_workbench",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_wreck_01",
+    "current_AssetsvilleTown__Meshes__StreetProps__SM_wreck_02",
+    "current_Stylized_Egypt__Meshes__props__SM_egyptian_statue_01",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_01",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_02",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_03",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_04",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_broken_01",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_broken_02",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_broken_03",
+    "current_Stylized_Egypt__Meshes__props__SM_jug_broken_04",
+    "current_Stylized_Egypt__Meshes__props__SM_wood_box_01",
+    "current_Stylized_Egypt__Meshes__props__SM_wood_box_02"
+  ],
+  "instruction": "Reuse the complete saved measurements and instancing material copies. Batch review only missing functional contact/facing/context/appearance; no new inventory or demonstration map."
+}

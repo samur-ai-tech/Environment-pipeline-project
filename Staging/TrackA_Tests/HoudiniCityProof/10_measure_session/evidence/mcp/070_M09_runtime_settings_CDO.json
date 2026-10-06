@@ -1,0 +1,48 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_properties",
+    "arguments": {
+     "instance": {
+      "refPath": "/Script/HoudiniEngineRuntime.Default__HoudiniRuntimeSettings"
+     },
+     "properties": [
+      "SessionType",
+      "bStartAutomaticServer",
+      "ServerPipeName",
+      "bPauseCookingOnStart",
+      "DefaultTemporaryCookFolder",
+      "DefaultBakeFolder",
+      "OtlSearchPath",
+      "HoudiniEnvironmentFiles",
+      "bEnableProxyStaticMesh",
+      "bEnableProxyStaticMeshRefinementByTimer",
+      "bEnableProxyStaticMeshRefinementOnPreSaveWorld"
+     ]
+    },
+    "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.018,
+ "isError": null,
+ "text": "{\"returnValue\":\"{\\\"SessionType\\\":\\\"HRSST_NamedPipe\\\",\\\"bStartAutomaticServer\\\":true,\\\"ServerPipeName\\\":\\\"hapi\\\",\\\"bPauseCookingOnStart\\\":false,\\\"DefaultTemporaryCookFolder\\\":\\\"/Game/HoudiniEngine/Temp\\\",\\\"DefaultBakeFolder\\\":\\\"/Game/HoudiniEngine/Bake\\\",\\\"OtlSearchPath\\\":\\\"\\\",\\\"HoudiniEnvironmentFiles\\\":\\\"\\\",\\\"bEnableProxyStaticMesh\\\":true,\\\"bEnableProxyStaticMeshRefinementByTimer\\\":false,\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorld\\\":true}\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"{\\\"SessionType\\\":\\\"HRSST_NamedPipe\\\",\\\"bStartAutomaticServer\\\":true,\\\"ServerPipeName\\\":\\\"hapi\\\",\\\"bPauseCookingOnStart\\\":false,\\\"DefaultTemporaryCookFolder\\\":\\\"/Game/HoudiniEngine/Temp\\\",\\\"DefaultBakeFolder\\\":\\\"/Game/HoudiniEngine/Bake\\\",\\\"OtlSearchPath\\\":\\\"\\\",\\\"HoudiniEnvironmentFiles\\\":\\\"\\\",\\\"bEnableProxyStaticMesh\\\":true,\\\"bEnableProxyStaticMeshRefinementByTimer\\\":false,\\\"bEnableProxyStaticMeshRefinementOnPreSaveWorld\\\":true}\"}"
+    }
+   ]
+  }
+ }
+}

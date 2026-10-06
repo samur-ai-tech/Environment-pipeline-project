@@ -1,0 +1,42 @@
+{
+  "status": "BLOCKED",
+  "scope": "Independent read-only source review; only this new review receipt written. No implementation or editor changes.",
+  "reviewed_grounding_sha256": "8a5a4bf99082548b7b1cf131ebe4b8148e2a3b89dd491c2d9cbbdea995254720",
+  "parent_review": "TASK3_FROZEN_REPLACEMENT_V2_REVIEW.json",
+  "parent_review_sha256": "a8a6d366f03c0cb0f176f903d7e26eb40c61a58609d0042e371eacd68c6159a9",
+  "finding": "Rollback lifetime ends before all post-correction acceptance gates. A later failure leaves overwritten same-path candidates without an exposed rollback transaction.",
+  "line_evidence": [
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "function": "correction",
+      "lines": "1223-1232",
+      "evidence": "Mutates candidates and runs its internal partition verification."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "function": "correction",
+      "lines": "1248-1252",
+      "evidence": "Updates reports/state, writes, and returns result; local snapshots are not retained in an owner transaction."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "function": "correction",
+      "lines": "1253-1267",
+      "evidence": "Restoration of snapshots and prior state is confined to this function exception handler."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_grounding.py",
+      "function": "verify_links",
+      "lines": "1277-1293",
+      "evidence": "Separate later receipt/participant checks culminate in verify_native_delivery outside correction rollback scope."
+    },
+    {
+      "file": "Content/Python/geocity_roadbld_workflow.py",
+      "function": "RoadBLDRun.validate",
+      "lines": "939,967",
+      "evidence": "Ordinary final validation is separate and invokes native delivery validation again."
+    }
+  ],
+  "minimum_safe_remedy": "Retain all candidate snapshots and prior report/state references in an owner-held, nonserialized pending transaction until verify_links and every ordinary final native acceptance gate pass. Any failure before finalization must restore every overwritten mesh, material slot, UV, split normal, metadata and prior report/state reference, with restoration readback. Release snapshots only after all gates succeed and before suppression Cook resumes. Alternatively execute the complete final validation sequence within the correction rollback scope. Reconcile the owner wrapper contract before activation.",
+  "not_established": "No native runtime, real Landscape, native Boolean, UV/collision preservation, rollback execution, full-40 physical closure, save/reopen or appearance acceptance established by this review."
+}

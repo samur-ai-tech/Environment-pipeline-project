@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 18,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.354,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_n_d2a3401423b4\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_n_f1f0a8361d5f\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_5453f80b0bad\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_0\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 18,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_n_d2a3401423b4\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_n_f1f0a8361d5f\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_5453f80b0bad\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_0\",\"/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm\"]}"
+    }
+   ]
+  }
+ }
+}

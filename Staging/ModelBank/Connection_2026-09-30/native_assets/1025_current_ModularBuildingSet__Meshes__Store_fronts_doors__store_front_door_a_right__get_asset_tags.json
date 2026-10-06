@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1035,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Store_fronts_doors/store_front_door_a_right"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"21x107x241\",\"CollisionPrims\":\"1\",\"Materials\":\"6\",\"ResourceSize\":\"106.57\",\"Triangles\":\"392\",\"UVChannels\":\"3\",\"Vertices\":\"895\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1035,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"21x107x241\",\"CollisionPrims\":\"1\",\"Materials\":\"6\",\"ResourceSize\":\"106.57\",\"Triangles\":\"392\",\"UVChannels\":\"3\",\"Vertices\":\"895\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+  "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0": {
+    "class": "ExponentialHeightFogComponent",
+    "transform": "<Struct 'Transform' (0x000001A63F3C1AD0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -5600.000000, y: -50.000000, z: -6850.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "fog_density": "0.04360000044107437",
+    "visible": "True"
+  },
+  "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.VolumetricCloud_0.VolumetricCloudComponent": {
+    "class": "VolumetricCloudComponent",
+    "transform": "<Struct 'Transform' (0x000001A63F3C1AD0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 700.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "layer_bottom_altitude": "5.0",
+    "layer_height": "10.0",
+    "tracing_start_max_distance": "200.0",
+    "tracing_max_distance": "200.0",
+    "planet_radius": "6360.0",
+    "visible": "False",
+    "ground_albedo": "<Struct 'Color' (0x000001A77BC96BAC) {b: 170, g: 170, r: 170, a: 255}>",
+    "use_per_sample_atmospheric_light_transmittance": "False",
+    "stop_tracing_transmittance_threshold": "0.004999999888241291"
+  },
+  "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.BP_EnvironmentSky_C_0.SkyAtmosphere": {
+    "class": "SkyAtmosphereComponent",
+    "transform": "<Struct 'Transform' (0x000001A63F3C1AD0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 1000.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "mie_scattering": "<Struct 'LinearColor' (0x000001A8621226C4) {r: 1.000000, g: 1.000000, b: 1.000000, a: 1.000000}>",
+    "mie_scattering_scale": "2.25",
+    "rayleigh_scattering_scale": "0.03310000151395798",
+    "visible": "True",
+    "ground_albedo": "<Struct 'Color' (0x000001A862122698) {b: 170, g: 170, r: 170, a: 255}>"
+  },
+  "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.BP_EnvironmentSky_C_0.WeatherClouds": {
+    "class": "VolumetricCloudComponent",
+    "transform": "<Struct 'Transform' (0x000001A63F3C1AD0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 1000.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "layer_bottom_altitude": "2.0",
+    "layer_height": "4.0",
+    "tracing_start_max_distance": "350.0",
+    "tracing_max_distance": "50.0",
+    "planet_radius": "6360.0",
+    "visible": "True",
+    "ground_albedo": "<Struct 'Color' (0x000001A7C6C5AE2C) {b: 170, g: 170, r: 170, a: 255}>",
+    "use_per_sample_atmospheric_light_transmittance": "False",
+    "stop_tracing_transmittance_threshold": "0.004999999888241291"
+  }
+}

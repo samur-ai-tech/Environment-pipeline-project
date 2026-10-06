@@ -1,0 +1,64 @@
+REUSABLE SKY — STAGE 2 DELIVERY RECEIPT
+2026-10-06
+
+IMPLEMENTED
+Retained native BP_EnvironmentSky extended with one owned VolumetricCloudComponent and per-construction transient MaterialInstanceDynamic. No additional lighting manager, Tick-driven construction, global material collection or vendor derivative was introduced. Presets and weather controls use the same UpdateSky path as Stage 1. Saved MI_EnvironmentCloudDefaults derives from the Engine's m_SimpleVolumetricCloud material.
+
+Entry: /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky
+Support: /Game/Project/Shared/Atmosphere/ReusableSky/MI_EnvironmentCloudDefaults
+Map: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Actor: EnvironmentSky / BP_EnvironmentSky_C_0
+
+AUTHORITY AND OWNERSHIP
+Stage 1 delivery, on-disk hashes, public controls and the same operator's explicit handoff were checked before authoring. Initial manager-assignment wait was superseded by Aviv's direct instruction to perform the work in this operator's own window; DIRECT_AUTHORIZATION.txt records that transition. This was direct user activation, not a Claude-manager-issued lease. No manager identity or ModelBank/EDITOR_OWNER.txt change. Parallel editor policy was already saved in AGENTS.md during Stage 1 and was not broadened for Stage 2.
+Authoring PID5288; first independent reopen PID9416; final active-realtime appearance reopen recorded in REOPEN_VERIFIED.json. All used dedicated ports19841/18081/8001 on original Rimal. PID29900 was never mutated, saved or closed by this task. No GeoCity generation was run or its single-editor guard bypassed.
+
+CONTROLS AND COORDINATION
+Cloud Amount0..1, Haze0..1, Cloud Speed0..20 multiplier, Cloud Direction degrees plus North Offset. High Quality false=Balanced, true=High. Preset buttons apply Clear(0,.05), Partly Cloudy(.55,.15), Overcast(1,.25), Hazy(.2,.8). Weather Preset is a descriptive last-applied label, not a selector.
+Cloud coverage=-1+2.5*amount^2; density=.006+.012*amount. Haze changes owned Mie scale=.002+.022*haze. Base sun intensity is attenuated by 1-.88*amount^3, sky intensity by1-.15*amount, and source angle becomes .5357+4*amount^3 degrees. Below-horizon direct sun remains off. Base light inputs, geographic/manual controls and exposure are preserved. No automatic exposure adaptation changes were made.
+Balanced view/reflection/shadow-view/shadow-reflection sample scales=1/.5/.5/.25; High=2/1/1/.5. Global scalability untouched. Balanced remains default because High costs more in the measured cloud pass and gave only a subtle visual improvement at this camera.
+
+NATIVE VERIFICATION
+Preset preservation checks used distinct clock/date/north/manual values. All four presets preserved the Stage 1 inputs. Switching time/manual modes returned the expected manual direction without changing stored clock or manual buffers. Morning06:00/noon12:00/evening18:00 visibly changed lighting in original Rimal.
+50 repeated UpdateSky calls retained10 owned components: one each sun, skylight, atmosphere, cloud, scene root, compass mesh, exposure component and north arrow, plus2 editor billboards. Regular updates reused the same MID. Construction created a new MID. Shared material defaults stayed unchanged. Component class counts stayed stable.
+Native comparisons cover clear and full overcast, Hazy, Balanced/High, morning/noon/evening and10-second wind motion at speed20/direction90. Camera(-8268,-6591,11552), pitch-15/yaw52/FOV90, captures1044x574. Most comparison captures used speed0 to isolate weather/quality; final saved actor uses speed1.
+
+SAVED
+Only MI_EnvironmentCloudDefaults, BP_EnvironmentSky and original Rimal were explicitly saved. NAMED_SAVE.json records successful calls and zero dirty maps/content afterward. No Save All. SHA256 and sizes are in DELIVERY_FILES.json. Asset defaults remain inactive; retained Rimal actor is active at12:00, Jun21 2026, latitude31.52/longitude34.44, UTC+2, DSToff, north0, manualoff, PartlyCloudy .55, haze.15, speed1, direction45, Balanced, exposure overrideoff.
+
+REOPENED
+The same original map and assets were opened in fresh editor processes. Without invoking UpdateSky or changing actor properties, native readback verified reconstructed MID, correct material/coverage/density/wind, cloud visibility, sun attenuation, haze, ten owned components, saved clock/preset/quality, preserved disabled originals and zero dirty packages. See REOPEN_VERIFIED.json and Evidence/reopened_realtime.png. Editor shutdown receipts record no shutdown saves; final OS process receipt identifies remaining editor29900 only.
+
+PRESERVATION AND EXACT CONFLICTS
+Stage 2 deliberately disabled only the visible component of original actor VolumetricCloud_0 after reporting it, retaining that actor/material. Exact component:
+/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration:PersistentLevel.VolumetricCloud_0.VolumetricCloudComponent
+CLOUD_RESTORATION.json records its previous state. Stage 1's retained disabled DirectionalLight_0, SkyLight_0, SkyAtmosphere_0 and StaticMeshActor_0 (SM_SkySphere) remain unchanged. Original ExponentialHeightFog_0 stays active at its original density. Existing light intensities were read back against the Stage 1 inventory. Actor count remains122. No ground/building/road/Houdini/profile/catalog/bank/vendor authoring occurred. SunSky vendor asset and project plugin descriptor hashes match Stage 1. No PWL/MW dependencies were needed or modified.
+
+PERFORMANCE OBSERVATIONS
+UE5.8.2, D3D12, RTX5070 12GB, Ryzen7 7800X3D. Same retained camera and noon, frozen base wind, existing scalability3, cloud render target mode0. Six completed180-frame native CSV captures; first30 discarded,150 analyzed each. Finalized CSV trailing headers were used (early incomplete copies were rejected and measurements repeated).
+clear_B      frame median 9.435 ms; frame p90 100.682 ms; cloud pass absent; cloud shadow absent
+clear_H      frame median 9.622 ms; frame p90 100.714 ms; cloud pass absent; cloud shadow absent
+partly_H     frame median 13.603 ms; frame p90 100.399 ms; cloud pass 0.270 ms; cloud shadow 0.631 ms
+partly_B     frame median 12.961 ms; frame p90 100.658 ms; cloud pass 0.192 ms; cloud shadow 0.631 ms
+overcast_B   frame median 12.881 ms; frame p90 102.615 ms; cloud pass 0.129 ms; cloud shadow 0.767 ms
+overcast_H   frame median 10.233 ms; frame p90 102.025 ms; cloud pass 0.322 ms; cloud shadow 0.767 ms
+The other project editor remained open, and editor scheduling/background behavior produced approximately100–103ms p90 spikes. These data support relative cloud-pass cost only, not gameplay FPS or isolated whole-frame performance. No GPU total was available in these captures. Cloud shadow cost barely changed between profiles at this camera. The existing scene also logs a VSM non-Nanite marking queue overflow; no scene geometry or shadow-global tuning was attempted.
+
+LIMITATIONS / NOT VERIFIED
+- Smooth wind retiming is not implemented: changing speed/direction/north can jump the Engine material's absolute-time cloud phase. Continuous motion at fixed settings was checked, but seamless animated transitions are not claimed. The plan's stronger no-discontinuity goal remains open.
+- Native transient MID references emit one missing /Engine/Transient.EnvironmentCloudMID load warning before Construction Script rebuilds them. Reconstructed references and correct values were verified after fresh load. Warning suppression remains unresolved.
+- Cloud reconstruction can look stippled in an unfocused, CPU-throttled viewport; active Realtime accumulation is required. Final reopen imagery explicitly checks active rendering. The original scene showed intermittent cyan ground gaps in some long-session screenshots, absent immediately after fresh load but recurring during active rendering. Their root cause was not diagnosed and no terrain repair was made.
+- Haze is atmospheric Mie control, not modification of existing fog; the Hazy preset has a restrained effect in this near-city camera.
+- A second retained scene/two simultaneously edited sky instances, PIE, packaged runtime, other hardware, seamless wind edits and user visual acceptance remain unverified. Per-instance isolation is implemented and checked by MID replacement/reuse and unchanged shared defaults; a second-scene native exercise was not authorized/performed.
+- Moon, stars, night polish and automatic time animation remain later stages.
+
+DEPENDENCIES / MIGRATION
+Required: enabled Sun Position Calculator (already saved by Stage1), native Engine volumetric cloud resources, project-owned MI_EnvironmentCloudDefaults. Registry dependencies are recorded in NAMED_SAVE.json. BP also uses SunPosition's editor compass mesh and Engine editor resources. Use Unreal's dependency-aware Migrate for the Blueprint and support asset into a compatible UE project, then enable SunPosition. No guarantee for other engine versions/renderers/platforms; no PWL/MW content dependency.
+
+EVIDENCE
+EVIDENCE.html: direct native images grouped by weather, time, quality, motion and reopen.
+CONTROL_VERIFICATION.json: input preservation, manual/time round trip, repeated update counts.
+CHECK_*.json: individual controls and material/component readback.
+Performance/*.csv and PERFORMANCE_RESULTS.json: finalized samples and statistics.
+NAMED_SAVE.json, REOPEN_VERIFIED.json, EXIT_*.json, DELIVERY_FILES.json: persistence and close receipts.
+QUICK_START.txt: ordinary usage and known limitations.

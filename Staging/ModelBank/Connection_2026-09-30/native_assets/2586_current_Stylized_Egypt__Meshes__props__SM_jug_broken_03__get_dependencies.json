@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2596,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/Stylized_Egypt/Meshes/props/SM_jug_broken_03"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Stylized_Egypt/Materials/props_materials/MI_jug_01_Inst\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2596,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/Stylized_Egypt/Materials/props_materials/MI_jug_01_Inst\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 333,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_DeadBody_01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"232x105x47\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"../../../../../../Users/swist/Desktop/LightmapFix/DeadBody_01.FBX\\\", \\\"Timestamp\\\" : \\\"1542569271\\\", \\\"FileMD5\\\" : \\\"c910f1a9be546f0f8a83142caac80a9b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"601\",\"UVChannels\":\"2\",\"Vertices\":\"1193\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 333,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"232x105x47\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"../../../../../../Users/swist/Desktop/LightmapFix/DeadBody_01.FBX\\\", \\\"Timestamp\\\" : \\\"1542569271\\\", \\\"FileMD5\\\" : \\\"c910f1a9be546f0f8a83142caac80a9b\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"601\",\"UVChannels\":\"2\",\"Vertices\":\"1193\"}}"
+    }
+   ]
+  }
+ }
+}

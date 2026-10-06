@@ -1,0 +1,40 @@
+{
+  "schema": "environmentpipeline.independent_viewmode_capture_review.v1",
+  "reviewer": "/root/startup_review",
+  "reviewed_utc": "2026-10-05T01:36:01Z",
+  "status": "APPROVED_WITHIN_GROUND_CAPTURE_SCOPE",
+  "script": "Staging/GroundPainting_2026-10-04/native_capture.py",
+  "sha256": "6c3ed43847aed4da0dad36b76efb5935f97eebbf52a6b93a9373e99330e0c7d4",
+  "pin_matches": true,
+  "syntax_parses": true,
+  "script_pins_sha256_at_review": "23cf52aeedb2ce5bf3a4c9e3a089c5f84c435828bf0d1cb1d23a90e23124fee8",
+  "archived_previous_capture": {
+    "file": "Staging/GroundPainting_2026-10-04/Revision_2026-10-05/native_capture_previous_requested_only.py",
+    "sha256": "6692c20814c8704e7986f1094db9c7665568c37540a25df40f5ceba29fad28a2",
+    "qualification": "The former code requested viewmode lit through world console execution and wrote a hardcoded Lit label without active-viewport readback. Historical images must not be treated as verified Lit solely from that label."
+  },
+  "exact_diff_reviewed": [
+    "Removed SystemLibrary.execute_console_command(world, viewmode lit).",
+    "Read actual active editor viewport mode; set VMI_LIT through supported AutomationLibrary active-viewport API; read back and assert VMI_LIT.",
+    "Assert active viewport configuration key remains the captured key before screenshot request.",
+    "Record actual prior mode, verified mode and active viewport key in capture receipt. Camera/FOV setup, screenshot dimensions and unique existing-image protection otherwise retain their previous behavior."
+  ],
+  "installed_api_evidence": {
+    "header": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Developer/FunctionalTesting/Public/AutomationBlueprintFunctionLibrary.h",
+    "active_setter_lines": "220-222",
+    "active_getter_lines": "224-226",
+    "description": "Reflected BlueprintCallable active-viewport setter and getter; getter returns VMI_Unknown on failure. Capture asserts the known Lit result rather than accepting an unknown or a requested string.",
+    "enum_header": "C:/Program Files/Epic Games/UE_5.8/Engine/Source/Runtime/Engine/Classes/Engine/EngineBaseTypes.h",
+    "enum_values": {"Unlit": 2, "Lit": 3}
+  },
+  "alternative_readback_findings": {
+    "deferred_get_viewport_camera": "UnrealMCPEditorCommands.cpp:1192-1200 selects the first non-null level viewport client, without selecting the actual active or perspective viewport. Its zero camera/FOV90/Unlit result is not evidence of the matched wide screenshot client.",
+    "roadbld_current_capture": "RoadBLDFeedbackToolset.cpp:42-62 prefers GCurrentLevelEditingViewportClient when valid and perspective; Current preserves framing. It reads that framebuffer after four settle frames and returns camera location/rotation, but no view-mode or lighting-showflag fields. It only temporarily suppresses and restores selection/outline/widgets.",
+    "showflags_limit": "The new reflected getter verifies view mode. It is not a separate readback of every custom lighting/show flag; no such flag getter was found in the reviewed LevelEditor/UnrealEditor subsystem declarations."
+  },
+  "concrete_scope": "Only native camera/FOV positioning, viewport invalidation, active viewport mode set/readback, actual screenshot request and task-local capture receipts. No light actors, lighting assets, material graph, geographic data, actor geometry, vendor/source packages, Content save, Cook or Bake are modified by this correction.",
+  "capture_completion_requirement": "The screenshot task remains asynchronous and receipt requested=true does not prove pixels completed. Root must wait for actual valid PNG completion, inspect the actual image, and obtain fresh close/middle/wide verified Lit evidence after restoring the chosen material recipe. Temporary actor or material diagnostic changes must be restored before any named save.",
+  "acceptance": "Actual shader appearance, matched image quality, named persistence and user acceptance remain separate from this source approval.",
+  "native_calls_performed_by_reviewer": false,
+  "ordinary_generation_authorized": false
+}

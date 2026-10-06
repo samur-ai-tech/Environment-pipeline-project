@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.329,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1021_72e10d9ab937\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1021_629bf903b421_albedo_2c65c30a38a16c\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1021_75389a549181\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__004\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0094_Woodenpole\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0083_Streetsign_001\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Normal_1021_2c16efe4e182\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__010\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0082_Streetsign\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_Mat_003_Normal_1021_5c6ed22df8b5\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_AlbedoTransparency_1021_e8b133bd44c7\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__006\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0081_Streetpowerbox\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0079_Streetlight\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0060_Metal_Barrier\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Normal_1001_565c6a72dc3a\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Emission_1001_d5168f6fb17f_albedo_4fd132a09ab085\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_AlbedoTransparency_1001_e15ff2bc3f44\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__012\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0025_Barrier\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 12,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1021_72e10d9ab937\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1021_629bf903b421_albedo_2c65c30a38a16c\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1021_75389a549181\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__004\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0094_Woodenpole\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0083_Streetsign_001\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Normal_1021_2c16efe4e182\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Emission_1021_33d54003abdb_albedo_21b476702507e1\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_AlbedoTransparency_1021_ba582834d6b0\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__010\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0082_Streetsign\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_Mat_003_Normal_1021_5c6ed22df8b5\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Box_AlbedoTransparency_1021_e8b133bd44c7\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__006\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0081_Streetpowerbox\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0079_Streetlight\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0060_Metal_Barrier\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Normal_1001_565c6a72dc3a\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_Emission_1001_d5168f6fb17f_albedo_4fd132a09ab085\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_02_AlbedoTransparency_1001_e15ff2bc3f44\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__012\",\"/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0025_Barrier\"]}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1005,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ModularBuildingSet/Meshes/Roof_Trims/beam_roof_trim_corner_2x2_b"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"349x349x150\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"13.20\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"128\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1005,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"349x349x150\",\"CollisionPrims\":\"1\",\"Materials\":\"1\",\"ResourceSize\":\"13.20\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"128\"}}"
+    }
+   ]
+  }
+ }
+}

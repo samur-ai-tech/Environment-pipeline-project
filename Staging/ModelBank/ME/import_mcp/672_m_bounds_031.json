@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 197,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.333,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-168.54640197753906,\"y\":-367.22116088867188,\"z\":-4.2319466047047172e-06},\"max\":{\"x\":436.6885986328125,\"y\":245.59162902832031,\"z\":870.62786865234375},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 197,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-168.54640197753906,\"y\":-367.22116088867188,\"z\":-4.2319466047047172e-06},\"max\":{\"x\":436.6885986328125,\"y\":245.59162902832031,\"z\":870.62786865234375},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

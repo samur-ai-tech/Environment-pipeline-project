@@ -1,0 +1,73 @@
+READ-ONLY LIFECYCLE AUDIT — 2026-10-03
+
+Scope: current Content/Python/geocity_bank_workflow.py and
+Content/Python/geocity_editor_action.py; retained workflow ledgers for the two
+existing area profiles. No editor calls, Houdini evaluation, source edits,
+cooks, bakes, package saves or package deletion were performed by this audit.
+
+Result: no remaining concrete defect found in the audited lifecycle changes.
+This is a code and receipt audit, not visual acceptance or a reopen claim.
+
+Resolved finding
+----------------
+The initial editor-action read used only WORKFLOW_STATE.json when recognizing
+exact unreferenced dirty cook leftovers. A failed attempt replaces that state
+with a failure phase, losing recognition of the previously saved area's
+leftovers despite a valid LAST_SUCCESSFUL_WORKFLOW_STATE.json. This would
+block normal menu regeneration, or cross-area regeneration, after a failure.
+The manager was notified. The latest read confirms the repair at
+geocity_editor_action.py:24-32: use LAST_SUCCESSFUL when the current state is
+not a successful saved delivery, and verify the recorded profile identity.
+All existing exact-package, reference and cook-root checks remain in place.
+
+Saved actor retention and optional outputs
+-----------------------------------------
+geocity_bank_workflow.py:38-46 loads the last successful actor ledger before
+the new attempt overwrites WORKFLOW_STATE. Lines299-300 unite that ledger with
+the wrapper's current baked actors; lines342-345 remove only actors in that
+previous recorded set which are absent from the new bake. This covers optional
+outputs that disappear and avoids depending only on the new output list.
+Lines110-114 allow the vegetation/street-detail mesh to be absent only when
+the completed source/removal/omission/remaining ledger balances and records
+zero remaining primitives. The HDA output wiring must still be complete.
+Line372 updates LAST_SUCCESSFUL only after bake verification and named saves.
+
+Named save boundary
+-------------------
+Lines378-426 collect retained actor/component references and area-local
+registry dependencies. Every generated package admitted to the save list
+must be under the profile's area root. The map is saved explicitly at line359.
+There is no dirty-all save and no native source-bank package admitted merely
+because it is referenced by an instance. Existing native-material slot and
+per-model native-count checks remain before and after bake.
+
+Measured receipt snapshot
+-------------------------
+GazaShujaiya WORKFLOW_STATE and LAST_SUCCESSFUL both report
+r017_retained_native_environment, phase=baked_saved_verified, 5 Engine outputs,
+23 baked actors, 1 Landscape, 0 cooked mesh components. Building coverage is
+41 whole native buildings + 357 native assemblies + 0 unsupported = 398 source
+pads. There are 17,634 native module points. Both optional proxy meshes have
+zero remaining primitives: trees 114=79 native substitutions+35 omissions;
+street poles 57=53 native substitutions+4 omissions. This records deliberate
+omissions; it does not imply all requested decorations became native models.
+
+The seven explicitly saved generated dependencies are the three GazaShujaiya
+Bake meshes and four GazaShujaiya Landscape layer-info packages. All are under
+/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/. The successful state
+still records 28 unreferenced dirty Shujaiya cook packages and 45 Rimal cook
+packages. These are not reported as saved native assets or a clean editor.
+
+At the final read GazaRimal WORKFLOW_STATE is phase=cooking, while its retained
+LAST_SUCCESSFUL is r014, phase=baked_saved_verified, with 18 prior baked actors
+and 45 unreferenced cook packages. The new fallback can therefore recognize
+that previous complete ledger while the current attempt is unfinished.
+
+Evidence paths
+--------------
+Content/Python/geocity_bank_workflow.py
+Content/Python/geocity_editor_action.py
+Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/WORKFLOW_STATE.json
+Staging/ModelBank/GazaShujaiyaIntegration_2026-10-02/LAST_SUCCESSFUL_WORKFLOW_STATE.json
+Staging/ModelBank/PermanentIntegration_2026-10-02/WORKFLOW_STATE.json
+Staging/ModelBank/PermanentIntegration_2026-10-02/LAST_SUCCESSFUL_WORKFLOW_STATE.json

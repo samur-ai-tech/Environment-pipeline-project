@@ -1,0 +1,43 @@
+{
+  "status": "TASK3_RECEIPTS_REFRESHED_TASK1_TEST_FIXTURE_PIN_REFRESH_REQUIRED",
+  "producer_candidate_sha256": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+  "task1_handoff_read_sha256": "531f24b1f2706ad20a4395d455183fe1dd56af6c418f7453239b59a90ee95187",
+  "task1_referenced_task3_pins": {
+    "Staging/ManagedSystemsAstra_2026-10-04/Task3_GroundGrass/IranSemanticConsumer/INTERFACE_FROZEN_DECISION.json": {
+      "expected": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+      "actual": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+      "match": true
+    },
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\geocity_landscape_workflow.py": {
+      "expected": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+      "actual": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+      "match": true
+    },
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\semantic_consumer_extension.py": {
+      "expected": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+      "actual": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+      "match": true
+    },
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\INTERFACE_FROZEN_DECISION.json": {
+      "expected": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+      "actual": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+      "match": true
+    },
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json": {
+      "expected": "6dccbcb0d2e6d7341be93614eeab7dea7aa29c7df60c62efcd99fbc47fc35176",
+      "actual": "dfabb100f7ad2e2c77712b6a442a89e7ea44feb9c7356efe43baaad70030bfab",
+      "match": false
+    }
+  },
+  "task1_handoff_mutated": false,
+  "task1_current_pins_need_refresh": true,
+  "required_task1_refresh": {
+    "Staging\\ManagedSystemsAstra_2026-10-04\\Task3_GroundGrass\\IranSemanticConsumer\\PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json": {
+      "expected": "6dccbcb0d2e6d7341be93614eeab7dea7aa29c7df60c62efcd99fbc47fc35176",
+      "actual": "dfabb100f7ad2e2c77712b6a442a89e7ea44feb9c7356efe43baaad70030bfab",
+      "match": false
+    }
+  },
+  "reason": "Full-grid producer integration rerun rewrote the test-only source contract artifact. Task3 implementation and interface bytes remain unchanged. Task1 owner/root must refresh its test fixture pin after reviewing latest passed integration receipt. No source ownership overlap.",
+  "native_actions": false
+}

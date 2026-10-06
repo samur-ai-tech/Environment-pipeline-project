@@ -1,0 +1,76 @@
+{
+  "schema": "environmentpipeline.task2.same_postbinding_preparation.v1",
+  "status": "PREPARED_NOT_EXECUTED_ADAPTER_CONTRACT_AND_ROOT_REVIEW_REQUIRED",
+  "prepared_utc": "2026-10-03T22:02:26.002073+00:00",
+  "wrapper": "Staging\\ManagedAstra_2026-10-03\\prepare_same_postbinding_continuation_21780.py",
+  "wrapper_sha256": "66a80604aecce5bc5c5c1f27557b433cab0ef08376c9db44cbfc33cbcd66b570",
+  "baseline": "Staging\\ManagedAstra_2026-10-03\\SAME_POSTBINDING_BASELINE_20261003T213208608026Z.json",
+  "baseline_sha256": "f314d11b0fbd33f889a3f7f6b3b3e1c0535c00417e106995e2e4946bc2659cca",
+  "baseline_bytes": 805027,
+  "source_capture_immutable": "Staging\\ManagedAstra_2026-10-03\\EXTERIOR_INTERVAL_EVIDENCE_20261003T213208608026Z.json",
+  "typed_callback_helper": "Staging\\ManagedAstra_2026-10-03\\continue_explicit_callbacks_21780.py",
+  "typed_callback_helper_sha256": "ef063beaca5a466c4d7fbd2dd8328a20d83337ebb30c84c8e8fc9997a08bafc6",
+  "observer_helper": "Staging\\ManagedAstra_2026-10-03\\fresh_delivery_21780.py",
+  "observer_helper_sha256": "d28d94887169c4190c106b3df5ee8d2e648c22c53b97636b8df86877c85074b5",
+  "checks": {
+    "syntax_compile_without_execution": true,
+    "commit_keyword_hda_receipt_verified": true,
+    "no_export_network_corner_rebuild_grounding_or_generic_clipping_entry_calls": true,
+    "preparation_only_hard_stop": true
+  },
+  "expected_current_live_inputs": {
+    "pid": 21780,
+    "parent": "geocity_bank_workflow.ACTIVE[0]",
+    "native": "geocity_roadbld_workflow.ACTIVE[0], identical to parent.native_road_run",
+    "revision": "20261003T203730573110",
+    "token": "500220db-e53b-4010-b6ee-04b4eb2df128",
+    "parent_phase": "failed_native_road_transaction",
+    "native_phase": "failed_validating",
+    "source_roads": 40,
+    "derived_completed_corners": 4,
+    "rebuild_pass": 3,
+    "same_bound_components": 87,
+    "callbacks": 0,
+    "official_engine": "valid and paused; autoCook/autoBake false",
+    "autosave": false,
+    "lease": "same unchanged root/worker lease, sole PID; manager must reactivate authoring",
+    "dirty": "exact captured one map and 101 content packages",
+    "Landscape_sampler": "existing r.landscape_sampler retained; correction adapter must freshly validate sampling readiness before physical edits"
+  },
+  "still_required_before_execution": [
+    "Task1 concrete generic same-bound-candidate correction entry point with one positional run argument, and reviewed lineage verifier with arguments (run, preserved_reports, correction_result). Proposed adapter shape only; source-owner API not yet received.",
+    "Adapter verifies actual old bound geometry against immutable clipping ledger before mutation; creates physical repair and new linked immutable ground/clip reports, retains original ledger and old assets, registers new dependencies in run.owned_assets. Must not call export/network/corner/rebuild/full grounding/generic clipping replay or save.",
+    "Freeze source files and independent review, then reviewed installation of correction/helpers preserving live p/r, ACTIVE registries, token and actor identities. No blind module reload by this wrapper.",
+    "Finalize wrapper against actual adapter API and report schema, review it, then remove PREPARATION_ONLY hard stop with new reviewed wrapper hash.",
+    "Root activation file MANAGER_SAME_POSTBINDING_CORRECTION_ACTIVATION.json plus ASSIGNMENTS authoring true: wrapper/baseline/source/review/helper hashes, installed adapter module/file/function identifiers and runtime marshal code hashes for correction, lineage verifier, observer d.call and typed callbacks.install.",
+    "Fresh bounded preflight verifies unchanged participants, 87 bindings/materials/transforms/collision, dirty set, report hashes, Engine state and ownership; unexpected drift stops."
+  ],
+  "sequence": [
+    "One-shot GameThread callback unregisters itself; checks activation and same transaction.",
+    "Archive deep copies of old reports and states in a new receipt before correction.",
+    "Install existing explicit-arity observation hooks; every original guard remains unconditional; journal guard output is coalesced.",
+    "Call reviewed correction once, verify old ledger unchanged and new reports linked, then ordinary r.validate().",
+    "Only after successful validation: r.finish(), one-argument parent watch, r.on_complete(r, True). Parent ordinary suppression Cook/Bake/commit(hda_receipt=...)/named saves remains the existing implementation.",
+    "On failure use ordinary failure cleanup once; no asset rollback/deletion; stop before any unverified parent continuation."
+  ],
+  "callback_signatures": {
+    "after_cook": 2,
+    "after_processing": 1,
+    "after_native_roads": 2,
+    "after_bake": 2,
+    "finish_save": 1,
+    "watch": 1,
+    "native_tick": 1,
+    "commit": "commit(hda_receipt), forwards exact keyword"
+  },
+  "autosave_policy": "Root restores original user True only after final clean delivery; this preparation does not change runtime False or durable policy.",
+  "not_performed": [
+    "editor RPC",
+    "correction",
+    "source helper edit/reload",
+    "callback registration",
+    "Cook",
+    "Bake",
+    "Content/map save"
+  ]
+}

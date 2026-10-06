@@ -1,0 +1,42 @@
+Add_0 [Add]  A<-Saturate_2:0 B<-Multiply_2:0
+Add_1 [Add]  A<-Power_1:0 B<-MaterialFunctionCall_19:0
+Add_2 [Add]  A<-Power_3:0 B<-MaterialFunctionCall_19:0
+Add_4 [Add]  A<-WorldPosition_1:2.B B<-OneMinus_2:0
+Add_5 [Add]  A<-ScalarParameter_25:0 B<-FunctionInput_0:0
+ComponentMask_0 [ComponentMask] {"B": true} Input<-VertexNormalWS_0:0
+ComponentMask_3 [ComponentMask] {"B": true} Input<-PixelNormalWS_1:0
+ComponentMask_4 [ComponentMask] {"B": true} Input<-VertexNormalWS_2:0
+Constant_2 [Constant] {"R": 2.0} 
+FunctionInput_0 [FunctionInput] {"InputName": "Mask", "InputType": "FunctionInput_Scalar"} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "SnowVertexMask"} A<-Saturate_0:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "SnowPixelMask", "SortPriority": 1} A<-Saturate_1:0
+MaterialFunctionCall_19 [MaterialFunctionCall] {"MaterialFunction": "SlopeMask"} FunctionInputs[2].Input<-ScalarParameter_6:0 FunctionInputs[3].Input<-Constant_2:0
+Multiply_12 [Multiply]  A<-Saturate_3:0 B<-Add_0:0
+Multiply_18 [Multiply]  A<-Add_4:0 B<-Add_5:0
+Multiply_2 [Multiply]  A<-Saturate_6:0 B<-Power_0:0
+Multiply_3 [Multiply]  A<-Add_4:0 B<-ScalarParameter_25:0
+Multiply_4 [Multiply]  A<-ComponentMask_4:0 B<-ScalarParameter_26:0
+Multiply_5 [Multiply]  A<-Saturate_4:0 B<-Add_0:0
+Multiply_8 [Multiply]  A<-ComponentMask_3:0 B<-ScalarParameter_26:0
+OneMinus_2 [OneMinus]  Input<-ScalarParameter_28:0
+PixelNormalWS_1 [PixelNormalWS]  
+Power_0 [Power]  Base<-Saturate_5:0 Exponent<-ScalarParameter_27:0
+Power_1 [Power]  Base<-Multiply_8:0 Exponent<-ScalarParameter_27:0
+Power_3 [Power]  Base<-Multiply_4:0 Exponent<-ScalarParameter_27:0
+Saturate_0 [Saturate]  Input<-Multiply_5:0
+Saturate_1 [Saturate]  Input<-Multiply_12:0
+Saturate_2 [Saturate]  Input<-Multiply_18:0
+Saturate_3 [Saturate]  Input<-Add_1:0
+Saturate_4 [Saturate]  Input<-Add_2:0
+Saturate_5 [Saturate]  Input<-ComponentMask_0:0
+Saturate_6 [Saturate]  Input<-Multiply_3:0
+ScalarParameter_25 [ScalarParameter] {"ParameterName": "MW_SnowWorldPositionPower", "DefaultValue": 0.0001, "Group": "0_Snow"} 
+ScalarParameter_26 [ScalarParameter] {"ParameterName": "MW_SnowMaskMultiplier", "DefaultValue": 1.4, "Group": "0_Snow"} 
+ScalarParameter_27 [ScalarParameter] {"ParameterName": "MW_SnowMaskPower", "DefaultValue": 10.0, "Group": "0_Snow"} 
+ScalarParameter_28 [ScalarParameter] {"ParameterName": "MW_SnowWorldPosition", "DefaultValue": -1500.0, "Group": "0_Snow"} 
+ScalarParameter_6 [ScalarParameter] {"ParameterName": "MW_SnowSlopePower", "DefaultValue": 3.0, "Group": "0_Snow"} 
+VertexNormalWS_0 [VertexNormalWS]  
+VertexNormalWS_2 [VertexNormalWS]  
+WorldPosition_1 [WorldPosition]  
+MF_MWAM_SnowMask [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_SnowMaskEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_SnowMaskEditorOnlyData [MaterialFunctionEditorOnlyData]  

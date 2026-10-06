@@ -1,0 +1,153 @@
+{
+  "schema": "environmentpipeline.task1.license_capture_repair.v1",
+  "status": "SOURCE_FROZEN_READY_FOR_INDEPENDENT_REVIEW",
+  "timestamp_utc": "2026-10-03T20:48:36.923697+00:00",
+  "scope": "Only junctions/workflow source repair. No editor import, calls, Cook, native operations, map/config/material/asset writes, or live continuation performed.",
+  "files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+      "ast_sha256": "ea893553bcad2f71c875cb930f3daf41afc52363812eef1b61829f5fc98f52b6"
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+      "ast_sha256": "37c2edeb792990cc22cb2effb4b1aa4fe4a1bfe2d74dae5fff1bb5b0e9efd283"
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+      "ast_sha256": "786753be93e49ed099c82fd7f926d4e1fcfc5603aa04b6342394a9b7f5b57662"
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+      "ast_sha256": "72892e85e533c17d0f87c41db877203df73526ac98a5d2233d42942d48885b60"
+    }
+  },
+  "unchanged_frozen_files": {
+    "Content/Python/geocity_roadbld_grounding.py": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+    "Content/Python/geocity_roadbld_clip.py": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+    "Staging/ManagedAstra_2026-10-03/TASK1_SOURCE_RESULT.json": "d4a70b7156145e93a5125e445f7bfb7a8b66633db3682b6bcf407d5684f62eda"
+  },
+  "AST_changed": {
+    "geocity_roadbld_junctions.py": [
+      "_call_with_log",
+      "_edit_step"
+    ],
+    "geocity_roadbld_workflow.py": [
+      "RoadBLDRun.request_rebuild",
+      "RoadBLDRun.tick"
+    ]
+  },
+  "backup_directory": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\BeforeLicenseRepair",
+  "measured_evidence": {
+    "revision": "20261003T203730573110",
+    "PID": 21780,
+    "step": "connector_controls",
+    "task_index": 0,
+    "attempts": 1,
+    "capture_start_byte": 476884,
+    "capture_end_byte": 476884,
+    "suffix": "",
+    "result_network": "",
+    "later_warning_start_byte": 476914,
+    "later_warning_utc": "2026-10-03T20:38:49.167Z",
+    "participants_before_and_after_sha256": "8243ff4385644613279a4a2a49870f6d07f6355883a9842106efc42b26a78fe0",
+    "original_deadline_monotonic": 167732.562,
+    "original_deadline_expired": true,
+    "receipts": [
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_fresh_junction_stop_20261003T203938737856Z.json",
+        "sha256": "9185a64b0768f47b7ec208c8d37536b91fad003224f41f237a0a1ae474954427"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_JUNCTION_CALL_EVIDENCE_20261003T204100038374Z.json",
+        "sha256": "5aa8fab069f7a6b30b78a3ddff42b9eda090ae007f3700e7230ce4a05497baba"
+      },
+      {
+        "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\FRESH_READONLY_STOP_20261003T204227744766Z.json",
+        "sha256": "dcc00c4b19f7706fbf1f0e327ce64ff122d9211348d66f98f28b3355c2dbc74f"
+      }
+    ]
+  },
+  "diagnosis": "Observed immediate zero-byte capture followed by the matching later log warning supports delayed log flushing as the cause. Native logger internals were not instrumented; this causal explanation remains inference. Old/later warning never authorizes a future retry.",
+  "installed_API_evidence": [
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/unreal_core.py",
+      "lines": "3,21,44-45,58-59",
+      "fact": "Imports _unreal_core, declares log_flush(), and uses it as the UE stdout/stderr native flush function."
+    },
+    {
+      "path": "C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/test_type_hints.py",
+      "lines": "860-861",
+      "fact": "Installed test explicitly calls unreal.log_flush()."
+    },
+    {
+      "path": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Toolsets/RoadBLDAuthoringToolset.cpp",
+      "lines": "182-190,1570-1587",
+      "fact": "Begin authorization fails before ModifyRoad/ClearEndpointLinks; SetControlPoints returns default FRoadBLDEditResult."
+    },
+    {
+      "path": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Common/RoadBLDToolsetTypes.h",
+      "lines": "561-581",
+      "fact": "Default edit result has empty Roads/Network/RebuildJobId/Warnings and bNeedsRebuild=true."
+    },
+    {
+      "path": "Plugins/WorldBLDMCPToolset/Source/RoadBLDToolset/Private/Toolsets/RoadBLDBuildToolset.cpp",
+      "lines": "40-51,64-96",
+      "fact": "Async rebuild reports authorization failure only in the current Result; gate returns before FRoadBLDRebuildJobs::Start."
+    }
+  ],
+  "junction_repair": "Require callable unreal.log_flush before dispatch; flush previous buffered output before the cursor, flush after the synchronous SDK call, retain bounded suffix/prefix checks. Retry only exactly one complete pending warning with no other warning/error/fatal/native message, default denial result and exact unchanged participants/defaults. Existing one-second yield and original 60-second operation deadline remain unchanged.",
+  "rebuild_dispatch_repair": "Use only this call current completed async result with exact pending-license error, guaranteed pre-job by installed SDK. Snapshot all participants/defaults before dispatch and after denial; require equality before retry. Persist args, transaction/revision, calls, attempts, original 60-second deadline; yield in waiting_rebuild_license and retry no earlier than one second. Other failure/incomplete result/changed state cannot retry. Success records job exactly once and advances existing rebuild pass once.",
+  "compatibility": {
+    "new_instance_attributes": [],
+    "new_state_fields": [
+      "rebuild_dispatch_operation (lazy via state.get)",
+      "rebuild_dispatch_history (lazy via state.setdefault)"
+    ],
+    "new_phase": "waiting_rebuild_license",
+    "existing_instance": "Compatible with current r after manager-reviewed class rebinding; __init__ need not run. Preserve all current attrs, objects, network, token, revision, job, pass and completed steps. Reloaded junctions dynamically obtains current workflow module. No startup/reconstruction logic added."
+  },
+  "current_failed_step_continuation_proposal": [
+    "Root archives original failure/report/operation and expired deadline unchanged as evidence; this patch does not revive it.",
+    "Root verifies current sole editor/lease, exact same generation/network/40 sources/one empty existing connector, task index 0 and connector_controls step, original complete argument set, full participant/default hash, frozen tasks/proofs, completed spawn, callbacks zero and no running rebuild.",
+    "Only after independent review and fresh root authorization, create a NEW operation at exactly the failed step through existing checkpoint initialization (operation absent), explicitly linked to preserved prior failed operation. Preserve checkpoint_state, connector_actor_path, step/task indices, frozen plan and all completed steps. Never rerun spawn/preflight/first completed rebuild or reset the old operation deadline.",
+    "Root/Task2 owns lifecycle callback restoration and any exact failed-report reconciliation. Source patch adds no automatic failed-report override or continuation helper."
+  ],
+  "validation": {
+    "checks": [
+      "Python syntax: all RoadBLD modules",
+      "AST scope: only four named functions changed",
+      "Buffered stale warning flushed before cursor; buffered current denial captured after call",
+      "Capture rejects stale_only",
+      "Capture rejects other_error",
+      "Capture rejects duplicate",
+      "Capture rejects partial_line",
+      "Capture rejects other_native",
+      "Missing flush fails before native dispatch",
+      "Dispatch: exact current result yields; no retry before one second; original deadline retained; success counted once",
+      "Expired dispatch refuses SDK replay and preserves deadline",
+      "Changed participant refuses dispatch retry",
+      "Different failure or incomplete result never authorizes retry",
+      "Changed participants after denial never authorize retry",
+      "Edit checkpoint: one-second yield, original deadline unchanged, expired operation never dispatched",
+      "Edit denial rejects nondefault network, roads, rebuild job, warnings, or rebuild flag",
+      "Edit checkpoint rejects participant changes before replay"
+    ],
+    "AST_changed": {
+      "geocity_roadbld_junctions.py": [
+        "_call_with_log",
+        "_edit_step"
+      ],
+      "geocity_roadbld_workflow.py": [
+        "RoadBLDRun.request_rebuild",
+        "RoadBLDRun.tick"
+      ]
+    },
+    "method": "offline production-AST execution with isolated fake logging and result objects; no Unreal import or editor calls"
+  },
+  "live_verification": "NOT RUN. Root/Task2 must verify actual log_flush availability and call-local capture in the ordinary run. If missing or insufficient, fail closed; no deferred/global log fallback.",
+  "preserved": "Grounding v5, clip, previous v5 handoff, geometry/source controls thresholds, licensed native gates and saved area/assets unchanged."
+}

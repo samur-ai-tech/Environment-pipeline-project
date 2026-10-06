@@ -1,0 +1,1148 @@
+{
+ "schema": "environmentpipeline.s1v2_design_spec.v1",
+ "status": "DESIGN_ONLY_NOT_EXECUTED",
+ "written_utc": "2026-10-06",
+ "labels": "M measured (graph dump / file / offline PNG analysis), D documented, I inferred",
+ "design_doc": "S1V2_DESIGN.md",
+ "baseline": {
+  "graph_dump": "Stage1_Ground/S1_Prep/receipts/GRAPH_BEFORE_23156.json",
+  "graph_sha256": "605c55d04955ec410d51f42f7e7bb66d949cf5fbefcb42df5e31034473e40a1b",
+  "node_count": 1015,
+  "v1_script": "Stage1_Ground/S1_Prep/s1_material_edit.py",
+  "v1_script_sha256": "5c48daaffd81e46a81bacfbac22a2353f32cb3b188b95c550190fc98497c0705",
+  "editor_note": "PID 23156 holds v1 unsaved in memory; v2 requires root to close it with Do-Not-Save and a fresh paused editor; disk master unchanged (I: no S1 save receipt exists)."
+ },
+ "measured_facts": {
+  "live_stochastic_chain": {
+   "layer": "Sand_01 only",
+   "hashes_near": [
+    "Custom_0",
+    "Custom_1",
+    "Custom_2",
+    "Custom_3"
+   ],
+   "hashes_far": [
+    "Custom_4",
+    "Custom_5",
+    "Custom_6",
+    "Custom_7"
+   ],
+   "cells": {
+    "near": "Floor_0(Multiply_23 = Multiply_15 x Max_0(GeoCity_CellScale))",
+    "far": "Floor_1(Multiply_29 = Multiply_16 x Max_0)"
+   },
+   "neighbors": {
+    "phase0": "(0,0)",
+    "phase1": "+Constant2Vector_1",
+    "phase2": "+Constant2Vector_2",
+    "phase3": "+Constant2Vector_3"
+   },
+   "weights": {
+    "near_x": "ComponentMask_17",
+    "near_y": "ComponentMask_18",
+    "far_x": "ComponentMask_19",
+    "far_y": "ComponentMask_20",
+    "form": "quintic 6t^5-15t^4+10t^3 of Frac"
+   },
+   "samples": "TextureSample_37-56, TMVM_DERIVATIVE, DDX_0/DDY_0 (near, untranslated), DDX_1/DDY_1 (far), Shared:Wrap",
+   "combine": {
+    "near_color": "LinearInterpolate_48",
+    "far_color": "LinearInterpolate_57",
+    "distance_color": "LinearInterpolate_64",
+    "distance_normal": "LinearInterpolate_65",
+    "alpha": "Saturate_1 SharedDistanceAlpha"
+   },
+   "ground_color_chain": "LinearInterpolate_64 -> Multiply_5 (x Sand_01_Tint) -> Multiply_8 (x macro Add_1; T_MacroVariation via MaterialFunctionCall_154; Clamp_3<=0.08) -> LinearInterpolate_42 (soil lerp to Multiply_12; alpha Clamp_21<=0.35) -> LandscapeLayerBlend_6 Sand_01",
+   "ground_normal_chain": "LinearInterpolate_65 -> Normalize_10 -> MF_NormalIntensity MFC_8 -> Normalize_0 -> LinearInterpolate_43 (soil) -> Normalize_9 -> LandscapeLayerBlend_7 Sand_01"
+  },
+  "iceland_calls_dead": {
+   "calls": [
+    "MaterialFunctionCall_2",
+    "MaterialFunctionCall_4",
+    "MaterialFunctionCall_6",
+    "MaterialFunctionCall_24",
+    "MaterialFunctionCall_26",
+    "MaterialFunctionCall_28",
+    "MaterialFunctionCall_32",
+    "MaterialFunctionCall_34",
+    "MaterialFunctionCall_36"
+   ],
+   "function": "/Game/Iceland_Environment/Materials/MaterialFunctions/MF_DistanceCellBlend",
+   "consumers": 0,
+   "pins_from_dump": [
+    "Texture",
+    "NearUVs",
+    "FarUVs",
+    "CellScale",
+    "PatternScale",
+    "IsNormalMap",
+    "DistanceBlend?",
+    "DistanceBlend"
+   ],
+   "inner_I_string_scan": "MF_TextureCellBomb: T_Voronoi_Perturbed_4k ID fetch + RotateAboutWorldAxis_cheap + 1 fetch; no DDX/DDY classes (UE 5.3 asset)",
+   "live_iceland": "MF_NormalIntensity only (MaterialFunctionCall_8/22/30/37)"
+  },
+  "v1_bypass": "v1 anchor ground_color=Multiply_5 is downstream of the stochastic chain; v1 bypassed Multiply_8 and LinearInterpolate_42/Clamp_21 only",
+  "noise_textures": {
+   "TEX_MW_Noise_msk": {
+    "source": "embedded PNG in uasset, 2048^2",
+    "RGB_mean": [
+     0.346,
+     0.356,
+     0.361
+    ],
+    "RGB_std": [
+     0.251,
+     0.255,
+     0.258
+    ],
+    "clipped_zero_pct": "~5",
+    "channel_corr": {
+     "RG": -0.04,
+     "RB": -0.1,
+     "GB": 0.13
+    },
+    "variance_share_period_ge_tile_over_4": 0.62,
+    "variance_share_period_tile_over_16_to_4": 0.34,
+    "dominant_period": "~tile/3",
+    "tileable": true
+   },
+   "T_MacroVariation": {
+    "source": "embedded zlib-chunked PNG, 2048^2, sRGB",
+    "mean": 0.7,
+    "std": 0.155,
+    "channel_corr": 0.98,
+    "variance_share_period_lt_tile_over_16": 0.88,
+    "note": "grainy, near-grayscale; not a smooth macro field"
+   },
+   "T_Perlin_Noise_M": {
+    "source": "embedded PNG, 2048^2",
+    "mean": 0.507,
+    "std": 0.155,
+    "grayscale": true,
+    "variance_share_tile_over_16_to_4": 0.5,
+    "note": "Epic-owned fallback if the MW licence fails"
+   }
+  },
+  "albedo_means_linear": {
+   "basis": "MW: 256 px runtime thumbnails (post asset adjustments: SandA brightness 0.75/sat 0.75; SandC 1.25/curve 2.0/sat 0.8; Dirt 0.5/curve 1.5; Stones 0.2/curve 0.8/sat 0.5). Gravel: StarterContent source PNG with B/R swap inferred (I); resident 2K copy assumed colour-equivalent (I).",
+   "gravel_base_I": [
+    0.298,
+    0.238,
+    0.166
+   ],
+   "SandA": [
+    0.3,
+    0.168,
+    0.107
+   ],
+   "SandC": [
+    0.233,
+    0.124,
+    0.075
+   ],
+   "Dirt": [
+    0.077,
+    0.062,
+    0.042
+   ],
+   "Stones": [
+    0.079,
+    0.072,
+    0.064
+   ]
+  }
+ },
+ "diagnosis_v1": [
+  {
+   "defect": "hard blotches / no fade",
+   "nodes": [
+    "PatchMaskB",
+    "PatchMaskC",
+    "PatchMaskSoil"
+   ],
+   "cause": "SmoothStep(PatchLo..PatchHi = 0.40-0.45..0.65-0.70) on noise mean 0.35 sigma 0.25: top ~25% only, narrow ramp"
+  },
+  {
+   "defect": "repetition lattice (A2 wide)",
+   "nodes": [
+    "MF_GeoCity_MacroNoise NoiseNear"
+   ],
+   "cause": "axis-aligned 37 m tile; 6-12 m blobs repeat every 37 m"
+  },
+  {
+   "defect": "repetition inside patches",
+   "nodes": [
+    "MF_GeoCity_DistanceBlend x3"
+   ],
+   "cause": "plain near/far single fetches, no cell offset; 5.12/4.7/4.0 m tiles"
+  },
+  {
+   "defect": "orange/salmon cast",
+   "nodes": [
+    "GroundB/C tints",
+    "Soil MW Dirt x2.3",
+    "MacroColor FarSaturation 1.2 x FarAmount 0.75"
+   ],
+   "cause": "warm MW sands (R/B 2.8-3.1 vs ~1.8) not value/hue matched; far saturation boost"
+  },
+  {
+   "defect": "bias / flattening",
+   "nodes": [
+    "ValueNoise",
+    "RoughnessVariation",
+    "SteepSlopeBlend jitter",
+    "NormalDistanceFade 0.7",
+    "SteepStonesMask"
+   ],
+   "cause": "noise centred at 0.5 (true 0.35): ValueNoise mean -0.29; NormalFade flattens mid distance; stones reuse the patch mask"
+  }
+ ],
+ "switch": {
+  "name": "GeoCity_S1_Enable",
+  "nodes": 3,
+  "default": false,
+  "roots_moved": [
+   "color",
+   "normal",
+   "roughness"
+  ],
+  "untouched_root": "LandscapeLayerBlend_0 (ao)",
+  "iran_base_mi": "never written; only the False permutation"
+ },
+ "mark_prefix": "GeoCity_GroundS1v2_20261006:",
+ "anchors_by_desc": {
+  "ground_full": [
+   "GeoCity_GroundRefinement_20261005:GroundSoilcolor",
+   "LinearInterpolate",
+   "LinearInterpolate_42",
+   ""
+  ],
+  "ground_full_normal": [
+   "GeoCity_GroundRefinement_20261005:GroundSoilUnitNormal",
+   "Normalize",
+   "Normalize_9",
+   ""
+  ],
+  "ground_near": [
+   "GeoCity_GroundStochastic_20261005:NearcolorCellBlend",
+   "LinearInterpolate",
+   "LinearInterpolate_48",
+   ""
+  ],
+  "ground_far": [
+   "GeoCity_GroundStochastic_20261005:FarcolorCellBlend",
+   "LinearInterpolate",
+   "LinearInterpolate_57",
+   ""
+  ],
+  "near_hash0": [
+   "GeoCity_GroundStochastic_20261005:NearHash0",
+   "Custom",
+   "Custom_0",
+   ""
+  ],
+  "near_hash1": [
+   "GeoCity_GroundStochastic_20261005:NearHash1",
+   "Custom",
+   "Custom_1",
+   ""
+  ],
+  "near_hash2": [
+   "GeoCity_GroundStochastic_20261005:NearHash2",
+   "Custom",
+   "Custom_2",
+   ""
+  ],
+  "near_hash3": [
+   "GeoCity_GroundStochastic_20261005:NearHash3",
+   "Custom",
+   "Custom_3",
+   ""
+  ],
+  "far_hash0": [
+   "GeoCity_GroundStochastic_20261005:FarHash0",
+   "Custom",
+   "Custom_4",
+   ""
+  ],
+  "far_hash1": [
+   "GeoCity_GroundStochastic_20261005:FarHash1",
+   "Custom",
+   "Custom_5",
+   ""
+  ],
+  "far_hash2": [
+   "GeoCity_GroundStochastic_20261005:FarHash2",
+   "Custom",
+   "Custom_6",
+   ""
+  ],
+  "far_hash3": [
+   "GeoCity_GroundStochastic_20261005:FarHash3",
+   "Custom",
+   "Custom_7",
+   ""
+  ],
+  "near_wx": [
+   "GeoCity_GroundStochastic_20261005:NearSmoothX",
+   "ComponentMask",
+   "ComponentMask_17",
+   ""
+  ],
+  "near_wy": [
+   "GeoCity_GroundStochastic_20261005:NearSmoothY",
+   "ComponentMask",
+   "ComponentMask_18",
+   ""
+  ],
+  "far_wx": [
+   "GeoCity_GroundStochastic_20261005:FarSmoothX",
+   "ComponentMask",
+   "ComponentMask_19",
+   ""
+  ],
+  "far_wy": [
+   "GeoCity_GroundStochastic_20261005:FarSmoothY",
+   "ComponentMask",
+   "ComponentMask_20",
+   ""
+  ],
+  "road_uv": [
+   "GeoCity_GroundRefinement_20261005:Dirt_PathNearPatternUV",
+   "Multiply",
+   "Multiply_17",
+   ""
+  ],
+  "pad_uv": [
+   "GeoCity_GroundRefinement_20261005:Sand_PathNearPatternUV",
+   "Multiply",
+   "Multiply_19",
+   ""
+  ],
+  "steep_far_scale": [
+   "GeoCity_GroundRevision_20261005:Sand_02FarScaleBound",
+   "Clamp",
+   "Clamp_9",
+   ""
+  ],
+  "road_far_scale": [
+   "GeoCity_GroundRevision_20261005:Dirt_PathFarScaleBound",
+   "Clamp",
+   "Clamp_12",
+   ""
+  ],
+  "pad_far_scale": [
+   "GeoCity_GroundRevision_20261005:Sand_PathFarScaleBound",
+   "Clamp",
+   "Clamp_16",
+   ""
+  ],
+  "steep_normal": [
+   "GeoCity_GroundRevision_20261005:Sand_02UnitNormal",
+   "Normalize",
+   "Normalize_3",
+   ""
+  ],
+  "road_normal": [
+   "GeoCity_GroundRevision_20261005:Dirt_PathUnitNormal",
+   "Normalize",
+   "Normalize_4",
+   ""
+  ],
+  "pad_normal": [
+   "GeoCity_GroundRevision_20261005:Sand_PathUnitNormal",
+   "Normalize",
+   "Normalize_5",
+   ""
+  ],
+  "distance_alpha": [
+   "GeoCity_GroundRevision_20261005:SharedDistanceAlpha",
+   "Saturate",
+   "Saturate_1",
+   ""
+  ],
+  "layer_coords": [
+   "GeoCity_GroundRevision_20261005:LandscapeXY",
+   "LandscapeLayerCoords",
+   "LandscapeLayerCoords_0",
+   ""
+  ],
+  "grid_cm": [
+   "GeoCity_GroundRevision_20261005:LandscapeGridCm100",
+   "Constant",
+   "Constant_0",
+   ""
+  ]
+ },
+ "anchors_by_parameter_name_active_set": {
+  "Sand_02_Albedo": "TextureObjectParameter_157",
+  "Dirt_Path_Albedo": "TextureObjectParameter_150",
+  "Sand_Path_Albedo": "TextureObjectParameter_161",
+  "Sand_02_Tint": "VectorParameter_179",
+  "Dirt_Path_Tint": "VectorParameter_174 (NOT the unreachable VectorParameter_69)",
+  "Sand_Path_Tint": "VectorParameter_183",
+  "Sand_02_TileCm": "VectorParameter_178",
+  "GeoCity_PatternScale": "ScalarParameter_8",
+  "Sand_01_Roughness": "ScalarParameter_105",
+  "Sand_02_Roughness": "ScalarParameter_106",
+  "Dirt_Path_Roughness": "ScalarParameter_103",
+  "Sand_Path_Roughness": "ScalarParameter_108"
+ },
+ "functions": {
+  "MF_GeoCity_CellSample": {
+   "status": "new",
+   "inputs": [
+    [
+     "Tex",
+     "T2D"
+    ],
+    [
+     "NearUV",
+     "V2"
+    ],
+    [
+     "FarScale",
+     "S"
+    ],
+    [
+     "NearHash0",
+     "V2"
+    ],
+    [
+     "NearHash1",
+     "V2"
+    ],
+    [
+     "NearHash2",
+     "V2"
+    ],
+    [
+     "NearHash3",
+     "V2"
+    ],
+    [
+     "FarHash0",
+     "V2"
+    ],
+    [
+     "FarHash1",
+     "V2"
+    ],
+    [
+     "FarHash2",
+     "V2"
+    ],
+    [
+     "FarHash3",
+     "V2"
+    ],
+    [
+     "NearWX",
+     "S"
+    ],
+    [
+     "NearWY",
+     "S"
+    ],
+    [
+     "FarWX",
+     "S"
+    ],
+    [
+     "FarWY",
+     "S"
+    ],
+    [
+     "DistanceAlpha",
+     "S"
+    ]
+   ],
+   "outputs": [
+    [
+     "Color",
+     "V3"
+    ],
+    [
+     "Near",
+     "V3"
+    ],
+    [
+     "Far",
+     "V3"
+    ]
+   ],
+   "samples": {
+    "COLOR": 8
+   },
+   "sample_rules": "Shared:Wrap, TMVM_DERIVATIVE, DDX(UVs)/DDY(UVs) connected",
+   "body": [
+    "dxn = DDX(NearUV); dyn = DDY(NearUV)",
+    "fs = max(FarScale, 1); farUV = NearUV / fs; dxf = dxn / fs; dyf = dyn / fs",
+    "n_i = SampleGrad(Tex, NearUV + NearHash_i, dxn, dyn), i = 0..3",
+    "Near = lerp(lerp(n0, n1, NearWX), lerp(n2, n3, NearWX), NearWY)",
+    "f_i = SampleGrad(Tex, farUV + FarHash_i, dxf, dyf), i = 0..3",
+    "Far = lerp(lerp(f0, f1, FarWX), lerp(f2, f3, FarWX), FarWY)",
+    "Color = lerp(Near, Far, sat(DistanceAlpha))"
+   ]
+  },
+  "MF_GeoCity_MacroField": {
+   "status": "new (replaces MF_GeoCity_MacroNoise)",
+   "inputs": [
+    [
+     "NoiseTex",
+     "T2D"
+    ],
+    [
+     "LandscapeUV",
+     "V2"
+    ],
+    [
+     "GridCm",
+     "S"
+    ],
+    [
+     "Tile1Cm",
+     "S"
+    ],
+    [
+     "Tile2Cm",
+     "S"
+    ],
+    [
+     "Tile3Cm",
+     "S"
+    ],
+    [
+     "NoiseMean",
+     "S"
+    ],
+    [
+     "NoiseInvStd",
+     "S"
+    ],
+    [
+     "HueGain",
+     "S"
+    ],
+    [
+     "VariantGain",
+     "S"
+    ]
+   ],
+   "outputs": [
+    [
+     "Value",
+     "S"
+    ],
+    [
+     "HueT",
+     "S"
+    ],
+    [
+     "VariantB",
+     "S"
+    ],
+    [
+     "VariantC",
+     "S"
+    ],
+    [
+     "Fine",
+     "S"
+    ]
+   ],
+   "samples": {
+    "MASKS": 3
+   },
+   "sample_rules": "Shared:Wrap, TMVM_NONE (continuous UVs)",
+   "body": [
+    "w = LandscapeUV * GridCm (cm)",
+    "uv1 = w / max(Tile1Cm,1) + (0.13, 0.71); uv2 = rot37(w) / max(Tile2Cm,1) + (0.37, 0.61); uv3 = rot71(w) / max(Tile3Cm,1) + (0.83, 0.29)",
+    "rotation via dot with constant rows: cos37 = 0.79864, sin37 = 0.60182; cos71 = 0.32557, sin71 = 0.94552",
+    "z1 = (R(uv1) - NoiseMean) * NoiseInvStd; z2 = (G(uv2) - NoiseMean) * NoiseInvStd; z3 = (B(uv3) - NoiseMean) * NoiseInvStd",
+    "Value = 0.25*z1 + 0.35*z2 + 0.40*z3",
+    "HueT = sat(0.5 + HueGain*(0.4*z2 + 0.6*z3))",
+    "VariantB = sat(0.5 + VariantGain*(0.6*z1 + 0.4*z2))",
+    "VariantC = sat(0.5 + VariantGain*(0.4*z1 - 0.6*z2))",
+    "Fine = z1"
+   ]
+  },
+  "MF_GeoCity_MacroColor": {
+   "status": "v1 name, new body",
+   "inputs": [
+    [
+     "Base",
+     "V3"
+    ],
+    [
+     "Value",
+     "S"
+    ],
+    [
+     "HueT",
+     "S"
+    ],
+    [
+     "HueA",
+     "V3"
+    ],
+    [
+     "HueB",
+     "V3"
+    ],
+    [
+     "HueAmount",
+     "S"
+    ],
+    [
+     "ValueAmount",
+     "S"
+    ],
+    [
+     "DistanceAlpha",
+     "S"
+    ],
+    [
+     "FarSaturation",
+     "S"
+    ],
+    [
+     "FarValue",
+     "S"
+    ],
+    [
+     "FarAmount",
+     "S"
+    ]
+   ],
+   "outputs": [
+    [
+     "Color",
+     "V3"
+    ]
+   ],
+   "samples": {},
+   "body": [
+    "tint = lerp(1, lerp(HueB, HueA, HueT), HueAmount)",
+    "value = 1 + ValueAmount * clamp(Value, -2, 2)",
+    "color = Base * tint * value",
+    "luma = dot(color, (0.2126, 0.7152, 0.0722)); far = lerp(luma, color, FarSaturation) * FarValue",
+    "Color = sat(lerp(color, far, sat(DistanceAlpha * FarAmount)))"
+   ]
+  },
+  "MF_GeoCity_SlopeBlend": {
+   "status": "v1 unchanged"
+  },
+  "MF_GeoCity_HeightBlend": {
+   "status": "v1 unchanged"
+  },
+  "removed": [
+   "MF_GeoCity_MacroNoise",
+   "MF_GeoCity_DistanceBlend"
+  ]
+ },
+ "branch": {
+  "macro_field": "MF_GeoCity_MacroField(NoiseTex=P.MacroNoise, LandscapeUV=layer_coords, GridCm=grid_cm, Tile1/2/3Cm=P.MacroTile1/2/3Cm, NoiseMean, NoiseInvStd, HueGain, VariantGain)",
+  "hash_bundle": "NearHash0-3=near_hash0-3, FarHash0-3=far_hash0-3, NearWX/WY=near_wx/wy, FarWX/WY=far_wx/wy, DistanceAlpha=distance_alpha (shared by all 5 CellSample calls)",
+  "uv_groundB": "layer_coords * (grid_cm / max(P.GroundB_TileCm, 1)) * GeoCity_PatternScale",
+  "uv_groundC": "layer_coords * (grid_cm / max(P.GroundC_TileCm, 1)) * GeoCity_PatternScale",
+  "uv_steep": "layer_coords * (grid_cm / max(mask_r(Sand_02_TileCm), 1)) * GeoCity_PatternScale",
+  "cell_calls": {
+   "GroundB": "CellSample(P.GroundB_Albedo, uv_groundB, P.GroundB_FarScale)",
+   "GroundC": "CellSample(P.GroundC_Albedo, uv_groundC, P.GroundC_FarScale)",
+   "Steep": "CellSample(Sand_02_Albedo, uv_steep, steep_far_scale)",
+   "Road": "CellSample(Dirt_Path_Albedo, road_uv, road_far_scale)",
+   "Pad": "CellSample(Sand_Path_Albedo, pad_uv, pad_far_scale)"
+  },
+  "ground_color": "lerp(lerp(ground_full, GroundB.Color*P.GroundB_Tint, VariantB*P.GroundB_Amount), GroundC.Color*P.GroundC_Tint, VariantC*P.GroundC_Amount)",
+  "ground_normal": "ground_full_normal",
+  "ground_rough": "Sand_01_Roughness",
+  "steep_alpha": "MF_GeoCity_SlopeBlend(SteepWeight=LayerSample Sand_02, NormalZ=VertexNormalWS.b, Noise=sat(0.5+0.25*Fine), Lo, Hi, Jitter, SlopeMix)",
+  "steep_color": "lerp(ground_color, Steep.Color*Sand_02_Tint, steep_alpha)",
+  "steep_normal": "normalize(lerp(ground_normal, steep_normal, steep_alpha))",
+  "steep_rough": "lerp(ground_rough, Sand_02_Roughness, steep_alpha)",
+  "road": {
+   "color": "Road.Color*Dirt_Path_Tint",
+   "normal": "road_normal",
+   "rough": "Dirt_Path_Roughness"
+  },
+  "pad": {
+   "color": "Pad.Color*Sand_Path_Tint",
+   "normal": "pad_normal",
+   "rough": "Sand_Path_Roughness"
+  },
+  "heights": {
+   "Sand_01": "HeightBlend(Near=ground_near, Far=ground_far, Weight=LayerSample Sand_01)",
+   "Sand_02": "HeightBlend(Steep.Near, Steep.Far)",
+   "Dirt_Path": "HeightBlend(Road.Near, Road.Far)",
+   "Sand_Path": "HeightBlend(Pad.Near, Pad.Far)",
+   "shared": "Bias/Contrast/Amount params; identical sources on all 3 LLBs"
+  },
+  "llbs": "3 new LandscapeLayerBlend (color/normal/roughness), layers Sand_01, Sand_02, Dirt_Path, Sand_Path, all LB_HEIGHT_BLEND, preview weight Sand_01=1",
+  "final_color": "sat(lerp(macro, banded, contact_band)) with macro = MacroColor(llb_color, Value, HueT, ...); ContactSoil target = Road.Color*Dirt_Path_Tint",
+  "final_normal": "normalize(lerp(llb_normal, (0,0,1), DistanceAlpha*NormalFade))",
+  "final_roughness": "clamp(llb_rough + RoughVar*clamp(Fine,-2,2)*0.5 + contact_band*ContactRough, 0, 1)",
+  "new_layer_samples": "4 LandscapeLayerSample 'Weight<Layer>' with the v2 MARK desc (never the GeoCity_LandscapeGrass prefix)",
+  "master_level_texture_samples": 0
+ },
+ "params": {
+  "GeoCity_S1_Enable": [
+   "switch",
+   false,
+   null
+  ],
+  "GeoCity_S1_MacroNoise": [
+   "texture",
+   "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+   "MASKS"
+  ],
+  "GeoCity_S1_GroundB_Albedo": [
+   "texture",
+   "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+   "COLOR"
+  ],
+  "GeoCity_S1_GroundC_Albedo": [
+   "texture",
+   "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+   "COLOR"
+  ],
+  "GeoCity_S1_HueA": [
+   "vector",
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   null
+  ],
+  "GeoCity_S1_HueB": [
+   "vector",
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   null
+  ],
+  "GeoCity_S1_GroundB_Tint": [
+   "vector",
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   null
+  ],
+  "GeoCity_S1_GroundC_Tint": [
+   "vector",
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   null
+  ],
+  "GeoCity_S1_MacroTile1Cm": [
+   "scalar",
+   12700.0,
+   null
+  ],
+  "GeoCity_S1_MacroTile2Cm": [
+   "scalar",
+   46300.0,
+   null
+  ],
+  "GeoCity_S1_MacroTile3Cm": [
+   "scalar",
+   153100.0,
+   null
+  ],
+  "GeoCity_S1_NoiseMean": [
+   "scalar",
+   0.35,
+   null
+  ],
+  "GeoCity_S1_NoiseInvStd": [
+   "scalar",
+   4.0,
+   null
+  ],
+  "GeoCity_S1_HueGain": [
+   "scalar",
+   0.35,
+   null
+  ],
+  "GeoCity_S1_VariantGain": [
+   "scalar",
+   0.35,
+   null
+  ],
+  "GeoCity_S1_HueAmount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ValueAmount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_FarSaturation": [
+   "scalar",
+   1.0,
+   null
+  ],
+  "GeoCity_S1_FarValue": [
+   "scalar",
+   1.0,
+   null
+  ],
+  "GeoCity_S1_FarAmount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_GroundB_TileCm": [
+   "scalar",
+   512.0,
+   null
+  ],
+  "GeoCity_S1_GroundB_FarScale": [
+   "scalar",
+   4.0,
+   null
+  ],
+  "GeoCity_S1_GroundB_Amount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_GroundC_TileCm": [
+   "scalar",
+   470.0,
+   null
+  ],
+  "GeoCity_S1_GroundC_FarScale": [
+   "scalar",
+   4.0,
+   null
+  ],
+  "GeoCity_S1_GroundC_Amount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_SteepLo": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_SteepHi": [
+   "scalar",
+   0.001,
+   null
+  ],
+  "GeoCity_S1_SteepJitter": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_SteepSlopeMix": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_HeightBias": [
+   "scalar",
+   0.85,
+   null
+  ],
+  "GeoCity_S1_HeightContrast": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_HeightAmount": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ContactRoad": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ContactPad": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ContactDarken": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ContactSoil": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_ContactRough": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_NormalFade": [
+   "scalar",
+   0.0,
+   null
+  ],
+  "GeoCity_S1_RoughVar": [
+   "scalar",
+   0.0,
+   null
+  ]
+ },
+ "params_removed_from_v1": [
+  "GeoCity_S1_GroundB_Normal",
+  "GeoCity_S1_GroundC_Normal",
+  "GeoCity_S1_Soil_Albedo",
+  "GeoCity_S1_VariationMask",
+  "GeoCity_S1_VariationNormal",
+  "GeoCity_S1_Soil_Tint",
+  "GeoCity_S1_MacroTileNearCm",
+  "GeoCity_S1_MacroTileFarCm",
+  "GeoCity_S1_GroundB_NormalStrength",
+  "GeoCity_S1_GroundC_NormalStrength",
+  "GeoCity_S1_Soil_TileCm",
+  "GeoCity_S1_Soil_FarScale",
+  "GeoCity_S1_Soil_Amount",
+  "GeoCity_S1_PatchLo",
+  "GeoCity_S1_PatchHi",
+  "GeoCity_S1_SteepStones",
+  "GeoCity_S1_VariationTileCm",
+  "GeoCity_S1_VariationAmount",
+  "GeoCity_S1_VariationNormalStrength"
+ ],
+ "params_added_vs_v1": [
+  "GeoCity_S1_MacroTile1Cm",
+  "GeoCity_S1_MacroTile2Cm",
+  "GeoCity_S1_MacroTile3Cm",
+  "GeoCity_S1_NoiseMean",
+  "GeoCity_S1_NoiseInvStd",
+  "GeoCity_S1_HueGain",
+  "GeoCity_S1_VariantGain"
+ ],
+ "neutrality": {
+  "iran": "switch False permutation only; base MI never written",
+  "gaza_true_at_master_defaults": "Ground == B0 (LinearInterpolate_42/Normalize_9 anchors, all amounts 0, HeightAmount 0 identity (I), NormalFade 0, RoughVar 0); Road/Pad/Steep same textures through CellSample instead of 2-tap/triplanar"
+ },
+ "grass_invariants": "unchanged: 1 LandscapeGrassOutput, 4 GeoCity_LandscapeGrass* nodes, Ground sample Sand_01, master coverage default 0.0 (LW:321-344)",
+ "fetch_budget_I": {
+  "basis": "graph-level texture-sample nodes reachable per painted-layer set; compiled stats must confirm",
+  "v1": {
+   "shared": 4,
+   "ground": 24,
+   "road": 9,
+   "pad": 8,
+   "steep": 12,
+   "ground_only": 28,
+   "all4": 57
+  },
+  "v2": {
+   "shared": 3,
+   "ground": 44,
+   "road_given_ground": 8,
+   "pad": 12,
+   "steep": 14,
+   "ground_only": 47,
+   "all4": 81,
+   "ground_breakdown": {
+    "existing_stochastic": 16,
+    "existing_macro_worldaligned": 3,
+    "shared_smooth_mask": 1,
+    "soil_color_2tap": 4,
+    "soil_normal_2tap": 4,
+    "GroundB_cell": 8,
+    "GroundC_cell": 8
+   }
+  },
+  "new_sampler_states": 0,
+  "unique_textures_gaza_permutation_I": 12,
+  "cost_option": "anchor Ground at Multiply_8/Normalize_0: -8 fetches, loses only the <=10% soil lerp"
+ },
+ "child_values": {
+  "GazaShujaiya": {
+   "textures": {
+    "GeoCity_S1_MacroNoise": "/Game/MWLandscapeAutoMaterial/Textures/FX/TEX_MW_Noise_msk",
+    "GeoCity_S1_GroundB_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandA_col",
+    "GeoCity_S1_GroundC_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_SandC_col",
+    "Dirt_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_col",
+    "Dirt_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Dirt_nrm",
+    "Sand_Path_Albedo": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_col",
+    "Sand_Path_Normal": "/Game/MWLandscapeAutoMaterial/Textures/Ground/TEX_MWAM_Stones_nrm"
+   },
+   "vectors": {
+    "GeoCity_S1_HueA": [
+     1.025,
+     1.0,
+     0.975,
+     1.0
+    ],
+    "GeoCity_S1_HueB": [
+     0.975,
+     1.0,
+     1.025,
+     1.0
+    ],
+    "GeoCity_S1_GroundB_Tint": [
+     1.02,
+     1.42,
+     1.49,
+     1.0
+    ],
+    "GeoCity_S1_GroundC_Tint": [
+     1.25,
+     1.92,
+     2.28,
+     1.0
+    ],
+    "Dirt_Path_Tint": [
+     3.0,
+     3.0,
+     3.0,
+     1.0
+    ],
+    "Dirt_Path_TileCm": [
+     400.0,
+     400.0,
+     400.0,
+     1.0
+    ],
+    "Sand_Path_Tint": [
+     2.9,
+     2.85,
+     2.75,
+     1.0
+    ],
+    "Sand_Path_TileCm": [
+     300.0,
+     300.0,
+     300.0,
+     1.0
+    ]
+   },
+   "scalars": {
+    "GeoCity_S1_MacroTile1Cm": 12700.0,
+    "GeoCity_S1_MacroTile2Cm": 46300.0,
+    "GeoCity_S1_MacroTile3Cm": 153100.0,
+    "GeoCity_S1_NoiseMean": 0.35,
+    "GeoCity_S1_NoiseInvStd": 4.0,
+    "GeoCity_S1_HueGain": 0.35,
+    "GeoCity_S1_VariantGain": 0.35,
+    "GeoCity_S1_HueAmount": 1.0,
+    "GeoCity_S1_ValueAmount": 0.07,
+    "GeoCity_S1_FarSaturation": 1.0,
+    "GeoCity_S1_FarValue": 1.0,
+    "GeoCity_S1_FarAmount": 0.0,
+    "GeoCity_S1_GroundB_TileCm": 512.0,
+    "GeoCity_S1_GroundB_FarScale": 4.0,
+    "GeoCity_S1_GroundB_Amount": 0.45,
+    "GeoCity_S1_GroundC_TileCm": 470.0,
+    "GeoCity_S1_GroundC_FarScale": 4.0,
+    "GeoCity_S1_GroundC_Amount": 0.35,
+    "GeoCity_S1_SteepLo": 0.25,
+    "GeoCity_S1_SteepHi": 0.45,
+    "GeoCity_S1_SteepJitter": 0.1,
+    "GeoCity_S1_SteepSlopeMix": 0.5,
+    "GeoCity_S1_HeightBias": 0.85,
+    "GeoCity_S1_HeightContrast": 2.0,
+    "GeoCity_S1_HeightAmount": 0.6,
+    "GeoCity_S1_ContactRoad": 0.0,
+    "GeoCity_S1_ContactPad": 0.0,
+    "GeoCity_S1_ContactDarken": 0.0,
+    "GeoCity_S1_ContactSoil": 0.0,
+    "GeoCity_S1_ContactRough": 0.0,
+    "GeoCity_S1_NormalFade": 0.5,
+    "GeoCity_S1_RoughVar": 0.03
+   },
+   "grass_coverage": 0.0,
+   "unchanged_existing": "Sand_01_* (albedo/normal pinned, tile 200, FarScale 2), GeoCity_CellScale 1, GeoCity_PatternScale 1, GeoCity_DistanceStartCm 1200 / RangeCm 6000, Ground_SoilBlendStrength 0.1, Ground_MacroTileCm 3000, GeoCity_MacroAmount 0.08",
+   "derivations_I": {
+    "value": "sigma(Value) = 0.587 -> ValueAmount 0.07 = +-8% at +-2 sigma",
+    "hue": "symmetric pair: HueT 0.5 = (1,1,1), no global warm bias; luminance 1.0035/0.9965; R/B x1.051 / x0.951 at the extremes, about +-2.5% at +-1 sigma of HueT",
+    "variants": "mean coverage 0.5*Amount = 22% / 18%",
+    "tints": "target = gravel_lin x offset (B warm 1.03,1,0.96; C cool 0.98,1,1.03) / thumbnail mean; road luminance 0.78x, pad 0.85x ground (0.2456)"
+   }
+  },
+  "GazaRimal": "out of scope here; start from the Shujaiya values after acceptance, in its own session (tune + child_save)"
+ },
+ "tune_rules": {
+  "tint_correction": "BaseColor buffer frame: mean of B-dominant, C-dominant, road and pad patches vs open gravel; tint *= target/measured (one tune)",
+  "too_busy": "lower ValueAmount to 0.05 or VariantGain to 0.25",
+  "too_flat_far": "raise ValueAmount to 0.09, or FarAmount 0.3 with FarValue 0.96",
+  "cells_visible": "none expected (B0 shows none); if seams appear check the DDX/DDY wiring, not values",
+  "hue_target": "chroma drift target +-4-6% at extremes; scale HueA/HueB offsets around 1.0 symmetrically"
+ },
+ "checks": [
+  "offline: mock selftest with DDX(UVs)/DDY(UVs) pins; regenerate expectations",
+  "apply: zero old-row changes; all additions carry the v2 MARK; 3 switch nodes; Grass contract equal; all new fetches Shared:Wrap; 40 CellSample fetches TMVM_DERIVATIVE with DDX/DDY connected; compile errors [] for forced-True and default-False",
+  "I0 (switch True, no value overrides) vs B0, same cameras: compare BaseColor buffer visualization, or Lit within a noise floor measured from two B0-condition captures (exposure not locked, Lumen/TAA vary); hold GrassCoverage equal to the B0 state or mask grass pixels",
+  "A3 (t001 values): block-mean luminance sigma 3-6% middle/wide; no 2-D autocorrelation peak at 20-60 m; chroma R/B spread within +-6%",
+  "child statistics_gate passes; record compiled num_pixel_texture_samples vs base"
+ ],
+ "script_changes": {
+  "approach": "new file s1v2_material_edit.py copied from s1_material_edit.py sha 5c48daaf",
+  "constants": "MARK/OWNER_TAG GeoCity_GroundS1v2_20261006; schemas *.v2; RECEIPTS S1v2/receipts; latches S1V2_APPLY_ONCE, S1V2_TUNE_ONCE_*; S1_SCOPE per root",
+  "ANCHORS": "replace with anchors_by_desc above",
+  "resolve_anchors": "add anchors_by_parameter_name_active_set",
+  "PARAMS": "replace with params above; delete VARIATION and its plan_children gate; keep the CONTACT gate",
+  "Builder": "add ddx/ddy (pin 'Value'); sample_grad (set TMVM_DERIVATIVE, then link 'DDX(UVs)', 'DDY(UVs)')",
+  "FUNCTIONS": "add body_cell_sample, body_macro_field; new body_macro_color; delete body_macro_noise, body_distance_blend; check_function allows DDX/DDY and asserts derivative wiring",
+  "build_branch": "rewrite per branch above",
+  "apply_planned": "master_samples []; calls CellSample x5, MacroField x1, MacroColor x1, SlopeBlend x1, HeightBlend x4",
+  "offline_verify_pins": "s1_material_edit_offline.py mock pins; regenerate S1_EDIT_EXPECTATIONS; s1_verify.py path; SCRIPT_PINS; activation script_sha256"
+ },
+ "blockers": [
+  "receipts/S1_APPLY_ONCE.json exists (v1 latch) -> new latch and receipts folder",
+  "PID 23156 must be closed with Do-Not-Save by root before v2 (baseline gate needs graph 605c55d0)",
+  "re-check Before/S1B_20261005T202836Z backup pins",
+  "MW licence unverified (Aviv)",
+  "root activation + OWNER lease for the v2 scope"
+ ],
+ "risks": [
+  "~+19 fetches Ground-only vs v1 (unprofiled)",
+  "albedo-only variants over the gravel normal at close range",
+  "tints inferred (thumbnails +-30%, source channel order inferred)",
+  "Steep XY stretch above 40 deg",
+  "LB_HEIGHT_BLEND identity at Amount 0 inferred",
+  "DDX(UVs) pin exposure via Python unproven",
+  "A2 images are not a controlled comparison",
+  "deviation from brief (a): Steep/Road/Pad normals not routed through CellSample (see deviation_from_brief_a)"
+ ],
+ "fallback_noise": {
+  "texture": "/Game/StarterContent/Textures/T_Perlin_Noise_M",
+  "NoiseMean": 0.51,
+  "NoiseInvStd": 6.5,
+  "note": "grayscale: R for all octaves (rotation/offset decorrelate); needs the texture_fit allowlist widened"
+ },
+ "out_of_scope": [
+  "contact at building bases/curbs (defect 5)",
+  "binary 1 m RoadBed/Pad edges (S3 HDA feather)",
+  "RVT",
+  "Rimal step walls/slivers",
+  "faceted hill",
+  "grass",
+  "exposure/lighting"
+ ],
+ "deviation_from_brief_a": {
+  "what": "only albedos are routed through CellSample; Steep normal stays triplanar (Normalize_3), Road/Pad normals stay on the existing fixed-offset 2-tap (Normalize_4/5); Ground B/C variants are albedo-only over the Ground normal (Normalize_9)",
+  "option": "MF_GeoCity_CellSampleNormal (same body, NORMAL sampler) for Steep/Road/Pad: +8 fetches each, +24 total",
+  "default": "off, for cost"
+ }
+}

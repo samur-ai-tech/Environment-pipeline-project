@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 817,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/FC_Coastal_Landscape/Landscape/M_Master_CL_Landscape"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.025,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/Landscape\",\"/Engine/EngineMaterials/DefaultDiffuse\",\"/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture\",\"/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Engine/EngineMaterials/WeightMapArrayPlaceholderTexture\",\"/Engine/EngineMaterials/WeightMapPlaceholderTexture\",\"/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals\",\"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_StandardWithDisplacement\",\"/Engine/Functions/Engine_MaterialFunctions02/Texturing/HeightLerp\",\"/DatasmithContent/Materials/Water/MaterialFunctions/MF_NormalStrength_WS\",\"/Game/FC_Coastal_Landscape/Landscape/MF_BaseGrass\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground_1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Farmland1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Grass\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Sand1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_DryGrass_Ground_2\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Sand2\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Slope_Big_Rocks1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_CliffMask_SMRA\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Slope_Small_rocks\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Soil1\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Soil2\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_TreeGround\",\"/Game/FC_Coastal_Landscape/Landscape/RVT_CaliCoast\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 817,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/Landscape\",\"/Engine/EngineMaterials/DefaultDiffuse\",\"/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture\",\"/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient\",\"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast\",\"/Engine/EngineMaterials/WeightMapArrayPlaceholderTexture\",\"/Engine/EngineMaterials/WeightMapPlaceholderTexture\",\"/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals\",\"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_StandardWithDisplacement\",\"/Engine/Functions/Engine_MaterialFunctions02/Texturing/HeightLerp\",\"/DatasmithContent/Materials/Water/MaterialFunctions/MF_NormalStrength_WS\",\"/Game/FC_Coastal_Landscape/Landscape/MF_BaseGrass\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_BaseGrass_Ground_1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_UV_OffsetMask\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_03_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Grass_05_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_NormalStrength\",\"/Game/FC_Coastal_Landscape/Landscape/MaterialFunctions/MF_ReconstructZ\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Farmland1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_SoilGround_02_BC\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Grass\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Sand1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/MaskTextures/T_DryGrass_Ground_2\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Sand_1_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Sand2\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Slope_Big_Rocks1\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Cliff_1_4K_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_CliffMask_SMRA\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Slope_Small_rocks\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_BCD\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_Stone_01_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Soil1\",\"/Game/FC_Coastal_Landscape/Landscape/MF_Soil2\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_BC\",\"/Game/FC_Coastal_Landscape/Landscape/LandscapeTextures/T_StoneGround_NAOR\",\"/Game/FC_Coastal_Landscape/Landscape/MF_TreeGround\",\"/Game/FC_Coastal_Landscape/Landscape/RVT_CaliCoast\"]}"
+    }
+   ]
+  }
+ }
+}

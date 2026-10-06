@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2709,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_Lamplight"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.017,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"169x5x25\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Lamplight.fbx\\\", \\\"Timestamp\\\" : \\\"1518453539\\\", \\\"FileMD5\\\" : \\\"f7251680d445fc85100a2b29493cffe0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"3\",\"Materials\":\"1\",\"ResourceSize\":\"12\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"4\",\"UVChannels\":\"2\",\"Vertices\":\"6\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2709,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"169x5x25\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/Lamplight.fbx\\\", \\\"Timestamp\\\" : \\\"1518453539\\\", \\\"FileMD5\\\" : \\\"f7251680d445fc85100a2b29493cffe0\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"3\",\"Materials\":\"1\",\"ResourceSize\":\"12\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"4\",\"UVChannels\":\"2\",\"Vertices\":\"6\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 16,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_actor_bounds",
+    "arguments": {
+     "actor": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_1"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.actor.ActorTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.032,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-4257.8779296875,\"y\":-5068.2783203125,\"z\":-46.678928087334498},\"max\":{\"x\":58788.3046875,\"y\":61848.1640625,\"z\":46033.096694877582},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 16,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-4257.8779296875,\"y\":-5068.2783203125,\"z\":-46.678928087334498},\"max\":{\"x\":58788.3046875,\"y\":61848.1640625,\"z\":46033.096694877582},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

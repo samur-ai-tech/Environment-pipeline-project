@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 1990,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_dependencies",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Light_01a"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.026,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_Shiny\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Emissive\",\"/Game/ProceduralBuildingGenerator/Materials/Props/M_Wires02\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 1990,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Script/NavigationSystem\",\"/Game/ProceduralBuildingGenerator/Materials/Building/MI_Slums_Metalwork_Shiny\",\"/Game/ProceduralBuildingGenerator/Materials/Building/M_Emissive\",\"/Game/ProceduralBuildingGenerator/Materials/Props/M_Wires02\"]}"
+    }
+   ]
+  }
+ }
+}

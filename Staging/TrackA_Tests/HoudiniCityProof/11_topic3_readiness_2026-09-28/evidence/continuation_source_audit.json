@@ -1,0 +1,133 @@
+{
+  "capturedAt": "2026-09-28T15:40:51.2973501+03:00",
+  "method": "Offline file/source inspection only; no Unreal or HAPI invocation",
+  "sources": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\UnrealDataTableTranslator.cpp",
+      "sha256": "5619CCF65130B80B8662843CB1F9886AE6D9086BF0A93270B6B0A4706A854173",
+      "lines": "151-161; 201-253; 284-375; 513-539; 790-811",
+      "purpose": "DataTable point fields, numbered column names and primitive type handling"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniInputTranslator.cpp",
+      "sha256": "9BFC0675643E28C03EC3F9C3A23586E093DAEF3C0B5F4B7412E4387BDFB6E985",
+      "lines": "615-650; 1714-1726; 5321-5580; 5703-5743",
+      "purpose": "Input label defaults, references and DataTable dispatch"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniInstanceTranslator.cpp",
+      "sha256": "A49230212DA722F914739F00EF035F37F2B9EB0001B5A88445DA8AFFE672E0A8",
+      "lines": "626-638; 1920-1999",
+      "purpose": "Missing-reference fallback and instance custom-data translation"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniEngineBakeUtils.cpp",
+      "sha256": "69420483395915308493D0D6D18790B8AB9702765C72B311CCAC6539681F4099",
+      "lines": "1881-1980",
+      "purpose": "ISM/HISM component duplication in Actor bake"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniLandscapeUtils.cpp",
+      "sha256": "8778BC2DEE90990CC057D43FC75DFBCC5ABD0421847D413C16477118518A166D",
+      "lines": "196-220; 630-698; 928-1025; 1294-1342; 1655-1676",
+      "purpose": "Compiled Layer Info branch, material layer discovery and height encoding"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniLandscapeTranslator.cpp",
+      "sha256": "3BACD047B4F682EF3BAF529E1235180E730555434DD0A0E29101AB71C2208405",
+      "lines": "490-491; 530-551",
+      "purpose": "LayerInfo attribute read and HeightRange values"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniBakeLandscape.cpp",
+      "sha256": "4E67B8F67BEDD856455BF54310F707498FD0A4D33B1FDC9F88AE7D9B7BB1F6D1",
+      "lines": "401-427; 518-529",
+      "purpose": "Cook-prefix matching for Layer Info baking"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniPackageParams.cpp",
+      "sha256": "A0070B9EB8E0CF8560621AFCF6AC92303E28C49C86D24D31F15BF00D85483A5E",
+      "lines": "121-148",
+      "purpose": "Cook root adds HDA/GUID subfolders"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniOutputTranslator.cpp",
+      "sha256": "8F1B22AF6BDEF7B0BDEA5A64D9FC57C5913D9DB7F290651C4CAAAEDF220B9DB4",
+      "lines": "145-160; 630-645",
+      "purpose": "Per-actor folders passed to Landscape"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngineRuntime\\Private\\HoudiniRuntimeSettings.cpp",
+      "sha256": "FA391BA38D7F2A0E0B49F280EA5DD0E234E1F1ED0009B6E747686808CAF68DD6",
+      "lines": "104-105",
+      "purpose": "Source defaults; effective live values unmeasured"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\HoudiniEngine\\Source\\HoudiniEngine\\Private\\HoudiniEnginePrivatePCH.h",
+      "sha256": "F4E1432AED448489C75680B1736C73D78D95FD97A4BBD6DF0943E0C15BC1E141",
+      "lines": "125-126; 210-211; 311-313",
+      "purpose": "Exact native attribute constants"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\InstancedStaticMeshComponent.h",
+      "sha256": "1CB4301E0373AC7CFD407652A4F3E404AF514A8B3AC6C1DDAC84A93AD1B57568",
+      "lines": "40-45; 166-194",
+      "purpose": "Instance transform/custom-data editable arrays with SkipSerialization"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\GameFramework\\Actor.h",
+      "sha256": "2EE1EFFB7AB4AC4CF65CF6CAA90A27CEA45361FEEFAAE0CB673F7265E00BC5C9",
+      "lines": "659-664",
+      "purpose": "Actor collision flag is not EditAnywhere"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\PrimitiveComponent.h",
+      "sha256": "814841DBC22D80D3EF9D73D87DCBBF8B1E4905BB0FD5B6A34A8C4D64509B939E",
+      "lines": "1443-1445",
+      "purpose": "BodyInstance editor visibility"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\PhysicsEngine\\BodyInstance.h",
+      "sha256": "14F98A03B9A70C5BD117D1B76EC190006D7AE5282F9748724830FE2DCB4EEB8D",
+      "lines": "381-392",
+      "purpose": "Component CollisionEnabled editor visibility"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\ToolsetRegistry\\Source\\ToolsetRegistry\\Public\\ToolsetRegistry\\ToolsetLibrary.h",
+      "sha256": "C8158B17900256A105FC6D3ADBDA641532DBA7399E027FD2D73E1E6B014CFDB6",
+      "lines": "31-60; 63-82",
+      "purpose": "Read API declaration and partial-write semantics; implementation not present"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\EditorToolset\\Content\\Python\\editor_toolset\\toolsets\\object.py",
+      "sha256": "91B7085A5D029D83A020AB8C170ACCE0B1C7F938976A266DAA7C23F36DA8126A",
+      "lines": "49-94",
+      "purpose": "Registered generic property tools"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\EditorToolset\\Content\\Python\\editor_toolset\\toolsets\\data_table.py",
+      "sha256": "286087BFD3D9B14BF8C5526F4A585D519BCC606F1EE3E675F3F5FC927A4D007B",
+      "lines": "16-108; 174-202",
+      "purpose": "Native table schema/list/row read and create/import"
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Plugins\\Experimental\\Toolsets\\EditorToolset\\Content\\Python\\editor_toolset\\toolsets\\scene.py",
+      "sha256": "FA6EE2280CAF92B36F3AFD54912FD339203514E2BA2E71E410B7CACAFC301038",
+      "lines": "293-308; 543-557",
+      "purpose": "Registered trace result drops hit identity and ignore argument"
+    }
+  ],
+  "iniLandscapeOverrides": [],
+  "liveLandscapeSettings": "NOT_CAPTURED in latest 070 CDO response",
+  "sourceDerivedNotLiveProven": [
+    "DataTable round-trip mapping",
+    "custom-data instance token preservation/readback",
+    "Layer Info generated under cook root on UE5.8 branch",
+    "HeightRange settings discrepancy"
+  ],
+  "vendorDocs": [
+    "https://www.sidefx.com/docs/houdini/unreal/inputs.html",
+    "https://www.sidefx.com/docs/houdini/unreal/instancing.html",
+    "https://www.sidefx.com/docs/houdini/unreal/landscape/basics.html"
+  ]
+}

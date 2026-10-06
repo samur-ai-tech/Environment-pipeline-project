@@ -1,0 +1,906 @@
+{
+  "task": "BANK-ASTRA-001",
+  "created_utc": "2026-09-28T23:22:41.649600+00:00",
+  "scope": "operator preparation and bounded native inspection sidecar; canonical manager-owned",
+  "lease": "RELEASED_BY_MANAGER",
+  "canonical_catalog_owner": "01a0e7e2-2aac-7a63-a913-e58b1f3714a2",
+  "rows": [
+    {
+      "priority": 1,
+      "short_code": "H0013",
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "variant_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "source_id_renamed": false,
+      "unreal_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+      "source_package_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0013_Building_04.uasset",
+      "package_sha256_at_prep": "e5bb8f2ca2cf7ac473fa479251725933123a31f9f9d41d775eb11e675a039da6",
+      "native_class": "StaticMesh",
+      "class_path_state": "PASS prior exact native preview; file/hash checked now",
+      "functional_role_proposed": "tall_residential_whole_building",
+      "representation_proposed": "whole_instance",
+      "allowed_zones": null,
+      "proposed_allowed_zones": [
+        "residential_parcel_after_actual_mesh_envelope_and_contact_validation"
+      ],
+      "zone_state": "UNKNOWN; proposal only, not an approved HDA enum or area policy",
+      "condition_observed": "weathered pale facade; broad gridded platform is preview scenery, not proven mesh base",
+      "purpose": "Contract-named whole building; first building measurement candidate",
+      "material_state": "No default/checkerboard appearance in inspected views; four loaded materials. Close surface, seam and underside QA incomplete.",
+      "documented_import_metrics": {
+        "group": "Buildings",
+        "asset": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04",
+        "size_cm_xyz": [
+          2889.69,
+          2130.93,
+          4868.35
+        ],
+        "bounds_min": {
+          "x": -1273.8673095703125,
+          "y": -1081.9207763671875,
+          "z": -0.3545195758342743
+        },
+        "bounds_max": {
+          "x": 1615.8203125,
+          "y": 1049.0091552734375,
+          "z": 4868
+        },
+        "pivot_offset_to_bounds_centre_cm": [
+          -170.98,
+          16.46,
+          -2433.82
+        ],
+        "pivot_offset_to_bottom_centre_cm": [
+          -170.98,
+          16.46,
+          0.35
+        ],
+        "material_slot_count": 4,
+        "material_slots": [
+          "Material_Building_04_1011",
+          "Material_Building_04_1001",
+          "Material_Building_04_1031",
+          "Material_Building_04_1021"
+        ],
+        "triangles_lod0": 44241,
+        "vertices_lod0": 45927,
+        "lod_count": 1,
+        "nanite": false
+      },
+      "native_receipt_metrics": {
+        "triangles_lod0": 44241,
+        "vertices_lod0": 45927,
+        "uv_channels": 2,
+        "material_slots": 4,
+        "collision_primitives": 1,
+        "approx_size_ui": "2889 x 2130 x 4868; overlay units unlabeled",
+        "approx_size_units": "not explicitly labelled; no conversion to catalog cm fields",
+        "nanite_ui": "unchecked"
+      },
+      "material_dependencies": [
+        {
+          "slot_label_documented": "Material_Building_04_1011",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1011",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "407a0a0ec186e259fcb053ed60945189bea93d69c1b051f566209ad0f37bf044",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_lbedoTransparency_c286d2b07cbd",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M02_Normal_ba61051ad683"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Material_Building_04_1001",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1001",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "092c2346a55de1716e7ba21aa7e319018c40bc41a6fe4c2b03a5c93529d7c43e",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_lbedoTransparency_feb997124e3f",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M01_Normal_c3ebb6845660"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Material_Building_04_1031",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1031",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "6a89b360444c03ff3c9f827b91e23e8e53492b3bd113874c10f17e021f6d0834",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_lbedoTransparency_e0ebfc1dbb4b",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M04_Normal_b6e59e496bae"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Material_Building_04_1021",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Material_Building_04_1021",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "c46417038cefd3b1aa1b0c5bba51027a3782bd86acce9ad975130aad56eac020",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_lbedoTransparency_e52816c231d7",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B04_M03_Normal_a4f020a17487"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        }
+      ],
+      "contact_offset_cm": null,
+      "forward_axis": null,
+      "up_axis": null,
+      "scale_min": null,
+      "scale_max": null,
+      "live_local_bounds_cm": null,
+      "missing_measurement_rule": "Import bounds and pivot-to-bottom-centre arithmetic are historical metadata. They do not locate physical support points or establish the signed contact transform. Read-only UI may leave exact numeric bounds/contact unresolved; no placement or code to force a result.",
+      "rights_state": "owner_confirmed_for_technical_qualification",
+      "rights_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\LICENSE_PROVENANCE.md / Owner confirmation 2026-09-27",
+      "rights_limit": "Exact 32 Bank_ME_v3 assets only; export/redistribution/attribution terms not independently established. No extension to Palms_Pack_01 or other packs.",
+      "gates": {
+        "exact_asset_load": "PASS_MEASURED_2026_09_29",
+        "surface_role_quality": "UNKNOWN_PARTIAL_PREVIEW",
+        "rights_technical_scope": "PASS_DOCUMENTED_OWNER_CONFIRMATION",
+        "local_period_role": "UNKNOWN",
+        "physical_contact_front_up_scale": "UNKNOWN",
+        "collision_behavior_runtime": "UNKNOWN",
+        "houdini_connection": "NOT_RUN",
+        "generation_persistence": "NOT_RUN",
+        "role_qualification": "NOT_RUN"
+      },
+      "technical_eligible": false,
+      "qualified": false,
+      "connected": false,
+      "generated": false,
+      "visually_verified_scene": false,
+      "accepted": false,
+      "generation_enabled": false,
+      "prior_observation": "Light gray taller apartment tower, stepped footprint, repeated blue-gray windows, vertical recesses, pipes/AC, roof rooms and water tank. Back orthographic is a blank plaster wall. Integral rectangular paving/base. No checkerboard or opaque foliage-style cards seen.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\05_H0013_whole__1.jpg",
+          "sha256": "b76c63c6ac911ba74d05b9b30780182a4084d8554b35e8af3155cee4c16f8a13",
+          "scope": "Run02_direct prior native preview, not new live execution"
+        },
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\08_H0013_back_framed__1.jpg",
+          "sha256": "cd75c1be3302741de20d68771047162e4d5b92d2b45bafb602085a7a0f8ab7c6",
+          "scope": "Run02_direct prior native preview, not new live execution"
+        }
+      ],
+      "live_inspection_2026_09_29": {
+        "scope": "mesh_preview_partial",
+        "evidence_labels": [
+          "04_H0013_facade_close",
+          "05_H0013_whole",
+          "06_H0013_top_footprint",
+          "07_H0013_opposite",
+          "08_H0013_bounds_UI_limit",
+          "09_H0013_collision_primitives",
+          "10_H0013_collision_complexity",
+          "11_H0013_simple_collision",
+          "12_H0013_collision_top",
+          "13_H0013_available_LOD",
+          "28_H0013_section0_isolated",
+          "29_H0013_section1_floor_correction"
+        ],
+        "metrics": {
+          "triangles_lod0": 44241,
+          "vertices_lod0": 45927,
+          "uv_channels": 2,
+          "material_slots": 4,
+          "collision_primitives": 1,
+          "collision_shape": "one convex element",
+          "collision_preset": "BlockAll",
+          "collision_complexity": "Project Default",
+          "nanite_checked": false,
+          "lod_menu_choices": [
+            "Auto",
+            "LOD0"
+          ]
+        },
+        "source_mesh_modified": false,
+        "signed_contact_front_up_scale_verified": false,
+        "runtime_collision_verified": false,
+        "performance_scene_run": false,
+        "unity_test_run": false,
+        "houdini_test_run": false,
+        "preview_floor_erratum": "WITHDRAWN: broad gridded platform is preview Floor_Mesh/M_Grid scenery, demonstrated by separate H0013 section isolations28/29. Integral broad paving/base and collision missing that paving are not established. Exact mesh footprint/contact remain UNKNOWN."
+      },
+      "prior_observation_erratum": "WITHDRAWN: broad gridded platform is preview Floor_Mesh/M_Grid scenery, demonstrated by separate H0013 section isolations28/29. Integral broad paving/base and collision missing that paving are not established. Exact mesh footprint/contact remain UNKNOWN."
+    },
+    {
+      "priority": 2,
+      "short_code": "H0015",
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0015_Building_02",
+      "variant_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0015_Building_02",
+      "source_id_renamed": false,
+      "unreal_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0015_Building_02.SM_H0015_Building_02",
+      "source_package_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0015_Building_02.uasset",
+      "package_sha256_at_prep": "106253b92e6b9c4c7a3cbbca9ee6baca337449d8957d3e8cbfef5779096655d2",
+      "native_class": "StaticMesh",
+      "class_path_state": "PASS prior exact native preview; file/hash checked now",
+      "functional_role_proposed": "residential_over_shops_whole_building",
+      "representation_proposed": "whole_instance",
+      "allowed_zones": null,
+      "proposed_allowed_zones": [
+        "mixed_use_parcel_street_frontage"
+      ],
+      "zone_state": "UNKNOWN; proposal only, not an approved HDA enum or area policy",
+      "condition_observed": "weathered; blue glazing mottled",
+      "purpose": "Proposed alternative only; no approved substitution for a contract-named asset",
+      "material_state": "Textured facade present; blue glazing has conspicuous mottling. Compare close view before approval.",
+      "documented_import_metrics": {
+        "group": "Buildings",
+        "asset": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0015_Building_02",
+        "size_cm_xyz": [
+          2034.02,
+          1170.84,
+          2417.33
+        ],
+        "bounds_min": {
+          "x": -1299.954345703125,
+          "y": -563.1273193359375,
+          "z": 0.09817590564489365
+        },
+        "bounds_max": {
+          "x": 734.0643920898438,
+          "y": 607.7086181640625,
+          "z": 2417.42529296875
+        },
+        "pivot_offset_to_bounds_centre_cm": [
+          282.94,
+          -22.29,
+          -1208.76
+        ],
+        "pivot_offset_to_bottom_centre_cm": [
+          282.94,
+          -22.29,
+          -0.1
+        ],
+        "material_slot_count": 4,
+        "material_slots": [
+          "Building_02_1003",
+          "Building_02_1004",
+          "Building_02_1001",
+          "Building_02_1002"
+        ],
+        "triangles_lod0": 201057,
+        "vertices_lod0": 211808,
+        "lod_count": 1,
+        "nanite": false
+      },
+      "native_receipt_metrics": {
+        "triangles_lod0": 201057,
+        "vertices_lod0": 211808,
+        "uv_channels": 2,
+        "material_slots": 4,
+        "collision_primitives": 1,
+        "approx_size_ui": "2,034 x 1,170 x 2,417",
+        "approx_size_units": "not explicitly labelled; no conversion to catalog cm fields",
+        "nanite_ui": "unchecked"
+      },
+      "material_dependencies": [
+        {
+          "slot_label_documented": "Building_02_1003",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Building_02_1003",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "aa7fe6f1f532ffecad0d45a41a49f590a77358325d7bce804a20fb71b0615ad1",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M03_lbedoTransparency_07d4f4f3c8ee",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M03_Normal_34b9d42e6629"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Building_02_1004",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Building_02_1004",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "32b0d611ed2b1650ff3e1cd57a74665e3e81991b7b8e1dc703a7e2b9d52a788c",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M04_lbedoTransparency_ab5c7a5b2f26",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M04_Normal_4f3147c5a798"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Building_02_1001",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Building_02_1001",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "2701936d1df3811d59dac47f311a9efa20800b5d3871ac7543d5778db64b31d8",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M01_lbedoTransparency_139c7766c3f2",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M01_Normal_67a5464e9176"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Building_02_1002",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Building_02_1002",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "f1deaf033641ef7b2a33de271aafeaf62f72de3656ffb80b0edbc4b9a88127b1",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_lbedoTransparency_16abd7adb28e",
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/B02_M02_Normal_533467f593ec"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        }
+      ],
+      "contact_offset_cm": null,
+      "forward_axis": null,
+      "up_axis": null,
+      "scale_min": null,
+      "scale_max": null,
+      "live_local_bounds_cm": null,
+      "missing_measurement_rule": "Import bounds and pivot-to-bottom-centre arithmetic are historical metadata. They do not locate physical support points or establish the signed contact transform. Read-only UI may leave exact numeric bounds/contact unresolved; no placement or code to force a result.",
+      "rights_state": "owner_confirmed_for_technical_qualification",
+      "rights_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\LICENSE_PROVENANCE.md / Owner confirmation 2026-09-27",
+      "rights_limit": "Exact 32 Bank_ME_v3 assets only; export/redistribution/attribution terms not independently established. No extension to Palms_Pack_01 or other packs.",
+      "gates": {
+        "exact_asset_load": "PASS_MEASURED_2026_09_29",
+        "surface_role_quality": "UNKNOWN_PARTIAL_PREVIEW",
+        "rights_technical_scope": "PASS_DOCUMENTED_OWNER_CONFIRMATION",
+        "local_period_role": "UNKNOWN",
+        "physical_contact_front_up_scale": "UNKNOWN",
+        "collision_behavior_runtime": "UNKNOWN",
+        "houdini_connection": "NOT_RUN",
+        "generation_persistence": "NOT_RUN",
+        "role_qualification": "NOT_RUN"
+      },
+      "technical_eligible": false,
+      "qualified": false,
+      "connected": false,
+      "generated": false,
+      "visually_verified_scene": false,
+      "accepted": false,
+      "generation_enabled": false,
+      "prior_observation": "Complete beige weathered mid-rise building; five upper facade rows above shuttered ground-floor entrances/shops, setback roof rooms and panel-like rooftop element. Mix of projecting glazed enclosed bays, open rail balconies, laundry and dishes; narrower elevation also has balconies. Blue glazing has conspicuous mottling.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Astra\\Native_Visual_Run_01\\55_H0015_whole__1.jpg",
+          "sha256": "5a29f39baa49560a277686177b53ceb406e4c2f4638c0b5e113e7741b4c38add",
+          "scope": "Run01_prior prior native preview, not new live execution"
+        }
+      ],
+      "live_inspection_2026_09_29": {
+        "scope": "mesh_preview_partial",
+        "evidence_labels": [
+          "14_H0015_glazing_close",
+          "15_H0015_whole_frontage",
+          "16_preview_floor_configuration",
+          "17_H0015_section0_isolated",
+          "18_H0015_section1_isolated",
+          "19_H0015_blank_end",
+          "20_H0015_available_LOD"
+        ],
+        "metrics": {
+          "triangles_lod0": 201057,
+          "vertices_lod0": 211808,
+          "uv_channels": 2,
+          "material_slots": 4,
+          "collision_primitives": 1,
+          "nanite_checked": false,
+          "lod_menu_choices": [
+            "Auto",
+            "LOD0"
+          ]
+        },
+        "source_mesh_modified": false,
+        "signed_contact_front_up_scale_verified": false,
+        "runtime_collision_verified": false,
+        "performance_scene_run": false,
+        "unity_test_run": false,
+        "houdini_test_run": false
+      }
+    },
+    {
+      "priority": 3,
+      "short_code": "H0051",
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin",
+      "variant_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin",
+      "source_id_renamed": false,
+      "unreal_object_path": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+      "source_package_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\StreetFurniture\\SM_H0051_Garbagebin.uasset",
+      "package_sha256_at_prep": "1b1ca536131e7ae3d5616f887b29277ee6a29829d350d6d497b1043b44fc419d",
+      "native_class": "StaticMesh",
+      "class_path_state": "PASS prior exact native preview; file/hash checked now",
+      "functional_role_proposed": "pedestrian_waste_bin_with_attached_litter",
+      "representation_proposed": "compound_instance",
+      "allowed_zones": null,
+      "proposed_allowed_zones": [
+        "pedestrian_service_edge_outside_clear_walkway"
+      ],
+      "zone_state": "UNKNOWN; proposal only, not an approved HDA enum or area policy",
+      "condition_observed": "littered; bottles integral",
+      "purpose": "Contract-named prop; first simple placement candidate",
+      "material_state": "Slats/frame/bottles visible; close surface and ground-support QA incomplete. Current material path must distinguish StreetFurniture from same-name Props material.",
+      "documented_import_metrics": {
+        "group": "StreetFurniture",
+        "asset": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin",
+        "size_cm_xyz": [
+          29.4,
+          34.43,
+          74.4
+        ],
+        "bounds_min": {
+          "x": -12.837084770202637,
+          "y": -17.898235321044922,
+          "z": 3.5086711136500526e-07
+        },
+        "bounds_max": {
+          "x": 16.559925079345703,
+          "y": 16.53656768798828,
+          "z": 74.40184783935547
+        },
+        "pivot_offset_to_bounds_centre_cm": [
+          -1.86,
+          0.68,
+          -37.2
+        ],
+        "pivot_offset_to_bottom_centre_cm": [
+          -1.86,
+          0.68,
+          -0.0
+        ],
+        "material_slot_count": 1,
+        "material_slots": [
+          "Street Props Pack _003"
+        ],
+        "triangles_lod0": 5180,
+        "vertices_lod0": 4776,
+        "lod_count": 1,
+        "nanite": false
+      },
+      "native_receipt_metrics": {
+        "triangles_lod0": 5180,
+        "vertices_lod0": 4776,
+        "uv_channels": 2,
+        "material_slots": 1,
+        "collision_primitives": 1,
+        "approx_size_ui": "29 x 34 x 74",
+        "approx_size_units": "not explicitly labelled; no conversion to catalog cm fields",
+        "nanite_ui": "unchecked"
+      },
+      "material_dependencies": [
+        {
+          "slot_label_documented": "Street Props Pack _003",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Street_Props_Pack__003",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "96ad2e5e865181573931552805f0ffea8fe6c8c1ea1c48b0c58060ad36d717f7",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_AlbedoTransparency_1011_4c9672e5e1dd",
+            "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Emission_1011_0841cebf1802_albedo_4881256d84f693",
+            "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/Arabic_Assets_01_Normal_1011_99d47d234c4e"
+          ],
+          "live_binding_rechecked_2026_09_29": true,
+          "live_binding_evidence": "LIVE/03_H0051_material_binding__1.jpg"
+        }
+      ],
+      "contact_offset_cm": null,
+      "forward_axis": null,
+      "up_axis": null,
+      "scale_min": null,
+      "scale_max": null,
+      "live_local_bounds_cm": null,
+      "missing_measurement_rule": "Import bounds and pivot-to-bottom-centre arithmetic are historical metadata. They do not locate physical support points or establish the signed contact transform. Read-only UI may leave exact numeric bounds/contact unresolved; no placement or code to force a result.",
+      "rights_state": "owner_confirmed_for_technical_qualification",
+      "rights_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\LICENSE_PROVENANCE.md / Owner confirmation 2026-09-27",
+      "rights_limit": "Exact 32 Bank_ME_v3 assets only; export/redistribution/attribution terms not independently established. No extension to Palms_Pack_01 or other packs.",
+      "gates": {
+        "exact_asset_load": "PASS_MEASURED_2026_09_29",
+        "surface_role_quality": "UNKNOWN_PARTIAL_PREVIEW",
+        "rights_technical_scope": "PASS_DOCUMENTED_OWNER_CONFIRMATION",
+        "local_period_role": "UNKNOWN",
+        "physical_contact_front_up_scale": "UNKNOWN",
+        "collision_behavior_runtime": "UNKNOWN",
+        "houdini_connection": "NOT_RUN",
+        "generation_persistence": "NOT_RUN",
+        "role_qualification": "NOT_RUN"
+      },
+      "technical_eligible": false,
+      "qualified": false,
+      "connected": false,
+      "generated": false,
+      "visually_verified_scene": false,
+      "accepted": false,
+      "generation_enabled": false,
+      "prior_observation": "Square brown slatted street bin in light metal frame; green bottles and scattered debris already on top. Full object visible, fine texture and ground contact not validated.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Astra\\Native_Visual_Run_01\\28_Garbagebin__1.jpg",
+          "sha256": "59711ae1b7855a0178f5defb7bdca4b0231c20fc210b01a7bd6cd9dd31d9de24",
+          "scope": "Run01_prior prior native preview, not new live execution"
+        }
+      ],
+      "live_inspection_2026_09_29": {
+        "scope": "mesh_preview_partial",
+        "evidence_labels": [
+          "01_H0051_close",
+          "02_H0051_front_support",
+          "03_H0051_material_binding"
+        ],
+        "metrics": {
+          "triangles_lod0": 5180,
+          "vertices_lod0": 4776,
+          "uv_channels": 2,
+          "material_slots": 1,
+          "collision_primitives": 1,
+          "nanite_checked": false,
+          "lod_menu_choices": null
+        },
+        "source_mesh_modified": false,
+        "signed_contact_front_up_scale_verified": false,
+        "runtime_collision_verified": false,
+        "performance_scene_run": false,
+        "unity_test_run": false,
+        "houdini_test_run": false
+      }
+    },
+    {
+      "priority": 4,
+      "short_code": "H0958",
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+      "variant_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+      "source_id_renamed": false,
+      "unreal_object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm",
+      "source_package_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Vegetation\\SM_H0958_CoconutPalm.uasset",
+      "package_sha256_at_prep": "e9575502d9e03f75537e2edcd02d22f444920aee7aa4ab1e48765752168bc3e6",
+      "native_class": "StaticMesh",
+      "class_path_state": "PASS prior exact native preview; file/hash checked now",
+      "functional_role_proposed": "palm_candidate_species_unverified",
+      "representation_proposed": "whole_instance",
+      "allowed_zones": null,
+      "proposed_allowed_zones": [
+        "planting_zone_after_species_and_crown_clearance_validation"
+      ],
+      "zone_state": "UNKNOWN; proposal only, not an approved HDA enum or area policy",
+      "condition_observed": "opaque_foliage_card_defect; biological condition unknown",
+      "purpose": "Contract-named vegetation; held for source/material diagnosis",
+      "material_state": "HOLD: prior opaque-card defect. Measured2026-09-29 imported leaf alpha present and actual BaseColor binding verified; Original_Submesh_1 Surface/Opaque/DefaultLit/TwoSided off, alpha disconnected. No repair or mesh-slot recheck in this run.",
+      "documented_import_metrics": {
+        "group": "Vegetation",
+        "asset": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm",
+        "size_cm_xyz": [
+          605.24,
+          612.81,
+          870.63
+        ],
+        "bounds_min": {
+          "x": -168.54640197753906,
+          "y": -367.2211608886719,
+          "z": -4.231946604704717e-06
+        },
+        "bounds_max": {
+          "x": 436.6885986328125,
+          "y": 245.5916290283203,
+          "z": 870.6278686523438
+        },
+        "pivot_offset_to_bounds_centre_cm": [
+          -134.07,
+          60.81,
+          -435.31
+        ],
+        "pivot_offset_to_bottom_centre_cm": [
+          -134.07,
+          60.81,
+          0.0
+        ],
+        "material_slot_count": 2,
+        "material_slots": [
+          "Original_Submesh_0",
+          "Original_Submesh_1"
+        ],
+        "triangles_lod0": 4160,
+        "vertices_lod0": 3326,
+        "lod_count": 1,
+        "nanite": false
+      },
+      "native_receipt_metrics": {
+        "triangles_lod0": 4160,
+        "vertices_lod0": 3326,
+        "uv_channels": 2,
+        "material_slots": 2,
+        "collision_primitives": 1,
+        "approx_size_ui": "605x612x870",
+        "approx_size_units": "not explicitly labelled; no conversion to catalog cm fields",
+        "nanite_ui": false
+      },
+      "material_dependencies": [
+        {
+          "slot_label_documented": "Original_Submesh_0",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_0",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "a96652f763e913eb9e196743b75d453311da75236c509d69edf42c0632465ac9",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_5453f80b0bad",
+            "/Game/Project/Shared/Bank_ME_v3/Vegetation/palm03_n_f1f0a8361d5f"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        },
+        {
+          "slot_label_documented": "Original_Submesh_1",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "29baa8cc251ef50fd95c41d46c3257ee8d75a720f27f723ba4042fd954a48971",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29",
+            "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_n_d2a3401423b4"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        }
+      ],
+      "contact_offset_cm": null,
+      "forward_axis": null,
+      "up_axis": null,
+      "scale_min": null,
+      "scale_max": null,
+      "live_local_bounds_cm": null,
+      "missing_measurement_rule": "Import bounds and pivot-to-bottom-centre arithmetic are historical metadata. They do not locate physical support points or establish the signed contact transform. Read-only UI may leave exact numeric bounds/contact unresolved; no placement or code to force a result.",
+      "rights_state": "owner_confirmed_for_technical_qualification",
+      "rights_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\LICENSE_PROVENANCE.md / Owner confirmation 2026-09-27",
+      "rights_limit": "Exact 32 Bank_ME_v3 assets only; export/redistribution/attribution terms not independently established. No extension to Palms_Pack_01 or other packs.",
+      "gates": {
+        "exact_asset_load": "PASS_PRIOR_NATIVE",
+        "surface_role_quality": "FAIL_VISIBLE_CARDS",
+        "rights_technical_scope": "PASS_DOCUMENTED_OWNER_CONFIRMATION",
+        "local_period_role": "UNKNOWN",
+        "physical_contact_front_up_scale": "UNKNOWN",
+        "collision_behavior_runtime": "UNKNOWN",
+        "houdini_connection": "NOT_RUN",
+        "generation_persistence": "NOT_RUN",
+        "role_qualification": "NOT_RUN"
+      },
+      "technical_eligible": false,
+      "qualified": false,
+      "connected": false,
+      "generated": false,
+      "visually_verified_scene": false,
+      "accepted": false,
+      "generation_enabled": false,
+      "prior_observation": "Curved slender trunk with dense broad opaque green/black leaf cards; silhouette does not resolve fine fronds and dark patches remain on cards. Materials Original_Submesh_0 and Original_Submesh_1.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0958_CoconutPalm_cards.jpg",
+          "sha256": "408f9ab480564a23c18c3b734240e226908905858b299ca9de18c342c6842d4c",
+          "scope": "Run02_direct prior native preview, not new live execution"
+        },
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0958_CoconutPalm.jpg",
+          "sha256": "5728bf77516873a07403d6de6bcd6295045c55dbea0ecd14135379cc4071757b",
+          "scope": "Run02_direct prior native preview, not new live execution"
+        },
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Continuation\\Native_Visual_Run_02\\H0958_leaf_material_graph.jpg",
+          "sha256": "16ed0758a012f8fe7f02114b2fcb6286eb165c764b89cdf4f38e930550a64e13",
+          "scope": "Run02_direct prior native preview, not new live execution"
+        }
+      ],
+      "live_inspection_2026_09_29": {
+        "scope": "material_texture_dependencies_only",
+        "evidence_labels": [
+          "21_H0958_imported_texture_RGBA",
+          "22_H0958_imported_alpha_only",
+          "23_H0958_texture_status",
+          "24_H0958_texture_source_path",
+          "25_H0958_leaf_material_graph",
+          "26_H0958_basecolor_binding_exact",
+          "27_H0958_normal_binding_exact"
+        ],
+        "metrics": null,
+        "source_mesh_modified": false,
+        "signed_contact_front_up_scale_verified": false,
+        "runtime_collision_verified": false,
+        "performance_scene_run": false,
+        "unity_test_run": false,
+        "houdini_test_run": false,
+        "leaf_material": {
+          "path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/Original_Submesh_1.Original_Submesh_1",
+          "class": "Material",
+          "domain": "Surface",
+          "blend_mode": "Opaque",
+          "shading_model": "Default Lit",
+          "two_sided": false,
+          "alpha_connected_to_opacity_mask": false,
+          "mesh_slot_binding_rechecked": false,
+          "base_color_texture": "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29.coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29",
+          "normal_texture": "/Game/Project/Shared/Bank_ME_v3/Vegetation/coconut_palm_leaf_n_d2a3401423b4.coconut_palm_leaf_n_d2a3401423b4"
+        },
+        "albedo_texture": {
+          "class": "Texture2D",
+          "dimensions_px": [
+            322,
+            1024
+          ],
+          "format": "B8G8R8A8",
+          "source_alpha_detected": true,
+          "format_supports_alpha": true,
+          "alpha_only_leaflet_shape_observed": true,
+          "num_mips": 1,
+          "mip_gen": "NoMipmaps",
+          "compression_texture_editor": "Uncompressed (RGBA8)",
+          "compression_browser_tooltip": "Editor Icon",
+          "compression_label_equivalence": "UNKNOWN",
+          "compress_without_alpha": false,
+          "srgb": true,
+          "resource_size_ui_KB": 1288,
+          "method_ui": "Not Streamed",
+          "source_file_suffix": "Staging/ModelBank/ME/Textures/coconut_palm_leaf_3f6407d492f8_albedo_cdcdc62b95fb29.png"
+        },
+        "normal_texture": {
+          "dimensions_px": [
+            322,
+            1024
+          ],
+          "compression_browser": "Normalmap",
+          "texture_group": "World Normal Map",
+          "srgb": false,
+          "mip_gen": "NoMipmaps",
+          "source_file_suffix": "Staging/ModelBank/ME/Textures/coconut_palm_leaf_n_d2a3401423b4.png"
+        }
+      }
+    },
+    {
+      "priority": 5,
+      "short_code": "H0907",
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "variant_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "source_id_renamed": false,
+      "unreal_object_path": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+      "source_package_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\Bank_ME_v3\\Buildings\\SM_H0907_Arab_x3_fbx.uasset",
+      "package_sha256_at_prep": "3c1726f412f92ac187a66e0c040c70ece42423527d1060c4d6ac5c57aff289bc",
+      "native_class": "StaticMesh",
+      "class_path_state": "PASS prior exact native preview; file/hash checked now",
+      "functional_role_proposed": "domed_landmark_pavilion",
+      "representation_proposed": "whole_instance",
+      "allowed_zones": null,
+      "proposed_allowed_zones": [
+        "exact_local_landmark_match_only"
+      ],
+      "zone_state": "UNKNOWN; proposal only, not an approved HDA enum or area policy",
+      "condition_observed": "weathered; dome tone boundaries",
+      "purpose": "Contract-named special building; prior receipts preserved, no new opening in this assignment",
+      "material_state": "Textured domed structure present; visible tone/patch boundaries on dome need intent/source review. Not typical residential architecture.",
+      "documented_import_metrics": {
+        "group": "Buildings",
+        "asset": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx",
+        "size_cm_xyz": [
+          1369.04,
+          1368.74,
+          1560.66
+        ],
+        "bounds_min": {
+          "x": -680.353271484375,
+          "y": -700.4720458984375,
+          "z": 0.6762058734893799
+        },
+        "bounds_max": {
+          "x": 688.6864013671875,
+          "y": 668.2713623046875,
+          "z": 1561.33740234375
+        },
+        "pivot_offset_to_bounds_centre_cm": [
+          -4.17,
+          16.1,
+          -781.01
+        ],
+        "pivot_offset_to_bottom_centre_cm": [
+          -4.17,
+          16.1,
+          -0.68
+        ],
+        "material_slot_count": 1,
+        "material_slots": [
+          "Arab_X3"
+        ],
+        "triangles_lod0": 3302,
+        "vertices_lod0": 4835,
+        "lod_count": 1,
+        "nanite": false
+      },
+      "native_receipt_metrics": {
+        "triangles_lod0": 3302,
+        "vertices_lod0": 4835,
+        "uv_channels": 2,
+        "material_slots": 1,
+        "collision_primitives": 1,
+        "approx_size_ui": "1,369 x 1,368 x 1,560",
+        "approx_size_units": "not explicitly labelled; no conversion to catalog cm fields",
+        "nanite_ui": "unchecked"
+      },
+      "material_dependencies": [
+        {
+          "slot_label_documented": "Arab_X3",
+          "package_path_documented": "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_X3",
+          "class_documented": "Material",
+          "current_file_exists": true,
+          "current_package_sha256": "8a6cb98f403a571730bcb354f91d50f121b7a103ba0c4b64247e31b90bf4a2a5",
+          "texture_dependencies_documented": [
+            "/Game/Project/Shared/Bank_ME_v3/Buildings/Arab_x3_Diffuse_Map_9e424ef08c1f"
+          ],
+          "live_binding_rechecked_2026_09_29": false
+        }
+      ],
+      "contact_offset_cm": null,
+      "forward_axis": null,
+      "up_axis": null,
+      "scale_min": null,
+      "scale_max": null,
+      "live_local_bounds_cm": null,
+      "missing_measurement_rule": "Import bounds and pivot-to-bottom-centre arithmetic are historical metadata. They do not locate physical support points or establish the signed contact transform. Read-only UI may leave exact numeric bounds/contact unresolved; no placement or code to force a result.",
+      "rights_state": "owner_confirmed_for_technical_qualification",
+      "rights_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\LICENSE_PROVENANCE.md / Owner confirmation 2026-09-27",
+      "rights_limit": "Exact 32 Bank_ME_v3 assets only; export/redistribution/attribution terms not independently established. No extension to Palms_Pack_01 or other packs.",
+      "gates": {
+        "exact_asset_load": "PASS_PRIOR_NATIVE",
+        "surface_role_quality": "UNKNOWN_PARTIAL_PREVIEW",
+        "rights_technical_scope": "PASS_DOCUMENTED_OWNER_CONFIRMATION",
+        "local_period_role": "UNKNOWN",
+        "physical_contact_front_up_scale": "UNKNOWN",
+        "collision_behavior_runtime": "UNKNOWN",
+        "houdini_connection": "NOT_RUN",
+        "generation_persistence": "NOT_RUN",
+        "role_qualification": "NOT_RUN"
+      },
+      "technical_eligible": false,
+      "qualified": false,
+      "connected": false,
+      "generated": false,
+      "visually_verified_scene": false,
+      "accepted": false,
+      "generation_enabled": false,
+      "prior_observation": "Domed polygonal complete structure; pointed-arch recessed bays, repeated closed blue-gray doors and lattice windows, worn pale plaster/stone. Abrupt tone bands/patch boundaries visible on dome in this lighting. Back orthographic view shows repeated door/window bays.",
+      "evidence": [
+        {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\Inspection_2026-09-28_Astra\\Native_Visual_Run_01\\06_H0907_whole__1.jpg",
+          "sha256": "4e96be96ee23f342d0f58c5c04658c04920e50a2dee81802989777a5c7feaad8",
+          "scope": "Run01_prior prior native preview, not new live execution"
+        }
+      ],
+      "live_inspection_2026_09_29": {
+        "scope": "not_run",
+        "evidence_labels": [],
+        "metrics": null,
+        "source_mesh_modified": false,
+        "signed_contact_front_up_scale_verified": false,
+        "runtime_collision_verified": false,
+        "performance_scene_run": false,
+        "unity_test_run": false,
+        "houdini_test_run": false
+      }
+    }
+  ],
+  "v3_vegetation_screen": [
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0636_Acacia",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0636_Acacia.SM_H0636_Acacia",
+      "state": "FAIL_VISIBLE_SURFACE; unqualified",
+      "observation": "Recheck confirms giant solid white crossed cards surrounding canopy; leaf cards green on some surfaces and black on others.",
+      "recommendation": "Hold. All three native material graphs were read; the billboard source remains absent. Recover the correct authorized source, verify alpha/shader treatment and prove card-free foliage before qualification."
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0647_Nopal",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0647_Nopal.SM_H0647_Nopal",
+      "state": "FAIL_VISIBLE_SURFACE; unqualified",
+      "observation": "Three cactus clusters in one mesh. Green pads and reddish tips surrounded by conspicuous white/gray rectangular pieces and dark triangular spikes; broken-looking close-view silhouette.",
+      "recommendation": "Hold for material/opacity/UV investigation against source. Do not treat preview as qualified vegetation. Confirm local species and location separately; one asset instance contains multiple plants."
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Vegetation__SM_H0958_CoconutPalm",
+      "object_path": "/Game/Project/Shared/Bank_ME_v3/Vegetation/SM_H0958_CoconutPalm.SM_H0958_CoconutPalm",
+      "state": "FAIL_VISIBLE_SURFACE; unqualified",
+      "observation": "Curved slender trunk with dense broad opaque green/black leaf cards; silhouette does not resolve fine fronds and dark patches remain on cards. Materials Original_Submesh_0 and Original_Submesh_1.",
+      "recommendation": "Hold for foliage opacity/two-sided/material/source investigation before placement. Botanical identity and historical location must be confirmed independently; coconut filename does not justify general GazaRimal palm use."
+    }
+  ],
+  "lease_at_preparation": "NONE_REQUEST_PENDING",
+  "lease_evidence": "2026-09-29T02:45:08.9357886+03:00 OWNER=NONE thread=01a0e820-c6d4-7702-8e7b-55fd20f9b020 task=BANK-ASTRA-001; PID 22168 closed without save; zero Unreal/Houdini/HARS processes; Content files 5989 before/after, metadata diff 0, mesh hash diff 0; measurement OWNER=NONE; see Inspection_2026-09-29_Astra_Prep/LIVE_RELEASE_CHECK.json; released by bank manager.",
+  "updated_utc": "2026-09-28T23:49:20.334724+00:00",
+  "result_receipt": "BANK_ASTRA_001_RESULT.md",
+  "coverage_increment_unique_meshes": 0
+}

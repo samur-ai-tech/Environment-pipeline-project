@@ -1,0 +1,81 @@
+{
+  "schema": "environmentpipeline.epic_resident_creation_review.v1",
+  "status": "APPROVED_EPIC_RESIDENT_CREATE",
+  "utc": "2026-10-05T08:43:21.301206+00:00",
+  "reviewer": "/root/visual_review",
+  "pid": 26820,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "helper_sha256": "fa1721fdbd5cd8d36599bfd587adbf092dc2f2a2f018fd1522c5b662c4d953d7",
+  "inspect_receipt_sha256": "336f54bc4b2021b7806ac4a635464ed6ffa17fbf1aa56b0786c894e251041d81",
+  "baseline_receipt_sha256": "ed2f38926bb94e7c68b9f604c3a2e4f6c6cd68a99fa31303e1bdde50d559f60f",
+  "plan_sha256": "ca022f90c571f9e77ebde9546545c998e85bd26e47494a41f7608f5618191d34",
+  "reference_receipt_sha256": "89a02abd7c180bdf6b37b0c2e4eaf43636c195f21d0b36afae1f853f22198024",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "source_manifest_sha256": "f73181be9b8ffc1ee499448dd986266ca5ebe76aab2b1a7e3bea52f06b7d202e",
+  "mutation_backup_sha256": "ef0bb74f6083a0c0aab36af33ee6c541c684fbaba960d3345cd3406ca7105465",
+  "held_copy_package_sha256": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+  "approved_scope": {
+    "mode": "apply",
+    "create_exactly_four": [
+      {
+        "source": "/Game/StarterContent/Textures/T_Ground_Gravel_D.T_Ground_Gravel_D",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K.T_Ground_Gravel_D_GeoCityResident2K"
+      },
+      {
+        "source": "/Game/StarterContent/Textures/T_Ground_Gravel_N.T_Ground_Gravel_N",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K"
+      },
+      {
+        "source": "/Game/StarterContent/Textures/T_Rock_Sandstone_D.T_Rock_Sandstone_D",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K.T_Rock_Sandstone_D_GeoCityResident2K"
+      },
+      {
+        "source": "/Game/StarterContent/Textures/T_Rock_Sandstone_N.T_Rock_Sandstone_N",
+        "destination": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K"
+      }
+    ],
+    "copy_property_changes_only": {
+      "never_stream": true,
+      "max_texture_size": 2048
+    },
+    "global_force_mip_levels_to_be_resident": false,
+    "material_binding_changes": 0,
+    "graph_changes": 0,
+    "source_asset_changes": 0,
+    "explicit_compile_or_save": false,
+    "update_material_instance": false,
+    "ordinary_resource_readiness": "0 or2048 is pending at creation; separate strict2048 read-only inspection and new bound review required before any binding.",
+    "allowed_dirty_content": [
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_D_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_D_GeoCityResident2K",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K"
+    ],
+    "dirty_maps": []
+  },
+  "review_evidence": {
+    "entire389line_helper_read": true,
+    "offline_ast_and_compile_without_execution": true,
+    "all_input_and_concrete_inspect_hashes_checked": true,
+    "concrete_inspect_before_after_equal": true,
+    "four_destinations_and_disk_files_absent": true,
+    "native_original_source_dimensions_2048": true,
+    "five_original_and_backup_hashes_checked": true,
+    "1015nodes_and_all_instances_equal_clean_saved_reference": true,
+    "graph_69layers_Grass_scene_CVars_original_properties_and_files_guarded": true,
+    "two_phase_create_then_inspect_then_bind_enforced": true,
+    "reserved_attempt_and_partial_failure_receipts": true,
+    "no_native_or_Content_write_by_reviewer": true
+  },
+  "limitations": [
+    "This approval permits creation and only the two enumerated copy policy settings. No material binding, save or visual persistence approval follows.",
+    "Original Epic colors, normal semantics, compression, sRGB, wrap/filter, mip generation and all other readable persistent properties remain preserved by copy comparison; no source upscale or global residency force is permitted.",
+    "This addresses the measured fresh detail regression through owned source copies, while actual recovered Lit appearance and fresh reopen still require independent observation.",
+    "Copied texture metadata may initially be unready. Strict2048 readiness is a separate second-phase requirement; failure preserves partial objects and evidence.",
+    "Unknown metadata and serialized GUID fields remain unknown. No GPU/cooked/reference-quality or final acceptance is inferred."
+  ],
+  "save_approved_within_scope": false,
+  "visual_persistence_approved": false,
+  "user_acceptance": "PENDING"
+}

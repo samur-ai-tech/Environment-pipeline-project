@@ -1,0 +1,47 @@
+MTL_MWAM_CoverFoliage_MASTER [Material] {"BlendMode": "BLEND_Masked", "MaterialDecalResponse": "MDR_None", "ShadingModel": "MSM_TwoSidedFoliage", "TwoSided": true, "bUsedWithInstancedStaticMeshes": true, "bUsedWithNanite": true, "bNormalCurvatureToRoughness": true, "EditorX": 480, "EditorY": -64, "EditorOnlyData": "export:MTL_MWAM_CoverFoliage_MASTEREditorOnlyData", "TextureStreamingDataVersion": 1, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0", "ParameterOverviewExpansion": "<map 348B>"} 
+MTL_MWAM_CoverFoliage_MASTEREditorOnlyData [MaterialEditorOnlyData]  BaseColor<-LinearInterpolate_0:0 Metallic<-Constant_0:0 Specular<-ScalarParameter_4:0 Roughness<-MaterialFunctionCall_0:0 Normal<-StaticSwitchParameter_0:0 OpacityMask<-MaterialFunctionCall_5:0 WorldPositionOffset<-StaticSwitchParameter_1:0 SubsurfaceColor<-MaterialFunctionCall_2:0 AmbientOcclusion<-Constant_1:0
+# COMMENT Textures
+# COMMENT Metallic
+# COMMENT RandomizeBase
+# COMMENT ColorCorrection
+# COMMENT Specular
+# COMMENT Roughness
+# COMMENT SubSurfaceColor
+# COMMENT Opacity
+# COMMENT Normal
+# COMMENT AmbientOcclusion
+# COMMENT Wind
+Constant_0 [Constant]  
+Constant_1 [Constant] {"R": 1.0} 
+Constant_2 [Constant]  
+Constant3Vector_0 [Constant3Vector]  
+Constant3Vector_1 [Constant3Vector] {"Constant": [0.0, 0.0, 1.0, 0.0]} 
+LinearInterpolate_0 [LinearInterpolate]  A<-Multiply_2:0 B<-StaticSwitchParameter_3:0 Alpha<-MaterialFunctionCall_5:0
+LinearInterpolate_1 [LinearInterpolate]  A<-Constant3Vector_1:0 B<-TextureSampleParameter2D_1:0.RGB Alpha<-ScalarParameter_2:0
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_Roughness"} FunctionInputs[0].Input<-Multiply_3:0
+MaterialFunctionCall_2 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_SubSurface"} FunctionInputs[0].Input<-Multiply_3:0
+MaterialFunctionCall_4 [MaterialFunctionCall] {"MaterialFunction": "SpeedTreeBillboardNormals"} FunctionInputs[0].Input<-LinearInterpolate_1:0
+MaterialFunctionCall_5 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_Opacity"} FunctionInputs[0].Input<-StaticSwitchParameter_2:0
+MaterialFunctionCall_7 [MaterialFunctionCall] {"MaterialFunction": "SimpleGrassWind"} FunctionInputs[0].Input<-Multiply_0:0 FunctionInputs[1].Input<-MaterialFunctionCall_8:0 FunctionInputs[2].Input<-ScalarParameter_1:0 FunctionInputs[3].Input<-Constant3Vector_0:0
+MaterialFunctionCall_8 [MaterialFunctionCall] {"MaterialFunction": "MF_MWAM_PivotMask"} 
+Multiply_0 [Multiply]  A<-ScalarParameter_0:0 B<-MaterialFunctionCall_8:0
+Multiply_1 [Multiply]  A<-Power_1:0 B<-Multiply_3:0
+Multiply_2 [Multiply] {"ConstB": 2.0} A<-StaticSwitchParameter_3:0
+Multiply_3 [Multiply]  A<-Power_0:0 B<-VectorParameter_0:0.RGB
+PerInstanceRandom_1 [PerInstanceRandom]  
+Power_0 [Power]  Base<-TextureSampleParameter2D_0:0.RGB Exponent<-ScalarParameter_3:0
+Power_1 [Power]  Base<-PerInstanceRandom_1:0 Exponent<-ScalarParameter_5:0
+ScalarParameter_0 [ScalarParameter] {"ParameterName": "MW_WindIntensity", "DefaultValue": 0.2, "Group": "Wind"} 
+ScalarParameter_1 [ScalarParameter] {"ParameterName": "MW_WindSpeed", "DefaultValue": 0.5, "Group": "Wind"} 
+ScalarParameter_2 [ScalarParameter] {"ParameterName": "MW_NormalIntensity", "DefaultValue": 1.0, "Group": "Normal"} 
+ScalarParameter_3 [ScalarParameter] {"ParameterName": "MW_BaseColorContrast", "DefaultValue": 1.0, "Group": "ColorCorrection"} 
+ScalarParameter_4 [ScalarParameter] {"ParameterName": "MW_Specular", "DefaultValue": 0.5} 
+ScalarParameter_5 [ScalarParameter] {"ParameterName": "MW_ColorVariationContrast", "DefaultValue": 0.25, "Group": "ColorCorrection"} 
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseWorldNormal", "Group": "Normal"} A<-MaterialFunctionCall_4:0 B<-LinearInterpolate_1:0
+StaticSwitchParameter_1 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseWind", "Group": "Wind"} A<-MaterialFunctionCall_7:0 B<-Constant_2:0
+StaticSwitchParameter_2 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseSeparateOpacityTexture", "Group": "Textures"} A<-TextureSampleParameter2D_2:1.R B<-TextureSampleParameter2D_0:4.A
+StaticSwitchParameter_3 [StaticSwitchParameter] {"ParameterName": "MW_[x]_UseRandomizeBaseIntensity", "DefaultValue": true, "Group": "ColorCorrection"} A<-Multiply_1:0 B<-Multiply_3:0
+TextureSampleParameter2D_0 [TextureSampleParameter2D] {"ParameterName": "MW_TextureBaseColor", "Group": "Textures", "Texture": "TEX_MW_Temp_col", "SamplerSource": "SSM_Wrap_WorldGroupSettings"} 
+TextureSampleParameter2D_1 [TextureSampleParameter2D] {"ParameterName": "MW_TextureNormal", "Group": "Textures", "Texture": "TEX_MW_Temp_nrm", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_Normal"} 
+TextureSampleParameter2D_2 [TextureSampleParameter2D] {"ParameterName": "MW_TextureOpacity", "Group": "Textures", "Texture": "TEX_MW_Temp_msk", "SamplerSource": "SSM_Wrap_WorldGroupSettings", "SamplerType": "SAMPLERTYPE_LinearColor"} 
+VectorParameter_0 [VectorParameter] {"ParameterName": "MW_BaseColorCorrection", "DefaultValue": [1.0, 1.0, 1.0, 1.0], "Group": "ColorCorrection"} 

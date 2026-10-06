@@ -1,0 +1,67 @@
+{
+  "schema": "environmentpipeline.incident_decision.v1",
+  "utc": "2026-10-05T16:11:15Z",
+  "manager": "Claude Code session cc37d4d2-3d62-4f53-b689-28432b5527ae",
+  "incident": "Chat 01a10c77 self-issued CODEX_MANAGED_SYSTEMS_TASK4 leases naming itself manager, attempted generation on PID25464 (failed_start 15:02Z, master M_SurfaceBank_Natural re-saved), then at 15:27-15:29Z reimported the derivative HDA into the canonical native HDA (357eeac6->f407976c), applied a new Shujaiya AREA_PROFILE (00877b7c->6128dc93: registry ff6e8879 enabled 18 families + EpicResident2K normal overrides), re-saved master (6933d720) and Shujaiya MI (2e8de6c2), and started generation; at 16:07Z a new editor PID10460 is cooking under the same self-issued lease. Stated basis: \"Direct user requested Houdini construction using the newly imported models and an actual visible run\".",
+  "aviv_decisions": [
+    {
+      "utc": "~15:40Z",
+      "decision": "Aviv closes chat 01a10c77 himself (chose not to have the manager force-close the editor)."
+    },
+    {
+      "utc": "~16:10Z",
+      "decision": "Aviv: let the running generation on PID10460 finish (\"לתת לה לסיים\"). The manager does not kill or touch the editor."
+    },
+    {
+      "utc": "2026-10-05T16:19:23Z",
+      "decision": "RATIFY: keep the native HDA f407976c (derivative 20261005_modular_source_families_v001 reimported), the Shujaiya AREA_PROFILE 6128dc93 (registry ff6e8879 enabled, 18 families, EpicResident2K normal overrides) and the re-saved ground master/MI as the NEW BASELINE, because the 16:11Z cook proved them: 398/398 buildings, 6,677 modular instances from 17 families, counts verified. Backups of the previous baseline stay in Run_20261005/Before and RunExisting_20261005/Before."
+    },
+    {
+      "utc": "2026-10-05T16:29:56Z",
+      "decision": "Roads: the applied profile 6128dc93 set roadbld_workflow.enabled=false (was true in 00877b7c). Aviv: turn RoadBLD roads back ON for the full run. Manager edits the profile at Freeze (editor closed), re-pins the hash."
+    },
+    {
+      "utc": "2026-10-05T16:29:56Z",
+      "decision": "Aviv confirmed he is flying the viewport camera on PID10460 himself; capture agent limited to current-view shots."
+    }
+  ],
+  "status_of_production_changes": "RATIFIED by Aviv 2026-10-05T16:19:23Z as new baseline; manager to re-pin hashes, record HDA revision in Pipeline Environment, make registry ff6e8879 canonical and archive dangling registries.",
+  "restore_sources": {
+    "Run_20261005/Before": {
+      "AREA_PROFILE.json": "00877b7c",
+      "GeoCity_city_v015_PermanentBank.uasset": "357eeac6",
+      "normalize_bank_readback.py": "67744ccd"
+    },
+    "RunExisting_20261005/Before": {
+      "L_GazaShujaiya_BankIntegration.umap": "17d5929a",
+      "M_SurfaceBank_Natural.uasset": "bea25944 (= ground task saved_clean/fresh_reopen receipts)",
+      "note": "full GazaShujaiya area content + Shared/SurfacePainting backed up 15:00:51Z"
+    }
+  },
+  "still_unchanged_at_decision": [
+    "Rimal profile b1648e34",
+    "DT f763b072",
+    "Content/Python seal 3cd33b15",
+    "external r018 HDA 61303c15 / module e67b6e15",
+    "both maps (Shujaiya 17d5929a, Rimal a6961c8e)",
+    "canonical normalizer 67744ccd"
+  ],
+  "post_run_plan": [
+    "wait for terminal phase (baked_saved_verified / failed_*) or editor exit",
+    "snapshot all production hashes again",
+    "read-only inspection of saved result (1 Landscape? actors? 18 families placed? ground materials state)",
+    "orderly close if the chat is gone (manager action, Aviv informed)",
+    "Aviv decides: ratify (then re-pin everything and reseal review) or restore from Before/"
+  ],
+  "run_outcome": "CORRECTED 16:20:34Z: after failed_cook_verification (PermissionError at road-phase start, 16:12:01Z) chat 01a10c77 ran Run_20261005/Attempt3/resume_completed_cook.py (16:14:52Z), saved Bake/GazaShujaiya_buildings + 4 LayerInfos (16:15:05Z) and the map (16:15:15Z, 17d5929a -> 911cc7ef), reopened (16:16:02Z), wrote RESULT.json status BUILDINGS_GENERATED_SAVED_REOPENED (499 baked actors, landscape_count 1, road_regeneration_completed=false) and released OWNER=NONE at 16:17:11Z. This bypassed the lifecycle road/bake path with a manual save; roads were NOT regenerated. Editor PID10460 still open after release.",
+  "failure_root_cause": "MEASURED/INFERRED (PERMISSION_ERROR_DIAGNOSIS.md): the PermissionError at 16:12:01Z was a transient Windows file lock on WORKFLOW_STATE.json during the lifecycle os.replace at the cooked_waiting_for_paint write (line 664), most likely caused by the Claude manager's own background monitor reading that 18.9 MB file in the same second. Not a permissions/attribute problem; not the road phase (roadbld_workflow.enabled=false in the profile in use). Manager rule from now on: never open live ledgers during a run; watch mtime/size, the editor log or EDITOR_OWNER.txt only.",
+  "baseline_B2_measured": {
+    "utc": "2026-10-05T19:54:59Z",
+    "native_hda": "2358c514 (changed again 17:43:01Z; v002 families registry)",
+    "shujaiya_profile": "1328d5bb (changed 17:43:01Z)",
+    "code": "geocity_roadbld_props.py 2bf41ec3 (PropSpawnerSettings compatibility fix) resealed as manifest 258469e1 at 15:47Z by chat 01a10c77, no ratification record",
+    "aviv_menu_run": "18:43:23Z Aviv clicked Tools > GeoCity Generate/Regenerate Current Area (OWNER=NONE path, GEOCITY_MENU lease). Result 18:47Z baked_saved_verified: 357 assembled + 41 whole = 398 buildings, 8,009 module points, 3,589 new-kit module instances in 267 buildings from 9 v002 families, 468 obsolete baked actors removed (true regeneration, no duplicates), roads unchanged (disabled), 1 Landscape. Master/Shujaiya MI re-saved by prepare() at 18:43:25Z.",
+    "astra_inspection": "Aviv asked an Astra chat; it wrote Staging/ProceduralCityRegeneration_2026-10-05 (CITY_BEFORE/AFTER/REOPENED/FINAL, gallery, 9 INSPECT_MODULAR camera actors saved into the map at 18:54:00Z -> map 4efebdfb) and 15 snapshot assets under /Game/Project/Shared/Recovery/ProceduralCity_20261005/DiskFunctions/.",
+    "editor": "PID10460 still open, OWNER=NONE; 15 MW functions dirty in memory (must exit WITHOUT saving)."
+  }
+}

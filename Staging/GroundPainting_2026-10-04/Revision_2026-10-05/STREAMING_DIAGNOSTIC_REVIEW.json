@@ -1,0 +1,261 @@
+{
+  "schema": "GroundPainting.IndependentStreamingDiagnosticReview.v2",
+  "utc": "2026-10-05T02:47:11.456088+00:00",
+  "reviewer": "/root/startup_review",
+  "review_status": "CAUSAL_RESIDENCY_DIAGNOSTIC_CONFIRMED_ORDINARY_VISUAL_PERSISTENCE_UNRESOLVED",
+  "review_method": "Independent filesystem/source and saved-receipt review. No native calls or UI/OS control performed by reviewer.",
+  "static_syntax": "AST_PARSE_PASSED",
+  "approved_next_modes": [
+    "inspect",
+    "investigate"
+  ],
+  "excluded_next_actions": [
+    "repeat viewport_realtime setter",
+    "repeat finish_loading",
+    "force residency",
+    "global CVar/quality edits",
+    "Content or map edits/saves",
+    "Cook/Bake",
+    "OS/UI workaround"
+  ],
+  "pin_snapshot": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\SCRIPT_PINS.json",
+    "sha256": "bd4510093a82b2c720b83de86162a0e82d6ef636019fb002194cb1d7a556121d",
+    "entry": "714b073293f0eb011c957a7b32d20dcddff58d1b327abd8f791082ce2fd3582d",
+    "current_source_matches_pin": true,
+    "requirement": "Root must bind the reviewed helper SHA in SCRIPT_PINS before execution."
+  },
+  "guard_review": [
+    "Exact actual PID, owner/operator/map lease, current world and runtime guard",
+    "One HDA, official Engine paused, autoCook/autoBake/autosave off, managed callbacks zero",
+    "Clean packages before action and unique STARTED receipt",
+    "Readonly fixed console commands only in investigate mode",
+    "Postchecks for clean dirty sets, paused state, unchanged CVars and serialized texture-property snapshots",
+    "Failure/finally receipt retained; inaccessible property None means unknown"
+  ],
+  "measured_streaming": {
+    "pid": 14776,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "target_textures": [
+      "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+      "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo"
+    ],
+    "query_caveat": "InvestigateTexture name matching also reports T_Wet_Sand_01_Albedo. Five records total, all same measured dimensions; the four intended paths are explicit in the log.",
+    "all_target_current_size": [
+      64,
+      64
+    ],
+    "all_target_wanted_size": [
+      64,
+      64
+    ],
+    "all_target_current_and_wanted_mip_count": 7,
+    "allowed_mip_count_range": [
+      7,
+      13
+    ],
+    "mip_bias": 0,
+    "texture_boost_factor": 0.7,
+    "streaming_assets_current_mb": 23.71,
+    "streaming_assets_target_mb": 23.71,
+    "pool_mb": 1000.0,
+    "reported_pool_percent": 2,
+    "pool_overbudget_measured": false,
+    "streamer_view0_eye": [
+      -31348.597,
+      -31348.597,
+      50452.645
+    ],
+    "streamer_screen_size": 364,
+    "actual_active_key": "FourPanes2x2.Viewport 1.Viewport1",
+    "actual_close_eye": [
+      -1518.235881,
+      2096.715894,
+      4988.994542
+    ],
+    "actual_close_rotation": [
+      -20.998611,
+      51.306564,
+      0.0
+    ],
+    "conclusion": "The recorded streamer demand uses the old wide View0 while actual active-key readback is close. This is a measured mismatch; background/freeze/realtime causality remains unproven."
+  },
+  "preservation_measurements": {
+    "texture_count": 70,
+    "persistent_texture_properties_unchanged": true,
+    "cvars_unchanged": true,
+    "dirty_maps": [],
+    "dirty_content": [],
+    "scope": "Compared first loading diagnostic before snapshot to later investigate after snapshot. Does not claim that viewport preference was unchanged."
+  },
+  "loading_wait": {
+    "receipt": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_finish_loading_r014_PID14776.json",
+      "sha256": "d6a2e5c83ddec518a824dbbd256b220a4ee61c358cefb9d7d7deceb152117b8c"
+    },
+    "elapsed_seconds": 0.01600000000325963,
+    "result": "Returned successfully, no measured persistent texture/CVar/package changes; visual blur remained unresolved according to root visual review."
+  },
+  "realtime_failure": {
+    "receipt": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_close_realtime_requested_PID14776.json",
+      "sha256": "d7f0523afba1d1438201f1bb7b708dc091956e05d8b241100bdc54e9688bb93b"
+    },
+    "status": "FAILED",
+    "reason": "Stringified Unreal Struct representations contain different allocation addresses although all six camera coordinates compare equal. The assertion failed before this receipt could record an after snapshot. Later independent inspect/investigate snapshots provide preservation evidence.",
+    "numeric_camera_unchanged": true,
+    "requested_realtime": true,
+    "prior_effective_realtime": "UNKNOWN_NO_REFLECTED_GETTER",
+    "correction": "Current reviewed helper converts location/rotation to six numeric components. Approval covers reads/investigate only."
+  },
+  "realtime_limits": {
+    "saved_preference_config": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Saved\\Config\\WindowsEditor\\EditorPerProjectUserSettings.ini",
+      "sha256": "c3dcc0cb2fc66135f86786c1c2ea72160a6042d45ea81167f99fdb0bcfefe62c"
+    },
+    "saved_active_key_preference": true,
+    "saved_config_is_not_effective_runtime_getter": true,
+    "setter_may_persist_editor_preference": true,
+    "temporary_override_can_override_base_preference": true,
+    "active_effective_realtime_not_measured": true,
+    "framecounter_caveat": "The three-digit log frame field wraps/modulo 1000. No inference about total rendered frames or limited ticking is made from it."
+  },
+  "log_evidence": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_NATIVE_LOG_PID14776.txt",
+      "sha256": "1f15320aea75edf87e81849cc20cf14eca9bfea69dddd7989a64fe22bc4a41ac"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_NATIVE_LOG_REALTIME_PID14776.txt",
+      "sha256": "7b1e681f7a56c2daf384bf98da6b09f37848550040138ed5f15f6cc8d2ab1f96"
+    }
+  ],
+  "diagnostic_evidence": [
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_finish_loading_r014_PID14776.json",
+      "sha256": "d6a2e5c83ddec518a824dbbd256b220a4ee61c358cefb9d7d7deceb152117b8c"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_default_close_streamer_PID14776.json",
+      "sha256": "c4269303e2049d0d03e40debb58133928fbd07dc161c87d8723e046901e0d174"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_close_realtime_requested_PID14776.json",
+      "sha256": "d7f0523afba1d1438201f1bb7b708dc091956e05d8b241100bdc54e9688bb93b"
+    },
+    {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_realtime_close_streamer_PID14776.json",
+      "sha256": "4b6d8ee1766ac6dbf8f0cd25f6bc0319c80ff292f03b143dec234c8d54a64f13"
+    }
+  ],
+  "actual_lit_capture_metadata": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_revision_reopened_r014_realtime_close.json",
+    "sha256": "989a3e8094c4a586f007423658b4f1883cc2edb092513e4a20c6a3b36bb4597f"
+  },
+  "pending": [
+    "Shujaiya reopened visual detail/persistence acceptance",
+    "Rimal final named save and fresh technical/visual reopen",
+    "Final PERSISTENCE_SCOPE_AUDIT closure"
+  ],
+  "no_completion_inference": "Saved graph/parameter preservation and complete Lit PNGs do not establish matching visual detail or user acceptance.",
+  "updated_utc": "2026-10-05T02:53:34.593461+00:00",
+  "previous_receipt_sha256": "282b80a7fff24d77b91c2098044d927ebcebb78fe53a00461a5dba50457e981f",
+  "helper_at_initial_readonly_approval": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\native_streaming_diagnostic.py",
+    "sha256": "714b073293f0eb011c957a7b32d20dcddff58d1b327abd8f791082ce2fd3582d"
+  },
+  "helper_current_diagnostic_source": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\native_streaming_diagnostic.py",
+    "sha256": "3a952b4150fd4222a3359620a52cf6f62e747d36070747e6b74ebe4f6fa59303"
+  },
+  "temporary_residency_test": {
+    "reviewed_scope": "One finite30s request for the12 existing current-area target textures; no repeated request is implied.",
+    "request_receipt": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_temporary_30sec_r014_PID14776.json",
+      "sha256": "fa37bd4d02336ecaec5239c241956feff8b327dac6af1abe16d2a7c04726dc39"
+    },
+    "streamer_receipt": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_temporary_residency_streamer_PID14776.json",
+      "sha256": "4a2bfdd08d521864990b954ecc1c6e8e049182ebc2e9e4f5d6ef952b62ac876a"
+    },
+    "native_log": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Revision_2026-10-05\\STREAMING_NATIVE_LOG_TEMP_PID14776.txt",
+      "sha256": "e72c829f6d3330af39c1c498135c3e93cb3c2e1a49a0062281ec7bbc10ba154e"
+    },
+    "selected_textures": {
+      "Sand_01_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Albedo.T_Sand_01_Albedo",
+      "Sand_01_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+      "Sand_01_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Mask_GeoCity.T_Sand_01_Mask_GeoCity",
+      "Sand_02_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Albedo.T_Sand_02_Albedo",
+      "Sand_02_Normal": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+      "Sand_02_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Mask_GeoCity.T_Sand_02_Mask_GeoCity",
+      "Dirt_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Albedo.T_Dirt_Path_01_Albedo",
+      "Dirt_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Dirt_Path_01/T_Dirt_Path_01_Normal.T_Dirt_Path_01_Normal",
+      "Dirt_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Dirt_Path_01_Mask_GeoCity.T_Dirt_Path_01_Mask_GeoCity",
+      "Sand_Path_Albedo": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Albedo.T_Sand_Path_01_Albedo",
+      "Sand_Path_Normal": "/Game/MOUT_Arabian/Textures/Landscape/Sand_Path_01/T_Sand_Path_01_Normal.T_Sand_Path_01_Normal",
+      "Sand_Path_PackedMask": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_Path_01_Mask_GeoCity.T_Sand_Path_01_Mask_GeoCity"
+    },
+    "native_mips": {
+      "four_logged_target_current_size": [
+        4096,
+        4096
+      ],
+      "four_logged_target_wanted_size": [
+        4096,
+        4096
+      ],
+      "mip_count": 13,
+      "forced_fully_load_reported": true,
+      "force_remaining_seconds_at_log": 24.9,
+      "streaming_current_mb": 237.37,
+      "streaming_target_mb": 237.37,
+      "pool_mb": 1000,
+      "reported_percent": 24,
+      "view0_remains_old_wide": true,
+      "incidental_wet_sand_stays_64x64": true
+    },
+    "preservation": {
+      "dirty_maps": [],
+      "dirty_content": [],
+      "persistent_texture_property_snapshots_unchanged": true,
+      "cvars_unchanged": true,
+      "no_Content_save_performed_by_helper": true,
+      "transient_residency_change_expected": true
+    },
+    "before_capture_metadata": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_revision_reopened_r014_realtime_close.json",
+      "sha256": "989a3e8094c4a586f007423658b4f1883cc2edb092513e4a20c6a3b36bb4597f"
+    },
+    "diagnostic_capture_metadata": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\CAPTURE_GazaShujaiya_revision_r014_temporary_residency_diagnostic_close.json",
+      "sha256": "c01468b379755f89e9c69a0261d3fd9e4ea4c77a267f2891b7d09a3251963906"
+    },
+    "camera_rotation_actual_Lit_activekey_match": true,
+    "before_image": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_reopened_r014_realtime_close.png",
+      "sha256": "90e75c1703228d892f15d2f27f38f1d39bed3f37641fc17023d333f48a962804",
+      "bytes": 1802507,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "complete_png": true
+    },
+    "diagnostic_image": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\GroundPainting_2026-10-04\\Images\\GazaShujaiya_revision_r014_temporary_residency_diagnostic_close.png",
+      "sha256": "3c7e8734d48162119227be245bc1286555dfb9616bc3e8525c957059e5e1037e",
+      "bytes": 2681540,
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "complete_png": true
+    },
+    "independent_visual_comparison": "Reviewer viewed both full saved1600x1000 images. In the ordinary reopened image the foreground sand features are blurred; the temporary-residency image restores clearly defined fine grain and darker relief at the same framing. Road edges, grass clump, prop and shadow positions match.",
+    "causal_conclusion": "Bounded texture residency intervention changed logged target mips from64x64 to4096x4096 and restored fine ground detail with camera, Lit mode and persistent texture/CVar/package states preserved. This supports inadequate ordinary residency/demand as the cause of the observed reopened blur. It does not identify why the streamer retained old wide View0 or prove ordinary reopened appearance fixed.",
+    "qualification": "TEMPORARY_RESIDENCY_DIAGNOSTIC_ONLY. Higher resident mips may remain cached after request expiry. A fresh process without a residency request remains necessary for ordinary visual persistence proof."
+  }
+}

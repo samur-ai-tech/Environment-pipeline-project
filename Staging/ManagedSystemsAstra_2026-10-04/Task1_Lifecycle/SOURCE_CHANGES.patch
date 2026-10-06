@@ -1,0 +1,849 @@
+--- before/Content/Python/init_unreal.py
++++ Content/Python/init_unreal.py
+@@ -7,8 +7,14 @@
+ import unreal
+ 
+ project = Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())).resolve()
++if Path(__file__).resolve() != (project/'Content/Python/init_unreal.py').resolve():
++    raise RuntimeError('GeoCity startup must execute from the exact project entrypoint.')
+ guard_path = project / 'Content/Python/geocity_runtime_guard.py'
+ manifest = json.loads((project / 'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json').read_text(encoding='utf-8'))
++if manifest.get('schema') != 'environmentpipeline.geocity_runtime_sources.v2':
++    raise RuntimeError('GeoCity requires the manager-reviewed combined source/configuration seal.')
++if manifest['startup']['file'] != 'init_unreal.py' or hashlib.sha256((project/'Content/Python/init_unreal.py').read_bytes()).hexdigest() != manifest['startup']['sha256']:
++    raise RuntimeError('GeoCity startup entrypoint differs from its combined seal.')
+ expected = manifest['modules']['geocity_runtime_guard']['sha256']
+ guard_source = guard_path.read_bytes()
+ if hashlib.sha256(guard_source).hexdigest() != expected:
+--- before/Content/Python/geocity_runtime_guard.py
++++ Content/Python/geocity_runtime_guard.py
+@@ -124,6 +124,7 @@
+     current = json.loads(manifest_path.read_text(encoding='utf-8'))
+     if current != _MANIFEST:
+         raise RuntimeError('GeoCity manifest changed in this session; restart the editor.')
++    _verify_support_files()
+     result = {}
+     for name in _MANIFEST['modules']:
+         _source(name)
+@@ -133,15 +134,34 @@
+     return result
+ 
+ 
++def _verify_support_files():
++    startup=(_ROOT/'Content/Python'/ _MANIFEST['startup']['file']).resolve(strict=True)
++    if startup!=(_ROOT/'Content/Python/init_unreal.py').resolve() or _sha(startup)!=_MANIFEST['startup']['sha256']:
++        raise RuntimeError('GeoCity startup entrypoint changed after sealing')
++    required={'Config/DefaultEngine.ini','Config/DefaultRoadBLD.ini',
++              'Staging/SystemCompletion_2026-10-04/launch_editor.ps1',
++              'Staging/SystemCompletion_2026-10-04/seal_runtime.py'}
++    if set(_MANIFEST.get('support_files',{}))!=required:
++        raise RuntimeError('GeoCity combined seal lacks its exact startup/configuration contract')
++    for relative,expected in _MANIFEST['support_files'].items():
++        path=(_ROOT/relative).resolve(strict=True)
++        if not path.is_relative_to(_ROOT) or _sha(path)!=expected:
++            raise RuntimeError('GeoCity startup/configuration changed after sealing: '+relative)
++
++
+ def bootstrap(project):
+     global _ROOT, _MANIFEST, _FINDER
+     project = Path(project).resolve(strict=True)
+     if _ROOT is not None and _ROOT != project:
+         raise RuntimeError('GeoCity is already bound to another project.')
+     _ROOT = project
+-    _MANIFEST = json.loads((_ROOT / 'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json').read_text(encoding='utf-8'))
+-    if _MANIFEST['schema'] != 'environmentpipeline.geocity_runtime_sources.v1':
++    manifest = json.loads((_ROOT / 'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json').read_text(encoding='utf-8'))
++    if _MANIFEST is not None and _MANIFEST!=manifest:
++        raise RuntimeError('GeoCity cannot rebind a running session to another seal; restart the editor')
++    _MANIFEST=manifest
++    if _MANIFEST['schema'] != 'environmentpipeline.geocity_runtime_sources.v2':
+         raise RuntimeError('Unsupported GeoCity runtime manifest.')
++    _verify_support_files()
+     startup = _ROOT / 'Content/Python' / _MANIFEST['startup']['file']
+     if startup.name != 'init_unreal.py' or _sha(startup) != _MANIFEST['startup']['sha256']:
+         raise RuntimeError('The ordinary GeoCity startup differs from its sealed entrypoint.')
+@@ -158,6 +178,9 @@
+     sys.modules['geocity_editor_action'].register_menu()
+     receipt = _ROOT / 'Staging/SystemCompletion_2026-10-04/RUNTIME_STARTUP.json'
+     receipt.parent.mkdir(parents=True, exist_ok=True)
+-    receipt.write_text(json.dumps({'pid': os.getpid(), 'sources': sources,
+-                                  'menu_registered': True, 'generation_started': False}, indent=2), encoding='utf-8')
++    payload=json.dumps({'pid':os.getpid(),'sources':sources,'support_files':_MANIFEST['support_files'],
++                        'manifest_sha256':_sha(_ROOT/'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json'),
++                        'menu_registered':True,'generation_started':False},indent=2)
++    receipt.write_text(payload,encoding='utf-8')
++    receipt.with_name('RUNTIME_STARTUP_PID'+str(os.getpid())+'.json').write_text(payload,encoding='utf-8')
+     return sources
+--- before/Content/Python/geocity_editor_action.py
++++ Content/Python/geocity_editor_action.py
+@@ -10,7 +10,28 @@
+ 
+ 
+ def persistent_profiles(project):
+-    return list((project/'Staging/ModelBank').rglob('AREA_PROFILE.json'))
++    # Canonical profiles are immediate children; archived copies are evidence.
++    return sorted((project/'Staging/ModelBank').glob('*/AREA_PROFILE.json'))
++
++
++def lease_fields(line):
++    return dict(re.findall(r'(?:^|\s)([A-Za-z_]+)=([^\s]+)', line))
++
++
++def managed_operation_lease(project, line, world_path):
++    """Accept only task4's manager-issued actual-PID activation, not startup."""
++    fields = lease_fields(line)
++    if fields.get('OWNER') != 'CODEX_MANAGED_SYSTEMS_TASK4':
++        return False
++    assignment = json.loads((project/'Staging/ManagedSystemsAstra_2026-10-04/ASSIGNMENTS.json').read_text(encoding='utf-8'))
++    task = next(row for row in assignment['tasks'] if row['id'] == 'task4')
++    return (bool(task['thread_id'])
++            and fields.get('manager_thread_id') == assignment['manager_thread_id']
++            and fields.get('operator_thread_id') == task['thread_id']
++            and fields.get('assigned_editor_PID') == str(os.getpid())
++            and fields.get('activation') == 'MANAGER_ACTIVATED'
++            and fields.get('map') == world_path
++            and world_path in assignment['native_area_maps'])
+ 
+ 
+ def acknowledged_cook_leftovers(project, dirty_paths):
+@@ -174,8 +195,12 @@
+             raise RuntimeError('The current area requires exactly one persistent AREA_PROFILE.json')
+         lease_path=project/'Staging/ModelBank/EDITOR_OWNER.txt'
+         lease=lease_path.read_text(encoding='utf-8-sig').splitlines()[-1]
+-        if 'OWNER=NONE' not in lease:
++        managed = managed_operation_lease(project,lease,world_path)
++        if lease_fields(lease).get('OWNER') != 'NONE' and not managed:
+             raise RuntimeError('The editor is assigned to an active task. Wait until that task releases it.')
++        if any(getattr(r,key,None) is not None for r in geocity_bank_workflow.ACTIVE
++               for key in ('watch_tick','save_tick')):
++            raise RuntimeError('An ordinary GeoCity operation is already active.')
+         dirty=unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()+unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()
+         profile=json.loads(matching[0].read_text(encoding='utf-8'))
+         if profile.get('roadbld_workflow',{}).get('enabled'):
+@@ -187,24 +212,28 @@
+             if not set(dirty_paths).issubset(acknowledged):
+                 raise RuntimeError('Resolve unsaved changes before generating the current area.')
+         process_read=subprocess.run(['powershell.exe','-NoProfile','-Command','Get-Process UnrealEditor -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id'],capture_output=True,text=True,timeout=10,creationflags=subprocess.CREATE_NO_WINDOW)
++        process_read.check_returncode()
+         pids=[int(p) for p in process_read.stdout.split()]
+         if pids!=[os.getpid()]:
+             raise RuntimeError('GeoCity requires this to be the only open Unreal editor.')
+         if lease_path.read_text(encoding='utf-8-sig').splitlines()[-1]!=lease:
+             raise RuntimeError('Editor ownership changed. Try again after the task finishes.')
+-        with lease_path.open('a',encoding='utf-8') as stream:
+-            menu_lease = datetime.datetime.now(datetime.timezone.utc).isoformat()+f' OWNER=GEOCITY_MENU task=GENERATE_CURRENT_AREA assigned_editor_PID={os.getpid()} scope={world_path}_configured_generation_scoped_replace_Bake_named_dependencies_map_save'
+-            stream.write('\n'+menu_lease+'\n')
++        if not managed:
++            with lease_path.open('a',encoding='utf-8') as stream:
++                menu_lease = datetime.datetime.now(datetime.timezone.utc).isoformat()+f' OWNER=GEOCITY_MENU task=GENERATE_CURRENT_AREA assigned_editor_PID={os.getpid()} scope={world_path}_configured_generation_scoped_replace_Bake_named_dependencies_map_save'
++                stream.write('\n'+menu_lease+'\n')
+         actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+         action='regenerate' if any(a.get_class().get_name()=='HoudiniAssetActor' for a in actors) else 'instantiate'
+-        return geocity_bank_workflow.run(str(matching[0]),action,reviewed_dirty_packages=dirty_paths,release_menu_lease=True)
++        return geocity_bank_workflow.run(str(matching[0]),action,reviewed_dirty_packages=dirty_paths,release_menu_lease=not managed)
+     except Exception as exc:
+         # Constructor/preflight errors can occur before GeoCityRun owns a
+         # callback. Release only this exact menu acquisition, never another run.
+         if menu_lease is not None and lease_path.read_text(encoding='utf-8-sig').splitlines()[-1] == menu_lease:
+             import sys
+             active = list(getattr(sys.modules.get('geocity_bank_workflow'),'ACTIVE',[])) + list(getattr(sys.modules.get('geocity_roadbld_workflow'),'ACTIVE',[]))
+-            if not any(getattr(r,key,None) is not None for r in active for key in ('watch_tick','save_tick','tick_handle','_pending_correction')):
++            dirty_now=unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()+unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()
++            if (not dirty_now and not any(getattr(r,key,None) is not None for r in active for key in ('watch_tick','save_tick','tick_handle','_pending_correction'))
++                    and not any(getattr(r,'state',{}).get('recovery_required') for r in active)):
+                 with lease_path.open('a',encoding='utf-8') as stream:
+                     stream.write('\n'+datetime.datetime.now(datetime.timezone.utc).isoformat()+f' OWNER=NONE task=GEOCITY_MENU editor_PID={os.getpid()} released_phase=failed_preflight\n')
+         error = str(exc) or repr(exc)
+--- before/Content/Python/geocity_bank_workflow.py
++++ Content/Python/geocity_bank_workflow.py
+@@ -17,6 +17,41 @@
+ import geocity_landscape_workflow
+ 
+ ACTIVE = []
++RUNTIME_PROFILE_FIELDS = ('landscape_material','road_provider','road_provider_contract','roadbld_workflow.status')
++
++
++def _runtime_profile_merge(before,current,proposed):
++    """Reject concurrent/configuration edits and merge only runtime delivery."""
++    if current!=before:
++        raise RuntimeError('Current profile differs from the operation baseline; refusing overwrite')
++    stripped=json.loads(json.dumps(proposed))
++    merged=json.loads(json.dumps(current))
++    changes=[]
++    for field in RUNTIME_PROFILE_FIELDS:
++        parts=field.split('.')
++        a=before;b=proposed;s=stripped;m=merged
++        for part in parts[:-1]:
++            if part not in a and part not in b:break
++            if not isinstance(a.get(part),dict) or not isinstance(b.get(part),dict):
++                raise RuntimeError('Runtime cannot create/remove profile configuration: '+part)
++            a=a[part];b=b[part];s=s[part];m=m[part]
++        else:
++            key=parts[-1]
++            if key in b:
++                if key not in a or a[key]!=b[key]:
++                    changes.append({'field':field,'before_present':key in a,'before':a.get(key),'after':b[key]})
++                    m[key]=b[key]
++            elif key in a:
++                raise RuntimeError('Runtime cannot remove profile delivery field: '+field)
++            if key in a:s[key]=a[key]
++            else:s.pop(key,None)
++    if stripped!=before:
++        raise RuntimeError('Runtime attempted to alter manager/bank-owned profile configuration')
++    if any(row['field']=='landscape_material' for row in changes):
++        expected=before['root']+'/Materials/MI_GeoCityGround.MI_GeoCityGround'
++        if not before.get('landscape_grass',{}).get('enabled') or proposed['landscape_material']!=expected:
++            raise RuntimeError('Runtime landscape material is outside the permitted permanent area child')
++    return merged,changes
+ 
+ def _path(obj):
+     return obj.get_path_name() if obj else None
+@@ -33,8 +68,10 @@
+ 
+ class GeoCityRun:
+     def __init__(self, profile_path,reviewed_dirty_packages=(),release_menu_lease=False):
+-        self.profile_path=Path(profile_path)
++        self.profile_path=Path(profile_path).resolve(strict=True)
++        self.profile_sha256=hashlib.sha256(self.profile_path.read_bytes()).hexdigest()
+         self.p=json.loads(self.profile_path.read_text(encoding='utf-8'))
++        self.profile_baseline=json.loads(json.dumps(self.p))
+         self.project=Path(unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_dir())).resolve()
+         self.lease_line=(self.project/'Staging/ModelBank/EDITOR_OWNER.txt').read_text(encoding='utf-8-sig').splitlines()[-1]
+         self.receipt=Path(self.p['catalog_receipt'])
+@@ -45,6 +82,7 @@
+         self.watch_tick=None
+         self.was_paused=None
+         self.save_tick=None
++        self._finishing=False
+         self.autosave_settings=None
+         self.autosave_before=None
+         self.previous_baked_paths=[]
+@@ -54,12 +92,18 @@
+         self.last_successful_path=self.state_path.with_name('LAST_SUCCESSFUL_WORKFLOW_STATE.json')
+         if self.state_path.is_file():
+             prior=json.loads(self.state_path.read_text(encoding='utf-8'))
++            assert Path(prior.get('profile','')).resolve()==self.profile_path,'Current workflow ledger belongs to another profile'
++            history=self.state_path.parent/'WorkflowHistory'
++            history.mkdir(exist_ok=True)
++            (history/('WORKFLOW_STATE_'+str(time.time_ns())+'.json')).write_bytes(self.state_path.read_bytes())
+             if prior.get('phase')=='baked_saved_verified':
+                 self.last_successful_path.write_text(json.dumps(prior,indent=2),encoding='utf-8')
+         if self.last_successful_path.is_file():
+             prior=json.loads(self.last_successful_path.read_text(encoding='utf-8'))
+-            assert prior.get('profile')==str(self.profile_path),'Previous saved-area ledger belongs to another profile'
++            assert Path(prior.get('profile','')).resolve()==self.profile_path,'Previous saved-area ledger belongs to another profile'
+             self.previous_baked_paths=list(prior['baked_actor_paths'])
++            prefix=self.p['map']+'.'+self.p['map'].rsplit('/',1)[-1]+':PersistentLevel.'
++            assert all(path.startswith(prefix) for path in self.previous_baked_paths),'Previous output ledger contains actors outside the named map'
+         self.reviewed_dirty_packages=set(reviewed_dirty_packages)
+         self.release_menu_lease=release_menu_lease
+         self.operation_timeout_seconds=self.p.get('operation_timeout_seconds',1800 if self.native_road_phase else 600)
+@@ -71,12 +115,21 @@
+                     'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                     'profile':str(self.profile_path),'mode':self.p['mode'],'phase':'preflight',
+                     'operation_timeout_seconds':self.operation_timeout_seconds,
+-                    'operation_started_epoch':self.started_epoch}
++                    'operation_started_epoch':self.started_epoch,
++                    'previous_baked_actor_paths':list(self.previous_baked_paths),
++                    'lease_at_start':self.lease_line,'profile_sha256_at_start':self.profile_sha256,
++                    'native_execution_verified':False,'reopened':False,'user_accepted':False}
+ 
+     def guard(self):
++        assert not self.state['phase'].startswith('failed'),'Operation has failed; preserve its recovery state'
++        from geocity_editor_action import lease_fields, managed_operation_lease
+         lease=(self.project/'Staging/ModelBank/EDITOR_OWNER.txt').read_text(encoding='utf-8-sig').splitlines()[-1]
+-        assert 'OWNER=NONE' not in lease and f'assigned_editor_PID={os.getpid()}' in lease,lease
++        fields=lease_fields(lease)
++        assert fields.get('OWNER') not in (None,'NONE','CODEX_MANAGED_SYSTEMS_STARTUP') and fields.get('assigned_editor_PID')==str(os.getpid()),lease
++        if fields.get('OWNER')=='CODEX_MANAGED_SYSTEMS_TASK4':
++            assert managed_operation_lease(self.project,lease,self.p['map']),'Missing actual-PID manager activation'
+         assert lease==self.lease_line,'Editor ownership changed during this operation'
++        assert hashlib.sha256(self.profile_path.read_bytes()).hexdigest()==self.profile_sha256,'Area profile changed during operation'
+         world=unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+         assert world.get_outermost().get_path_name()==self.p['map'],'Wrong area map'
+         assert self.p['map'].startswith('/Game/Project/Areas/')
+@@ -92,48 +145,81 @@
+         self.state['transaction_autosave']={'previously_enabled':self.autosave_before,'temporarily_disabled':True,'config_saved':False}
+ 
+     def finish_operation(self):
+-        if self.native_road_run and self.native_road_run.tick_handle is not None:
+-            self.native_road_run.finish()
+-            self.native_road_run.state.update(phase='failed_parent_transaction',saved=False,
+-                                             error='Official owner operation ended: '+self.state['phase'])
+-            self.native_road_run.write()
++        if self._finishing:return
++        self._finishing=True
++        errors=[]
++        def attempt(label,fn):
++            try:fn()
++            except Exception as exc:errors.append({'step':label,'error':repr(exc)})
++        failed=self.state['phase'].startswith('failed')
++        native=self.native_road_run
++        if native and failed:
++            import geocity_roadbld_grounding as grounding
++            attempt('rollback_pending_road_correction',lambda:grounding.rollback_correction(native,RuntimeError(self.state.get('error',self.state['phase']))))
++            attempt('stop_native_road_callbacks',native.finish)
++            # A completed native save must remain recorded if a later parent
++            # save fails; it is not a rollback or an unsaved transaction.
++            native.state['parent_failure']=self.state['phase']
++            attempt('record_native_parent_failure',native.write)
+         if self.wrapper:
+-            self.wrapper.set_auto_cooking_enabled(False)
+-            self.wrapper.on_post_instantiation_delegate.remove_callable(self.after_instantiation)
+-            self.wrapper.on_post_cook_delegate.remove_callable(self.after_cook)
+-            self.wrapper.on_post_processing_delegate.remove_callable(self.after_processing)
+-            self.wrapper.on_post_bake_delegate.remove_callable(self.after_bake)
+-        if self.save_tick is not None:
+-            unreal.unregister_slate_post_tick_callback(self.save_tick)
+-            self.save_tick=None
+-        if self.was_paused and not self.api.is_asset_cooking_paused():
+-            self.api.pause_asset_cooking()
+-        elif self.was_paused is False and self.api.is_asset_cooking_paused():
+-            self.api.resume_asset_cooking()
+-        if self.watch_tick is not None:
+-            unreal.unregister_slate_post_tick_callback(self.watch_tick)
+-            self.watch_tick=None
++            attempt('disable_auto_cook',lambda:self.wrapper.set_auto_cooking_enabled(False))
++            attempt('disable_auto_bake',lambda:self.wrapper.set_auto_bake_enabled(False))
++            for name,callback in (('on_post_instantiation_delegate',self.after_instantiation),('on_post_cook_delegate',self.after_cook),
++                                  ('on_post_processing_delegate',self.after_processing),('on_post_bake_delegate',self.after_bake)):
++                attempt(name,lambda name=name,callback=callback:getattr(self.wrapper,name).remove_callable(callback))
++            def verify_auto_disabled():
++                assert not self.wrapper.is_auto_cooking_enabled() and not self.wrapper.is_auto_bake_enabled(),'Automatic HDA execution remains enabled'
++            attempt('automatic_execution_readback',verify_auto_disabled)
++        for key in ('save_tick','watch_tick'):
++            if getattr(self,key) is not None:
++                def detach(key=key):
++                    unreal.unregister_slate_post_tick_callback(getattr(self,key));setattr(self,key,None)
++                attempt('detach_'+key,detach)
++        if failed or self.was_paused:
++            attempt('pause_cooking',self.api.pause_asset_cooking)
++            def verify_paused():
++                assert self.api.is_asset_cooking_paused(),'Official cooking did not pause'
++            attempt('pause_readback',verify_paused)
++        elif self.was_paused is False:
++            attempt('restore_cooking',self.api.resume_asset_cooking)
++        dirty_maps=[];dirty_content=[]
++        try:
++            dirty_maps=[_path(p) for p in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()]
++            dirty_content=[_path(p) for p in unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
++        except Exception as exc:errors.append({'step':'dirty_state_readback','error':repr(exc)})
++        recovery=bool(errors or (failed and (self.wrapper is not None or dirty_maps or dirty_content)) or (native and getattr(native,'_pending_correction',None)))
+         if getattr(self,'autosave_before',None) is not None:
+-            self.autosave_settings.set_editor_property('bAutoSaveEnable',self.autosave_before,
+-                                                      notify_mode=unreal.PropertyAccessChangeNotifyMode.NEVER)
+-            self.state['transaction_autosave']['restored']=True
++            # Never let autosave persist a failed dirty generation after exit.
++            restore=not failed and not recovery
++            attempt('restore_autosave',lambda:self.autosave_settings.set_editor_property('bAutoSaveEnable',self.autosave_before if restore else False,
++                                                       notify_mode=unreal.PropertyAccessChangeNotifyMode.NEVER))
++            self.state['transaction_autosave'].update(restored=restore,held_disabled_for_recovery=not restore)
+             self.autosave_before=None
+-            self.write()
++        self.state.update(cleanup_errors=errors,dirty_maps_at_finish=dirty_maps,dirty_content_at_finish=dirty_content,
++                          recovery_required=bool(recovery or errors),operation_elapsed_seconds=time.time()-self.started_epoch,
++                          lease_released=False,failed_cook_cancellation_verified=False if failed else None)
+         if self.release_menu_lease:
+             lease_path=self.project/'Staging/ModelBank/EDITOR_OWNER.txt'
+             latest=lease_path.read_text(encoding='utf-8-sig').splitlines()[-1]
+-            if 'OWNER=GEOCITY_MENU' in latest and f'assigned_editor_PID={os.getpid()}' in latest:
++            if latest==self.lease_line and not self.state['recovery_required']:
+                 with lease_path.open('a',encoding='utf-8') as stream:
+                     stream.write('\n'+datetime.datetime.now(datetime.timezone.utc).isoformat()+f' OWNER=NONE task=GEOCITY_MENU editor_PID={os.getpid()} released_phase={self.state["phase"]}\n')
++                self.state['lease_released']=True
+             self.release_menu_lease=False
++        try:self.write()
++        finally:self._finishing=False
+ 
+     def fail(self,phase,exc):
+-        self.state.update(phase=phase,error=repr(exc),api_error=self.wrapper.get_last_error_message() if self.wrapper else None)
+-        self.write()
+-        self.finish_operation()
++        try:api_error=self.wrapper.get_last_error_message() if self.wrapper else None
++        except Exception as api_exc:api_error=repr(api_exc)
++        self.state.update(phase=phase,error=repr(exc),api_error=api_error)
++        try:self.write()
++        except Exception as write_exc:self.state['failure_receipt_write_error']=repr(write_exc)
++        finally:self.finish_operation()
+         unreal.log_error('GeoCity '+phase+': '+repr(exc))
+ 
+     def watch(self,delta_time):
++        if self._finishing:return
+         try:
+             self.guard()
+             assert time.time()-self.started_epoch<self.operation_timeout_seconds,'GeoCity operation timed out; see workflow receipt'
+@@ -142,6 +228,7 @@
+ 
+     def guard_processes(self):
+         process_read=subprocess.run(['powershell.exe','-NoProfile','-Command','Get-Process UnrealEditor -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id'],capture_output=True,text=True,timeout=10,creationflags=subprocess.CREATE_NO_WINDOW)
++        process_read.check_returncode()
+         assert [int(p) for p in process_read.stdout.split()]==[os.getpid()],'Exactly one Unreal editor is required'
+ 
+     def after_cook(self,w,success):
+@@ -190,11 +277,52 @@
+             self.state['engine_output_configuration'][-1]['actual_outputs_verified_after_processing']=True
+         self.state['controls_output']='point-only Houdini controls; no separate Unreal mesh expected'
+ 
++    def official_landscapes(self,w):
++        """Resolve exact public-wrapper output objects, never actor-name guesses.
++
++        The installed plugin returns HoudiniLandscapeTargetLayerOutput objects;
++        their reflected Landscape property is the parent actor (HoudiniOutput.h).
++        An unavailable binding is a native integration failure, not permission
++        to choose or remove another Landscape by class or naming convention.
++        """
++        result={}
++        for index in range(w.get_num_outputs()):
++            if w.get_output_type_at(index)!=unreal.HoudiniOutputType.LANDSCAPE:continue
++            for identifier in w.get_output_identifiers_at(index):
++                obj=w.get_output_object_at(index,identifier)
++                assert obj and obj.get_class().get_name() in ('HoudiniLandscapeTargetLayerOutput','HoudiniLandscapeOutput'),'Unsupported official Landscape output object'
++                landscape=obj.get_editor_property('landscape')
++                assert isinstance(landscape,unreal.Landscape),'Official output has no native Landscape binding'
++                assert landscape.get_outermost().get_path_name()==self.p['map'],'Official Landscape output belongs to another map'
++                result[_path(landscape)]=landscape
++        return result
++
++    def account_previous_landscapes(self):
++        """Record only source-bound official output and the successful ledger."""
++        assert Path(self.wrapper.get_string_parameter_value('package_file')).resolve()==Path(self.p['source']).resolve(),'Existing HDA source differs from the current-map profile'
++        bound=self.official_landscapes(self.wrapper)
++        live={_path(a) for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors() if isinstance(a,unreal.Landscape)}
++        known=set(self.previous_baked_paths)|set(bound)
++        self.state['previous_landscape_accounting']={
++            'live_actor_paths':sorted(live),'official_output_actor_paths':sorted(bound),
++            'successful_ledger_actor_paths':sorted(live.intersection(self.previous_baked_paths)),
++            'unaccounted_actor_paths':sorted(live-known),'hda_actor_path':_path(self.wrapper.get_houdini_asset_actor()),
++            'source':self.p['source'],'source_sha256':hashlib.sha256(Path(self.p['source']).read_bytes()).hexdigest(),
++            'saved_map_sha256':hashlib.sha256((self.project/('Content/'+self.p['map'][6:]+'.umap')).read_bytes()).hexdigest(),
++            'retirement_policy':'Only these exact prior paths after complete replacement Bake verification'}
++        self.write()
++        assert not live-known,'A saved Landscape lacks successful-ledger or exact official HDA output ownership; manager reconciliation required'
++        self.previous_baked_paths=sorted(known)
++        self.state['previous_baked_actor_paths']=self.previous_baked_paths
++
+     def write(self):
+         payload=json.dumps(self.state,indent=2,default=str)
+-        self.state_path.write_text(payload,encoding='utf-8')
+-        if self.p.get('build_state_alias'):
+-            Path(self.p['build_state_alias']).write_text(payload,encoding='utf-8')
++        paths=[self.state_path]
++        if self.p.get('build_state_alias'):paths.append(Path(self.p['build_state_alias']))
++        for path in paths:
++            pending=path.with_name(path.name+'.'+str(os.getpid())+'.pending')
++            pending.write_text(payload,encoding='utf-8')
++            os.replace(pending,path)
+ 
+     def expected_native_material_groups(self,instances):
+         """Count every exact native mesh/material family, including facade variants."""
+@@ -251,6 +379,7 @@
+         bound.set_input_objects([table])
+         assert w.set_input_parameter('bank_catalog',bound)
+         self.state['bound_table_objects']=[_path(x) for x in w.get_input_parameter('bank_catalog').get_input_objects()]
++        assert self.state['bound_table_objects']==[_path(table)],'Official bank input does not reference the requested table'
+         mode=self.p['mode']
+         assert mode in ('disabled','technical_preview','released')
+         release=self.p.get('release',{})
+@@ -283,12 +412,16 @@
+             assert w.get_bool_parameter_value(name)==value,name
+         for name,value in self.p['surface_choices'].items():
+             assert w.set_int_parameter_value(name,value),name
++            assert w.get_int_parameter_value(name)==value,name
+         for key,setter in (('cook_folder',w.set_temporary_cook_folder),('bake_folder',w.set_bake_folder)):
+             directory=unreal.DirectoryPath();directory.path=self.p[key]
+             assert setter(directory)
+         assert w.set_replace_previous_bake(True)
++        assert w.get_replace_previous_bake()
+         assert w.set_remove_output_after_bake(True)
++        assert w.get_remove_output_after_bake()
+         assert w.set_auto_bake_enabled(False)
++        assert not w.is_auto_bake_enabled()
+         self.state['parameters']={**strings,**bools,**self.p['surface_choices']}
+         if self.receipt.exists():
+             archive=self.receipt.with_name(self.receipt.stem+'_'+str(time.time_ns())+'.json')
+@@ -302,6 +435,7 @@
+         assert w.recook()
+ 
+     def after_instantiation(self,w):
++        if self.state['phase']!='waiting_for_instantiation':return
+         try:
+             self.configure_and_bind(w)
+         except Exception as exc:
+@@ -313,6 +447,10 @@
+             self.guard()
+             assert self.receipt.stat().st_mtime>=self.state['cook_started_epoch'],'Stale catalog receipt'
+             receipt=json.loads(self.receipt.read_text())
++            error_path=Path(str(self.receipt)+'.errors.json')
++            if error_path.exists():
++                self.state['stage_errors']=json.loads(error_path.read_text())
++                assert not self.state['stage_errors'],'HDA reported incomplete/error output'
+             assert len(receipt['rows'])==self.p['row_count']
+             assert receipt['catalog_sha256']==self.p['catalog_sha256']
+             assert receipt['technical_preview_enabled']==(self.p['mode']=='technical_preview')
+@@ -342,9 +480,18 @@
+                 assert support['conflicting_support_cells']==0,'Contradictory building ground support'
+                 total=assembly['whole_native_building_count']+assembly['assembled_building_count']+assembly['unsupported_count']
+                 assert total==support['source_pad_count'],'Geographic buildings disappeared from the complete coverage ledger'
+-                assert assembly['native_module_point_count']>0,'Enabled assembly emitted no native facade modules'
+                 self.state['geographic_building_coverage']={'total':total,'whole_native':assembly['whole_native_building_count'],
+-                    'native_assembly':assembly['assembled_building_count'],'explicitly_unsupported':assembly['unsupported_count']}
++                    'native_assembly':assembly['assembled_building_count'],'explicitly_unsupported':assembly['unsupported_count'],
++                    'constructed':assembly['whole_native_building_count']+assembly['assembled_building_count'],
++                    'complete_native_construction':assembly['unsupported_count']==0}
++                self.write()
++                assert all(isinstance(assembly[key],int) and not isinstance(assembly[key],bool) and assembly[key]>=0 for key in
++                           ('whole_native_building_count','assembled_building_count','unsupported_count','native_module_point_count')),'Invalid native building ledger counts'
++                assert assembly['unsupported_count']==len(assembly['unsupported'])==0,'Unsupported buildings remain; refusing complete-area Bake'
++                ids=assembly['assembled_osm_ids']
++                assert len(ids)==len(set(ids))==assembly['assembled_building_count'],'Native assembly identity ledger differs'
++                assert assembly['native_module_point_count']==sum(x['role']=='building_module' for x in receipt.get('nonbuilding_instances',[])),'Native module receipt differs from assembly ledger'
++                assert assembly['assembled_building_count']==0 or assembly['native_module_point_count']>0,'Enabled assembly emitted no native facade modules'
+                 if self.p['building_assembly_contract'].get('building_style_variants',{}).get('enabled'):
+                     styles=receipt.get('building_style_variants',{})
+                     assert styles,'Completed native building style ledger is missing'
+@@ -381,27 +528,63 @@
+             assert actual_groups==expected_groups,'Native mesh/material family counts differ from complete instance receipt'
+             self.state['native_material_family_count']=len(actual_groups)
+             self.state['surface_geometry']=receipt.get('surface_geometry',{})
+-            baked_paths={_path(a) for a in w.get_baked_output_actors()}
+-            landscapes=[a for a in actors if isinstance(a,unreal.Landscape) and _path(a) not in baked_paths]
++            landscapes=list(self.official_landscapes(w).values())
+             assert len(landscapes)==1 and _path(landscapes[0].landscape_material)==self.p['landscape_material']
+             if self.p.get('landscape_grass',{}).get('enabled'):
+                 self.state['geographic_ground_connection']=geocity_landscape_workflow.verify_landscape(self,landscapes[0],receipt)
++            self.guard()
+             self.state.update(phase='cooked_verified',row_count=len(receipt['rows']),
+                               catalog_sha256=receipt['catalog_sha256'],output_count=w.get_num_outputs(),
+                               instance_count=actual,roles=dict(Counter(x['role'] for x in instances)),native_components=meshes)
+             self.state.pop('error',None);self.write()
+-            if self.action in ('regenerate','instantiate'):
+-                if self.native_road_phase=='export':
+-                    self.begin_native_roads(receipt)
+-                else:
+-                    self.bake_and_save()
+-            else:
+-                self.finish_operation()
++            if (self.p.get('landscape_grass',{}).get('enabled')
++                    and not self.state['geographic_ground_connection']['paint_ready']):
++                self.cooked_landscape=landscapes[0]
++                self.completed_receipt=receipt
++                self.paint_wait_started=time.time()
++                self.paint_last_probe=self.paint_wait_started
++                self.state['phase']='cooked_waiting_for_paint';self.write()
++                self.save_tick=unreal.register_slate_post_tick_callback(self.finish_cook_readiness)
++            else:self.advance_cooked(receipt)
+         except Exception as exc:
+             self.state['output_count']=w.get_num_outputs()
+             error_path=Path(str(self.receipt)+'.errors.json')
+             if error_path.exists():self.state['stage_errors']=json.loads(error_path.read_text())
+             self.fail('failed_cook_verification',exc)
++
++    def finish_cook_readiness(self,delta_time):
++        """CPU weight readback may lag official output callbacks; never recook."""
++        try:
++            self.guard()
++            if time.time()-self.paint_last_probe<1:return
++            self.paint_last_probe=time.time()
++            result=geocity_landscape_workflow.verify_landscape(self,self.cooked_landscape,self.completed_receipt)
++            self.state['geographic_ground_connection']=result
++            self.state['paint_readiness_wait_seconds']=time.time()-self.paint_wait_started
++            self.write()
++            if not result['paint_ready']:
++                assert time.time()-self.paint_wait_started<120,'Ground paint unavailable before native road authoring/Bake'
++                return
++            unreal.unregister_slate_post_tick_callback(self.save_tick);self.save_tick=None
++            self.guard()
++            self.state['phase']='cooked_verified';self.write()
++            self.advance_cooked(self.completed_receipt)
++        except Exception as exc:self.fail('failed_cook_paint_readiness',exc)
++
++    def advance_cooked(self,receipt):
++        if self.action in ('regenerate','instantiate'):
++            if self.native_road_phase=='export':self.begin_native_roads(receipt)
++            else:
++                if self.native_road_phase=='suppression':
++                    provider=receipt.get('surface_geometry',{}).get('road_provider',{})
++                    assert provider.get('provider')=='RoadBLD' and provider.get('vehicle_surfaces_suppressed') is True,'Native provider suppression is incomplete before Bake'
++                    contract=provider.get('contract') or provider.get('original_contract') or {}
++                    assert contract.get('transaction',{}).get('token')==self.native_road_contract['transaction']['token'],'Suppression belongs to another native transaction'
++                    for key in ('area_id','source_sha256','centreline_sha256','drivable_source_ids','source_road_count','generated_road_count','generated_piece_ids'):
++                        assert provider.get(key)==self.native_road_contract[key],'Suppression/native contract differs before Bake: '+key
++                    self.state['native_suppression_verified_before_bake']=True;self.write()
++                self.bake_and_save()
++        else:self.finish_operation()
+ 
+     def begin_native_roads(self,receipt):
+         """Stage native roads from this completed cook before saving either provider."""
+@@ -417,6 +600,7 @@
+             settings=self.p.get('roadbld_workflow',{}).get('settings'),reviewed_dirty_packages=dirty,on_complete=self.after_native_roads)
+ 
+     def after_native_roads(self,native,success):
++        self.native_road_run=native
+         try:
+             self.guard()
+             assert self.native_road_phase=='authoring','Unexpected native completion callback'
+@@ -453,7 +637,8 @@
+             self.configure_and_bind(self.wrapper)
+         except Exception as exc:
+             import geocity_roadbld_grounding as grounding
+-            grounding.rollback_correction(native,exc)
++            try:grounding.rollback_correction(native,exc)
++            except Exception as rollback_exc:self.state['correction_rollback_error']=repr(rollback_exc)
+             self.fail('failed_native_road_transaction',exc)
+ 
+     def bake_and_save(self):
+@@ -468,18 +653,24 @@
+         assert self.wrapper.bake_all_outputs()
+ 
+     def after_bake(self,w,success):
+-        self.guard()
+-        self.state.update(phase='baked_waiting_for_output_removal' if success else 'failed_bake',bake_success=bool(success))
+-        self.write()
+-        if success:
+-            self.bake_completed_epoch=time.time()
+-            self.save_tick=unreal.register_slate_post_tick_callback(self.finish_save)
+-        else:
+-            self.finish_operation()
++        if self.state['phase']!='baking':return
++        try:
++            self.guard()
++            self.state.update(phase='baked_waiting_for_output_removal' if success else 'failed_bake',bake_success=bool(success))
++            self.write()
++            if success:
++                self.bake_completed_epoch=time.time()
++                self.save_tick=unreal.register_slate_post_tick_callback(self.finish_save)
++            else:self.fail('failed_bake',RuntimeError('Official Houdini Engine Bake failed'))
++        except Exception as exc:self.fail('failed_bake_callback',exc)
+ 
+     def finish_save(self,delta_time):
+         try:
+             self.guard()
++            # Weight readback is expensive and may lag a native callback.
++            # Keep Slate responsive while the bounded readiness gate waits.
++            if time.time()-getattr(self,'last_save_probe',0)<1:return
++            self.last_save_probe=time.time()
+             components=self.wrapper.get_houdini_asset_actor().get_components_by_class(unreal.MeshComponent)
+             if components:
+                 assert time.time()-self.bake_completed_epoch<120,'Cooked output was not removed'
+@@ -491,7 +682,7 @@
+                 assert len(landscapes)==1,'Completed Bake has no unique geographic Landscape'
+                 grass=geocity_landscape_workflow.verify_landscape(self,landscapes[0],json.loads(self.receipt.read_text()))
+                 self.state['geographic_ground_connection']=grass
+-                if not grass['ground_paint_weight_observed']:
++                if not grass['paint_ready']:
+                     # Native post-processing can precede CPU paint readback:
+                     # the same generated component returned Ground=1 after
+                     # the callback had reported zero. Wait within this normal
+@@ -550,17 +741,18 @@
+                 assert delivery['saved'] and delivery['named_map']==self.p['map']
+                 self.p['road_provider']='RoadBLD';self.p['road_provider_contract']=delivery
+                 self.p['roadbld_workflow']['status']='native_generated_saved_verified'
+-                self.profile_path.write_text(json.dumps(self.p,indent=2)+'\n',encoding='utf-8')
+                 assert self.wrapper.set_string_parameter_value('road_provider_contract_json',_hda_json(delivery))
+                 self.state['native_road_delivery']=delivery
+             world=unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+             assert unreal.EditorLoadingAndSavingUtils.save_map(world,self.p['map'])
+             self.save_generated_dependencies(baked,include_saved_map=True)
++            assert self.p['map'] not in {_path(x) for x in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()},'Named map remains dirty after final save'
++            self.save_profile()
+             self.state.pop('error',None)
+             self.state.update(phase='baked_saved_verified',baked_actor_paths=[_path(a) for a in baked],
+                               baked_actor_count=len(baked),baked_mesh_counts=dict(actual),
+                               cooked_mesh_component_count=0,landscape_count=1,
+-                              baked_native_material_slots_verified=True,
++                              baked_native_material_slots_verified=True,native_execution_verified=True,
+                               dirty_maps=[_path(x) for x in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()],
+                               unsaved_content_packages=[_path(x) for x in unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()])
+             saved_dependencies=set(self.state['named_generated_dependency_paths'])
+@@ -568,11 +760,26 @@
+                 if p.startswith(self.p['cook_folder']+'/') and p not in saved_dependencies]
+             self.write()
+             self.last_successful_path.write_text(json.dumps(self.state,indent=2,default=str),encoding='utf-8')
+-            self.profile_path.write_text(json.dumps(self.p,indent=2)+'\n',encoding='utf-8')
+             self.finish_operation()
+         except Exception as exc:
+-            self.state.update(phase='failed_bake_save_verification',error=repr(exc));self.write()
+-            self.finish_operation()
++            self.fail('failed_bake_save_verification',exc)
++
++    def save_profile(self):
++        """Final-save owner merges only runtime fields into the unchanged file."""
++        self.guard()
++        current=json.loads(self.profile_path.read_text(encoding='utf-8'))
++        merged,changes=_runtime_profile_merge(self.profile_baseline,current,self.p)
++        before_sha=self.profile_sha256
++        if changes:
++            pending=self.profile_path.with_name(self.profile_path.name+'.'+str(os.getpid())+'.pending')
++            pending.write_text(json.dumps(merged,indent=2)+'\n',encoding='utf-8')
++            self.guard()
++            os.replace(pending,self.profile_path)
++            self.profile_sha256=hashlib.sha256(self.profile_path.read_bytes()).hexdigest()
++        self.profile_baseline=merged
++        self.state['runtime_profile_update']={'allowed_fields':list(RUNTIME_PROFILE_FIELDS),'changes':changes,
++            'sha256_before':before_sha,'sha256_after':self.profile_sha256,'immutable_configuration_preserved':True}
++        self.write()
+ 
+     def save_generated_dependencies(self,baked,include_saved_map=False):
+         """Save the explicit dependency closure of retained actors, never dirty-all."""
+@@ -630,6 +837,8 @@
+         assert action in ('instantiate','recook','rebuild','regenerate')
+         assert not any(x is not self and x.watch_tick is not None for x in ACTIVE),'Another GeoCity operation is active'
+         if self.native_road_phase:
++            import geocity_roadbld_workflow
++            self.state['native_landscape_authority']=geocity_roadbld_workflow.require_geographic_landscape_authority()
+             auth=unreal.get_editor_subsystem(unreal.WorldBLDAuthSubsystem)
+             assert auth.has_license_for_tool('RoadBLD'),'RoadBLD is requested but the current WorldBLD session is not authorized; sign in inside Unreal before native road generation'
+         dirty=[_path(x) for x in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()]+[_path(x) for x in unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages()]
+@@ -644,8 +853,8 @@
+             self.api.create_session()
+         assert self.api.is_session_valid(),'The official Houdini Engine session could not start through the installed native settings; check its connection/license error before retrying'
+         self.state['official_engine_connected']=True
++        self.suspend_transaction_autosave()
+         self.state['landscape_grass_connection']=geocity_landscape_workflow.prepare(self)
+-        self.suspend_transaction_autosave()
+         self.was_paused=self.api.is_asset_cooking_paused()
+         self.action=action
+         actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+@@ -658,6 +867,7 @@
+         else:
+             assert len(hd)==1,'Area must contain exactly one HDA'
+             self.wrapper=unreal.HoudiniPublicAPIAssetWrapper.create_wrapper(None,hd[0])
++            self.account_previous_landscapes()
+         self.wrapper.set_auto_cooking_enabled(False)
+         assert self.wrapper.set_auto_bake_enabled(False)
+         self.configure_engine_outputs(self.wrapper)
+@@ -673,6 +883,8 @@
+         return self
+ 
+ def run(profile_path,action='regenerate',reviewed_dirty_packages=(),release_menu_lease=False):
++    import geocity_runtime_guard
++    geocity_runtime_guard.verify()
+     run=GeoCityRun(profile_path,reviewed_dirty_packages,release_menu_lease)
+     ACTIVE.append(run)
+     try:
+--- before/Staging/SystemCompletion_2026-10-04/seal_runtime.py
++++ Staging/SystemCompletion_2026-10-04/seal_runtime.py
+@@ -1,13 +1,15 @@
+ """Package the ordinary project startup; compile source only, no Unreal import."""
+ import hashlib
+ import json
++import argparse
++import os
+ from pathlib import Path
+ 
+ ROOT = Path(__file__).resolve().parents[2]
+ PYTHON = ROOT / 'Content/Python'
+ 
+ 
+-def seal():
++def snapshot():
+     modules = {}
+     for path in sorted(PYTHON.glob('geocity_*.py')):
+         source = path.read_bytes()
+@@ -15,12 +17,37 @@
+         modules[path.stem] = {'file': path.name, 'sha256': hashlib.sha256(source).hexdigest()}
+     entry = PYTHON / 'init_unreal.py'
+     compile(entry.read_bytes(), str(entry), 'exec', dont_inherit=True)
+-    manifest = {'schema': 'environmentpipeline.geocity_runtime_sources.v1',
++    support = {}
++    for relative in ('Config/DefaultEngine.ini', 'Config/DefaultRoadBLD.ini',
++                     'Staging/SystemCompletion_2026-10-04/launch_editor.ps1',
++                     'Staging/SystemCompletion_2026-10-04/seal_runtime.py'):
++        support[relative] = hashlib.sha256((ROOT/relative).read_bytes()).hexdigest()
++    return {'schema': 'environmentpipeline.geocity_runtime_sources.v2',
+                 'startup': {'file': entry.name, 'sha256': hashlib.sha256(entry.read_bytes()).hexdigest()},
+-                'modules': modules, 'loading': 'exact project source; no stale-module reload; no startup generation'}
+-    (ROOT / 'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
+-    print(json.dumps({'sealed_modules': len(modules), 'startup': str(entry), 'runtime_executed': False}))
++                'modules': modules, 'support_files':support,
++                'loading': 'exact project source; no stale-module reload; no startup generation'}
++
++
++def seal(check=False):
++    # Manager invokes only after all source workers stop changing their files.
++    # Profile runtime delivery fields are intentionally not source-sealed.
++    manifest=snapshot()
++    path=ROOT/'Staging/SystemCompletion_2026-10-04/geocity_runtime_manifest.json'
++    if snapshot()!=manifest:
++        raise RuntimeError('Sources changed during sealing; wait for all writers to stop')
++    if check:
++        if json.loads(path.read_text(encoding='utf-8'))!=manifest:
++            raise RuntimeError('Combined source/configuration differs from its final seal')
++    else:
++        pending=path.with_suffix('.json.pending')
++        pending.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
++        os.replace(pending,path)
++    print(json.dumps({'sealed_modules':len(manifest['modules']),'support_files':list(manifest['support_files']),
++                      'check_only':check,'manifest_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
++                      'runtime_executed':False}))
+ 
+ 
+ if __name__ == '__main__':
+-    seal()
++    parser=argparse.ArgumentParser()
++    parser.add_argument('--check',action='store_true')
++    seal(parser.parse_args().check)
+--- before/Staging/SystemCompletion_2026-10-04/launch_editor.ps1
++++ Staging/SystemCompletion_2026-10-04/launch_editor.ps1
+@@ -2,21 +2,40 @@
+     [Parameter(Mandatory=$true)]
+     [ValidateSet('/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration','/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration')]
+     [string]$AreaMap,
+-    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9]{64}$')][string]$ExpectedMapSha256
++    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9]{64}$')][string]$ExpectedMapSha256,
++    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9]{64}$')][string]$ExpectedManifestSha256,
++    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9]{64}$')][string]$ExpectedProfileSha256,
++    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9-]{36}$')][string]$ManagerThreadId,
++    [Parameter(Mandatory=$true)][ValidatePattern('^[a-fA-F0-9-]{36}$')][string]$OperatorThreadId
+ )
+ $ErrorActionPreference = 'Stop'
+ $taskRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
++$taskAssignments = Get-Content -LiteralPath (Join-Path $taskRoot 'Staging\ManagedSystemsAstra_2026-10-04\ASSIGNMENTS.json') -Raw | ConvertFrom-Json
++$taskWriter = @($taskAssignments.tasks | Where-Object { $_.id -eq 'task4' })
++if ($ManagerThreadId -ne $taskAssignments.manager_thread_id -or $taskWriter.Count -ne 1 -or -not $taskWriter[0].thread_id -or $OperatorThreadId -ne $taskWriter[0].thread_id) { throw 'Startup identities must match the current manager and sole task4 operator.' }
++if ($AreaMap -notin $taskAssignments.native_area_maps) { throw 'Map is outside the managed original areas.' }
+ $taskLeasePath = Join-Path $taskRoot 'Staging\ModelBank\EDITOR_OWNER.txt'
+ $taskLease = (Get-Content -LiteralPath $taskLeasePath)[-1]
+ if ($taskLease -notmatch 'OWNER=NONE(?:\s|$)') { throw 'Another task owns the editor. No startup or lease takeover is permitted.' }
+ if (@(Get-Process UnrealEditor -ErrorAction SilentlyContinue).Count -ne 0) { throw 'An Unreal editor is already open. Preserve it and obtain an orderly clean release before startup.' }
+ $taskPython = Join-Path $taskRoot 'Content\Python'
+ $taskManifestPath = Join-Path $PSScriptRoot 'geocity_runtime_manifest.json'
++if ((Get-FileHash -LiteralPath $taskManifestPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $ExpectedManifestSha256.ToLowerInvariant()) { throw 'Combined seal differs from the manager-reviewed manifest.' }
+ $taskManifest = Get-Content -LiteralPath $taskManifestPath -Raw | ConvertFrom-Json
++if ($taskManifest.schema -ne 'environmentpipeline.geocity_runtime_sources.v2' -or $taskManifest.startup.file -ne 'init_unreal.py') { throw 'Expected combined startup/configuration seal v2.' }
++$taskProfiles = @(Get-ChildItem -Path (Join-Path $taskRoot 'Staging\ModelBank\*\AREA_PROFILE.json') -File | Where-Object { (Get-Content -LiteralPath $_.FullName -Raw | ConvertFrom-Json).map -eq $AreaMap })
++if ($taskProfiles.Count -ne 1) { throw 'The named original map requires exactly one canonical profile.' }
++if ((Get-FileHash -LiteralPath $taskProfiles[0].FullName -Algorithm SHA256).Hash.ToLowerInvariant() -ne $ExpectedProfileSha256.ToLowerInvariant()) { throw 'Current-map profile differs from the reviewed baseline.' }
+ foreach ($taskEntry in $taskManifest.modules.PSObject.Properties) {
+     $taskSource = Join-Path $taskPython $taskEntry.Value.file
+     if ((Split-Path $taskSource -Parent) -ne $taskPython -or (Split-Path $taskSource -Leaf) -ne ($taskEntry.Name+'.py')) { throw 'Unscoped runtime source.' }
+     if ((Get-FileHash -LiteralPath $taskSource -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskEntry.Value.sha256) { throw ('Runtime source differs from the sealed manifest: '+$taskEntry.Name) }
++}
++$taskSupportNames = @('Config/DefaultEngine.ini','Config/DefaultRoadBLD.ini','Staging/SystemCompletion_2026-10-04/launch_editor.ps1','Staging/SystemCompletion_2026-10-04/seal_runtime.py')
++if (@(Compare-Object @($taskManifest.support_files.PSObject.Properties.Name) $taskSupportNames).Count) { throw 'Combined seal lacks exact startup/configuration files.' }
++foreach ($taskSupport in $taskManifest.support_files.PSObject.Properties) {
++    $taskSupportPath = Join-Path $taskRoot $taskSupport.Name
++    if ((Get-FileHash -LiteralPath $taskSupportPath -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskSupport.Value) { throw ('Startup/configuration differs from combined seal: '+$taskSupport.Name) }
+ }
+ $taskStartup = Join-Path $taskPython 'init_unreal.py'
+ if ((Get-FileHash -LiteralPath $taskStartup -Algorithm SHA256).Hash.ToLowerInvariant() -ne $taskManifest.startup.sha256) { throw 'Ordinary startup differs from the sealed manifest.' }
+@@ -29,6 +48,7 @@
+     if (@($taskRestore.Packages).Count -ne 0) { throw 'Pending package recovery requires reconciliation before an original-map startup.' }
+     if ($taskRestore.RestoreEnabled -ne $false) {
+         $taskRestoreBackup = Join-Path $PSScriptRoot ('Before\PackageRestoreData_'+[DateTime]::UtcNow.ToString('yyyyMMddTHHmmssfffffffZ')+'.json')
++        New-Item -ItemType Directory -Path (Split-Path $taskRestoreBackup -Parent) -Force | Out-Null
+         Copy-Item -LiteralPath $taskRestorePath -Destination $taskRestoreBackup
+         $taskRestore.RestoreEnabled = $false
+         [System.IO.File]::WriteAllText($taskRestorePath,($taskRestore | ConvertTo-Json -Depth 20),[System.Text.UnicodeEncoding]::new($false,$false))
+@@ -48,8 +68,9 @@
+ # RecoveryBootstrap, replacement installer, generator or startup recovery.
+ $taskStart.EnvironmentVariables['UE_PYTHONPATH'] = $taskPython
+ $taskProcess = [System.Diagnostics.Process]::Start($taskStart)
+-$taskNewLease = [DateTime]::UtcNow.ToString('o')+' OWNER=CODEX_SYSTEM_COMPLETION manager_thread_id=01a1063d-1a66-7380-aec4-e0ac89c90829 task=ORDINARY_SYSTEM_COMPLETION assigned_editor_PID='+$taskProcess.Id+' scope=original_maps_normal_menu_named_saves_one_writer_bank_unchanged'
++$taskNewLease = [DateTime]::UtcNow.ToString('o')+' OWNER=CODEX_MANAGED_SYSTEMS_STARTUP manager_thread_id='+$ManagerThreadId+' operator_thread_id='+$OperatorThreadId+' task=task4 assigned_editor_PID='+$taskProcess.Id+' map='+$AreaMap+' activation=AWAITING_MANAGER_ACTUAL_PID scope=paused_startup_inspection_only'
+ [System.IO.File]::AppendAllText($taskLeasePath,[Environment]::NewLine+$taskNewLease+[Environment]::NewLine)
+-$taskReceipt = @{pid=$taskProcess.Id; map=$AreaMap; map_sha256=$ExpectedMapSha256.ToLowerInvariant(); actual_pid_lease=$taskNewLease; sources_checked=$true; generation_started=$false; pause_before_python=$true; autosave=$false; original_map=$true}
++$taskReceipt = @{pid=$taskProcess.Id; map=$AreaMap; map_sha256=$ExpectedMapSha256.ToLowerInvariant(); profile=$taskProfiles[0].FullName; profile_sha256=$ExpectedProfileSha256.ToLowerInvariant(); manifest_sha256=$ExpectedManifestSha256.ToLowerInvariant(); manager_thread_id=$ManagerThreadId; operator_thread_id=$OperatorThreadId; actual_pid_lease=$taskNewLease; sources_checked=$true; generation_started=$false; generation_authorized=$false; activation='AWAITING_MANAGER_ACTUAL_PID'; pause_before_python=$true; autosave=$false; original_map=$true}
+ $taskReceipt | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $PSScriptRoot 'LAUNCH_STATE.json') -Encoding utf8
++$taskReceipt | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $PSScriptRoot ('LAUNCH_STATE_PID'+$taskProcess.Id+'.json')) -Encoding utf8
+ $taskReceipt | ConvertTo-Json -Depth 5

@@ -1,0 +1,37 @@
+{
+  "schema": "environmentpipeline.modular_rgba8_importer_recovery.v1",
+  "approved": true,
+  "utc": "2026-10-05 13:45:35 UTC",
+  "manager_thread_id": "01a10789-2e6a-7321-ad85-0a2964f8a937",
+  "operator_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+  "assigned_editor_PID": 24804,
+  "defect": "Frozen importer accepted only TC_DEFAULT color, rejecting an existing sRGBtrue TC_EDITOR_ICON uncompressedRGBA8 texture before H0017 mesh import.",
+  "native_evidence": "Staging/BankIntegration_2026-10-04/ModularNative_2026-10-05/H0017_MATERIAL_FAILURE_READBACK.json",
+  "retained_progress": {
+    "H0910": 14,
+    "H0911": 20,
+    "total_saved_parts": 34
+  },
+  "candidate_ref": {
+    "path": "Staging/BankIntegration_2026-10-04/ModularNative_2026-10-05/Recovery_RGBA8/modular_native_adapter.py",
+    "sha256": "7f864156f30218b3aac4b279f605bb2198e43c2ed7671d0c78a4b64c86d3e0eb"
+  },
+  "allowed_actions": [
+    "Capture final exact14dirtynewunsavedderivatives and dirtymaps[]",
+    "Orderly PID24804 exit without any save, discarding only these14 known failed newly created buffers",
+    "Apply exact one-line reviewed candidate only after no live editor",
+    "Freeze new request/source manifest preserving immutable original8a253 request and34 saved part receipts",
+    "Return fresh originalmap startup payload for actual-PID content continuation"
+  ],
+  "constraints": [
+    "Existing shared texture untouched",
+    "Original/native/vendor/map/profile/catalog/HDA/runtime data unchanged",
+    "No hot reload, broad cleanup, asset/package deletion, SaveAll or unrelated work",
+    "No rewrite or reimport of existing34part receipt/request identities",
+    "Unexpected dirty state preserves buffers and returns exact evidence"
+  ],
+  "new_failed_buffer_count": 14,
+  "all_failed_buffer_package_files_absent": true,
+  "existing_request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+  "ordinary_generation_authorized": false
+}

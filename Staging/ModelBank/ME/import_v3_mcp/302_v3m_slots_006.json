@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 48,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_material_slots",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0016_Building_03.SM_H0016_Building_03"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":[\"Building_03_002_MTL\",\"Building_03_003_MTL\",\"Building_03_001_MTL\",\"Building_03_Fabric_MTL\",\"stara\",\"Building_03_003_MTL_006\",\"Building_03_002_MTL_002\",\"Building_03_002_MTL_005\",\"Building_03_002_MTL_006\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 48,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"Building_03_002_MTL\",\"Building_03_003_MTL\",\"Building_03_001_MTL\",\"Building_03_Fabric_MTL\",\"stara\",\"Building_03_003_MTL_006\",\"Building_03_002_MTL_002\",\"Building_03_002_MTL_005\",\"Building_03_002_MTL_006\"]}"
+    }
+   ]
+  }
+ }
+}

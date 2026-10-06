@@ -1,0 +1,26 @@
+{
+  "installed_version": "Unreal5.8",
+  "failure": "Landscape.editor_layer_settings is not exposed to installed Python",
+  "retained_fix": "Landscape.get_target_layer_names plus LandscapeComponent.editor_get_paint_layer_weight_by_name_at_location and SystemLibrary.get_component_bounds",
+  "native_actual_target_layers": [
+    "Dirt_Path",
+    "Sand_01",
+    "Sand_02",
+    "Sand_Path"
+  ],
+  "actual_generated_component_sample": {
+    "Sand_01": 1.0,
+    "Dirt_Path": 0.0,
+    "Sand_02": 0.0,
+    "Sand_Path": 0.0
+  },
+  "sampling_limit": "Partial component grid; unused narrow layers at sample points do not imply empty weightmaps",
+  "failed_operation_restored_original_map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "original_actor_count_restored": 316,
+  "saved_original_overlap_preserved_for_ordinary_replacement": true,
+  "failed_Bake_or_map_save": false,
+  "fresh_pid": 30548,
+  "ordinary_operation_current": "Cooking",
+  "post_processing_zero_later_native_one_observed": true,
+  "ground_weight_gate": "bounded normal finish_save after Bake, before any result save"
+}

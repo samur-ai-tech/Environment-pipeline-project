@@ -1,0 +1,23 @@
+{
+  "schema": "environmentpipeline.task2.manager_config_patch.v1",
+  "status": "APPLIED_BY_TASK2_AFTER_MANAGER_SCOPE_EXTENSION",
+  "reason": "Manager expanded task2 ownership to Config/DefaultRoadBLD.ini; target did not exist before creation.",
+  "target": "Config/DefaultRoadBLD.ini",
+  "operation": "Create if absent, otherwise merge only these five scalar keys in this section, preserving unrelated values.",
+  "section": "/Script/RoadBLDRuntime.RoadBLDRuntimeSettings",
+  "fields": {
+    "bEnableIntersectionLandscapePatch": false,
+    "bEnableIntersectionLandscapeVisibilityHole": false,
+    "bEnableRoadLandscapePaint": false,
+    "bUseRoadLandscapeHeightPatch": false,
+    "bAutoCreatePaintLayerInfo": false
+  },
+  "exact_new_file_payload": "Staging/ManagedSystemsAstra_2026-10-04/Task2_Roads/DefaultRoadBLD.ini.proposed",
+  "payload_sha256": "df9cd44e0ae448d86500860c2138a69cd30825c3c23c981dbcd4022bef911b19",
+  "profile_patches": [],
+  "task1_required": "Include Config/DefaultRoadBLD.ini in sealed configuration files and verify its bytes on fresh startup. Keep require_geographic_landscape_authority() before HDA mutation. Do not set CDO values or reload configuration at runtime to force a pass.",
+  "native_preflight": "inspect_geographic_landscape_authority(): passed must be true; project_flags, native_views.class_default.flags and native_views.native_get.flags must each contain five literal false values. Record both native object paths and source config SHA.",
+  "vendor_changes": false,
+  "manager_application_required": false,
+  "target_sha256": "7033849614db4bc773836e5dd35ed70a5fa1e965ef23a036fe4f9e3123649f43"
+}

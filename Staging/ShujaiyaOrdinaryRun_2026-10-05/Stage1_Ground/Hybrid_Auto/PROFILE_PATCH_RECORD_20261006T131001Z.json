@@ -1,0 +1,36 @@
+{
+  "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+  "before_sha256": "1bd89e5bab88207dbaa340a8afc5b2c5a2e2a6544564fadecde07d979e3fd014",
+  "after_sha256": "4174a62787da9b203a647ce89438e5ddd0066e5bd9e10b816cd88204be0c9142",
+  "changes": [
+    {
+      "path": "/external_landscape_material/decision",
+      "before": "Aviv 2026-10-06 Path B: MW auto-landscape material is the GazaShujaiya ground; no grass; the material does not consume the Houdini RoadBed/BuildingPad paint (accepted for now). Previous Natural/Grass configuration kept in landscape_grass for rollback.",
+      "after": "Aviv 2026-10-06 Hybrid: M_GeoCityAuto (project copy of the MW auto-landscape master, vendor untouched) plus an Urban layer driven by the Houdini Sand_Path (BuildingPad) and Dirt_Path (RoadBed) paint weights is the GazaShujaiya ground; the material names all four painted layers (Sand_01, Sand_02, Dirt_Path, Sand_Path) so regeneration keeps them; no grass. Path B MI_GeoCityGround_MW was never saved and is superseded. Previous Natural/Grass configuration kept in landscape_grass for rollback."
+    },
+    {
+      "path": "/external_landscape_material/parent_chain[0]",
+      "before": "/Game/MWLandscapeAutoMaterial/Materials/Landscape/MTL_MWAM_Landscape_DesertExample.MTL_MWAM_Landscape_DesertExample",
+      "after": "/Game/Project/Shared/SurfacePainting/Auto_20261006/M_GeoCityAuto.M_GeoCityAuto"
+    },
+    {
+      "path": "/external_landscape_material/parent_chain[1]",
+      "before": "/Game/MWLandscapeAutoMaterial/Materials/MASTER/MTL_MWAM_AutoMaterial_MASTER.MTL_MWAM_AutoMaterial_MASTER",
+      "after": "<absent>"
+    },
+    {
+      "path": "/landscape_material",
+      "before": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround_MW.MI_GeoCityGround_MW",
+      "after": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround_Auto.MI_GeoCityGround_Auto"
+    }
+  ],
+  "grass_enabled_after": false,
+  "applied": true,
+  "utc": "20261006T131001Z",
+  "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\Before\\AREA_PROFILE_1bd89e5b_20261006T131001Z.json",
+  "backup_sha256": "1bd89e5bab88207dbaa340a8afc5b2c5a2e2a6544564fadecde07d979e3fd014",
+  "lease_at_edit": "2026-10-06T13:09:52.890127+00:00 OWNER=NONE released_by=claude_manager_cc37d4d2 previous_editor_PID=35156 reason=manager_orderly_close_idle_clean_bank_editor_before_hybrid shutdown_saves=0 dirty_discarded=0",
+  "map_backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ShujaiyaOrdinaryRun_2026-10-05\\Stage1_Ground\\Hybrid_Auto\\Before\\L_GazaShujaiya_BankIntegration_4efebdfb_20261006T131001Z.umap",
+  "map_backup_sha256": "4efebdfb0bf6c36b699a577b33faa64d28afbec0488115e6596883af518940d0",
+  "authority": "Aviv decision Hybrid ground (2026-10-06, Incident_01a10c77_2026-10-05/DECISION_HYBRID_20261006.json); manager-run; record required by RATIFICATION_B2 rule_from_now"
+}

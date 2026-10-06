@@ -1,0 +1,88 @@
+{
+  "schema": "environmentpipeline.task3.frozen_replacement_v2_review.v1",
+  "judgment": "BLOCKED",
+  "utc": "2026-10-03T23:01:31.396984+00:00",
+  "handoff_sha256": "01aaf3310b20c97788decc3aa3d8a3267935f1b1ad5d25b0d2585bc87df3dcc2",
+  "frozen_source_sha256": {
+    "Content/Python/geocity_roadbld_junctions.py": "dfb65168e6cdc6f5e75a98d63b2f862f0c1e5eca13bf8d93741be5accaf62802",
+    "Content/Python/geocity_roadbld_workflow.py": "a75d78d4eff44068109ab56fae46f34a074f4c0b141409ca2f764dfb26bc645a",
+    "Content/Python/geocity_roadbld_grounding.py": "8a5a4bf99082548b7b1cf131ebe4b8148e2a3b89dd491c2d9cbbdea995254720",
+    "Content/Python/geocity_roadbld_clip.py": "1f2cf12f3ffa4d9110e9625a6304e6b9daef08984246963c19fa45e00028a7f5",
+    "Content/Python/geocity_roadbld_seams.py": "fbba14b44454626b6d39457a9ad1ecef7fcc0630ef518f41026905aba513f289"
+  },
+  "checked_receipt_sha256": {
+    "TASK1_REPLACEMENT_CAPTURED_REPLAY.json": "a13909879d5e22fedcc011151c76fc1a3084a376757d95c4419e7535071a7fbe",
+    "TASK1_REPLACEMENT_PROVENANCE_CHECK.json": "018736cf0c506aa1e88d117339273127ad97b2acf23f56c3858d2f1dcd4bbffd",
+    "TASK1_REPLACEMENT_SOURCE_CHECKS.json": "f552b9c7c8c4e3e72698f6f1149204810d5e16170e4d6ff8261f775a5bac53e0",
+    "replay_replacement_source_20261004.py": "ee1004e7d397277a715c0ffb1340fdff0f5191f073ded53998d96e6de70f2dc3",
+    "ALL40_OFFLINE_REVIEW_20261003T213901084762Z.json": "ece32cb4f912c99fd5b98e7872278b46d67bb8a62006d808b18bbb82f6b3f72f"
+  },
+  "review_method": "Independent source/AST control-flow and saved captured-data/replay inspection only. No source imports/execution, editor calls, source changes, assignment/ownership changes or live state claims.",
+  "blocking_findings": [
+    {
+      "priority": 1,
+      "title": "Same-path rollback does not survive all final acceptance gates",
+      "locations": [
+        "Content/Python/geocity_roadbld_grounding.py:1208",
+        "Content/Python/geocity_roadbld_grounding.py:1236",
+        "Content/Python/geocity_roadbld_grounding.py:1250",
+        "Content/Python/geocity_roadbld_grounding.py:1277",
+        "Content/Python/geocity_roadbld_grounding.py:1293"
+      ],
+      "evidence": "correction retains local snapshots through its internal verify_clipped_source_partition and report writes, then returns the JSON result and discards access to rollback state. verify_links subsequently re-reads lineage and calls verify_native_delivery outside correction try/except. Ordinary RoadBLDRun.validate performs additional final checks later. Neither exposes or invokes rollback for these later failures. This leaves the overwritten87same-path candidates corrected but unaccepted if a post-return gate fails, contrary to the required transaction lifetime.",
+      "required_resolution": "Keep a nonserialized owner transaction/snapshot handle alive through linked-report verification and ordinary final native validation; outer failure must restore every overwritten mesh/material/UV/normal/metadata and prior report/state references, verified by readback. Finalize/release snapshots only after those gates, before resuming suppression Cook. Alternatively run the complete final acceptance sequence inside the correction rollback scope with a compatible owner contract."
+    }
+  ],
+  "verified_source_changes": [
+    "All5source hashes match ASSIGNMENTS and v2 handoff. Junctions/workflow remain byte-identical to frozen v6.",
+    "Independent AST comparison to BeforePostclipSeamRepair confirms all listed coverage/provenance/protected-partition gates unchanged, including AsphaltField,0.01cmXY,10cmheight and300cmfallback behavior. Protected1887.338120057525cm exclusion remains separate from exterior repairs.",
+    "ground_native_geos now refreshes material0/native normalZ>0.25 eligibility after grounding. repair_continuous runs before legacy repair_source_seams and station coverage. Prepared output references are rebuilt from final transient surfaces.",
+    "Small fan cap remains10cm plus bounded0.1cm support extension within that cap. Derived fan use requires existing source eligibility and all3new triangle vertices inside one unchanged parent-trim disk; no parent attribution expansion. Saved positive/negative provenance fixture is consistent with this guard.",
+    "Join repair now checks actual spatial intersection before rejecting other-source components; requires a native carrier containing both parents and retains original source corridor widths. Its planning neighbourhood extends to pullback+parent_width and must still be checked in actual geometry; it is not a10cm fan-cap change.",
+    "Outside-face coordinate/UV/material/split-normal multiset checks now surround Boolean edits. _append_fan sets new-face normals without recomputing all existing split normals. Actual native preservation remains unexercised.",
+    "Replacement branch requires source-coverage contexts before writes, verifies captured candidate geometry, preserves original native input path via source_meshes, snapshots metadata and material slots, and checks geometry+UV/normal/material payload on internal rollback. Report now expressly labels postwrite conversion timing for already-bound candidates.",
+    "Original immutable clip receipt is read-only; new clip/grounding/correction receipts use exclusive paths. Internal correction catch restores previous report/state references on failures within that function."
+  ],
+  "unchanged_gate_AST": {
+    "AsphaltField": true,
+    "_source_eligibility": true,
+    "_parent_trim_cross_section_support": true,
+    "verify_source_coverage": true,
+    "analyze_protected_source_intervals": true,
+    "_physical_segment_intervals": true,
+    "verify_clipped_source_partition": true
+  },
+  "replay_assessment": {
+    "status": "XY_PLANNER_REPLAY_PASSED_NATIVE_OPERATIONS_NOT_RUN",
+    "affected_source_rows": 16,
+    "captured_components": 58,
+    "source_segments": 1907,
+    "initial_gaps": 22,
+    "normal_flags_changed": 20,
+    "planner_repairs": 29,
+    "join_strips": 6,
+    "fan_sinks": 23,
+    "consolidated_joins": 2,
+    "remaining_XY_intervals": 0,
+    "source_code_inspection": "Replay replaces _append_connector_apron and _append_fan with array append sinks, refresh_surface with no-op, and _clear_fan_obstructions with no-op. It assigns appended faces upward=True. Fan Landscape fixture returns selected native plane height; it is not measured Landscape. Join sink appends2flat triangles and does not remove original faces/curbs or apply native Boolean.",
+    "limited_conclusion": "Production planner/XY kernels close the22captured gaps across16affected rows in this array model. This is not whole40physical closure or native mesh acceptance.",
+    "not_exercised": [
+      "Native Boolean and obstruction removal",
+      "Actual native mesh API return behavior and topology",
+      "Landscape sampling and physical height validation",
+      "UV/normal/material/collision writes and same-path conversion",
+      "Rollback or outer transaction failure",
+      "Full40-row corrected physical result;24unaffected rows/remaining geometry not replayed",
+      "Editor save/reopen, regeneration or Lit appearance"
+    ]
+  },
+  "integration_note": "The previously prepared owner wrapper was explicitly preparation-only. Before activation reconcile correction preconditions (failed_validating, _tick_running=False), previous-report keys (grounding_report/clipping_report), and verify_links return type (validation report rather than literalTrue). No current wrapper approval is inferred from this5source review.",
+  "residual_risks": [
+    "Native Boolean preservation, curb removal, closed collision surfaces and candidate conversion need actual bounded execution and readback after the blocker is resolved.",
+    "Captured6join strips must retain exact pad subtraction, actual widths and height/normal gates under real mesh operations. Parent-corridor expansion to a full covered cross-section has only planner-model evidence.",
+    "Runtime performance of per-face preservation/UV/normal fingerprints under600-second guards is not established.",
+    "Historical PID21780/same87objects are not asserted currently alive; root alone performs any later editor preflight."
+  ],
+  "editor_activation_authorized": false,
+  "appearance_accepted": false
+}

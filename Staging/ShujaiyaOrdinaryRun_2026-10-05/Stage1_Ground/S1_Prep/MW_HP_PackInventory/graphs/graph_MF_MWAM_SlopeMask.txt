@@ -1,0 +1,25 @@
+Add_13 [Add]  A<-WorldPosition_1:2.B B<-OneMinus_7:0
+Add_14 [Add] {"ConstB": 0.01} A<-FunctionInput_2:0
+Add_3 [Add]  A<-MaterialFunctionCall_25:0 B<-MaterialFunctionCall_26:0
+Constant_13 [Constant] {"R": 1.0} 
+Constant_14 [Constant] {"R": 2.0} 
+FunctionInput_0 [FunctionInput] {"InputName": "SlopePower", "InputType": "FunctionInput_Scalar"} 
+FunctionInput_1 [FunctionInput] {"InputName": "MaxWorldPosition", "InputType": "FunctionInput_Scalar", "SortPriority": 1} 
+FunctionInput_2 [FunctionInput] {"InputName": "MaxWorldPositionPower", "InputType": "FunctionInput_Scalar", "SortPriority": 2} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "SlopeMask"} A<-Saturate_0:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "SlopeNormalMask", "SortPriority": 1} A<-Saturate_2:0
+MaterialFunctionCall_25 [MaterialFunctionCall] {"MaterialFunction": "SlopeMask"} FunctionInputs[0].Input<-PixelNormalWS_0:0 FunctionInputs[2].Input<-FunctionInput_0:0 FunctionInputs[3].Input<-Constant_13:0
+MaterialFunctionCall_26 [MaterialFunctionCall] {"MaterialFunction": "SlopeMask"} FunctionInputs[2].Input<-Multiply_29:0 FunctionInputs[3].Input<-Constant_14:0
+Multiply_0 [Multiply]  A<-Saturate_1:0 B<-Add_3:0
+Multiply_1 [Multiply]  A<-Saturate_1:0 B<-MaterialFunctionCall_26:0
+Multiply_29 [Multiply] {"ConstB": 6.0} A<-FunctionInput_0:0
+Multiply_39 [Multiply]  A<-Add_13:0 B<-Add_14:0
+OneMinus_7 [OneMinus]  Input<-FunctionInput_1:0
+OneMinus_8 [OneMinus]  Input<-Multiply_39:0
+PixelNormalWS_0 [PixelNormalWS]  
+Saturate_0 [Saturate]  Input<-Multiply_0:0
+Saturate_1 [Saturate]  Input<-OneMinus_8:0
+Saturate_2 [Saturate]  Input<-Multiply_1:0
+WorldPosition_1 [WorldPosition]  
+MF_MWAM_SlopeMask [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_SlopeMaskEditorOnlyData", "CombinedInputTypes": 15, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_SlopeMaskEditorOnlyData [MaterialFunctionEditorOnlyData]  

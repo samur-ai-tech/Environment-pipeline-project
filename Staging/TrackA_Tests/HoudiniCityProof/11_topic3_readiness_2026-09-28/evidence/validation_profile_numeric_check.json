@@ -1,0 +1,77 @@
+{
+  "kind": "OFFLINE_PROFILE_NUMERICAL_CHECK_NOT_HDA_OR_UNREAL_EXECUTION",
+  "source_distribution": "Frozen v001 QA only",
+  "hda_target_sha256": "5d677221edbdbbee9e36b20535b88ff9ee2d56e887fe4727cbc9acd141db3251",
+  "tile_shapes": [
+    [
+      505,
+      505
+    ],
+    [
+      505,
+      505
+    ]
+  ],
+  "shared_vertex_pairs": 505,
+  "reference_height_mismatches": 0,
+  "reference_shared_edge_sha256": "8f8dd086f086c0e395329045b928334fb4ee5c19f6acb8cff482f02a9ca4e88d",
+  "tile_layout_valid_quads": "504 = 8 * 63; native 505-vertex landscape profile; installed translator still must verify actual output",
+  "masks": "Not checked; future HDA masks required",
+  "native_seam": "NOT_RUN",
+  "M0_world_pivot_arithmetic": [
+    {
+      "id": "ISM0",
+      "world_pivot_cm": [
+        1000.0,
+        2000.0,
+        3000.0
+      ],
+      "expected_cm": [
+        1000,
+        2000,
+        3000
+      ]
+    },
+    {
+      "id": "ISM1",
+      "world_pivot_cm": [
+        1200.0,
+        2300.0,
+        3050.0
+      ],
+      "expected_cm": [
+        1200,
+        2300,
+        3050
+      ]
+    },
+    {
+      "id": "HISM0",
+      "world_pivot_cm": [
+        -1000.0,
+        2000.0,
+        3000.0
+      ],
+      "expected_cm": [
+        -1000,
+        2000,
+        3000
+      ]
+    },
+    {
+      "id": "HISM1",
+      "world_pivot_cm": [
+        -1200.0,
+        1700.0,
+        3050.0
+      ],
+      "expected_cm": [
+        -1200,
+        1700,
+        3050
+      ]
+    }
+  ],
+  "M0_native_matrix_readback": "NOT_RUN",
+  "spec_reference_update": "Revalidated same numerical tile bounds after explicit output-attribute targets were appended."
+}

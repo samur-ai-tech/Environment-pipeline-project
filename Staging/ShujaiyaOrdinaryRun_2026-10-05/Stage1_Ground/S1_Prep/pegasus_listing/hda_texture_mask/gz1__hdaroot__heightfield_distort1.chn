@@ -1,0 +1,9 @@
+{
+    channel amp {
+      lefttype = extend
+      righttype = extend
+      default = 5
+      flags = 0
+      segment { length = 0 value = 5 5 expr = ch(\"../distortion_noise_amount\") }
+    }
+  }

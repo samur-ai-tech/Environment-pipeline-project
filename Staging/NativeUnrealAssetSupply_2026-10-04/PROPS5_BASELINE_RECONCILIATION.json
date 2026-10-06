@@ -1,0 +1,43 @@
+{
+  "schema": "environmentpipeline.supplier_props5_baseline_reconciliation.v1",
+  "status": "CURRENT_DISK_BASELINE_MATCHES_NEW_TRANSACTION_NATIVE_READBACK_REQUIRED_AT_APPLY",
+  "superseded_transaction_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\8b2236ec7d3cce8457a3282bc5189bfca4c9063d19e810e8196e14f75c500518\\TRANSACTION.json",
+  "superseded_transaction_sha256": "f7f488c7d0cb2b5f3180c3f0078fe156f7a42548dd16e07a2b4d5950a3f9010d",
+  "superseded_is_execution_candidate": false,
+  "current_transaction_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\Transactions\\4f289d66fb0ca7cb7c923dd2c02286dee7fc5c6a3e5c6b22e33dbc2f673a7566\\TRANSACTION.json",
+  "current_transaction_sha256": "76fe855ad7885436caef6404832863dfc9ea9098a99082975395960c792b05b0",
+  "current_source_sha256": "74e6bd5f70f655d63e0917f1fdd3c7e45ce43eed21ca8095388b9e728c4a81ee",
+  "current_csv_sha256": "ce858256b42f891a2ef0516c2b05c3e8cf6887cf5927ded31bacb59383cf5a12",
+  "current_digest": "473a71d69e48b3b244168176c4cee060192be6cd83b36400eb2ab727a074631c",
+  "existing1223records_exactly_preserved": true,
+  "props5_newly_RunEligible_ids_preserved": [
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0034_Cart",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0046_Foodcrate",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0058_Gaz",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0059_Grill_",
+    "current_Project__Shared__Bank_ME_v3__Props__SM_H0089_Tires"
+  ],
+  "added_ids": [
+    "native.Current.03d5b98d84743f46a66b09e1",
+    "native.Current.eb007c34606172659e7ec43f"
+  ],
+  "added_rows_held_unselected": true,
+  "result_rows": 1225,
+  "after_digest": "31bfd2d1ef9097678cf23f815f511bf1284b75175a1aecf2852727d2fd38a275",
+  "prepared_intake": {
+    "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\81a181cea2d88ade5da18de2f4806c5bd12ae390c4d09a8b2c3ea33e4fac6d0f\\TRANSACTION.json",
+    "sha256": "e2a6552faf36d7edc8aa626930b469a0c0a1e5e1fe6d5290a52b0e84f816d3dd",
+    "intake_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NativeUnrealAssetSupply_2026-10-04\\PreparedIntakes\\81a181cea2d88ade5da18de2f4806c5bd12ae390c4d09a8b2c3ea33e4fac6d0f\\PREPARED_INTAKE.json",
+    "intake_sha256": "2e21e9a9637766371d31af93670813c5fedd7603d9781ac787e001282bf3c6d2",
+    "rows": 6,
+    "categories": [
+      "Buildings/Modules"
+    ],
+    "applied": false
+  },
+  "prepared_sequence": "Prepared CAS expects exact registration AFTER source/CSV/native digest and APPLIED receipt; it cannot apply before registration.",
+  "native_readback": "Manager reports Props5 native473a71; supplier performed no native readback. apply_registration independently verifies actual native table and clean activated PID before any mutation.",
+  "pending_bank_changes": "Any later source/CSV/prepared change invalidates these execution inputs. Rebuild and freeze coherent current manifests after bank changes; no forced CAS or helper reload.",
+  "native_execution_performed": false,
+  "shared_writes_performed": false
+}

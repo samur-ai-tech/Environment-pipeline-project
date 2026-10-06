@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2763,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/UtopianCity/Meshes/SM_StairsWall01"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.026,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"100x400x400\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/StairsWall01.fbx\\\", \\\"Timestamp\\\" : \\\"1517767009\\\", \\\"FileMD5\\\" : \\\"41062aa43fd217feec1bce3338bf4911\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"25\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"80\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2763,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"100x400x400\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"G:/_0interioirs/StairsWall01.fbx\\\", \\\"Timestamp\\\" : \\\"1517767009\\\", \\\"FileMD5\\\" : \\\"41062aa43fd217feec1bce3338bf4911\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"LevelArchitecture\",\"LODs\":\"4\",\"Materials\":\"1\",\"ResourceSize\":\"25\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"64\",\"UVChannels\":\"2\",\"Vertices\":\"80\"}}"
+    }
+   ]
+  }
+ }
+}

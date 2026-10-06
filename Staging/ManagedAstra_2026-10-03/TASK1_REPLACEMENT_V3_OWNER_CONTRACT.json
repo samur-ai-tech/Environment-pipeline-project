@@ -1,0 +1,47 @@
+{
+  "status": "SOURCE_CONTRACT_ONLY_NOT_EDITOR_ACTIVATION",
+  "entrypoint": "geocity_roadbld_grounding.correction(run)",
+  "arity": 1,
+  "entry_preconditions": [
+    "root-issued actual sole-PID lease and current original map, licensed native session and paused Engine verified by owner",
+    "run.state.phase == failed_validating; native_rebuild_completed true; saved false",
+    "run.tick_handle is None and run._tick_running is False",
+    "run._pending_correction is None; exact current unsaved candidate ledger matches retained original-source references",
+    "Owner must not relabel phase to postbinding_correction or set _tick_running before correction"
+  ],
+  "previous_report_keys": [
+    "grounding_report",
+    "clipping_report"
+  ],
+  "correction_result": "JSON dict only; native rollback snapshots live on run._pending_correction, never inside state/result/receipts",
+  "verify_links": "verify_links(run, previous_reports, result) returns physical validation dict; check isinstance(report, dict) and source_coverage_accounted, never literal True",
+  "ordered_owner_calls": [
+    "Copy previous_reports with grounding_report/clipping_report keys while original failed_validating state is still intact",
+    "Enter one try/except covering correction and ALL subsequent owner setup/observation/callback operations",
+    "result = correction(run); correction controls _tick_running internally and resets it on exit",
+    "validation = verify_links(run, previous_reports, result)",
+    "run.validate(); run.finish(); keep pending snapshots alive",
+    "Perform reviewed parent callback setup with actual delegate arities; keep the native tick unregistered; no suppression/Cook here",
+    "Invoke existing parent.after_native_roads(run, True). It runs staged_contract and second ordinary validate, then all ownership/path/tag gates and parent state write",
+    "Parent commits via commit_correction(run) immediately before the cooking-paused query/resume; this is the explicit point of no return",
+    "On ANY precommit owner-wrapper exception call rollback_correction(run, exc) before ordinary cleanup, and rethrow/report; no suppression resume on failure"
+  ],
+  "source_failure_hooks": [
+    "verify_links rollback guard",
+    "RoadBLDRun.validate rollback guard around unchanged native validation body",
+    "RoadBLDRun.staged_contract rollback guard around unchanged contract/second validation body",
+    "RoadBLDRun.fail restores a pending transaction and preserves already-restored native state",
+    "parent.after_native_roads catch rolls back before parent.fail"
+  ],
+  "commit": "Requires verified lineage, at least two completed ordinary validations, staged contract success, native_generated_verified and no native tick; writes immutable resolution then clears snapshots; parent has already passed all remaining native ownership gates",
+  "rollback": "Restores source asset payload, complete static-material structs, metadata map presence and values, binding, previous report/state object identities and values, sampler/diagnostic/geos references, and exact prior native state-file bytes; native readback assertions remain mandatory. Failed restoration keeps pending snapshots for explicit recovery.",
+  "historical_wrapper": "prepare_same_postbinding_continuation_21780.py and prepare_reviewed_helper_install_21780.py remain preparation-only and unchanged; they are not compatible/approved as currently written",
+  "installer_requirements": [
+    "Install/rebind all reviewed public methods plus new private _validate_native and _staged_contract_native methods on the actual existing class; preserve live run objects and ACTIVE lists",
+    "Install reviewed after_native_roads parent callback hooks and preserve real callback arities",
+    "Do not use any v6-only hash allowlist for v3 source",
+    "Root and task2 must review a concrete wrapper/installer against these six final source hashes before execution"
+  ],
+  "historical_editor_state": "PID21780 and 87 unsaved candidates are historical/unverified; no recreation or restart implied",
+  "native_runtime_proven": false
+}

@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME/Vehicles",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Vehicles/Street_Props_Pack__009\",\"/Game/Project/Shared/Bank_ME/Vehicles/SM_H0039_Destryoedcar\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME/Vehicles/Street_Props_Pack__009\",\"/Game/Project/Shared/Bank_ME/Vehicles/SM_H0039_Destryoedcar\"]}"
+    }
+   ]
+  }
+ }
+}

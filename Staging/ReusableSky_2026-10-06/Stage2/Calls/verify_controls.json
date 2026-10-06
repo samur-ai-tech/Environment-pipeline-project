@@ -1,0 +1,101 @@
+{
+  "ok": true,
+  "stdout": "",
+  "result": {
+    "pid": 5288,
+    "presets": [
+      {
+        "preset": "PresetClear",
+        "preserved_time_location_manual_exposure": true,
+        "amount": 0.0,
+        "haze": 0.05
+      },
+      {
+        "preset": "PresetPartlyCloudy",
+        "preserved_time_location_manual_exposure": true,
+        "amount": 0.55,
+        "haze": 0.15
+      },
+      {
+        "preset": "PresetOvercast",
+        "preserved_time_location_manual_exposure": true,
+        "amount": 1.0,
+        "haze": 0.25
+      },
+      {
+        "preset": "PresetHazy",
+        "preserved_time_location_manual_exposure": true,
+        "amount": 0.2,
+        "haze": 0.8
+      }
+    ],
+    "time_positions": [
+      {
+        "time": 6.0,
+        "display": "06:00",
+        "sun_forward": [
+          0.39363266978536204,
+          -0.80077655415398,
+          0.4514534655918879
+        ]
+      },
+      {
+        "time": 12.0,
+        "display": "12:00",
+        "sun_forward": [
+          0.7124788607595516,
+          -0.054486077739383215,
+          -0.6995749711813233
+        ]
+      },
+      {
+        "time": 18.0,
+        "display": "18:00",
+        "sun_forward": [
+          -0.2692309166534066,
+          0.8947549889956964,
+          -0.3562698740916461
+        ]
+      }
+    ],
+    "manual_forward_restored": [
+      0.8372722558519102,
+      -0.30474217910701157,
+      -0.4539904997395468
+    ],
+    "repeated_updates": 50,
+    "component_classes": {
+      "SceneComponent": 1,
+      "StaticMeshComponent": 1,
+      "SkyLightComponent": 1,
+      "BillboardComponent": 2,
+      "DirectionalLightComponent": 1,
+      "SkyAtmosphereComponent": 1,
+      "PostProcessComponent": 1,
+      "ArrowComponent": 1,
+      "VolumetricCloudComponent": 1
+    },
+    "component_count": 10,
+    "regular_update_reuses_mid": true,
+    "construction_creates_fresh_mid": true,
+    "material_defaults_unchanged": true,
+    "cross_scene_second_instance_tested": false,
+    "final_inputs": {
+      "TimeOfDay": 12.0,
+      "ManualSun": false,
+      "ManualDirection": 180.0,
+      "ManualElevation": 35.0,
+      "NorthOffset": 0.0,
+      "Year": 2026,
+      "Month": 6,
+      "Day": 21,
+      "Latitude": 31.52,
+      "Longitude": 34.44,
+      "TimeZone": 2.0,
+      "UseDaylightSavingTime": false,
+      "OverrideExposure": false,
+      "SunIntensity": 10.0,
+      "SkyIntensity": 1.0
+    }
+  }
+}

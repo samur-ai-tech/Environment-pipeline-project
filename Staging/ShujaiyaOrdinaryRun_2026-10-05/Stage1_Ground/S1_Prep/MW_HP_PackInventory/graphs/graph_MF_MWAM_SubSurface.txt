@@ -1,0 +1,15 @@
+Constant_1 [Constant]  
+Desaturation_0 [Desaturation]  Input<-Power_0:0
+FunctionInput_0 [FunctionInput] {"InputName": "BaseColor"} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "SubSurfaceColor"} A<-StaticSwitchParameter_0:0
+Multiply_0 [Multiply]  A<-FunctionInput_0:0 B<-VectorParameter_0:0.RGB
+Multiply_1 [Multiply]  A<-Multiply_0:0 B<-VertexColor_0:3.B
+Multiply_2 [Multiply]  A<-Multiply_0:0 B<-Desaturation_0:0
+Power_0 [Power] {"ConstExponent": 0.25} Base<-TextureSampleParameter2D_0:0.RGB
+StaticSwitchParameter_0 [StaticSwitchParameter] {"ParameterName": "MW_UseSubSurfaceColor", "Group": "Lighting"} A<-StaticSwitchParameter_1:0 B<-Constant_1:0
+StaticSwitchParameter_1 [StaticSwitchParameter] {"ParameterName": "MW_UseSeparateSubSurfaceTexture", "Group": "Textures"} A<-Multiply_2:0 B<-Multiply_1:0
+TextureSampleParameter2D_0 [TextureSampleParameter2D] {"ParameterName": "MW_TextureSubSurfaceColor", "Group": "Textures", "Texture": "TEX_MW_Temp_col", "SamplerSource": "SSM_Wrap_WorldGroupSettings"} 
+VectorParameter_0 [VectorParameter] {"ParameterName": "MW_SubSurfaceColor", "DefaultValue": [1.0, 1.0, 1.0, 0.0], "Group": "Lighting"} 
+VertexColor_0 [VertexColor]  
+MF_MWAM_SubSurface [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_SubSurfaceEditorOnlyData", "CombinedInputTypes": 4, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_SubSurfaceEditorOnlyData [MaterialFunctionEditorOnlyData]  

@@ -1,0 +1,252 @@
+{
+  "schema": "environmentpipeline.task4.bank_turn_handoff.v1",
+  "utc": "2026-10-04T13:41:12.6205483Z",
+  "status": "CLEAN_PROCESS_EXIT_RELEASED_NATIVE_INACTIVE_BANK_NEXT",
+  "manager_thread_id": "01a106bc-2fde-7f23-9aa7-8ba413dc6245",
+  "operator_thread_id": "01a106e8-f85a-7a72-a010-e1cb28356e2b",
+  "next_bank_thread_id": "01a1067c-5012-7550-b449-015b53c9d726",
+  "bank_activation_owner": "Manager only; this receipt does not issue bank native permission",
+  "superseded_sequence": "No further Shujaiya repeat/Rimal/map switch; manager directed bank next",
+  "failed_pid": 33168,
+  "process_exited": true,
+  "live_editor_pids": [],
+  "lease_after": "2026-10-04T13:41:12.6167158Z OWNER=NONE released_by=CODEX_MANAGED_SYSTEMS_TASK4 manager_thread_id=01a106bc-2fde-7f23-9aa7-8ba413dc6245 operator_thread_id=01a106e8-f85a-7a72-a010-e1cb28356e2b editor_PID=33168 process_exited=true reason=manager_authorized_bank_next_turn failed_unsaved_map_discarded=true failed_dirty_content_discarded=14 callbacks_before_exit=0 official_session_stopped=true original_maps_preserved=true old87candidate_hashes_preserved=true already_named_saved_packages_preserved=6 no_shutdown_saves=true",
+  "clean_release_definition": "Process exited orderly without saving precisely accounted failed dirty transaction; previous saved state and legitimate earlier named saves preserved. Pre-exit dirty state is explicitly recorded, not falsely called clean.",
+  "shutdown_preflight": "BANK_SHUTDOWN_PREFLIGHT.json",
+  "shutdown_request": "BANK_SHUTDOWN_REQUEST.json",
+  "shutdown_log": "ShujaiyaRun1Failure/Environmentpipeline_after_shutdown.log",
+  "shutdown_markers": [
+    "[2026.10.04-13.39.57:412][976]LogExit: Exiting.",
+    "[2026.10.04-13.39.57:424][976]Log file closed, 10/04/26 16:39:57"
+  ],
+  "initial_preflight_clean": true,
+  "pre_exit_native_state": {
+    "parent_phase": "failed_native_road_transaction",
+    "road_phase": "failed_clipping",
+    "parent_error": "AssertionError(\"Native road authoring failed: AssertionError('Exactly one current official HDA cooked Landscape is required')\")",
+    "road_error": "AssertionError('Exactly one current official HDA cooked Landscape is required')",
+    "cooking_paused": true,
+    "auto_cook": false,
+    "auto_bake": false,
+    "callbacks": {
+      "parent": {
+        "watch_tick": "None",
+        "save_tick": "None",
+        "tick_handle": "None",
+        "_pending_correction": "None"
+      },
+      "roads": {
+        "watch_tick": "None",
+        "save_tick": "None",
+        "tick_handle": "None",
+        "_pending_correction": "None"
+      }
+    },
+    "official_session_valid_before_stop": true,
+    "official_session_valid_after_stop": false,
+    "hapi_last_completed": "[2026.10.04-13.31.50:097][577]LogHoudiniEngine:    GeoCity_city_v015_PermanentBank FinishedCooking.",
+    "hapi_no_later_cook_start": true
+  },
+  "discarded_unsaved_transaction": {
+    "map_packages": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration"
+    ],
+    "content_packages": [
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_376_0_main_geo_HSM",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_028ed1128018",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_30ff548b51e6",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_c0be3c0f3fc1",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_ff67cf4a286f",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_080177e86823",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_1aeb16c38101",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_028ed1128018",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_30ff548b51e6",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_c0be3c0f3fc1",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_ff67cf4a286f",
+      "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_1aeb16c38101"
+    ],
+    "solely_failed_operation": true,
+    "unexplained_packages": [],
+    "actor_ledger": "ShujaiyaRun1Failure/ROADBLD_WORKFLOW_STATE.json#staged_actor_paths",
+    "new_native_staged_actor_count": 132,
+    "transient_objects_no_longer_resumable": true,
+    "file_existence_after_shutdown": [
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM.uasset",
+        "file_exists_after_shutdown": true,
+        "sha256_after_shutdown": "6f13eea180926d464a4a6b22f2b07bd2731f8c0a8149d9d04bae45040e5f22d4",
+        "modified_utc": "2026-10-03T22:24:10.4777302Z",
+        "existing_disk_file_predates_failed_run": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM.uasset",
+        "file_exists_after_shutdown": true,
+        "sha256_after_shutdown": "2f05f92568cfbc3b8b93ea48542919a258f53157b5e8b2ba6fcd6cd77bc3a54b",
+        "modified_utc": "2026-10-03T22:24:10.5092603Z",
+        "existing_disk_file_predates_failed_run": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_376_0_main_geo_HSM",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_376_0_main_geo_HSM.uasset",
+        "file_exists_after_shutdown": true,
+        "sha256_after_shutdown": "b3c7d34f5f15bd2fb3a1bdca195b5e2132c3c99981b62e991a6a9bc5e3e871b3",
+        "modified_utc": "2026-10-03T22:24:10.5497959Z",
+        "existing_disk_file_predates_failed_run": true
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_028ed1128018",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_028ed1128018.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_30ff548b51e6",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_30ff548b51e6.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_c0be3c0f3fc1",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_c0be3c0f3fc1.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_ff67cf4a286f",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_residential_ff67cf4a286f.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_080177e86823",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_service_080177e86823.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_1aeb16c38101",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Presets/RP_unclassified_1aeb16c38101.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_028ed1128018",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_028ed1128018.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_30ff548b51e6",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_30ff548b51e6.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_c0be3c0f3fc1",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_c0be3c0f3fc1.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_ff67cf4a286f",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_residential_ff67cf4a286f.uasset",
+        "file_exists_after_shutdown": false
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_1aeb16c38101",
+        "file": "Content/Project/Areas/GazaShujaiya/RoadBLD/Sidewalks/RSP_unclassified_1aeb16c38101.uasset",
+        "file_exists_after_shutdown": false
+      }
+    ],
+    "no_actor_or_file_deletion": true,
+    "no_failed_Bake_or_map_save": true
+  },
+  "preserved": {
+    "original_maps": [
+      {
+        "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "sha256": "a473338fd28647a67ed28a8a01b7bc934320d974b80f171829eb4e3bab843d98",
+        "unchanged": true
+      },
+      {
+        "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+        "sha256": "2199527f93348268893233924e1e954b29015d6676119051edd929cf53ccfc54",
+        "unchanged": true
+      }
+    ],
+    "old_candidate_count": 87,
+    "candidate_hash_mismatches": 0,
+    "candidate_baseline": "DISK_RECONCILIATION.json",
+    "old_dependency_count": 156,
+    "old_dependency_hash_mismatches_during_shutdown": 0,
+    "dependency_receipt": "BANK_SHUTDOWN_DEPENDENCIES.json",
+    "dependency_pre_run_limit": "Hashes measured before shutdown, not before generation. Last-write times provide corroboration of no file save during current operation; post-shutdown hashes must match these.",
+    "legitimate_named_saved_packages": [
+      {
+        "package": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+        "file": "Content/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural.uasset",
+        "sha256": "d7c5d23a5146a28ce250441ded334a673f94501c01c1e9436785fb5a728a4990",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.29.39:285][188]LogFileHelpers: Saving Package: /Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural"
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.uasset",
+        "sha256": "72fed79bee28a5ce21f41b1562f18e9ee294bfa664c6c9e544f62101570152cb",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.29.39:534][188]LogFileHelpers: Saving Package: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Dirt_Path",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Dirt_Path.uasset",
+        "sha256": "9a3628fcf07b46f799f8705119709af981e8dd42e6c03b7007387ca5f27473b0",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.31.53:392][577]LogFileHelpers: Saving Package: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Dirt_Path"
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_01",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_01.uasset",
+        "sha256": "2597e0007bee50119e856476404a1a26b62d6b0a7fb1b92d22e7cc6dbef11f6c",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.31.53:400][577]LogFileHelpers: Saving Package: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_01"
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_02",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_02.uasset",
+        "sha256": "ac7a9cd51e2e22ff091258334067323f14e65b6dccd64bbaccf93438e228691e",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.31.53:407][577]LogFileHelpers: Saving Package: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_02"
+      },
+      {
+        "package": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_Path",
+        "file": "Content/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_Path.uasset",
+        "sha256": "8c3a3b4f6dabc0c8618edeff6fdf307b1628ee57b81044c050e11ae152baf7b6",
+        "preserved_after_shutdown": true,
+        "log_line": "[2026.10.04-13.31.53:412][577]LogFileHelpers: Saving Package: /Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/311CD685/GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0_Sand_Path"
+      }
+    ],
+    "new_saves_during_shutdown": 0,
+    "prior_actor_ledgers": "DISK_RECONCILIATION.json and ShujaiyaRun1Failure last-success/delivery copies",
+    "saved_original_map_retains_prior_two_landscapes_and_old_road_sets": true
+  },
+  "source_blocker": {
+    "file": "Content/Python/geocity_roadbld_landscape.py",
+    "lines": "12-18",
+    "method": "LandscapeSampler.__init__",
+    "observed_live_landscape_names": [
+      "GazaShujaiya_landscape",
+      "GeoCity_city_v015_PermanentBank_3_373_0_GazaShujaiya_landscape_0"
+    ],
+    "name_filter_match_count": 0,
+    "explanation": "The freshly cooked Landscape now ends _GazaShujaiya_landscape_0. The current sampler requires endswith(_GazaShujaiya_landscape), so it selects zero current actors despite two loaded Landscapes. A supported exact current official-output identity contract is required; do not fix by guessing names or arbitrarily selecting a Landscape.",
+    "classification": "Native actor names and failed assertion measured; zero-match behavior confirmed from frozen source predicate",
+    "native_source_not_modified": true
+  },
+  "source_owner": "task2 geocity_roadbld_landscape.py; task1 for exact official output identity interface if needed",
+  "completion": {
+    "source": "Frozen sources retained; sampler source-owner repair pending",
+    "native": "First Shujaiya run failed after output/paint gates and three road rebuild passes",
+    "visible_result": "NOT REVIEWED",
+    "new_map_persistence": "NOT COMPLETED",
+    "fresh_output_reopen": "NOT RUN",
+    "repeat_regeneration": "NOT RUN",
+    "rimal": "NOT RUN",
+    "user_acceptance": "PENDING"
+  },
+  "next": "Root reviews clean handoff and grants bank its native turn. Task4 remains native-inactive; no automatic resume."
+}

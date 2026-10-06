@@ -1,0 +1,43 @@
+Constant3Vector_0 [Constant3Vector] {"Constant": [0.0, 0.0, 1.0, 0.0]} 
+FunctionInput_0 [FunctionInput] {"InputName": "DepthFade", "InputType": "FunctionInput_Scalar", "SortPriority": 4} 
+FunctionInput_1 [FunctionInput] {"InputName": "StonesNormalMask", "InputType": "FunctionInput_Scalar", "SortPriority": 18} 
+FunctionInput_10 [FunctionInput] {"InputName": "StonesBaseColor", "SortPriority": 1} 
+FunctionInput_11 [FunctionInput] {"InputName": "GrassBaseColor", "SortPriority": 2} 
+FunctionInput_12 [FunctionInput] {"InputName": "DirtBaseColor", "SortPriority": 3} 
+FunctionInput_13 [FunctionInput] {"InputName": "StonesMask", "InputType": "FunctionInput_Scalar", "SortPriority": 4} 
+FunctionInput_14 [FunctionInput] {"InputName": "GrassMask", "InputType": "FunctionInput_Scalar", "SortPriority": 5} 
+FunctionInput_15 [FunctionInput] {"InputName": "DirtMask", "InputType": "FunctionInput_Scalar", "SortPriority": 6} 
+FunctionInput_16 [FunctionInput] {"InputName": "---------------------------------", "InputType": "FunctionInput_StaticBool", "SortPriority": 7} 
+FunctionInput_17 [FunctionInput] {"InputName": "GrassFarNormal", "SortPriority": 13} 
+FunctionInput_18 [FunctionInput] {"InputName": "GrassNearNormal", "SortPriority": 12} 
+FunctionInput_19 [FunctionInput] {"InputName": "DirtFarNormal", "SortPriority": 15} 
+FunctionInput_2 [FunctionInput] {"InputName": "GrassNormalMask", "InputType": "FunctionInput_Scalar", "SortPriority": 19} 
+FunctionInput_20 [FunctionInput] {"InputName": "DirtNearNormal", "SortPriority": 14} 
+FunctionInput_21 [FunctionInput] {"InputName": "SnowFarNormal", "SortPriority": 17} 
+FunctionInput_22 [FunctionInput] {"InputName": "SnowNearNormal", "SortPriority": 16} 
+FunctionInput_3 [FunctionInput] {"InputName": "DirtNormalMask", "InputType": "FunctionInput_Scalar", "SortPriority": 20} 
+FunctionInput_4 [FunctionInput] {"InputName": "SnowVertexMask", "InputType": "FunctionInput_Scalar", "SortPriority": 21} 
+FunctionInput_5 [FunctionInput] {"InputName": "RockFarNormal", "SortPriority": 9} 
+FunctionInput_6 [FunctionInput] {"InputName": "RockNearNormal", "SortPriority": 8} 
+FunctionInput_7 [FunctionInput] {"InputName": "StonesFarNormal", "SortPriority": 11} 
+FunctionInput_8 [FunctionInput] {"InputName": "StonesNearNormal", "SortPriority": 10} 
+FunctionInput_9 [FunctionInput] {"InputName": "RockBaseColor"} 
+FunctionOutput_0 [FunctionOutput] {"OutputName": "NormalNear", "SortPriority": 1} A<-LinearInterpolate_1:0
+FunctionOutput_1 [FunctionOutput] {"OutputName": "NormalFar", "SortPriority": 2} A<-StaticSwitchParameter_2:0
+FunctionOutput_2 [FunctionOutput] {"OutputName": "BaseColor"} A<-LinearInterpolate_14:0
+LinearInterpolate_0 [LinearInterpolate]  A<-LinearInterpolate_30:0 B<-FunctionInput_22:0 Alpha<-FunctionInput_4:0
+LinearInterpolate_1 [LinearInterpolate]  A<-StaticSwitchParameter_1:0 B<-Constant3Vector_0:0 Alpha<-FunctionInput_0:0
+LinearInterpolate_11 [LinearInterpolate]  A<-LinearInterpolate_15:0 B<-FunctionInput_21:0 Alpha<-FunctionInput_4:0
+LinearInterpolate_12 [LinearInterpolate] {"Desc": "Add Grass"} A<-LinearInterpolate_8:0 B<-FunctionInput_11:0 Alpha<-FunctionInput_14:0
+LinearInterpolate_13 [LinearInterpolate]  A<-FunctionInput_5:0 B<-FunctionInput_7:0 Alpha<-FunctionInput_1:0
+LinearInterpolate_14 [LinearInterpolate] {"Desc": "Add Dirt"} A<-LinearInterpolate_12:0 B<-FunctionInput_12:0 Alpha<-FunctionInput_15:0
+LinearInterpolate_15 [LinearInterpolate]  A<-LinearInterpolate_9:0 B<-FunctionInput_19:0 Alpha<-FunctionInput_3:0
+LinearInterpolate_28 [LinearInterpolate]  A<-LinearInterpolate_29:0 B<-FunctionInput_18:0 Alpha<-FunctionInput_2:0
+LinearInterpolate_29 [LinearInterpolate]  A<-FunctionInput_6:0 B<-FunctionInput_8:0 Alpha<-FunctionInput_1:0
+LinearInterpolate_30 [LinearInterpolate]  A<-LinearInterpolate_28:0 B<-FunctionInput_20:0 Alpha<-FunctionInput_3:0
+LinearInterpolate_8 [LinearInterpolate] {"Desc": "Add Stones"} A<-FunctionInput_9:0 B<-FunctionInput_10:0 Alpha<-FunctionInput_13:0
+LinearInterpolate_9 [LinearInterpolate]  A<-LinearInterpolate_13:0 B<-FunctionInput_17:0 Alpha<-FunctionInput_2:0
+StaticSwitchParameter_1 [StaticSwitchParameter] {"ParameterName": "MW_UseSnow", "DefaultValue": true, "Group": "0_Snow"} A<-LinearInterpolate_0:0 B<-LinearInterpolate_30:0
+StaticSwitchParameter_2 [StaticSwitchParameter] {"ParameterName": "MW_UseSnow", "DefaultValue": true, "Group": "0_Snow"} A<-LinearInterpolate_11:0 B<-LinearInterpolate_15:0
+MF_MWAM_LayerBlend [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_LayerBlendEditorOnlyData", "CombinedInputTypes": 271, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_LayerBlendEditorOnlyData [MaterialFunctionEditorOnlyData]  

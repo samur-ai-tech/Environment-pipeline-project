@@ -1,0 +1,2675 @@
+{
+  "schema": "environmentpipeline.modular_native_family_readback.v1",
+  "family_id": "source_derived_modular.H0911.v001",
+  "parent_asset_id": "external.H0911",
+  "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+  "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+  "parts": [
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_SWCorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_SWCorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_SWCorner.fbx",
+      "source_sha256": "e355080436194f769eb8ca1afd3b5fb7dec271d0b6437a26ccb5c4a8a1a75dcf",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SWCorner.SM_H0911_Ground_SWCorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SWCorner",
+      "native_package_sha256": "98f35b1022df5b8baac6c45fd753312a162c9fbb7eb52b856951489a606f23bf",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            16.4671688079834,
+            -246.56198120117188,
+            2.8312206268310547e-05
+          ],
+          "max": [
+            225.3292236328125,
+            -173.3279266357422,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          208.8620548248291,
+          73.23405456542969,
+          356.1791403889656
+        ],
+        "source_vertices": 95,
+        "triangles": 118,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 7,
+          "xy_min": [
+            30.31423568725586,
+            -246.56198120117188
+          ],
+          "xy_max": [
+            225.3292236328125,
+            -181.8042449951172
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.09808349609375e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          599.7659683227539,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 118,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [
+        {
+          "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Textures\\15781a595f_Arab_x9_Diffuse_Map_15781a595fe9.jpg",
+          "source_sha256": "15781a595fe927f6bca9b4daf9056f040291cd7557c0bbb384f59e1946488ac3",
+          "native_path": "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color.T_15781a595fe927f6bca9_color",
+          "kind": "color"
+        },
+        {
+          "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Textures\\f64380cbb2_T_CracksStreet_normal_076f5fec4437.png",
+          "source_sha256": "f64380cbb2cfca811599aee1fbbde73ea94773c8292123f68beb3d2af28111a6",
+          "native_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB.T_f64380cbb2cfca811599_NormalRGB",
+          "kind": "linear_RGB_normal_no_reconstructed_blue"
+        }
+      ],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SWCorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SWCorner": "98f35b1022df5b8baac6c45fd753312a162c9fbb7eb52b856951489a606f23bf",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_SWCorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_SWCorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_SWCorner.fbx",
+      "source_sha256": "7631e1b032dde2ad60cc3cb2a1c4b55c7cde09f16c39db4fe350ccf171f6e9dd",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SWCorner.SM_H0911_Roof_SWCorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SWCorner",
+      "native_package_sha256": "2405ddf5cd8957607aff69be74433457e33ea1f782deec85f6c55ce862b7ca00",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            67.06283569335938,
+            -246.56199645996094,
+            0.0
+          ],
+          "max": [
+            225.3292236328125,
+            -184.90274047851562,
+            79.64053344726562
+          ]
+        },
+        "dimensions_cm": [
+          158.26638793945312,
+          61.65925598144531,
+          79.64053344726562
+        ],
+        "source_vertices": 38,
+        "triangles": 42,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 6,
+          "xy_min": [
+            73.84927368164062,
+            -246.56198120117188
+          ],
+          "xy_max": [
+            225.32920837402344,
+            -191.6084442138672
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.47955322265625e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          599.7659683227539,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 42,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SWCorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SWCorner": "2405ddf5cd8957607aff69be74433457e33ea1f782deec85f6c55ce862b7ca00",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_WestFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_WestFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_WestFacade.fbx",
+      "source_sha256": "7da9379e4bea2d4a8856bf80121a27e34031f716da6b60df7ac55259ff1f46ef",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_WestFacade.SM_H0911_Ground_WestFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_WestFacade",
+      "native_package_sha256": "f140fba8cb5f7e656fd01b1f23f33042baac7577d252726af912cc59a96ec2c9",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -4.511333099799231e-05,
+            -564.1605224609375,
+            1.2044739378325175e-05
+          ],
+          "max": [
+            92.5831527709961,
+            -1.4396075584954815e-06,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          92.58319788432709,
+          564.1605210213299,
+          356.1791566564325
+        ],
+        "source_vertices": 240,
+        "triangles": 330,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 12,
+          "xy_min": [
+            30.31424331665039,
+            -564.1605224609375
+          ],
+          "xy_max": [
+            60.456321716308594,
+            -5.2852597036689986e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.511333099799231e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          353.20398807525635,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 330,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_WestFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_WestFacade": "f140fba8cb5f7e656fd01b1f23f33042baac7577d252726af912cc59a96ec2c9",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_WestFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_WestFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_WestFacade.fbx",
+      "source_sha256": "7678c8d58393f77c7dc6b44c5dae527a57ce9c1869b2785894d4ab8b78758128",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_WestFacade.SM_H0911_Roof_WestFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_WestFacade",
+      "native_package_sha256": "5763ca57b218a9e649405ea802a4c2f188143a62ba5cf9a80914082f6263e1dd",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            43.42402267456055,
+            -564.1605834960938,
+            0.0
+          ],
+          "max": [
+            225.32923889160156,
+            -5.8899508985632565e-06,
+            79.64644622802734
+          ]
+        },
+        "dimensions_cm": [
+          181.90521621704102,
+          564.1605776061429,
+          79.64644622802734
+        ],
+        "source_vertices": 143,
+        "triangles": 184,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 50,
+          "xy_min": [
+            43.42402267456055,
+            -564.1605224609375
+          ],
+          "xy_max": [
+            92.5831527709961,
+            -6.4561108956695534e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.57763671875e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          353.20398807525635,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 184,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_WestFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_WestFacade": "5763ca57b218a9e649405ea802a4c2f188143a62ba5cf9a80914082f6263e1dd",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_NWCorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_NWCorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_NWCorner.fbx",
+      "source_sha256": "7f94a3cbb61371e5e4574a19fa74949b3e819fd10c27e3f29667bffd1e0bc70c",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NWCorner.SM_H0911_Ground_NWCorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NWCorner",
+      "native_package_sha256": "ffd1dd4d099361a4adffb37b72af69fce062bd41a83ba37eda7b1e43f0f24613",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            58.257755279541016,
+            -276.52069091796875,
+            0.0
+          ],
+          "max": [
+            225.32920837402344,
+            -5.168525603949092e-06,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          167.07145309448242,
+          276.52068574944315,
+          356.1791687011719
+        ],
+        "source_vertices": 136,
+        "triangles": 207,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 7,
+          "xy_min": [
+            59.12120819091797,
+            -276.5146789550781
+          ],
+          "xy_max": [
+            225.32920837402344,
+            -5.16857562615769e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.384185791015625e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          -210.95657348632812,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 207,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NWCorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NWCorner": "ffd1dd4d099361a4adffb37b72af69fce062bd41a83ba37eda7b1e43f0f24613",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_NWCorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_NWCorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_NWCorner.fbx",
+      "source_sha256": "c7fe8ba7941685a410010b8a09e24e1c4106ea91a68588a8a550b3919c5d92ff",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NWCorner.SM_H0911_Roof_NWCorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NWCorner",
+      "native_package_sha256": "4208016aa4d4eddea5a8864a4be93c787f3b40827c89d9495dc18ae0b09deab3",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            58.257755279541016,
+            -266.70086669921875,
+            0.0
+          ],
+          "max": [
+            225.32923889160156,
+            -5.911073458264582e-06,
+            78.1605224609375
+          ]
+        },
+        "dimensions_cm": [
+          167.07148361206055,
+          266.7008607881453,
+          78.1605224609375
+        ],
+        "source_vertices": 87,
+        "triangles": 117,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 22,
+          "xy_min": [
+            58.257755279541016,
+            -266.70086669921875
+          ],
+          "xy_max": [
+            225.32920837402344,
+            -6.4238956838380545e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.6702880859375e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          -210.95657348632812,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 117,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NWCorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NWCorner": "4208016aa4d4eddea5a8864a4be93c787f3b40827c89d9495dc18ae0b09deab3",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_SouthFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_SouthFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_SouthFacade.fbx",
+      "source_sha256": "c6763c88da7d6bfa7c5a3e78a78fb9c62cad1d1964abd4eff106bbc4d3b644d9",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SouthFacade.SM_H0911_Ground_SouthFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SouthFacade",
+      "native_package_sha256": "122398c61296889fd88414ecde9507b67b15d23c84676f3b51fd978fa92c111b",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -1.675247222010512e-05,
+            -224.0821990966797,
+            2.682209014892578e-05
+          ],
+          "max": [
+            580.7100830078125,
+            -3.4590357245178893e-07,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          580.7100997602847,
+          224.08219875077612,
+          356.1791418790817
+        ],
+        "source_vertices": 359,
+        "triangles": 556,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 20,
+          "xy_min": [
+            -1.5893831005087122e-05,
+            -187.11485290527344
+          ],
+          "xy_max": [
+            580.7100830078125,
+            -79.25033569335938
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 1.675247222010512e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -363.03985118865967,
+          599.7659683227539,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 556,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SouthFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SouthFacade": "122398c61296889fd88414ecde9507b67b15d23c84676f3b51fd978fa92c111b",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_SouthFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_SouthFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_SouthFacade.fbx",
+      "source_sha256": "7db0ef85f1ed1e85b9fdc310f860f25ffbd61c4cf4ece21d552c43a8db3b1e1f",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SouthFacade.SM_H0911_Roof_SouthFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SouthFacade",
+      "native_package_sha256": "e4cc6a17cec92a8a2958546fc130411a2dede795dac28054513d2d218a9a29e2",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.1555133571382612e-05,
+            -246.56202697753906,
+            0.0
+          ],
+          "max": [
+            580.7100830078125,
+            -171.40472412109375,
+            83.4635238647461
+          ]
+        },
+        "dimensions_cm": [
+          580.7101045629461,
+          75.15730285644531,
+          83.4635238647461
+        ],
+        "source_vertices": 99,
+        "triangles": 128,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 26,
+          "xy_min": [
+            -1.6750942450016737e-05,
+            -191.60888671875
+          ],
+          "xy_max": [
+            580.7100830078125,
+            -171.40472412109375
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.673004150390625e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -363.03985118865967,
+          599.7659683227539,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 128,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SouthFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SouthFacade": "e4cc6a17cec92a8a2958546fc130411a2dede795dac28054513d2d218a9a29e2",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_Core",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_Core",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_Core.fbx",
+      "source_sha256": "f649bd89ff019ccbb34b566c4b255fcf0a85dad4d4cad9600d1827555b344707",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_Core.SM_H0911_Roof_Core",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_Core",
+      "native_package_sha256": "ef7ab291183ebce6f2f9f8e44b7f0730ed037f171414b5328cb4f0d3542b23b4",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -4.932048250338994e-05,
+            -564.1605834960938,
+            5.680060386657715
+          ],
+          "max": [
+            580.7100830078125,
+            -0.0,
+            83.4635238647461
+          ]
+        },
+        "dimensions_cm": [
+          580.710132328295,
+          564.1605834960938,
+          77.78346347808838
+        ],
+        "source_vertices": 122,
+        "triangles": 171,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 6,
+          "xy_min": [
+            426.1167907714844,
+            -564.1605834960938
+          ],
+          "xy_max": [
+            580.7100219726562,
+            -564.1605834960938
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.932048250338994e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -363.03985118865967,
+          353.20398807525635,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 171,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_Core"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_Core": "ef7ab291183ebce6f2f9f8e44b7f0730ed037f171414b5328cb4f0d3542b23b4",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_NorthFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_NorthFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_NorthFacade.fbx",
+      "source_sha256": "d5e4f9fb04da829c1eafe5558e8477df7f40276e1d9c0c5a20697ec8d9334eda",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NorthFacade.SM_H0911_Ground_NorthFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NorthFacade",
+      "native_package_sha256": "3fecfd7a2ca0252d2f2e43998d50ead070d611403fcd2b450bad2fba46f0d95e",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.4174207283067517e-05,
+            -276.99053955078125,
+            0.0
+          ],
+          "max": [
+            580.7100830078125,
+            -255.79779052734375,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          580.7101071820198,
+          21.1927490234375,
+          356.1791687011719
+        ],
+        "source_vertices": 103,
+        "triangles": 143,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 8,
+          "xy_min": [
+            -2.4173681595129892e-05,
+            -276.99053955078125
+          ],
+          "xy_max": [
+            580.7100830078125,
+            -276.5146789550781
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 3.0517578125e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -363.03985118865967,
+          -210.95657348632812,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 143,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NorthFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NorthFacade": "3fecfd7a2ca0252d2f2e43998d50ead070d611403fcd2b450bad2fba46f0d95e",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_NorthFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_NorthFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_NorthFacade.fbx",
+      "source_sha256": "c4abf329b126bac6e323ef14216e36740c9bbbe5d1749d5d5c3aa317af332710",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NorthFacade.SM_H0911_Roof_NorthFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NorthFacade",
+      "native_package_sha256": "fb00942d3dda026c6aef5c985c4fab3a2488c5ceba4754316dd1a61add9d4391",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.3315511498367414e-05,
+            -266.6983642578125,
+            0.0
+          ],
+          "max": [
+            580.7100830078125,
+            -0.0,
+            81.97784423828125
+          ]
+        },
+        "dimensions_cm": [
+          580.710106323324,
+          266.6983642578125,
+          81.97784423828125
+        ],
+        "source_vertices": 121,
+        "triangles": 173,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 16,
+          "xy_min": [
+            -2.3315511498367414e-05,
+            -266.6983642578125
+          ],
+          "xy_max": [
+            580.7100830078125,
+            -266.6960754394531
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.3315511498367414e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -363.03985118865967,
+          -210.95657348632812,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 173,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NorthFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NorthFacade": "fb00942d3dda026c6aef5c985c4fab3a2488c5ceba4754316dd1a61add9d4391",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_SECorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_SECorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_SECorner.fbx",
+      "source_sha256": "535b15c8abfb48af3ad98593ea33a724d13bb19905f7efbceb8810a3e109c652",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SECorner.SM_H0911_Ground_SECorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SECorner",
+      "native_package_sha256": "07217385d08ed82be3e5c316605791e0418877fc552603ef5aded7eeb967b6b9",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -1.641400194785092e-05,
+            -246.56201171875,
+            2.682209014892578e-05
+          ],
+          "max": [
+            354.262451171875,
+            -79.25028991699219,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          354.26246758587695,
+          167.3117218017578,
+          356.1791418790817
+        ],
+        "source_vertices": 119,
+        "triangles": 149,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 10,
+          "xy_min": [
+            -1.5410463674925268e-05,
+            -246.56199645996094
+          ],
+          "xy_max": [
+            170.3463134765625,
+            -79.25028991699219
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 3.147125244140625e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          599.7659683227539,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 149,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SECorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_SECorner": "07217385d08ed82be3e5c316605791e0418877fc552603ef5aded7eeb967b6b9",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_SECorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_SECorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_SECorner.fbx",
+      "source_sha256": "1141fb79027fe03a4f54f9feb2fff0fdc48c119ca387a4d8977777fb7741465f",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SECorner.SM_H0911_Roof_SECorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SECorner",
+      "native_package_sha256": "6d5298f565bb37bc77ad6fb47706d9728b24ca0dda14a9d2234a875211fc1e74",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.1555133571382612e-05,
+            -246.56201171875,
+            0.0
+          ],
+          "max": [
+            354.2621154785156,
+            -171.49725341796875,
+            7.365107536315918
+          ]
+        },
+        "dimensions_cm": [
+          354.2621370336492,
+          75.06475830078125,
+          7.365107536315918
+        ],
+        "source_vertices": 23,
+        "triangles": 22,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 11,
+          "xy_min": [
+            -1.4992766409704927e-05,
+            -246.56201171875
+          ],
+          "xy_max": [
+            354.2621154785156,
+            -171.49725341796875
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 3.147125244140625e-05,
+        "vertex_probe_count": 23,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          599.7659683227539,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 22,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SECorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_SECorner": "6d5298f565bb37bc77ad6fb47706d9728b24ca0dda14a9d2234a875211fc1e74",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_EastFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_EastFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_EastFacade.fbx",
+      "source_sha256": "69b1237535ed0a0a4f67fc0f6fb4c667b9de0d60e9846c2f684cb63fa4ec3134",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_EastFacade.SM_H0911_Ground_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_EastFacade",
+      "native_package_sha256": "8935678be30b3e7d9ed4936ed7d15689a074afd5af1f3e83a2131e64d1e3bd7c",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            162.9354705810547,
+            -564.1605834960938,
+            1.2044739378325175e-05
+          ],
+          "max": [
+            355.3796081542969,
+            -1.4244272279029246e-05,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          192.4441375732422,
+          564.1605692518215,
+          356.1791566564325
+        ],
+        "source_vertices": 132,
+        "triangles": 197,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 9,
+          "xy_min": [
+            170.34632873535156,
+            -564.1605834960938
+          ],
+          "xy_max": [
+            338.34771728515625,
+            -1.489214992034249e-05
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.57763671875e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          353.20398807525635,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 197,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_EastFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_EastFacade": "8935678be30b3e7d9ed4936ed7d15689a074afd5af1f3e83a2131e64d1e3bd7c",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_EastFacade",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_EastFacade",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_EastFacade.fbx",
+      "source_sha256": "be3adcab143bdfd853d7b6a1d2c9998d9b34bfd93ab10921fdcb8dea239eb37d",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_EastFacade.SM_H0911_Roof_EastFacade",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_EastFacade",
+      "native_package_sha256": "fa3ca99b6a1d1d89db873add2fd46615e022f878210ebb63c0c8f1b942efc27c",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -4.932048250338994e-05,
+            -564.1605834960938,
+            0.0
+          ],
+          "max": [
+            355.37957763671875,
+            -0.0,
+            7.28754997253418
+          ]
+        },
+        "dimensions_cm": [
+          355.37962695720125,
+          564.1605834960938,
+          7.28754997253418
+        ],
+        "source_vertices": 55,
+        "triangles": 68,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 15,
+          "xy_min": [
+            354.26214599609375,
+            -564.1605834960938
+          ],
+          "xy_max": [
+            355.37957763671875,
+            -3.097057924605906e-05
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 4.932048250338994e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          353.20398807525635,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 68,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_EastFacade"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_EastFacade": "fa3ca99b6a1d1d89db873add2fd46615e022f878210ebb63c0c8f1b942efc27c",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Ground_NECorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Ground_NECorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Ground_NECorner.fbx",
+      "source_sha256": "755753123b15fd9654fa1e95ba386ae5ab5158f6d62d128c7de6c5ff9589513d",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NECorner.SM_H0911_Ground_NECorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NECorner",
+      "native_package_sha256": "2cd60814846a26a01b89f09211d661108f58b884694d4dca745fde3fddca466c",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.4215272787841968e-05,
+            -276.99041748046875,
+            0.0
+          ],
+          "max": [
+            355.38092041015625,
+            -2.8660006137215532e-05,
+            356.1791687011719
+          ]
+        },
+        "dimensions_cm": [
+          355.38094462542904,
+          276.9903888204626,
+          356.1791687011719
+        ],
+        "source_vertices": 138,
+        "triangles": 210,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 9,
+          "xy_min": [
+            -2.4215272787841968e-05,
+            -276.99041748046875
+          ],
+          "xy_max": [
+            338.3480224609375,
+            -2.9579299734905362e-05
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 2.8660006137215532e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          -210.95657348632812,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 210,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NECorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Ground_NECorner": "2cd60814846a26a01b89f09211d661108f58b884694d4dca745fde3fddca466c",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Roof_NECorner",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Roof_NECorner",
+      "kind": "reconstruction",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\Modules\\SM_H0911_Roof_NECorner.fbx",
+      "source_sha256": "b6a028c45a58b8c740b4e43921cb5a84f7d8372c167da30a4a3285dd364436ac",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NECorner.SM_H0911_Roof_NECorner",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NECorner",
+      "native_package_sha256": "db9ad7b1b143782da7202bc9af57851bdffd0219f66b359bfd0b3671037f542f",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -2.331534051336348e-05,
+            -266.70416259765625,
+            0.0
+          ],
+          "max": [
+            355.3808288574219,
+            -0.0,
+            5.680084228515625
+          ]
+        },
+        "dimensions_cm": [
+          355.3808521727624,
+          266.70416259765625,
+          5.680084228515625
+        ],
+        "source_vertices": 52,
+        "triangles": 63,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 19,
+          "xy_min": [
+            -2.331532959942706e-05,
+            -266.70416259765625
+          ],
+          "xy_max": [
+            355.3808288574219,
+            -3.106826625298709e-05
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 3.24249267578125e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          217.67022609710693,
+          -210.95657348632812,
+          356.179141998291
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 63,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NECorner"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/Modules/SM_H0911_Roof_NECorner": "db9ad7b1b143782da7202bc9af57851bdffd0219f66b359bfd0b3671037f542f",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Extension_Start",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Extension_Start",
+      "kind": "extension",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\ExtensionBand\\SM_H0911_Extension_Start.fbx",
+      "source_sha256": "81a1396d6c42378b0ac7bcc2d48c48f7aa472b44691fbac6fe805b460782325b",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Start.SM_H0911_Extension_Start",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Start",
+      "native_package_sha256": "dd9c566eab9167c4a85d812e5b8c0ccb7282b2222650f55adf49b5a026246f03",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            -6.666846456937492e-05,
+            -819.427978515625,
+            1.1650460692180786e-05
+          ],
+          "max": [
+            1161.4188232421875,
+            -2.004481211770326e-05,
+            439.6427001953125
+          ]
+        },
+        "dimensions_cm": [
+          1161.418889910652,
+          819.4279584708129,
+          439.6426885448518
+        ],
+        "source_vertices": 874,
+        "triangles": 1490,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 46,
+          "xy_min": [
+            30.31422233581543,
+            -819.427978515625
+          ],
+          "xy_max": [
+            1144.386962890625,
+            -79.25035095214844
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 0.0001068115234375,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          599.7659683227539,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 1490,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Start"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Start": "dd9c566eab9167c4a85d812e5b8c0ccb7282b2222650f55adf49b5a026246f03",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Extension_Repeat",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Extension_Repeat",
+      "kind": "extension",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\ExtensionBand\\SM_H0911_Extension_Repeat.fbx",
+      "source_sha256": "b49ab4d670fdfe32379c72b3f4cc822dbcb3b1b18ec45e1156b6f55c8a1e11a9",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Repeat.SM_H0911_Extension_Repeat",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Repeat",
+      "native_package_sha256": "30ef0cfa8ed4b3ebbd94cebdb41f421ac8d84de3855de5e0e49c1465a49d0de0",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            59.12102508544922,
+            -137.7770538330078,
+            5.425042218121234e-06
+          ],
+          "max": [
+            1161.4190673828125,
+            -5.16852969667525e-06,
+            438.0841369628906
+          ]
+        },
+        "dimensions_cm": [
+          1102.2980422973633,
+          137.77704866447812,
+          438.0841315378484
+        ],
+        "source_vertices": 261,
+        "triangles": 355,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 8,
+          "xy_min": [
+            59.1212158203125,
+            -137.7770538330078
+          ],
+          "xy_max": [
+            1144.38720703125,
+            -5.16857562615769e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 0.0001068115234375,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          -219.66185569763184,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 355,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Repeat"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_Repeat": "30ef0cfa8ed4b3ebbd94cebdb41f421ac8d84de3855de5e0e49c1465a49d0de0",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    },
+    {
+      "schema": "environmentpipeline.modular_native_part_readback.v1",
+      "request_sha256": "8a253d5bb3d0d5024fa59c99690cc481a1b110f9ab42d5ff738a6c71a42dcdea",
+      "derivative_id": "source_derived_modular.H0911.v001/SM_H0911_Extension_End",
+      "family_id": "source_derived_modular.H0911.v001",
+      "parent_asset_id": "external.H0911",
+      "source_family_sha256": "7fefa933c4302ab2cf6d90101afcae2bf5faa1b69ac897ae50d38fd4d46c5a57",
+      "name": "SM_H0911_Extension_End",
+      "kind": "extension",
+      "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\ModelBank\\Modular_2026-10-04\\WholeBuildingConversions\\H0911\\ExtensionBand\\SM_H0911_Extension_End.fbx",
+      "source_sha256": "3c34d466acbf347e80f5d1e7a9777b8bb658220d6065806dcae07e5a9b6d936d",
+      "native_object_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_End.SM_H0911_Extension_End",
+      "native_package": "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_End",
+      "native_package_sha256": "caa1119711790ecb114f8c8f56bcd743c443cf7b4e2af0a1011336843d60a84c",
+      "measurement": {
+        "bounds_cm": {
+          "min": [
+            58.25777053833008,
+            -130.50833129882812,
+            0.0
+          ],
+          "max": [
+            1161.4202880859375,
+            -5.168525603949092e-06,
+            438.0841369628906
+          ]
+        },
+        "dimensions_cm": [
+          1103.1625175476074,
+          130.50832613030252,
+          438.0841369628906
+        ],
+        "source_vertices": 255,
+        "triangles": 413,
+        "bottom_support": {
+          "tolerance_cm": 1.0,
+          "vertex_count": 14,
+          "xy_min": [
+            59.12122344970703,
+            -130.50833129882812
+          ],
+          "xy_max": [
+            1144.3873291015625,
+            -5.168541974853724e-06
+          ]
+        },
+        "uv_channels": 2,
+        "lod_count": 1,
+        "simple_collision_count": 0,
+        "convex_collision_count": 0,
+        "material_slots": [
+          {
+            "slot": 0,
+            "name": "Arab_x9",
+            "imported_name": "Arab_x9",
+            "path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8"
+          }
+        ]
+      },
+      "basis_readback": {
+        "source_xyz_to_native_xyz": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "units": "source_metres_to_native_centimetres",
+        "scale": 100,
+        "bounds_max_error_cm": 5.14984130859375e-05,
+        "vertex_probe_count": 32,
+        "independently_unique_basis": true,
+        "family_basis_used_to_disambiguate": false,
+        "uv0_probe_count": 24,
+        "uv0_matching_conventions": [
+          "v_one_minus_source"
+        ],
+        "native_assembly_translation_cm": [
+          -588.369083404541,
+          -357.4388027191162,
+          -2.8312206268310547e-05
+        ],
+        "full_geometry_or_uv_equivalence": false
+      },
+      "material_slots": [
+        {
+          "slot": 0,
+          "source_slot": 0,
+          "source_name": "Arab_x9",
+          "native_imported_name": "Arab_x9",
+          "material_path": "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8.M_5b0ed4ab3f07db1c1bd8",
+          "triangles": 413,
+          "recipe_sha256": "5b0ed4ab3f07db1c1bd87dba3d48dbbb0f2c4a3f3b7a65c34e48259c5cc47e09"
+        }
+      ],
+      "textures": [],
+      "dependencies": {
+        "packages": [
+          "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_End"
+        ],
+        "missing": []
+      },
+      "saved_packages": {
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/H0911/ExtensionBand/SM_H0911_Extension_End": "caa1119711790ecb114f8c8f56bcd743c443cf7b4e2af0a1011336843d60a84c",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Materials/M_5b0ed4ab3f07db1c1bd8": "3388b2c8a30faf6d93006e849c49ea77a67e44197327bb89f7d03774c71358e7",
+        "/Game/Project/Shared/ModelBank/Prepared/Dependencies/Textures/T_15781a595fe927f6bca9_color": "ccf322e4796a15204edbc97de0303465bd1205f8608a9788ea0b3c89a38e3aa1",
+        "/Game/Project/Shared/ModelBank/Prepared/Modular/Dependencies/Textures/T_f64380cbb2cfca811599_NormalRGB": "c1b25d7eff8ff1da245c07f2f47313a405518a4fdcb0ebcfca08e3f696b5cfa7"
+      },
+      "named_saved": true,
+      "native_reloaded": false,
+      "fresh_process_reopened": false,
+      "source_graph_components_transferred": true,
+      "visual_fidelity_verified": false,
+      "procedural_eligible": false,
+      "collision_prepared": false,
+      "additional_lods_prepared": false,
+      "native_state": {
+        "pid": 24804,
+        "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+        "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+      }
+    }
+  ],
+  "expected_part_count": 20,
+  "imported_part_count": 20,
+  "complete_native_import": true,
+  "native_reloaded": false,
+  "fresh_process_reopened": false,
+  "procedural_eligible": false,
+  "visual_fidelity_verified": false,
+  "holds_preserved": true,
+  "state": {
+    "pid": 24804,
+    "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+    "activation_sha256": "17f57f83607950d87e1e7ae6dc5dc485699e0f369c1171a375d4186a21090ad9"
+  }
+}

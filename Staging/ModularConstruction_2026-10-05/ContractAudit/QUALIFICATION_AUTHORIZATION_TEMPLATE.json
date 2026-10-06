@@ -1,0 +1,29 @@
+{
+  "schema": "environmentpipeline.modular_route_authorization.v1",
+  "approved": false,
+  "execution_mode": "qualification",
+  "family_id": "<one exact family>",
+  "parent_asset_id": "<unchanged parent>",
+  "manager_thread_id": "<current manager>",
+  "source_family_sha256": "<actual binding family digest>",
+  "native_manifest_sha256": "<actual native manifest byte digest>",
+  "use_scope": "retained_complete_family_dependency",
+  "preserve_canonical_holds": true,
+  "actual_named_or_dependency_hold": true,
+  "allowed_area_ids": [],
+  "placement_scope": "exact_ids",
+  "allowed_source_osm_ids": {},
+  "capabilities": [],
+  "allowed_repeat_counts": [],
+  "allowed_validation_gates": [
+    "houdini_repeat",
+    "official_engine_output",
+    "named_save",
+    "fresh_reopen",
+    "regeneration",
+    "native_material_visual_fidelity",
+    "native_reflection_normals_material_culling"
+  ],
+  "ordinary_selection_authorized": false,
+  "template_only": true
+}

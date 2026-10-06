@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 191,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Vegetation/SM_H0636_Acacia.SM_H0636_Acacia"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.33,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-237.19258117675781,\"y\":-227.48078918457031,\"z\":-27.006649017333984},\"max\":{\"x\":315.18023681640625,\"y\":227.48081970214844,\"z\":454.96160888671875},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 191,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-237.19258117675781,\"y\":-227.48078918457031,\"z\":-27.006649017333984},\"max\":{\"x\":315.18023681640625,\"y\":227.48081970214844,\"z\":454.96160888671875},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

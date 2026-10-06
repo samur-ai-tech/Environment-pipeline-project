@@ -1,0 +1,21 @@
+Task3 Ground / materials / native Grass — 4 October 2026
+Status: SOURCE_READY_FOR_MANAGER_REVIEW. Source editing is frozen; no native/editor action performed.
+
+Implemented in Content/Python/geocity_landscape_workflow.py only. Retained source was reconciled against STOP_HANDOFF and actual disk assets. The permitted GrassType, Natural master and Shujaiya child MI still match all three stop hashes. Rimal MI_GeoCityGround is absent and must be created by the ordinary operation.
+
+The source now checks actual native Grass variety settings (including platform/quality maps), exact two authorized meshes, material/texture dependencies, four owned graph nodes and three explicit edges. It reuses permanent assets and prevents orphan/duplicate graphs. Coverage still uses actual finite readback rather than the misleading setter flag. Only approved Landscape grass meshes are exempt from exact HDA bank counts.
+
+Paint readiness now requires normalized finite weights for all four supported targets and explicitly passed known RoadBed and BuildingPad probes. Generic grid-only observations cannot pass. Zero samples remain pending within the existing bounded after-Bake save lifecycle. Manager-required known probes reject missing roles, duplicate IDs, nonfinite coordinates and invalid thresholds. Ground/Steep grid observations remain geometric evidence, not land-cover semantics.
+
+The manager applied the two profile patches. Current on-disk declared fields and enabled profile validation pass; task3 did not edit profiles. Six source-derived known locations per area are recorded with source receipt hashes. Their expected native weights remain unmeasured.
+
+Task1 must use paint_ready instead of ground_paint_weight_observed in the existing bounded after-Bake/pre-save gate. Exact interface request: INTEGRATION_REQUEST.json. Include missing_known_exclusion_roles and paint_contract_failures in failures. Manager/task1 must seal this final source and use fresh startup.
+
+Validation: syntax passed without importing Unreal; 31 offline regression checks passed. These cover delayed/zero paint readiness, full/partial road/pad/steep exclusions, normalization, wrong known-location routing, grid-only rejection, missing/duplicate/nonfinite probes, exact mesh contract, stale platform settings and distant-vs-near cache evidence. Installed 5.8 public headers were checked. No new native API execution is claimed.
+
+Task4 operations and exact assets/checks for both original maps are in NATIVE_HANDOFF.json. Ordinary preparation reuses the shared master/type and Shujaiya child, creates the absent permanent Rimal child, verifies corrected normal copies and .15 coverage, and uses named saves. Full lifecycle needs effective RoadBLD flags fixed first, normal scoped replacement, actual four-target weights at source locations, near Lit grass inspection, map/dependency saves, fresh reopen and repeated regeneration. Grass cache is transient: zero/distant cache is not visible completion, and near cached instances still need actual Lit pixels.
+
+Source implementation: complete for manager review.
+Actual native operation / new map saves / visible grass / fresh reopen / regeneration: NOT RUN by task3.
+User acceptance: OPEN.
+No editor lease, bank/hold changes, vendor changes, upstream changes, other worker source edits, new maps, pilots or Linear.

@@ -1,0 +1,36 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "find_assets",
+    "arguments": {
+     "folder_path": "/Game/Project/Shared/Bank_ME_v3/Vehicles",
+     "name": "",
+     "asset_type": null,
+     "recursive": true
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.329,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Normal_1011_2f3a4fe8b88a\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_Emission_1011_dbc56cdca027_albedo_09cf1e9ab0ac58\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Arabic_Assets_02_AlbedoTransparency_1011_6245e4288571\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/Street_Props_Pack__009\",\"/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar\"]}"
+    }
+   ]
+  }
+ }
+}

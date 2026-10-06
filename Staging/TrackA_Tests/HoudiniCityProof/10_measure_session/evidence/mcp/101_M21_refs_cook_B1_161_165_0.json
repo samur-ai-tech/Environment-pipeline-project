@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_referencers",
+    "arguments": {
+     "asset_path": "/Game/Developers/USER/HoudiniCityProof/Cook/B1_probebox/450A5C0A/B1_probebox_161_165_0_main_geo"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.009,
+ "isError": null,
+ "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 11,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":[\"/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof\"]}"
+    }
+   ]
+  }
+ }
+}

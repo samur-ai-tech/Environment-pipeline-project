@@ -1,0 +1,94 @@
+{
+  "schema": "environmentpipeline.modular_native_binding_plan.v1",
+  "utc": "2026-10-05T13:54:48.402650+00:00",
+  "status": "CONCRETE_PREPARED_TRANSITION_NOT_EXECUTED",
+  "manager_activation_required_for_native_writer": true,
+  "native_hda_identity": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+  "native_hda_before": {
+    "original": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\ModelBank\\HDA\\GeoCity_city_v015_PermanentBank.uasset",
+      "sha256": "357eeac66369e1ac3940592a3a922202aaf7e296c1183587365a30cc83485399"
+    },
+    "backup": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Bindings\\Before\\GeoCity_city_v015_PermanentBank_before.uasset",
+      "sha256": "357eeac66369e1ac3940592a3a922202aaf7e296c1183587365a30cc83485399"
+    }
+  },
+  "new_external_source": {
+    "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\revisions\\20261005_modular_source_families_v001\\GeoCity_city_v015_PermanentBank_ModularFamilies_v001.hdalc",
+    "sha256": "b5ab917a11c9a4021835fee93df0dcf87a71931cd02f3efd3a90ec23bb735977"
+  },
+  "build_receipt": {
+    "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\revisions\\20261005_modular_source_families_v001\\BUILD_RECEIPT.json",
+    "sha256": "d13a10ac9ddfd6bd905294f1d8b40a9bf69311e7bb36183d0a274ae11b7c1d52"
+  },
+  "retained_type": "trackb::geocity_city::15.0",
+  "native_hda_strategy": "Reimport the approved dated derivative into the existing canonical native HDA asset identity; preserve the prior native package backup and untouched original external r018 HDA/source. Do not create a second actor/generator or duplicate bank identities.",
+  "profiles": [
+    {
+      "map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "hda": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "profile": {
+        "original": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+          "sha256": "b1648e342dfedca1191190c9f77607e3b998c44e0f5d64ac9ea1cdc279300667"
+        },
+        "backup": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Bindings\\Before\\PermanentIntegration_2026-10-02_AREA_PROFILE.json",
+          "sha256": "b1648e342dfedca1191190c9f77607e3b998c44e0f5d64ac9ea1cdc279300667"
+        }
+      },
+      "merge_only": "building_assembly_contract.source_family_registry_ref",
+      "hda_parameter": "building_assembly_contract_json",
+      "roadbld_workflow_enabled": true,
+      "landscape_grass_enabled": true
+    },
+    {
+      "map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "hda": "/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank",
+      "table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_v4",
+      "profile": {
+        "original": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+          "sha256": "00877b7cf8cb5ba3afa8d7aa2f4b5b099f8a98baae20668aae4ba7bedbc1910f"
+        },
+        "backup": {
+          "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Bindings\\Before\\GazaShujaiyaIntegration_2026-10-02_AREA_PROFILE.json",
+          "sha256": "00877b7cf8cb5ba3afa8d7aa2f4b5b099f8a98baae20668aae4ba7bedbc1910f"
+        }
+      },
+      "merge_only": "building_assembly_contract.source_family_registry_ref",
+      "hda_parameter": "building_assembly_contract_json",
+      "roadbld_workflow_enabled": true,
+      "landscape_grass_enabled": true
+    }
+  ],
+  "required_final_registry_family_count": 20,
+  "required_native_saved_part_count": 609,
+  "registry_binding": "Use final immutable ordinary-connection registry from actual complete receipts. No source template or partial import can replace it.",
+  "native_sequence": [
+    "Bank content lane closes cleanly and manager assigns sole native binding lease.",
+    "Pause official cooking, disable automatic Cook/Bake on retained wrappers, confirm original map identity and named clean state.",
+    "Import/reimport approved derivative into canonical native HDA asset; confirm exact imported source path/hash and save only that HDA asset.",
+    "For each original map, preserve existing single HDA actor and previous Bake ledger. Merge final registry reference into existing complete profile building_assembly_contract.",
+    "Use official wrapper set_string_parameter_value for existing building_assembly_contract_json and read it back; preserve bank input, original settings, autos and cooking state.",
+    "Save only the canonical HDA and each exact original map after parameter binding; no Save All.",
+    "Record actual source identity, profile hash, parameter readback, named package saves, and ordinary connection status. No unperformed visual/lifecycle check is claimed passed."
+  ],
+  "ordinary_action": "Tools > GeoCity: Generate / Regenerate Current Area",
+  "ordinary_action_code": "geocity_editor_action.generate_current_area -> geocity_bank_workflow.run",
+  "ordinary_action_current_effects": [
+    "Native road export/authoring/suppression phase because roadbld_workflow.enabled is true.",
+    "Landscape Grass prepare and generated landscape replacement/verification; prepare can write GrassType and shared material graph.",
+    "Full current-area Cook/Bake and scoped replacement of prior generated actors, with named generated dependencies/map saves."
+  ],
+  "bounded_recommendation": "Complete native HDA/profile/wrapper connection and named saves now. Do not run full ordinary generation in this models-only operation without manager resolving its inherent road/ground effects. The latest user requested no additional test cycles.",
+  "forbidden_shortcuts": [
+    "Changing only profile.hda to a second native asset leaves the existing regenerate actor bound to the old HDA.",
+    "Do not silently disable road/grass profile settings, bypass lifecycle/hold guards, run old stopped system tasks, or use a separate generation route."
+  ],
+  "production_files_changed_by_this_plan": false,
+  "native_generation_performed": false,
+  "additional_tests_run": false
+}

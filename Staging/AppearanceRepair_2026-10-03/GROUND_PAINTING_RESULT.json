@@ -1,0 +1,294 @@
+{
+  "schema": "environmentpipeline.ground_painting_result.v1",
+  "created_utc": "2026-10-03T16:46:45.915698+00:00",
+  "scope": "Retained shared ground shader repair in both existing area profiles; native road delivery and complete environment acceptance remain separate.",
+  "status": "shared_shader_saved_rimal_reopened_shuj_ordinary_replacement_in_progress",
+  "evidence": {
+    "immutable_repair_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+    "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+    "repair_utc": "20261003T160849345599Z",
+    "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\BeforeGroundShader\\20261003T155954894788Z",
+    "source_byte_preservation": true,
+    "rimal_saved_native_verification": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json",
+    "rimal_saved_native_verification_sha256": "20702fa387aa670556e486cd14b2f5d80d59efb85e11c92938c0101d32b5044f",
+    "rimal_bank_reopen_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+    "rimal_bank_reopen_receipt_sha256": "baf8a87424dcd01f145444217dae89fe52b32552c3c253b93adea16185ca0b15",
+    "rimal_saved_lit_image": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\RIMAL_SAVED_LIT_20261003T1722.png",
+    "rimal_saved_lit_image_sha256": "c3b6230736d45ffff7b12f3c2b7efec46d6f343747056a0cd66bc44a6d6b9e18"
+  },
+  "fixed_defects": [
+    {
+      "defect": "Two sand normals were sRGB colour textures with TC_DEFAULT and incompatible normal sampling.",
+      "repair": "Two scoped Texture2D copies use sRGB=false, TC_NORMALMAP; reachable master defaults and only the two MI normal overrides reference the copies; samplers are NORMAL."
+    },
+    {
+      "defect": "Sand tint was multiplied after sand/soil blending and therefore also tinted soil.",
+      "repair": "Sand and soil are tinted separately before the existing colour Lerp; its output feeds Sand_01 directly."
+    },
+    {
+      "defect": "Macro soil albedo/normal used Sand_01 tile size instead of the soil parameter.",
+      "repair": "Both existing macro-soil functions now use reachable Dirt_Path_TileCm."
+    },
+    {
+      "defect": "Single mostly-white native mask gave weak soil variation capped at 25%.",
+      "repair": "Same existing grayscale native mask is sampled at 36 m and 57 m with deterministic offset, weighted 0.55/0.45, inverted, contrasted 3, saturated, and capped at0.60 for shared colour/normal alpha."
+    }
+  ],
+  "saved_assets": [
+    {
+      "package_path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity",
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_01_Normal_GeoCity.uasset",
+      "sha256": "2fbc15e85582550f9a4db133b9e3ab86d9c5b8d0597581809e053b3b7ffc0953"
+    },
+    {
+      "package_path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity",
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\Textures\\T_Sand_02_Normal_GeoCity.uasset",
+      "sha256": "7212bbc8c0da6cee290207fceab8c5f8967ded56fdd7fcae6bc6cd0d963bed47"
+    },
+    {
+      "package_path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\M_SurfaceBank_Natural.uasset",
+      "sha256": "106695b1eda247047f6d861e408e1238e3370362ca5f484deb37baa3d3309e1b"
+    },
+    {
+      "package_path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural",
+      "file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Project\\Shared\\SurfacePainting\\Appearance_20261003\\MI_SurfaceBank_Natural.uasset",
+      "sha256": "27b379f438c88c6a173a5e56c048c2629bb55fcddb0914d3a728477fb22be029"
+    }
+  ],
+  "normal_settings_after": {
+    "Sand_01_Normal": {
+      "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_01_Normal_GeoCity.T_Sand_01_Normal_GeoCity",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    },
+    "Sand_02_Normal": {
+      "path": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/T_Sand_02_Normal_GeoCity.T_Sand_02_Normal_GeoCity",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    }
+  },
+  "normal_sampler_readback": {
+    "Sand_01_Normal": "<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3>",
+    "Sand_02_Normal": "<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3>"
+  },
+  "source_hashes_before": {
+    "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal": "5f85662de5f20cf230a19373c9b24f95f3f5e13fa2456d1c8b6db710957ddd54",
+    "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal": "e305c2d7558b2f5e633b8242566d76b883d90b37e4c6ea40cf94cb0469a205a9"
+  },
+  "source_hashes_after": {
+    "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal": "5f85662de5f20cf230a19373c9b24f95f3f5e13fa2456d1c8b6db710957ddd54",
+    "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal": "e305c2d7558b2f5e633b8242566d76b883d90b37e4c6ea40cf94cb0469a205a9"
+  },
+  "macro": {
+    "formula": "0.60 * saturate(3 * (1 - (0.55 * mask36m.R + 0.45 * mask57m_offset.R)))",
+    "parameters": {
+      "Ground_MacroContrast": 3.0,
+      "Ground_SoilBlendStrength": 0.6000000238418579,
+      "Ground_MacroTile2Cm": [
+        5700.0,
+        5700.0,
+        5700.0,
+        1.0
+      ],
+      "Ground_MacroOffsetCm": [
+        1700.0,
+        2900.0,
+        0.0,
+        0.0
+      ]
+    },
+    "first_tile_cm": [
+      3600.0,
+      3600.0,
+      3600.0,
+      1.0
+    ],
+    "soil_tile_cm": [
+      260.0,
+      260.0,
+      260.0,
+      1.0
+    ],
+    "native_mask_probe": {
+      "size": [
+        4096,
+        4096
+      ],
+      "rgb_equal": true,
+      "byte_range": [
+        60,
+        255
+      ],
+      "mean": 206.95,
+      "basis": "Owner exported and measured exact native T_dirt3_M before authoring"
+    }
+  },
+  "preservation": {
+    "geographic_height_and_mask_values_changed": false,
+    "bank_weight_layer_names_preserved": 69,
+    "painted_target_count_per_area": 4,
+    "other_resolved_material_parameters_preserved": true,
+    "original_native_textures_preserved": true,
+    "roughness_unchanged_native_rgb_mask_channel_semantics_unverified": true,
+    "rights_and_named_holds_changed": false
+  },
+  "areas": {
+    "GazaRimal": {
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "shared_material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+      "surface_choices": {
+        "landscape_output_mode": 0,
+        "paint_ground_choice": 17,
+        "paint_steep_choice": 18,
+        "paint_roadbed_choice": 16,
+        "paint_buildingpad_choice": 20
+      },
+      "painted_target_names": [
+        "Dirt_Path",
+        "Sand_01",
+        "Sand_02",
+        "Sand_Path"
+      ],
+      "target_name_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+      "target_evidence_scope": "Fresh repaired-shader saved-map reopen without recook; both explicit corrected normal overrides and all four selected targets verified.",
+      "repaired_shader_reopened_verified": true,
+      "bank_reopen_summary": {
+        "native_instances": 16009,
+        "saved_hda_actors": 43,
+        "named_hda_dependencies": 6,
+        "landscape_count": 1,
+        "cooked_mesh_components": 0,
+        "dirty_maps": []
+      },
+      "native_road_delivery": {
+        "area_id": "GazaRimal",
+        "phase": "saved_reopened_verified",
+        "passed": true,
+        "native_verification_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\SAVED_NATIVE_VERIFICATION_GazaRimal_20261003T172036083014Z.json",
+        "native_verification_sha256": "20702fa387aa670556e486cd14b2f5d80d59efb85e11c92938c0101d32b5044f",
+        "bank_reopen_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_GazaRimal_20261003T172107331435Z.json",
+        "bank_reopen_sha256": "baf8a87424dcd01f145444217dae89fe52b32552c3c253b93adea16185ca0b15",
+        "revision": "20261003T143631839378",
+        "saved": true,
+        "reopened": true,
+        "no_recook": true,
+        "fresh_editor_process_restart": false,
+        "original_source_road_count": 24,
+        "total_native_road_count": 24,
+        "roadgeo_count": 43,
+        "bound_mesh_count": 41,
+        "exact_null_placeholder_count": 2,
+        "null_placeholders_physically_supported": true,
+        "owned_native_actor_count": 68,
+        "named_native_dependency_count": 65,
+        "saved_hda_actor_count": 43,
+        "named_hda_dependency_count": 6,
+        "bank_native_instance_count": 16009,
+        "max_surface_height_error_cm": 7.729658493965417,
+        "actual_native_triangle_count": 795580,
+        "protected_building_pad_count": 269,
+        "failing_pad_overlap_count": 0,
+        "max_area_escape_cm": 0.0010130792873042083,
+        "exact_materials_transforms_collision_and_geometry_hashes_verified": true,
+        "saved_named_packages_clean": true,
+        "user_visual_acceptance": false
+      }
+    },
+    "GazaShujaiya": {
+      "profile": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "shared_material": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+      "surface_choices": {
+        "landscape_output_mode": 0,
+        "paint_ground_choice": 17,
+        "paint_steep_choice": 18,
+        "paint_roadbed_choice": 16,
+        "paint_buildingpad_choice": 20
+      },
+      "painted_target_names": [
+        "Dirt_Path",
+        "Sand_01",
+        "Sand_02",
+        "Sand_Path"
+      ],
+      "target_name_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\REOPEN_INSPECT_GazaShujaiya.json",
+      "target_evidence_scope": "Prior actual r018 saved/reopened Landscape readback; this shader repair changes shared assets only. Fresh repaired shader reopen is not claimed here.",
+      "ordinary_replacement": {
+        "area_id": "GazaShujaiya",
+        "phase": "ordinary_replacement_in_progress",
+        "started_utc": "2026-10-03T17:22:46Z",
+        "editor_pid": 32752,
+        "evidence_attribution": "Latest ordinary replacement start reported by sole editor owner; no worker editor probe.",
+        "new_replacement_final_save_reopen_verified": false
+      },
+      "new_replacement_reopen_verified": false
+    }
+  },
+  "normal_convention": {
+    "basis": "Read-only binary decode of installed native package name maps, export tables and serialized expression properties; no editor calls by report author.",
+    "WorldAlignedNormal": {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Content\\Functions\\Engine_MaterialFunctions01\\Texturing\\WorldAlignedNormal.uasset",
+      "sha256": "3c59fc4c7f2ce54f81cbf1778a05c608339e0099958075c9d801add7b5dc14a9",
+      "WorldSpace": {
+        "default": false,
+        "input_expression": "MaterialExpressionFunctionInput_4",
+        "input_export_offset": 26636,
+        "preview_expression": "MaterialExpressionStaticBool_0",
+        "use_preview_value_as_default": true
+      },
+      "Use_High_Quality_Normals": {
+        "default": true,
+        "input_expression": "MaterialExpressionFunctionInput_5",
+        "input_export_offset": 27110,
+        "preview_expression": "MaterialExpressionStaticBool_1"
+      },
+      "XYZ_Texture_output": {
+        "output_export_offset": 27981,
+        "path": [
+          "MaterialExpressionFunctionOutput_0",
+          "MaterialExpressionStaticSwitch_0",
+          "false B: MaterialExpressionTransform_1"
+        ],
+        "transform_export_offset": 46694,
+        "source": "World",
+        "destination": "Tangent"
+      },
+      "normal_texture_samples": [
+        "MaterialExpressionTextureSample_0",
+        "MaterialExpressionTextureSample_3",
+        "MaterialExpressionTextureSample_5"
+      ],
+      "sampler_type": "SAMPLERTYPE_Normal"
+    },
+    "WorldAlignedNormals_HighQuality": {
+      "file": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Content\\Functions\\Engine_MaterialFunctions02\\WorldAlignedNormals_HighQuality.uasset",
+      "sha256": "dd16f933b813875bf765a869e91718dd594296c995eaa7db5cc837927c14a72b",
+      "XYZ_output": "World Space Normals XYZ",
+      "normal_texture_samples": [
+        "MaterialExpressionTextureSample_5",
+        "MaterialExpressionTextureSample_6",
+        "MaterialExpressionTextureSample_7"
+      ],
+      "sampler_type": "SAMPLERTYPE_Normal"
+    },
+    "retained_master_tangent_space_normal": true,
+    "master_setting_evidence": "Root current live readback reported tangent_space_normal=True.",
+    "conclusion": "Unconnected WorldSpace selects world-to-tangent output, matching the existing tangent-space master. TextureObject declares type; native texture samples decode normal data. Current master adds Lerp/Normalize without a second colour-to-normal remap. No double-decode defect evidenced; defaults preserved."
+  },
+  "visual_observation": {
+    "observer": "Root captured actual saved Lit viewport; worker independently inspected the supplied local image",
+    "mode": "Saved Rimal Lit screenshot after named save/reopen",
+    "reported_result": "Ground texture and irregular soil patches are visible in the supplied saved image; no checkerboard is visible.",
+    "basis": "Saved Rimal image plus passed bank/material and native road reopen receipts; worker did not operate the editor.",
+    "saved_image_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\RIMAL_SAVED_LIT_20261003T1722.png",
+    "user_visual_acceptance": false,
+    "rimal_repaired_shader_map_reopen_verified": true
+  },
+  "remaining_limits": [
+    "Native RGB mask roughness/AO/height semantics remain unverified; roughness is preserved.",
+    "The 39-texture/69-layer bank is selectable shader capacity; four semantic paint targets remain applied.",
+    "Rimal saved/reopened grounding is verified; Shujaiya new ordinary replacement and its fresh saved/reopen checks remain in progress.",
+    "No fresh editor-process restart, complete two-area environment acceptance or user aesthetic approval is established."
+  ],
+  "updated_utc": "2026-10-03T17:30:36.580165+00:00"
+}

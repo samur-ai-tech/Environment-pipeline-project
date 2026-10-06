@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "producer_candidate_sha256": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+  "consumer_candidate_sha256": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+  "token_shape_actual_consumer_to_actual_producer": "PASS",
+  "checks": [
+    {
+      "scenario": "zero_geometric_roles",
+      "status": "PASS",
+      "source_probe_count": 16,
+      "explicit_zero_layers": [],
+      "explicit_absent_layers": [
+        "Dirt_Path",
+        "PB_solid_snow_white",
+        "PB_starter_SC_Ground_Moss",
+        "Sand_02",
+        "Sand_Path",
+        "Soil1",
+        "Wet_Sand_01"
+      ]
+    },
+    {
+      "scenario": "positive_geometric_roles",
+      "status": "PASS",
+      "source_probe_count": 19,
+      "explicit_zero_layers": [],
+      "explicit_absent_layers": [
+        "PB_solid_snow_white",
+        "PB_starter_SC_Ground_Moss",
+        "Soil1",
+        "Wet_Sand_01"
+      ]
+    },
+    {
+      "scenario": "zero_grass_mask",
+      "status": "PASS",
+      "source_probe_count": 16,
+      "explicit_zero_layers": [
+        "GC_GrassEligible"
+      ],
+      "explicit_absent_layers": [
+        "BaseGrass1",
+        "Dirt_Path",
+        "Farmland1",
+        "PB_Custom_Ground",
+        "PB_solid_neutral_gray",
+        "PB_solid_snow_white",
+        "PB_starter_SC_Ground_Moss",
+        "SC_Ground_Gravel",
+        "Sand_02",
+        "Soil1",
+        "Soil2",
+        "TreeGround",
+        "Wet_Sand_01"
+      ]
+    }
+  ],
+  "class_grid": [
+    4033,
+    4033
+  ],
+  "source_data": "Real registered 404x404 source sampled on actual retained 4033x4033 1m lattice; nine original class80 cells",
+  "geometry_and_native_readback": "Synthetic test masks and readback values, NOT native measurement or generated terrain",
+  "no_unreal_or_houdini_import": true,
+  "native_actions": false,
+  "active_source_changed": false
+}

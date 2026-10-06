@@ -1,0 +1,407 @@
+{
+  "mode": "copilot",
+  "tool_count": 11,
+  "tools": [
+    {
+      "name": "search",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "query": {
+            "description": "Search query. C++ uses smart matching, Blueprint/Asset uses wildcards.\nExamples: 'ULyraHealthComponent', 'GA_Weapon*', '*Damage*'",
+            "type": "string"
+          },
+          "domain": {
+            "default": "all",
+            "description": "Domain to search: 'cpp' | 'blueprint' | 'asset' | 'all' (default).",
+            "enum": [
+              "cpp",
+              "blueprint",
+              "asset",
+              "all"
+            ],
+            "type": "string"
+          },
+          "scope": {
+            "default": "project",
+            "description": "Search scope: 'project' (default) | 'engine' | 'plugin' | 'all'.",
+            "enum": [
+              "project",
+              "engine",
+              "plugin",
+              "all"
+            ],
+            "type": "string"
+          },
+          "type_filter": {
+            "default": "",
+            "description": "Type/class filter. For assets: 'Blueprint', 'Material', etc.\nFor blueprints: parent class like 'GameplayAbility', 'Character'.",
+            "type": "string"
+          },
+          "max_results": {
+            "default": 100,
+            "description": "Max results per domain (default: 100)",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_hierarchy",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "description": "C++ class name OR Blueprint asset path.\nExamples: 'ULyraHealthComponent', '/Game/BP_Hero'",
+            "type": "string"
+          },
+          "domain": {
+            "default": "cpp",
+            "description": "Hierarchy domain: 'cpp' (default) | 'blueprint'.",
+            "enum": [
+              "cpp",
+              "blueprint"
+            ],
+            "type": "string"
+          },
+          "scope": {
+            "default": "project",
+            "description": "C++ search scope: 'project' (default) | 'engine' | 'plugin' | 'all'.",
+            "enum": [
+              "project",
+              "engine",
+              "plugin",
+              "all"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_references",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "description": "Identifier or asset path.\nExamples: 'ULyraHealthComponent', '/Game/BP_Player'",
+            "type": "string"
+          },
+          "domain": {
+            "default": "asset",
+            "description": "Reference domain: 'cpp' | 'blueprint' | 'asset' (default).",
+            "enum": [
+              "cpp",
+              "blueprint",
+              "asset"
+            ],
+            "type": "string"
+          },
+          "scope": {
+            "default": "project",
+            "description": "C++ search scope: 'project' (default) | 'engine' | 'plugin' | 'all'.",
+            "enum": [
+              "project",
+              "engine",
+              "plugin",
+              "all"
+            ],
+            "type": "string"
+          },
+          "direction": {
+            "default": "both",
+            "description": "Direction: 'outgoing' | 'incoming' | 'both' (default).",
+            "enum": [
+              "outgoing",
+              "incoming",
+              "both"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_details",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "description": "C++ class/file OR Blueprint/Asset path.\nExamples: 'ULyraHealthComponent', '/Game/BP_Player'",
+            "type": "string"
+          },
+          "domain": {
+            "default": "blueprint",
+            "description": "Details domain: 'cpp' | 'blueprint' (default) | 'asset'.",
+            "enum": [
+              "cpp",
+              "blueprint",
+              "asset"
+            ],
+            "type": "string"
+          },
+          "scope": {
+            "default": "project",
+            "description": "C++ search scope: 'project' (default) | 'engine' | 'plugin' | 'all'.",
+            "enum": [
+              "project",
+              "engine",
+              "plugin",
+              "all"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "get_blueprint_graph",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "bp_path": {
+            "description": "Blueprint asset path. Example: '/Game/BP_Player'",
+            "type": "string"
+          },
+          "graph_name": {
+            "default": "EventGraph",
+            "description": "Graph name (default: 'EventGraph').",
+            "type": "string"
+          },
+          "format": {
+            "default": "mermaid",
+            "description": "Output format: 'mermaid' (default) | 'summary' | 'json'.",
+            "enum": [
+              "mermaid",
+              "summary",
+              "json"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "bp_path"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "detect_ue_patterns",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "file_path": {
+            "description": "C++ file path (.h/.cpp). Example: 'Source/MyGame/MyActor.h'",
+            "type": "string"
+          },
+          "format": {
+            "default": "detailed",
+            "description": "Output format: 'detailed' (default) | 'summary' (Blueprint-exposed only).",
+            "enum": [
+              "detailed",
+              "summary"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "trace_reference_chain",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "start_asset": {
+            "description": "Starting asset path. Example: '/Game/BP_Player'",
+            "type": "string"
+          },
+          "max_depth": {
+            "default": 3,
+            "description": "Maximum depth to trace (default: 3, max: 10).",
+            "type": "integer"
+          },
+          "direction": {
+            "default": "both",
+            "description": "Direction: 'outgoing' | 'incoming' | 'both' (default).",
+            "enum": [
+              "outgoing",
+              "incoming",
+              "both"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "start_asset"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "find_cpp_class_usage",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "cpp_class": {
+            "description": "C++ class name. Example: 'ULyraHealthSet'",
+            "type": "string"
+          },
+          "scope": {
+            "default": "project",
+            "description": "C++ search scope: 'project' (default) | 'engine' | 'all'.",
+            "enum": [
+              "project",
+              "engine",
+              "all"
+            ],
+            "type": "string"
+          },
+          "max_results": {
+            "default": 200,
+            "description": "Max C++ matches to return (default: 200).",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "cpp_class"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "list_unreal_skill",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "query": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "include_hidden": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "name": "read_unreal_skill",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "skill_name": {
+            "type": "string"
+          },
+          "path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "skill_name"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "run_unreal_skill",
+      "schema": {
+        "additionalProperties": false,
+        "properties": {
+          "skill_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "script": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "args": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "python": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "type": "object"
+      }
+    }
+  ],
+  "editor_readback": "CallToolResult(content=[TextContent(type='text', text='{\"ok\":true,\"stdout\":\"\",\"result\":{\"world\":\"/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration\",\"dirty_packages\":[],\"pause_cooking_on_start\":true}}', annotations=None, meta=None)], structured_content={'ok': True, 'stdout': '', 'result': {'world': '/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration', 'dirty_packages': [], 'pause_cooking_on_start': True}}, meta=None, data={'ok': True, 'stdout': '', 'result': {'world': '/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration.L_GazaRimal_BankIntegration', 'dirty_packages': [], 'pause_cooking_on_start': True}}, is_error=False)"
+}

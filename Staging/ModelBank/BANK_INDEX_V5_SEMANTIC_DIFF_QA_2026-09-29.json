@@ -1,0 +1,29 @@
+{
+  "kind": "BANK_INDEX_V5_SEMANTIC_REVERSE_CHECK",
+  "date": "2026-09-29",
+  "catalog": "Staging/ModelBank/BANK_CANDIDATE_INDEX_2026-09-28.csv",
+  "current_v5_sha256": "12225013B06810665B5E429299F1CD9E9931588AEAE4B1FFE1A33282B5719098",
+  "expected_v4_sha256": "495985E2697C4BBBBE735E80184C5E73DA5B94A4444FEB5BAFDCBC6621ADEA42",
+  "reconstructed_v4_sha256": "495985E2697C4BBBBE735E80184C5E73DA5B94A4444FEB5BAFDCBC6621ADEA42",
+  "match": true,
+  "parsed_rows": 1215,
+  "columns": 101,
+  "reverse_recipe": {
+    "parser": "Python csv.DictReader UTF-8 newline=empty",
+    "all_rows": {
+      "index_revision": "v4_native_reconcile_2026-09-29"
+    },
+    "only_three_asset_ids": [
+      "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin"
+    ],
+    "three_row_changes": {
+      "material_paths": "clear",
+      "inspection_evidence": "remove exact final \" | \"+BANK_ASTRA_003_RESULT.md",
+      "native_evidence": "remove same exact suffix"
+    },
+    "serializer": "Python csv.DictWriter UTF-8 CRLF QUOTE_ALL, original v4 dialect"
+  },
+  "interpretation": "Exact v4 byte hash reconstructed after reversing only listed semantic cells. v5 was serialized with QUOTE_MINIMAL; wider byte-level quoting changes do not imply additional decoded cell changes. Does not prove current asset qualification."
+}

@@ -1,0 +1,9 @@
+# BANK-ASTRA-007R independent manager review
+
+[measured: `001_H0907.json`, `002_H0013.json`, `003_H0051.json`] I reparsed each exact `ObjectTools.get_properties` request and its nested MCP response. All three current StaticMesh paths returned both `PositiveBoundsExtension` and `NegativeBoundsExtension` with numeric X/Y/Z exactly zero. No fallback call is present. The three receipt package hashes match the current `.uasset` files. Main receipt `BANK_ASTRA_007R_RECEIPT.json` SHA-256: `ADD4C52987A6B3715A4F8CE8E6103D2AA3F82E999F4F499A901A041B387126E8`.
+
+[measured: `Content_BEFORE.json`, `Content_AFTER.json`, `HASHES_BEFORE.json`, `HASHES_AFTER.json`, `VALIDATION_UTC_TICKS.json`] Independently normalized both snapshot timestamps to UTC ticks: 5,991/5,991 Content paths, zero metadata differences; all 174 protected hashes match both before/after and current files. Canonical v6 CSV hash remains `BFEE371865DED0D32C9372F704FF0B333E869B4BFE6C72392A7DE8F98E2CC8E9`; 1,215 rows, zero qualified/technically eligible/generation enabled. `Saved` has 21 comparison rows (4 added, 3 removed, 7 changed); `Intermediate` has 14 (1 added, 1 removed, 6 changed). Zero UnrealEditor/Houdini/HARS/hython processes; log ends in normal `LogExit` at 14:31:10 local.
+
+`FINAL_VALIDATION.json` is superseded for metadata comparison because it compared deserialized DateTime objects with ISO strings. `FINAL_VALIDATION_CORRECTED.json` and `VALIDATION_UTC_TICKS.json` retain the corrected comparisons. Raw snapshots remain intact.
+
+**Bounded result:** `bounds_extensions_zero_at_current_revision` for H0907, H0013 and H0051. This removes the nonzero-extension ambiguity from their existing local AABBs. It does not measure structural support/contact, usable footprint, semantic forward axis, role suitability or generator placement. `ContactValid` and `FootprintValid` remain UNKNOWN; no candidate is promoted. [not run: BANK-PLACEMENT; CAT1; INST1; BG1; Tier1]

@@ -1,0 +1,79 @@
+Begin Object Class=/Script/Engine.MaterialFunction Name="MF_MWAM_PivotMask" ExportPath="/Script/Engine.MaterialFunction'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="MF_MWAM_PivotMaskEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MF_MWAM_PivotMaskEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionConstant_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionDistance_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionMaterialFunctionCall_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionWorldPosition_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="MF_MWAM_PivotMaskEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MF_MWAM_PivotMaskEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_MWAM_PivotMask:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_MWAM_PivotMask:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionDistance'MF_MWAM_PivotMask:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_MWAM_PivotMask:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionDivide'MF_MWAM_PivotMask:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionConstant'MF_MWAM_PivotMask:MaterialExpressionConstant_3'"))
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionConstant_3'"
+      R=64.000000
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=F67AF20D44F55D160AFA6FBC8F246CBA
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionDistance_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_MWAM_PivotMask:MaterialExpressionWorldPosition_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_MWAM_PivotMask:MaterialExpressionMaterialFunctionCall_6'",OutputIndex=1)
+      MaterialExpressionEditorX=-144
+      MaterialExpressionEditorY=304
+      MaterialExpressionGuid=C91A75224164D1CBDECFA292B23E89BF
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDistance'MF_MWAM_PivotMask:MaterialExpressionDistance_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_MWAM_PivotMask:MaterialExpressionConstant_3'")
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=59BDE2ED4ACF9167BD816285ACF8F8D5
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionFunctionOutput_0'"
+      OutputName="PivotMask"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_MWAM_PivotMask:MaterialExpressionDivide_0'")
+      bLastPreviewed=True
+      Id=238CE1F847DACEBB1F9F3583DE5C939F
+      MaterialExpressionEditorX=192
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=90C5EAB24099A7461952B78B073289A7
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionMaterialFunctionCall_6'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectPivotPoint.ObjectPivotPoint'"
+      FunctionOutputs(0)=(ExpressionOutputId=45F37B244D3DD524BEA7AC99F0C5D1AD,Output=(OutputName="Object Pivot Location"))
+      FunctionOutputs(1)=(ExpressionOutputId=25F4574C4FE1517990AEE888A0A892CC,Output=(OutputName="Mesh Particle Pivot Location"))
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=10C060F646E51F3964745791500D0726
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+      Outputs(0)=(OutputName="Object Pivot Location")
+      Outputs(1)=(OutputName="Mesh Particle Pivot Location")
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:MaterialExpressionWorldPosition_0'"
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=0F7F0F094A35374A3A4CD386F2254BF6
+      Function="/Script/Engine.MaterialFunction'MF_MWAM_PivotMask'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/MWLandscapeAutoMaterial/Materials/MASTER/Func/MF_MWAM_PivotMask.MF_MWAM_PivotMask:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   bExposeToLibrary=True
+   LibraryCategoriesText(0)=NSLOCTEXT("", "69B95294433411D9C435848998262F95", "MAWI")
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_MWAM_PivotMaskEditorOnlyData'"
+   StateId=A5CF5E4746D92EC7C8BBB88391BE8DB2
+   CombinedInputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

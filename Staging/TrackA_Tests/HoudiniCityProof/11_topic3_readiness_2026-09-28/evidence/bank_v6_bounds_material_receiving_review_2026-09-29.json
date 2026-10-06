@@ -1,0 +1,120 @@
+{
+  "kind": "OFFLINE_V6_BOUNDS_AND_MATERIAL_RECEIVING_REVIEW_NOT_QUALIFICATION",
+  "reviewed_at": "2026-09-29T10:19:35.119Z",
+  "verdict": "OFFLINE_COMPATIBLE_FOR_DISABLED_CANDIDATE_METADATA",
+  "catalog": {
+    "path": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/ModelBank/BANK_CANDIDATE_INDEX_2026-09-28.csv",
+    "revision": "v6_current_bounds_2026-09-29",
+    "sha256": "bfee371865ded0d32c9372f704ff0b333e869b4bfe6c72392a7de8f98e2cc8e9",
+    "rows": 1215,
+    "source_columns": 101
+  },
+  "checks": {
+    "expected_hash": true,
+    "rows_1215": true,
+    "unique_ids_1215": true,
+    "source_columns_101": true,
+    "source_header_unchanged": true,
+    "three_min_and_three_max_cells": true,
+    "three_material_json_cells": true,
+    "all_candidates_disabled": true,
+    "expected_revision": true,
+    "selected_rows_3": true,
+    "independent_v5_reconstruction_matches": true,
+    "exact_reversal_cells": true,
+    "no_reconstructed_csv_written": true
+  },
+  "selected_rows": [
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0013_Building_04",
+      "native_receipt_label": "H0013",
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0013_Building_04.SM_H0013_Building_04",
+      "local_bounds_min_cm": [
+        -1273.8673095703125,
+        -1081.9207763671875,
+        -0.3545195758342743
+      ],
+      "local_bounds_max_cm": [
+        1615.8203125,
+        1049.0091552734375,
+        4868
+      ],
+      "exactly_matches_raw_native_XYZ": true,
+      "no_axis_or_scale_transform": true,
+      "material_slot_count": 4,
+      "material_bindings_unchanged": true,
+      "contact_still_blank": true
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__Buildings__SM_H0907_Arab_x3_fbx",
+      "native_receipt_label": "H0907",
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0907_Arab_x3_fbx.SM_H0907_Arab_x3_fbx",
+      "local_bounds_min_cm": [
+        -680.353271484375,
+        -700.4720458984375,
+        0.6762058734893799
+      ],
+      "local_bounds_max_cm": [
+        688.6864013671875,
+        668.2713623046875,
+        1561.33740234375
+      ],
+      "exactly_matches_raw_native_XYZ": true,
+      "no_axis_or_scale_transform": true,
+      "material_slot_count": 1,
+      "material_bindings_unchanged": true,
+      "contact_still_blank": true
+    },
+    {
+      "asset_id": "current_Project__Shared__Bank_ME_v3__StreetFurniture__SM_H0051_Garbagebin",
+      "native_receipt_label": "H0051",
+      "mesh": "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0051_Garbagebin.SM_H0051_Garbagebin",
+      "local_bounds_min_cm": [
+        -12.837084770202637,
+        -17.898235321044922,
+        3.5086711136500526e-7
+      ],
+      "local_bounds_max_cm": [
+        16.559925079345703,
+        16.53656768798828,
+        74.40184783935547
+      ],
+      "exactly_matches_raw_native_XYZ": true,
+      "no_axis_or_scale_transform": true,
+      "material_slot_count": 1,
+      "material_bindings_unchanged": true,
+      "contact_still_blank": true
+    }
+  ],
+  "exact_bounds_cell_count": 6,
+  "scalar_coordinate_count": 18,
+  "untouched_other_bounds_rows": 1212,
+  "wire": {
+    "columns": 54,
+    "actual_runtime_bindings": "ALL_NULL",
+    "note": "101 source CSV columns are not an imported DataTable or observed HAPI schema."
+  },
+  "semantic_scope": {
+    "independently_reconstructed_v5_sha256": "12225013B06810665B5E429299F1CD9E9931588AEAE4B1FFE1A33282B5719098",
+    "reversed": "Only six bounds cells, six exact BANK_ASTRA_004 evidence suffixes and all-row index_revision.",
+    "serializer": "Independent PowerShell parser with in-memory UTF-8 CRLF comma/minimal-quote serializer; no reconstructed CSV written."
+  },
+  "receipts": [
+    {
+      "path": "Staging/ModelBank/BANK_INDEX_V6_BOUNDS_RECEIPT_2026-09-29.json",
+      "sha256": "6f5a6eefb06aa9f14eb4f915ba28a369db6964f11eb81610ff120ef197a46e1b"
+    }
+  ],
+  "basis": [
+    "BOUNDS_AND_DEPENDENCY_RECEIVING_2026-09-29.md",
+    "MATERIAL_BINDING_CONTRACT_2026-09-29.md",
+    "evidence/bank_astra_004_receiving_review_2026-09-29.json",
+    "evidence/bank_v5_material_binding_review_2026-09-29.json"
+  ],
+  "limits": [
+    "Only Topic3 packet files edited. No bank/asset/config changes or editor contact.",
+    "Bounds are asset-local AABBs including configured extensions. No contact/footprint/physical role-scale qualification.",
+    "Recursive dependency closure and material custom-data channels remain open.",
+    "CAT1/INST1/Tier1 and full integration remain NOT_RUN."
+  ]
+}

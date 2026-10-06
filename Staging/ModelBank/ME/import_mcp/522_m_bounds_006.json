@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 47,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_bounds",
+    "arguments": {
+     "mesh": {
+      "refPath": "/Game/Project/Shared/Bank_ME/Buildings/SM_H0016_Building_03.SM_H0016_Building_03"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.static_mesh.StaticMeshTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.332,
+ "isError": null,
+ "text": "{\"returnValue\":{\"min\":{\"x\":-1663.1005859375,\"y\":-2534.14404296875,\"z\":-0.25967049598693848},\"max\":{\"x\":179.07620239257812,\"y\":2734.777587890625,\"z\":2169.82470703125},\"isValid\":true}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 47,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"min\":{\"x\":-1663.1005859375,\"y\":-2534.14404296875,\"z\":-0.25967049598693848},\"max\":{\"x\":179.07620239257812,\"y\":2734.777587890625,\"z\":2169.82470703125},\"isValid\":true}}"
+    }
+   ]
+  }
+ }
+}

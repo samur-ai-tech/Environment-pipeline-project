@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 255,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_carton_box_2"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.024,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"42x54x39\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/carton_box_2.fbx\\\", \\\"Timestamp\\\" : \\\"1540879434\\\", \\\"FileMD5\\\" : \\\"3788201f4f61efc1d19ef9dedfdb2961\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"214\",\"UVChannels\":\"2\",\"Vertices\":\"517\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 255,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"42x54x39\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/carton_box_2.fbx\\\", \\\"Timestamp\\\" : \\\"1540879434\\\", \\\"FileMD5\\\" : \\\"3788201f4f61efc1d19ef9dedfdb2961\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"214\",\"UVChannels\":\"2\",\"Vertices\":\"517\"}}"
+    }
+   ]
+  }
+ }
+}

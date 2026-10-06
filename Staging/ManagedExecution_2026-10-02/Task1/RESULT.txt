@@ -1,0 +1,112 @@
+TASK 1 — GENERATOR AND NORMAL INPUT ACTION
+2026-10-02, Asia/Jerusalem
+Status: implemented and integrated complete generation; no Bake/map save.
+
+RETAINED CHANGES [measured]
+External source root:
+C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank
+- geocity_city_module.py, permanent_bank_module.py and GeoCity_city_v015_PermanentBank.hdalc: r006.
+- Existing r005 selector correction retained: replacement ids receipt is inside
+  cook_permanent_building_replacement, not outside its local scope.
+- Complete augmented request ledger/counts replace original-only totals; original
+  role/count fields retained separately. Reason counters and rejected request IDs
+  distinguish scope, style, area, zone, bounds, footprint/height/coverage, terrain,
+  attachment contract and global spacing. Stage exceptions retain tracebacks at
+  catalog_receipt + '.errors.json' and fail the actual cook normally.
+- All eight HDA output SOPs retain their existing wiring. Controls are point-only
+  Houdini output; seven supported native outputs are expected in this area.
+- Pre-change r005 source/definition/receipt retained in revisions/r005.
+
+Named imported/saved HDA:
+/Game/Project/Shared/ModelBank/HDA/GeoCity_city_v015_PermanentBank
+The saved .uasset contains the exact final external .hdalc bytes.
+External HDA SHA256: d13eb776008bbf67ff3cc66f4e8b315e80acb4b33db4dc16738a0e06414515c6
+
+Project source actions:
+Content/Python/geocity_bank_workflow.py
+Content/Python/geocity_editor_action.py
+Content/Python/init_unreal.py
+- Reused official Public API and asynchronous lifecycle. Auto-cooking and auto-Bake
+  disabled on reused wrappers; source/profile/material/catalog parameters configured
+  before explicit cook; native DataTable cleared then rebound with a fresh input.
+- Fresh schema/digest/request/output identities and native per-mesh counts/material
+  slots checked before cooked_verified. Complete stage failures/timeouts are reported.
+- Completed delegates detached so a previous wrapper cannot configure/cook a later
+  rebuild. Cooking returns to its previous paused state. Lease identity, exact map,
+  one-editor processes and reviewed dirty packages are guarded.
+- Tools menu: GeoCity: Generate / Regenerate Current Area. Uses the uniquely matched
+  persistent profile and official wrapper; new area instantiates, retained area
+  rebuilds. It claims/releases a scoped menu lease only when the editor is free and
+  clean. It does not auto-Bake/save the map. Menu registration completed; no separate
+  menu-click experiment was performed. Task4 retains final replacement/save ownership.
+- Unsaved ongoing area cook changes can be passed explicitly as the exact
+  reviewed_dirty_packages list to run(); only current map/cook-root paths are allowed.
+  Default/menu invocation rejects unresolved dirty state.
+
+ACTUAL COMPLETED GENERATION [measured]
+Map: /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration
+Actor: PersistentLevel.HoudiniAssetActor_0 in that map (retained original actor).
+State: cooked_verified; generator_revision=r006; output_identities_verified=true.
+Fresh translated DataTable: 1,223 rows, schema v3, digest
+51dbb773097f2b7f67d4ecc8469f3a46a33cff6dfa34f2f10275b9bad983937c
+Native outputs: one Landscape, GazaRimal_road_surfaces, GazaRimal_sidewalks,
+GazaRimal_buildings, GazaRimal_vegetation, GazaRimal_street_details, bank_instances.
+Native bank: 164 placements / 49 meshes. Roles: 15 whole buildings, 67 small props,
+7 street props, 38 shrubs, 37 understory. All configured native material slot maps
+matched on newly cooked components, including the 19 previously mismatched models.
+This is material delivery readback, not Lit visual acceptance.
+Augmented requests: 505 — 269 whole buildings, 67 small props, 7 street props,
+52 trees, 8 poles, 52 shrubs, 50 understory.
+
+An intermediate r006 operation still returned three outputs and no selector receipt.
+The complete-report addition was corrected for the v3 guard, which has original
+counts/roles but no original requests list. Actual subsequent generation completed.
+Prior asynchronous delegates also reconfigured the same rebuild; retained cleanup now
+removes them. No further experimental recook was done after success. Source syntax
+checks passed; final output identities were read/validated on the completed output.
+
+TASK 2 INPUT / REMAINING WORK [measured unless labelled]
+Tree diagnosis: 51 of 52 requests had fitting candidates but were rejected by global
+spacing; one had no candidate. Across evaluations, 88 terrain-height-spread and 52
+style rejections occurred; 640 evaluations fit. Trees sorted after props/shrubs can
+lose their shared positions. Do not globally relax terrain/rights guards by guesswork.
+Pole diagnosis: all 8 requests reject the one active candidate by preview exact-ID
+scope, before style fitting. The independent review also documents its incompatible
+stylized_town style; compatible held candidates remain held. Choose allowed normal
+routing or deliberately omit poles; no hold has been cleared.
+Current profile/catalog remain technical_preview/all-disabled and byte-preserved.
+Task2 must synchronize mode/row_count/catalog digest and applicable release decision
+fields when its real normal selection changes. No profile/schema change was imposed
+by Task1. Placement quality and Lit visual decision remain Tasks2/3.
+
+EDITOR HANDOFF [measured]
+One UnrealEditor PID15568; automatic cooking=false; global cooking paused=true;
+no active lifecycle callbacks. Hython PID8636 remains the separate authoring session.
+Live map currently has 65 actors / TWO Landscapes: preserved baked Landscape plus
+new transient cooked Landscape. Existing 55 baked actors are retained. Cooked and
+baked output overlap live; THIS STATE WAS NOT MAP-SAVED. Task4 must replace scoped
+previous Bake and remove cooked output before saving. Do not Save All.
+Current dirty map: the named GazaRimal map above.
+Current dirty Content packages (all under the profile Cook root):
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_374_0_main_geo_HSM
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_375_0_main_geo_HSM
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_376_0_main_geo_HSM
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_377_0_main_geo_HSM
+  /Game/Project/Areas/GazaRimal/BankIntegration_v015/Cook/GeoCity_city_v015_PermanentBank/B7CE31BC/GeoCity_city_v015_PermanentBank_1448_378_0_main_geo_HSM
+Plus two earlier unreferenced/obsolete dirty proxy candidates from the incomplete
+cook, same Cook/GeoCity_city_v015_PermanentBank/B7CE31BC root:
+  GeoCity_city_v015_PermanentBank_3_374_0_main_geo_HSM
+  GeoCity_city_v015_PermanentBank_3_375_0_main_geo_HSM
+Do not save or delete those without inspecting current references. The plugin also
+created/saved its four cooked Landscape layer-info packages during translation.
+Task1 did not broadly save generated dependencies.
+
+Saved map SHA256 remains baseline:
+bfdcf5e4f825ee398b59f382b62040a03e77c99431b3ae18a41a5b6f512142c6
+Native catalog .uasset SHA256:
+f56e02cee0652f9dbea339ff2c462da36cc5bf4793dda24cf2862ba47afe7741
+Primary live receipts: PermanentIntegration_2026-10-02/WORKFLOW_STATE.json,
+HDA_CATALOG_RECEIPT.json and external definition_receipt.json.
+No rights/visual acceptance, held-asset release, alternate generator, Linear change,
+second-area work, new editor or final environment save is claimed.
+Editor lease is released after this handoff; manager controls the next active turn.

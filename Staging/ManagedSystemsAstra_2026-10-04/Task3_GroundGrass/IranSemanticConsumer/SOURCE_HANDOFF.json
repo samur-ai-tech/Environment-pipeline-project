@@ -1,0 +1,26 @@
+{
+  "status": "STAGING_ONLY_READY_FOR_COMBINED_MANAGER_REVIEW_NATIVE_NOT_RUN",
+  "source_before_sha256": "d1a5d5fdbcf8e5d3ced8dc9ccf9a2d975fb2c845546ffd84649c37137b4c998d",
+  "source_after_staged_sha256": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+  "files": {
+    "geocity_landscape_workflow.py": "b13c555ac507439078362b84e8fe2f508444c2d3bc54abb5d03462ee0ba64164",
+    "semantic_consumer_extension.py": "fa6c403a81714864a0bc2e2e4aa9ba9f21917d0a69061a37a3a4d5e74ee0d60a",
+    "SOURCE_PATCH.diff": "2360fb7c4697cf5da81acb7dda76803b290224209c379f2678323c1c122efd5e",
+    "INTERFACE_REQUEST.json": "837bc3a43421a2a67c54e48dcfa292cbe3bc02843731e92127d80022aec45308",
+    "INTERFACE_FROZEN_DECISION.json": "183983d4edf512031abc4861a4e330d9db023097991108955afdaca73fe0fdb7",
+    "PROFILE_PATCH_PROPOSAL.json": "55141f68394ad4d28dc2e9a8534785162bf07886ab11c5fde1323d2488532838",
+    "test_semantic_consumer.py": "bf1c89d93df63f792e377da5d17c1fe2c360b061deb9f87fff45061140c75842",
+    "test_producer_integration.py": "520ab4393b78ec7990efb04c57ab26ea8385569c6fb6f61fd3ed5fe0348ff6fc",
+    "TEST_RESULT.json": "4d658b497db91e75342611d3270ca0ffcdbce25893f0f1f93c1a29c9255234ea",
+    "PRODUCER_INTEGRATION_RESULT.json": "adffb555cca7231ef37ba4df5c22a29772a4bd31f79176bf09480784c96a8b13",
+    "RESULT.json": "3a370de1fc194c84ef230ff89373b067b099417def11fa3ad5de1fa84ffba4f0",
+    "RESULT.txt": "e6b983ba8f0ec02ac20f03c66c628d24ce0cdc2a7e5aafca9aef35ead87badd3",
+    "FINAL_PRODUCER_RECHECK.json": "5d5b36271433a5d2f95696217dfbbee38609a746c34477b6c83cfab6bd3e3756",
+    "BOOKKEEPING_REFRESH.json": "cae35115ce2b47ab11dfc6e3c7768ab11e198db62a05729aa0a21d5d5eccd1d9",
+    "PRODUCER_SAMPLE_CONTRACT_TEST_ONLY.json": "dfabb100f7ad2e2c77712b6a442a89e7ea44feb9c7356efe43baaad70030bfab"
+  },
+  "producer_candidate_sha256": "51e374e9fe0d86750105e4026a7a28e03b040a8da4be56ddc3d8d67c45a4ff9c",
+  "activation": "None. Exact staged bytes only. No active source/profile/native mutation.",
+  "review": "Read RESULT.json and INTERFACE_REQUEST.json; do not use test-only source probe artifact as an operational profile or native receipt.",
+  "dependent_receipt_action": "Task1 owner/root: refresh only the test fixture pin identified in BOOKKEEPING_REFRESH.json. No Task1 source or receipts modified here."
+}

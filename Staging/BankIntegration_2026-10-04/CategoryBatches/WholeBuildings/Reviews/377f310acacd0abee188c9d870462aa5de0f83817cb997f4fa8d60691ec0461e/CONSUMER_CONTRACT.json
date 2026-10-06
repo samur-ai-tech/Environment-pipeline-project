@@ -1,0 +1,46 @@
+{
+  "route": "Existing shared catalog -> geographic whole_building requests -> retained Houdini selector -> official Houdini Engine unreal_instance -> native Unreal",
+  "request_role": "whole_building",
+  "placement_rule": "building_footprint",
+  "source": {
+    "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\Houdini\\GeoCity_city_v015_PermanentBank\\geocity_city_module.py",
+    "sha256": "e67b6e15ab9214c7b1b6d4c9dca454430e56e72935250100f5f05771e529804b",
+    "record_key": null
+  },
+  "functions": [
+    "cook_nonbuilding_requests",
+    "_permanent_rectangle",
+    "_permanent_candidate_rejection",
+    "_permanent_building_height_preference",
+    "_terrain_r015_support_samples"
+  ],
+  "native_scale": [
+    1,
+    1,
+    1
+  ],
+  "native_units": "centimetres, Z up",
+  "houdini_units": "metres, Y up; official Engine performs native coordinate conversion",
+  "anchor": "Retained selector compensates the native horizontal AABB centre and AnchorZCm through its yaw quaternion; full authored envelope remains authoritative.",
+  "facing": "ForwardAxis corrects the geographic longest footprint edge yaw. This is geometric alignment, not a facade/entrance survey.",
+  "height_provenance": {
+    "accepted": [
+      "osm_height_m",
+      "osm_levels_x_3.2m",
+      "seeded_rule_not_measured"
+    ],
+    "source_height_fit": "0.5 * source height <= native envelope height <= 1.5 * source height",
+    "seeded_height": "Preference max(0.05, (min(desired,native)/max(desired,native))**2); never fabricates measured height or floors"
+  },
+  "footprint": "Complete rotated rectangle must fit the source polygon and its area must cover at least 0.45 of source-pad area.",
+  "terrain": "All retained whole-footprint/intersected-grid-cell support samples must be within 0.03 m of the final support datum.",
+  "style": "Both bank_style_set and environment_style_set gates require exact existing StyleSet. No source style conversion.",
+  "spacing": "Retain configured native spacing and full geometry; existing rectangle overlap checks remain in force.",
+  "replacement": "Existing official lifecycle and owned generation ledgers; original maps, scoped Replace Previous Bake and named saves only.",
+  "unsupported": [
+    "Blueprint/family rows are not a single StaticMesh",
+    "module showrooms are not whole buildings",
+    "no guessed floor counts or surveyed facade/entrance directions"
+  ],
+  "ordinary_output_state": "Not established for new additions by category preparation."
+}

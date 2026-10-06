@@ -1,0 +1,35 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_class",
+    "arguments": {
+     "instance": {
+      "refPath": "/Game/Developers/USER/HoudiniCityProof/HoudiniCityProof.HoudiniCityProof:PersistentLevel.HoudiniAssetActor_0"
+     }
+    },
+    "toolset_name": "editor_toolset.toolsets.object.ObjectTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.008,
+ "isError": null,
+ "text": "{\"returnValue\":{\"refPath\":\"/Script/HoudiniEngineRuntime.HoudiniAssetActor\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 14,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"refPath\":\"/Script/HoudiniEngineRuntime.HoudiniAssetActor\"}}"
+    }
+   ]
+  }
+ }
+}

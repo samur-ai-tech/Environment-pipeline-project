@@ -1,0 +1,35 @@
+REQUEST ONLY - NOT AN ACTIVATION OR LEASE
+LATEST OWNERSHIP UPDATE: While this read-only inspection was in progress, the owner record changed to 2026-10-06T14:14:05.258675+00:00 OWNER=ASSET_BANK_OPERATOR assigned_editor_PID=29900 operator_thread_id=01a11162-9e10-7803-8485-1beb251d64ed authority=AVIV_DIRECT_USER activation=DIRECT_USER_AUTHORIZED scope=bank_import_validate_register_enable_profile_references_retained_placement_named_saves receipt=Staging/AssetBankOperator_2026-10-06/DIRECT_USER_ACTIVATION_29900.json. PID 29900 is now occupied. The earlier OWNER=NONE observation below is historical. This sky operator stopped native inspection upon seeing the new record. Sky authoring requires a subsequent manager-coordinated clean handoff; no takeover is authorized.
+Date: 2026-10-06
+To: designated manager Claude session cc37d4d2-3d62-4f53-b689-28432b5527ae
+From: Codex operator chat 01a1118e-256a-7d83-8a2b-ad3293e53281
+
+Aviv directly requested retained Stage 1 sky implementation in this operator chat, with manager coordination mandatory. Please issue a bounded written assignment and actual-PID lease for this operator when the native turn is available. The manager session is already live in Claude Desktop; this operator has not resumed a second process against that session. This file has not been delivered through a messaging connector; Aviv must relay it.
+
+Requested scope:
+- Create /Game/Project/Shared/Atmosphere/ReusableSky/BP_EnvironmentSky and necessary package-owned supporting assets.
+- Native sky/sun/sky-light foundation only; editor-updating time, HH:MM, date/location/UTC offset/DST, north arrow and independent manual sun mode; opt-in package exposure override.
+- No ground, building, road, Houdini, profile, vendor or generator edits; no scene generation or Save All.
+- Verify morning/noon/evening, repeatability, mode preservation, midnight wrap, named saves and reopen on one manager-selected original map.
+
+Fresh read-only findings (PREFLIGHT_READONLY.json has exact object paths):
+- Sole UnrealEditor PID 29900, original Iran_38196167_46086167_4km map.
+- Last lease OWNER=NONE; no assignment to this chat.
+- Houdini asset cooking paused; zero dirty maps; three pre-existing Cook/main_geo content packages dirty. Read-only inspection left that set unchanged.
+- Existing visible conflicts: GeoCity_Sun / PersistentLevel.DirectionalLight_0; GeoCity_SkyLight / PersistentLevel.SkyLight_0; GeoCity_SkyAtmosphere / PersistentLevel.SkyAtmosphere_0. No existing actor changed.
+- SunPosition installed under UE_5.8, disabled by default, no explicit project enablement, SunPositionFunctionLibrary unavailable in current editor.
+- BP_EnvironmentSky does not yet exist on disk.
+
+Please specify:
+1. Selected original map and assigned actual PID; operator and manager identities.
+2. Coordination for enabling only SunPosition and the required clean restart. Resolve the three unrelated dirty Cook buffers explicitly; this operator will neither save nor discard them without manager direction.
+3. Exact named package and map save scope, and permission for scoped reopen verification.
+4. For the assigned map, the deliberate treatment of existing sun/sky actors after their exact conflict report. Suggested reviewable option: preserve actors and serialized values, record a reversible visibility change only for the three conflicting lighting components during retained integration. No deletion or blanket hiding. This is a proposal, not applied or approved.
+
+Implementation decision to validate after activation:
+First evaluate a project-owned SunSky wrapper. Its time solver must not execute in manual mode. Epic documents that editing standard SunSky geographic controls resets a manually rotated light; simply exposing that light rotation cannot satisfy this assignment. If child updates or that separation cannot be made reliable, use directly owned native components and the plugin's single GetSunPosition solver, not a second solar algorithm. One UpdateSky function serves Construction Script and explicit runtime updates. Keep the default scene exposure authoritative. Keep the rig outside GeoCity output tags and replacement ledgers.
+
+Acceptance evidence required before delivery:
+Same-camera retained before/morning/noon/evening views; exact input settings and computed light rotations; deterministic repeat; time/manual/time/manual value preservation; 24:00 -> 00:00; valid date boundaries; no new unrelated dirty packages; named asset/map save records; fresh reopen settings and appearance. No completion inference from scripts or successful Blueprint compile alone.
+
+Current delivery: NOT IMPLEMENTED / NOT SAVED / NOT REOPENED / NO SKY BEHAVIOR VERIFIED.

@@ -1,0 +1,12 @@
+Add_11 [Add]  A<-MaterialFunctionCall_0:2 B<-MaterialFunctionCall_1:2
+Add_8 [Add]  A<-MaterialFunctionCall_0:1 B<-MaterialFunctionCall_1:1
+AppendVector_0 [AppendVector]  A<-Add_8:0 B<-Add_11:0
+AppendVector_1 [AppendVector]  A<-AppendVector_0:0 B<-Multiply_2:0
+FunctionInput_0 [FunctionInput] {"InputName": "NormalA"} 
+FunctionInput_1 [FunctionInput] {"InputName": "NormalB", "SortPriority": 1} 
+FunctionOutput_0 [FunctionOutput]  A<-AppendVector_1:0
+MaterialFunctionCall_0 [MaterialFunctionCall] {"MaterialFunction": "SplitComponents"} FunctionInputs[0].Input<-FunctionInput_0:0
+MaterialFunctionCall_1 [MaterialFunctionCall] {"MaterialFunction": "SplitComponents"} FunctionInputs[0].Input<-FunctionInput_1:0
+Multiply_2 [Multiply]  A<-MaterialFunctionCall_0:3 B<-MaterialFunctionCall_1:3
+MF_MWAM_CombineNormalSimple [MaterialFunction] {"bExposeToLibrary": true, "EditorOnlyData": "export:MF_MWAM_CombineNormalSimpleEditorOnlyData", "CombinedInputTypes": 4, "CombinedOutputTypes": 15, "ThumbnailInfo": "export:SceneThumbnailInfoWithPrimitive_0"} 
+MF_MWAM_CombineNormalSimpleEditorOnlyData [MaterialFunctionEditorOnlyData]  

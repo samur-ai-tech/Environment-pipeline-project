@@ -1,0 +1,160 @@
+--- accepted/geocity_bank_workflow.py
++++ Content/Python/geocity_bank_workflow.py
+@@ -9,6 +9,7 @@
+ import hashlib
+ import json
+ import os
++import re
+ import subprocess
+ import time
+ from collections import Counter
+@@ -55,6 +56,62 @@
+ 
+ def _path(obj):
+     return obj.get_path_name() if obj else None
++
++
++def _landscape_export_identity(text, object_name, object_class, object_path, named_map):
++    """Read only the exact root object's explicit native T3D references.
++
++    This consumes ObjectExporterT3D diagnostic output, not an imported scene.
++    The native exporter may serialize same-package actor references relative to
++    its map. Resolve only that exact package context, never search actor labels.
++    Missing, duplicate, nested-only or ambiguous identity fails closed.
++    """
++    depth=0;roots=0;values={}
++    for raw in text.splitlines():
++        line=raw.strip()
++        if not line:continue
++        if line.startswith('Begin Object '):
++            if depth==0:
++                roots+=1
++                pairs=[(key,quoted or bare) for key,quoted,bare in
++                       re.findall(r'(\w+)=(?:"([^"]*)"|(\S+))',line)]
++                fields=dict(pairs)
++                if len(fields)!=len(pairs):raise RuntimeError('Duplicate native export root identity fields')
++                if fields.get('Name')!=object_name or fields.get('Class')!=object_class:
++                    raise RuntimeError('Native export root identity differs from the official output object')
++                if fields.get('ExportPath')!=object_class+"'"+object_path+"'":
++                    raise RuntimeError('Native export lacks the exact official output object path')
++            depth+=1
++        elif line=='End Object':
++            depth-=1
++            if depth<0:raise RuntimeError('Unbalanced native object export')
++        elif '=' in line:
++            key,value=line.split('=',1)
++            if key not in ('Landscape','LandscapeProxy'):continue
++            if depth!=1:raise RuntimeError('Nested or unscoped native Landscape reference')
++            if key in values:raise RuntimeError('Duplicate native Landscape reference: '+key)
++            value=value.strip()
++            if value.startswith('"') and value.endswith('"'):value=value[1:-1]
++            match=re.fullmatch(r"(?:/Script/Landscape\.)?Landscape'(.+)'",value)
++            if not match:raise RuntimeError('Native Landscape reference is missing or not an explicit actor identity: '+key)
++            path=match.group(1)
++            if path.startswith('"') or path.endswith('"'):
++                if not (path.startswith('"') and path.endswith('"')):raise RuntimeError('Unbalanced native actor reference quoting')
++                path=path[1:-1]
++            local_prefix=named_map.rsplit('/',1)[-1]+':PersistentLevel.'
++            if path.startswith(local_prefix):
++                path=named_map+'.'+path
++            expected_prefix=named_map+'.'+local_prefix
++            if not path.startswith(expected_prefix) or not re.fullmatch(r'[A-Za-z0-9_]+',path[len(expected_prefix):]):
++                raise RuntimeError('Native actor reference is outside its exact named-map package context')
++            values[key]=path
++        elif depth==0:
++            raise RuntimeError('Unexpected text outside native export root')
++    if roots!=1 or depth!=0 or 'Landscape' not in values:
++        raise RuntimeError('Native export has no unique complete Landscape identity')
++    if 'LandscapeProxy' in values and values['LandscapeProxy']!=values['Landscape']:
++        raise RuntimeError('Native parent/proxy bindings differ; partitioned Landscape ownership requires review')
++    return values['Landscape']
+ 
+ def _hda_json(value):
+     """Houdini string evaluation consumes backslash escapes in Windows paths."""
+@@ -278,23 +335,78 @@
+         self.state['controls_output']='point-only Houdini controls; no separate Unreal mesh expected'
+ 
+     def official_landscapes(self,w):
+-        """Resolve exact public-wrapper output objects, never actor-name guesses.
+-
+-        The installed plugin returns HoudiniLandscapeTargetLayerOutput objects;
+-        their reflected Landscape property is the parent actor (HoudiniOutput.h).
+-        An unavailable binding is a native integration failure, not permission
+-        to choose or remove another Landscape by class or naming convention.
++        """Resolve exact official-output references using native text diagnostics.
++
++        Landscape is protected in the installed Python wrapper. The supported
++        ObjectExporterT3D/AssetExportTask API serializes the exact returned
++        output object to a receipt file; no protected property access, plugin
++        patch, asset import, actor naming heuristic or cleanup is performed.
+         """
++        if Path(w.get_string_parameter_value('package_file')).resolve()!=Path(self.p['source']).resolve():
++            raise RuntimeError('Official Landscape output is bound to another geographic source')
++        owner=w.get_houdini_asset_actor()
++        actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
++        live={_path(a):a for a in actors}
++        if len(live)!=len(actors):raise RuntimeError('Current actor enumeration has duplicate identities')
++        def dirty():
++            return sorted(_path(p) for p in unreal.EditorLoadingAndSavingUtils.get_dirty_map_packages()+
++                          unreal.EditorLoadingAndSavingUtils.get_dirty_content_packages())
++        def engine_state():
++            return {'cooking_paused':self.api.is_asset_cooking_paused(),'session_valid':self.api.is_session_valid(),
++                    'auto_cook':w.is_auto_cooking_enabled(),'auto_bake':w.is_auto_bake_enabled()}
++        before_dirty=dirty()
++        before_engine=engine_state()
++        diagnostics=(self.state_path.parent/'LandscapeOwnership').resolve()
++        if not diagnostics.is_relative_to((self.project/'Staging').resolve()):
++            raise RuntimeError('Landscape ownership diagnostics must stay under project Staging')
+         result={}
++        evidence=[]
++        reading={'method':'native_ObjectExporterT3D_exact_reference','source':self.p['source'],
++                 'hda_owner':_path(owner),'records':evidence,'verified':False,'engine_state_before':before_engine}
++        self.state.setdefault('official_landscape_identity_reads',[]).append(reading)
++        seen_objects=set()
+         for index in range(w.get_num_outputs()):
+             if w.get_output_type_at(index)!=unreal.HoudiniOutputType.LANDSCAPE:continue
+             for identifier in w.get_output_identifiers_at(index):
+                 obj=w.get_output_object_at(index,identifier)
+                 assert obj and obj.get_class().get_name() in ('HoudiniLandscapeTargetLayerOutput','HoudiniLandscapeOutput'),'Unsupported official Landscape output object'
+-                landscape=obj.get_editor_property('landscape')
+-                assert isinstance(landscape,unreal.Landscape),'Official output has no native Landscape binding'
++                if _path(obj) in seen_objects:raise RuntimeError('Duplicate official Landscape output object identity')
++                seen_objects.add(_path(obj))
++                outer=obj;visited=set()
++                while outer and outer!=owner:
++                    if _path(outer) in visited:raise RuntimeError('Cyclic official output ownership')
++                    visited.add(_path(outer));outer=outer.get_outer()
++                if outer!=owner:raise RuntimeError('Official output object has another HDA owner')
++                diagnostics.mkdir(parents=True,exist_ok=True)
++                target=diagnostics/(str(os.getpid())+'_'+str(time.time_ns())+'_'+hashlib.sha256(_path(obj).encode()).hexdigest()[:16]+'.t3d')
++                if target.exists():raise RuntimeError('Ownership export receipt path already exists')
++                task=unreal.AssetExportTask()
++                task.object=obj;task.exporter=unreal.ObjectExporterT3D()
++                task.filename=str(target);task.automated=True;task.prompt=False
++                task.selected=False;task.replace_identical=False;task.write_empty_files=False
++                record={'output_index':index,'output_object':_path(obj),'hda_owner':_path(owner),
++                        'diagnostic_file':str(target),'protected_property_read':False,'verified':False}
++                evidence.append(record)
++                exported=unreal.Exporter.run_asset_export_task(task)
++                record.update(export_return=bool(exported),export_errors=list(task.errors))
++                if not exported or list(task.errors) or not target.is_file():
++                    raise RuntimeError('Native official-output identity export failed: '+str(list(task.errors)))
++                raw=target.read_bytes()
++                record['diagnostic_sha256']=hashlib.sha256(raw).hexdigest()
++                if not raw or len(raw)>1024*1024:raise RuntimeError('Invalid native identity export size')
++                text=raw.decode('utf-16' if raw.startswith((b'\xff\xfe',b'\xfe\xff')) else 'utf-8-sig')
++                actor_path=_landscape_export_identity(text,obj.get_name(),obj.get_class().get_path_name(),_path(obj),self.p['map'])
++                landscape=live.get(actor_path)
++                assert isinstance(landscape,unreal.Landscape),'Exported official reference has no exact loaded Landscape actor'
+                 assert landscape.get_outermost().get_path_name()==self.p['map'],'Official Landscape output belongs to another map'
+                 result[_path(landscape)]=landscape
++                record.update(landscape_actor=actor_path,verified=True)
++        if len(result)>1:raise RuntimeError('Official Landscape layer records refer to multiple actors')
++        if (dirty()!=before_dirty or engine_state()!=before_engine
++                or set(live)!={_path(a) for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()}):
++            raise RuntimeError('Native identity export changed dirty packages, Engine state or actor membership')
++        reading.update(verified=True,dirty_packages_unchanged=True,actor_membership_unchanged=True,
++                       engine_state_unchanged=True,engine_state_after=engine_state())
+         return result
+ 
+     def account_previous_landscapes(self):

@@ -1,0 +1,174 @@
+{
+  "schema": "environmentpipeline.roadbld_contract_proposal.v1",
+  "status": "source_ready_live_native_generation_unperformed",
+  "adapter_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+  "adapter_sha256": "c27c327c36fb314f8e4d95ff3a8892de6e23299c2e764d9ad6142999948dd7b5",
+  "licensing": {
+    "required": "WorldBLDAuthSubsystem.has_license_for_tool(RoadBLD) == true at preflight and every callback",
+    "latest_parent_live_report": "2026-10-03 license true after user sign-in",
+    "bypass": false
+  },
+  "installed_versions": {
+    "WorldBLD": "1.4.10",
+    "CityBLD": "1.4.0",
+    "RoadBLD": "1.7.4",
+    "WorldBLDMCPToolset": "0.1.4",
+    "Unreal": "5.8.2"
+  },
+  "mode": "authored_native_retained",
+  "bake_performed": false,
+  "adapter_settings": {
+    "road_preset": "/RoadBLD/RoadBLD/RoadKit_USA/Presets/RP_Default_USA_Street_2Lane",
+    "sidewalk_preset": "/RoadBLD/RoadBLD/RoadKit_USA/Presets/Sidewalks/RSP_USA_StandardSidewalk",
+    "curb_class": "/RoadBLD/RoadBLD/RoadKit_USA/Presets/RoadModules/RM_USA_Curb.RM_USA_Curb_C",
+    "road_material": "/RoadBLD/RoadBLD/DefaultRoadKit/Materials/MI_RoadBLD_Asphalt_Road_Worn",
+    "sidewalk_material": "/RoadBLD/RoadBLD/RoadKit_USA/Materials/MI_USA_Sidewalk_WS",
+    "sidewalk_width_m": {
+      "secondary": 1.5,
+      "secondary_link": 1.5,
+      "tertiary": 1.5,
+      "residential": 1.5,
+      "service": 0.0,
+      "unclassified": 1.5
+    },
+    "surface_clearance_cm": 5.0,
+    "curb_height_cm": 15.0,
+    "road_thickness_cm": 5.0,
+    "max_turn_radius_cm": 100.0,
+    "control_point_tolerance_cm": 0.1,
+    "centreline_fit_tolerance_cm": 50.0,
+    "ground_profile_tolerance_cm": 10.0,
+    "rebuild_timeout_seconds": 600.0,
+    "roads_per_tick": 4,
+    "max_geometry_issues": 200,
+    "area_boundary_tolerance_cm": 2.0,
+    "building_overlap_tolerance_m2": 0.0001,
+    "mesh_validation_timeout_seconds": 45.0
+  },
+  "areas": [
+    {
+      "area_id": "GazaRimal",
+      "profile_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\PermanentIntegration_2026-10-02\\AREA_PROFILE.json",
+      "named_map": "/Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration",
+      "source_road_count": 24,
+      "source_piece_count": 24,
+      "preset_variant_count": 13,
+      "source_sha256": "dbcfcb2ed3786c470262e01d2a78579e3efa9b418f837e376bab5242bff574d9",
+      "centreline_sha256": "32f35799c111a21c21ca11ec1b38ec551d74a309bc5a0336f64e09b648dd78ea",
+      "protected_footprint_proof": {
+        "source_pad_count": 269,
+        "assembly_count": 209,
+        "whole_building_count": 60,
+        "max_assembly_vertex_error_m": 6.823937919616058e-05,
+        "max_road_vertex_error_m": 0.00017263349150062197,
+        "footprints_sha256": "d415c74edd295be567f5212e38cad00b7e1ead896b573e30690db2d9fc1d53f3",
+        "basis": "unchanged_original_OSM_verified_against_all_native_pad_ids_and_actual_assembly_rings"
+      }
+    },
+    {
+      "area_id": "GazaShujaiya",
+      "profile_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModelBank\\GazaShujaiyaIntegration_2026-10-02\\AREA_PROFILE.json",
+      "named_map": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+      "source_road_count": 40,
+      "source_piece_count": 40,
+      "preset_variant_count": 6,
+      "source_sha256": "db5c0bcef1205b22e72e9df1e09a2b0f0daa39bcec3c2670819edf4e40b0fa19",
+      "centreline_sha256": "11cc27127c8f6f19208277cc6c9e7aadc9a04ff5d5c346211975e7354cd4373b",
+      "protected_footprint_proof": {
+        "source_pad_count": 398,
+        "assembly_count": 357,
+        "whole_building_count": 41,
+        "max_assembly_vertex_error_m": 7.62939453125e-05,
+        "max_road_vertex_error_m": 6.291359902370698e-05,
+        "footprints_sha256": "7235cbba4aadc573585ee7f44d66f99954599489efde5bd9f75cba110921a5fb",
+        "basis": "unchanged_original_OSM_verified_against_all_native_pad_ids_and_actual_assembly_rings"
+      }
+    }
+  ],
+  "input_schema": "environmentpipeline.roadbld_centerlines.v1",
+  "coordinate_frame": "houdini_local_m_x_yup_z_to_unreal_cm_x_z_y",
+  "geography_policy": {
+    "source": "existing city_source_v1 JSON byte hash + SHA-verified original OSM XML",
+    "xy": "exact geographic analytic-clipped pieces; retains original vertices; no endpoint snapping",
+    "height": "completed official HDA final corrected terrain, densified maximum 2m",
+    "width": "source full width split into two unmarked surface bands; does not infer surveyed lane counts",
+    "footprints": "validation-only source rings proved against every actual HDA pad ID and all actual native assembly rings",
+    "area_box": "xmin,zmin,xmax,zmax in Houdini local meters"
+  },
+  "native_route": [
+    "DynamicRoadNetwork.add_road_to_road_network(scoped_preset_CDO, 0.0)",
+    "DynamicRoad.replace_control_spline_from_authoring_points(typed_authoring_points)",
+    "RoadBLDBuildToolset.call_method(Rebuild, args=(network,False,True,False,0,False))",
+    "RoadBLDBuildToolset.call_method(RebuildStatus, args=(job_id,))"
+  ],
+  "closed_native_policy": {
+    "markings": false,
+    "parking": false,
+    "props": false,
+    "pcg": false,
+    "landscape_paint": false,
+    "landscape_spline_mirroring": false,
+    "intersection_landscape_alignment": false,
+    "automatic_crossings": false,
+    "curbs": "native scoped sidewalk preset",
+    "asset_root": "/Game/Project/Areas/{AreaId}/RoadBLD/"
+  },
+  "staged_contract": {
+    "schema": "environmentpipeline.roadbld_delivery.v1",
+    "phase": "native_generated_validated_pending_save",
+    "saved": false,
+    "livevalidated_editor_transaction": true,
+    "transaction_fields": [
+      "pid",
+      "lease_sha256",
+      "revision",
+      "named_map",
+      "token"
+    ],
+    "exact_ledgers": [
+      "drivable_source_ids",
+      "source_road_count",
+      "source_piece_count",
+      "generated_piece_ids",
+      "generated_road_count",
+      "source_delivery",
+      "road_actor_paths",
+      "geometry_actor_paths",
+      "owned_actor_paths",
+      "network_actor_path"
+    ],
+    "native_mesh_fit": "actual generated native component triangles, expanded exact ISM world transforms; all protected geographic pads and area bounds"
+  },
+  "saved_contract": {
+    "phase": "native_generated_saved_verified",
+    "saved": true,
+    "hda_vehicle_surfaces_suppressed": true,
+    "reopened": false,
+    "bake_performed": false
+  },
+  "normal_integration_order": [
+    "native.preflight(profile, reviewed_dirty_packages=current_reviewed_dirty) before any HDA mutation when enabled",
+    "official HDA first cook exports final-ground roads; no Bake/map save",
+    "pause official Engine; native.build(profile,export=receipt.roadbld_centerlines,on_complete=root_callback)",
+    "callback success -> native.staged_contract(); root verifies live actor paths/map/PID/lease/token",
+    "official HDA second cook gated by staged contract suppresses vehicle surfaces only; Bake/validate/remove old scoped HDA output",
+    "native.commit(hda_receipt) validates exact suppression/token, named dependencies, prior receipt actor ownership, saves named retained map",
+    "root persists saved contract/profile, named final map save, normal reopen/readback"
+  ],
+  "failure_policy": "no staged contract on auth/API/source/physical centerline/ground/junction/material/native-triangle/pad/boundary failures; no failed replacement save; preserve previous saved receipt and record exact staged paths for root reconciliation",
+  "unperformed": [
+    "native preset authoring",
+    "native road/network authoring/rebuild",
+    "native mesh read-copy validation",
+    "native provider suppression/Bake/save/reopen",
+    "bake to static meshes"
+  ],
+  "known_limits": [
+    "RoadBLD proprietary runtime methods are reflected/documented but actual generation is not yet executed",
+    "Core max-radius 100cm may be rejected by installed runtime; failclosed rather than shift source vertices",
+    "Exact centerline clipping does not prove full-width native pavement/curb clipping; actual triangle validator may reject boundary caps or pad overlaps",
+    "Mesh validation is bounded to45seconds and conservatively sums projected triangle intersections; timeout/unsupported copies failclosed",
+    "Native authored actors retain RoadBLD/WorldBLD dependencies; verified dialog-free static-mesh bake API not available",
+    "No whole-map visual or rights/release acceptance follows from adapter/source checks"
+  ]
+}

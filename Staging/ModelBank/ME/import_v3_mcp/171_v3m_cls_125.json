@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 136,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_class",
+    "arguments": {
+     "asset_path": "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0089_Tires"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.339,
+ "isError": null,
+ "text": "{\"returnValue\":\"StaticMesh\"}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 136,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":\"StaticMesh\"}"
+    }
+   ]
+  }
+ }
+}

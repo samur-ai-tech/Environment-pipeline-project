@@ -1,0 +1,11 @@
+# Message 2 to the brief-1 operator (sealed-code task), 2026-10-06 ~16:10Z, from the manager
+
+From the manager (Claude session cc37d4d2), on Aviv's decision: continue and finish brief 1 now, Part A then Part B. Start from your own `Staging/Brief1_SealedCode_2026-10-06/ASSIGNMENT.json` (status PREPARATION_STOPPED_USAGE_LIMIT_NO_CHANGES_MADE) and the brief `Staging/Briefs_2026-10-06/BRIEF_1_SEALED_CODE.md`.
+
+Manager answers to your blockers:
+1. Editors: the bank chat has been told to close PID 29900 without saving and without generating. Before you edit any file under `Content/Python`, measure that 0 `UnrealEditor` processes are running and that the last line of `Staging/ModelBank/EDITOR_OWNER.txt` is `OWNER=NONE`. If PID 29900 is still open, wait and re-check; do not close another agent's editor and do not edit sealed files while any editor is live. Aviv's sky work may open editors at any time; if one appears mid-task, stop before touching sealed files and report, as you did.
+2. Deviation ratified: the bank's `native_save_scope` stays OUT of `generation_scope`; a bank editor declares its imports in its own `EDITOR_<pid>.json` write scope. Record this in the RATIFICATION_B3 proposal.
+3. Part B reproduction on GazaRimal: the sealed launcher requires the manager's identity (OperatorThreadId = task4 = `cc37d4d2-3d62-4f53-b689-28432b5527ae`); do not change the identity checks. Deliver Part A code, the Part B diagnostic, backups, reseal, probe and the RATIFICATION_B3 proposal first, then report; the manager starts the Rimal editor through the sealed launcher with the new manifest hash and hands you the PID and a lease for the reproduction. If a run reproduces the assertion, fix inside the seams module as the brief says, reseal again, update `ROAD_REPAIR_QUEUE.json`, and report.
+4. Ports: record the default control endpoints in the editor record and flag the port collision as a limitation, as you planned; no port changes to sealed configuration.
+
+Everything else in the brief stands: named saves only, no Save All, no vendor edits, no tests or disposable demonstrations, every change recorded with hashes before and after, `seal_runtime.py` then `--check`, 12 modules, and MEASURED / DOCUMENTED / INFERRED / NOT DONE labels in every report. Linear: ENG-1147 (Part A), ENG-1146 (Part B).

@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 483,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/AssetsvilleTown/Meshes/StreetProps/SM_paint_bucket_2"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.017,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"47x46x56\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/paint_bucket_2.fbx\\\", \\\"Timestamp\\\" : \\\"1512819526\\\", \\\"FileMD5\\\" : \\\"a5ff88f96779977719d25b3a3b835427\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"588\",\"UVChannels\":\"2\",\"Vertices\":\"1321\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 483,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"47x46x56\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"C:/WorkshopSSD/LowPoly2017/FBX/StreetProps/paint_bucket_2.fbx\\\", \\\"Timestamp\\\" : \\\"1512819526\\\", \\\"FileMD5\\\" : \\\"a5ff88f96779977719d25b3a3b835427\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"SmallProp\",\"LODs\":\"4\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"588\",\"UVChannels\":\"2\",\"Vertices\":\"1321\"}}"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "environmentpipeline.modular_native_execution_handoff.v1",
+  "files": {
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\NATIVE_IMPORT_REQUEST.json": "c1cba2709ff6710d6d65e13c0cb7d00c78df11e0138054ab37f2cf0fe3af81ca",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\modular_native_adapter.py": "b2db743a0c50ecd91d4e4f20348d02f3675663ee3a2954654495047b296c54e8",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\launch_modular_editor.ps1": "487e85cfe6307091fa32e8484108b1f0a26eb41860d75c76c67f9b80e7701fc4",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\inspect_modular_startup.py": "ed059e1002730d8405338bc3d37bd34a7a526074148ab8cf77e73a79dd1ce574",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\run_modular_command.py": "f1899c5d39df19fd5d470c6b49bfe8251252a2a0ec2c10266a78c7c71a3c084f",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\build_native_request.py": "10e9cca272d20c4f60b16c81e55f414051de2e73433b70e93784fe38fc99dd47",
+    "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\OFFLINE_SELFCHECK.json": "a5724f58d09735840a51f49a140740c32b5819becd8a162f082e028a5bc43d04"
+  },
+  "request_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\ModularNative_2026-10-05\\NATIVE_IMPORT_REQUEST.json",
+  "request_sha256": "c1cba2709ff6710d6d65e13c0cb7d00c78df11e0138054ab37f2cf0fe3af81ca",
+  "scope": "20families609sourceparts; no optionalloopderivatives/nativecatalog/profile/map/HDA writes",
+  "preservation_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedSystemsAstra_2026-10-04\\MODULAR_NATIVE_PRESERVATION_2026-10-05.json",
+  "startup_status": "not_started_pending_manager_review",
+  "native_imports": 0,
+  "native_execution_entry": "run_modular_command.run(request_path,request_sha,activation_path,command=import_family,family_id=H0911,max_parts=8)",
+  "startup_inspection_entry": "run_modular_command.run(request_path,request_sha,activation_path,command=inspect_startup,activation_sha=root_authority_sha)",
+  "notes": [
+    "Sources now frozen for review; no module loaded in Unreal.",
+    "Native API reflection occurs in startup inspector before loading adapter.",
+    "Partial import failures preserve buffers and stop; no blind retries.",
+    "Texture/mesh/material packages explicitly saved; actual reload is subsequent bounded operation.",
+    "First family H0911 includes17reconstruction+3extension parts; capabilities remain false."
+  ]
+}

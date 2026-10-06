@@ -1,0 +1,38 @@
+MCP CONNECTIONS — 2026-10-02
+
+Authorization: Aviv requested all connections; later excluded NodeArchitect because no license is owned, and explicitly authorized discarding all unsaved Unreal changes and reopening.
+
+MEASURED RESULTS
+houdini-mcp: 43 MCP tools, ping reachable=true, scene readback Houdini 22.0.429, zero nodes, empty unsaved session. Local RPC 127.0.0.1:18811, hython PID 8636. This connection targets the empty headless session; it does not automatically attach to a separately opened Houdini GUI scene.
+UnrealCopilot: 11 MCP tools over http://127.0.0.1:19840/mcp. A read-only run_unreal_skill returned the named v015 world, dirty_packages=[], pause_cooking_on_start=true. Internal native HTTP API 127.0.0.1:18080.
+kks3800/Unreal_MCP: 22 dynamic MCP tools. get_editor_context returned success, current_level=L_GazaRimal_BankIntegration, PIE=false. Native TCP 127.0.0.1:55557.
+NodeArchitect: skipped at Aviv's request. No purchase or licensed download.
+Existing Unreal MCP endpoint on port 8000 remains present.
+
+UNREAL RESTART AND PRESERVATION
+Three unsaved packages in the prior editor were discarded using native Don't Save, as authorized. Final editor PID 15568 reopened /Game/Project/Areas/GazaRimal/BankIntegration_v015/L_GazaRimal_BankIntegration with Houdini cooking paused. Native UI displayed All Saved; the read-only API reported zero dirty packages.
+Saved map SHA256 before and after: BFDCF5E4F825EE398B59F382B62040A03E77C99431B3AE18A41A5B6F512142C6.
+An intermediate hidden startup stalled before map load at the Copilot dependency dialog and was terminated. A subsequent interactive startup exposed the dependency problem. After fixing the plugin bootstrap, a clean restart completed successfully.
+No cook, bake, city-generation test, bank release, map save or Linear change was performed by this connection task. Existing visual/material warnings were not investigated here.
+
+INSTALLED CONFIGURATION
+Plugins/UnrealCopilot and Plugins/UnrealMCP compiled and installed for UE 5.8; both enabled in Environmentpipeline.uproject.
+Config/DefaultEditorPerProjectUserSettings.ini sets Copilot automatic HTTP startup and the non-conflicting loopback ports.
+C:/Users/USER/.codex/config.toml contains houdini, unreal-copilot and unreal-mcp-kks3800 servers. Newly added Codex tools may require a new chat or Codex restart to appear in its tool catalog; the MCP servers themselves passed live client handshakes and editor readbacks.
+Backups of the pre-change project descriptor, editor configuration and Codex configuration are in this receipt directory.
+
+COMPATIBILITY CHANGES
+kks3800 native plugin: four vendor C++ files adapted to UE 5.8 JSON key representation; successful native compilation. External server MCP SDK upgraded to 1.30.0 after the older SDK failed a handshake.
+UnrealCopilot: compiled for UE 5.8; installed init_analyzer.py prioritizes its managed Python environment and evicts the already-loaded old typing_extensions module when Sentinel is missing. Verified dependency startup succeeds after restart.
+Copilot source analysis reports no project Source directory; this content-only project has no such directory. Engine source path resolves, and the editor connection passes.
+
+LIFETIME AND ROUTE
+Unreal plugins start with the project. The Houdini RPC session lives while its hython process runs; Start-HoudiniConnection.ps1 recreates an empty session after shutdown. It does not load or save a project HIP.
+This tooling is auxiliary authoring/inspection access. Official Houdini Engine remains the generation route, and this receipt makes no city quality or acceptance claim.
+
+PROVENANCE
+https://github.com/oculairmedia/houdini-mcp
+https://github.com/syan2018/UnrealCopilot
+https://github.com/kks3800/Unreal_MCP
+https://www.sidefx.com/forum/topic/103890/?page=1#post-463162
+https://bishopvfx.gumroad.com/l/houdininodearchitect

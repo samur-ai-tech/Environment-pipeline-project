@@ -1,0 +1,81 @@
+{
+  "schema": "environmentpipeline.epic_ground_integration_review.v1",
+  "status": "APPROVED_EPIC_GROUND_INTEGRATION",
+  "pid": 32464,
+  "world": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/L_GazaShujaiya_BankIntegration",
+  "area": "GazaShujaiya",
+  "reviewer": "/root/visual_review",
+  "execution_thread_id": "01a10883-481f-7723-bdaa-fed004f15ef1",
+  "helper_sha256": "19d99d44b31ca2027a3d814c76dd5ab1ff6d17dd44578cd2a55ad880a9d3a5c0",
+  "inspect_receipt_sha256": "4896ec363d69f57d3cf3a5bcd0c436f7b735aa20f1e2dd016feadf9d1a5d0055",
+  "baseline_receipt_sha256": "138b72e5803ee112dfeca81be1d3fc83b1198bf2c969e85c4abaddfd24c24d3f",
+  "plan_sha256": "ccc7eaa90391d2d5f148c68d205d2b90fb57163c1e7060761dc1de7ce26f7e7f",
+  "graph_receipt_sha256": "bbdfb7fbda9abf75b3291829dfda675d69041ae85844faf2ac5498899a0333fe",
+  "epic_native_receipt_sha256": "9b7785af647a3eaf5674cf45c8f1b56aa9d80da1f02d0848da46ebad391598b6",
+  "source_manifest_sha256": "f73181be9b8ffc1ee499448dd986266ca5ebe76aab2b1a7e3bea52f06b7d202e",
+  "mutation_backup_sha256": "6bfabdbcdec135f953858ca626a6f337c1c40a40fe61a3a782346488025d4f00",
+  "held_copy_package_sha256": "373286998d7fd485d3d2f3fad44c2a5d6ec8093fd79b7b4f20727a0c93113ed5",
+  "approved_scope": {
+    "mode": "apply",
+    "new_nodes": 0,
+    "changed_root_pins": 8,
+    "layers": ["Sand_01", "Sand_02", "Dirt_Path", "Sand_Path"],
+    "roughness_root": "MaterialExpressionLandscapeLayerBlend_8",
+    "roughness_sources": {
+      "Sand_01": "MaterialExpressionScalarParameter_105",
+      "Sand_02": "MaterialExpressionScalarParameter_106",
+      "Dirt_Path": "MaterialExpressionScalarParameter_103",
+      "Sand_Path": "MaterialExpressionScalarParameter_108"
+    },
+    "ao_root": "MaterialExpressionLandscapeLayerBlend_0",
+    "ao_source": "MaterialExpressionConstant_1",
+    "ao_source_measured_value": 1.0,
+    "changed_macro_properties": [
+      "MaterialExpressionTextureObjectParameter_154.texture to /Game/StarterContent/Textures/T_MacroVariation.T_MacroVariation",
+      "MaterialExpressionTextureObjectParameter_154.sampler_type to SAMPLERTYPE_COLOR",
+      "MaterialExpressionTextureSample_0.sampler_type to SAMPLERTYPE_COLOR"
+    ],
+    "current_child_texture_overrides": 9,
+    "current_child_scalar_overrides": 4,
+    "current_child_vector_overrides": 8,
+    "current_child": "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround.MI_GeoCityGround",
+    "other_two_instances": "Only inherited Ground_MacroMask resolution changes; all local overrides and other resolved values remain exact.",
+    "allowed_dirty_packages": [
+      "/Game/Project/Shared/SurfacePainting/Appearance_20261003/M_SurfaceBank_Natural",
+      "/Game/Project/Areas/GazaShujaiya/BankIntegration_v015/Materials/MI_GeoCityGround"
+    ],
+    "explicit_compile": false,
+    "explicit_save": false,
+    "update_current_material_instance": true
+  },
+  "review_evidence": {
+    "complete_helper_source_read": true,
+    "offline_ast_and_compile_without_execution": true,
+    "exact_all_input_file_hashes_checked": true,
+    "concrete_inspect_before_after_equal": true,
+    "concrete_inspect_native_mutation": false,
+    "complete_observed_graph_equals_prior_and_epic_receipts": true,
+    "graph_node_count": 1015,
+    "layer_names_preserved": 69,
+    "source_modules": 12,
+    "actor_transforms": 316,
+    "dirty_maps": [],
+    "dirty_content": [],
+    "seven_original_and_backup_package_hashes_checked": true,
+    "held_unused_copy_file_hash_checked": true,
+    "grass_scene_cvars_original_files_and_epic_texture_properties_preserved": true,
+    "no_content_or_native_write_by_reviewer": true
+  },
+  "limitations": [
+    "This approval binds the enumerated integration only. It does not approve saving, visual quality, fresh-process persistence or user acceptance.",
+    "Epic color/normal pairs and MacroVariation are adapted to the retained sampling graph. Original Epic material graphs are not cloned.",
+    "Constant roughness .8 chooses the measured dry endpoint and simplifies original spatial roughness: gravel has .8/.4 endpoints; sandstone has .8/.2 endpoints. AO1 is the explicit adaptation of original masters with no AO output.",
+    "No texture package is edited or copied. The held unused MOUT recovery copy remains unchanged and excluded from surface source selection.",
+    "All other observed graph fields remain exact, including custom code, typed color/normal sampling, mip inputs, 69 layer branches and Grass. Unexposed serialized GUID and legacy paint properties are not claimed as measured.",
+    "Texture metadata readiness is excluded from inspection-to-apply comparison; persistent texture properties, object identity and package hashes remain checked.",
+    "Actual completed-shader Lit close, middle and wide views remain required to assess the bounded candidate. No tutorial-quality or whole-environment acceptance is inferred."
+  ],
+  "visual_approval": false,
+  "save_approved_within_scope": false,
+  "user_acceptance": "PENDING"
+}

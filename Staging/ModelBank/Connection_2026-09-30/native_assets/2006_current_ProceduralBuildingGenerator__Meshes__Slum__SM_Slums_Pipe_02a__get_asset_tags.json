@@ -1,0 +1,33 @@
+{
+ "request": {
+  "jsonrpc": "2.0",
+  "id": 2016,
+  "method": "tools/call",
+  "params": {
+   "name": "call_tool",
+   "arguments": {
+    "tool_name": "get_asset_tags",
+    "arguments": {
+     "asset_path": "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Pipe_02a"
+    },
+    "toolset_name": "editor_toolset.toolsets.asset.AssetTools"
+   }
+  }
+ },
+ "http_status": 200,
+ "elapsed_s": 0.016,
+ "isError": null,
+ "text": "{\"returnValue\":{\"ApproxSize\":\"19x20x102\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"J:/SoulCollision/SM_Slums_Pipe_02a.FBX\\\", \\\"Timestamp\\\" : \\\"1413295212\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"176\",\"UVChannels\":\"3\",\"Vertices\":\"156\"}}",
+ "raw": {
+  "jsonrpc": "2.0",
+  "id": 2016,
+  "result": {
+   "content": [
+    {
+     "type": "text",
+     "text": "{\"returnValue\":{\"ApproxSize\":\"19x20x102\",\"AssetImportData\":\"[{ \\\"RelativeFilename\\\" : \\\"J:/SoulCollision/SM_Slums_Pipe_02a.FBX\\\", \\\"Timestamp\\\" : \\\"1413295212\\\", \\\"FileMD5\\\" : \\\"\\\", \\\"DisplayLabelName\\\" : \\\"\\\" }]\",\"CollisionComplexity\":\"CTF_UseSimpleAndComplex\",\"CollisionPrims\":\"1\",\"DefaultCollision\":\"BlockAll\",\"LODGroup\":\"None\",\"LODs\":\"1\",\"Materials\":\"1\",\"SectionsWithCollision\":\"1\",\"Triangles\":\"176\",\"UVChannels\":\"3\",\"Vertices\":\"156\"}}"
+    }
+   ]
+  }
+ }
+}

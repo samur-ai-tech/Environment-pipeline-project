@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-03T20:03:40.687643+00:00",
+  "manager_thread_id": "01a0ff41-9db0-70c2-8511-65b234db11e4",
+  "source_frozen_files": {
+    "geocity_roadbld_junctions.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_junctions.py",
+      "sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "before_sha256": "3b61e97c5fc5f4b167329f0f620a0a365c5a71e772e62fbd02a9af0343f48699",
+      "changed_in_postclip_partition": false,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_workflow.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_workflow.py",
+      "sha256": "1909fb60f22be17a18012a5b2a8f990d6fdc7c5c73b8ae164f8fbef5e74ad453",
+      "before_sha256": "7a13fad97f1a1c2c7213eeccf93ee62d0c7499abe231ccb8ba7e8a13dbdee5c6",
+      "changed_in_postclip_partition": true,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_grounding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_grounding.py",
+      "sha256": "62a8a28a03803fb845bafa2ce820b742a83cb35134b25cf192fcd532bbf6233d",
+      "before_sha256": "b77be9186f1b43d969eaca9a272753b71586b83ef43fde834557d92345d56221",
+      "changed_in_postclip_partition": true,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    },
+    "geocity_roadbld_clip.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Content\\Python\\geocity_roadbld_clip.py",
+      "sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+      "before_sha256": "872f4814060a214cdf4238a8ae8c7b9a0a819364bc4f5ea486e573d396980211",
+      "changed_in_postclip_partition": false,
+      "syntax_valid": true,
+      "final_boundary_replay_hash_reverified": true
+    }
+  },
+  "independent_review_sha256": "ebbc7799accefb6081149c34f1430871596b6c25dda3fb5e157abde5156051b5",
+  "continuation_scripts": {
+    "resume_existing_shuj_postbinding.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\resume_existing_shuj_postbinding.py",
+      "sha256": "38f29a01f43c2f0c90e24238fa7e344887f351fb42be90568eebd75619de6d07",
+      "syntax": "passed_compile_only",
+      "reload_targets": [
+        "grounding"
+      ],
+      "APIs": {
+        "frozen": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256",
+        "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, manager_activation"
+      },
+      "editor_executed": false
+    },
+    "verify_postbinding_saved_area.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedAstra_2026-10-03\\verify_postbinding_saved_area.py",
+      "sha256": "8eca27cf555e33d71e9078b8c39f170a891385e41bd75f47e76b5f9be6d89d8c",
+      "syntax": "passed_compile_only",
+      "reload_targets": [
+        "grounding"
+      ],
+      "APIs": {
+        "schedule": "expected_grounding_sha256, expected_workflow_sha256, independent_review_sha256, expected_inspector_sha256, manager_activation"
+      },
+      "editor_executed": false
+    },
+    "inspect_native_road_delivery.py": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\inspect_native_road_delivery.py",
+      "sha256": "bfbf0451515d783d34100998319ee18b653843b7351dbc32abc03049cddd2255",
+      "syntax": "passed_compile_only",
+      "reload_targets": [],
+      "APIs": {
+        "inspect_delivery": "profile_path=None, context='saved_readback', receipt_path=None, max_seconds=180.0"
+      },
+      "editor_executed": false
+    }
+  },
+  "root_hash_ast_and_control_flow_review": true,
+  "current_phase": "failed_validating_bound87",
+  "activated": "ROOT_ACTIVATED_POSTBINDING_VALIDATION",
+  "allowed": "Fresh read-only finalpartition proof first; existing validate/finish/parentofficialsuppression/Bake/named saves; saved/reopen inspector with exactsource/clip/preparation; saved Lit capture; no geometric replay or material edits",
+  "asphalt_style_authoring": false,
+  "source_conflict_continuity": "Shuj18.873381m protectedinteriors explicitlyexcluded; not a continuousdriveable route or artacceptance"
+}

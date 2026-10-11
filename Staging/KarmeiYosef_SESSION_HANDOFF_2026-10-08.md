@@ -402,3 +402,30 @@ to the manager; a WP/per-building trial belongs on a copy of the clone.
 - Playbook: section 5.6 (split after every generation) + [D] generator per-building bake question; section 0 WP/HLOD rule.
 - Editor PID 38868 OPEN on the clone (nothing dirty). PIE after distance fields: farm 18.1, village 12.6, forest 8.5, wide 35.2 ms
   (no stall tail). If Aviv closes it: release its 3 records.
+
+## 21. Wrap-up (2026-10-11 ~18:30Z) - READ THIS FIRST
+- Aviv: "delete the trial files and old clone" -> sent to the Windows Recycle Bin (2.65 GB; receipt
+  receipts/DELETED_TO_RECYCLE_BIN_20261011.json): WPTrial content + its __ExternalActors__/__ExternalObjects__, the old clone
+  map L_..._PCGTrial.umap, and their Before/ backups. Reference check first: nothing outside referenced them
+  (receipts/DEPS_env_4km_v2.json). Kept: WPTrial/ staging records (TRIAL_RESULT.md is the playbook's WP recipe).
+- Aviv: "commit this environment ... along with the playbook" + "Only the used files" of the 5 store packs ->
+  local commit b38a65b6 on master (4,370 files, LFS for binaries), NOT pushed (push is Aviv's: `git push origin master`).
+  Contents: both 4 km area folders, the 116 used pack files + DT_EnvironmentBank_AnyArea, this task's Staging folders,
+  area profile, this handoff, Playbooks, .claude/skills/new-environment. .gitignore: this area's Cook leftovers,
+  HDA_CATALOG_RECEIPT*.json, Astra Temp caches. Other sessions' working-tree changes were not staged.
+- Export question answered (Migrate to an empty UE 5.8 project, then zip; ~5.5 GB of dependencies; SunPosition plugin,
+  Houdini Engine for the generator actor; store-asset licences). Offered to build the zip.
+- Still pending Aviv: unused v1 ground packages + T_PazFarm_GroundMask_v2, Astra Temp caches (not in his delete request);
+  blue glossy field item; generator per-building bake [D]. No editor running.
+
+## 22. Standalone zip (2026-10-12) - READ THIS FIRST
+- Aviv: "Yes, build the zip for me". Zip: C:/Users/USER/Documents/UE_Exports/KarmeiYosefPaz_2026-10-12.zip (5.37 GB, 1,495
+  entries, CRC ok, sha256 4AB11918...). Unzipped ready-to-open project: C:/Users/USER/KYPaz/KarmeiYosefPaz.uproject.
+  Tool: Tools/export_env.py (+ deps_probe.py roots=[working map]); playbook section 10b.
+- Headless check of the export (UnrealEditor-Cmd -run=pythonscript -nullrhi): map loads, 682 actors, PCG 112,285, all field/
+  farm counts, 592 Bldg_ / 35,459 parts / 560 shells, 0 meshless components, 0 default-material slots; only load error = the
+  Houdini actor (plugin not included, as intended).
+- Found + fixed in the source: the 8 FieldCrops v004 grass meshes had unbound lowest-LOD slots (*_Low, WorldGrid) - same
+  binding-order bug fixed for v005. apply_astra_rev meshes (names = the 8) re-bound them; MIs saved; map saved 3b8278a8
+  (marked dirty by the mesh change; verify all_match). Follow-up commit after b38a65b6.
+- Sent to Recycle Bin: the first export build and the check-only Verify.uproject (my own outputs).

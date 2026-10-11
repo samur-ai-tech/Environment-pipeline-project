@@ -37,7 +37,7 @@ def fpath(pkg):
     return None
 
 
-seen, q = set(), deque(ARGS['roots'])
+seen, q, scripts = set(), deque(ARGS['roots']), set()
 while q:
     p = q.popleft()
     if p in seen:
@@ -45,7 +45,9 @@ while q:
     seen.add(p)
     for d in ar.get_dependencies(p, opt) or []:
         d = str(d)
-        if d.startswith('/Script/') or d in seen:
+        if d.startswith('/Script/'):
+            scripts.add(d); continue
+        if d in seen:
             continue
         q.append(d)
 game, plugin, engine, missing = [], [], [], []
@@ -71,7 +73,7 @@ for p, f, sz, ex in game:
     tops.setdefault(k, [0, 0]); tops[k][0] += 1; tops[k][1] += sz
 rec = {'label': ARGS['label'], 'roots': ARGS['roots'], 'delete_set_packages': len(dset), 'referenced_from_outside': outside,
        'game_packages': len(game), 'game_bytes': total, 'by_top_folder': {k: v for k, v in sorted(tops.items(), key=lambda kv: -kv[1][1])},
-       'plugin_packages': sorted({'/'.join(p.split('/')[:2]) for p in plugin}), 'engine_packages': len(engine), 'missing_files': missing[:50],
+       'plugin_packages': sorted({'/'.join(p.split('/')[:2]) for p in plugin}), 'engine_packages': len(engine), 'missing_files': missing[:50], 'script_packages': sorted(scripts),
        'game': game}
 (TASK / 'receipts' / ('DEPS_%s.json' % ARGS['label'])).write_text(json.dumps(rec, indent=1), encoding='utf-8')
 RESULT = {'ok': True, **{k: v for k, v in rec.items() if k != 'game'}}

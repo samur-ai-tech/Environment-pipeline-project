@@ -272,6 +272,19 @@ Everything else the operator does alone.
    - a short report to Aviv: what changed, what to look at, open choices as one-line options, and pending deletions.
    - Leave the verified editor open for Aviv only when he wants to explore. Tell him it has nothing unsaved.
 
+## 10b. Standalone export (zip)
+
+1. **Dependency list:** `deps_probe.py` (editor, read-only) with the working map as the only root. It gives the full asset closure (`receipts/DEPS_export_v2.json`) and the engine modules the map needs (they decide the plugins).
+2. **Build:** `export_env.py build <root> <Name>`. It copies the closure with the same /Game paths, writes a `.uproject` (SunPosition, PCG; no Houdini Engine), the renderer config with the map as start map, `README.txt` and `EXPORT_MANIFEST.json`.
+   - **Long paths:** Windows long paths are off here and the longest relative path is 232 characters, so the root must be at most 27 characters (for example `C:/Users/USER/KYPaz`).
+   - **Missed files:** files the editor check could not see (paths over 260 characters, such as landscape layer infos) are added by name.
+3. **Headless check:** a copy of the `.uproject` with Python enabled, then `UnrealEditor-Cmd.exe <copy> -run=pythonscript -script=<check> -nullrhi -unattended`. It loads the map and compares actor and instance counts with the source, and reports missing meshes and default (WorldGrid) material slots.
+   - The only expected load error is the Houdini actor.
+   - Delete the check copy before zipping.
+4. **Zip:** `export_env.py zip <root> <zip>` (Unreal packages stored, text deflated, Zip64, CRC test). The zip leaves out Saved, Intermediate and DerivedDataCache.
+
+The first export check found unbound lowest-LOD grass slots (the FieldCrops v004 import predated the binding fix). Fix such slots in the source, then rebuild the export.
+
 ## 11. Tool inventory (reference folder `Staging/NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08/Tools/`)
 
 **Generic (change only the path constants):**

@@ -1,0 +1,167 @@
+{
+  "utc_start": "2026-10-11T21:09:30.799040+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\verify_clone_v2.py",
+  "script_sha256": "48748df1691f8c23e76450ed957219e7b17e15bd2f2566873fd919f1d01c5c3f",
+  "args": {
+    "expect": {
+      "KY4_Fields_Crops": 135420,
+      "KY4_Fields_Weeds": 61236,
+      "KY4_Fields_Orchards": 16357,
+      "KY4_Fields_Greenhouses": 2462,
+      "KY4_Fields_Vines": 2125,
+      "PazFarm_Detail": 4117,
+      "KY4_Windbreaks": 1146,
+      "PazFarm_Barn": 0,
+      "PazFarm_Gate": 0,
+      "PazFarm_Gate_2": 0
+    },
+    "pcg_instances": 112285,
+    "buildings": {
+      "actors": 592,
+      "parts": 35459,
+      "shells": 560
+    },
+    "expected_pid": 6940,
+    "script_sha256": "48748df1691f8c23e76450ed957219e7b17e15bd2f2566873fd919f1d01c5c3f",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\verify_clone_v2.py"
+  },
+  "editor_pid": 6940,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "utc": "2026-10-11T21:09:31.032876+00:00",
+      "pid": 6940,
+      "map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial_v2",
+      "map_sha256": "3b8278a8451acd504b2cf576da509e536209bc9a259a5796838ade6a3b2c114f",
+      "actors": {
+        "KY4_Fields_Crops": {
+          "instances": 135420,
+          "expected": 135420,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "KY4_Fields_Weeds": {
+          "instances": 61236,
+          "expected": 61236,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "KY4_Fields_Orchards": {
+          "instances": 16357,
+          "expected": 16357,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "KY4_Fields_Greenhouses": {
+          "instances": 2462,
+          "expected": 2462,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "KY4_Fields_Vines": {
+          "instances": 2125,
+          "expected": 2125,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "PazFarm_Detail": {
+          "instances": 4117,
+          "expected": 4117,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "KY4_Windbreaks": {
+          "instances": 1146,
+          "expected": 1146,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "PazFarm_Barn": {
+          "instances": 0,
+          "expected": 0,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "PazFarm_Gate": {
+          "instances": 0,
+          "expected": 0,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        },
+        "PazFarm_Gate_2": {
+          "instances": 0,
+          "expected": 0,
+          "match": true,
+          "mobility": [
+            "STATIC"
+          ],
+          "detached": 0
+        }
+      },
+      "pcg": {
+        "graph": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PCG/PCG_KY4_Zones_v003.PCG_KY4_Zones_v003",
+        "generated": true,
+        "instances": 112285
+      },
+      "landscapes": [
+        "KarmeiYosef_31850349_34907601_4km_landscape"
+      ],
+      "landscape_material": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/RealGround/MI_GeoCityGround_PazFarmReal_v2.MI_GeoCityGround_PazFarmReal_v2",
+      "hda_actors": [
+        "GeoCity_city_v015_CurrentBank_4km_KY_v002"
+      ],
+      "actor_count": 677,
+      "buildings": {
+        "actors": 592,
+        "ism_instances": 34868,
+        "single_meshes": 1151,
+        "shells": 560,
+        "detached": 0,
+        "mobility": [
+          "STATIC"
+        ],
+        "merged_buildings_actor": []
+      },
+      "dirty": [
+        [],
+        []
+      ],
+      "all_match": true,
+      "buildings_match": true
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-11T21:09:31.191431+00:00",
+  "exit_code": 0
+}

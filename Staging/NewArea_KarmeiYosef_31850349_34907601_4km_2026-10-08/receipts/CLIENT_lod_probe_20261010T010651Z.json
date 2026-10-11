@@ -1,0 +1,315 @@
+{
+  "utc_start": "2026-10-10T01:06:51.013684+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py",
+  "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+  "args": {
+    "meshes": [
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/Bush/SM_bush01",
+      "/Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_01_G",
+      "/Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_02_G",
+      "/Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_03_G",
+      "/Game/Project/Shared/ModelBank/Supply/desert/Meshes/SM_Creosote_Bush_1_aa4444f6",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GrassBush/SM_grass_bush01_lod00",
+      "/Game/ProceduralNtr_vol2/pnp_v2_assets/Assets/eldeberry_bushes/Static_Meshes/Elderberry_Living_Medium",
+      "/Game/Palms_Pack_01/Add_Props/Plants/Meshes/SM_Plant_06_2_G",
+      "/Game/ProceduralNtr_vol2/pnp_v2_assets/Assets/grass/Static_Meshes/grass_patch_01"
+    ],
+    "expected_pid": 19484,
+    "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py"
+  },
+  "editor_pid": 19484,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "meshes": {
+        "SM_bush01": {
+          "nanite": false,
+          "slots": [
+            "lod03",
+            "lod00-bark",
+            "lod00-leafs",
+            "lod01-bark",
+            "lod01-leafs"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 4293,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 1767,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 42,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.1,
+            0.05
+          ],
+          "materials": [
+            "MI_bush_lod03_Inst.MI_bush_lod03_Inst",
+            "MI_bush_bark_material_master_lod00_Inst.MI_bush_bark_material_master_lod00_Inst",
+            "MI_bush_leafs_material_master_lod00_Inst.MI_bush_leafs_material_master_lod00_Inst",
+            "MI_bush_bark_material_master_lod01_Inst.MI_bush_bark_material_master_lod01_Inst",
+            "MI_bush_leafs_material_master_lod01_Inst.MI_bush_leafs_material_master_lod01_Inst"
+          ]
+        },
+        "SM_Thicket_01_G": {
+          "nanite": false,
+          "slots": [
+            "FT_Bark",
+            "FT_Leaves"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 7454,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 3726,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 2236,
+              "sections": 2
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.3,
+            0.15
+          ],
+          "materials": [
+            "MI_Thicket_01_Bark.MI_Thicket_01_Bark",
+            "MI_Thicket_01_Leaves.MI_Thicket_01_Leaves"
+          ]
+        },
+        "SM_Thicket_02_G": {
+          "nanite": false,
+          "slots": [
+            "FT_Bark",
+            "FT_Leaves"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 4598,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 2759,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 1610,
+              "sections": 2
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.2,
+            0.1
+          ],
+          "materials": [
+            "MI_Thicket_02_Bark.MI_Thicket_02_Bark",
+            "MI_Thicket_02_Leaves.MI_Thicket_02_Leaves"
+          ]
+        },
+        "SM_Thicket_03_G": {
+          "nanite": false,
+          "slots": [
+            "FT_Bark",
+            "FT_Leaves"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 9726,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 5836,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 3404,
+              "sections": 2
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.3,
+            0.15
+          ],
+          "materials": [
+            "MI_Thicket_03_Bark.MI_Thicket_03_Bark",
+            "MI_Thicket_03_Leaves.MI_Thicket_03_Leaves"
+          ]
+        },
+        "SM_Creosote_Bush_1_aa4444f6": {
+          "nanite": false,
+          "slots": [
+            "WorldGridMaterial"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 140,
+              "sections": 1
+            },
+            {
+              "lod": 1,
+              "tris": 70,
+              "sections": 1
+            },
+            {
+              "lod": 2,
+              "tris": 64,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.5,
+            0.2
+          ],
+          "materials": [
+            "MI_Creosote_Bush_1_PIV.MI_Creosote_Bush_1_PIV"
+          ]
+        },
+        "SM_grass_bush01_lod00": {
+          "nanite": false,
+          "slots": [
+            "01 - Default",
+            "WorldGridMaterial"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 1398,
+              "sections": 1
+            },
+            {
+              "lod": 1,
+              "tris": 1095,
+              "sections": 1
+            },
+            {
+              "lod": 2,
+              "tris": 562,
+              "sections": 1
+            },
+            {
+              "lod": 3,
+              "tris": 16,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.2,
+            0.1,
+            0.05
+          ],
+          "materials": [
+            "M_grass_bush_billboard_main_mat_master_inst.M_grass_bush_billboard_main_mat_master_inst",
+            "MI_grass_bush_mat_Inst.MI_grass_bush_mat_Inst"
+          ]
+        },
+        "Elderberry_Living_Medium": {
+          "nanite": false,
+          "slots": [
+            "edleberry_bush_snow"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 3095,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "edleberry_bush_snow.edleberry_bush_snow"
+          ]
+        },
+        "SM_Plant_06_2_G": {
+          "nanite": false,
+          "slots": [
+            "Stem",
+            "Leaves"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 302,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 151,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 76,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.1,
+            0.05
+          ],
+          "materials": [
+            "MI_Plant_06_2_Stem_G.MI_Plant_06_2_Stem_G",
+            "MI_Plant_06_2_Leaves_G.MI_Plant_06_2_Leaves_G"
+          ]
+        },
+        "grass_patch_01": {
+          "nanite": false,
+          "slots": [
+            "grass_orange_snow_01"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 290,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "grass_orange_snow_01.grass_orange_snow_01"
+          ]
+        }
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T01:06:51.121237+00:00",
+  "exit_code": 0
+}

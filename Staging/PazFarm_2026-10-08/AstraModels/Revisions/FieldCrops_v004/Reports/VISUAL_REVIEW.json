@@ -1,0 +1,282 @@
+{
+  "status": "READY_FOR_OFFLINE_HANDOFF_WITH_DOCUMENTED_LOD_SIMPLIFICATION",
+  "delivery_ready": true,
+  "native_verified": false,
+  "reviewed_utc": "2026-10-10T22:11:52.052518+00:00",
+  "method": "Parent reviewed representative close and far PNGs and geometry reports; independent cross-family reviewers inspected all families and current distance bindings. Quantitative flags were retained, not suppressed.",
+  "independent_reviews": {
+    "vine": {
+      "file": "Reports/INDEPENDENT_VINE_REVIEW.json",
+      "sha256": "9ade2dfc0d94dc871a919588bae09262765d237c08145a6caf963e50e7ab6333",
+      "reviewed_input_hashes_rechecked": 75,
+      "stale_inputs": [],
+      "ready": true
+    },
+    "olive": {
+      "file": "Reports/INDEPENDENT_OLIVE_REVIEW.json",
+      "sha256": "c36e6adc3c5b6dbade044fcc0e676ab5d8344d072ff20ed0f7606bd05e10f3e1",
+      "reviewed_input_hashes_rechecked": 181,
+      "stale_inputs": [],
+      "ready": true
+    },
+    "grass": {
+      "file": "Reports/INDEPENDENT_GRASS_REVIEW.json",
+      "sha256": "767913914fc6ea252765f5cb6421b8b9774c3250b7291f10c1e53f105c22a9ec",
+      "reviewed_input_hashes_rechecked": 124,
+      "stale_inputs": [],
+      "ready": true
+    }
+  },
+  "model_validation_sha256": "40dded91cfb128dc3a033390c3cda17dad6d524cbf0343a26a1f31d3d10a92ba",
+  "distance_validation_sha256": "beff85840d3ba36df0c905c8c67e6164b69679e81bc803c7b8b92bd916cb2130",
+  "frames": 154,
+  "lod_pairs": 76,
+  "blocking_issues": [],
+  "flagged_pairs_reviewed": [
+    {
+      "comparison": [
+        "grass",
+        "Clump_C",
+        "single",
+        "perspective",
+        150
+      ],
+      "flags": [
+        "area ratio outside 0.65..1.45"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "At 150 m the 80-triangle clump retains 64.83% of detailed alpha coverage, 0.17 percentage points below the 65% diagnostic band. Its shape and colour remain legible as a small tuft, and the mixed scatter retains 75.48% coverage. The raw flag is retained; this slight threshold miss is not treated as a broken model or hidden by changing the band.",
+      "coverage_ratio": 0.6483,
+      "alpha_iou": 0.62364,
+      "luma_delta": -1.477
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_A",
+        "single",
+        "perspective",
+        15
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.86354,
+      "alpha_iou": 0.4212,
+      "luma_delta": -5.895
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_A",
+        "single",
+        "perspective",
+        50
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.85915,
+      "alpha_iou": 0.4553,
+      "luma_delta": -6.712
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_A",
+        "single",
+        "perspective",
+        150
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.85305,
+      "alpha_iou": 0.54234,
+      "luma_delta": -6.257
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_B",
+        "single",
+        "perspective",
+        15
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.83213,
+      "alpha_iou": 0.42289,
+      "luma_delta": -2.82
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_B",
+        "single",
+        "perspective",
+        50
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.83037,
+      "alpha_iou": 0.45876,
+      "luma_delta": -3.844
+    },
+    {
+      "comparison": [
+        "grass",
+        "Patch_2m_B",
+        "single",
+        "perspective",
+        150
+      ],
+      "flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "decision": "ACCEPTED_OFFLINE_SIMPLIFICATION",
+      "reason": "The 80-triangle closed low tuft volumes replace individual blades. Coverage and dry/mixed colour remain comparable, but individual blade positions do not. Coarse low mounds are visible at 15\u201350 m; use the detailed mesh near the viewer and verify the native transition.",
+      "coverage_ratio": 0.82331,
+      "alpha_iou": 0.53185,
+      "luma_delta": -3.235
+    }
+  ],
+  "vine_findings": "Three compatible modules retain continuous green bands, correct start posts and two grounded trunks. All 18 within-LOD variant joins pass, with no positive-volume tile overlap. The mixed block retains five uninterrupted rows at 500 m.",
+  "olive_findings": "Silvery, narrow geometric foliage and open branching distinguish the olives from the earlier citrus and avocado at 100 m. Mature crown/trunk silhouettes persist at 1 km. The young tree remains present but is only a few pixels there, so individual species recognition is not claimed.",
+  "grass_findings": "Detailed dry clumps and greener E/F retain fine blades, seeds and weeds. All low meshes are 80-triangle closed tufts, with low-only width expansion and darker calibrated BaseColors. Central patch coverage was repaired. Final coverage and colours are reviewed on singles and the fixed 104-instance scatter.",
+  "grass_scatter_150m": {
+    "key": [
+      "grass",
+      "mixed",
+      "scatter_10x10m",
+      "perspective",
+      150
+    ],
+    "LOD0_frame": "grass_mixed_scatter_10x10m_150m_LOD0",
+    "LOD3_frame": "grass_mixed_scatter_10x10m_150m_LOD3",
+    "alpha_weighted_silhouette_iou": 0.64164,
+    "LOD3_over_LOD0_opaque_area_ratio": 0.75479,
+    "LOD3_minus_LOD0_lit_srgb": [
+      -2.737,
+      -2.13,
+      -0.392
+    ],
+    "LOD3_minus_LOD0_luma_code_value": -2.134,
+    "both_visible": true,
+    "close_crop": false,
+    "review_flags": [],
+    "magnified_comparison": {
+      "file": "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_150m_2x.png",
+      "scale_factor": 2,
+      "source_crop_xyxy": [
+        882,
+        498,
+        1039,
+        583
+      ],
+      "left": "LOD0",
+      "right": "LOD3",
+      "resampling": "nearest-neighbour; diagnostic crop"
+    }
+  },
+  "grass_patches_150m": {
+    "Patch_2m_A": {
+      "key": [
+        "grass",
+        "Patch_2m_A",
+        "single",
+        "perspective",
+        150
+      ],
+      "LOD0_frame": "grass_Patch_2m_A_single_150m_LOD0",
+      "LOD3_frame": "grass_Patch_2m_A_single_150m_LOD3",
+      "alpha_weighted_silhouette_iou": 0.54234,
+      "LOD3_over_LOD0_opaque_area_ratio": 0.85305,
+      "LOD3_minus_LOD0_lit_srgb": [
+        -7.707,
+        -6.138,
+        -3.152
+      ],
+      "LOD3_minus_LOD0_luma_code_value": -6.257,
+      "both_visible": true,
+      "close_crop": false,
+      "review_flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "magnified_comparison": {
+        "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_150m_12x.png",
+        "scale_factor": 12,
+        "source_crop_xyxy": [
+          942,
+          527,
+          979,
+          555
+        ],
+        "left": "LOD0",
+        "right": "LOD3",
+        "resampling": "nearest-neighbour; diagnostic crop"
+      }
+    },
+    "Patch_2m_B": {
+      "key": [
+        "grass",
+        "Patch_2m_B",
+        "single",
+        "perspective",
+        150
+      ],
+      "LOD0_frame": "grass_Patch_2m_B_single_150m_LOD0",
+      "LOD3_frame": "grass_Patch_2m_B_single_150m_LOD3",
+      "alpha_weighted_silhouette_iou": 0.53185,
+      "LOD3_over_LOD0_opaque_area_ratio": 0.82331,
+      "LOD3_minus_LOD0_lit_srgb": [
+        -3.45,
+        -3.421,
+        -0.762
+      ],
+      "LOD3_minus_LOD0_luma_code_value": -3.235,
+      "both_visible": true,
+      "close_crop": false,
+      "review_flags": [
+        "silhouette IoU below 0.55"
+      ],
+      "magnified_comparison": {
+        "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_150m_11x.png",
+        "scale_factor": 11,
+        "source_crop_xyxy": [
+          941,
+          527,
+          979,
+          555
+        ],
+        "left": "LOD0",
+        "right": "LOD3",
+        "resampling": "nearest-neighbour; diagnostic crop"
+      }
+    }
+  },
+  "calibration_history": "Reports/CalibrationGrassInitial preserves the rejected initial pixels and metrics. That patch proxy retained only about 16\u201317% area. Final figures above use the revised sources and current pre-render hashes.",
+  "native_limits": [
+    "Explicitly install each separate authored lowest LOD and preserve material slots.",
+    "No Unreal import, Nanite or HLOD execution, native lighting, streaming or save/reopen was performed.",
+    "Coarse grass and crown volumes are distant proxies, not close-up replacements.",
+    "Tiny items remain limited by screen resolution, FOV, anti-aliasing and native material settings."
+  ],
+  "reviewed_scene_sha256": {
+    "Blend/FieldGrass.blend": "a9e0816b0b1168d965fb73b76f7e29d17bfe139dbecede23ce291a0778a749ad",
+    "Blend/Olive.blend": "1d23615a81acef972464c620f468d796905c326c9a423640da4f33c8e52a1d82",
+    "Blend/VineRows.blend": "ca26f23dac888063a3815739b34bba93a93a41935fe6d5af03a949b268e85397"
+  }
+}

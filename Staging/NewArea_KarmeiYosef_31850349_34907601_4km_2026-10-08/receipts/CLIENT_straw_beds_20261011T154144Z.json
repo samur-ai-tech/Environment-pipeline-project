@@ -1,0 +1,60 @@
+{
+  "utc_start": "2026-10-11T15:41:44.212826+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\straw_beds.py",
+  "script_sha256": "3931fe635757e2eeea6d8fad54b43b8adf0643c24842cde6683b212a76729ef9",
+  "args": {
+    "expected_pid": 35308,
+    "step": "relayout",
+    "clone_suffix": "_v2",
+    "sink_cm": 3,
+    "script_sha256": "3931fe635757e2eeea6d8fad54b43b8adf0643c24842cde6683b212a76729ef9",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\straw_beds.py"
+  },
+  "editor_pid": 35308,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "utc": "20261011T154144Z",
+      "pid": 35308,
+      "layout": "STRAWBERRY_BEDS_V2.json",
+      "before_receipt": "STRAW_BEDS_BEFORE_20261011T154144Z.json",
+      "old_count": 762,
+      "new_count": 2478,
+      "skipped_no_ground": 4,
+      "sink_cm": 3.0,
+      "tile": {
+        "mesh": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/VisualFix_v003/Meshes/SM_PazFarm_StrawberryBed_4m.SM_PazFarm_StrawberryBed_4m",
+        "runs_along": "-Y",
+        "length_cm": 400.0
+      },
+      "mid_tile_float_cm": {
+        "min": -9.0,
+        "p05": -4.1,
+        "median": -3.0,
+        "p95": -2.6,
+        "max": -2.5
+      },
+      "abs_pitch_deg": {
+        "median": 1.4,
+        "max": 5.4
+      },
+      "abs_roll_deg": {
+        "median": 1.9,
+        "max": 6.9
+      },
+      "dirty": [
+        [
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial_v2"
+        ],
+        []
+      ]
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-11T15:41:44.794274+00:00",
+  "exit_code": 0
+}

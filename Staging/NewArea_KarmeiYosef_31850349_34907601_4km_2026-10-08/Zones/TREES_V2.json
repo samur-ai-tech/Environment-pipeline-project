@@ -1,0 +1,75 @@
+{
+ "clear_source": "Fields_2026-10-10/fields_clear_zone.png (filled fields + fence), dilated 1 px",
+ "parcel_pixels_cleared": 277820,
+ "building_pixels_blocked": 23190,
+ "masks": {
+  "Forest_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_Forest_P3.png",
+   "on_before": 121122,
+   "on_after": 120254
+  },
+  "Orchard_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_Orchard_P3.png",
+   "on_before": 33017,
+   "on_after": 33017
+  },
+  "Vineyard_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_Vineyard_P3.png",
+   "on_before": 18939,
+   "on_after": 18939
+  },
+  "ScrubMix_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_ScrubMix_P3.png",
+   "on_before": 188384,
+   "on_after": 126502
+  },
+  "Grass_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_Grass_P3.png",
+   "on_before": 191649,
+   "on_after": 110753
+  },
+  "Crop_P3": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_Crop_P3.png",
+   "on_before": 160231,
+   "on_after": 82865
+  },
+  "ForestTrees": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_ForestTrees.png",
+   "zone_pixels": 121122,
+   "mean_p_in_zone": 0.599,
+   "on_pixels": 72115,
+   "on_km2": 1.118
+  },
+  "ScrubTrees": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_ScrubTrees.png",
+   "zone_pixels": 189076,
+   "mean_p_in_zone": 0.293,
+   "on_pixels": 37050,
+   "on_km2": 0.574
+  },
+  "SatTrees": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_SatTrees.png",
+   "zone_pixels": 7224,
+   "mean_p_in_zone": 0.475,
+   "on_pixels": 1817,
+   "on_km2": 0.028
+  },
+  "OpenField": {
+   "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\trees_v2\\T_KY4_Mask_OpenField.png",
+   "zone_pixels": 602450,
+   "mean_p_in_zone": 1.0,
+   "on_pixels": 390069,
+   "on_km2": 6.048
+  }
+ },
+ "windbreak_trees": 1146,
+ "windbreak_skipped": {
+  "fence": 39,
+  "junction": 311,
+  "building_zone": 0,
+  "crop": 254,
+  "outside": 66,
+  "parcel_deep": 0
+ },
+ "method": "More trees on the 4 km clone, offline part (Aviv 2026-10-10 approved: satellite tree map, windbreak rows near the farm,\ndenser forest and scrub ~2-3x + single field trees). 1024 x 1024 masks in the T_KY4_Zones orientation (row 0 = north edge,\n4032 m square) for the zone PCG graph v002, plus windbreak positions for a separate static instanced actor.\nEvery mask is also cleared of the Paz Farm road-to-road parcels (PARCELS_V2, dilated 3 m) and the old farm footprint, so the\nstand-ins do not double-plant on the new farm ground and crops; building footprints + 5 m are kept free of new trees.\nSentinel-2 (10 m, 21 Sep and 4 Apr 2026): in the dry season irrigated crops are greener than forest, so \"tree\" = green in\nBOTH scenes and not much greener now than in spring (green_crop class 9 is never a tree class).\n  ForestTrees  forest zone (3)            p = clip((min NDVI - 0.28) / 0.22, 0.4, 1)   -> forest branch, more trees where denser\n  ScrubTrees   scrub zones (6, 10)        p = clip((min NDVI - 0.26) / 0.24, 0.12, 1)  -> scrub_trees branch\n  SatTrees     grass/bare/dry grass (7, 11, 12): NDVI now >= 0.36, spring >= 0.42, now - spring <= 0.05;\n               p = clip((NDVI now - 0.34) / 0.14, 0, 1)                                -> new sat_trees branch\n  OpenField    open fields (7, 9, 11, 12) -> new field_trees branch (single trees, very sparse)\n  <zone>_P3    the six existing masks cleared of the parcels (all existing branches use these)\nContinuous probabilities are dithered into binary masks (the graph's Density Filter >= 0.5 is a yes/no test), so the\nsampler density x the share of 'on' pixels is the real density.\nWindbreaks: one row along each OSM track / farm road within 700 m of the pin, on the side away from the pin, 4 m from\nthe centreline, a tree every 5 m (0.5 m jitter); no trees inside the fence, on buildings (+5 m), village/water/forest,\nwithin 10 m of a junction or within 3 m of a farm crop tree."
+}

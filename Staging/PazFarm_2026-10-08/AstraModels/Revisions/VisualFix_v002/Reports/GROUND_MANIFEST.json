@@ -1,0 +1,95 @@
+{
+  "revision": "VisualFix_v002",
+  "component": "procedural_ground",
+  "status": "OFFLINE_QA_PASS_NOT_IMPORTED",
+  "asset": {
+    "name": "T_PazFarm_Ground",
+    "file": "Georef/T_PazFarm_Ground.png",
+    "format": "PNG RGBA8",
+    "dimensions": [
+      2048,
+      2048
+    ],
+    "srgb": true,
+    "alpha": "linear coverage, transparent outside overlay",
+    "extent_m": [
+      512,
+      512
+    ],
+    "metres_per_pixel": 0.25,
+    "west_edge_m_from_pin": -219.843,
+    "north_edge_m_from_pin": 230.463,
+    "north_up": true,
+    "source_licence": "Original procedural work from numeric reference colour anchors and existing traced layout; no satellite image pixels copied",
+    "sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+  },
+  "preserved": [
+    "All original plot vertices",
+    "All original road centreline vertices and 4/5 m nominal widths",
+    "Original placement transforms/counts and georeference",
+    "Existing mapping and Farm_Blend contract"
+  ],
+  "measured": {
+    "png_byte_round_trip_match": true,
+    "exact_mapping_metadata_match": true,
+    "strawberry_tiles": 763,
+    "strawberry_rows": 32,
+    "max_cross_axis_mismatch_m": 0.00763799988288838,
+    "local_junction_connectors": 3,
+    "transparent_exterior": true
+  },
+  "preview": "Previews/GROUND_COMPARE.html",
+  "native_handoff": "Reports/GROUND_HANDOFF.md",
+  "files": [
+    {
+      "path": "Georef/T_PazFarm_Ground.png",
+      "bytes": 1233926,
+      "sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+    },
+    {
+      "path": "Georef/FARM_GROUND.json",
+      "bytes": 3234,
+      "sha256": "e54c0562ae1b7c46e387eadfe8c70517a250219e90309801ee514a4284c6d217"
+    },
+    {
+      "path": "Georef/GROUND_SETTINGS.json",
+      "bytes": 4525,
+      "sha256": "9460a0b6134eebf74dbfc9f831966b0d1c57e9c8851217d11c3149331fa7a074"
+    },
+    {
+      "path": "Georef/ground_v002.py",
+      "bytes": 17875,
+      "sha256": "4297e7942fa361f758e11aaadac55e0215daadd58ea7235937fb020aa0b503cf"
+    },
+    {
+      "path": "Previews/ground_v002_north_up.png",
+      "bytes": 371417,
+      "sha256": "88032d533892967d9dfe18c13b35d3d690d91c6a8fe476b62202a6708de3bba0"
+    },
+    {
+      "path": "Previews/ground_v002_reference_aligned.png",
+      "bytes": 648807,
+      "sha256": "9097fd1e85cb8384bf267b1f15439b39718932472446e323b25829e83d6a806a"
+    },
+    {
+      "path": "Previews/ground_v001_reference_aligned.png",
+      "bytes": 1307916,
+      "sha256": "9e1e6f74b5f19462b48e26eda7b4321445b7ffda83234fab5d5815f552e44905"
+    },
+    {
+      "path": "Previews/GROUND_COMPARE.html",
+      "bytes": 1634,
+      "sha256": "6e42e74a53e11d6ae4755919883d31009f61b867c90ed995f0a6fcf1511a468e"
+    },
+    {
+      "path": "Reports/GROUND_QA.json",
+      "bytes": 14849,
+      "sha256": "4a5b75c289c4cf0f9fa0ca3e22c25b64ce89a868d9abadc5ea98c004a20da778"
+    },
+    {
+      "path": "Reports/GROUND_HANDOFF.md",
+      "bytes": 4323,
+      "sha256": "e5232c1aab0ae4f4622e5b6509c254415b43f3d7dada4c9b589c8d63d21ed215"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "utc_start": "2026-10-09T23:51:51.770117+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\bldg_poscheck.py",
+  "script_sha256": "f96d3843705f05e972ff1922ac510a845043b0f44141c341681dd187892d9339",
+  "args": {
+    "expected_pid": 32392,
+    "script_sha256": "f96d3843705f05e972ff1922ac510a845043b0f44141c341681dd187892d9339",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\bldg_poscheck.py"
+  },
+  "editor_pid": 32392,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "worst_cm": {
+        "ISM SM": 0.0,
+        "ISM SM_win": 281043.23,
+        "SMC Door": 0.0,
+        "SMC Building": 263649.69
+      },
+      "n": {
+        "ISM SM": 9124,
+        "ISM SM_win": 25744,
+        "SMC Door": 559,
+        "SMC Building": 32
+      },
+      "examples": {
+        "ISM SM_win": [
+          "Bldg_1041894874",
+          "SM_wall_windows_4x4_01",
+          [
+            260,
+            775,
+            0
+          ],
+          [
+            -199512,
+            -196644,
+            10117
+          ],
+          "<Struct 'Vector' (0x0000017554A06D80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          null
+        ],
+        "SMC Building": [
+          "Bldg_1041894888",
+          "Building",
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -189728,
+            -182759,
+            10670
+          ],
+          "<Struct 'Vector' (0x000001755BBF6F80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          null
+        ]
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-09T23:51:52.843576+00:00",
+  "exit_code": 0
+}

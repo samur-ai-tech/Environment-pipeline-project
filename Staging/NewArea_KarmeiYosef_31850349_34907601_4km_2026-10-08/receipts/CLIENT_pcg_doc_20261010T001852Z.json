@@ -1,0 +1,55 @@
+{
+  "utc_start": "2026-10-10T00:18:52.119324+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\pcg_doc.py",
+  "script_sha256": "8ec1eabf429659f02ac018e5b2f91dc9036dc83a19e69870c8d62feb9cd6d5a2",
+  "args": {
+    "expected_pid": 18700,
+    "script_sha256": "8ec1eabf429659f02ac018e5b2f91dc9036dc83a19e69870c8d62feb9cd6d5a2",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\pcg_doc.py"
+  },
+  "editor_pid": 18700,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "doc_lines": [
+        "- ``generated`` (bool):  [Read-Only] Flag to indicate whether this component has run in the editor. Note that for partitionable actors, this will always be false.",
+        "- ``generation_grid_size`` (uint32):  [Read-Only]",
+        "- ``is_component_partitioned`` (bool):  [Read-Write] Will partition the component in a grid, dispatching the generation to multiple local components. Grid size is determined by the",
+        "  PCGWorldActor unless the graph has Hierarchical Generation enabled, in which case grid sizes are determined by the graph.",
+        "- ``per_pin_generated_output`` (Map[str, PCGDataCollection]):  [Read-Only] If any graph edges cross execution grid sizes, data on the edge is stored / retrieved from this map.",
+        "- ``use_actor_componentless_generation`` (bool):  [Read-Write] [EXPERIMENTAL] Avoids creating partition actors and local PCG components. Any functionality which depends on a target actor/component are not supported in this mode."
+      ],
+      "methods": [
+        "is_component_partitioned"
+      ],
+      "world_actor_doc": [
+        "  Normally we don't tick actors until after BeginPlay; this setting allows this behavior to be overridden.",
+        "- ``always_relevant`` (bool):  [Read-Write] Always relevant for network (overrides bOnlyRelevantToOwner).",
+        "- ``enable_world_partition_generation_sources`` (bool):  [Read-Write]",
+        "- ``is_spatially_loaded`` (bool):  [Read-Write] Determine if this actor is spatially loaded when placed in a partitioned world.",
+        "- ``landscape_cache_object`` (PCGLandscapeCache):  [Read-Only] Contains all the PCG data required to query the landscape complete. Serialized in cooked builds only",
+        "- ``optimize_bp_component_data`` (bool):  [Read-Write] Whether to cook additional data to speed up spawn events at runtime for any Blueprint classes based on this Actor. This option may slightly increase memory usage in a cooked build.",
+        "- ``partition_grid_size`` (uint32):  [Read-Write] Size of the PCG partition actor grid for non-hierarchical-generation graphs. Min value: 400, MaxValue: 419430400",
+        "  bounding box unless the Actor's class has overridden IsLevelBoundsRelevant",
+        "- ``runtime_grid`` (Name):  [Read-Write] Determine in which partition grid this actor will be placed in the partition (if the world is partitioned).",
+        "  If None, the decision will be left to the partition.",
+        "- ``update_overlaps_method_during_level_streaming`` (ActorUpdateOverlapsMethod):  [Read-Write] Condition for calling UpdateOverlaps() to initialize overlap state when loaded in during level streaming.",
+        "  If overlaps are not initialized, this actor and attached components will not have an initial state of what objects are touching it,",
+        "  However if an object touching it *does* initialize state, both objects will know about their touching state with each other."
+      ],
+      "values": {
+        "is_partitioned": "n/a",
+        "b_is_partitioned": "n/a",
+        "is_component_partitioned": "False"
+      },
+      "world_actor_props": null
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T00:18:52.387126+00:00",
+  "exit_code": 0
+}

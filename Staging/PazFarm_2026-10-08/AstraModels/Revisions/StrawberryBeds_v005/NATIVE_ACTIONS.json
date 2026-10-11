@@ -1,0 +1,148 @@
+{
+  "status": "HANDOFF_ONLY_NOT_EXECUTED",
+  "native_actions_performed": false,
+  "lod_pairings": [
+    {
+      "base_model": "SM_PazFarm_StrawberryBed_4m_A",
+      "detailed_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_A.fbx",
+      "lowest_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_A_LOD3.fbx",
+      "detailed_triangles": 35370,
+      "lowest_triangles": 240,
+      "source": "Blend/StrawberryBeds.blend",
+      "material_slots": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "detailed_dimensions_m": [
+        1.1,
+        4.0,
+        0.50217
+      ],
+      "lowest_dimensions_m": [
+        1.1,
+        4.0,
+        0.40075
+      ],
+      "pivot_m": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_model": "SM_PazFarm_StrawberryBed_4m_B",
+      "detailed_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_B.fbx",
+      "lowest_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_B_LOD3.fbx",
+      "detailed_triangles": 32920,
+      "lowest_triangles": 240,
+      "source": "Blend/StrawberryBeds.blend",
+      "material_slots": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "detailed_dimensions_m": [
+        1.1,
+        4.0,
+        0.5016
+      ],
+      "lowest_dimensions_m": [
+        1.1,
+        4.0,
+        0.40071
+      ],
+      "pivot_m": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_model": "SM_PazFarm_StrawberryBed_4m_C",
+      "detailed_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_C.fbx",
+      "lowest_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_C_LOD3.fbx",
+      "detailed_triangles": 35100,
+      "lowest_triangles": 240,
+      "source": "Blend/StrawberryBeds.blend",
+      "material_slots": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "detailed_dimensions_m": [
+        1.1,
+        4.0,
+        0.50432
+      ],
+      "lowest_dimensions_m": [
+        1.1,
+        4.0,
+        0.40241
+      ],
+      "pivot_m": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "base_model": "SM_PazFarm_StrawberryBedEnd",
+      "detailed_fbx": "FBX/SM_PazFarm_StrawberryBedEnd.fbx",
+      "lowest_fbx": "FBX/SM_PazFarm_StrawberryBedEnd_LOD3.fbx",
+      "detailed_triangles": 1962,
+      "lowest_triangles": 257,
+      "source": "Blend/StrawberryBeds.blend",
+      "material_slots": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "detailed_dimensions_m": [
+        1.1,
+        0.4,
+        0.4
+      ],
+      "lowest_dimensions_m": [
+        1.1,
+        0.4,
+        0.4
+      ],
+      "pivot_m": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "row_centres_m": 1.7,
+  "pivot": "Ground centre of start end, exact origin; minimum Z=-0.15 is skirt",
+  "operator_actions": [
+    "Import detailed and explicitly assign matching authored lowest LOD",
+    "Retain new dark mulch and distant mulch material slots",
+    "Tilt and chain every tile by transformed endpoints",
+    "Use separate end caps only at row ends",
+    "Verify actual 60m-4km far-instance geometry under existing HLOD route",
+    "Review ground contact, native materials and near/far scene appearance"
+  ]
+}

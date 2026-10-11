@@ -1,0 +1,1371 @@
+{
+  "status": "READY_FOR_OFFLINE_DELIVERY_WITH_LIMITS",
+  "delivery_ready": true,
+  "ready_for_offline_delivery": true,
+  "native_verified": false,
+  "reviewed_at_utc": "2026-10-10T21:59:50.256385+00:00",
+  "review_scope": "Independent source-contract and visual review of the olive family only: eight fitted heroes, four 100 m detailed originals, four 1 km lowest originals, both-LOD 100 m / 1 km pixel magnifications, and the existing lemon/avocado 100 m originals and magnifications. All 48 olive frame bindings and all 24 LOD pairs were checked. No models, sources, exports, previews, Unreal, Content, maps, bank, Houdini or git were changed.",
+  "basis": "Source generator and fresh source-readback receipt inspected and bound to the current Blend and textures. FBX files hashed for exact identification; fresh FBX-import QA is the root validator responsibility and is not claimed as performed by this review.",
+  "blocking_issues": [],
+  "source_contract": {
+    "source": "Blend/Olive.blend",
+    "source_sha256": "1d23615a81acef972464c620f468d796905c326c9a423640da4f33c8e52a1d82",
+    "variants": [
+      "A",
+      "B",
+      "C",
+      "Young"
+    ],
+    "triangles_each_LOD0": 94212,
+    "triangles_each_LOD3": 1424,
+    "dimensions_metres_W_D_H": {
+      "SM_PazFarm_Olive_A": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "SM_PazFarm_Olive_A_LOD3": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "SM_PazFarm_Olive_B": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "SM_PazFarm_Olive_B_LOD3": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "SM_PazFarm_Olive_C": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "SM_PazFarm_Olive_C_LOD3": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "SM_PazFarm_Olive_Young": [
+        1.7,
+        1.6,
+        2.0
+      ],
+      "SM_PazFarm_Olive_Young_LOD3": [
+        1.7,
+        1.6,
+        2.0
+      ]
+    },
+    "all_ground_pivots_zero": true,
+    "source_transforms_identity": true,
+    "source_UV0_finite_and_closed": true,
+    "material_slot_order": [
+      "M_PazFarm_Olive_Bark",
+      "M_PazFarm_Olive_LeafTop",
+      "M_PazFarm_Olive_LeafUnderside",
+      "M_PazFarm_Olive_CrownHull"
+    ],
+    "unused_leaf_slots_retained_in_LOD3": true,
+    "materials_opaque_alpha_1": true,
+    "foliage_two_sided": true,
+    "texture_count": 12,
+    "texture_size": [
+      1024,
+      1024
+    ],
+    "texture_contract": "BaseColor sRGB; Normal OpenGL +Y; ORM R=AO G=roughness B=metallic, both Non-Color. No alpha masks, wind or collision.",
+    "export_contract": "Metres, scale_length=1; FBX -Y forward, Z up, applied unit scale; eight separate mesh FBXs.",
+    "construction": "Each detailed tree has 18 recessed closed crown clumps and 7,200 closed narrow bowed leaf volumes with separate pale underside faces. Each authored lowest tree retains 18 rounded crown clumps, the split trunk and supporting limbs. No billboard."
+  },
+  "close_visual_observations": [
+    "All four detailed trees show grey-green fine leaf geometry with paler faces, open gaps between crown clumps, and twisted/split trunks; no floating roots, inverted orientation or visibly wrong scale was found.",
+    "A/B/C have related but different irregular crown silhouettes and the requested 4.5/5.5/6.5 m heights; Young is distinctly smaller at 2 m.",
+    "Lowest heroes intentionally expose smooth closed proxy clumps at close range. Their crown distribution and trunk are retained; use these meshes for far views. The family has a visible procedural, stylized character rather than close-up botanical photorealism."
+  ],
+  "distance_evidence": {
+    "olive_frames_expected": 48,
+    "olive_frames_current": 48,
+    "reference_frames_current": 2,
+    "olive_lod_pairs_expected": 24,
+    "olive_lod_pairs_current": 24,
+    "olive_review_flag_count": 0,
+    "all_png_source_texture_bindings_current": true,
+    "all_frame_distances_and_settings_match": true,
+    "settings_sha256": "146cbf31e41193b93e037f988f317650e7cbdb26db2b01266b8b71fa8326bd5b",
+    "settings_summary": "Cycles, 1920x1080, horizontal 60-degree FOV, Standard view, exposure0, fixed lighting, no denoise. Original images retain actual screen size; magnifications are nearest-neighbour diagnostic crops.",
+    "scoped_distance_payload_sha256": "c583e6f4dbf692fb41b292ec515aa8bf6d016e1f446860419a8c0df1e13b8879",
+    "combined_report_status_at_review": "PARTIAL_OR_STALE",
+    "combined_report_status_note": "Overall suite may be partial because grass work is separate. This decision is scoped to the complete stable olive/reference subset.",
+    "at_1000_m": [
+      {
+        "variant": "A",
+        "distance_m": 1000,
+        "LOD0_bbox_px": [
+          7,
+          8
+        ],
+        "LOD3_bbox_px": [
+          7,
+          8
+        ],
+        "LOD0_equivalent_opaque_pixels": 22.7608,
+        "LOD3_equivalent_opaque_pixels": 24.8235,
+        "LOD3_over_LOD0_opaque_area_ratio": 1.09063,
+        "silhouette_iou": 0.89328,
+        "LOD3_lit_srgb": [
+          28.132,
+          32.504,
+          27.358
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.084,
+        "review_flags": []
+      },
+      {
+        "variant": "B",
+        "distance_m": 1000,
+        "LOD0_bbox_px": [
+          8,
+          10
+        ],
+        "LOD3_bbox_px": [
+          8,
+          10
+        ],
+        "LOD0_equivalent_opaque_pixels": 28.5725,
+        "LOD3_equivalent_opaque_pixels": 31.3294,
+        "LOD3_over_LOD0_opaque_area_ratio": 1.09649,
+        "silhouette_iou": 0.84927,
+        "LOD3_lit_srgb": [
+          26.494,
+          30.669,
+          25.821
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 1.806,
+        "review_flags": []
+      },
+      {
+        "variant": "C",
+        "distance_m": 1000,
+        "LOD0_bbox_px": [
+          10,
+          12
+        ],
+        "LOD3_bbox_px": [
+          10,
+          12
+        ],
+        "LOD0_equivalent_opaque_pixels": 44.6196,
+        "LOD3_equivalent_opaque_pixels": 50.6314,
+        "LOD3_over_LOD0_opaque_area_ratio": 1.13473,
+        "silhouette_iou": 0.85852,
+        "LOD3_lit_srgb": [
+          26.599,
+          30.69,
+          25.969
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 1.506,
+        "review_flags": []
+      },
+      {
+        "variant": "Young",
+        "distance_m": 1000,
+        "LOD0_bbox_px": [
+          4,
+          4
+        ],
+        "LOD3_bbox_px": [
+          4,
+          3
+        ],
+        "LOD0_equivalent_opaque_pixels": 3.5059,
+        "LOD3_equivalent_opaque_pixels": 3.7569,
+        "LOD3_over_LOD0_opaque_area_ratio": 1.07159,
+        "silhouette_iou": 0.87071,
+        "LOD3_lit_srgb": [
+          30.088,
+          34.837,
+          29.104
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 9.757,
+        "review_flags": []
+      }
+    ]
+  },
+  "at_100_m_comparison": {
+    "conclusion": "The detailed olive is less saturated and more open than the delivered lemon and avocado examples at the same camera distance/FOV/light and their actual sizes. The larger visible crown gaps and split trunk distinguish it from the compact citrus crowns; close heroes establish the fine lanceolate foliage. Fine species anatomy is not individually resolved at this distance.",
+    "upper_crown_saturation_of_mean_RGB": {
+      "olives_A_single_100m_LOD0": 0.17217,
+      "olives_A_single_100m_LOD3": 0.16404,
+      "references_Avocado_single_100m_LOD0": 0.24027,
+      "references_Lemon_single_100m_LOD0": 0.30114
+    },
+    "method": "Same 100 m camera/FOV/light; actual model scale; alpha-weighted upper-crown screen-region proxy. Saturation of mean RGB is descriptive, not species recognition."
+  },
+  "far_visual_conclusion": "At 1 km, mature A/B/C remain full crown-and-trunk silhouettes with no disappearance or pale material drift in the reviewed Blender view. Lowest coverage is 109-113 percent of detailed, with silhouette IoU 0.849-0.893. Young remains present but is below robust species/shape identification resolution.",
+  "limits_and_native_actions": [
+    {
+      "priority": "important_resolution_limit",
+      "observation": "Young at 1 km occupies only about 3.76 equivalent opaque pixels and a 4x3 pixel low-LOD box; its detailed box is 4x4. The low image is about 9.76 sRGB luma code values brighter than detailed, while mature differences are about 1.51-3.08. This is a very small, partially covered raster sample; no disappearance occurred.",
+      "action": "Keep its correct 2 m scale and explicitly report this limit. Verify it in the native distant grove under actual antialiasing/background conditions; do not promise individually recognizable olive anatomy at 1 km."
+    },
+    {
+      "priority": "native_pending",
+      "observation": "These are offline Blender renders and source-contract checks. They do not demonstrate Unreal import, Nanite, streaming, native material fidelity, saved/reopened maps, runtime performance or Instancing HLOD behavior.",
+      "action": "After the separate native authorization, explicitly assign each *_LOD3.fbx as the corresponding tree lowest LOD. The filename alone does not create an LOD chain. Preserve all four material slots including unused leaf slots, apply opaque/two-sided foliage and the documented texture color spaces, and verify no-cull always-loaded HLOD behavior using the actual scene."
+    },
+    {
+      "priority": "close_view_limit",
+      "observation": "The lowest clumps look smooth and rounded in fitted close views. Mature fixed 5 m images can crop the crown because their camera distance is literal.",
+      "action": "Use the detailed mesh for close views and the fitted heroes for whole-tree close inspection; compare lowest shape at the intended far distances."
+    }
+  ],
+  "checked_frame_bindings": [
+    {
+      "id": "olives_A_single_5m_LOD0",
+      "png": "Previews/Distance/olives_A_single_5m_LOD0.png",
+      "png_sha256": "b6684f1cf65593ddaa7123dba2b1ba3fa85c8c11a31ff6ee21d4a4d5ba8de7bd",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_5m_LOD3",
+      "png": "Previews/Distance/olives_A_single_5m_LOD3.png",
+      "png_sha256": "595f7f09fc9c60cadcd86b2cf392a0d2105c72d62298a51400d065f6f9ecb2d9",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_50m_LOD0",
+      "png": "Previews/Distance/olives_A_single_50m_LOD0.png",
+      "png_sha256": "e55b3198aef7662adc1603d65dc7a1024306e8e54db93a3c87add732aa0bf705",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_50m_LOD3",
+      "png": "Previews/Distance/olives_A_single_50m_LOD3.png",
+      "png_sha256": "dca2dda2c16e79d52a7454c8aafe37bf30b5c3c905acd1cbc5eb57381bc4e2df",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_100m_LOD0",
+      "png": "Previews/Distance/olives_A_single_100m_LOD0.png",
+      "png_sha256": "e84004f38e6bd2afa0c360f6fc61c3bdafd93bdcb2a45892f1cd619bc9d7e46b",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_100m_LOD3",
+      "png": "Previews/Distance/olives_A_single_100m_LOD3.png",
+      "png_sha256": "f52a821b9b5f518927bb7c93c446e123e8317c086483e65f5f704bc3808be1f9",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_300m_LOD0",
+      "png": "Previews/Distance/olives_A_single_300m_LOD0.png",
+      "png_sha256": "ecf56f34ab20276167f46a8024459046affbc9acc15e404ee30caba58a526274",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_300m_LOD3",
+      "png": "Previews/Distance/olives_A_single_300m_LOD3.png",
+      "png_sha256": "c916a3542228bcd6299fb72c64562e2e6403cc973705b6e69b54fbf434d6c211",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_1000m_LOD0",
+      "png": "Previews/Distance/olives_A_single_1000m_LOD0.png",
+      "png_sha256": "f82df928d755493a6b68a94be547d5e26ab7498076df24b71e03fc6c8612e21f",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_1000m_LOD3",
+      "png": "Previews/Distance/olives_A_single_1000m_LOD3.png",
+      "png_sha256": "ad38efd550e7032ef8956a68b9f2b0c7a1018725e39cc7de0b31221756f70ff9",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_top_LOD0",
+      "png": "Previews/Distance/olives_A_single_top_LOD0.png",
+      "png_sha256": "c2e5fd11080b1521596a0dd4fad1f602f72a9be8c6ff8790dc7c9e59a013643a",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_A_single_top_LOD3",
+      "png": "Previews/Distance/olives_A_single_top_LOD3.png",
+      "png_sha256": "d349898e10b30d9f7f25034a883c8816a9208300da9b163ed5115af78c07d6cb",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_5m_LOD0",
+      "png": "Previews/Distance/olives_B_single_5m_LOD0.png",
+      "png_sha256": "2d1e1cd495a205fcf9bc221d613ba296afda55aa14e4c06d7a077d73b1b42aa4",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_5m_LOD3",
+      "png": "Previews/Distance/olives_B_single_5m_LOD3.png",
+      "png_sha256": "8b9840e5317c0ad2fdd3461998e1a46696c03bb3c0bbe6fb3a9358d4d2614b0d",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_50m_LOD0",
+      "png": "Previews/Distance/olives_B_single_50m_LOD0.png",
+      "png_sha256": "b998914b59928f8886a56fd20f7711f4c1873abf5d3d7636889ca63de3364c99",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_50m_LOD3",
+      "png": "Previews/Distance/olives_B_single_50m_LOD3.png",
+      "png_sha256": "2032a6257447f503d7cad0012f8685f0e18649c002b9a3a2c72ad15a573538df",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_100m_LOD0",
+      "png": "Previews/Distance/olives_B_single_100m_LOD0.png",
+      "png_sha256": "d248e9dcbd835389f12fdc02d1b8ae88ded558d4f6d6187328013763ea77fe27",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_100m_LOD3",
+      "png": "Previews/Distance/olives_B_single_100m_LOD3.png",
+      "png_sha256": "5e85e4204fd38369610a1b966f717eaac399379656bc0f8cf452e5f123c990ce",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_300m_LOD0",
+      "png": "Previews/Distance/olives_B_single_300m_LOD0.png",
+      "png_sha256": "ef696d7dd543c33abe1bd7e03582e6944dd53bcf89da2c2ccbf6bb8ceec6b0a5",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_300m_LOD3",
+      "png": "Previews/Distance/olives_B_single_300m_LOD3.png",
+      "png_sha256": "955b7f333b487b82d5ca032d5e421c26cd268d6ba8ca33ba5e50d046f1b262ad",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_1000m_LOD0",
+      "png": "Previews/Distance/olives_B_single_1000m_LOD0.png",
+      "png_sha256": "a9b416d2fe11dc1df4d72af49123e1c6a9e06f0fd8617c27c9578f870036bb1f",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_1000m_LOD3",
+      "png": "Previews/Distance/olives_B_single_1000m_LOD3.png",
+      "png_sha256": "2d44c7832068e9bfa47ab0c24e040c801ca37fd96e3e1f675d684ffc51a0ca46",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_top_LOD0",
+      "png": "Previews/Distance/olives_B_single_top_LOD0.png",
+      "png_sha256": "b49be98556c6e0c5eb9f385b36ef103bc385b94ce080d04825be438db6b7299b",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_B_single_top_LOD3",
+      "png": "Previews/Distance/olives_B_single_top_LOD3.png",
+      "png_sha256": "3969196c14978fd022cc4758df82cc4987aaddcf940d2bf6ac4ed83f58cb9478",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_5m_LOD0",
+      "png": "Previews/Distance/olives_C_single_5m_LOD0.png",
+      "png_sha256": "b5af05c30ae3e7b175993968716aa68a16bdfe8620853e20afdb7ef3992b031f",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_5m_LOD3",
+      "png": "Previews/Distance/olives_C_single_5m_LOD3.png",
+      "png_sha256": "00494ddc22927d2c297b78ba9ca0ef0ecee78bf85cfb92711a7555000e9294a1",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_50m_LOD0",
+      "png": "Previews/Distance/olives_C_single_50m_LOD0.png",
+      "png_sha256": "5f3618ac4507d1576a001e1842e4492628e620df5fa14c2b857480cceeabf715",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_50m_LOD3",
+      "png": "Previews/Distance/olives_C_single_50m_LOD3.png",
+      "png_sha256": "f7bfc5bdfade5e89ecd594ce3d3b6cd745be996b9a2d251244eac28a8d2295e9",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_100m_LOD0",
+      "png": "Previews/Distance/olives_C_single_100m_LOD0.png",
+      "png_sha256": "f57ffc683dd12e03207e20fa78912f25750cb450b75036216a82e3110be18624",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_100m_LOD3",
+      "png": "Previews/Distance/olives_C_single_100m_LOD3.png",
+      "png_sha256": "c2fa83f8f478c30c7dc99e9b66657dfa306fcc747f7c6956533383518a214d29",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_300m_LOD0",
+      "png": "Previews/Distance/olives_C_single_300m_LOD0.png",
+      "png_sha256": "9145c31dd62a5d45fd58e63d1823f87ee026bcc96d7ee11e7d033dea3496e770",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_300m_LOD3",
+      "png": "Previews/Distance/olives_C_single_300m_LOD3.png",
+      "png_sha256": "f17e653fdfc52bbd82233dd66823f960774848004f448038a5ff156fc1147237",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_1000m_LOD0",
+      "png": "Previews/Distance/olives_C_single_1000m_LOD0.png",
+      "png_sha256": "73934774aa337f71ccc6fd93785cb33cd6ad37344189c01beb6cb0d2403da3cd",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_1000m_LOD3",
+      "png": "Previews/Distance/olives_C_single_1000m_LOD3.png",
+      "png_sha256": "27fed6b102ae8f018a86df9b7ed864987c77cff89ad30b9e3919db4d26a367d8",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_top_LOD0",
+      "png": "Previews/Distance/olives_C_single_top_LOD0.png",
+      "png_sha256": "801827e11fd6eda913ac26a12fb1e437ae660d9b4166b5715b9e80057b75be76",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_C_single_top_LOD3",
+      "png": "Previews/Distance/olives_C_single_top_LOD3.png",
+      "png_sha256": "4e8001575be2c593cd333c25abaaf861415a2ee313b79716eb1017bc8261306a",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_5m_LOD0",
+      "png": "Previews/Distance/olives_Young_single_5m_LOD0.png",
+      "png_sha256": "8690dc1c1816427a2dc20d0644989e92ab7aa0dcb7202e036f9207a4a4a2f107",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_5m_LOD3",
+      "png": "Previews/Distance/olives_Young_single_5m_LOD3.png",
+      "png_sha256": "1d35ae386ab4075633c150bd7aec8e2db01a2d28015bb852b46e361d0b97a969",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_50m_LOD0",
+      "png": "Previews/Distance/olives_Young_single_50m_LOD0.png",
+      "png_sha256": "4c258a93474d6ac92ea26ff129a4076e0d2e29cc38dd838c207bc7713dd5582e",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_50m_LOD3",
+      "png": "Previews/Distance/olives_Young_single_50m_LOD3.png",
+      "png_sha256": "ab33c596b13f7b26a39f06b542381314f5eaedc93b3e70e9c9eacf2f39271a4f",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_100m_LOD0",
+      "png": "Previews/Distance/olives_Young_single_100m_LOD0.png",
+      "png_sha256": "17675183636f3bb592ffcbd4602a00a0fe8a0ffc8acdcf091ee0e37aa16d9376",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_100m_LOD3",
+      "png": "Previews/Distance/olives_Young_single_100m_LOD3.png",
+      "png_sha256": "384fe3577ed41cdd2c3b70da6298f867c9d866fbb2c2c7d6b541001f830b3c94",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_300m_LOD0",
+      "png": "Previews/Distance/olives_Young_single_300m_LOD0.png",
+      "png_sha256": "7fd4806f5c3be8c3e971b96821c7587d0ffe17d50b531da487a2d8470278f694",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_300m_LOD3",
+      "png": "Previews/Distance/olives_Young_single_300m_LOD3.png",
+      "png_sha256": "b09999707bab5b50729331611dc6564db6acac67c285ce98b84f971d943636df",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_1000m_LOD0",
+      "png": "Previews/Distance/olives_Young_single_1000m_LOD0.png",
+      "png_sha256": "f1a4666df81b0c2f4a46bb903ba88c742c640da81695ae442ffdcdb6498dbc7a",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_1000m_LOD3",
+      "png": "Previews/Distance/olives_Young_single_1000m_LOD3.png",
+      "png_sha256": "3d47628ae73f02529e42c3898c248fd6d6b9705f8822cad22ae0a2ef9aa16114",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_top_LOD0",
+      "png": "Previews/Distance/olives_Young_single_top_LOD0.png",
+      "png_sha256": "f67433d5cfaaf8ef3cf1702e448c33019ed0ff79a181d7f71a293f119f081360",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "olives_Young_single_top_LOD3",
+      "png": "Previews/Distance/olives_Young_single_top_LOD3.png",
+      "png_sha256": "ef13dc6a297fc3c77869c69b3375ba4a0c0d6b1a32c202c0e099beaf2adceec9",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "references_Avocado_single_100m_LOD0",
+      "png": "Previews/Distance/references_Avocado_single_100m_LOD0.png",
+      "png_sha256": "2fa80fff66cff366f8a524ca0065b93dddf0b51e5b891183892287d15e515149",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    },
+    {
+      "id": "references_Lemon_single_100m_LOD0",
+      "png": "Previews/Distance/references_Lemon_single_100m_LOD0.png",
+      "png_sha256": "2ebde1c50044a3c28310a6c23e259c3969a7993bb9700d299c6ea7fbef0f56a7",
+      "source_binding_current": true,
+      "texture_binding_current": true,
+      "capture_before_render": true
+    }
+  ],
+  "selected_magnified_files": [
+    "Previews/Distance/MAGNIFIED_olives_A_single_100m_5x.png",
+    "Previews/Distance/MAGNIFIED_olives_A_single_1000m_16x.png",
+    "Previews/Distance/MAGNIFIED_olives_B_single_100m_4x.png",
+    "Previews/Distance/MAGNIFIED_olives_B_single_1000m_16x.png",
+    "Previews/Distance/MAGNIFIED_olives_C_single_100m_3x.png",
+    "Previews/Distance/MAGNIFIED_olives_C_single_1000m_16x.png",
+    "Previews/Distance/MAGNIFIED_olives_Young_single_100m_10x.png",
+    "Previews/Distance/MAGNIFIED_olives_Young_single_1000m_16x.png",
+    "Previews/Distance/COMPARE100_olives_A_single_100m_LOD0_4x.png",
+    "Previews/Distance/COMPARE100_olives_A_single_100m_LOD3_4x.png",
+    "Previews/Distance/COMPARE100_references_Avocado_single_100m_LOD0_4x.png",
+    "Previews/Distance/COMPARE100_references_Lemon_single_100m_LOD0_4x.png"
+  ],
+  "input_hashes": {
+    "Blend/Olive.blend": {
+      "sha256": "1d23615a81acef972464c620f468d796905c326c9a423640da4f33c8e52a1d82",
+      "bytes": 8217066
+    },
+    "Reports/olives_v004.json": {
+      "sha256": "f395b43ef47e3135a5c3725324c20aaa22e6a3daca55a5ef394be99924b875f8",
+      "bytes": 41592
+    },
+    "Reports/olives_source_readback.json": {
+      "sha256": "58777dab6ccc6b2d4c91df37ab6b0452064efb34a7ca3c46bc08d13cf67203f9",
+      "bytes": 10542
+    },
+    "Reports/olives_v004_notes.md": {
+      "sha256": "e42eae56c18819a95ded69e2a555f49bd142b817024b4e6403b878100a422e3f",
+      "bytes": 1985
+    },
+    "Reports/distance_olives_progress.json": {
+      "sha256": "6fd1b1b541edea6ee24f227cfb02c4f9742b1441f5d3fd516c5f814289b29feb",
+      "bytes": 330937
+    },
+    "Reports/distance_references_progress.json": {
+      "sha256": "a060cf98ee49a62be75f0eff3a412e2c4550c916d6a453e9ca27064ab41be717",
+      "bytes": 16615
+    },
+    "Reports/olive_citrus_comparison.json": {
+      "sha256": "792e11a501240faa544ffef495711d14ca14b6c0e4f797dd6751ff56f64f21e1",
+      "bytes": 1862
+    },
+    "Scripts/build_olives_v004.py": {
+      "sha256": "6fbcc7e94f62e22b657bc4a724110ee849d4657748d0dc9cba26a61dd2e352a3",
+      "bytes": 17430
+    },
+    "Scripts/paz_common.py": {
+      "sha256": "0f23001a0b7ed278891ada413be064518799916d3538b42e7b48caf2d8901d12",
+      "bytes": 13703
+    },
+    "FBX/SM_PazFarm_Olive_A.fbx": {
+      "sha256": "16801c7acb5513dee5d1049839ab79d10b016d49c791966db30bdd524919b0cd",
+      "bytes": 3331212
+    },
+    "Previews/SM_PazFarm_Olive_A.png": {
+      "sha256": "b3823d57c1d1da36cc5846d25fd74138f19e9314f17ed65c98cecce4e2ab450e",
+      "bytes": 1508128
+    },
+    "Textures/T_PazFarm_Olive_Bark_BaseColor.png": {
+      "sha256": "bb121ca2708788e6125672b03309e01671e1c11eaaa86a2bc735ab74c405c5c0",
+      "bytes": 1469942
+    },
+    "Textures/T_PazFarm_Olive_Bark_Normal.png": {
+      "sha256": "9bb7e06addc2c3bc61fe5348790b7333cdf98e3437dd098358fec5f26392f8e1",
+      "bytes": 3454861
+    },
+    "Textures/T_PazFarm_Olive_Bark_ORM.png": {
+      "sha256": "ea4318eed9758cf5e92bb3a01a97f234afb87575bab82af802cb7f6c09bd2880",
+      "bytes": 798754
+    },
+    "Textures/T_PazFarm_Olive_LeafTop_BaseColor.png": {
+      "sha256": "c502cf8fb7805ae77b7fe1e95604cfb99cc6a1618614f76e0903e8542fe51138",
+      "bytes": 1598062
+    },
+    "Textures/T_PazFarm_Olive_LeafTop_Normal.png": {
+      "sha256": "832d2b977c5f2fa14d2ef8fa6b0fe3eb31d28a873c3cdabe3a0e40802819d00e",
+      "bytes": 3093038
+    },
+    "Textures/T_PazFarm_Olive_LeafTop_ORM.png": {
+      "sha256": "b4f6d1be25f3f7329c52b765aca82cdda677f168bc12c11b6ef499120d9e7ed9",
+      "bytes": 640120
+    },
+    "Textures/T_PazFarm_Olive_LeafUnderside_BaseColor.png": {
+      "sha256": "9ff17f7fa344fee9520f9e7dd774582803185f18bf519f1c9d2581c48e36e460",
+      "bytes": 1640663
+    },
+    "Textures/T_PazFarm_Olive_LeafUnderside_Normal.png": {
+      "sha256": "55fa96d0da5b50db7f1717586314fb1a13ddca69ec32f01d22557b561624303e",
+      "bytes": 3094186
+    },
+    "Textures/T_PazFarm_Olive_LeafUnderside_ORM.png": {
+      "sha256": "30c42b2c8f8b6af765ae743bb70181adb1a7ebb387bc639a8b8faa0574319680",
+      "bytes": 637943
+    },
+    "Textures/T_PazFarm_Olive_CrownHull_BaseColor.png": {
+      "sha256": "abaf9408957a545df089ff449a189f05847e6faad2b46a6bb526ff84dbdbd706",
+      "bytes": 758719
+    },
+    "Textures/T_PazFarm_Olive_CrownHull_Normal.png": {
+      "sha256": "2b3369f4b44e10d8de13dce78a99cdbc9f4284f5bbf30aa25e0e0123cf6a2d3c",
+      "bytes": 3093621
+    },
+    "Textures/T_PazFarm_Olive_CrownHull_ORM.png": {
+      "sha256": "e91fece09cbce1286b2a526c185530b35c98cbda982a7bd49c7f00b4ec2fbed3",
+      "bytes": 635850
+    },
+    "FBX/SM_PazFarm_Olive_A_LOD3.fbx": {
+      "sha256": "63fe92485a9175a5572f7c9a7328a0f24c6b1c98b6efe19c18961362a2ce52b1",
+      "bytes": 71836
+    },
+    "Previews/SM_PazFarm_Olive_A_LOD3.png": {
+      "sha256": "d29870a70dc8cf26340342b8010350af8001c62c07baf1f6e39c1366dba9ba28",
+      "bytes": 1282412
+    },
+    "FBX/SM_PazFarm_Olive_B.fbx": {
+      "sha256": "8b14648087883f033f7956112737180cf8df3d7dac00cd96581463c29e2508aa",
+      "bytes": 3326796
+    },
+    "Previews/SM_PazFarm_Olive_B.png": {
+      "sha256": "262a8b44dd9a77a48195f4b51d1f7b98e01231ef89f68f247c0b03130e6f8d1a",
+      "bytes": 1463779
+    },
+    "FBX/SM_PazFarm_Olive_B_LOD3.fbx": {
+      "sha256": "69afabb4858b00ed98db184fdeba79d7fb2936617ad28f52b0ccc5ac12748e0c",
+      "bytes": 71772
+    },
+    "Previews/SM_PazFarm_Olive_B_LOD3.png": {
+      "sha256": "845187cfb74023271a4edd1811b10130b648955630e5c669e1614ab0a5f892f8",
+      "bytes": 1278635
+    },
+    "FBX/SM_PazFarm_Olive_C.fbx": {
+      "sha256": "63963cfaac20ff71c76cdaf2bc392cdd3facf242e52264c3fa8d11e85a2e84f3",
+      "bytes": 3318156
+    },
+    "Previews/SM_PazFarm_Olive_C.png": {
+      "sha256": "a2d6c352009970b57c25094f7a1e1f0dd658488d2f67c268eb3507fe364b0952",
+      "bytes": 1484885
+    },
+    "FBX/SM_PazFarm_Olive_C_LOD3.fbx": {
+      "sha256": "915073131734387b1d4c19860dee678446dd59c4f803217b19b14629b350980a",
+      "bytes": 71708
+    },
+    "Previews/SM_PazFarm_Olive_C_LOD3.png": {
+      "sha256": "193529a40bd2dcc2c4e205353d34e5b60f75378dbd5d844fc5285c063c788f25",
+      "bytes": 1289199
+    },
+    "FBX/SM_PazFarm_Olive_Young.fbx": {
+      "sha256": "ee666ad8e1f751cee62b164cb87cbb8b0fbd213c68ebf4af11a973f9fca9da98",
+      "bytes": 3334300
+    },
+    "Previews/SM_PazFarm_Olive_Young.png": {
+      "sha256": "714df26d92d1530c3c9d40324dbd40d04c459b39c5d963a46863bc0cbe115e27",
+      "bytes": 1429408
+    },
+    "FBX/SM_PazFarm_Olive_Young_LOD3.fbx": {
+      "sha256": "29f87d093604acd7e0f52711c370634f85d1f2198bbeadcbd7ef2107f6d09dbd",
+      "bytes": 71692
+    },
+    "Previews/SM_PazFarm_Olive_Young_LOD3.png": {
+      "sha256": "62f0df440acd327790e4952cc7604bdcbeaa188a033a61d19a754fd2ce05fd10",
+      "bytes": 1247640
+    },
+    "Previews/Distance/olives_A_single_5m_LOD0.png": {
+      "sha256": "b6684f1cf65593ddaa7123dba2b1ba3fa85c8c11a31ff6ee21d4a4d5ba8de7bd",
+      "bytes": 2171264
+    },
+    "Previews/Distance/olives_A_single_5m_LOD0.json": {
+      "sha256": "e9cf59d53ed4434781547209e0868d77786d3e6427f163ec6f32f39628e5d399",
+      "bytes": 6458
+    },
+    "Previews/Distance/olives_A_single_5m_LOD3.png": {
+      "sha256": "595f7f09fc9c60cadcd86b2cf392a0d2105c72d62298a51400d065f6f9ecb2d9",
+      "bytes": 1996580
+    },
+    "Previews/Distance/olives_A_single_5m_LOD3.json": {
+      "sha256": "bafd9ad4bec68ef1b1c1cf8666edaea1783ecf9afedbcdbc3174b3af55fce015",
+      "bytes": 6473
+    },
+    "Previews/Distance/olives_A_single_50m_LOD0.png": {
+      "sha256": "e55b3198aef7662adc1603d65dc7a1024306e8e54db93a3c87add732aa0bf705",
+      "bytes": 481735
+    },
+    "Previews/Distance/olives_A_single_50m_LOD0.json": {
+      "sha256": "3679bd2f031c470ca541b2c7bc67521be12b836e55978c2d768d8466a527d380",
+      "bytes": 6455
+    },
+    "Previews/Distance/olives_A_single_50m_LOD3.png": {
+      "sha256": "dca2dda2c16e79d52a7454c8aafe37bf30b5c3c905acd1cbc5eb57381bc4e2df",
+      "bytes": 473607
+    },
+    "Previews/Distance/olives_A_single_50m_LOD3.json": {
+      "sha256": "d153122c45e62cf079b2636e65a667944ffebe0e38ce937d5bf7d6b6ad22f3e8",
+      "bytes": 6467
+    },
+    "Previews/Distance/olives_A_single_100m_LOD0.png": {
+      "sha256": "e84004f38e6bd2afa0c360f6fc61c3bdafd93bdcb2a45892f1cd619bc9d7e46b",
+      "bytes": 457041
+    },
+    "Previews/Distance/olives_A_single_100m_LOD0.json": {
+      "sha256": "08c0caae30f937deacc0cf2f185590df857016b91b6fd75e203b4871604d419d",
+      "bytes": 6454
+    },
+    "Previews/Distance/olives_A_single_100m_LOD3.png": {
+      "sha256": "f52a821b9b5f518927bb7c93c446e123e8317c086483e65f5f704bc3808be1f9",
+      "bytes": 454624
+    },
+    "Previews/Distance/olives_A_single_100m_LOD3.json": {
+      "sha256": "b5cb2443cbda6bf7a54cbefb24f7bf3e6ddb9f203e3cd45892f8375ae149394c",
+      "bytes": 6461
+    },
+    "Previews/Distance/olives_A_single_300m_LOD0.png": {
+      "sha256": "ecf56f34ab20276167f46a8024459046affbc9acc15e404ee30caba58a526274",
+      "bytes": 446163
+    },
+    "Previews/Distance/olives_A_single_300m_LOD0.json": {
+      "sha256": "e11dcada47b80ae5bdcb37d09d6bbb27244cc0f25ef66bcd045ce3e02add1613",
+      "bytes": 6448
+    },
+    "Previews/Distance/olives_A_single_300m_LOD3.png": {
+      "sha256": "c916a3542228bcd6299fb72c64562e2e6403cc973705b6e69b54fbf434d6c211",
+      "bytes": 446201
+    },
+    "Previews/Distance/olives_A_single_300m_LOD3.json": {
+      "sha256": "0194b8c4e817f878e9672a176f6160ce65b89796e01fadf18dcb7b3d3875095a",
+      "bytes": 6459
+    },
+    "Previews/Distance/olives_A_single_1000m_LOD0.png": {
+      "sha256": "f82df928d755493a6b68a94be547d5e26ab7498076df24b71e03fc6c8612e21f",
+      "bytes": 444181
+    },
+    "Previews/Distance/olives_A_single_1000m_LOD0.json": {
+      "sha256": "93cf5fcdb484814f0b109b1ebeae7a9620400779cdf4910dd70934cb3164aede",
+      "bytes": 6436
+    },
+    "Previews/Distance/olives_A_single_1000m_LOD3.png": {
+      "sha256": "ad38efd550e7032ef8956a68b9f2b0c7a1018725e39cc7de0b31221756f70ff9",
+      "bytes": 444226
+    },
+    "Previews/Distance/olives_A_single_1000m_LOD3.json": {
+      "sha256": "2aab7c8e51f16cdfc9310e5c919356547c916745ad7b3e59aff3c6aee7047224",
+      "bytes": 6438
+    },
+    "Previews/Distance/olives_A_single_top_LOD0.png": {
+      "sha256": "c2e5fd11080b1521596a0dd4fad1f602f72a9be8c6ff8790dc7c9e59a013643a",
+      "bytes": 957301
+    },
+    "Previews/Distance/olives_A_single_top_LOD0.json": {
+      "sha256": "9204e666b9f0be8c5244fd1ab822c934860092e358590f12524d82083d1eb34b",
+      "bytes": 5554
+    },
+    "Previews/Distance/olives_A_single_top_LOD3.png": {
+      "sha256": "d349898e10b30d9f7f25034a883c8816a9208300da9b163ed5115af78c07d6cb",
+      "bytes": 824155
+    },
+    "Previews/Distance/olives_A_single_top_LOD3.json": {
+      "sha256": "bc7208368a73fecc3dded2fdeb8515d88580e6660e976df8048ba331002e96df",
+      "bytes": 5562
+    },
+    "Previews/Distance/olives_B_single_5m_LOD0.png": {
+      "sha256": "2d1e1cd495a205fcf9bc221d613ba296afda55aa14e4c06d7a077d73b1b42aa4",
+      "bytes": 2000634
+    },
+    "Previews/Distance/olives_B_single_5m_LOD0.json": {
+      "sha256": "83634006c2cfefb61a706ecc448344e0b5e0b0e73c936069ae7483eb447b8570",
+      "bytes": 6461
+    },
+    "Previews/Distance/olives_B_single_5m_LOD3.png": {
+      "sha256": "8b9840e5317c0ad2fdd3461998e1a46696c03bb3c0bbe6fb3a9358d4d2614b0d",
+      "bytes": 1913601
+    },
+    "Previews/Distance/olives_B_single_5m_LOD3.json": {
+      "sha256": "b84a177008b54f7989dfe73685beb3caf0de7bb508755e687f835a2c2911f8a4",
+      "bytes": 6468
+    },
+    "Previews/Distance/olives_B_single_50m_LOD0.png": {
+      "sha256": "b998914b59928f8886a56fd20f7711f4c1873abf5d3d7636889ca63de3364c99",
+      "bytes": 489480
+    },
+    "Previews/Distance/olives_B_single_50m_LOD0.json": {
+      "sha256": "c0f435d8ae3f9d5f4dd2e6bed9ac5e5eb652fb2bef6e2734ef8459685043e252",
+      "bytes": 6462
+    },
+    "Previews/Distance/olives_B_single_50m_LOD3.png": {
+      "sha256": "2032a6257447f503d7cad0012f8685f0e18649c002b9a3a2c72ad15a573538df",
+      "bytes": 480351
+    },
+    "Previews/Distance/olives_B_single_50m_LOD3.json": {
+      "sha256": "f37462ec1eba6285b2cccf4258daeaf241961274668a0a35b2fa15f3fa58ed8f",
+      "bytes": 6471
+    },
+    "Previews/Distance/olives_B_single_100m_LOD0.png": {
+      "sha256": "d248e9dcbd835389f12fdc02d1b8ae88ded558d4f6d6187328013763ea77fe27",
+      "bytes": 459526
+    },
+    "Previews/Distance/olives_B_single_100m_LOD0.json": {
+      "sha256": "cd3b209511407a374a1315493eef3ff995ab1af852e8c9f9538f4082b02af825",
+      "bytes": 6459
+    },
+    "Previews/Distance/olives_B_single_100m_LOD3.png": {
+      "sha256": "5e85e4204fd38369610a1b966f717eaac399379656bc0f8cf452e5f123c990ce",
+      "bytes": 457594
+    },
+    "Previews/Distance/olives_B_single_100m_LOD3.json": {
+      "sha256": "4199b4f21bddf11574ae72a7ea179c4c99b5cac68e94a79db6b63f82cd52a657",
+      "bytes": 6465
+    },
+    "Previews/Distance/olives_B_single_300m_LOD0.png": {
+      "sha256": "ef696d7dd543c33abe1bd7e03582e6944dd53bcf89da2c2ccbf6bb8ceec6b0a5",
+      "bytes": 446697
+    },
+    "Previews/Distance/olives_B_single_300m_LOD0.json": {
+      "sha256": "36b9c268f2728cd24aac420ce75b9e3047e580932da0fc7c429e61314ab471fc",
+      "bytes": 6453
+    },
+    "Previews/Distance/olives_B_single_300m_LOD3.png": {
+      "sha256": "955b7f333b487b82d5ca032d5e421c26cd268d6ba8ca33ba5e50d046f1b262ad",
+      "bytes": 446586
+    },
+    "Previews/Distance/olives_B_single_300m_LOD3.json": {
+      "sha256": "3371fced4002263cc7543a3471a2289e0a68dd69204eb45f96601c07f279310b",
+      "bytes": 6459
+    },
+    "Previews/Distance/olives_B_single_1000m_LOD0.png": {
+      "sha256": "a9b416d2fe11dc1df4d72af49123e1c6a9e06f0fd8617c27c9578f870036bb1f",
+      "bytes": 444315
+    },
+    "Previews/Distance/olives_B_single_1000m_LOD0.json": {
+      "sha256": "8e812b958cbf6e954c82d8d9b0b2ed1b5fca366804c1e1ff756956e3e428b56a",
+      "bytes": 6438
+    },
+    "Previews/Distance/olives_B_single_1000m_LOD3.png": {
+      "sha256": "2d44c7832068e9bfa47ab0c24e040c801ca37fd96e3e1f675d684ffc51a0ca46",
+      "bytes": 444350
+    },
+    "Previews/Distance/olives_B_single_1000m_LOD3.json": {
+      "sha256": "9f9d12230c5868198a2ae9e14f7076865564ff968b994723a4cde0901c9fb4c1",
+      "bytes": 6444
+    },
+    "Previews/Distance/olives_B_single_top_LOD0.png": {
+      "sha256": "b49be98556c6e0c5eb9f385b36ef103bc385b94ce080d04825be438db6b7299b",
+      "bytes": 976081
+    },
+    "Previews/Distance/olives_B_single_top_LOD0.json": {
+      "sha256": "3807cb933edd01908b3feecb76fd8592435e9811c796a02f1d6e97b67dd755d9",
+      "bytes": 5559
+    },
+    "Previews/Distance/olives_B_single_top_LOD3.png": {
+      "sha256": "3969196c14978fd022cc4758df82cc4987aaddcf940d2bf6ac4ed83f58cb9478",
+      "bytes": 836045
+    },
+    "Previews/Distance/olives_B_single_top_LOD3.json": {
+      "sha256": "c98970a073efbc4c833d7c8c95bc2dc231adfdef10d5c96a7be700977526bba1",
+      "bytes": 5565
+    },
+    "Previews/Distance/olives_C_single_5m_LOD0.png": {
+      "sha256": "b5af05c30ae3e7b175993968716aa68a16bdfe8620853e20afdb7ef3992b031f",
+      "bytes": 2260497
+    },
+    "Previews/Distance/olives_C_single_5m_LOD0.json": {
+      "sha256": "055c4e21aa328945db2477f90b72665c2e5e3c389101f9ae6d2720a1420221e4",
+      "bytes": 6462
+    },
+    "Previews/Distance/olives_C_single_5m_LOD3.png": {
+      "sha256": "00494ddc22927d2c297b78ba9ca0ef0ecee78bf85cfb92711a7555000e9294a1",
+      "bytes": 2198694
+    },
+    "Previews/Distance/olives_C_single_5m_LOD3.json": {
+      "sha256": "33e26c79d791ec1c132d355779111dd2b6d37151de0f95ff005a6c32c72399f3",
+      "bytes": 6473
+    },
+    "Previews/Distance/olives_C_single_50m_LOD0.png": {
+      "sha256": "5f3618ac4507d1576a001e1842e4492628e620df5fa14c2b857480cceeabf715",
+      "bytes": 509653
+    },
+    "Previews/Distance/olives_C_single_50m_LOD0.json": {
+      "sha256": "0ff94bf73c0560554b5976fc787fa24e58b17d5c387836f144af6a8424fb9da0",
+      "bytes": 6468
+    },
+    "Previews/Distance/olives_C_single_50m_LOD3.png": {
+      "sha256": "f7bfc5bdfade5e89ecd594ce3d3b6cd745be996b9a2d251244eac28a8d2295e9",
+      "bytes": 497209
+    },
+    "Previews/Distance/olives_C_single_50m_LOD3.json": {
+      "sha256": "9803cd25aab4f5231288f5583b51e66e6ff7500f98b799e994e3b2a67d512f97",
+      "bytes": 6468
+    },
+    "Previews/Distance/olives_C_single_100m_LOD0.png": {
+      "sha256": "f57ffc683dd12e03207e20fa78912f25750cb450b75036216a82e3110be18624",
+      "bytes": 465983
+    },
+    "Previews/Distance/olives_C_single_100m_LOD0.json": {
+      "sha256": "c7db6e1ed79a7d7c43a94db5c9c8f082744d44c15b4e0fa5501799b4a401885b",
+      "bytes": 6463
+    },
+    "Previews/Distance/olives_C_single_100m_LOD3.png": {
+      "sha256": "c2fa83f8f478c30c7dc99e9b66657dfa306fcc747f7c6956533383518a214d29",
+      "bytes": 462523
+    },
+    "Previews/Distance/olives_C_single_100m_LOD3.json": {
+      "sha256": "0990a9c4f947999af6af97c4aa2dcb2cbd3f491e50134a9ab047e4a99d65454a",
+      "bytes": 6465
+    },
+    "Previews/Distance/olives_C_single_300m_LOD0.png": {
+      "sha256": "9145c31dd62a5d45fd58e63d1823f87ee026bcc96d7ee11e7d033dea3496e770",
+      "bytes": 447863
+    },
+    "Previews/Distance/olives_C_single_300m_LOD0.json": {
+      "sha256": "2046e0e10f493731ab79841822f3210266654492fa8a674f1f18f3d346d3e1a0",
+      "bytes": 6448
+    },
+    "Previews/Distance/olives_C_single_300m_LOD3.png": {
+      "sha256": "f17e653fdfc52bbd82233dd66823f960774848004f448038a5ff156fc1147237",
+      "bytes": 447872
+    },
+    "Previews/Distance/olives_C_single_300m_LOD3.json": {
+      "sha256": "c4359f2fc1d529f7a4f17544d049365b44986389389885d3d304e0c69dcc4149",
+      "bytes": 6456
+    },
+    "Previews/Distance/olives_C_single_1000m_LOD0.png": {
+      "sha256": "73934774aa337f71ccc6fd93785cb33cd6ad37344189c01beb6cb0d2403da3cd",
+      "bytes": 444402
+    },
+    "Previews/Distance/olives_C_single_1000m_LOD0.json": {
+      "sha256": "2792666f00cb9790d18b696ca8ab663abeea82f18052e1960c907f795358f939",
+      "bytes": 6447
+    },
+    "Previews/Distance/olives_C_single_1000m_LOD3.png": {
+      "sha256": "27fed6b102ae8f018a86df9b7ed864987c77cff89ad30b9e3919db4d26a367d8",
+      "bytes": 444468
+    },
+    "Previews/Distance/olives_C_single_1000m_LOD3.json": {
+      "sha256": "da6deb36cc47dcdd66f2e921bb0a56853d29e1940d4d7decb3cc227f6a7fed38",
+      "bytes": 6442
+    },
+    "Previews/Distance/olives_C_single_top_LOD0.png": {
+      "sha256": "801827e11fd6eda913ac26a12fb1e437ae660d9b4166b5715b9e80057b75be76",
+      "bytes": 1000889
+    },
+    "Previews/Distance/olives_C_single_top_LOD0.json": {
+      "sha256": "23f18ce3b4477bfc51510a976121f8d6761a6c90b0cf9826a89dfe911c51a862",
+      "bytes": 5556
+    },
+    "Previews/Distance/olives_C_single_top_LOD3.png": {
+      "sha256": "4e8001575be2c593cd333c25abaaf861415a2ee313b79716eb1017bc8261306a",
+      "bytes": 881630
+    },
+    "Previews/Distance/olives_C_single_top_LOD3.json": {
+      "sha256": "1a11f995713383a278044e800aa0aba828675aa6af876fac530f1344cdcfaf09",
+      "bytes": 5563
+    },
+    "Previews/Distance/olives_Young_single_5m_LOD0.png": {
+      "sha256": "8690dc1c1816427a2dc20d0644989e92ab7aa0dcb7202e036f9207a4a4a2f107",
+      "bytes": 808024
+    },
+    "Previews/Distance/olives_Young_single_5m_LOD0.json": {
+      "sha256": "2a118bce1d6dbbe05f736d98e5ec2095fcb8352141477c295e0f0dfca0f9286b",
+      "bytes": 6474
+    },
+    "Previews/Distance/olives_Young_single_5m_LOD3.png": {
+      "sha256": "1d35ae386ab4075633c150bd7aec8e2db01a2d28015bb852b46e361d0b97a969",
+      "bytes": 738610
+    },
+    "Previews/Distance/olives_Young_single_5m_LOD3.json": {
+      "sha256": "e57c5ed96167690fc2c9af1804670c065b9e1e9d1ac8144d8a80579ccbc8d65d",
+      "bytes": 6481
+    },
+    "Previews/Distance/olives_Young_single_50m_LOD0.png": {
+      "sha256": "4c258a93474d6ac92ea26ff129a4076e0d2e29cc38dd838c207bc7713dd5582e",
+      "bytes": 453085
+    },
+    "Previews/Distance/olives_Young_single_50m_LOD0.json": {
+      "sha256": "175e146e8d5358b9d1306d94ec1b3ac6aebc0b7fd8f6b9c160d63000df2b4900",
+      "bytes": 6463
+    },
+    "Previews/Distance/olives_Young_single_50m_LOD3.png": {
+      "sha256": "ab33c596b13f7b26a39f06b542381314f5eaedc93b3e70e9c9eacf2f39271a4f",
+      "bytes": 452078
+    },
+    "Previews/Distance/olives_Young_single_50m_LOD3.json": {
+      "sha256": "3e1a7a4c00df406a4b2d0a4da4fee996c655b3a22af6c3a8f98b71bd8a798256",
+      "bytes": 6472
+    },
+    "Previews/Distance/olives_Young_single_100m_LOD0.png": {
+      "sha256": "17675183636f3bb592ffcbd4602a00a0fe8a0ffc8acdcf091ee0e37aa16d9376",
+      "bytes": 446815
+    },
+    "Previews/Distance/olives_Young_single_100m_LOD0.json": {
+      "sha256": "89309e80365e993c382b8da27ba4c470b1585195f8b4a8a177986ff89c877907",
+      "bytes": 6455
+    },
+    "Previews/Distance/olives_Young_single_100m_LOD3.png": {
+      "sha256": "384fe3577ed41cdd2c3b70da6298f867c9d866fbb2c2c7d6b541001f830b3c94",
+      "bytes": 446826
+    },
+    "Previews/Distance/olives_Young_single_100m_LOD3.json": {
+      "sha256": "b191b4d639daa971b115ef3ef35c1d74e9aa643be21a036f44baab5a8a07ad09",
+      "bytes": 6465
+    },
+    "Previews/Distance/olives_Young_single_300m_LOD0.png": {
+      "sha256": "7fd4806f5c3be8c3e971b96821c7587d0ffe17d50b531da487a2d8470278f694",
+      "bytes": 444435
+    },
+    "Previews/Distance/olives_Young_single_300m_LOD0.json": {
+      "sha256": "057670c4d84766bbac5043035d37e95911338d2e61c17761b45d0539b5cd14e0",
+      "bytes": 6455
+    },
+    "Previews/Distance/olives_Young_single_300m_LOD3.png": {
+      "sha256": "b09999707bab5b50729331611dc6564db6acac67c285ce98b84f971d943636df",
+      "bytes": 444544
+    },
+    "Previews/Distance/olives_Young_single_300m_LOD3.json": {
+      "sha256": "7838be36fe54d4f33b88fdadb6dd7bf2208b9c45af7fa3125fb2f97cc1bbc624",
+      "bytes": 6460
+    },
+    "Previews/Distance/olives_Young_single_1000m_LOD0.png": {
+      "sha256": "f1a4666df81b0c2f4a46bb903ba88c742c640da81695ae442ffdcdb6498dbc7a",
+      "bytes": 443819
+    },
+    "Previews/Distance/olives_Young_single_1000m_LOD0.json": {
+      "sha256": "ea9debac5a060e2a111a0b13f6d4cfbcc46727f11d0d29bc61ffbba0e66b508a",
+      "bytes": 6343
+    },
+    "Previews/Distance/olives_Young_single_1000m_LOD3.png": {
+      "sha256": "3d47628ae73f02529e42c3898c248fd6d6b9705f8822cad22ae0a2ef9aa16114",
+      "bytes": 443842
+    },
+    "Previews/Distance/olives_Young_single_1000m_LOD3.json": {
+      "sha256": "4db67ff7b14d3753c54258954e0587a810c8db1f98793a8ac74a3503978a6fb9",
+      "bytes": 6346
+    },
+    "Previews/Distance/olives_Young_single_top_LOD0.png": {
+      "sha256": "f67433d5cfaaf8ef3cf1702e448c33019ed0ff79a181d7f71a293f119f081360",
+      "bytes": 1041353
+    },
+    "Previews/Distance/olives_Young_single_top_LOD0.json": {
+      "sha256": "641236ea12f0ef8c8f8182c9de39eb920758f3f9fb7e21d31b0ce4cf82296100",
+      "bytes": 5569
+    },
+    "Previews/Distance/olives_Young_single_top_LOD3.png": {
+      "sha256": "ef13dc6a297fc3c77869c69b3375ba4a0c0d6b1a32c202c0e099beaf2adceec9",
+      "bytes": 896084
+    },
+    "Previews/Distance/olives_Young_single_top_LOD3.json": {
+      "sha256": "3983390f622ce738926633c81322a080feca323a93a4c50acdcea1c642e130f5",
+      "bytes": 5575
+    },
+    "Previews/Distance/references_Avocado_single_100m_LOD0.png": {
+      "sha256": "2fa80fff66cff366f8a524ca0065b93dddf0b51e5b891183892287d15e515149",
+      "bytes": 467308
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Blend/Avocado.blend": {
+      "sha256": "14aa0ee6caa1a2a0d2b98f34c82bc6d0f762cd221441bbeefded422d3ea2761f",
+      "bytes": 4919238
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoBark_BaseColor.png": {
+      "sha256": "b973bcd1738af855e9739ec5e5944f73d910214d3f6079dd6cc563baed43c939",
+      "bytes": 1391599
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoBark_Normal.png": {
+      "sha256": "c920092f1da5b9d3b9f8f9b6f828193261096ae07858ff237ba480f3dc731765",
+      "bytes": 3454883
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoBark_ORM.png": {
+      "sha256": "b1beb22a59fef78081fe8a2d5eea571d4e306979fd9c69097381f473dfda1fd5",
+      "bytes": 798855
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoFruit_BaseColor.png": {
+      "sha256": "3d248efdd7d88a3b7e8be18ff24829990e0001f811f0d4fcd9dbc0c98b6afb4c",
+      "bytes": 1287713
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoFruit_Normal.png": {
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4",
+      "bytes": 3093198
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoFruit_ORM.png": {
+      "sha256": "263bbb5a8e3bb39a317908721a6e4a63e2802c9a38b53d245ef8e67bc3894344",
+      "bytes": 643810
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf0_BaseColor.png": {
+      "sha256": "9173dd60acc887348e34b81f4f122be745471d49cbc61463fab64ef863cee894",
+      "bytes": 1304107
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf0_Normal.png": {
+      "sha256": "cfbb03190314643468789e6082784ae80832e3b9407af387b232f255a3906d62",
+      "bytes": 2316402
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf0_ORM.png": {
+      "sha256": "3ffeebad8a3d2c936b3a5ffcd10284235ad0efbc0a74e909c8fcd7b4992a1632",
+      "bytes": 117757
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf1_BaseColor.png": {
+      "sha256": "028d9f0059f6e8908d342388ba933fc3117872df14074e7b21392a5522ae86f1",
+      "bytes": 1348693
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf1_Normal.png": {
+      "sha256": "8b605151bdf7a0a3fa7fadec9997dae67aa1757794f44761982b05823a80aec4",
+      "bytes": 2317270
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf1_ORM.png": {
+      "sha256": "6c2823a14d0239315820b0905b0339df186fb6167ea36b1992ffb7514628755b",
+      "bytes": 117299
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf2_BaseColor.png": {
+      "sha256": "7c25929779fc79ff17a32a307c617688e0c24aadccbb810177d4b485b3aa3e4b",
+      "bytes": 1197091
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf2_Normal.png": {
+      "sha256": "3a48566dbeeb241ee16fa256b87d79bde271940f16943d4044ebc778cef800d9",
+      "bytes": 2316788
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_AvocadoLeaf2_ORM.png": {
+      "sha256": "60dcf71c0ffb66c4b1f96a504c584f7a1813b043aebdd2be22877a77ae451c40",
+      "bytes": 117223
+    },
+    "Previews/Distance/references_Avocado_single_100m_LOD0.json": {
+      "sha256": "b9d016d43488e8639d9836479b2c2b325bc3b600a4c2ae0ac4e6e003d62fd900",
+      "bytes": 7232
+    },
+    "Previews/Distance/references_Lemon_single_100m_LOD0.png": {
+      "sha256": "2ebde1c50044a3c28310a6c23e259c3969a7993bb9700d299c6ea7fbef0f56a7",
+      "bytes": 453646
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Blend/Lemon.blend": {
+      "sha256": "e775004b677bbbeb5a8ca463c17f51abdff621ed96a89e5d7f968c13a35b770f",
+      "bytes": 3163970
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonBark_BaseColor.png": {
+      "sha256": "b973bcd1738af855e9739ec5e5944f73d910214d3f6079dd6cc563baed43c939",
+      "bytes": 1391599
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonBark_Normal.png": {
+      "sha256": "c920092f1da5b9d3b9f8f9b6f828193261096ae07858ff237ba480f3dc731765",
+      "bytes": 3454883
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonBark_ORM.png": {
+      "sha256": "b1beb22a59fef78081fe8a2d5eea571d4e306979fd9c69097381f473dfda1fd5",
+      "bytes": 798855
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonFruit_BaseColor.png": {
+      "sha256": "a8fb7693b2bd56283fa24e80474638f71e1fb1cf65183c7b699f27701df202c4",
+      "bytes": 1681512
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonFruit_Normal.png": {
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4",
+      "bytes": 3093198
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonFruit_ORM.png": {
+      "sha256": "263bbb5a8e3bb39a317908721a6e4a63e2802c9a38b53d245ef8e67bc3894344",
+      "bytes": 643810
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf0_BaseColor.png": {
+      "sha256": "5cff6e2bf9dbba919b7a92b76846170f946aac56ed875403485307d00a0d4bc2",
+      "bytes": 1350642
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf0_Normal.png": {
+      "sha256": "cfbb03190314643468789e6082784ae80832e3b9407af387b232f255a3906d62",
+      "bytes": 2316402
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf0_ORM.png": {
+      "sha256": "2117333603b430f31a3e4ff783453d49836b34fd4deeb6de13a55f6fe1467ac2",
+      "bytes": 117757
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf1_BaseColor.png": {
+      "sha256": "cca83ba0298e9c19008acef24e53280bc5c5b4168e457b80867270690e1bc8ae",
+      "bytes": 1405823
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf1_Normal.png": {
+      "sha256": "8b605151bdf7a0a3fa7fadec9997dae67aa1757794f44761982b05823a80aec4",
+      "bytes": 2317270
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf1_ORM.png": {
+      "sha256": "27a7f4acadf83067a644b645c555003c8a2915552fd10f96cbcb2d35d0f2b8f8",
+      "bytes": 117299
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf2_BaseColor.png": {
+      "sha256": "355d5d66d03070e11e34cd826a1eaec24818870792623266647990544c9a8cf2",
+      "bytes": 1256415
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf2_Normal.png": {
+      "sha256": "3a48566dbeeb241ee16fa256b87d79bde271940f16943d4044ebc778cef800d9",
+      "bytes": 2316788
+    },
+    "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/PazFarm_2026-10-08/AstraModels/Revisions/VisualFix_v002/Textures/T_PazFarm_LemonLeaf2_ORM.png": {
+      "sha256": "2155afb095fe3af148dab80bc24cb0f047eecd2ac7898f059f3bccfe14918acc",
+      "bytes": 117223
+    },
+    "Previews/Distance/references_Lemon_single_100m_LOD0.json": {
+      "sha256": "de835be7aa254e45b691610e25c75c593de1d273d1e172b543e02dc826910797",
+      "bytes": 7186
+    },
+    "Previews/Distance/MAGNIFIED_olives_A_single_100m_5x.png": {
+      "sha256": "c43dff87e618753e2cb1638bf15524a817461e0ec38683f38de807ea3113647e",
+      "bytes": 22129
+    },
+    "Previews/Distance/MAGNIFIED_olives_A_single_1000m_16x.png": {
+      "sha256": "096261e7d93839ce2564eb079cc98b7f751d1cfed25f53ff025907e80f0a870b",
+      "bytes": 3122
+    },
+    "Previews/Distance/MAGNIFIED_olives_B_single_100m_4x.png": {
+      "sha256": "65d7d44afcc77e3ecd7ebdb8ad2badfb3ee9a7c1dce07f01880e002ce9b6ec17",
+      "bytes": 24315
+    },
+    "Previews/Distance/MAGNIFIED_olives_B_single_1000m_16x.png": {
+      "sha256": "c7f7cde0872c8849c5fe097110b964d9bb2c68327122ef6c00af9af041a8a24f",
+      "bytes": 3403
+    },
+    "Previews/Distance/MAGNIFIED_olives_C_single_100m_3x.png": {
+      "sha256": "e27bf529f91ff94613d7bd369839b5f815a74ba3cd3b9cb26a36058554b46a1f",
+      "bytes": 30653
+    },
+    "Previews/Distance/MAGNIFIED_olives_C_single_1000m_16x.png": {
+      "sha256": "14265a2145bd8728fa9ffca26c7d897d00705fd72813340ad1d7f7aea72ae79f",
+      "bytes": 4149
+    },
+    "Previews/Distance/MAGNIFIED_olives_Young_single_100m_10x.png": {
+      "sha256": "5d353b2b41a3303c2e4bb0c7072f53bc19f0feda03dcd892a8b6fee758499f57",
+      "bytes": 9043
+    },
+    "Previews/Distance/MAGNIFIED_olives_Young_single_1000m_16x.png": {
+      "sha256": "c6f933e8cfb86ed72517aa97444cb47f478ec93042fc7cd221e4a9dbaf9d80b8",
+      "bytes": 1561
+    },
+    "Previews/Distance/COMPARE100_olives_A_single_100m_LOD0_4x.png": {
+      "sha256": "e33d3d5addc7cb418774e8121577dde6ee847c5af1cd7895bc727752b32aaaa4",
+      "bytes": 13874
+    },
+    "Previews/Distance/COMPARE100_olives_A_single_100m_LOD3_4x.png": {
+      "sha256": "8c2a3aa769dd86722cea3eb871bfc10c7a733a7032aba2859269ee137711465f",
+      "bytes": 12712
+    },
+    "Previews/Distance/COMPARE100_references_Avocado_single_100m_LOD0_4x.png": {
+      "sha256": "895bc732e5304a999d8629af5043a6825a05f9d9ef0304ca807ff85d662389ee",
+      "bytes": 23020
+    },
+    "Previews/Distance/COMPARE100_references_Lemon_single_100m_LOD0_4x.png": {
+      "sha256": "078f7ac52bd53b58a77a78b022439728390a9d62497c6d3a4171e0112cacfbde",
+      "bytes": 11590
+    }
+  },
+  "hash_capture": "Hashes captured during this independent review and rechecked immediately before writing this receipt. They are not a claim of capture before the earlier hero renders. Frame sidecars separately contain their measured pre-render source/texture bindings.",
+  "input_hashes_unchanged": true,
+  "excluded_from_readiness": "Whole-delivery completion, grass/vine acceptance, native editor work and root fresh-FBX validation."
+}

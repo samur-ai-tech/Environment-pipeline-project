@@ -1,0 +1,208 @@
+{
+  "utc_start": "2026-10-09T23:04:00.975168+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\mat_probe.py",
+  "script_sha256": "c85fd42e0d1d6e129ba0be41a8eded74c89d1f4dbee734133457a323e9c87586",
+  "args": {
+    "meshes": [
+      "/Game/Modular_Rural_Cabin/Meshes/Foliage/SM_Pine_Tree_01",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/tree01/SM_green-tree01"
+    ],
+    "expected_pid": 30204,
+    "script_sha256": "c85fd42e0d1d6e129ba0be41a8eded74c89d1f4dbee734133457a323e9c87586",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\mat_probe.py"
+  },
+  "editor_pid": 30204,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "meshes": {
+        "SM_Pine_Tree_01": [
+          {
+            "slot": 0,
+            "mi": "/Game/Modular_Rural_Cabin/Materials/Instances/MI_Pine_Tree_Bark",
+            "base": "/Game/Modular_Rural_Cabin/Materials/Masters/MM_Tree_Trunk",
+            "blend": "BLEND_OPAQUE",
+            "clip": 0.33329999446868896,
+            "two_sided": false,
+            "tex": {
+              "DET": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_TT_Pine_Tree_Bark_DET",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E1620F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_MASKS: 2>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              },
+              "Normal": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_TT_Pine_Tree_Bark_Normal",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E162CF0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              },
+              "Basecolor": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_TT_Pine_Tree_Bark_BaseColor",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E1614F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              }
+            },
+            "override_clip": [
+              false,
+              0.33329999446868896
+            ]
+          },
+          {
+            "slot": 1,
+            "mi": "/Game/Modular_Rural_Cabin/Materials/Instances/MI_Pine_Tree_Branches",
+            "base": "/Game/Modular_Rural_Cabin/Materials/Masters/MM_Tree_Branches",
+            "blend": "BLEND_MASKED",
+            "clip": 0.33329999446868896,
+            "two_sided": true,
+            "tex": {
+              "Normal": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_UT_Pine_Tree_Branches_Normal",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E1650F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              },
+              "Basecolor": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_UT_Pine_Tree_Branches_Basecolor",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E1638F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              },
+              "DET": {
+                "tex": "/Game/Modular_Rural_Cabin/Textures/Unique/T_UT_Pine_Tree_Branches_DET",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E1644F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_MASKS: 2>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              }
+            },
+            "override_clip": [
+              false,
+              0.33329999446868896
+            ]
+          }
+        ],
+        "SM_green-tree01": [
+          {
+            "slot": 0,
+            "mi": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/tree01/MI_dead-tree-lod3_master_Inst_Inst",
+            "base": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/M_dead-tree-lod3",
+            "blend": "BLEND_MASKED",
+            "clip": 0.75,
+            "two_sided": false,
+            "tex": {
+              "Diffuse": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/lod03_diffuse2",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E4150F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              }
+            },
+            "override_clip": [
+              false,
+              0.75
+            ]
+          },
+          {
+            "slot": 1,
+            "mi": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/MI_tree_dead_bark_master_Inst_lod00",
+            "base": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/M_tree_dead_bark",
+            "blend": "BLEND_MASKED",
+            "clip": 0.33329999446868896,
+            "two_sided": true,
+            "tex": {
+              "WindTurbulenceVectorAndGustMagnitude": {
+                "tex": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E3F86F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_VECTOR_DISPLACEMENTMAP: 5>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              },
+              "X-Vector And X-Extent Texture": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/T_lod00_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_2",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E4138F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              },
+              "Position and Index Texture": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/T_lod00_rgb_PivotPos_a_ParentIndexInt_UV_2",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E4132F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_HDR: 6>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              }
+            },
+            "override_clip": [
+              false,
+              0.33329999446868896
+            ]
+          },
+          {
+            "slot": 2,
+            "mi": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/tree01/MI_dead-tree-leafs_master_Inst_Inst",
+            "base": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/M_dead-tree-leafs",
+            "blend": "BLEND_MASKED",
+            "clip": 0.4000000059604645,
+            "two_sided": true,
+            "tex": {
+              "Diffuse": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/dead_tree_leafs_green_diffuse",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x00000154D01CC2F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              },
+              "WindTurbulenceVectorAndGustMagnitude": {
+                "tex": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/WindTurblenceVectorAndGustMagnitude",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E3F86F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_VECTOR_DISPLACEMENTMAP: 5>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              },
+              "X-Vector And X-Extent Texture": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/T_lod00_rgb_XVector_a_XExtentDividedby2048reaches2048_UV_2",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E4138F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_DEFAULT: 0>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              },
+              "Position and Index Texture": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/DeadTrees/tree01/T_lod00_rgb_PivotPos_a_ParentIndexInt_UV_2",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x000001550E4132F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_HDR: 6>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_NO_MIPMAPS: 13>"
+              },
+              "Normal": {
+                "tex": "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/dead_tree_leafs_green_normal",
+                "do_scale_mips_for_alpha_coverage": "False",
+                "alpha_coverage_thresholds": "<Struct 'Vector4' (0x00000154D01CC8F0) {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}>",
+                "compression_settings": "<TextureCompressionSettings.TC_NORMALMAP: 1>",
+                "mip_gen_settings": "<TextureMipGenSettings.TMGS_FROM_TEXTURE_GROUP: 0>"
+              }
+            },
+            "override_clip": [
+              false,
+              0.4000000059604645
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-09T23:04:01.284717+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,292 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_Barn",
+      "size_metres_W_D_H": [
+        20.57,
+        12.585,
+        8.11338
+      ],
+      "bounds_metres": [
+        [
+          -10.28499984741211,
+          -6.292500019073486,
+          -0.019999999552965164
+        ],
+        [
+          10.28499984741211,
+          6.292500019073486,
+          8.0933837890625
+        ]
+      ],
+      "triangles_LOD0": 17168,
+      "triangle_budget": 30000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Barn_WallGalvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_Normal.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofPaintedGrey",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_DarkHardware",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_DarkHardware_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_Normal.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_ConcretePlinth",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_Normal.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofCharcoal_v002",
+          "textures": [
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_BaseColor.png",
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_Normal.png",
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Offline v002 roof-only revision. No native import or rendering has been performed.",
+        "Source wall footprint remains 20 x 12 m, eave 6 m, ridge 8 m. Do not bake the existing 25.8 x 20.5 m map instance scale into this mesh.",
+        "Original four material slots retained in exact order. New slot 4 M_PazFarm_Barn_RoofCharcoal_v002 is assigned only to roof sheets, ridge, eave and verge flashings.",
+        "Roof corrugation relief reduced from 0.045 m to 0.006 m. Corrugation pitch, wall corrugation, doors and trim are unchanged.",
+        "Roof BaseColor PNG median target is sRGB 70,62,68; roughness 0.94, metallic 0, Blender Specular IOR Level 0.20, flat normal map. Appearance matching still depends on native exposure.",
+        "Exact original pivot, orientation and all three UCX boxes retained. Ground-centred origin; source front -Y, Z up.",
+        "All geometry/textures original CC0 artwork. No satellite pixels used for textures."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Barn_00",
+        "UCX_SM_PazFarm_Barn_01",
+        "UCX_SM_PazFarm_Barn_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Barn.fbx",
+      "preview": "Previews/SM_PazFarm_Barn.png",
+      "nominal_size_metres": [
+        20.0,
+        12.0,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "unchanged_nonroof_vertices": 5572,
+        "changed_nonroof_vertices": 0,
+        "original_UCX_exact": true,
+        "original_material_slots_preserved": [
+          "M_PazFarm_Barn_WallGalvanized",
+          "M_PazFarm_Barn_RoofPaintedGrey",
+          "M_PazFarm_Barn_DarkHardware",
+          "M_PazFarm_Barn_ConcretePlinth"
+        ],
+        "new_roof_slot_index": 4,
+        "original_blend_fbx_hashes_unchanged": true
+      },
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Barn_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -6.0,
+              0.0
+            ],
+            [
+              10.0,
+              6.0,
+              6.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            12.0,
+            6.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -4.5,
+              6.0
+            ],
+            [
+              10.0,
+              4.5,
+              7.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            9.0,
+            1.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -1.5,
+              7.0
+            ],
+            [
+              10.0,
+              1.5,
+              8.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            3.0,
+            1.0
+          ]
+        }
+      ],
+      "blend": "Blend/Barn.blend"
+    }
+  ],
+  "extra": {
+    "status": "Offline candidate ready for import and native verification",
+    "original_hashes_unchanged": {
+      "Blend\\Barn.blend": "0648f2061248c045c0310da967fdbbfe5e32c55db1b502d8b7c15b4a88b2fb68",
+      "FBX\\SM_PazFarm_Barn.fbx": "0addf958a400065a19b1eeeca3b943083377fb9eae46fc8d9917ff63240b8fa8"
+    },
+    "retained_texture_hashes": [
+      {
+        "texture": "Textures\\T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+        "sha256": "5a39904ba8fec7f57a588781433ddddeb15a42a0b558855d50969e98a296c205"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_WallGalvanized_Normal.png",
+        "sha256": "1d117042c321bd4c59cfd85c5d41ef285edb01ba7c8791a8a4e911b99dbf5f2d"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_WallGalvanized_ORM.png",
+        "sha256": "681a66644606c3a6df1a5cf0fb3c981a8f609d8f1a689ddec2c893a129cf32a8"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+        "sha256": "5d97f92c16c51ac9ee6b67d0787a4b7aa5c1e5a955e8e03d2b6f672bd2791b3d"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+        "sha256": "99cd66037344a2e2428279395e84f9a88ddaf32a8029b0c167a964691de42e8e"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_RoofPaintedGrey_ORM.png",
+        "sha256": "89c58d54ad0e6b9d8119a35c2c93396782c5124d48fb8a774612ae4661946cb1"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_DarkHardware_BaseColor.png",
+        "sha256": "26988defea19a7dde777c051ce80ee6d15edeb66610962280c99f08fb84dd28d"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_DarkHardware_Normal.png",
+        "sha256": "fc1abc4523b882d9adf08dd0aed76c90458dd7ff4d4d5529e85d66bacb3da210"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_DarkHardware_ORM.png",
+        "sha256": "2f4039fb55a092c5c9299954ba9b05828c94fbc0ecf85b1ac9bd34afdd9d1399"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+        "sha256": "3813a9d6d466b3149b1fc90f3f9a9914d657dfbf9836404515740bb059490261"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_ConcretePlinth_Normal.png",
+        "sha256": "191c6ee5bdd6893c8b75408117c912f46415481c9b89b7ef2b31ed55e4fe6275"
+      },
+      {
+        "texture": "Textures\\T_PazFarm_Barn_ConcretePlinth_ORM.png",
+        "sha256": "71f7e421bbc1e742baaf67314eea23a1d80d9850fb839db4e042b6e8c252e65f"
+      }
+    ],
+    "roof_material_parameters": {
+      "target_srgb": [
+        70,
+        62,
+        68
+      ],
+      "roughness": 0.94,
+      "metallic": 0.0,
+      "specular_ior_level": 0.2,
+      "normal": "flat"
+    },
+    "slot_mapping": {
+      "0": "M_PazFarm_Barn_WallGalvanized",
+      "1": "M_PazFarm_Barn_RoofPaintedGrey (non-roof trim, uprights and sliding door; unchanged)",
+      "2": "M_PazFarm_Barn_DarkHardware",
+      "3": "M_PazFarm_Barn_ConcretePlinth",
+      "4": "M_PazFarm_Barn_RoofCharcoal_v002 (roof only; NEW)"
+    },
+    "changes": {
+      "roof_relief_before_m": 0.045,
+      "roof_relief_after_m": 0.006,
+      "nonroof_geometry_changed": false,
+      "UCX_changed": false
+    },
+    "native_verification": false,
+    "source_script": "Scripts/build_barn_v002.py"
+  }
+}

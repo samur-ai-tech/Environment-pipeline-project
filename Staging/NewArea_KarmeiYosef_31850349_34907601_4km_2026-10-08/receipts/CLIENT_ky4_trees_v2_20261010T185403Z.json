@@ -1,0 +1,100 @@
+{
+  "utc_start": "2026-10-10T18:54:03.998990+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\ky4_trees_v2.py",
+  "script_sha256": "5e06a37695a8241791bd16e8bf3a2743c4bcb5ffee0ae5d0e1a7b344c0e9338a",
+  "args": {
+    "expected_pid": 34872,
+    "step": "graph",
+    "script_sha256": "5e06a37695a8241791bd16e8bf3a2743c4bcb5ffee0ae5d0e1a7b344c0e9338a",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\ky4_trees_v2.py"
+  },
+  "editor_pid": 34872,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "utc": "2026-10-10T18:54:04.678680+00:00",
+      "pid": 34872,
+      "graph": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PCG/PCG_KY4_Zones_v002",
+      "branches": {
+        "forest": {
+          "mask": "ForestTrees",
+          "pps": 0.033,
+          "seed": 100
+        },
+        "forest_shrubs": {
+          "mask": "Forest_P3",
+          "pps": 0.004,
+          "seed": 101
+        },
+        "orchard": {
+          "mask": "Orchard_P3",
+          "pps": 0.027777777777777776,
+          "seed": 102
+        },
+        "vineyard": {
+          "mask": "Vineyard_P3",
+          "pps": 0.0625,
+          "seed": 103
+        },
+        "scrub": {
+          "mask": "ScrubMix_P3",
+          "pps": 0.008,
+          "seed": 104
+        },
+        "scrub_trees": {
+          "mask": "ScrubTrees",
+          "pps": 0.0086,
+          "seed": 105
+        },
+        "grass": {
+          "mask": "Grass_P3",
+          "pps": 0.004,
+          "seed": 106
+        },
+        "crop": {
+          "mask": "Crop_P3",
+          "pps": 0.01,
+          "seed": 107
+        },
+        "sat_trees": {
+          "mask": "SatTrees",
+          "pps": 0.012,
+          "seed": 108
+        },
+        "field_trees": {
+          "mask": "OpenField",
+          "pps": 6e-05,
+          "seed": 109
+        }
+      },
+      "meshes_checked_against": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PCG/PCG_KY4_Zones",
+      "filters_keep_lesser_than": [
+        [
+          "Dirt_Path",
+          0.05
+        ],
+        [
+          "Sand_Path",
+          0.05
+        ],
+        [
+          "Sand_02",
+          0.5
+        ]
+      ],
+      "dirty": [
+        [
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial"
+        ],
+        []
+      ]
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T18:54:04.681680+00:00",
+  "exit_code": 0
+}

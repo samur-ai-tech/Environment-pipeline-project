@@ -1,0 +1,43 @@
+{
+  "utc_start": "2026-10-10T01:06:22.744409+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\hlod_readback.py",
+  "script_sha256": "1dd35640718fe34efc0e7d5422827c574ef92522a9adfc20eefe065e8b788b6b",
+  "args": {
+    "expected_pid": 19484,
+    "script_sha256": "1dd35640718fe34efc0e7d5422827c574ef92522a9adfc20eefe065e8b788b6b",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\hlod_readback.py"
+  },
+  "editor_pid": 19484,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "hlod_actors": 486,
+      "spatially_loaded": {
+        "True": 486
+      },
+      "runtime_grids": {
+        "MainPartition:HLODLayer_Instanced": 116,
+        "MainPartition:HLODLayer_Merged": 370
+      },
+      "actors_by_main_content_and_spatial": {
+        "building|spatial=True": 164,
+        "vegetation|spatial=True": 255,
+        "other:/Game/__ExternalActors__/Project/Areas/KarmeiYosef_31850349_|spatial=True": 64,
+        "farm|spatial=True": 3
+      },
+      "instances_by_content_and_spatial": {
+        "vegetation|spatial=True": 109893,
+        "building|spatial=True": 72038,
+        "other:/Game/__ExternalActors__/Project/Areas/KarmeiYosef_31850349_|spatial=True": 64,
+        "farm|spatial=True": 3
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T01:06:22.845548+00:00",
+  "exit_code": 0
+}

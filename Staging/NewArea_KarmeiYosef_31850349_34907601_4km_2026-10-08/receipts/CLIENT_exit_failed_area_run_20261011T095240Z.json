@@ -1,0 +1,40 @@
+{
+  "utc_start": "2026-10-11T09:52:40.498384+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\exit_failed_area_run.py",
+  "script_sha256": "23930db90f07143b6f6becb8fb13d6e0a025bef5ca367cdce86393236f41bf79",
+  "args": {
+    "expected_pid": 15964,
+    "label": "v002_road44_duplicate_landscape_recovered",
+    "script_sha256": "23930db90f07143b6f6becb8fb13d6e0a025bef5ca367cdce86393236f41bf79",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\exit_failed_area_run.py"
+  },
+  "editor_pid": 15964,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "receipt": {
+        "utc": "2026-10-11T09:52:40.611929+00:00",
+        "pid": 15964,
+        "label": "v002_road44_duplicate_landscape_recovered",
+        "phase": "failed_bake_save_verification",
+        "error": "AssertionError('Duplicate Landscapes after bake')",
+        "dirty_discarded_unsaved": [
+          [],
+          [
+            "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_374_0_main_geo",
+            "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_375_0_main_geo",
+            "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_376_0_main_geo"
+          ]
+        ],
+        "saves": 0
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-11T09:52:40.633452+00:00",
+  "exit_code": 0
+}

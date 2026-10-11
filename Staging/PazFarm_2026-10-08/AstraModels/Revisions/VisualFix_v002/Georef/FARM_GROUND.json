@@ -1,0 +1,122 @@
+{
+  "texture": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\AstraModels\\Revisions\\VisualFix_v002\\Georef\\T_PazFarm_Ground.png",
+  "size_m": 512.0,
+  "pixels": 2048,
+  "metres_per_pixel": 0.25,
+  "west_edge_m_from_pin": -219.843,
+  "north_edge_m_from_pin": 230.463,
+  "road_colours": {
+    "farm_road_diagonal": [
+      185,
+      158,
+      154
+    ],
+    "yard_access_north": [
+      185,
+      158,
+      154
+    ],
+    "west_track": [
+      212,
+      192,
+      184
+    ],
+    "south_road": [
+      192,
+      168,
+      158
+    ],
+    "east_road": [
+      192,
+      168,
+      158
+    ],
+    "east_spur": [
+      192,
+      168,
+      158
+    ]
+  },
+  "method": "Original procedural fine furrows, smooth soil variation, split low crops, actual-placement-phase strawberry shoulders, soil under orchard meshes, continuous dirt roads, south barn apron; no reference image pixels copied",
+  "revision": "VisualFix_v002",
+  "colour_space": "sRGB, explicit byte encoding; alpha linear coverage",
+  "north_up": true,
+  "settings": "GROUND_SETTINGS.json",
+  "generator": "ground_v002.py",
+  "original_layout_sha256": "412c7ae819ba60602a477467a2c30b8b714bc91af1449bd2b4cba2c6ac0788a1",
+  "original_placements_sha256": "5c00e0963809fcf7332e24299887f198c0b39a3988f7f1763eacd15beaf03d06",
+  "source_trace_coordinates_unchanged": true,
+  "local_junction_connectors": [
+    {
+      "from_road": "farm_road_diagonal",
+      "endpoint": -1,
+      "to_road": "south_road",
+      "max_gap_m": 12.0,
+      "width_m": 4.0,
+      "flare_radius_m": 3.2,
+      "derived_connector_m": [
+        [
+          117.31,
+          -124.11
+        ],
+        [
+          117.19954828700394,
+          -133.4151185194689
+        ]
+      ],
+      "gap_m": 9.306,
+      "original_vertices_changed": false
+    },
+    {
+      "from_road": "east_spur",
+      "endpoint": 0,
+      "to_road": "east_road",
+      "max_gap_m": 12.0,
+      "width_m": 4.0,
+      "flare_radius_m": 3.5,
+      "derived_connector_m": [
+        [
+          128.93,
+          -107.09
+        ],
+        [
+          123.26929462133626,
+          -110.84032403857927
+        ]
+      ],
+      "gap_m": 6.79,
+      "original_vertices_changed": false
+    },
+    {
+      "from_road": "south_road",
+      "endpoint": -1,
+      "to_road": "east_road",
+      "max_gap_m": 6.0,
+      "width_m": 5.0,
+      "flare_radius_m": 3.6,
+      "derived_connector_m": [
+        [
+          134.46,
+          -133.62
+        ],
+        [
+          137.17122020388427,
+          -131.823765498407
+        ]
+      ],
+      "gap_m": 3.252,
+      "original_vertices_changed": false
+    }
+  ],
+  "uv_contract": {
+    "u": "(E - west_edge_m_from_pin) / size_m",
+    "v": "(north_edge_m_from_pin - N) / size_m",
+    "E": "metres east from farm pin",
+    "N": "metres north from farm pin",
+    "pixel_centre_formula": "E=west+(x+0.5)*0.25; N=north-(y+0.5)*0.25",
+    "texture_rotation_deg": 0,
+    "sampler_address": "Clamp",
+    "texture_srgb": true
+  },
+  "texture_sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+}

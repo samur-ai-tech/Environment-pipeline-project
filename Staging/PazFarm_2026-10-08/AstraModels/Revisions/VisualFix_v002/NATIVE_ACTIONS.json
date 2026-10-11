@@ -1,0 +1,58 @@
+{
+  "status": "PROPOSED_NATIVE_HANDOFF_NOT_EXECUTED",
+  "offline_revision": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\AstraModels\\Revisions\\VisualFix_v002",
+  "documented_map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial",
+  "documented_model_folder": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/",
+  "scope_note": "Receiving operator must verify current ownership, actual asset bindings and named writable packages. This file is data, not an editor script or lease.",
+  "ranked_actions": [
+    {
+      "rank": 1,
+      "action": "Inspect distant canopy loss at fixed exposure; check Nanite Preserve Area and two-sided leaf material bindings; replace seven tree assets and leaf textures with this revision.",
+      "assets": [
+        "SM_PazFarm_Avocado_A",
+        "SM_PazFarm_Avocado_B",
+        "SM_PazFarm_Avocado_C",
+        "SM_PazFarm_Lemon_A",
+        "SM_PazFarm_Lemon_B",
+        "SM_PazFarm_Orange_A",
+        "SM_PazFarm_Orange_B"
+      ],
+      "keep_plant_transforms": true
+    },
+    {
+      "rank": 2,
+      "action": "Replace the existing farm ground overlay through its current clone Farm_Blend route; preserve mapping and coverage alpha.",
+      "texture": "Georef/T_PazFarm_Ground.png",
+      "settings": "Georef/GROUND_SETTINGS.json"
+    },
+    {
+      "rank": 3,
+      "action": "Reimport fuller strawberry mesh and revised material maps; retain 763 current instances.",
+      "asset": "SM_PazFarm_StrawberryBed_4m"
+    },
+    {
+      "rank": 4,
+      "action": "Reimport barn; add and explicitly bind roof-only material slot 4; retain existing barn instance transform.",
+      "asset": "SM_PazFarm_Barn",
+      "new_material": "M_PazFarm_Barn_RoofCharcoal_v002"
+    },
+    {
+      "rank": 5,
+      "action": "Move and rotate existing PazFarm_Gate using the gate-only patch; sample terrain Z with the existing placement convention.",
+      "patch": "Georef/PLACEMENT_PATCH.json"
+    },
+    {
+      "rank": 6,
+      "action": "Inspect ground contact, road overlay conflicts and missing boundary/north-field vegetation using current native assets; resolve under explicit package ownership.",
+      "offline_geometry_supplied_for_this_action": false
+    }
+  ],
+  "native_verification_required": [
+    "Same overhead and close cameras at consistent exposure",
+    "No distant crown loss",
+    "No floating beds/fence/gate or wrong row orientation",
+    "No duplicated placement instances",
+    "Named clone-only saves and fresh reopen"
+  ],
+  "native_actions_performed": false
+}

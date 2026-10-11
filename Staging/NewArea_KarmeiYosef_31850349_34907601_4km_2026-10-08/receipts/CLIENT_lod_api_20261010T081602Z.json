@@ -1,0 +1,42 @@
+{
+  "utc_start": "2026-10-10T08:16:02.309588+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_api.py",
+  "script_sha256": "4e5e922a90d1600f2bd18acc628ed7bee5b1f8772a69396d376672bf71f4f084",
+  "args": {
+    "expected_pid": 40740,
+    "script_sha256": "4e5e922a90d1600f2bd18acc628ed7bee5b1f8772a69396d376672bf71f4f084",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_api.py"
+  },
+  "editor_pid": 40740,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "subsystem": {
+        "get_lod_build_settings": "x.get_lod_build_settings(static_mesh, lod_index) -> MeshBuildSettings",
+        "get_lod_count": "x.get_lod_count(static_mesh) -> int32",
+        "get_lod_group": "x.get_lod_group(static_mesh) -> Name",
+        "get_lod_material_slot": "x.get_lod_material_slot(static_mesh, lod_index, section_index) -> int32",
+        "get_lod_reduction_settings": "x.get_lod_reduction_settings(static_mesh, lod_index) -> MeshReductionSettings",
+        "get_lod_screen_sizes": "x.get_lod_screen_sizes(static_mesh) -> Array[float]",
+        "import_lod": "x.import_lod(base_static_mesh, lod_index, source_filename) -> int32",
+        "reimport_all_custom_lods": "x.reimport_all_custom_lods(static_mesh) -> bool",
+        "remove_lods": "x.remove_lods(static_mesh) -> bool",
+        "set_lod_build_settings": "x.set_lod_build_settings(static_mesh, lod_index, build_options) -> None",
+        "set_lod_from_static_mesh": "x.set_lod_from_static_mesh(destination_static_mesh, destination_lod_index, source_static_mesh, source_lod_index, reuse_existing_material_slots) -> int32",
+        "set_lod_group": "x.set_lod_group(static_mesh, lod_group, rebuild_immediately=True) -> bool",
+        "set_lod_material_slot": "x.set_lod_material_slot(static_mesh, material_slot_index, lod_index, section_index) -> None",
+        "set_lod_reduction_settings": "x.set_lod_reduction_settings(static_mesh, lod_index, reduction_options) -> None",
+        "set_lod_screen_sizes": "x.set_lod_screen_sizes(static_mesh, screen_sizes) -> bool",
+        "set_lods": "x.set_lods(static_mesh, reduction_options) -> int32",
+        "set_lods_with_notification": "x.set_lods_with_notification(static_mesh, reduction_options, apply_changes) -> int32"
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T08:16:02.488992+00:00",
+  "exit_code": 0
+}

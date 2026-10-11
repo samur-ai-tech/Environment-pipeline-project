@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-11T11:52:57Z",
+  "pid": 5504,
+  "map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial_v2",
+  "sequence": ["farm_real_ground path_through (material graph edit, saved e2a679ec)", "farm_real_ground assign (landscape material, map dirty)", "clone_v2 save -> EXCEPTION_ACCESS_VIOLATION in python311 called back from CoreUObject during save_map"],
+  "map_sha256_on_disk_after": "b61dfba0efb4d308de740353d3a3a7d3380bc8cd89078a3a33ef1a96752d927a (unchanged; the save never wrote)",
+  "material_sha256_on_disk_after": "e2a679ecb79bd6fbf4c77ab01a4191e4e6d0e1789a97e3e1acf71c3de1bebbd2 (path_through saved before the crash)",
+  "lost": "only the unsaved landscape material assignment",
+  "rule_added": "after a material-graph edit, quit the editor before any other step or save (fourth crash of this family; earlier: 30592, 34872, 6808)",
+  "saves_by_crash": 0
+}

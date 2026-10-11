@@ -1,0 +1,39 @@
+{
+  "utc_start": "2026-10-10T00:18:10.732331+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\hlod_doc.py",
+  "script_sha256": "d94ecc406a40c300a1c0c14e54c65c9b4e5a178aba29833c8edb2245b85f26a0",
+  "args": {
+    "expected_pid": 18700,
+    "script_sha256": "d94ecc406a40c300a1c0c14e54c65c9b4e5a178aba29833c8edb2245b85f26a0",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\hlod_doc.py"
+  },
+  "editor_pid": 18700,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "HLODLayer": "HLODLayer\r\n\r\n**C++ Source:**\r\n\r\n- **Module**: Engine\r\n- **File**: HLODLayer.h\r\n\r\n**Editor Properties:** (see get_editor_property/set_editor_property)\r\n\r\n- ``cell_size`` (int32):  [Read-Write] Cell size of the runtime grid created to encompass HLOD actors generated for this HLOD Layer\r\n- ``editor_loading_behavior`` (HLODLayerEditorLoadingBehavior):  [Read-Write] Controls whether HLODs from this layer are loaded in the editor.\r\n  - Default: Instancing layers are not loaded (except if non-spatial), other layer types are loaded\r\n  - Always Loaded: Force load HLODs from this layer in editor\r\n  - Never Loaded: Prevent loading HLODs from this layer in editor\r\n- ``force_ray_tracing_far_field`` (bool):  [Read-Write] When enabled, static mesh components generated for this HLOD layer will be included in the ray tracing far field,\r\n  even if the HLOD is spatially loaded. This is useful for cases where the last HLOD level is spatially\r\n  loaded but should still contribute to ray traced reflections and global illumination.\r\n- ``hlod_actor_class`` (type(Class)):  [Read-Write] Specify a custom HLOD Actor class, the default is AWorldPartitionHLOD\r\n- ``hlod_builder_class`` (type(Class)):  [Read-Write] HLOD Builder class\r\n- ``hlod_builder_settings`` (HLODBuilderSettings):  [Read-Only]\r\n- ``hlod_modifier_class`` (type(Class)):  [Read-Write] HLOD Modifier class, to allow changes to the HLOD at runtime\r\n- ``is_spatially_loaded`` (bool):  [Read-Write] Whether HLOD actors generated for this layer will be spatially loaded\r\n- ``layer_type`` (HLODLayerType):  [Read-Write] Type of HLOD generation to use\r\n- ``linked_layer`` (HLODLayer):  [Read-Write] HLOD Layer used to control visiblity of Custom HLOD Actors. Custom HLOD Actors become visible when actors from the linked HLOD Layer are unloaded.\r\n- ``loading_range`` (double):  [Read-Write] Loading range of the runtime grid created to encompass HLOD actors generated for this HLOD Layer\r\n- ``parent_layer`` (HLODLayer):  [Read-Write] HLOD Layer to assign to the generated HLOD actors",
+      "Instancing": "HLODBuilder Instancing Settings\r\n\r\n**C++ Source:**\r\n\r\n- **Plugin**: WorldPartitionHLODUtilities\r\n- **Module**: WorldPartitionHLODUtilities\r\n- **File**: HLODBuilderInstancing.h\r\n\r\n**Editor Properties:** (see get_editor_property/set_editor_property)\r\n\r\n- ``disallow_nanite`` (bool):  [Read-Write] If enabled, the components created for the HLODs will not use Nanite.\r\n  Necessary if you want to use the last LOD & the mesh is Nanite enabled, as forced LODs are ignored by Nanite\r\n- ``instance_filtering_type`` (InstanceFilteringType):  [Read-Write] Type of filtering to apply to instances. Instances that do not pass the filter will be excluded from the HLOD.\r\n- ``minimum_area`` (double):  [Read-Write] Minimum area in square Unreal Units\r\n- ``minimum_extent`` (double):  [Read-Write] Minimum Extent in Unreal Units\r\n- ``minimum_volume`` (double):  [Read-Write] Minimum volume in cubic Unreal Units",
+      "LayerType": [
+        "CUSTOM",
+        "CUSTOM_HLOD_ACTOR",
+        "INSTANCING",
+        "MESH_APPROXIMATE",
+        "MESH_MERGE",
+        "MESH_SIMPLIFY"
+      ],
+      "EditorLoading": [
+        "DEFAULT",
+        "FORCE_LOADED",
+        "FORCE_NOT_LOADED"
+      ],
+      "PCGHLODSettings": "PCGHLODSettings\r\n\r\n**C++ Source:**\r\n\r\n- **Plugin**: PCG\r\n- **Module**: PCG\r\n- **File**: PCGHLODHelpers.h\r\n\r\n**Editor Properties:** (see get_editor_property/set_editor_property)\r\n\r\n- ``hlod_layer`` (HLODLayer):  [Read-Write]\r\n- ``hlod_source_type`` (PCGHLODSource):  [Read-Write] What source should be used to assign HLOD Layer to the spawned actor"
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T00:18:10.805250+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,1936 @@
+{
+  "revision": "VisualFix_v002",
+  "status": "OFFLINE_COMPLETE_NATIVE_NOT_APPLIED",
+  "scope": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\AstraModels\\Revisions\\VisualFix_v002",
+  "assets": [
+    {
+      "name": "SM_PazFarm_Avocado_A",
+      "size_metres_W_D_H": [
+        5.5,
+        5.25,
+        5.8
+      ],
+      "bounds_metres": [
+        [
+          -2.6737148761749268,
+          -2.7635505199432373,
+          0.0
+        ],
+        [
+          2.8262851238250732,
+          2.4864494800567627,
+          5.800000190734863
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_A.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_A.png",
+      "nominal_size_metres": [
+        5.5,
+        5.25,
+        5.8
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend"
+    },
+    {
+      "name": "SM_PazFarm_Avocado_B",
+      "size_metres_W_D_H": [
+        5.9,
+        5.45,
+        6.4
+      ],
+      "bounds_metres": [
+        [
+          -2.9656286239624023,
+          -2.686645746231079,
+          0.0
+        ],
+        [
+          2.9343714714050293,
+          2.7633543014526367,
+          6.400000095367432
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_B.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_B.png",
+      "nominal_size_metres": [
+        5.9,
+        5.45,
+        6.4
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend"
+    },
+    {
+      "name": "SM_PazFarm_Avocado_C",
+      "size_metres_W_D_H": [
+        5.15,
+        5.4,
+        5.4
+      ],
+      "bounds_metres": [
+        [
+          -2.4846835136413574,
+          -2.7749366760253906,
+          0.0
+        ],
+        [
+          2.665316581726074,
+          2.625063419342041,
+          5.400000095367432
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_C.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_C.png",
+      "nominal_size_metres": [
+        5.15,
+        5.4,
+        5.4
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend"
+    },
+    {
+      "name": "SM_PazFarm_Lemon_A",
+      "size_metres_W_D_H": [
+        3.25,
+        3.1,
+        3.45
+      ],
+      "bounds_metres": [
+        [
+          -1.634987235069275,
+          -1.5780915021896362,
+          0.0
+        ],
+        [
+          1.615012764930725,
+          1.5219085216522217,
+          3.450000047683716
+        ]
+      ],
+      "triangles_LOD0": 56556,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_LemonBark",
+          "textures": [
+            "Textures\\T_PazFarm_LemonBark_BaseColor.png",
+            "Textures\\T_PazFarm_LemonBark_Normal.png",
+            "Textures\\T_PazFarm_LemonBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf0_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf1_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf2_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonFruit",
+          "textures": [
+            "Textures\\T_PazFarm_LemonFruit_BaseColor.png",
+            "Textures\\T_PazFarm_LemonFruit_Normal.png",
+            "Textures\\T_PazFarm_LemonFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Lemon_A.fbx",
+      "preview": "Previews/SM_PazFarm_Lemon_A.png",
+      "nominal_size_metres": [
+        3.25,
+        3.1,
+        3.45
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Lemon.blend"
+    },
+    {
+      "name": "SM_PazFarm_Lemon_B",
+      "size_metres_W_D_H": [
+        3.5,
+        3.25,
+        3.8
+      ],
+      "bounds_metres": [
+        [
+          -1.7235190868377686,
+          -1.6350433826446533,
+          0.0
+        ],
+        [
+          1.7764809131622314,
+          1.6149566173553467,
+          3.799999952316284
+        ]
+      ],
+      "triangles_LOD0": 56556,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_LemonBark",
+          "textures": [
+            "Textures\\T_PazFarm_LemonBark_BaseColor.png",
+            "Textures\\T_PazFarm_LemonBark_Normal.png",
+            "Textures\\T_PazFarm_LemonBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf0_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf1_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf2_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonFruit",
+          "textures": [
+            "Textures\\T_PazFarm_LemonFruit_BaseColor.png",
+            "Textures\\T_PazFarm_LemonFruit_Normal.png",
+            "Textures\\T_PazFarm_LemonFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Lemon_B.fbx",
+      "preview": "Previews/SM_PazFarm_Lemon_B.png",
+      "nominal_size_metres": [
+        3.5,
+        3.25,
+        3.8
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Lemon.blend"
+    },
+    {
+      "name": "SM_PazFarm_Orange_A",
+      "size_metres_W_D_H": [
+        3.65,
+        3.35,
+        3.65
+      ],
+      "bounds_metres": [
+        [
+          -1.8525487184524536,
+          -1.6422134637832642,
+          0.0
+        ],
+        [
+          1.7974512577056885,
+          1.7077865600585938,
+          3.6500000953674316
+        ]
+      ],
+      "triangles_LOD0": 57012,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_OrangeBark",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeBark_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeBark_Normal.png",
+            "Textures\\T_PazFarm_OrangeBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeFruit",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeFruit_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeFruit_Normal.png",
+            "Textures\\T_PazFarm_OrangeFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Orange_A.fbx",
+      "preview": "Previews/SM_PazFarm_Orange_A.png",
+      "nominal_size_metres": [
+        3.65,
+        3.35,
+        3.65
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Orange.blend"
+    },
+    {
+      "name": "SM_PazFarm_Orange_B",
+      "size_metres_W_D_H": [
+        3.2,
+        3.05,
+        3.3
+      ],
+      "bounds_metres": [
+        [
+          -1.5584417581558228,
+          -1.4974892139434814,
+          0.0
+        ],
+        [
+          1.641558289527893,
+          1.5525107383728027,
+          3.299999952316284
+        ]
+      ],
+      "triangles_LOD0": 57012,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_OrangeBark",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeBark_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeBark_Normal.png",
+            "Textures\\T_PazFarm_OrangeBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeFruit",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeFruit_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeFruit_Normal.png",
+            "Textures\\T_PazFarm_OrangeFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VisualFix v002: actual six-vertex lance-shaped leaf outlines, four triangles per leaf, full-white alpha; no rectangular cards or alpha-cutout silhouettes.",
+        "No wind, no collision. UV0 intentionally reuses each original leaf texture.",
+        "Same nominal crown envelopes/heights as v001. Avocado XY reduction is deferred until native distant visibility is verified.",
+        "Blender ground origin at trunk base. Retain two-sided foliage; current Masked master can use full-white alpha. Enable/check Nanite Preserve Area in the receiving editor; no native result is claimed.",
+        "Variant B is clementine, with smaller fruit than orange variant A."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Orange_B.fbx",
+      "preview": "Previews/SM_PazFarm_Orange_B.png",
+      "nominal_size_metres": [
+        3.2,
+        3.05,
+        3.3
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Orange.blend"
+    },
+    {
+      "name": "SM_PazFarm_Barn",
+      "size_metres_W_D_H": [
+        20.57,
+        12.585,
+        8.11338
+      ],
+      "bounds_metres": [
+        [
+          -10.28499984741211,
+          -6.292500019073486,
+          -0.019999999552965164
+        ],
+        [
+          10.28499984741211,
+          6.292500019073486,
+          8.0933837890625
+        ]
+      ],
+      "triangles_LOD0": 17168,
+      "triangle_budget": 30000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Barn_WallGalvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_Normal.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofPaintedGrey",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_DarkHardware",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_DarkHardware_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_Normal.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_ConcretePlinth",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_Normal.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofCharcoal_v002",
+          "textures": [
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_BaseColor.png",
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_Normal.png",
+            "Textures/T_PazFarm_Barn_RoofCharcoal_v002_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Offline v002 roof-only revision. No native import or rendering has been performed.",
+        "Source wall footprint remains 20 x 12 m, eave 6 m, ridge 8 m. Do not bake the existing 25.8 x 20.5 m map instance scale into this mesh.",
+        "Original four material slots retained in exact order. New slot 4 M_PazFarm_Barn_RoofCharcoal_v002 is assigned only to roof sheets, ridge, eave and verge flashings.",
+        "Roof corrugation relief reduced from 0.045 m to 0.006 m. Corrugation pitch, wall corrugation, doors and trim are unchanged.",
+        "Roof BaseColor PNG median target is sRGB 70,62,68; roughness 0.94, metallic 0, Blender Specular IOR Level 0.20, flat normal map. Appearance matching still depends on native exposure.",
+        "Exact original pivot, orientation and all three UCX boxes retained. Ground-centred origin; source front -Y, Z up.",
+        "All geometry/textures original CC0 artwork. No satellite pixels used for textures."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Barn_00",
+        "UCX_SM_PazFarm_Barn_01",
+        "UCX_SM_PazFarm_Barn_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Barn.fbx",
+      "preview": "Previews/SM_PazFarm_Barn.png",
+      "nominal_size_metres": [
+        20.0,
+        12.0,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "unchanged_nonroof_vertices": 5572,
+        "changed_nonroof_vertices": 0,
+        "original_UCX_exact": true,
+        "original_material_slots_preserved": [
+          "M_PazFarm_Barn_WallGalvanized",
+          "M_PazFarm_Barn_RoofPaintedGrey",
+          "M_PazFarm_Barn_DarkHardware",
+          "M_PazFarm_Barn_ConcretePlinth"
+        ],
+        "new_roof_slot_index": 4,
+        "original_blend_fbx_hashes_unchanged": true
+      },
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Barn_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -6.0,
+              0.0
+            ],
+            [
+              10.0,
+              6.0,
+              6.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            12.0,
+            6.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -4.5,
+              6.0
+            ],
+            [
+              10.0,
+              4.5,
+              7.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            9.0,
+            1.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -1.5,
+              7.0
+            ],
+            [
+              10.0,
+              1.5,
+              8.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            3.0,
+            1.0
+          ]
+        }
+      ],
+      "blend": "Blend/Barn.blend"
+    },
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m",
+      "size_metres_W_D_H": [
+        0.8,
+        4.0,
+        0.42411
+      ],
+      "bounds_metres": [
+        [
+          -0.4000000059604645,
+          0.0,
+          0.0
+        ],
+        [
+          0.4000000059604645,
+          4.0,
+          0.42410677671432495
+        ]
+      ],
+      "triangles_LOD0": 19624,
+      "triangle_budget": 20000,
+      "materials": [
+        {
+          "name": "M_PazFarm_StrawberryMulch",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryMulch_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryMulch_Normal.png",
+            "Textures\\T_PazFarm_StrawberryMulch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberrySoil",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberrySoil_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberrySoil_Normal.png",
+            "Textures\\T_PazFarm_StrawberrySoil_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeaf",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeaf_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_ORM.png",
+            "Textures/T_PazFarm_StrawberryLeaf_Opacity.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeafNew",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeafNew_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_ORM.png",
+            "Textures/T_PazFarm_StrawberryLeafNew_Opacity.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPetiole",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPetiole_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFruit",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFruit_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFruit_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFlower",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFlower_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFlower_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFlower_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPollen",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPollen_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPollen_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPollen_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Open-bed default, 0.8m wide x 4m long, 0.25m raised mulch mound; canopy approx 0.20m above bed.",
+        "v002: two rows of 16 plants (32 total). Six trifoliate leaves per plant, 576 geometric leaflets. Red seeded fruits and eight small five-petal flowers retained.",
+        "Pivot is the ground centre of the Y=0 short end. Tile translations (0,4*n,0). Geometry stays within the 0.8m x 4m footprint.",
+        "Dusty charcoal mulch roughness .79, specular .22, wrinkle-normal amplitude 20 percent of original. Solid geometric leaf silhouettes, two-sided foliage; no plant collision.",
+        "Editable deterministic parameters in build_strawberries_v002.py and scene PazFarm_parameters; all textures original CC0 procedural artwork."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "preview": "Previews/SM_PazFarm_StrawberryBed_4m.png",
+      "nominal_size_metres": [
+        0.8,
+        4,
+        0.45
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "detail_preview": "Previews/SM_PazFarm_StrawberryBed_4m_Detail.png",
+      "projected_leaf_coverage": {
+        "method": "Orthographic XY union of material slots 2/3 triangles over .8 x 4 m; no alpha or rendering.",
+        "raster_dimensions": [
+          240,
+          1200
+        ],
+        "leaf_coverage_fraction": 0.5453
+      },
+      "blend": "Blend/Strawberry.blend",
+      "comparison_preview": "Previews/SM_PazFarm_StrawberryBed_4m_Comparison.png",
+      "original_projected_leaf_coverage": {
+        "method": "Orthographic XY union of material slots 2/3 triangles over .8 x 4 m; no alpha or rendering.",
+        "raster_dimensions": [
+          240,
+          1200
+        ],
+        "leaf_coverage_fraction": 0.24545
+      }
+    }
+  ],
+  "asset_count": 9,
+  "blend_count": 5,
+  "material_texture_count": 86,
+  "ground": {
+    "revision": "VisualFix_v002",
+    "component": "procedural_ground",
+    "status": "OFFLINE_QA_PASS_NOT_IMPORTED",
+    "asset": {
+      "name": "T_PazFarm_Ground",
+      "file": "Georef/T_PazFarm_Ground.png",
+      "format": "PNG RGBA8",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "srgb": true,
+      "alpha": "linear coverage, transparent outside overlay",
+      "extent_m": [
+        512,
+        512
+      ],
+      "metres_per_pixel": 0.25,
+      "west_edge_m_from_pin": -219.843,
+      "north_edge_m_from_pin": 230.463,
+      "north_up": true,
+      "source_licence": "Original procedural work from numeric reference colour anchors and existing traced layout; no satellite image pixels copied",
+      "sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+    },
+    "preserved": [
+      "All original plot vertices",
+      "All original road centreline vertices and 4/5 m nominal widths",
+      "Original placement transforms/counts and georeference",
+      "Existing mapping and Farm_Blend contract"
+    ],
+    "measured": {
+      "png_byte_round_trip_match": true,
+      "exact_mapping_metadata_match": true,
+      "strawberry_tiles": 763,
+      "strawberry_rows": 32,
+      "max_cross_axis_mismatch_m": 0.00763799988288838,
+      "local_junction_connectors": 3,
+      "transparent_exterior": true
+    },
+    "preview": "Previews/GROUND_COMPARE.html",
+    "native_handoff": "Reports/GROUND_HANDOFF.md",
+    "files": [
+      {
+        "path": "Georef/T_PazFarm_Ground.png",
+        "bytes": 1233926,
+        "sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+      },
+      {
+        "path": "Georef/FARM_GROUND.json",
+        "bytes": 3234,
+        "sha256": "e54c0562ae1b7c46e387eadfe8c70517a250219e90309801ee514a4284c6d217"
+      },
+      {
+        "path": "Georef/GROUND_SETTINGS.json",
+        "bytes": 4525,
+        "sha256": "9460a0b6134eebf74dbfc9f831966b0d1c57e9c8851217d11c3149331fa7a074"
+      },
+      {
+        "path": "Georef/ground_v002.py",
+        "bytes": 17875,
+        "sha256": "4297e7942fa361f758e11aaadac55e0215daadd58ea7235937fb020aa0b503cf"
+      },
+      {
+        "path": "Previews/ground_v002_north_up.png",
+        "bytes": 371417,
+        "sha256": "88032d533892967d9dfe18c13b35d3d690d91c6a8fe476b62202a6708de3bba0"
+      },
+      {
+        "path": "Previews/ground_v002_reference_aligned.png",
+        "bytes": 648807,
+        "sha256": "9097fd1e85cb8384bf267b1f15439b39718932472446e323b25829e83d6a806a"
+      },
+      {
+        "path": "Previews/ground_v001_reference_aligned.png",
+        "bytes": 1307916,
+        "sha256": "9e1e6f74b5f19462b48e26eda7b4321445b7ffda83234fab5d5815f552e44905"
+      },
+      {
+        "path": "Previews/GROUND_COMPARE.html",
+        "bytes": 1634,
+        "sha256": "6e42e74a53e11d6ae4755919883d31009f61b867c90ed995f0a6fcf1511a468e"
+      },
+      {
+        "path": "Reports/GROUND_QA.json",
+        "bytes": 14849,
+        "sha256": "4a5b75c289c4cf0f9fa0ca3e22c25b64ce89a868d9abadc5ea98c004a20da778"
+      },
+      {
+        "path": "Reports/GROUND_HANDOFF.md",
+        "bytes": 4323,
+        "sha256": "e5232c1aab0ae4f4622e5b6509c254415b43f3d7dada4c9b589c8d63d21ed215"
+      }
+    ]
+  },
+  "gate_patch": {
+    "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\Georef\\PLACEMENTS.json",
+    "source_sha256": "5c00e0963809fcf7332e24299887f198c0b39a3988f7f1763eacd15beaf03d06",
+    "units": "metres east/north of the Paz Farm pin; row_deg = row direction from east, counter-clockwise",
+    "replace_only_gate": {
+      "before": {
+        "mesh": "SM_PazFarm_Gate_Double_6m",
+        "e": 23.94,
+        "n": 50.07,
+        "dir_deg": 90.04
+      },
+      "after": {
+        "mesh": "SM_PazFarm_Gate_Double_6m",
+        "e": 24.266047,
+        "n": 52.46,
+        "dir_deg": 90.075493
+      }
+    },
+    "reason": "SM_PazFarm_Gate_Double_6m pivots at ground centre, not at a short end. Align its 6m envelope to actual omitted-panel interval.",
+    "preserved": {
+      "all_items": 1955,
+      "fence_segments": 225,
+      "corner_posts": 9,
+      "barn": true
+    },
+    "native_actions_performed": false
+  },
+  "verification": {
+    "model_qa_pass": true,
+    "ground_qa_pass": true,
+    "gate_qa_pass": true,
+    "originals": {
+      "passed": true,
+      "files_checked": 251,
+      "changed_or_missing": [],
+      "method": "SHA256 against the before-work baseline of original farm staging inputs and delivery. Revision directory excluded."
+    }
+  },
+  "handoff": "HANDOFF_CLAUDE.md",
+  "native_actions": "NATIVE_ACTIONS.json",
+  "native_actions_performed": false,
+  "unchanged_original_assets": "17 remaining meshes and their original sources remain in AstraModels; this revision does not replace those assets.",
+  "editable_defaults": [
+    "Georef/GROUND_SETTINGS.json",
+    "Georef/DEFERRED_VISUAL_OPTIONS.json",
+    "Scripts/build_trees_v002.py",
+    "Scripts/build_barn_v002.py",
+    "Scripts/build_strawberries_v002.py"
+  ],
+  "files": [
+    {
+      "path": "FBX/SM_PazFarm_Avocado_A.fbx",
+      "bytes": 3349484,
+      "sha256": "63c20db30fafc51b35ddf8fc93d2127e365636eb9db446b0a7b8675f5d8e6a03"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Avocado_B.fbx",
+      "bytes": 3346028,
+      "sha256": "cab0ff8a46a723bd22d45c790b85716c1712efe1d7c6f2dd5a959bd660eec726"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Avocado_C.fbx",
+      "bytes": 3349020,
+      "sha256": "b1c76aef7d880a46f03798f6a7cc30cf81a59e6162a405a43910f5c68f6d9f7d"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Barn.fbx",
+      "bytes": 358860,
+      "sha256": "462e0986852ec07c28f57e568a3916f605b07c72307d0a7e5718ae3d126adf2d"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Lemon_A.fbx",
+      "bytes": 3163884,
+      "sha256": "9fecb9e44185ebc69ce1e9c7b6978b3e9c62621fca73663bf57505ef0173f8b4"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Lemon_B.fbx",
+      "bytes": 3162636,
+      "sha256": "83b74dd761f5c6241aa63722a3bc46d293d3d2e287501271a49e8beb53fdb67f"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Orange_A.fbx",
+      "bytes": 3152652,
+      "sha256": "88eb31da84300beac74dfed60ffab8890ead0bee39228a2331fe78f7ffed7f75"
+    },
+    {
+      "path": "FBX/SM_PazFarm_Orange_B.fbx",
+      "bytes": 3153372,
+      "sha256": "bbdec36dc93f50586f60b6429cd4fc407a0bfcccf0af3c5e9fb7387163201c95"
+    },
+    {
+      "path": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "bytes": 723372,
+      "sha256": "2e4698b30dbda24631a8848e1707aac437d13e7ad59d8737a4ae9edf1bc1263d"
+    },
+    {
+      "path": "Blend/Avocado.blend",
+      "bytes": 4919238,
+      "sha256": "14aa0ee6caa1a2a0d2b98f34c82bc6d0f762cd221441bbeefded422d3ea2761f"
+    },
+    {
+      "path": "Blend/Barn.blend",
+      "bytes": 356738,
+      "sha256": "7c5a4ed5358b230faa2b3d012e40e38799b7a74e4017ec9833d963ebe4f0b85f"
+    },
+    {
+      "path": "Blend/Lemon.blend",
+      "bytes": 3163970,
+      "sha256": "e775004b677bbbeb5a8ca463c17f51abdff621ed96a89e5d7f968c13a35b770f"
+    },
+    {
+      "path": "Blend/Orange.blend",
+      "bytes": 3154310,
+      "sha256": "2109bb45eedd29fbcc0b5d64db2c29eaf9766eedd7162a0f9d86da7d628a1ad7"
+    },
+    {
+      "path": "Blend/Strawberry.blend",
+      "bytes": 532498,
+      "sha256": "78c554057a18075d48df18a2529e14509803b2b52717f42fa20b89b578ec3955"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoBark_BaseColor.png",
+      "bytes": 1391599,
+      "sha256": "b973bcd1738af855e9739ec5e5944f73d910214d3f6079dd6cc563baed43c939"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoBark_Normal.png",
+      "bytes": 3454883,
+      "sha256": "c920092f1da5b9d3b9f8f9b6f828193261096ae07858ff237ba480f3dc731765"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoBark_ORM.png",
+      "bytes": 798855,
+      "sha256": "b1beb22a59fef78081fe8a2d5eea571d4e306979fd9c69097381f473dfda1fd5"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoFruit_BaseColor.png",
+      "bytes": 1287713,
+      "sha256": "3d248efdd7d88a3b7e8be18ff24829990e0001f811f0d4fcd9dbc0c98b6afb4c"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoFruit_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoFruit_ORM.png",
+      "bytes": 643810,
+      "sha256": "263bbb5a8e3bb39a317908721a6e4a63e2802c9a38b53d245ef8e67bc3894344"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf0_BaseColor.png",
+      "bytes": 1304107,
+      "sha256": "9173dd60acc887348e34b81f4f122be745471d49cbc61463fab64ef863cee894"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf0_Normal.png",
+      "bytes": 2316402,
+      "sha256": "cfbb03190314643468789e6082784ae80832e3b9407af387b232f255a3906d62"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf0_ORM.png",
+      "bytes": 117757,
+      "sha256": "3ffeebad8a3d2c936b3a5ffcd10284235ad0efbc0a74e909c8fcd7b4992a1632"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf1_BaseColor.png",
+      "bytes": 1348693,
+      "sha256": "028d9f0059f6e8908d342388ba933fc3117872df14074e7b21392a5522ae86f1"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf1_Normal.png",
+      "bytes": 2317270,
+      "sha256": "8b605151bdf7a0a3fa7fadec9997dae67aa1757794f44761982b05823a80aec4"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf1_ORM.png",
+      "bytes": 117299,
+      "sha256": "6c2823a14d0239315820b0905b0339df186fb6167ea36b1992ffb7514628755b"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf2_BaseColor.png",
+      "bytes": 1197091,
+      "sha256": "7c25929779fc79ff17a32a307c617688e0c24aadccbb810177d4b485b3aa3e4b"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf2_Normal.png",
+      "bytes": 2316788,
+      "sha256": "3a48566dbeeb241ee16fa256b87d79bde271940f16943d4044ebc778cef800d9"
+    },
+    {
+      "path": "Textures/T_PazFarm_AvocadoLeaf2_ORM.png",
+      "bytes": 117223,
+      "sha256": "60dcf71c0ffb66c4b1f96a504c584f7a1813b043aebdd2be22877a77ae451c40"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+      "bytes": 1636934,
+      "sha256": "3813a9d6d466b3149b1fc90f3f9a9914d657dfbf9836404515740bb059490261"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_ConcretePlinth_Normal.png",
+      "bytes": 3093432,
+      "sha256": "191c6ee5bdd6893c8b75408117c912f46415481c9b89b7ef2b31ed55e4fe6275"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_ConcretePlinth_ORM.png",
+      "bytes": 641466,
+      "sha256": "71f7e421bbc1e742baaf67314eea23a1d80d9850fb839db4e042b6e8c252e65f"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_DarkHardware_BaseColor.png",
+      "bytes": 1170290,
+      "sha256": "26988defea19a7dde777c051ce80ee6d15edeb66610962280c99f08fb84dd28d"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_DarkHardware_Normal.png",
+      "bytes": 1822780,
+      "sha256": "fc1abc4523b882d9adf08dd0aed76c90458dd7ff4d4d5529e85d66bacb3da210"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_DarkHardware_ORM.png",
+      "bytes": 20728,
+      "sha256": "2f4039fb55a092c5c9299954ba9b05828c94fbc0ecf85b1ac9bd34afdd9d1399"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofCharcoal_v002_BaseColor.png",
+      "bytes": 4569,
+      "sha256": "a0cf50994bff9c29a4242c3e50a8e8767ff201d92ab49e5a5926b94877808dfc"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofCharcoal_v002_Normal.png",
+      "bytes": 20723,
+      "sha256": "2a37097d002c7245b2a672ff0336249e5af2653458bc882bd86d30d9558ab784"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofCharcoal_v002_ORM.png",
+      "bytes": 20725,
+      "sha256": "756006ad3f5992751699114e3e5ba3b46729a2dfbfc307b065494bfeeca52942"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+      "bytes": 1348669,
+      "sha256": "5d97f92c16c51ac9ee6b67d0787a4b7aa5c1e5a955e8e03d2b6f672bd2791b3d"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+      "bytes": 1822043,
+      "sha256": "99cd66037344a2e2428279395e84f9a88ddaf32a8029b0c167a964691de42e8e"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_RoofPaintedGrey_ORM.png",
+      "bytes": 20728,
+      "sha256": "89c58d54ad0e6b9d8119a35c2c93396782c5124d48fb8a774612ae4661946cb1"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+      "bytes": 1522650,
+      "sha256": "5a39904ba8fec7f57a588781433ddddeb15a42a0b558855d50969e98a296c205"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_WallGalvanized_Normal.png",
+      "bytes": 1822346,
+      "sha256": "1d117042c321bd4c59cfd85c5d41ef285edb01ba7c8791a8a4e911b99dbf5f2d"
+    },
+    {
+      "path": "Textures/T_PazFarm_Barn_WallGalvanized_ORM.png",
+      "bytes": 20729,
+      "sha256": "681a66644606c3a6df1a5cf0fb3c981a8f609d8f1a689ddec2c893a129cf32a8"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonBark_BaseColor.png",
+      "bytes": 1391599,
+      "sha256": "b973bcd1738af855e9739ec5e5944f73d910214d3f6079dd6cc563baed43c939"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonBark_Normal.png",
+      "bytes": 3454883,
+      "sha256": "c920092f1da5b9d3b9f8f9b6f828193261096ae07858ff237ba480f3dc731765"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonBark_ORM.png",
+      "bytes": 798855,
+      "sha256": "b1beb22a59fef78081fe8a2d5eea571d4e306979fd9c69097381f473dfda1fd5"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonFruit_BaseColor.png",
+      "bytes": 1681512,
+      "sha256": "a8fb7693b2bd56283fa24e80474638f71e1fb1cf65183c7b699f27701df202c4"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonFruit_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonFruit_ORM.png",
+      "bytes": 643810,
+      "sha256": "263bbb5a8e3bb39a317908721a6e4a63e2802c9a38b53d245ef8e67bc3894344"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf0_BaseColor.png",
+      "bytes": 1350642,
+      "sha256": "5cff6e2bf9dbba919b7a92b76846170f946aac56ed875403485307d00a0d4bc2"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf0_Normal.png",
+      "bytes": 2316402,
+      "sha256": "cfbb03190314643468789e6082784ae80832e3b9407af387b232f255a3906d62"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf0_ORM.png",
+      "bytes": 117757,
+      "sha256": "2117333603b430f31a3e4ff783453d49836b34fd4deeb6de13a55f6fe1467ac2"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf1_BaseColor.png",
+      "bytes": 1405823,
+      "sha256": "cca83ba0298e9c19008acef24e53280bc5c5b4168e457b80867270690e1bc8ae"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf1_Normal.png",
+      "bytes": 2317270,
+      "sha256": "8b605151bdf7a0a3fa7fadec9997dae67aa1757794f44761982b05823a80aec4"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf1_ORM.png",
+      "bytes": 117299,
+      "sha256": "27a7f4acadf83067a644b645c555003c8a2915552fd10f96cbcb2d35d0f2b8f8"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf2_BaseColor.png",
+      "bytes": 1256415,
+      "sha256": "355d5d66d03070e11e34cd826a1eaec24818870792623266647990544c9a8cf2"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf2_Normal.png",
+      "bytes": 2316788,
+      "sha256": "3a48566dbeeb241ee16fa256b87d79bde271940f16943d4044ebc778cef800d9"
+    },
+    {
+      "path": "Textures/T_PazFarm_LemonLeaf2_ORM.png",
+      "bytes": 117223,
+      "sha256": "2155afb095fe3af148dab80bc24cb0f047eecd2ac7898f059f3bccfe14918acc"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeBark_BaseColor.png",
+      "bytes": 1391599,
+      "sha256": "b973bcd1738af855e9739ec5e5944f73d910214d3f6079dd6cc563baed43c939"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeBark_Normal.png",
+      "bytes": 3454883,
+      "sha256": "c920092f1da5b9d3b9f8f9b6f828193261096ae07858ff237ba480f3dc731765"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeBark_ORM.png",
+      "bytes": 798855,
+      "sha256": "b1beb22a59fef78081fe8a2d5eea571d4e306979fd9c69097381f473dfda1fd5"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeFruit_BaseColor.png",
+      "bytes": 1606745,
+      "sha256": "fde6062148c1b03b4cb286bc61e079a8b4e6d1cebbe7afe157dd18cb432aa85d"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeFruit_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeFruit_ORM.png",
+      "bytes": 643810,
+      "sha256": "263bbb5a8e3bb39a317908721a6e4a63e2802c9a38b53d245ef8e67bc3894344"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf0_BaseColor.png",
+      "bytes": 1283725,
+      "sha256": "8ba42bce95e824dd98c9517c2d7a0e1947f9739a7605c0e8c7b2af5e1cac1e89"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf0_Normal.png",
+      "bytes": 2316402,
+      "sha256": "cfbb03190314643468789e6082784ae80832e3b9407af387b232f255a3906d62"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf0_ORM.png",
+      "bytes": 117757,
+      "sha256": "2117333603b430f31a3e4ff783453d49836b34fd4deeb6de13a55f6fe1467ac2"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf1_BaseColor.png",
+      "bytes": 1343638,
+      "sha256": "0357a9a74792dddef41dfb32c02e8bd4c8e73c0a937532403001e1a7355e8339"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf1_Normal.png",
+      "bytes": 2317270,
+      "sha256": "8b605151bdf7a0a3fa7fadec9997dae67aa1757794f44761982b05823a80aec4"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf1_ORM.png",
+      "bytes": 117299,
+      "sha256": "27a7f4acadf83067a644b645c555003c8a2915552fd10f96cbcb2d35d0f2b8f8"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf2_BaseColor.png",
+      "bytes": 1188982,
+      "sha256": "204a24f34628d0c8c1ed32be2eaca90390de1fb42756675f7e0583f02477bcc9"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf2_Normal.png",
+      "bytes": 2316788,
+      "sha256": "3a48566dbeeb241ee16fa256b87d79bde271940f16943d4044ebc778cef800d9"
+    },
+    {
+      "path": "Textures/T_PazFarm_OrangeLeaf2_ORM.png",
+      "bytes": 117223,
+      "sha256": "2155afb095fe3af148dab80bc24cb0f047eecd2ac7898f059f3bccfe14918acc"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_BaseColor.png",
+      "bytes": 1788483,
+      "sha256": "b174e2db0944df4706feba7e3afd8e1beea1928f79cbcc52c95727857508048f"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_ORM.png",
+      "bytes": 643812,
+      "sha256": "8b82d8833befb8e15a0ab89228f5f4ddea448608cdd4193c9af060dab43c0be2"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_BaseColor.png",
+      "bytes": 211308,
+      "sha256": "fa77471e2f4188a7633d3f1daecbbbece6b9e38619f2b3027285f760731fbdef"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_Normal.png",
+      "bytes": 97076,
+      "sha256": "470986c19667756c6af1b82a9b7af6b070fb67d56dbfec685ad0040e59fde56e"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_ORM.png",
+      "bytes": 643812,
+      "sha256": "0e2933274815f92a71be15263ae386f8549d9514c26e8e23fcb5d6e21ea413d1"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_BaseColor.png",
+      "bytes": 1141273,
+      "sha256": "84d5897d1f87afe602685576225002492d363339b693d0334b98c1eaeb321957"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_Normal.png",
+      "bytes": 2316336,
+      "sha256": "ea2794c1f9246dc980696df8492f306d8bf37330a682944a4812bbee0dd3700e"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_Opacity.png",
+      "bytes": 20719,
+      "sha256": "85e229fd6fdd63b4f8c0c7d3a972a155063f73f9de46e2c6426b9cb996d9f01d"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_ORM.png",
+      "bytes": 117246,
+      "sha256": "3a223c8bfdea358b09a2c28c8d28f6e58131d15b1d6fe8fba6e827b85deabb90"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_BaseColor.png",
+      "bytes": 1325240,
+      "sha256": "ee13bb2a06a90b9e04d7a82954d2333348b7b96a841671242f2e760bc127d193"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_Normal.png",
+      "bytes": 2316336,
+      "sha256": "ea2794c1f9246dc980696df8492f306d8bf37330a682944a4812bbee0dd3700e"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_Opacity.png",
+      "bytes": 20719,
+      "sha256": "85e229fd6fdd63b4f8c0c7d3a972a155063f73f9de46e2c6426b9cb996d9f01d"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_ORM.png",
+      "bytes": 117246,
+      "sha256": "3a223c8bfdea358b09a2c28c8d28f6e58131d15b1d6fe8fba6e827b85deabb90"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_BaseColor.png",
+      "bytes": 67131,
+      "sha256": "8c881bec92de4f5ec2f72abce40d96ec083206545591d26441be23e389e6759a"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_Normal.png",
+      "bytes": 1624773,
+      "sha256": "c3e26060f857c30852d6554a91ff27df9c3f1f724b9516d8680e3cf2e886ebb6"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_ORM.png",
+      "bytes": 451272,
+      "sha256": "02fe7f49a0037988d0239a53ba78cd438afc3c23d1ed04742c1cd426381c92ad"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_BaseColor.png",
+      "bytes": 1431319,
+      "sha256": "2650dbe07fb5728fb5069749c3a30c3e2eaceccf34d4415f4e49d96547c8e0e7"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_ORM.png",
+      "bytes": 643812,
+      "sha256": "b96fb68a5e4352a729c78ff31494b20fdf4ad0419d5748c685a51a234320bd58"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_BaseColor.png",
+      "bytes": 1691656,
+      "sha256": "071154c986c97c036fd85a750affa0df212640d036de400d8ab90252d2d3b73a"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_ORM.png",
+      "bytes": 643812,
+      "sha256": "74eddc300f6843c98fb007c99c3c71a4a87e250a5ead58e4bb6683bb4c96ce01"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_BaseColor.png",
+      "bytes": 1269989,
+      "sha256": "4d6a524a14b6ca061f18b4c3a52e0a188f34dec760bf875b6833f5a32ce3f60a"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_Normal.png",
+      "bytes": 3093198,
+      "sha256": "5f7acd1c1784207cd1c6cda0934b16913bbf72bf55643ec19ccbefa0ab63fee4"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_ORM.png",
+      "bytes": 637446,
+      "sha256": "eb42f5a5bf9b1273dfc3eb2b8617c29cb48560b5aefde6edab4e59909eb28fb2"
+    },
+    {
+      "path": "Georef/DEFERRED_VISUAL_OPTIONS.json",
+      "bytes": 640,
+      "sha256": "e0e6dda6ef7349377253b645815c8109a58c0e5f228c66ef9dd7e6ad5186b6c3"
+    },
+    {
+      "path": "Georef/FARM_GROUND.json",
+      "bytes": 3234,
+      "sha256": "e54c0562ae1b7c46e387eadfe8c70517a250219e90309801ee514a4284c6d217"
+    },
+    {
+      "path": "Georef/GROUND_SETTINGS.json",
+      "bytes": 4525,
+      "sha256": "9460a0b6134eebf74dbfc9f831966b0d1c57e9c8851217d11c3149331fa7a074"
+    },
+    {
+      "path": "Georef/ground_v002.py",
+      "bytes": 17875,
+      "sha256": "4297e7942fa361f758e11aaadac55e0215daadd58ea7235937fb020aa0b503cf"
+    },
+    {
+      "path": "Georef/PLACEMENT_PATCH.json",
+      "bytes": 932,
+      "sha256": "6d35d4fd08c4546c0da868fd3f6fdf71414885acb75d1a7d3c4e69d92a42597f"
+    },
+    {
+      "path": "Georef/PLACEMENTS.json",
+      "bytes": 330545,
+      "sha256": "82ae415280fb6269650749f884100f4909a6e625df3141ad9574e016c03a5232"
+    },
+    {
+      "path": "Georef/T_PazFarm_Ground.png",
+      "bytes": 1233926,
+      "sha256": "fa474ef3035f1a4e8d94de924c1e8879dd4b778861dae6df42c68919f491f526"
+    }
+  ]
+}

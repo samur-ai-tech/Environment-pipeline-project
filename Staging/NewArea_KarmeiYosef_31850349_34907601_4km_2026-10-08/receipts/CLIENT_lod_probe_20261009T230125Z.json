@@ -1,0 +1,281 @@
+{
+  "utc_start": "2026-10-09T23:01:25.721487+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py",
+  "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+  "args": {
+    "meshes": [
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/tree01/SM_green-tree01",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/GreenTrees/tree02/SM_green-tree02",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/Pines/pine-small01/SM_pine-small01",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/Pines/pine-small03/SM_pine-small03",
+      "/Game/Palms_Pack_01/Add_Props/Thicket/Meshes/SM_Thicket_03_G",
+      "/Game/STF/Pack03-LandscapePro/Environment/Foliage/Bush/SM_bush01"
+    ],
+    "expected_pid": 30204,
+    "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py"
+  },
+  "editor_pid": 30204,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "meshes": {
+        "SM_green-tree01": {
+          "nanite": false,
+          "slots": [
+            "MI_dead-tree-lod03",
+            "MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_lod00"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 15872,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 7935,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 3207,
+              "sections": 2
+            },
+            {
+              "lod": 3,
+              "tris": 1588,
+              "sections": 2
+            },
+            {
+              "lod": 4,
+              "tris": 40,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.7,
+            0.4,
+            0.2,
+            0.1
+          ],
+          "materials": [
+            "MI_dead-tree-lod3_master_Inst_Inst.MI_dead-tree-lod3_master_Inst_Inst",
+            "MI_tree_dead_bark_master_Inst_lod00.MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_Inst.MI_dead-tree-leafs_master_Inst_Inst"
+          ]
+        },
+        "SM_green-tree02": {
+          "nanite": false,
+          "slots": [
+            "MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_lod00",
+            "MI_dead-tree-lod03"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 20977,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 10488,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 4196,
+              "sections": 2
+            },
+            {
+              "lod": 3,
+              "tris": 1091,
+              "sections": 2
+            },
+            {
+              "lod": 4,
+              "tris": 40,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.7,
+            0.5,
+            0.2,
+            0.1
+          ],
+          "materials": [
+            "MI_tree_dead_bark_master_Inst_lod00.MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_Inst.MI_dead-tree-leafs_master_Inst_Inst",
+            "MI_dead-tree-lod3_master_Inst_Inst.MI_dead-tree-lod3_master_Inst_Inst"
+          ]
+        },
+        "SM_pine-small01": {
+          "nanite": false,
+          "slots": [
+            "MI_lod00_bark",
+            "MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 530,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 158,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 79,
+              "sections": 1
+            },
+            {
+              "lod": 3,
+              "tris": 46,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.5,
+            0.2,
+            0.025
+          ],
+          "materials": [
+            "MI_lod00_bark.MI_lod00_bark",
+            "MI_lod00_leafs.MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst.MI_pines_lod3_master_Inst_Inst"
+          ]
+        },
+        "SM_pine-small03": {
+          "nanite": false,
+          "slots": [
+            "MI_lod00_bark",
+            "MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 390,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 116,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 74,
+              "sections": 1
+            },
+            {
+              "lod": 3,
+              "tris": 46,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.5,
+            0.2,
+            0.025
+          ],
+          "materials": [
+            "MI_lod00_bark.MI_lod00_bark",
+            "MI_lod00_leafs.MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst.MI_pines_lod3_master_Inst_Inst"
+          ]
+        },
+        "SM_Thicket_03_G": {
+          "nanite": false,
+          "slots": [
+            "FT_Bark",
+            "FT_Leaves"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 9726,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 5836,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 3404,
+              "sections": 2
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.3,
+            0.15
+          ],
+          "materials": [
+            "MI_Thicket_03_Bark.MI_Thicket_03_Bark",
+            "MI_Thicket_03_Leaves.MI_Thicket_03_Leaves"
+          ]
+        },
+        "SM_bush01": {
+          "nanite": false,
+          "slots": [
+            "lod03",
+            "lod00-bark",
+            "lod00-leafs",
+            "lod01-bark",
+            "lod01-leafs"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 4293,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 1767,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 42,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.1,
+            0.05
+          ],
+          "materials": [
+            "MI_bush_lod03_Inst.MI_bush_lod03_Inst",
+            "MI_bush_bark_material_master_lod00_Inst.MI_bush_bark_material_master_lod00_Inst",
+            "MI_bush_leafs_material_master_lod00_Inst.MI_bush_leafs_material_master_lod00_Inst",
+            "MI_bush_bark_material_master_lod01_Inst.MI_bush_bark_material_master_lod01_Inst",
+            "MI_bush_leafs_material_master_lod01_Inst.MI_bush_leafs_material_master_lod01_Inst"
+          ]
+        }
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-09T23:01:25.816618+00:00",
+  "exit_code": 0
+}

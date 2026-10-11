@@ -1,0 +1,27 @@
+{
+  "source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\Georef\\PLACEMENTS.json",
+  "source_sha256": "5c00e0963809fcf7332e24299887f198c0b39a3988f7f1763eacd15beaf03d06",
+  "units": "metres east/north of the Paz Farm pin; row_deg = row direction from east, counter-clockwise",
+  "replace_only_gate": {
+    "before": {
+      "mesh": "SM_PazFarm_Gate_Double_6m",
+      "e": 23.94,
+      "n": 50.07,
+      "dir_deg": 90.04
+    },
+    "after": {
+      "mesh": "SM_PazFarm_Gate_Double_6m",
+      "e": 24.266047,
+      "n": 52.46,
+      "dir_deg": 90.075493
+    }
+  },
+  "reason": "SM_PazFarm_Gate_Double_6m pivots at ground centre, not at a short end. Align its 6m envelope to actual omitted-panel interval.",
+  "preserved": {
+    "all_items": 1955,
+    "fence_segments": 225,
+    "corner_posts": 9,
+    "barn": true
+  },
+  "native_actions_performed": false
+}

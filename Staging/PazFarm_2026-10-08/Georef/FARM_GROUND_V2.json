@@ -1,0 +1,105 @@
+{
+ "texture": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\PazFarm\\T_PazFarm_GroundMask.png",
+ "size_m": 512.0,
+ "pixels": 2048,
+ "metres_per_pixel": 0.25,
+ "west_edge_m_from_pin": -219.843,
+ "north_edge_m_from_pin": 230.463,
+ "channels": {
+  "R": "tilled soil",
+  "G": "grass / weedy margin",
+  "B": "compacted dirt (roads, yard)",
+  "A": "farm coverage"
+ },
+ "plots": {
+  "yard": {
+   "kind": "yard",
+   "tilled": 0.0,
+   "grass_patches": 0.0,
+   "dirt": 1.0,
+   "frame_edges": 0
+  },
+  "strawberry_west": {
+   "kind": "strawberry_rows",
+   "tilled": 0.2,
+   "grass_patches": 0.12,
+   "dirt": 0.0,
+   "frame_edges": 0
+  },
+  "triangle_top_bare": {
+   "kind": "bare_soil",
+   "tilled": 0.6,
+   "grass_patches": 0.1,
+   "dirt": 0.0,
+   "frame_edges": 0
+  },
+  "strawberry_triangle": {
+   "kind": "strawberry_rows",
+   "tilled": 0.2,
+   "grass_patches": 0.12,
+   "dirt": 0.0,
+   "frame_edges": 0
+  },
+  "orchard_south": {
+   "kind": "orchard_avocado",
+   "tilled": 0.0,
+   "grass_patches": 0.45,
+   "dirt": 0.0,
+   "frame_edges": 1
+  },
+  "rows_east_unknown": {
+   "kind": "orchard_citrus_young",
+   "tilled": 0.45,
+   "grass_patches": 0.2,
+   "dirt": 0.0,
+   "frame_edges": 1
+  },
+  "orchard_northeast": {
+   "kind": "orchard_citrus",
+   "tilled": 0.0,
+   "grass_patches": 0.35,
+   "dirt": 0.0,
+   "frame_edges": 1
+  },
+  "field_north_green": {
+   "kind": "field_rows",
+   "tilled": 0.85,
+   "grass_patches": 0.08,
+   "dirt": 0.0,
+   "frame_edges": 2,
+   "crop_plants": 3216
+  },
+  "field_northeast_big": {
+   "kind": "field_rows",
+   "tilled": 1.0,
+   "grass_patches": 0.08,
+   "dirt": 0.0,
+   "frame_edges": 1
+  },
+  "field_southeast_brown": {
+   "kind": "bare_soil",
+   "tilled": 0.75,
+   "grass_patches": 0.08,
+   "dirt": 0.0,
+   "frame_edges": 1
+  },
+  "fields_west_green": {
+   "kind": "field_rows",
+   "tilled": 0.85,
+   "grass_patches": 0.08,
+   "dirt": 0.0,
+   "frame_edges": 2,
+   "crop_plants": 21277
+  },
+  "field_southwest": {
+   "kind": "field_rows",
+   "tilled": 0.4,
+   "grass_patches": 0.08,
+   "dirt": 0.0,
+   "frame_edges": 2
+  }
+ },
+ "coverage_share_of_square": 0.4206,
+ "crop_plants": 24493,
+ "method": "weights only (no screenshot pixels, no painted stripes); noisy feathered edges; margins; frame-edge fades"
+}

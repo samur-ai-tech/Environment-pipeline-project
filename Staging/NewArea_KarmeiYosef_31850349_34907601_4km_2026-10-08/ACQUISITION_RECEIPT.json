@@ -1,0 +1,138 @@
+{
+  "area_generated": false,
+  "completed_utc": "2026-10-08T11:18:40+00:00",
+  "coverage_limit": "The Overpass query finds candidates by OSM nodes within a 1 km context box. A long segment or enclosing polygon whose every node is outside that box can be omitted. Complete reference closure does not prove exhaustive spatial feature coverage.",
+  "elevation_source": "GLO-30",
+  "houdini_cooked": false,
+  "identity": {
+    "adapter_schema": "Environmentpipeline city source package v1",
+    "area_bounds": {
+      "east": 34.92873230738618,
+      "north": 31.868385835810983,
+      "south": 31.83231216418902,
+      "west": 34.88646969261382
+    },
+    "area_id": "KarmeiYosef_31850349_34907601_4km",
+    "dsm_selection": "Copernicus DEM GLO-30 Public 2021 COG EPSG:4326 EGM2008",
+    "osm_selection": "Overpass current OSM; building/building:part/highway; query v1"
+  },
+  "native_imported": false,
+  "network": [
+    {
+      "attempt": 1,
+      "error": "HTTP Error 504: Gateway Timeout",
+      "outcome": "failed",
+      "source": "OSM",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "attempt": 2,
+      "error": "HTTP Error 504: Gateway Timeout",
+      "outcome": "failed",
+      "source": "OSM",
+      "url": "https://overpass-api.de/api/interpreter"
+    },
+    {
+      "attempt": 1,
+      "error": "HTTP Error 500: Internal Server Error",
+      "outcome": "failed",
+      "source": "OSM",
+      "url": "https://overpass.kumi.systems/api/interpreter"
+    },
+    {
+      "attempt": 1,
+      "error": "HTTP Error 500: Internal Server Error",
+      "outcome": "failed",
+      "source": "OSM",
+      "url": "https://overpass.private.coffee/api/interpreter"
+    },
+    {
+      "attempt": 1,
+      "bytes": 6287486,
+      "outcome": "downloaded",
+      "source": "OSM",
+      "url": "https://overpass-api.de/api/interpreter"
+    }
+  ],
+  "package_path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\acquisitions\\b4a947917f55394af031be63792844f5b3881bf92f08019cdef0e6bdf7310bd8\\20261008T111637Z_6f1cae81\\city_source_v1.json",
+  "request": {
+    "area_id": "KarmeiYosef_31850349_34907601_4km",
+    "base_acquisition_sha256": "a1391663feb2b5e5c203114f68a7a3a9295312a9f7d196b810039a70cb78a491",
+    "bounds": {
+      "east": 34.92873230738618,
+      "north": 31.868385835810983,
+      "south": 31.83231216418902,
+      "west": 34.88646969261382
+    },
+    "center": {
+      "lat": 31.850349,
+      "lon": 34.907601
+    },
+    "extent_m": [
+      4000,
+      4000
+    ],
+    "native_operations": false,
+    "terrain_grid_samples": 4033,
+    "terrain_grid_spacing_m": 1
+  },
+  "status": "SOURCE_PACKAGE_VALIDATED",
+  "validation": {
+    "controls": {
+      "count": 6,
+      "names": [
+        "area_corner_NE",
+        "area_corner_NW",
+        "area_corner_SE",
+        "area_corner_SW",
+        "centre_origin",
+        "interior_building_corner"
+      ]
+    },
+    "dsm": {
+      "band_type": "Float32",
+      "compression": "NONE",
+      "crs": "EPSG:4326",
+      "finite_pixels": 21488,
+      "height": 136,
+      "max_m": 260.8428955078125,
+      "min_m": 95.6379623413086,
+      "pixel_is_point": true,
+      "required_bounds": {
+        "east": 34.92890135784527,
+        "north": 31.868530130497472,
+        "south": 31.83216786950253,
+        "west": 34.88630064215473
+      },
+      "sample_centre_bounds": {
+        "east": 34.92944444444444,
+        "north": 31.869166666666672,
+        "south": 31.83166666666667,
+        "west": 34.88583333333333
+      },
+      "vertical_datum_provenance": "Copernicus GLO-30 EGM2008; datum is not encoded in GeoTIFF CRS",
+      "width": 158
+    },
+    "osm": {
+      "building_relations": 0,
+      "building_ways": 606,
+      "closed_building_ways": 606,
+      "highway_ways": 476,
+      "missing_references": 0,
+      "nodes": 9378,
+      "osmium_check_refs": "There are 9378 nodes, 1082 ways, and 0 relations in this file.\nNodes     in ways      missing: 0\nNodes     in relations missing: 0\nWays      in relations missing: 0\nRelations in relations missing: 0",
+      "relations": 0,
+      "ways": 1082
+    },
+    "package": {
+      "bytes": 1978,
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\acquisitions\\b4a947917f55394af031be63792844f5b3881bf92f08019cdef0e6bdf7310bd8\\20261008T111637Z_6f1cae81\\city_source_v1.json",
+      "sha256": "224a7dff0b8afe53a3549ce125d570a22f691bc85ba00fe13fbe7b344c463e05"
+    },
+    "source_manifest": {
+      "bytes": 5563,
+      "path": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\acquisitions\\b4a947917f55394af031be63792844f5b3881bf92f08019cdef0e6bdf7310bd8\\20261008T111637Z_6f1cae81\\manifest.json",
+      "sha256": "54c90c5f3a90df31f69d65e643958ff7c0f262f39686f90a5710d6325e846176"
+    }
+  }
+}

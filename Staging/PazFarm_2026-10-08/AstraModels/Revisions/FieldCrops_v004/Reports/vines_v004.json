@@ -1,0 +1,1090 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_VineRow_3m_A",
+      "size_metres_W_D_H": [
+        0.65842,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.32851457595825195,
+          0.0,
+          0.0
+        ],
+        [
+          0.32990655303001404,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 36802,
+      "triangle_budget": 40000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_A.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_A.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 0,
+      "lod_index": 0,
+      "lowest_lod": false,
+      "paired_asset": "SM_PazFarm_VineRow_3m_A_LOD3",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    },
+    {
+      "name": "SM_PazFarm_VineRow_3m_A_LOD3",
+      "size_metres_W_D_H": [
+        0.585,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.29249998927116394,
+          0.0,
+          0.0
+        ],
+        [
+          0.29249998927116394,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 294,
+      "triangle_budget": 300,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_A_LOD3.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 3,
+      "lod_index": 3,
+      "lowest_lod": true,
+      "paired_asset": "SM_PazFarm_VineRow_3m_A",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    },
+    {
+      "name": "SM_PazFarm_VineRow_3m_B",
+      "size_metres_W_D_H": [
+        0.65898,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.3309597074985504,
+          0.0,
+          0.0
+        ],
+        [
+          0.32802513241767883,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 37762,
+      "triangle_budget": 40000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_B.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_B.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 0,
+      "lod_index": 0,
+      "lowest_lod": false,
+      "paired_asset": "SM_PazFarm_VineRow_3m_B_LOD3",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    },
+    {
+      "name": "SM_PazFarm_VineRow_3m_B_LOD3",
+      "size_metres_W_D_H": [
+        0.585,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.29249998927116394,
+          0.0,
+          0.0
+        ],
+        [
+          0.29249998927116394,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 294,
+      "triangle_budget": 300,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_B_LOD3.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 3,
+      "lod_index": 3,
+      "lowest_lod": true,
+      "paired_asset": "SM_PazFarm_VineRow_3m_B",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    },
+    {
+      "name": "SM_PazFarm_VineRow_3m_C",
+      "size_metres_W_D_H": [
+        0.66022,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.3316546678543091,
+          0.0,
+          0.0
+        ],
+        [
+          0.3285659849643707,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 38722,
+      "triangle_budget": 40000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_C.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_C.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 0,
+      "lod_index": 0,
+      "lowest_lod": false,
+      "paired_asset": "SM_PazFarm_VineRow_3m_C_LOD3",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    },
+    {
+      "name": "SM_PazFarm_VineRow_3m_C_LOD3",
+      "size_metres_W_D_H": [
+        0.585,
+        3.0,
+        1.9
+      ],
+      "bounds_metres": [
+        [
+          -0.29249998927116394,
+          0.0,
+          0.0
+        ],
+        [
+          0.29249998927116394,
+          3.0,
+          1.899999976158142
+        ]
+      ],
+      "triangles_LOD0": 294,
+      "triangle_budget": 300,
+      "materials": [
+        {
+          "name": "M_PazFarm_Vine_Bark_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Bark_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Bark_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Post_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Post_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Post_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Wire_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Wire_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Wire_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Leaf_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Leaf_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Leaf_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_LeafLight_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_LeafLight_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Canopy_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Canopy_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Canopy_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Vine_Grape_v004",
+          "textures": [
+            "Textures\\T_PazFarm_Vine_Grape_v004_BaseColor.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_Normal.png",
+            "Textures\\T_PazFarm_Vine_Grape_v004_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "VSP grapevine tile; exactly 3m along +Y; ground start-end origin. Two vines at Y=.75/2.25m and one wooden post occupying Y=0..0.07m.",
+        "Closed recessed inner canopy from .92 to 1.70m; detailed five-lobed green leaf clusters cover sides/top to approx 1.8m. Three wires; no mask, wind or collision.",
+        "Separate final LOD has a slightly expanded closed canopy to stand in for the detailed leaf envelope, plus post, two trunks, cordons and wires. Explicitly assign it as the receiving mesh lowest LOD; importing it as an unrelated mesh is insufficient.",
+        "All seven material slots retained in both LODs: bark0, post1, wire2, leaf3, leaf_light4, canopy5, grape6.",
+        "Translate tiles by exact 3m pitch. Identical canopy end profiles across A/B/C; internal end caps coincide on a plane only, with no positive-volume inter-tile overlap."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_VineRow_3m_C_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_VineRow_3m_C_LOD3.png",
+      "nominal_size_metres": [
+        0.65,
+        3,
+        1.9
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod": 3,
+      "lod_index": 3,
+      "lowest_lod": true,
+      "paired_asset": "SM_PazFarm_VineRow_3m_C",
+      "post_count": 1,
+      "vine_trunk_count": 2,
+      "seam_contract": {
+        "y_min": 0,
+        "y_max": 3,
+        "pitch_m": 3,
+        "canopy_shared_end_profile": true,
+        "one_start_post": true,
+        "post_center_y_m": 0.035,
+        "vine_centres_y_m": [
+          0.75,
+          2.25
+        ]
+      },
+      "blend": "Blend/VineRows.blend"
+    }
+  ],
+  "extra": {
+    "parameters": {
+      "tile_length_m": 3.0,
+      "tile_axis": "+Y",
+      "pivot_metres": [
+        0,
+        0,
+        0
+      ],
+      "vine_centres_y_m": [
+        0.75,
+        2.25
+      ],
+      "trunk_height_m": 0.9,
+      "post_width_m": 0.07,
+      "post_center_y_m": 0.035,
+      "post_height_m": 1.9,
+      "canopy_base_m": 0.92,
+      "canopy_top_m": 1.78,
+      "canopy_hull_thickness_m": 0.53,
+      "detailed_inner_hull_width_m": 0.48,
+      "detailed_inner_hull_top_m": 1.7,
+      "canopy_stations_m": [
+        0,
+        0.15,
+        0.75,
+        1.5,
+        2.25,
+        2.85,
+        3
+      ],
+      "wire_heights_m": [
+        0.9,
+        1.28,
+        1.62
+      ],
+      "leaf_counts": {
+        "A": 420,
+        "B": 432,
+        "C": 444
+      },
+      "leaf_rgb_srgb": [
+        49,
+        79,
+        28
+      ],
+      "canopy_rgb_srgb": [
+        47,
+        76,
+        27
+      ],
+      "row_pitch_preview_m": 2.75,
+      "seed": 10112026,
+      "material_order": [
+        "Vine_Bark_v004",
+        "Vine_Post_v004",
+        "Vine_Wire_v004",
+        "Vine_Leaf_v004",
+        "Vine_LeafLight_v004",
+        "Vine_Canopy_v004",
+        "Vine_Grape_v004"
+      ]
+    },
+    "LODpairing": {
+      "SM_PazFarm_VineRow_3m_A": "SM_PazFarm_VineRow_3m_A_LOD3",
+      "SM_PazFarm_VineRow_3m_B": "SM_PazFarm_VineRow_3m_B_LOD3",
+      "SM_PazFarm_VineRow_3m_C": "SM_PazFarm_VineRow_3m_C_LOD3"
+    },
+    "construction": "Seven shared opaque material slots. Each detailed module has a recessed opaque connected canopy, one start post with two wire supports, two trunks/cordons, sixteen shoots, three wires, four restrained grape bunches and 420/432/444 closed five-lobed leaf prisms. Each lowest LOD retains an expanded proxy canopy band, post/supports, two trunks/cordons and three wires.",
+    "source": "Original procedural modelling and texture artwork; no photographic pixels copied.",
+    "scope": "Offline only. Native import/LOD assignment and actual HLOD rendering remain with the operator."
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "utc_start": "2026-10-10T08:15:41.626950+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py",
+  "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+  "args": {
+    "meshes": [
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/Vegetation/Meshes/SM_Pine_Tree_01",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/Vegetation/Meshes/SM_green-tree01",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/Vegetation/Meshes/SM_green-tree02",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/Vegetation/Meshes/SM_pine-small01",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/v002/Meshes/SM_PazFarm_Avocado_A",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/v002/Meshes/SM_PazFarm_Lemon_A",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PazFarm/v002/Meshes/SM_PazFarm_StrawberryBed_4m"
+    ],
+    "expected_pid": 40740,
+    "script_sha256": "71b3e99cef7f33feecd7d4a684991e64fe7252f66cae66a914e7233b599229a6",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\lod_probe.py"
+  },
+  "editor_pid": 40740,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "meshes": {
+        "SM_Pine_Tree_01": {
+          "nanite": true,
+          "slots": [
+            "Bark",
+            "Pine_Tree_Branches"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 8876,
+              "sections": 2
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "MI_Pine_Tree_Bark.MI_Pine_Tree_Bark",
+            "MI_Pine_Tree_Branches.MI_Pine_Tree_Branches"
+          ]
+        },
+        "SM_green-tree01": {
+          "nanite": true,
+          "slots": [
+            "MI_dead-tree-lod03",
+            "MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_lod00"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 3352,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 1676,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 678,
+              "sections": 2
+            },
+            {
+              "lod": 3,
+              "tris": 336,
+              "sections": 2
+            },
+            {
+              "lod": 4,
+              "tris": 40,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.7,
+            0.4,
+            0.2,
+            0.1
+          ],
+          "materials": [
+            "MI_dead-tree-lod3_master_Inst_Inst.MI_dead-tree-lod3_master_Inst_Inst",
+            "MI_tree_dead_bark_master_Inst_lod00.MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_Inst.MI_dead-tree-leafs_master_Inst_Inst"
+          ]
+        },
+        "SM_green-tree02": {
+          "nanite": true,
+          "slots": [
+            "MI_tree_dead_bark_master_Inst_lod00",
+            "MI_dead-tree-leafs_master_Inst_lod00",
+            "MI_dead-tree-lod03"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 4657,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 2329,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 931,
+              "sections": 2
+            },
+            {
+              "lod": 3,
+              "tris": 243,
+              "sections": 2
+            },
+            {
+              "lod": 4,
+              "tris": 40,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.7,
+            0.5,
+            0.2,
+            0.1
+          ],
+          "materials": [
+            "MI_tree_dead_bark_master_Inst_lod00_tree02.MI_tree_dead_bark_master_Inst_lod00_tree02",
+            "MI_dead-tree-leafs_master_Inst_Inst_tree02.MI_dead-tree-leafs_master_Inst_Inst_tree02",
+            "MI_dead-tree-lod3_master_Inst_Inst_tree02.MI_dead-tree-lod3_master_Inst_Inst_tree02"
+          ]
+        },
+        "SM_pine-small01": {
+          "nanite": true,
+          "slots": [
+            "MI_lod00_bark",
+            "MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 338,
+              "sections": 2
+            },
+            {
+              "lod": 1,
+              "tris": 158,
+              "sections": 2
+            },
+            {
+              "lod": 2,
+              "tris": 79,
+              "sections": 1
+            },
+            {
+              "lod": 3,
+              "tris": 46,
+              "sections": 1
+            }
+          ],
+          "screen_sizes": [
+            1.0,
+            0.5,
+            0.2,
+            0.025
+          ],
+          "materials": [
+            "MI_lod00_bark.MI_lod00_bark",
+            "MI_lod00_leafs.MI_lod00_leafs",
+            "MI_pines_lod3_master_Inst_Inst.MI_pines_lod3_master_Inst_Inst"
+          ]
+        },
+        "SM_PazFarm_Avocado_A": {
+          "nanite": true,
+          "slots": [
+            "M_PazFarm_AvocadoBark",
+            "M_PazFarm_AvocadoLeaf0",
+            "M_PazFarm_AvocadoLeaf1",
+            "M_PazFarm_AvocadoLeaf2",
+            "M_PazFarm_AvocadoFruit"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 22543,
+              "sections": 5
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "MI_PazFarm_AvocadoBark.MI_PazFarm_AvocadoBark",
+            "MI_PazFarm_AvocadoLeaf0.MI_PazFarm_AvocadoLeaf0",
+            "MI_PazFarm_AvocadoLeaf1.MI_PazFarm_AvocadoLeaf1",
+            "MI_PazFarm_AvocadoLeaf2.MI_PazFarm_AvocadoLeaf2",
+            "MI_PazFarm_AvocadoFruit.MI_PazFarm_AvocadoFruit"
+          ]
+        },
+        "SM_PazFarm_Lemon_A": {
+          "nanite": true,
+          "slots": [
+            "M_PazFarm_LemonBark",
+            "M_PazFarm_LemonLeaf0",
+            "M_PazFarm_LemonLeaf1",
+            "M_PazFarm_LemonLeaf2",
+            "M_PazFarm_LemonFruit"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 21102,
+              "sections": 5
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "MI_PazFarm_LemonBark.MI_PazFarm_LemonBark",
+            "MI_PazFarm_LemonLeaf0.MI_PazFarm_LemonLeaf0",
+            "MI_PazFarm_LemonLeaf1.MI_PazFarm_LemonLeaf1",
+            "MI_PazFarm_LemonLeaf2.MI_PazFarm_LemonLeaf2",
+            "MI_PazFarm_LemonFruit.MI_PazFarm_LemonFruit"
+          ]
+        },
+        "SM_PazFarm_StrawberryBed_4m": {
+          "nanite": true,
+          "slots": [
+            "M_PazFarm_StrawberryMulch",
+            "M_PazFarm_StrawberrySoil",
+            "M_PazFarm_StrawberryLeaf",
+            "M_PazFarm_StrawberryLeafNew",
+            "M_PazFarm_StrawberryPetiole",
+            "M_PazFarm_StrawberryFruit",
+            "M_PazFarm_StrawberryFlower",
+            "M_PazFarm_StrawberryPollen"
+          ],
+          "lods": [
+            {
+              "lod": 0,
+              "tris": 2902,
+              "sections": 8
+            }
+          ],
+          "screen_sizes": [
+            2.0
+          ],
+          "materials": [
+            "MI_PazFarm_StrawberryMulch.MI_PazFarm_StrawberryMulch",
+            "MI_PazFarm_StrawberrySoil.MI_PazFarm_StrawberrySoil",
+            "MI_PazFarm_StrawberryLeaf.MI_PazFarm_StrawberryLeaf",
+            "MI_PazFarm_StrawberryLeafNew.MI_PazFarm_StrawberryLeafNew",
+            "MI_PazFarm_StrawberryPetiole.MI_PazFarm_StrawberryPetiole",
+            "MI_PazFarm_StrawberryFruit.MI_PazFarm_StrawberryFruit",
+            "MI_PazFarm_StrawberryFlower.MI_PazFarm_StrawberryFlower",
+            "MI_PazFarm_StrawberryPollen.MI_PazFarm_StrawberryPollen"
+          ]
+        }
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T08:15:41.770804+00:00",
+  "exit_code": 0
+}

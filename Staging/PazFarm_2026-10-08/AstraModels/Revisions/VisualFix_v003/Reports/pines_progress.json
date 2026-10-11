@@ -1,0 +1,623 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_AleppoPine_A",
+      "size_metres_W_D_H": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "bounds_metres": [
+        [
+          -2.487866163253784,
+          -3.0583536624908447,
+          0.0
+        ],
+        [
+          3.512133836746216,
+          2.6916463375091553,
+          8.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_A.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_A.png",
+      "nominal_size_metres": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "A",
+      "paired_asset": "SM_PazFarm_AleppoPine_A_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_A_LOD3",
+      "size_metres_W_D_H": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "bounds_metres": [
+        [
+          -2.4834365844726562,
+          -2.9908154010772705,
+          0.0
+        ],
+        [
+          3.5165634155273438,
+          2.7591845989227295,
+          8.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_A_LOD3.png",
+      "nominal_size_metres": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "A",
+      "paired_asset": "SM_PazFarm_AleppoPine_A",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_B",
+      "size_metres_W_D_H": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "bounds_metres": [
+        [
+          -4.881148815155029,
+          -2.9228570461273193,
+          0.0
+        ],
+        [
+          3.1188509464263916,
+          4.2771430015563965,
+          11.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_B.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_B.png",
+      "nominal_size_metres": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "B",
+      "paired_asset": "SM_PazFarm_AleppoPine_B_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_B_LOD3",
+      "size_metres_W_D_H": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "bounds_metres": [
+        [
+          -4.895594596862793,
+          -2.8829762935638428,
+          0.0
+        ],
+        [
+          3.104405641555786,
+          4.317023754119873,
+          11.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_B_LOD3.png",
+      "nominal_size_metres": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "B",
+      "paired_asset": "SM_PazFarm_AleppoPine_B",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_C",
+      "size_metres_W_D_H": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "bounds_metres": [
+        [
+          -4.176753044128418,
+          -3.8745603561401367,
+          0.0
+        ],
+        [
+          5.823246955871582,
+          5.275439739227295,
+          15.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_C.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_C.png",
+      "nominal_size_metres": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "C",
+      "paired_asset": "SM_PazFarm_AleppoPine_C_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_C_LOD3",
+      "size_metres_W_D_H": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "bounds_metres": [
+        [
+          -4.185314178466797,
+          -3.878113031387329,
+          0.0
+        ],
+        [
+          5.814685821533203,
+          5.271886825561523,
+          15.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_C_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_C_LOD3.png",
+      "nominal_size_metres": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "C",
+      "paired_asset": "SM_PazFarm_AleppoPine_C",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      }
+    }
+  ],
+  "extra": {}
+}

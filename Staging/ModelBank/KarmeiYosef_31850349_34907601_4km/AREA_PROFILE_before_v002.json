@@ -1,0 +1,807 @@
+{
+  "schema": "environmentpipeline.geocity_area_profile.v1",
+  "mode": "released",
+  "root": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015",
+  "map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km",
+  "hda": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/HDA/GeoCity_city_v015_CurrentBank_4km_KY",
+  "table": "/Game/Project/Shared/ModelBank/DT_EnvironmentBank_AnyArea",
+  "row_count": 1295,
+  "expected_output_count": 7,
+  "catalog_sha256": "12552e1421d7cda8e05b0f00a22d9ac52960fa27c0c3e12502efa7c8a470b41e",
+  "source": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\acquisitions\\b4a947917f55394af031be63792844f5b3881bf92f08019cdef0e6bdf7310bd8\\20261008T111637Z_6f1cae81\\city_source_v1.json",
+  "environment_style_set": "mediterranean_urban",
+  "landscape_material": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Materials/MI_GeoCityGround_Auto.MI_GeoCityGround_Auto",
+  "surface_choices": {
+    "landscape_output_mode": 0,
+    "paint_ground_choice": 17,
+    "paint_steep_choice": 18,
+    "paint_roadbed_choice": 16,
+    "paint_buildingpad_choice": 20
+  },
+  "cook_folder": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook",
+  "bake_folder": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Bake",
+  "catalog_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\HDA_CATALOG_RECEIPT.json",
+  "workflow_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\WORKFLOW_STATE.json",
+  "procedural_material": "/Game/Project/Shared/ModelBank/Materials/M_GeoCity_ProceduralFallback.M_GeoCity_ProceduralFallback",
+  "build_state_alias": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\BUILD_STATE.json",
+  "instance_materials": {
+    "/Game/ModularBuildingSet/Meshes/Rubble_Piles/rubble_trash_pile_a.rubble_trash_pile_a": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_6c1e4770c728.M_Bank_6c1e4770c728"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Palet_a.SM_Palet_a": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_35c0a7b664aa.MI_Bank_35c0a7b664aa"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Palet_b.SM_Palet_b": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_adf74f7b0a91.MI_Bank_adf74f7b0a91"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Rubbish_bug_1t.SM_Rubbish_bug_1t": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_9f64b53e79e4.MI_Bank_9f64b53e79e4"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Rubbish_bug_2t.SM_Rubbish_bug_2t": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_9f64b53e79e4.MI_Bank_9f64b53e79e4"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/SM_Slums_Trash_01a.SM_Slums_Trash_01a": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_c1a980f06b77.M_Bank_c1a980f06b77"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashbag.Trashbag": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b73bd3b7fbb7.M_Bank_b73bd3b7fbb7"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashcan_Closed02.Trashcan_Closed02": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b73bd3b7fbb7.M_Bank_b73bd3b7fbb7"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashcan_Lid.Trashcan_Lid": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b73bd3b7fbb7.M_Bank_b73bd3b7fbb7"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashcan_Open01.Trashcan_Open01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b73bd3b7fbb7.M_Bank_b73bd3b7fbb7"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashcan_Open02.Trashcan_Open02": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b73bd3b7fbb7.M_Bank_b73bd3b7fbb7"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0034_Cart.SM_H0034_Cart": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0058_Gaz.SM_H0058_Gaz": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_466fc1ea5e5d.M_Bank_466fc1ea5e5d"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0059_Grill_.SM_H0059_Grill_": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0077_Stones_Stack.SM_H0077_Stones_Stack": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_466fc1ea5e5d.M_Bank_466fc1ea5e5d"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0089_Tires.SM_H0089_Tires": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b88fce516839.M_Bank_b88fce516839"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/StreetFurniture/SM_H0060_Metal_Barrier.SM_H0060_Metal_Barrier": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_b308eca9a0f1.M_Bank_b308eca9a0f1"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Vehicles/SM_H0039_Destryoedcar.SM_H0039_Destryoedcar": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_06554790bd33.M_Bank_06554790bd33"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0903_Slum_s_fbx.SM_H0903_Slum_s_fbx": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_5e5abc74c4a8.M_Bank_5e5abc74c4a8"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0904_Slum_v_fbx.SM_H0904_Slum_v_fbx": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_159e1f3f186d.M_Bank_159e1f3f186d"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0015_Building_02.SM_H0015_Building_02": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_a491038940a4.M_Bank_a491038940a4",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_514017259f93.M_Bank_514017259f93",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_5fa7c6e728e2.M_Bank_5fa7c6e728e2",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_335356050dea.M_Bank_335356050dea"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Buildings/SM_H0014_Building_01.SM_H0014_Building_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_c29f9c2dfb4e.M_Bank_c29f9c2dfb4e",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_c06a4d6e9524.M_Bank_c06a4d6e9524",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_40a60c555c6d.M_Bank_40a60c555c6d",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_9782b7f2f3df.M_Bank_9782b7f2f3df",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_4126109bcda0.M_Bank_4126109bcda0",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_6c1026facd14.M_Bank_6c1026facd14",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_fe4411b39b49.M_Bank_fe4411b39b49",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_9711cc574177.M_Bank_9711cc574177"
+    ],
+    "/Game/ModularBuildingSet/Meshes/Rubble_Piles/rubble_dirt_pebble_pile_a.rubble_dirt_pebble_pile_a": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/M_Bank_8d87362f45c2.M_Bank_8d87362f45c2"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_dumpster.SM_dumpster": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/MI_Bank_0cdee0b61f9d.MI_Bank_0cdee0b61f9d"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_windows_4x4_01.SM_wall_windows_4x4_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_39cae9c7370f.M_39cae9c7370f"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_4x4_01.SM_wall_4x4_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_4x2_01.SM_wall_4x2_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Wall_4x1_01.SM_Wall_4x1_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_Steeldoor.SM_Steeldoor": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_2d106d7f312f.MI_2d106d7f312f"
+    ],
+    "/Game/AssetsvilleTown/Meshes/StreetProps/SM_utility_pole_5.SM_utility_pole_5": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_539c9025ec84.MI_539c9025ec84"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_windows_close_4x4_01.SM_wall_windows_close_4x4_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+      "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_3a32a3f5397e.MI_3a32a3f5397e",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_39cae9c7370f.M_39cae9c7370f"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_windows_one_4x4_open.SM_wall_windows_one_4x4_open": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+      "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/M_65068712e75d.M_65068712e75d",
+      "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_c7233b83ccfa.MI_c7233b83ccfa"
+    ],
+    "/Game/ModularCourtyard/Meshes/SM_wall_windowsT2_4x2_01.SM_wall_windowsT2_4x2_01": [
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+      "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+      "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_c7233b83ccfa.MI_c7233b83ccfa"
+    ],
+    "/Game/ProceduralBuildingGenerator/Meshes/Slum/Trashcan_Open03.Trashcan_Open03": [
+      "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_8577bd057998eb82.M_8577bd057998eb82"
+    ],
+    "/Game/Project/Shared/Bank_ME_v3/Props/SM_H0046_Foodcrate.SM_H0046_Foodcrate": [
+      "/Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/M_0ecedb11d2b9c6db.M_0ecedb11d2b9c6db"
+    ]
+  },
+  "release": {
+    "id": "EnvironmentBank_AnyArea_20261007",
+    "style_set": "mediterranean_urban",
+    "catalog_sha256": "12552e1421d7cda8e05b0f00a22d9ac52960fa27c0c3e12502efa7c8a470b41e",
+    "decision_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\AREA_DECISION.json",
+    "decision_sha256": "3bc52b7998d09224ecf3d58ab2478034f0f8c8d01a47581173508c5b54a5813e"
+  },
+  "normal_asset_policy": {
+    "selection_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task2\\NORMAL_ASSET_CONFIGURATION.json",
+    "required_roles": [
+      "whole_building",
+      "small_prop",
+      "street_prop",
+      "tree",
+      "shrub",
+      "understory",
+      "street_pole"
+    ],
+    "unavailable_roles": {},
+    "final_visual_acceptance": "pending_Aviv",
+    "asset_scale": "native_1_to_1",
+    "scope_extension_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task5\\NORMAL_SCOPE_CONFIGURATION.json",
+    "repair_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\RepairExecution_2026-10-03\\POLE5_NORMAL_CONFIGURATION.json",
+    "native_pole": "configured_supported_non_held_candidate; actual placement and visual suitability require ordinary generation",
+    "assembly_contract_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\RepairExecution_2026-10-03\\ASSEMBLY_CONTRACT.json",
+    "modular_asset_scale": "Measured facade bay width 0.5..1.5, story height 0.65..1.1; doors native scale. Whole buildings native 1:1.",
+    "bank_integration_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\BankIntegration_2026-10-04\\NORMAL_CONFIGURATION_f6fff4f9759af2db.json"
+  },
+  "normal_material_policy": {
+    "receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task3\\NORMAL_MATERIAL_CONFIGURATION.json",
+    "native_class_validation": "MaterialInstanceConstant read through native Unreal before enabling; physical bounds not applicable",
+    "scope_extension_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ManagedExecution_2026-10-02\\Task5\\NORMAL_SCOPE_CONFIGURATION.json",
+    "repair_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\RepairExecution_2026-10-03\\INSTANCE_MATERIALS.json",
+    "appearance_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\FACADE_MATERIALS.json"
+  },
+  "building_assembly_contract": {
+    "schema": "environmentpipeline.native_building_assembly.v1",
+    "enabled": true,
+    "date_local": "2026-10-03",
+    "scope_area_ids": [
+      "KarmeiYosef_31850349_34907601_4km"
+    ],
+    "implementation_file": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/BUILDING_ASSEMBLY_PATCH.py",
+    "hda_parameter": "building_assembly_contract_json",
+    "authorization": "Aviv requested this retained 4x4 km geographic area (2026-10-08) using the existing qualified bank and construction rules. Existing family enablement, holds and capabilities are preserved.",
+    "policy": "Only unmatched geographic pads after native whole-building selection. Emit building_module points through official bank_instances output. Remove original shell only when complete assembly and final terrain support checks pass.",
+    "modules": {
+      "window4": {
+        "path": "/Game/ModularCourtyard/Meshes/SM_wall_windows_4x4_01.SM_wall_windows_4x4_01",
+        "asset_id": "current_ModularCourtyard__Meshes__SM_wall_windows_4x4_01",
+        "min_cm": [
+          -4.471282958984375,
+          -400.0001220703125,
+          0.0
+        ],
+        "max_cm": [
+          49.99959182739258,
+          -0.0001220703125,
+          400.0
+        ],
+        "material_slots": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_39cae9c7370f.M_39cae9c7370f"
+        ],
+        "original_material_slots": [
+          "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+          "/Game/ModularCourtyard/Mats/Masters/M_windows_balkon.M_windows_balkon",
+          "/Game/ModularCourtyard/Mats/MI_Glass_2.MI_Glass_2",
+          "/Game/ModularCourtyard/Mats/Masters/M_EdgeDecal.M_EdgeDecal"
+        ],
+        "native_measurement_source": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json",
+        "dependency_status": "closed",
+        "dependency_evidence": "Native meshes and material slots loaded in live editor; native source review ledger records zero unresolved dependencies; project material copies preserve their parent closure.",
+        "actual_named_or_dependency_hold": false,
+        "route_hold_preserved": true,
+        "canonical_review_hold_preserved": "all_disabled_reserve",
+        "original_prop_selector_explicit_hold_preserved": true,
+        "original_prop_selector_hold_reasons_preserved": [
+          "outside_current_native_nonbuilding_prop_route"
+        ],
+        "rights_state": "unverified_preserved",
+        "use_scope": "dependency of the explicitly authorized measured retained normal building assembly; no prop-selector release"
+      },
+      "plain4": {
+        "path": "/Game/ModularCourtyard/Meshes/SM_wall_4x4_01.SM_wall_4x4_01",
+        "asset_id": "current_ModularCourtyard__Meshes__SM_wall_4x4_01",
+        "min_cm": [
+          0.0,
+          -400.0009765625,
+          0.0
+        ],
+        "max_cm": [
+          49.999420166015625,
+          -0.0009765625,
+          400.0001220703125
+        ],
+        "material_slots": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+        ],
+        "original_material_slots": [
+          "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick"
+        ],
+        "native_measurement_source": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json",
+        "dependency_status": "closed",
+        "dependency_evidence": "Native meshes and material slots loaded in live editor; native source review ledger records zero unresolved dependencies; project material copies preserve their parent closure.",
+        "actual_named_or_dependency_hold": false,
+        "route_hold_preserved": true,
+        "canonical_review_hold_preserved": "all_disabled_reserve",
+        "original_prop_selector_explicit_hold_preserved": true,
+        "original_prop_selector_hold_reasons_preserved": [
+          "outside_current_native_nonbuilding_prop_route"
+        ],
+        "rights_state": "unverified_preserved",
+        "use_scope": "dependency of the explicitly authorized measured retained normal building assembly; no prop-selector release"
+      },
+      "plain2": {
+        "path": "/Game/ModularCourtyard/Meshes/SM_wall_4x2_01.SM_wall_4x2_01",
+        "asset_id": "current_ModularCourtyard__Meshes__SM_wall_4x2_01",
+        "min_cm": [
+          0.0,
+          -200.0,
+          -3.0517578125e-05
+        ],
+        "max_cm": [
+          49.999427795410156,
+          0.0,
+          400.0000305175781
+        ],
+        "material_slots": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+        ],
+        "original_material_slots": [
+          "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick"
+        ],
+        "native_measurement_source": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json",
+        "dependency_status": "closed",
+        "dependency_evidence": "Native meshes and material slots loaded in live editor; native source review ledger records zero unresolved dependencies; project material copies preserve their parent closure.",
+        "actual_named_or_dependency_hold": false,
+        "route_hold_preserved": true,
+        "canonical_review_hold_preserved": "all_disabled_reserve",
+        "original_prop_selector_explicit_hold_preserved": true,
+        "original_prop_selector_hold_reasons_preserved": [
+          "outside_current_native_nonbuilding_prop_route"
+        ],
+        "rights_state": "unverified_preserved",
+        "use_scope": "dependency of the explicitly authorized measured retained normal building assembly; no prop-selector release"
+      },
+      "plain1": {
+        "path": "/Game/ModularCourtyard/Meshes/SM_Wall_4x1_01.SM_Wall_4x1_01",
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Wall_4x1_01",
+        "min_cm": [
+          0.0,
+          -100.0,
+          -9.1552734375e-05
+        ],
+        "max_cm": [
+          49.99940490722656,
+          0.0,
+          399.9999694824219
+        ],
+        "material_slots": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea"
+        ],
+        "original_material_slots": [
+          "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick"
+        ],
+        "native_measurement_source": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json",
+        "dependency_status": "closed",
+        "dependency_evidence": "Native meshes and material slots loaded in live editor; native source review ledger records zero unresolved dependencies; project material copies preserve their parent closure.",
+        "actual_named_or_dependency_hold": false,
+        "route_hold_preserved": true,
+        "canonical_review_hold_preserved": "all_disabled_reserve",
+        "original_prop_selector_explicit_hold_preserved": true,
+        "original_prop_selector_hold_reasons_preserved": [
+          "outside_current_native_nonbuilding_prop_route"
+        ],
+        "rights_state": "unverified_preserved",
+        "use_scope": "dependency of the explicitly authorized measured retained normal building assembly; no prop-selector release"
+      },
+      "door": {
+        "path": "/Game/ModularCourtyard/Meshes/SM_Steeldoor.SM_Steeldoor",
+        "asset_id": "current_ModularCourtyard__Meshes__SM_Steeldoor",
+        "min_cm": [
+          -11.05767822265625,
+          -143.1787109375,
+          7.62939453125e-06
+        ],
+        "max_cm": [
+          0.0,
+          1.2671051025390625,
+          252.8366470336914
+        ],
+        "material_slots": [
+          "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_2d106d7f312f.MI_2d106d7f312f"
+        ],
+        "original_material_slots": [
+          "/Game/ModularCourtyard/Mats/MI_StDoorsT1.MI_StDoorsT1"
+        ],
+        "native_measurement_source": "C:/Users/USER/Documents/Unreal Projects/Environmentpipeline/Staging/RepairExecution_2026-10-03/INSTANCE_MATERIALS.json",
+        "dependency_status": "closed",
+        "dependency_evidence": "Native meshes and material slots loaded in live editor; native source review ledger records zero unresolved dependencies; project material copies preserve their parent closure.",
+        "actual_named_or_dependency_hold": false,
+        "route_hold_preserved": true,
+        "canonical_review_hold_preserved": "all_disabled_reserve",
+        "original_prop_selector_explicit_hold_preserved": true,
+        "original_prop_selector_hold_reasons_preserved": [
+          "outside_current_native_nonbuilding_prop_route"
+        ],
+        "rights_state": "unverified_preserved",
+        "use_scope": "dependency of the explicitly authorized measured retained normal building assembly; no prop-selector release"
+      }
+    },
+    "closure_material_path": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+    "closure_thickness_m": 0.56,
+    "floor_slab_thickness_m": 0.18,
+    "terrain_contact_tolerance_m": 0.04,
+    "max_footprint_vertices": 128,
+    "preserve_actual_named_holds": [
+      "H0094",
+      "H0013",
+      "H0907",
+      "H0051",
+      "H0958"
+    ],
+    "preserve_declined_palms_and_unresolved_dependencies": true,
+    "canonical_catalog_eligibility_and_rights_unchanged": true,
+    "normal_output_bridge": "Existing official Houdini Engine unreal_instance point translator",
+    "coordinate_contract": {
+      "native_asset_axes": "X wall thickness inward, -Y facade edge tangent, Z up",
+      "houdini_module_axes": "X thickness, -Z facade edge tangent, Y up",
+      "orientation": "_quaternion(_rotation(edge_tangent)); native local +X maps pad interior and native -Y maps edge direction",
+      "position_anchor": "Exact measured min X, max Y and min Z compensated so module envelope begins at geographic edge/start and corrected pad elevation",
+      "scale_policy": "Whole assets stay 1:1; assembly bays alone use along-wall scale 0.5..1.5 and vertical scale 0.65..1.1. Door stays 1:1."
+    },
+    "assembly_rules": {
+      "footprints": "CCW simple single-ring closed geographic pad, convex or concave; no changes to geographic boundary; collinear and duplicate points conditioned without displacement",
+      "floors": "Deterministic story count near 3.2m, exact source height retained; measured 4m native bay height scaled to complete story; full footprint closed floor slab at each story and roof slab at source top",
+      "facades": "4m native window bays; measured 2m/1m plain fillers; bounded residual width distributed into whole bays or fillers; native envelopes must stay inside full concave footprint",
+      "corners": "Measured thickness with angle-derived convex trim; generated closed corner strips clipped to footprint triangles close each edge without extending outside the geographic pad",
+      "entrance": "Ground story longest usable edge reserves exact native Steeldoor width/height; wall intervals on both sides plus generated lintel; no backing wall across door opening; native door unscaled",
+      "terrain": "Every footprint vertex and ground module envelope corner sampled on the explicit final corrected heightfield; all contact samples must be within 4cm of corrected pad base",
+      "substitution": "Only complete supported records remove original shells; original shells remain for unsupported footprints/heights/contact, with exact reason and source ID",
+      "ledger": "Both instances and nonbuilding_instances include all building_module records; expected_mesh_counts includes native module paths; assembly building count is separate from whole-building and native module counts"
+    },
+    "acceptance": {
+      "source_implementation": "provided",
+      "actual_engine_cook": "root integrates and verifies",
+      "bake_persistence": "root executes named scope",
+      "visual_suitability": "not accepted by this source implementation"
+    },
+    "slab_material_path": "/Game/UtopianCity/Materials/MI_ConcreteGrain.MI_ConcreteGrain",
+    "slab_material_evidence": "Existing enabled non-held native concrete material row MB_D902DDA1804CBA25476D0D3066F9F760; scoped native assembly floor/roof dependency. Native source package preserved.",
+    "building_style_variants": {
+      "enable_condition": "Named native copies and palette MIs are saved in the root receipts. Root integrates this scoped contract and validates the actual retained Engine/Bake material partitions and appearance.",
+      "enabled": false,
+      "families": [
+        {
+          "enabled": true,
+          "id": "courtyard_balcony",
+          "module_overrides": {},
+          "weight": 1.0
+        },
+        {
+          "enabled": true,
+          "id": "courtyard_shutters",
+          "module_overrides": {
+            "window4": "closed4"
+          },
+          "weight": 1.0
+        },
+        {
+          "enabled": true,
+          "id": "courtyard_single_opening",
+          "module_overrides": {
+            "plain2": "narrow2",
+            "window4": "single4"
+          },
+          "weight": 1.0
+        }
+      ],
+      "modules": {
+        "closed4": {
+          "actual_named_or_dependency_hold": false,
+          "asset_id": "current_ModularCourtyard__Meshes__SM_wall_windows_close_4x4_01",
+          "axis_contract": "X_inward_minusY_along_Z_up",
+          "dependency_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json",
+          "dependency_status": "closed",
+          "material_slots": [
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+            "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_3a32a3f5397e.MI_3a32a3f5397e",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_39cae9c7370f.M_39cae9c7370f"
+          ],
+          "max_cm": [
+            49.999786376953125,
+            0.0,
+            400.0000457763672
+          ],
+          "min_cm": [
+            -4.471370697021484,
+            -400.0,
+            -1.52587890625e-05
+          ],
+          "native_measurement_source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\NATIVE_VARIETY_MEASUREMENTS.json",
+          "original_material_slots": [
+            "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+            "/Game/ModularCourtyard/Mats/Masters/MI_windows_balkon.MI_windows_balkon",
+            "/Game/ModularCourtyard/Mats/MI_Glass_2.MI_Glass_2",
+            "/Game/ModularCourtyard/Mats/Masters/M_EdgeDecal.M_EdgeDecal"
+          ],
+          "original_prop_selector_explicit_hold_preserved": true,
+          "original_prop_selector_hold_reasons_preserved": [
+            "outside_current_native_nonbuilding_prop_route"
+          ],
+          "path": "/Game/ModularCourtyard/Meshes/SM_wall_windows_close_4x4_01.SM_wall_windows_close_4x4_01",
+          "rights_state": "unverified_preserved",
+          "route_hold_preserved": true,
+          "use_scope": "dependency of normal scoped native building assembly only; canonical prop selector remains held",
+          "instancing_material_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json"
+        },
+        "narrow2": {
+          "actual_named_or_dependency_hold": false,
+          "asset_id": "current_ModularCourtyard__Meshes__SM_wall_windowsT2_4x2_01",
+          "axis_contract": "X_inward_minusY_along_Z_up",
+          "dependency_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json",
+          "dependency_status": "closed",
+          "material_slots": [
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+            "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_c7233b83ccfa.MI_c7233b83ccfa"
+          ],
+          "max_cm": [
+            50.00017547607422,
+            -0.0001220703125,
+            400.0
+          ],
+          "min_cm": [
+            -4.471370697021484,
+            -199.9998779296875,
+            0.0
+          ],
+          "native_measurement_source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\NATIVE_VARIETY_MEASUREMENTS.json",
+          "original_material_slots": [
+            "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+            "/Game/ModularCourtyard/Mats/Masters/M_windows_balkon.M_windows_balkon",
+            "/Game/ModularCourtyard/Mats/MI_Glass_2.MI_Glass_2",
+            "/Game/ModularCourtyard/Mats/Decals/MI_EdgeDecal.MI_EdgeDecal"
+          ],
+          "original_prop_selector_explicit_hold_preserved": true,
+          "original_prop_selector_hold_reasons_preserved": [
+            "outside_current_native_nonbuilding_prop_route"
+          ],
+          "path": "/Game/ModularCourtyard/Meshes/SM_wall_windowsT2_4x2_01.SM_wall_windowsT2_4x2_01",
+          "rights_state": "unverified_preserved",
+          "route_hold_preserved": true,
+          "use_scope": "dependency of normal scoped native building assembly only; canonical prop selector remains held",
+          "instancing_material_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json"
+        },
+        "single4": {
+          "actual_named_or_dependency_hold": false,
+          "asset_id": "current_ModularCourtyard__Meshes__SM_wall_windows_one_4x4_open",
+          "axis_contract": "X_inward_minusY_along_Z_up",
+          "dependency_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json",
+          "dependency_status": "closed",
+          "material_slots": [
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_e4aa3c9e1bea.MI_e4aa3c9e1bea",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_fe2092e516c2.M_fe2092e516c2",
+            "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/MI_bd7a986022cd.MI_bd7a986022cd",
+            "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/M_65068712e75d.M_65068712e75d",
+            "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_c7233b83ccfa.MI_c7233b83ccfa"
+          ],
+          "max_cm": [
+            49.999786376953125,
+            0.0,
+            400.0000457763672
+          ],
+          "min_cm": [
+            -4.471370697021484,
+            -400.0,
+            -1.52587890625e-05
+          ],
+          "native_measurement_source": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\NATIVE_VARIETY_MEASUREMENTS.json",
+          "original_material_slots": [
+            "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+            "/Game/ModularCourtyard/Mats/Masters/M_windows_balkon.M_windows_balkon",
+            "/Game/ModularCourtyard/Mats/MI_Glass_2.MI_Glass_2",
+            "/Game/ModularCourtyard/Mats/Masters/M_Dark_Empty.M_Dark_Empty",
+            "/Game/ModularCourtyard/Mats/Decals/MI_EdgeDecal.MI_EdgeDecal"
+          ],
+          "original_prop_selector_explicit_hold_preserved": true,
+          "original_prop_selector_hold_reasons_preserved": [
+            "outside_current_native_nonbuilding_prop_route"
+          ],
+          "path": "/Game/ModularCourtyard/Meshes/SM_wall_windows_one_4x4_open.SM_wall_windows_one_4x4_open",
+          "rights_state": "unverified_preserved",
+          "route_hold_preserved": true,
+          "use_scope": "dependency of normal scoped native building assembly only; canonical prop selector remains held",
+          "instancing_material_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\INSTANCE_MATERIALS.json"
+        }
+      },
+      "palettes": [
+        {
+          "actual_named_or_dependency_hold": false,
+          "actual_native_values": {
+            "material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_chalk_plaster.MI_Facade_chalk_plaster",
+            "Tint_Albedo": [
+              0.5,
+              0.49,
+              0.45,
+              1
+            ],
+            "Intencity_Tint_Albedo": 0.7200000286102295,
+            "Albedo_01": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_basecolor.T_Wall_Plaster_basecolor",
+            "native_parent": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7",
+            "native_masks_and_normals_preserved": true,
+            "visual_check": "retained_tone_live_review_pending"
+          },
+          "dependency_status": "closed",
+          "enabled": true,
+          "id": "chalk_plaster",
+          "native_parameter_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\FACADE_MATERIALS.json",
+          "native_textures_normals_masks_and_static_switches": "preserve source defaults; Clamp Dirt stays true; no assumed Brick/Plaster switch",
+          "original_material_package_preserved": true,
+          "proposed_scalar_overrides": {
+            "Intencity_Tint_Albedo": 0.7200000286102295
+          },
+          "proposed_vector_overrides_linear": {
+            "Tint_Albedo": [
+              0.5,
+              0.49,
+              0.45,
+              1
+            ]
+          },
+          "source_material_path": "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+          "surface_material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_chalk_plaster.MI_Facade_chalk_plaster",
+          "weight": 1.0
+        },
+        {
+          "actual_named_or_dependency_hold": false,
+          "actual_native_values": {
+            "material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_warm_sand_plaster.MI_Facade_warm_sand_plaster",
+            "Tint_Albedo": [
+              0.31,
+              0.22,
+              0.12,
+              1
+            ],
+            "Intencity_Tint_Albedo": 0.6800000071525574,
+            "Albedo_01": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_basecolor.T_Wall_Plaster_basecolor",
+            "native_parent": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7",
+            "native_masks_and_normals_preserved": true,
+            "visual_check": "retained_tone_live_review_pending"
+          },
+          "dependency_status": "closed",
+          "enabled": true,
+          "id": "warm_sand_plaster",
+          "native_parameter_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\FACADE_MATERIALS.json",
+          "native_textures_normals_masks_and_static_switches": "preserve source defaults; Clamp Dirt stays true; no assumed Brick/Plaster switch",
+          "original_material_package_preserved": true,
+          "proposed_scalar_overrides": {
+            "Intencity_Tint_Albedo": 0.6800000071525574
+          },
+          "proposed_vector_overrides_linear": {
+            "Tint_Albedo": [
+              0.31,
+              0.22,
+              0.12,
+              1
+            ]
+          },
+          "source_material_path": "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+          "surface_material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_warm_sand_plaster.MI_Facade_warm_sand_plaster",
+          "weight": 1.0
+        },
+        {
+          "actual_named_or_dependency_hold": false,
+          "actual_native_values": {
+            "material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_stone_gray_plaster.MI_Facade_stone_gray_plaster",
+            "Tint_Albedo": [
+              0.12,
+              0.13,
+              0.14,
+              1
+            ],
+            "Intencity_Tint_Albedo": 0.7799999713897705,
+            "Albedo_01": "/Game/ModularCourtyard/Textures/Wall/Plaster_finish/T_Wall_Plaster_basecolor.T_Wall_Plaster_basecolor",
+            "native_parent": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7",
+            "native_masks_and_normals_preserved": true,
+            "visual_check": "retained_tone_live_review_pending"
+          },
+          "dependency_status": "closed",
+          "enabled": true,
+          "id": "stone_gray_plaster",
+          "native_parameter_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\FACADE_MATERIALS.json",
+          "native_textures_normals_masks_and_static_switches": "preserve source defaults; Clamp Dirt stays true; no assumed Brick/Plaster switch",
+          "original_material_package_preserved": true,
+          "proposed_scalar_overrides": {
+            "Intencity_Tint_Albedo": 0.7799999713897705
+          },
+          "proposed_vector_overrides_linear": {
+            "Tint_Albedo": [
+              0.12,
+              0.13,
+              0.14,
+              1
+            ]
+          },
+          "source_material_path": "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+          "surface_material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_stone_gray_plaster.MI_Facade_stone_gray_plaster",
+          "weight": 1.0
+        },
+        {
+          "actual_named_or_dependency_hold": false,
+          "actual_native_values": {
+            "material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_weathered_brick.MI_Facade_weathered_brick",
+            "Tint_Albedo": [
+              0.3,
+              0.095,
+              0.045,
+              1
+            ],
+            "Intencity_Tint_Albedo": 0.5799999833106995,
+            "Albedo_01": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_BaseColor.T_BrickPlaster_BaseColor",
+            "native_parent": "/Game/Project/Shared/ModelBank/Materials/Instancing/Repair_20261003/M_e43bc289b8b7.M_e43bc289b8b7",
+            "native_masks_and_normals_preserved": true,
+            "visual_check": "retained_tone_live_review_pending"
+          },
+          "dependency_status": "closed",
+          "enabled": true,
+          "id": "weathered_brick",
+          "native_parameter_evidence": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\FACADE_MATERIALS.json",
+          "native_textures_normals_masks_and_static_switches": "preserve source defaults; Clamp Dirt stays true; no assumed Brick/Plaster switch",
+          "optional_texture_override_after_actual_visual_review": {
+            "Albedo_01": "/Game/ModularCourtyard/Textures/Wall/brick_plaster/T_BrickPlaster_BaseColor.T_BrickPlaster_BaseColor"
+          },
+          "original_material_package_preserved": true,
+          "proposed_scalar_overrides": {
+            "Intencity_Tint_Albedo": 0.5799999833106995
+          },
+          "proposed_vector_overrides_linear": {
+            "Tint_Albedo": [
+              0.3,
+              0.095,
+              0.045,
+              1
+            ]
+          },
+          "source_material_path": "/Game/ModularCourtyard/Mats/MI_Wall_PlasterBrick.MI_Wall_PlasterBrick",
+          "surface_material_path": "/Game/Project/Shared/ModelBank/Materials/Appearance_20261003/MI_Facade_weathered_brick.MI_Facade_weathered_brick",
+          "weight": 1.0
+        }
+      ],
+      "preservation": "Native whole-building choice, source footprint/height/base, storeys, true native door, floor/roof slab and terrain checks unchanged. Scope follows enabled normal assembly contract, not a general bank release.",
+      "schema": "environmentpipeline.native_building_styles.v1",
+      "scope_area_ids": [
+        "KarmeiYosef_31850349_34907601_4km"
+      ],
+      "selection_policy": "stable weighted per-source-building family and palette; no per-floor/bay recoloring",
+      "selection_seed": 1337,
+      "disabled_reason": "2026-10-07: generator _style_validate authorizes only GazaRimal/GazaShujaiya; kept disabled as in the Lebanon run (one style set, everything open) (no vegetation, Houdini roads)"
+    },
+    "source_family_registry_ref": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\AREA_SOURCE_FAMILY_REGISTRY.json",
+      "sha256": "6c8d112211627062cfb87e16de94f6748734d2c0d86c974ad3b244e162ea11a0"
+    },
+    "retired_building_module_prefixes": [
+      "/Game/ModularCourtyard/"
+    ],
+    "retired_building_family_reason": "Unregistered ModularCourtyard fallback remains retired; explicit native_modular_courtyard.v001 kit enabled by later user request.",
+    "unsupported_shell_tolerance": {
+      "enabled": true,
+      "max_count": 100000,
+      "max_fraction": 1.0,
+      "decided_by": "Aviv, Karmei Yosef chat, 2026-10-08 ~10:35Z: 'Never stop for this'",
+      "meaning": "pads whose assembly failed keep the original Houdini shell (status unsupported_original_shell_retained); for this area the bake always proceeds and the count is reported"
+    }
+  },
+  "road_provider": "houdini",
+  "road_provider_contract": {},
+  "roadbld_workflow": {
+    "requested": false,
+    "enabled": false,
+    "status": "Disabled: Houdini roads for the first Karmei Yosef run (Aviv 2026-10-08)",
+    "adapter": "Content/Python/geocity_roadbld_workflow.py",
+    "no_authentication_bypass": true,
+    "settings": {
+      "road_material": "/Game/Project/Shared/RoadBLD/Materials/MI_RoadBLD_Asphalt_Road_Worn_GeoCity"
+    },
+    "repair_queue_ref": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\ROAD_REPAIR_QUEUE.json",
+    "workflow_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\ROADBLD_WORKFLOW_STATE.json"
+  },
+  "appearance_repair_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\ASSIGNMENT.json",
+  "surface_normal_overrides": {
+    "Sand_01_Normal": {
+      "canonical_original": "/Game/MOUT_Arabian/Textures/Landscape/Sand_01/T_Sand_01_Normal.T_Sand_01_Normal",
+      "copy": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Ground_Gravel_N_GeoCityResident2K.T_Ground_Gravel_N_GeoCityResident2K",
+      "original_sha256": "5f85662de5f20cf230a19373c9b24f95f3f5e13fa2456d1c8b6db710957ddd54",
+      "receipt_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+      "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+      "current_native_package_sha256": "15a0515f8ed992b22a6743b7e8294ce8710e457a02a0688705c0079e404f92d3",
+      "binding_reconciliation_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Run_20261005\\PROFILE_CHANGE.json"
+    },
+    "Sand_02_Normal": {
+      "canonical_original": "/Game/MOUT_Arabian/Textures/Landscape/Sand_02/T_Sand_02_Normal.T_Sand_02_Normal",
+      "copy": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/Textures/EpicResident2K/T_Rock_Sandstone_N_GeoCityResident2K.T_Rock_Sandstone_N_GeoCityResident2K",
+      "original_sha256": "e305c2d7558b2f5e633b8242566d76b883d90b37e4c6ea40cf94cb0469a205a9",
+      "receipt_path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\AppearanceRepair_2026-10-03\\GROUND_SHADER_REPAIR_20261003T160849345599Z.json",
+      "receipt_sha256": "57b062f73a58c2b290aea24b8d6ef23da83d91151eaa9ebbedfef6f2ebaa74d3",
+      "current_native_package_sha256": "c411d8e6af1e1d6100ece8791fbaa964eaf6e8a2a3fa2cc8a798d35ee0a12df7",
+      "binding_reconciliation_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\ModularConstruction_2026-10-05\\Run_20261005\\PROFILE_CHANGE.json"
+    }
+  },
+  "landscape_grass": {
+    "base_material_instance": "/Game/Project/Shared/SurfacePainting/Appearance_20261003/MI_SurfaceBank_Natural.MI_SurfaceBank_Natural",
+    "coverage": 0.15,
+    "rules": "Ground is a geometric slope/open-space mask, not land-cover semantics. All four palette weights are normalized. Native Grass uses Ground times coverage; roads, pads and steep weights exclude/reduce it. Existing HDA placements remain retained.",
+    "ground_layer": "Sand_01",
+    "mesh_paths": [
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_02_3.SM_Grass_02_3",
+      "/Game/Palms_Pack_01/Add_Props/Grass/Meshes/SM_Grass_05_2.SM_Grass_05_2"
+    ],
+    "enabled": false,
+    "density_per_10m2": 12.0
+  },
+  "painted_layer_names": [
+    "Sand_01",
+    "Sand_02",
+    "Dirt_Path",
+    "Sand_Path"
+  ],
+  "external_landscape_material": {
+    "decision": "Karmei Yosef 4 km uses a named-saved copy of the Karmei Yosef 2 km ground instance (Lebanon MountainRangeExample values with the snow line moved to 10 km); appearance is pending the actual area.",
+    "parent_chain": [
+      "/Game/Project/Shared/SurfacePainting/Auto_20261006/M_GeoCityAuto.M_GeoCityAuto"
+    ],
+    "static_switches_false": [
+      "MW_[x]_UseRockProcedurals",
+      "MW_[x]_UseStonesProcedurals",
+      "MW_[x]_UseGrassProcedurals",
+      "MW_[x]_UseDirtProcedurals",
+      "MW_[x]_UseSnowProcedurals"
+    ]
+  },
+  "operation_timeout_seconds": 14400,
+  "native_ground_receipt": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\NATIVE_AREA_CREATION.json",
+  "native_ground_receipt_sha256": "bf1e11154478e5563559cac68283da0f95b64b480ce7550a84eede7aae2fbf67"
+}

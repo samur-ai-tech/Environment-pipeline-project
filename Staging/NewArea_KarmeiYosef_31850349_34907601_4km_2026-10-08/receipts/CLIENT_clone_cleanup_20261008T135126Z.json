@@ -1,0 +1,42 @@
+{
+  "utc_start": "2026-10-08T13:51:26.108742+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\clone_cleanup.py",
+  "script_sha256": "a23495e53d4b288b3bcf4e60034ea80e0e16e1b4afb9ced8c23180d97d33df68",
+  "args": {
+    "expected_pid": 26060,
+    "script_sha256": "a23495e53d4b288b3bcf4e60034ea80e0e16e1b4afb9ced8c23180d97d33df68",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\clone_cleanup.py"
+  },
+  "editor_pid": 26060,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "utc": "2026-10-08T13:51:34.426104+00:00",
+      "pid": 26060,
+      "source": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km",
+      "clone": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial",
+      "clone_sha256_before_cleanup": "22f1c3602d50358997b154ef1d119fcb8409cfae8c214e7a6e4d3aa858f0e12a",
+      "clone_sha256": "314921d9fe22a807e61dbf096a8e79c2f87b59b5bf7666c0c61a6c2b7cf2ad0d",
+      "source_sha256": "c7c858c50ca986d8f9791d394134bc6532c02e50f1971e0a0e302dfee96fca24",
+      "source_unchanged": true,
+      "removed_houdini_actors": [
+        "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial.L_KarmeiYosef_31850349_34907601_4km_PCGTrial:PersistentLevel.HoudiniAssetActor_0"
+      ],
+      "actor_count": 73,
+      "landscapes": 1,
+      "dirty_after": [
+        [],
+        []
+      ],
+      "history": "clone duplicated 13:50Z in PID 40064 without loading it; cleanup after a fresh startup on the clone",
+      "note": "clone references the 4 km area Bake/ meshes; a later 4 km regeneration can replace them"
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-08T13:51:34.650365+00:00",
+  "exit_code": 0
+}

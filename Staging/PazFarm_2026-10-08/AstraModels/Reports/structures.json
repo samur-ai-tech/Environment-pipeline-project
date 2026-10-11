@@ -1,0 +1,1056 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_NetHouse_Bay_8x4",
+      "size_metres_W_D_H": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 218,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Default flat white shade house; Black is the alternative material variant.",
+        "Pivot is the south-west/lower-left ground corner (0,0,0); source front is -Y.",
+        "Tile at (i*8,j*4,0) in Blender metres. Exact rendered envelope is 8 x 4 x 4 m.",
+        "Half-open 2D lattice: each bay owns ONLY its lower-left post, leading Y=0 rail and left X=0 rail. Adjacent bays do not duplicate posts or rails.",
+        "Close external right/rear boundaries with supplied Post_4m and ClosureBeam pieces; see Reports/structures_assembly.md.",
+        "Net UV0 repeats at 16/m: approximately 7.8 mm openings; use BaseColor alpha as masked opacity with two-sided material.",
+        "All dimensions are adjustable in Scripts/build_structures.py or --parameters JSON."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_00",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_01",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Bay_8x4.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Bay_8x4.png",
+      "nominal_size_metres": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Side_4",
+      "size_metres_W_D_H": [
+        4.0,
+        0.012,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.006000087596476078,
+          0.0
+        ],
+        [
+          4.0,
+          0.006000087596476078,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 114,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre net curtain; source plane is XZ at Y=0; pivot is left ground edge.",
+        "Curtain has binding hems only. Loadbearing boundary rails/posts come from Bay and closure pieces, so walls do not duplicate corner posts.",
+        "Place X-facing walls at x=4*k; rotate 90 degrees about Z for Y-facing walls. Panels tile exactly at a 4 m pitch.",
+        "No collision for flexible net; two-sided masked opacity from net BaseColor alpha."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Side_4.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Side_4.png",
+      "nominal_size_metres": [
+        4.0,
+        0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Door",
+      "size_metres_W_D_H": [
+        4.0,
+        1.63856,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.027499999850988388,
+          0.0
+        ],
+        [
+          4.0,
+          1.6110635995864868,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 364,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre wall with a 1.6 m wide x 2.5 m high doorway; leaf is folded inward by 85 degrees in the default.",
+        "Pivot left ground edge; XZ wall at Y=0; positive Y is inward.",
+        "UCX is limited to jambs/lintel, with no box blocking the doorway. Open leaf is visual-only.",
+        "NetHouse has no sill crossing the walking opening. Door width/height and folded-leaf construction are parameterized."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Door_00",
+        "UCX_SM_PazFarm_NetHouse_Door_01",
+        "UCX_SM_PazFarm_NetHouse_Door_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Door.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Door.png",
+      "nominal_size_metres": [
+        4.0,
+        1.5541,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Bay_8x4_Black",
+      "size_metres_W_D_H": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 218,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Default flat white shade house; Black is the alternative material variant.",
+        "Pivot is the south-west/lower-left ground corner (0,0,0); source front is -Y.",
+        "Tile at (i*8,j*4,0) in Blender metres. Exact rendered envelope is 8 x 4 x 4 m.",
+        "Half-open 2D lattice: each bay owns ONLY its lower-left post, leading Y=0 rail and left X=0 rail. Adjacent bays do not duplicate posts or rails.",
+        "Close external right/rear boundaries with supplied Post_4m and ClosureBeam pieces; see Reports/structures_assembly.md.",
+        "Net UV0 repeats at 16/m: approximately 7.8 mm openings; use BaseColor alpha as masked opacity with two-sided material.",
+        "All dimensions are adjustable in Scripts/build_structures.py or --parameters JSON."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_00",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_01",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Bay_8x4_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Bay_8x4_Black.png",
+      "nominal_size_metres": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Side_4_Black",
+      "size_metres_W_D_H": [
+        4.0,
+        0.012,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.006000087596476078,
+          0.0
+        ],
+        [
+          4.0,
+          0.006000087596476078,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 114,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre net curtain; source plane is XZ at Y=0; pivot is left ground edge.",
+        "Curtain has binding hems only. Loadbearing boundary rails/posts come from Bay and closure pieces, so walls do not duplicate corner posts.",
+        "Place X-facing walls at x=4*k; rotate 90 degrees about Z for Y-facing walls. Panels tile exactly at a 4 m pitch.",
+        "No collision for flexible net; two-sided masked opacity from net BaseColor alpha."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Side_4_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Side_4_Black.png",
+      "nominal_size_metres": [
+        4.0,
+        0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Door_Black",
+      "size_metres_W_D_H": [
+        4.0,
+        1.63856,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.027499999850988388,
+          0.0
+        ],
+        [
+          4.0,
+          1.6110635995864868,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 364,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre wall with a 1.6 m wide x 2.5 m high doorway; leaf is folded inward by 85 degrees in the default.",
+        "Pivot left ground edge; XZ wall at Y=0; positive Y is inward.",
+        "UCX is limited to jambs/lintel, with no box blocking the doorway. Open leaf is visual-only.",
+        "NetHouse has no sill crossing the walking opening. Door width/height and folded-leaf construction are parameterized."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Door_Black_00",
+        "UCX_SM_PazFarm_NetHouse_Door_Black_01",
+        "UCX_SM_PazFarm_NetHouse_Door_Black_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Door_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Door_Black.png",
+      "nominal_size_metres": [
+        4.0,
+        1.5541,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Post_4m",
+      "size_metres_W_D_H": [
+        0.08,
+        0.08,
+        3.96
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.07999999821186066,
+          0.07999999821186066,
+          3.9600000381469727
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary outer-boundary post. Pivot at lower-left footprint corner; visible post reaches underside of 4 m roof rail.",
+        "For Nx by Ny bays, place right edge at x=Nx*8-0.08, y=j*4; rear edge at x=i*8,y=Ny*4-0.08; add one far corner at x=Nx*8-0.08,y=Ny*4-0.08.",
+        "Right-edge j=0..Ny-1; rear-edge i=0..Nx-1. This recipe creates (Nx+1)*(Ny+1) posts, with no duplicate positions."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Post_4m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Post_4m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Post_4m.png",
+      "nominal_size_metres": [
+        0.08,
+        0.08,
+        3.96
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_ClosureBeam_4m",
+      "size_metres_W_D_H": [
+        4.0,
+        0.04,
+        0.04
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          3.9600000381469727
+        ],
+        [
+          4.0,
+          0.03999999910593033,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary missing outer-boundary top rail, modelled along +X at elevation 3.96..4.00 m, pivot ground at one end.",
+        "Rear edge: use 8m beam at (i*8,Ny*4-0.04,0). Right edge: 4m beam rotated +90deg, at (Nx*8,j*4,0).",
+        "Beam end-to-end seams are flush. At outer corners perpendicular rail ends meet with a small intended structural corner joint; no doubled coplanar rail surfaces."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_ClosureBeam_4m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_ClosureBeam_4m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_ClosureBeam_4m.png",
+      "nominal_size_metres": [
+        4.0,
+        0.04,
+        0.04
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_ClosureBeam_8m",
+      "size_metres_W_D_H": [
+        8.0,
+        0.04,
+        0.04
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          3.9600000381469727
+        ],
+        [
+          8.0,
+          0.03999999910593033,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary missing outer-boundary top rail, modelled along +X at elevation 3.96..4.00 m, pivot ground at one end.",
+        "Rear edge: use 8m beam at (i*8,Ny*4-0.04,0). Right edge: 4m beam rotated +90deg, at (Nx*8,j*4,0).",
+        "Beam end-to-end seams are flush. At outer corners perpendicular rail ends meet with a small intended structural corner joint; no doubled coplanar rail surfaces."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_ClosureBeam_8m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_ClosureBeam_8m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_ClosureBeam_8m.png",
+      "nominal_size_metres": [
+        8.0,
+        0.04,
+        0.04
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_Tunnel_9x4",
+      "size_metres_W_D_H": [
+        9.0,
+        4.0,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          0.0,
+          0.0
+        ],
+        [
+          4.5,
+          4.0,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 960,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseFilm",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilm_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "9 m outer film span x 4 m axial pitch x 4.5 m outer film height; source front is -Y.",
+        "Ground pivot at centre of leading short end (0,0,0); local X spans -4.5..4.5, local Y spans 0..4.",
+        "One steel arch on the leading edge only; tile at (0,j*4,0). Purlins and film end flush at exactly Y=0 and Y=4.",
+        "Add End wall at Y=0 and Y=N*4; add one EndArch closure only at Y=N*4-0.07. No duplicate interior arches.",
+        "Semi-transparent film: two sided translucent PBR; BaseColor alpha 0.20, roughness 0.28, IOR 1.46. FBX materials need native Unreal recreation.",
+        "UCX boxes follow steel arch only. Film and walking volume have no collision. No opaque box across tunnel."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_00",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_01",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_02",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_03",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_04",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_05",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_06",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_07",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_08",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_09",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_10",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_11",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_12",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_13",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_14",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_15",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_16",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_17",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_18",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_19",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_20",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_21"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_Tunnel_9x4.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_Tunnel_9x4.png",
+      "nominal_size_metres": [
+        9.0,
+        4.0,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_End",
+      "size_metres_W_D_H": [
+        9.0,
+        0.1925,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          -0.1574999988079071,
+          0.0
+        ],
+        [
+          4.5,
+          0.03500000014901161,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 330,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseFilm",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilm_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseFilmSeam",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Domed 9 m wide x 4.5 m tall film end wall with centred 1.8 m x 2.2 m door opening; rolled-up door film above opening.",
+        "Pivot at ground centre; end wall in local XZ plane at Y=0. Can be rotated 180 degrees on far end for outside-facing rolled door.",
+        "End wall deliberately excludes a perimeter arch, so it can attach to the existing leading arch without duplicate steel.",
+        "Add exactly one Greenhouse_EndArch at trailing cap; see structures_assembly.md.",
+        "Collision only on doorway steel jambs and lintel; no sill or invisible solid blocking the opening."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_End_00",
+        "UCX_SM_PazFarm_Greenhouse_End_01",
+        "UCX_SM_PazFarm_Greenhouse_End_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_End.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_End.png",
+      "nominal_size_metres": [
+        9.0,
+        0.23,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend"
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_EndArch",
+      "size_metres_W_D_H": [
+        9.0,
+        0.07,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          0.0,
+          0.0
+        ],
+        [
+          4.5,
+          0.07000000029802322,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 740,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary single terminal arch; same ground-centre origin and profile as the tunnel leading arch.",
+        "For N sections, place at (0,N*4-0.07,0); its steel bounds finish at Y=N*4 without extending the module envelope.",
+        "Not needed at the first end because first Tunnel already owns its leading arch."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_EndArch_00",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_01",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_02",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_03",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_04",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_05",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_06",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_07",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_08",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_09",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_10",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_11",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_12",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_13",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_14",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_15",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_16",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_17",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_18",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_19",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_20",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_21"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_EndArch.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_EndArch.png",
+      "nominal_size_metres": [
+        9.0,
+        0.07,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend"
+    }
+  ],
+  "extra": {
+    "parameters": {
+      "net_width": 8.0,
+      "net_depth": 4.0,
+      "net_height": 4.0,
+      "net_post": 0.08,
+      "net_rail": 0.04,
+      "net_door_width": 1.6,
+      "net_door_height": 2.5,
+      "greenhouse_span": 9.0,
+      "greenhouse_height": 4.5,
+      "greenhouse_length": 4.0,
+      "greenhouse_arch_segments": 40,
+      "greenhouse_door_width": 1.8,
+      "greenhouse_door_height": 2.2,
+      "render_previews": true,
+      "render_assembled": true
+    },
+    "reference_assessment": "Screenshot gives plan context only. Handoff explicitly authorizes these defaults; no extra reference required. These are configurable original generic agricultural structures, not a claimed measured Paz Farm reconstruction.",
+    "orientation": "Source front -Y, up Z. FBX exporter axis_forward=-Y axis_up=Z, apply_scale_options=FBX_SCALE_UNITS; Blender metres.",
+    "assembly_guide": "Reports/structures_assembly.md",
+    "assembled_previews": [
+      "Previews/NetHouse_Assembled_2x2_White.png",
+      "Previews/NetHouse_Assembled_2x2_Black.png",
+      "Previews/Greenhouse_Assembled_3Sections.png"
+    ],
+    "measured_qa": "Reports/structures_qa.json",
+    "default_net_material": "White; canonical handoff names have no variant suffix. Black alternatives use _Black."
+  }
+}

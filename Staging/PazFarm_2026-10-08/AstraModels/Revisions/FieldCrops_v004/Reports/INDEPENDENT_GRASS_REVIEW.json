@@ -1,0 +1,2240 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-10T22:11:11.477307+00:00",
+  "reviewer": "Independent subagent /root/v3_pines",
+  "independence": "Reviewer authored the separate pine/olive families, not the grass family. No grass model, texture, preview or source script was modified during this review.",
+  "scope": "Offline independent visual review of all eight field-grass variants and their 80-triangle lowest LODs. Includes fitted hero pairs, selected current distance pairs, independent saved-PNG decoding and evidence hash checks.",
+  "verdict": "READY_OFFLINE_HANDOFF_WITH_DOCUMENTED_LOD_LIMITS",
+  "ready": true,
+  "native_accepted": false,
+  "blocking_issues": [],
+  "summary": "The family meets the specified size and triangle ranges and the late-September palette: A-D are mostly dry straw, E/F visibly greener, patch A dry and patch B mixed. Final lowest LODs retain distinct visible clumps and distributed patch/scatter coverage at 150 m without a collapsing central void. Lowest LODs are noticeably simpler and thinner than the detailed meshes; they are suitable far proxies, not close substitutes.",
+  "brief_checks": {
+    "variants": 8,
+    "separate_meshes_and_fbx": 16,
+    "measurements": [
+      {
+        "name": "SM_PazFarm_GrassClump_A",
+        "size_metres": [
+          0.36000004410743713,
+          0.320000022649765,
+          0.2800000011920929
+        ],
+        "triangles": 2072
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_A_LOD3",
+        "size_metres": [
+          0.3415183275938034,
+          0.28838998079299927,
+          0.2800000011920929
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_B",
+        "size_metres": [
+          0.5200000405311584,
+          0.4500000476837158,
+          0.5099999904632568
+        ],
+        "triangles": 2396
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_B_LOD3",
+        "size_metres": [
+          0.46430912613868713,
+          0.40461643040180206,
+          0.5099999904632568
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_C",
+        "size_metres": [
+          0.6700000762939453,
+          0.5500000715255737,
+          0.6800000071525574
+        ],
+        "triangles": 2744
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_C_LOD3",
+        "size_metres": [
+          0.6273794770240784,
+          0.5137275159358978,
+          0.6800000071525574
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_D",
+        "size_metres": [
+          0.8500000834465027,
+          0.7300000786781311,
+          0.7799999713897705
+        ],
+        "triangles": 2908
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_D_LOD3",
+        "size_metres": [
+          0.8133373558521271,
+          0.634014755487442,
+          0.7799999713897705
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_E",
+        "size_metres": [
+          0.39000001549720764,
+          0.3400000333786011,
+          0.25
+        ],
+        "triangles": 2152
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_E_LOD3",
+        "size_metres": [
+          0.3746427595615387,
+          0.29846052825450897,
+          0.25
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_F",
+        "size_metres": [
+          0.64000004529953,
+          0.5600000619888306,
+          0.550000011920929
+        ],
+        "triangles": 2808
+      },
+      {
+        "name": "SM_PazFarm_GrassClump_F_LOD3",
+        "size_metres": [
+          0.5704629123210907,
+          0.5057171285152435,
+          0.550000011920929
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassPatch_2m_A",
+        "size_metres": [
+          2.000000238418579,
+          2.000000238418579,
+          0.6000000238418579
+        ],
+        "triangles": 7420
+      },
+      {
+        "name": "SM_PazFarm_GrassPatch_2m_A_LOD3",
+        "size_metres": [
+          1.8491920828819275,
+          1.9104825258255005,
+          0.6000000238418579
+        ],
+        "triangles": 80
+      },
+      {
+        "name": "SM_PazFarm_GrassPatch_2m_B",
+        "size_metres": [
+          2.000000238418579,
+          2.000000238418579,
+          0.6299999952316284
+        ],
+        "triangles": 7420
+      },
+      {
+        "name": "SM_PazFarm_GrassPatch_2m_B_LOD3",
+        "size_metres": [
+          1.8683273792266846,
+          1.9122315645217896,
+          0.6299999952316284
+        ],
+        "triangles": 80
+      }
+    ],
+    "budget_summary": "Clumps LOD0 2072-2908 triangles; patches LOD0 7420 each; all eight LOD3 meshes 80 triangles.",
+    "geometry": "Detailed meshes use closed bent grass blades, stems, awns/drooping seed heads and occasional broadleaf weeds. Lowest meshes use twenty pointed closed tetrahedral tufts, never billboards.",
+    "pivot_and_axes": "All pivots are at ground centre, minimum Z approximately 0; metre units and FBX -Y forward / Z up.",
+    "geometry_qa": "Final source and fresh-FBX checks report finite vertices/normals/UV0, zero zero-area triangles, zero boundary or nonmanifold edges, matching triangle counts and matching ground pivots.",
+    "fresh_fbx_evidence_current": true,
+    "material_slots": "Eight shared slots retain identical names/order within every high/low pair, including unused slots. The low roles carry separate darkened BaseColor PNGs, with the same Normal/ORM roles.",
+    "materials": "Opaque, two-sided, alpha 1; no wind or collision. Sixteen original 1K PNGs include sRGB BaseColor, OpenGL +Y Normal and ORM R=AO/G=roughness/B=metallic.",
+    "independent_texture_check": "All 16 saved PNGs independently decoded as 1024x1024 RGBA8; every alpha byte is 255. Low BaseColor pixels are darker, consistent with the documented 0.70 linear albedo calibration.",
+    "appearance": {
+      "Clump_A_D": "Predominantly dry golden straw, sparse green blades and weeds.",
+      "Clump_E_F": "Clearly greener annual-grass mix with dry seed details.",
+      "Patch_2m_A": "Predominantly dry straw.",
+      "Patch_2m_B": "Mixed straw and living green."
+    }
+  },
+  "visual_findings": [
+    {
+      "severity": "pass",
+      "finding": "All eight fitted high/low pairs were inspected. No floating bases, inverted orientation, missing patch section or gross scale defect was observed."
+    },
+    {
+      "severity": "pass",
+      "finding": "After final B/C/D widening, the 150 m scatter retains its population pattern and dry/green mixture. Individual tufts remain present; patches maintain distributed cover, including their central region."
+    },
+    {
+      "severity": "documented_nonblocking_limit",
+      "finding": "The low meshes lose fine blade and seed silhouettes. At 150 m the scatter has 0.75479 of the detailed alpha-weighted area; individual clumps retain about 0.648-0.712. This is visible thinning, not identical density.",
+      "action": "Inspect the native HLOD transition over the actual ground. Keep the current 80-triangle far proxies for handoff; do not claim exact density preservation."
+    },
+    {
+      "severity": "documented_nonblocking_limit",
+      "finding": "Patch LOD3s read as angular separated mounds at 15-50 m and change local holes/silhouette compared with fine grass. At 150 m their footprint remains distributed and their area ratios are 0.85305 and 0.82331.",
+      "action": "Use them as distant representations; keep detailed meshes while the patch is large on screen. Choose the native LOD/HLOD transition from scene evidence rather than treating 15 or 50 m test frames as an approved switch distance."
+    },
+    {
+      "severity": "documented_nonblocking_limit",
+      "finding": "F and dry patch A are somewhat darker at 150 m (luma changes -5.913 and -6.257 display code values); the green/straw distinction survives and there is no bright bleaching.",
+      "action": "Preserve calibrated low material assignments on import and judge the remaining tonal difference in destination lighting."
+    }
+  ],
+  "diagnostic_flags_judgement": {
+    "raw_flagged_comparison_count": 7,
+    "raw_flagged_comparisons": [
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_C_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.62364,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.6483,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.257,
+          -1.39,
+          -0.034
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.477,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "area ratio outside 0.65..1.45"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_C_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            531,
+            968,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_15m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.4212,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.86354,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.028,
+          -5.873,
+          -2.764
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.895,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ]
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_50m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.4553,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.85915,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -8.065,
+          -6.642,
+          -3.421
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.712,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_50m_4x.png",
+          "scale_factor": 4,
+          "source_crop_xyxy": [
+            915,
+            511,
+            1007,
+            573
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.54234,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.85305,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.707,
+          -6.138,
+          -3.152
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.257,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_150m_12x.png",
+          "scale_factor": 12,
+          "source_crop_xyxy": [
+            942,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_15m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.42289,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.83213,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.567,
+          -3.136,
+          -0.436
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.82,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ]
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_50m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.45876,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.83037,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -4.251,
+          -3.996,
+          -1.151
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.844,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_50m_4x.png",
+          "scale_factor": 4,
+          "source_crop_xyxy": [
+            914,
+            511,
+            1006,
+            574
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.53185,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.82331,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.45,
+          -3.421,
+          -0.762
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.235,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            941,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      }
+    ],
+    "clump_C_150m": {
+      "area_ratio": 0.6483,
+      "diagnostic_lower_band": 0.65,
+      "difference_below_band": 0.0017,
+      "silhouette_iou": 0.62364,
+      "luma_delta_code_values": -1.477,
+      "judgement": "Nonblocking. The 0.65 band is a review heuristic, not a brief requirement. The final image remains a coherent dry tuft, its colour is close, and the tiny threshold miss does not justify another geometry edit merely to cross the number."
+    },
+    "six_patch_iou_flags": "Both patches flag IoU below 0.55 at 15, 50 and 150 m. Accepted with the explicit near-view limitation: an 80-triangle group of mounds cannot trace thousands of blades, but final 150 m coverage exceeds 0.82 of the detailed version, the footprint and colour class survive, and there is no collapsing field-density or central-hole defect in the inspected far views.",
+    "all_flags_retained": true
+  },
+  "distance_evidence": {
+    "current_grass_frame_count": 72,
+    "current_whole_packet_frame_count": 154,
+    "complete_current_report": true,
+    "all_72_png_hashes_current": true,
+    "all_72_source_and_texture_bindings_current": true,
+    "settings": {
+      "engine": "CYCLES",
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoising": false,
+      "resolution_px": [
+        1920,
+        1080
+      ],
+      "horizontal_fov_deg": 60.0,
+      "camera_type": "PERSP",
+      "camera_clip_m": [
+        0.01,
+        10000
+      ],
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure_stops": 0.0,
+      "gamma": 1.0,
+      "world_color_linear": [
+        0.65,
+        0.7,
+        0.78
+      ],
+      "world_strength": 0.35,
+      "sun_energy": 2.0,
+      "sun_rotation_xyz_deg": [
+        35,
+        -25,
+        -40
+      ],
+      "sun_angle_deg": 5.0,
+      "transparent_film": true,
+      "render_ground": false,
+      "shadows_in_mask": false,
+      "azimuth_deg": -55.0,
+      "samples_seed": 1977,
+      "threads": 4,
+      "distance_definition": "Euclidean camera-to-declared-target slant distance in metres",
+      "png": "RGBA8 display sRGB, original unrescaled 1920x1080 evidence"
+    },
+    "distances_m": [
+      2,
+      15,
+      50,
+      150
+    ],
+    "visual_scope": "All eight fitted hero pairs; all eight single high/low pairs at 150 m; both patches and mixed 10x10 m scatter at 50/150 m; A/E/Patch B samples at 15 m. Final B/C/D heroes and 150 m singles plus final scatter were re-inspected after the last geometry change.",
+    "comparisons_150m": [
+      {
+        "key": [
+          "grass",
+          "Clump_A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_A_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.58279,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65721,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.107,
+          -2.018,
+          -0.61
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.148,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_A_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            953,
+            533,
+            967,
+            547
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_B_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.70165,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.71171,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.208,
+          -2.676,
+          -1.001
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.669,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_B_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            532,
+            968,
+            548
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_C_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.62364,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.6483,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.257,
+          -1.39,
+          -0.034
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.477,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "area ratio outside 0.65..1.45"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_C_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            531,
+            968,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_D",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_D_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_D_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.63314,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.67134,
+        "LOD3_minus_LOD0_lit_srgb": [
+          4.26,
+          2.53,
+          2.584
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.902,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_D_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            951,
+            530,
+            969,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_E",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_E_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_E_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.66603,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.69172,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.666,
+          0.264,
+          1.656
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 0.663,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_E_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            953,
+            533,
+            968,
+            547
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_F",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_F_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_F_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.65378,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65378,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.837,
+          -5.578,
+          -3.567
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.913,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_F_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            532,
+            969,
+            549
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.54234,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.85305,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.707,
+          -6.138,
+          -3.152
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.257,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_150m_12x.png",
+          "scale_factor": 12,
+          "source_crop_xyxy": [
+            942,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.53185,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.82331,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.45,
+          -3.421,
+          -0.762
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.235,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            941,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "mixed",
+          "scatter_10x10m",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_mixed_scatter_10x10m_150m_LOD0",
+        "LOD3_frame": "grass_mixed_scatter_10x10m_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.64164,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.75479,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.737,
+          -2.13,
+          -0.392
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.134,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_150m_2x.png",
+          "scale_factor": 2,
+          "source_crop_xyxy": [
+            882,
+            498,
+            1039,
+            583
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      }
+    ],
+    "single_and_scatter_150m_equivalent_opaque_pixels": {
+      "grass_Clump_A_single_150m_LOD0": 4.0039,
+      "grass_Clump_A_single_150m_LOD3": 2.6314,
+      "grass_Clump_B_single_150m_LOD0": 10.6235,
+      "grass_Clump_B_single_150m_LOD3": 7.5608,
+      "grass_Clump_C_single_150m_LOD0": 16.0118,
+      "grass_Clump_C_single_150m_LOD3": 10.3804,
+      "grass_Clump_D_single_150m_LOD0": 26.8235,
+      "grass_Clump_D_single_150m_LOD3": 18.0078,
+      "grass_Clump_E_single_150m_LOD0": 4.0706,
+      "grass_Clump_E_single_150m_LOD3": 2.8157,
+      "grass_Clump_F_single_150m_LOD0": 13.3882,
+      "grass_Clump_F_single_150m_LOD3": 8.7529,
+      "grass_Patch_2m_A_single_150m_LOD0": 137.4902,
+      "grass_Patch_2m_A_single_150m_LOD3": 117.2863,
+      "grass_Patch_2m_B_single_150m_LOD0": 140.0275,
+      "grass_Patch_2m_B_single_150m_LOD3": 115.2863,
+      "grass_mixed_scatter_10x10m_150m_LOD0": 1643.8627,
+      "grass_mixed_scatter_10x10m_150m_LOD3": 1240.7686
+    },
+    "all_comparison_snapshot": [
+      {
+        "key": [
+          "grass",
+          "Clump_A",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_A_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_A_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.5989,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.69744,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -5.006,
+          -3.95,
+          -1.965
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -4.031,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_A",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_A_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_A_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.64094,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.70146,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -6.112,
+          -4.679,
+          -2.582
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -4.833,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_A",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_A_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_A_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.66622,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.69627,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -5.033,
+          -4.001,
+          -2.113
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -4.084,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_A_single_50m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            949,
+            530,
+            970,
+            551
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_A_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.58279,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65721,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.107,
+          -2.018,
+          -0.61
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.148,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_A_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            953,
+            533,
+            967,
+            547
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_B",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_B_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_B_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.57303,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.6973,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.943,
+          -3.566,
+          -1.411
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.49,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_B",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_B_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_B_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.62099,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.68789,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -4.81,
+          -4.096,
+          -1.806
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -4.082,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_B",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_B_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_B_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.64318,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.69117,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -4.596,
+          -4.112,
+          -1.851
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -4.052,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_B_single_50m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            948,
+            526,
+            973,
+            554
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_B_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.70165,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.71171,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.208,
+          -2.676,
+          -1.001
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.669,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_B_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            532,
+            968,
+            548
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_C_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.53296,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.64881,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -1.034,
+          -0.868,
+          0.364
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -0.814,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_C_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.57556,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.67908,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.449,
+          -1.935,
+          -0.529
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.942,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_C_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.60074,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.67445,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -1.787,
+          -1.289,
+          0.049
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.299,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_C_single_50m_14x.png",
+          "scale_factor": 14,
+          "source_crop_xyxy": [
+            945,
+            525,
+            975,
+            557
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_C",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_C_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_C_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.62364,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.6483,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.257,
+          -1.39,
+          -0.034
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.477,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "area ratio outside 0.65..1.45"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_C_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            531,
+            968,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_D",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_D_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_D_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.53901,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.63635,
+        "LOD3_minus_LOD0_lit_srgb": [
+          7.592,
+          5.121,
+          4.952
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 5.634,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_D",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_D_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_D_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.58222,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.66379,
+        "LOD3_minus_LOD0_lit_srgb": [
+          5.599,
+          3.662,
+          3.936
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 4.094,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_D",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_D_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_D_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.61703,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.66629,
+        "LOD3_minus_LOD0_lit_srgb": [
+          6.146,
+          4.08,
+          3.982
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 4.512,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_D_single_50m_12x.png",
+          "scale_factor": 12,
+          "source_crop_xyxy": [
+            941,
+            523,
+            977,
+            559
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_D",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_D_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_D_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.63314,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.67134,
+        "LOD3_minus_LOD0_lit_srgb": [
+          4.26,
+          2.53,
+          2.584
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.902,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_D_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            951,
+            530,
+            969,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_E",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_E_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_E_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.61106,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.73829,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -0.248,
+          -0.428,
+          0.776
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -0.302,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_E",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_E_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_E_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.66924,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.74863,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -1.011,
+          -1.031,
+          0.348
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -0.928,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_E",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_E_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_E_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.68847,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.72286,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -1.378,
+          -1.051,
+          0.147
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -1.035,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_E_single_50m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            949,
+            531,
+            971,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_E",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_E_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_E_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.66603,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.69172,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.666,
+          0.264,
+          1.656
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 0.663,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_E_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            953,
+            533,
+            968,
+            547
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_F",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Clump_F_single_2m_LOD0",
+        "LOD3_frame": "grass_Clump_F_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.56308,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.64157,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -6.706,
+          -4.924,
+          -2.735
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.145,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_F",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Clump_F_single_15m_LOD0",
+        "LOD3_frame": "grass_Clump_F_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.60194,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65127,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.716,
+          -5.438,
+          -3.187
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.759,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_F",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Clump_F_single_50m_LOD0",
+        "LOD3_frame": "grass_Clump_F_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.63336,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65589,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -8.46,
+          -6.11,
+          -3.701
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.436,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_F_single_50m_15x.png",
+          "scale_factor": 15,
+          "source_crop_xyxy": [
+            945,
+            527,
+            975,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Clump_F",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Clump_F_single_150m_LOD0",
+        "LOD3_frame": "grass_Clump_F_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.65378,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.65378,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.837,
+          -5.578,
+          -3.567
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.913,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Clump_F_single_150m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            952,
+            532,
+            969,
+            549
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_2m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.39426,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.81129,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.599,
+          -6.556,
+          -3.059
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.526,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_15m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.4212,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.86354,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.028,
+          -5.873,
+          -2.764
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -5.895,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ]
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_50m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.4553,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.85915,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -8.065,
+          -6.642,
+          -3.421
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.712,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_50m_4x.png",
+          "scale_factor": 4,
+          "source_crop_xyxy": [
+            915,
+            511,
+            1007,
+            573
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_A_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.54234,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.85305,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -7.707,
+          -6.138,
+          -3.152
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -6.257,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_150m_12x.png",
+          "scale_factor": 12,
+          "source_crop_xyxy": [
+            942,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_2m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.41046,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.76633,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -1.519,
+          -3.253,
+          -0.156
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.661,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_15m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.42289,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.83213,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.567,
+          -3.136,
+          -0.436
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.82,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ]
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_50m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.45876,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.83037,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -4.251,
+          -3.996,
+          -1.151
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.844,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_50m_4x.png",
+          "scale_factor": 4,
+          "source_crop_xyxy": [
+            914,
+            511,
+            1006,
+            574
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "Patch_2m_B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_Patch_2m_B_single_150m_LOD0",
+        "LOD3_frame": "grass_Patch_2m_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.53185,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.82331,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.45,
+          -3.421,
+          -0.762
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -3.235,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [
+          "silhouette IoU below 0.55"
+        ],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            941,
+            527,
+            979,
+            555
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "mixed",
+          "scatter_10x10m",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "grass_mixed_scatter_10x10m_2m_LOD0",
+        "LOD3_frame": "grass_mixed_scatter_10x10m_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.5889,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.7155,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.174,
+          -2.484,
+          -0.406
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.481,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "mixed",
+          "scatter_10x10m",
+          "perspective",
+          15
+        ],
+        "LOD0_frame": "grass_mixed_scatter_10x10m_15m_LOD0",
+        "LOD3_frame": "grass_mixed_scatter_10x10m_15m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.56645,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.75474,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.559,
+          -2.73,
+          -0.752
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.764,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "grass",
+          "mixed",
+          "scatter_10x10m",
+          "perspective",
+          50
+        ],
+        "LOD0_frame": "grass_mixed_scatter_10x10m_50m_LOD0",
+        "LOD3_frame": "grass_mixed_scatter_10x10m_50m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.60179,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.75072,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -3.599,
+          -2.809,
+          -0.832
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.834,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_50m_1x.png",
+          "scale_factor": 1,
+          "source_crop_xyxy": [
+            732,
+            433,
+            1186,
+            668
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "grass",
+          "mixed",
+          "scatter_10x10m",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "grass_mixed_scatter_10x10m_150m_LOD0",
+        "LOD3_frame": "grass_mixed_scatter_10x10m_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.64164,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.75479,
+        "LOD3_minus_LOD0_lit_srgb": [
+          -2.737,
+          -2.13,
+          -0.392
+        ],
+        "LOD3_minus_LOD0_luma_code_value": -2.134,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_150m_2x.png",
+          "scale_factor": 2,
+          "source_crop_xyxy": [
+            882,
+            498,
+            1039,
+            583
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      }
+    ],
+    "resolution_limit": "The smallest A/E lowest clumps occupy only about 2.6/2.8 equivalent opaque pixels at 150 m. Geometry persistence does not guarantee a perceptible plant at arbitrary distance or resolution.",
+    "crop_and_magnification_limit": "Fitted orthographic heroes show construction only. Fixed-camera distance PNGs use the declared perspective rig; close cropped frames are not whole-object coverage proof. Nearest-neighbour enlarged pairs add no image detail."
+  },
+  "remaining_native_limits": [
+    "Unreal import/material assignment, forced non-Nanite LOD3 in always-loaded Instancing HLOD, and actual native transition behaviour remain unverified.",
+    "Actual ground colour, exposure, shadows and temporal antialiasing may change grass contrast and small-feature visibility; the transparent offline background is not native landscape evidence.",
+    "Terrain slope conformity, grounding and placement density in the real fields remain operator responsibilities.",
+    "No native runtime performance or memory measurement for tens of thousands of instances was performed.",
+    "Retain the seven raw diagnostic flags and these visual qualifications when describing readiness; offline readiness is not native acceptance."
+  ],
+  "evidence_sha256": {
+    "brief": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\HANDOFF_ASTRA_FieldCrops_v004.md",
+      "sha256": "97cd04eb54ee00deeabd79c6720a30c270b8d1ff0dbb61e898374f3e2cb9523a"
+    },
+    "reports": {
+      "Reports/grass_v004.json": "954ee2a1f0528989d4730933c5df05bf47bfd301e12501bb7176566a2baf3e5a",
+      "Reports/grass_v004_qa.json": "f69c1729f8764cc2d25aec38419e69bbe1fddf5272ee575e196d2ed087076353",
+      "Reports/VALIDATION.json": "40dded91cfb128dc3a033390c3cda17dad6d524cbf0343a26a1f31d3d10a92ba",
+      "Reports/distance_grass_progress.json": "42999c9dc6876de0133a91e57858a0a18776089fb5fcf50a0f3bf360d72507e2",
+      "Reports/distance_validation.json": "beff85840d3ba36df0c905c8c67e6164b69679e81bc803c7b8b92bd916cb2130"
+    },
+    "source_and_script": {
+      "Blend/FieldGrass.blend": "a9e0816b0b1168d965fb73b76f7e29d17bfe139dbecede23ce291a0778a749ad",
+      "Scripts/build_grass_v004.py": "ae00206a0770973e978ddf9ff274512deb4ad439dc383d026f4a78b8dc015b20"
+    },
+    "fbx": {
+      "FBX/SM_PazFarm_GrassClump_A.fbx": "a6d7e5e88ac50f1b9cd124253f5c72208928fbdcf0b3f50f9671b35d7b31ab8d",
+      "FBX/SM_PazFarm_GrassClump_A_LOD3.fbx": "fac94a930e466349a458e71b1b9f9522baee99e9a35dea2549f7b2bcad9ef063",
+      "FBX/SM_PazFarm_GrassClump_B.fbx": "dfe32eea0036c7e4e96b477d88136c7f4d1c8ca7ce4bc13492d433d5d204e326",
+      "FBX/SM_PazFarm_GrassClump_B_LOD3.fbx": "bb4297f4d19e993f345d84ef758b1114d60429521ba779ac33850346fb491c68",
+      "FBX/SM_PazFarm_GrassClump_C.fbx": "39c23bd8f92b0023149e34cb4de6c840606e69ba0768698596c88df16b0cf4f4",
+      "FBX/SM_PazFarm_GrassClump_C_LOD3.fbx": "04ae92d54de51ea0cbd3ac1215f832db1571e3e7e4a1ecc2189883e190ec67df",
+      "FBX/SM_PazFarm_GrassClump_D.fbx": "fe319a3e2ebf28320cfdf2cbf7d49f10586ff6d6cfa3acfdce9fb2d895f87d80",
+      "FBX/SM_PazFarm_GrassClump_D_LOD3.fbx": "1c8c9377d3cdcad53195f778089635e50f93a25df49762895a4c4e028d535a68",
+      "FBX/SM_PazFarm_GrassClump_E.fbx": "6661b47f211ee9e315c86fa1fa7909c9cc750d93e1dc4eda4b15242b086d34ad",
+      "FBX/SM_PazFarm_GrassClump_E_LOD3.fbx": "8789bd5d14718d9bdf35ba81193f737482c9e20344542e4bbfece05bc250b4fd",
+      "FBX/SM_PazFarm_GrassClump_F.fbx": "98e58eb2734c80c52b2a6ffa1b6c8046f41fe6e098ae736a381030d61fa72a79",
+      "FBX/SM_PazFarm_GrassClump_F_LOD3.fbx": "90a3df6b092f7d739dabed0be11651523057511fd396ee241a5e3dd8ab1d1232",
+      "FBX/SM_PazFarm_GrassPatch_2m_A.fbx": "bad0d18072d0f6fa0992519d75530ac39c08cb153ba14f380b8e8e5225a45589",
+      "FBX/SM_PazFarm_GrassPatch_2m_A_LOD3.fbx": "958fa19b1ca8788169df31712491a8d85ace61df96575bb1c0d9b0d77bdca48d",
+      "FBX/SM_PazFarm_GrassPatch_2m_B.fbx": "4e66c26540676a128a024187ebbc7c8c5a3631ed5bd4bbdc89c0bb9f612654b6",
+      "FBX/SM_PazFarm_GrassPatch_2m_B_LOD3.fbx": "2e23ea3ca36b5bd1a5592d38b6a8268634f879e3f794a3f1e7999a3ee507d7e7"
+    },
+    "textures": [
+      {
+        "file": "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "05ba812fa7fdca40640ac6544e53b22138076ea06cc70495181be1ef676156ff"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "3d3b5e7378b4333747b1c0c1b97d4fb7de4395eca467ebc17c158dd6a3590b6b"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Dry_Normal.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "9087284f12c2bddb2e5f91b61e352a0dd361a24bb189c465fe98d182a97e1e7f"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Dry_ORM.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "bdcd93e5c25d74c7dedf9475b7005cc633d9fbaeb09501794358bb6b1529a39d"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "78225e7bc9216cb7ee2eb4e36bb90a36a886883ec3f447a56cfb6eff8f93a98c"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "4be3f7ab8dd601a3f3ab88c7a299fead60d054cb9dd8319be7c96caef6f6a4d5"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Green_Normal.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "9087284f12c2bddb2e5f91b61e352a0dd361a24bb189c465fe98d182a97e1e7f"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Green_ORM.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "5d4a40f76f69aa88ffc5274b5d68c84cb222aa21383e63bc1d4c1a32b9a76c4a"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "6f85340e3b362580863af5e6eae843baddf2372bc1900ac4e507bdcc74e755c1"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "38cd7b4eea7040c09e93444a11d5af0439b07fc060d8705d582ad34591dc23d8"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Stem_Normal.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "9087284f12c2bddb2e5f91b61e352a0dd361a24bb189c465fe98d182a97e1e7f"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Stem_ORM.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "daa2c85e8bc841069e654ce8c80913bbbed9e0ba0e90485ee4301e0536f02e01"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "4bd8182fc87a4051a0e51eba2dc96d0c025da276a7ad01454b107ee1db53cc9c"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "f3f238d6c83db44de7d3233b065a2ffb030c686314dd3a8c0b2c8128e6acee2b"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Straw_Normal.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "9087284f12c2bddb2e5f91b61e352a0dd361a24bb189c465fe98d182a97e1e7f"
+      },
+      {
+        "file": "Textures/T_PazFarm_Grass_Straw_ORM.png",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "alpha_bytes_min_max": [
+          255,
+          255
+        ],
+        "sha256": "4860316263531fa233d404c589bc9c552f5b291f07b7e830b909a6a27a90a426"
+      }
+    ],
+    "selected_images_visually_inspected": {
+      "Previews/SM_PazFarm_GrassClump_A.png": "b99df3a77945c0f01e70581f075fe12d7d76b4b94d3a0f431e58c3644977db90",
+      "Previews/SM_PazFarm_GrassClump_A_LOD3.png": "e7b5cdec0751364165d69cca2c59994c8c0f38afd0d62ccaaed420b96e21248c",
+      "Previews/SM_PazFarm_GrassClump_B.png": "e16335619d115f18f3efb0294843ea056dde30f29c5a6aa6ad63cfae22846f72",
+      "Previews/SM_PazFarm_GrassClump_B_LOD3.png": "d3cf00c96b4d5e8dc9f6f9df8edbea8efff643aefdc4484cd3d6141ced662cef",
+      "Previews/SM_PazFarm_GrassClump_C.png": "83e492795c8ec9469707824aac41625c314bfc6c9c31ca9295083e2fda0e95ea",
+      "Previews/SM_PazFarm_GrassClump_C_LOD3.png": "a918d94f14ed857ff1b5bc24dd246b32c305d77fcc6410394a87fce2df08951e",
+      "Previews/SM_PazFarm_GrassClump_D.png": "cf1c0505c0b888c3a85733d862f96350af8fd0fc2b1ad1127d314275e2384dfa",
+      "Previews/SM_PazFarm_GrassClump_D_LOD3.png": "340d5412af3c9483fba4b700196debdfd17c958872864d4b62138979edd611e3",
+      "Previews/SM_PazFarm_GrassClump_E.png": "67384d22ef4cd568dddc1441d1c6526125bed1ad038c92d1c13b172eadf4b356",
+      "Previews/SM_PazFarm_GrassClump_E_LOD3.png": "cf1510e64754d822678cd578366c618a524d07610647b7f05d1cdd778338112a",
+      "Previews/SM_PazFarm_GrassClump_F.png": "d3582f5cb02d2854a5bf8a14f41dba3403727b624c458ae5f13d7e78a24ae876",
+      "Previews/SM_PazFarm_GrassClump_F_LOD3.png": "e62fe34768dd30192cb1ffbadc656aba5f92da92e3e0287afb73f1c803b95102",
+      "Previews/SM_PazFarm_GrassPatch_2m_A.png": "ad896de813c23cca73f9f91f125d59cf4066de4b576cfbfefe012089c758ab64",
+      "Previews/SM_PazFarm_GrassPatch_2m_A_LOD3.png": "7a816d9a204c841c54f3c2a05ed78544a2c1f78e55c9df972bc77ac63f81e667",
+      "Previews/SM_PazFarm_GrassPatch_2m_B.png": "cfb09fb22273636590ff57e0041e9ff899854f9f160b0b8161c79b1c85e7f6fc",
+      "Previews/SM_PazFarm_GrassPatch_2m_B_LOD3.png": "699948b4822204aa91a2a108d633f5518c27a9b8c42683b52b4a640c46147eed",
+      "Previews/Distance/MAGNIFIED_grass_Clump_A_single_150m_16x.png": "0b70d5bf4bc94f7ac83f1d83a616ec039d17212c959487ead163e2f49c2bbfc8",
+      "Previews/Distance/MAGNIFIED_grass_Clump_B_single_150m_16x.png": "8aa24443cc8b4f3890a0c86b5ad6316026738ce66b5190674d0cb53a664c231e",
+      "Previews/Distance/MAGNIFIED_grass_Clump_C_single_150m_16x.png": "ca768906dd914ab541addda26136111dd87a982b6a39b9a609d72e8586594dc0",
+      "Previews/Distance/MAGNIFIED_grass_Clump_D_single_150m_16x.png": "5889f432dc0f759141504931aca058eefb4a34528805bc4fa72c98dac668b68f",
+      "Previews/Distance/MAGNIFIED_grass_Clump_E_single_150m_16x.png": "b63867b52aa244d54b4a6e88620850b0a01ac08ae71f317bbf9b13695bec8f59",
+      "Previews/Distance/MAGNIFIED_grass_Clump_F_single_150m_16x.png": "46ba7273b45bda7f858ae9e111758abcaf18160145641cffcef4514790c7f3ea",
+      "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_50m_4x.png": "6493ee00599a2759a959afc877293e8f38611bbe4af5aa489ee695081089d13d",
+      "Previews/Distance/MAGNIFIED_grass_Patch_2m_A_single_150m_12x.png": "80b0dcb6902bcd299d40cc43476caa066c12c1f856e4ddc37dd0773ab7b96363",
+      "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_50m_4x.png": "c8f45a010f74d1f14b713e7c2b049f5859b21f6500f3757f1dbf406ef2dc0c5e",
+      "Previews/Distance/MAGNIFIED_grass_Patch_2m_B_single_150m_11x.png": "ee0b5a7cdd681ef0dc2ed351f3dfd4897bc5e28d86df70930533252933de5e75",
+      "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_50m_1x.png": "97257f827dc0284dad3dcf3fcea533279b03eac310662d5f092061e81c5ee851",
+      "Previews/Distance/MAGNIFIED_grass_mixed_scatter_10x10m_150m_2x.png": "0c167764a06dbd51ea26add8cc2f02787956c4c0ebfb05e802509274d4d05683",
+      "Previews/Distance/grass_Clump_A_single_15m_LOD0.png": "13d0c6cb9c337b62bd0fba29aa443ac1a36f96851d7b0d7e9a077e6e21e806f0",
+      "Previews/Distance/grass_Clump_A_single_15m_LOD3.png": "c00276165180e2f09091a45b59d8f6429a83f9fde8c52537bcc2200ac783750b",
+      "Previews/Distance/grass_Clump_E_single_15m_LOD0.png": "82bd3ea32fe64f2ed067466f8fbb9f51cf1e74e5f95b97e097b209245dfbb3e2",
+      "Previews/Distance/grass_Clump_E_single_15m_LOD3.png": "6ae368ba2887ebf4aa17588ed4dff4f70380431993e8c6000b84cd9bae10905f",
+      "Previews/Distance/grass_Patch_2m_B_single_15m_LOD0.png": "2ea567058d86221bf9bec5a1bc3dbf39c7c8b4007aa48583022917d0b2248f28",
+      "Previews/Distance/grass_Patch_2m_B_single_15m_LOD3.png": "9684b65616fabe2eb52f19bbd52d1cf52fa792aa23b82615198a3c0fc1ed298f"
+    },
+    "all_grass_distance_pngs": {
+      "Previews/Distance/grass_Clump_A_single_2m_LOD0.png": "a3f8a03ce900011daf0791bd3baab01a91ac3aa8cd1f8470c73c7aef676f3bde",
+      "Previews/Distance/grass_Clump_A_single_2m_LOD3.png": "a77b188074802b6bff8f6271d510e110da7eca3de7f1c668f6257b406850a53c",
+      "Previews/Distance/grass_Clump_A_single_15m_LOD0.png": "13d0c6cb9c337b62bd0fba29aa443ac1a36f96851d7b0d7e9a077e6e21e806f0",
+      "Previews/Distance/grass_Clump_A_single_15m_LOD3.png": "c00276165180e2f09091a45b59d8f6429a83f9fde8c52537bcc2200ac783750b",
+      "Previews/Distance/grass_Clump_A_single_50m_LOD0.png": "b022424d2a0781275c699c63084998674a3efe865bcee61125708e7a9b003dbb",
+      "Previews/Distance/grass_Clump_A_single_50m_LOD3.png": "54a8ac63815640a68f8495f50fce5111dd4763702195d7c32e8d815701ec0f68",
+      "Previews/Distance/grass_Clump_A_single_150m_LOD0.png": "651e120df00793b0373db73251fbb2603437e45cf2a4e6826c039bf20f8c1dd4",
+      "Previews/Distance/grass_Clump_A_single_150m_LOD3.png": "4d6f95b6a0f8f3ea34c97dd8102bb1fd2abc23c9018e8cae4897c1ae34cdab95",
+      "Previews/Distance/grass_Clump_B_single_2m_LOD0.png": "a01a964ecc21419e99ef1f4a3d8234e5c988c81c3392e334eb8d328b8159dbca",
+      "Previews/Distance/grass_Clump_B_single_2m_LOD3.png": "ba3d73323fa9ec2b6e17d5209203988b6f15c39177bbfb4c4290a6167bcc8b79",
+      "Previews/Distance/grass_Clump_B_single_15m_LOD0.png": "b40f56dd832db0638333164984a6ee4cb370b9d8b1ec14081aa43c90b772cd63",
+      "Previews/Distance/grass_Clump_B_single_15m_LOD3.png": "69f8bea739b6a9b538d0bb612f9040f8542a427d8bd63ab6ebf4b2cc7a66547f",
+      "Previews/Distance/grass_Clump_B_single_50m_LOD0.png": "d3e7d00d678871024f06393cbc3f798acc410e3182b571a1375d323ad26973d7",
+      "Previews/Distance/grass_Clump_B_single_50m_LOD3.png": "c0b0e2b8aa7e6a7e7a4e482b341602d0046a59f7db2641f79092db402d6e6788",
+      "Previews/Distance/grass_Clump_B_single_150m_LOD0.png": "80ab463022dc12cb172cb4e16ac12587de7df6526851947d6f4deb96452eccd3",
+      "Previews/Distance/grass_Clump_B_single_150m_LOD3.png": "9d465602dbfbee8e60b4d434c765487f5c2608282b769f002bf484c5fa7ca9da",
+      "Previews/Distance/grass_Clump_C_single_2m_LOD0.png": "d3f56e0c7f1cd99c7418ccac5790c2827367936c21acc14d5a1add4d70ef6e6b",
+      "Previews/Distance/grass_Clump_C_single_2m_LOD3.png": "e7686be73d75f02a0fd2d1f014dd05201f23d58a47d3b3372cb19f0b1456655c",
+      "Previews/Distance/grass_Clump_C_single_15m_LOD0.png": "dd9b613b60c0518086b8c64e3fc147bd9e092905bd95242a74a90085febcaf68",
+      "Previews/Distance/grass_Clump_C_single_15m_LOD3.png": "89d6e237bb0c7e779e2eea319aa08076148421a9753eec90ba9d333dee8d4e32",
+      "Previews/Distance/grass_Clump_C_single_50m_LOD0.png": "5d059d7e231adaf22ad233aaed67743efd350847ca447347423a10311f4a343d",
+      "Previews/Distance/grass_Clump_C_single_50m_LOD3.png": "73c8539e119714c3844005ba9b69a1ba1846e197acaf286c8cf7bf8f66b82d05",
+      "Previews/Distance/grass_Clump_C_single_150m_LOD0.png": "6e090463586580a921c127438c9288f300693b1566516e79524babdd9c2a7b80",
+      "Previews/Distance/grass_Clump_C_single_150m_LOD3.png": "851e715d086b32a3c40cedc936c50f543ee69f93b67fcc9439af50259bb12fa3",
+      "Previews/Distance/grass_Clump_D_single_2m_LOD0.png": "312b14ec5adaf1d5f4d56e09d7f70c65288f6ff6de96120db11561f6fccb1ee3",
+      "Previews/Distance/grass_Clump_D_single_2m_LOD3.png": "631e46e7d326466cb7f3d7c321dc9a31ba75fc4a86a0f745de420ced328062c5",
+      "Previews/Distance/grass_Clump_D_single_15m_LOD0.png": "22441d1c3db1f3780341da9e87ffe1558f452660fae90a9b0de9c94bbaa00a4c",
+      "Previews/Distance/grass_Clump_D_single_15m_LOD3.png": "64e22bd623ffabfc6fb99142cd7592e370f3a8f09af5422613e91265e7997cbc",
+      "Previews/Distance/grass_Clump_D_single_50m_LOD0.png": "5ffb3a39d76e98ba6cb24f8006d1654f2338395b2bebc78a6c707819c6ead4d9",
+      "Previews/Distance/grass_Clump_D_single_50m_LOD3.png": "9f6d1f32090623d4db6c04376daeadadc222f6a8fcee01a386a2ce02166c114e",
+      "Previews/Distance/grass_Clump_D_single_150m_LOD0.png": "228a6d5c04bc8fff425b5b9e9266a974c50f8de21bd2b79f4227010d5205210c",
+      "Previews/Distance/grass_Clump_D_single_150m_LOD3.png": "13dcb23f738775425aa238e3f34bb019a3418146cae88c348779c8f072aaf48f",
+      "Previews/Distance/grass_Clump_E_single_2m_LOD0.png": "4590b1a3792a6ea72bee760127d57a61385cca01f8803e3d9e7234db77254091",
+      "Previews/Distance/grass_Clump_E_single_2m_LOD3.png": "00fc18e9843ba0746dbfca6fcfab4bb254266edacb58fa13c57bc08d382f9934",
+      "Previews/Distance/grass_Clump_E_single_15m_LOD0.png": "82bd3ea32fe64f2ed067466f8fbb9f51cf1e74e5f95b97e097b209245dfbb3e2",
+      "Previews/Distance/grass_Clump_E_single_15m_LOD3.png": "6ae368ba2887ebf4aa17588ed4dff4f70380431993e8c6000b84cd9bae10905f",
+      "Previews/Distance/grass_Clump_E_single_50m_LOD0.png": "46a83185e222c43eac242e1820b036699e5c7cc360aaf2b41f42b84ae66e2f1c",
+      "Previews/Distance/grass_Clump_E_single_50m_LOD3.png": "a615f2903ff2337a0e16fe0b44289c67fc6fc3d20688c8d6e2896dadc9066a25",
+      "Previews/Distance/grass_Clump_E_single_150m_LOD0.png": "6eb2a5de858db72d636d581ede9ec6f8e28bce988b9c329d7e82c0a6ea58d74d",
+      "Previews/Distance/grass_Clump_E_single_150m_LOD3.png": "b5a919aff91f3244641a5504bfd715c5af36e652736851dd694eb35fd50da00c",
+      "Previews/Distance/grass_Clump_F_single_2m_LOD0.png": "7e4a1f627caf42226add3247afc5fc6af7ea2fbe412de9badb397531b14fe036",
+      "Previews/Distance/grass_Clump_F_single_2m_LOD3.png": "113481a9356669ef8cfdeb49804d56c720a05bc88ec0380e477ab8263f4ab06a",
+      "Previews/Distance/grass_Clump_F_single_15m_LOD0.png": "afebbac6aefd9268e7ac9ebbc5db64ec5bc2e32b912d9db1d20f22540c4c7525",
+      "Previews/Distance/grass_Clump_F_single_15m_LOD3.png": "7e0801a9dd86f596369e99133728273c9e11e9b0db36cb36d76e0d9fdc21235b",
+      "Previews/Distance/grass_Clump_F_single_50m_LOD0.png": "d3790ce4729f6e9ea49bc3559dff8ba178539df6b5f59d31a9d06eff7348fd9f",
+      "Previews/Distance/grass_Clump_F_single_50m_LOD3.png": "deba9a9dcc11d9b061d3f9bcd9d374787dca8819f5cb725b81bfc4f303b2c58d",
+      "Previews/Distance/grass_Clump_F_single_150m_LOD0.png": "789c46b3a940a7a4b93de77d011e47532d94c5c4fd33fc2f9cfbc9403fa4a634",
+      "Previews/Distance/grass_Clump_F_single_150m_LOD3.png": "796293552230be3e1236a8d49bb9cddfb0d7a08741813ae7fccc0a5d1fd158f8",
+      "Previews/Distance/grass_Patch_2m_A_single_2m_LOD0.png": "2d7bba436a7b64c12a770cbd86b5dcaddf3fbf6ff7c73c3aacc2f982bff7a4b8",
+      "Previews/Distance/grass_Patch_2m_A_single_2m_LOD3.png": "1cd7001114ff16a21230472a65bd0402152041f83c14fc93a9eb92e214f2d67e",
+      "Previews/Distance/grass_Patch_2m_A_single_15m_LOD0.png": "3ea4fee3849e5f69ca4a464d323eaef6116544434c77a0b4308acf63979e5905",
+      "Previews/Distance/grass_Patch_2m_A_single_15m_LOD3.png": "23f8e4874abc4a5fab0411fd9f2bb5f5f22c9feb589dc6022c6dee1ed5469457",
+      "Previews/Distance/grass_Patch_2m_A_single_50m_LOD0.png": "b9549d7f115f62e7ddb4664b20f2e4fb79a1efed3026fb7a510c56492cd25285",
+      "Previews/Distance/grass_Patch_2m_A_single_50m_LOD3.png": "6cdcca288a4d33d019a5cdfb2f0c743877b270e03e6d7ac63dced820f008b6d3",
+      "Previews/Distance/grass_Patch_2m_A_single_150m_LOD0.png": "ca366d4d56b3f8419df82fc33aa361e9c0698a78e384c9b8afcb53135e710764",
+      "Previews/Distance/grass_Patch_2m_A_single_150m_LOD3.png": "e33e06622f1fd5acf6005e29222800d4a3fdfac1fed98d7a6f6d84311751010d",
+      "Previews/Distance/grass_Patch_2m_B_single_2m_LOD0.png": "3f1bb22521fc0d8e35fd12bd04ce5fc6db9077b1f604c6fbe56d8515d7c3c296",
+      "Previews/Distance/grass_Patch_2m_B_single_2m_LOD3.png": "312e48052305dd11d33c6dfd43343c625aa8531e02d648c212b27bdfcbdac2de",
+      "Previews/Distance/grass_Patch_2m_B_single_15m_LOD0.png": "2ea567058d86221bf9bec5a1bc3dbf39c7c8b4007aa48583022917d0b2248f28",
+      "Previews/Distance/grass_Patch_2m_B_single_15m_LOD3.png": "9684b65616fabe2eb52f19bbd52d1cf52fa792aa23b82615198a3c0fc1ed298f",
+      "Previews/Distance/grass_Patch_2m_B_single_50m_LOD0.png": "055230707eb1e4400806dd4c9afbffb959e666ba1da12c8effa7e4676d27670e",
+      "Previews/Distance/grass_Patch_2m_B_single_50m_LOD3.png": "ce376ed5984d4524561d46378116b71b7f140b14803450af5a1a9b94dba441c9",
+      "Previews/Distance/grass_Patch_2m_B_single_150m_LOD0.png": "34fc1479710961c1f05d6b79f6862e3d9ceeb7d36e21f315148380c9ba7947f0",
+      "Previews/Distance/grass_Patch_2m_B_single_150m_LOD3.png": "b413757e65cf6e9b3e4191ad1031a3686100c14304067754b5b46b2fa36d9b64",
+      "Previews/Distance/grass_mixed_scatter_10x10m_2m_LOD0.png": "b32d6518b2f5ca3829b6aa18a15bdb7304058b1518d818eb5ec96c1a4e91c01f",
+      "Previews/Distance/grass_mixed_scatter_10x10m_2m_LOD3.png": "eda658caf3f236406e98997e25853f9fccc8f5df3676da1e8d60a798cb7fc445",
+      "Previews/Distance/grass_mixed_scatter_10x10m_15m_LOD0.png": "3cc8f3a37ea05127acdbf8cf729c3ba164fb55f8e6998954b15f2c41c1299af9",
+      "Previews/Distance/grass_mixed_scatter_10x10m_15m_LOD3.png": "209b49b8849731f53ae0025b6007729d19ded8c9a089a2519f3a00b630301ab4",
+      "Previews/Distance/grass_mixed_scatter_10x10m_50m_LOD0.png": "cf6b1509bb210cfa6f548981a2873473e860f9426c5ce6581abb03d6d231bf65",
+      "Previews/Distance/grass_mixed_scatter_10x10m_50m_LOD3.png": "23114458f5d8253dc2a99aad7a6f15d1b00c0bd4f44b35efecab52eb1cdb4424",
+      "Previews/Distance/grass_mixed_scatter_10x10m_150m_LOD0.png": "cd48c4e4f0b374056b19c2d4c0f32b484d52243abd8bd8adcff40d1e890cf2e6",
+      "Previews/Distance/grass_mixed_scatter_10x10m_150m_LOD3.png": "82debfd4039ee513fc4630bae9f465af4859a88159459982aaba8146a2b27252"
+    }
+  },
+  "writes_performed": [
+    "Reports/INDEPENDENT_GRASS_REVIEW.json"
+  ]
+}

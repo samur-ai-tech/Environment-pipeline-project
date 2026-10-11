@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "revision": "StrawberryBeds_v005",
+  "reviewer": "Independent photo-and-render reviewer /root/v2_ground",
+  "reviewed_utc": "2026-10-11 16:47:46 UTC",
+  "status": "PASS_OFFLINE_VISUAL_REVIEW_WITH_LIMITS",
+  "delivery_ready": true,
+  "delivery_ready_scope": "Offline asset handoff. This does not approve native Unreal import, placement or final farm appearance.",
+  "blocking_issues": [],
+  "scope": "Independent offline visual review of photographic references, source renders, fixed-distance evidence, and export appearance comparison. No native editor work performed.",
+  "method": "Viewed the listed photographic references and 38 preview images directly, including original distant frames and separately labelled magnified pairs. Read distance cameras/metrics and final QA/comparison receipts. Independently rehashed all 33 distance PNGs, their bound source/textures, final eight FBXs, comparison inputs/outputs and the files below. No modelling or native editor operation was performed by this reviewer.",
+  "observations": [
+    {
+      "topic": "Young strawberry plants",
+      "finding": "A/B/C show separate sparse young plants, serrated trifoliate leaflets with restrained veins and varied poses/sizes; no visible fruit, flowers or continuous near-range canopy block."
+    },
+    {
+      "topic": "Raised bed and film",
+      "finding": "Rounded shoulders, sloped dark matte film, slightly varied surface and continuous soil-covered side edges replace the original rigid-looking bed. In supported source renders the skirt is hidden and the bed sits on the plane."
+    },
+    {
+      "topic": "Planting-stage reference",
+      "finding": "The Huelva comparison supports the bed/film morphology; UC photographs support the leafier young-plug stage. The comparison is a morphology reference, not an exposure/color match or an exact reconstruction."
+    },
+    {
+      "topic": "Joins and slope",
+      "finding": "The 10-row 20 m regular chains on 3% slope appear continuous with no visible tile steps, open gaps, repeated end walls or broken orientation. A/B/C strip views show continuous material and silhouette through their joins."
+    },
+    {
+      "topic": "Lowest LOD",
+      "finding": "Lowest models remain dark film stripes with restrained green dots, with no bright green band or distant pale drift. Measurements show close coverage/color agreement with detailed models."
+    },
+    {
+      "topic": "End cap joint",
+      "finding": "The final fresh-FBX A-plus-cap close view at 2.285 m shows continuous geometric contact and no conspicuous material/color boundary. The cap rolls down into a soil-covered end. The separate geometric QA warning about UV phase is retained below."
+    },
+    {
+      "topic": "Export appearance",
+      "finding": "Final source and fresh-FBX plant close images appear equivalent; the prior tiny-petiole shading regression is resolved. The comparison receipt measures 115 of 1,400,000 pixels above a two-byte maximum-channel difference (0.008214%). Final eight-asset QA reports minimum authored corner-normal dot 0.9999996326."
+    }
+  ],
+  "nonblocking_issues": [
+    {
+      "topic": "Cap texture phase",
+      "detail": "Detailed A/B/C-to-cap film UV phase differs by up to about 0.393 U, as recorded by geometry QA. No conspicuous material boundary appears in the A-plus-cap close view or mixed-row field views. This is not mathematically seamless UV mapping; a later higher-contrast mulch texture could expose it. B/C have no separate dedicated cap-close image."
+    },
+    {
+      "topic": "Photographic likeness",
+      "detail": "The asset resolves the former canopy-block appearance and follows the selected planting-stage morphology, while the synthetic film, dirt and vegetation remain simpler, smoother and more regular than the photographs."
+    }
+  ],
+  "limits": [
+    "The surface remains recognizably procedural: fine film wrinkles, dirt/clods and plant microdetail are simpler and more regular than the photographs. This is not a photorealistic scan.",
+    "The render is darker and more uniform than the sunlit Huelva photo. Camera exposure, illumination, soil condition and plant stage differ; the model intentionally uses leafy plugs rather than Huelva's largely bare crowns.",
+    "Photographs supply visual direction only. Brief dimensions were not inferred as measurements from those photos.",
+    "Results are offline Blender source previews. Native Unreal import, material configuration, placement, Nanite/HLOD, streaming, lighting and persistence have not been validated.",
+    "At 4000 m the entire block covers about 6.45 equivalent opaque pixels at the declared 1920x1080 and 110-degree horizontal FOV. Individual beds/plants are below useful raster separation; labelled magnified crops do not create extra detail.",
+    "The 1 m single views intentionally crop for detail. Distant views retain fixed FOV/resolution and do not auto-frame.",
+    "Ground-masked alpha comparisons concern the visible bed geometry, excluding buried skirts and cast shadows. Since mulch occupies most pixels, whole-bed color/area agreement does not prove preservation of individual leaves.",
+    "The 3% slope evidence uses a coherent plane and endpoint-following placement. It does not prove contact on arbitrary uneven native terrain."
+  ],
+  "verified_evidence": {
+    "source_blend_sha256": "2f1948be451a4e482fef88285c38a9333f5e1806af8efafbdb25cc4449e303a7",
+    "geometry_qa": {
+      "file": "Reports/validation_v005.json",
+      "status": "PASS_OFFLINE_GEOMETRY",
+      "assets": 8,
+      "failures": [],
+      "minimum_corner_normal_dot": 0.9999996326195495
+    },
+    "distance_suite": {
+      "file": "Reports/distance_validation.json",
+      "status": "COMPLETE_OFFLINE_EVIDENCE",
+      "current_frames": 33,
+      "all_source_texture_and_png_bindings_rehashed": true,
+      "block_comparisons": [
+        {
+          "distance_m": 150,
+          "alpha_iou": 0.99971,
+          "lowest_area_ratio": 0.99971,
+          "lowest_minus_detailed_luma": -0.805
+        },
+        {
+          "distance_m": 15,
+          "alpha_iou": 0.99967,
+          "lowest_area_ratio": 0.99984,
+          "lowest_minus_detailed_luma": -0.653
+        },
+        {
+          "distance_m": 4000,
+          "alpha_iou": 1,
+          "lowest_area_ratio": 1,
+          "lowest_minus_detailed_luma": 1.048
+        },
+        {
+          "distance_m": 500,
+          "alpha_iou": 0.99935,
+          "lowest_area_ratio": 0.99935,
+          "lowest_minus_detailed_luma": -0.484
+        },
+        {
+          "distance_m": 60,
+          "alpha_iou": 0.99943,
+          "lowest_area_ratio": 0.99951,
+          "lowest_minus_detailed_luma": -0.847
+        }
+      ],
+      "lowest_4000m_equivalent_opaque_pixels": 6.4471
+    },
+    "export_appearance_comparison": {
+      "file": "Reports/strawberries_v005_fbx_normal_comparison.json",
+      "fraction_pixels_above_two_byte_max_channel_difference": 0.00008214285714285714
+    },
+    "cap_joint_close": {
+      "file": "Reports/strawberries_v005_cap_joint_close.json",
+      "image": "Previews/Strawberry_A_EndCap_FBX_JoinedClose.png",
+      "finding": "No conspicuous gap or color boundary at the reviewed camera."
+    },
+    "previously_reviewed_image_hashes_still_current": true
+  },
+  "reviewed_visual_files": [
+    "Previews/SM_PazFarm_StrawberryBed_4m_A.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_PlantHoleClose.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_Side.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_B.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_C.png",
+    "Previews/REFERENCE_COMPARISON.png",
+    "Previews/SM_PazFarm_StrawberryBedEnd.png",
+    "Previews/SM_PazFarm_StrawberryBedEnd_LOD3.png",
+    "Previews/Distance/field_3pct_15m_LOD0.png",
+    "Previews/Distance/field_3pct_15m_LOD3.png",
+    "Previews/Distance/seams_ABC_grazing_LOD0.png",
+    "Previews/Distance/seams_ABC_top_LOD0.png",
+    "Previews/Distance/MAGNIFIED_block_10x5_60m_2x.png",
+    "Previews/Distance/MAGNIFIED_block_10x5_150m_5x.png",
+    "Previews/Distance/MAGNIFIED_block_10x5_500m_14x.png",
+    "Previews/Distance/MAGNIFIED_block_10x5_4000m_24x.png",
+    "Previews/Distance/block_10x5_500m_LOD0.png",
+    "Previews/Distance/block_10x5_500m_LOD3.png",
+    "Previews/Distance/block_10x5_4000m_LOD0.png",
+    "Previews/Distance/block_10x5_4000m_LOD3.png",
+    "Previews/Distance/field_3pct_60m_LOD0.png",
+    "Previews/Distance/field_3pct_60m_LOD3.png",
+    "Previews/Distance/field_3pct_150m_LOD0.png",
+    "Previews/Distance/field_3pct_150m_LOD3.png",
+    "Previews/Distance/field_3pct_500m_LOD0.png",
+    "Previews/Distance/field_3pct_500m_LOD3.png",
+    "Previews/Distance/single_A_1m_LOD0.png",
+    "Previews/Distance/single_A_3m_LOD0.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_LOD3.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_B_LOD3.png",
+    "Previews/SM_PazFarm_StrawberryBed_4m_C_LOD3.png",
+    "Previews/Distance/single_B_1m_LOD0.png",
+    "Previews/Distance/single_C_1m_LOD0.png",
+    "Previews/Distance/single_A_3m_LOD3.png",
+    "Previews/Strawberry_A_EndCap_FBX_JoinedClose.png",
+    "Previews/Strawberry_A_NormalCompare_Source.png",
+    "Previews/Strawberry_A_NormalCompare_FBX.png",
+    "Previews/Strawberry_A_NormalCompare_Difference8x.png"
+  ],
+  "reviewed_reference_files": [
+    "References/ref_agrofresas_huelva_planting.jpg",
+    "References/ref_ucanr_new_transplants_beds.jpg",
+    "References/ref_ucanr_young_plug_leaves.jpg",
+    "References/ref_ucipm_transplanting_black_mulch.jpg"
+  ],
+  "input_hashes_note": "Paths are relative to this revision root. Image/report hashes bind what was actually reviewed; Blend/FBX/texture hashes bind the verified sources of the reviewed images and current export QA.",
+  "input_hashes": {
+    "Blend/StrawberryBeds.blend": "2f1948be451a4e482fef88285c38a9333f5e1806af8efafbdb25cc4449e303a7",
+    "FBX/SM_PazFarm_StrawberryBed_4m_A_LOD3.fbx": "d00b124ca6dacb6090d3d06bd954b8bab914b4e39e60808bbf10efe93769b0ad",
+    "FBX/SM_PazFarm_StrawberryBed_4m_A.fbx": "c1e05d874e9b8d0d11328d8ffc2de5170c2a7fde65da8d1568b1c29ab5b4b281",
+    "FBX/SM_PazFarm_StrawberryBed_4m_B_LOD3.fbx": "8b987f2a0e0c204924efd105e9d1c7df104c0f761381e38cba17547963b8e992",
+    "FBX/SM_PazFarm_StrawberryBed_4m_B.fbx": "143f0c0fb4c2ff9018cf3e635934f465e8645d3fd2818418e832afd84cdc6c3e",
+    "FBX/SM_PazFarm_StrawberryBed_4m_C_LOD3.fbx": "469d9f8e33eebce6ea3ece46d02c075fc016683cf916de91af471733e23dec2b",
+    "FBX/SM_PazFarm_StrawberryBed_4m_C.fbx": "598dd280ccd236547425d81c46c125b1d2d486edd73d3c883aad769e63c2a979",
+    "FBX/SM_PazFarm_StrawberryBedEnd_LOD3.fbx": "68086b4c81f2639358fbff29c63761c3702300e4a65d97f1f49ddfa99814513d",
+    "FBX/SM_PazFarm_StrawberryBedEnd.fbx": "a78ad89b359d0cd6f824a78f738fe736e4aa225e13366f188f14fc2fdb6317b4",
+    "Previews/Distance/block_10x5_4000m_LOD0.png": "2689c90a7315dac4e0b220cb1c1a73808d86d32058e0b3cdb3035a4db66b8282",
+    "Previews/Distance/block_10x5_4000m_LOD3.png": "51acd91976e001ef2d056cb1ac8dd0c62966d4939a700b2467125656323c6b63",
+    "Previews/Distance/block_10x5_500m_LOD0.png": "dce8aece52259b518691823f085df875f35ddb1f0c72986383bfcee9345271a4",
+    "Previews/Distance/block_10x5_500m_LOD3.png": "b9bdb3477f9f09d25f2c3f51a0e899578b32f12a00faa2de2c1acf9efd5af7c4",
+    "Previews/Distance/field_3pct_150m_LOD0.png": "0c064ca1e9feaf862f8e2c7e1764a3b825ec0b39905397221db4c488642a4e2b",
+    "Previews/Distance/field_3pct_150m_LOD3.png": "7b0fde0c36db73ba1589b51420d25b38dba54b2cab552a01e528089acce824f6",
+    "Previews/Distance/field_3pct_15m_LOD0.png": "186fcbae0c7a22b68fcd43c15109ac32a36e50d68d6eac4729189c8b307474f9",
+    "Previews/Distance/field_3pct_15m_LOD3.png": "42ccee2638276ac075fe394e16853f7ab87076ae3e9f83ff21e8dca5cf2d78c0",
+    "Previews/Distance/field_3pct_500m_LOD0.png": "904e0cfbff46515d36b414b29bcc68dba83ca1b49904d9e9d1aaeb126a040c20",
+    "Previews/Distance/field_3pct_500m_LOD3.png": "deded900af428ebe2c4d37dfef55289119cf0061d679e90507ac3d8b95e20b39",
+    "Previews/Distance/field_3pct_60m_LOD0.png": "56d6bacfff77c6f8b94a5d4e44319974b913af8aeb75e7158e69c67c082352a4",
+    "Previews/Distance/field_3pct_60m_LOD3.png": "9d2c8d5d56fb8754eaba67a729fc4166cd7db446d5592d6ca4e45bd40aa5bb14",
+    "Previews/Distance/INDEX.html": "a470da6481c130c10decf3ad169b78f3233cfdbf3e28785638b55a62f71dfe4c",
+    "Previews/Distance/MAGNIFIED_block_10x5_150m_5x.png": "721a5228d6df9a0f8e2fd14b9f4759eec201ee6fa98e84d63ce452476f3d854c",
+    "Previews/Distance/MAGNIFIED_block_10x5_4000m_24x.png": "c19b21167bd05253a7f40102d89c75f13479c1284512cdf51346c6d231d51dcd",
+    "Previews/Distance/MAGNIFIED_block_10x5_500m_14x.png": "1542bba084057548a41986699e8e2d6efba3361a8618baa58764b86a55f045c1",
+    "Previews/Distance/MAGNIFIED_block_10x5_60m_2x.png": "df1707be9f59cddea18cb841719356013262ef8d7696ab9c7cde21819c316ec8",
+    "Previews/Distance/seams_ABC_grazing_LOD0.png": "ed71d070de478878494507003dc5c8454011cebae28361abced0d074afbf3d19",
+    "Previews/Distance/seams_ABC_top_LOD0.png": "edd13c099985fb3f5e96d601d2339c3904ee228bcb3f084f02ad47a296b52d0a",
+    "Previews/Distance/single_A_1m_LOD0.png": "e4373fbd65604a62358965627273d1e3ab91dacf13e37ea7f263439c771ea66d",
+    "Previews/Distance/single_A_3m_LOD0.png": "b324ad1813f6eaf60382fbb4c402243e0b5ef5d263f549ded26646690152a963",
+    "Previews/Distance/single_A_3m_LOD3.png": "5c3c1b21ec346b4e3822eb48e31b6891ca232173deeb08f1664753df4f78829a",
+    "Previews/Distance/single_B_1m_LOD0.png": "084c5d1e1ff53ba96659788a10337fc5f9f5eb1f793c99470008f59d22c11a8c",
+    "Previews/Distance/single_C_1m_LOD0.png": "c83f55ba50ff47a802f74cc99d3fab424e3968481971a157e2e7fe359d5e1246",
+    "Previews/REFERENCE_COMPARISON.png": "aeebf09504bf597891a9e509333d4903e6082760b85d2dfd18bf53c344cf184c",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_LOD3.png": "fc981f90b7a280436120728b054cbf52e98155f7b6487e3aecb7990973a9ed59",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_PlantHoleClose.png": "704d6df6cc970db9ade6c5eccb7e1da76bab4bdd8701fda30433a10d12c2fd86",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A_Side.png": "bb7ad5091e4c4f4efcf71ebff58d4a5eef7eeb0f66489a759289593d0b143222",
+    "Previews/SM_PazFarm_StrawberryBed_4m_A.png": "cf9dffc4a0fba13dceecd3bf60f3c0d430cd2549ee6e24ff78891e4bebe8824c",
+    "Previews/SM_PazFarm_StrawberryBed_4m_B_LOD3.png": "776c0ddb998f620d7c4c3b5c09abea2d8386662a23a4e0a734f1e5223232d271",
+    "Previews/SM_PazFarm_StrawberryBed_4m_B.png": "2acb4c457f9ec06c7d4216f1b322ae29d5fc1c4c5f34c385732730b781021ad4",
+    "Previews/SM_PazFarm_StrawberryBed_4m_C_LOD3.png": "e21a8423f10a4964d748e52d565e938c544e966ac68d2e448d3809398db5d0bd",
+    "Previews/SM_PazFarm_StrawberryBed_4m_C.png": "d81ec362d0e0e5fcaf817ffb105c8533c1187569ed4d5ba4039637d540666af1",
+    "Previews/SM_PazFarm_StrawberryBedEnd_LOD3.png": "5f31b41f37207c7aaf44c099ddde5cb1c30f426fee7b42121f9ec72e5e3dff29",
+    "Previews/SM_PazFarm_StrawberryBedEnd.png": "5a2f5fd06547a00c19cc849a39053aa93912b21a52cc013676b9cf02461e9401",
+    "Previews/Strawberry_A_EndCap_FBX_JoinedClose.png": "ec324e0c2ed1c25fd464d32ba9806be20c8a291907addddb5738f6ef0786d14b",
+    "Previews/Strawberry_A_NormalCompare_Difference8x.png": "4696694dddd96bb7407208ceaec889eb0e4d2309c551a387ece6106486357e06",
+    "Previews/Strawberry_A_NormalCompare_FBX.png": "831667c79675464e356a6d489ab11ba7407ff54737d4c9ceec25aa8365b6ff90",
+    "Previews/Strawberry_A_NormalCompare_Source.png": "c02f2233ab1652772a820dd7d79ca8ec4ae59e0dcf731758801cbf0436bdc510",
+    "References/ref_agrofresas_huelva_planting.jpg": "6d849afd1a03f3c467cdc19100a2ac752a2ce2a3064fcb4a56c08634ed4062dc",
+    "References/ref_ucanr_new_transplants_beds.jpg": "940ecc9b99088dee29aefb0c2357801cc8253dba043685cfd52702ec89a5d5d8",
+    "References/ref_ucanr_young_plug_leaves.jpg": "a51e5084cc9f13a7b0dfeecc5666ff6f2aee75d231246b90e34132a470da17f3",
+    "References/ref_ucipm_transplanting_black_mulch.jpg": "bea3da30e1d0e607227d17ed2d1116511b074cf343f46c48df63df3c3281b48d",
+    "Reports/distance_validation.json": "98d31b93a875ba131d11e1b3900b9611262fc5ada1673577267aa26e2b2fdfa1",
+    "Reports/reference_comparison.json": "e91a6202056c9aeaa4d7b5c5d3abfb0a3d1771ab07ed81f6c29c351d0bcd8c5c",
+    "Reports/reference_selection.json": "cc45629576ee5d4deaa8c57c66477251743c1ae196ef5e073d6111bf4b6cc15b",
+    "Reports/REFERENCES.md": "554271babff12eead33a6479e7ea90e30e7bc926b76f107feaeda1117e7ef63c",
+    "Reports/strawberries_v005_cap_joint_close.json": "32101cedf3010cc9535f55203f8626d3e4b4f0dcd25d83a80394e835a7e8a578",
+    "Reports/strawberries_v005_fbx_normal_comparison.json": "e3da63b6d741cb627bab6e3bf5115590b97f01cce08f07c3c85273be285bd62d",
+    "Reports/validation_v005.json": "0c23611fdc65e0e08d796956bb67f7258df0cc0032b8aa6368fb8d1d9e26a71d",
+    "Textures/T_PazFarm_Strawberry_DripTape_v005_BaseColor.png": "f952abf7496e008431a8f91b2018bb96c90e34790a33923c4d8cb48b2a2d6748",
+    "Textures/T_PazFarm_Strawberry_DripTape_v005_Normal.png": "edd66349b8cf3089bb3257cdf4d155aa173532a4a7fd7b0a274013fd64c1cfcc",
+    "Textures/T_PazFarm_Strawberry_DripTape_v005_ORM.png": "34d7de1a897606c4825b2a9abf2025353905c5366cca9bd3fe900b37fa0de456",
+    "Textures/T_PazFarm_Strawberry_LeafOlder_v005_BaseColor.png": "58139ccc97a0b58e649b1d4574f3d3e00aba52d11f22f352963d11f4361b3479",
+    "Textures/T_PazFarm_Strawberry_LeafOlder_v005_Normal.png": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+    "Textures/T_PazFarm_Strawberry_LeafOlder_v005_ORM.png": "d3c04e49269d262115e1260f19c9b4193d68ccf49187e2bf27a86e17a0ff7dff",
+    "Textures/T_PazFarm_Strawberry_LeafTop_v005_BaseColor.png": "7d66256f88f07d3f29763ae09e68fcdad154ddf867300ac9445f412c45931d31",
+    "Textures/T_PazFarm_Strawberry_LeafTop_v005_Normal.png": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+    "Textures/T_PazFarm_Strawberry_LeafTop_v005_ORM.png": "42517afb1bbafda766a121e61be6fd129372543c33f417503b19b0ee80e14860",
+    "Textures/T_PazFarm_Strawberry_LeafUnder_v005_BaseColor.png": "a385a8483d18172d28fd10be02b7918e4a46c741a7ef7e5fab0adb59e727a7f2",
+    "Textures/T_PazFarm_Strawberry_LeafUnder_v005_Normal.png": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+    "Textures/T_PazFarm_Strawberry_LeafUnder_v005_ORM.png": "d3c04e49269d262115e1260f19c9b4193d68ccf49187e2bf27a86e17a0ff7dff",
+    "Textures/T_PazFarm_Strawberry_Mulch_v005_BaseColor.png": "45f193eba1c9b9379cf1a833b8227b0a70641f6dd3e0f62d3130189eb32bf85a",
+    "Textures/T_PazFarm_Strawberry_Mulch_v005_Normal.png": "19876cf473dce688e5f08bcf09e9ee840557049cbca1b4ab035be629cb133489",
+    "Textures/T_PazFarm_Strawberry_Mulch_v005_ORM.png": "0b6456dbda6681eb7a5e8194697feb27f0d71ec28f6b00fd023c4fe81bfb0470",
+    "Textures/T_PazFarm_Strawberry_MulchDistant_v005_BaseColor.png": "6ca473eeb2e27c79d0f5f01905b496d068c458553e06db1d9efd3b2cfced594f",
+    "Textures/T_PazFarm_Strawberry_MulchDistant_v005_Normal.png": "19876cf473dce688e5f08bcf09e9ee840557049cbca1b4ab035be629cb133489",
+    "Textures/T_PazFarm_Strawberry_MulchDistant_v005_ORM.png": "0b6456dbda6681eb7a5e8194697feb27f0d71ec28f6b00fd023c4fe81bfb0470",
+    "Textures/T_PazFarm_Strawberry_Petiole_v005_BaseColor.png": "489f20e4177d2d7133d62d1a28535e3f719a716398ca2c9a9ba857548a8a120c",
+    "Textures/T_PazFarm_Strawberry_Petiole_v005_Normal.png": "edd66349b8cf3089bb3257cdf4d155aa173532a4a7fd7b0a274013fd64c1cfcc",
+    "Textures/T_PazFarm_Strawberry_Petiole_v005_ORM.png": "ba2eee6a282c37f845a8946c46453c4a79eaa9068b1e1abd8a4b8e46d24169cd",
+    "Textures/T_PazFarm_Strawberry_Soil_v005_BaseColor.png": "abda62b2f353528ab520721695ba22c2c23ff0ddebdc50786b885a8c13eed988",
+    "Textures/T_PazFarm_Strawberry_Soil_v005_Normal.png": "ea99db0ace8a024206521abddf9e3d5eb9e5196cb2f5407e19c41b73725faaa7",
+    "Textures/T_PazFarm_Strawberry_Soil_v005_ORM.png": "5f5c6c597fff4e46def437947ce4c1f0caf84775fe1a10e1e678fdf3a3b1108b"
+  }
+}

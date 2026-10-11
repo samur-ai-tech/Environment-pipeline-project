@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-08T13:13:32.673084+00:00",
+  "area_id": "KarmeiYosef_31850349_34907601_4km",
+  "output_dir": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z",
+  "grid": {
+    "bounds_epsg4326": {
+      "west": 34.88630064215473,
+      "east": 34.92890135784527,
+      "south": 31.83216786950253,
+      "north": 31.868530130497472
+    },
+    "pixels": 1009,
+    "metres_per_pixel": 3.99603567888999,
+    "centre": [
+      34.907601,
+      31.850349
+    ],
+    "local_frame": {
+      "Mlat_m_per_deg": 110884.19393286,
+      "Mlon_m_per_deg": 94646.29724274
+    }
+  },
+  "osm": {
+    "features_in_area": 81,
+    "by_kind": {
+      "natural=wood": 1,
+      "landuse=forest": 13,
+      "natural=scrub": 10,
+      "natural=water": 2,
+      "landuse=vineyard": 4,
+      "landuse=industrial": 3,
+      "landuse=farmland": 14,
+      "leisure=park": 11,
+      "landuse=residential": 6,
+      "landuse=orchard": 3,
+      "landuse=meadow": 5,
+      "leisure=pitch": 4,
+      "leisure=playground": 2,
+      "leisure=swimming_pool": 2,
+      "leisure=sports_centre": 1
+    },
+    "license": "ODbL 1.0, OpenStreetMap contributors"
+  },
+  "sentinel2": {
+    "recent": {
+      "item": "S2C_36SXA_20260921_1_L2A",
+      "datetime": "2026-09-21T08:31:17.350000Z",
+      "cloud_cover_tile": 2.358619,
+      "cloud_or_shadow_fraction_in_area": 0.0,
+      "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\S2_recent_2026-09-21.tif",
+      "preview_png": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\S2_recent_2026-09-21.png"
+    },
+    "spring": {
+      "item": "S2C_36SXA_20260404_0_L2A",
+      "datetime": "2026-04-04T08:31:16.874000Z",
+      "cloud_cover_tile": 4.993102,
+      "cloud_or_shadow_fraction_in_area": 0.0,
+      "file": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\S2_spring_2026-04-04.tif",
+      "preview_png": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131311Z\\S2_spring_2026-04-04.png"
+    }
+  },
+  "sentinel2_license": "Copernicus Sentinel data, free and open (Copernicus legal notice); via AWS Open Data / Earth Search",
+  "candidates": {
+    "recent": 16,
+    "spring": 3
+  },
+  "network": [
+    {
+      "reused": "C:\\Users\\USER\\Documents\\Pipeline Environment\\SourceData\\KarmeiYosef_31850349_34907601_4km\\zones\\20261008T131240Z\\landuse.osm"
+    },
+    {
+      "url": "https://earth-search.aws.element84.com/v1/search",
+      "bytes": 334681,
+      "utc": "2026-10-08T13:13:14.309879+00:00"
+    },
+    {
+      "url": "https://earth-search.aws.element84.com/v1/search",
+      "bytes": 63379,
+      "utc": "2026-10-08T13:13:15.328328+00:00"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/9/S2C_36SXA_20260921_1_L2A/B04.tif",
+      "read": "window via /vsicurl/",
+      "asset": "red"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/9/S2C_36SXA_20260921_1_L2A/B03.tif",
+      "read": "window via /vsicurl/",
+      "asset": "green"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/9/S2C_36SXA_20260921_1_L2A/B02.tif",
+      "read": "window via /vsicurl/",
+      "asset": "blue"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/9/S2C_36SXA_20260921_1_L2A/B08.tif",
+      "read": "window via /vsicurl/",
+      "asset": "nir"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/9/S2C_36SXA_20260921_1_L2A/SCL.tif",
+      "read": "window via /vsicurl/",
+      "asset": "scl"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/4/S2C_36SXA_20260404_0_L2A/B04.tif",
+      "read": "window via /vsicurl/",
+      "asset": "red"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/4/S2C_36SXA_20260404_0_L2A/B03.tif",
+      "read": "window via /vsicurl/",
+      "asset": "green"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/4/S2C_36SXA_20260404_0_L2A/B02.tif",
+      "read": "window via /vsicurl/",
+      "asset": "blue"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/4/S2C_36SXA_20260404_0_L2A/B08.tif",
+      "read": "window via /vsicurl/",
+      "asset": "nir"
+    },
+    {
+      "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/36/S/XA/2026/4/S2C_36SXA_20260404_0_L2A/SCL.tif",
+      "read": "window via /vsicurl/",
+      "asset": "scl"
+    }
+  ]
+}

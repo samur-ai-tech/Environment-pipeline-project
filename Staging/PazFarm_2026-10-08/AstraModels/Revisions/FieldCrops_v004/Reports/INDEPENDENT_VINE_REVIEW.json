@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-10T21:59:35.123381+00:00",
+  "reviewer": "Independent subagent /root/v3_pines",
+  "independence": "Reviewer authored the separate pine/olive families, not this vine family. No vine models, textures, previews or source scripts were modified during review.",
+  "scope": "Offline visual review of the three grapevine tiles and their authored LOD3 meshes, supplied geometry/FBX QA, and 32 completed fixed-camera vine frames.",
+  "verdict": "READY_OFFLINE_HANDOFF",
+  "ready": true,
+  "native_accepted": false,
+  "blocking_issues": [],
+  "summary": "The trellised row reads as a continuous green grapevine hedge with two grounded trunks per 3 m tile. The lowest LOD preserves the canopy band, post and trunk locations in the tested distant views. No floating, wrong orientation, broken scale or visible join gaps were found in the inspected evidence.",
+  "brief_checks": {
+    "asset_names": [
+      "SM_PazFarm_VineRow_3m_A",
+      "SM_PazFarm_VineRow_3m_A_LOD3",
+      "SM_PazFarm_VineRow_3m_B",
+      "SM_PazFarm_VineRow_3m_B_LOD3",
+      "SM_PazFarm_VineRow_3m_C",
+      "SM_PazFarm_VineRow_3m_C_LOD3"
+    ],
+    "triangle_counts": {
+      "SM_PazFarm_VineRow_3m_A": 36802,
+      "SM_PazFarm_VineRow_3m_A_LOD3": 294,
+      "SM_PazFarm_VineRow_3m_B": 37762,
+      "SM_PazFarm_VineRow_3m_B_LOD3": 294,
+      "SM_PazFarm_VineRow_3m_C": 38722,
+      "SM_PazFarm_VineRow_3m_C_LOD3": 294
+    },
+    "budgets_pass": true,
+    "form": "Solid lobed leaf geometry around one continuous opaque canopy; one start post, two trunks approximately 0.90 m high at Y approximately 0.75 and 2.25 m, and three trellis wires.",
+    "length_m": 3.0,
+    "orientation": "+Y row direction; Z up; ground pivot at start-end centre [0,0,0].",
+    "canopy": "Detailed outer width approximately 0.66 m; foliage canopy approximately Z 0.92 to 1.78 m. Overall height 1.90 m includes the trellis post.",
+    "source_and_fresh_fbx_qa_pass": true,
+    "geometry": "All six supplied source and round-tripped FBX meshes have finite geometry/UV0, zero zero-area triangles, zero boundary edges and zero nonmanifold edges in the supplied QA.",
+    "materials": "Seven identical ordered slots per high/low pair; 21 present 1024 x 1024 PBR PNGs have solid alpha 1 in supplied QA.",
+    "tile_seams": {
+      "permutations_checked": 18,
+      "all_profiles_match": true,
+      "maximum_gap_m": 0.0,
+      "any_positive_volume_overlap": false,
+      "note": "Closed end caps coincide only on the join plane. This is a planar end-to-end test."
+    },
+    "mixed_block": {
+      "rows": 5,
+      "tiles_per_row": 10,
+      "row_pitch_m": 2.75,
+      "row_length_m": 30,
+      "post_count": 50,
+      "unique_post_locations": 50,
+      "vine_trunk_count": 100,
+      "unique_vine_locations": 100,
+      "visually_continuous": true
+    }
+  },
+  "visual_findings": [
+    {
+      "severity": "pass",
+      "finding": "Fitted A and the unobstructed side view show both grounded trunks, post and wire structure; the hero scale figure does not substitute for structural evidence."
+    },
+    {
+      "severity": "pass",
+      "finding": "At 30, 150 and 500 m all three matched single-tile pairs preserve green canopy and corresponding support positions. The 150/500 m mixed block retains five continuous rows."
+    },
+    {
+      "severity": "minor_nonblocking",
+      "finding": "The opaque backing and flat cut ends are visible in close views; this can look too regular on an exposed row end.",
+      "suggested_action": "Optional close-view refinement: add more leaf coverage at exposed end faces while keeping the exact 0/3 m tile boundary and current distant silhouette. No change is required for the requested field-scale handoff."
+    },
+    {
+      "severity": "minor_nonblocking",
+      "finding": "LOD3 is smoother, slightly narrower in raster coverage and modestly brighter than LOD0. The difference remains small in the tested distant views.",
+      "suggested_action": "Keep current low mesh for handoff; review the native transition under the destination lighting before changing its albedo or width."
+    }
+  ],
+  "distance_evidence": {
+    "frame_count": 32,
+    "requested_distances_m": [
+      2,
+      30,
+      150,
+      500
+    ],
+    "arrangements": "A/B/C single tile and mixed 5-row x 10-tile block, each LOD0 and LOD3.",
+    "settings": {
+      "engine": "CYCLES",
+      "samples": 16,
+      "adaptive_sampling": false,
+      "denoising": false,
+      "resolution_px": [
+        1920,
+        1080
+      ],
+      "horizontal_fov_deg": 60.0,
+      "camera_type": "PERSP",
+      "camera_clip_m": [
+        0.01,
+        10000
+      ],
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure_stops": 0.0,
+      "gamma": 1.0,
+      "world_color_linear": [
+        0.65,
+        0.7,
+        0.78
+      ],
+      "world_strength": 0.35,
+      "sun_energy": 2.0,
+      "sun_rotation_xyz_deg": [
+        35,
+        -25,
+        -40
+      ],
+      "sun_angle_deg": 5.0,
+      "transparent_film": true,
+      "render_ground": false,
+      "shadows_in_mask": false,
+      "azimuth_deg": -55.0,
+      "samples_seed": 1977,
+      "threads": 4,
+      "distance_definition": "Euclidean camera-to-declared-target slant distance in metres",
+      "png": "RGBA8 display sRGB, original unrescaled 1920x1080 evidence"
+    },
+    "all_32_png_hashes_current": true,
+    "all_32_source_and_texture_bindings_current": true,
+    "noncropped_comparison_count": 11,
+    "noncropped_silhouette_iou_range": [
+      0.90811,
+      0.93124
+    ],
+    "noncropped_low_over_high_area_range": [
+      0.9242,
+      0.96465
+    ],
+    "noncropped_luma_delta_code_values_range": [
+      1.703,
+      3.705
+    ],
+    "single_500m_equivalent_opaque_pixels": {
+      "vines_A_single_500m_LOD0": 24.949,
+      "vines_A_single_500m_LOD3": 23.7569,
+      "vines_B_single_500m_LOD0": 25.2588,
+      "vines_B_single_500m_LOD3": 23.7569,
+      "vines_C_single_500m_LOD0": 25.3843,
+      "vines_C_single_500m_LOD3": 23.6353
+    },
+    "crop_note": "The 2 m views and 30 m mixed block are intentionally cropped by the fixed perspective camera. They are excluded from complete-silhouette range summaries; fitted previews and the 150 m block supply full-form inspection.",
+    "magnification_note": "Nearest-neighbour enlarged pairs aid inspection but do not add image detail; native-resolution frames remain the evidence.",
+    "comparison_snapshot": [
+      {
+        "key": [
+          "vines",
+          "A",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "vines_A_single_2m_LOD0",
+        "LOD3_frame": "vines_A_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.98066,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.99575,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.673,
+          3.733,
+          2.498
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.419,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "A",
+          "single",
+          "perspective",
+          30
+        ],
+        "LOD0_frame": "vines_A_single_30m_LOD0",
+        "LOD3_frame": "vines_A_single_30m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.9142,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.95692,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.169,
+          3.14,
+          2.197
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.866,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "A",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "vines_A_single_150m_LOD0",
+        "LOD3_frame": "vines_A_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.91481,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.95846,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.669,
+          2.34,
+          1.915
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.167,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_A_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            942,
+            521,
+            978,
+            561
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "A",
+          "single",
+          "perspective",
+          500
+        ],
+        "LOD0_frame": "vines_A_single_500m_LOD0",
+        "LOD3_frame": "vines_A_single_500m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.92379,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.95222,
+        "LOD3_minus_LOD0_lit_srgb": [
+          0.945,
+          2.032,
+          0.672
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 1.703,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_A_single_500m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            950,
+            530,
+            969,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "B",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "vines_B_single_2m_LOD0",
+        "LOD3_frame": "vines_B_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.97073,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.98257,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.959,
+          4.131,
+          2.654
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.775,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "B",
+          "single",
+          "perspective",
+          30
+        ],
+        "LOD0_frame": "vines_B_single_30m_LOD0",
+        "LOD3_frame": "vines_B_single_30m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.92192,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.96465,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.815,
+          4.08,
+          2.612
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.705,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "B",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "vines_B_single_150m_LOD0",
+        "LOD3_frame": "vines_B_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.92107,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.9621,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.235,
+          3.166,
+          2.257
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.902,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_B_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            942,
+            521,
+            978,
+            561
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "B",
+          "single",
+          "perspective",
+          500
+        ],
+        "LOD0_frame": "vines_B_single_500m_LOD0",
+        "LOD3_frame": "vines_B_single_500m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.93124,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.94054,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.949,
+          3.076,
+          1.629
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.732,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_B_single_500m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            950,
+            530,
+            969,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "C",
+          "single",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "vines_C_single_2m_LOD0",
+        "LOD3_frame": "vines_C_single_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.97134,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.98093,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.994,
+          4.263,
+          2.664
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.877,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "C",
+          "single",
+          "perspective",
+          30
+        ],
+        "LOD0_frame": "vines_C_single_30m_LOD0",
+        "LOD3_frame": "vines_C_single_30m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.91539,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.95833,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.418,
+          3.585,
+          2.328
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.247,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "C",
+          "single",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "vines_C_single_150m_LOD0",
+        "LOD3_frame": "vines_C_single_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.91549,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.95486,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.742,
+          2.623,
+          2.008
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.392,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_C_single_150m_11x.png",
+          "scale_factor": 11,
+          "source_crop_xyxy": [
+            942,
+            521,
+            978,
+            561
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "C",
+          "single",
+          "perspective",
+          500
+        ],
+        "LOD0_frame": "vines_C_single_500m_LOD0",
+        "LOD3_frame": "vines_C_single_500m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.90811,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.9311,
+        "LOD3_minus_LOD0_lit_srgb": [
+          1.099,
+          2.067,
+          1.494
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 1.82,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_C_single_500m_16x.png",
+          "scale_factor": 16,
+          "source_crop_xyxy": [
+            950,
+            530,
+            969,
+            550
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "mixed",
+          "block_5x10",
+          "perspective",
+          2
+        ],
+        "LOD0_frame": "vines_mixed_block_5x10_2m_LOD0",
+        "LOD3_frame": "vines_mixed_block_5x10_2m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.96724,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.97151,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.935,
+          4.204,
+          2.453
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.807,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "mixed",
+          "block_5x10",
+          "perspective",
+          30
+        ],
+        "LOD0_frame": "vines_mixed_block_5x10_30m_LOD0",
+        "LOD3_frame": "vines_mixed_block_5x10_30m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.90679,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.9218,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.849,
+          3.927,
+          2.612
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 3.603,
+        "both_visible": true,
+        "close_crop": true,
+        "review_flags": []
+      },
+      {
+        "key": [
+          "vines",
+          "mixed",
+          "block_5x10",
+          "perspective",
+          150
+        ],
+        "LOD0_frame": "vines_mixed_block_5x10_150m_LOD0",
+        "LOD3_frame": "vines_mixed_block_5x10_150m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.91445,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.9242,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.207,
+          3.057,
+          2.362
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.826,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_mixed_block_5x10_150m_1x.png",
+          "scale_factor": 1,
+          "source_crop_xyxy": [
+            798,
+            453,
+            1106,
+            645
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      },
+      {
+        "key": [
+          "vines",
+          "mixed",
+          "block_5x10",
+          "perspective",
+          500
+        ],
+        "LOD0_frame": "vines_mixed_block_5x10_500m_LOD0",
+        "LOD3_frame": "vines_mixed_block_5x10_500m_LOD3",
+        "alpha_weighted_silhouette_iou": 0.91751,
+        "LOD3_over_LOD0_opaque_area_ratio": 0.92647,
+        "LOD3_minus_LOD0_lit_srgb": [
+          2.279,
+          3.215,
+          2.457
+        ],
+        "LOD3_minus_LOD0_luma_code_value": 2.962,
+        "both_visible": true,
+        "close_crop": false,
+        "review_flags": [],
+        "magnified_comparison": {
+          "file": "Previews/Distance/MAGNIFIED_vines_mixed_block_5x10_500m_4x.png",
+          "scale_factor": 4,
+          "source_crop_xyxy": [
+            909,
+            509,
+            1010,
+            573
+          ],
+          "left": "LOD0",
+          "right": "LOD3",
+          "resampling": "nearest-neighbour; diagnostic crop"
+        }
+      }
+    ],
+    "combined_report_note": "The combined distance_validation.json was still PARTIAL_OR_STALE while other families rendered. This verdict covers only the independently verified, complete 32-frame vine subset and does not imply completion of olive/grass/global validation."
+  },
+  "remaining_native_limits": [
+    "Unreal import, material binding and forced lowest-LOD assignment to the non-Nanite always-loaded Instancing HLOD were not performed or accepted here.",
+    "Scene lighting, shadows, temporal antialiasing and exposure can change apparent colour and small-feature visibility; inspect the native result at the intended distances.",
+    "Planar 3 m joins are checked. Terrain slope changes, per-tile rotations, grounding and terminal-post placement remain placement responsibilities.",
+    "Always-loaded geometry prevents configured culling only; finite screen resolution cannot guarantee perceptible individual trunks, leaves or tiles at every distance. The 500 m single tile occupies only about 24 equivalent opaque pixels under this camera.",
+    "Performance and memory with thousands of instances remain native integration checks."
+  ],
+  "evidence_sha256": {
+    "brief": {
+      "path": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\PazFarm_2026-10-08\\HANDOFF_ASTRA_FieldCrops_v004.md",
+      "sha256": "97cd04eb54ee00deeabd79c6720a30c270b8d1ff0dbb61e898374f3e2cb9523a"
+    },
+    "qa_report": {
+      "path": "Reports/vines_v004_qa.json",
+      "sha256": "59d6dec274ed245fd068f837eccff4e46f1c025cd170e4d7b65196afd550a734"
+    },
+    "family_report": {
+      "path": "Reports/vines_v004.json",
+      "sha256": "3bd12134cd788324c49f39de213d0ea3dbd0d1997d0c634e4905121d1ecc695c"
+    },
+    "vine_distance_progress": {
+      "path": "Reports/distance_vines_progress.json",
+      "sha256": "c83a8189eeb739f41820d019d688c496c9a73b93d4b3f9e49974941026e5a62e"
+    },
+    "all_qa_inputs_verified_current": true,
+    "source_fbx_textures": {
+      "Blend/VineRows.blend": "ca26f23dac888063a3815739b34bba93a93a41935fe6d5af03a949b268e85397",
+      "FBX/SM_PazFarm_VineRow_3m_A.fbx": "e28df8508be5c6b08495d80accad912b7d057a6d164ed93816ba15df29fbfd0b",
+      "FBX/SM_PazFarm_VineRow_3m_A_LOD3.fbx": "11dbb0ed41bedd7ec808e1a1765796cda71e359682925a2e696d641c902e612e",
+      "FBX/SM_PazFarm_VineRow_3m_B.fbx": "33914a6928b9787ad1065d521ff46863b2388a74b5d77efa59be9c8978daf6ff",
+      "FBX/SM_PazFarm_VineRow_3m_B_LOD3.fbx": "aa86fe2ec9a556673c856a2e0fb94a33e6595a80bd6662a676bc99e1e1e1cbf3",
+      "FBX/SM_PazFarm_VineRow_3m_C.fbx": "e54e4a1c6b491f0313360484ef12ffc9c384f5b634db04ae549004df5d90ab57",
+      "FBX/SM_PazFarm_VineRow_3m_C_LOD3.fbx": "871222efe7910de96828dfc9042a9e7052e254881c3dfbacdcf401c69711eef3",
+      "Textures/T_PazFarm_Vine_Bark_v004_BaseColor.png": "8708670475150bc04cd59d6819c9907141631f3d4cbf578451c2c6e0c9b49f5e",
+      "Textures/T_PazFarm_Vine_Bark_v004_Normal.png": "3ff33f09fcda846e3bf743cb6e84c574ff2ef902728466c4cf9fa970b6096136",
+      "Textures/T_PazFarm_Vine_Bark_v004_ORM.png": "bdcd93e5c25d74c7dedf9475b7005cc633d9fbaeb09501794358bb6b1529a39d",
+      "Textures/T_PazFarm_Vine_Canopy_v004_BaseColor.png": "d459cb466d5492196aa9896975ad576c673239c0f55bd378326e8204d0f434a2",
+      "Textures/T_PazFarm_Vine_Canopy_v004_Normal.png": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c",
+      "Textures/T_PazFarm_Vine_Canopy_v004_ORM.png": "bdcd93e5c25d74c7dedf9475b7005cc633d9fbaeb09501794358bb6b1529a39d",
+      "Textures/T_PazFarm_Vine_Grape_v004_BaseColor.png": "35b99a4727bb88ff87502033c605359135c3200412fdcad08ba5e71c3e3451ec",
+      "Textures/T_PazFarm_Vine_Grape_v004_Normal.png": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c",
+      "Textures/T_PazFarm_Vine_Grape_v004_ORM.png": "824c9442c1d57665804b19e225ac953be23ec1077f7df3a3b7bd9e0e3dc6d3d6",
+      "Textures/T_PazFarm_Vine_Leaf_v004_BaseColor.png": "d4804029ac9ca2c63a08672555a9a838990234adfde678e17f6c371d10530ca9",
+      "Textures/T_PazFarm_Vine_Leaf_v004_Normal.png": "0434d86068ee489ece14d70851c83dd5eb8606be17bd4fcdc8606c3b1abfb378",
+      "Textures/T_PazFarm_Vine_Leaf_v004_ORM.png": "b90879321b8bccbebf0a8acfbc4cfcfaf21cf1ac21e12a93ae229839c640d3ef",
+      "Textures/T_PazFarm_Vine_LeafLight_v004_BaseColor.png": "b25524af5381fe39d6a2c98c86e1d15e745a5954ba5aaca81a5b8194c92a2ca1",
+      "Textures/T_PazFarm_Vine_LeafLight_v004_Normal.png": "0434d86068ee489ece14d70851c83dd5eb8606be17bd4fcdc8606c3b1abfb378",
+      "Textures/T_PazFarm_Vine_LeafLight_v004_ORM.png": "b90879321b8bccbebf0a8acfbc4cfcfaf21cf1ac21e12a93ae229839c640d3ef",
+      "Textures/T_PazFarm_Vine_Post_v004_BaseColor.png": "033b81ec660ac96c6731fa6c538ffb850ac07ba967b8e8b58b323a779c35cb84",
+      "Textures/T_PazFarm_Vine_Post_v004_Normal.png": "3ff33f09fcda846e3bf743cb6e84c574ff2ef902728466c4cf9fa970b6096136",
+      "Textures/T_PazFarm_Vine_Post_v004_ORM.png": "bdcd93e5c25d74c7dedf9475b7005cc633d9fbaeb09501794358bb6b1529a39d",
+      "Textures/T_PazFarm_Vine_Wire_v004_BaseColor.png": "49423679a45d337b5947ef420811c9b5a3e3d7409342fd4b538239d5a0b21231",
+      "Textures/T_PazFarm_Vine_Wire_v004_Normal.png": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c",
+      "Textures/T_PazFarm_Vine_Wire_v004_ORM.png": "d0fa0bc4b1ba8c7e37ba1252a4918de5061937a58808c03b5ad14e1849c98fa4"
+    },
+    "selected_images_visually_inspected": {
+      "Previews/SM_PazFarm_VineRow_3m_A.png": "6d7add05e866c132e0dafc06afec2ea9ddaa0399e47be2d66b698d3397d3a2b8",
+      "Previews/SM_PazFarm_VineRow_3m_A_LOD3.png": "cfc949a75b25b4f4efa00f4c25017162302df851ece4513323f35108d2d5209e",
+      "Previews/VineRows_Structure_A.png": "019eeae51280bb38ed8664f1d1858f25497bedb2dd3f15f6ac6847217659d874",
+      "Previews/Distance/vines_A_single_30m_LOD0.png": "1facfed624ee37ebb8b711d821c57337ef9fed92af42f25352559da48e59020d",
+      "Previews/Distance/vines_A_single_30m_LOD3.png": "4e1ba15d9b8ab0483b9184fd22bb622dd1839c0e03656c828c77ae08d5bc6303",
+      "Previews/Distance/MAGNIFIED_vines_A_single_150m_11x.png": "6feae0423e971d4a650fd1a3f49e6a2196207e8dedacbe9ef229e11bd034ad66",
+      "Previews/Distance/MAGNIFIED_vines_A_single_500m_16x.png": "396c845b7b7f687cbee203f2728914e1652b255a14bee8def049d3536246bc78",
+      "Previews/Distance/vines_B_single_30m_LOD0.png": "c8cb9371384b98bf1c1a94cb79250075ff05a387e3954103f20c2820acbafc1c",
+      "Previews/Distance/vines_B_single_30m_LOD3.png": "85ec657b7296f0b4220fab3fbaf098774003da19267570b92575aae126d68cc8",
+      "Previews/Distance/MAGNIFIED_vines_B_single_150m_11x.png": "640669dd28e5c758d2f989136304430d6695b61a616d9875ee23b4aa87d0c576",
+      "Previews/Distance/MAGNIFIED_vines_B_single_500m_16x.png": "ad44cc5ec36bb669d4dbc4d26c71cd793fc196826830691a7e7b339eb4b27ddf",
+      "Previews/Distance/vines_C_single_30m_LOD0.png": "fb960d6a6dd17fbe7bf9b46ca2af4809158d7f2ad0de13ef7277fceaf29eb2a7",
+      "Previews/Distance/vines_C_single_30m_LOD3.png": "01e043b31a1a7760d7caa983684b445e6f229b6af599d8d4ebb18245045ff880",
+      "Previews/Distance/MAGNIFIED_vines_C_single_150m_11x.png": "b21e05af2f04916cdeb23faac5664bbc1b82a15b423c07d685dbf7ee9fdc1691",
+      "Previews/Distance/MAGNIFIED_vines_C_single_500m_16x.png": "db0eb84efaa1f499efb8ab4147a2490c6d2082077fc6fb52dd9d5376d72a13f9",
+      "Previews/Distance/vines_mixed_block_5x10_30m_LOD0.png": "b5bc8667da7c63380871fd76381b1e76b8b679b25fd0b7ea5cc2c0b826b93254",
+      "Previews/Distance/vines_mixed_block_5x10_30m_LOD3.png": "0fbaffb547bb38a787fca1731455a397ddfc66bcc885ec8ca6d631094bb3ce33",
+      "Previews/Distance/MAGNIFIED_vines_mixed_block_5x10_150m_1x.png": "9de5ab5663145648dc2d1fd87843ad6143c293e2405ab7a910d6946e0bc549ae",
+      "Previews/Distance/MAGNIFIED_vines_mixed_block_5x10_500m_4x.png": "667dc9061e3d36cb4bd9df45817723f42c62ccceffb860d581130a823909412f"
+    },
+    "all_distance_frame_pngs": {
+      "Previews/Distance/vines_A_single_2m_LOD0.png": "43f42aa0582d8998f3bd1c30e56e51decb1f015a7c8d74c1488e9e0a505d4c1c",
+      "Previews/Distance/vines_A_single_2m_LOD3.png": "e02d552d209caa01dbda44c1d7b99334beb010d445a8ddf211d91f6d0ac941e2",
+      "Previews/Distance/vines_A_single_30m_LOD0.png": "1facfed624ee37ebb8b711d821c57337ef9fed92af42f25352559da48e59020d",
+      "Previews/Distance/vines_A_single_30m_LOD3.png": "4e1ba15d9b8ab0483b9184fd22bb622dd1839c0e03656c828c77ae08d5bc6303",
+      "Previews/Distance/vines_A_single_150m_LOD0.png": "99027258e6af0b9a27f1bdec98da194ded4d5ca516a09c89d8210488dd300c2f",
+      "Previews/Distance/vines_A_single_150m_LOD3.png": "0481d6658b6ee8b820c5659b2f7f2096fc0b4d434f6e4cf29cd10faf7363a4b2",
+      "Previews/Distance/vines_A_single_500m_LOD0.png": "a66ecc74165d1e0c69fe048a66dfc9152dcc5327780ed69834920d2fc7a209d6",
+      "Previews/Distance/vines_A_single_500m_LOD3.png": "cf0a20e7de445e692edd0b93f3bd09e607c7d018239bc4f94e0226a59fd69799",
+      "Previews/Distance/vines_B_single_2m_LOD0.png": "97fd40120b8ffdcbcfae3f49628da23fcdcd69c1d7a1ebac3417a383b10ba22d",
+      "Previews/Distance/vines_B_single_2m_LOD3.png": "36aa92a8b626a3e8199e4abc0be0fb43670064694ee10b06392099d57d95dc01",
+      "Previews/Distance/vines_B_single_30m_LOD0.png": "c8cb9371384b98bf1c1a94cb79250075ff05a387e3954103f20c2820acbafc1c",
+      "Previews/Distance/vines_B_single_30m_LOD3.png": "85ec657b7296f0b4220fab3fbaf098774003da19267570b92575aae126d68cc8",
+      "Previews/Distance/vines_B_single_150m_LOD0.png": "8e5c560936080de4ff6e99db6a525ed85f54e02fb088fcda9e6f864b01ed3bdd",
+      "Previews/Distance/vines_B_single_150m_LOD3.png": "937b221ebb429885e832e2a4c822a72bdd1723d5300b768b8475e3a56e4cb6ad",
+      "Previews/Distance/vines_B_single_500m_LOD0.png": "eeab42013828549ad7e4cfc4623446c33e4a923b0e2fdcfed2e88a0b383de25a",
+      "Previews/Distance/vines_B_single_500m_LOD3.png": "c04b594a178c1f373863d375c5a6303ae955aa5e3f45d4fe0a018d700fcafffd",
+      "Previews/Distance/vines_C_single_2m_LOD0.png": "2e653b2fe6ff40dd6e32ab22918de2d03238fbfd22fc8ad54c453df2ff85bf86",
+      "Previews/Distance/vines_C_single_2m_LOD3.png": "87790d22158055e8b3b80b8912ee8f2805e44bdaa9a2f49c414e934f7b518048",
+      "Previews/Distance/vines_C_single_30m_LOD0.png": "fb960d6a6dd17fbe7bf9b46ca2af4809158d7f2ad0de13ef7277fceaf29eb2a7",
+      "Previews/Distance/vines_C_single_30m_LOD3.png": "01e043b31a1a7760d7caa983684b445e6f229b6af599d8d4ebb18245045ff880",
+      "Previews/Distance/vines_C_single_150m_LOD0.png": "a5a9ccae9e91f473f5cce456bf9807ae10d9291f86db4e1b10c8f1035dbdc715",
+      "Previews/Distance/vines_C_single_150m_LOD3.png": "44afba03794a7a5abaa45d96f1a2b5a85ac8805e08fb9dbe654753b8fd0cba77",
+      "Previews/Distance/vines_C_single_500m_LOD0.png": "af6754be2ba3c978fc98183cb2776e08ba56bcba84483f7d7fc0ceeaf68eb59d",
+      "Previews/Distance/vines_C_single_500m_LOD3.png": "df0e206f471299bc7c04aa003cf5061b35c872457398d4bd1fea3d1c7650349d",
+      "Previews/Distance/vines_mixed_block_5x10_2m_LOD0.png": "e065cd85cf99fe51c5ee95f619bf244966d3deb0831b93defea3781c67b830eb",
+      "Previews/Distance/vines_mixed_block_5x10_2m_LOD3.png": "428a5664e19bba9dbae7e0714b73b8b09d9ca14b4c39738f88cbbf7e6b1e464e",
+      "Previews/Distance/vines_mixed_block_5x10_30m_LOD0.png": "b5bc8667da7c63380871fd76381b1e76b8b679b25fd0b7ea5cc2c0b826b93254",
+      "Previews/Distance/vines_mixed_block_5x10_30m_LOD3.png": "0fbaffb547bb38a787fca1731455a397ddfc66bcc885ec8ca6d631094bb3ce33",
+      "Previews/Distance/vines_mixed_block_5x10_150m_LOD0.png": "5eef4f3a96d6242b1cc34692098aa272102e241717101479876dc70b197ea8b1",
+      "Previews/Distance/vines_mixed_block_5x10_150m_LOD3.png": "b8be9618d99c81b204ffd1c70bfd15556b32d906a8cc57d86ed8a5acbbcb7797",
+      "Previews/Distance/vines_mixed_block_5x10_500m_LOD0.png": "4c25f9db7fcdc4a6aa507696bba3d65f30235c4ef0014dac52de51a5c4b391bb",
+      "Previews/Distance/vines_mixed_block_5x10_500m_LOD3.png": "388a82e092cc75a07c2839caa5c2fe874cd2fb286f2373b0688a5b4e264484d0"
+    }
+  },
+  "writes_performed": [
+    "Reports/INDEPENDENT_VINE_REVIEW.json"
+  ]
+}

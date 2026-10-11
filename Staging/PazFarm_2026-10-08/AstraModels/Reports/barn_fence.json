@@ -1,0 +1,699 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_Barn",
+      "size_metres_W_D_H": [
+        20.57,
+        12.585,
+        8.11338
+      ],
+      "bounds_metres": [
+        [
+          -10.28499984741211,
+          -6.292500019073486,
+          -0.019999999552965164
+        ],
+        [
+          10.28499984741211,
+          6.292500019073486,
+          8.0933837890625
+        ]
+      ],
+      "triangles_LOD0": 17168,
+      "triangle_budget": 30000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Barn_WallGalvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_Normal.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofPaintedGrey",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_DarkHardware",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_DarkHardware_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_Normal.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_ConcretePlinth",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_Normal.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Inferred default farm barn; no ground photograph was supplied. Not a surveyed reconstruction.",
+        "Wall footprint 20 x 12 m. Eave 6 m, structural ridge 8 m, roof overhang 0.24 m. Measured outer bounds include roof/flashing thickness.",
+        "Front is Blender -Y. Closed 6 x 4.4 m sliding door on long front side with external sliding rail; wall opening exists behind door.",
+        "Physical corrugated steel sheets have thickness, perimeter closures, corner uprights, verge and ridge flashing.",
+        "Pivot at footprint centre, ground level. Exterior-only prop; collision closes the building volume.",
+        "Defaults and material colours are editable in Scripts/build_barn_fence.py. All geometry and textures are original CC0."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Barn_00",
+        "UCX_SM_PazFarm_Barn_01",
+        "UCX_SM_PazFarm_Barn_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Barn.fbx",
+      "preview": "Previews/SM_PazFarm_Barn.png",
+      "nominal_size_metres": [
+        20.0,
+        12.0,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Barn.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Barn_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -6.0,
+              0.0
+            ],
+            [
+              10.0,
+              6.0,
+              6.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            12.0,
+            6.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -4.5,
+              6.0
+            ],
+            [
+              10.0,
+              4.5,
+              7.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            9.0,
+            1.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -1.5,
+              7.0
+            ],
+            [
+              10.0,
+              1.5,
+              8.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            3.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SM_PazFarm_Fence_Mesh_3m",
+      "size_metres_W_D_H": [
+        3.03878,
+        0.07524,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.037620000541210175,
+          -0.037620000541210175,
+          0.0
+        ],
+        [
+          3.0011634826660156,
+          0.037620000541210175,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 1936,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Actual diamond wire geometry: diagonal galvanized wires, approximately 0.12 m horizontal and vertical diamond spans.",
+        "One post only, at the start. Nominal module length exactly 3.0 m in Blender +X; place repeats at X=0,3,6... with identical rotation.",
+        "Pivot at ground, starting post centre. Physical bounds include post radius before X=0; this does not alter the 3 m repeat pitch.",
+        "Mesh and horizontal rails terminate at X=3.0 m and meet the next post; no doubled posts. Add Fence_Post at the final X endpoint.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Mesh_3m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Mesh_3m.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Mesh_3m.png",
+      "nominal_size_metres": [
+        3.0,
+        0.066,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Mesh_3m_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.033499956130981445,
+              -0.03750000149011612,
+              0.0
+            ],
+            [
+              3.0334999561309814,
+              0.03750000149011612,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            3.067,
+            0.075,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SM_PazFarm_Fence_Post",
+      "size_metres_W_D_H": [
+        0.09576,
+        0.09576,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.04788000136613846,
+          -0.04788000136613846,
+          0.0
+        ],
+        [
+          0.04788000136613846,
+          0.04788000136613846,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 220,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Terminal/end post; pivot at ground, post centre. Place at the open end of a 3 m panel run.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Post_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Post.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Post.png",
+      "nominal_size_metres": [
+        0.084,
+        0.084,
+        2
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Post_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.1,
+            0.1,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SM_PazFarm_Fence_Corner",
+      "size_metres_W_D_H": [
+        0.75244,
+        0.75244,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.05243999883532524,
+          -0.05243999883532524,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 300,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Corner post with two orthogonal diagonal stays toward Blender +X and +Y; rotate whole piece to suit corner.",
+        "Pivot at ground, post centre. Corner-post UCX covers the upright only; slim diagonal stays have no collision.",
+        "Use at the meeting point of two runs that terminate here, or remove redundant terminal upright in source if integrating a run that starts here.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Corner_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Corner.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Corner.png",
+      "nominal_size_metres": [
+        0.7,
+        0.7,
+        2
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Corner_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.0
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.11,
+            0.11,
+            2.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SM_PazFarm_Gate_Double_6m",
+      "size_metres_W_D_H": [
+        6.0,
+        0.1375,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -3.0,
+          -0.07750000059604645,
+          0.0
+        ],
+        [
+          3.0,
+          0.05999999865889549,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 3664,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Two closed steel swing-gate leaves with actual diamond wire infill, diagonal stays, hinge barrels, drop bolts and latch.",
+        "Outside post width exactly 6 m. Pivot ground centre.",
+        "A static combined mesh is delivered; leaves can be separated and rotated at their hinges in the source if an opening is wanted.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Gate_Double_6m_00",
+        "UCX_SM_PazFarm_Gate_Double_6m_01",
+        "UCX_SM_PazFarm_Gate_Double_6m_02",
+        "UCX_SM_PazFarm_Gate_Double_6m_03"
+      ],
+      "fbx": "FBX/SM_PazFarm_Gate_Double_6m.fbx",
+      "preview": "Previews/SM_PazFarm_Gate_Double_6m.png",
+      "nominal_size_metres": [
+        6.0,
+        0.12,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -3.002500057220459,
+              -0.0625,
+              0.0
+            ],
+            [
+              -2.877500057220459,
+              0.0625,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.125,
+            0.125,
+            2.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              2.877500057220459,
+              -0.0625,
+              0.0
+            ],
+            [
+              3.002500057220459,
+              0.0625,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.125,
+            0.125,
+            2.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -2.8299999237060547,
+              -0.03999999910593033,
+              0.10000002384185791
+            ],
+            [
+              -0.034999966621398926,
+              0.03999999910593033,
+              1.909999966621399
+            ]
+          ],
+          "size_metres": [
+            2.795,
+            0.08,
+            1.81
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_03",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              0.034999966621398926,
+              -0.03999999910593033,
+              0.10000002384185791
+            ],
+            [
+              2.8299999237060547,
+              0.03999999910593033,
+              1.909999966621399
+            ]
+          ],
+          "size_metres": [
+            2.795,
+            0.08,
+            1.81
+          ]
+        }
+      ]
+    }
+  ],
+  "extra": {
+    "status": "Complete",
+    "modular_check": {
+      "fence_repeat_step_m": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "panel_mesh_end_x_m": 3.0,
+      "next_panel_post_center_x_m": 3.0,
+      "post_count_per_panel": 1
+    },
+    "reference_status": "Parent reviewed provided aerial reference; defaults approved by handoff are used. No barn ground photograph supplied.",
+    "source_script": "Scripts/build_barn_fence.py",
+    "visual_review": "Every preview inspected at full output resolution. Final correction joins corner stays to foot plates and mirrors gate compression braces.",
+    "source_visibility": "Each source asset has its own named collection. Fence source opens with the 3 m panel visible; use the Outliner eye icons to reveal other parts."
+  }
+}

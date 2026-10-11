@@ -1,0 +1,30 @@
+{
+  "schema": "environmentpipeline.new_area_run.v1",
+  "operator_session_id": "4a6a1d0c-3246-4c14-af9c-7d81b1106019",
+  "purpose": "wptrial",
+  "map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_WPTrial/L_KarmeiYosef_31850349_34907601_4km_WPTrial",
+  "profile_path": "Staging/ModelBank/KarmeiYosef_31850349_34907601_4km/AREA_PROFILE.json",
+  "assigned_editor_PID": 18880,
+  "process_start_utc": "2026-10-09T23:37:20.9428324Z",
+  "status": "CRASHED_RELEASED_BY_OPERATOR",
+  "editor_live": false,
+  "released_utc": "2026-10-09T23:45:56.660716+00:00",
+  "generation_authorized": false,
+  "map_baseline_sha256": "14e48ce4c32681fcff35af771415557229f35b40d7d192240879524f25b2c666",
+  "control_endpoints": {
+    "copilot": "http://127.0.0.1:19852/mcp",
+    "copilot_internal_port": 18092,
+    "native": "http://127.0.0.1:8012/mcp"
+  },
+  "launch": {
+    "utc": "2026-10-09T23:37:20.9509380Z",
+    "aviv_word": "Aviv 2026-10-10: Yes, let's do a trial on a copy of the clone (World Partition, always-loaded instancing HLOD for trees, one object per building, reversible)",
+    "arguments": "\"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Environmentpipeline.uproject\" \"/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_WPTrial/L_KarmeiYosef_31850349_34907601_4km_WPTrial\" -NoAutoSave -NoSaveConfig -NoRestoreOpenAssetTabs -abslog=\"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Logs\\wptrial_L_KarmeiYosef_31850349_34907601_4km_WPTrial_20261009T233720Z.log\" -ini:Engine:[/Script/HoudiniEngineRuntime.HoudiniRuntimeSettings]:bPauseCookingOnStart=True -ini:EditorPerProjectUserSettings:[/Script/UnrealEd.EditorLoadingSavingSettings]:bAutoSaveEnable=False,[/Script/UnrealEd.EditorLoadingSavingSettings]:RestoreOpenAssetTabsOnRestart=NeverRestore,[/Script/UnrealCopilot.UnrealCopilotSettings]:McpPort=19852,[/Script/UnrealCopilot.UnrealCopilotSettings]:UePluginPort=18092,[/Script/ModelContextProtocolEngine.ModelContextProtocolSettings]:ServerPortNumber=8012",
+    "log": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Logs\\wptrial_L_KarmeiYosef_31850349_34907601_4km_WPTrial_20261009T233720Z.log",
+    "backup": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Before\\L_KarmeiYosef_31850349_34907601_4km_WPTrial_14e48ce4.umap",
+    "last_lease_line_read": "2026-10-08T13:08:01.294625+00:00 OWNER=NONE task=GEOCITY_MENU editor_PID=31468 released_phase=baked_saved_verified",
+    "seal_check": "passed"
+  },
+  "other_live_editor_allowed": null,
+  "crash_note": "2026-10-09 23:45Z fatal: FRenderResource deleted without release while rebuilding a duplicated /Engine/BasicShapes/Cube as SM_Shell_1040458071 (split_shells.py build); trial map never saved (sha 14e48ce4 unchanged); no other package saved"
+}

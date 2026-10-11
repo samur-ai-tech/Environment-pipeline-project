@@ -1,0 +1,36 @@
+{
+  "revision": "VisualFix_v002",
+  "colour_space": "sRGB byte values 0..255. No linear-to-sRGB conversion is applied when writing the PNG.",
+  "seed": 20261008,
+  "extent": {"size_m": 512.0, "pixels": 2048, "metres_per_pixel": 0.25, "west_edge_m_from_pin": -219.843, "north_edge_m_from_pin": 230.463, "north_up": true},
+  "edge_feather_m": 1.0,
+  "plots": {
+    "yard": {"mode": "bare", "base_rgb": [172,149,148], "noise_rgb_amplitude": 3.5, "appearance_target_rgb": [147,127,123], "note": "Exposed soil target; whole-yard mean includes barn and vegetation, which are supplied by models."},
+    "strawberry_west": {"mode": "strawberry", "lane_rgb": [184,147,138], "shoulder_rgb": [151,113,102], "noise_rgb_amplitude": 2.0, "row_direction_deg": 85.8, "row_pitch_m": 5.48, "shoulder_band_width_m": 2.0, "bed_length_m": 4.0, "shoulder_edge_softness_m": 0.24, "appearance_target_rgb": [171,135,125]},
+    "strawberry_triangle": {"mode": "strawberry", "lane_rgb": [183,145,136], "shoulder_rgb": [149,109,98], "noise_rgb_amplitude": 2.0, "row_direction_deg": 176.7, "row_pitch_m": 5.84, "shoulder_band_width_m": 2.0, "bed_length_m": 4.0, "shoulder_edge_softness_m": 0.24, "appearance_target_rgb": [170,132,123]},
+    "triangle_top_bare": {"mode": "bare", "base_rgb": [160,125,113], "noise_rgb_amplitude": 2.2, "appearance_target_rgb": [160,125,113]},
+    "orchard_south": {"mode": "soil_under_models", "base_rgb": [147,128,126], "noise_rgb_amplitude": 2.8, "appearance_target_rgb": [118,100,97], "note": "Soil only; real crowns and shadows must create the darker whole-plot average. No painted canopy bars."},
+    "orchard_northeast": {"mode": "soil_under_models", "base_rgb": [158,136,127], "noise_rgb_amplitude": 2.8, "appearance_target_rgb": [133,114,104], "note": "Soil only, no painted canopy bars."},
+    "rows_east_unknown": {"mode": "soil_under_models", "base_rgb": [145,135,132], "noise_rgb_amplitude": 2.4, "appearance_target_rgb": [127,115,112], "note": "Unknown species retained; denser bands must be real canopy, not painted vegetation."},
+    "field_north_green": {"mode": "patchy_green", "soil_rgb": [177,169,146], "crop_rgb": [123,132,108], "noise_rgb_amplitude": 1.5, "row_direction_deg": 177.7, "row_pitch_m": 3.35, "appearance_target_rgb": [151,149,127]},
+    "field_northeast_big": {"mode": "fine_furrows", "base_rgb": [142,126,115], "row_rgb_amplitude": [7,7,6], "noise_rgb_amplitude": 1.7, "row_direction_deg": 124.7, "row_pitch_m": 1.8, "appearance_target_rgb": [142,126,115], "note": "Editable visual estimate; replaces 12.39 m dominant macro-period, which is not individual furrow spacing."},
+    "field_southeast_brown": {"mode": "bare", "base_rgb": [154,121,115], "noise_rgb_amplitude": 2.4, "row_direction_deg": 86.7, "faint_tillage_pitch_m": 1.6, "faint_tillage_rgb_amplitude": 0.9, "appearance_target_rgb": [154,121,115]},
+    "fields_west_green": {"mode": "split_green", "west_lane_rgb": [134,139,129], "west_crop_rgb": [79,96,88], "east_lane_rgb": [145,139,124], "east_crop_rgb": [113,109,94], "noise_rgb_amplitude": 1.7, "row_direction_deg": 84.2, "row_pitch_m": 5.24, "crop_band_width_m": 2.7, "west_split_screenshot_x": 153.0, "split_softness_m": 3.0, "pale_interrupt_rgb": [175,162,144], "appearance_target_rgb": [122,118,107]},
+    "field_southwest": {"mode": "fine_furrows", "base_rgb": [178,155,145], "row_rgb_amplitude": [8,7,6], "noise_rgb_amplitude": 1.8, "row_direction_deg": 145.0, "row_pitch_m": 1.91, "appearance_target_rgb": [178,155,145]}
+  },
+  "roads": {
+    "farm_road_diagonal": {"rgb": [185,158,154], "width_m": 4.0},
+    "yard_access_north": {"rgb": [185,158,154], "width_m": 4.0},
+    "west_track": {"rgb": [212,192,184], "width_m": 4.0},
+    "south_road": {"rgb": [192,168,158], "width_m": 5.0},
+    "east_road": {"rgb": [192,168,158], "width_m": 5.0},
+    "east_spur": {"rgb": [192,168,158], "width_m": 4.0}
+  },
+  "road_shoulders": {"feather_m": 0.85, "width_variation_m": 0.28, "noise_rgb_amplitude": 1.8},
+  "junctions": [
+    {"from_road": "farm_road_diagonal", "endpoint": -1, "to_road": "south_road", "max_gap_m": 12.0, "width_m": 4.0, "flare_radius_m": 3.2},
+    {"from_road": "east_spur", "endpoint": 0, "to_road": "east_road", "max_gap_m": 12.0, "width_m": 4.0, "flare_radius_m": 3.5},
+    {"from_road": "south_road", "endpoint": -1, "to_road": "east_road", "max_gap_m": 6.0, "width_m": 5.0, "flare_radius_m": 3.6}
+  ],
+  "barn_south_apron": {"polygon_screenshot_px": [[446,219],[500,219],[504,247],[478,256],[449,249]], "rgb": [202,193,186], "feather_m": 0.55}
+}

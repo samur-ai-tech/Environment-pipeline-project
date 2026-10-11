@@ -1,0 +1,32 @@
+{
+  "utc_start": "2026-10-11T20:40:08.904579+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\deps_probe.py",
+  "script_sha256": "ebffc95ad2b8875de61d07a824921a69ca19298b15dfcc841e13da0b9c2c2ee6",
+  "args": {
+    "label": "env_4km_v2",
+    "roots": [
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial_v2",
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km"
+    ],
+    "delete_folders": [
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_WPTrial"
+    ],
+    "delete_packages": [
+      "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial"
+    ],
+    "expected_pid": 38868,
+    "script_sha256": "ebffc95ad2b8875de61d07a824921a69ca19298b15dfcc841e13da0b9c2c2ee6",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\deps_probe.py"
+  },
+  "editor_pid": 38868,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": false,
+    "stdout": "",
+    "error": "Traceback (most recent call last):\n  File \"C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Plugins\\UnrealCopilot\\Content\\Python\\unreal_copilot\\skills\\runner.py\", line 228, in _exec_inline\n    exec(python_code, globals_dict)\n  File \"<string>\", line 63\n    game.append([p, str(fp.relative_to(ROOT)).replace('\\', '/'), sz, [str(x.relative_to(ROOT)).replace('\\', '/') for x in extra]])\n                                                                                                         ^\nSyntaxError: unexpected character after line continuation character\n"
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-11T20:40:08.934113+00:00",
+  "exit_code": 1
+}

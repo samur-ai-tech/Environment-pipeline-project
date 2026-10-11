@@ -1,0 +1,98 @@
+{
+  "schema": "pazfarm_reference_selection_v1",
+  "delivery": "StrawberryBeds_v005",
+  "reference_gate": {
+    "status": "PASSED_BEFORE_MODELLING",
+    "reviewer": "parent modeller /root",
+    "basis": "Parent confirmed visual inspection and approval of the four selected photographs before authoring.",
+    "recorded_at_utc": "2026-10-11T15:54:09Z",
+    "all_selected_hashes_reverified": true,
+    "reference_worker_modelled": false
+  },
+  "approved_direction": {
+    "mulch": "dark charcoal-black matte, dusty and gently wrinkled; Huelva photograph controls colour and surface direction",
+    "bed": "rounded shoulders, sloping sides, irregular soil-covered film edges",
+    "plants": "young leafy plugs with small serrated trifoliate leaves, varied tilt and subdued green; do not reproduce Huelva's nearly bare crowns",
+    "fruit": false,
+    "flowers": false,
+    "white_film_reference_role": "morphology, relative plant scale and drip/bed-end detail only; do not use its film colour or multi-row arrangement",
+    "dimensions_from_brief_not_photogrammetry": {
+      "mound_height_m": 0.25,
+      "top_width_m": 0.8,
+      "base_width_m": 1.1
+    },
+    "minimum_mulch_roughness_from_brief": 0.85,
+    "preferred_comparison_reference": "References/ref_agrofresas_huelva_planting.jpg"
+  },
+  "selected": [
+    {
+      "path": "References/ref_agrofresas_huelva_planting.jpg",
+      "sha256": "6d849afd1a03f3c467cdc19100a2ac752a2ce2a3064fcb4a56c08634ed4062dc",
+      "dimensions_px": [800, 1200],
+      "bytes": 102175,
+      "role": "black film, bed shoulders, soil-covered edges and comparison camera",
+      "source_page": "https://www.agrofresas.com/epoca-de-plantacion-de-fresas/",
+      "image_url": "https://www.agrofresas.com/wp-content/uploads/2025/10/Diseno-sin-titulo-2.jpg",
+      "publisher": "Agrofresas, Moguer/Huelva, Spain",
+      "source_date": "2025-10-29",
+      "photo_credit": "Individual photographer not credited on the page",
+      "limit": "Plants are barer than requested; use young leafy plugs from UC ANR instead. Dimensions are not derived from the image."
+    },
+    {
+      "path": "References/ref_ucanr_new_transplants_beds.jpg",
+      "sha256": "940ecc9b99088dee29aefb0c2357801cc8253dba043685cfd52702ec89a5d5d8",
+      "dimensions_px": [650, 446],
+      "bytes": 261229,
+      "role": "small separate plants, bed form, planting openings and exposed irrigation tapes at row end",
+      "source_page": "https://ucanr.edu/blog/e-journal-entomology-and-biologicals/article/driscolls-plantel-nurseries-and-solex",
+      "image_url": "https://ucanr.edu/sites/default/files/2016-08/blog38139.jpg",
+      "publisher": "University of California Agriculture and Natural Resources",
+      "source_date": "2016-08-11",
+      "photo_credit": "Individual photographer not credited for this image",
+      "limit": "California summer transplanting; white film and multi-row configuration are not the selected colour or layout."
+    },
+    {
+      "path": "References/ref_ucanr_young_plug_leaves.jpg",
+      "sha256": "a51e5084cc9f13a7b0dfeecc5666ff6f2aee75d231246b90e34132a470da17f3",
+      "dimensions_px": [650, 488],
+      "bytes": 309230,
+      "role": "young serrated trifoliate leaf shape, muted green and irregular orientation",
+      "source_page": "https://ucanr.edu/blog/e-journal-entomology-and-biologicals/article/driscolls-plantel-nurseries-and-solex",
+      "image_url": "https://ucanr.edu/sites/default/files/2016-08/blog38137.jpg",
+      "publisher": "University of California Agriculture and Natural Resources",
+      "source_date": "2016-08-11",
+      "photo_credit": "Individual photographer not credited for this image",
+      "limit": "Plant form reference only; packaging, labels and roots are excluded."
+    },
+    {
+      "path": "References/ref_ucipm_transplanting_black_mulch.jpg",
+      "sha256": "bea3da30e1d0e607227d17ed2d1116511b074cf343f46c48df63df3c3281b48d",
+      "dimensions_px": [490, 327],
+      "bytes": 34339,
+      "role": "planting slit, exposed soil and dusty black film around a tiny crown",
+      "source_page": "https://ipm.ucanr.edu/PMG/C/S-ST-CULT-PL.045.html",
+      "image_url": "https://ipm.ucanr.edu/PMG/IMAGES/C/S-ST-CULT-PL.045.jpg",
+      "publisher": "University of California Statewide IPM Program",
+      "photo_credit": "Jack Kelly Clark, UC IPM; image copyright 2007 Regents, University of California",
+      "limit": "Low native resolution; use for close construction detail, not overall density."
+    }
+  ],
+  "retention": {
+    "image_pixels_modified": false,
+    "synthetic_images": false,
+    "use": "visual reference and attributed comparison preview only",
+    "used_as_asset_textures": false,
+    "rights": "Original photo copyrights retained; selected photos are not CC0 model assets."
+  },
+  "rejected": {
+    "directory": "References/Rejected/",
+    "files": [
+      "ref_ucipm_two_row_black_mulch.jpg",
+      "ref_wsu_young_field_rows.jpg",
+      "ref_wsu_young_leaves_top.jpg",
+      "ref_wsu_black_film_soil_shoulders.jpg"
+    ],
+    "reason": "Later-stage fruiting or runner-heavy appearance; not the planting-stage target.",
+    "full_provenance": "Reports/REFERENCE_CANDIDATES.md"
+  }
+}

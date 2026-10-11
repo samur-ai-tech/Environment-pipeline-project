@@ -1,0 +1,54 @@
+{
+  "utc_start": "2026-10-10T00:44:52.652803+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\wp_setup.py",
+  "script_sha256": "99c1f5b89a0a347480cf8e79b0036bf01af6670207033ed683069595dd87b3a5",
+  "args": {
+    "step": "use_converter_layers",
+    "expected_pid": 33120,
+    "script_sha256": "99c1f5b89a0a347480cf8e79b0036bf01af6670207033ed683069595dd87b3a5",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\wp_setup.py"
+  },
+  "editor_pid": 33120,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "layers": {
+        "Instanced_before": {
+          "layer_type": "<HLODLayerType.INSTANCING: 0>",
+          "is_spatially_loaded": "True",
+          "parent_layer": "<Object '/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_WPTrial/L_KarmeiYosef_31850",
+          "cell_size": "25600",
+          "loading_range": "76800.0"
+        },
+        "Merged_before": {
+          "layer_type": "<HLODLayerType.MESH_MERGE: 1>",
+          "is_spatially_loaded": "False",
+          "parent_layer": "None",
+          "cell_size": "25600",
+          "loading_range": "51200.0"
+        },
+        "Instanced_after": {
+          "layer_type": "<HLODLayerType.INSTANCING: 0>",
+          "is_spatially_loaded": "True",
+          "parent_layer": "<Object '/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_WPTrial/L_KarmeiYosef_31850"
+        },
+        "Merged_after": {
+          "layer_type": "<HLODLayerType.INSTANCING: 0>",
+          "is_spatially_loaded": "False",
+          "parent_layer": "None"
+        }
+      },
+      "assigned": {
+        "buildings->Instanced": 592,
+        "veg_landscape->Merged(instancing)": 325
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-10T00:55:49.736219+00:00",
+  "exit_code": 0
+}

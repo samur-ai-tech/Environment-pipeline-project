@@ -1,0 +1,56 @@
+{
+  "utc_start": "2026-10-11T09:52:34.056127+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\recover_v002.py",
+  "script_sha256": "1e67a4eaf57d058e4d2977fe386543d4e78c88a35396c61705150a9d65e4242c",
+  "args": {
+    "expected_pid": 15964,
+    "step": "recover",
+    "script_sha256": "1e67a4eaf57d058e4d2977fe386543d4e78c88a35396c61705150a9d65e4242c",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\recover_v002.py"
+  },
+  "editor_pid": 15964,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "utc": "2026-10-11T09:52:39.476401+00:00",
+      "pid": 15964,
+      "authority": "Aviv 2026-10-11: \"Recover + rerun\"",
+      "failed_run": "menu run 06:23Z, failed_bake_save_verification: Duplicate Landscapes after bake (08:07:43Z)",
+      "removed": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km.L_KarmeiYosef_31850349_34907601_4km:PersistentLevel.KarmeiYosef_31850349_34907601_4km_landscape_old_0",
+      "kept_landscape": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km.L_KarmeiYosef_31850349_34907601_4km:PersistentLevel.KarmeiYosef_31850349_34907601_4km_landscape",
+      "hda_actor": [
+        "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km.L_KarmeiYosef_31850349_34907601_4km:PersistentLevel.HoudiniAssetActor_0 | GeoCity_city_v015_CurrentBank_4km_KY_v002"
+      ],
+      "actor_count_before": 75,
+      "actor_count_after": 74,
+      "map_sha256_before": "2f60fe1bf27a5255c632605bd5e4cc7965d2ac00903ca8475a481ee226b95f0f",
+      "map_sha256_after": "df223fc89197bf97e9e42d69e7d4296ae40dcff1bf14687db56b4ca381ddafe5",
+      "dirty_before": [
+        [
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km"
+        ],
+        [
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_374_0_main_geo",
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_375_0_main_geo",
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_376_0_main_geo"
+        ]
+      ],
+      "dirty_after": [
+        [],
+        [
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_374_0_main_geo",
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_375_0_main_geo",
+          "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/Cook/GeoCity_city_v015_CurrentBank_4km_KY_v002/CD742CC7/GeoCity_city_v015_CurrentBank_4km_KY_v002_3_376_0_main_geo"
+        ]
+      ],
+      "next": "fresh editor, menu run in regenerate mode (v002 actor kept) -> sealed verify/save/ledger"
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-11T09:52:39.606302+00:00",
+  "exit_code": 0
+}

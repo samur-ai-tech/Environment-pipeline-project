@@ -1,0 +1,3399 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_GrassClump_A",
+      "size_metres_W_D_H": [
+        0.36,
+        0.32,
+        0.28
+      ],
+      "bounds_metres": [
+        [
+          -0.18000000715255737,
+          -0.1599999964237213,
+          0.0
+        ],
+        [
+          0.18000000715255737,
+          0.1599999964237213,
+          0.2800000011920929
+        ]
+      ],
+      "triangles_LOD0": 2072,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_A.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_A.png",
+      "nominal_size_metres": [
+        0.36,
+        0.32,
+        0.28
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_A_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2072,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_A_LOD3",
+      "size_metres_W_D_H": [
+        0.34152,
+        0.28839,
+        0.28
+      ],
+      "bounds_metres": [
+        [
+          -0.18000000715255737,
+          -0.1599999964237213,
+          0.0
+        ],
+        [
+          0.16151829063892365,
+          0.12838995456695557,
+          0.2800000011920929
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_A_LOD3.png",
+      "nominal_size_metres": [
+        0.36,
+        0.32,
+        0.28
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_A_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_B",
+      "size_metres_W_D_H": [
+        0.52,
+        0.45,
+        0.51
+      ],
+      "bounds_metres": [
+        [
+          -0.25999999046325684,
+          -0.22499999403953552,
+          0.0
+        ],
+        [
+          0.25999999046325684,
+          0.22499999403953552,
+          0.5099999904632568
+        ]
+      ],
+      "triangles_LOD0": 2396,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_B.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_B.png",
+      "nominal_size_metres": [
+        0.52,
+        0.45,
+        0.51
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_B_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2396,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_B_LOD3",
+      "size_metres_W_D_H": [
+        0.46431,
+        0.40462,
+        0.51
+      ],
+      "bounds_metres": [
+        [
+          -0.22481364011764526,
+          -0.1895035058259964,
+          0.0
+        ],
+        [
+          0.23949545621871948,
+          0.21511289477348328,
+          0.5099999904632568
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_B_LOD3.png",
+      "nominal_size_metres": [
+        0.52,
+        0.45,
+        0.51
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_B_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_C",
+      "size_metres_W_D_H": [
+        0.67,
+        0.55,
+        0.68
+      ],
+      "bounds_metres": [
+        [
+          -0.33500000834465027,
+          -0.2750000059604645,
+          0.0
+        ],
+        [
+          0.33500000834465027,
+          0.2750000059604645,
+          0.6800000071525574
+        ]
+      ],
+      "triangles_LOD0": 2744,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_C.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_C.png",
+      "nominal_size_metres": [
+        0.67,
+        0.55,
+        0.68
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_C_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2744,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_C_LOD3",
+      "size_metres_W_D_H": [
+        0.62738,
+        0.51373,
+        0.68
+      ],
+      "bounds_metres": [
+        [
+          -0.3005739152431488,
+          -0.2510676383972168,
+          0.0
+        ],
+        [
+          0.3268055021762848,
+          0.26265981793403625,
+          0.6800000071525574
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_C_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_C_LOD3.png",
+      "nominal_size_metres": [
+        0.67,
+        0.55,
+        0.68
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_C_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_D",
+      "size_metres_W_D_H": [
+        0.85,
+        0.73,
+        0.78
+      ],
+      "bounds_metres": [
+        [
+          -0.42500001192092896,
+          -0.36500000953674316,
+          0.0
+        ],
+        [
+          0.42500001192092896,
+          0.36500000953674316,
+          0.7799999713897705
+        ]
+      ],
+      "triangles_LOD0": 2908,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_D.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_D.png",
+      "nominal_size_metres": [
+        0.85,
+        0.73,
+        0.78
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_D_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2908,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_D_LOD3",
+      "size_metres_W_D_H": [
+        0.81334,
+        0.63401,
+        0.78
+      ],
+      "bounds_metres": [
+        [
+          -0.3935137689113617,
+          -0.3009701669216156,
+          0.0
+        ],
+        [
+          0.4198235273361206,
+          0.33304452896118164,
+          0.7799999713897705
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_D_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_D_LOD3.png",
+      "nominal_size_metres": [
+        0.85,
+        0.73,
+        0.78
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_D_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_E",
+      "size_metres_W_D_H": [
+        0.39,
+        0.34,
+        0.25
+      ],
+      "bounds_metres": [
+        [
+          -0.19499999284744263,
+          -0.17000000178813934,
+          0.0
+        ],
+        [
+          0.19499999284744263,
+          0.17000000178813934,
+          0.25
+        ]
+      ],
+      "triangles_LOD0": 2152,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_E.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_E.png",
+      "nominal_size_metres": [
+        0.39,
+        0.34,
+        0.25
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "greener annual grasses and weeds",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_E_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2152,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_E_LOD3",
+      "size_metres_W_D_H": [
+        0.37464,
+        0.29846,
+        0.25
+      ],
+      "bounds_metres": [
+        [
+          -0.19499999284744263,
+          -0.15591000020503998,
+          0.0
+        ],
+        [
+          0.17964273691177368,
+          0.1425504982471466,
+          0.25
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_E_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_E_LOD3.png",
+      "nominal_size_metres": [
+        0.39,
+        0.34,
+        0.25
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "greener annual grasses and weeds",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_E_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_F",
+      "size_metres_W_D_H": [
+        0.64,
+        0.56,
+        0.55
+      ],
+      "bounds_metres": [
+        [
+          -0.3199999928474426,
+          -0.2800000011920929,
+          0.0
+        ],
+        [
+          0.3199999928474426,
+          0.2800000011920929,
+          0.550000011920929
+        ]
+      ],
+      "triangles_LOD0": 2808,
+      "triangle_budget": 3000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_F.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_F.png",
+      "nominal_size_metres": [
+        0.64,
+        0.56,
+        0.55
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "greener annual grasses and weeds",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_F_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 2808,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassClump_F_LOD3",
+      "size_metres_W_D_H": [
+        0.57046,
+        0.50572,
+        0.55
+      ],
+      "bounds_metres": [
+        [
+          -0.28543421626091003,
+          -0.24853503704071045,
+          0.0
+        ],
+        [
+          0.2850286364555359,
+          0.2571820318698883,
+          0.550000011920929
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassClump_F_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassClump_F_LOD3.png",
+      "nominal_size_metres": [
+        0.64,
+        0.56,
+        0.55
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "clump",
+      "appearance": "greener annual grasses and weeds",
+      "lowest_lod_pair": "SM_PazFarm_GrassClump_F_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassPatch_2m_A",
+      "size_metres_W_D_H": [
+        2.0,
+        2.0,
+        0.6
+      ],
+      "bounds_metres": [
+        [
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.6000000238418579
+        ]
+      ],
+      "triangles_LOD0": 7420,
+      "triangle_budget": 8000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassPatch_2m_A.fbx",
+      "preview": "Previews/SM_PazFarm_GrassPatch_2m_A.png",
+      "nominal_size_metres": [
+        2.0,
+        2.0,
+        0.6
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "patch",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassPatch_2m_A_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 7420,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassPatch_2m_A_LOD3",
+      "size_metres_W_D_H": [
+        1.84919,
+        1.91048,
+        0.6
+      ],
+      "bounds_metres": [
+        [
+          -0.9224022626876831,
+          -0.9707815647125244,
+          0.0
+        ],
+        [
+          0.9267897009849548,
+          0.9397008419036865,
+          0.6000000238418579
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassPatch_2m_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassPatch_2m_A_LOD3.png",
+      "nominal_size_metres": [
+        2.0,
+        2.0,
+        0.6
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "patch",
+      "appearance": "mostly dry golden annual grasses",
+      "lowest_lod_pair": "SM_PazFarm_GrassPatch_2m_A_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassPatch_2m_B",
+      "size_metres_W_D_H": [
+        2.0,
+        2.0,
+        0.63
+      ],
+      "bounds_metres": [
+        [
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          1.0,
+          0.6299999952316284
+        ]
+      ],
+      "triangles_LOD0": 7420,
+      "triangle_budget": 8000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassPatch_2m_B.fbx",
+      "preview": "Previews/SM_PazFarm_GrassPatch_2m_B.png",
+      "nominal_size_metres": [
+        2.0,
+        2.0,
+        0.63
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD0",
+      "source_family": "field_grass",
+      "grass_type": "patch",
+      "appearance": "golden/green mixture",
+      "lowest_lod_pair": "SM_PazFarm_GrassPatch_2m_B_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 7420,
+      "blend": "Blend/FieldGrass.blend"
+    },
+    {
+      "name": "SM_PazFarm_GrassPatch_2m_B_LOD3",
+      "size_metres_W_D_H": [
+        1.86833,
+        1.91223,
+        0.63
+      ],
+      "bounds_metres": [
+        [
+          -0.916864275932312,
+          -0.9614173173904419,
+          0.0
+        ],
+        [
+          0.951462984085083,
+          0.9508141279220581,
+          0.6299999952316284
+        ]
+      ],
+      "triangles_LOD0": 80,
+      "triangle_budget": 80,
+      "materials": [
+        {
+          "name": "M_PazFarm_Grass_Dry",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Dry_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Dry_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Dry_Normal.png",
+            "Textures/T_PazFarm_Grass_Dry_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Straw_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Straw_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Straw_Normal.png",
+            "Textures/T_PazFarm_Grass_Straw_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Green_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Green_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Green_Normal.png",
+            "Textures/T_PazFarm_Grass_Green_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Grass_Stem_Low",
+          "textures": [
+            "Textures/T_PazFarm_Grass_Stem_Low_BaseColor.png",
+            "Textures/T_PazFarm_Grass_Stem_Normal.png",
+            "Textures/T_PazFarm_Grass_Stem_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original late-September Mediterranean field grass: solid bent blades, small closed backing tufts and seed heads.",
+        "Pivot at ground centre; metres; FBX -Y forward / Z up. No wind or collision.",
+        "No alpha cards. BaseColor alpha=1; opaque two-sided materials. Normal OpenGL +Y.",
+        "LOD3 uses independent expanded closed tuft proxies to replace the fine blade coverage; LOD0 keeps smaller inner backing tufts.",
+        "Fitted hero preview is not a fixed-distance preview; root supplies separate distance frames.",
+        "Lowest LOD uses closed pointed tuft volumes, never billboard cards; full patch/clump budget is 20\u201380 triangles."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_GrassPatch_2m_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_GrassPatch_2m_B_LOD3.png",
+      "nominal_size_metres": [
+        2.0,
+        2.0,
+        0.63
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_level": "LOD3",
+      "source_family": "field_grass",
+      "grass_type": "patch",
+      "appearance": "golden/green mixture",
+      "lowest_lod_pair": "SM_PazFarm_GrassPatch_2m_B_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Grass_Dry",
+        "M_PazFarm_Grass_Straw",
+        "M_PazFarm_Grass_Green",
+        "M_PazFarm_Grass_Stem",
+        "M_PazFarm_Grass_Dry_Low",
+        "M_PazFarm_Grass_Straw_Low",
+        "M_PazFarm_Grass_Green_Low",
+        "M_PazFarm_Grass_Stem_Low"
+      ],
+      "triangles": 80,
+      "blend": "Blend/FieldGrass.blend"
+    }
+  ],
+  "extra": {
+    "parameters": [
+      {
+        "suffix": "Clump_A",
+        "size": [
+          0.36,
+          0.32,
+          0.28
+        ],
+        "fans": 18,
+        "blades": 114,
+        "heads": 2,
+        "oat": false,
+        "green": 0.05,
+        "weeds": 1,
+        "seed": 411
+      },
+      {
+        "suffix": "Clump_B",
+        "size": [
+          0.52,
+          0.45,
+          0.51
+        ],
+        "fans": 17,
+        "blades": 130,
+        "heads": 3,
+        "oat": false,
+        "green": 0.07,
+        "weeds": 1,
+        "seed": 412,
+        "low_proxy": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        }
+      },
+      {
+        "suffix": "Clump_C",
+        "size": [
+          0.67,
+          0.55,
+          0.68
+        ],
+        "fans": 17,
+        "blades": 145,
+        "heads": 3,
+        "oat": true,
+        "green": 0.06,
+        "weeds": 1,
+        "seed": 413,
+        "low_proxy": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        }
+      },
+      {
+        "suffix": "Clump_D",
+        "size": [
+          0.85,
+          0.73,
+          0.78
+        ],
+        "fans": 17,
+        "blades": 160,
+        "heads": 3,
+        "oat": false,
+        "green": 0.1,
+        "weeds": 2,
+        "seed": 414,
+        "low_proxy": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        }
+      },
+      {
+        "suffix": "Clump_E",
+        "size": [
+          0.39,
+          0.34,
+          0.25
+        ],
+        "fans": 18,
+        "blades": 115,
+        "heads": 2,
+        "oat": false,
+        "green": 0.9,
+        "weeds": 3,
+        "seed": 415
+      },
+      {
+        "suffix": "Clump_F",
+        "size": [
+          0.64,
+          0.56,
+          0.55
+        ],
+        "fans": 17,
+        "blades": 145,
+        "heads": 3,
+        "oat": true,
+        "green": 0.8,
+        "weeds": 3,
+        "seed": 416
+      },
+      {
+        "suffix": "Patch_2m_A",
+        "size": [
+          2.0,
+          2.0,
+          0.6
+        ],
+        "patch": true,
+        "green": 0.08,
+        "seed": 421
+      },
+      {
+        "suffix": "Patch_2m_B",
+        "size": [
+          2.0,
+          2.0,
+          0.63
+        ],
+        "patch": true,
+        "green": 0.42,
+        "seed": 422
+      }
+    ],
+    "palette_srgb": [
+      {
+        "name": "Grass_Dry",
+        "srgb": [
+          145,
+          122,
+          78
+        ],
+        "roughness": 0.94,
+        "description": "subdued dry golden straw"
+      },
+      {
+        "name": "Grass_Straw",
+        "srgb": [
+          177,
+          151,
+          99
+        ],
+        "roughness": 0.96,
+        "description": "restrained pale straw and seed husks"
+      },
+      {
+        "name": "Grass_Green",
+        "srgb": [
+          77,
+          96,
+          47
+        ],
+        "roughness": 0.89,
+        "description": "living olive-green annual grass and weeds"
+      },
+      {
+        "name": "Grass_Stem",
+        "srgb": [
+          112,
+          89,
+          53
+        ],
+        "roughness": 0.98,
+        "description": "dry stems and darker seed details"
+      },
+      {
+        "name": "Grass_Dry_Low",
+        "srgb": [
+          145,
+          122,
+          78
+        ],
+        "roughness": 0.94,
+        "description": "subdued dry golden straw; calibrated lowest proxy",
+        "texture_parent": "Grass_Dry",
+        "linear_albedo_multiplier": 0.7
+      },
+      {
+        "name": "Grass_Straw_Low",
+        "srgb": [
+          177,
+          151,
+          99
+        ],
+        "roughness": 0.96,
+        "description": "restrained pale straw and seed husks; calibrated lowest proxy",
+        "texture_parent": "Grass_Straw",
+        "linear_albedo_multiplier": 0.7
+      },
+      {
+        "name": "Grass_Green_Low",
+        "srgb": [
+          77,
+          96,
+          47
+        ],
+        "roughness": 0.89,
+        "description": "living olive-green annual grass and weeds; calibrated lowest proxy",
+        "texture_parent": "Grass_Green",
+        "linear_albedo_multiplier": 0.7
+      },
+      {
+        "name": "Grass_Stem_Low",
+        "srgb": [
+          112,
+          89,
+          53
+        ],
+        "roughness": 0.98,
+        "description": "dry stems and darker seed details; calibrated lowest proxy",
+        "texture_parent": "Grass_Stem",
+        "linear_albedo_multiplier": 0.7
+      }
+    ],
+    "pairings": [
+      {
+        "base": "SM_PazFarm_GrassClump_A",
+        "high": "SM_PazFarm_GrassClump_A",
+        "low": "SM_PazFarm_GrassClump_A_LOD3",
+        "high_triangles": 2072,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 1.6,
+          "depth": 1.3,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_A",
+          "size": [
+            0.36,
+            0.32,
+            0.28
+          ],
+          "fans": 18,
+          "blades": 114,
+          "heads": 2,
+          "oat": false,
+          "green": 0.05,
+          "weeds": 1,
+          "seed": 411
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassClump_B",
+        "high": "SM_PazFarm_GrassClump_B",
+        "low": "SM_PazFarm_GrassClump_B_LOD3",
+        "high_triangles": 2396,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_B",
+          "size": [
+            0.52,
+            0.45,
+            0.51
+          ],
+          "fans": 17,
+          "blades": 130,
+          "heads": 3,
+          "oat": false,
+          "green": 0.07,
+          "weeds": 1,
+          "seed": 412,
+          "low_proxy": {
+            "width": 2.0,
+            "depth": 1.6,
+            "height": 1.0
+          }
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassClump_C",
+        "high": "SM_PazFarm_GrassClump_C",
+        "low": "SM_PazFarm_GrassClump_C_LOD3",
+        "high_triangles": 2744,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_C",
+          "size": [
+            0.67,
+            0.55,
+            0.68
+          ],
+          "fans": 17,
+          "blades": 145,
+          "heads": 3,
+          "oat": true,
+          "green": 0.06,
+          "weeds": 1,
+          "seed": 413,
+          "low_proxy": {
+            "width": 2.0,
+            "depth": 1.6,
+            "height": 1.0
+          }
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassClump_D",
+        "high": "SM_PazFarm_GrassClump_D",
+        "low": "SM_PazFarm_GrassClump_D_LOD3",
+        "high_triangles": 2908,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 2.0,
+          "depth": 1.6,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_D",
+          "size": [
+            0.85,
+            0.73,
+            0.78
+          ],
+          "fans": 17,
+          "blades": 160,
+          "heads": 3,
+          "oat": false,
+          "green": 0.1,
+          "weeds": 2,
+          "seed": 414,
+          "low_proxy": {
+            "width": 2.0,
+            "depth": 1.6,
+            "height": 1.0
+          }
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassClump_E",
+        "high": "SM_PazFarm_GrassClump_E",
+        "low": "SM_PazFarm_GrassClump_E_LOD3",
+        "high_triangles": 2152,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 1.6,
+          "depth": 1.3,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_E",
+          "size": [
+            0.39,
+            0.34,
+            0.25
+          ],
+          "fans": 18,
+          "blades": 115,
+          "heads": 2,
+          "oat": false,
+          "green": 0.9,
+          "weeds": 3,
+          "seed": 415
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassClump_F",
+        "high": "SM_PazFarm_GrassClump_F",
+        "low": "SM_PazFarm_GrassClump_F_LOD3",
+        "high_triangles": 2808,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 1.6,
+          "depth": 1.3,
+          "height": 1.0
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Clump_F",
+          "size": [
+            0.64,
+            0.56,
+            0.55
+          ],
+          "fans": 17,
+          "blades": 145,
+          "heads": 3,
+          "oat": true,
+          "green": 0.8,
+          "weeds": 3,
+          "seed": 416
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassPatch_2m_A",
+        "high": "SM_PazFarm_GrassPatch_2m_A",
+        "low": "SM_PazFarm_GrassPatch_2m_A_LOD3",
+        "high_triangles": 7420,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 3.0,
+          "depth": 2.2,
+          "height": 1.9
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Patch_2m_A",
+          "size": [
+            2.0,
+            2.0,
+            0.6
+          ],
+          "patch": true,
+          "green": 0.08,
+          "seed": 421
+        }
+      },
+      {
+        "base": "SM_PazFarm_GrassPatch_2m_B",
+        "high": "SM_PazFarm_GrassPatch_2m_B",
+        "low": "SM_PazFarm_GrassPatch_2m_B_LOD3",
+        "high_triangles": 7420,
+        "low_triangles": 80,
+        "same_material_slots": true,
+        "backing_geometry": "small high inner tufts; separate expanded low proxies replace outer blade coverage",
+        "low_proxy_scale": {
+          "width": 3.0,
+          "depth": 2.2,
+          "height": 1.9
+        },
+        "low_linear_albedo_multiplier": 0.7,
+        "parameters": {
+          "suffix": "Patch_2m_B",
+          "size": [
+            2.0,
+            2.0,
+            0.63
+          ],
+          "patch": true,
+          "green": 0.42,
+          "seed": 422
+        }
+      }
+    ],
+    "source_licence": "CC0-1.0 original procedural modelling and textures; no image copying",
+    "fbx_axes": {
+      "forward": "-Y",
+      "up": "Z",
+      "units": "metres, FBX Units Scale"
+    },
+    "material_slots": [
+      "M_PazFarm_Grass_Dry",
+      "M_PazFarm_Grass_Straw",
+      "M_PazFarm_Grass_Green",
+      "M_PazFarm_Grass_Stem",
+      "M_PazFarm_Grass_Dry_Low",
+      "M_PazFarm_Grass_Straw_Low",
+      "M_PazFarm_Grass_Green_Low",
+      "M_PazFarm_Grass_Stem_Low"
+    ],
+    "material_count": 8,
+    "texture_count": 16,
+    "image_encoding": "BaseColor explicit sRGB PNG bytes; Normal/ORM are linear data; all alpha bytes255",
+    "source": "Blend/FieldGrass.blend",
+    "heroes_requested": "none"
+  }
+}

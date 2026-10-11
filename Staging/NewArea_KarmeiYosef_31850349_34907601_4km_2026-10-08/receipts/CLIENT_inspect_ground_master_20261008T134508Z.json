@@ -1,0 +1,197 @@
+{
+  "utc_start": "2026-10-08T13:45:08.051994+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\inspect_ground_master.py",
+  "script_sha256": "95a6c95431b00b7586b7960408f5faf1450ffb87985d0a9528da3c248a76c9e3",
+  "args": {
+    "expected_pid": 26256,
+    "script_sha256": "95a6c95431b00b7586b7960408f5faf1450ffb87985d0a9528da3c248a76c9e3",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\inspect_ground_master.py"
+  },
+  "editor_pid": 26256,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "mi_parent": "/Game/Project/Shared/SurfacePainting/Auto_20261006/M_GeoCityAuto.M_GeoCityAuto",
+      "use_material_attributes": true,
+      "num_expressions": 281,
+      "outputs": {
+        "MP_MATERIAL_ATTRIBUTES": {
+          "node": "MaterialExpressionMakeMaterialAttributes_0",
+          "class": "MaterialExpressionMakeMaterialAttributes",
+          "output": "",
+          "inputs": [
+            [
+              "BaseColor",
+              "MaterialExpressionLinearInterpolate_2:MaterialExpressionLinearInterpolate"
+            ],
+            [
+              "Metallic",
+              "MaterialExpressionMaterialFunctionCall_14:MaterialExpressionMaterialFunctionCall"
+            ],
+            [
+              "Specular",
+              "MaterialExpressionLinearInterpolate_5:MaterialExpressionLinearInterpolate"
+            ],
+            [
+              "Roughness",
+              "MaterialExpressionLinearInterpolate_4:MaterialExpressionLinearInterpolate"
+            ],
+            [
+              "Anisotropy",
+              null
+            ],
+            [
+              "EmissiveColor",
+              null
+            ],
+            [
+              "Opacity",
+              null
+            ],
+            [
+              "OpacityMask",
+              null
+            ],
+            [
+              "Normal",
+              "MaterialExpressionNormalize_1:MaterialExpressionNormalize"
+            ],
+            [
+              "Tangent",
+              null
+            ],
+            [
+              "WorldPositionOffset",
+              null
+            ],
+            [
+              "SubsurfaceColor",
+              null
+            ],
+            [
+              "ClearCoat",
+              null
+            ],
+            [
+              "ClearCoatRoughness",
+              null
+            ],
+            [
+              "AmbientOcclusion",
+              "MaterialExpressionLinearInterpolate_6:MaterialExpressionLinearInterpolate"
+            ],
+            [
+              "Refraction",
+              null
+            ],
+            [
+              "CustomizedUVs_0",
+              null
+            ],
+            [
+              "CustomizedUVs_1",
+              null
+            ],
+            [
+              "CustomizedUVs_2",
+              null
+            ],
+            [
+              "CustomizedUVs_3",
+              null
+            ],
+            [
+              "CustomizedUVs_4",
+              null
+            ],
+            [
+              "CustomizedUVs_5",
+              null
+            ],
+            [
+              "CustomizedUVs_6",
+              null
+            ],
+            [
+              "CustomizedUVs_7",
+              null
+            ],
+            [
+              "PixelDepthOffset",
+              null
+            ],
+            [
+              "ShadingModel",
+              null
+            ],
+            [
+              "Displacement",
+              null
+            ]
+          ]
+        },
+        "MP_BASE_COLOR": {
+          "node": "MaterialExpressionStaticSwitchParameter_16",
+          "class": "MaterialExpressionStaticSwitchParameter",
+          "output": "",
+          "inputs": [
+            [
+              "True",
+              "MaterialExpressionStaticSwitchParameter_17:MaterialExpressionStaticSwitchParameter"
+            ],
+            [
+              "False",
+              "MaterialExpressionMaterialFunctionCall_1:MaterialExpressionMaterialFunctionCall"
+            ]
+          ]
+        }
+      },
+      "pcg_texture_classes": [
+        "PCGBaseTextureData",
+        "PCGDownsampleTextureSettings",
+        "PCGGenerateLandscapeTexturesSettings",
+        "PCGGetTexture2DArrayDataSettings",
+        "PCGGetTextureInfoSettings",
+        "PCGGetVirtualTextureSettings",
+        "PCGSampleTextureSettings",
+        "PCGSaveTextureToAssetSettings",
+        "PCGTexture2DArrayData",
+        "PCGTexture2DBaseData",
+        "PCGTexture2DSingleBaseData",
+        "PCGTextureAddressMode",
+        "PCGTextureColorChannel",
+        "PCGTextureData",
+        "PCGTextureDensityFunction",
+        "PCGTextureDownsampleMode",
+        "PCGTextureFilter",
+        "PCGTextureMappingMethod",
+        "PCGTextureSamplerSettings",
+        "PCGVirtualTextureData",
+        "PCGVirtualTexturePrimingInfo",
+        "PCGVisualizationTexture2D"
+      ],
+      "mel_methods": [
+        "connect_material_expressions",
+        "connect_material_property",
+        "create_material_expression",
+        "create_material_expression_in_function",
+        "disconnect_material_expressions",
+        "disconnect_material_property",
+        "get_input_node_output_name_for_material_expression",
+        "get_inputs_for_material_expression",
+        "get_inputs_for_material_function_expression",
+        "get_material_expression_input_names",
+        "get_material_expression_input_types",
+        "get_material_property_input_node",
+        "get_material_property_input_node_output_name"
+      ]
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-08T13:45:08.402872+00:00",
+  "exit_code": 0
+}

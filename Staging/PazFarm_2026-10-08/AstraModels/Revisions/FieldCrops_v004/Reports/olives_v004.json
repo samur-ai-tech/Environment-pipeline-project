@@ -1,0 +1,1135 @@
+{
+  "assets": [
+    {
+      "name": "SM_PazFarm_Olive_A",
+      "size_metres_W_D_H": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -2.11049222946167,
+          -2.504596710205078,
+          0.0
+        ],
+        [
+          2.589507579803467,
+          1.8454031944274902,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 94212,
+      "triangle_budget": 100000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "18 recessed opaque closed crown clumps and 7,200 closed leaf volumes.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_A.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_A.png",
+      "nominal_size_metres": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "family": "Olive",
+      "variant": "A",
+      "triangle_budget_min": 40000,
+      "paired_asset": "SM_PazFarm_Olive_A_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 7200,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_A_LOD3",
+      "size_metres_W_D_H": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -2.126298666000366,
+          -2.5247461795806885,
+          0.0
+        ],
+        [
+          2.5737013816833496,
+          1.8252537250518799,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 1424,
+      "triangle_budget": 1500,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "Authored lowest LOD from the corresponding 18 closed crown clumps, split trunk and support branches; no billboard/cards. Crown negative spaces retained.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_A_LOD3.png",
+      "nominal_size_metres": [
+        4.7,
+        4.35,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "family": "Olive",
+      "variant": "A",
+      "triangle_budget_min": 800,
+      "paired_asset": "SM_PazFarm_Olive_A",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 0,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_B",
+      "size_metres_W_D_H": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "bounds_metres": [
+        [
+          -2.839723587036133,
+          -2.2038774490356445,
+          0.0
+        ],
+        [
+          2.5102765560150146,
+          2.696122646331787,
+          5.5
+        ]
+      ],
+      "triangles_LOD0": 94212,
+      "triangle_budget": 100000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "18 recessed opaque closed crown clumps and 7,200 closed leaf volumes.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_B.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_B.png",
+      "nominal_size_metres": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "family": "Olive",
+      "variant": "B",
+      "triangle_budget_min": 40000,
+      "paired_asset": "SM_PazFarm_Olive_B_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 7200,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_B_LOD3",
+      "size_metres_W_D_H": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "bounds_metres": [
+        [
+          -2.8355026245117188,
+          -2.2373006343841553,
+          0.0
+        ],
+        [
+          2.5144972801208496,
+          2.6626994609832764,
+          5.5
+        ]
+      ],
+      "triangles_LOD0": 1424,
+      "triangle_budget": 1500,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "Authored lowest LOD from the corresponding 18 closed crown clumps, split trunk and support branches; no billboard/cards. Crown negative spaces retained.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_B_LOD3.png",
+      "nominal_size_metres": [
+        5.35,
+        4.9,
+        5.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "family": "Olive",
+      "variant": "B",
+      "triangle_budget_min": 800,
+      "paired_asset": "SM_PazFarm_Olive_B",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 0,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_C",
+      "size_metres_W_D_H": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "bounds_metres": [
+        [
+          -2.5852224826812744,
+          -2.663008451461792,
+          0.0
+        ],
+        [
+          3.3647775650024414,
+          2.886991500854492,
+          6.5
+        ]
+      ],
+      "triangles_LOD0": 94212,
+      "triangle_budget": 100000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "18 recessed opaque closed crown clumps and 7,200 closed leaf volumes.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_C.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_C.png",
+      "nominal_size_metres": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "family": "Olive",
+      "variant": "C",
+      "triangle_budget_min": 40000,
+      "paired_asset": "SM_PazFarm_Olive_C_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 7200,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_C_LOD3",
+      "size_metres_W_D_H": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "bounds_metres": [
+        [
+          -2.6038923263549805,
+          -2.716449737548828,
+          0.0
+        ],
+        [
+          3.3461074829101562,
+          2.833550453186035,
+          6.5
+        ]
+      ],
+      "triangles_LOD0": 1424,
+      "triangle_budget": 1500,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "Authored lowest LOD from the corresponding 18 closed crown clumps, split trunk and support branches; no billboard/cards. Crown negative spaces retained.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_C_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_C_LOD3.png",
+      "nominal_size_metres": [
+        5.95,
+        5.55,
+        6.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "family": "Olive",
+      "variant": "C",
+      "triangle_budget_min": 800,
+      "paired_asset": "SM_PazFarm_Olive_C",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 0,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_Young",
+      "size_metres_W_D_H": [
+        1.7,
+        1.6,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.793129563331604,
+          -0.8548994064331055,
+          0.0
+        ],
+        [
+          0.906870424747467,
+          0.7451006174087524,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 94212,
+      "triangle_budget": 100000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "18 recessed opaque closed crown clumps and 7,200 closed leaf volumes.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_Young.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_Young.png",
+      "nominal_size_metres": [
+        1.7,
+        1.6,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "family": "Olive",
+      "variant": "Young",
+      "triangle_budget_min": 40000,
+      "paired_asset": "SM_PazFarm_Olive_Young_LOD3",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 7200,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    },
+    {
+      "name": "SM_PazFarm_Olive_Young_LOD3",
+      "size_metres_W_D_H": [
+        1.7,
+        1.6,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.7972558736801147,
+          -0.8569456338882446,
+          0.0
+        ],
+        [
+          0.9027441143989563,
+          0.7430543899536133,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 1424,
+      "triangle_budget": 1500,
+      "materials": [
+        {
+          "name": "M_PazFarm_Olive_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_Bark_Normal.png",
+            "Textures\\T_PazFarm_Olive_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafTop",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafTop_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafTop_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_LeafUnderside",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_LeafUnderside_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_Normal.png",
+            "Textures\\T_PazFarm_Olive_LeafUnderside_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        },
+        {
+          "name": "M_PazFarm_Olive_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_Olive_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_Olive_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm original olive modelling, 2026-10-11"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original grey-green olive with curved narrow lanceolate leaves, pale undersides, twisted split trunk and irregular open crown.",
+        "Authored lowest LOD from the corresponding 18 closed crown clumps, split trunk and support branches; no billboard/cards. Crown negative spaces retained.",
+        "Material slot names/order identical in high and low mesh, including unused leaf slots in LOD3. All foliage alpha1, opaque two-sided; no wind or collision.",
+        "Trunk-base ground origin; metres; -Y FBX forward, Z up. Native integration and distant appearance remain for the operator."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Olive_Young_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_Olive_Young_LOD3.png",
+      "nominal_size_metres": [
+        1.7,
+        1.6,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "family": "Olive",
+      "variant": "Young",
+      "triangle_budget_min": 800,
+      "paired_asset": "SM_PazFarm_Olive_Young",
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ],
+      "construction": {
+        "closed_crown_clumps": 18,
+        "closed_leaf_volumes": 0,
+        "leaf_shape": "narrow bowed lanceolate, grey-green upper and pale underside faces",
+        "billboard": false,
+        "alpha": 1.0,
+        "inner_hull_factor": 0.46,
+        "low_hull_factor": 1.035
+      },
+      "blend": "Blend/Olive.blend"
+    }
+  ],
+  "extra": {
+    "parameters": {
+      "variants": [
+        {
+          "variant": "A",
+          "height": 4.5,
+          "width": 4.7,
+          "depth": 4.35,
+          "trunk_radius": 0.27,
+          "lean": [
+            0.25,
+            -0.15
+          ],
+          "seed": 9401
+        },
+        {
+          "variant": "B",
+          "height": 5.5,
+          "width": 5.35,
+          "depth": 4.9,
+          "trunk_radius": 0.33,
+          "lean": [
+            -0.32,
+            0.21
+          ],
+          "seed": 9507
+        },
+        {
+          "variant": "C",
+          "height": 6.5,
+          "width": 5.95,
+          "depth": 5.55,
+          "trunk_radius": 0.39,
+          "lean": [
+            0.38,
+            0.17
+          ],
+          "seed": 9683
+        },
+        {
+          "variant": "Young",
+          "height": 2.0,
+          "width": 1.7,
+          "depth": 1.6,
+          "trunk_radius": 0.065,
+          "lean": [
+            0.05,
+            -0.035
+          ],
+          "seed": 9787
+        }
+      ],
+      "leaves_per_clump": 400,
+      "inner_hull_factor": 0.46,
+      "low_hull_factor": 1.035,
+      "hull_linear_multiplier": 0.68,
+      "material_slot_order": [
+        "M_PazFarm_Olive_Bark",
+        "M_PazFarm_Olive_LeafTop",
+        "M_PazFarm_Olive_LeafUnderside",
+        "M_PazFarm_Olive_CrownHull"
+      ]
+    },
+    "lod_pairing": {
+      "SM_PazFarm_Olive_A": "SM_PazFarm_Olive_A_LOD3",
+      "SM_PazFarm_Olive_B": "SM_PazFarm_Olive_B_LOD3",
+      "SM_PazFarm_Olive_C": "SM_PazFarm_Olive_C_LOD3",
+      "SM_PazFarm_Olive_Young": "SM_PazFarm_Olive_Young_LOD3"
+    },
+    "source_licence": "CC0-1.0 original procedural geometry and textures. No external image content.",
+    "native_verified": false,
+    "construction": "18 irregular rounded closed clumps per variant; hollow gaps between clumps and split trunk survive in LOD3. 7200 closed narrow lanceolate leaf volumes at LOD0.",
+    "materials": "Bark, grey-green LeafTop, pale LeafUnderside, and calibrated CrownHull; fixed same slot order on both LODs. Foliage opaque/two-sided, alpha1. All images 1K with BaseColor sRGB; Normal OpenGL +Y and ORM Non-Color.",
+    "lowest_lod": "Closed reduced-ring hulls at original clump centers plus gnarled/split trunk and supporting limbs, never a billboard. Hull diffuse calibrated in linear space; independent fixed-camera tests supplied by root."
+  }
+}

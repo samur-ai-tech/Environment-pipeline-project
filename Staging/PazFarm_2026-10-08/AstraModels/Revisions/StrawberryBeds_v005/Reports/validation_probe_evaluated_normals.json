@@ -1,0 +1,3475 @@
+{
+  "phase": "draft_diagnostic_not_acceptance",
+  "method": "Fresh Blender process: reopen source without scripts, measure actual mesh and material data, then clear scene and import each FBX independently. Imported triangles are mapped to source polygons by geometry and material; exact polygon coverage permits legal alternate diagonals while preserving per-corner attributes.",
+  "blender": "5.2.2 LTS",
+  "tolerances": {
+    "metres": 0.0001,
+    "geometric_weld_metres": 1e-06,
+    "zero_triangle_area_m2": 1e-12,
+    "zero_uv_triangle_area": 1e-14
+  },
+  "source": {
+    "unit_scale": 1.0,
+    "meshes": [
+      {
+        "name": "SM_PazFarm_StrawberryBed_4m_A",
+        "triangles": 35370,
+        "vertices": 19947,
+        "bounds_metres": [
+          [
+            -0.550000011920929,
+            0.0,
+            -0.15000000596046448
+          ],
+          [
+            0.550000011920929,
+            4.0,
+            0.3521713316440582
+          ]
+        ],
+        "size_metres": [
+          1.100000023841858,
+          4.0,
+          0.5021713376045227
+        ],
+        "pivot_metres": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_geometry": true,
+        "finite_normals": true,
+        "finite_corner_normals": true,
+        "corner_normal_length_range": [
+          0.9999998163097579,
+          1.000000184467392
+        ],
+        "finite_uv0": true,
+        "UV0_present": true,
+        "zero_area_triangles": 0,
+        "zero_uv_area_triangles": 0,
+        "zero_area_by_role": {},
+        "zero_uv_area_by_role": {},
+        "degenerate_triangle_samples": [],
+        "materials": [
+          "M_PazFarm_Strawberry_Mulch_v005",
+          "M_PazFarm_Strawberry_Soil_v005",
+          "M_PazFarm_Strawberry_LeafTop_v005",
+          "M_PazFarm_Strawberry_LeafUnder_v005",
+          "M_PazFarm_Strawberry_LeafOlder_v005",
+          "M_PazFarm_Strawberry_Petiole_v005",
+          "M_PazFarm_Strawberry_DripTape_v005",
+          "M_PazFarm_Strawberry_MulchDistant_v005"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rotation_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "unapplied_modifiers": [],
+        "animation": false,
+        "roles": {
+          "film_top": 2338,
+          "film_sides": 1024,
+          "soil_body": 576,
+          "soil_edge_burial": 384,
+          "planting_hole_soil": 1120,
+          "soil_clod": 2184,
+          "petiole": 5712,
+          "leaf": 22032
+        },
+        "maximum_source_vertex_delta_m": 0.0,
+        "film_bounds_metres": [
+          [
+            -0.550000011920929,
+            0.0,
+            -0.15000000596046448
+          ],
+          [
+            0.550000011920929,
+            4.0,
+            0.2547292411327362
+          ]
+        ],
+        "film_top_width_m": 0.800000011920929,
+        "actual_leaf_bounds_metres": [
+          [
+            -0.2585262656211853,
+            0.027089638635516167,
+            0.252623051404953
+          ],
+          [
+            0.2484949827194214,
+            3.9802370071411133,
+            0.3521713316440582
+          ]
+        ],
+        "actual_leaf_end_clearance_m": [
+          0.027089638635516167,
+          0.01976299285888672
+        ],
+        "leaf_end_plane_triangles": 0,
+        "intentional_open_surfaces": [
+          {
+            "group": "film",
+            "triangles": 3362,
+            "welded_boundary_edges": 500,
+            "allowed_boundary_categories": {
+              "start_end": 18,
+              "finish_end": 18,
+              "planting_hole_rim": 336,
+              "skirt_hem": 128
+            },
+            "nonmanifold_edges": 0,
+            "unexpected_boundary_edges": [],
+            "unexpected_boundary_count": 0,
+            "hole_rim_checks": [
+              {
+                "hole_index": 0,
+                "declared_perimeter_m": 0.16110648316588838,
+                "actual_boundary_length_m": 0.1611064876402301
+              },
+              {
+                "hole_index": 1,
+                "declared_perimeter_m": 0.14677011790200992,
+                "actual_boundary_length_m": 0.1467701160654659
+              },
+              {
+                "hole_index": 2,
+                "declared_perimeter_m": 0.1725156780535608,
+                "actual_boundary_length_m": 0.17251564504144534
+              },
+              {
+                "hole_index": 3,
+                "declared_perimeter_m": 0.1519622579821547,
+                "actual_boundary_length_m": 0.1519622600786545
+              },
+              {
+                "hole_index": 4,
+                "declared_perimeter_m": 0.1714697002998872,
+                "actual_boundary_length_m": 0.1714696779187643
+              },
+              {
+                "hole_index": 5,
+                "declared_perimeter_m": 0.167022951522391,
+                "actual_boundary_length_m": 0.16702305881356505
+              },
+              {
+                "hole_index": 6,
+                "declared_perimeter_m": 0.15209303086013945,
+                "actual_boundary_length_m": 0.15209299154079667
+              },
+              {
+                "hole_index": 7,
+                "declared_perimeter_m": 0.16920646369412704,
+                "actual_boundary_length_m": 0.16920652883729353
+              },
+              {
+                "hole_index": 8,
+                "declared_perimeter_m": 0.15765171457764002,
+                "actual_boundary_length_m": 0.15765152765073195
+              },
+              {
+                "hole_index": 9,
+                "declared_perimeter_m": 0.17207929197353297,
+                "actual_boundary_length_m": 0.1720795345505142
+              },
+              {
+                "hole_index": 10,
+                "declared_perimeter_m": 0.1664258138772867,
+                "actual_boundary_length_m": 0.1664259028687069
+              },
+              {
+                "hole_index": 11,
+                "declared_perimeter_m": 0.16269238077431153,
+                "actual_boundary_length_m": 0.1626922236448696
+              },
+              {
+                "hole_index": 12,
+                "declared_perimeter_m": 0.16463264566421568,
+                "actual_boundary_length_m": 0.16463264084254275
+              },
+              {
+                "hole_index": 13,
+                "declared_perimeter_m": 0.18070179022812047,
+                "actual_boundary_length_m": 0.1807016822137201
+              },
+              {
+                "hole_index": 14,
+                "declared_perimeter_m": 0.17795007174083372,
+                "actual_boundary_length_m": 0.17795005842070702
+              },
+              {
+                "hole_index": 15,
+                "declared_perimeter_m": 0.16058215040478352,
+                "actual_boundary_length_m": 0.16058213964542453
+              },
+              {
+                "hole_index": 16,
+                "declared_perimeter_m": 0.14584088900588643,
+                "actual_boundary_length_m": 0.14584087475944227
+              },
+              {
+                "hole_index": 17,
+                "declared_perimeter_m": 0.16302652029961032,
+                "actual_boundary_length_m": 0.16302659955738677
+              },
+              {
+                "hole_index": 18,
+                "declared_perimeter_m": 0.17216343382473326,
+                "actual_boundary_length_m": 0.17216328097282055
+              },
+              {
+                "hole_index": 19,
+                "declared_perimeter_m": 0.1512393854153281,
+                "actual_boundary_length_m": 0.151239386416677
+              },
+              {
+                "hole_index": 20,
+                "declared_perimeter_m": 0.16982847156647507,
+                "actual_boundary_length_m": 0.16982853092664896
+              },
+              {
+                "hole_index": 21,
+                "declared_perimeter_m": 0.16644785667179096,
+                "actual_boundary_length_m": 0.16644784091588166
+              },
+              {
+                "hole_index": 22,
+                "declared_perimeter_m": 0.1570153603975056,
+                "actual_boundary_length_m": 0.15701540369783254
+              },
+              {
+                "hole_index": 23,
+                "declared_perimeter_m": 0.15831858458850287,
+                "actual_boundary_length_m": 0.15831856307655923
+              },
+              {
+                "hole_index": 24,
+                "declared_perimeter_m": 0.16828952884272555,
+                "actual_boundary_length_m": 0.1682895529495656
+              },
+              {
+                "hole_index": 25,
+                "declared_perimeter_m": 0.16769004592995118,
+                "actual_boundary_length_m": 0.16769016122477726
+              },
+              {
+                "hole_index": 26,
+                "declared_perimeter_m": 0.16248740710087878,
+                "actual_boundary_length_m": 0.16248731429327254
+              },
+              {
+                "hole_index": 27,
+                "declared_perimeter_m": 0.1862355401533929,
+                "actual_boundary_length_m": 0.186235483443905
+              }
+            ]
+          },
+          {
+            "group": "soil_body",
+            "triangles": 576,
+            "welded_boundary_edges": 18,
+            "allowed_boundary_categories": {
+              "start_end": 9,
+              "finish_end": 9
+            },
+            "nonmanifold_edges": 0,
+            "unexpected_boundary_edges": [],
+            "unexpected_boundary_count": 0,
+            "hole_rim_checks": []
+          }
+        ],
+        "end_plane_triangles": {
+          "film_start": 0,
+          "film_finish": 0,
+          "soil_body_start": 0,
+          "soil_body_finish": 0
+        },
+        "closed_solid_components_checked": 914,
+        "invalid_solid_components": [],
+        "planting_holes_count": 28,
+        "declared_plants_count": 27,
+        "planting_measurements": {
+          "hole_count": 28,
+          "row_count": 2,
+          "rows": [
+            {
+              "row_index": 0,
+              "hole_count": 14,
+              "centres_xy": [
+                [
+                  -0.1635454110775723,
+                  0.07142857142857142
+                ],
+                [
+                  -0.16558735648670211,
+                  0.35390713931400397
+                ],
+                [
+                  -0.16101457939921868,
+                  0.6459043559301573
+                ],
+                [
+                  -0.1601875156936234,
+                  0.9344038693168462
+                ],
+                [
+                  -0.15915553272784597,
+                  1.216859234095884
+                ],
+                [
+                  -0.16504396888780415,
+                  1.4941461275351418
+                ],
+                [
+                  -0.15955800458185776,
+                  1.7885655167122303
+                ],
+                [
+                  -0.16613220344777022,
+                  2.0678011325440195
+                ],
+                [
+                  -0.16021043350586034,
+                  2.3639668366203956
+                ],
+                [
+                  -0.16604674253204782,
+                  2.6483490241022136
+                ],
+                [
+                  -0.16714742117975454,
+                  2.9258920596864098
+                ],
+                [
+                  -0.16828747685405387,
+                  3.208260485567495
+                ],
+                [
+                  -0.16611673521938602,
+                  3.494196958492632
+                ],
+                [
+                  -0.16251620401921474,
+                  3.7908741392018044
+                ]
+              ],
+              "within_tile_pitch_range_m": [
+                0.27728689343925783,
+                0.2966771807091724
+              ]
+            },
+            {
+              "row_index": 1,
+              "hole_count": 14,
+              "centres_xy": [
+                [
+                  0.17022766425669467,
+                  0.21705185845960231
+                ],
+                [
+                  0.16498833334851312,
+                  0.49399364334279616
+                ],
+                [
+                  0.17035490625356278,
+                  0.7792658560336546
+                ],
+                [
+                  0.16865789179329446,
+                  1.064910908192318
+                ],
+                [
+                  0.16819410396781612,
+                  1.3505445386972004
+                ],
+                [
+                  0.16014626697549503,
+                  1.6459086073898404
+                ],
+                [
+                  0.1665312738656899,
+                  1.9341391649255597
+                ],
+                [
+                  0.1691516605835593,
+                  2.212324270573577
+                ],
+                [
+                  0.1648246351124486,
+                  2.498808007677616
+                ],
+                [
+                  0.16862588809122714,
+                  2.7872675663425674
+                ],
+                [
+                  0.16607512696140203,
+                  3.06885702376157
+                ],
+                [
+                  0.16862624185528782,
+                  3.356207960274187
+                ],
+                [
+                  0.16257402482370575,
+                  3.636759616380381
+                ],
+                [
+                  0.16308131809653656,
+                  3.9285714285714284
+                ]
+              ],
+              "within_tile_pitch_range_m": [
+                0.2769417848831939,
+                0.29536406869264
+              ]
+            }
+          ],
+          "mean_row_separation_m": 0.3301863515427104,
+          "actual_plants": 27,
+          "empty_holes": 1,
+          "tiny_plants": 1,
+          "tiny_or_empty_fraction": 0.07142857142857142,
+          "plant_geometry": [
+            {
+              "plant_index": 0,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.20121097564697266,
+                  0.027089638635516167,
+                  0.2353908270597458
+                ],
+                [
+                  -0.1008249893784523,
+                  0.12388616055250168,
+                  0.2946636378765106
+                ]
+              ],
+              "diameter_m": 0.103999999428107,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.10038598626852036,
+              "height_above_soil_m": 0.055000005841255195,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 1,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.21493399143218994,
+                  0.30478981137275696,
+                  0.23428340256214142
+                ],
+                [
+                  -0.11323430389165878,
+                  0.4049486219882965,
+                  0.32398733496665955
+                ]
+              ],
+              "diameter_m": 0.11805296046203634,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.10169968754053116,
+              "height_above_soil_m": 0.0844447202117326,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 2,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.21603631973266602,
+                  0.581098198890686,
+                  0.2349332869052887
+                ],
+                [
+                  -0.090125672519207,
+                  0.7077221870422363,
+                  0.2981719672679901
+                ]
+              ],
+              "diameter_m": 0.1308652210600791,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.1266239881515503,
+              "height_above_soil_m": 0.05928269512005033,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 3,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.25086116790771484,
+                  0.8621513247489929,
+                  0.23219084739685059
+                ],
+                [
+                  -0.0836595669388771,
+                  1.0285724401474,
+                  0.342180997133255
+                ]
+              ],
+              "diameter_m": 0.17839656781544871,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.16720160096883774,
+              "height_above_soil_m": 0.10296600909387546,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 5,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.238316610455513,
+                  1.405073642730713,
+                  0.23334279656410217
+                ],
+                [
+                  -0.10146361589431763,
+                  1.5628159046173096,
+                  0.35022807121276855
+                ]
+              ],
+              "diameter_m": 0.16309162720929826,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.15774226188659668,
+              "height_above_soil_m": 0.10883613816905868,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 6,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.21969535946846008,
+                  1.6958023309707642,
+                  0.23414264619350433
+                ],
+                [
+                  -0.10292510688304901,
+                  1.8686782121658325,
+                  0.29997536540031433
+                ]
+              ],
+              "diameter_m": 0.17827673317944823,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.17287588119506836,
+              "height_above_soil_m": 0.06153005073255746,
+              "compound_leaves": 5,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3,
+                "4": 3
+              }
+            },
+            {
+              "plant_index": 7,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.21954871714115143,
+                  2.0175986289978027,
+                  0.23198053240776062
+                ],
+                [
+                  -0.12278905510902405,
+                  2.1243913173675537,
+                  0.308126837015152
+                ]
+              ],
+              "diameter_m": 0.1157893534110596,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.10679268836975098,
+              "height_above_soil_m": 0.07109635595544386,
+              "compound_leaves": 5,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3,
+                "4": 3
+              }
+            },
+            {
+              "plant_index": 8,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.25630930066108704,
+                  2.272404670715332,
+                  0.23294168710708618
+                ],
+                [
+                  -0.09629221260547638,
+                  2.444401502609253,
+                  0.32310956716537476
+                ]
+              ],
+              "diameter_m": 0.17858011039997837,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.1719968318939209,
+              "height_above_soil_m": 0.08494591520242448,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 9,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.24674715101718903,
+                  2.5745885372161865,
+                  0.23609115183353424
+                ],
+                [
+                  -0.07952813804149628,
+                  2.7032883167266846,
+                  0.3188112676143646
+                ]
+              ],
+              "diameter_m": 0.17406007817408115,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.16721901297569275,
+              "height_above_soil_m": 0.07732381746483089,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 10,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.23127862811088562,
+                  2.8545150756835938,
+                  0.23526769876480103
+                ],
+                [
+                  -0.08250989019870758,
+                  3.016650676727295,
+                  0.3427649140357971
+                ]
+              ],
+              "diameter_m": 0.17771283834584245,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.16213560104370117,
+              "height_above_soil_m": 0.10146056682669496,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 11,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.2585262656211853,
+                  3.136857509613037,
+                  0.23310713469982147
+                ],
+                [
+                  -0.09411681443452835,
+                  3.2762651443481445,
+                  0.3379957377910614
+                ]
+              ],
+              "diameter_m": 0.17523271248547387,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.16440945118665695,
+              "height_above_soil_m": 0.09780403558089215,
+              "compound_leaves": 5,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3,
+                "4": 3
+              }
+            },
+            {
+              "plant_index": 12,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.22630617022514343,
+                  3.4413390159606934,
+                  0.231485977768898
+                ],
+                [
+                  -0.09332669526338577,
+                  3.5453405380249023,
+                  0.3521713316440582
+                ]
+              ],
+              "diameter_m": 0.13301234993357092,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.13297947496175766,
+              "height_above_soil_m": 0.11296033677200179,
+              "compound_leaves": 6,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3,
+                "4": 3,
+                "5": 3
+              }
+            },
+            {
+              "plant_index": 13,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  -0.24339927732944489,
+                  3.715449810028076,
+                  0.23320114612579346
+                ],
+                [
+                  -0.0853971391916275,
+                  3.872636556625366,
+                  0.34080174565315247
+                ]
+              ],
+              "diameter_m": 0.1766557181545972,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.15800213813781738,
+              "height_above_soil_m": 0.10113613590439427,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 14,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.10433614999055862,
+                  0.15825510025024414,
+                  0.23451808094978333
+                ],
+                [
+                  0.23865674436092377,
+                  0.27815887331962585,
+                  0.30944502353668213
+                ]
+              ],
+              "diameter_m": 0.13833803064900707,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.13432059437036514,
+              "height_above_soil_m": 0.06988838117919977,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 15,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.11387822031974792,
+                  0.4349006712436676,
+                  0.2357272356748581
+                ],
+                [
+                  0.21551881730556488,
+                  0.5498560070991516,
+                  0.3073287308216095
+                ]
+              ],
+              "diameter_m": 0.12088262671452775,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.11495533585548401,
+              "height_above_soil_m": 0.06770725778659287,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 16,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.10700850933790207,
+                  0.7167108654975891,
+                  0.2329350858926773
+                ],
+                [
+                  0.22078937292099,
+                  0.8516601324081421,
+                  0.29810598492622375
+                ]
+              ],
+              "diameter_m": 0.15431034247937153,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.13494926691055298,
+              "height_above_soil_m": 0.06048240933157298,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 17,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.11408545821905136,
+                  1.002048373222351,
+                  0.23444199562072754
+                ],
+                [
+                  0.23567387461662292,
+                  1.1279159784317017,
+                  0.3212116062641144
+                ]
+              ],
+              "diameter_m": 0.13877455894087254,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.12586760520935059,
+              "height_above_soil_m": 0.07944434059582853,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 18,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.09677338600158691,
+                  1.2581506967544556,
+                  0.2360665202140808
+                ],
+                [
+                  0.23484672605991364,
+                  1.4045746326446533,
+                  0.3163631856441498
+                ]
+              ],
+              "diameter_m": 0.14683485280833433,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.14642393589019775,
+              "height_above_soil_m": 0.07462869409192108,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 19,
+              "tiny": true,
+              "bounds_metres": [
+                [
+                  0.131569042801857,
+                  1.6126147508621216,
+                  0.24017487466335297
+                ],
+                [
+                  0.19935598969459534,
+                  1.6773221492767334,
+                  0.27758511900901794
+                ]
+              ],
+              "diameter_m": 0.06999998659089088,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.06778694689273834,
+              "height_above_soil_m": 0.035000010531800185,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 20,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.0889405757188797,
+                  1.8735079765319824,
+                  0.22678525745868683
+                ],
+                [
+                  0.2350856363773346,
+                  2.0003714561462402,
+                  0.34268295764923096
+                ]
+              ],
+              "diameter_m": 0.15072614489295683,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.1461450606584549,
+              "height_above_soil_m": 0.10912849486550624,
+              "compound_leaves": 5,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3,
+                "4": 3
+              }
+            },
+            {
+              "plant_index": 21,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.06690026074647903,
+                  2.1296536922454834,
+                  0.23162050545215607
+                ],
+                [
+                  0.23338553309440613,
+                  2.287386655807495,
+                  0.311037540435791
+                ]
+              ],
+              "diameter_m": 0.1858231751288884,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.1664852723479271,
+              "height_above_soil_m": 0.07179632103563957,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 22,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.08753012865781784,
+                  2.410856008529663,
+                  0.23018330335617065
+                ],
+                [
+                  0.23573574423789978,
+                  2.5839614868164062,
+                  0.320951372385025
+                ]
+              ],
+              "diameter_m": 0.17771645286925486,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.17310547828674316,
+              "height_above_soil_m": 0.08315318129526242,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 23,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.07035428285598755,
+                  2.7107512950897217,
+                  0.23845161497592926
+                ],
+                [
+                  0.2484949827194214,
+                  2.869974136352539,
+                  0.30422693490982056
+                ]
+              ],
+              "diameter_m": 0.17816974898768284,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.17814069986343384,
+              "height_above_soil_m": 0.060854475919960904,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 24,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.0865139439702034,
+                  3.002297878265381,
+                  0.2340741753578186
+                ],
+                [
+                  0.24628642201423645,
+                  3.1561119556427,
+                  0.314443975687027
+                ]
+              ],
+              "diameter_m": 0.16121860325261106,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.15977247804403305,
+              "height_above_soil_m": 0.07464642119382384,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 25,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.10550322383642197,
+                  3.281785249710083,
+                  0.2321723848581314
+                ],
+                [
+                  0.22696755826473236,
+                  3.431859254837036,
+                  0.3465465307235718
+                ]
+              ],
+              "diameter_m": 0.15564562822590866,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.15007400512695312,
+              "height_above_soil_m": 0.10683478605929217,
+              "compound_leaves": 4,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3,
+                "3": 3
+              }
+            },
+            {
+              "plant_index": 26,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.09766711294651031,
+                  3.574953079223633,
+                  0.23220381140708923
+                ],
+                [
+                  0.2233412265777588,
+                  3.7162678241729736,
+                  0.3505631387233734
+                ]
+              ],
+              "diameter_m": 0.14854856847943462,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.14131474494934082,
+              "height_above_soil_m": 0.11111479935226873,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            },
+            {
+              "plant_index": 27,
+              "tiny": false,
+              "bounds_metres": [
+                [
+                  0.12491137534379959,
+                  3.890880823135376,
+                  0.23637151718139648
+                ],
+                [
+                  0.22501054406166077,
+                  3.9802370071411133,
+                  0.2946702539920807
+                ]
+              ],
+              "diameter_m": 0.10400010130634312,
+              "diameter_method": "Maximum distance between actual XY convex-hull vertices; independent of plant rotation.",
+              "maximum_axis_aligned_xy_span_m": 0.10009916871786118,
+              "height_above_soil_m": 0.054999990940094,
+              "compound_leaves": 3,
+              "leaflets_per_compound": {
+                "0": 3,
+                "1": 3,
+                "2": 3
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+        "triangles": 240,
+        "vertices": 160,
+        "bounds_metres": [
+          [
+            -0.550000011920929,
+            0.0,
+            -0.15000000596046448
+          ],
+          [
+            0.550000011920929,
+            4.0,
+            0.2507469058036804
+          ]
+        ],
+        "size_metres": [
+          1.100000023841858,
+          4.0,
+          0.4007469117641449
+        ],
+        "pivot_metres": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_geometry": true,
+        "finite_normals": true,
+        "finite_corner_normals": true,
+        "corner_normal_length_range": [
+          0.999999869653941,
+          1.0000000823374904
+        ],
+        "finite_uv0": true,
+        "UV0_present": true,
+        "zero_area_triangles": 0,
+        "zero_uv_area_triangles": 0,
+        "zero_area_by_role": {},
+        "zero_uv_area_by_role": {},
+        "degenerate_triangle_samples": [],
+        "materials": [
+          "M_PazFarm_Strawberry_Mulch_v005",
+          "M_PazFarm_Strawberry_Soil_v005",
+          "M_PazFarm_Strawberry_LeafTop_v005",
+          "M_PazFarm_Strawberry_LeafUnder_v005",
+          "M_PazFarm_Strawberry_LeafOlder_v005",
+          "M_PazFarm_Strawberry_Petiole_v005",
+          "M_PazFarm_Strawberry_DripTape_v005",
+          "M_PazFarm_Strawberry_MulchDistant_v005"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rotation_radians": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "unapplied_modifiers": [],
+        "animation": false,
+        "roles": {
+          "film_lowest_mound": 168,
+          "soil_edge_burial": 72
+        },
+        "maximum_source_vertex_delta_m": 0.0,
+        "film_bounds_metres": [
+          [
+            -0.550000011920929,
+            0.0,
+            -0.15000000596046448
+          ],
+          [
+            0.550000011920929,
+            4.0,
+            0.2507469058036804
+          ]
+        ],
+        "soil_body_omitted_for_lowest_LOD": true,
+        "intentional_open_surfaces": [
+          {
+            "group": "film",
+            "triangles": 168,
+            "welded_boundary_edges": 38,
+            "allowed_boundary_categories": {
+              "start_end": 12,
+              "skirt_hem": 14,
+              "finish_end": 12
+            },
+            "nonmanifold_edges": 0,
+            "unexpected_boundary_edges": [],
+            "unexpected_boundary_count": 0,
+            "hole_rim_checks": []
+          }
+        ],
+        "end_plane_triangles": {
+          "film_start": 0,
+          "film_finish": 0
+        },
+        "closed_solid_components_checked": 0,
+        "invalid_solid_components": [],
+        "planting_holes_count": 0,
+        "declared_plants_count": 0
+      }
+    ],
+    "materials": [
+      {
+        "name": "M_PazFarm_Strawberry_DripTape_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.029999999329447746,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_DripTape_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_DripTape_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_DripTape_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_LeafOlder_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.07000000029802322,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_LeafOlder_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_LeafOlder_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_LeafOlder_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_LeafTop_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.07000000029802322,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_LeafTop_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_LeafTop_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_LeafTop_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_LeafUnder_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.07000000029802322,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_LeafUnder_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_LeafUnder_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_LeafUnder_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_MulchDistant_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.03999999910593033,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_MulchDistant_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_MulchDistant_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_MulchDistant_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_Mulch_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.03999999910593033,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_Mulch_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_Mulch_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_Mulch_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_Petiole_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.05999999865889549,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_Petiole_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_Petiole_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_Petiole_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      },
+      {
+        "name": "M_PazFarm_Strawberry_Soil_v005",
+        "alpha": 1.0,
+        "alpha_linked": false,
+        "backface_culling": false,
+        "specular": 0.019999999552965164,
+        "roughness_default": 0.5,
+        "texture_images": [
+          "Textures/T_PazFarm_Strawberry_Soil_v005_BaseColor.png",
+          "Textures/T_PazFarm_Strawberry_Soil_v005_Normal.png",
+          "Textures/T_PazFarm_Strawberry_Soil_v005_ORM.png"
+        ],
+        "normal_convention": "OpenGL +Y",
+        "orm_channels": "R=AO G=Roughness B=Metallic",
+        "pbr_connections": {
+          "Base Color": {
+            "node": "TEX_IMAGE",
+            "socket": "Color"
+          },
+          "Normal": {
+            "node": "NORMAL_MAP",
+            "socket": "Normal"
+          },
+          "Roughness": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Green"
+          },
+          "Metallic": {
+            "node": "SEPARATE_COLOR",
+            "socket": "Blue"
+          }
+        }
+      }
+    ],
+    "images": [
+      {
+        "file": "Textures/T_PazFarm_Strawberry_DripTape_v005_BaseColor.png",
+        "sha256": "f952abf7496e008431a8f91b2018bb96c90e34790a33923c4d8cb48b2a2d6748",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.07450980693101883,
+          0.0784313753247261,
+          0.07450980693101883
+        ],
+        "pixel_rgb_max": [
+          0.07450980693101883,
+          0.0784313753247261,
+          0.07450980693101883
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_DripTape_v005_Normal.png",
+        "sha256": "edd66349b8cf3089bb3257cdf4d155aa173532a4a7fd7b0a274013fd64c1cfcc",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.501960813999176,
+          0.501960813999176,
+          1.0
+        ],
+        "pixel_rgb_max": [
+          0.501960813999176,
+          0.501960813999176,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          1.000015377998352,
+          1.000015377998352
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_DripTape_v005_ORM.png",
+        "sha256": "34d7de1a897606c4825b2a9abf2025353905c5366cca9bd3fe900b37fa0de456",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.960784375667572,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.960784375667572,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafOlder_v005_BaseColor.png",
+        "sha256": "58139ccc97a0b58e649b1d4574f3d3e00aba52d11f22f352963d11f4361b3479",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.22745099663734436,
+          0.25882354378700256,
+          0.1764705926179886
+        ],
+        "pixel_rgb_max": [
+          0.3607843220233917,
+          0.40392160415649414,
+          0.30980393290519714
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafOlder_v005_Normal.png",
+        "sha256": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.20784315466880798,
+          0.32549020648002625,
+          0.8862745761871338
+        ],
+        "pixel_rgb_max": [
+          0.7921569347381592,
+          0.6745098233222961,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9944020509719849,
+          1.005597710609436
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafOlder_v005_ORM.png",
+        "sha256": "d3c04e49269d262115e1260f19c9b4193d68ccf49187e2bf27a86e17a0ff7dff",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9411765336990356,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9411765336990356,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafTop_v005_BaseColor.png",
+        "sha256": "7d66256f88f07d3f29763ae09e68fcdad154ddf867300ac9445f412c45931d31",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.15294118225574493,
+          0.25882354378700256,
+          0.1882353127002716
+        ],
+        "pixel_rgb_max": [
+          0.2039215862751007,
+          0.3450980484485626,
+          0.250980406999588
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafTop_v005_Normal.png",
+        "sha256": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.20784315466880798,
+          0.32549020648002625,
+          0.8862745761871338
+        ],
+        "pixel_rgb_max": [
+          0.7921569347381592,
+          0.6745098233222961,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9944020509719849,
+          1.005597710609436
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafTop_v005_ORM.png",
+        "sha256": "42517afb1bbafda766a121e61be6fd129372543c33f417503b19b0ee80e14860",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9019608497619629,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9019608497619629,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafUnder_v005_BaseColor.png",
+        "sha256": "a385a8483d18172d28fd10be02b7918e4a46c741a7ef7e5fab0adb59e727a7f2",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.22745099663734436,
+          0.3019607961177826,
+          0.23137256503105164
+        ],
+        "pixel_rgb_max": [
+          0.3019607961177826,
+          0.40392160415649414,
+          0.30980393290519714
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafUnder_v005_Normal.png",
+        "sha256": "1f469dcf312fb2bca1944ebeab2eca56c52802daf8eb09213407e6b50546852b",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.20784315466880798,
+          0.32549020648002625,
+          0.8862745761871338
+        ],
+        "pixel_rgb_max": [
+          0.7921569347381592,
+          0.6745098233222961,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9944020509719849,
+          1.005597710609436
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_LeafUnder_v005_ORM.png",
+        "sha256": "d3c04e49269d262115e1260f19c9b4193d68ccf49187e2bf27a86e17a0ff7dff",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9411765336990356,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9411765336990356,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_MulchDistant_v005_BaseColor.png",
+        "sha256": "6ca473eeb2e27c79d0f5f01905b496d068c458553e06db1d9efd3b2cfced594f",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.0941176563501358,
+          0.10588236153125763,
+          0.1098039299249649
+        ],
+        "pixel_rgb_max": [
+          0.125490203499794,
+          0.16862745583057404,
+          0.1411764770746231
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_MulchDistant_v005_Normal.png",
+        "sha256": "19876cf473dce688e5f08bcf09e9ee840557049cbca1b4ab035be629cb133489",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.2666666805744171,
+          0.11764706671237946,
+          0.803921639919281
+        ],
+        "pixel_rgb_max": [
+          0.7333333492279053,
+          0.8862745761871338,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9940308332443237,
+          1.0056588649749756
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_MulchDistant_v005_ORM.png",
+        "sha256": "0b6456dbda6681eb7a5e8194697feb27f0d71ec28f6b00fd023c4fe81bfb0470",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9490196704864502,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9490196704864502,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Mulch_v005_BaseColor.png",
+        "sha256": "45f193eba1c9b9379cf1a833b8227b0a70641f6dd3e0f62d3130189eb32bf85a",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.0941176563501358,
+          0.10588236153125763,
+          0.1098039299249649
+        ],
+        "pixel_rgb_max": [
+          0.1098039299249649,
+          0.12156863510608673,
+          0.125490203499794
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Mulch_v005_Normal.png",
+        "sha256": "19876cf473dce688e5f08bcf09e9ee840557049cbca1b4ab035be629cb133489",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.2666666805744171,
+          0.11764706671237946,
+          0.803921639919281
+        ],
+        "pixel_rgb_max": [
+          0.7333333492279053,
+          0.8862745761871338,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9940308332443237,
+          1.0056588649749756
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Mulch_v005_ORM.png",
+        "sha256": "0b6456dbda6681eb7a5e8194697feb27f0d71ec28f6b00fd023c4fe81bfb0470",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9490196704864502,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9490196704864502,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Petiole_v005_BaseColor.png",
+        "sha256": "489f20e4177d2d7133d62d1a28535e3f719a716398ca2c9a9ba857548a8a120c",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.21176472306251526,
+          0.2549019753932953,
+          0.14901961386203766
+        ],
+        "pixel_rgb_max": [
+          0.27843138575553894,
+          0.3333333432674408,
+          0.19215688109397888
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Petiole_v005_Normal.png",
+        "sha256": "edd66349b8cf3089bb3257cdf4d155aa173532a4a7fd7b0a274013fd64c1cfcc",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.501960813999176,
+          0.501960813999176,
+          1.0
+        ],
+        "pixel_rgb_max": [
+          0.501960813999176,
+          0.501960813999176,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          1.000015377998352,
+          1.000015377998352
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Petiole_v005_ORM.png",
+        "sha256": "ba2eee6a282c37f845a8946c46453c4a79eaa9068b1e1abd8a4b8e46d24169cd",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9098039865493774,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9098039865493774,
+          0.0
+        ],
+        "role": "ORM"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Soil_v005_BaseColor.png",
+        "sha256": "abda62b2f353528ab520721695ba22c2c23ff0ddebdc50786b885a8c13eed988",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "sRGB",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.2705882489681244,
+          0.22352942824363708,
+          0.16470588743686676
+        ],
+        "pixel_rgb_max": [
+          0.3960784673690796,
+          0.32549020648002625,
+          0.2392157018184662
+        ],
+        "role": "BaseColor"
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Soil_v005_Normal.png",
+        "sha256": "ea99db0ace8a024206521abddf9e3d5eb9e5196cb2f5407e19c41b73725faaa7",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.43137258291244507,
+          0.43137258291244507,
+          0.9960784912109375
+        ],
+        "pixel_rgb_max": [
+          0.5686274766921997,
+          0.5686274766921997,
+          1.0
+        ],
+        "role": "Normal",
+        "decoded_normal_length_range": [
+          0.9956384301185608,
+          1.0043121576309204
+        ]
+      },
+      {
+        "file": "Textures/T_PazFarm_Strawberry_Soil_v005_ORM.png",
+        "sha256": "5f5c6c597fff4e46def437947ce4c1f0caf84775fe1a10e1e678fdf3a3b1108b",
+        "size_px": [
+          1024,
+          1024
+        ],
+        "colour_space": "Non-Color",
+        "relative_source_path": true,
+        "alpha_min_max": [
+          1.0,
+          1.0
+        ],
+        "pixel_rgb_min": [
+          0.9803922176361084,
+          0.9803922176361084,
+          0.0
+        ],
+        "pixel_rgb_max": [
+          0.9803922176361084,
+          0.9803922176361084,
+          0.0
+        ],
+        "role": "ORM"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m_A",
+      "triangles": 35370,
+      "vertices": 19947,
+      "bounds_metres": [
+        [
+          -0.5500003695487976,
+          -4.8082526404868986e-08,
+          -0.15000000596046448
+        ],
+        [
+          0.550000011920929,
+          4.0,
+          0.3521713316440582
+        ]
+      ],
+      "size_metres": [
+        1.1000003814697266,
+        4.000000048082526,
+        0.5021713376045227
+      ],
+      "pivot_metres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "finite_geometry": true,
+      "finite_normals": true,
+      "finite_corner_normals": true,
+      "corner_normal_length_range": [
+        0.9999997925147397,
+        1.0000001749683822
+      ],
+      "finite_uv0": true,
+      "UV0_present": true,
+      "zero_area_triangles": 0,
+      "zero_uv_area_triangles": 0,
+      "zero_area_by_role": {},
+      "zero_uv_area_by_role": {},
+      "degenerate_triangle_samples": [],
+      "materials": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation_radians": [
+        0.0,
+        -0.0,
+        8.742277657347586e-08
+      ],
+      "unapplied_modifiers": [],
+      "animation": false,
+      "roles": {
+        "film_top": 2338,
+        "film_sides": 1024,
+        "soil_body": 576,
+        "soil_edge_burial": 384,
+        "planting_hole_soil": 1120,
+        "soil_clod": 2184,
+        "petiole": 5712,
+        "leaf": 22032
+      },
+      "maximum_source_vertex_delta_m": 3.5762786865234375e-07,
+      "source_triangle_mismatches": 0,
+      "unmatched_source_triangles": 0,
+      "source_minimum_normal_dot": -0.8240199372089398,
+      "source_minimum_corner_normal_dot": -0.22344608210582217,
+      "source_maximum_uv_delta": 0.0,
+      "alternate_legal_triangulation_count": 4240,
+      "source_polygon_coverage_errors": [],
+      "source_polygon_winding_errors": [],
+      "corner_normal_minimum_dot_by_role": {
+        "film_top": 0.9999997086607136,
+        "film_sides": 0.9998067769393848,
+        "soil_body": 0.9999130491510281,
+        "soil_edge_burial": 0.999986901483989,
+        "planting_hole_soil": 0.9475805526604422,
+        "soil_clod": 0.9999997984501527,
+        "petiole": -0.22344608210582217,
+        "leaf": 0.9999996326195495
+      },
+      "corner_normal_mismatch_count_by_role": {
+        "planting_hole_soil": 1994,
+        "petiole": 1218
+      },
+      "corner_normal_worst_samples": [
+        {
+          "source_face": 21974,
+          "imported_triangle": 21974,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.22344608210582217,
+          "source_normal": [
+            0.42485299706459045,
+            -0.39203086495399475,
+            0.8159728646278381
+          ],
+          "imported_normal": [
+            0.16951137781143188,
+            0.9795358777046204,
+            0.10851439088582993
+          ]
+        },
+        {
+          "source_face": 21975,
+          "imported_triangle": 21975,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.22344608210582217,
+          "source_normal": [
+            0.42485299706459045,
+            -0.39203086495399475,
+            0.8159728646278381
+          ],
+          "imported_normal": [
+            0.16951137781143188,
+            0.9795358777046204,
+            0.10851439088582993
+          ]
+        },
+        {
+          "source_face": 21974,
+          "imported_triangle": 34398,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.22344608210582217,
+          "source_normal": [
+            0.42485299706459045,
+            -0.39203086495399475,
+            0.8159728646278381
+          ],
+          "imported_normal": [
+            0.16951137781143188,
+            0.9795358777046204,
+            0.10851439088582993
+          ]
+        },
+        {
+          "source_face": 21979,
+          "imported_triangle": 34403,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.22344608210582217,
+          "source_normal": [
+            0.42485299706459045,
+            -0.39203086495399475,
+            0.8159728646278381
+          ],
+          "imported_normal": [
+            0.16951137781143188,
+            0.9795358777046204,
+            0.10851439088582993
+          ]
+        },
+        {
+          "source_face": 21974,
+          "imported_triangle": 21974,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.20975886563890833,
+          "source_normal": [
+            -0.6696106195449829,
+            0.015445713885128498,
+            0.7425516843795776
+          ],
+          "imported_normal": [
+            0.8638546466827393,
+            0.09595309942960739,
+            0.4945181906223297
+          ]
+        },
+        {
+          "source_face": 21977,
+          "imported_triangle": 21977,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.20975886563890833,
+          "source_normal": [
+            -0.6696106195449829,
+            0.015445713885128498,
+            0.7425516843795776
+          ],
+          "imported_normal": [
+            0.8638546466827393,
+            0.09595309942960739,
+            0.4945181906223297
+          ]
+        },
+        {
+          "source_face": 21979,
+          "imported_triangle": 21979,
+          "component": 596,
+          "role": "petiole",
+          "corner": 0,
+          "dot": -0.20975886563890833,
+          "source_normal": [
+            -0.6696106195449829,
+            0.015445713885128498,
+            0.7425516843795776
+          ],
+          "imported_normal": [
+            0.8638546466827393,
+            0.09595309942960739,
+            0.4945181906223297
+          ]
+        },
+        {
+          "source_face": 21977,
+          "imported_triangle": 34401,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.20975886563890833,
+          "source_normal": [
+            -0.6696106195449829,
+            0.015445713885128498,
+            0.7425516843795776
+          ],
+          "imported_normal": [
+            0.8638546466827393,
+            0.09595309942960739,
+            0.4945181906223297
+          ]
+        },
+        {
+          "source_face": 21979,
+          "imported_triangle": 34403,
+          "component": 596,
+          "role": "petiole",
+          "corner": 0,
+          "dot": -0.20975886563890833,
+          "source_normal": [
+            -0.6696106195449829,
+            0.015445713885128498,
+            0.7425516843795776
+          ],
+          "imported_normal": [
+            0.8638546466827393,
+            0.09595309942960739,
+            0.4945181906223297
+          ]
+        },
+        {
+          "source_face": 21976,
+          "imported_triangle": 21976,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.17391098171647612,
+          "source_normal": [
+            -0.290048748254776,
+            0.9135476350784302,
+            0.2851359248161316
+          ],
+          "imported_normal": [
+            -0.08446589857339859,
+            -0.48828867077827454,
+            0.8685848712921143
+          ]
+        },
+        {
+          "source_face": 21977,
+          "imported_triangle": 21977,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.17391098171647612,
+          "source_normal": [
+            -0.290048748254776,
+            0.9135476350784302,
+            0.2851359248161316
+          ],
+          "imported_normal": [
+            -0.08446589857339859,
+            -0.48828867077827454,
+            0.8685848712921143
+          ]
+        },
+        {
+          "source_face": 21979,
+          "imported_triangle": 21979,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.17391098171647612,
+          "source_normal": [
+            -0.290048748254776,
+            0.9135476350784302,
+            0.2851359248161316
+          ],
+          "imported_normal": [
+            -0.08446589857339859,
+            -0.48828867077827454,
+            0.8685848712921143
+          ]
+        },
+        {
+          "source_face": 21976,
+          "imported_triangle": 34400,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.17391098171647612,
+          "source_normal": [
+            -0.290048748254776,
+            0.9135476350784302,
+            0.2851359248161316
+          ],
+          "imported_normal": [
+            -0.08446589857339859,
+            -0.48828867077827454,
+            0.8685848712921143
+          ]
+        },
+        {
+          "source_face": 21975,
+          "imported_triangle": 21975,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.1595962797926589,
+          "source_normal": [
+            0.7166211009025574,
+            0.6080561280250549,
+            0.34164589643478394
+          ],
+          "imported_normal": [
+            -0.7813877463340759,
+            0.3805318772792816,
+            0.4945996105670929
+          ]
+        },
+        {
+          "source_face": 21976,
+          "imported_triangle": 21976,
+          "component": 596,
+          "role": "petiole",
+          "corner": 2,
+          "dot": -0.1595962797926589,
+          "source_normal": [
+            0.7166211009025574,
+            0.6080561280250549,
+            0.34164589643478394
+          ],
+          "imported_normal": [
+            -0.7813877463340759,
+            0.3805318772792816,
+            0.4945996105670929
+          ]
+        },
+        {
+          "source_face": 21979,
+          "imported_triangle": 21979,
+          "component": 596,
+          "role": "petiole",
+          "corner": 1,
+          "dot": -0.1595962797926589,
+          "source_normal": [
+            0.7166211009025574,
+            0.6080561280250549,
+            0.34164589643478394
+          ],
+          "imported_normal": [
+            -0.7813877463340759,
+            0.3805318772792816,
+            0.4945996105670929
+          ]
+        }
+      ],
+      "surface_match_method": "Each imported triangle must use vertices of one same-material source polygon; every polygon boundary is covered exactly once and internal edges exactly twice. All vertices, corner UVs and smooth normals are compared separately.",
+      "film_bounds_metres": [
+        [
+          -0.550000011920929,
+          0.0,
+          -0.15000000596046448
+        ],
+        [
+          0.550000011920929,
+          4.0,
+          0.2547292411327362
+        ]
+      ],
+      "film_top_width_m": 0.800000011920929,
+      "actual_leaf_bounds_metres": [
+        [
+          -0.2585262656211853,
+          0.027089638635516167,
+          0.252623051404953
+        ],
+        [
+          0.2484949827194214,
+          3.9802370071411133,
+          0.3521713316440582
+        ]
+      ],
+      "actual_leaf_end_clearance_m": [
+        0.027089638635516167,
+        0.01976299285888672
+      ],
+      "leaf_end_plane_triangles": 0,
+      "intentional_open_surfaces": [
+        {
+          "group": "film",
+          "triangles": 3362,
+          "welded_boundary_edges": 500,
+          "allowed_boundary_categories": {
+            "start_end": 18,
+            "finish_end": 18,
+            "planting_hole_rim": 336,
+            "skirt_hem": 128
+          },
+          "nonmanifold_edges": 0,
+          "unexpected_boundary_edges": [],
+          "unexpected_boundary_count": 0,
+          "hole_rim_checks": [
+            {
+              "hole_index": 0,
+              "declared_perimeter_m": 0.16110648316588838,
+              "actual_boundary_length_m": 0.1611064876402301
+            },
+            {
+              "hole_index": 1,
+              "declared_perimeter_m": 0.14677011790200992,
+              "actual_boundary_length_m": 0.1467701160654659
+            },
+            {
+              "hole_index": 2,
+              "declared_perimeter_m": 0.1725156780535608,
+              "actual_boundary_length_m": 0.17251564504144534
+            },
+            {
+              "hole_index": 3,
+              "declared_perimeter_m": 0.1519622579821547,
+              "actual_boundary_length_m": 0.1519622600786545
+            },
+            {
+              "hole_index": 4,
+              "declared_perimeter_m": 0.1714697002998872,
+              "actual_boundary_length_m": 0.1714696779187643
+            },
+            {
+              "hole_index": 5,
+              "declared_perimeter_m": 0.167022951522391,
+              "actual_boundary_length_m": 0.16702305881356505
+            },
+            {
+              "hole_index": 6,
+              "declared_perimeter_m": 0.15209303086013945,
+              "actual_boundary_length_m": 0.15209299154079667
+            },
+            {
+              "hole_index": 7,
+              "declared_perimeter_m": 0.16920646369412704,
+              "actual_boundary_length_m": 0.16920652883729353
+            },
+            {
+              "hole_index": 8,
+              "declared_perimeter_m": 0.15765171457764002,
+              "actual_boundary_length_m": 0.15765152765073195
+            },
+            {
+              "hole_index": 9,
+              "declared_perimeter_m": 0.17207929197353297,
+              "actual_boundary_length_m": 0.1720795345505142
+            },
+            {
+              "hole_index": 10,
+              "declared_perimeter_m": 0.1664258138772867,
+              "actual_boundary_length_m": 0.1664259028687069
+            },
+            {
+              "hole_index": 11,
+              "declared_perimeter_m": 0.16269238077431153,
+              "actual_boundary_length_m": 0.1626922236448696
+            },
+            {
+              "hole_index": 12,
+              "declared_perimeter_m": 0.16463264566421568,
+              "actual_boundary_length_m": 0.16463264084254275
+            },
+            {
+              "hole_index": 13,
+              "declared_perimeter_m": 0.18070179022812047,
+              "actual_boundary_length_m": 0.1807016822137201
+            },
+            {
+              "hole_index": 14,
+              "declared_perimeter_m": 0.17795007174083372,
+              "actual_boundary_length_m": 0.17795005842070702
+            },
+            {
+              "hole_index": 15,
+              "declared_perimeter_m": 0.16058215040478352,
+              "actual_boundary_length_m": 0.16058213964542453
+            },
+            {
+              "hole_index": 16,
+              "declared_perimeter_m": 0.14584088900588643,
+              "actual_boundary_length_m": 0.14584087475944227
+            },
+            {
+              "hole_index": 17,
+              "declared_perimeter_m": 0.16302652029961032,
+              "actual_boundary_length_m": 0.16302659955738677
+            },
+            {
+              "hole_index": 18,
+              "declared_perimeter_m": 0.17216343382473326,
+              "actual_boundary_length_m": 0.17216328097282055
+            },
+            {
+              "hole_index": 19,
+              "declared_perimeter_m": 0.1512393854153281,
+              "actual_boundary_length_m": 0.151239386416677
+            },
+            {
+              "hole_index": 20,
+              "declared_perimeter_m": 0.16982847156647507,
+              "actual_boundary_length_m": 0.16982853092664896
+            },
+            {
+              "hole_index": 21,
+              "declared_perimeter_m": 0.16644785667179096,
+              "actual_boundary_length_m": 0.16644784091588166
+            },
+            {
+              "hole_index": 22,
+              "declared_perimeter_m": 0.1570153603975056,
+              "actual_boundary_length_m": 0.15701540369783254
+            },
+            {
+              "hole_index": 23,
+              "declared_perimeter_m": 0.15831858458850287,
+              "actual_boundary_length_m": 0.15831856307655923
+            },
+            {
+              "hole_index": 24,
+              "declared_perimeter_m": 0.16828952884272555,
+              "actual_boundary_length_m": 0.1682895529495656
+            },
+            {
+              "hole_index": 25,
+              "declared_perimeter_m": 0.16769004592995118,
+              "actual_boundary_length_m": 0.16769016122477726
+            },
+            {
+              "hole_index": 26,
+              "declared_perimeter_m": 0.16248740710087878,
+              "actual_boundary_length_m": 0.16248731429327254
+            },
+            {
+              "hole_index": 27,
+              "declared_perimeter_m": 0.1862355401533929,
+              "actual_boundary_length_m": 0.186235483443905
+            }
+          ]
+        },
+        {
+          "group": "soil_body",
+          "triangles": 576,
+          "welded_boundary_edges": 18,
+          "allowed_boundary_categories": {
+            "start_end": 9,
+            "finish_end": 9
+          },
+          "nonmanifold_edges": 0,
+          "unexpected_boundary_edges": [],
+          "unexpected_boundary_count": 0,
+          "hole_rim_checks": []
+        }
+      ],
+      "end_plane_triangles": {
+        "film_start": 0,
+        "film_finish": 0,
+        "soil_body_start": 0,
+        "soil_body_finish": 0
+      },
+      "closed_solid_components_checked": 914,
+      "invalid_solid_components": [],
+      "planting_holes_count": 28,
+      "declared_plants_count": 27,
+      "file": "Temp/QAProbes/validation_probe_evaluated_normals_SM_PazFarm_StrawberryBed_4m_A.fbx",
+      "sha256": "b99a13596608459baea8134154e5129c8b78dc17311c1c22455c819c2bab464d",
+      "bytes": 1240332,
+      "imported_name": "SM_PazFarm_StrawberryBed_4m_A",
+      "fbx_header": {
+        "version": 7400,
+        "UpAxis": 2,
+        "UpAxisSign": 1,
+        "FrontAxis": 1,
+        "FrontAxisSign": 1,
+        "CoordAxis": 0,
+        "CoordAxisSign": -1,
+        "UnitScaleFactor": 100.0,
+        "OriginalUnitScaleFactor": 100.0,
+        "expected_forward": "-Y",
+        "expected_up": "Z",
+        "axis_header_matches": true
+      },
+      "imported_material_alpha": [
+        {
+          "name": "M_PazFarm_Strawberry_Mulch_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_Soil_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafTop_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafUnder_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafOlder_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_Petiole_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_DripTape_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_MulchDistant_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        }
+      ]
+    },
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "triangles": 240,
+      "vertices": 160,
+      "bounds_metres": [
+        [
+          -0.5500003695487976,
+          -4.8082526404868986e-08,
+          -0.15000000596046448
+        ],
+        [
+          0.550000011920929,
+          4.0,
+          0.2507469058036804
+        ]
+      ],
+      "size_metres": [
+        1.1000003814697266,
+        4.000000048082526,
+        0.4007469117641449
+      ],
+      "pivot_metres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "finite_geometry": true,
+      "finite_normals": true,
+      "finite_corner_normals": true,
+      "corner_normal_length_range": [
+        0.9999998982625442,
+        1.0000001400169705
+      ],
+      "finite_uv0": true,
+      "UV0_present": true,
+      "zero_area_triangles": 0,
+      "zero_uv_area_triangles": 0,
+      "zero_area_by_role": {},
+      "zero_uv_area_by_role": {},
+      "degenerate_triangle_samples": [],
+      "materials": [
+        "M_PazFarm_Strawberry_Mulch_v005",
+        "M_PazFarm_Strawberry_Soil_v005",
+        "M_PazFarm_Strawberry_LeafTop_v005",
+        "M_PazFarm_Strawberry_LeafUnder_v005",
+        "M_PazFarm_Strawberry_LeafOlder_v005",
+        "M_PazFarm_Strawberry_Petiole_v005",
+        "M_PazFarm_Strawberry_DripTape_v005",
+        "M_PazFarm_Strawberry_MulchDistant_v005"
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotation_radians": [
+        0.0,
+        -0.0,
+        8.742277657347586e-08
+      ],
+      "unapplied_modifiers": [],
+      "animation": false,
+      "roles": {
+        "film_lowest_mound": 168,
+        "soil_edge_burial": 72
+      },
+      "maximum_source_vertex_delta_m": 3.5762786865234375e-07,
+      "source_triangle_mismatches": 0,
+      "unmatched_source_triangles": 0,
+      "source_minimum_normal_dot": 0.9999286204795306,
+      "source_minimum_corner_normal_dot": 0.9980757889116421,
+      "source_maximum_uv_delta": 0.0,
+      "alternate_legal_triangulation_count": 162,
+      "source_polygon_coverage_errors": [],
+      "source_polygon_winding_errors": [],
+      "corner_normal_minimum_dot_by_role": {
+        "film_lowest_mound": 0.9980757889116421,
+        "soil_edge_burial": 0.999977180963231
+      },
+      "corner_normal_mismatch_count_by_role": {
+        "film_lowest_mound": 16
+      },
+      "corner_normal_worst_samples": [
+        {
+          "source_face": 30,
+          "imported_triangle": 30,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 2,
+          "dot": 0.9980757889116421,
+          "source_normal": [
+            5.401674116001232e-06,
+            -0.04548599198460579,
+            0.9989648461341858
+          ],
+          "imported_normal": [
+            0.04507296532392502,
+            -0.0028596611227840185,
+            0.9989795684814453
+          ]
+        },
+        {
+          "source_face": 42,
+          "imported_triangle": 42,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 2,
+          "dot": 0.9980757889116421,
+          "source_normal": [
+            5.401674116001232e-06,
+            -0.04548599198460579,
+            0.9989648461341858
+          ],
+          "imported_normal": [
+            0.04507296532392502,
+            -0.0028596611227840185,
+            0.9989795684814453
+          ]
+        },
+        {
+          "source_face": 29,
+          "imported_triangle": 149,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9980757889116421,
+          "source_normal": [
+            5.401674116001232e-06,
+            -0.04548599198460579,
+            0.9989648461341858
+          ],
+          "imported_normal": [
+            0.04507296532392502,
+            -0.0028596611227840185,
+            0.9989795684814453
+          ]
+        },
+        {
+          "source_face": 41,
+          "imported_triangle": 161,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9980757889116421,
+          "source_normal": [
+            5.401674116001232e-06,
+            -0.04548599198460579,
+            0.9989648461341858
+          ],
+          "imported_normal": [
+            0.04507296532392502,
+            -0.0028596611227840185,
+            0.9989795684814453
+          ]
+        },
+        {
+          "source_face": 43,
+          "imported_triangle": 43,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 55,
+          "imported_triangle": 55,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 0,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 42,
+          "imported_triangle": 162,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 43,
+          "imported_triangle": 163,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 2,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 54,
+          "imported_triangle": 174,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 55,
+          "imported_triangle": 175,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 0,
+          "dot": 0.9984064518654806,
+          "source_normal": [
+            0.05278078094124794,
+            -0.03728584200143814,
+            0.9979097843170166
+          ],
+          "imported_normal": [
+            0.08892546594142914,
+            0.0060389298014342785,
+            0.9960199594497681
+          ]
+        },
+        {
+          "source_face": 44,
+          "imported_triangle": 44,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        },
+        {
+          "source_face": 56,
+          "imported_triangle": 56,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 0,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        },
+        {
+          "source_face": 43,
+          "imported_triangle": 163,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        },
+        {
+          "source_face": 44,
+          "imported_triangle": 164,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 2,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        },
+        {
+          "source_face": 55,
+          "imported_triangle": 175,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 1,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        },
+        {
+          "source_face": 56,
+          "imported_triangle": 176,
+          "component": 0,
+          "role": "film_lowest_mound",
+          "corner": 0,
+          "dot": 0.9989326515112158,
+          "source_normal": [
+            0.382804811000824,
+            -0.03381332755088806,
+            0.9232103228569031
+          ],
+          "imported_normal": [
+            0.4042607843875885,
+            0.006194658577442169,
+            0.9146227240562439
+          ]
+        }
+      ],
+      "surface_match_method": "Each imported triangle must use vertices of one same-material source polygon; every polygon boundary is covered exactly once and internal edges exactly twice. All vertices, corner UVs and smooth normals are compared separately.",
+      "film_bounds_metres": [
+        [
+          -0.550000011920929,
+          0.0,
+          -0.15000000596046448
+        ],
+        [
+          0.550000011920929,
+          4.0,
+          0.2507469058036804
+        ]
+      ],
+      "soil_body_omitted_for_lowest_LOD": true,
+      "intentional_open_surfaces": [
+        {
+          "group": "film",
+          "triangles": 168,
+          "welded_boundary_edges": 38,
+          "allowed_boundary_categories": {
+            "skirt_hem": 14,
+            "start_end": 12,
+            "finish_end": 12
+          },
+          "nonmanifold_edges": 0,
+          "unexpected_boundary_edges": [],
+          "unexpected_boundary_count": 0,
+          "hole_rim_checks": []
+        }
+      ],
+      "end_plane_triangles": {
+        "film_start": 0,
+        "film_finish": 0
+      },
+      "closed_solid_components_checked": 0,
+      "invalid_solid_components": [],
+      "planting_holes_count": 0,
+      "declared_plants_count": 0,
+      "file": "Temp/QAProbes/validation_probe_evaluated_normals_SM_PazFarm_StrawberryBed_4m_A_LOD3.fbx",
+      "sha256": "559e6bbf3775c23a8fb85ce7209823f19e16ca932012136145dff48e991e277f",
+      "bytes": 56476,
+      "imported_name": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "fbx_header": {
+        "version": 7400,
+        "UpAxis": 2,
+        "UpAxisSign": 1,
+        "FrontAxis": 1,
+        "FrontAxisSign": 1,
+        "CoordAxis": 0,
+        "CoordAxisSign": -1,
+        "UnitScaleFactor": 100.0,
+        "OriginalUnitScaleFactor": 100.0,
+        "expected_forward": "-Y",
+        "expected_up": "Z",
+        "axis_header_matches": true
+      },
+      "imported_material_alpha": [
+        {
+          "name": "M_PazFarm_Strawberry_Mulch_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_Soil_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafTop_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafUnder_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_LeafOlder_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_Petiole_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_DripTape_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        },
+        {
+          "name": "M_PazFarm_Strawberry_MulchDistant_v005",
+          "alpha": 1.0,
+          "linked": true,
+          "backface_culling": false
+        }
+      ]
+    }
+  ],
+  "joins": [
+    {
+      "left": "SM_PazFarm_StrawberryBed_4m_A",
+      "right": "SM_PazFarm_StrawberryBed_4m_A",
+      "kind": "same_LOD",
+      "placement_delta_local_m": [
+        0,
+        4,
+        0
+      ],
+      "profiles": {
+        "film": {
+          "maximum_polyline_gap_m": 0.0,
+          "matched": true,
+          "maximum_periodic_uv_phase_difference": 0.0,
+          "maximum_adjacent_triangle_normal_gap_degrees": 0.8270493490621224,
+          "maximum_smooth_corner_normal_gap_degrees": 0.025502877910432986,
+          "uv_normal_note": "Measured at matching terminal positions and material roles. Triangle and smooth corner normals are both checked; modulo1 UV comparison assumes repeating textures."
+        },
+        "soil_body": {
+          "maximum_polyline_gap_m": 0.0,
+          "matched": true,
+          "maximum_periodic_uv_phase_difference": 0.0,
+          "maximum_adjacent_triangle_normal_gap_degrees": 0.01795509856815227,
+          "maximum_smooth_corner_normal_gap_degrees": 0.015012655622829938,
+          "uv_normal_note": "Measured at matching terminal positions and material roles. Triangle and smooth corner normals are both checked; modulo1 UV comparison assumes repeating textures."
+        }
+      },
+      "pass": true,
+      "whole_geometry_longitudinal_gap_m": -4.8082526404868986e-08,
+      "positive_volume_longitudinal_overlap_m": 4.8082526404868986e-08,
+      "planting_pitch_across_joint": [
+        {
+          "row_index": 0,
+          "hole_pitch_across_joint_m": 0.2805544322267668
+        },
+        {
+          "row_index": 1,
+          "hole_pitch_across_joint_m": 0.28848042988817424
+        }
+      ]
+    },
+    {
+      "left": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "right": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "kind": "same_LOD",
+      "placement_delta_local_m": [
+        0,
+        4,
+        0
+      ],
+      "profiles": {
+        "film": {
+          "maximum_polyline_gap_m": 0.0,
+          "matched": true,
+          "maximum_periodic_uv_phase_difference": 0.0,
+          "maximum_adjacent_triangle_normal_gap_degrees": 0.02927937105301923,
+          "maximum_smooth_corner_normal_gap_degrees": 0.017348144126177766,
+          "uv_normal_note": "Measured at matching terminal positions and material roles. Triangle and smooth corner normals are both checked; modulo1 UV comparison assumes repeating textures."
+        },
+        "soil_body": {
+          "checked": false,
+          "reason": "Lowest LOD is the film mound only; no internal soil body. Exterior film profile remains mandatory."
+        }
+      },
+      "pass": true,
+      "whole_geometry_longitudinal_gap_m": -4.8082526404868986e-08,
+      "positive_volume_longitudinal_overlap_m": 4.8082526404868986e-08
+    }
+  ],
+  "cross_lod_joins": [
+    {
+      "left": "SM_PazFarm_StrawberryBed_4m_A",
+      "right": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "kind": "cross_LOD",
+      "placement_delta_local_m": [
+        0,
+        4,
+        0
+      ],
+      "profiles": {
+        "film": {
+          "maximum_polyline_gap_m": 1.0612193280789162e-08,
+          "matched": true,
+          "maximum_periodic_uv_phase_difference": null,
+          "maximum_adjacent_triangle_normal_gap_degrees": null,
+          "maximum_smooth_corner_normal_gap_degrees": null,
+          "uv_normal_note": "Measured at matching terminal positions and material roles. Triangle and smooth corner normals are both checked; modulo1 UV comparison assumes repeating textures."
+        },
+        "soil_body": {
+          "checked": false,
+          "reason": "Lowest LOD is the film mound only; no internal soil body. Exterior film profile remains mandatory."
+        }
+      },
+      "pass": true,
+      "whole_geometry_longitudinal_gap_m": -4.8082526404868986e-08,
+      "positive_volume_longitudinal_overlap_m": 4.8082526404868986e-08
+    },
+    {
+      "left": "SM_PazFarm_StrawberryBed_4m_A_LOD3",
+      "right": "SM_PazFarm_StrawberryBed_4m_A",
+      "kind": "cross_LOD",
+      "placement_delta_local_m": [
+        0,
+        4,
+        0
+      ],
+      "profiles": {
+        "film": {
+          "maximum_polyline_gap_m": 1.0612193280789162e-08,
+          "matched": true,
+          "maximum_periodic_uv_phase_difference": null,
+          "maximum_adjacent_triangle_normal_gap_degrees": null,
+          "maximum_smooth_corner_normal_gap_degrees": null,
+          "uv_normal_note": "Measured at matching terminal positions and material roles. Triangle and smooth corner normals are both checked; modulo1 UV comparison assumes repeating textures."
+        },
+        "soil_body": {
+          "checked": false,
+          "reason": "Lowest LOD is the film mound only; no internal soil body. Exterior film profile remains mandatory."
+        }
+      },
+      "pass": true,
+      "whole_geometry_longitudinal_gap_m": -4.8082526404868986e-08,
+      "positive_volume_longitudinal_overlap_m": 4.8082526404868986e-08
+    }
+  ],
+  "endcap_joins": [],
+  "slope_proof": {},
+  "failures": [
+    "delivery: required names missing or unexpected names",
+    "SM_PazFarm_StrawberryBed_4m_A: FBX smooth corner normals differ from source (minimum dot=-0.223446)",
+    "SM_PazFarm_StrawberryBed_4m_A_LOD3: FBX smooth corner normals differ from source (minimum dot=0.998076)"
+  ],
+  "warnings": [],
+  "limits": [
+    "Offline asset verification only; no Unreal or HLOD operation.",
+    "Source/FBX congruence does not establish photographic realism or native appearance.",
+    "Analytical planar-slope placements do not prove conformity to arbitrary terrain."
+  ],
+  "inputs": {
+    "family_report": {
+      "file": "Reports\\strawberries_v005.json",
+      "sha256": "0efc241dde6b39eaf5213f722ae592c2477fa0cbfb97dbdb493543f8faeb6dbb"
+    },
+    "source": {
+      "file": "Blend\\StrawberryBeds.blend",
+      "sha256": "2f1948be451a4e482fef88285c38a9333f5e1806af8efafbdb25cc4449e303a7"
+    }
+  },
+  "transient_export_probe": "evaluated_normals",
+  "inputs_unchanged": true,
+  "passed": false,
+  "status": "FAIL_OR_INCOMPLETE",
+  "archive_note": "Diagnostic exports only, moved without byte changes to Temp/QAProbes after final QA. Not part of the production FBX import set. Embedded relative texture paths retain their original Reports location; use the recorded source textures if reopening a probe."
+}

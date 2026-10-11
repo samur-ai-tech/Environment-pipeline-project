@@ -1,0 +1,85 @@
+{
+  "schema": "environmentpipeline.new_area_assignment.v1",
+  "authority": "Aviv directly asked this Claude Code session (2026-10-08 ~10:55Z) to try a 4x4 km area from the same coordinate as the Karmei Yosef 2 km area; order chosen 11:15Z: 4x4 km first, then farm zones (OpenStreetMap + Sentinel-2 + Aviv's screenshots).",
+  "operator_session_id": "4a6a1d0c-3246-4c14-af9c-7d81b1106019",
+  "manager_session_id_unchanged": "913c2312-d010-43d7-8d47-c7af07b8bb71",
+  "area_id": "KarmeiYosef_31850349_34907601_4km",
+  "center": {
+    "latitude": 31.850349,
+    "longitude": 34.907601
+  },
+  "extent_m": {
+    "north_south": 4000,
+    "east_west": 4000
+  },
+  "terrain_grid": {
+    "samples": 4033,
+    "spacing_m": 1,
+    "extent_m": 4032
+  },
+  "decisions_aviv_20261008": {
+    "farm_tracks": "kept as roads (Aviv)",
+    "carried_over_from_2km": [
+      "Houdini roads (RoadBLD off)",
+      "Houdini props kept",
+      "no Houdini placeholder trees",
+      "failed generated poles omitted",
+      "never stop the bake for unbuildable buildings"
+    ]
+  },
+  "status": "RUN1_BAKED_SAVED_VERIFIED_REOPENED_VISUAL_ACCEPTANCE_PENDING",
+  "native_writer_pid": null,
+  "file_write_scope": [
+    "Staging/NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08/",
+    "Staging/ModelBank/KarmeiYosef_31850349_34907601_4km/",
+    "C:/Users/USER/Documents/Pipeline Environment/SourceData/KarmeiYosef_31850349_34907601_4km/",
+    "C:/Users/USER/Documents/Pipeline Environment/Houdini/GeoCity_city_v015_PermanentBank/revisions/20261008_KarmeiYosef_4km/"
+  ],
+  "native_write_scope": [
+    "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/",
+    "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/"
+  ],
+  "read_only": [
+    "Karmei Yosef 2 km area and its PCG clone",
+    "Lebanon, Shujaiya, Iran areas",
+    "shared bank table and packages",
+    "sealed Content/Python runtime",
+    "shared ground master, sky, vendor originals, held assets"
+  ],
+  "rules": [
+    "one editor writer at a time; generation only when this is the only open Unreal editor",
+    "named saves only, never Save All",
+    "no sealed-code change, no hot reload, no Linear",
+    "one real retained run on the new map"
+  ],
+  "created_utc": "2026-10-08T11:16:34.340648+00:00",
+  "result": {
+    "utc": "2026-10-08T13:10:27.329471+00:00",
+    "map": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km/BankIntegration_v015/L_KarmeiYosef_31850349_34907601_4km",
+    "map_sha256": "c7c858c50ca986d8f9791d394134bc6532c02e50f1971e0a0e302dfee96fca24",
+    "map_bytes": 103895187,
+    "run": "PID 31468, menu start 11:20:54Z, released baked_saved_verified 13:08:01Z (6,427 s; mostly Houdini road/sidewalk stages, ~165 km of roads incl. farm tracks)",
+    "content": "1 Landscape; 592 buildings = 32 whole + 559 assembled (35,427 parts) + 1 unsupported shell (assembly_no_native_window_bay); 10,480 small props, 349 street props, 379 poles (64 failed poles omitted), 0 trees; roads 901,150 faces, sidewalks 451,845 faces; 72 baked actors, 46,667 instances",
+    "verify": "fresh reopen PID 20084: same sha, 74 actors, 1 Landscape, 46,667 ISM instances, nothing dirty; captures receipts/Captures/ky4_fresh_b_*.png (ky4_fresh_* taken while the editor was still loading materials)",
+    "ground": "MI copied from the 2 km area MI (snow line already fixed); far views show the ground texture tiling",
+    "editors_live": 0
+  },
+  "farm_zones": {
+    "requested": "Aviv 2026-10-08 ~11:15Z (map data + satellite; 4 km first) and 13:10Z (\"go ahead with the farm zones data\")",
+    "status": "GROUND_SATELLITE_AND_ZONE_PLANTS_DONE_VISUAL_REVIEW_PENDING",
+    "data": "Zones/DATA_RECEIPT.json: OSM land use 81 polygons (ODbL); Sentinel-2 L2A S2C_36SXA_20260921 (now) and S2C_36SXA_20260404 (spring), 0% cloud in area, window reads from the public AWS archive via Earth Search STAC (no login)",
+    "zone_map": "SourceData/KarmeiYosef_31850349_34907601_4km/zones/20261008T131311Z/ZONES.tif (1009x1009, 4 m, EPSG:4326 grid = landscape +-2016 m), LEGEND.json, ZONES_preview.png",
+    "classes": "water, built, forest, orchard, vineyard, scrub, grass (OSM); bright, green_crop, trees_scrub, bare_field, dry_grass (Sentinel-2 NDVI rules)",
+    "next": "Aviv screenshots + choices; then in Unreal: satellite colour on this area own ground material copy, zone texture read by PCG with per-zone plant rules",
+    "ground": "receipts/GROUND_SATELLITE.json: area MI reparented to area-owned M_GeoCityAuto_KY4 (satellite blend before BaseColor); shared master unchanged; map file unchanged",
+    "paz_farm": "Aviv 13:47Z: after showing the current improvements, plan higher fidelity for the Paz Farm (Hevat Paz, Nahal Ekron) area with his knowledge, then a handoff for Astra to model missing items in Blender",
+    "zone_clone": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/L_KarmeiYosef_31850349_34907601_4km_PCGTrial (sha c76832c9, 186 MB)",
+    "zone_graph": "/Game/Project/Areas/KarmeiYosef_31850349_34907601_4km_PCGTrial/PCG/PCG_KY4_Zones (8 branches: forest, forest_shrubs, orchard 6 m grid, vineyard 4 m grid, scrub, scrub_trees, grass, crop)",
+    "zone_result": "113,791 instances, upright, WPO off; fresh reopen PID 10284 verified; captures receipts/Captures/ky4_zones_b_*.png and ky4_sat_a_*.png",
+    "known_issues": [
+      "plants barely visible from far; forest reads thin (skinny pines at 0.008/m2) versus the dense real canopy",
+      "no olive/vine/crop models: stand-ins",
+      "PCG intersection of landscape and mask returned nothing; used sample-texture + density filter"
+    ]
+  }
+}

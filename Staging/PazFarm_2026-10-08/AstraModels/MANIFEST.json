@@ -1,0 +1,3409 @@
+{
+  "schema": "pazfarm.asset-delivery.v1",
+  "date": "2026-10-08",
+  "project": "Paz Farm detail work / Environmentpipeline",
+  "status": "Blender modelling and offline delivery complete; native import and placement belong to Karmei Yosef operator.",
+  "asset_count": 26,
+  "source_family_count": 9,
+  "units": {
+    "blender": "metres",
+    "unit_scale": 1.0,
+    "fbx_apply_scalings": "FBX Units Scale / FBX_SCALE_UNITS",
+    "global_scale": 1.0,
+    "apply_unit_scale": true,
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "source_front": "-Y",
+    "intended_unreal_front": "+X after importer axis conversion",
+    "scale_contract": "1 metre in source = 100 centimetres in Unreal; offline Blender FBX reimport verified, Unreal not opened"
+  },
+  "materials": {
+    "naming": "M_PazFarm_<Material>",
+    "base_color": "sRGB; alpha is foliage/net opacity mask or film opacity",
+    "normal": "OpenGL +Y, Non-Color. In Unreal use Flip Green Channel for DirectX tangent convention.",
+    "ORM": "Non-Color; R = Ambient Occlusion, G = Roughness, B = Metallic",
+    "foliage": "Masked, two-sided; wind disabled",
+    "net": "Masked, two-sided; BaseColor alpha carries net apertures",
+    "film": "Translucent, two-sided; BaseColor alpha carries opacity",
+    "receiving_operator": "FBX cannot reconstruct all shader wiring automatically. Rebuild the material connections from the supplied PNGs and mode entries."
+  },
+  "defaults": {
+    "barn": "20 x 12 m footprint, 6 m eave, 8 m ridge, light grey corrugated metal; no ground photograph available. Roof overhang included in measured bounds.",
+    "net": "White default plus black alternative, flat roof, 4 m height.",
+    "strawberries": "Open raised bed supplied independently of optional removable low tunnel, compatible with placement beneath a net house.",
+    "unknown_grey_purple_rows": "Unidentified in handoff. No crop species or additional asset invented.",
+    "tree_locations": "Not assigned from aerial screenshot; placement belongs to operator."
+  },
+  "adaptation_notes": [
+    "NetHouse Bay/Side/Door use the exact unsuffixed handoff names for white defaults; black alternatives use _Black.",
+    "Two-dimensional net-house post ownership uses one leading-corner post per bay and separate boundary pieces to avoid doubled shared corner posts.",
+    "NetHouse_Post_4m, ClosureBeam_4m, ClosureBeam_8m and Greenhouse_EndArch are four added closure components.",
+    "LowTunnel optional terminal hoop is an editable source parameter; repeat modules use start-owned hoops."
+  ],
+  "assembly_instructions": "Reports/structures_assembly.md",
+  "verification": "Reports/VALIDATION.json",
+  "assets": [
+    {
+      "name": "SM_PazFarm_Avocado_A",
+      "size_metres_W_D_H": [
+        5.5,
+        5.25,
+        5.8
+      ],
+      "bounds_metres": [
+        [
+          -2.6698083877563477,
+          -2.752295970916748,
+          0.0
+        ],
+        [
+          2.8301916122436523,
+          2.497704029083252,
+          5.800000190734863
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_A.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_A.png",
+      "nominal_size_metres": [
+        5.5,
+        5.25,
+        5.8
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_AvocadoBark_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoBark_Normal.png",
+        "Textures/T_PazFarm_AvocadoBark_ORM.png",
+        "Textures/T_PazFarm_AvocadoFruit_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoFruit_Normal.png",
+        "Textures/T_PazFarm_AvocadoFruit_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "f199f170e61d7cae2c90ac526de97e137b06ea9708c171e44ae4481d07445573",
+      "blend_sha256": "f8a0c4f85f24079eadce65537a98190545b8f45592ace7dc929f24021a8a6a35",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Avocado_B",
+      "size_metres_W_D_H": [
+        5.9,
+        5.45,
+        6.4
+      ],
+      "bounds_metres": [
+        [
+          -2.968524932861328,
+          -2.6655869483947754,
+          0.0
+        ],
+        [
+          2.9314751625061035,
+          2.7844130992889404,
+          6.400000095367432
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_B.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_B.png",
+      "nominal_size_metres": [
+        5.9,
+        5.45,
+        6.4
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_AvocadoBark_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoBark_Normal.png",
+        "Textures/T_PazFarm_AvocadoBark_ORM.png",
+        "Textures/T_PazFarm_AvocadoFruit_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoFruit_Normal.png",
+        "Textures/T_PazFarm_AvocadoFruit_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "915565c7d5a09b6d9236d3cd3bf812ae0d4f22c550369a863c3acf6c2ed11e5c",
+      "blend_sha256": "f8a0c4f85f24079eadce65537a98190545b8f45592ace7dc929f24021a8a6a35",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Avocado_C",
+      "size_metres_W_D_H": [
+        5.15,
+        5.4,
+        5.4
+      ],
+      "bounds_metres": [
+        [
+          -2.4873716831207275,
+          -2.774808883666992,
+          0.0
+        ],
+        [
+          2.662628412246704,
+          2.6251909732818604,
+          5.400000095367432
+        ]
+      ],
+      "triangles_LOD0": 57884,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AvocadoBark",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoBark_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoBark_Normal.png",
+            "Textures\\T_PazFarm_AvocadoBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_Normal.png",
+            "Textures\\T_PazFarm_AvocadoLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_AvocadoFruit",
+          "textures": [
+            "Textures\\T_PazFarm_AvocadoFruit_BaseColor.png",
+            "Textures\\T_PazFarm_AvocadoFruit_Normal.png",
+            "Textures\\T_PazFarm_AvocadoFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Avocado_C.fbx",
+      "preview": "Previews/SM_PazFarm_Avocado_C.png",
+      "nominal_size_metres": [
+        5.15,
+        5.4,
+        5.4
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Avocado.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_AvocadoBark_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoBark_Normal.png",
+        "Textures/T_PazFarm_AvocadoBark_ORM.png",
+        "Textures/T_PazFarm_AvocadoFruit_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoFruit_Normal.png",
+        "Textures/T_PazFarm_AvocadoFruit_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf0_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf1_ORM.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_Normal.png",
+        "Textures/T_PazFarm_AvocadoLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "6f1acee0a3c82eb621a698a5b94ed4bacdf0dec6d2ecd70b0af6fa2e13f8ad07",
+      "blend_sha256": "f8a0c4f85f24079eadce65537a98190545b8f45592ace7dc929f24021a8a6a35",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Lemon_A",
+      "size_metres_W_D_H": [
+        3.25,
+        3.1,
+        3.45
+      ],
+      "bounds_metres": [
+        [
+          -1.6299099922180176,
+          -1.5822876691818237,
+          0.0
+        ],
+        [
+          1.6200900077819824,
+          1.5177123546600342,
+          3.450000047683716
+        ]
+      ],
+      "triangles_LOD0": 56556,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_LemonBark",
+          "textures": [
+            "Textures\\T_PazFarm_LemonBark_BaseColor.png",
+            "Textures\\T_PazFarm_LemonBark_Normal.png",
+            "Textures\\T_PazFarm_LemonBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf0_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf1_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf2_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonFruit",
+          "textures": [
+            "Textures\\T_PazFarm_LemonFruit_BaseColor.png",
+            "Textures\\T_PazFarm_LemonFruit_Normal.png",
+            "Textures\\T_PazFarm_LemonFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Lemon_A.fbx",
+      "preview": "Previews/SM_PazFarm_Lemon_A.png",
+      "nominal_size_metres": [
+        3.25,
+        3.1,
+        3.45
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Lemon.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_LemonBark_BaseColor.png",
+        "Textures/T_PazFarm_LemonBark_Normal.png",
+        "Textures/T_PazFarm_LemonBark_ORM.png",
+        "Textures/T_PazFarm_LemonFruit_BaseColor.png",
+        "Textures/T_PazFarm_LemonFruit_Normal.png",
+        "Textures/T_PazFarm_LemonFruit_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf0_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf0_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf1_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf1_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf2_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "28107f0465db3e0f2b767115ff06fe4cebb4d00388d9059ba6773017ff7f1c37",
+      "blend_sha256": "3813d1209a5e1cda4213a4630eeef550d01d8b49f0ebf0e929ce2edd38924625",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Lemon_B",
+      "size_metres_W_D_H": [
+        3.5,
+        3.25,
+        3.8
+      ],
+      "bounds_metres": [
+        [
+          -1.7191632986068726,
+          -1.638113021850586,
+          0.0
+        ],
+        [
+          1.7808367013931274,
+          1.611886978149414,
+          3.799999952316284
+        ]
+      ],
+      "triangles_LOD0": 56556,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_LemonBark",
+          "textures": [
+            "Textures\\T_PazFarm_LemonBark_BaseColor.png",
+            "Textures\\T_PazFarm_LemonBark_Normal.png",
+            "Textures\\T_PazFarm_LemonBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf0_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf1_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_LemonLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_LemonLeaf2_Normal.png",
+            "Textures\\T_PazFarm_LemonLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LemonFruit",
+          "textures": [
+            "Textures\\T_PazFarm_LemonFruit_BaseColor.png",
+            "Textures\\T_PazFarm_LemonFruit_Normal.png",
+            "Textures\\T_PazFarm_LemonFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Lemon_B.fbx",
+      "preview": "Previews/SM_PazFarm_Lemon_B.png",
+      "nominal_size_metres": [
+        3.5,
+        3.25,
+        3.8
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Lemon.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_LemonBark_BaseColor.png",
+        "Textures/T_PazFarm_LemonBark_Normal.png",
+        "Textures/T_PazFarm_LemonBark_ORM.png",
+        "Textures/T_PazFarm_LemonFruit_BaseColor.png",
+        "Textures/T_PazFarm_LemonFruit_Normal.png",
+        "Textures/T_PazFarm_LemonFruit_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf0_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf0_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf1_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf1_ORM.png",
+        "Textures/T_PazFarm_LemonLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_LemonLeaf2_Normal.png",
+        "Textures/T_PazFarm_LemonLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "987425dde783c173b54c3a57441cde084709b89392a1433680b50f5612a8d450",
+      "blend_sha256": "3813d1209a5e1cda4213a4630eeef550d01d8b49f0ebf0e929ce2edd38924625",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Orange_A",
+      "size_metres_W_D_H": [
+        3.65,
+        3.35,
+        3.65
+      ],
+      "bounds_metres": [
+        [
+          -1.8508713245391846,
+          -1.6373412609100342,
+          0.0
+        ],
+        [
+          1.7991286516189575,
+          1.7126586437225342,
+          3.6500000953674316
+        ]
+      ],
+      "triangles_LOD0": 57012,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_OrangeBark",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeBark_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeBark_Normal.png",
+            "Textures\\T_PazFarm_OrangeBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeFruit",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeFruit_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeFruit_Normal.png",
+            "Textures\\T_PazFarm_OrangeFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Orange_A.fbx",
+      "preview": "Previews/SM_PazFarm_Orange_A.png",
+      "nominal_size_metres": [
+        3.65,
+        3.35,
+        3.65
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Orange.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_OrangeBark_BaseColor.png",
+        "Textures/T_PazFarm_OrangeBark_Normal.png",
+        "Textures/T_PazFarm_OrangeBark_ORM.png",
+        "Textures/T_PazFarm_OrangeFruit_BaseColor.png",
+        "Textures/T_PazFarm_OrangeFruit_Normal.png",
+        "Textures/T_PazFarm_OrangeFruit_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf0_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf0_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf1_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf1_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf2_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "60470220aa3cab94cf42d8f8c2d7441afc93197dd61dc101af48b4bf570d6063",
+      "blend_sha256": "c51967e632d9b09f1d03258503bff36a2cb4cb91e5f0760c235158e10de4d410",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Orange_B",
+      "size_metres_W_D_H": [
+        3.2,
+        3.05,
+        3.3
+      ],
+      "bounds_metres": [
+        [
+          -1.5669366121292114,
+          -1.5010827779769897,
+          0.0
+        ],
+        [
+          1.6330634355545044,
+          1.5489171743392944,
+          3.299999952316284
+        ]
+      ],
+      "triangles_LOD0": 57012,
+      "triangle_budget": 60000,
+      "materials": [
+        {
+          "name": "M_PazFarm_OrangeBark",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeBark_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeBark_Normal.png",
+            "Textures\\T_PazFarm_OrangeBark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf0",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf0_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf0_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf1",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf1_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf1_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeLeaf2",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeLeaf2_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_Normal.png",
+            "Textures\\T_PazFarm_OrangeLeaf2_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_OrangeFruit",
+          "textures": [
+            "Textures\\T_PazFarm_OrangeFruit_BaseColor.png",
+            "Textures\\T_PazFarm_OrangeFruit_Normal.png",
+            "Textures\\T_PazFarm_OrangeFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original orchard tree with branching trunk, individually curved alpha-masked two-sided leaves, and scattered fruit.",
+        "No wind, no collision. UV0 includes intentional reusable leaf-card UV overlap.",
+        "Crown and height defaults are authored approximations; orchard species locations are not inferred from the aerial screenshot.",
+        "Blender ground origin at trunk base. For Unreal use foliage MASKED + Two Sided; base colour alpha is opacity mask.",
+        "Variant B is clementine, with smaller fruit than orange variant A."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_Orange_B.fbx",
+      "preview": "Previews/SM_PazFarm_Orange_B.png",
+      "nominal_size_metres": [
+        3.2,
+        3.05,
+        3.3
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Orange.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_OrangeBark_BaseColor.png",
+        "Textures/T_PazFarm_OrangeBark_Normal.png",
+        "Textures/T_PazFarm_OrangeBark_ORM.png",
+        "Textures/T_PazFarm_OrangeFruit_BaseColor.png",
+        "Textures/T_PazFarm_OrangeFruit_Normal.png",
+        "Textures/T_PazFarm_OrangeFruit_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf0_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf0_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf0_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf1_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf1_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf1_ORM.png",
+        "Textures/T_PazFarm_OrangeLeaf2_BaseColor.png",
+        "Textures/T_PazFarm_OrangeLeaf2_Normal.png",
+        "Textures/T_PazFarm_OrangeLeaf2_ORM.png"
+      ],
+      "fbx_sha256": "ea031563435a89fe6591d3262155c2245b31a443a22476e424b9886af6f7dbd5",
+      "blend_sha256": "c51967e632d9b09f1d03258503bff36a2cb4cb91e5f0760c235158e10de4d410",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m",
+      "size_metres_W_D_H": [
+        0.8,
+        4.0,
+        0.44156
+      ],
+      "bounds_metres": [
+        [
+          -0.4000000059604645,
+          0.0,
+          0.0
+        ],
+        [
+          0.4000000059604645,
+          4.0,
+          0.441556453704834
+        ]
+      ],
+      "triangles_LOD0": 17748,
+      "triangle_budget": 20000,
+      "materials": [
+        {
+          "name": "M_PazFarm_StrawberryMulch",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryMulch_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryMulch_Normal.png",
+            "Textures\\T_PazFarm_StrawberryMulch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberrySoil",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberrySoil_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberrySoil_Normal.png",
+            "Textures\\T_PazFarm_StrawberrySoil_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeaf",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeaf_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_ORM.png",
+            "Textures/T_PazFarm_StrawberryLeaf_Opacity.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeafNew",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeafNew_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_ORM.png",
+            "Textures/T_PazFarm_StrawberryLeafNew_Opacity.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPetiole",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPetiole_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFruit",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFruit_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFruit_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFruit_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFlower",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFlower_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFlower_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFlower_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPollen",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPollen_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPollen_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPollen_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Open-bed default, 0.8m wide x 4m long, 0.25m raised mulch mound; canopy approx 0.20m above bed.",
+        "Two rows of 12 plants. Each plant has four trifoliate serrated compound leaves; red seeded fruits and six small five-petal flowers.",
+        "Pivot is the ground centre of the Y=0 short end. Tile translations (0,4*n,0). Geometry stays within the 0.8m x 4m footprint.",
+        "Black plastic mulch, original geometric foliage outlines with solid masked opacity. Two-sided foliage; no plant collision.",
+        "Editable deterministic parameters in build_strawberries.py and scene PazFarm_parameters; all textures original CC0 procedural artwork."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "preview": "Previews/SM_PazFarm_StrawberryBed_4m.png",
+      "nominal_size_metres": [
+        0.8,
+        4,
+        0.45
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "detail_preview": "Previews/SM_PazFarm_StrawberryBed_4m_Detail.png",
+      "blend": "Blend/Strawberry.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_StrawberryFlower_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryFlower_Normal.png",
+        "Textures/T_PazFarm_StrawberryFlower_ORM.png",
+        "Textures/T_PazFarm_StrawberryFruit_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryFruit_Normal.png",
+        "Textures/T_PazFarm_StrawberryFruit_ORM.png",
+        "Textures/T_PazFarm_StrawberryLeafNew_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryLeafNew_Normal.png",
+        "Textures/T_PazFarm_StrawberryLeafNew_ORM.png",
+        "Textures/T_PazFarm_StrawberryLeafNew_Opacity.png",
+        "Textures/T_PazFarm_StrawberryLeaf_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryLeaf_Normal.png",
+        "Textures/T_PazFarm_StrawberryLeaf_ORM.png",
+        "Textures/T_PazFarm_StrawberryLeaf_Opacity.png",
+        "Textures/T_PazFarm_StrawberryMulch_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryMulch_Normal.png",
+        "Textures/T_PazFarm_StrawberryMulch_ORM.png",
+        "Textures/T_PazFarm_StrawberryPetiole_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryPetiole_Normal.png",
+        "Textures/T_PazFarm_StrawberryPetiole_ORM.png",
+        "Textures/T_PazFarm_StrawberryPollen_BaseColor.png",
+        "Textures/T_PazFarm_StrawberryPollen_Normal.png",
+        "Textures/T_PazFarm_StrawberryPollen_ORM.png",
+        "Textures/T_PazFarm_StrawberrySoil_BaseColor.png",
+        "Textures/T_PazFarm_StrawberrySoil_Normal.png",
+        "Textures/T_PazFarm_StrawberrySoil_ORM.png"
+      ],
+      "fbx_sha256": "127b0a2daf913446757fffec32112eb2a7f7022f9fe60c89d7d43cf3e67a114d",
+      "blend_sha256": "11ad5b3475d106d129162987acd927521787a9a480ef5eb445f63138992447b6",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_LowTunnel_4m",
+      "size_metres_W_D_H": [
+        1.2,
+        4.0,
+        1.0
+      ],
+      "bounds_metres": [
+        [
+          -0.6000000238418579,
+          0.0,
+          0.0
+        ],
+        [
+          0.6000000238418579,
+          4.0,
+          1.0
+        ]
+      ],
+      "triangles_LOD0": 2560,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_LowTunnelFilm",
+          "textures": [
+            "Textures\\T_PazFarm_LowTunnelFilm_BaseColor.png",
+            "Textures\\T_PazFarm_LowTunnelFilm_Normal.png",
+            "Textures\\T_PazFarm_LowTunnelFilm_ORM.png",
+            "Textures/T_PazFarm_LowTunnelFilm_Opacity.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_LowTunnelSteel",
+          "textures": [
+            "Textures\\T_PazFarm_LowTunnelSteel_BaseColor.png",
+            "Textures\\T_PazFarm_LowTunnelSteel_Normal.png",
+            "Textures\\T_PazFarm_LowTunnelSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Optional open-ended low plastic crop tunnel: 1.2m span x 4m length x 1m outer-film crown.",
+        "Pivot ground centre of Y=0 short end. Tile translations (0,4*n,0); film seams flush, no end caps.",
+        "Each module owns start hoop at Y=0.007 (inset to keep frame inside boundary), and hoops Y=1,2,3. Next module supplies next start hoop.",
+        "For the last module of a row enable include_terminal_hoop to add its last hoop at Y=3.993. Retained source parameter makes this easy to change.",
+        "Film must be reconstructed in Unreal as translucent two-sided: BaseColor alpha 0.26, roughness .28, IOR 1.46, Blender transmission .25. FBX does not reproduce this automatically.",
+        "No collision for soft low crop tunnel; not a walk-in structure. Editable source parameters included."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_LowTunnel_4m.fbx",
+      "preview": "Previews/SM_PazFarm_LowTunnel_4m.png",
+      "nominal_size_metres": [
+        1.2,
+        4,
+        1
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/LowTunnel.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_LowTunnelFilm_BaseColor.png",
+        "Textures/T_PazFarm_LowTunnelFilm_Normal.png",
+        "Textures/T_PazFarm_LowTunnelFilm_ORM.png",
+        "Textures/T_PazFarm_LowTunnelFilm_Opacity.png",
+        "Textures/T_PazFarm_LowTunnelSteel_BaseColor.png",
+        "Textures/T_PazFarm_LowTunnelSteel_Normal.png",
+        "Textures/T_PazFarm_LowTunnelSteel_ORM.png"
+      ],
+      "fbx_sha256": "6f5b9a60584a4fc84fc0fd08312d3211d5c67fe2d9a7d1cef9314a4936717306",
+      "blend_sha256": "9533a161c0525aa2f1eb9be144cac95314a6144d8a13cae4ab94a7742f711dd9",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Bay_8x4",
+      "size_metres_W_D_H": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 218,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Default flat white shade house; Black is the alternative material variant.",
+        "Pivot is the south-west/lower-left ground corner (0,0,0); source front is -Y.",
+        "Tile at (i*8,j*4,0) in Blender metres. Exact rendered envelope is 8 x 4 x 4 m.",
+        "Half-open 2D lattice: each bay owns ONLY its lower-left post, leading Y=0 rail and left X=0 rail. Adjacent bays do not duplicate posts or rails.",
+        "Close external right/rear boundaries with supplied Post_4m and ClosureBeam pieces; see Reports/structures_assembly.md.",
+        "Net UV0 repeats at 16/m: approximately 7.8 mm openings; use BaseColor alpha as masked opacity with two-sided material.",
+        "All dimensions are adjustable in Scripts/build_structures.py or --parameters JSON."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_00",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_01",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Bay_8x4.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Bay_8x4.png",
+      "nominal_size_metres": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png",
+        "Textures/T_PazFarm_NetWhite_BaseColor.png",
+        "Textures/T_PazFarm_NetWhite_Normal.png",
+        "Textures/T_PazFarm_NetWhite_ORM.png"
+      ],
+      "fbx_sha256": "e25831f041956d099e86178cec26b16e74717638ac6c493f6e1b169a9ffa41f8",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Side_4",
+      "size_metres_W_D_H": [
+        4.0,
+        0.012,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.006000087596476078,
+          0.0
+        ],
+        [
+          4.0,
+          0.006000087596476078,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 114,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre net curtain; source plane is XZ at Y=0; pivot is left ground edge.",
+        "Curtain has binding hems only. Loadbearing boundary rails/posts come from Bay and closure pieces, so walls do not duplicate corner posts.",
+        "Place X-facing walls at x=4*k; rotate 90 degrees about Z for Y-facing walls. Panels tile exactly at a 4 m pitch.",
+        "No collision for flexible net; two-sided masked opacity from net BaseColor alpha."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Side_4.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Side_4.png",
+      "nominal_size_metres": [
+        4.0,
+        0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetBinding_BaseColor.png",
+        "Textures/T_PazFarm_NetBinding_Normal.png",
+        "Textures/T_PazFarm_NetBinding_ORM.png",
+        "Textures/T_PazFarm_NetWhite_BaseColor.png",
+        "Textures/T_PazFarm_NetWhite_Normal.png",
+        "Textures/T_PazFarm_NetWhite_ORM.png"
+      ],
+      "fbx_sha256": "79749dbbc3efb1baa78f17e0c01eb86a0469accfb47a68d7a5bfb2110d85892f",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Door",
+      "size_metres_W_D_H": [
+        4.0,
+        1.63856,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.027499999850988388,
+          0.0
+        ],
+        [
+          4.0,
+          1.6110635995864868,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 364,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetWhite",
+          "textures": [
+            "Textures\\T_PazFarm_NetWhite_BaseColor.png",
+            "Textures\\T_PazFarm_NetWhite_Normal.png",
+            "Textures\\T_PazFarm_NetWhite_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre wall with a 1.6 m wide x 2.5 m high doorway; leaf is folded inward by 85 degrees in the default.",
+        "Pivot left ground edge; XZ wall at Y=0; positive Y is inward.",
+        "UCX is limited to jambs/lintel, with no box blocking the doorway. Open leaf is visual-only.",
+        "NetHouse has no sill crossing the walking opening. Door width/height and folded-leaf construction are parameterized."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Door_00",
+        "UCX_SM_PazFarm_NetHouse_Door_01",
+        "UCX_SM_PazFarm_NetHouse_Door_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Door.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Door.png",
+      "nominal_size_metres": [
+        4.0,
+        1.5541,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetBinding_BaseColor.png",
+        "Textures/T_PazFarm_NetBinding_Normal.png",
+        "Textures/T_PazFarm_NetBinding_ORM.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png",
+        "Textures/T_PazFarm_NetWhite_BaseColor.png",
+        "Textures/T_PazFarm_NetWhite_Normal.png",
+        "Textures/T_PazFarm_NetWhite_ORM.png"
+      ],
+      "fbx_sha256": "6f5b1bff6d344f67873a4034fc6978c547b670d28622dab85d7ea4bdc634187c",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Bay_8x4_Black",
+      "size_metres_W_D_H": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 218,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Default flat white shade house; Black is the alternative material variant.",
+        "Pivot is the south-west/lower-left ground corner (0,0,0); source front is -Y.",
+        "Tile at (i*8,j*4,0) in Blender metres. Exact rendered envelope is 8 x 4 x 4 m.",
+        "Half-open 2D lattice: each bay owns ONLY its lower-left post, leading Y=0 rail and left X=0 rail. Adjacent bays do not duplicate posts or rails.",
+        "Close external right/rear boundaries with supplied Post_4m and ClosureBeam pieces; see Reports/structures_assembly.md.",
+        "Net UV0 repeats at 16/m: approximately 7.8 mm openings; use BaseColor alpha as masked opacity with two-sided material.",
+        "All dimensions are adjustable in Scripts/build_structures.py or --parameters JSON."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_00",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_01",
+        "UCX_SM_PazFarm_NetHouse_Bay_8x4_Black_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Bay_8x4_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Bay_8x4_Black.png",
+      "nominal_size_metres": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetBlack_BaseColor.png",
+        "Textures/T_PazFarm_NetBlack_Normal.png",
+        "Textures/T_PazFarm_NetBlack_ORM.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "3eb62d3dfce8d90b9fcc94a2dbe42d4e6d9f70f993cc01887fafbd7f71d2f587",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Side_4_Black",
+      "size_metres_W_D_H": [
+        4.0,
+        0.012,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.006000087596476078,
+          0.0
+        ],
+        [
+          4.0,
+          0.006000087596476078,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 114,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre net curtain; source plane is XZ at Y=0; pivot is left ground edge.",
+        "Curtain has binding hems only. Loadbearing boundary rails/posts come from Bay and closure pieces, so walls do not duplicate corner posts.",
+        "Place X-facing walls at x=4*k; rotate 90 degrees about Z for Y-facing walls. Panels tile exactly at a 4 m pitch.",
+        "No collision for flexible net; two-sided masked opacity from net BaseColor alpha."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Side_4_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Side_4_Black.png",
+      "nominal_size_metres": [
+        4.0,
+        0,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetBinding_BaseColor.png",
+        "Textures/T_PazFarm_NetBinding_Normal.png",
+        "Textures/T_PazFarm_NetBinding_ORM.png",
+        "Textures/T_PazFarm_NetBlack_BaseColor.png",
+        "Textures/T_PazFarm_NetBlack_Normal.png",
+        "Textures/T_PazFarm_NetBlack_ORM.png"
+      ],
+      "fbx_sha256": "ec13967807a4808c9d89a2a55c8f80d0cad3ef7a458fed18e021d2054ab07fbf",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Door_Black",
+      "size_metres_W_D_H": [
+        4.0,
+        1.63856,
+        4.0
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          -0.027499999850988388,
+          0.0
+        ],
+        [
+          4.0,
+          1.6110635995864868,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 364,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetBlack",
+          "textures": [
+            "Textures\\T_PazFarm_NetBlack_BaseColor.png",
+            "Textures\\T_PazFarm_NetBlack_Normal.png",
+            "Textures\\T_PazFarm_NetBlack_ORM.png"
+          ],
+          "mode": "MASKED_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_NetBinding",
+          "textures": [
+            "Textures\\T_PazFarm_NetBinding_BaseColor.png",
+            "Textures\\T_PazFarm_NetBinding_Normal.png",
+            "Textures\\T_PazFarm_NetBinding_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Four-metre wall with a 1.6 m wide x 2.5 m high doorway; leaf is folded inward by 85 degrees in the default.",
+        "Pivot left ground edge; XZ wall at Y=0; positive Y is inward.",
+        "UCX is limited to jambs/lintel, with no box blocking the doorway. Open leaf is visual-only.",
+        "NetHouse has no sill crossing the walking opening. Door width/height and folded-leaf construction are parameterized."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Door_Black_00",
+        "UCX_SM_PazFarm_NetHouse_Door_Black_01",
+        "UCX_SM_PazFarm_NetHouse_Door_Black_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Door_Black.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Door_Black.png",
+      "nominal_size_metres": [
+        4.0,
+        1.5541,
+        4.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetBinding_BaseColor.png",
+        "Textures/T_PazFarm_NetBinding_Normal.png",
+        "Textures/T_PazFarm_NetBinding_ORM.png",
+        "Textures/T_PazFarm_NetBlack_BaseColor.png",
+        "Textures/T_PazFarm_NetBlack_Normal.png",
+        "Textures/T_PazFarm_NetBlack_ORM.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "dd23339fbc1b6fb71ce12f11015fd7d7ea117472690e3f4b7f74d6515e08283f",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_Post_4m",
+      "size_metres_W_D_H": [
+        0.08,
+        0.08,
+        3.96
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.07999999821186066,
+          0.07999999821186066,
+          3.9600000381469727
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary outer-boundary post. Pivot at lower-left footprint corner; visible post reaches underside of 4 m roof rail.",
+        "For Nx by Ny bays, place right edge at x=Nx*8-0.08, y=j*4; rear edge at x=i*8,y=Ny*4-0.08; add one far corner at x=Nx*8-0.08,y=Ny*4-0.08.",
+        "Right-edge j=0..Ny-1; rear-edge i=0..Nx-1. This recipe creates (Nx+1)*(Ny+1) posts, with no duplicate positions."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_Post_4m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_Post_4m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_Post_4m.png",
+      "nominal_size_metres": [
+        0.08,
+        0.08,
+        3.96
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "1258ee46c589d6589910fdf8bb5750a7fa040ba02413dfa21702906f76d41267",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_ClosureBeam_4m",
+      "size_metres_W_D_H": [
+        4.0,
+        0.04,
+        0.04
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          3.9600000381469727
+        ],
+        [
+          4.0,
+          0.03999999910593033,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary missing outer-boundary top rail, modelled along +X at elevation 3.96..4.00 m, pivot ground at one end.",
+        "Rear edge: use 8m beam at (i*8,Ny*4-0.04,0). Right edge: 4m beam rotated +90deg, at (Nx*8,j*4,0).",
+        "Beam end-to-end seams are flush. At outer corners perpendicular rail ends meet with a small intended structural corner joint; no doubled coplanar rail surfaces."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_ClosureBeam_4m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_ClosureBeam_4m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_ClosureBeam_4m.png",
+      "nominal_size_metres": [
+        4.0,
+        0.04,
+        0.04
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "c9f2e68fc1883b2d2d690063c3b030d01f1e25af88354990ec9fb428b8d05a28",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_NetHouse_ClosureBeam_8m",
+      "size_metres_W_D_H": [
+        8.0,
+        0.04,
+        0.04
+      ],
+      "bounds_metres": [
+        [
+          0.0,
+          0.0,
+          3.9600000381469727
+        ],
+        [
+          8.0,
+          0.03999999910593033,
+          4.0
+        ]
+      ],
+      "triangles_LOD0": 44,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_NetGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_NetGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary missing outer-boundary top rail, modelled along +X at elevation 3.96..4.00 m, pivot ground at one end.",
+        "Rear edge: use 8m beam at (i*8,Ny*4-0.04,0). Right edge: 4m beam rotated +90deg, at (Nx*8,j*4,0).",
+        "Beam end-to-end seams are flush. At outer corners perpendicular rail ends meet with a small intended structural corner joint; no doubled coplanar rail surfaces."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_NetHouse_ClosureBeam_8m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_NetHouse_ClosureBeam_8m.fbx",
+      "preview": "Previews/SM_PazFarm_NetHouse_ClosureBeam_8m.png",
+      "nominal_size_metres": [
+        8.0,
+        0.04,
+        0.04
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/NetHouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_NetGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_NetGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "d24ae712feabdeca270566f0f312d124f7a3f8d14f67d36f54c18b64f242dcab",
+      "blend_sha256": "0201c0e62f71822f2dad4bd7a3c51159d79a84e991f3396796c1483c05640b24",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_Tunnel_9x4",
+      "size_metres_W_D_H": [
+        9.0,
+        4.0,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          0.0,
+          0.0
+        ],
+        [
+          4.5,
+          4.0,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 960,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseFilm",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilm_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "9 m outer film span x 4 m axial pitch x 4.5 m outer film height; source front is -Y.",
+        "Ground pivot at centre of leading short end (0,0,0); local X spans -4.5..4.5, local Y spans 0..4.",
+        "One steel arch on the leading edge only; tile at (0,j*4,0). Purlins and film end flush at exactly Y=0 and Y=4.",
+        "Add End wall at Y=0 and Y=N*4; add one EndArch closure only at Y=N*4-0.07. No duplicate interior arches.",
+        "Semi-transparent film: two sided translucent PBR; BaseColor alpha 0.20, roughness 0.28, IOR 1.46. FBX materials need native Unreal recreation.",
+        "UCX boxes follow steel arch only. Film and walking volume have no collision. No opaque box across tunnel."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_00",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_01",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_02",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_03",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_04",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_05",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_06",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_07",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_08",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_09",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_10",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_11",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_12",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_13",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_14",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_15",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_16",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_17",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_18",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_19",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_20",
+        "UCX_SM_PazFarm_Greenhouse_Tunnel_9x4_21"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_Tunnel_9x4.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_Tunnel_9x4.png",
+      "nominal_size_metres": [
+        9.0,
+        4.0,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_GreenhouseFilm_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseFilm_Normal.png",
+        "Textures/T_PazFarm_GreenhouseFilm_ORM.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "4d8a867ad31c39f48be03a3093bbb9b3c44f11f8326b714fd19450ae46403eab",
+      "blend_sha256": "0167705231b1e8a15758d24dc33373e75792398b0e9a7ae88ce9224cd639c3e1",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_End",
+      "size_metres_W_D_H": [
+        9.0,
+        0.1925,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          -0.1574999988079071,
+          0.0
+        ],
+        [
+          4.5,
+          0.03500000014901161,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 330,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseFilm",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilm_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilm_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_GreenhouseFilmSeam",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseFilmSeam_ORM.png"
+          ],
+          "mode": "TRANSLUCENT_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Domed 9 m wide x 4.5 m tall film end wall with centred 1.8 m x 2.2 m door opening; rolled-up door film above opening.",
+        "Pivot at ground centre; end wall in local XZ plane at Y=0. Can be rotated 180 degrees on far end for outside-facing rolled door.",
+        "End wall deliberately excludes a perimeter arch, so it can attach to the existing leading arch without duplicate steel.",
+        "Add exactly one Greenhouse_EndArch at trailing cap; see structures_assembly.md.",
+        "Collision only on doorway steel jambs and lintel; no sill or invisible solid blocking the opening."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_End_00",
+        "UCX_SM_PazFarm_Greenhouse_End_01",
+        "UCX_SM_PazFarm_Greenhouse_End_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_End.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_End.png",
+      "nominal_size_metres": [
+        9.0,
+        0.23,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_GreenhouseFilmSeam_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseFilmSeam_Normal.png",
+        "Textures/T_PazFarm_GreenhouseFilmSeam_ORM.png",
+        "Textures/T_PazFarm_GreenhouseFilm_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseFilm_Normal.png",
+        "Textures/T_PazFarm_GreenhouseFilm_ORM.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "4da01528bcfa9c5f89f9f36f19a3df8524b65a7216aa4c8a4264b8cd1a1a6300",
+      "blend_sha256": "0167705231b1e8a15758d24dc33373e75792398b0e9a7ae88ce9224cd639c3e1",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Greenhouse_EndArch",
+      "size_metres_W_D_H": [
+        9.0,
+        0.07,
+        4.5
+      ],
+      "bounds_metres": [
+        [
+          -4.5,
+          0.0,
+          0.0
+        ],
+        [
+          4.5,
+          0.07000000029802322,
+          4.5
+        ]
+      ],
+      "triangles_LOD0": 740,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_GreenhouseGalvanizedSteel",
+          "textures": [
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+            "Textures\\T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Supplementary single terminal arch; same ground-centre origin and profile as the tunnel leading arch.",
+        "For N sections, place at (0,N*4-0.07,0); its steel bounds finish at Y=N*4 without extending the module envelope.",
+        "Not needed at the first end because first Tunnel already owns its leading arch."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Greenhouse_EndArch_00",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_01",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_02",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_03",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_04",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_05",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_06",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_07",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_08",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_09",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_10",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_11",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_12",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_13",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_14",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_15",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_16",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_17",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_18",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_19",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_20",
+        "UCX_SM_PazFarm_Greenhouse_EndArch_21"
+      ],
+      "fbx": "FBX/SM_PazFarm_Greenhouse_EndArch.fbx",
+      "preview": "Previews/SM_PazFarm_Greenhouse_EndArch.png",
+      "nominal_size_metres": [
+        9.0,
+        0.07,
+        4.5
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "blend": "Blend/Greenhouse.blend",
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_BaseColor.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_Normal.png",
+        "Textures/T_PazFarm_GreenhouseGalvanizedSteel_ORM.png"
+      ],
+      "fbx_sha256": "71b2a53227d425527bc31ae5f6688321ad3ddf9e4e14f4b4d967051b317e4e66",
+      "blend_sha256": "0167705231b1e8a15758d24dc33373e75792398b0e9a7ae88ce9224cd639c3e1",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Barn",
+      "size_metres_W_D_H": [
+        20.57,
+        12.585,
+        8.11338
+      ],
+      "bounds_metres": [
+        [
+          -10.28499984741211,
+          -6.292500019073486,
+          -0.019999999552965164
+        ],
+        [
+          10.28499984741211,
+          6.292500019073486,
+          8.0933837890625
+        ]
+      ],
+      "triangles_LOD0": 17168,
+      "triangle_budget": 30000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Barn_WallGalvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_Normal.png",
+            "Textures\\T_PazFarm_Barn_WallGalvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_RoofPaintedGrey",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+            "Textures\\T_PazFarm_Barn_RoofPaintedGrey_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_DarkHardware",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_DarkHardware_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_Normal.png",
+            "Textures\\T_PazFarm_Barn_DarkHardware_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Barn_ConcretePlinth",
+          "textures": [
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_Normal.png",
+            "Textures\\T_PazFarm_Barn_ConcretePlinth_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Inferred default farm barn; no ground photograph was supplied. Not a surveyed reconstruction.",
+        "Wall footprint 20 x 12 m. Eave 6 m, structural ridge 8 m, roof overhang 0.24 m. Measured outer bounds include roof/flashing thickness.",
+        "Front is Blender -Y. Closed 6 x 4.4 m sliding door on long front side with external sliding rail; wall opening exists behind door.",
+        "Physical corrugated steel sheets have thickness, perimeter closures, corner uprights, verge and ridge flashing.",
+        "Pivot at footprint centre, ground level. Exterior-only prop; collision closes the building volume.",
+        "Defaults and material colours are editable in Scripts/build_barn_fence.py. All geometry and textures are original CC0."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Barn_00",
+        "UCX_SM_PazFarm_Barn_01",
+        "UCX_SM_PazFarm_Barn_02"
+      ],
+      "fbx": "FBX/SM_PazFarm_Barn.fbx",
+      "preview": "Previews/SM_PazFarm_Barn.png",
+      "nominal_size_metres": [
+        20.0,
+        12.0,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Barn.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Barn_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -6.0,
+              0.0
+            ],
+            [
+              10.0,
+              6.0,
+              6.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            12.0,
+            6.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -4.5,
+              6.0
+            ],
+            [
+              10.0,
+              4.5,
+              7.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            9.0,
+            1.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Barn_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -10.0,
+              -1.5,
+              7.0
+            ],
+            [
+              10.0,
+              1.5,
+              8.0
+            ]
+          ],
+          "size_metres": [
+            20.0,
+            3.0,
+            1.0
+          ]
+        }
+      ],
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_Barn_ConcretePlinth_BaseColor.png",
+        "Textures/T_PazFarm_Barn_ConcretePlinth_Normal.png",
+        "Textures/T_PazFarm_Barn_ConcretePlinth_ORM.png",
+        "Textures/T_PazFarm_Barn_DarkHardware_BaseColor.png",
+        "Textures/T_PazFarm_Barn_DarkHardware_Normal.png",
+        "Textures/T_PazFarm_Barn_DarkHardware_ORM.png",
+        "Textures/T_PazFarm_Barn_RoofPaintedGrey_BaseColor.png",
+        "Textures/T_PazFarm_Barn_RoofPaintedGrey_Normal.png",
+        "Textures/T_PazFarm_Barn_RoofPaintedGrey_ORM.png",
+        "Textures/T_PazFarm_Barn_WallGalvanized_BaseColor.png",
+        "Textures/T_PazFarm_Barn_WallGalvanized_Normal.png",
+        "Textures/T_PazFarm_Barn_WallGalvanized_ORM.png"
+      ],
+      "fbx_sha256": "0addf958a400065a19b1eeeca3b943083377fb9eae46fc8d9917ff63240b8fa8",
+      "blend_sha256": "0648f2061248c045c0310da967fdbbfe5e32c55db1b502d8b7c15b4a88b2fb68",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Fence_Mesh_3m",
+      "size_metres_W_D_H": [
+        3.03878,
+        0.07524,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.037620000541210175,
+          -0.037620000541210175,
+          0.0
+        ],
+        [
+          3.0011634826660156,
+          0.037620000541210175,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 1936,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Actual diamond wire geometry: diagonal galvanized wires, approximately 0.12 m horizontal and vertical diamond spans.",
+        "One post only, at the start. Nominal module length exactly 3.0 m in Blender +X; place repeats at X=0,3,6... with identical rotation.",
+        "Pivot at ground, starting post centre. Physical bounds include post radius before X=0; this does not alter the 3 m repeat pitch.",
+        "Mesh and horizontal rails terminate at X=3.0 m and meet the next post; no doubled posts. Add Fence_Post at the final X endpoint.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Mesh_3m_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Mesh_3m.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Mesh_3m.png",
+      "nominal_size_metres": [
+        3.0,
+        0.066,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Mesh_3m_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.033499956130981445,
+              -0.03750000149011612,
+              0.0
+            ],
+            [
+              3.0334999561309814,
+              0.03750000149011612,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            3.067,
+            0.075,
+            2.0
+          ]
+        }
+      ],
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_Fence_DarkLatch_BaseColor.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_Normal.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_ORM.png",
+        "Textures/T_PazFarm_Fence_Galvanized_BaseColor.png",
+        "Textures/T_PazFarm_Fence_Galvanized_Normal.png",
+        "Textures/T_PazFarm_Fence_Galvanized_ORM.png"
+      ],
+      "fbx_sha256": "4c20ec7ca1ac66dd58234c923db52a1b78686c842f8de4baba892b1cb9b8de58",
+      "blend_sha256": "d2ba717332b315322063da642f25c341f4041ac1600f34bffe257f7630464c0d",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Fence_Post",
+      "size_metres_W_D_H": [
+        0.09576,
+        0.09576,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.04788000136613846,
+          -0.04788000136613846,
+          0.0
+        ],
+        [
+          0.04788000136613846,
+          0.04788000136613846,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 220,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Terminal/end post; pivot at ground, post centre. Place at the open end of a 3 m panel run.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Post_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Post.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Post.png",
+      "nominal_size_metres": [
+        0.084,
+        0.084,
+        2
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Post_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.05000000074505806,
+              -0.05000000074505806,
+              0.0
+            ],
+            [
+              0.05000000074505806,
+              0.05000000074505806,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.1,
+            0.1,
+            2.0
+          ]
+        }
+      ],
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_Fence_DarkLatch_BaseColor.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_Normal.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_ORM.png",
+        "Textures/T_PazFarm_Fence_Galvanized_BaseColor.png",
+        "Textures/T_PazFarm_Fence_Galvanized_Normal.png",
+        "Textures/T_PazFarm_Fence_Galvanized_ORM.png"
+      ],
+      "fbx_sha256": "3840643904c33e37d82572f256451049d9dc7f7baabc4175be6c422968f44ef0",
+      "blend_sha256": "d2ba717332b315322063da642f25c341f4041ac1600f34bffe257f7630464c0d",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Fence_Corner",
+      "size_metres_W_D_H": [
+        0.75244,
+        0.75244,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -0.05243999883532524,
+          -0.05243999883532524,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 300,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Corner post with two orthogonal diagonal stays toward Blender +X and +Y; rotate whole piece to suit corner.",
+        "Pivot at ground, post centre. Corner-post UCX covers the upright only; slim diagonal stays have no collision.",
+        "Use at the meeting point of two runs that terminate here, or remove redundant terminal upright in source if integrating a run that starts here.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Fence_Corner_00"
+      ],
+      "fbx": "FBX/SM_PazFarm_Fence_Corner.fbx",
+      "preview": "Previews/SM_PazFarm_Fence_Corner.png",
+      "nominal_size_metres": [
+        0.7,
+        0.7,
+        2
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Fence_Corner_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -0.054999999701976776,
+              -0.054999999701976776,
+              0.0
+            ],
+            [
+              0.054999999701976776,
+              0.054999999701976776,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.11,
+            0.11,
+            2.0
+          ]
+        }
+      ],
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_Fence_DarkLatch_BaseColor.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_Normal.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_ORM.png",
+        "Textures/T_PazFarm_Fence_Galvanized_BaseColor.png",
+        "Textures/T_PazFarm_Fence_Galvanized_Normal.png",
+        "Textures/T_PazFarm_Fence_Galvanized_ORM.png"
+      ],
+      "fbx_sha256": "501edf72d5f0edf537fb1f650145a678eeb84040da8382a028316f7804562daa",
+      "blend_sha256": "d2ba717332b315322063da642f25c341f4041ac1600f34bffe257f7630464c0d",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    },
+    {
+      "name": "SM_PazFarm_Gate_Double_6m",
+      "size_metres_W_D_H": [
+        6.0,
+        0.1375,
+        2.0
+      ],
+      "bounds_metres": [
+        [
+          -3.0,
+          -0.07750000059604645,
+          0.0
+        ],
+        [
+          3.0,
+          0.05999999865889549,
+          2.0
+        ]
+      ],
+      "triangles_LOD0": 3664,
+      "triangle_budget": 5000,
+      "materials": [
+        {
+          "name": "M_PazFarm_Fence_Galvanized",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_Galvanized_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_Normal.png",
+            "Textures\\T_PazFarm_Fence_Galvanized_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_Fence_DarkLatch",
+          "textures": [
+            "Textures\\T_PazFarm_Fence_DarkLatch_BaseColor.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_Normal.png",
+            "Textures\\T_PazFarm_Fence_DarkLatch_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Two closed steel swing-gate leaves with actual diamond wire infill, diagonal stays, hinge barrels, drop bolts and latch.",
+        "Outside post width exactly 6 m. Pivot ground centre.",
+        "A static combined mesh is delivered; leaves can be separated and rotated at their hinges in the source if an opening is wanted.",
+        "Blender front -Y, Z up; FBX forward -Y / up Z, FBX Units Scale.",
+        "Original CC0 geometry and textures; geometry mesh is opaque and needs no alpha-test setup."
+      ],
+      "collision_objects": [
+        "UCX_SM_PazFarm_Gate_Double_6m_00",
+        "UCX_SM_PazFarm_Gate_Double_6m_01",
+        "UCX_SM_PazFarm_Gate_Double_6m_02",
+        "UCX_SM_PazFarm_Gate_Double_6m_03"
+      ],
+      "fbx": "FBX/SM_PazFarm_Gate_Double_6m.fbx",
+      "preview": "Previews/SM_PazFarm_Gate_Double_6m.png",
+      "nominal_size_metres": [
+        6.0,
+        0.12,
+        2.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "source_textures_relative": true,
+        "preview_visually_reviewed": true
+      },
+      "blend": "Blend/Fence.blend",
+      "collision_geometry": [
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_00",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -3.002500057220459,
+              -0.0625,
+              0.0
+            ],
+            [
+              -2.877500057220459,
+              0.0625,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.125,
+            0.125,
+            2.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_01",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              2.877500057220459,
+              -0.0625,
+              0.0
+            ],
+            [
+              3.002500057220459,
+              0.0625,
+              2.0
+            ]
+          ],
+          "size_metres": [
+            0.125,
+            0.125,
+            2.0
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_02",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              -2.8299999237060547,
+              -0.03999999910593033,
+              0.10000002384185791
+            ],
+            [
+              -0.034999966621398926,
+              0.03999999910593033,
+              1.909999966621399
+            ]
+          ],
+          "size_metres": [
+            2.795,
+            0.08,
+            1.81
+          ]
+        },
+        {
+          "name": "UCX_SM_PazFarm_Gate_Double_6m_03",
+          "type": "BOX",
+          "bounds_metres": [
+            [
+              0.034999966621398926,
+              -0.03999999910593033,
+              0.10000002384185791
+            ],
+            [
+              2.8299999237060547,
+              0.03999999910593033,
+              1.909999966621399
+            ]
+          ],
+          "size_metres": [
+            2.795,
+            0.08,
+            1.81
+          ]
+        }
+      ],
+      "model_source_licence": {
+        "origin": "Original self-authored geometry and procedural texture pixels made for this delivery.",
+        "licence": "CC0-1.0",
+        "reference_use": "Provided aerial image inspected for site context only; no image pixels used in any texture."
+      },
+      "textures": [
+        "Textures/T_PazFarm_Fence_DarkLatch_BaseColor.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_Normal.png",
+        "Textures/T_PazFarm_Fence_DarkLatch_ORM.png",
+        "Textures/T_PazFarm_Fence_Galvanized_BaseColor.png",
+        "Textures/T_PazFarm_Fence_Galvanized_Normal.png",
+        "Textures/T_PazFarm_Fence_Galvanized_ORM.png"
+      ],
+      "fbx_sha256": "c4c15bac06c5e80c0f8000c37fdcf81022324d5feb289f38a6f21cb3a8a7f584",
+      "blend_sha256": "d2ba717332b315322063da642f25c341f4041ac1600f34bffe257f7630464c0d",
+      "size_axes": "W=X, D=Y, H=Z in the Blender source; dimensions include geometry overhangs. Module pitch is documented separately.",
+      "native_unreal_verified": false,
+      "offline_fbx_roundtrip_verified": true
+    }
+  ]
+}

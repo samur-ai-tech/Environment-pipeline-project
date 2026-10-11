@@ -1,0 +1,371 @@
+{
+  "grid": {
+    "bounds_epsg4326": {
+      "west": 34.88630064215473,
+      "east": 34.92890135784527,
+      "south": 31.83216786950253,
+      "north": 31.868530130497472
+    },
+    "pixels": 1009,
+    "metres_per_pixel": 3.99603567888999,
+    "centre": [
+      34.907601,
+      31.850349
+    ],
+    "local_frame": {
+      "Mlat_m_per_deg": 110884.19393286,
+      "Mlon_m_per_deg": 94646.29724274
+    }
+  },
+  "classes": [
+    {
+      "code": 1,
+      "name": "water",
+      "share": 0.002,
+      "preview_colour": [
+        40,
+        90,
+        200
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 1.0,
+      "mean_reflectance_rgb_now": [
+        2929,
+        3207,
+        2654
+      ],
+      "mean_reflectance_rgb_spring": [
+        3509,
+        3177,
+        2557
+      ],
+      "mean_srgb_now": [
+        255,
+        255,
+        255
+      ],
+      "mean_ndvi_now": -0.124,
+      "mean_ndvi_spring": 0.093
+    },
+    {
+      "code": 2,
+      "name": "built",
+      "share": 0.0738,
+      "preview_colour": [
+        150,
+        150,
+        150
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 0.041,
+      "mean_reflectance_rgb_now": [
+        1559,
+        1322,
+        978
+      ],
+      "mean_reflectance_rgb_spring": [
+        1631,
+        1514,
+        1125
+      ],
+      "mean_srgb_now": [
+        159,
+        134,
+        99
+      ],
+      "mean_ndvi_now": 0.309,
+      "mean_ndvi_spring": 0.35
+    },
+    {
+      "code": 3,
+      "name": "forest",
+      "share": 0.1155,
+      "preview_colour": [
+        20,
+        90,
+        30
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 0.128,
+      "mean_reflectance_rgb_now": [
+        1045,
+        837,
+        533
+      ],
+      "mean_reflectance_rgb_spring": [
+        915,
+        939,
+        582
+      ],
+      "mean_srgb_now": [
+        106,
+        85,
+        54
+      ],
+      "mean_ndvi_now": 0.384,
+      "mean_ndvi_spring": 0.524
+    },
+    {
+      "code": 4,
+      "name": "orchard",
+      "share": 0.0315,
+      "preview_colour": [
+        90,
+        160,
+        60
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 0.637,
+      "mean_reflectance_rgb_now": [
+        1394,
+        1071,
+        736
+      ],
+      "mean_reflectance_rgb_spring": [
+        1101,
+        1156,
+        739
+      ],
+      "mean_srgb_now": [
+        142,
+        109,
+        75
+      ],
+      "mean_ndvi_now": 0.346,
+      "mean_ndvi_spring": 0.542
+    },
+    {
+      "code": 5,
+      "name": "vineyard",
+      "share": 0.0179,
+      "preview_colour": [
+        140,
+        60,
+        140
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 1.0,
+      "mean_reflectance_rgb_now": [
+        1489,
+        1107,
+        761
+      ],
+      "mean_reflectance_rgb_spring": [
+        1251,
+        1159,
+        758
+      ],
+      "mean_srgb_now": [
+        151,
+        112,
+        77
+      ],
+      "mean_ndvi_now": 0.299,
+      "mean_ndvi_spring": 0.443
+    },
+    {
+      "code": 6,
+      "name": "scrub",
+      "share": 0.0432,
+      "preview_colour": [
+        120,
+        120,
+        50
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 0.051,
+      "mean_reflectance_rgb_now": [
+        1506,
+        1116,
+        808
+      ],
+      "mean_reflectance_rgb_spring": [
+        1095,
+        1172,
+        709
+      ],
+      "mean_srgb_now": [
+        153,
+        113,
+        82
+      ],
+      "mean_ndvi_now": 0.25,
+      "mean_ndvi_spring": 0.54
+    },
+    {
+      "code": 7,
+      "name": "grass",
+      "share": 0.0032,
+      "preview_colour": [
+        150,
+        200,
+        90
+      ],
+      "source": "OpenStreetMap",
+      "on_osm_farmland_share": 0.183,
+      "mean_reflectance_rgb_now": [
+        1802,
+        1517,
+        1103
+      ],
+      "mean_reflectance_rgb_spring": [
+        1583,
+        1533,
+        1079
+      ],
+      "mean_srgb_now": [
+        183,
+        154,
+        112
+      ],
+      "mean_ndvi_now": 0.342,
+      "mean_ndvi_spring": 0.433
+    },
+    {
+      "code": 8,
+      "name": "bright",
+      "share": 0.0045,
+      "preview_colour": [
+        235,
+        235,
+        225
+      ],
+      "source": "Sentinel-2",
+      "on_osm_farmland_share": 0.835,
+      "mean_reflectance_rgb_now": [
+        3577,
+        3126,
+        2619
+      ],
+      "mean_reflectance_rgb_spring": [
+        2490,
+        2401,
+        1941
+      ],
+      "mean_srgb_now": [
+        255,
+        255,
+        255
+      ],
+      "mean_ndvi_now": 0.058,
+      "mean_ndvi_spring": 0.272
+    },
+    {
+      "code": 9,
+      "name": "green_crop",
+      "share": 0.157,
+      "preview_colour": [
+        60,
+        200,
+        60
+      ],
+      "source": "Sentinel-2",
+      "on_osm_farmland_share": 0.982,
+      "mean_reflectance_rgb_now": [
+        827,
+        782,
+        425
+      ],
+      "mean_reflectance_rgb_spring": [
+        1249,
+        1151,
+        750
+      ],
+      "mean_srgb_now": [
+        84,
+        79,
+        43
+      ],
+      "mean_ndvi_now": 0.582,
+      "mean_ndvi_spring": 0.433
+    },
+    {
+      "code": 10,
+      "name": "trees_scrub",
+      "share": 0.1374,
+      "preview_colour": [
+        70,
+        120,
+        60
+      ],
+      "source": "Sentinel-2",
+      "on_osm_farmland_share": 0.956,
+      "mean_reflectance_rgb_now": [
+        1306,
+        964,
+        642
+      ],
+      "mean_reflectance_rgb_spring": [
+        1012,
+        1058,
+        627
+      ],
+      "mean_srgb_now": [
+        133,
+        98,
+        65
+      ],
+      "mean_ndvi_now": 0.339,
+      "mean_ndvi_spring": 0.563
+    },
+    {
+      "code": 11,
+      "name": "bare_field",
+      "share": 0.2323,
+      "preview_colour": [
+        170,
+        110,
+        60
+      ],
+      "source": "Sentinel-2",
+      "on_osm_farmland_share": 0.95,
+      "mean_reflectance_rgb_now": [
+        1891,
+        1390,
+        1001
+      ],
+      "mean_reflectance_rgb_spring": [
+        1200,
+        1181,
+        769
+      ],
+      "mean_srgb_now": [
+        192,
+        141,
+        102
+      ],
+      "mean_ndvi_now": 0.148,
+      "mean_ndvi_spring": 0.508
+    },
+    {
+      "code": 12,
+      "name": "dry_grass",
+      "share": 0.1818,
+      "preview_colour": [
+        210,
+        190,
+        120
+      ],
+      "source": "Sentinel-2",
+      "on_osm_farmland_share": 0.938,
+      "mean_reflectance_rgb_now": [
+        1495,
+        1145,
+        786
+      ],
+      "mean_reflectance_rgb_spring": [
+        1515,
+        1358,
+        945
+      ],
+      "mean_srgb_now": [
+        152,
+        116,
+        80
+      ],
+      "mean_ndvi_now": 0.308,
+      "mean_ndvi_spring": 0.359
+    }
+  ],
+  "rules": "Zone map for the Karmei Yosef 4 km area from DATA_RECEIPT.json inputs (OpenStreetMap land use + Sentinel-2).\n\nGrid: the same 1009 x 1009 EPSG:4326 grid as the Sentinel windows (4 m, +-2016 m around the area centre = the landscape).\nRule order (first match wins):\n  1. OSM polygons: water, built (residential/industrial), forest (forest/wood), orchard, vineyard, scrub,\n     grass (meadow/park/pitch/playground/sports). OSM 'farmland' only marks a field; its crop state comes from the satellite.\n  2. Satellite, 21 Sep 2026 (now) and 4 Apr 2026 (spring), NDVI = (nir - red) / (nir + red):\n     bright, not green (greenhouses, nets, chalk)  -> bright\n     NDVI_sep > 0.45                               -> green_crop (irrigated summer crops)\n     NDVI_sep 0.25..0.45 and NDVI_apr > 0.45       -> trees_scrub (perennial woody cover)\n     NDVI_sep < 0.22                               -> bare_field (ploughed or stubble)\n     otherwise                                      -> dry_grass\nWrites ZONES.tif, LEGEND.json (code, name, source, pixel share, mean real colour now and in spring) and ZONES_preview.png\n(satellite | zones side by side) into the SourceData zones folder and copies the legend and preview here.\n"
+}

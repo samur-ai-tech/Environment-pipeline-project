@@ -1,0 +1,151 @@
+{
+  "utc_start": "2026-10-09T23:50:24.854916+00:00",
+  "script": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\bldg_inspect.py",
+  "script_sha256": "2e62bb320813172b766ff515cd12438d6aeabd5db3033dfb7ddf40a538fa241c",
+  "args": {
+    "label": "Bldg_1040458071",
+    "expected_pid": 32392,
+    "script_sha256": "2e62bb320813172b766ff515cd12438d6aeabd5db3033dfb7ddf40a538fa241c",
+    "script_file": "C:\\Users\\USER\\Documents\\Unreal Projects\\Environmentpipeline\\Staging\\NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08\\Tools\\bldg_inspect.py"
+  },
+  "editor_pid": 32392,
+  "endpoint": "http://127.0.0.1:19852/mcp",
+  "payload": {
+    "ok": true,
+    "stdout": "",
+    "result": {
+      "ok": true,
+      "actor_loc": "<Struct 'Vector' (0x000001737BF83710) {x: -199449.865723, y: 184552.899170, z: 12029.330444}>",
+      "root": "DefaultSceneRoot",
+      "comps": [
+        {
+          "class": "InstancedStaticMeshComponent",
+          "name": "SM_wall_4x2_01",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "world_loc": "<Struct 'Vector' (0x000001736E2401A0) {x: -199449.865723, y: 184552.899170, z: 12029.33044",
+          "mesh": "SM_wall_4x2_01",
+          "mats": [
+            "MI_e4aa3c9e1bea"
+          ],
+          "local_bounds": [
+            "<Struct 'Vector' (0x000001736E2401A0) {x: 0.000000, y: -200.000000, z: -0.000031",
+            "<Struct 'Vector' (0x000001736E2401F0) {x: 49.999428, y: 0.000000, z: 400.000031}"
+          ],
+          "n": 6,
+          "inst0_world": "<Struct 'Vector' (0x000001736E2306B0) {x: -198976.904297, y: 183684.704590, z: 12029.33044",
+          "inst0_local": "<Struct 'Vector' (0x000001736E2308F0) {x: 472.961426, y: -868.194580, z: 0.000000}>",
+          "parent": "BuildingRoot"
+        },
+        {
+          "class": "InstancedStaticMeshComponent",
+          "name": "SM_wall_windows_4x4_01",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.STATIC: 0>",
+          "world_loc": "<Struct 'Vector' (0x000001736E240290) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "mesh": "SM_wall_windows_4x4_01",
+          "mats": [
+            "MI_e4aa3c9e1bea",
+            "M_fe2092e516c2",
+            "MI_bd7a986022cd",
+            "M_39cae9c7370f"
+          ],
+          "local_bounds": [
+            "<Struct 'Vector' (0x000001736E2402E0) {x: -4.471283, y: -400.000122, z: 0.000000",
+            "<Struct 'Vector' (0x000001736E240330) {x: 49.999592, y: -0.000122, z: 400.000000"
+          ],
+          "n": 42,
+          "inst0_world": "<Struct 'Vector' (0x000001736E2308F0) {x: -725.646973, y: -810.369873, z: 0.000000}>",
+          "inst0_local": "<Struct 'Vector' (0x000001736E230AA0) {x: -725.646973, y: -810.369873, z: 0.000000}>",
+          "parent": null
+        },
+        {
+          "class": "SceneComponent",
+          "name": "BuildingRoot",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "world_loc": "<Struct 'Vector' (0x000001736E2402E0) {x: -199449.865723, y: 184552.899170, z: 12029.33044",
+          "parent": "DefaultSceneRoot"
+        },
+        {
+          "class": "SceneComponent",
+          "name": "DefaultSceneRoot",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "world_loc": "<Struct 'Vector' (0x000001736E240420) {x: -199449.865723, y: 184552.899170, z: 12029.33044",
+          "parent": null
+        },
+        {
+          "class": "StaticMeshComponent",
+          "name": "Door",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "world_loc": "<Struct 'Vector' (0x000001736E2404C0) {x: -200181.115723, y: 184656.567383, z: 12029.33044",
+          "mesh": "SM_Steeldoor",
+          "mats": [
+            "MI_2d106d7f312f"
+          ],
+          "local_bounds": [
+            "<Struct 'Vector' (0x000001736E2404C0) {x: -11.057678, y: -143.178711, z: 0.00000",
+            "<Struct 'Vector' (0x000001736E240510) {x: 0.000000, y: 1.267105, z: 252.836647}>"
+          ],
+          "parent": "BuildingRoot"
+        },
+        {
+          "class": "BillboardComponent",
+          "name": "BillboardComponent_0",
+          "visible": false,
+          "hidden_in_game": true,
+          "mobility": "<ComponentMobility.MOVABLE: 2>",
+          "world_loc": "<Struct 'Vector' (0x000001736E2405B0) {x: -199449.865723, y: 184552.899170, z: 12029.33044",
+          "parent": "DefaultSceneRoot"
+        },
+        {
+          "class": "StaticMeshComponent",
+          "name": "Shell",
+          "visible": true,
+          "hidden_in_game": false,
+          "mobility": "<ComponentMobility.STATIC: 0>",
+          "world_loc": "<Struct 'Vector' (0x000001736E2406A0) {x: -199449.865723, y: 184552.899170, z: 12029.33044",
+          "mesh": "SM_Shell_1040458071",
+          "mats": [
+            "MI_ConcreteGrain",
+            "MI_e4aa3c9e1bea"
+          ],
+          "local_bounds": [
+            "<Struct 'Vector' (0x000001736E240740) {x: -783.837402, y: -878.774170, z: -0.000",
+            "<Struct 'Vector' (0x000001736E240790) {x: 786.334473, y: 878.741455, z: 960.0006"
+          ],
+          "parent": "BuildingRoot"
+        }
+      ],
+      "bank_ref": {
+        "class": "InstancedStaticMeshComponent",
+        "name": "InstancedStaticMeshComponent_0",
+        "visible": true,
+        "hidden_in_game": false,
+        "mobility": "<ComponentMobility.STATIC: 0>",
+        "world_loc": "<Struct 'Vector' (0x000001736E240830) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+        "mesh": "SM_H0904_Slum_v_fbx",
+        "mats": [
+          "M_Bank_159e1f3f186d"
+        ],
+        "local_bounds": [
+          "<Struct 'Vector' (0x000001736E2408D0) {x: -372.318237, y: -220.405869, z: -3.283",
+          "<Struct 'Vector' (0x000001736E240920) {x: 253.310608, y: 298.551178, z: 513.7030"
+        ],
+        "n": 0,
+        "parent": "DefaultSceneRoot"
+      }
+    }
+  },
+  "is_error": false,
+  "rpc_error": null,
+  "utc_end": "2026-10-09T23:50:25.125189+00:00",
+  "exit_code": 0
+}

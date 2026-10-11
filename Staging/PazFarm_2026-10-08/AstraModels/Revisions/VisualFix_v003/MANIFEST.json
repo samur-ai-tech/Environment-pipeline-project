@@ -1,0 +1,1323 @@
+{
+  "revision": "VisualFix_v003",
+  "date": "2026-10-10",
+  "status": "OFFLINE_COMPLETE_NATIVE_NOT_APPLIED",
+  "asset_count": 8,
+  "base_model_count": 4,
+  "source_blend_count": 2,
+  "material_texture_count": 36,
+  "assets": [
+    {
+      "name": "SM_PazFarm_AleppoPine_A",
+      "size_metres_W_D_H": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "bounds_metres": [
+        [
+          -2.487866163253784,
+          -3.0583536624908447,
+          0.0
+        ],
+        [
+          3.512133836746216,
+          2.6916463375091553,
+          8.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_A.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_A.png",
+      "nominal_size_metres": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "A",
+      "paired_asset": "SM_PazFarm_AleppoPine_A_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_A_LOD3",
+      "size_metres_W_D_H": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "bounds_metres": [
+        [
+          -2.4834365844726562,
+          -2.9908154010772705,
+          0.0
+        ],
+        [
+          3.5165634155273438,
+          2.7591845989227295,
+          8.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_A_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_A_LOD3.png",
+      "nominal_size_metres": [
+        6.0,
+        5.75,
+        8.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "A",
+      "paired_asset": "SM_PazFarm_AleppoPine_A",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_B",
+      "size_metres_W_D_H": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "bounds_metres": [
+        [
+          -4.881148815155029,
+          -2.9228570461273193,
+          0.0
+        ],
+        [
+          3.1188509464263916,
+          4.2771430015563965,
+          11.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_B.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_B.png",
+      "nominal_size_metres": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "B",
+      "paired_asset": "SM_PazFarm_AleppoPine_B_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_B_LOD3",
+      "size_metres_W_D_H": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "bounds_metres": [
+        [
+          -4.895594596862793,
+          -2.8829762935638428,
+          0.0
+        ],
+        [
+          3.104405641555786,
+          4.317023754119873,
+          11.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_B_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_B_LOD3.png",
+      "nominal_size_metres": [
+        8.0,
+        7.2,
+        11.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "B",
+      "paired_asset": "SM_PazFarm_AleppoPine_B",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_C",
+      "size_metres_W_D_H": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "bounds_metres": [
+        [
+          -4.176753044128418,
+          -3.8745603561401367,
+          0.0
+        ],
+        [
+          5.823246955871582,
+          5.275439739227295,
+          15.0
+        ]
+      ],
+      "triangles_LOD0": 113466,
+      "triangle_budget": 120000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_Needles",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Needles_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Needles_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "LOD0 uses 16,100 closed diamond-section tapered needle-cluster prisms in 8,050 distributed pairs; opaque inner hulls are recessed beneath them.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_C.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_C.png",
+      "nominal_size_metres": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 0,
+      "triangle_budget_min": 40000,
+      "family": "AleppoPine",
+      "variant": "C",
+      "paired_asset": "SM_PazFarm_AleppoPine_C_LOD3",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 16100,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_AleppoPine_C_LOD3",
+      "size_metres_W_D_H": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "bounds_metres": [
+        [
+          -4.185314178466797,
+          -3.878113031387329,
+          0.0
+        ],
+        [
+          5.814685821533203,
+          5.271886825561523,
+          15.0
+        ]
+      ],
+      "triangles_LOD0": 1642,
+      "triangle_budget": 2000,
+      "materials": [
+        {
+          "name": "M_PazFarm_AleppoPine_Bark",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_Bark_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_Bark_ORM.png"
+          ],
+          "mode": "OPAQUE",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        },
+        {
+          "name": "M_PazFarm_AleppoPine_CrownHull",
+          "textures": [
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_Normal.png",
+            "Textures\\T_PazFarm_AleppoPine_CrownHull_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm Aleppo pine modelling delivery, 2026-10-10"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Original procedural Pinus halepensis: leaning trunk, asymmetric umbrella crown, 23 irregular overlapping opaque clump volumes.",
+        "All foliage opaque with alpha 1; no masked cards, billboard, wind or collision. Shared dark grey-olive needle and hull palette.",
+        "Lowest LOD is hand-authored from the same 23 closed crown clumps, leaning trunk and support branches; no needles/cards or billboard. Slight clump-envelope inflation compensates for removed needles.",
+        "Trunk base ground origin at (0,0,0), applied transforms, metres. Each matching LOD has the same nominal W/D/H.",
+        "Designed for non-Nanite instancing HLOD at far distances. Native integration and 1 km appearance require operator verification."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_AleppoPine_C_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_AleppoPine_C_LOD3.png",
+      "nominal_size_metres": [
+        10.0,
+        9.15,
+        15.0
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false,
+        "nonmanifold_edges": 0,
+        "closed_components": true,
+        "finite_geometry": true,
+        "finite_uv0": true
+      },
+      "lod_index": 3,
+      "triangle_budget_min": 800,
+      "family": "AleppoPine",
+      "variant": "C",
+      "paired_asset": "SM_PazFarm_AleppoPine_C",
+      "construction": {
+        "closed_crown_clumps": 23,
+        "closed_needle_prisms": 0,
+        "crown_shape": "irregular umbrella clumps",
+        "alpha": 1.0,
+        "no_billboard": true
+      },
+      "blend": "Blend/AleppoPine.blend"
+    },
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m",
+      "size_metres_W_D_H": [
+        0.8,
+        4.0,
+        0.41054
+      ],
+      "bounds_metres": [
+        [
+          -0.4000000059604645,
+          0.0,
+          0.0
+        ],
+        [
+          0.4000000059604645,
+          4.0,
+          0.4105382263660431
+        ]
+      ],
+      "triangles_LOD0": 10422,
+      "triangle_budget": 20000,
+      "materials": [
+        {
+          "name": "M_PazFarm_StrawberryMulch_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryMulch_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryMulch_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryMulch_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberrySoil_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberrySoil_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberrySoil_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberrySoil_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeaf_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeafNew_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPetiole_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFruit_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFruit_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFruit_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFruit_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFlower_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFlower_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFlower_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFlower_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPollen_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPollen_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPollen_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPollen_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryCanopy_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Exact .8 x 4 m boundary, ground origin at centre of Y=0 short end, tiling along +Y in 4m increments.",
+        "24 rosettes / 360 larger geometric leaflets over a continuous closed opaque dark-green canopy hull; modest berries and flowers retained.",
+        "Same closed canopy and mulch body in both LODs; all foliage alpha 1, opaque two-sided materials, no wind or collision.",
+        "Dark mulch: nominal sRGB 8/9/8, roughness .92, specular .06, barely raised normal detail. No sunlight baked into BaseColor.",
+        "1K BaseColor sRGB; Normal OpenGL +Y and ORM are linear non-color. Normals must be converted to Unreal convention by receiver."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "preview": "Previews/SM_PazFarm_StrawberryBed_4m.png",
+      "nominal_size_metres": [
+        0.8,
+        4,
+        0.42
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_index": 0,
+      "lod": 0,
+      "lowest_lod": false,
+      "paired_asset": "SM_PazFarm_StrawberryBed_4m_LOD3",
+      "blend": "Blend/Strawberry.blend"
+    },
+    {
+      "name": "SM_PazFarm_StrawberryBed_4m_LOD3",
+      "size_metres_W_D_H": [
+        0.8,
+        4.0,
+        0.408
+      ],
+      "bounds_metres": [
+        [
+          -0.4000000059604645,
+          0.0,
+          0.0
+        ],
+        [
+          0.4000000059604645,
+          4.0,
+          0.40799999237060547
+        ]
+      ],
+      "triangles_LOD0": 282,
+      "triangle_budget": 400,
+      "materials": [
+        {
+          "name": "M_PazFarm_StrawberryMulch_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryMulch_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryMulch_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryMulch_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberrySoil_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberrySoil_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberrySoil_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberrySoil_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeaf_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeaf_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryLeafNew_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryLeafNew_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPetiole_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPetiole_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFruit_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFruit_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFruit_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFruit_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryFlower_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryFlower_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryFlower_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryFlower_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryPollen_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryPollen_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryPollen_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryPollen_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        },
+        {
+          "name": "M_PazFarm_StrawberryCanopy_v003",
+          "textures": [
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_BaseColor.png",
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_Normal.png",
+            "Textures\\T_PazFarm_StrawberryCanopy_v003_ORM.png"
+          ],
+          "mode": "OPAQUE_TWO_SIDED",
+          "source_licence": {
+            "source": "Original procedural artwork created specifically for Paz Farm; no external images or satellite pixels used.",
+            "licence": "CC0-1.0",
+            "author": "Paz Farm modelling delivery, 2026-10-08"
+          }
+        }
+      ],
+      "pivot": {
+        "position_metres": [
+          0,
+          0,
+          0
+        ],
+        "description": "Ground origin; see notes for module placement"
+      },
+      "notes": [
+        "Exact .8 x 4 m boundary, ground origin at centre of Y=0 short end, tiling along +Y in 4m increments.",
+        "Separate lowest LOD for always-loaded Instancing HLOD, Nanite disallowed; this is opaque closed ridge geometry, not a billboard.",
+        "Same closed canopy and mulch body in both LODs; all foliage alpha 1, opaque two-sided materials, no wind or collision.",
+        "Dark mulch: nominal sRGB 8/9/8, roughness .92, specular .06, barely raised normal detail. No sunlight baked into BaseColor.",
+        "1K BaseColor sRGB; Normal OpenGL +Y and ORM are linear non-color. Normals must be converted to Unreal convention by receiver."
+      ],
+      "collision_objects": [],
+      "fbx": "FBX/SM_PazFarm_StrawberryBed_4m_LOD3.fbx",
+      "preview": "Previews/SM_PazFarm_StrawberryBed_4m_LOD3.png",
+      "nominal_size_metres": [
+        0.8,
+        4,
+        0.42
+      ],
+      "qa": {
+        "zero_area_triangles": 0,
+        "uv0_present": true,
+        "negative_scale": false
+      },
+      "lod_index": 3,
+      "lod": 3,
+      "lowest_lod": true,
+      "paired_asset": "SM_PazFarm_StrawberryBed_4m",
+      "blend": "Blend/Strawberry.blend"
+    }
+  ],
+  "lod_pairings": [
+    {
+      "base_asset": "SM_PazFarm_AleppoPine_A",
+      "lod0_fbx": "FBX/SM_PazFarm_AleppoPine_A.fbx",
+      "lowest_mesh": "SM_PazFarm_AleppoPine_A_LOD3",
+      "lowest_fbx": "FBX/SM_PazFarm_AleppoPine_A_LOD3.fbx",
+      "lod0_triangles": 113466,
+      "lowest_triangles": 1642,
+      "source": "Blend/AleppoPine.blend",
+      "lowest_role": "Authored final conventional LOD for the non-Nanite far/HLOD path; separate FBX, not embedded in the base export."
+    },
+    {
+      "base_asset": "SM_PazFarm_AleppoPine_B",
+      "lod0_fbx": "FBX/SM_PazFarm_AleppoPine_B.fbx",
+      "lowest_mesh": "SM_PazFarm_AleppoPine_B_LOD3",
+      "lowest_fbx": "FBX/SM_PazFarm_AleppoPine_B_LOD3.fbx",
+      "lod0_triangles": 113466,
+      "lowest_triangles": 1642,
+      "source": "Blend/AleppoPine.blend",
+      "lowest_role": "Authored final conventional LOD for the non-Nanite far/HLOD path; separate FBX, not embedded in the base export."
+    },
+    {
+      "base_asset": "SM_PazFarm_AleppoPine_C",
+      "lod0_fbx": "FBX/SM_PazFarm_AleppoPine_C.fbx",
+      "lowest_mesh": "SM_PazFarm_AleppoPine_C_LOD3",
+      "lowest_fbx": "FBX/SM_PazFarm_AleppoPine_C_LOD3.fbx",
+      "lod0_triangles": 113466,
+      "lowest_triangles": 1642,
+      "source": "Blend/AleppoPine.blend",
+      "lowest_role": "Authored final conventional LOD for the non-Nanite far/HLOD path; separate FBX, not embedded in the base export."
+    },
+    {
+      "base_asset": "SM_PazFarm_StrawberryBed_4m",
+      "lod0_fbx": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "lowest_mesh": "SM_PazFarm_StrawberryBed_4m_LOD3",
+      "lowest_fbx": "FBX/SM_PazFarm_StrawberryBed_4m_LOD3.fbx",
+      "lod0_triangles": 10422,
+      "lowest_triangles": 282,
+      "source": "Blend/Strawberry.blend",
+      "lowest_role": "Authored final conventional LOD for the non-Nanite far/HLOD path; separate FBX, not embedded in the base export."
+    }
+  ],
+  "handoff": "HANDOFF_CLAUDE.md",
+  "distance_gallery": "Previews/Distance/INDEX.html",
+  "model_validation": "Reports/VALIDATION.json",
+  "distance_validation": "Reports/distance_validation.json",
+  "distance_frame_count": 53,
+  "distance_diagnostics": "PASS_COMPLETED_PAIRS",
+  "originals_preserved": {
+    "passed": true,
+    "files_checked": 430,
+    "changed_or_missing": [],
+    "method": "SHA256 compared with baseline captured before v003 work. Includes original Paz Farm staging files, v002 and the six supplied forest/bed captures."
+  },
+  "native_actions_performed": false,
+  "files": [
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_A.fbx",
+      "bytes": 4268988,
+      "sha256": "b8ff6a542d7d16e8829a773a8d8b59f244b5992c2570764f3592f4f603aa422e"
+    },
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_A_LOD3.fbx",
+      "bytes": 69324,
+      "sha256": "e8747370d408334a033f9472a562160f29841fa34bc408e97d01a421472f9565"
+    },
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_B.fbx",
+      "bytes": 4265340,
+      "sha256": "5403d3b8e562d167eb9f32deaa2f00f6695bf9fcaef1c6c48b0d2c2120488c3a"
+    },
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_B_LOD3.fbx",
+      "bytes": 69340,
+      "sha256": "f6f101fcb72e9800bd16bac90310e7ab9b94fb4ef93962f48a3d169b714cecbc"
+    },
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_C.fbx",
+      "bytes": 4268812,
+      "sha256": "c6591635f037bd4fba51b90a38f09cbbf8979d853a2360b1cff8061a053e7291"
+    },
+    {
+      "path": "FBX/SM_PazFarm_AleppoPine_C_LOD3.fbx",
+      "bytes": 69388,
+      "sha256": "3517e237915c0b5458dc9f4b6d96a17e6a7beb3e94326957c177f6f5b71a1ab5"
+    },
+    {
+      "path": "FBX/SM_PazFarm_StrawberryBed_4m.fbx",
+      "bytes": 450780,
+      "sha256": "2f17ec7300f0af16716ab3bc90671e1ac43b36da5c5b57b418ceab23d3dbd439"
+    },
+    {
+      "path": "FBX/SM_PazFarm_StrawberryBed_4m_LOD3.fbx",
+      "bytes": 58764,
+      "sha256": "fb2f8d5acf6860518e118552df1fcc8fad1361992ff74a226204b4e10e26a297"
+    },
+    {
+      "path": "Blend/AleppoPine.blend",
+      "bytes": 8475240,
+      "sha256": "a754c87eb309f61e82f8ab8b810b9f290d32f7df4caca6cb396f8297adbb8305"
+    },
+    {
+      "path": "Blend/Strawberry.blend",
+      "bytes": 341982,
+      "sha256": "32d9b68fd6c2439c1e6cf0ef628c09e56cab46233e0556f46ee408bcacd1081e"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Bark_BaseColor.png",
+      "bytes": 1427002,
+      "sha256": "fde63d28fe97592ebaa328ff97d0704a05eaf7576f16d6d3300511119b0ec171"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Bark_Normal.png",
+      "bytes": 3454752,
+      "sha256": "de3ef3301712bc09e10304682d52418dc3154eed3ea0f972befab2786b2bd67d"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Bark_ORM.png",
+      "bytes": 798270,
+      "sha256": "3b7bf235de36f74894bc9301f84d4c98dc92e37f51077abd33a5f21683865856"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_CrownHull_BaseColor.png",
+      "bytes": 980180,
+      "sha256": "89734a613d905ae196756361c29df6c8a727405a12c8bcf177697b66a25f48ed"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_CrownHull_Normal.png",
+      "bytes": 1429822,
+      "sha256": "c0c95a35f1f5122cae4202fa79873b4596656b153cc3880d9ec4a5c297041cd7"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_CrownHull_ORM.png",
+      "bytes": 635804,
+      "sha256": "0de0794043a9cd3f984bede31903e6722268bc94302e9776203d1e2cfb783f56"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Needles_BaseColor.png",
+      "bytes": 1492243,
+      "sha256": "9f44f8674b5da9a6bcb78ae92abd1b42824352bd1c3d3b9b8990ced7056f193f"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Needles_Normal.png",
+      "bytes": 3093744,
+      "sha256": "33a8e6b10f00275a5c7bb4506b74a988d8d1b466223df16b3f31d068514cb0cf"
+    },
+    {
+      "path": "Textures/T_PazFarm_AleppoPine_Needles_ORM.png",
+      "bytes": 635452,
+      "sha256": "9cfa3247192de54e6376d9c66f4f560fd9a6d307fadcaf417166d64500cbce0f"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryCanopy_v003_BaseColor.png",
+      "bytes": 292754,
+      "sha256": "fe6c443496aa3a7fed8b87af14fb0bd831e829e8fb7d7d2a51f51acd3272e4c1"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryCanopy_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryCanopy_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "640dee54d42b4e7e2654e714f5c9056828f8926f328cf45c71afc8b3b743dfe9"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_v003_BaseColor.png",
+      "bytes": 875695,
+      "sha256": "6f38da859a36d306ff2c8e450f38c15fbbdad340ec49854784b1b1b0fc1c8b39"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFlower_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "1b87b050dc2ebfc01e064ac66872f5edc5532f65640a0bbc3543525beb6c6d6c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_v003_BaseColor.png",
+      "bytes": 624659,
+      "sha256": "9fb38c395b51726d46bc9e67f438330e69d079fde936ca2f9ff8a6e1cbba2269"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryFruit_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "45e9b55643bb5a6c2ccb813bc59f08dac781a22c0ba7bdc4cae1b3d38fbc390b"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_v003_BaseColor.png",
+      "bytes": 486395,
+      "sha256": "c805b537ee6570008a4f7bbd6fdf8e07de806f0c17db6f052440d4d719e7d83e"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_v003_Normal.png",
+      "bytes": 33891,
+      "sha256": "6e0b9f4f6f793a70fd5cbf2d4e2068e0c6cb4656fa2df015e3019bd6ebcdd611"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeaf_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "1b87b050dc2ebfc01e064ac66872f5edc5532f65640a0bbc3543525beb6c6d6c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_v003_BaseColor.png",
+      "bytes": 558738,
+      "sha256": "7fca424ae36daf42ca12e99eef5c2fc380a5a5f13be760395a28fade56727572"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_v003_Normal.png",
+      "bytes": 33891,
+      "sha256": "6e0b9f4f6f793a70fd5cbf2d4e2068e0c6cb4656fa2df015e3019bd6ebcdd611"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryLeafNew_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "1b87b050dc2ebfc01e064ac66872f5edc5532f65640a0bbc3543525beb6c6d6c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_v003_BaseColor.png",
+      "bytes": 6513,
+      "sha256": "e55dc26856d33a83fa17375c57b41eed3319d6a1086f51e4c9d4dec1f8479fc1"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_v003_Normal.png",
+      "bytes": 6519,
+      "sha256": "8eaf16d83d3f490e031d4fff3927805696a466f942455e3993007216d39ab656"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryMulch_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "5944dc0815dd28a7a663bd302b8a3c8a5531b339f44faea7ab798a6d4eb242cf"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_v003_BaseColor.png",
+      "bytes": 488913,
+      "sha256": "2292f08c40a585a112fb26c8b72f318d59be4bdb8281cdc39bb2464dc4c244f2"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPetiole_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "640dee54d42b4e7e2654e714f5c9056828f8926f328cf45c71afc8b3b743dfe9"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_v003_BaseColor.png",
+      "bytes": 843904,
+      "sha256": "a6563b6eb476d8e0a942342c0ba3adbd33fc09d6be2d1d67356a1c37a73114e1"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberryPollen_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "640dee54d42b4e7e2654e714f5c9056828f8926f328cf45c71afc8b3b743dfe9"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_v003_BaseColor.png",
+      "bytes": 354609,
+      "sha256": "6f4146362f9fd60c784eb700e6be4aa4cb0a4842b1de326cc13006a91441d2a6"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_v003_Normal.png",
+      "bytes": 6499,
+      "sha256": "d42670497148a9fcae1ce105d919e1be3a29f6911c937a1b29244a26c882fb7c"
+    },
+    {
+      "path": "Textures/T_PazFarm_StrawberrySoil_v003_ORM.png",
+      "bytes": 6500,
+      "sha256": "4860316263531fa233d404c589bc9c552f5b291f07b7e830b909a6a27a90a426"
+    },
+    {
+      "path": "Scripts/build_pines_v003.py",
+      "bytes": 17615,
+      "sha256": "b65e42e539e4ee82513635aa673f4181e7f81129a3078ba8682581db5a30376a"
+    },
+    {
+      "path": "Scripts/build_strawberries_v003.py",
+      "bytes": 23901,
+      "sha256": "5df13890c64ce1b9c55ac767292d4d40640b60841772dd63dc0aa23267a0883c"
+    },
+    {
+      "path": "Scripts/finalize_delivery_v003.py",
+      "bytes": 17937,
+      "sha256": "2c9f496ae43bc4318dc95dcc40a3e795dbcbfb66afdcce39a8aca81721e8e4f7"
+    },
+    {
+      "path": "Scripts/paz_common.py",
+      "bytes": 13703,
+      "sha256": "0f23001a0b7ed278891ada413be064518799916d3538b42e7b48caf2d8901d12"
+    },
+    {
+      "path": "Scripts/record_inputs.py",
+      "bytes": 1378,
+      "sha256": "22540105291f45512907e6318367764dafe3fb8adb855260f1648967d6304b87"
+    },
+    {
+      "path": "Scripts/render_distances_v003.py",
+      "bytes": 33619,
+      "sha256": "ee54a47d86db5b7a33852e852cef748b8d25876cd77e94ac23b5b9ddeca29ef6"
+    },
+    {
+      "path": "Scripts/validate_delivery_v003.py",
+      "bytes": 9240,
+      "sha256": "debb3604a7e70b68208c18a3565fc61505bfb0fca53a55c4bba5ce949a5df9de"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> HISTORICAL (2026-10-19): this file is kept as history. Current decisions: Docs/GOVERNANCE_RECORD.md. Closure index: Docs/CLOSURE_INDEX.md.
+
 # Reusable sky and time of day package
 
 Current delivery update (2026-10-06): Stage 1 and Stage 2 native assets are now saved and fresh-process reopened on original Rimal. See [Stage 2 receipt](Stage2/RESULT.txt) and [usage](Stage2/QUICK_START.txt). The planning/inspection statements below are the original pre-implementation baseline; seamless wind retiming and the receipt's explicit limitations remain open. Stage 3 is not implemented.

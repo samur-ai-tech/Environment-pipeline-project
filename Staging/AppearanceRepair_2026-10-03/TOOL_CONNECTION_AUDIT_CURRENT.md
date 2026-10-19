@@ -1,3 +1,5 @@
+> HISTORICAL (2026-10-19): this file is kept as history. Current decisions: Docs/GOVERNANCE_RECORD.md. Closure index: Docs/CLOSURE_INDEX.md.
+
 # Current tool connection audit
 
 Updated 2026-10-03T21:10:17.366725+00:00. Root manages three Astra chats; task2 exclusively operates the sole replacement editor PID21780. Measured fresh receipts verify the Copilot/editor Python connection, official Engine session valid while paused, active licensed RoadBLD, saved native baseline, and real child-material readback/named save. Root OS refresh confirms ports8000/19840/18080/55557 under PID21780 and auxiliary Houdini RPC18811 under PID8636. These listener checks do not prove every registered tool; detailed prior handshakes in the table remain historical unless superseded by the fresh receipts. Root refreshed the auxiliary Houdini handshake at22:17:24UTC: connected on18811, Houdini22.0.429, untitled authoring session; no Cook or source changes.

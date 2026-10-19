@@ -1,0 +1,145 @@
+> SUPERSEDED (2026-10-19) by Docs/GOVERNANCE_RECORD.md (line 47). Kept as history. Closure index: Docs/CLOSURE_INDEX.md.
+
+BUILDING05A SOURCE-OWNER ACCEPTANCE COMPARATOR AND ADDITIVE CONSUMER
+Owner: 01a11651-60c8-7cd3-939c-6caca6034ec6
+Sole shared integrator: 01a1166f-8d7b-7531-94fe-24fe3359e459
+Canonical bank owner: c39d8cf9-9e3d-4464-8fd4-949ca9bd7b90
+
+CURRENT RESULT
+This successor supplies executable source-owner checks. Native terrain, native output
+appearance, original-map persistence and ordinary regeneration remain NOT_VERIFIED.
+Qualification_v001 is immutable. No editor, Houdini session, Cook, Bake, rendering,
+native save, generation, canonical edit, eligibility change or source geometric edit
+was performed for this continuation. Source seam and authored geometry are preserved.
+
+SOURCE COVERAGE
+SOURCE_CONTRACT.json binds the frozen qualification and source/native receipts:
+172 exact source component exports and actor identities; 27 original native meshes;
+19 material-copy closure packages, of which 16 are direct effective slot materials;
+every source/effective slot pair; original geometry/UV arrays and package hashes;
+source/native UV channel count; 40 scaled components; 2 reflected components; 10 cm
+source ground support datum. Transform tolerances: 0.1 cm translation, 1e-6 scale,
+1e-4 radians quaternion angular error. Quaternion sign equivalence is allowed.
+Native UV provenance means original saved mesh bytes unchanged, loaded mesh clean,
+original mesh identity/topology/channel count observed. It is not a new pixel test
+or a claim that all live UV coordinates were independently extracted.
+
+PREVIOUS COMPARATOR SEARCH
+native_runtime_readback.py verifies startup/session state. validate_reconciled.py and
+validate_combined.py and the v013 output comparison cover offline assembly contracts.
+They do not bind this complete native Building05A acceptance chain. Their hashes are
+recorded in EXISTING_COMPARATOR_REVIEW.json; none is replaced or edited.
+
+INTEGRATOR CONTRACT
+CONSUMER_SUCCESSOR.py is a self-contained additive PythonModule fragment. It includes
+terrain_contract.py and containment_contract.py followed by the preserved geometry
+consumer with bounded validation changes. No HDA is built or installed here. The
+sole integrator owns merged HDA construction, review, sealing and normal dispatch.
+Public candidate/admitted names are unchanged; both accept a final optional
+terrain_context parameter. Candidate without support is horizontal planning only:
+terrain_verified=False, native_appearance_verified=False, ordinary_city_accepted=False.
+Supplying support without trusted context fails. The normal automatic path MUST call
+building05a_exterior_admitted, never candidate as an admission bypass. The admitted
+gate still requires the recipe's two admission flags and both owners' review. No
+flags are enabled here. Existing legacy source-group entry still rejects execution.
+
+Terrain schema: environmentpipeline.building05a.terrain.v2, detailed in INPUT_SCHEMA.json.
+Do NOT adapt old boolean-only evidence into this schema by asserting flags. Actual
+measurements and independently bound final-terrain provenance are required.
+Trusted terrain_context must come from the authorized run/terrain owner, independently
+of the measurement payload. Never construct it by copying identity from that payload.
+It contains expected world package, Landscape GUID, area, lot, generation, terrain
+revision digest, feature/recipe/placement canonical JSON digests, actual grid transform,
+authorized Landscape component object paths and hash of the reviewed measured payload.
+Canonical JSON digest uses sorted keys, compact separators and finite JSON numbers
+(terrain_contract.digest). Artifact refs use SHA256 of the exact saved file bytes.
+The two hashes serve different purposes and are not interchangeable.
+
+The actual grid origin/basis must be obtained from the final native Landscape after
+all retained road/terrain edits; it must correspond to the authoritative final surface.
+Final-terrain revision must identify the loaded Landscape package/heightfield revision,
+not merely the unchanged world map file or original source pad. No virtual 1m grid,
+source base_m, old terrain, nearest point, proxy plane or BSP may substitute.
+required_samples computes every vertex of every closed cell touching the full convex
+building envelope (including boundary-only touching cells), plus all four envelope
+corners and center. Rotated/nonuniform invertible horizontal grid bases are supported.
+Every sample needs matching coordinates, measured height, Landscape GUID, actual hit
+component and terrain revision. No missing, extra or duplicate sample IDs are accepted.
+All numeric values must be finite. The measured center sets placement height and the
+maximum absolute height delta is calculated from every sample; >0.03m rejects support.
+Claimed center/delta, if supplied, must match. Three affirmative booleans prove nothing.
+Surface extraction is the authorized native terrain operator's responsibility; this
+continuation does not execute or invent terrain measurements. A trace-only collector
+must establish that collision resolves the final authoritative surface; otherwise
+support remains unverified. Grid component coverage and revision binding require review.
+
+Concave containment additionally partitions EVERY envelope edge at every lot boundary
+intersection, including vertex tangencies and collinear overlap endpoints, and checks
+every interval against the closed simple lot. Invalid/self-touching rings reject.
+The retained supplied contained/validate_feature callbacks remain required. Source
+semantics, explicit height tolerance, 45% coverage, no stretch and authored transforms
+are unchanged. All four previously captured real candidate lots pass this additional
+edge check. They are candidate fits, not approved/native-supported lots.
+
+AUTHORIZED OPERATOR INPUTS AND ORDER (NO ACTIVATION GRANTED BY THIS FILE)
+1. Obtain a current scoped assignment, actual PID, original map and dedicated endpoint.
+   Inspect other ownership assignments. Preserve unrelated editors/buffers/packages.
+   The request assignment uses editor_pid, original_map, operator and control_endpoint.
+2. Obtain joint owner review of exact SOURCE_CONTRACT/CONSUMER_SUCCESSOR hashes, sole
+   integrator HDA hash, one exact retained candidate feature/placement, original world,
+   loaded level package set, exact named package saves and allowed appearance reviewers.
+   New lots or changed feature/placement/recipe bytes require a reviewed source successor.
+3. Capture actual ordinary retained official-Engine run evidence, official session ID,
+   exact generation ID and a binding ledger linking each actual native component object
+   path plus instance index (null for SMC) to exact source key/export. The ledger must
+   originate in observed ordinary output binding. Matching counts, component ordering,
+   nearest transforms or copying expected placement records does NOT establish identity.
+4. Obtain measured final-terrain payload and its separately reviewed trusted context.
+5. For each of first_saved, fresh_reopen, regenerated_saved,
+   regenerated_fresh_reopen, call native_readback.capture(request) in the authorized
+   editor. The helper has no automatic entrypoint and performs no package writes,
+   loads, cooks, saves, renders, closes or ownership changes. It returns observations;
+   operator persists the raw JSON in its own staging. All loaded static mesh components
+   and every ISM/HISM instance are enumerated. The helper is compile-checked only here;
+   native API execution remains unverified. Unsupported APIs populate capture_errors
+   and block verification. Do not replace missing observations with expected values.
+6. Review full loaded inventory, streaming-level completeness and output ownership.
+   Produce scope audit including ALL current and prior lot output actors, cooked and
+   baked, and bind it to digest(raw.inventory). Do not filter only the latest generation.
+   Snapshot/readback alone cannot prove absent unloaded outputs. The independent owner
+   scope audit must establish that all retained lot packages/levels were loaded and
+   identify old ownership records. Extra instances within this scope fail the comparator.
+   The audit is a trust boundary; hashes bind evidence but cannot authenticate a human.
+7. Attach receipt refs in a separate stage wrapper, raw_capture_ref pointing to the
+   untouched raw native capture. Measured fields must remain byte-equivalent JSON
+   values; compare.py checks them. Only provenance reference fields are attached later.
+   Exact named save receipts include every reviewed package and its measured saved SHA.
+   Fresh reopen requires a different observed process creation time, matching saved
+   bytes, and another full component/material/UV/terrain comparison. Regeneration needs
+   a distinct ordinary generation ID and its own saved/fresh-process readbacks.
+8. Appearance reviewer captures source Demo_Scene/Building_05_A and final reopened
+   native output with matching relative views/render settings. Supply hashed images,
+   camera/settings values, coverage of every source component, observed differences,
+   and explicit verdicts for materials/UV, glass/openings, scale/reflections, roof/walls
+   and ground datum. Images/counts/material clone receipts alone do not pass appearance.
+   The comparator verifies evidence bindings and reviewer verdicts, not visual similarity.
+9. Run offline compare.py with a native manifest and separately reviewed approval:
+   python compare.py --manifest <operator manifest.json> --approval <operator approval.json> --out <operator result.json>
+   Run from this directory, or use its absolute path. Exit 0=PASS, 2=NOT_VERIFIED,
+   1=FAIL. PASS is evidence-contract acceptance only; it never changes bank eligibility.
+
+SCHEMA AND EXAMPLES
+INPUT_SCHEMA.json supplies the exact required shapes and fixed enumerations for each
+JSON role. Additional provenance may be retained. The comparator applies cross-file
+hash, identity, geometry, finite-number and lifecycle checks beyond JSON-schema types.
+EMPTY_MANIFEST.json and EMPTY_APPROVAL.json intentionally contain no native evidence;
+MISSING_NATIVE_RESULT.json must remain NOT_VERIFIED. Synthetic regression tests use
+test-only observations to exercise rejection and arithmetic; their passing status is
+never a native receipt. Native-looking synthetic sub-fixtures are confined to tests.
+
+BOUNDARIES AND NEXT OWNER
+Integrate only through the named sole integrator. Canonical bank owner handles any
+later admission decision. Native operator executes only under fresh applicable written
+scope. This source owner owns this new staging successor and evidence handoff only.
+Do not modify frozen Qualification_v001, original assets/maps, canonical HDA, shared
+runtime adapters, registry, profile or DataTable from this deliverable.

@@ -117,6 +117,10 @@ Everything else the operator does alone.
 3. `promote_profile.py`: writes `Staging/ModelBank/<AreaId>/AREA_PROFILE.json` once.
    - The bank chat's `sync_connection_profiles.py` does NOT update new profiles. A bank-table change needs this profile's digest updated too.
 4. **Snow fix:** set `MW_SnowWorldPosition` to 1e6 on the area MI only. The Lebanon MI's -1500 turns the whole terrain white.
+5. **Sky north (found 2026-10-12):** GeoCity levels use X = east, Y = south (north = −Y). `BP_EnvironmentSky` defaults to NorthOffset 0, which means north = +X, so the sun is 90° off. On the area's sky instance, set **NorthOffset = −90** and Latitude/Longitude = the area centre, then call `UpdateSky`.
+   - **El Wahat (2026-10-12):** after `UpdateSky`, `CorrectedElevation` reads 180 + elevation, so a check built on it inverts. The real elevation is in `SunElevation`. Check the light against an independent sun model instead: `create_area_finish.py` (NOAA formulas) in the El Wahat Tools. The reference `create_area.py` still has the faulty check.
+   - **Check:** at 06:00 the light's forward vector must point roughly −X (the sun in the east), and the north arrow must point −Y.
+   - **Measured on Karmei Yosef:** 0.0° error at 06:00, 12:00 and 17:00 with −90; 52–90° error with 0. See `Handover_2026-10-12/north_offset_check.json`.
 
 ## 5. Generation (editor: run; ONLY editor)
 
@@ -285,6 +289,44 @@ Everything else the operator does alone.
 
 The first export check found unbound lowest-LOD grass slots (the FieldCrops v004 import predated the binding fix). Fix such slots in the source, then rebuild the export.
 
+## 10c. Lessons from El Wahat Egypt (2026-10-12)
+
+**Source:** `Staging/ElWahatEgypt_SESSION_HANDOFF_2026-10-12.md` and `Staging/NewArea_ElWahatEgypt_29176036_29602273_4km_2026-10-12/RESULT.md`. The El Wahat Tools folder holds generalised or fixed versions of several reference tools; prefer those for the next area.
+
+**Source package and generator:**
+- **A quick Overpass survey needs a User-Agent** (HTTP 406 without one). The shared `acquire.py` already sends one.
+- **Sparse areas:** the source validator needs at least one closed building way and one highway inside the box.
+- **Rural OSM ways can be 200+ km long.** El Wahat had 931 km of road for 21 km inside the box. Trim each way to the area + 100 m in `cook_road_eligibility` (`_ew_trim_to_box`, see `hda_ew_v001_edits.py`); in-box geometry stays identical.
+- **`highway=construction`** is dropped silently unless it is mapped to its `construction=*` class (El Wahat edit C).
+- **Edits file pattern:** keep the PythonModule edits in one shared file (`hda_ew_v001_edits.py`) that both the build and verify scripts import. Verify then proves module = base + exactly those edits.
+- **Zero sidewalks** (all drivable classes in `NO_SIDEWALK_CLASSES`) is safe: the sealed workflow drops an output with 0 visible faces.
+
+**Native area:**
+- `new_level()` writes the empty level file at once. A later "map already on disk" check must accept that file.
+- **Sky:** see 4.5. Check against an independent NOAA sun model (`create_area_finish.py`).
+
+**After every generation:**
+- **Road texture smearing up close:** the generator writes road UVs in world metres (up to ±2000), and the bake stores them at half precision, which squashes and stretches the texture per triangle. Fix on the area's road bake mesh: `road_uv_fix.py` + `road_uv_rebuild.py` (`use_full_precision_u_vs` + full rebuild), then save the Bake mesh by name. A regeneration undoes it until the bake itself is fixed.
+  - Test with a clean texture at the same close-up camera. A texture with its own pattern (AsphaltMat) hid the difference once.
+- **Road tiling:** an area-owned stochastic asphalt master (`build_road_material.py`: engine `TextureVariation` with a linear-grayscale heightmap, the 4K Asphalt_cracked set, 3 m tile, macro variation) plus an MI and a map-level override on the road actor (`road_asphalt.py`). Tune only the MI (Brightness about 0.32).
+- **Holes where tracks meet roads (open bug):** `cook_road_surfaces` labels each road face by its nearest centreline, and track/path faces are deleted (paint only). Drivable surface next to a track end, or along a parallel track, is cut out. Fix proposal: a face inside a drivable half-width keeps the drivable class.
+- **Props over open land:** about 12k generic small props are requested area-wide. `props_near_roads_plan.py` (offline) + `props_trim.py` keep only those within 30 m of a road or building.
+- **One object per building:** the El Wahat `split_buildings.py` / `split_shells.py` take a required target (main, clone or clone_v2). `compact_buildings_v2.py` adds OSM footprints for every unsupported building and handles zero assemblies.
+- A mesh rebuild re-registers its actor and marks the map dirty. Save the map by name (`save_main_map.py`) before a material step that refuses dirty maps.
+- The first editor re-save of a baked map grows it by about 40% (90 → 130 MB). Karmei Yosef showed the same.
+
+**Ground:**
+- **Desert satellite stretch:** /2500 clips bright sand to white. Use /5000, and check `clipped_fraction` in `TEXTURES.json`.
+- `classify_zones.py` needs the empty-land-use guard.
+- Measure the OSM-to-imagery offset by road correlation (El Wahat: within 2 m).
+- **Large checker seen from 600–1500 m:** set the MW auto-material MI parameters `MW_LandscapeWorldUVSizeFar` 8192 → 40000 and `MW_VariationWorldUVSize` 64 → 512 (`set_mi_params.py`). No graph edit.
+
+**Gotchas:**
+- Copied files use CRLF. Multi-line anchors need `
+`.
+- Git Bash `sed -i` converts CRLF to LF; convert back.
+- `ky_client.py` truncates long console results. Read the `receipts/CLIENT_*.json` instead.
+
 ## 11. Tool inventory (reference folder `Staging/NewArea_KarmeiYosef_31850349_34907601_4km_2026-10-08/Tools/`)
 
 **Generic (change only the path constants):**
@@ -316,3 +358,7 @@ The first export check found unbound lowest-LOD grass slots (the FieldCrops v004
 - Reading MI static switches marks the MI dirty.
 - Windows reuses PIDs: move a stale same-PID ParallelEditors record to `Stale/`.
 - Nanite merges thin wire meshes (fences) into a pale sheet: turn Nanite off on those copies.
+- **Animated props break when instanced** (found 2026-10-12): materials whose World Position Offset pivots on `ActorPositionWS` swing around the big bank or PCG actor's origin, not the prop, which gives a long rotating "pole".
+  - Fixed: the shared bank trash-bin material `M_8577bd057998eb82` (copy of the ProceduralBuildingGenerator `M_Trashcan`, used by `Trashcan_Open03`). Its World Position Offset is now a zero constant: receipt `NewArea_KarmeiYosef_.../receipts/TRASHCAN_WPO_STATIC.json`, backup in `Before/TrashcanWPO_2026-10-12/`.
+  - Same pattern, not used by any map yet: `M_Slums` and `M_Slums_Cloth_Anim` (ProceduralBuildingGenerator).
+  - Before using a pack's animated prop or cloth, check its material for `ActorPositionWS` in World Position Offset. If present, make a bank copy static, or use `ObjectPositionWS`. Never edit the pack original.

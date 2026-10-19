@@ -1,3 +1,5 @@
+> HISTORICAL (2026-10-19): this file is kept as history. Current decisions: Docs/GOVERNANCE_RECORD.md. Closure index: Docs/CLOSURE_INDEX.md.
+
 # Plan: Hybrid ground material for GazaShujaiya (MW auto-landscape + Urban layer)
 
 Manager/operator: Claude session cc37d4d2 (sole manager per AGENTS.md). Decided by Aviv 2026-10-06 ("use Unreal's system", then "build the hybrid").

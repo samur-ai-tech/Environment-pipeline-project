@@ -429,3 +429,34 @@ to the manager; a WP/per-building trial belongs on a copy of the clone.
   binding-order bug fixed for v005. apply_astra_rev meshes (names = the 8) re-bound them; MIs saved; map saved 3b8278a8
   (marked dirty by the mesh change; verify all_match). Follow-up commit after b38a65b6.
 - Sent to Recycle Bin: the first export build and the check-only Verify.uproject (my own outputs).
+
+## 23. Coworker hand-over questions (2026-10-12) - READ THIS FIRST
+- Aviv forwarded a coworker's questions (simulation use of the KYPaz zip). Answers + data:
+  NewArea_.../Handover_2026-10-12/ (ANSWERS.md, roads_wgs84/roads_ue_cm/buildings_wgs84/pois_wgs84 .geojson, BP_EnvironmentSky.t3d,
+  north_offset_check.json, build_roads.py, build_rest.py); zip Documents/UE_Exports/KarmeiYosef_SimHandover_2026-10-12.zip;
+  private page https://claude.ai/artifact/9s1xL2FtxzoqdNuJQBxsgZ (Aviv must share it with the coworker).
+- Facts: local equirectangular frame from city_source_v1.json (Mlon 94646.29724274, Mlat 110884.19393286, origin = tile centre
+  = UE 0,0); UE X east, Y south; Z = EGM2008 m x 100 (ground at origin 16,468 cm); convergence 0.
+- DEFECT FOUND (not fixed, waiting for Aviv): BP_EnvironmentSky NorthOffset = 0 in this level (and the zip) -> sun 90 deg off.
+  Measured headless: -90 gives 0.0 deg error at 06/12/17h. Likely the same on other GeoCity maps with this sky (Shujaiya: NorthOffset
+  0.0 in Stage4 receipts; not checked, other owners). Playbook section 4.5 added.
+- Roads: baked meshes (road_surfaces 1.99 M tris, sidewalks 0.82 M), +8 cm above terrain, complex collision only -> physics/simple
+  traces fall to the landscape. Tracks/paths = landscape paint only. UpdateSky = 2.0 ms CPU per call (actor scan).
+- Tools added (read-only): handover_probe.py, roadmesh_probe.py, roadhit_probe.py, sky_dir_probe.py, mesh_bounds.py,
+  volume_collision_probe.py, mesh_collision.py. Gaza Rimal level: deleted 2026-10-06, not in git or Recycle Bin.
+- Aviv's decision on the sky defect: "Only tell the coworker" -> project and zip stay with NorthOffset 0; the coworker sets -90
+  on their side (ANSWERS 1.6). Do not change the sky in this project unless Aviv asks.
+
+## 24. Trash-bin rotating pole (2026-10-12) - READ THIS FIRST
+- Aviv relayed a coworker's diagnosis (open trash bin with a rotating pole); in our project the same bank material renders
+  Trashcan_Open03 in 6 maps (Shujaiya, KY 2 km + its PCG trial, KY 4 km main + clone _v2, ElWahatEgypt) and the bank tables
+  list the bin. Aviv: "Make it static".
+- Done (PID 29296, then quit): shared bank material /Game/Project/Shared/ModelBank/Materials/BankIntegration_20261004/
+  M_8577bd057998eb82 -> World Position Offset fed by a zero Constant3Vector (one node added, nothing deleted), recompiled, named
+  save: sha 39c98740 -> f19ff5b1. Receipt receipts/TRASHCAN_WPO_STATIC.json, backup Before/TrashcanWPO_2026-10-12/.
+  Vendor original M_Trashcan unchanged. No map re-save needed (map _v2 still 3b8278a8). Captures trashbin_after_*.png
+  (the trashbin_before_* shots were taken while exposure was settling; their glowing column is a CitySample street lamp,
+  not the bin - not evidence of the defect).
+- NOT committed (git shows the material modified). The bank material is shared/bank-owned: tell the bank owner session.
+  The KYPaz zip and C:/Users/USER/KYPaz still hold the old material (the coworker fixed his copy).
+- Same ActorPositionWS+Time+RotateAboutAxis pattern exists in M_Slums / M_Slums_Cloth_Anim (unused). Playbook gotcha added.

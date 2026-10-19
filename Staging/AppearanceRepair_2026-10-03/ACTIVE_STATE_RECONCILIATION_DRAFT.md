@@ -1,3 +1,5 @@
+> HISTORICAL (2026-10-19): this file is kept as history. Current decisions: Docs/GOVERNANCE_RECORD.md. Closure index: Docs/CLOSURE_INDEX.md.
+
 # Active state reconciliation — draft
 
 Prepared 2026-10-03 16:45:41 UTC for root review. This file is a proposed reconciliation, not a published completion notice. `AGENTS.md`, `Staging/CURRENT_STATE.md` and `Staging/WORK_PLAN.md` were not changed. Root will publish final measurements after the current native road transaction completes.

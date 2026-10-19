@@ -1,0 +1,129 @@
+> SUPERSEDED (2026-10-19) by Docs/GOVERNANCE_RECORD.md (lines 9, 47). Kept as history. Closure index: Docs/CLOSURE_INDEX.md.
+
+NORMAL DISPATCH v002 -- AUDIT CORRECTION, STAGING ONLY
+
+Replaces NormalDispatch_v001 as the integration proposal. V001 and frozen v015
+remain unchanged. No source imports, HDA build, native call, package/profile/table
+write, hot update or eligibility release occurred. No successful native fixture
+or qualification receipt is provided. ready_to_run=false.
+
+CORRECTION 1: EXACT SOURCE/NATIVE QUALIFICATION, NOT GENERIC PASS
+The prerequisite is now normal_admission.v2 with source_native_qualification_ref.
+native_acceptance_ref/status=PASS is no longer consumed. The exact required schema
+is environmentpipeline.building05a.source_native_qualification.v1, purpose
+source_assets_and_horizontal_scope, evidence_kind=native_operator and result
+QUALIFIED_FOR_TERRAIN_PREPARATION. Its payload is checked, not just its status.
+
+Required fields, each checked against the admission and exact source contract:
+ source_contract_ref (pinned frozen SHA e9f48b2b...a8e4c11d63);
+ frozen_source_recipe_ref; source_package_ref; placement_index_ref;
+ original_map; catalog_sha256; reviewers; placement_scope;
+ native_mesh_packages and native_material_packages (exact complete path/hash maps);
+ native_readback_ref; native_operator; native_pid; native_observation_world;
+ source_component_bindings [{source_key,source_component_export,component_path,
+ instance_index}].
+
+The actual native_readback.v1 must report native_operator provenance, the bound
+process/world/operator, process creation and capture time, no capture errors and
+clean before/after packages. Complete mesh identities, package hashes, triangle
+counts, UV counts, original slots and material-copy package hashes are compared
+with SOURCE_CONTRACT. All 172 source keys bind unique actual component/instance
+identities, matching mesh/effective-material slots and native scale/reflection.
+The admitted recipe may change only its two admission flags from the frozen source
+recipe. Its source-component/native mesh/material route must match the contract.
+Every requested geographic feature digest and horizontal placement must be in the
+frozen source-qualified lot scope. A new lot or changed source requires a new
+source-owner geometry qualification and a reviewed integration update; not an
+invented horizontal fit. No Shujaiya Building05A fit is being asserted.
+
+This prerequisite is SOURCE-ASSET qualification. It can be captured from the
+original source/material-copy assets before an ordinary run. The existing owner's
+native_readback capture supplies the measured asset/component fields; ordinary
+run/terrain/save/reopen/regeneration fields are not required for this prerequisite.
+The operator must provide a genuine readback and joint source/bank review, not wrap
+an unrelated PASS. The original four-stage Building05A comparison and combined
+NativeAcceptance remain POST-RUN requirements. They are not a prerequisite for
+the first ordinary run. Source readiness does not claim original-map appearance,
+native terrain fit, ordinary generation, save/reopen or full acceptance.
+
+CORRECTION 2: ACTUAL WORLD LOOKUP
+GeoCityRun.guard() has no return value. The road fragment now calls parent.guard()
+and separately obtains UnrealEditorSubsystem.get_editor_world(). It checks that
+the actual world's outer package equals parent.p['map'] and the native transaction
+named_map. The rest of the independent Landscape identity contract is unchanged.
+No native reflection was exercised here.
+
+CORRECTION 3: NONCIRCULAR FIRST/SECOND COOK SEQUENCE
+1. Disabled/absent profile field keeps current selector behavior. When enabled,
+   exact source/native admission is verified before recording a request. The
+   ordinary whole-building selector still has precedence.
+2. For a requested unmatched lot, the first assembly call raises the dedicated
+   building05a_awaiting_current_terrain:<request digest> outcome. The existing HDA
+   records the lot as unsupported and retains its original geographic shell. It
+   emits NO provisional Building05A candidate and does not try a failing older
+   assembly. Unsupported count is not changed, filtered or reported complete.
+3. Bank after_processing revalidates the source/native admission and exact current
+   profile map/source/catalog. The entire unsupported set must equal the nonempty
+   qualified request set, with the dedicated request-bound reasons. Extra unknown
+   lots, use failures, H0905 or duplicate/changed requests reject the transition.
+   Native provisional instances for any pending lot also reject it.
+4. Only that exact case enters terrain_preparation_verified. All other output,
+   identity, terrain-conflict, source-pad accounting, material and geometry checks
+   still run. geographic_building_coverage.complete_native_construction staysfalse.
+   Paint-readiness callbacks preserve this preparation phase. It may enter the
+   existing native road/terrain stage; it cannot enter Bake.
+5. After road correction, the current native bridge measures the independent
+   owner-authorized support. No zero-request operation is accepted. It passes the
+   bound native transaction and exact request/measurement/context payload through
+   the existing road_provider_contract_json into the second official cook.
+6. Only building05a_exterior_admitted emits source geometry. Exact current context,
+   finite complete samples, strict3cm support, full-edge containment and unchanged
+   semantic restrictions apply. The bank requires a NONEMPTY expected set and
+   exactly matching emitted keys. Any failed admitted call remains unsupported.
+7. The bank clears preparation state only on the suppression phase, where the
+   original zero-unsupported complete-area guard is mandatory. bake_and_save has
+   an additional explicit gate: suppression phase, no deferred terrain keys,
+   nonempty exact admitted output, zero unsupported and complete native coverage.
+   No first-cook geographic shell or unresolved source lot is allowed into Bake.
+
+This transition is actual executable source preparation, not a claim that a native
+run passed. The manager/source owner must review the stage change before deployment.
+Current Shujaiya worship lot41254426 remains unsupported and prevents advancing
+even the preparation stage; its unrelated failure is not exempted by this change.
+
+CURRENT OWNER DEPENDENCIES
+Native provider candidate: 01a11726-e456-7bb0-b804-3e6184ea731c, exclusively
+Staging/BuildingBankTerrainConnection_2026-10-07. It owns the candidate for
+capture_building05a_final_identity(native,parent,request), not these callers or
+the live module. The independent identity contract from v001 remains required:
+actual Landscape GUID/native grid/component paths/final terrain revision evidence,
+same real PID/world/source/transaction. No measurement-payload identity recycling.
+Do not duplicate or fabricate that provider; consume its frozen exact delivery.
+Prepared binding owner: 01a11727-7750-7e72-b255-c707233a676f, exclusively
+Staging/PreparedBuildingConnections_2026-10-07; consumes only qualified source/native
+links and returns exact guarded asset/table/registry/profile proposals.
+Canonical/native writer remains c39d8cf9; manager remains913c2312; shared HDA/runtime
+integration remains01a1166f. No competing canonical import.
+
+APPLY/EXECUTE ONLY AFTER FINAL READINESS
+EXACT_DELTAS.json pins v015 HDA PythonModule and the existing owner-proposed two
+workflow sources. Full CANDIDATE files and unified patches are review artifacts;
+they must not overwrite later complete-kit/roads changes. Rebase exact deltas on
+the final frozen sources, merge the native provider and qualified binding delivery,
+review/reseal at zero editors, then perform ONE combined canonical import through
+the existing bank owner. Profile field remains enabled=false/admission_ref=null.
+Never turn this preparation into activation by filling invented receipt fields.
+
+The manager-facing RUN_READINESS.json records current candidate/base/native paths
+and hashes, connection route, review evidence and exact missing dependencies. It
+is NOT the requested final executable READY report: final merged kit/runtime/config,
+native qualification and actual owner preflight are not complete. That final report
+will use the original-map Tools > GeoCity: Generate / Regenerate Current Area
+entrypoint, headless step1/step2 proof, named saves, fresh reopen and repeat evidence
+through the combined collector and source-specific comparator. Full acceptance
+remains a later measured result.
+
+MG18 remains binding: hide save deferred after sharing violation, disk unchanged,
+no retries while protected editors hold the map. MG19 wrap-up is an honest report,
+not automatic readiness. Courtyard ten-package route remains only a proposal;
+full used Blueprint transitive closure still needs frozen qualified evidence.

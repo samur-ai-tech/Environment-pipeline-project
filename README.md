@@ -1,7 +1,19 @@
 # Environmentpipeline
 
-Start with [AGENTS.md](AGENTS.md), the sole active instruction authority. It defines the final geographic-data → Houdini HDA → official Houdini Engine → qualified shared bank → repeatable Unreal mission. Use [current state](Staging/CURRENT_STATE.md) for measured progress and the [work plan](Staging/WORK_PLAN.md) for remaining gates. CONTRACT v0.6 remains draft; Tier 1 is held.
+Environmentpipeline builds real geographic areas through the retained Houdini generator and the official Houdini Engine plugin, using native Unreal models and materials.
 
-For new-area surface painting, use the versioned `GeoCity_city_v013_AllSurfacePalette` HDA imported at `/Game/Project/Shared/SurfacePainting/HDA/GeoCity_city_v013_AllSurfacePalette`. Its [paint-bank connection and layer names](Staging/ModelBank/SurfacePainting/README.md) are saved with the project; creating a blank Unreal map alone does not instantiate the HDA. The expanded palette has not been cooked or visually verified under Aviv's zero-test instruction.
+Read [AGENTS.md](AGENTS.md) for project instructions and task ownership. For the model bank, start at the [Bank guide](Docs/Bank/README.md): rules, file locations, catalog/index work, modular adaptation and connection verification are collected there.
 
-Historical instructions and old operator tasks are mapped in the [Track A archive](Staging/Archive/PreFinalVision_2026-09-29/README.md) and [Track B archive](<C:/Users/USER/Documents/Pipeline Environment/Archive/PreFinalVision_2026-09-29/README.md>). Source, assets, tool dependencies and primary evidence are retained.
+| Work | Start here |
+| --- | --- |
+| Bank models, catalogs and modular kits | [Bank guide](Docs/Bank/README.md) |
+| Current bank files and dated native state | [Files and bank state](Docs/Bank/FILES_AND_STATE.md) |
+| New geographic area, ground, vegetation and site detail | [New environment playbook](Staging/Playbooks/NEW_ENVIRONMENT_PLAYBOOK.md) |
+| Project status and work history | [State journal](Staging/CURRENT_STATE.md) and [plan journal](Staging/WORK_PLAN.md) |
+| Management handoff history | [7 October handoff](Staging/MANAGER_HANDOFF_2026-10-07.md), which identifies the parts of the 6 October handoff it supersedes |
+| Governance record (who decides; standing principles) | [Governance record](Docs/GOVERNANCE_RECORD.md), latest entry 2026-10-18 |
+| Issue register | [Issue register](Docs/ISSUE_REGISTER.md) |
+| Closure index (historical and superseded records) | [Closure index](Docs/CLOSURE_INDEX.md) |
+| New-area tool template | [NewAreaTools_v001](Staging/Templates/NewAreaTools_v001/README.md) |
+
+Area profiles and dated native receipts identify the actual table, generator and output. Earlier v013 surface-painting instructions and old candidate counts are historical; use the current task's profile and consumer procedure. This reading map changes no ownership, activation, asset eligibility or production configuration.

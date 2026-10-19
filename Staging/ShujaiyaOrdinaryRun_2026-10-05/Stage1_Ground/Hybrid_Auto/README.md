@@ -1,3 +1,5 @@
+> HISTORICAL (2026-10-19): this file is kept as history. Current decisions: Docs/GOVERNANCE_RECORD.md. Closure index: Docs/CLOSURE_INDEX.md.
+
 # Hybrid ground for GazaShujaiya: runbook
 
 The plan is `PLAN_HYBRID.md`; Aviv's choices are in `DECISIONS.json`. Nothing here has been executed in Unreal. All tooling was prepared offline on 2026-10-06.

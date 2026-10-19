@@ -1,0 +1,125 @@
+> SUPERSEDED (2026-10-19) by Docs/GOVERNANCE_RECORD.md (lines 9, 47). Kept as history. Closure index: Docs/CLOSURE_INDEX.md.
+
+COMBINED NATIVE LIFECYCLE COLLECTOR -- STAGED, EXECUTION DISABLED
+
+Owner: shared integrator 01a1166f-8d7b-7531-94fe-24fe3359e459.
+Native operator remains bank owner c39d8cf9-9e3d-4464-8fd4-949ca9bd7b90.
+Manager remains 913c2312-d010-43d7-8d47-c7af07b8bb71.
+
+This is executable preparation, not native execution or permission. Neither the
+runner nor collector has been loaded in Unreal. Offline code/coverage/rejection
+checks do not qualify installed reflection, appearance, terrain, or persistence.
+
+REUSE AND MISSING CHECKS
+EXISTING_COLLECTOR_COVERAGE.json pins the existing helpers reviewed. The bank
+start_regeneration helper expressly excludes roadbld_workflow.enabled. Its postrun
+and fresh-reopen tools check ordinary counts but not the combined second-cook,
+original Blueprint/static settings, terrain support, appearance, and repeat chain.
+This collector calls geocity_editor_action.generate_current_area(), then reads
+the finished run from geocity_bank_workflow.ACTIVE. It never reads live workflow
+or build ledgers. It freezes the actual completed catalog receipts; it never
+fills measurements from the expected geometry. It calls the two existing
+read-only adapter verify_reopened APIs and installed LandscapeSampler(saved=True).
+The clearance adapter is sealed/loaded and its authority/envelope hashes are
+checked through the actual HDA second-cook receipt. No alternative generator.
+
+PREPARATION BY THE EXISTING OWNERS
+Keep PLAN_DISABLED.json unchanged as a template. Prepare a new reviewed plan in
+this assignment's staging scope with execution_enabled=true ONLY after MG13,
+complete-kit declaration, bank step1/step2, road review, source admission, original
+material graphs, zero-editor ratification/reseal and fresh startup have evidence.
+Pin the final five runtime files under Content/Python (never candidate paths),
+source package, final HDA source, imported native HDA package, native table and
+runtime manifest. Set original map/table, immutable profile digest and required
+Blueprint/static role IDs from the FINAL complete kit. No zero-output exemption.
+The final kit/runtime may change schemas: review this staging candidate against
+that exact freeze before sealing it. Do not silently change source adapters.
+
+The future release_ref is a manager-authored JSON record with:
+ schema: environmentpipeline.combined_native_release.v1
+ manager_thread_id, native_owner, plan_scope_sha256=evidence.digest(plan.scope)
+ collector_files: exact hashes of the reviewed collector files
+ normal_selection_entrypoint: building05a_exterior_admitted
+ H0905_held: true
+ prerequisites: mg13_complete_kit, bank_step1_and_step2, roads_ratification,
+   zero_editor_reseal, source_gap_admission, original_material_graph_qualification
+ Each prerequisite has accepted=true and evidence_ref to its actual owner record.
+These are review records, not cryptographic signatures or substitute measurements.
+No release or access record was created by this integrator.
+
+For each phase the native owner needs a fresh access_ref with:
+ schema: environmentpipeline.combined_native_access.v1
+ manager_thread_id, native_owner, plan_ref, purpose, pid, original_map,
+ expires_epoch, control_port, operator_assignment_ref, lease_tail_sha256,
+ expected_map_file_ref, expected_profile_file_ref,
+ writable_packages (exact paths), writable_package_prefixes (reviewed own roots).
+purposes: generation, collect_saved, reopen. Assignment phase must be REGEN_ACTIVE
+for the first two and VERIFY_ACTIVE for reopen. The actual generation must have
+only its editor process. The collector verifies the control-port listener PID,
+actual OS creation time, world, current hashes, runtime guard, paused valid Engine,
+auto-save off and HDA auto-cook/auto-bake off. Existing menu acquires its own lease.
+A completed run releases it; use the NEW reviewed post-run lease/map/profile refs
+for collection. Never stamp old map hashes over MG17's authorized map successor.
+Read other assignments and preserve every other editor and dirty buffer.
+
+OWNER INVOCATION THROUGH ITS EXISTING DEDICATED BANK CLIENT
+Load this folder once into the authorized editor's Python path and import
+native_operator as collector (do not reload or replace any sealed module).
+The helper checks that its evidence module comes from this exact folder.
+No tool here opens an editor, launches a map, captures a viewport, closes another
+process, saves a package, changes a lease, or installs runtime sources.
+
+1. collector.start(plan_ref, generation_access_ref, unique_label)
+   Calls the existing ordinary action once. START_label reserves the label before
+   dispatch; never retry blindly after a modal error or interrupted call.
+   Returns STARTED receipt, not a generation-success receipt. Await normal finish.
+2. collector.begin(plan_ref, collect_access_ref, 'first_saved', label, started_ref)
+   Requires actual saved/released memory state. Uses the current first-cook archive
+   and final receipt. Reads native meshes/materials/transforms, nonzero original
+   Blueprint/static roles, road actors and exact named package hashes.
+3. Repeatedly call collector.advance(label, 128). Each call samples at most 128
+   real collision heights; hard bound is 256. Guard, hash and dirty-state changes
+   stop collection. Only a complete validated scan writes FIRST_SAVED_label.json.
+   Terrain includes every touched closed cell corner, footprint corners and
+   supported detail strips, in the HDA's verified retained identity frame.
+4. Existing owner performs its authorized clean shutdown/fresh original-map reopen.
+   collector.begin(...,'fresh_reopen',new_label,first_saved_ref), then advance.
+   No same-process load is accepted as a fresh process.
+5. Repeat the ordinary menu run on that original map and collect 'regenerated_saved'
+   against its new STARTED receipt. It needs a distinct real native transaction.
+6. Fresh-process reopen and collect 'regenerated_fresh_reopen' against that save.
+
+Run evidence.py with a manifest containing plan_ref and hashed references for all
+four stages. Add road_acceptance_ref with native_saved_reopened_regenerated=true,
+final_combined_readback_ref, reviewed_by, nonempty evidence_refs from the road owner.
+Add appearance_review_ref schema environmentpipeline.combined_native_appearance_review.v1,
+reviewed_by, accepted, full_area_accepted, source_material_graphs_qualified,
+final_readback_ref, covered_blueprint_ids, covered_static_profile_ids, matched_views.
+Each matched view must have original_source_scope, camera_and_render_settings,
+source_image and output_image file hashes, and a real accepted review. Reuse the
+existing bank capture_lit tool outside the game-thread collector. A screenshot
+file or material-path count alone does not establish original appearance.
+
+BUILDING05A BOUNDARY
+Its newly frozen source-owner native_readback/compare tools remain authoritative
+for 172 source keys, 27 original meshes, original UV/channel/triangle metadata,
+19 material-copy packages, real Landscape GUID/component/grid/revision identity,
+strict 3 cm support and matched appearance. Do not manufacture its trusted
+terrain_context from this collector's samples or from the claimed measurement.
+That context must be independently issued by the actual terrain/run owner. The
+combined bank collision scan is an additional check, not a converter to its schema.
+If Building05A is admitted into a later full run, its frozen four-stage comparator
+must also pass and be linked to the same final combined observation in the manifest.
+Normal retained selection must call admitted, never candidate. Current source
+flags remain false; current v015 has no automatic dispatcher hook. Final admitted
+dispatch/context binding remains a required integration step before enabling it.
+
+LIMITS AND PRESERVATION
+The collector fails closed for unsupported native schemas, nonidentity HDA terrain
+frames, unresolved original material settings, missing support or ambiguous
+coincident instances. Do not turn such a failure into an exemption. Small native
+floating-point differences may require a reviewed tolerance-based comparison;
+current cross-run comparison is intentionally exact. There is no successful mock
+native bundle. H0905 stays held/unsupported. Full-area acceptance remains false.
+The older containment implementation's general vertex/collinear coverage was
+unproven; no failure of the four saved real horizontal fits is being asserted.
